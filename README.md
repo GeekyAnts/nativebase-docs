@@ -5,9 +5,14 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 ## Installation
 
 ```console
-yarn install
+yarn 
 ```
+## Remark-SnackPlayer Plugin setup
 
+```console
+cd remark-snackplayer
+yarn
+```
 ## Local Development
 
 ```console
