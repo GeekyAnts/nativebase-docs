@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #3e3a6f;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -22,4 +22,19 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.snack-player {
+  overflow: hidden;
+  background: #212121;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  height: 505px;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #3e3a6f;
+  box-shadow: none;
+  color: white;
 }

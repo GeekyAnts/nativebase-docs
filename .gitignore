@@ -1,6 +1,6 @@
 # Dependencies
 /node_modules
-
+/remark-snackplayer/node_modules
 # Production
 /build
 
