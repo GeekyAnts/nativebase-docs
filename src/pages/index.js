@@ -149,9 +149,9 @@ function Home() {
       </header>
       <main>
         <section className={styles.features}>
-          <div className="row">
-            <Features />
-          </div>
+          {/* <div className="row"> */}
+          <Features />
+          {/* </div> */}
         </section>
       </main>
     </Layout>

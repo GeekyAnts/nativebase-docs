@@ -21,7 +21,7 @@ import {
 
 ## Usage
 
-```SnackPlayer name=Accordion%20Usage
+```SnackPlayer name=Accordian%20Usage
 import React from "react";
 import {
   Accordion,
@@ -30,8 +30,10 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  NativeBaseProvider,
 } from "native-base";
-export default function () {
+
+function AccordionComponent() {
   return (
     <Box m={3}>
       <Accordion index={[0, 1]}>
@@ -75,11 +77,18 @@ export default function () {
     </Box>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <AccordionComponent />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Multiple
 
-```SnackPlayer name=Accordion%20Multiple
+```SnackPlayer name=Accordian%20Multiple
 import React from "react";
 import {
   Accordion,
@@ -88,8 +97,9 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  NativeBaseProvider,
 } from "native-base";
-export default function () {
+function AccordionComponent() {
   return (
     <Box m={3}>
       <Accordion allowMultiple>
@@ -133,11 +143,18 @@ export default function () {
     </Box>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <AccordionComponent />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Default Index
 
-```SnackPlayer name=Accordion%20Default%20Index
+```SnackPlayer name=Accordian%20DefaultIndex
 import React from "react";
 import {
   Accordion,
@@ -146,8 +163,9 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  NativeBaseProvider,
 } from "native-base";
-export default function () {
+function AccordionComponent() {
   return (
     <Box m={3}>
       <Accordion allowMultiple defaultIndex={[0, 2]}>
@@ -191,11 +209,18 @@ export default function () {
     </Box>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <AccordionComponent />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Toggle
 
-```SnackPlayer name=Accordion%20Toggle
+```SnackPlayer name=Accordian%20Toggle
 import React from "react";
 import {
   Accordion,
@@ -204,8 +229,9 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  NativeBaseProvider,
 } from "native-base";
-export default function () {
+function AccordionComponent() {
   return (
     <Box m={3}>
       <Accordion allowToggle defaultIndex={[2]}>
@@ -249,11 +275,18 @@ export default function () {
     </Box>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <AccordionComponent />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Expanded Style
 
-```SnackPlayer name=Accordion%20Expanded%20Style
+```SnackPlayer name=Accordian%20Expanded
 import React from "react";
 import {
   Accordion,
@@ -262,8 +295,9 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  NativeBaseProvider,
 } from "native-base";
-export default function () {
+function AccordionComponent() {
   return (
     <Box m={3}>
       <Accordion allowMultiple>
@@ -295,11 +329,18 @@ export default function () {
     </Box>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <AccordionComponent />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Accessing the Internal State
 
-```SnackPlayer name=Accordion%20Internal%20State
+```SnackPlayer name=Accordian%20Accessing
 import React from "react";
 import {
   Accordion,
@@ -309,8 +350,9 @@ import {
   AccordionIcon,
   Box,
   Icon,
+  NativeBaseProvider,
 } from "native-base";
-export default function () {
+function AccordionComponent() {
   return (
     <Box m={3}>
       <Accordion allowMultiple defaultIndex={[1]}>
@@ -351,13 +393,35 @@ export default function () {
     </Box>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <AccordionComponent />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Props
 
-[Accordion](https://www.notion.so/fc7b92a3707846aba22f1b68fafc6884)
+### Accordion
 
-[AccordionItem](https://www.notion.so/b7feab8e266145dcbfa20ca3ff2f09c6)
+| Name          | Type             | Description                                                                                              | Default |
+| ------------- | ---------------- | -------------------------------------------------------------------------------------------------------- | ------- |
+| allowMultiple | boolean          | If true, multiple accordion items can be expanded at once.                                               | -       |
+| allowToggle   | boolean          | If true, any expanded accordion item can be collapsed again.                                             | -       |
+| index         | Number[], number | The index(es) of the expanded accordion item.                                                            | -       |
+| defaultIndex  | Number[], number | The initial index(es) of the expanded accordion item. Must be an array for allowMultiple={true} to work. | -       |
+| onChange      | function         | The callback invoked when accordion items are expanded or collapsed.                                     | -       |
+| Component     |                  |                                                                                                          |         |
+
+### AccordionItem
+
+| Name       | Type    | Description                                     | Default |
+| ---------- | ------- | ----------------------------------------------- | ------- |
+| id         | string  | A unique id for the accordion item.             | -       |
+| isDisabled | boolean | If true, the accordion header will be disabled. | -       |
+| Component  |         |                                                 |         |
 
 ## AccordionButton props
 
