@@ -76,16 +76,16 @@ module.exports = {
           title: "Community",
           items: [
             {
+              label: "Twitter",
+              href: "https://twitter.com/nativebaseio",
+            },
+            {
               label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              href: "https://stackoverflow.com/questions/tagged/native-base",
             },
             {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://discord.com/invite/TSgCw2UPmb",
             },
           ],
         },
@@ -93,17 +93,28 @@ module.exports = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "blog",
+              label: "GitHub",
+              href: "https://github.com/GeekyAnts/Nativebase",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "Contribution Guidelines",
+              href:
+                "https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md",
+            },
+          ],
+        },
+        {
+          title: " ",
+          items: [
+            {
+              label: "Built with ❤️ at GeekyAnts.",
+              href:
+                "https://geekyants.com/?utm_source=nativebase&utm_medium=footer&utm_campaign=nativebase",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} NativeBase`,
     },
   },
   presets: [
