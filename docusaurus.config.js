@@ -18,13 +18,28 @@ module.exports = {
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: "f422b0f98d066dbd23597e0bbd370ce2",
+      indexName: "nativebase-v3",
+
+      // // Optional: see doc section bellow
+      // contextualSearch: true,
+
+      // // Optional: Algolia search parameters
+      // searchParameters: {},
+
+      // algoliaOptions: { facetFilters: ["type:content", "language:en"] }, // Optional, if provided by Algolia,
+      // debug: false,
+      // placeholder: "Search Docs",
+    },
+    sidebarCollapsible: false,
     navbar: {
-      title: "NativeBase",
+      title: "NativeBase1234",
       logo: {
         alt: "NativeBase Logo",
         src: "img/native-base-icon.png",
       },
-      style: "dark",
+      // style: "dark",
       items: [
         {
           to: "docs/",
@@ -109,7 +124,7 @@ module.exports = {
             "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: [require.resolve("./src/css/custom.css")],
         },
       },
     ],
