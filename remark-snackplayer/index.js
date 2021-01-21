@@ -34,7 +34,7 @@ const processNode = (node, parent) => {
 
       // Generate Node for SnackPlayer
       const dependencies =
-        "react-is,expo-font,native-base@3.0.0-next.11,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper";
+        "react-is,expo-font,native-base@3.0.0-next.13,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper";
       const snackPlayerDiv = u("html", {
         value: dedent`
           <div
@@ -80,8 +80,5 @@ const SnackPlayer = () => {
 };
 
 module.exports = SnackPlayer;
-
-
-
 
 // https://snack.expo.io/?files=%7B%0A%20%20%2F%2F%20Inlined%20code%0A%20%20%27App.tsx%27%3A%20%7B%0A%20%20%20%20type%3A%20%27CODE%27%2C%0A%20%20%20%20contents%3A%20%27console.log(%22hello%20world!%22)%3B%27%0A%20%20%7D%2C%0A%20%20%2F%2F%20Externally%20hosted%20code%20(JavaScript%2C%20Markdown%2C%20JSON)%0A%20%20%27data%2Fdata.json%27%3A%20%7B%0A%20%20%20%20type%3A%20%27CODE%27%2C%0A%20%20%20%20url%3A%20%27https%3A%2F%2Fmysite%2Fdata.json%27%0A%20%20%7D%2C%0A%20%20%2F%2F%20Externally%20hosted%20assets%20(images%2C%20fonts)%0A%20%20%27assets%2Fimage.png%27%3A%20%7B%0A%20%20%20%20type%3A%20%27ASSET%27%2C%0A%20%20%20%20contents%3A%20%27https%3A%2F%2Fmysite%2Fimage.png%27%0A%20%20%7D%0A%7D
