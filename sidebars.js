@@ -73,7 +73,7 @@ module.exports = {
     Introduction: ["nativebase", "installation", "setup-provider"],
     Features: ["colorMode", "nativebase-factory", "responsive"],
     Example: ["example"],
-    "Community Integration": ["reactHookForms", "formikNb"],
+    "Community Integration": ["reactHookForms", "nativebase-formik-ui"],
 
     Layout: [
       "aspectRatio",
@@ -149,7 +149,16 @@ module.exports = {
     ],
     Recipes: [
       {
-        Designs: [],
+        Designs: ["buildingCard", "buildingSearchBar"],
+        Forms: ["form"],
+        Layout: ["appDrawer"],
+        Theme: [
+          "customizingTheme",
+          "darkMode",
+          "customizingComponents",
+          "breakpoint",
+          "theme",
+        ],
       },
     ],
   },

@@ -1,5 +1,5 @@
 ---
-id: formikNb
+id: nativebase-formik-ui
 title: Formik NativeBase Integration
 ---
 

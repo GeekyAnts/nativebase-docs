@@ -27,7 +27,7 @@ npm i native-base@next react-native-svg react-native-vector-icons styled-compone
 
 **If you are using yarn :**
 
-\*Install **NativeBase\***
+Install **NativeBase**
 
 ```bash
 yarn add native-base@next
@@ -35,25 +35,25 @@ yarn add native-base@next
 
 **We will also have to install these peer dependencies**
 
-\*Install **react-native-svg\***
+Install **react-native-svg**
 
 ```bash
 yarn add react-native-svg
 ```
 
-\*Install **react-native-vector-icons\***
+Install **react-native-vector-icons**
 
 ```bash
 yarn add react-native-vector-icons
 ```
 
-\*Install **styled-components\***
+Install **styled-components**
 
 ```bash
 yarn add styled-components
 ```
 
-\*Install **styled-system\***
+Install **styled-system**
 
 ```bash
 yarn add styled-system
@@ -61,7 +61,7 @@ yarn add styled-system
 
 **If you are using npm :**
 
-\*Install **NativeBase\***
+Install **NativeBase**
 
 ```bash
 npm i native-base@next
@@ -69,25 +69,25 @@ npm i native-base@next
 
 **We will also have to install these peer dependencies**
 
-\*Install **react-native-svg\***
+Install **react-native-svg**
 
 ```bash
 npm i react-native-svg
 ```
 
-\*Install **react-native-vector-icons\***
+Install **react-native-vector-icons**
 
 ```bash
 npm i react-native-vector-icons
 ```
 
-\*Install **styled-components\***
+Install **styled-components**
 
 ```bash
 npm i styled-components
 ```
 
-\*Install **styled-system\***
+Install **styled-system**
 
 ```bash
 npm i styled-system
@@ -100,21 +100,21 @@ react-native init AwesomeNativeBase
 cd AwesomeNativeBase
 ```
 
-\*Install **NativeBase\***
+Install **NativeBase**
 
-\*Using **Yarn\***
+Using **Yarn**
 
 ```bash
 yarn add native-base@next
 ```
 
-\*Using **npm\***
+Using **npm**
 
 ```bash
 npm i native-base@next
 ```
 
-\*Install **Peer Dependencies\***
+Install **Peer Dependencies**
 
 The peer dependencies included from any npm packages does not automatically get installed. Your application will not depend on it explicitly.
 
@@ -152,7 +152,7 @@ npm i native-base@next react-native-svg react-native-vector-icons styled-compone
 
 **If you are using yarn :**
 
-\*Install **NativeBase\***
+Install **NativeBase**
 
 ```bash
 yarn add native-base@next
@@ -160,25 +160,25 @@ yarn add native-base@next
 
 **We will also have to install these peer dependencies**
 
-\*Install **react-native-svg\***
+Install **react-native-svg**
 
 ```bash
 yarn add react-native-svg
 ```
 
-\*Install **react-native-vector-icons\***
+Install **react-native-vector-icons**
 
 ```bash
 yarn add react-native-vector-icons
 ```
 
-\*Install **styled-components\***
+Install **styled-components**
 
 ```bash
 yarn add styled-components
 ```
 
-\*Install **styled-system\***
+Install **styled-system**
 
 ```bash
 yarn add styled-system
@@ -186,7 +186,7 @@ yarn add styled-system
 
 **If you are using npm :**
 
-\*Install **NativeBase\***
+Install **NativeBase**
 
 ```bash
 npm i native-base@next
@@ -194,25 +194,25 @@ npm i native-base@next
 
 **We will also have to install these peer dependencies**
 
-\*Install **react-native-svg\***
+Install **react-native-svg**
 
 ```bash
 npm i react-native-svg
 ```
 
-\*Install **react-native-vector-icons\***
+Install **react-native-vector-icons**
 
 ```bash
 npm i react-native-vector-icons
 ```
 
-\*Install **styled-components\***
+Install **styled-components**
 
 ```bash
 npm i styled-components
 ```
 
-\*Install **styled-system\***
+Install **styled-system**
 
 ```bash
 npm i styled-system
