@@ -1,5 +1,5 @@
 ---
-id: useMediaQuery
+id: use-media-query
 title: useMediaQuery
 ---
 

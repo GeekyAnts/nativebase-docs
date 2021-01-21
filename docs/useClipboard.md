@@ -1,5 +1,5 @@
 ---
-id: useClipboard
+id: use-clipboard
 title: useClipboard
 ---
 

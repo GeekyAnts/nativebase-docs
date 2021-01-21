@@ -1,11 +1,11 @@
 ---
-id: example
-title: Example(todo-list)
+id: todo-example
+title: Todo-List
 ---
 
 A simple Todo App made using NativeBase 3.0.
 
-```jsx
+```SnackPlayer name=TodoList%20Examples
 import React from "react";
 import {
   Input,

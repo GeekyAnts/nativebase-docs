@@ -1,5 +1,5 @@
 ---
-id: usePopOver
+id: use-popOver
 title: usePopover
 ---
 

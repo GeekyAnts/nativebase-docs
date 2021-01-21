@@ -1,5 +1,5 @@
 ---
-id: useTheme
+id: use-theme
 title: useTheme
 ---
 

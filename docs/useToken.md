@@ -1,5 +1,5 @@
 ---
-id: useToken
+id: use-token
 title: useToken
 ---
 

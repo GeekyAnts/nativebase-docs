@@ -26,15 +26,22 @@ All style props that arrays as values for responsive styles.
 For Example to make a `Box` width or w responsive using the array syntax, here's what you need to do:
 
 ```jsx
-import React from "react";
-import { Box } from "native-base";
-export default () => {
+import React from 'react';
+import { Box, NativeBaseProvider } from 'native-base';
+function BreakpointExample () => {
   return (
-    <Box bg="red.200" w={["100px", "400px", "560px"]}>
+    <Box bg="red.200" w={['100px', '400px', '560px']}>
       This is a box
     </Box>
   );
 };
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <BreakpointExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## The Object syntax
@@ -44,15 +51,22 @@ You can also define responsive values with breakpoint aliases in an object. Any 
 For Example to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
 
 ```jsx
-import React from "react";
-import { Text } from "native-base";
-export default () => {
+import React from 'react';
+import { Text, NativeBaseProvider } from 'native-base';
+function BreakpointExample () => {
   return (
-    <Text fontSize={{ base: "24px", md: "40px", lg: "56px" }}>
+    <Text fontSize={{ base: '24px', md: '40px', lg: '56px' }}>
       This is responsive text
     </Text>
   );
 };
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <BreakpointExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## **More Examples**
@@ -60,27 +74,27 @@ export default () => {
 This works for every style prop in the theme specification, which means you can change the style of most properties at a given breakpoint.
 
 ```jsx
-import React from "react";
-import { Box } from "native-base";
-export default () => {
+import React from 'react';
+import { Box, NativeBaseProvider } from 'native-base';
+function BreakpointExample () => {
   return (
     <>
       <Box
         height={{
-          base: "75%", // 0-768px
-          md: "50%", // 768px-1280,
-          xl: "25%", // 1280px+
+          base: '75%', // 0-768px
+          md: '50%', // 768px-1280,
+          xl: '25%', // 1280px+
         }}
         bg="teal.400"
         width={[
-          "75%", // 0-480px
-          "50%", // 480px-768px
-          "25%", // 768px-992px
-          "15%", // 992px+
+          '75%', // 0-480px
+          '50%', // 480px-768px
+          '25%', // 768px-992px
+          '15%', // 992px+
         ]}
       />
       {/* responsive font size */}
-      <Box fontSize={["sm", "md", "lg", "xl"]}>Font Size</Box>
+      <Box fontSize={['sm', 'md', 'lg', 'xl']}>Font Size</Box>
       {/* responsive margin */}
       <Box mt={[2, 4, 6, 8]} width="100%" height="24px" bg="green.400" />
       {/* responsive padding */}
@@ -90,6 +104,13 @@ export default () => {
     </>
   );
 };
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <BreakpointExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## **Demo**
@@ -97,17 +118,17 @@ export default () => {
 Here's a simple example of a component that uses a stacked layout on small screens, and a side-by-side layout on larger screens :
 
 ```jsx
-import React from "react";
-import { Box, Text, Image, Link } from "native-base";
-export default () => {
+import React from 'react';
+import { Box, Text, Image, Link, NativeBaseProvider } from 'native-base';
+function BreakpointExample () => {
   return (
-    <Box flexDir={{ base: "column", sm: "column", md: "row" }}>
+    <Box flexDir={{ base: 'column', sm: 'column', md: 'row' }}>
       <Box flexShrink={0}>
         <Image
           rounded={10}
           width={40}
           height={40}
-          source={{ uri: "https://bit.ly/2jYM25F" }}
+          source={{ uri: 'https://bit.ly/2jYM25F' }}
           alt="Woman paying for a purchase"
         />
       </Box>
@@ -132,4 +153,11 @@ export default () => {
     </Box>
   );
 };
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <BreakpointExample />
+    </NativeBaseProvider>
+  );
+}
 ```

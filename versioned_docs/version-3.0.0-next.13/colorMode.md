@@ -1,6 +1,6 @@
 ---
-id: colorMode
-title: ColorMode
+id: color-mode
+title: Color Mode
 ---
 
 When you use the `NativebaseProvider` at the root of your app, you can automatically use color mode in your apps.
@@ -17,7 +17,7 @@ Calling toggleColorMode anywhere in your app tree toggles the color mode.
 
 `useColorModeValue` is a React hook used to change any value or style based on the color mode. It takes 2 arguments: the value in light mode, and the value in dark mode.
 
-```jsx
+```SnackPlayer name=ColorMode%20Usage
 import React from "react";
 import {
   Heading,
@@ -27,6 +27,7 @@ import {
   Avatar,
   Center,
   useColorModeValue,
+  NativeBaseProvider
 } from "native-base";
 
 const LocalWrapper = ({ children }: any) => {
@@ -44,6 +45,7 @@ const LocalWrapper = ({ children }: any) => {
 export default function () {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
+   <NativeBaseProvider>
     <LocalWrapper>
       <Heading>I'm a Heading</Heading>
       <Button
@@ -73,6 +75,7 @@ export default function () {
         />
       </HStack>
     </LocalWrapper>
+   </NativeBaseProvider>
   );
 }
 ```

@@ -20,6 +20,37 @@ import { Button, useToast, VStack, NativeBaseProvider } from 'native-base';
 function ToastComponent () {
   const toast = useToast();
   return (
+      <Button
+      onPress={() => {
+        toast({
+          position: 'top',
+          title: 'Toast Top',
+        });
+      }}
+    >
+		 Toast
+    </Button>
+  )
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <ToastComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+<br/>
+<br/>
+
+```SnackPlayer name=Toast%20Example1
+import React from 'react';
+import { Button, useToast, VStack, NativeBaseProvider } from 'native-base';
+
+function ToastComponent () {
+  const toast = useToast();
+  return (
       <VStack space={2}>
         <Button
           onPress={() => {
@@ -49,7 +80,7 @@ function ToastComponent () {
             });
           }}
         >
-          Bottom
+          Botton
         </Button>
       </VStack>
   );

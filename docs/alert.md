@@ -219,11 +219,12 @@ export default function () {
 ### Alert
 
 Implement `Box`, all props of Box can be passed.
-| Name | Type | Description | Default |
+
+| Name      | Type                                   | Description                            | Default |
 |-----------|----------------------------------------|----------------------------------------|---------|
-| status | error, info, success, warning | The status of the alert. | info |
-| variant | left-accent, solid, subtle, top-accent | The variant of the alert style to use. | subtle |
-| Component | | | |
+| status    | error, info, success, warning          | The status of the alert.               | info    |
+| variant   | left-accent, solid, subtle, top-accent | The variant of the alert style to use. | subtle  |
+| Component |                                        |                                        |         |
 
 ### AlertIcon
 

@@ -1,5 +1,5 @@
 ---
-id: useDisclosure
+id: use-disclosure
 title: useDisclosure
 ---
 

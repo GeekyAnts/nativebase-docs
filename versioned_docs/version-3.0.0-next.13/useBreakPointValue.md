@@ -1,5 +1,5 @@
 ---
-id: useBreakPointValue
+id: use-breakPoint-value
 title: useBreakpointValue
 ---
 

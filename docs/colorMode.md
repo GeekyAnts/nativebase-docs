@@ -1,6 +1,6 @@
 ---
-id: colorMode
-title: ColorMode
+id: color-mode
+title: Color Mode
 ---
 
 When you use the `NativebaseProvider` at the root of your app, you can automatically use color mode in your apps.
@@ -18,7 +18,7 @@ Calling toggleColorMode anywhere in your app tree toggles the color mode.
 `useColorModeValue` is a React hook used to change any value or style based on the color mode. It takes 2 arguments: the value in light mode, and the value in dark mode.
 
 ```SnackPlayer name=ColorMode%20Usage
-import React from "react";
+import React from 'react';
 import {
   Heading,
   useColorMode,
@@ -28,28 +28,27 @@ import {
   Center,
   useColorModeValue,
   NativeBaseProvider
-} from "native-base";
+} from 'native-base';
 
-const LocalWrapper = ({ children }: any) => {
+const LocalWrapper = ({ children }) => {
   return (
     <Center
       height="100%"
       width="100%"
-      bg={useColorModeValue("gray.200", "gray.800")}
+      bg={useColorModeValue('gray.200', 'gray.800')}
     >
       {children}
     </Center>
   );
 };
 
-export default function () {
+function ColorModeExample () {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-   <NativeBaseProvider>
     <LocalWrapper>
       <Heading>I'm a Heading</Heading>
       <Button
-        colorScheme={colorMode === "light" ? "blue" : "red"}
+        colorScheme={colorMode === 'light' ? 'blue' : 'red'}
         onPress={() => {
           toggleColorMode();
         }}
@@ -62,7 +61,7 @@ export default function () {
           borderWidth={2}
           source={{
             uri:
-              "https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg",
+              'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
           }}
         />
         <Avatar
@@ -70,12 +69,18 @@ export default function () {
           borderWidth={2}
           source={{
             uri:
-              "https://pbs.twimg.com/profile_images/1260766060401188864/ySJfMIbZ_400x400.jpg",
+              'https://pbs.twimg.com/profile_images/1260766060401188864/ySJfMIbZ_400x400.jpg',
           }}
         />
       </HStack>
     </LocalWrapper>
-   </NativeBaseProvider>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <ColorModeExample />
+    </NativeBaseProvider>
   );
 }
 ```

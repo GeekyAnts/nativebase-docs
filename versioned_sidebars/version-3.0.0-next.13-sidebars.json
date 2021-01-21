@@ -1,5 +1,5 @@
 {
-  "version-3.0.0-next.11/componentsSidebar": [
+  "version-3.0.0-next.13/componentsSidebar": [
     {
       "collapsed": true,
       "type": "category",
@@ -7,15 +7,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/nativebase"
+          "id": "version-3.0.0-next.13/nativebase"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/installation"
+          "id": "version-3.0.0-next.13/installation"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/setup-provider"
+          "id": "version-3.0.0-next.13/setup-provider"
         }
       ]
     },
@@ -26,15 +26,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/colorMode"
+          "id": "version-3.0.0-next.13/color-mode"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/nativebase-factory"
+          "id": "version-3.0.0-next.13/nativebase-factory"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/responsive"
+          "id": "version-3.0.0-next.13/responsive"
         }
       ]
     },
@@ -45,7 +45,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/example"
+          "id": "version-3.0.0-next.13/todo-example"
         }
       ]
     },
@@ -56,11 +56,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/reactHookForms"
+          "id": "version-3.0.0-next.13/react-hook-forms"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/formikNb"
+          "id": "version-3.0.0-next.13/nativebase-formik-ui"
         }
       ]
     },
@@ -71,59 +71,55 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/aspectRatio"
+          "id": "version-3.0.0-next.13/aspectRatio"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/box"
+          "id": "version-3.0.0-next.13/box"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/center"
+          "id": "version-3.0.0-next.13/center"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/columns"
+          "id": "version-3.0.0-next.13/container"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/container"
+          "id": "version-3.0.0-next.13/flex"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/flex"
+          "id": "version-3.0.0-next.13/hStack"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/hStack"
+          "id": "version-3.0.0-next.13/row"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/row"
+          "id": "version-3.0.0-next.13/simpleGrid"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/simpleGrid"
+          "id": "version-3.0.0-next.13/stack"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/stack"
+          "id": "version-3.0.0-next.13/view"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/view"
+          "id": "version-3.0.0-next.13/VStack"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/VStack"
+          "id": "version-3.0.0-next.13/wrap"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/wrap"
-        },
-        {
-          "type": "doc",
-          "id": "version-3.0.0-next.11/ZStack"
+          "id": "version-3.0.0-next.13/ZStack"
         }
       ]
     },
@@ -134,59 +130,59 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/button"
+          "id": "version-3.0.0-next.13/button"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/checkBox"
+          "id": "version-3.0.0-next.13/checkBox"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/formControl"
+          "id": "version-3.0.0-next.13/formControl"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/iconButton"
+          "id": "version-3.0.0-next.13/iconButton"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/input"
+          "id": "version-3.0.0-next.13/input"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/numberInput"
+          "id": "version-3.0.0-next.13/numberInput"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/link"
+          "id": "version-3.0.0-next.13/link"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/pinInput"
+          "id": "version-3.0.0-next.13/pinInput"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/radio"
+          "id": "version-3.0.0-next.13/radio"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/select"
+          "id": "version-3.0.0-next.13/select"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/slider"
+          "id": "version-3.0.0-next.13/slider"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/switch"
+          "id": "version-3.0.0-next.13/switch"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/textArea"
+          "id": "version-3.0.0-next.13/textArea"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/typeAhead"
+          "id": "version-3.0.0-next.13/typeAhead"
         }
       ]
     },
@@ -197,35 +193,35 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/badge"
+          "id": "version-3.0.0-next.13/badge"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/closeButton"
+          "id": "version-3.0.0-next.13/closeButton"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/code"
+          "id": "version-3.0.0-next.13/code"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/divider"
+          "id": "version-3.0.0-next.13/divider"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/Kbd"
+          "id": "version-3.0.0-next.13/Kbd"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/list"
+          "id": "version-3.0.0-next.13/list"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/stat"
+          "id": "version-3.0.0-next.13/stat"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/tag"
+          "id": "version-3.0.0-next.13/tag"
         }
       ]
     },
@@ -236,31 +232,31 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/alert"
+          "id": "version-3.0.0-next.13/alert"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/circularProgress"
+          "id": "version-3.0.0-next.13/circularProgress"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/progress"
+          "id": "version-3.0.0-next.13/progress"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/skeleton"
+          "id": "version-3.0.0-next.13/skeleton"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/snackBar"
+          "id": "version-3.0.0-next.13/snackBar"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/spinner"
+          "id": "version-3.0.0-next.13/spinner"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/toast"
+          "id": "version-3.0.0-next.13/toast"
         }
       ]
     },
@@ -271,11 +267,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/text"
+          "id": "version-3.0.0-next.13/text"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/heading"
+          "id": "version-3.0.0-next.13/heading"
         }
       ]
     },
@@ -286,23 +282,23 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/alertDialog"
+          "id": "version-3.0.0-next.13/alertDialog"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/menu"
+          "id": "version-3.0.0-next.13/menu"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/modal"
+          "id": "version-3.0.0-next.13/modal"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/overlay"
+          "id": "version-3.0.0-next.13/overlay"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/popOver"
+          "id": "version-3.0.0-next.13/popOver"
         }
       ]
     },
@@ -313,27 +309,27 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/accordion"
+          "id": "version-3.0.0-next.13/accordion"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/actionSheet"
+          "id": "version-3.0.0-next.13/actionSheet"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/actionSheet"
+          "id": "version-3.0.0-next.13/actionSheet"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/breadCrumb"
+          "id": "version-3.0.0-next.13/breadCrumb"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/collapse"
+          "id": "version-3.0.0-next.13/collapse"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/tab"
+          "id": "version-3.0.0-next.13/tab"
         }
       ]
     },
@@ -344,15 +340,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/avatar"
+          "id": "version-3.0.0-next.13/avatar"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/icon"
+          "id": "version-3.0.0-next.13/icon"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/image"
+          "id": "version-3.0.0-next.13/image"
         }
       ]
     },
@@ -363,15 +359,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/appBar"
+          "id": "version-3.0.0-next.13/appBar"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/FAB"
+          "id": "version-3.0.0-next.13/FAB"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/transition"
+          "id": "version-3.0.0-next.13/transition"
         }
       ]
     },
@@ -382,31 +378,31 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/useDisclosure"
+          "id": "version-3.0.0-next.13/use-disclosure"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/usePopOver"
+          "id": "version-3.0.0-next.13/use-popOver"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/useBreakPointValue"
+          "id": "version-3.0.0-next.13/use-breakPoint-value"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/useClipboard"
+          "id": "version-3.0.0-next.13/use-clipboard"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/useMediaQuery"
+          "id": "version-3.0.0-next.13/use-media-query"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/useTheme"
+          "id": "version-3.0.0-next.13/use-theme"
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.11/useToken"
+          "id": "version-3.0.0-next.13/use-token"
         }
       ]
     },
@@ -419,7 +415,65 @@
           "collapsed": true,
           "type": "category",
           "label": "Designs",
-          "items": []
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.13/buildingCard"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.13/buildingSearchBar"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Forms",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.13/form"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Layout",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.13/appDrawer"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Theme",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.13/customizingTheme"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.13/darkMode"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.13/customizingComponents"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.13/breakpoint"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.13/theme"
+            }
+          ]
         }
       ]
     }
