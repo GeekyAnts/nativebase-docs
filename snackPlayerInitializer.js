@@ -13,7 +13,7 @@ export default (() => {
   };
 
   const initSnackPlayers = () => {
-    console.log("initSnackPlayers");
+    // console.log("initSnackPlayers");
     updateSnacksTheme();
     window.ExpoSnack && window.ExpoSnack.initialize();
   };

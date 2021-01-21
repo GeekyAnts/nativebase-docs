@@ -8,117 +8,46 @@ import styles from "./styles.module.css";
 
 const features = [
   {
-    title: "Easy to Use",
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: "Accessible",
+    imageUrl: "/img/NB-feature-icons/SVG/Accessible.svg",
+    description: "Create responsive apps with ease from the get-go.",
   },
   {
-    title: "Focus on What Matters",
-    imageUrl: "img/undraw_docusaurus_tree.svg",
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: "Responsive",
+    imageUrl: "/img/NB-feature-icons/SVG/Responsive.svg",
+    description: "Customise your app theme and component styles.",
   },
   {
-    title: "Powered by React",
-    imageUrl: "img/undraw_docusaurus_react.svg",
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: "Themeable",
+    imageUrl: "/img/NB-feature-icons/SVG/Themeable.svg",
+    description: "Customise your app theme and component styles.",
+  },
+  {
+    title: "Consistent",
+    imageUrl: "/img/NB-feature-icons/SVG/Consistent.svg",
+    description: "Make accurate predictions for web, Android & iOS.",
   },
 ];
 
 const Features = () => (
-  <div className="custom_row">
-    <div className="wrapper homeWrapper">
-      <div className="row">
-        <div>
-          <img
-            src="/img/NB-feature-icons/SVG/Accessible.svg"
-            height="58px"
-            width="80px"
-          ></img>
-          <h3
-            style={{
-              fontFamily: "Roboto",
-              fontSize: "20px",
-              color: "#000000",
-              letterSpacing: 0,
-            }}
-          >
-            Accessible
-          </h3>
-          <p>Maximise app usage with our accessible design.</p>
-        </div>
-
-        <div>
-          <img
-            src="/img/NB-feature-icons/SVG/Responsive.svg"
-            height="58px"
-            width="80px"
-          ></img>
-          <h3
-            style={{
-              fontFamily: "Roboto",
-              fontSize: "20px",
-              color: "#000000",
-              letterSpacing: 0,
-            }}
-          >
-            Responsive
-          </h3>
-          <p>Create responsive apps with ease from the get-go.</p>
-        </div>
-
-        <div>
-          <img
-            src="/img/NB-feature-icons/SVG/Themeable.svg"
-            height="58px"
-            width="80px"
-          ></img>
-          <h3
-            style={{
-              fontFamily: "Roboto",
-              fontSize: "20px",
-              color: "#000000",
-              letterSpacing: 0,
-            }}
-          >
-            Themeable
-          </h3>
-          <p>Customise your app theme and component styles.</p>
-        </div>
-        <div>
-          <img
-            src="/img/NB-feature-icons/SVG/Consistent.svg"
-            height="58px"
-            width="80px"
-            style={{ transform: "scale(1.2)" }}
-          ></img>
-          <h3
-            style={{
-              fontFamily: "Roboto",
-              fontSize: "20px",
-              color: "#000000",
-              letterSpacing: 0,
-            }}
-          >
-            Consistent
-          </h3>
-          <p>Make accurate predictions for web, Android & iOS.</p>
-        </div>
-      </div>
+  <div className="container">
+    <div className="row">
+      {features.map((feature, key) => {
+        return (
+          <div className={clsx("col col--3", styles.textAlignCenter)}>
+            <img src={feature.imageUrl} height="58px" width="80px"></img>
+            <h3
+              style={{
+                fontSize: "20px",
+                letterSpacing: 0,
+              }}
+            >
+              {feature.title}
+            </h3>
+            <p>{feature.description}</p>
+          </div>
+        );
+      })}
     </div>
   </div>
 );
@@ -130,28 +59,60 @@ function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+      <header className={clsx(styles.mainBanner)}>
+        <div className="container ">
+          <div
+            className={clsx(
+              "row",
+              styles.justifyCenter,
+              styles.alignCenter,
+              styles.displayFlex
+            )}
+          >
+            <img
+              src={"/img/native-base-icon.png"}
+              width="50px"
+              height="50px"
+              alt="Project Logo"
+              style={{ marginRight: "10px" }}
+            />
+
+            <h1
+              className={clsx(styles.marginVerticalAuto)}
+              style={{ fontSize: "48px" }}
+            >
+              {siteConfig.title}
+              <span
+                style={{
+                  lineHeight: "14px",
+                  fontSize: "14px",
+                  marginLeft: "5px",
+                }}
+              >
+                (alpha)
+              </span>
+            </h1>
+          </div>
+          <p style={{ marginTop: "20px", fontSize: "32px" }}>
+            {siteConfig.tagline}
+          </p>
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
+                "button button--secondary button--lg",
+                styles.sizeSmall
               )}
               to={useBaseUrl("docs/")}
+              style={{ color: "#3e3a6f" }}
             >
-              Get Started
+              GET STARTED
             </Link>
           </div>
         </div>
       </header>
       <main>
         <section className={styles.features}>
-          {/* <div className="row"> */}
           <Features />
-          {/* </div> */}
         </section>
       </main>
     </Layout>
