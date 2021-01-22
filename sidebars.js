@@ -140,6 +140,7 @@ module.exports = {
       "use-theme",
       "use-token",
     ],
+    Theme: ["default-theme"],
     Recipes: [
       {
         Designs: ["buildingCard", "buildingSearchBar"],
