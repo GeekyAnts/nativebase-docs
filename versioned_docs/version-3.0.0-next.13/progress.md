@@ -1,0 +1,120 @@
+---
+id: progress
+title: Progress
+---
+
+`Progress` is used to display the progress status for a task that takes a long time or consists of several steps.
+
+## Import
+
+```jsx
+import { Progress } from "native-base";
+```
+
+## Implements
+
+- `Box` from nativebase
+
+## Usage
+
+```SnackPlayer name=Progress%20Usage
+import React from 'react';
+import { Box, Progress, NativeBaseProvider } from 'native-base';
+
+function ProgressComponent () {
+  return (
+    <Box w="90%">
+      <Progress value={45} />
+    </Box>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <ProgressComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+## Progress colorScheme and Sizes
+
+```SnackPlayer name=Progress%20ColorSchemeSizes
+import React from 'react';
+import { Box, Progress, NativeBaseProvider } from 'native-base';
+
+function ProgressComponent () {
+  return (
+    <Box w="90%">
+      <Progress size="xs" mb={4} value={45} />
+      <Progress size="sm" colorScheme="success" mb={4} value={45} />
+      <Progress size="md" colorScheme="dark" mb={4} value={45} />
+      <Progress size="lg" colorScheme="danger" mb={4} value={65} />
+      <Progress size="xl" colorScheme="warning" mb={4} value={75} />
+      <Progress size="2xl" colorScheme="light" mb={4} value={75} />
+    </Box>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <ProgressComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+## Rounded Progress
+
+```SnackPlayer name=Progress%20Rounded
+import React from 'react';
+import { Box, Progress, NativeBaseProvider } from 'native-base';
+
+function ProgressComponent () {
+  return (
+    <Box w="90%">
+      <Progress rounded="50" size="lg" colorScheme="blue" mb={4} value={65} />
+    </Box>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <ProgressComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+## Custom Track Color
+
+```SnackPlayer name=Progress%20Custom Track Color
+import React from 'react';
+import { Box, Progress, Center, Heading, NativeBaseProvider } from 'native-base';
+
+function ProgressComponent () {
+  return (
+    <Box w="90%">
+      <Progress size="lg" colorScheme="warning" bg="teal.2" mb={4} value={75} />
+    </Box>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <ProgressComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+## Props
+
+### Progress
+
+| Name        | Type                    | Description                                                                                                       | Default |
+| ----------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| value       | number                  | value of Progress.                                                                                                | -       |
+| colorScheme | string                  | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
+| size        | 2xl, lg, md, sm, xl, xs | defines height of Progress                                                                                        | md      |
+| Component   |                         |                                                                                                                   |         |

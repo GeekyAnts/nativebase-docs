@@ -11,63 +11,87 @@ import { NBFactory } from "native-base";
 
 ## Usage
 
-```jsx
-import React from "react";
-import { NBFactory } from "native-base";
-import { Image, View } from "react-native";
+```SnackPlayer name=Nativebase%20Factory%20Usage
+import React from 'react';
+import { NBFactory, NativeBaseProvider } from 'native-base';
+import { Image, View } from 'react-native';
 
-export default function () {
+function NBFactoryViewExample () {
   const NBFactoryView = NBFactory(View);
-  return <NBFactoryView bg="teal.200" height={50} width={50} />;
+  return (
+      <NBFactoryView bg="teal.200" height={50} width={50} />
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <NBFactoryViewExample />
+    </NativeBaseProvider>
+  );
 }
 ```
 
 ## Defining component theme
 
-```jsx
-import React from "react";
-import { NBFactory } from "native-base";
-import { View } from "react-native";
+```SnackPlayer name=Nativebase%20Factory%20Component%20Theme
+import React from 'react';
+import { NBFactory, NativeBaseProvider } from 'native-base';
+import { View } from 'react-native';
 
-export default function () {
+function NBFactoryViewExample () {
   const NBFactoryView = NBFactory(View, {
     baseStyle: {
-      bg: "cyan.300",
-      borderRadius: "md",
+      bg: 'cyan.300',
+      borderRadius: 'md',
     },
   });
   return <NBFactoryView height={50} width={50} />;
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <NBFactoryViewExample />
+    </NativeBaseProvider>
+  );
 }
 ```
 
 ## Using mode in component theme
 
-```jsx
-import React from "react";
-import { NBFactory, themeTools } from "native-base";
-import { View } from "react-native";
+```SnackPlayer name=Nativebase%20Factory%20Component%20Theme
+import React from 'react';
+import { NBFactory, themeTools, NativeBaseProvider } from 'native-base';
+import { View } from 'react-native';
 
-export default function () {
+function NBFactoryViewModeExample () {
   const NBFactoryView = NBFactory(View, {
     baseStyle: (props) => {
       return {
-        bg: themeTools.mode("rose.500", "cyan.300")(props),
-        borderRadius: "md",
+        bg: themeTools.mode('rose.500', 'cyan.300')(props),
+        borderRadius: 'md',
       };
     },
   });
   return <NBFactoryView height={50} width={50} />;
 }
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <NBFactoryViewModeExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Using ref
 
-```jsx
-import React from "react";
-import { NBFactory, Button } from "native-base";
-import { TextInput } from "react-native";
+```SnackPlayer name=Nativebase%20Factory%20Using%20Ref
+import React from 'react';
+import { NBFactory, Button, NativeBaseProvider } from 'native-base';
+import { TextInput } from 'react-native';
 
-export default function () {
+function NBFactoryViewRefExample () {
   const NBInput = NBFactory(TextInput);
   const inputRef = React.useRef(null);
   return (
@@ -81,6 +105,13 @@ export default function () {
         Set Focus
       </Button>
     </>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <NBFactoryViewRefExample />
+    </NativeBaseProvider>
   );
 }
 ```
