@@ -114,6 +114,18 @@ function Home() {
             >
               GET STARTED
             </Link>
+            {/* <Link
+              className="github-button"
+              href="https://github.com/GeekyAnts/NativeBase"
+              data-icon="octicon-star"
+              data-count-href="https://github.com/GeekyAnts/NativeBase"
+              data-show-count="true"
+              data-count-aria-label="# stargazers on GitHub"
+              aria-label="Star this project on GitHub"
+              // style={{ color: "white" }}
+            >
+              Stars
+            </Link> */}
           </div>
         </div>
       </header>
