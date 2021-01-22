@@ -45,12 +45,19 @@ module.exports = {
           to: "docs/nativebase",
           activeBasePath: "docs",
           label: "Docs",
-          position: "left",
+          position: "right",
         },
-        { to: "blog", label: "Blog", position: "left" },
+        { to: "docs/faq", label: "FAQ", position: "right" },
+
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
+          position: "right",
+        },
+        {
+          href:
+            "https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase",
+          label: "Hire The Creators",
           position: "right",
         },
         { type: "docsVersionDropdown", position: "left" },
@@ -64,15 +71,15 @@ module.exports = {
           items: [
             {
               label: "Introduction",
-              to: "docs/",
+              to: "docs/nativebase",
             },
             {
               label: "Examples",
-              to: "docs/doc2/",
+              to: "docs/todo-example",
             },
             {
               label: "FAQ",
-              to: "docs/",
+              to: "docs/faq",
             },
           ],
         },
@@ -105,6 +112,16 @@ module.exports = {
               href:
                 "https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md",
             },
+            // {
+            //   label: "Stars",
+            //   href: "https://github.com/GeekyAnts/NativeBase",
+            //   // className: "github-button",
+            //   dataIcon: "octicon-star",
+            //   dataCountHref: "https://github.com/GeekyAnts/NativeBase",
+            //   dataShowCount: "true",
+            //   dataCountAriaLabel: "# stargazers on GitHub",
+            //   ariaLabel: "Star this project on GitHub",
+            // },
           ],
         },
         {

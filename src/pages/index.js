@@ -10,12 +10,12 @@ const features = [
   {
     title: "Accessible",
     imageUrl: "/img/NB-feature-icons/SVG/Accessible.svg",
-    description: "Create responsive apps with ease from the get-go.",
+    description: "Maximise app usage with our accessible design.",
   },
   {
     title: "Responsive",
     imageUrl: "/img/NB-feature-icons/SVG/Responsive.svg",
-    description: "Customise your app theme and component styles.",
+    description: "Create responsive apps with ease from the get-go.",
   },
   {
     title: "Themeable",
@@ -49,7 +49,9 @@ const Features = () => (
             >
               {feature.title}
             </h3>
-            <p>{feature.description}</p>
+            <p style={{ color: "#5e5e5e", fontWeight: "500" }}>
+              {feature.description}
+            </p>
           </div>
         );
       })}

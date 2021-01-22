@@ -161,5 +161,6 @@ module.exports = {
         ],
       },
     ],
+    FAQ: ["faq"],
   },
 };
