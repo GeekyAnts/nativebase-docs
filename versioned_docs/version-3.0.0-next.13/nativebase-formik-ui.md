@@ -21,8 +21,8 @@ yarn add @native-base/formik-ui
 
 ## Checkbox
 
-```jsx
-import React from "react";
+```SnackPlayer name=Formik%20Checkbox
+import React from 'react';
 import {
   CheckboxSingular,
   Text,
@@ -30,18 +30,19 @@ import {
   ResetButton,
   Box,
   ButtonGroup,
-} from "nativebase-formik-ui";
-import { Formik } from "formik";
-import { Heading } from "native-base";
-import * as Yup from "yup";
+  NativeBaseProvider
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading } from 'native-base';
+import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
-  tnc: Yup.boolean().equals([true], "Terms and Condition must be checked !"),
+  tnc: Yup.boolean().equals([true], 'Terms and Condition must be checked !'),
   newsletter: Yup.boolean(),
 });
 
-export default function () {
-  const onSubmit = async (values: any) => {
+function FormikCheckboxExample() {
+  const onSubmit = async (values) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
   };
@@ -80,42 +81,50 @@ export default function () {
     </Formik>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <FormikCheckboxExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Input
 
-```jsx
-import React from "react";
+```SnackPlayer name=Formik%20Input
+import React from 'react';
 import {
   Input,
   SubmitButton,
   ResetButton,
   Box,
   ButtonGroup,
-} from "nativebase-formik-ui";
-import { Formik } from "formik";
-import { Heading } from "native-base";
-import * as Yup from "yup";
+  NativeBaseProvider
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading } from 'native-base';
+import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
   email: Yup.string()
-    .email("Please enter valid email")
-    .required("Email Address is Required"),
+    .email('Please enter valid email')
+    .required('Email Address is Required'),
   password: Yup.string()
     .min(8, ({ min }) => `Password must be at least ${min} characters`)
-    .required("Password is required"),
+    .required('Password is required'),
 });
 
-export default function () {
-  const onSubmit = async (values: any) => {
+function FormikInputExample () {
+  const onSubmit = async (values) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
   };
   return (
     <Formik
       initialValues={{
-        email: "",
-        password: "",
+        email: '',
+        password: '',
       }}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
@@ -153,12 +162,19 @@ export default function () {
     </Formik>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <FormikInputExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## NumberInput
 
-```jsx
-import React from "react";
+```SnackPlayer name=Formik%20NumberInput
+import React from 'react';
 import {
   NumberInput,
   NumberInputStepper,
@@ -168,10 +184,11 @@ import {
   ResetButton,
   Box,
   ButtonGroup,
-} from "nativebase-formik-ui";
-import { Formik } from "formik";
-import { Heading } from "native-base";
-import * as Yup from "yup";
+  NativeBaseProvider
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading } from 'native-base';
+import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
   age: Yup.number().min(
@@ -180,7 +197,7 @@ const validationSchema = Yup.object().shape({
   ),
 });
 
-export default function () {
+function FormikNumberInputExample () {
   const onSubmit = async (values: any) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
@@ -219,12 +236,19 @@ export default function () {
     </Formik>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <FormikNumberInputExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Radio
 
-```jsx
-import React from "react";
+```SnackPlayer name=Formik%20Radio
+import React from 'react';
 import {
   Radio,
   RadioGroup,
@@ -234,24 +258,25 @@ import {
   Box,
   ButtonGroup,
   Text,
-} from "nativebase-formik-ui";
-import { Formik } from "formik";
-import { Heading } from "native-base";
-import * as Yup from "yup";
+  NativeBaseProvider
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading } from 'native-base';
+import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
   color: Yup.string().required(),
 });
 
-export default function () {
-  const onSubmit = async (values: any) => {
+function FormikRadioExample () {
+  const onSubmit = async (values) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
   };
   return (
     <Formik
       initialValues={{
-        color: "",
+        color: '',
       }}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
@@ -296,12 +321,19 @@ export default function () {
     </Formik>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <FormikRadioExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Select
 
-```jsx
-import React from "react";
+```SnackPlayer name=Formik%20Select
+import React from 'react';
 import {
   SelectControlled,
   Select,
@@ -310,16 +342,17 @@ import {
   ResetButton,
   Box,
   ButtonGroup,
-} from "nativebase-formik-ui";
-import { Formik } from "formik";
-import { Heading } from "native-base";
-import * as Yup from "yup";
+  NativeBaseProvider
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading } from 'native-base';
+import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
   language: Yup.string().required(),
 });
 
-export default function () {
+function FormikSelectExample () {
   const onSubmit = async (values: any) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
@@ -327,7 +360,7 @@ export default function () {
   return (
     <Formik
       initialValues={{
-        language: "",
+        language: '',
       }}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
@@ -335,9 +368,9 @@ export default function () {
       {({ values, errors }) => (
         <Box mt={4}>
           <Heading>
-            {values.language === ""
-              ? "Please Tell Your Faviorate Programming Language"
-              : "You said you love " + values.language + " 👌🏻"}
+            {values.language === ''
+              ? 'Please Tell Your Faviorate Programming Language'
+              : 'You said you love ' + values.language + ' 👌🏻'}
           </Heading>
           <SelectControlled
             mt={4}
@@ -345,7 +378,7 @@ export default function () {
             label="Pick language"
             placeholder="Pick language"
             width={150}
-            selectedItemBg={"teal.400"}
+            selectedItemBg={'teal.400'}
             dropdownOpenIcon={
               <Icon name="arrow-drop-up" type="MaterialIcons" size={6} />
             }
@@ -376,12 +409,19 @@ export default function () {
     </Formik>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <FormikSelectExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Slider
 
-```jsx
-import React from "react";
+```SnackPlayer name=Formik%20Slider
+import React from 'react';
 import {
   SliderTrack,
   SliderFilledTrack,
@@ -392,10 +432,11 @@ import {
   Box,
   ButtonGroup,
   Text,
-} from "nativebase-formik-ui";
-import { Formik } from "formik";
-import { Heading } from "native-base";
-import * as Yup from "yup";
+  NativeBaseProvider
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading } from 'native-base';
+import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
   rating: Yup.number()
@@ -403,8 +444,8 @@ const validationSchema = Yup.object().shape({
     .min(4, ({ min }) => `Come on we deserve at least ${min}`),
 });
 
-export default function () {
-  const onSubmit = async (values: any) => {
+function FormikSliderExample () {
+  const onSubmit = async (values) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
   };
@@ -443,12 +484,19 @@ export default function () {
     </Formik>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <FormikSliderExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## Switch
 
-```jsx
-import React from "react";
+```SnackPlayer name=Formik%20Switch
+import React from 'react';
 import {
   SwitchControl,
   SubmitButton,
@@ -456,17 +504,18 @@ import {
   Box,
   ButtonGroup,
   Icon,
-} from "nativebase-formik-ui";
-import { Formik } from "formik";
-import { Heading } from "native-base";
-import * as Yup from "yup";
+  NativeBaseProvider
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading } from 'native-base';
+import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
   switchon: Yup.boolean().equals([true]),
 });
 
-export default function () {
-  const onSubmit = async (values: any) => {
+function FormikSwitchExample () {
+  const onSubmit = async (values) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
   };
@@ -481,10 +530,10 @@ export default function () {
       {({ values, errors }) => (
         <Box mt={4}>
           <Heading>
-            Light is Switched {values.switchon ? "On " : "Off "}
+            Light is Switched {values.switchon ? 'On ' : 'Off '}
             <Icon
-              name={values.switchon ? "light-up" : "md-moon"}
-              type={values.switchon ? "Entypo" : "Ionicons"}
+              name={values.switchon ? 'light-up' : 'md-moon'}
+              type={values.switchon ? 'Entypo' : 'Ionicons'}
               size={6}
             />
           </Heading>
@@ -506,50 +555,60 @@ export default function () {
     </Formik>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <FormikSwitchExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ## TextArea
 
-```jsx
-import React from "react";
+```SnackPlayer name=Formik%20TextArea
+import React from 'react';
 import {
-  TextArea,
+  SwitchControl,
   SubmitButton,
   ResetButton,
   Box,
   ButtonGroup,
-} from "nativebase-formik-ui";
-import { Formik } from "formik";
-import { Heading } from "native-base";
-import * as Yup from "yup";
+  Icon,
+  NativeBaseProvider
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading } from 'native-base';
+import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
-  bio: Yup.string().required(),
+  switchon: Yup.boolean().equals([true]),
 });
 
-export default function () {
-  const onSubmit = async (values: any) => {
+function FormikSwitchExample () {
+  const onSubmit = async (values) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
   };
   return (
     <Formik
       initialValues={{
-        bio: "",
+        switchon: false,
       }}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
     >
       {({ values, errors }) => (
         <Box mt={4}>
-          <Heading>Tell us about yourself 🥷</Heading>
-          <TextArea
-            name="bio"
-            h="100"
-            mt={4}
-            label="Describe You"
-            placeholder="About me..."
-          />
+          <Heading>
+            Light is Switched {values.switchon ? 'On ' : 'Off '}
+            <Icon
+              name={values.switchon ? 'light-up' : 'md-moon'}
+              type={values.switchon ? 'Entypo' : 'Ionicons'}
+              size={6}
+            />
+          </Heading>
+          <SwitchControl name="switchon" label="Toggle Switch" mt={4} />
           <Box pb={4} />
           <ButtonGroup spacing={6}>
             <SubmitButton colorScheme="teal">Next</SubmitButton>
@@ -565,6 +624,13 @@ export default function () {
         </Box>
       )}
     </Formik>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <FormikSwitchExample />
+    </NativeBaseProvider>
   );
 }
 ```

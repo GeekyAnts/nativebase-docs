@@ -21,11 +21,19 @@ import { useClipboard } from "native-base";
 
 ## Usage
 
-```jsx
+```SnackPlayer name=useClipboard%20Usage
 import React from "react";
-import { Button, HStack, VStack, Text, Input, useClipboard } from "native-base";
+import {
+  Button,
+  HStack,
+  VStack,
+  Text,
+  Input,
+  useClipboard,
+  NativeBaseProvider,
+} from "native-base";
 
-export default function () {
+function UseClipboardExample() {
   const [copyText, setCopyText] = React.useState("Copy Me");
   const [pasteText, setPasteText] = React.useState("");
   const { value, onCopy, hasCopied } = useClipboard();
@@ -51,6 +59,13 @@ export default function () {
         <Button onPress={() => setPasteText(value)}>Paste</Button>
       </HStack>
     </VStack>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UseClipboardExample />
+    </NativeBaseProvider>
   );
 }
 ```

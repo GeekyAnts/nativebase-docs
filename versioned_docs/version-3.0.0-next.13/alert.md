@@ -219,6 +219,7 @@ export default function () {
 ### Alert
 
 Implement `Box`, all props of Box can be passed.
+
 | Name      | Type                                   | Description                            | Default |
 |-----------|----------------------------------------|----------------------------------------|---------|
 | status    | error, info, success, warning          | The status of the alert.               | info    |

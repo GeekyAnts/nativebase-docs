@@ -17,19 +17,26 @@ The `useBreakpointValue` hook returns the value for the current breakpoint.
 
 ## Usage
 
-```jsx
-import React from "react";
-import { Box, useBreakpointValue } from "native-base";
-export default () => {
+```SnackPlayer name=useBreakpoint%20Usage
+import React from 'react';
+import { Box, useBreakpointValue, NativeBaseProvider } from 'native-base';
+function UseBreakpointValueExample () {
   const color = useBreakpointValue({
-    base: "red.200",
-    sm: "blue.200",
-    md: "blue.200",
+    base: 'red.200',
+    sm: 'blue.200',
+    md: 'blue.200',
   });
   return (
-    <Box bg={color} w={"100px"}>
+    <Box bg={color} w={'100px'}>
       This is a box
     </Box>
   );
 };
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UseBreakpointValueExample />
+    </NativeBaseProvider>
+  );
+}
 ```

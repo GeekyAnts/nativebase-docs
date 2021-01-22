@@ -1,9 +1,7 @@
 ---
 id: hStack
-title: HStack
+title: HStack/ Row
 ---
-
-# HStack/ Row
 
 HStack aligns items horizontally.
 

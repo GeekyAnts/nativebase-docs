@@ -17,7 +17,7 @@ In this example, learn how to add validation to a form that has a single text fi
 
 Description
 
-```tsx
+```SnackPlayer name=Form%20Example
 import React from "react";
 import {
   VStack,
@@ -26,18 +26,78 @@ import {
   FormHelperText,
   FormErrorMessage,
   Input,
+  NativeBaseProvider,
 } from "native-base";
 
-interface IFormInput {
-  name?: any;
-}
-
-export default function () {
-  const [formData, setData] = React.useState<IFormInput>({});
+function BuildingAFormExample() {
+  const [formData, setData] = React.useState({});
 
   return (
     <VStack width="80%">
       <FormControl isRequired>
+        <FormLabel>Name</FormLabel>
+        <Input
+          placeholder="John"
+          onChangeText={(value) => setData({ ...formData, name: value })}
+        />
+        <FormHelperText>
+          Name should contain atleast 3 character.
+        </FormHelperText>
+        <FormErrorMessage>Error Name</FormErrorMessage>
+      </FormControl>
+    </VStack>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <BuildingAFormExample />
+    </NativeBaseProvider>
+  );
+}
+
+```
+
+## 2. Add validation logic.
+
+Description
+
+```SnackPlayer name=Form%20Example(Validation)
+import React from 'react';
+import {
+  VStack,
+  FormControl,
+  FormLabel,
+  FormHelperText,
+  FormErrorMessage,
+  Input,
+  NativeBaseProvider
+} from 'native-base';
+
+
+function  BuildingAFormExample() {
+  const [formData, setData] = React.useState({});
+  const [errors, setErrors] = React.useState({});
+  const validate = () => {
+    if (formData.name === undefined) {
+      setErrors({
+        ...errors,
+        name: 'Name is required',
+      });
+      return false;
+    } else if (formData.name.length < 3) {
+      setErrors({
+        ...errors,
+        name: 'Name is too short',
+      });
+      return false;
+    }
+    return true;
+  };
+
+  return (
+    <VStack width="80%">
+      <FormControl isRequired >
         <FormLabel>Name</FormLabel>
         <Input
           placeholder="John"
@@ -51,61 +111,11 @@ export default function () {
     </VStack>
   );
 }
-```
-
-## 2. Add validation logic.
-
-Description
-
-```tsx
-import React from "react";
-import {
-  VStack,
-  FormControl,
-  FormLabel,
-  FormHelperText,
-  FormErrorMessage,
-  Input,
-} from "native-base";
-
-interface IFormInput {
-  name?: any;
-}
-
 export default function () {
-  const [formData, setData] = React.useState<IFormInput>({});
-  const [errors, setErrors] = React.useState<IFormInput>({});
-  const validate = () => {
-    if (formData.name === undefined) {
-      setErrors({
-        ...errors,
-        name: "Name is required",
-      });
-      return false;
-    } else if (formData.name.length < 3) {
-      setErrors({
-        ...errors,
-        name: "Name is too short",
-      });
-      return false;
-    }
-    return true;
-  };
-
   return (
-    <VStack width="80%">
-      <FormControl isRequired>
-        <FormLabel>Name</FormLabel>
-        <Input
-          placeholder="John"
-          onChangeText={(value) => setData({ ...formData, name: value })}
-        />
-        <FormHelperText>
-          Name should contain atleast 3 character.
-        </FormHelperText>
-        <FormErrorMessage>{errors.name}</FormErrorMessage>
-      </FormControl>
-    </VStack>
+    <NativeBaseProvider>
+      <BuildingAFormExample />
+    </NativeBaseProvider>
   );
 }
 ```
@@ -114,8 +124,8 @@ export default function () {
 
 Description
 
-```tsx
-import React from "react";
+```SnackPlayer name=Form%20Example(Validate and Submit)
+import React from 'react';
 import {
   VStack,
   Button,
@@ -124,26 +134,23 @@ import {
   FormHelperText,
   FormErrorMessage,
   Input,
-} from "native-base";
+  NativeBaseProvider
+} from 'native-base';
 
-interface IFormInput {
-  name?: any;
-}
-
-export default function () {
-  const [formData, setData] = React.useState<IFormInput>({});
-  const [errors, setErrors] = React.useState<IFormInput>({});
+function BuildingAFormExample() {
+  const [formData, setData] = React.useState({});
+  const [errors, setErrors] = React.useState({});
   const validate = () => {
     if (formData.name === undefined) {
       setErrors({
         ...errors,
-        name: "Name is required",
+        name: 'Name is required',
       });
       return false;
     } else if (formData.name.length < 3) {
       setErrors({
         ...errors,
-        name: "Name is too short",
+        name: 'Name is too short',
       });
       return false;
     }
@@ -151,12 +158,12 @@ export default function () {
   };
 
   const onSubmit = () => {
-    validate() ? console.log("Submitted") : console.log("Validation Failed");
+    validate() ? console.log('Submitted') : console.log('Validation Failed');
   };
 
   return (
     <VStack width="80%" space={4}>
-      <FormControl isRequired isInvalid={"name" in errors}>
+      <FormControl isRequired isInvalid={'name' in errors}>
         <FormLabel>Name</FormLabel>
         <Input
           placeholder="John"
@@ -171,6 +178,13 @@ export default function () {
         Submit
       </Button>
     </VStack>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <BuildingAFormExample />
+    </NativeBaseProvider>
   );
 }
 ```

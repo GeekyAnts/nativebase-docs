@@ -13,11 +13,11 @@ import { usePopover } from "native-base";
 
 ### Usage
 
-```jsx
+```SnackPlayer name=usePopover%20Usage
 import React from "react";
-import { Button, usePopover, Box } from "native-base";
+import { Button, usePopover, Box, NativeBaseProvider } from "native-base";
 
-export default function () {
+function UsePopoverExample() {
   const { setPopover } = usePopover();
   let buttonRef = React.useRef(null);
   return (
@@ -37,6 +37,13 @@ export default function () {
     >
       Show Overlay
     </Button>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UsePopoverExample />
+    </NativeBaseProvider>
   );
 }
 ```

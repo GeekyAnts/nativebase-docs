@@ -34,7 +34,7 @@
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.13/responsive"
+          "id": "version-3.0.0-next.13/responsive-style"
         }
       ]
     },
@@ -80,6 +80,10 @@
         {
           "type": "doc",
           "id": "version-3.0.0-next.13/center"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.13/Column"
         },
         {
           "type": "doc",
@@ -317,10 +321,6 @@
         },
         {
           "type": "doc",
-          "id": "version-3.0.0-next.13/actionSheet"
-        },
-        {
-          "type": "doc",
           "id": "version-3.0.0-next.13/breadCrumb"
         },
         {
@@ -474,6 +474,17 @@
               "id": "version-3.0.0-next.13/theme"
             }
           ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "FAQ",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.13/faq"
         }
       ]
     }

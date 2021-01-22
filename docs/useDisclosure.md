@@ -13,7 +13,7 @@ import { useDisclose } from "native-base";
 
 ### Usage
 
-```jsx
+```SnackPlayer name=useDisclose%20Usage
 import React from "react";
 import {
   Modal,
@@ -27,9 +27,10 @@ import {
   Center,
   Input,
   useDisclose,
-} from "@native-base/v3";
+  NativeBaseProvider,
+} from "native-base";
 
-export default function () {
+function UseDiscloseExample() {
   const { isOpen, onOpen, onClose } = useDisclose();
   return (
     <Center>
@@ -57,6 +58,13 @@ export default function () {
       </Modal>
       <Button onPress={onOpen}>Open Modal</Button>
     </Center>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UseDiscloseExample />
+    </NativeBaseProvider>
   );
 }
 ```

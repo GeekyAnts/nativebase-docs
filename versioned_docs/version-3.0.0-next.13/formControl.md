@@ -1,6 +1,6 @@
 ---
 id: formControl
-title: FormControl
+title: Form Control
 ---
 
 `FormControl` provides context such as `isInvalid`, `isDisabled`, and `isRequired` to form elements.
