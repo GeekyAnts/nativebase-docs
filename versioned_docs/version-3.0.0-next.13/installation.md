@@ -9,88 +9,18 @@ To have `NativeBase` components running onto your native apps, all you need to d
 
 Expo helps you make React Native apps with no build configuration. It works on macOS, Windows, and Linux. Refer this link for additional information on [Expo](https://docs.expo.io/) and setting up an Expo starter app.
 
-_For **Quick Installation of NativeBase** just copy this and paste in your terminal and Voila! you are good to go to [Setup NativeBaseProvider](notion://www.notion.so/docs/setup-provider)_
+_For **Installing NativeBase** just copy this and paste in your terminal and Voila! you are good to go to [Setup NativeBaseProvider](/docs/setup-provider)_
 
 **_Using yarn_**
 
 ```bash
-yarn add native-base@next react-native-svg react-native-vector-icons styled-components styled-system
+yarn add native-base@next react-native-svg @expo/vector-icons styled-components styled-system
 ```
 
 **_Using npm_**
 
 ```bash
-npm i native-base@next react-native-svg react-native-vector-icons styled-components styled-system
-```
-
-**For Step by Step Installation of All the dependencies follow the steps below**
-
-**If you are using yarn :**
-
-Install **NativeBase**
-
-```bash
-yarn add native-base@next
-```
-
-**We will also have to install these peer dependencies**
-
-Install **react-native-svg**
-
-```bash
-yarn add react-native-svg
-```
-
-Install **react-native-vector-icons**
-
-```bash
-yarn add react-native-vector-icons
-```
-
-Install **styled-components**
-
-```bash
-yarn add styled-components
-```
-
-Install **styled-system**
-
-```bash
-yarn add styled-system
-```
-
-**If you are using npm :**
-
-Install **NativeBase**
-
-```bash
-npm i native-base@next
-```
-
-**We will also have to install these peer dependencies**
-
-Install **react-native-svg**
-
-```bash
-npm i react-native-svg
-```
-
-Install **react-native-vector-icons**
-
-```bash
-npm i react-native-vector-icons
-```
-
-Install **styled-components**
-
-```bash
-npm i styled-components
-```
-
-Install **styled-system**
-
-```bash
-npm i styled-system
+npm i native-base@next react-native-svg @expo/vector-icons styled-components styled-system
 ```
 
 ## Setup with React Native
@@ -100,21 +30,21 @@ react-native init AwesomeNativeBase
 cd AwesomeNativeBase
 ```
 
-Install **NativeBase**
+_Install **NativeBase**_
 
-Using **Yarn**
+_Using **Yarn**_
 
 ```bash
 yarn add native-base@next
 ```
 
-Using **npm**
+_Using **npm**_
 
 ```bash
 npm i native-base@next
 ```
 
-Install **Peer Dependencies**
+_Install **Peer Dependencies**_
 
 The peer dependencies included from any npm packages does not automatically get installed. Your application will not depend on it explicitly.
 
@@ -134,94 +64,26 @@ npx create-react-native-app -t with-nextjs
 
 **Switch to your project directory , that you created.**
 
-_For **Quick Installation of NativeBase** just copy this and paste in your terminal and Voila! you are good to go to [Setup NativeBaseProvider](notion://www.notion.so/docs/setup-provider)_
+_For **Installing NativeBase** just copy this and paste in your terminal._
 
 **_Using yarn_**
 
 ```bash
-yarn add native-base@next react-native-svg react-native-vector-icons styled-components styled-system
+yarn add native-base@next react-native-svg @expo/vector-icons styled-components styled-system
 ```
 
 **_Using npm_**
 
 ```bash
-npm i native-base@next react-native-svg react-native-vector-icons styled-components styled-system
+npm i native-base@next react-native-svg @expo/vector-icons styled-components styled-system
 ```
 
-**For Step by Step Installation of All the dependencies follow the steps below**
+### Important
 
-**If you are using yarn :**
-
-Install **NativeBase**
-
-```bash
-yarn add native-base@next
-```
-
-**We will also have to install these peer dependencies**
-
-Install **react-native-svg**
-
-```bash
-yarn add react-native-svg
-```
-
-Install **react-native-vector-icons**
-
-```bash
-yarn add react-native-vector-icons
-```
-
-Install **styled-components**
-
-```bash
-yarn add styled-components
-```
-
-Install **styled-system**
-
-```bash
-yarn add styled-system
-```
-
-**If you are using npm :**
-
-Install **NativeBase**
-
-```bash
-npm i native-base@next
-```
-
-**We will also have to install these peer dependencies**
-
-Install **react-native-svg**
-
-```bash
-npm i react-native-svg
-```
-
-Install **react-native-vector-icons**
-
-```bash
-npm i react-native-vector-icons
-```
-
-Install **styled-components**
-
-```bash
-npm i styled-components
-```
-
-Install **styled-system**
-
-```bash
-npm i styled-system
-```
-
-By default Next.js doesn't support static assets like an Expo project. Because this is the intended functionality of Next.js, `@expo/next-adapter` doesn't add font support by default. If you want to use libraries like `expo-font`, `@expo/vector-icons`, or `react-native-vector-icons` you'll need to change a few things.
+By default Next.js doesn't support static assets like an Expo project. Because this is the intended functionality of Next.js, `@expo/next-adapter` doesn't add font support by default. If you want to use libraries like `expo-font`, `@expo/vector-icons`, you'll need to change a few things.
 
 - Install the plugin - `yarn add next-fonts`
-  - `[next-fonts](https://github.com/rohanray/next-fonts)` injects a Webpack loader to handle fonts.
+  - [`next-fonts`](https://github.com/rohanray/next-fonts) injects a Webpack loader to handle fonts.
 - Wrap the font method with the Expo method in your `next.config.js`:
 
   - The order is important because Expo can mix in the location of vector icons to the existing font loader.
