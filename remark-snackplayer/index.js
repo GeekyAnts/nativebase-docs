@@ -34,14 +34,14 @@ const processNode = (node, parent) => {
 
       // Generate Node for SnackPlayer
       let dependencies =
-        "react-is,expo-font,native-base@3.0.0-next.13,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper";
+        "react-is,expo-font,native-base@3.0.0-next.14,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper";
 
       if (name.split(" ")[0] == "Formik") {
         dependencies =
-          "react-is,expo-font,native-base@3.0.0-next.13,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,@native-base/formik-ui,formik,yup";
+          "react-is,expo-font,native-base@3.0.0-next.14,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,@native-base/formik-ui,formik,yup";
       } else if (name.split(" ")[0] == "ReactHookForms") {
         dependencies =
-          "react-is,expo-font,native-base@3.0.0-next.13,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,react-hook-form";
+          "react-is,expo-font,native-base@3.0.0-next.14,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,react-hook-form";
       }
       const snackPlayerDiv = u("html", {
         value: dedent`
