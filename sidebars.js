@@ -147,7 +147,6 @@ module.exports = {
         Forms: ["form"],
         Layout: ["appDrawer"],
         Theme: [
-          "default-theme",
           "customizingTheme",
           "darkMode",
           "customizingComponents",
