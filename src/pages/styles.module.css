@@ -28,7 +28,10 @@
   background-color: #3e3a6f;
   color: white;
 }
-
+.image {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
 @media screen and (max-width: 966px) {
   .mainBanner {
     padding: 4rem;

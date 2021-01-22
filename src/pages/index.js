@@ -35,7 +35,12 @@ const Features = () => (
       {features.map((feature, key) => {
         return (
           <div className={clsx("col col--3", styles.textAlignCenter)}>
-            <img src={feature.imageUrl} height="58px" width="80px"></img>
+            <img
+              src={feature.imageUrl}
+              height="58px"
+              width="80px"
+              className={clsx(styles.image)}
+            ></img>
             <h3
               style={{
                 fontSize: "20px",
