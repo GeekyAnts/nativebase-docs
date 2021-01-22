@@ -9,15 +9,15 @@ Search-bar are one of the most commonly seen variation of input. Here are design
 
 Here are some examples to should easily and quickly we can create so many types of search-bars.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4c4662d-8a9c-48a2-817d-000ff8f5f6b6/Screenshot_2021-01-18_at_7.51.08_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4c4662d-8a9c-48a2-817d-000ff8f5f6b6/Screenshot_2021-01-18_at_7.51.08_PM.png)
+<!--
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4c4662d-8a9c-48a2-817d-000ff8f5f6b6/Screenshot_2021-01-18_at_7.51.08_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4c4662d-8a9c-48a2-817d-000ff8f5f6b6/Screenshot_2021-01-18_at_7.51.08_PM.png) -->
 
-```tsx
+```SnackPlayer name=Search%20Bar
 import React from "react";
-import { VStack, Input, Button, Icon, Text } from "native-base";
+import { VStack, Input, Button, Icon, Text, NativeBaseProvider } from "native-base";
 
-export default function () {
-  return (
-    <VStack w="90%" space={4}>
+function SearchBar(){
+return   <VStack w="90%" space={4}>
       <Input
         placeholder="Search..."
         variant="filled"
@@ -59,6 +59,13 @@ export default function () {
         }
       />
     </VStack>
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <SearchBar/>
+    </NativeBaseProvider>
   );
 }
 ```

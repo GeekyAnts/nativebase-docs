@@ -1,5 +1,5 @@
 ---
-id: responsive
+id: responsive-style
 title: Responsive
 ---
 
@@ -25,10 +25,10 @@ All style props that arrays as values for responsive styles.
 
 For Example to make a `Box` width or w responsive using the array syntax, here's what you need to do:
 
-```jsx
+```SnackPlayer name=Responsive%20Usage
 import React from 'react';
 import { Box, NativeBaseProvider } from 'native-base';
-function BreakpointExample () => {
+function BreakpointExample () {
   return (
     <Box bg="red.200" w={['100px', '400px', '560px']}>
       This is a box
@@ -50,10 +50,10 @@ You can also define responsive values with breakpoint aliases in an object. Any 
 
 For Example to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
 
-```jsx
+```SnackPlayer name=Responsive%20ObjectSyntax
 import React from 'react';
 import { Text, NativeBaseProvider } from 'native-base';
-function BreakpointExample () => {
+function BreakpointExample () {
   return (
     <Text fontSize={{ base: '24px', md: '40px', lg: '56px' }}>
       This is responsive text
@@ -73,10 +73,10 @@ export default function () {
 
 This works for every style prop in the theme specification, which means you can change the style of most properties at a given breakpoint.
 
-```jsx
+```SnackPlayer name=Responsive%20Example
 import React from 'react';
 import { Box, NativeBaseProvider } from 'native-base';
-function BreakpointExample () => {
+function BreakpointExample () {
   return (
     <>
       <Box
@@ -117,10 +117,10 @@ export default function () {
 
 Here's a simple example of a component that uses a stacked layout on small screens, and a side-by-side layout on larger screens :
 
-```jsx
+```SnackPlayer name=Responsive%20Demo
 import React from 'react';
 import { Box, Text, Image, Link, NativeBaseProvider } from 'native-base';
-function BreakpointExample () => {
+function BreakpointExample () {
   return (
     <Box flexDir={{ base: 'column', sm: 'column', md: 'row' }}>
       <Box flexShrink={0}>

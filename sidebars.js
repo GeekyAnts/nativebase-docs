@@ -71,7 +71,7 @@ module.exports = {
     // Theming: ["default-theme", "customizing-theme"],
     // FAQ: ["faq"],
     Introduction: ["nativebase", "installation", "setup-provider"],
-    Features: ["color-mode", "nativebase-factory", "responsive"],
+    Features: ["color-mode", "nativebase-factory", "responsive-style"],
     Example: ["todo-example"],
     "Community Integration": ["react-hook-forms", "nativebase-formik-ui"],
 
@@ -79,7 +79,7 @@ module.exports = {
       "aspectRatio",
       "box",
       "center",
-      // "columns",
+      "Column",
       "container",
       "flex",
       "hStack",
