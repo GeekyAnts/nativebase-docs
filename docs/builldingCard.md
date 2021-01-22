@@ -15,13 +15,12 @@ And lastly a description.
 
 <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a9dfc8d-a080-4f55-928b-6535065c727c/Screenshot_2021-01-18_at_6.20.13_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a9dfc8d-a080-4f55-928b-6535065c727c/Screenshot_2021-01-18_at_6.20.13_PM.png) -->
 
-```tsx
+```SnackPlayer name=Card
 import React from "react";
-import { VStack, HStack, Avatar, Image, Text } from "native-base";
+import { VStack, HStack, Avatar, Image, Text, NativeBaseProvider } from "native-base";
 
-export default function () {
-  return (
-    <VStack m={4} space={4} border={1} borderRadius="lg">
+function CardComponent(){
+ return<VStack m={4} space={4} border={1} borderRadius="lg">
       <HStack alignItems="center" px={4} pt={4}>
         <Avatar borderWidth={1} size="lg" />
         <VStack ml={2} space={2}>
@@ -49,6 +48,14 @@ export default function () {
         </Text>
       </VStack>
     </VStack>
+}
+
+
+export default function () {
+  return (
+  <NativeBaseProvider>
+   <CardComponent/>
+  </NativeBaseProvider>
   );
 }
 ```

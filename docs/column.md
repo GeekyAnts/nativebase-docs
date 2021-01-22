@@ -1,6 +1,6 @@
 ---
-id: columns
-title: Columns
+id: Column
+title: Column
 ---
 
 The mandatory wrapper when building Column Layouts
@@ -14,22 +14,22 @@ The mandatory wrapper when building Column Layouts
 
 ```SnackPlayer name=Columns%20Example
 import React from "react";
-import { NativeBaseProvider, Columns, Column } from "native-base";
-function ColumnsComponent() {
+import { Column, Text, NativeBaseProvider } from "native-base";
+function ColumnComponent() {
   return (
-    <Columns space={3} height={100} mb={3}>
-      <Column borderRadius={4} shadow={1} flexGrow={1} bg="green.5" />
-      <Column borderRadius={4} shadow={1} width={1 / 2.5} bg="pink.3" />
-      <Column borderRadius={4} shadow={1} flexGrow={1.5} bg="indigo.8" />
-    </Columns>
+    <Column borderRadius={4} flexGrow={1} bg="green.5">
+      <Text>Test Text</Text>
+      <Text>Testing this text with HStacks</Text>
+    </Column>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <ColumnsComponent />
+      <ColumnComponent />
     </NativeBaseProvider>
   );
+};
 }
 ```
 
@@ -48,26 +48,11 @@ It is nothing but the Box which is supposed to be used inside Columns.
 
 ## Example
 
-```SnackPlayer name=Columns%20Example
+```jsx
 <Columns space={3} height={100} mb={3}>
-	<Column
-		borderRadius={4}
-		shadow={1}
-		flexGrow={1}
-		bg="green.5"
-	/>
-	<Column
-		borderRadius={4}
-		shadow={1}
-		width={1 / 2.5}
-		bg="pink.3"
-	/>
-	<Column
-		borderRadius={4}
-		shadow={1}
-		flexGrow={1.5}
-		bg="indigo.8"
-	/>
+  <Column borderRadius={4} shadow={1} flexGrow={1} bg="green.5" />
+  <Column borderRadius={4} shadow={1} width={1 / 2.5} bg="pink.3" />
+  <Column borderRadius={4} shadow={1} flexGrow={1.5} bg="indigo.8" />
 </Columns>
 ```
 

@@ -31,18 +31,18 @@ const processNode = (node, parent) => {
       const theme = params.theme || "light";
       const preview = params.preview || "true";
       const loading = params.loading || "lazy";
-      console.log(name, "loading");
 
-      console.log("hgfvyujkguyfvyufv");
-      console.log(name, "naaaaammmmeeee", name.split(" "));
       // Generate Node for SnackPlayer
       let dependencies =
         "react-is,expo-font,native-base@3.0.0-next.13,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper";
 
       if (name.split(" ")[0] == "Formik") {
-        console.log(name.split(" ")[0]);
         dependencies =
           "react-is,expo-font,native-base@3.0.0-next.13,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,@native-base/formik-ui,formik,yup";
+      }
+      if (name.split(" ")[0] == "ReactHookForms") {
+        dependencies =
+          "react-is,expo-font,native-base@3.0.0-next.13,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,react-hook-form";
       }
       const snackPlayerDiv = u("html", {
         value: dedent`
