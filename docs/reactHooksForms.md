@@ -7,7 +7,7 @@ A Performant, flexible and extensible forms with easy-to-use validation. And bel
 
 ## Usage
 
-```SnackPlayer name=ReactHookForms%20Usage
+```jsx
 import {
   VStack,
   Input,
@@ -101,7 +101,7 @@ export default function () {
 
 ## Radio and Checkbox
 
-```SnackPlayer name=ReactHookForms%20Radio
+```jsx
 import {
   VStack,
   Button,
@@ -215,7 +215,7 @@ export default function () {
 
 ## Select
 
-```SnackPlayer name=ReactHookForms%20Select
+```jsx
 import {
   VStack,
   Button,
@@ -284,7 +284,7 @@ export default function () {
 
 ## Slider
 
-```SnackPlayer name=ReactHookForms%20Slider
+```jsx
 import {
   VStack,
   Button,
@@ -342,7 +342,7 @@ export default function () {
 
 ## Textarea
 
-```SnackPlayer name=ReactHookForms%20TextArea
+```jsx
 import {
   VStack,
   Button,
@@ -396,7 +396,7 @@ export default function () {
 
 ## Switch
 
-```SnackPlayer name=ReactHookForms%20Switch
+```jsx
 import {
   VStack,
   Button,
@@ -448,7 +448,7 @@ export default function () {
 
 ## NumberInput
 
-```SnackPlayer name=ReactHookForms%20NumberInput
+```jsx
 import {
   VStack,
   Button,
@@ -511,7 +511,7 @@ export default function () {
 
 ## PinInput
 
-```SnackPlayer name=ReactHookForms%20PinInput
+```jsx
 import {
   VStack,
   Button,

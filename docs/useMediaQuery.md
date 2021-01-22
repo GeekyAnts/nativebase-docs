@@ -13,11 +13,11 @@ import { useMediaQuery } from "native-base";
 
 ### Usage (max-height)
 
-```jsx
+```SnackPlayer name=useMediaQuery%20Usage(max-height)
 import React from "react";
-import { Text, useMediaQuery } from "@native-base/v3";
+import { Text, useMediaQuery, NativeBaseProvider } from "native-base";
 
-export default function () {
+function UseMediaQueryExample() {
   const [isSmaller] = useMediaQuery({ maxHeight: 512 });
   return (
     <Text>
@@ -25,15 +25,22 @@ export default function () {
     </Text>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UseMediaQueryExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ### Usage (min-width)
 
-```jsx
+```SnackPlayer name=useMediaQuery%20Usage(min-width)
 import React from "react";
-import { Text, useMediaQuery } from "@native-base/v3";
+import { Text, useMediaQuery, NativeBaseProvider } from "native-base";
 
-export default function () {
+function UseMediaQueryExample() {
   const [isLargerThan512] = useMediaQuery({ minWidth: 512 });
   return (
     <Text>
@@ -41,15 +48,22 @@ export default function () {
     </Text>
   );
 }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UseMediaQueryExample />
+    </NativeBaseProvider>
+  );
+}
 ```
 
 ### Usage (orientation)
 
-```jsx
+```SnackPlayer name=useMediaQuery%20Usage(orientation)
 import React from "react";
-import { Text, useMediaQuery } from "@native-base/v3";
+import { Text, useMediaQuery, NativeBaseProvider } from "native-base";
 
-export default function () {
+function UseMediaQueryExample() {
   const [isLandScape, isPortrait] = useMediaQuery([
     { orientation: "landscape" },
     { orientation: "portrait" },
@@ -59,6 +73,13 @@ export default function () {
       <Text>{`Landscape Mode: ${isLandScape}`}</Text>
       <Text>{`Portrait Mode: ${isPortrait}`}</Text>
     </>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UseMediaQueryExample />
+    </NativeBaseProvider>
   );
 }
 ```

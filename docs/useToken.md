@@ -13,13 +13,16 @@ import { useToken } from "native-base";
 
 ## Example
 
-```jsx
-function Example() {
+```SnackPlayer name=useToken%20Example
+import React from "react";
+import { Box, Text, useToken, NativeBaseProvider } from "native-base";
+
+function UseTokenHookExample() {
   const [warning1, red2] = useToken(
     // the key within the theme, in this case `theme.colors`
     "colors",
     // the subkey(s), resolving to `theme.colors.warning.1`
-    ["warning.1", "red.2"]
+    ["warning.100", "red.400"]
     // a single fallback or fallback array matching the length of the previous arg
   );
 
@@ -27,6 +30,13 @@ function Example() {
     <Box bg={warning1}>
       <Text color={red2}>wonderful gradients</Text>
     </Box>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UseTokenHookExample />
+    </NativeBaseProvider>
   );
 }
 ```
