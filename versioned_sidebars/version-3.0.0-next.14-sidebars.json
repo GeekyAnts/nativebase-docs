@@ -409,6 +409,17 @@
     {
       "collapsed": true,
       "type": "category",
+      "label": "Theme",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.14/default-theme"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
       "label": "Recipes",
       "items": [
         {
@@ -453,6 +464,10 @@
           "type": "category",
           "label": "Theme",
           "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.14/default-theme"
+            },
             {
               "type": "doc",
               "id": "version-3.0.0-next.14/customizingTheme"
