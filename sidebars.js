@@ -128,14 +128,7 @@ module.exports = {
     ],
     Typography: ["text", "heading"],
     Overlay: ["alertDialog", "menu", "modal", "overlay", "popOver"],
-    Disclosure: [
-      "accordion",
-      "actionSheet",
-      "actionSheet",
-      "breadCrumb",
-      "collapse",
-      "tab",
-    ],
+    Disclosure: ["accordion", "actionSheet", "breadCrumb", "collapse", "tab"],
     "Media and Icons": ["avatar", "icon", "image"],
     Others: ["appBar", "FAB", "transition"],
     Hooks: [

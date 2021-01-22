@@ -109,11 +109,23 @@ function Home() {
                 "button button--secondary button--lg",
                 styles.sizeSmall
               )}
-              to={useBaseUrl("docs/")}
+              to={useBaseUrl("docs/nativebase")}
               style={{ color: "#3e3a6f" }}
             >
               GET STARTED
             </Link>
+            {/* <Link
+              className="github-button"
+              href="https://github.com/GeekyAnts/NativeBase"
+              data-icon="octicon-star"
+              data-count-href="https://github.com/GeekyAnts/NativeBase"
+              data-show-count="true"
+              data-count-aria-label="# stargazers on GitHub"
+              aria-label="Star this project on GitHub"
+              // style={{ color: "white" }}
+            >
+              Stars
+            </Link> */}
           </div>
         </div>
       </header>
