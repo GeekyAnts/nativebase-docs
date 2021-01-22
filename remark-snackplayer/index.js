@@ -31,6 +31,7 @@ const processNode = (node, parent) => {
       const theme = params.theme || "light";
       const preview = params.preview || "true";
       const loading = params.loading || "lazy";
+      console.log(name, "loading");
 
       // Generate Node for SnackPlayer
       const dependencies =

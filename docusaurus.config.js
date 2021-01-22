@@ -34,7 +34,7 @@ module.exports = {
     },
     sidebarCollapsible: false,
     navbar: {
-      title: "NativeBase1234",
+      title: "NativeBase 3.0",
       logo: {
         alt: "NativeBase Logo",
         src: "img/native-base-icon.png",
@@ -42,7 +42,7 @@ module.exports = {
       // style: "dark",
       items: [
         {
-          to: "docs/",
+          to: "docs/nativebase",
           activeBasePath: "docs",
           label: "Docs",
           position: "left",
