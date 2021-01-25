@@ -72,9 +72,6 @@ module.exports = {
     // FAQ: ["faq"],
     Introduction: ["nativebase", "installation", "setup-provider"],
     Features: ["color-mode", "nativebase-factory", "responsive-style"],
-    Example: ["todo-example"],
-    "Community Integration": ["react-hook-forms", "nativebase-formik-ui"],
-
     Layout: [
       "aspectRatio",
       "box",
@@ -141,6 +138,8 @@ module.exports = {
       "use-token",
     ],
     Theme: ["default-theme"],
+    Examples: ["todo-example"],
+    "Community Integration": ["react-hook-forms", "nativebase-formik-ui"],
     Recipes: [
       {
         Designs: ["buildingCard", "buildingSearchBar"],
