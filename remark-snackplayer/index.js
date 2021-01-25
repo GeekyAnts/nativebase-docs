@@ -31,17 +31,14 @@ const processNode = (node, parent) => {
       const theme = params.theme || "light";
       const preview = params.preview || "true";
       const loading = params.loading || "lazy";
-
+      const NBVersion = "native-base@3.0.0-next.14";
       // Generate Node for SnackPlayer
-      let dependencies =
-        "react-is,expo-font,native-base@3.0.0-next.14,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper";
+      let dependencies = `react-is,expo-font,${NBVersion},styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons`;
 
-      if (name.split(" ")[0] == "Formik") {
-        dependencies =
-          "react-is,expo-font,native-base@3.0.0-next.14,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,@native-base/formik-ui,formik,yup";
-      } else if (name.split(" ")[0] == "ReactHookForms") {
-        dependencies =
-          "react-is,expo-font,native-base@3.0.0-next.14,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,react-hook-form";
+      if (name.split(" ")[0] === "Formik") {
+        dependencies += ",@native-base/formik-ui,formik,yup";
+      } else if (name.split(" ")[0] === "ReactHookForms") {
+        dependencies += ",react-hook-form";
       }
       const snackPlayerDiv = u("html", {
         value: dedent`
