@@ -63,8 +63,8 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`${siteConfig.title} | A complete component library for React Native Ecosystem`}
+      description="A complete component library for React Native Ecosystem"
     >
       <header className={clsx(styles.mainBanner)}>
         <div className="container ">
