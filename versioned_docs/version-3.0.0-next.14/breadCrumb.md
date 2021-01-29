@@ -1,6 +1,6 @@
 ---
 id: breadCrumb
-title: BreadCrumb
+title: Breadcrumb
 ---
 
 ## Implements
@@ -17,43 +17,43 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from 'nativebase';
 
 Add `isCurrentPage` prop to the `BreadcrumbItem` that matches the current path.
 
-```SnackPlayer name=BreadCrumb%20Usage
+```SnackPlayer name=Breadcrumb%20Usage
 import React from 'react';
 import {
-  BreadCrumb,
-  BreadCrumbItem,
-  BreadCrumbLink,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   Box,
   Heading,
   NativeBaseProvider
 } from 'native-base';
-function BreadCrumbComponent () {
+function BreadcrumbComponent () {
   return (
     <Box>
-      <Heading mb={4}>This is a Default BreadCrumb</Heading>
-      <BreadCrumb>
-        <BreadCrumbItem isCurrentPage>
-          <BreadCrumbLink>Home (This is currently active)</BreadCrumbLink>
-        </BreadCrumbItem>
-        <BreadCrumbItem>
-          <BreadCrumbLink>Docs</BreadCrumbLink>
-        </BreadCrumbItem>
-        <BreadCrumbItem>
-          <BreadCrumbLink
+      <Heading mb={4}>This is a Default Breadcrumb</Heading>
+      <Breadcrumb>
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink>Home (This is currently active)</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink>Docs</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink
             href="https://github.com/GeekyAnts/nativebase-v3"
             isExternal
           >
             Github
-          </BreadCrumbLink>
-        </BreadCrumbItem>
-      </BreadCrumb>
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </Box>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreadCrumbComponent />
+      <BreadcrumbComponent />
     </NativeBaseProvider>
   );
 }
@@ -63,43 +63,43 @@ export default function () {
 
 Change the `separator` used in the breadcrumb by passing a string, like `'-'` or any Component.
 
-```SnackPlayer name=BreadCrumb%20Separators
+```SnackPlayer name=Breadcrumb%20Separators
 import React from 'react';
 import {
-  BreadCrumb,
-  BreadCrumbItem,
-  BreadCrumbLink,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   Box,
   Heading,
   NativeBaseProvider
 } from 'native-base';
-function BreadCrumbComponent () {
+function BreadcrumbComponent () {
   return (
     <Box>
-      <Heading mb={4}>BreadCrumb with String Separator</Heading>
-      <BreadCrumb bold italic separator={"-"}>
-        <BreadCrumbItem isCurrentPage>
-          <BreadCrumbLink>Home (This is currently active)</BreadCrumbLink>
-        </BreadCrumbItem>
-        <BreadCrumbItem>
-          <BreadCrumbLink>Docs</BreadCrumbLink>
-        </BreadCrumbItem>
-        <BreadCrumbItem>
-          <BreadCrumbLink
+      <Heading mb={4}>Breadcrumb with String Separator</Heading>
+      <Breadcrumb bold italic separator={"-"}>
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink>Home (This is currently active)</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink>Docs</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink
             href="https://github.com/GeekyAnts/nativebase-v3"
             isExternal
           >
             Github
-          </BreadCrumbLink>
-        </BreadCrumbItem>
-      </BreadCrumb>
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </Box>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreadCrumbComponent />
+      <BreadcrumbComponent />
     </NativeBaseProvider>
   );
 }
@@ -108,47 +108,47 @@ export default function () {
 <br/>
 <br/>
 
-```SnackPlayer name=BreadCrumb%20Example
+```SnackPlayer name=Breadcrumb%20Example
 import React from 'react';
 import {
-  BreadCrumb,
-  BreadCrumbItem,
-  BreadCrumbLink,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   Box,
   Heading,
   Icon,
   NativeBaseProvider
 } from 'native-base';
-function BreadCrumbComponent () {
+function BreadcrumbComponent () {
   return (
     <Box>
-      <Heading mb={4}>BreadCrumb with Custom Separator</Heading>
-      <BreadCrumb
+      <Heading mb={4}>Breadcrumb with Custom Separator</Heading>
+      <Breadcrumb
         spacing={1}
         separator={<Icon name="keyboard-arrow-right" size={5} />}
       >
-        <BreadCrumbItem isCurrentPage>
-          <BreadCrumbLink>Home (This is currently active)</BreadCrumbLink>
-        </BreadCrumbItem>
-        <BreadCrumbItem>
-          <BreadCrumbLink>Docs</BreadCrumbLink>
-        </BreadCrumbItem>
-        <BreadCrumbItem>
-          <BreadCrumbLink
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink>Home (This is currently active)</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink>Docs</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink
             href="https://github.com/GeekyAnts/nativebase-v3"
             isExternal
           >
             Github
-          </BreadCrumbLink>
-        </BreadCrumbItem>
-      </BreadCrumb>
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </Box>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreadCrumbComponent />
+      <BreadcrumbComponent />
     </NativeBaseProvider>
   );
 }
@@ -158,43 +158,43 @@ export default function () {
 
 Breadcrumb composes Box so you can pass all Box props to change the style of the breadcrumbs. Let's say we need to increase the fontSize and change color of the breadcrumbs.
 
-```SnackPlayer name=BreadCrumb%20Composition
+```SnackPlayer name=Breadcrumb%20Composition
 import React from 'react';
 import {
-  BreadCrumb,
-  BreadCrumbItem,
-  BreadCrumbLink,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   Box,
   Heading,
   NativeBaseProvider
 } from 'native-base'
-function BreadCrumbComponent () {
+function BreadcrumbComponent () {
   return (
     <Box>
-      <Heading mb={4}>BreadCrumb Composition</Heading>
-      <BreadCrumb spacing={2} fontSize='lg' color="green.500">
-        <BreadCrumbItem isCurrentPage>
-          <BreadCrumbLink>Home (This is currently active)</BreadCrumbLink>
-        </BreadCrumbItem>
-        <BreadCrumbItem>
-          <BreadCrumbLink>Docs</BreadCrumbLink>
-        </BreadCrumbItem>
-        <BreadCrumbItem>
-          <BreadCrumbLink
+      <Heading mb={4}>Breadcrumb Composition</Heading>
+      <Breadcrumb spacing={2} fontSize='lg' color="green.500">
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink>Home (This is currently active)</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink>Docs</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink
             href="https://github.com/GeekyAnts/nativebase-v3"
             isExternal
           >
             Github
-          </BreadCrumbLink>
-        </BreadCrumbItem>
-      </BreadCrumb>
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </Box>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreadCrumbComponent />
+      <BreadcrumbComponent />
     </NativeBaseProvider>
   );
 }
