@@ -17,7 +17,7 @@ import React from "react";
 import { Column, Text, NativeBaseProvider } from "native-base";
 function ColumnComponent() {
   return (
-    <Column borderRadius={4} flexGrow={1} bg="green.5">
+    <Column borderRadius={4} flexGrow={1} bg="green.500">
       <Text>Test Text</Text>
       <Text>Testing this text with HStacks</Text>
     </Column>
@@ -50,9 +50,9 @@ It is nothing but the Box which is supposed to be used inside Columns.
 
 ```jsx
 <Columns space={3} height={100} mb={3}>
-  <Column borderRadius={4} shadow={1} flexGrow={1} bg="green.5" />
-  <Column borderRadius={4} shadow={1} width={1 / 2.5} bg="pink.3" />
-  <Column borderRadius={4} shadow={1} flexGrow={1.5} bg="indigo.8" />
+  <Column borderRadius={4} shadow={1} flexGrow={1} bg='green.500' />
+  <Column borderRadius={4} shadow={1} width={1 / 2.5} bg='pink.300' />
+  <Column borderRadius={4} shadow={1} flexGrow={1.5} bg='indigo.800' />
 </Columns>
 ```
 

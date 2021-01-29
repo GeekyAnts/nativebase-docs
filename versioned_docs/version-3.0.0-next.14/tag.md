@@ -22,7 +22,7 @@ import {
   TagLeftIcon,
   TagRightIcon,
   TagCloseButton,
-} from "native-base";
+} from 'native-base';
 ```
 
 ## Example
@@ -82,7 +82,7 @@ function TagComponent() {
         <Tag
           colorScheme="green"
           variant="solid"
-          bg="red.2"
+          bg="red.200"
           rounded={100}
           size={size}
         >
@@ -115,7 +115,7 @@ function TagComponent() {
         <Tag
           colorScheme="green"
           variant="solid"
-          bg="red.2"
+          bg="red.200"
           rounded={100}
           size={size}
         >
@@ -159,7 +159,7 @@ function TagComponent() {
         height={10}
         my={1}
       >
-        <AvatarBadge bg={'blue.1'} boxSize={2} />
+        <AvatarBadge bg={'blue.100'} boxSize={2} />
       </Avatar>
       <TagLabel>Custom Tag</TagLabel>
       <TagCloseButton />

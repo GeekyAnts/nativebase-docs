@@ -8,7 +8,7 @@ title: Progress
 ## Import
 
 ```jsx
-import { Progress } from "native-base";
+import { Progress } from 'native-base';
 ```
 
 ## Implements
@@ -95,7 +95,7 @@ import { Box, Progress, Center, Heading, NativeBaseProvider } from 'native-base'
 function ProgressComponent () {
   return (
     <Box w="90%">
-      <Progress size="lg" colorScheme="warning" bg="teal.2" mb={4} value={75} />
+      <Progress size="lg" colorScheme="warning" bg="teal.200" mb={4} value={75} />
     </Box>
   );
 }

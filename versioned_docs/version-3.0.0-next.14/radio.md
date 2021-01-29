@@ -245,7 +245,7 @@ export default function () {
 
 ```SnackPlayer name=Radio%20With Ref
 import React from 'react';
-import { RadioGroup, Radio, Icon, NativeBaseProvider } from '@native-base/v3';
+import { RadioGroup, Radio, Icon, NativeBaseProvider } from 'native-base';
 
 function RadioComponent () {
   const myRef: any = React.useRef({});

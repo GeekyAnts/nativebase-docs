@@ -40,7 +40,7 @@ function FadeExample () {
         Click Me to {isOpen ? 'hide' : 'show'}
       </Button>
       <Fade in={isOpen}>
-        <Box p="40px" color="white" mt="4" bg="teal.5" rounded="md">
+        <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
           Fade
         </Box>
       </Fade>
@@ -70,7 +70,7 @@ function ScaleFadeExample () {
         Click Me to {isOpen ? 'hide' : 'show'}
       </Button>
       <ScaleFade in={isOpen}>
-        <Box p="40px" color="white" mt="4" bg="teal.5" rounded="md">
+        <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
           ScaleFade
         </Box>
       </ScaleFade>
@@ -100,7 +100,7 @@ function SlideExample () {
         Click Me to {isOpen ? 'hide' : 'show'}
       </Button>
       <Slide in={isOpen}>
-        <Box p="40px" color="white" mt="4" bg="teal.5" rounded="md">
+        <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
           Slide
         </Box>
       </Slide>
@@ -146,7 +146,7 @@ function SlideExample () {
         and nonsense.
       </Center>
       <Slide in={isOpen}>
-        <Box p="40px" color="white" mt="4" bg="teal.5" rounded="md">
+        <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
           Slide
         </Box>
       </Slide>
@@ -194,7 +194,7 @@ function SlideExample () {
         </Center>
       </Box>
       <Slide in={isOpen}>
-        <Box p="40px" color="white" mt="4" bg="teal.5" rounded="md">
+        <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
           Slide
         </Box>
       </Slide>
@@ -224,7 +224,7 @@ function SlideFadeExample () {
         Click Me to {isOpen ? 'hide' : 'show'}
       </Button>
       <SlideFade in={isOpen}>
-        <Box p="40px" color="white" mt="4" bg="teal.5" rounded="md">
+        <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
           SlideFade
         </Box>
       </SlideFade>

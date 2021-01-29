@@ -10,7 +10,7 @@ title: Hook
 ## Import
 
 ```jsx
-import { useTheme } from "native-base";
+import { useTheme } from 'native-base';
 ```
 
 ## Example
@@ -30,7 +30,7 @@ function Example() {
 ## Import
 
 ```jsx
-import { useToken } from "native-base";
+import { useToken } from 'native-base';
 ```
 
 ## Example
@@ -39,9 +39,9 @@ import { useToken } from "native-base";
 function Example() {
   const [warning1, red2] = useToken(
     // the key within the theme, in this case `theme.colors`
-    "colors",
+    'colors',
     // the subkey(s), resolving to `theme.colors.warning.1`
-    ["warning.1", "red.2"]
+    ['warning.100', 'red.200']
     // a single fallback or fallback array matching the length of the previous arg
   );
 
@@ -60,7 +60,7 @@ function Example() {
 ## Import
 
 ```jsx
-import { useDisclose } from "native-base";
+import { useDisclose } from 'native-base';
 ```
 
 ### Usage

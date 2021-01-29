@@ -18,9 +18,9 @@ import { Stack, Box, NativeBaseProvider } from "native-base";
 function StackComponent() {
   return (
     <Stack space={3} mb={3}>
-      <Box borderRadius={4} height={70} shadow={1} bg="red.4" />
-      <Box borderRadius={4} shadow={1} height={70} bg="purple.5" />
-      <Box borderRadius={4} shadow={1} height={70} bg="yellow.3" />
+      <Box borderRadius={4} height={70} shadow={1} bg="red.400" />
+      <Box borderRadius={4} shadow={1} height={70} bg="purple.500" />
+      <Box borderRadius={4} shadow={1} height={70} bg="yellow.300" />
     </Stack>
   );
 }

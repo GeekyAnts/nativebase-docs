@@ -1,14 +1,14 @@
-"use strict";
-const visit = require("unist-util-visit-parents");
-const u = require("unist-builder");
-const dedent = require("dedent");
-const fromEntries = require("object.fromentries");
+'use strict';
+const visit = require('unist-util-visit-parents');
+const u = require('unist-builder');
+const dedent = require('dedent');
+const fromEntries = require('object.fromentries');
 
-const parseParams = (paramString = "") => {
+const parseParams = (paramString = '') => {
   const params = fromEntries(new URLSearchParams(paramString));
 
   if (!params.platform) {
-    params.platform = "web";
+    params.platform = 'web';
   }
 
   return params;
@@ -18,29 +18,43 @@ const processNode = (node, parent) => {
   return new Promise(async (resolve, reject) => {
     try {
       const params = parseParams(node.meta);
-
+      // let metaArr = node.meta
+      //   ? node.meta.split(' ').filter((val) => val.includes('version='))
+      //   : undefined;
+      // const NBversion =
+      //   metaArr && metaArr.length
+      //     ? metaArr[0].substring(
+      //         metaArr[0].lastIndexOf('=') + 1,
+      //         metaArr[0].length
+      //       )
+      //     : 'next';
+      const NBversion = '3.0.0-next.16';
       // Gather necessary Params
-      const name = params.name ? decodeURIComponent(params.name) : "Example";
+      let name = params.name ? decodeURIComponent(params.name) : 'Example';
+      // name = name
+      //   .split(' ')
+      //   .filter((val) => !val.includes('version='))
+      //   .join(' ');
+
       const description = params.description
         ? decodeURIComponent(params.description)
-        : "Example usage";
+        : 'Example usage';
       const sampleCode = node.value;
       const encodedSampleCode = encodeURIComponent(sampleCode);
-      const platform = params.platform || "web";
-      const supportedPlatforms = params.supportedPlatforms || "ios,android,web";
-      const theme = params.theme || "light";
-      const preview = params.preview || "true";
-      const loading = params.loading || "lazy";
-      const NBVersion = "native-base@3.0.0-next.14";
+      const platform = params.platform || 'web';
+      const supportedPlatforms = params.supportedPlatforms || 'ios,android,web';
+      const theme = params.theme || 'light';
+      const preview = params.preview || 'true';
+      const loading = params.loading || 'lazy';
       // Generate Node for SnackPlayer
-      let dependencies = `react-is,expo-font,${NBVersion},styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons`;
+      let dependencies = `react-is,expo-font,native-base@${NBversion},styled-system,expo-constants,react-native-web,react-native-svg,styled-components,@expo/vector-icons`;
 
-      if (name.split(" ")[0] === "Formik") {
-        dependencies += ",@native-base/formik-ui,formik,yup";
-      } else if (name.split(" ")[0] === "ReactHookForms") {
-        dependencies += ",react-hook-form";
+      if (name.split(' ')[0] === 'Formik') {
+        dependencies += ',@native-base/formik-ui,formik,yup';
+      } else if (name.split(' ')[0] === 'ReactHookForms') {
+        dependencies += ',react-hook-form';
       }
-      const snackPlayerDiv = u("html", {
+      const snackPlayerDiv = u('html', {
         value: dedent`
           <div
             class="snack-player"
@@ -72,9 +86,9 @@ const SnackPlayer = () => {
     new Promise(async (resolve, reject) => {
       const nodesToProcess = [];
       // Parse all CodeBlocks
-      visit(tree, "code", (node, parent) => {
+      visit(tree, 'code', (node, parent) => {
         // Add SnackPlayer CodeBlocks to processing queue
-        if (node.lang == "SnackPlayer") {
+        if (node.lang == 'SnackPlayer') {
           nodesToProcess.push(processNode(node, parent));
         }
       });
