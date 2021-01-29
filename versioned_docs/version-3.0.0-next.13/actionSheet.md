@@ -22,7 +22,7 @@ import {
   ActionsheetFooter,
   ActionsheetHeader,
   ActionsheetItem,
-} from "@native-base/v3";
+} from 'native-base';
 ```
 
 ## Usage
@@ -163,7 +163,7 @@ export default function () {
 Implement `Box`, all props of Box can be passed.
 
 | Name           | Type     | Description                          | Default |
-|----------------|----------|--------------------------------------|---------|
+| -------------- | -------- | ------------------------------------ | ------- |
 | isOpen         | boolean  | If true, actionsheet will be open.   | -       |
 | onClose        | function | Callback when actionsheet is closed. | -       |
 | disableOverlay | boolean  | If true, disables the overlay.       | -       |
@@ -172,4 +172,3 @@ Implement `Box`, all props of Box can be passed.
 ActionsheetContent, ActionsheetHeader, ActionsheetFooter all implement `Box`, all props of Box can be passed.
 
 ActionsheetItem implements `Button`, all props of Button can be passed here.
-

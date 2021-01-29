@@ -3,7 +3,6 @@ id: avatar
 title: Avatar
 ---
 
-
 The Avatar component is used to represent a user and it can display a profile picture, initials or a fallback icon.
 
 ## Import
@@ -15,7 +14,7 @@ NativeBase exports 3 avatar-related components:
 - `AvatarGroup`: A wrapper to stack multiple avatars together.
 
 ```jsx
-import { Avatar, AvatarBadge } from "native-base"
+import { Avatar, AvatarBadge } from 'native-base';
 ```
 
 ## Example
@@ -191,7 +190,7 @@ function AvatarComponent() {
         source={{ uri: "https://nativebase.io/assets/img/front-page-icon.png" }}
         name={"Native Base"}
       >
-        <AvatarBadge bg={"red.2"} />
+        <AvatarBadge bg={"red.200"} />
       </Avatar>
       <Avatar
         source={{ uri: "https://nativebase.io/assets/img/front-page-icon.png" }}
@@ -272,10 +271,11 @@ export default function () {
 ```
 
 ## Props
+
 ### Avatar
 
 | Name      | Type                    | Description                         | Default |
-|-----------|-------------------------|-------------------------------------|---------|
+| --------- | ----------------------- | ----------------------------------- | ------- |
 | size      | 2xl, lg, md, sm, xl, xs | The size of the avatar.             | md      |
 | name      | string                  | The name of the user in the avatar. | -       |
 | source    | ImageSourcePropType     | The image source of the avatar.     | -       |

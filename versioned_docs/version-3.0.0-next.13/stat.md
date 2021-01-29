@@ -19,7 +19,7 @@ import {
   StatHelpText,
   StatArrow,
   StatGroup,
-} from "native-base";
+} from 'native-base';
 ```
 
 ## Usage
@@ -77,7 +77,7 @@ function StatComponent () {
   return (
     <Box>
       <Heading>Stat with Indicator</Heading>
-      <StatGroup mt={6} color="indigo.5">
+      <StatGroup mt={6} color="indigo.500">
         <Stat>
           <StatLabel>Sent</StatLabel>
           <StatNumber>3,670</StatNumber>

@@ -8,7 +8,7 @@ Circular Progress is used to indicate the progress for determinate and indetermi
 ## Import
 
 ```jsx
-import { CircularProgress, CircularProgressLabel } from "native-base";
+import { CircularProgress, CircularProgressLabel } from 'native-base';
 ```
 
 ## Usage
@@ -92,7 +92,7 @@ function CircularProgressComponent () {
   return (
     <Center>
       <Heading>Changing the color</Heading>
-      <CircularProgress mt={6} value={50} color="red.2" />
+      <CircularProgress mt={6} value={50} color="red.200" />
     </Center>
   );
 }
@@ -120,7 +120,7 @@ function CircularProgressComponent () {
   return (
     <Center>
       <Heading>Adding label</Heading>
-      <CircularProgress mt={6} value={45} size={60} color="red.2">
+      <CircularProgress mt={6} value={45} size={60} color="red.200">
         <CircularProgressLabel>45%</CircularProgressLabel>
       </CircularProgress>
     </Center>
@@ -152,7 +152,7 @@ function CircularProgressComponent () {
   return (
     <Center>
       <Heading>Indeterminate Progress</Heading>
-      <CircularProgress mt={6} value={50} isIndeterminate color="red.2">
+      <CircularProgress mt={6} value={50} isIndeterminate color="red.200">
         <CircularProgressLabel>50%</CircularProgressLabel>
       </CircularProgress>
     </Center>

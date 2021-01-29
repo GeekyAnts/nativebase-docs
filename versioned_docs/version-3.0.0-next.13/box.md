@@ -22,7 +22,7 @@ import React from "react";
 import { Box, NativeBaseProvider } from "native-base";
 function BoxComponent() {
   return (
-    <Box width="100%" bg="orange.3" p={4} color="white">
+    <Box width="100%" bg="orange.300" p={4} color="white">
       This is a Box
     </Box>
   );
@@ -43,19 +43,19 @@ import React from "react";
 import { Box, Heading, Divider, Flex, NativeBaseProvider } from "native-base";
 function BoxComponent() {
   return (
-    <Box width="100%" bg="blue.0" p={4} color="blue.7">
+    <Box width="100%" bg="blue.50" p={4} color="blue.700">
       <Heading size="xl">Title</Heading>
-      <Divider mb={4} borderColor="teal.4" />
+      <Divider mb={4} borderColor="teal.400" />
       This can be a paragraph of a Story about a wise fox.
       <Flex direction="row">
-        <Box width="50%" bg="blue.0" p={4} color="blue.7">
+        <Box width="50%" bg="blue.50" p={4} color="blue.700">
           <Heading size="lg">Sub Title</Heading>
-          <Divider mb={4} borderColor="teal.4" />
+          <Divider mb={4} borderColor="teal.400" />
           This can be a paragraph of a Story about a wise fox.
         </Box>
-        <Box width="50%" bg="blue.0" p={4} color="blue.7">
+        <Box width="50%" bg="blue.50" p={4} color="blue.700">
           <Heading size="lg">Sub Title</Heading>
-          <Divider mb={4} borderColor="teal.4" />
+          <Divider mb={4} borderColor="teal.400" />
           This can be a paragraph of a Story about a wise fox.
         </Box>
       </Flex>
@@ -75,7 +75,7 @@ export default function () {
 
 ```SnackPlayer name=Box%20Example(With ref)
 import React from "react";
-import { Box, NativeBaseProvider } from "@native-base/v3";
+import { Box, NativeBaseProvider } from "native-base";
 
 function BoxComponent() {
   const myRef: any = React.useRef({});
@@ -87,7 +87,7 @@ function BoxComponent() {
     });
   }, [myRef]);
   return (
-    <Box width="100%" bg="orange.3" p={4} color="white" ref={myRef}>
+    <Box width="100%" bg="orange.300" p={4} color="white" ref={myRef}>
       This is a Box
     </Box>
   );

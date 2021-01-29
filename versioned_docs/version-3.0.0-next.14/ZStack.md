@@ -7,7 +7,7 @@ ZStack aligns items absolutely.
 ## Import
 
 ```jsx
-import { ZStack } from "native-base";
+import { ZStack } from 'native-base';
 ```
 
 ## Usage
@@ -43,9 +43,9 @@ function ZStackComponent() {
   return (
     <Box px={8}>
       <ZStack alignItems="center" justifyContent="center" height="50%">
-        <Box p={24} bg="blue.5" />
+        <Box p={24} bg="blue.500" />
         <Box p={16} bg="black" />
-        <Box p={10} bg="red.2" />
+        <Box p={10} bg="red.200" />
         <Text>Not Inside</Text>
       </ZStack>
       <Text lineHeight={8} letterSpacing={1.2} textAlign="center">

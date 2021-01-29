@@ -35,10 +35,10 @@ import { Spinner, HStack, NativeBaseProvider } from 'native-base';
 function SpinnerComponent () {
   return (
     <HStack space={2}>
-      <Spinner color="danger.5" />
-      <Spinner color="green.5" />
-      <Spinner color="blue.5" />
-      <Spinner color="warning.1" />
+      <Spinner color="danger.500" />
+      <Spinner color="green.500" />
+      <Spinner color="blue.500" />
+      <Spinner color="warning.100" />
     </HStack>
   );
 }

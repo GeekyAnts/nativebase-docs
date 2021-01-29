@@ -8,7 +8,7 @@ Links are accessible elements used primarily for navigation. This component is s
 ## **Import**
 
 ```jsx
-import { Link } from "@nativebase/v3";
+import { Link } from 'native-base';
 ```
 
 ## Implements
@@ -135,7 +135,7 @@ function LinkComponent() {
       <Link onClick={toggleState} mt={4}>
         Click here to toggle the color of box.
       </Link>
-      <Box h="100" w="100" bg={state ? "orange.3" : "blue.3"} />
+      <Box h="100" w="100" bg={state ? "orange.300" : "blue.300"} />
     </View>
   );
 }
@@ -174,7 +174,7 @@ function LinkComponent() {
         <Text style={{ color: "gray" }}>
           Clicking anywhere will trigger the link
         </Text>
-        <Box my={3} p={8} bg="blue.3">
+        <Box my={3} p={8} bg="blue.300">
           <Text color="white" fontSize={16}>
             Box
           </Text>

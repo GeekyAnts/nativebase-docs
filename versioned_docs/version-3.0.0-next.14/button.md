@@ -12,7 +12,7 @@ The `Button` component is used to trigger an action or event.
 ## Import
 
 ```jsx
-import { Button, ButtonGroup } from "native-base";
+import { Button, ButtonGroup } from 'native-base';
 ```
 
 - **Button** : The button component with support for custom icons, spinners, etc.
@@ -197,7 +197,7 @@ function ButtonComponent () {
       height="48px"
       width="200px"
       border="2px"
-      borderColor="green.5"
+      borderColor="green.500"
     >
       Button
     </Button>

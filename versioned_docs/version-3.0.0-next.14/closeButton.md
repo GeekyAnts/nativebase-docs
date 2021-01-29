@@ -8,7 +8,7 @@ CloseButton is essentially a IconButton with a close icon. It is used to handle 
 ## Import
 
 ```jsx
-import { CloseButton } from "native-base";
+import { CloseButton } from 'native-base';
 ```
 
 ## Example
@@ -36,9 +36,9 @@ import { CloseButton, HStack, NativeBaseProvider } from 'native-base';
 function CloseButtonComponent () {
   return (
     <HStack space="md">
-      <CloseButton size="sm" color="teal.2" />
-      <CloseButton size="md" color="red.2" />
-      <CloseButton size="lg" color="blue.2" />
+      <CloseButton size="sm" color="teal.200" />
+      <CloseButton size="md" color="red.200" />
+      <CloseButton size="lg" color="blue.200" />
     </HStack>
   );
 }

@@ -174,18 +174,18 @@ import { Checkbox, HStack, Text, Icon, NativeBaseProvider } from "native-base";
 function CheckboxComponent() {
   return (
     <HStack>
-      <Checkbox colorScheme="red.2" size="sm" defaultIsChecked>
+      <Checkbox colorScheme="red.200" size="sm" defaultIsChecked>
         <Text mx={2}>Checkbox</Text>
       </Checkbox>
       <Checkbox
-        colorScheme="green.2"
+        colorScheme="green.200"
         size="md"
         icon={<Icon name="done" type="MaterialIcons" size={40} />}
         defaultIsChecked
       >
         <Text mx={2}>Checkbox</Text>
       </Checkbox>
-      <Checkbox colorScheme="yellow.2" size="lg" defaultIsChecked>
+      <Checkbox colorScheme="yellow.200" size="lg" defaultIsChecked>
         <Text mx={2}>Checkbox</Text>
       </Checkbox>
     </HStack>
@@ -333,7 +333,7 @@ export default function () {
 
 ```SnackPlayer name=CheckBox%20 With Ref
 import React from "react";
-import { Checkbox, Icon, NativeBaseProvider } from "@native-base/v3";
+import { Checkbox, Icon, NativeBaseProvider } from "native-base";
 
 function CheckboxComponent() {
   const myRef: any = React.useRef({});

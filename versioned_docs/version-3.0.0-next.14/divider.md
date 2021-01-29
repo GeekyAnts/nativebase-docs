@@ -8,7 +8,7 @@ title: Divider
 ## **Import**
 
 ```jsx
-import { Divider } from "native-base";
+import { Divider } from 'native-base';
 ```
 
 ## Implements
@@ -77,15 +77,15 @@ function DividerComponent() {
     <Flex direction="row" p={4}>
       <Text>Simple</Text>
       <Divider
-        borderColor="red.5"
+        borderColor="red.500"
         borderWidth={2}
         mx={4}
         orientation="vertical"
       />
       <Text>Easy</Text>
-      <Divider borderColor="blue.5" mx={4} orientation="vertical" />
+      <Divider borderColor="blue.500" mx={4} orientation="vertical" />
       <Text>Beautiful</Text>
-      <Divider borderColor="green.5" mx={4} orientation="vertical" />
+      <Divider borderColor="green.500" mx={4} orientation="vertical" />
       <Text>Nativebase</Text>
     </Flex>
   );

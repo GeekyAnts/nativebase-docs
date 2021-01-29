@@ -20,7 +20,7 @@ import {
   SliderTrack,
   SliderFilledTrack,
   SliderThumb,
-} from "native-base";
+} from 'native-base';
 ```
 
 ## Usage
@@ -73,7 +73,7 @@ import {
 function SliderComponent () {
   return (
     <Box mx={5}>
-      <Slider defaultValue={70} colorScheme="pink.2">
+      <Slider defaultValue={70} colorScheme="pink.200">
         <SliderTrack>
           <SliderFilledTrack />
         </SliderTrack>
@@ -201,8 +201,8 @@ import {
 function SliderComponent () {
   return (
     <Slider defaultValue={70} colorScheme="purple">
-      <SliderTrack bg="orange.1">
-        <SliderFilledTrack bg="orange.4" />
+      <SliderTrack bg="orange.100">
+        <SliderFilledTrack bg="orange.400" />
       </SliderTrack>
       <SliderThumb>
         <Icon name="circle" type="MaterialIcons" />

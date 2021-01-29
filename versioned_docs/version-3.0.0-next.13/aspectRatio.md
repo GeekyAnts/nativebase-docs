@@ -15,7 +15,7 @@ import { AspectRatio, Box, NativeBaseProvider } from "native-base";
 function AspectRationComponent() {
   return (
     <AspectRatio height={200} bg="black">
-      <Box bg="red.4" />
+      <Box bg="red.400" />
     </AspectRatio>
   );
 }
@@ -54,7 +54,6 @@ export default function () {
 }
 
 ```
-
 
 ## Props
 

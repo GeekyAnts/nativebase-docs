@@ -14,7 +14,7 @@ VStack aligns items vertically.
 ## Import
 
 ```jsx
-import { VStack } from "native-base";
+import { VStack } from 'native-base';
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ import { VStack, Text, Divider, Heading, NativeBaseProvider } from 'native-base'
 function VStackComponent () {
   return (
     <VStack
-      divider={<Divider borderColor="red.2" />}
+      divider={<Divider borderColor="red.200" />}
       space={4}
       width="100%"
     >
