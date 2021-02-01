@@ -28,7 +28,7 @@ const processNode = (node, parent) => {
       //         metaArr[0].length
       //       )
       //     : 'next';
-      const NBversion = '3.0.0-next.16';
+      const NBversion = '3.0.0-next.19';
       // Gather necessary Params
       let name = params.name ? decodeURIComponent(params.name) : 'Example';
       // name = name
