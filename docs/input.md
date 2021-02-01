@@ -14,11 +14,11 @@ The `Input` component is a component that is used to get user input in a text fi
 
 ```jsx
 import {
-  Input,
-  InputGroup,
-  InputLeftAddon,
-  InputRightAddon,
-} from "native-base";
+	Input,
+	InputGroup,
+	InputLeftAddon,
+	InputRightAddon,
+} from 'native-base';
 ```
 
 ## Usage
@@ -268,4 +268,4 @@ export default function () {
 | InputLeftElement  | JSX.Element                                    | If given, adds the provided element to the left of the input.                                        | -       |
 | InputRightElement | JSX.Element                                    | If given, adds the provided element to the right of the input.                                       | -       |
 | type              | password, string, text                         | Using the type 'password', user can mask the input.                                                  | -       |
-| Component         |                                                |                                                                                                      |         |
+| label             | string                                         | If given, adds a floating label to the input.                                                        | -       |

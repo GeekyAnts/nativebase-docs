@@ -256,6 +256,16 @@ export default function () {
 
 ## **Props**
 
+PinInput passes all the props to it's children (`PinInputField` only).
+
+| Name         | Type        | Description                                                                                           | Default |
+| ------------ | ----------- | ----------------------------------------------------------------------------------------------------- | ------- |
+| manageFocus  | boolean     | The style variant of the badge.                                                                       | true    |
+| defaultValue | string      | The default value of the pin input. Example '32'.                                                     | -       |
+| value        | string      | The value of the the pin input. This is the value that will be returned when the pin input is filled. | -       |
+| space        | MarginProps | The space between each stack item.                                                                    | -       |
+| onChange     | function    | Function called on input change                                                                       | -       |
+
 ### **PinInputField**
 
 PinInputField composes `Input` so you can pass all `Input` props.
