@@ -74,6 +74,56 @@ export default function () {
 }
 ```
 
+## Example (Variant)
+
+```SnackPlayer name=Spinner%20Example(Variant)
+import React from 'react';
+import { Spinner, HStack, Icon, NativeBaseProvider } from 'native-base';
+
+function SpinnerComponent () {
+  return (
+   <HStack space={2}>
+      <Spinner />
+      <Spinner color="danger.400" variant="dotted" />
+      <Spinner color="blue.500" variant="stroked" />
+      <Spinner color="gray.900" variant="multiColorDotted" />
+      <Spinner color="yellow.500" variant="squareDotted" />
+      <Spinner
+        variant="custom"
+        renderProp={<Icon name="bat" type="MaterialCommunityIcons" size={12} />}
+      />
+    </HStack>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <SpinnerComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+## Example (Duration)
+
+```SnackPlayer name=Spinner%20Example(Duration)
+import React from 'react';
+import { Spinner, HStack, NativeBaseProvider } from 'native-base';
+
+function SpinnerComponent () {
+  return (
+   <Spinner color="danger.400" variant="dotted" size="lg" duration={1000} />
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <SpinnerComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
 ## Extra props
 
 - `style`: Applies user-defined styles and accepts a `stylesheet`.
