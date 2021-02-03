@@ -12,7 +12,7 @@ Creates a dropdown list of items with selected item in closed view.
 ## Import
 
 ```jsx
-import { Select } from "native-base";
+import { Select } from 'native-base';
 ```
 
 ## Example
@@ -33,6 +33,7 @@ function SelectComponent () {
         setLanguage(itemValue)
       }
       selectedItemBg={'teal.400'}
+      selectedItemColor={'white'}
       dropdownOpenIcon={
         <Icon name="arrow-drop-up" type="MaterialIcons" size={6} />
       }
@@ -62,18 +63,19 @@ export default function () {
 
 ### Select
 
-| Name              | Type        | Description                                                                                           | Default |
-| ----------------- | ----------- | ----------------------------------------------------------------------------------------------------- | ------- |
-| placeholder       | string      | The placeholder attribute specifies a short hint that describes the expected value of an select field | -       |
-| selectedValue     | string      | The default value which is selected                                                                   | -       |
-| onValueChange     | function    | Callback for on change on input value.                                                                | -       |
-| itemStyle         | stylesheet  |                                                                                                       | -       |
-| selectedItemBg    | string      | Background color for selected item                                                                    | -       |
-| isDisabled        | boolean     | If true, the button will be disabled.                                                                 | -       |
-| dropdownIcon      | JSX.Element | If given, updates the dropdown Icon.                                                                  | -       |
-| dropdownOpenIcon  | JSX.Element | If given, updates the dropdown Icon, when opened.                                                     | -       |
-| dropdownCloseIcon | JSX.Element | If given, updates the dropdown Icon, when closed.                                                     | -       |
-| Component         |             |                                                                                                       |         |
+| Name              | Type        | Description                                                                                           | Default  |
+| ----------------- | ----------- | ----------------------------------------------------------------------------------------------------- | -------- |
+| placeholder       | string      | The placeholder attribute specifies a short hint that describes the expected value of an select field | -        |
+| selectedValue     | string      | The default value which is selected                                                                   | -        |
+| onValueChange     | function    | Callback for on change on input value.                                                                | -        |
+| itemStyle         | stylesheet  |                                                                                                       | -        |
+| selectedItemBg    | string      | Background color for selected item                                                                    | blue.500 |
+| selectedItemColor | string      | Color for the selected item                                                                           | white    |
+| isDisabled        | boolean     | If true, the button will be disabled.                                                                 | -        |
+| dropdownIcon      | JSX.Element | If given, updates the dropdown Icon.                                                                  | -        |
+| dropdownOpenIcon  | JSX.Element | If given, updates the dropdown Icon, when opened.                                                     | -        |
+| dropdownCloseIcon | JSX.Element | If given, updates the dropdown Icon, when closed.                                                     | -        |
+| Component         |             |                                                                                                       |          |
 
 ### Select Item
 
