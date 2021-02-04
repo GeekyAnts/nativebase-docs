@@ -16,10 +16,10 @@ NativeBase exports 7 modal-related components:
 
 ```jsx
 import {
-  Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
+	Slider,
+	SliderTrack,
+	SliderFilledTrack,
+	SliderThumb,
 } from 'native-base';
 ```
 
@@ -264,7 +264,7 @@ export default function () {
 
 ## Props
 
-### nSlider
+### Slider
 
 | Name            | Type                 | Description                                                                                                       | Default    |
 | --------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------- |
@@ -287,7 +287,6 @@ export default function () {
 | aria-labelledby | string               | The static string aria-labelledby that points to the ID of the element that serves as label for the slider        | -          |
 | aria-valuetext  | string               | The static string to use used for aria-valuetext                                                                  | -          |
 | orientation     | horizontal, vertical | Sets the orientation of the slider.                                                                               | horizontal |
-| Component       |                      |                                                                                                                   |            |
 
 ### Child **components**
 
