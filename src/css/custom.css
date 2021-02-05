@@ -8,6 +8,7 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #3e3a6f;
+
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -33,8 +34,200 @@
   width: 100%;
 }
 
-.navbar {
+/* .navbar {
   background-color: #3e3a6f;
   box-shadow: none;
   color: white;
+}
+.navbar__item {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+.navbar__link:hover,
+.navbar__link--active {
+  color: white;
+} */
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* your custom css */
+
+@media (max-width: 480px) {
+  .headerTitleWithLogo {
+    display: block !important;
+  }
+  .component-screenshot {
+    width: 90%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+  }
+  .projectTitle > small {
+    font-size: 45% !important;
+  }
+  .projectTitle .customLogo {
+    font-size: 75% !important;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  .component-screenshot {
+    width: 70%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .component-screenshot {
+    width: 70%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .component-screenshot {
+    width: 70%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .component-screenshot {
+    width: 50%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .component-screenshot {
+    width: 40%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+  }
+}
+
+.blockContent h2 {
+  text-align: left !important;
+  font-size: 22px;
+}
+.blockContent div {
+  text-align: left !important;
+}
+.blockContent small {
+  font-size: 18px;
+}
+
+.mainContainer .container.paddingTop {
+  padding-top: 0px;
+}
+.homeSplashFade {
+  background-color: #3e3a6f;
+  /* background-color: #47b8c5; */
+}
+.homeSplashFade .projectTitle {
+  color: white;
+}
+.homeSplashFade .button {
+  color: white;
+  border-color: white;
+}
+.navigationSlider .slidingNav ul li a {
+  border-radius: 3px;
+}
+.navigationSlider .slidingNav ul li a:hover {
+  border-radius: 3px;
+  color: #ffffff;
+}
+.logo {
+  height: 70% !important;
+}
+.customLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeSplashFade .button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 15px 35px;
+  border-radius: 10px;
+  background-color: white;
+  color: #3e3a6f;
+  font-weight: 700;
+  font-size: 15px;
+}
+.projectTitle > small {
+  display: block;
+  font-size: 65%;
+  line-height: 1.5em;
+  margin: 1.3em 25px;
+}
+.tagline {
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+.custom_row {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+.custom_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column_list > div {
+  text-align: center;
+}
+.column_list > div > p {
+  color: #5e5e5e;
+}
+.column_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 3rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* backlinks section */
+
+.backlink {
+  padding-bottom: 1rem;
+}
+.backlink img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.backlink h2 {
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+.backlink h2 a {
+  color: black;
+}
+.backlink h2 a:hover {
+  color: #3e3a6f;
+}
+.moreProjects {
+  padding-left: 12.6%;
+  padding-right: 12.6%;
+}
+#moreProjectsHeading {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .moreProjects {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+  }
 }
