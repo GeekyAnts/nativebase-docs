@@ -1,26 +1,26 @@
 module.exports = {
-  title: "NativeBase 3.0",
-  tagline: "A complete component library for React Native Ecosystem",
-  url: "https://alpha.nativebase.io",
-  baseUrl: "/",
-  clientModules: [require.resolve("./snackPlayerInitializer.js")],
+  title: 'NativeBase',
+  tagline: 'A complete component library for React Native Ecosystem',
+  url: 'https://nativebase.github.io',
+  baseUrl: '/',
+  clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
     {
       src:
-        "https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js",
+        'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
     },
-    { src: "https://snack.expo.io/embed.js", defer: true },
+    { src: 'https://snack.expo.io/embed.js', defer: true },
   ],
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/native-base-icon.png",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/native-base-icon.png',
+  organizationName: 'nativebase', // Usually your GitHub org/user name.
+  projectName: 'nativebase.github.io', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: "f422b0f98d066dbd23597e0bbd370ce2",
-      indexName: "nativebase-v3",
+      apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
+      indexName: 'nativebase-v3',
 
       // // Optional: see doc section bellow
       // contextualSearch: true,
@@ -34,83 +34,83 @@ module.exports = {
     },
     sidebarCollapsible: false,
     navbar: {
-      title: "NativeBase 3.0",
+      title: 'NativeBase 3.0',
       logo: {
-        alt: "NativeBase Logo",
-        src: "img/native-base-icon.png",
+        alt: 'NativeBase Logo',
+        src: 'img/native-base-icon.png',
       },
       // style: "dark",
       items: [
         {
-          to: "docs/nativebase",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "right",
+          to: 'docs/nativebase',
+          activeBasePath: 'docs',
+          label: 'Docs',
+          position: 'right',
         },
-        { to: "docs/faq", label: "FAQ", position: "right" },
+        { to: 'docs/faq', label: 'FAQ', position: 'right' },
 
         {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
-          position: "right",
+          href: 'https://github.com/facebook/docusaurus',
+          label: 'GitHub',
+          position: 'right',
         },
         {
           href:
-            "https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase",
-          label: "Hire The Creators",
-          position: "right",
+            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          label: 'Hire The Creators',
+          position: 'right',
         },
-        { type: "docsVersionDropdown", position: "left" },
+        { type: 'docsVersionDropdown', position: 'left' },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         {
-          title: "Docs",
+          title: 'Docs',
           items: [
             {
-              label: "Introduction",
-              to: "docs/nativebase",
+              label: 'Introduction',
+              to: 'docs/nativebase',
             },
             {
-              label: "Examples",
-              to: "docs/todo-example",
+              label: 'Examples',
+              to: 'docs/todo-example',
             },
             {
-              label: "FAQ",
-              to: "docs/faq",
+              label: 'FAQ',
+              to: 'docs/faq',
             },
           ],
         },
         {
-          title: "Community",
+          title: 'Community',
           items: [
             {
-              label: "Twitter",
-              href: "https://twitter.com/nativebaseio",
+              label: 'Twitter',
+              href: 'https://twitter.com/nativebaseio',
             },
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/native-base",
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/native-base',
             },
             {
-              label: "Discord",
-              href: "https://discord.com/invite/TSgCw2UPmb",
+              label: 'Discord',
+              href: 'https://discord.com/invite/TSgCw2UPmb',
             },
           ],
         },
         {
-          title: "More",
+          title: 'More',
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/GeekyAnts/Nativebase",
+              label: 'GitHub',
+              href: 'https://github.com/GeekyAnts/Nativebase',
             },
             {
-              label: "Contribution Guidelines",
+              label: 'Contribution Guidelines',
               href:
-                "https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md",
+                'https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md',
             },
             // {
             //   label: "Stars",
@@ -125,12 +125,12 @@ module.exports = {
           ],
         },
         {
-          title: " ",
+          title: ' ',
           items: [
             {
-              label: "Built with ❤️ at GeekyAnts.",
+              label: 'Built with ❤️ at GeekyAnts.',
               href:
-                "https://geekyants.com/?utm_source=nativebase&utm_medium=footer&utm_campaign=nativebase",
+                'https://geekyants.com/?utm_source=nativebase&utm_medium=footer&utm_campaign=nativebase',
             },
           ],
         },
@@ -140,23 +140,23 @@ module.exports = {
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
-          remarkPlugins: [require("./remark-snackplayer")],
+            'https://github.com/facebook/docusaurus/edit/master/website/',
+          remarkPlugins: [require('./remark-snackplayer')],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
-          customCss: [require.resolve("./src/css/custom.css")],
+          customCss: [require.resolve('./src/css/custom.css')],
         },
       },
     ],
