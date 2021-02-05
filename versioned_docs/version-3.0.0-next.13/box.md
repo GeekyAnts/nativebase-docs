@@ -105,9 +105,8 @@ export default function () {
 
 ### Box
 
-| Name      | Type        | Description                                                                           | Default |
-| --------- | ----------- | ------------------------------------------------------------------------------------- | ------- |
-| shadow    | number      | Applies box shadow and accepts a number from 0 to 9                                   | -       |
-| style     | stylesheet  | Applies user-defined styles and accepts a stylesheet.                                 | -       |
-| children  | JSX.Element | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
-| Component |             |                                                                                       |         |
+| Name     | Type        | Description                                                                           | Default |
+| -------- | ----------- | ------------------------------------------------------------------------------------- | ------- |
+| shadow   | number      | Applies box shadow and accepts a number from 0 to 9                                   | -       |
+| style    | stylesheet  | Applies user-defined styles and accepts a stylesheet.                                 | -       |
+| children | JSX.Element | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |

@@ -208,14 +208,12 @@ export default function () {
 | --------- | ------------------------ | --------------------------------------------------- | ------- |
 | separator | JSX.Element, string      | The visual separator between the breadcrumb item.   | -       |
 | spacing   | StyledSystem.MarginProps | The left and right margin applied to the separator. | -       |
-| Component |                          |                                                     |         |
 
 ### BreadcrumbItem
 
 | Name          | Type    | Description                                                    | Default |
 | ------------- | ------- | -------------------------------------------------------------- | ------- |
 | isCurrentPage | boolean | If true, it indicates that the breadcrumb link is active page. | -       |
-| Component     |         |                                                                |         |
 
 ### **BreadcrumbLink Props**
 

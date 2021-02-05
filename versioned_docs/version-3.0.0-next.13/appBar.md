@@ -73,7 +73,6 @@ Implements `Box`, all props of Box can be passed.
 | --------------- | ------ | ---------------------------------------------------------------------- | ------- |
 | statusBarHeight | number | Defaults to SafeAreaView on iOS and Statusbar.height on android.       | -       |
 | space           | number | Space between AppBar.Left, AppBar.Content and AppBar.Right components. | 2       |
-| Component       |        |                                                                        |         |
 
 ## AppBar.Left Props
 

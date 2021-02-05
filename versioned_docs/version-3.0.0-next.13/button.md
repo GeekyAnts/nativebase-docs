@@ -261,4 +261,3 @@ export default function () {
 | size        | lg, md, sm, xs                        | The size of the button.                                                                                           | md      |
 | shadow      | number                                | Shadow to apply to button.                                                                                        | -       |
 | onPress     | function                              | Callback for onPress.                                                                                             | -       |
-| Component   |                                       |                                                                                                                   |         |

@@ -27,7 +27,7 @@ import {
   AlertDialogHeader,
   AlertDialogContent,
   AlertDialogOverlay,
-} from "native-base";
+} from 'native-base';
 ```
 
 ## Example
@@ -163,4 +163,3 @@ AlertDialog and its components compose the Modal component. The only exception i
 | Name                | Type      | Description                                                    | Default |
 | ------------------- | --------- | -------------------------------------------------------------- | ------- |
 | leastDestructiveRef | React.Ref | The least destructive action to get focus when dialog is open. | -       |
-| Component           |           |                                                                |         |

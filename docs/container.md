@@ -50,4 +50,3 @@ export default function () {
 | Name          | Type    | Description                                               | Default |
 | ------------- | ------- | --------------------------------------------------------- | ------- |
 | centerContent | boolean | It'll center child elements based on their content width. | true    |
-|               |         |                                                           |         |

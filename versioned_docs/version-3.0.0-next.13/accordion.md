@@ -413,7 +413,6 @@ export default function () {
 | index         | Number[], number | The index(es) of the expanded accordion item.                                                            | -       |
 | defaultIndex  | Number[], number | The initial index(es) of the expanded accordion item. Must be an array for allowMultiple={true} to work. | -       |
 | onChange      | function         | The callback invoked when accordion items are expanded or collapsed.                                     | -       |
-| Component     |                  |                                                                                                          |         |
 
 ### AccordionItem
 
@@ -421,7 +420,6 @@ export default function () {
 | ---------- | ------- | ----------------------------------------------- | ------- |
 | id         | string  | A unique id for the accordion item.             | -       |
 | isDisabled | boolean | If true, the accordion header will be disabled. | -       |
-| Component  |         |                                                 |         |
 
 ## AccordionButton props
 

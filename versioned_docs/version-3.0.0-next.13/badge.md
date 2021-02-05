@@ -8,7 +8,7 @@ Badges are used to highlight an item's status for quick recognition.
 ## Import
 
 ```jsx
-import { Badge } from "native-base";
+import { Badge } from 'native-base';
 ```
 
 ## Example
@@ -100,4 +100,3 @@ export default function () {
 | ----------- | ---------------------- | --------------------------------------------------------------------- | ------- |
 | variant     | outline, solid, subtle | The style variant of the badge.                                       | subtle  |
 | colorScheme | string                 | The color scheme to use for the badge. Must be a key in theme.colors. | -       |
-| Component   |                        |                                                                       |         |
