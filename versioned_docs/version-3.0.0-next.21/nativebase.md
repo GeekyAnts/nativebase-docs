@@ -11,11 +11,11 @@ We want to build and ship apps fast with the highest quality. We want to focus o
 
 # Inspirations
 
-Material UI, Chakra UI, Ant Design, Braid Design System, Bootstrap, TailwindCSS, Flutter,
+Material UI, Chakra UI, Ant Design, Braid Design System, Bootstrap, TailwindCSS, Flutter.
 
 # API
 
-Declarative and Imperative. Declarative for components and Imperative for all the actions
+Declarative and Imperative. Declarative for components and Imperative for all the actions.
 
 # Design principle
 

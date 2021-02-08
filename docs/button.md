@@ -26,7 +26,7 @@ import { Button, NativeBaseProvider } from 'native-base';
 
 function ButtonComponent () {
   return (
-    <Button size="sm" colorScheme="teal" variant={'solid'}>
+    <Button size="sm" colorScheme="teal" variant={'solid'} _text={{ fontWeight: 700 }}>
       Button Variants
     </Button>
   );
@@ -261,3 +261,4 @@ export default function () {
 | size        | lg, md, sm, xs                        | The size of the button.                                                                                           | md      |
 | shadow      | number                                | Shadow to apply to button.                                                                                        | -       |
 | onPress     | function                              | Callback for onPress.                                                                                             | -       |
+| \_text      | TextProps                             | Props to style the child text                                                                                     | -       |

@@ -6,7 +6,6 @@ const fromEntries = require('object.fromentries');
 
 const parseParams = (paramString = '') => {
   const params = fromEntries(new URLSearchParams(paramString));
-
   if (!params.platform) {
     params.platform = 'web';
   }
@@ -18,24 +17,9 @@ const processNode = (node, parent) => {
   return new Promise(async (resolve, reject) => {
     try {
       const params = parseParams(node.meta);
-      // let metaArr = node.meta
-      //   ? node.meta.split(' ').filter((val) => val.includes('version='))
-      //   : undefined;
-      // const NBversion =
-      //   metaArr && metaArr.length
-      //     ? metaArr[0].substring(
-      //         metaArr[0].lastIndexOf('=') + 1,
-      //         metaArr[0].length
-      //       )
-      //     : 'next';
       const NBversion = '3.0.0-next.21';
       // Gather necessary Params
       let name = params.name ? decodeURIComponent(params.name) : 'Example';
-      // name = name
-      //   .split(' ')
-      //   .filter((val) => !val.includes('version='))
-      //   .join(' ');
-
       const description = params.description
         ? decodeURIComponent(params.description)
         : 'Example usage';
