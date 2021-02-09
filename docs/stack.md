@@ -3,7 +3,7 @@ id: stack
 title: Stack
 ---
 
-Align Items vertically
+Stack aligns items vertically.
 
 ## Implements
 

@@ -18,7 +18,7 @@ NativeBase exports Modal Compound component:
 - `Modal.CloseButton`: The button that closes the modal.
 
 ```jsx
-import { Modal } from "native-base";
+import { Modal } from 'native-base';
 ```
 
 ## Basic
@@ -356,5 +356,5 @@ export default function () {
 
 ### Child **components**
 
-- `Modal.Overlay`, `Modal.Header`, `Modal.Footer` and `Modal.Body` compose the `Box` component.
-- `Modal.CloseButton` compose the `CloseButton`.
+- `Modal.Overlay`, `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the `Box` component.
+- `Modal.CloseButton` composes the `CloseButton`.

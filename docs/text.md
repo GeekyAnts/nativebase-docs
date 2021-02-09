@@ -3,7 +3,7 @@ id: text
 title: Text
 ---
 
-`Text` is the used to render text and paragraphs within an interface. It is build on `Text` component from `react-native`
+`Text` is used to render text and paragraphs within an interface. It is build on the `Text` component from `react-native`
 
 ## Implements
 
