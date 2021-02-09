@@ -47,6 +47,8 @@ export default function () {
 
 ## Props
 
+`Kbd` implements `Box`.
+
 ### Kbd
 
 | Name      | Type           | Description                          | Default |

@@ -206,7 +206,6 @@ export default function () {
 import React from "react";
 import {
   Checkbox,
-  CheckboxGroup,
   Text,
   View,
   HStack,
@@ -217,7 +216,7 @@ function CheckboxComponent() {
   const [groupValue, setGroupValue] = React.useState(["Item 1 ", "Item 3 "]);
   return (
     <View display="flex" justifyContent="space-between" alignItems="checkBox">
-      <CheckboxGroup
+      <Checkbox.Group
         colorScheme="green"
         defaultValue={groupValue}
         onChange={(values) => {
@@ -240,7 +239,7 @@ function CheckboxComponent() {
         >
           <Text mx={2}>Indeterminate Item</Text>
         </Checkbox>
-      </CheckboxGroup>
+      </Checkbox.Group>
       <HStack mt={3} alignItems="baseline">
         <Text fontSize="md">Selected Values: </Text>
         <Text fontSize="md" bold>
@@ -269,7 +268,6 @@ import {
   FormErrorMessage,
   FormHelperText,
   Checkbox,
-  CheckboxGroup,
   VStack,
   Text,
   Container,
@@ -282,7 +280,7 @@ function CheckboxComponent() {
     <Container>
       <FormControl isRequired isInvalid>
         <FormLabel>Favorite framework</FormLabel>
-        <CheckboxGroup
+        <Checkbox.Group
           colorScheme="green"
           defaultValue={groupValue}
           onChange={(values) => {
@@ -306,7 +304,7 @@ function CheckboxComponent() {
           >
             <Text mx={2}>Indeterminate Item</Text>
           </Checkbox>
-        </CheckboxGroup>
+        </Checkbox.Group>
         <FormHelperText>We'll keep this between us.</FormHelperText>
         <FormErrorMessage>Something is wrong.</FormErrorMessage>
       </FormControl>
@@ -384,9 +382,9 @@ export default function () {
 | onChange         | function       | Function called when the state of the checkbox changes.                                                               | -       |
 | children         | JSX.Element    | The children of the checkbox.                                                                                         | -       |
 
-`CheckboxGroup` implements `Box`.
+`Checkbox.Group` implements `Box`.
 
-### Checkbox Group
+### Checkbox.Group
 
 | Name         | Type     | Description                                                            | Default |
 | ------------ | -------- | ---------------------------------------------------------------------- | ------- |
@@ -394,7 +392,7 @@ export default function () {
 | defaultValue | Array    | The initial value of the checkbox group.                               | -       |
 | onChange     | function | The callback fired when any children Checkbox is checked or unchecked. | -       |
 
-The following props can be set on `CheckboxGroup` and they will be forwarded to all children `Checkbox` components.
+The following props can be set on `Checkbox.Group` and they will be forwarded to all children `Checkbox` components.
 
 ### Shared Style Props
 
