@@ -3,83 +3,25 @@ id: skeleton
 title: Skeleton
 ---
 
-`Skeleton` is used to display the loading state of some component.
+`Skeleton` is used to display the loading state of a component.
 
 ## Implements
 
-- `Skeleton` composes `Box` so you can pass all `Box` props to change it's style.
+- `Skeleton` composes `Box` so you can pass all `Box` props to change its style.
 
 ## Usage
 
 ```SnackPlayer name=Skeleton%20Usage
 import React from 'react';
-import { Skeleton, Stack, NativeBaseProvider } from 'native-base';
-function SkeletonComponent () {
+import { Skeleton, Stack, Text } from 'native-base';
+export default function () {
   return (
     <Stack width="90%">
-      <Skeleton my={2} height="20px" />
-      <Skeleton my={2} height="20px" />
-      <Skeleton my={2} height="20px" />
+      <Skeleton variant="text" height={6} />
+      <Skeleton my={2} height={6} variant="rect" />
+      <Skeleton my={2} height={6} variant="circle" size={20} />
     </Stack>
   );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <SkeletonComponent />
-    </NativeBaseProvider>
-  );
-}
-```
-
-## Wrapped
-
-```SnackPlayer name=Skeleton%20Wrapped
-import React from 'react';
-import { Skeleton, Stack, Text, Heading, NativeBaseProvider } from 'native-base';
-function SkeletonComponent () {
-  return (
-    <Stack width="90%">
-      <Skeleton>
-        <Heading>contents wrapped</Heading>
-        <Text>won't be visible</Text>
-      </Skeleton>
-    </Stack>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <SkeletonComponent />
-    </NativeBaseProvider>
-  );
-}
-```
-
-## Circle
-
-```SnackPlayer name=Skeleton%20Circle
-import React from 'react';
-import { SkeletonCircle, NativeBaseProvider } from 'native-base';
-function SkeletonComponent () {
-  return <SkeletonCircle size="100" />;
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <SkeletonComponent />
-    </NativeBaseProvider>
-  );
-}
-```
-
-## Text
-
-```SnackPlayer name=Skeleton%20Text
-import React from 'react';
-import { SkeletonText, NativeBaseProvider } from 'native-base';
-function SkeletonComponent () {
-  return <SkeletonText noOfLines={5} />;
 }
 export default function () {
   return (
@@ -94,13 +36,18 @@ export default function () {
 
 ```SnackPlayer name=Skeleton%20Text
 import React from 'react';
-import { Skeleton, VStack, NativeBaseProvider } from 'native-base';
-function SkeletonComponent () {
+import { Skeleton, VStack } from 'native-base';
+function Color () {
   return (
     <VStack space={5} width="90%">
       <Skeleton startColor="pink.600" endColor="purple.400" height="20px" />
       <Skeleton startColor="#0dead0" endColor="#0face0" height="20px" />
-      <Skeleton startColor="warning.200" endColor="danger.200" height="20px" />
+      <Skeleton
+        startColor="warning.200"
+        endColor="danger.200"
+        size={20}
+        variant="circle"
+      />
     </VStack>
   );
 }
@@ -117,18 +64,48 @@ export default function () {
 
 ```SnackPlayer name=Skeleton%20IsLoaded
 import React from 'react';
-import { Skeleton, Text, NativeBaseProvider } from 'native-base';
-function SkeletonComponent () {
+import { Box, Skeleton, Stack, Text, Avatar, HStack, Image } from 'native-base';
+function Composition({ loaded }: any) {
   return (
-    <Skeleton isLoaded>
-      <Text>NativeBase is cool</Text>
-    </Skeleton>
+    <Stack size={200}>
+      <HStack alignItems="center">
+        {loaded ? (
+          <Avatar
+            name="Ankur Kedia"
+            source={{
+              uri: 'https://nativebase.github.io/img/native-base-icon.png',
+            }}
+          />
+        ) : (
+          <Skeleton variant="circle" size={12} />
+        )}
+        <Text fontWeight="bold" fontSize="lg" ml={2}>
+          {loaded ? 'Nativebase' : <Skeleton>Nativebase</Skeleton>}
+        </Text>
+      </HStack>
+      <Box size={200} mt={1}>
+        {loaded ? (
+          <Image
+            source={{
+              uri: 'https://www.w3schools.com/css/img_lights.jpg',
+            }}
+            alt="NativeBase logo"
+          />
+        ) : (
+          <Skeleton variant="rect" height="100%" />
+        )}
+      </Box>
+    </Stack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <SkeletonComponent />
+      <HStack space={10}>
+      <Composition />
+      <Composition loaded />
+    </HStack>
     </NativeBaseProvider>
   );
 }
@@ -138,20 +115,20 @@ export default function () {
 
 ### Skeleton
 
+| Name       | Type               | Description                       | Default |
+| ---------- | ------------------ | --------------------------------- | ------- |
+| variant    | number, string     | the size of the circle.           | -       |
+| startColor | string             | The color at the animation start. | -       |
+| endColor   | string             | The color at the animation end.   | -       |
+| size       | circle, text, rect | Variant of Skeleton to use        | text    |
+
+### SkeletonCircle
+
 | Name       | Type    | Description                                                     | Default |
 | ---------- | ------- | --------------------------------------------------------------- | ------- |
 | isLoaded   | boolean | If true, it'll render its children with a nice fade transition. | -       |
 | startColor | string  | The color at the animation start.                               | -       |
 | endColor   | string  | The color at the animation end.                                 | -       |
-
-### SkeletonCircle
-
-| Name       | Type           | Description                                                     | Default |
-| ---------- | -------------- | --------------------------------------------------------------- | ------- |
-| isLoaded   | boolean        | If true, it'll render its children with a nice fade transition. | -       |
-| startColor | string         | The color at the animation start.                               | -       |
-| endColor   | string         | The color at the animation end.                                 | -       |
-| size       | number, string | the size of the circle.                                         | -       |
 
 ### SkeletonText
 
