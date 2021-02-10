@@ -78,9 +78,9 @@ function Home() {
           >
             <img
               src={'/img/native-base-icon.png'}
-              width='50px'
-              height='50px'
-              alt='Project Logo'
+              width='47.5px'
+              height='55px'
+              alt='Nativebase'
               style={{ marginRight: '10px' }}
             />
 
