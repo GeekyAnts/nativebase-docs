@@ -38,6 +38,24 @@ const processNode = (node, parent) => {
       } else if (name.split(' ')[0] === 'ReactHookForms') {
         dependencies += ',react-hook-form';
       }
+      // const files = {
+      //   // Inlined code
+      //   'App.tsx': {
+      //     type: 'CODE',
+      //     contents: 'console.log("hello world!");'
+      //   },
+      //   // Externally hosted code (JavaScript, Markdown, JSON)
+      //   'data/data.json': {
+      //     type: 'CODE',
+      //     url: 'https://mysite/data.json'
+      //   },
+      //   // Externally hosted assets (images, fonts)
+      //   'assets/image.png': {
+      //     type: 'ASSET',
+      //     contents: 'https://mysite/image.png'
+      //   }
+      // };
+      // data-snack-files="${dependencies}"
       const snackPlayerDiv = u('html', {
         value: dedent`
           <div
