@@ -21,9 +21,9 @@ import {
 } from 'native-base';
 ```
 
-## Usage
+## Basic
 
-```SnackPlayer name=Input%20Usage
+```SnackPlayer name=Input%20Basic
 import React from 'react';
 import { Input, NativeBaseProvider } from 'native-base';
 
@@ -41,7 +41,7 @@ export default function () {
 
 ## Input Sizes
 
-```SnackPlayer name=Image%20Example(Sizes)
+```SnackPlayer name=Image%20Sizes
 import React from 'react';
 import { Input, NativeBaseProvider,Stack,Center,Heading } from 'native-base';
 
@@ -71,7 +71,7 @@ export default function () {
 
 ## Input Variants
 
-```SnackPlayer name=Image%20Example(Variants)
+```SnackPlayer name=Image%20Variants
 import React from 'react';
 import { Input, NativeBaseProvider,Stack,Center,Heading } from 'native-base';
 
@@ -100,7 +100,7 @@ export default function () {
 
 ## Input Addons
 
-```SnackPlayer name=Image%20Example(Addons)
+```SnackPlayer name=Image%20Addons
 import React from 'react';
 import { Input, InputGroup, InputLeftAddon, InputRightAddon, NativeBaseProvider,Stack,Text } from 'native-base';
 
@@ -126,7 +126,7 @@ export default function () {
 
 ## Input Elements
 
-```SnackPlayer name=Image%20Example(Input Elements)
+```SnackPlayer name=Image%20Input%20Elements
 import React from 'react';
 import { Input, NativeBaseProvider,Icon } from 'native-base';
 
@@ -155,7 +155,7 @@ export default function () {
 
 ## Password Input
 
-```SnackPlayer name=Image%20Example(Password Input)
+```SnackPlayer name=Image%20Password%20Input
 import React from 'react';
 import { Input, NativeBaseProvider,Button } from 'native-base';
 
@@ -186,7 +186,7 @@ export default function () {
 
 ## Controlled Input
 
-```SnackPlayer name=Image%20Example(Controlled Input)
+```SnackPlayer name=Image%20Controlled%20Input
 import React from 'react';
 import { Input, NativeBaseProvider } from 'native-base';
 
@@ -212,7 +212,7 @@ export default function () {
 
 ## Input Focused and Error Border Colors
 
-```SnackPlayer name=Image%20Example(Input Focused and Error Border Colors)
+```SnackPlayer name=Image%20Input%20Focused%20and%20Error%20Border%20Colors
 import React from 'react';
 import { Input, NativeBaseProvider,Stack } from 'native-base';
 
@@ -258,8 +258,10 @@ export default function () {
 | isReadOnly        | boolean                                        | If true, prevents the value of the input from being edited.                                          | -       |
 | size              | 2xl, lg, md, sm, xl, xs                        | The size of the button.                                                                              | md      |
 | onChange          | function                                       | Callback for on change on input value.                                                               | -       |
-| placeholder       | string                                         | The placeholder attribute specifies a short hint that describes the expected value of an input field | -       |
+| placeholder       | string                                         | The placeholder attribute specifies a short hint that describes the expected value of an input field.| -       |
+| _placeholder      | Object                                         | Props to be passed to change placeholder styling, currently only supports placeholderTextColor.      | -       |
 | errorMessage      | string                                         | error message to be shown when input is invalid.                                                     | -       |
+| _errorMessage     | TextProps                                      | Props to be passed to errorMessage.                                                                  | -       |
 | isFullWidth       | boolean                                        | If true, the input element will span the full width of its parent                                    | -       |
 | focusBorderColor  | string                                         | The border color when the input is focused.                                                          | -       |
 | errorBorderColor  | string                                         | The border color when isInvalid is set to true.                                                      | -       |
@@ -269,3 +271,4 @@ export default function () {
 | InputRightElement | JSX.Element                                    | If given, adds the provided element to the right of the input.                                       | -       |
 | type              | password, string, text                         | Using the type 'password', user can mask the input.                                                  | -       |
 | label             | string                                         | If given, adds a floating label to the input.                                                        | -       |
+| _label            | TextProps                                      | Props to be passed to label to change its text styling.                                              | -       |
