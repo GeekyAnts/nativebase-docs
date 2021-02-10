@@ -259,7 +259,6 @@ export default function () {
 | size              | 2xl, lg, md, sm, xl, xs                        | The size of the button.                                                                              | md      |
 | onChange          | function                                       | Callback for on change on input value.                                                               | -       |
 | placeholder       | string                                         | The placeholder attribute specifies a short hint that describes the expected value of an input field.| -       |
-| _placeholder      | Object                                         | Props to be passed to change placeholder styling, currently only supports placeholderTextColor.      | -       |
 | errorMessage      | string                                         | error message to be shown when input is invalid.                                                     | -       |
 | _errorMessage     | TextProps                                      | Props to be passed to errorMessage.                                                                  | -       |
 | isFullWidth       | boolean                                        | If true, the input element will span the full width of its parent                                    | -       |
