@@ -8,12 +8,12 @@ Toast is used to show alerts on top of an overlay. Toast will close itself when 
 ## Import
 
 ```jsx
-import { useToast } from 'native-base';
+import { useToast } from "native-base";
 ```
 
-## Examples
+## Basic
 
-```SnackPlayer name=Toast%20Examples
+```SnackPlayer name=Toast%20Basic
 import React from 'react';
 import { Button, useToast, VStack, NativeBaseProvider } from 'native-base';
 
@@ -25,6 +25,7 @@ function ToastComponent () {
         toast({
           position: 'top',
           title: 'Toast Top',
+          _title:{ fontSize : "xl" },
         });
       }}
     >
@@ -44,7 +45,7 @@ export default function () {
 <br/>
 <br/>
 
-```SnackPlayer name=Toast%20Example1
+```SnackPlayer name=Toast%20Position
 import React from 'react';
 import { Button, useToast, VStack, NativeBaseProvider } from 'native-base';
 
@@ -94,9 +95,9 @@ export default function () {
 }
 ```
 
-## Example (Offset)
+## Offset
 
-```SnackPlayer name=Toast%20Examples(offset)
+```SnackPlayer name=Toast%20Offset
 import React from 'react';
 import { Button, useToast, NativeBaseProvider } from 'native-base';
 
@@ -133,7 +134,8 @@ export default function () {
 
 | Name     | Type                  | Description                                             | Default |
 | -------- | --------------------- | ------------------------------------------------------- | ------- |
-| title    | string                | The title of the toast                                  | -       |
+| title    | string                | The title of the toast.                                 | -       |
+| \_title  | TextProps Object      | Object that contains props for Title styling.           | -       |
 | duration | long, number, short   | The duration of toast. If number, then in mili-seconds. | 2000    |
 | position | bottom, center, top   | The position at which toast will appear.                | bottom  |
 | offset   | {x: number y: number} | The offset of toast from regular position.              | -       |

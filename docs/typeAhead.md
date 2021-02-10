@@ -8,40 +8,31 @@ A Typeahead component and hook that helps you in implementing Autocomplete Input
 ## Import
 
 ```jsx
-import { useTypeahead, Typeahead } from 'native-base';
+import { useTypeahead, Typeahead } from "native-base";
 ```
 
-## Typeahead Component Example
+## Typeahead Component
 
-```SnackPlayer name=Typeahead%20Typeahead Component Example
-import React from "react";
-import {
-  Typeahead,
-  Box,
-  Text,
-  Icon,
-  Heading,
-  useColorMode,
-  NativeBaseProvider,
-} from "native-base";
+```SnackPlayer name=Typeahead%20Typeahead%20Component
+import React from 'react';
+import { Typeahead, Box, Text, Icon, Heading, NativeBaseProvider } from 'native-base';
 
 let countries = [
-  "Afghanistan",
-  "Australia",
-  "India",
-  "USA",
-  "Germany",
-  "France",
-  "Iceland",
-  "Russia",
-  "Japan",
-  "China",
-  "Denmark",
-  "Norway",
+  'Afghanistan',
+  'Australia',
+  'India',
+  'USA',
+  'Germany',
+  'France',
+  'Iceland',
+  'Russia',
+  'Japan',
+  'China',
+  'Denmark',
+  'Norway',
 ];
 
 export function TypeaheadUsingComponent() {
-  const { colorMode } = useColorMode();
   return (
     <Box>
       <Heading>Typeahead</Heading>
@@ -49,14 +40,7 @@ export function TypeaheadUsingComponent() {
         mt={4}
         size="2xl"
         numberOfItems={6}
-        data={countries}
-        renderItem={(item: any) => {
-          return (
-            <Box bg={colorMode === "light" ? "gray.100" : "gray.600"} p={4}>
-              <Text>{item}</Text>
-            </Box>
-          );
-        }}
+        options={countries}
         toggleIcon={({ isOpen }: any) => {
           return isOpen ? (
             <Icon name="arrow-drop-up" type="MaterialIcons" size={12} />
@@ -77,10 +61,73 @@ export default function () {
 }
 ```
 
-## useTypeahead Hook Example
+## Typeahead Component with RenderItem
+
+```SnackPlayer name=Typeahead%20Typeahead%20Component%20with%20RenderItem
+import React from 'react';
+import { Typeahead, Box, Text, Icon, Heading, useColorMode, NativeBaseProvider } from 'native-base';
+
+let countries = [
+  { name: 'Afghanistan', abbr: 'AFG' },
+  { name: 'Australia', abbr: 'AUS' },
+  { name: 'India', abbr: 'IND' },
+  { name: 'USA', abbr: 'USA' },
+  { name: 'Germany', abbr: 'GER' },
+  { name: 'France', abbr: 'FRA' },
+  { name: 'Iceland', abbr: 'ICL' },
+  { name: 'Russia', abbr: 'RUS' },
+  { name: 'Japan', abbr: 'JAP' },
+  { name: 'China', abbr: 'CHI' },
+  { name: 'Denmark', abbr: 'DEN' },
+  { name: 'Norway', abbr: 'NOR' },
+];
+
+export function TypeaheadUsingComponentWithRenderItem() {
+  const { colorMode } = useColorMode();
+  return (
+    <Box>
+      <Heading>Typeahead</Heading>
+      <Typeahead
+        mt={4}
+        size="2xl"
+        numberOfItems={6}
+        options={countries}
+        getOptionLabel={(country: any) => country.name}
+        renderItem={(item: any) => {
+          return (
+            <Box
+              flex={1}
+              bg={colorMode === 'light' ? 'red.100' : 'gray.600'}
+              p={4}
+            >
+              <Text>{item}</Text>
+            </Box>
+          );
+        }}
+        toggleIcon={({ isOpen }: any) => {
+          return isOpen ? (
+            <Icon name="arrow-drop-up" type="MaterialIcons" size={12} />
+          ) : (
+            <Icon name="arrow-drop-down" type="MaterialIcons" size={12} />
+          );
+        }}
+      />
+    </Box>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <TypeaheadUsingComponentWithRenderItem />
+    </NativeBaseProvider>
+  );
+}
+```
+
+## useTypeahead Hook
 
 ```SnackPlayer name=Typeahead%20TypeaheadHooks
-import React from "react";
+import React from 'react';
 import {
   useTypeahead,
   Box,
@@ -89,23 +136,23 @@ import {
   Text,
   Icon,
   IconButton,
-  NativeBaseProvider,
-} from "native-base";
-import { ScrollView } from "react-native";
+  NativeBaseProvider
+} from 'native-base';
+import { ScrollView } from 'react-native';
 
 let countries = [
-  "Afghanistan",
-  "Australia",
-  "India",
-  "USA",
-  "Germany",
-  "France",
-  "Iceland",
-  "Russia",
-  "Japan",
-  "China",
-  "Denmark",
-  "Norway",
+  'Afghanistan',
+  'Australia',
+  'India',
+  'USA',
+  'Germany',
+  'France',
+  'Iceland',
+  'Russia',
+  'Japan',
+  'China',
+  'Denmark',
+  'Norway',
 ];
 
 export function TypeaheadUsingHook() {
@@ -184,7 +231,8 @@ export default function () {
 
 | Name                 | Type           | Description                                                                                                                                                          | Default |
 | -------------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| data                 | Array          | Array of items that you need to search for autocomplete.                                                                                                             | -       |
+| options              | Array          | Array of items that you need to search for autocomplete.                                                                                                             | -       |
+| getOptionLabel       | function       | Used to determine the string value for a given option. It's used to fill the input.                                                                                  | -       |
 | renderItem           | function       | expects a callback function that returns the JSX Element that you want to be rendered in dropdown. It requires a variable which is an Item from data array provided. | -       |
 | toggleIcon           | function       | Function to control the design of Toggle button. It exposes isOpen which is a boolean that tells if the dropdown is open or not.                                     | -       |
 | dropdownHeight       | number, string | height of the Typeahead dropdown                                                                                                                                     | 200px   |
