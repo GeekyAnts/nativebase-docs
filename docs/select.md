@@ -3,7 +3,7 @@ id: select
 title: Select
 ---
 
-Creates a dropdown list of items with selected item in closed view.
+Creates a dropdown list of items with the selected item in closed view.
 
 ## Implements
 

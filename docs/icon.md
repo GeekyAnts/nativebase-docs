@@ -5,9 +5,9 @@ title: Icon
 
 You can use icons in multiple ways in NativeBase:
 
-- Use `@expo/vector-icons` in your components.
+- Use `@expo/vector-icons` in your components
 - Create icon by creating an SVG Icon
-- Create icon using createIcon function and use it as component
+- Create icon using createIcon function and use it as a component
 
 ## Implements
 

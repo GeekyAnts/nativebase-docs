@@ -144,7 +144,6 @@ import {
   TagCloseButton,
   TagLabel,
   Avatar,
-  AvatarBadge,
   NativeBaseProvider
 } from 'native-base';
 
@@ -159,7 +158,7 @@ function TagComponent() {
         height={10}
         my={1}
       >
-        <AvatarBadge bg={'blue.100'} boxSize={2} />
+        <Avatar.Badge bg={'blue.100'} boxSize={2} />
       </Avatar>
       <TagLabel>Custom Tag</TagLabel>
       <TagCloseButton />

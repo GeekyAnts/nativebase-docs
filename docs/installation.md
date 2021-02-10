@@ -3,6 +3,9 @@ id: installation
 title: Installation
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 To have `NativeBase` components running onto your native apps, all you need to do is, create a fresh React Native project using whatever you want, [expo](https://docs.expo.io/get-started/installation/) is a really great starting point so we will start with that and install the NativeBase using `npm` or `yarn` and add all the peer dependencies.
 
 ## Setup with Expo
@@ -11,17 +14,30 @@ Expo helps you make React Native apps with no build configuration. It works on m
 
 _For **Installing NativeBase** just copy this and paste in your terminal and Voila! you are good to go to [Setup NativeBaseProvider](/docs/setup-provider)_
 
-**_Using yarn_**
+<Tabs
+defaultValue='yarn'
+values={[
+{ label: 'yarn', value: 'yarn' },
+{ label: 'npm', value: 'npm' }
+]}>
+
+<TabItem value="yarn">
 
 ```bash
 yarn add native-base@next react-native-svg @expo/vector-icons styled-components styled-system
 ```
 
-**_Using npm_**
+</TabItem>
+
+<TabItem value="npm">
 
 ```bash
 npm i native-base@next react-native-svg @expo/vector-icons styled-components styled-system
 ```
+
+</TabItem>
+
+</Tabs>
 
 ## Setup with React Native
 
@@ -31,18 +47,30 @@ cd AwesomeNativeBase
 ```
 
 _Install **NativeBase**_
+<Tabs
+defaultValue='yarn'
+values={[
+{ label: 'yarn', value: 'yarn' },
+{ label: 'npm', value: 'npm' }
+]}>
 
-_Using **Yarn**_
+<TabItem value="yarn">
 
 ```bash
 yarn add native-base@next
 ```
 
-_Using **npm**_
+</TabItem>
+
+<TabItem value="npm">
 
 ```bash
 npm i native-base@next
 ```
+
+</TabItem>
+
+</Tabs>
 
 _Install **Peer Dependencies**_
 
@@ -66,17 +94,30 @@ npx create-react-native-app -t with-nextjs
 
 _For **Installing NativeBase** just copy this and paste in your terminal._
 
-**_Using yarn_**
+<Tabs
+defaultValue='yarn'
+values={[
+{ label: 'yarn', value: 'yarn' },
+{ label: 'npm', value: 'npm' }
+]}>
+
+<TabItem value="yarn">
 
 ```bash
 yarn add native-base@next react-native-svg @expo/vector-icons styled-components styled-system
 ```
 
-**_Using npm_**
+</TabItem>
+
+<TabItem value="npm">
 
 ```bash
 npm i native-base@next react-native-svg @expo/vector-icons styled-components styled-system
 ```
+
+</TabItem>
+
+</Tabs>
 
 ### Important
 
@@ -89,8 +130,8 @@ By default Next.js doesn't support static assets like an Expo project. Because t
   - The order is important because Expo can mix in the location of vector icons to the existing font loader.
 
   ```jsx
-  const { withExpo } = require("@expo/next-adapter");
-  const withFonts = require("next-fonts");
+  const { withExpo } = require('@expo/next-adapter');
+  const withFonts = require('next-fonts');
 
   module.exports = withExpo(
     withFonts({
