@@ -1,18 +1,36 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 NativeBase Formik Integrated Components. No need of managing and using formik hooks just use these components and NativeBase will do that for you.
 
 ## Installation
 
-Add using npm
+To **Install Nativebase-Formik-UI** just copy this and paste in your terminal.\_
 
-```jsx
+<Tabs
+defaultValue='yarn'
+values={[
+{ label: 'yarn', value: 'yarn' },
+{ label: 'npm', value: 'npm' }
+]}>
+
+<TabItem value="yarn">
+
+```bash
+yarn add @native-base/formik-ui
+```
+
+</TabItem>
+
+<TabItem value="npm">
+
+```bash
 npm i @native-base/formik-ui
 ```
 
-Add using Yarn
+</TabItem>
 
-```jsx
-yarn add @native-base/formik-ui
-```
+</Tabs>
 
 ## Checkbox
 
@@ -102,7 +120,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl, FormErrorMessage, FormLabel, NativeBaseProvider } from 'native-base';
+import { Heading, FormControl, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -128,17 +146,17 @@ function FormikCheckboxCustomExample() {
         <Box>
           <Heading>Custom Checkbox using FormControl</Heading>
           <FormControl mt={4} isRequired isInvalid={errors.tnc}>
-            <FormLabel>Custom Label</FormLabel>
+            <FormControl.Label>Custom Label</FormControl.Label>
             <Checkbox name="tnc" mt={4}>
               <Text mx={2}>Terms and Conditions</Text>
             </Checkbox>
-            <FormErrorMessage>{errors.tnc}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.tnc}</FormControl.ErrorMessage>
           </FormControl>
           <FormControl>
             <Checkbox name="newsletter" mt={4}>
               <Text mx={2}>Subscribe to Our Newsletter</Text>
             </Checkbox>
-            <FormErrorMessage>{errors.newsletter}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.newsletter}</FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -181,7 +199,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl, FormErrorMessage, FormLabel, NativeBaseProvider } from 'native-base';
+import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -211,19 +229,19 @@ function FormikInputBasicExample() {
         <Box>
           <Heading>Login form using Custom FormControl</Heading>
           <FormControl mt={4} isRequired isInvalid={errors.email}>
-            <FormLabel color="teal.600">Email Address</FormLabel>
+            <FormControl.Label color="teal.600">Email Address</FormControl.Label>
             <Input name="email" mt={2} placeholder="jane.doe@example.com" />
-            <FormErrorMessage>{errors.email}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.email}</FormControl.ErrorMessage>
           </FormControl>
           <FormControl mt={4} isRequired isInvalid={errors.password}>
-            <FormLabel color="orange.600">Password</FormLabel>
+            <FormControl.Label color="orange.600">Password</FormControl.Label>
             <Input
               name="password"
               type="password"
               mt={2}
               placeholder="MyPassword"
             />
-            <FormErrorMessage>{errors.password}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.password}</FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -353,7 +371,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormLabel, FormControl, FormErrorMessage, NativeBaseProvider } from 'native-base';
+import { Heading,   FormControl,   NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -381,14 +399,14 @@ export default function FormikNumberInputBasicExample() {
         <Box mt={4}>
           <Heading>Let's check if you are eligible.</Heading>
           <FormControl mt={4} isInvalid={errors.age}>
-            <FormLabel>What's your Age?</FormLabel>
+            <FormControl.Label>What's your Age?</FormControl.Label>
             <NumberInput mt={2} name="age">
               <NumberInputStepper>
                 <NumberIncrementStepper />
                 <NumberDecrementStepper />
               </NumberInputStepper>
             </NumberInput>
-            <FormErrorMessage>{errors.age}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.age}</FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -593,7 +611,7 @@ import {
   Text,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl, FormErrorMessage, FormLabel, NativeBaseProvider } from 'native-base';
+import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -617,7 +635,7 @@ function FormikRadioCustomExample() {
         <Box mt={4}>
           <Heading>Let's Try to Know You More.</Heading>
           <FormControl mt={4} isRequired isInvalid={errors.color}>
-            <FormLabel>What's your faviourate Color ?</FormLabel>
+            <FormControl.Label>What's your faviourate Color ?</FormControl.Label>
             <RadioGroup
               mt={2}
               name="color"
@@ -638,7 +656,7 @@ function FormikRadioCustomExample() {
                 </Radio>
               </HStack>
             </RadioGroup>
-            <FormErrorMessage>{errors.color}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.color}</FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -771,7 +789,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl, FormErrorMessage, NativeBaseProvider } from 'native-base';
+import { Heading, FormControl,   NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -818,7 +836,7 @@ function FormikSelectCustomExample() {
               <Select.Item label="TypeScript" value="ts" />
               <Select.Item label="Java" value="java" />
             </SelectFormik>
-            <FormErrorMessage>{errors.language}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.language}</FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -947,7 +965,7 @@ import {
   Text,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl, FormLabel, FormErrorMessage, NativeBaseProvider } from 'native-base';
+import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -974,14 +992,14 @@ function FormikSliderCustomExample() {
           <Heading>Rate NativeBase V3 Formik Integration (0-10) 😬</Heading>
           <Text>You have rated us {Math.floor(values.rating)}</Text>
           <FormControl isInvalid={errors.rating}>
-            <FormLabel>Slider Label</FormLabel>
+            <FormControl.Label>Slider Label</FormControl.Label>
             <Slider name="rating" colorScheme="cyan" min={0} max={10}>
               <SliderTrack>
                 <SliderFilledTrack />
               </SliderTrack>
               <SliderThumb />
             </Slider>
-            <FormErrorMessage>{errors.rating}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.rating}</FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -1096,7 +1114,7 @@ import {
   Icon,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl, FormLabel, FormErrorMessage, NativeBaseProvider } from 'native-base';
+import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -1127,9 +1145,9 @@ function FormikSwitchCustomExample() {
             />
           </Heading>
           <FormControl mt={4} isInvalid={errors.switchon}>
-            <FormLabel>Toggle Switch</FormLabel>
+            <FormControl.Label>Toggle Switch</FormControl.Label>
             <Switch mt={2} name="switchon" label="Toggle Switch" />
-            <FormErrorMessage>{errors.switchon}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.switchon}</FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -1243,7 +1261,7 @@ import {
   NativeBaseProvider
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl, FormLabel, FormErrorMessage, NativeBaseProvider } from 'native-base';
+import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -1267,9 +1285,9 @@ function FormikTextareaCustomExample() {
         <Box mt={4}>
           <Heading>Tell us about yourself 🥷</Heading>
           <FormControl mt={4} isInvalid={errors.bio} isRequired>
-            <FormLabel>Describe You</FormLabel>
+            <FormControl.Label>Describe You</FormControl.Label>
             <TextArea name="bio" h="100" mt={2} placeholder="About me..." />
-            <FormErrorMessage>{errors.bio}</FormErrorMessage>
+            <FormControl.ErrorMessage>{errors.bio}</FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>

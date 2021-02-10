@@ -22,9 +22,6 @@ import React from "react";
 import {
   VStack,
   FormControl,
-  FormLabel,
-  FormHelperText,
-  FormErrorMessage,
   Input,
   NativeBaseProvider,
 } from "native-base";
@@ -35,15 +32,15 @@ function BuildingAFormExample() {
   return (
     <VStack width="80%">
       <FormControl isRequired>
-        <FormLabel>Name</FormLabel>
+        <FormControl.Label>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormHelperText>
+        <FormControl.HelperText>
           Name should contain atleast 3 character.
-        </FormHelperText>
-        <FormErrorMessage>Error Name</FormErrorMessage>
+        </FormControl.HelperText>
+        <FormControl.ErrorMessage>Error Name</FormControl.ErrorMessage>
       </FormControl>
     </VStack>
   );
@@ -67,9 +64,6 @@ import React from 'react';
 import {
   VStack,
   FormControl,
-  FormLabel,
-  FormHelperText,
-  FormErrorMessage,
   Input,
   NativeBaseProvider
 } from 'native-base';
@@ -98,15 +92,15 @@ function  BuildingAFormExample() {
   return (
     <VStack width="80%">
       <FormControl isRequired >
-        <FormLabel>Name</FormLabel>
+        <FormControl.Label>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormHelperText>
+        <FormControl.HelperText>
           Name should contain atleast 3 character.
-        </FormHelperText>
-        <FormErrorMessage>{errors.name}</FormErrorMessage>
+        </FormControl.HelperText>
+        <FormControl.ErrorMessage>{errors.name}</FormControl.ErrorMessage>
       </FormControl>
     </VStack>
   );
@@ -130,9 +124,6 @@ import {
   VStack,
   Button,
   FormControl,
-  FormLabel,
-  FormHelperText,
-  FormErrorMessage,
   Input,
   NativeBaseProvider
 } from 'native-base';
@@ -164,15 +155,15 @@ function BuildingAFormExample() {
   return (
     <VStack width="80%" space={4}>
       <FormControl isRequired isInvalid={'name' in errors}>
-        <FormLabel>Name</FormLabel>
+        <FormControl.Label>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormHelperText>
+        <FormControl.HelperText>
           Name should contain atleast 3 character.
-        </FormHelperText>
-        <FormErrorMessage>{errors.name}</FormErrorMessage>
+        </FormControl.HelperText>
+        <FormControl.ErrorMessage>{errors.name}</FormControl.ErrorMessage>
       </FormControl>
       <Button onPress={onSubmit} colorScheme="amber">
         Submit

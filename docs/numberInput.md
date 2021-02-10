@@ -144,9 +144,6 @@ export default function () {
 import React from 'react';
 import {
   FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
   NumberInput,
   NumberInputField,
   NumberInputStepper,
@@ -160,7 +157,7 @@ function NumberInputComponent () {
   return (
     <Container>
       <FormControl isRequired isInvalid>
-        <FormLabel>How many components we have</FormLabel>
+        <FormControl.Label>How many components we have</FormControl.Label>
         <NumberInput>
           <NumberInputField />
           <NumberInputStepper>
@@ -168,8 +165,8 @@ function NumberInputComponent () {
             <NumberDecrementStepper />
           </NumberInputStepper>
         </NumberInput>
-        <FormHelperText>You can make a guess.</FormHelperText>
-        <FormErrorMessage>Don't worry, it's just an example.</FormErrorMessage>
+        <FormControl.HelperText>You can make a guess.</FormControl.HelperText>
+        <FormControl.ErrorMessage>Don't worry, it's just an example.</FormControl.ErrorMessage>
       </FormControl>
     </Container>
   );

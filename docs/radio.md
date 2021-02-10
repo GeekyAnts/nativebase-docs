@@ -203,9 +203,6 @@ import {
   RadioGroup,
   Text,
   FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
   Container,
   NativeBaseProvider
 } from 'native-base';
@@ -214,7 +211,7 @@ function RadioComponent () {
   return (
     <Container>
       <FormControl isRequired isInvalid>
-        <FormLabel>Select One</FormLabel>
+        <FormControl.Label>Select One</FormControl.Label>
         <RadioGroup defaultValue="1">
           <Radio value="1">
             <Text mx={2}>First</Text>
@@ -226,8 +223,8 @@ function RadioComponent () {
             <Text mx={2}>Third</Text>
           </Radio>
         </RadioGroup>
-        <FormHelperText>We'll keep this between us.</FormHelperText>
-        <FormErrorMessage>Something is wrong.</FormErrorMessage>
+        <FormControl.HelperText>We'll keep this between us.</FormControl.HelperText>
+        <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
       </FormControl>
     </Container>
   );

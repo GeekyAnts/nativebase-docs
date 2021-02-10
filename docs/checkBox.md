@@ -264,9 +264,6 @@ export default function () {
 import React from "react";
 import {
   FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
   Checkbox,
   VStack,
   Text,
@@ -279,7 +276,7 @@ function CheckboxComponent() {
   return (
     <Container>
       <FormControl isRequired isInvalid>
-        <FormLabel>Favorite framework</FormLabel>
+        <FormControl.Label>Favorite framework</FormControl.Label>
         <Checkbox.Group
           colorScheme="green"
           defaultValue={groupValue}
@@ -305,8 +302,8 @@ function CheckboxComponent() {
             <Text mx={2}>Indeterminate Item</Text>
           </Checkbox>
         </Checkbox.Group>
-        <FormHelperText>We'll keep this between us.</FormHelperText>
-        <FormErrorMessage>Something is wrong.</FormErrorMessage>
+        <FormControl.HelperText>We'll keep this between us.</FormControl.HelperText>
+        <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
       </FormControl>
 
       <VStack mt={3} alignItems="baseline">
