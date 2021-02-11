@@ -3,7 +3,7 @@ id: code
 title: Code
 ---
 
-Code is a component used to display inline code. It is composed from the Box component with a font family of mono for displaying code
+Code is a component used to display inline code. It is composed from the Box component with a mono font family for displaying code
 
 ## Import
 
@@ -54,12 +54,9 @@ export default function () {
 
 ## Props
 
-- `children`: ( React.ReactNode ) **The content of the code**
-- `colorScheme` : ( **string** ) The color scheme to use for the code.
-
-## Props
-
 ### Code
+
+`Code` implements `Box`.
 
 | Name        | Type            | Description                                                                                                       | Default |
 | ----------- | --------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
