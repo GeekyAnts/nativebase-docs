@@ -30,7 +30,7 @@ import {
   MenuIcon,
   MenuCommand,
   MenuDivider,
-} from "native-base";
+} from 'native-base';
 ```
 
 ## Example (Usage)
@@ -44,15 +44,15 @@ function MenuComponent () {
     <Menu
       trigger={(triggerProps: any) => {
         return (
-          <IconButton name="menu" {...triggerProps} bg="teal.200">
+          <IconButton name="menu" {...triggerProps} >
             Show Menu
           </IconButton>
         );
       }}
     >
-      <MenuItem disabled>Menu item 1</MenuItem>
+      <MenuItem isDisabled>Menu item 1</MenuItem>
       <MenuItem>Menu item 2</MenuItem>
-      <MenuItem disabled>Menu item 3</MenuItem>
+      <MenuItem isDisabled>Menu item 3</MenuItem>
       <Divider />
       <MenuItem>Menu item 4</MenuItem>
     </Menu>
@@ -93,7 +93,7 @@ function MenuComponent () {
       </MenuGroup>
       <Divider />
       <MenuGroup title="Help">
-        <MenuItem disabled>Menu item 3</MenuItem>
+        <MenuItem isDisabled>Menu item 3</MenuItem>
         <MenuItem>Menu item 4</MenuItem>
       </MenuGroup>
     </Menu>
@@ -167,7 +167,6 @@ export default function () {
 | onOpen        | function | Function to be called when menu opens.                    | -       |
 | onClose       | function | Function to be called when menu closes.                   | -       |
 | closeOnSelect | boolean  | If true, the menu will close when a menu item is clicked. | -       |
-| Component     |          |                                                           |         |
 
 ### MenuItem
 
@@ -177,7 +176,6 @@ export default function () {
 | onPress       | function  | Function that is called on press.                         | -       |
 | textStyle     | TextStyle | Style to apply on Text.                                   | -       |
 | closeOnSelect | boolean   | If true, the menu will close when a menu item is clicked. | -       |
-| Component     |           |                                                           |         |
 
 ### **MenuItemOption**
 
@@ -185,17 +183,15 @@ Extends MenuItem.
 
 ### MenuItemOption
 
-| Name      | Type           | Description                     | Default |
-| --------- | -------------- | ------------------------------- | ------- |
-| value     | number, string | The value of the MenuItemOption | -       |
-| Component |                |                                 |         |
+| Name  | Type           | Description                     | Default |
+| ----- | -------------- | ------------------------------- | ------- |
+| value | number, string | The value of the MenuItemOption | -       |
 
 ### MenuGroup
 
-| Name      | Type   | Description                 | Default |
-| --------- | ------ | --------------------------- | ------- |
-| title     | string | The title of the menu group | -       |
-| Component |        |                             |         |
+| Name  | Type   | Description                 | Default |
+| ----- | ------ | --------------------------- | ------- |
+| title | string | The title of the menu group | -       |
 
 ### MenuOptionGroup
 
@@ -205,4 +201,3 @@ Extends MenuItem.
 | defaultValue | number, number[], string, string[] | The initial value of the option group.              | -       |
 | value        | number, string                     | The value of the option group.                      | -       |
 | onChange     | function                           | Function called when selection changes              | -       |
-| Component    |                                    |                                                     |         |

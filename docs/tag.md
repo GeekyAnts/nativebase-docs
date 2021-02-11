@@ -7,32 +7,53 @@ Tag component is used for items that need to be labeled, categorized, or organiz
 
 ## Import
 
-NativeBase exports 5 Tag related components:
-
-- **Tag**: The wrapper for all the tag elements
-- **TagLabel**: The label for tag's text content.
-- **TagLeftIcon**: The icon placed on the left side of the tag
-- **TagRightIcon**: The icon placed on the right side of the tag
-- **TagCloseButton**: The close button for the tag.
-
 ```jsx
-import {
-  Tag,
-  TagLabel,
-  TagLeftIcon,
-  TagRightIcon,
-  TagCloseButton,
-} from 'native-base';
+import { Tag } from 'native-base';
 ```
 
-## Example
+## Usage
+
+### Basic
 
 ```SnackPlayer name=Tag%20Example
 import React from 'react';
-import { Tag, NativeBaseProvider } from 'native-base';
+import { Tag, NativeBaseProvider, View,useColorModeValue } from 'native-base';
 
 function TagComponent () {
   return <Tag colorScheme="green">NativeBase</Tag>;
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+    <View
+      flex={1}
+      justifyContent="center"
+      alignItems="center"
+      bg={useColorModeValue(`gray.50`, `gray.800`)}
+    >
+      <TagComponent />
+      </View>
+    </NativeBaseProvider>
+  );
+}
+```
+
+### Variants
+
+```SnackPlayer name=Tag%20Example(Variants)
+import React from 'react';
+import { Tag, HStack, NativeBaseProvider } from 'native-base';
+
+function TagComponent() {
+  return (
+    <HStack space={4} alignItems="flex-start">
+      {['solid', 'subtle', 'outline'].map((variant: any) => (
+        <Tag key={variant} variant={variant} colorScheme="green">
+          NativeBase
+        </Tag>
+      ))}
+    </HStack>
+  );
 }
 export default function () {
   return (
@@ -43,7 +64,7 @@ export default function () {
 }
 ```
 
-## Example (Sizes)
+### Sizes
 
 ```SnackPlayer name=Tag%20Example(Sizes)
 import React from 'react';
@@ -69,28 +90,18 @@ export default function () {
 }
 ```
 
-## Example (with left icon)
+### With icon
 
-```SnackPlayer name=Tag%20Example(with left icon)
+```SnackPlayer name=Tag%20Example(with icon)
 import React from 'react';
-import { Tag, TagLabel, TagLeftIcon, HStack, NativeBaseProvider } from 'native-base';
+import { Tag, Icon, NativeBaseProvider } from 'native-base';
 
 function TagComponent() {
   return (
-    <HStack space={4} alignItems="flex-start">
-      {['sm', 'md', 'lg'].map((size) => (
-        <Tag
-          colorScheme="green"
-          variant="solid"
-          bg="red.200"
-          rounded={100}
-          size={size}
-        >
-          <TagLeftIcon name={'menu'} type="MaterialIcons" color="white" />
-          <TagLabel>Menu</TagLabel>
-        </Tag>
-      ))}
-    </HStack>
+    <Tag colorScheme="green" variant="solid" rounded={100}>
+      <Icon name={'menu'} type="MaterialIcons" color="white" mr={1} />
+      Menu
+    </Tag>
   );
 }
 export default function () {
@@ -102,67 +113,27 @@ export default function () {
 }
 ```
 
-## Example (with right icon)
-
-```SnackPlayer name=Tag%20Example(with right icon)
-import React from 'react';
-import { Tag, TagLabel, TagRightIcon, HStack, NativeBaseProvider } from 'native-base';
-
-function TagComponent() {
-  return (
-    <HStack space={4} alignItems="flex-start">
-      {['sm', 'md', 'lg'].map((size) => (
-        <Tag
-          colorScheme="green"
-          variant="solid"
-          bg="red.200"
-          rounded={100}
-          size={size}
-        >
-          <TagLabel>Menu</TagLabel>
-          <TagRightIcon name={'menu'} type="MaterialIcons" color="white" />
-        </Tag>
-      ))}
-    </HStack>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <TagComponent />
-    </NativeBaseProvider>
-  );
-}
-```
-
-## Example (custom)
+### Custom
 
 ```SnackPlayer name=Tag%20Example(custom)
 import React from 'react';
 import {
   Tag,
-  TagCloseButton,
-  TagLabel,
   Avatar,
-  AvatarBadge,
   NativeBaseProvider
 } from 'native-base';
 
 function TagComponent() {
   return (
-    <Tag colorScheme="red" rounded={100} size="md">
+    <Tag colorScheme="emerald" size="sm" rounded={'full'}>
       <Avatar
-        mr={3}
-        src={'https://nativebase.io/assets/img/front-page-icon.png'}
-        name={'Native Base'}
-        width={10}
-        height={10}
-        my={1}
-      >
-        <AvatarBadge bg={'blue.100'} boxSize={2} />
-      </Avatar>
-      <TagLabel>Custom Tag</TagLabel>
-      <TagCloseButton />
+        mr={2}
+        source={{ uri: 'https://nativebase.io/assets/img/front-page-icon.png' }}
+        name={'Nativebase'}
+        width={6}
+        height={6}
+      />
+      Nativebase
     </Tag>
   );
 }
@@ -177,11 +148,8 @@ export default function () {
 
 ## Props
 
-### Tag
-
-| Name        | Type                   | Description                                                                                                       | Default |
-| ----------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| variant     | outline, solid, subtle | The variant style of the tag component.                                                                           | -       |
-| colorScheme | string                 | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | -       |
-| size        | lg, md, sm             | The size of the tag component.                                                                                    | md      |
-| Component   |                        |                                                                                                                   |         |
+| Name        | Type                         | Description                                                                                                       | Default |
+| ----------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| variant     | `outline`, `solid`, `subtle` | The variant style of the tag component.                                                                           | -       |
+| colorScheme | string                       | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | -       |
+| size        | `lg`, `md`, `sm`             | The size of the tag component.                                                                                    | `md`    |

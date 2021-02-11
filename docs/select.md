@@ -3,7 +3,7 @@ id: select
 title: Select
 ---
 
-Creates a dropdown list of items with selected item in closed view.
+Creates a dropdown list of items with the selected item in closed view.
 
 ## Implements
 
@@ -75,7 +75,6 @@ export default function () {
 | dropdownIcon      | JSX.Element | If given, updates the dropdown Icon.                                                                  | -        |
 | dropdownOpenIcon  | JSX.Element | If given, updates the dropdown Icon, when opened.                                                     | -        |
 | dropdownCloseIcon | JSX.Element | If given, updates the dropdown Icon, when closed.                                                     | -        |
-| Component         |             |                                                                                                       |          |
 
 ### Select Item
 
@@ -84,4 +83,3 @@ export default function () {
 | label      | string  | The label which will be displayed.                                                             | -       |
 | value      | string  | The value to be used for the item. This is the value that will be returned on form submission. | -       |
 | isDisabled | boolean | If true, the item will be disabled.                                                            | -       |
-| Component  |         |                                                                                                |         |

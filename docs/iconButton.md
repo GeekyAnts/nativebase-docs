@@ -3,7 +3,7 @@ id: iconButton
 title: IconButton
 ---
 
-`IconButton` composes the `Button` component except that it renders only an icon.
+`IconButton` composes the `Button` component. It is generally used to make an Icon pressable.
 
 ## Implements
 

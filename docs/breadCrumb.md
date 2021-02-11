@@ -10,19 +10,17 @@ title: Breadcrumb
 ## Import
 
 ```jsx
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from 'nativebase';
+import { Breadcrumb } from "nativebase";
 ```
 
-## Usage
+## Basic
 
-Add `isCurrentPage` prop to the `BreadcrumbItem` that matches the current path.
+Add `isCurrentPage` prop to the `Breadcrumb.Item` that matches the current path.
 
-```SnackPlayer name=Breadcrumb%20Usage
+```SnackPlayer name=Breadcrumb%20Basic
 import React from 'react';
 import {
   Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
   Box,
   Heading,
   NativeBaseProvider
@@ -32,20 +30,22 @@ function BreadcrumbComponent () {
     <Box>
       <Heading mb={4}>This is a Default Breadcrumb</Heading>
       <Breadcrumb>
-        <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink>Home (This is currently active)</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink>Docs</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink
-            href="https://github.com/GeekyAnts/nativebase-v3"
+        <Breadcrumb.Item isCurrentPage>
+          <Breadcrumb.Link>Home (This is currently active)</Breadcrumb.Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Breadcrumb.Link href="https://alpha.nativebase.io/" isExternal>
+            Docs
+          </Breadcrumb.Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Breadcrumb.Link
+            href="https://github.com/GeekyAnts/nativebase"
             isExternal
           >
             Github
-          </BreadcrumbLink>
-        </BreadcrumbItem>
+          </Breadcrumb.Link>
+        </Breadcrumb.Item>
       </Breadcrumb>
     </Box>
   );
@@ -63,12 +63,10 @@ export default function () {
 
 Change the `separator` used in the breadcrumb by passing a string, like `'-'` or any Component.
 
-```SnackPlayer name=Breadcrumb%20Separators
+```SnackPlayer name=Breadcrumb%20Component%20Separator
 import React from 'react';
 import {
   Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
   Box,
   Heading,
   NativeBaseProvider
@@ -76,22 +74,27 @@ import {
 function BreadcrumbComponent () {
   return (
     <Box>
-      <Heading mb={4}>Breadcrumb with String Separator</Heading>
-      <Breadcrumb bold italic separator={"-"}>
-        <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink>Home (This is currently active)</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink>Docs</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink
-            href="https://github.com/GeekyAnts/nativebase-v3"
+      <Heading mb={4}>Breadcrumb with Custom Separator</Heading>
+      <Breadcrumb
+        spacing={1}
+        separator={<Icon name="keyboard-arrow-right" size={5} />}
+      >
+        <Breadcrumb.Item isCurrentPage>
+          <Breadcrumb.Link>Home (This is currently active)</Breadcrumb.Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Breadcrumb.Link href="https://alpha.nativebase.io/" isExternal>
+            Docs
+          </Breadcrumb.Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Breadcrumb.Link
+            href="https://github.com/GeekyAnts/nativebase"
             isExternal
           >
             Github
-          </BreadcrumbLink>
-        </BreadcrumbItem>
+          </Breadcrumb.Link>
+        </Breadcrumb.Item>
       </Breadcrumb>
     </Box>
   );
@@ -108,12 +111,10 @@ export default function () {
 <br/>
 <br/>
 
-```SnackPlayer name=Breadcrumb%20Example
+```SnackPlayer name=Breadcrumb%20String%20Separator
 import React from 'react';
 import {
   Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
   Box,
   Heading,
   Icon,
@@ -122,25 +123,24 @@ import {
 function BreadcrumbComponent () {
   return (
     <Box>
-      <Heading mb={4}>Breadcrumb with Custom Separator</Heading>
-      <Breadcrumb
-        spacing={1}
-        separator={<Icon name="keyboard-arrow-right" size={5} />}
-      >
-        <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink>Home (This is currently active)</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink>Docs</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink
-            href="https://github.com/GeekyAnts/nativebase-v3"
+      <Heading mb={4}>Breadcrumb with String Separator</Heading>
+      <Breadcrumb bold italic separator="-">
+        <Breadcrumb.Item isCurrentPage>
+          <Breadcrumb.Link>Home (This is currently active)</Breadcrumb.Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Breadcrumb.Link href="https://alpha.nativebase.io/" isExternal>
+            Docs
+          </Breadcrumb.Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Breadcrumb.Link
+            href="https://github.com/GeekyAnts/nativebase"
             isExternal
           >
             Github
-          </BreadcrumbLink>
-        </BreadcrumbItem>
+          </Breadcrumb.Link>
+        </Breadcrumb.Item>
       </Breadcrumb>
     </Box>
   );
@@ -160,33 +160,34 @@ Breadcrumb composes Box so you can pass all Box props to change the style of the
 
 ```SnackPlayer name=Breadcrumb%20Composition
 import React from 'react';
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  Box,
-  Heading,
-  NativeBaseProvider
-} from 'native-base'
+import { Breadcrumb, Box, Heading, Icon } from 'native-base';
 function BreadcrumbComponent () {
   return (
     <Box>
       <Heading mb={4}>Breadcrumb Composition</Heading>
-      <Breadcrumb spacing={2} fontSize='lg' color="green.500">
-        <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink>Home (This is currently active)</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink>Docs</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink
-            href="https://github.com/GeekyAnts/nativebase-v3"
+      <Breadcrumb spacing={2} fontSize="lg">
+        <Breadcrumb.Item>
+          <Breadcrumb.Link>
+            <Icon name="home" mr={1} />
+            Home
+          </Breadcrumb.Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Breadcrumb.Link href="https://alpha.nativebase.io/" isExternal>
+            <Icon name="file-document" type="MaterialCommunityIcons" mr={1} />
+            Docs
+          </Breadcrumb.Link>
+        </Breadcrumb.Item>
+
+        <Breadcrumb.Item isCurrentPage>
+          <Breadcrumb.Link
+            href="https://github.com/GeekyAnts/nativebase"
             isExternal
           >
-            Github
-          </BreadcrumbLink>
-        </BreadcrumbItem>
+            <Icon name="github" type="AntDesign" mr={1} />
+            Github (This is currently active)
+          </Breadcrumb.Link>
+        </Breadcrumb.Item>
       </Breadcrumb>
     </Box>
   );
@@ -208,15 +209,13 @@ export default function () {
 | --------- | ------------------------ | --------------------------------------------------- | ------- |
 | separator | JSX.Element, string      | The visual separator between the breadcrumb item.   | -       |
 | spacing   | StyledSystem.MarginProps | The left and right margin applied to the separator. | -       |
-| Component |                          |                                                     |         |
 
-### BreadcrumbItem
+### Breadcrumb.Item
 
 | Name          | Type    | Description                                                    | Default |
 | ------------- | ------- | -------------------------------------------------------------- | ------- |
 | isCurrentPage | boolean | If true, it indicates that the breadcrumb link is active page. | -       |
-| Component     |         |                                                                |         |
 
-### **BreadcrumbLink Props**
+### **Breadcrumb.Link Props**
 
-The BreadcrumbLink composes the `Link` component so you can use all Link props.
+The Breadcrumb.Link composes the `Link` component so you can use all Link props.

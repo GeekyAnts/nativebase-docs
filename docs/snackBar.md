@@ -8,7 +8,7 @@ Snackbars inform users of a process that an app has performed or will perform. T
 ## Import
 
 ```jsx
-import { Snackbar } from "native-base";
+import { Snackbar } from 'native-base';
 ```
 
 ## Usage
@@ -20,10 +20,25 @@ function SnackbarExample () {
   return (
     <>
       <Text>Snackbar will stay for 10 secs, default is 5 sec.</Text>
-      <Snackbar duration={10000}>
-        <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
-          Snackbar
-        </Box>
+      <Snackbar
+        autoHideDuration={10000}
+        accessibilityAnnouncement="Sample warning message"
+      >
+        <VStack mx={4} space={4}>
+          <Alert>
+            <AlertIcon />
+            <AlertTitle> Hello World</AlertTitle>
+          </Alert>
+          <Alert status="success">
+            <AlertIcon />
+            <AlertTitle>Account created</AlertTitle>
+            <AlertDescription mt={2} ml={12}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry’s standard dummy text
+              ever since the 1500s.
+            </AlertDescription>
+          </Alert>
+        </VStack>
       </Snackbar>
     </>
   );
@@ -63,7 +78,8 @@ function SnackbarExample () {
       <Button
         onPress={() =>
           setSnackbar(template, {
-            accessibilityAnnouncement: 'Welldone, we are proud of you.',
+            accessibilityAnnouncement: 'Well done, we are proud of you.',
+            autoHideDuration: 1000,
           })
         }
       >
@@ -72,9 +88,8 @@ function SnackbarExample () {
       <Button
         onPress={() =>
           setSnackbar(template, {
-            enableOverlay: true,
             placement: 'top',
-            accessibilityAnnouncement: 'Welldone, we are proud of you.',
+            accessibilityAnnouncement: 'Well done, we are proud of you.',
           })
         }
       >
@@ -96,4 +111,9 @@ export default function () {
 
 ### Actionsheet
 
-Implement `Slide`, all props of Box can be passed.
+Implement `Slide`, all props of `Box` and `Slide` can be passed.
+
+| Name                      | Type   | Description                                                    | Default |
+| ------------------------- | ------ | -------------------------------------------------------------- | ------- |
+| autoHideDuration          | number | The number of milliseconds to wait before dismissing snackbar. | -       |
+| accessibilityAnnouncement | string | String to be announced by the screen reader.                   | -       |

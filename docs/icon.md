@@ -5,9 +5,9 @@ title: Icon
 
 You can use icons in multiple ways in NativeBase:
 
-- Use `@expo/vector-icons` in your components.
+- Use `@expo/vector-icons` in your components
 - Create icon by creating an SVG Icon
-- Create icon using createIcon function and use it as component
+- Create icon using createIcon function and use it as a component
 
 ## Implements
 
@@ -109,13 +109,11 @@ export default function () {
 | focusable   | boolean  | Denotes whether the icon is an interactive element. | -       |
 | stroke      | string   |                                                     | -       |
 | strokeWidth | string   |                                                     | -       |
-| Component   |          |                                                     |         |
 
 ### CreateIcon
 
-| Name      | Type        | Description              | Default |
-| --------- | ----------- | ------------------------ | ------- |
-| viewBox   | string      | The viewBox of the icon  | -       |
-| d         | string      | The path of the SVG icon | -       |
-| path      | JSX.Element | path element of the icon | -       |
-| Component |             |                          |         |
+| Name    | Type        | Description              | Default |
+| ------- | ----------- | ------------------------ | ------- |
+| viewBox | string      | The viewBox of the icon  | -       |
+| d       | string      | The path of the SVG icon | -       |
+| path    | JSX.Element | path element of the icon | -       |

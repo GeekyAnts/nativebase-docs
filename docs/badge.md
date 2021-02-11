@@ -11,9 +11,9 @@ Badges are used to highlight an item's status for quick recognition.
 import { Badge } from "native-base";
 ```
 
-## Example
+## Basic
 
-```SnackPlayer name=Badge%20Example
+```SnackPlayer name=Badge%20Basic
 import React from 'react';
 import { Badge, NativeBaseProvider } from 'native-base';
 
@@ -29,9 +29,9 @@ export default function () {
 }
 ```
 
-## Example (Colors)
+## Color Scheme
 
-```SnackPlayer name=Badge%20Example(Colors)
+```SnackPlayer name=Badge%20Color%20Scheme
 import React from 'react';
 import { Badge, HStack, NativeBaseProvider } from 'native-base';
 
@@ -62,9 +62,9 @@ export default function () {
 }
 ```
 
-## Example (Variants)
+## Variants
 
-```SnackPlayer name=Badge%20Example(Variants)
+```SnackPlayer name=Badge%20EVariants
 import React from 'react';
 import { Badge, HStack, NativeBaseProvider } from 'native-base';
 
@@ -94,10 +94,11 @@ export default function () {
 
 ## Props
 
+`Badge` compose the `Box` component. So all it's props can be passed to `Badge`.
+
 ### Badge
 
 | Name        | Type                   | Description                                                           | Default |
 | ----------- | ---------------------- | --------------------------------------------------------------------- | ------- |
 | variant     | outline, solid, subtle | The style variant of the badge.                                       | subtle  |
 | colorScheme | string                 | The color scheme to use for the badge. Must be a key in theme.colors. | -       |
-| Component   |                        |                                                                       |         |

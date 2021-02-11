@@ -274,9 +274,8 @@ export default function () {
 
 ### Avatar
 
-| Name      | Type                    | Description                         | Default |
-| --------- | ----------------------- | ----------------------------------- | ------- |
-| size      | 2xl, lg, md, sm, xl, xs | The size of the avatar.             | md      |
-| name      | string                  | The name of the user in the avatar. | -       |
-| source    | ImageSourcePropType     | The image source of the avatar.     | -       |
-| Component |                         |                                     |         |
+| Name   | Type                    | Description                         | Default |
+| ------ | ----------------------- | ----------------------------------- | ------- |
+| size   | 2xl, lg, md, sm, xl, xs | The size of the avatar.             | md      |
+| name   | string                  | The name of the user in the avatar. | -       |
+| source | ImageSourcePropType     | The image source of the avatar.     | -       |

@@ -206,7 +206,6 @@ export default function () {
 import React from "react";
 import {
   Checkbox,
-  CheckboxGroup,
   Text,
   View,
   HStack,
@@ -217,7 +216,7 @@ function CheckboxComponent() {
   const [groupValue, setGroupValue] = React.useState(["Item 1 ", "Item 3 "]);
   return (
     <View display="flex" justifyContent="space-between" alignItems="checkBox">
-      <CheckboxGroup
+      <Checkbox.Group
         colorScheme="green"
         defaultValue={groupValue}
         onChange={(values) => {
@@ -240,7 +239,7 @@ function CheckboxComponent() {
         >
           <Text mx={2}>Indeterminate Item</Text>
         </Checkbox>
-      </CheckboxGroup>
+      </Checkbox.Group>
       <HStack mt={3} alignItems="baseline">
         <Text fontSize="md">Selected Values: </Text>
         <Text fontSize="md" bold>
@@ -265,11 +264,7 @@ export default function () {
 import React from "react";
 import {
   FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
   Checkbox,
-  CheckboxGroup,
   VStack,
   Text,
   Container,
@@ -281,8 +276,8 @@ function CheckboxComponent() {
   return (
     <Container>
       <FormControl isRequired isInvalid>
-        <FormLabel>Favorite framework</FormLabel>
-        <CheckboxGroup
+        <FormControl.Label>Favorite framework</FormControl.Label>
+        <Checkbox.Group
           colorScheme="green"
           defaultValue={groupValue}
           onChange={(values) => {
@@ -306,9 +301,9 @@ function CheckboxComponent() {
           >
             <Text mx={2}>Indeterminate Item</Text>
           </Checkbox>
-        </CheckboxGroup>
-        <FormHelperText>We'll keep this between us.</FormHelperText>
-        <FormErrorMessage>Something is wrong.</FormErrorMessage>
+        </Checkbox.Group>
+        <FormControl.HelperText>We'll keep this between us.</FormControl.HelperText>
+        <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
       </FormControl>
 
       <VStack mt={3} alignItems="baseline">
@@ -383,20 +378,18 @@ export default function () {
 | isInvalid        | boolean        | If true, the checkbox is marked as invalid. Changes style of unchecked state.                                         | -       |
 | onChange         | function       | Function called when the state of the checkbox changes.                                                               | -       |
 | children         | JSX.Element    | The children of the checkbox.                                                                                         | -       |
-| Component        |                |                                                                                                                       |         |
 
-`CheckboxGroup` implements `Box`.
+`Checkbox.Group` implements `Box`.
 
-### Checkbox Group
+### Checkbox.Group
 
 | Name         | Type     | Description                                                            | Default |
 | ------------ | -------- | ---------------------------------------------------------------------- | ------- |
 | value        | Array    | The value of the checkbox group.                                       | -       |
 | defaultValue | Array    | The initial value of the checkbox group.                               | -       |
 | onChange     | function | The callback fired when any children Checkbox is checked or unchecked. | -       |
-| Component    |          |                                                                        |         |
 
-The following props can be set on `CheckboxGroup` and they will be forwarded to all children `Checkbox` components.
+The following props can be set on `Checkbox.Group` and they will be forwarded to all children `Checkbox` components.
 
 ### Shared Style Props
 
@@ -406,4 +399,3 @@ The following props can be set on `CheckboxGroup` and they will be forwarded to 
 | size        | lg, md, sm | The size (width and height) of the checkbox.                                                                      | md      |
 | isDisabled  | boolean    | If true, the checkbox will be disabled                                                                            | -       |
 | isInvalid   | boolean    | If true, the checkbox is marked as invalid. Changes style of unchecked state.                                     | -       |
-| Component   |            |                                                                                                                   |         |

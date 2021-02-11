@@ -3,44 +3,30 @@ id: modal
 title: Modal
 ---
 
-The Avatar component is used to represent a user, and displays the profile picture, initials or fallback icon.
+A Modal is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is **inert**, meaning that users cannot interact with it.
 
 ## Import
 
-NativeBase exports 7 modal-related components:
+NativeBase exports Modal Compound component:
 
-- `Modal`: The wrapper that provides context for its children
-- `ModalOverlay`: The dimmed overlay behind the modal dialog
-- `ModalContent`: The container for the modal dialog's content
-- `ModalHeader`: The header that labels the modal dialog
-- `ModalFooter`: The footer that houses the modal actions
-- `ModalBody`: The wrapper that houses the modal's main content
-- `ModalCloseButton`: The button that closes the modal.
+- `Modal`: The wrapper that provides context for its children.
+- `Modal.Overlay`: The dimmed overlay behind the modal dialog.
+- `Modal.Content`: The container for the modal dialog's content.
+- `Modal.Header`: The header that labels the modal dialog.
+- `Modal.Footer`: The footer that houses the modal actions.
+- `Modal.Body`: The wrapper that houses the modal's main content.
+- `Modal.CloseButton`: The button that closes the modal.
 
 ```jsx
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-} from 'native-base';
+import { Modal } from 'native-base';
 ```
 
-## Usage
+## Basic
 
-```SnackPlayer name=Modal%20Usage
+```SnackPlayer name=Modal%20Basic
 import React from 'react';
 import {
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
+  Modal
   Button,
   Center,
   Input,
@@ -50,43 +36,48 @@ import {
 function ModalComponent () {
   const [modalVisible, setModalVisible] = React.useState(false);
   return (
-    <Center>
-      <Modal  isOpen={modalVisible} onClose={setModalVisible}>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalCloseButton />
-          <ModalHeader fontSize="4xl" fontWeight="bold">
+    <>
+      <Modal
+        isOpen={modalVisible}
+        onClose={setModalVisible}
+        overlayVisible={true}
+      >
+        <Modal.Content>
+          <Modal.CloseButton />
+          <Modal.Header _text={{ fontSize: '4xl', fontWeight: 'bold' }}>
             Hello World
-          </ModalHeader>
-          <ModalBody>
+          </Modal.Header>
+          <Modal.Body>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi
             cupiditate expedita, ipsa corporis officia totam similique delectus!
             Debitis esse, ea blanditiis iste enim iure at odit fugiat autem.
-            Accusamus?
             <Input mt={4} placeholder="Lorem ipsum dolor sit" />
-          </ModalBody>
-          <ModalFooter>
+          </Modal.Body>
+          <Modal.Footer>
             <Button colorScheme="blue" mr={1}>
-              Save
+              Done
             </Button>
             <Button
+              colorScheme="secondary"
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}
             >
-              Close
+              Cancel
             </Button>
-          </ModalFooter>
-        </ModalContent>
+          </Modal.Footer>
+        </Modal.Content>
       </Modal>
-      <Button
-        onPress={() => {
-          setModalVisible(!modalVisible);
-        }}
-      >
-        Open Modal
-      </Button>
-    </Center>
+      <Center>
+        <Button
+          onPress={() => {
+            setModalVisible(!modalVisible);
+          }}
+        >
+          Open Modal
+        </Button>
+      </Center>
+    </>
   );
 }
 export default function () {
@@ -100,16 +91,12 @@ export default function () {
 
 ## Modal Sizes
 
+You can pass `size` prop to NativeBase Modal , it can take `xs` , `sm`, `md`, `lg`, `xl`, `full` that maps to **40%**, **48%**, **60%**, **75%**, **90%** and **100%** respectively , or a string or a numerical width of the Modal.
+
 ```SnackPlayer name=Modal%20Sizes
 import React from 'react';
 import {
   Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
   Button,
   Center,
   Input,
@@ -125,71 +112,71 @@ function ModalComponent() {
     setModalVisible(!modalVisible);
   };
   return (
-    <Center>
+    <>
       <Modal
+        isCentered
         isOpen={modalVisible}
         onClose={setModalVisible}
         size={size}
       >
-        <ModalOverlay />
-        <ModalContent>
-          <ModalCloseButton />
-          <ModalHeader fontSize="4xl" fontWeight="bold">
+        <Modal.Content>
+          <Modal.CloseButton />
+          <Modal.Header _text={{ fontSize: '4xl', fontWeight: 'bold' }}>
             Hello World
-          </ModalHeader>
-          <ModalBody>
+          </Modal.Header>
+          <Modal.Body>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi
-            cupiditate expedita, ipsa corporis officia totam similique delectus!
-            Debitis esse, ea blanditiis iste enim iure at odit fugiat autem.
-            Accusamus?
+            cupiditate expedita, ipsa delectus!
             <Input mt={4} placeholder="Lorem ipsum dolor sit" />
-          </ModalBody>
-          <ModalFooter>
+          </Modal.Body>
+          <Modal.Footer>
             <Button colorScheme="blue" mr={1} mb={1}>
               Save
             </Button>
             <Button
-              colorScheme="red"
+              colorScheme="secondary"
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}
             >
               Close
             </Button>
-          </ModalFooter>
-        </ModalContent>
+          </Modal.Footer>
+        </Modal.Content>
       </Modal>
-      <Button
-        onPress={() => handleSizeClick('xs')}
-        key={'xs'}
-        m={4}
-      >{`Open ${'xs'} Modal`}</Button>
-      <Button
-        onPress={() => handleSizeClick('sm')}
-        key={'sm'}
-        m={4}
-      >{`Open ${'sm'} Modal`}</Button>
-      <Button
-        onPress={() => handleSizeClick('md')}
-        key={'md'}
-        m={4}
-      >{`Open ${'md'} Modal`}</Button>
-      <Button
-        onPress={() => handleSizeClick('lg')}
-        key={'lg'}
-        m={4}
-      >{`Open ${'lg'} Modal`}</Button>
-      <Button
-        onPress={() => handleSizeClick('xl')}
-        key={'xl'}
-        m={4}
-      >{`Open ${'xl'} Modal`}</Button>
-      <Button
-        onPress={() => handleSizeClick('full')}
-        key={'full'}
-        m={4}
-      >{`Open ${'full'} Modal`}</Button>
-    </Center>
+      <Center>
+        <Button
+          onPress={() => handleSizeClick('xs')}
+          key={'xs'}
+          m={4}
+        >{`Open ${'xs'} Modal`}</Button>
+        <Button
+          onPress={() => handleSizeClick('sm')}
+          key={'sm'}
+          m={4}
+        >{`Open ${'sm'} Modal`}</Button>
+        <Button
+          onPress={() => handleSizeClick('md')}
+          key={'md'}
+          m={4}
+        >{`Open ${'md'} Modal`}</Button>
+        <Button
+          onPress={() => handleSizeClick('lg')}
+          key={'lg'}
+          m={4}
+        >{`Open ${'lg'} Modal`}</Button>
+        <Button
+          onPress={() => handleSizeClick('xl')}
+          key={'xl'}
+          m={4}
+        >{`Open ${'xl'} Modal`}</Button>
+        <Button
+          onPress={() => handleSizeClick('full')}
+          key={'full'}
+          m={4}
+        >{`Open ${'full'} Modal`}</Button>
+      </Center>
+    </>
   );
 }
 export default function () {
@@ -203,16 +190,10 @@ export default function () {
 
 ## intialFocusRef and finalFocusRef Example
 
-```SnackPlayer name=Modal%20intialFocusRef and finalFocusRef
+```SnackPlayer name=Modal%20Refs
 import React from 'react';
 import {
   Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
   Button,
   Center,
   Input,
@@ -224,39 +205,40 @@ function ModalComponent () {
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
   return (
-    <Center>
+    <>
       <Modal
+        isCentered
         isOpen={modalVisible}
         onClose={setModalVisible}
         initialFocusRef={initialRef}
         finalFocusRef={finalRef}
       >
-        <ModalOverlay />
-        <ModalContent>
-          <ModalCloseButton />
-          <ModalHeader fontSize="4xl" fontWeight="bold">
+        <Modal.Content>
+          <Modal.CloseButton />
+          <Modal.Header _text={{ fontSize: '4xl', fontWeight: 'bold' }}>
             Hello World
-          </ModalHeader>
-          <ModalBody>
+          </Modal.Header>
+          <Modal.Body>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi
             cupiditate expedita, ipsa corporis officia totam similique delectus!
             Debitis esse, ea blanditiis iste enim iure at odit fugiat autem.
             Accusamus?
             <Input mt={4} ref={initialRef} placeholder="First name" />
-          </ModalBody>
-          <ModalFooter>
+          </Modal.Body>
+          <Modal.Footer>
             <Button colorScheme="blue" mr={1}>
               Save
             </Button>
             <Button
+              colorScheme="secondary"
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}
             >
               Close
             </Button>
-          </ModalFooter>
-        </ModalContent>
+          </Modal.Footer>
+        </Modal.Content>
       </Modal>
       <Button
         onPress={() => {
@@ -266,7 +248,7 @@ function ModalComponent () {
         Open Modal
       </Button>
       <Input mt={4} ref={finalRef} placeholder="I'll receive focus on close" />
-    </Center>
+    </>
   );
 }
 export default function () {
@@ -278,7 +260,80 @@ export default function () {
 }
 ```
 
-> If you want a specifically aligned Modal pass `justifyContent` and `alignItems` to Modal.
+## Modal with avoidKeyboard
+
+```SnackPlayer name=Modal%20avoidKeyboard
+import React from 'react';
+import {
+  Modal,
+  Button,
+  Center,
+  Input,
+  NativeBaseProvider
+} from 'native-base';
+
+function ModalComponent () {
+  const [modalVisible, setModalVisible] = React.useState(false);
+  return (
+    <>
+      <Modal
+        isCentered
+        isOpen={modalVisible}
+        onClose={setModalVisible}
+        avoidKeyboard
+      >
+        <Modal.Content>
+          <Modal.CloseButton />
+          <Modal.Header _text={{ fontSize: '4xl', fontWeight: 'bold' }}>
+            Hello World
+          </Modal.Header>
+          <Modal.Body>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi
+            cupiditate expedita, ipsa corporis officia totam similique delectus!
+            Debitis esse, ea blanditiis iste enim iure at odit fugiat autem.
+            Accusamus?
+            <Input mt={4} placeholder="Lorem ipsum dolor sit" />
+          </Modal.Body>
+          <Modal.Footer>
+            <Button colorScheme="blue" mr={1}>
+              Save
+            </Button>
+            <Button
+              colorScheme="secondary"
+              onPress={() => {
+                setModalVisible(!modalVisible);
+              }}
+            >
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal.Content>
+      </Modal>
+      <VStack space={2}>
+        <Button
+          onPress={() => {
+            setModalVisible(!modalVisible);
+          }}
+        >
+          Open Modal
+        </Button>
+        <Text>
+          Open modal and focus on the input element to see the effect.
+        </Text>
+      </VStack>
+    </>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <ModalComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+> If you want a specifically aligned Modal, pass `justifyContent` and `alignItems` to Modal.
 
 ## Props
 
@@ -298,9 +353,8 @@ export default function () {
 | closeOnOverlayClick | boolean                                  | If true, clicking on overlay will close the modal.                          | -       |
 | overlayVisible      | boolean                                  | To set the visibility the overlay.                                          | -       |
 | overlayColor        | string                                   | To set the color of overlay.                                                | -       |
-| Component           |                                          |                                                                             |         |
 
 ### Child **components**
 
-- `ModalOverlay`, `ModalHeader`, `ModalFooter` and `ModalBody` composes `Box` component
-- `ModalCloseButton` composes `CloseButton`
+- `Modal.Overlay`, `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the `Box` component.
+- `Modal.CloseButton` composes the `CloseButton`.

@@ -3,48 +3,27 @@ id: alertDialog
 title: AlertDialog
 ---
 
-AlertDialog component is used to interrupt the user with a mandatory confirmation or action.
-
-`Heading` composes `Modal` so you can use all its props.
+AlertDialog component is used to interrupt the user with a mandatory confirmation or action. AlertDialog composes `Modal` so you can use all its props.
 
 ## Import
 
-NativeBase exports 7 alert dialog related components.
-
 - `AlertDialog`: provides context and state for the dialog.
-- `AlertDialogHeader`: should contain the title announced by screen readers.
-- `AlertDialogBody`: should contain the description announced by screen readers.
-- `AlertDialogFooter`: should contain the actions of the dialog.
-- `AlertDialogOverlay`: The dimmed overlay behind the dialog.
-- `AlertDialogContent`: The wrapper for the alert dialog's content.
-- `AlertDialogCloseButton`: The button that closes the dialog.
+- `AlertDialog.Header`: contains the title announced by screen readers.
+- `AlertDialog.Body`: contains the description announced by screen readers.
+- `AlertDialog.Footer`: contains the actions of the dialog.
+- `AlertDialog.Overlay`: The dimmed overlay behind the dialog.
+- `AlertDialog.Content`: The wrapper for the alert dialog's content.
+- `AlertDialog.CloseButton`: The button that closes the dialog.
 
 ```jsx
-import {
-  AlertDialog,
-  AlertDialogBody,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogContent,
-  AlertDialogOverlay,
-} from "native-base";
+import { AlertDialog } from "native-base";
 ```
 
-## Example
+## Basic
 
-```SnackPlayer name=AlertDialog%20Example
+```SnackPlayer name=AlertDialog%20Basic
 import React from "react";
-import {
-  AlertDialog,
-  AlertDialogBody,
-  AlertDialogContent,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogOverlay,
-  Button,
-  Center,
-  NativeBaseProvider,
-} from "native-base";
+import { AlertDialog, Button, Center, NativeBaseProvider } from "native-base";
 
 function AlertDialogComponent() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -58,24 +37,24 @@ function AlertDialogComponent() {
         onClose={onClose}
         motionPreset={"fade"}
       >
-        <AlertDialogOverlay justifyContent="center">
-          <AlertDialogContent>
-            <AlertDialogHeader fontSize="lg" fontWeight="bold">
+        <AlertDialog.Overlay justifyContent="center">
+          <AlertDialog.Content>
+            <AlertDialog.Header fontSize="lg" fontWeight="bold">
               Delete Customer
-            </AlertDialogHeader>
-            <AlertDialogBody>
+            </AlertDialog.Header>
+            <AlertDialog.Body>
               Are you sure? You can't undo this action afterwards.
-            </AlertDialogBody>
-            <AlertDialogFooter>
+            </AlertDialog.Body>
+            <AlertDialog.Footer>
               <Button ref={cancelRef} onPress={onClose}>
                 Cancel
               </Button>
               <Button colorScheme="red" onPress={onClose} ml={3}>
                 Delete
               </Button>
-            </AlertDialogFooter>
-          </AlertDialogContent>
-        </AlertDialogOverlay>
+            </AlertDialog.Footer>
+          </AlertDialog.Content>
+        </AlertDialog.Overlay>
       </AlertDialog>
       <Button colorScheme="danger" onPress={() => setIsOpen(!isOpen)}>
         Delete Customer
@@ -92,22 +71,11 @@ export default function () {
 }
 ```
 
-## Example (Transition)
+## Transition
 
-```SnackPlayer name=AlertDialog%20ExampleTransition
+```SnackPlayer name=AlertDialog%20Transition
 import React from "react";
-import {
-  AlertDialog,
-  AlertDialogBody,
-  AlertDialogContent,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogOverlay,
-  Button,
-  AlertDialogCloseButton,
-  Center,
-  NativeBaseProvider,
-} from "native-base";
+import { AlertDialog, Button, Center, NativeBaseProvider } from "native-base";
 
 function AlertDialogComponent() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -122,24 +90,24 @@ function AlertDialogComponent() {
         isOpen={isOpen}
         isCentered
       >
-        <AlertDialogOverlay />
+        <AlertDialog.Overlay />
 
-        <AlertDialogContent>
-          <AlertDialogCloseButton />
-          <AlertDialogHeader>Discard Changes?</AlertDialogHeader>
-          <AlertDialogBody>
+        <AlertDialog.Content>
+          <AlertDialog.CloseButton />
+          <AlertDialog.Header>Discard Changes?</AlertDialog.Header>
+          <AlertDialog.Body>
             Are you sure you want to discard all of your notes? 44 words will be
             deleted.
-          </AlertDialogBody>
-          <AlertDialogFooter>
+          </AlertDialog.Body>
+          <AlertDialog.Footer>
             <Button ref={cancelRef} onPress={onClose}>
               No
             </Button>
             <Button colorScheme="red" ml={3}>
               Yes
             </Button>
-          </AlertDialogFooter>
-        </AlertDialogContent>
+          </AlertDialog.Footer>
+        </AlertDialog.Content>
       </AlertDialog>
       <Button onPress={() => setIsOpen(!isOpen)}>Discard</Button>
     </Center>
@@ -156,11 +124,10 @@ export default function () {
 
 ## Props
 
-AlertDialog and its components compose the Modal component. The only exception is that it requires a `leastDestructiveRef` which is similar to the `initialFocusRef` of Modal.
+AlertDialog and its components compose the Modal component. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of Modal.
 
 ### AlertDialog
 
 | Name                | Type      | Description                                                    | Default |
 | ------------------- | --------- | -------------------------------------------------------------- | ------- |
 | leastDestructiveRef | React.Ref | The least destructive action to get focus when dialog is open. | -       |
-| Component           |           |                                                                |         |

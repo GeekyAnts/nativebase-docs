@@ -203,9 +203,6 @@ import {
   RadioGroup,
   Text,
   FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
   Container,
   NativeBaseProvider
 } from 'native-base';
@@ -214,7 +211,7 @@ function RadioComponent () {
   return (
     <Container>
       <FormControl isRequired isInvalid>
-        <FormLabel>Select One</FormLabel>
+        <FormControl.Label>Select One</FormControl.Label>
         <RadioGroup defaultValue="1">
           <Radio value="1">
             <Text mx={2}>First</Text>
@@ -226,8 +223,8 @@ function RadioComponent () {
             <Text mx={2}>Third</Text>
           </Radio>
         </RadioGroup>
-        <FormHelperText>We'll keep this between us.</FormHelperText>
-        <FormErrorMessage>Something is wrong.</FormErrorMessage>
+        <FormControl.HelperText>We'll keep this between us.</FormControl.HelperText>
+        <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
       </FormControl>
     </Container>
   );
@@ -324,7 +321,6 @@ export default function () {
 | onChange         | function       | Function called when the state of the radio changes.                                                              | -       |
 | children         | JSX.Element    | The children of the radio.                                                                                        | -       |
 | ariaLabel        | string         | An accessible label for the radio in event there's no visible label or children was passed                        | -       |
-| Component        |                |                                                                                                                   |         |
 
 `RadioGroup` implements `Box`.
 
@@ -335,7 +331,6 @@ export default function () {
 | value        | Array    | The value of the radio group.                                       | -       |
 | defaultValue | Array    | The initial value of the radio group.                               | -       |
 | onChange     | function | The callback fired when any children radio is checked or unchecked. | -       |
-| Component    |          |                                                                     |         |
 
 The following props can be set on `RadioGroup` and they will be forwarded to all children `Radio` components.
 
@@ -347,4 +342,3 @@ The following props can be set on `RadioGroup` and they will be forwarded to all
 | size        | lg, md, sm | The size (width and height) of the radio.                                                                         | md      |
 | isDisabled  | boolean    | If true, the radio will be disabled                                                                               | -       |
 | isInvalid   | boolean    | If true, the radio is marked as invalid. Changes style of unchecked state.                                        | -       |
-| Component   |            |                                                                                                                   |         |

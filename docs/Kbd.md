@@ -47,6 +47,8 @@ export default function () {
 
 ## Props
 
+`Kbd` implements `Box`.
+
 ### Kbd
 
 | Name      | Type           | Description                          | Default |
@@ -54,4 +56,3 @@ export default function () {
 | textStyle | TextStyle      | The style to be applied to the text. | -       |
 | fontSize  | number, string | Font size to apply to the text.      | -       |
 | shadow    | number         | Shadow variant to apply to box.      | -       |
-| Component |                |                                      |         |

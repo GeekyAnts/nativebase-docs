@@ -144,9 +144,6 @@ export default function () {
 import React from 'react';
 import {
   FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
   NumberInput,
   NumberInputField,
   NumberInputStepper,
@@ -160,7 +157,7 @@ function NumberInputComponent () {
   return (
     <Container>
       <FormControl isRequired isInvalid>
-        <FormLabel>How many components we have</FormLabel>
+        <FormControl.Label>How many components we have</FormControl.Label>
         <NumberInput>
           <NumberInputField />
           <NumberInputStepper>
@@ -168,8 +165,8 @@ function NumberInputComponent () {
             <NumberDecrementStepper />
           </NumberInputStepper>
         </NumberInput>
-        <FormHelperText>You can make a guess.</FormHelperText>
-        <FormErrorMessage>Don't worry, it's just an example.</FormErrorMessage>
+        <FormControl.HelperText>You can make a guess.</FormControl.HelperText>
+        <FormControl.ErrorMessage>Don't worry, it's just an example.</FormControl.ErrorMessage>
       </FormControl>
     </Container>
   );
@@ -198,7 +195,6 @@ export default function () {
 | isDisabled         | boolean  | If true, the input will be disabled.                                                                           |         |
 | keepWithinRange    | boolean  | If true and you use the stepper or up/down arrow keys, the value will not exceed the max or go lower than min. |         |
 | focusInputOnChange | boolean  | If true, the input will be focused as you increment or decrement the value with the stepper.                   |         |
-| Component          |          |                                                                                                                |         |
 
 `NumberInput` composes `Input` so you can pass all `Input` props.
 
@@ -216,4 +212,3 @@ export default function () {
 | ---------- | ---- | ------------------------------------------- | ------- |
 | \_disabled | any  | Pass custom style object for disabled state | -       |
 | \_active   | any  | Pass custom style object for active state   | -       |
-| Component  |      |                                             |         |

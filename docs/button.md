@@ -26,7 +26,7 @@ import { Button, NativeBaseProvider } from 'native-base';
 
 function ButtonComponent () {
   return (
-    <Button size="sm" colorScheme="teal" variant={'solid'}>
+    <Button size="sm" colorScheme="teal" variant={'solid'} _text={{ fontWeight: 700 }}>
       Button Variants
     </Button>
   );
@@ -137,14 +137,14 @@ function ButtonComponent () {
   return (
     <HStack space={2}>
       <Button
-        leftIcon={<Icon name="menu" size={6} type="MaterialIcons" />}
+        startIcon={<Icon name="menu" size={6} type="MaterialIcons" />}
         colorScheme="indigo"
       >
         Menu
       </Button>
       <Button
         isDisabled
-        rightIcon={<Icon name="menu" size={6} type="MaterialIcons" />}
+        endIcon={<Icon name="menu" size={6} type="MaterialIcons" />}
         colorScheme="cyan"
       >
         Menu
@@ -251,8 +251,8 @@ export default function () {
 | ariaLabel   | string                                | An accessible label for the button, useful when you render only an icon in the button.                            | -       |
 | highlight   | number                                | Active opacity of the button.                                                                                     | -       |
 | colorScheme | string                                | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | gray    |
-| leftIcon    | JSX.Element                           | The left icon element to use in the button.                                                                       | -       |
-| rightIcon   | JSX.Element                           | The right icon element to use in the button.                                                                      | -       |
+| startIcon   | JSX.Element                           | The start icon element to use in the button.                                                                      | -       |
+| endIcon     | JSX.Element                           | The end icon element to use in the button.                                                                        | -       |
 | spinner     | JSX.Element                           | The spinner element to use when isLoading is set to true.                                                         | -       |
 | variant     | ghost, link, outline, solid, unstyled | The variant of the button style to use.                                                                           | solid   |
 | isDisabled  | boolean                               | If true, the button will be disabled.                                                                             | -       |
@@ -261,4 +261,4 @@ export default function () {
 | size        | lg, md, sm, xs                        | The size of the button.                                                                                           | md      |
 | shadow      | number                                | Shadow to apply to button.                                                                                        | -       |
 | onPress     | function                              | Callback for onPress.                                                                                             | -       |
-| Component   |                                       |                                                                                                                   |         |
+| \_text      | TextProps                             | Props to style the child text                                                                                     | -       |

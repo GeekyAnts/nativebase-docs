@@ -167,7 +167,6 @@ Implement `Box`, all props of Box can be passed.
 | isOpen         | boolean  | If true, actionsheet will be open.   | -       |
 | onClose        | function | Callback when actionsheet is closed. | -       |
 | disableOverlay | boolean  | If true, disables the overlay.       | -       |
-| Component      |          |                                      |         |
 
 ActionsheetContent, ActionsheetHeader, ActionsheetFooter all implement `Box`, all props of Box can be passed.
 

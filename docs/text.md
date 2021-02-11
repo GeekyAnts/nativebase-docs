@@ -3,7 +3,7 @@ id: text
 title: Text
 ---
 
-`Text` is the used to render text and paragraphs within an interface. It is build on `Text` component from `react-native`
+`Text` is used to render text and paragraphs within an interface. It is build on the `Text` component from `react-native`
 
 ## Implements
 
@@ -12,7 +12,7 @@ title: Text
 ## Import
 
 ```jsx
-import { Text } from "native-base";
+import { Text } from 'native-base';
 ```
 
 ## ChangingFontSize
@@ -152,4 +152,3 @@ export default function () {
 | strikeThrough | boolean                         | a horizontal line through its center.                                                              | -       |
 | sub           | boolean                         | text will have smaller font size.                                                                  | -       |
 | highlight     | boolean                         | Highlight the text with a yellow background.                                                       | -       |
-| Component     |                                 |                                                                                                    |         |
