@@ -44,15 +44,15 @@ function MenuComponent () {
     <Menu
       trigger={(triggerProps: any) => {
         return (
-          <IconButton name="menu" {...triggerProps} bg="teal.200">
+          <IconButton name="menu" {...triggerProps} >
             Show Menu
           </IconButton>
         );
       }}
     >
-      <MenuItem disabled>Menu item 1</MenuItem>
+      <MenuItem isDisabled>Menu item 1</MenuItem>
       <MenuItem>Menu item 2</MenuItem>
-      <MenuItem disabled>Menu item 3</MenuItem>
+      <MenuItem isDisabled>Menu item 3</MenuItem>
       <Divider />
       <MenuItem>Menu item 4</MenuItem>
     </Menu>
@@ -93,7 +93,7 @@ function MenuComponent () {
       </MenuGroup>
       <Divider />
       <MenuGroup title="Help">
-        <MenuItem disabled>Menu item 3</MenuItem>
+        <MenuItem isDisabled>Menu item 3</MenuItem>
         <MenuItem>Menu item 4</MenuItem>
       </MenuGroup>
     </Menu>
