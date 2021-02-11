@@ -19,7 +19,7 @@ function IconButtonExample () {
     <IconButton
       colorScheme="blue"
       variant="outline"
-      icon={<Icon name={'search'} size={'lg'} />}
+      icon={<Icon name={'search'} />}
     />
   );
 }
@@ -45,7 +45,7 @@ function IconButtonExample () {
           size={size}
           variant="solid"
           colorScheme="blue"
-          icon={<Icon name={'menu'} size={'lg'} />}
+          icon={<Icon name={'menu'} />}
         />
       ))}
     </HStack>
@@ -72,7 +72,7 @@ function IconButtonExample () {
         <IconButton
           variant={variant}
           colorScheme='teal'
-          icon={<Icon name={'menu'} size={'lg'} />}
+          icon={<Icon name={'menu'} />}
         />
       ))}
     </HStack>
@@ -91,11 +91,8 @@ export default function () {
 
 ### IconButton
 
-| Name        | Type                                  | Description                                                                                 | Default |
-| ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------- | ------- |
-| colorScheme | string                                | The color scheme of the button.                                                             | gray    |
-| variant     | ghost, link, outline, solid, unstyled | The variant of the button style to use.                                                     | ghost   |
-| isDisabled  | boolean                               | If true, the button will be disabled.                                                       | -       |
-| isLoading   | boolean                               | If true, the button will show a spinner.                                                    | -       |
-| size        | lg, md, sm, xs                        | The size of the button.                                                                     | md      |
-| icon        | string                                | The icon to be used. Refer to the Icons section of the docs for the available icon options. | -       |
+**IconButton** implements **Button** , so all the **Button** Props can be passed to **IconButton**.
+
+| Name | Type        | Description                                                                                 | Default |
+| ---- | ----------- | ------------------------------------------------------------------------------------------- | ------- |
+| icon | JSX.Element | The icon to be used. Refer to the Icons section of the docs for the available icon options. | -       |

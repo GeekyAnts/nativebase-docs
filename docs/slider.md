@@ -16,10 +16,10 @@ NativeBase exports 7 modal-related components:
 
 ```jsx
 import {
-  Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
+	Slider,
+	SliderTrack,
+	SliderFilledTrack,
+	SliderThumb,
 } from 'native-base';
 ```
 
@@ -261,7 +261,7 @@ export default function () {
 
 ## Props
 
-### nSlider
+### Slider
 
 | Name            | Type                 | Description                                                                                                       | Default    |
 | --------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------- |
