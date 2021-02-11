@@ -12,26 +12,15 @@ Stat provides a beautiful structure to display statistics and data.
 ## Import
 
 ```jsx
-import {
-  Stat,
-  StatLabel,
-  StatNumber,
-  StatHelpText,
-  StatArrow,
-  StatGroup,
-} from 'native-base';
+import { Stat } from 'native-base';
 ```
 
-## Usage
+## Basic
 
 ```SnackPlayer name=Stat%20Usage
 import React from 'react';
 import {
   Stat,
-  StatLabel,
-  StatNumber,
-  StatHelpText,
-  Heading,
   Box,
   NativeBaseProvider
 } from 'native-base';
@@ -41,9 +30,9 @@ function StatComponent () {
     <Box>
       <Heading>Basic Stat Usage</Heading>
       <Stat mt={6}>
-        <StatLabel>Collected Fees</StatLabel>
-        <StatNumber>£0.00</StatNumber>
-        <StatHelpText>Feb 12 - Feb 28</StatHelpText>
+        <Stat.Label>Collected Fees</Stat.Label>
+        <Stat.Number>£0.00</Stat.Number>
+        <Stat.HelpText>Feb 12 - Feb 28</Stat.HelpText>
       </Stat>
     </Box>
   );
@@ -63,11 +52,6 @@ export default function () {
 import React from 'react';
 import {
   Stat,
-  StatLabel,
-  StatNumber,
-  StatHelpText,
-  StatArrow,
-  StatGroup,
   Heading,
   Box,
   NativeBaseProvider
@@ -77,24 +61,24 @@ function StatComponent () {
   return (
     <Box>
       <Heading>Stat with Indicator</Heading>
-      <StatGroup mt={6} color="indigo.500">
+      <Stat.Group mt={6} color="indigo.5">
         <Stat>
-          <StatLabel>Sent</StatLabel>
-          <StatNumber>3,670</StatNumber>
-          <StatHelpText>
-            <StatArrow type="increase" />
+          <Stat.Label>Sent</Stat.Label>
+          <Stat.Number>3,670</Stat.Number>
+          <Stat.HelpText>
+            <Stat.Arrow type="increase" />
             23.36%
-          </StatHelpText>
+          </Stat.HelpText>
         </Stat>
         <Stat>
-          <StatLabel>Clicked</StatLabel>
-          <StatNumber>45</StatNumber>
-          <StatHelpText>
-            <StatArrow type="increase" />
+          <Stat.Label>Clicked</Stat.Label>
+          <Stat.Number>45</Stat.Number>
+          <Stat.HelpText>
+            <Stat.Arrow type="increase" />
             9.05%
-          </StatHelpText>
+          </Stat.HelpText>
         </Stat>
-      </StatGroup>
+      </Stat.Group>
     </Box>
   );
 }
@@ -109,6 +93,7 @@ export default function () {
 
 ## **Props**
 
-- StatLabel, StatNumber composes `Text` component
-- StatArrow composes `Icon` component
-- Stat, StatGroup, StatHelpText composes `Box` component
+- `Stat.Label`, `Stat.Number` composes the `Text` component.
+- `Stat.Arrow` composes the `Icon` component but only accepts **_increase_** and **_decrease_** as **type**, yielding icon respectively.
+- `Stat`, `Stat.HelpText` composes the `Box` component.
+- `Stat.Group` composes the `HStack` component.
