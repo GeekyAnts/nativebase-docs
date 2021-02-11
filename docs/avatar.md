@@ -279,3 +279,4 @@ export default function () {
 | size   | 2xl, lg, md, sm, xl, xs | The size of the avatar.             | md      |
 | name   | string                  | The name of the user in the avatar. | -       |
 | source | ImageSourcePropType     | The image source of the avatar.     | -       |
+| \_name | TextProps               | Text styling for alt.               | -       |

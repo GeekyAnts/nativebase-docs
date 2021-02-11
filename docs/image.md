@@ -174,3 +174,4 @@ export default function () {
 | alt            | string              | The alt text that describes the image                                   | -       |
 | ignoreFallback | boolean             | Opt out of the fallbackSource logic and show alternative text           | -       |
 | size           | number              | Define the box size of image.                                           | -       |
+| \_alt          | TextProps           | Text styling for alt.                                                   | -       |

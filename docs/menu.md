@@ -7,54 +7,36 @@ A dropdown menu for the common dropdown menu button design pattern.
 
 ## Import
 
-NativeBase exports 8 components for rendering menus:
+NativeBase uses 5 components for rendering menus:
 
 - `Menu`: The wrapper component provides context, state, and focus management.
-- `MenuList`: The wrapper for the menu items. Must be a direct child of `Menu`.
-- `MenuButton`: The trigger for the menu list. Must be a direct child of `Menu`.
-- `MenuItem`: The trigger that handles menu selection. Must be a direct child of a `MenuList`.
-- `MenuGroup`: A wrapper to group related menu items.
-- `MenuDivider`: A visual separator for menu items and groups.
-- `MenuOptionGroup`: A wrapper for checkable menu items (radio and checkbox)
-- `MenuItemOption`: The checkable menu item, to be used with `MenuOptionGroup`
+- `Menu.Item`: The trigger that handles menu selection. Must be a direct child of a `MenuList`.
+- `Menu.Group`: A wrapper to group related menu items.
+- `Menu.OptionGroup`: A wrapper for checkable menu items (radio and checkbox).
+- `Menu.ItemOption`: The checkable menu item, to be used with `MenuOptionGroup`.
 
 ```jsx
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuIcon,
-  MenuCommand,
-  MenuDivider,
-} from 'native-base';
+import { Menu } from 'native-base';
 ```
 
 ## Example (Usage)
 
-```SnackPlayer name=Menu%20Usage
+```SnackPlayer name=Menu%20Basic
 import React from 'react';
-import { Menu, MenuItem, Divider, IconButton, NativeBaseProvider } from 'native-base';
+import { Menu, Divider, IconButton, Icon NativeBaseProvider } from 'native-base';
 
 function MenuComponent () {
   return (
-    <Menu
+	<Menu
       trigger={(triggerProps: any) => {
-        return (
-          <IconButton name="menu" {...triggerProps} bg="teal.200">
-            Show Menu
-          </IconButton>
-        );
+        return <IconButton icon={<Icon name="menu" />} {...triggerProps} />;
       }}
     >
-      <MenuItem disabled>Menu item 1</MenuItem>
-      <MenuItem>Menu item 2</MenuItem>
-      <MenuItem disabled>Menu item 3</MenuItem>
+      <Menu.Item isDisabled>Menu item 1</Menu.Item>
+      <Menu.Item>Menu item 2</Menu.Item>
+      <Menu.Item isDisabled>Menu item 3</Menu.Item>
       <Divider />
-      <MenuItem>Menu item 4</MenuItem>
+      <Menu.Item>Menu item 4</Menu.Item>
     </Menu>
   );
 }
@@ -71,7 +53,7 @@ export default function () {
 
 ```SnackPlayer name=Menu%20Example (MenuGroup)
 import React from 'react';
-import { Menu, MenuItem, Divider, IconButton, MenuGroup, NativeBaseProvider} from 'native-base';
+import { Menu, Divider, IconButton, Icon, NativeBaseProvider} from 'native-base';
 
 function MenuComponent () {
   return (
@@ -81,21 +63,21 @@ function MenuComponent () {
       onClose={() => console.log('closed')}
       trigger={(triggerProps) => {
         return (
-          <IconButton name="menu" {...triggerProps} bg="teal.200">
+          <IconButton icon={<Icon name="menu" />} {...triggerProps}>
             Show Menu
           </IconButton>
         );
       }}
     >
-      <MenuGroup title="Profile">
-        <MenuItem>Menu item 1</MenuItem>
-        <MenuItem>Menu item 2</MenuItem>
-      </MenuGroup>
+      <Menu.Group title="Profile">
+        <Menu.Item>Menu item 1</Menu.Item>
+        <Menu.Item>Menu item 2</Menu.Item>
+      </Menu.Group>
       <Divider />
-      <MenuGroup title="Help">
-        <MenuItem disabled>Menu item 3</MenuItem>
-        <MenuItem>Menu item 4</MenuItem>
-      </MenuGroup>
+      <Menu.Group title="Help">
+        <Menu.Item isDisabled>Menu item 3</Menu.Item>
+        <Menu.Item>Menu item 4</Menu.Item>
+      </Menu.Group>
     </Menu>
   );
 }
@@ -112,14 +94,7 @@ export default function () {
 
 ```SnackPlayer name=Menu%20Example (MenuOptionGroups)
 import React from 'react';
-import {
-  Menu,
-  MenuItemOption,
-  IconButton,
-  MenuOptionGroup,
-  Divider,
-  NativeBaseProvider
-} from 'native-base';
+import { Menu, IconButton, Divider, Icon, NativeBaseProvider } from 'native-base';
 
 function MenuComponent () {
   return (
@@ -129,22 +104,24 @@ function MenuComponent () {
       onClose={() => console.log('closed')}
       trigger={(triggerProps) => {
         return (
-          <IconButton name="menu" {...triggerProps} bg="teal.200">
+          <IconButton icon={<Icon name="menu" />} {...triggerProps}>
             Show Menu
           </IconButton>
         );
       }}
     >
-      <MenuOptionGroup defaultValue="asc" title="Order" type="radio">
-        <MenuItemOption value="asc">Ascending</MenuItemOption>
-        <MenuItemOption value="desc">Descending</MenuItemOption>
-      </MenuOptionGroup>
+      <Menu.OptionGroup defaultValue="asc" title="Order" type="radio">
+        <Menu.ItemOption value="asc">Ascending</Menu.ItemOption>
+        <Menu.ItemOption value="desc">Descending</Menu.ItemOption>
+      </Menu.OptionGroup>
       <Divider />
-      <MenuOptionGroup title="Country" type="checkbox">
-        <MenuItemOption value="email">Email</MenuItemOption>
-        <MenuItemOption value="phone">Phone</MenuItemOption>
-        <MenuItemOption value="country">Country</MenuItemOption>
-      </MenuOptionGroup>
+      <Menu.OptionGroup title="Country" type="checkbox">
+        <Menu.ItemOption value="email" _text={{ fontWeight: 'bold' }}>
+          Email
+        </Menu.ItemOption>
+        <Menu.ItemOption value="phone">Phone</Menu.ItemOption>
+        <Menu.ItemOption value="country">Country</Menu.ItemOption>
+      </Menu.OptionGroup>
     </Menu>
   );
 }
@@ -174,7 +151,7 @@ export default function () {
 | ------------- | --------- | --------------------------------------------------------- | ------- |
 | isDisabled    | boolean   | If true, the menu item will be disabled.                  | -       |
 | onPress       | function  | Function that is called on press.                         | -       |
-| textStyle     | TextStyle | Style to apply on Text.                                   | -       |
+| \_text        | TextStyle | Props to pass on to Text.                                 | -       |
 | closeOnSelect | boolean   | If true, the menu will close when a menu item is clicked. | -       |
 
 ### **MenuItemOption**
@@ -189,9 +166,10 @@ Extends MenuItem.
 
 ### MenuGroup
 
-| Name  | Type   | Description                 | Default |
-| ----- | ------ | --------------------------- | ------- |
-| title | string | The title of the menu group | -       |
+| Name    | Type      | Description                 | Default |
+| ------- | --------- | --------------------------- | ------- |
+| title   | string    | The title of the menu group | -       |
+| \_title | TextStyle | Props to pass on to Text.   | -       |
 
 ### MenuOptionGroup
 
