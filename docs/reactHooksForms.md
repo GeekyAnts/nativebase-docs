@@ -292,9 +292,6 @@ import {
 	Button,
 	FormControl,
 	Slider,
-	SliderTrack,
-	SliderFilledTrack,
-	SliderThumb,
 	NativeBaseProvider,
 } from 'native-base';
 import React from 'react';
@@ -313,10 +310,10 @@ function FormHookSliderExample() {
 					control={control}
 					render={({ onChange, value }) => (
 						<Slider onChange={(val) => onChange(val)} defaultValue={value}>
-							<SliderTrack>
-								<SliderFilledTrack />
-							</SliderTrack>
-							<SliderThumb />
+							<Slider.Track>
+								<Slider.FilledTrack />
+							</Slider.Track>
+							<Slider.Thumb />
 						</Slider>
 					)}
 					name='like'
