@@ -13,15 +13,15 @@ The `PinInput` component is similar to the `Input` component, but it is optimize
 
 ```SnackPlayer name=PinInput%20Usage
 import React from 'react';
-import { PinInput, PinInputField, NativeBaseProvider } from 'native-base';
+import { PinInput, NativeBaseProvider } from 'native-base';
 
 function PinInputComponent () {
   return (
     <PinInput inputSize="md" value="32" defaultValue="98">
-      <PinInputField />
-      <PinInputField />
-      <PinInputField />
-      <PinInputField />
+      <PinInput.Field />
+      <PinInput.Field />
+      <PinInput.Field />
+      <PinInput.Field />
     </PinInput>
   );
 }
@@ -38,40 +38,40 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20Sizes
 import React from 'react';
-import { PinInput, PinInputField, Stack, NativeBaseProvider } from 'native-base';
+import { PinInput, Stack, NativeBaseProvider } from 'native-base';
 
 function PinInputComponent () {
   return (
     <Stack space={5}>
       <PinInput inputSize="2xl">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput inputSize="xl">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput inputSize="lg">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput inputSize="md">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput inputSize="sm">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput inputSize="xsm">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
     </Stack>
   );
@@ -89,20 +89,20 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20DefaultValue
 import React from 'react';
-import { PinInput, PinInputField, Stack, NativeBaseProvider } from 'native-base';
+import { PinInput, Stack, NativeBaseProvider } from 'native-base';
 
 function PinInputComponent () {
   return (
     <Stack space={5}>
       <PinInput defaultValue="123">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput defaultValue="45">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
     </Stack>
   );
@@ -120,14 +120,14 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20Placeholder
 import React from 'react';
-import { PinInput, PinInputField, NativeBaseProvider } from 'native-base';
+import { PinInput, NativeBaseProvider } from 'native-base';
 
 function PinInputComponent () {
   return (
     <PinInput placeholder="🥳">
-      <PinInputField />
-      <PinInputField />
-      <PinInputField />
+      <PinInput.Field />
+      <PinInput.Field />
+      <PinInput.Field />
     </PinInput>
   );
 }
@@ -144,15 +144,15 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20Manage Focus
 import React from 'react';
-import { PinInput, PinInputField, NativeBaseProvider } from 'native-base';
+import { PinInput, NativeBaseProvider } from 'native-base';
 
 function PinInputComponent () {
   return (
     <PinInput manageFocus={false}>
-      <PinInputField />
-      <PinInputField />
-      <PinInputField />
-      <PinInputField />
+      <PinInput.Field />
+      <PinInput.Field />
+      <PinInput.Field />
+      <PinInput.Field />
     </PinInput>
   );
 }
@@ -169,35 +169,35 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20Variants
 import React from 'react';
-import { PinInput, PinInputField, Stack, NativeBaseProvider } from 'native-base';
+import { PinInput, Stack, NativeBaseProvider } from 'native-base';
 
 function PinInputComponent () {
   return (
     <Stack space={5}>
       <PinInput variant="outline">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput variant="underlined">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput variant="rounded">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput variant="filled">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
       <PinInput variant="unstyled">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
     </Stack>
   );
@@ -217,7 +217,6 @@ export default function () {
 import React from 'react';
 import {
   PinInput,
-  PinInputField,
   Center,
   FormControl,
   NativeBaseProvider
@@ -229,10 +228,10 @@ function PinInputComponent () {
       <FormControl isRequired isInvalid>
         <FormControl.Label>OTP</FormControl.Label>
         <PinInput>
-          <PinInputField />
-          <PinInputField />
-          <PinInputField />
-          <PinInputField />
+          <PinInput.Field />
+          <PinInput.Field />
+          <PinInput.Field />
+          <PinInput.Field />
         </PinInput>
         <FormControl.HelperText>
           An otp is send to number ending with +91-XXXXX-XX007.
@@ -253,7 +252,7 @@ export default function () {
 
 ## **Props**
 
-PinInput passes all the props to it's children (`PinInputField` only).
+PinInput passes all the props to it's children (`PinInput.Field` only).
 
 | Name         | Type        | Description                                                                                           | Default |
 | ------------ | ----------- | ----------------------------------------------------------------------------------------------------- | ------- |
@@ -263,6 +262,6 @@ PinInput passes all the props to it's children (`PinInputField` only).
 | space        | MarginProps | The space between each stack item.                                                                    | -       |
 | onChange     | function    | Function called on input change                                                                       | -       |
 
-### **PinInputField**
+### **PinInput.Field**
 
-PinInputField composes `Input` so you can pass all `Input` props.
+PinInput.Field composes `Input` so you can pass all the `Input` props.

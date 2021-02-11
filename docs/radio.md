@@ -14,11 +14,11 @@ title: Radio
 
 ```SnackPlayer name=Radio%20Usage
 import React from 'react';
-import { Radio, RadioGroup, Text, NativeBaseProvider } from 'native-base';
+import { Radio, Text, NativeBaseProvider } from 'native-base';
 
 function RadioComponent () {
   return (
-    <RadioGroup defaultValue="1">
+    <Radio.Group defaultValue="1">
       <Radio value="1">
         <Text mx={2}>First</Text>
       </Radio>
@@ -28,7 +28,7 @@ function RadioComponent () {
       <Radio value="3">
         <Text mx={2}>Third</Text>
       </Radio>
-    </RadioGroup>
+    </Radio.Group>
   );
 }
 export default function () {
@@ -44,11 +44,11 @@ export default function () {
 
 ```SnackPlayer name=Radio%20Disabled
 import React from 'react';
-import { Radio, Text, RadioGroup, NativeBaseProvider } from 'native-base';
+import { Radio, Text,  NativeBaseProvider } from 'native-base';
 
 function RadioComponent () {
   return (
-    <RadioGroup defaultValue="1">
+    <Radio.Group defaultValue="1">
       <Radio value="1" isDisabled>
         <Text mx={2}>First</Text>
       </Radio>
@@ -58,7 +58,7 @@ function RadioComponent () {
       <Radio value="3">
         <Text mx={2}>Third</Text>
       </Radio>
-    </RadioGroup>
+    </Radio.Group>
   );
 }
 export default function () {
@@ -96,11 +96,11 @@ export default function () {
 
 ```SnackPlayer name=Radio%20Sizes
 import React from 'react';
-import { Radio, RadioGroup, Text, NativeBaseProvider } from 'native-base';
+import { Radio,  Text, NativeBaseProvider } from 'native-base';
 
 function RadioComponent () {
   return (
-    <RadioGroup defaultValue="1">
+    <Radio.Group defaultValue="1">
       <Radio value="1" colorScheme="red" size="sm">
         <Text mx={2}>Small</Text>
       </Radio>
@@ -110,7 +110,7 @@ function RadioComponent () {
       <Radio value="3" colorScheme="yellow" size="lg">
         <Text mx={2}>Large</Text>
       </Radio>
-    </RadioGroup>
+    </Radio.Group>
   );
 }
 export default function () {
@@ -126,11 +126,11 @@ export default function () {
 
 ```SnackPlayer name=Radio%20Custom Color
 import React from 'react';
-import { Radio, RadioGroup, Text, NativeBaseProvider } from 'native-base';
+import { Radio,  Text, NativeBaseProvider } from 'native-base';
 
 function RadioComponent () {
   return (
-    <RadioGroup defaultValue="1">
+    <Radio.Group defaultValue="1">
       <Radio colorScheme="red" value="1">
         <Text mx={2}>red</Text>
       </Radio>
@@ -140,7 +140,7 @@ function RadioComponent () {
       <Radio colorScheme="success" value="3">
         <Text mx={2}>success</Text>
       </Radio>
-    </RadioGroup>
+    </Radio.Group>
   );
 }
 export default function () {
@@ -156,11 +156,11 @@ export default function () {
 
 ```SnackPlayer name=Radio%20Custom Icon
 import React from 'react';
-import { Radio, RadioGroup, Text, Icon, NativeBaseProvider } from 'native-base';
+import { Radio,  Text, Icon, NativeBaseProvider } from 'native-base';
 
 function RadioComponent () {
   return (
-    <RadioGroup defaultValue="1" size="lg">
+    <Radio.Group defaultValue="1" size="lg">
       <Radio
         colorScheme="green"
         value="1"
@@ -182,7 +182,7 @@ function RadioComponent () {
       >
         <Text mx={2}>Warning</Text>
       </Radio>
-    </RadioGroup>
+    </Radio.Group>
   );
 }
 export default function () {
@@ -200,7 +200,6 @@ export default function () {
 import React from 'react';
 import {
   Radio,
-  RadioGroup,
   Text,
   FormControl,
   Container,
@@ -212,7 +211,7 @@ function RadioComponent () {
     <Container>
       <FormControl isRequired isInvalid>
         <FormControl.Label>Select One</FormControl.Label>
-        <RadioGroup defaultValue="1">
+        <Radio.Group defaultValue="1">
           <Radio value="1">
             <Text mx={2}>First</Text>
           </Radio>
@@ -222,7 +221,7 @@ function RadioComponent () {
           <Radio value="3">
             <Text mx={2}>Third</Text>
           </Radio>
-        </RadioGroup>
+        </Radio.Group>
         <FormControl.HelperText>We'll keep this between us.</FormControl.HelperText>
         <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
       </FormControl>
@@ -242,12 +241,12 @@ export default function () {
 
 ```SnackPlayer name=Radio%20With Ref
 import React from 'react';
-import { RadioGroup, Radio, Icon, NativeBaseProvider } from 'native-base';
+import {  Radio, Icon, NativeBaseProvider } from 'native-base';
 
 function RadioComponent () {
   const myRef: any = React.useRef({});
   return (
-    <RadioGroup
+    <Radio.Group
       colorScheme="success"
       onChange={(value) => {
         if (value === '2')
@@ -277,7 +276,7 @@ function RadioComponent () {
       >
         Correct
       </Radio>
-    </RadioGroup>
+    </Radio.Group>
   );
 }
 export default function () {
@@ -288,20 +287,6 @@ export default function () {
   );
 }
 ```
-
-## Props
-
-- `id` : ( **string** ) \*\*\*\*The id assigned to input field.
-- `name` : ( **string** ) \*\*\*\*The name of the input field in a radio (Useful for form submission).
-- `value` : ( **string | number** ) The value to be used in the radio input. This is the value that will be returned on form submission
-- `colorScheme` : ( **string** ) The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red").
-- `defaultIsChecked` : ( **boolean** ) If `true`, the radio will be initially checked.
-- `size` : ( **sm, md, lg** ) The size (width and height) of the radio.
-- `isDisabled` : ( **boolean** ) If `true`, the radio will be disabled.
-- `isInvalid` : ( **boolean** ) If `true`, the radio is marked as invalid. Changes style of unchecked state.
-- `children` : ( **JSX.Element | JSX.Element[]** ) The children of the radio.
-- `onChange` : ( **function** ) Function called when the state of the radio changes.
-- `ariaLabel` : ( **string** ) An accessible label for the radio in event there's no visible label or `children` was passed
 
 ## Props
 
@@ -322,7 +307,7 @@ export default function () {
 | children         | JSX.Element    | The children of the radio.                                                                                        | -       |
 | ariaLabel        | string         | An accessible label for the radio in event there's no visible label or children was passed                        | -       |
 
-`RadioGroup` implements `Box`.
+`Radio.Group` implements `Box`.
 
 ### Radio Group
 
@@ -332,7 +317,7 @@ export default function () {
 | defaultValue | Array    | The initial value of the radio group.                               | -       |
 | onChange     | function | The callback fired when any children radio is checked or unchecked. | -       |
 
-The following props can be set on `RadioGroup` and they will be forwarded to all children `Radio` components.
+The following props can be set on `Radio.Group` and they will be forwarded to all children `Radio` components.
 
 ### Shared Style Props
 

@@ -7,20 +7,15 @@ The `Slider` is used to allow users to make selections from a range of values.
 
 ## Import
 
-NativeBase exports 7 modal-related components:
+NativeBase exports 4 slider-related components:
 
-- **`Slider`**: The wrapper that provides context and functionality for all children.
-- **`SliderTrack`**: The empty part of the slider that shows the track.
-- **`SliderFilledTrack`**: The filled part of the slider.
-- **`SliderThumb`**: The handle that's used to change the slider value.
+- `Slider`: The wrapper that provides context and functionality for all children.
+- `Slider.Track`: The empty part of the slider that shows the track.
+- `Slider.FilledTrack`: The filled part of the slider.
+- `Slider.Thumb`: The handle that's used to change the slider value.
 
 ```jsx
-import {
-  Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
-} from 'native-base';
+import { Slider } from 'native-base';
 ```
 
 ## Usage
@@ -29,9 +24,6 @@ import {
 import React from 'react';
 import {
   Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
   Box,
   NativeBaseProvider
 } from 'native-base';
@@ -40,10 +32,10 @@ function SliderComponent () {
   return (
     <Box mx={5}>
       <Slider defaultValue={70}>
-        <SliderTrack>
-          <SliderFilledTrack />
-        </SliderTrack>
-        <SliderThumb />
+        <Slider.Track>
+          <Slider.FilledTrack />
+        </Slider.Track>
+        <Slider.Thumb />
       </Slider>
     </Box>
   );
@@ -63,9 +55,6 @@ export default function () {
 import React from 'react';
 import {
   Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
   Box,
   NativeBaseProvider
 } from 'native-base';
@@ -74,10 +63,10 @@ function SliderComponent () {
   return (
     <Box mx={5}>
       <Slider defaultValue={70} colorScheme="pink.200">
-        <SliderTrack>
-          <SliderFilledTrack />
-        </SliderTrack>
-        <SliderThumb />
+        <Slider.Track>
+          <Slider.FilledTrack />
+        </Slider.Track>
+        <Slider.Thumb />
       </Slider>
     </Box>
   );
@@ -97,9 +86,6 @@ export default function () {
 import React from 'react';
 import {
   Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
   Stack,
   Text,
   NativeBaseProvider
@@ -122,10 +108,10 @@ function SliderComponent () {
           v && setOnChangeEndValue(Math.floor(v));
         }}
       >
-        <SliderTrack>
-          <SliderFilledTrack />
-        </SliderTrack>
-        <SliderThumb />
+        <Slider.Track>
+          <Slider.FilledTrack />
+        </Slider.Track>
+        <Slider.Thumb />
       </Slider>
     </Stack>
   );
@@ -145,9 +131,6 @@ export default function () {
 import React from 'react';
 import {
   Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
   VStack,
   NativeBaseProvider
 } from 'native-base';
@@ -156,22 +139,22 @@ function SliderComponent () {
   return (
     <VStack space={4} mx={10}>
       <Slider defaultValue={40} colorScheme="red" size="lg">
-        <SliderTrack>
-          <SliderFilledTrack />
-        </SliderTrack>
-        <SliderThumb />
+        <Slider.Track>
+          <Slider.FilledTrack />
+        </Slider.Track>
+        <Slider.Thumb />
       </Slider>
       <Slider defaultValue={60} colorScheme="purple">
-        <SliderTrack>
-          <SliderFilledTrack />
-        </SliderTrack>
-        <SliderThumb />
+        <Slider.Track>
+          <Slider.FilledTrack />
+        </Slider.Track>
+        <Slider.Thumb />
       </Slider>
       <Slider defaultValue={80} colorScheme="green" size="sm">
-        <SliderTrack>
-          <SliderFilledTrack />
-        </SliderTrack>
-        <SliderThumb />
+        <Slider.Track>
+          <Slider.FilledTrack />
+        </Slider.Track>
+        <Slider.Thumb />
       </Slider>
     </VStack>
   );
@@ -191,9 +174,6 @@ export default function () {
 import React from 'react';
 import {
   Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
   Icon,
   NativeBaseProvider
 } from 'native-base';
@@ -201,12 +181,12 @@ import {
 function SliderComponent () {
   return (
     <Slider defaultValue={70} colorScheme="purple">
-      <SliderTrack bg="orange.100">
-        <SliderFilledTrack bg="orange.400" />
-      </SliderTrack>
-      <SliderThumb>
+      <Slider.Track bg="orange.100">
+        <Slider.FilledTrack bg="orange.400" />
+      </Slider.Track>
+      <Slider.Thumb>
         <Icon name="circle" type="MaterialIcons" />
-      </SliderThumb>
+      </Slider.Thumb>
     </Slider>
   );
 }
@@ -226,9 +206,6 @@ import React from 'react';
 import {
   FormControl,
   Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
   VStack,
   NativeBaseProvider
 } from 'native-base';
@@ -239,10 +216,10 @@ function SliderComponent () {
       <FormControl isRequired isInvalid isDisabled>
         <FormControl.Label>Just Slide</FormControl.Label>
         <Slider defaultValue={50}>
-          <SliderTrack>
-            <SliderFilledTrack />
-          </SliderTrack>
-          <SliderThumb />
+          <Slider.Track>
+            <Slider.FilledTrack />
+          </Slider.Track>
+          <Slider.Thumb />
         </Slider>
         <FormControl.HelperText>We'll keep this between us.</FormControl.HelperText>
         <FormControl.ErrorMessage>Don't worry, it's just an example.</FormControl.ErrorMessage>
@@ -261,7 +238,7 @@ export default function () {
 
 ## Props
 
-### nSlider
+### Slider
 
 | Name            | Type                 | Description                                                                                                       | Default    |
 | --------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------- |
@@ -287,4 +264,4 @@ export default function () {
 
 ### Child **components**
 
-- `SliderTrack`, `SliderFilledTrack`, and `SliderThumb` composes `Box` component
+- `Slider.Track`, `Slider.FilledTrack`, and `Slider.Thumb` composes the `Box` component.

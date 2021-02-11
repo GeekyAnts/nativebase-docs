@@ -8,35 +8,22 @@ title: PopOver
 ## Import
 
 - `Popover`: The wrapper that provides props, state, and context to its children.
-- `PopoverTrigger`: Used to wrap the reference (or trigger) element.
-- `PopoverContent`: The popover itself.
-- `PopoverHeader`: The header of the popover.
-- `PopoverBody`: The body of the popover.
-- `PopoverCloseButton`: A button to close the popover.
+- `Popover.Trigger`: Used to wrap the reference (or trigger) element.
+- `Popover.Content`: The popover itself.
+- `Popover.Header`: The header of the popover.
+- `Popover.Body`: The body of the popover.
+- `Popover.CloseButton`: A button to close the popover.
 
 ```jsx
-import {
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverHeader,
-  PopoverBody,
-  PopoverFooter,
-  PopoverCloseButton,
-} from 'native-base';
+import { Popover } from "native-base";
 ```
 
-## Usage
+## Basic
 
-```SnackPlayer name=PopOver%20Usage
+```SnackPlayer name=Popover%20Basic
 import React from 'react';
 import {
   Popover,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverHeader,
-  PopoverTrigger,
   Button,
   NativeBaseProvider
 } from 'native-base';
@@ -44,14 +31,14 @@ import {
 function PopoverComponent () {
   return (
     <Popover>
-      <PopoverTrigger>
+      <Popover.Trigger>
         <Button>Trigger</Button>
-      </PopoverTrigger>
-      <PopoverContent width={250}>
-        <PopoverCloseButton />
-        <PopoverHeader>Confirmation!</PopoverHeader>
-        <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
-      </PopoverContent>
+      </Popover.Trigger>
+      <Popover.Content width={250}>
+        <Popover.CloseButton />
+        <Popover.Header>Confirmation!</Popover.Header>
+        <Popover.Body>Are you sure you want to have that milkshake?</Popover.Body>
+      </Popover.Content>
     </Popover>
   );
 }
@@ -64,17 +51,12 @@ export default function () {
 }
 ```
 
-## Size Example
+## Size
 
-```SnackPlayer name=PopOver%20Size
+```SnackPlayer name=Popover%20Size
 import React from 'react';
 import {
   Popover,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverHeader,
-  PopoverTrigger,
   Button,
   NativeBaseProvider
 } from 'native-base';
@@ -82,14 +64,14 @@ import {
 function PopoverComponent () {
   return (
     <Popover size="lg">
-      <PopoverTrigger>
+      <Popover.Trigger>
         <Button>Trigger for size</Button>
-      </PopoverTrigger>
-      <PopoverContent>
-        <PopoverCloseButton />
-        <PopoverHeader>Confirmation!</PopoverHeader>
-        <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
-      </PopoverContent>
+      </Popover.Trigger>
+      <Popover.Content>
+        <Popover.CloseButton />
+        <Popover.Header>Confirmation!</Popover.Header>
+        <Popover.Body>Are you sure you want to have that milkshake?</Popover.Body>
+      </Popover.Content>
     </Popover>
   );
 }
@@ -102,18 +84,12 @@ export default function () {
 }
 ```
 
-## initialFocusRef and closeOnBlur Example
+## initialFocusRef and closeOnBlur
 
-```SnackPlayer name=PopOver%20initialFocusRef and closeOnBlur
+```SnackPlayer name=Popover%20initialFocusRef%20and%20closeOnBlur
 import React from 'react';
 import {
   Popover,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverFooter,
-  PopoverHeader,
-  PopoverTrigger,
   Button,
   Input,
   NativeBaseProvider
@@ -123,15 +99,15 @@ function PopoverComponent () {
   const initialFocusRef = React.useRef();
   return (
     <Popover initialFocusRef={initialFocusRef} closeOnBlur={false}>
-      <PopoverTrigger>
+      <Popover.Trigger>
         <Button>Trigger</Button>
-      </PopoverTrigger>
-      <PopoverContent width={250}>
-        <PopoverCloseButton />
-        <PopoverHeader fontSize={20} fontWeight={700}>
+      </Popover.Trigger>
+      <Popover.Content width={250}>
+        <Popover.CloseButton />
+        <Popover.Header fontSize={20} fontWeight={700}>
           Header
-        </PopoverHeader>
-        <PopoverBody>
+        </Popover.Header>
+        <Popover.Body>
           <Input
             mb={3}
             backgroundColor="white"
@@ -139,9 +115,9 @@ function PopoverComponent () {
             placeholder="I will get focused on Popover opening"
           />
           This Popover won't close on clicking outside the popover area.
-        </PopoverBody>
-        <PopoverFooter>This is the footer</PopoverFooter>
-      </PopoverContent>
+        </Popover.Body>
+        <Popover.Footer>This is the footer</Popover.Footer>
+      </Popover.Content>
     </Popover>
   );
 }
@@ -166,13 +142,13 @@ export default function () {
 - `id` : ( **string** ) The top-level id to use for the Popover and it's sub-components.
 - `size` : ( **'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'full' | string | number** ) Size of the Popover component.
 - `children`: ( **JSX.Element | JSX.Element[]** ) Children of Popover.
-- `PopoverContent` composes `Box` and has the ability to smartly position itself.
-- `PopoverHeader`, `PopoverFooter` and `PopoverBody` composes `Box`.
-- `PopoverCloseButton` composes `CloseButton` component.
+- `Popover.Content` composes `Box` and has the ability to smartly position itself.
+- `Popover.Header`, `Popover.Footer` and `Popover.Body` composes `Box`.
+- `Popover.CloseButton` composes `CloseButton` component.
 
 ## Props
 
-### PopOver
+### Popover
 
 | Name            | Type                                     | Description                                                               | Default |
 | --------------- | ---------------------------------------- | ------------------------------------------------------------------------- | ------- |
