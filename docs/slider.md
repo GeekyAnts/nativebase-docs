@@ -7,7 +7,7 @@ The `Slider` is used to allow users to make selections from a range of values.
 
 ## Import
 
-NativeBase exports 7 modal-related components:
+NativeBase exports 4 slider-related components:
 
 - `Slider`: The wrapper that provides context and functionality for all children.
 - `Slider.Track`: The empty part of the slider that shows the track.
