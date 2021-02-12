@@ -9,11 +9,11 @@ Tabs are used to communicate a state that affects a system, feature or page.
 
 NativeBase exports 5 modal-related components:
 
-- **Tabs**: Provides context and state for all components
-- **TabBar**: Wrapper for the `Tab` components
-- **Tab**: element that serves as a label for one of the tab view and can be activated to display that panel.
-- **TabViews**: Wrapper for the `TabPanel` components
-- **TabView**: element that contains the content associated with a tab
+- **Tabs**: Provides context and state for all components.
+- **TabBar**: Wrapper for the `Tab` components.
+- **Tab**: Element that serves as a label for one of the tab views and can be activated to display that panel.
+- **TabViews**: Wrapper for the `TabPanel` components.
+- **TabView**: element that contains the content associated with a tab.
 
 ```jsx
 import { Tabs, TabBar, Tab, TabViews, TabView } from 'native-base';
@@ -451,4 +451,4 @@ Implement `Box`, all props of Box can be passed.
 | onChange     | function                                                                 | The callback invoked when tab is changed.                                                                         | -       |
 | variant      | enclosed, enclosed-colored, line, soft-rounded, solid-box, solid-rounded | The variant of the tabs style to use.                                                                             | line    |
 
-TabBar, Tab, TabViews, TabView all implement `Box`, all props of Box can be passed.
+TabBar, Tab, TabViews, TabView all implement `Box`, all the props of Box can be passed to it.

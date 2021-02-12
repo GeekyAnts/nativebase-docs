@@ -15,7 +15,7 @@ title: PopOver
 - `Popover.CloseButton`: A button to close the popover.
 
 ```jsx
-import { Popover } from "native-base";
+import { Popover } from 'native-base';
 ```
 
 ## Basic
@@ -134,20 +134,6 @@ export default function () {
 
 ## Props
 
-- `onOpen` : ( **Function** ) Callback fired when the popover opens.
-- `onClose` : ( **Function** ) Callback fired when the popover closes.
-- `initialFocusRef` : ( **React.Ref** ) The ref of the element that should receive focus when the popover opens.
-- `finalFocusRef` : ( **React.Ref** ) The ref of the element that should receive focus when the popover closes.
-- `closeOnBlur` : ( **boolean** ) If `true`, the popover will close when you blur out it by pressing outside.
-- `id` : ( **string** ) The top-level id to use for the Popover and it's sub-components.
-- `size` : ( **'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'full' | string | number** ) Size of the Popover component.
-- `children`: ( **JSX.Element | JSX.Element[]** ) Children of Popover.
-- `Popover.Content` composes `Box` and has the ability to smartly position itself.
-- `Popover.Header`, `Popover.Footer` and `Popover.Body` composes `Box`.
-- `Popover.CloseButton` composes `CloseButton` component.
-
-## Props
-
 ### Popover
 
 | Name            | Type                                     | Description                                                               | Default |
@@ -156,6 +142,12 @@ export default function () {
 | onClose         | function                                 | Callback fired when the popover closes.                                   | -       |
 | initialFocusRef | React.Ref                                | The ref of the element that should receive focus when the popover opens.  | -       |
 | finalFocusRef   | React.Ref                                | The ref of the element that should receive focus when the popover closes. | -       |
-| closeOnBlur     | boolean                                  | If true, the popover will close when you blur out it by pressing outside. | -       |
-| id              | string                                   | If true, the popover will close when you blur out it by pressing outside. | -       |
+| closeOnBlur     | boolean                                  | If true, the popover will close when you blur it out by pressing outside. | -       |
+| id              | string                                   | The top-level id to use for the Popover and it's sub-components.          | -       |
 | size            | full, lg, md, number, sm, string, xl, xs | Size of the Popover component.                                            | -       |
+
+`Popover.Content` composes `Box` and has the ability to smartly position itself.
+
+`Popover.Header`, `Popover.Footer` and `Popover.Body` composes the `Box`.
+
+`Popover.CloseButton` composes the `CloseButton` component.

@@ -3,7 +3,7 @@ id: closeButton
 title: CloseButton
 ---
 
-CloseButton is essentially a IconButton with a close icon. It is used to handle the close functionality in feedback and overlay components like Alerts, Toasts, Drawers and Modals.
+CloseButton is essentially an IconButton with a close icon. It is used to handle the close functionality in feedback and overlay components like Alerts, Toasts, Drawers and Modals.
 
 ## Import
 

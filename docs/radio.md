@@ -7,7 +7,7 @@ title: Radio
 
 ## Implements
 
-- `TouchableOpacity` from react-native
+- `TouchableOpacity` from react-native.
 - `Box` from native-base.
 
 ## Usage

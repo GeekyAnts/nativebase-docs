@@ -66,7 +66,7 @@ export default function () {
 
 ## Composition
 
-You can use `borderColor` to change divider color and `borderWidth` to change it's width.
+You can use `borderColor` to change the divider's color and `borderWidth` to change it's width.
 
 ```SnackPlayer name=Divider%20Composition
 import React from "react";
@@ -98,10 +98,6 @@ export default function () {
   );
 }
 ```
-
-## Props
-
-- `orientation` : ( **horizontal** | **vertical** ) The orientation of the `divider`
 
 ## Props
 
