@@ -26,7 +26,7 @@ import { Modal } from 'native-base';
 ```SnackPlayer name=Modal%20Basic
 import React from 'react';
 import {
-  Modal
+  Modal,
   Button,
   Center,
   Input,
@@ -269,6 +269,8 @@ import {
   Button,
   Center,
   Input,
+  VStack,
+  Text,
   NativeBaseProvider
 } from 'native-base';
 

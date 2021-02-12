@@ -3,7 +3,7 @@ id: transition
 title: Transition
 ---
 
-NativeBase exports four components `Fade`, `ScaleFade`, `Slide`, and `SlideFade` to provide simple transitions
+NativeBase exports four components: `Fade`, `ScaleFade`, `Slide`, and `SlideFade` to provide simple transitions.
 
 ## Import
 

@@ -20,8 +20,8 @@ import { Collapse } from 'native-base';
 
 ```SnackPlayer name=Collapse%20Usage
 import React from 'react';
-import { Collapse, Stack, Heading, Button, Box, NativeBaseProvillapser } from 'native-base';
-export default function () {
+import { NativeBaseProvider, Collapse, Stack, Heading, Button, Box, NativeBaseProvillapser } from 'native-base';
+function CollapseComponent() {
   const [show, setShow] = React.useState(false);
   const handleToggle = () => setShow(!show);
   return (
