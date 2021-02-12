@@ -66,6 +66,8 @@ module.exports = {
       'use-media-query',
       'use-theme',
       'use-token',
+      'use-color-mode',
+      'use-color-mode-value',
     ],
     Theme: ['default-theme'],
     Examples: ['todo-example'],

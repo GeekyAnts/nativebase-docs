@@ -110,7 +110,7 @@ function Home() {
                 styles.sizeSmall
               )}
               to={useBaseUrl('docs/nativebase')}
-              style={{ color: '#3e3a6f' }}
+              style={{ color: '#6863A9' }}
             >
               GET STARTED
             </Link>

@@ -1,7 +1,7 @@
 module.exports = {
   title: 'NativeBase',
   tagline: 'A complete component library for React Native Ecosystem',
-  url: 'https://nativebase.github.io',
+  url: 'https://nativebase.io',
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
@@ -16,23 +16,13 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/native-base-icon.png',
   organizationName: 'nativebase', // Usually your GitHub org/user name.
-  projectName: 'nativebase.github.io', // Usually your repo name.
+  projectName: 'website', // Usually your repo name.
   themeConfig: {
+    respectPrefersColorScheme: true,
     algolia: {
       apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
       indexName: 'nativebase-v3',
-
-      // // Optional: see doc section bellow
-      // contextualSearch: true,
-
-      // // Optional: Algolia search parameters
-      // searchParameters: {},
-
-      // algoliaOptions: { facetFilters: ["type:content", "language:en"] }, // Optional, if provided by Algolia,
-      // debug: false,
-      // placeholder: "Search Docs",
     },
-    sidebarCollapsible: false,
     navbar: {
       title: 'NativeBase 3.0',
       logo: {
@@ -48,9 +38,9 @@ module.exports = {
           position: 'right',
         },
         { to: 'docs/faq', label: 'FAQ', position: 'right' },
-
+        { type: 'docsVersionDropdown', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/GeekyAnts/nativebase',
           label: 'GitHub',
           position: 'right',
         },
@@ -60,7 +50,6 @@ module.exports = {
           label: 'Hire The Creators',
           position: 'right',
         },
-        { type: 'docsVersionDropdown', position: 'left' },
       ],
     },
     footer: {

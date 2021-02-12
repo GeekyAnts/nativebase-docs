@@ -1,38 +1,43 @@
 /* stylelint-disable docusaurus/copyright-header */
+
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #3e3a6f;
 
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+/* You can override the default Infima variables here. */
+
+:root {
+    --ifm-color-primary: #3e3a6f;
+    --ifm-link-color: #6863A9;
+    --ifm-color-primary-dark: rgb(33, 175, 144);
+    --ifm-color-primary-darker: rgb(31, 165, 136);
+    --ifm-color-primary-darkest: rgb(26, 136, 112);
+    --ifm-color-primary-light: rgb(70, 203, 174);
+    --ifm-color-primary-lighter: rgb(102, 212, 189);
+    --ifm-color-primary-lightest: rgb(146, 224, 208);
+    --ifm-code-font-size: 95%;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+    background-color: rgb(72, 77, 91);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
 }
 
 .snack-player {
-  overflow: hidden;
-  background: #212121;
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-  height: 505px;
-  width: 100%;
+    overflow: hidden;
+    background: #212121;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    height: 505px;
+    width: 100%;
 }
+
 
 /* .navbar {
   background-color: #3e3a6f;
@@ -46,6 +51,8 @@
 .navbar__link--active {
   color: white;
 } */
+
+
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -53,181 +60,205 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+
 /* your custom css */
 
 @media (max-width: 480px) {
-  .headerTitleWithLogo {
-    display: block !important;
-  }
-  .component-screenshot {
-    width: 90%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
-  .projectTitle > small {
-    font-size: 45% !important;
-  }
-  .projectTitle .customLogo {
-    font-size: 75% !important;
-  }
+    .headerTitleWithLogo {
+        display: block !important;
+    }
+    .component-screenshot {
+        width: 90%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
+    .projectTitle>small {
+        font-size: 45% !important;
+    }
+    .projectTitle .customLogo {
+        font-size: 75% !important;
+    }
 }
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
-  .component-screenshot {
-    width: 70%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 70%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-  .component-screenshot {
-    width: 70%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 70%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
-  .component-screenshot {
-    width: 70%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 70%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
-  .component-screenshot {
-    width: 50%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 50%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
-  .component-screenshot {
-    width: 40%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 40%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 .blockContent h2 {
-  text-align: left !important;
-  font-size: 22px;
+    text-align: left !important;
+    font-size: 22px;
 }
+
 .blockContent div {
-  text-align: left !important;
+    text-align: left !important;
 }
+
 .blockContent small {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .mainContainer .container.paddingTop {
-  padding-top: 0px;
+    padding-top: 0px;
 }
+
 .homeSplashFade {
-  background-color: #3e3a6f;
-  /* background-color: #47b8c5; */
+    background-color: #6863A9;
+    /* background-color: #47b8c5; */
 }
+
 .homeSplashFade .projectTitle {
-  color: white;
-}
-.homeSplashFade .button {
-  color: white;
-  border-color: white;
-}
-.navigationSlider .slidingNav ul li a {
-  border-radius: 3px;
-}
-.navigationSlider .slidingNav ul li a:hover {
-  border-radius: 3px;
-  color: #ffffff;
-}
-.logo {
-  height: 70% !important;
-}
-.customLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    color: white;
 }
 
 .homeSplashFade .button {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding: 15px 35px;
-  border-radius: 10px;
-  background-color: white;
-  color: #3e3a6f;
-  font-weight: 700;
-  font-size: 15px;
+    color: white;
+    border-color: white;
 }
-.projectTitle > small {
-  display: block;
-  font-size: 65%;
-  line-height: 1.5em;
-  margin: 1.3em 25px;
+
+.navigationSlider .slidingNav ul li a {
+    border-radius: 3px;
 }
+
+.navigationSlider .slidingNav ul li a:hover {
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+.logo {
+    height: 70% !important;
+}
+
+.customLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeSplashFade .button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 15px 35px;
+    border-radius: 10px;
+    background-color: white;
+    color: #6863A9;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.projectTitle>small {
+    display: block;
+    font-size: 65%;
+    line-height: 1.5em;
+    margin: 1.3em 25px;
+}
+
 .tagline {
-  font-weight: 300;
-  letter-spacing: 1.5px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
 }
+
 .custom_row {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
 }
 
 .custom_row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.column_list > div {
-  text-align: center;
+.column_list>div {
+    text-align: center;
 }
-.column_list > div > p {
-  color: #5e5e5e;
+
+.column_list>div>p {
+    color: #5e5e5e;
 }
+
 .column_list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  grid-gap: 3rem;
-  align-items: flex-start;
-  text-align: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 3rem;
+    align-items: flex-start;
+    text-align: left;
 }
+
 
 /* backlinks section */
 
 .backlink {
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
 }
+
 .backlink img {
-  vertical-align: middle;
-  margin-right: 10px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
+
 .backlink h2 {
-  margin-bottom: 5px;
-  margin-top: 0px;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
+
 .backlink h2 a {
-  color: black;
+    color: black;
 }
+
 .backlink h2 a:hover {
-  color: #3e3a6f;
+    color: #6863A9;
 }
+
 .moreProjects {
-  padding-left: 12.6%;
-  padding-right: 12.6%;
+    padding-left: 12.6%;
+    padding-right: 12.6%;
 }
+
 #moreProjectsHeading {
-  font-size: 2rem;
+    font-size: 2rem;
 }
+
 @media only screen and (max-width: 1024px) {
-  .moreProjects {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 15px;
-  }
+    .moreProjects {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 15px;
+    }
 }
