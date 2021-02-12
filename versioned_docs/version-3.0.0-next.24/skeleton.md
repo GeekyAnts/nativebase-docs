@@ -117,25 +117,7 @@ export default function () {
 
 | Name       | Type               | Description                       | Default |
 | ---------- | ------------------ | --------------------------------- | ------- |
-| variant    | number, string     | the size of the circle.           | -       |
 | startColor | string             | The color at the animation start. | -       |
 | endColor   | string             | The color at the animation end.   | -       |
-| size       | circle, text, rect | Variant of Skeleton to use        | text    |
-
-### SkeletonCircle
-
-| Name       | Type    | Description                                                     | Default |
-| ---------- | ------- | --------------------------------------------------------------- | ------- |
-| isLoaded   | boolean | If true, it'll render its children with a nice fade transition. | -       |
-| startColor | string  | The color at the animation start.                               | -       |
-| endColor   | string  | The color at the animation end.                                 | -       |
-
-### SkeletonText
-
-| Name       | Type    | Description                                                     | Default |
-| ---------- | ------- | --------------------------------------------------------------- | ------- |
-| isLoaded   | boolean | If true, it'll render its children with a nice fade transition. | -       |
-| startColor | string  | The color at the animation start.                               | -       |
-| endColor   | string  | The color at the animation end.                                 | -       |
-| noOfLines  | number  | Number of lines for paragraph.                                  | -       |
-| lineSize   | number  | the height of each line.                                        | -       |
+| variant    | circle, rect, text | Variation of Skeleton to use      | text    |
+| size       | number, string     | The size of the Skeleton          | -       |

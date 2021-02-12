@@ -3,7 +3,7 @@ id: flex
 title: Flex
 ---
 
-`Flex` is `Box` with `display: flex` and comes with helpful style shorthand.
+`Flex` is a `Box` with `display: flex` and comes with helpful style shorthand.
 
 ## Implements
 

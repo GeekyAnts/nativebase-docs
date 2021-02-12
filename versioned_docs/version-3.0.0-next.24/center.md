@@ -16,7 +16,7 @@ import { Center, Square, Circle } from 'native-base';
 ```
 
 - **Center:** Centers its child, pass `width` and `height`
-- **Square:** `Center` but we need to pass `size` (width and height
+- **Square:** `Center` but we need to pass `size` (width and height)
 - **Circle:** `Center` with round `borderRadius`, pass `size` (width and height)
 
 ## Usage
@@ -81,7 +81,7 @@ export default function () {
 
 ### Square and Circle
 
-Square and Circle automatically centers its children.
+Square and Circle automatically centers their children.
 
 ```SnackPlayer name=Center%20Square and Circle
 import React from "react";
