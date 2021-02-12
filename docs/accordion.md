@@ -15,7 +15,7 @@ import { Accordion } from 'native-base';
 
 ## Basic
 
-```jsx
+```SnackPlayer name=Basic
 import React from 'react';
 import { Accordion, NativeBaseProvider } from 'native-base';
 
@@ -72,7 +72,7 @@ export default function () {
 
 ## Multiple
 
-```jsx
+```SnackPlayer name=Multilple
 import React from 'react';
 import { Accordion, Box, NativeBaseProvider } from 'native-base';
 
@@ -131,7 +131,7 @@ export default function () {
 
 ## Default Index
 
-```jsx
+```SnackPlayer name=DefaultIndex
 import React from 'react';
 import { Accordion, Box, NativeBaseProvider } from 'native-base';
 
@@ -190,7 +190,7 @@ export default function () {
 
 ## Toggle
 
-```jsx
+```SnackPlayer name=Toggle
 import React from 'react';
 import { Accordion, Box, NativeBaseProvider } from 'native-base';
 
@@ -249,7 +249,7 @@ export default function () {
 
 ## Expanded Style
 
-```jsx
+```SnackPlayer name=Style
 import React from 'react';
 import { Accordion, Box, NativeBaseProvider } from 'native-base';
 
@@ -296,7 +296,7 @@ export default function () {
 
 ## Accessing Internal State
 
-```jsx
+```SnackPlayer name=InternalState
 import React from 'react';
 import { Accordion, Box, NativeBaseProvider } from 'native-base';
 

@@ -9,7 +9,7 @@ Migrating Checkbox components can broadly described in these points:
 
 - **dataArray** is depreciated.
 - **expanded** → `defaultIndex`, and now accepts array of index.
-- Pros like **headerStyle**, **contentStyle**, **icon**, **expandedIcon**, **iconStyle**, **expandedIconStyle**, **renderHeader**, **renderContent** are _no longer required_ as components like `AccordionButton`, `AccordionPanel`, `AccordionIcon` replaces them.
+- Pros like **headerStyle**, **contentStyle**, **icon**, **expandedIcon**, **iconStyle**, **expandedIconStyle**, **renderHeader**, **renderContent** are _no longer required_ as components like `Accordion.Button`, `Accordion.Panel`, `Accordion.Icon` replaces them.
 - **onAccordionOpen,** **onAccordionOpen** → `onChange`, one callback instead of 2.
 
 ## Code Comparison
@@ -55,37 +55,31 @@ export default class AccordionExample extends Component {
 
 ```tsx
 import React from 'react';
-import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-} from 'native-base';
+import { Accordion } from 'native-base';
 export default function () {
   return (
     <Accordion index={[0]}>
-      <AccordionItem>
-        <AccordionButton>
+      <Accordion.Item>
+        <Accordion.Button>
           First Element
-          <AccordionIcon />
-        </AccordionButton>
-        <AccordionPanel>Lorem ipsum dolor sit amet</AccordionPanel>
-      </AccordionItem>
-      <AccordionItem>
-        <AccordionButton>
+          <Accordion.Icon />
+        </Accordion.Button>
+        <Accordion.Panel>Lorem ipsum dolor sit amet</Accordion.Panel>
+      </Accordion.Item>
+      <Accordion.Item>
+        <Accordion.Button>
           Second Element
-          <AccordionIcon />
-        </AccordionButton>
-        <AccordionPanel>Lorem ipsum dolor sit amet</AccordionPanel>
-      </AccordionItem>
-      <AccordionItem>
-        <AccordionButton>
+          <Accordion.Icon />
+        </Accordion.Button>
+        <Accordion.Panel>Lorem ipsum dolor sit amet</Accordion.Panel>
+      </Accordion.Item>
+      <Accordion.Item>
+        <Accordion.Button>
           Third Element
-          <AccordionIcon />
-        </AccordionButton>
-        <AccordionPanel>Lorem ipsum dolor sit amet</AccordionPanel>
-      </AccordionItem>
+          <Accordion.Icon />
+        </Accordion.Button>
+        <Accordion.Panel>Lorem ipsum dolor sit amet</Accordion.Panel>
+      </Accordion.Item>
     </Accordion>
   );
 }

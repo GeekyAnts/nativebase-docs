@@ -144,4 +144,4 @@ export default function () {
 | ---------- | ------ | ----------------------------------------------- | ------- |
 | totalLines | number | maps to react-native TextInput's numberOfLines. | -       |
 
-As `TextArea` extends `Input`, so all Input Props can be passed to TextArea.
+As `TextArea` extends `Input`, all Input Props can be passed to TextArea.

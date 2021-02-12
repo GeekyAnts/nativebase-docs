@@ -123,4 +123,4 @@ export default function () {
 
 ## Props
 
-**Center** implements **Box** , so all the `Box Props` can be passed to **Center.**
+**Center** implements **Box** , so all the `Box` Props can be passed to **Center.**

@@ -7,7 +7,7 @@ Migrating to v3 will provide a lot more **design**, **size**, **color** and **cu
 
 Migrating Checkbox components can broadly described in these points:
 
-- In v3 `Radio` can only used along with `RadioGroup`.
+- In v3 `Radio` can only used along with `Radio.Group`.
 - Colors of the Checkbox:
   In v3 the color is controlled by `colorScheme` prop. And it accepts all the color available in the theme.
 - onPress props is deprecated, instead v3 provides onChange which provides a callback when state of the checkbox change.
@@ -30,9 +30,9 @@ values={[
 <TabItem value="v3">
 
 ```tsx
-<RadioGroup defaultValue='1' name='myRadioGroup'>
+<Radio.Group defaultValue='1' name='myRadioGroup'>
   <Radio value='1' />
-</RadioGroup>
+</Radio.Group>
 ```
 
 </TabItem>
