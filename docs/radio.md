@@ -78,9 +78,11 @@ import { Radio, Text, NativeBaseProvider } from 'native-base';
 
 function RadioComponent () {
   return (
-    <Radio isInvalid>
-      <Text mx={2}>Invalid Radio</Text>
-    </Radio>
+    <Radio.Group defaultValue="1">
+      <Radio isInvalid>
+        <Text mx={2}>Invalid Radio</Text>
+      </Radio>
+    </Radio.Group>
   );
 }
 export default function () {

@@ -22,6 +22,7 @@ import React from 'react';
 import {
   Stat,
   Box,
+  Heading,
   NativeBaseProvider
 } from 'native-base';
 

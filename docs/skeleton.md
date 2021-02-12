@@ -13,8 +13,8 @@ title: Skeleton
 
 ```SnackPlayer name=Skeleton%20Usage
 import React from 'react';
-import { Skeleton, Stack, Text } from 'native-base';
-export default function () {
+import { NativeBaseProvider, Skeleton, Stack, Text } from 'native-base';
+function SkeletonComponent() {
   return (
     <Stack width="90%">
       <Skeleton variant="text" height={6} />
@@ -34,10 +34,10 @@ export default function () {
 
 ## Color
 
-```SnackPlayer name=Skeleton%20Text
+```SnackPlayer name=Skeleton%20Color
 import React from 'react';
-import { Skeleton, VStack } from 'native-base';
-function Color () {
+import { NativeBaseProvider, Skeleton, VStack } from 'native-base';
+function SkeletonComponent () {
   return (
     <VStack space={5} width="90%">
       <Skeleton startColor="pink.600" endColor="purple.400" height="20px" />
@@ -64,7 +64,7 @@ export default function () {
 
 ```SnackPlayer name=Skeleton%20IsLoaded
 import React from 'react';
-import { Box, Skeleton, Stack, Text, Avatar, HStack, Image } from 'native-base';
+import { NativeBaseProvider, Box, Skeleton, Stack, Text, Avatar, HStack, Image } from 'native-base';
 function Composition({ loaded }: any) {
   return (
     <Stack size={200}>

@@ -10,7 +10,7 @@ title: Breadcrumb
 ## Import
 
 ```jsx
-import { Breadcrumb } from "nativebase";
+import { Breadcrumb } from 'nativebase';
 ```
 
 ## Basic
@@ -69,7 +69,8 @@ import {
   Breadcrumb,
   Box,
   Heading,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Icon
 } from 'native-base';
 function BreadcrumbComponent () {
   return (
@@ -160,7 +161,7 @@ Breadcrumb composes Box so you can pass all Box props to change the style of the
 
 ```SnackPlayer name=Breadcrumb%20Composition
 import React from 'react';
-import { Breadcrumb, Box, Heading, Icon } from 'native-base';
+import { NativeBaseProvider, Breadcrumb, Box, Heading, Icon } from 'native-base';
 function BreadcrumbComponent () {
   return (
     <Box>

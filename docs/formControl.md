@@ -49,8 +49,7 @@ export default function () {
 ```SnackPlayer name=FormControl%20Example(CustomStyle)
 import React from 'react';
 import {
-  FormControl, Input, Stack, Text
-  NativeBaseProvider
+  FormControl, Input, Stack, Text, NativeBaseProvider
 } from 'native-base';
 
 function FormControlComponent () {
