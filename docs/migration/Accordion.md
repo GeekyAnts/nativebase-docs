@@ -55,9 +55,7 @@ export default class AccordionExample extends Component {
 
 ```tsx
 import React from 'react';
-import {
-  Accordion
-} from 'native-base';
+import { Accordion } from 'native-base';
 export default function () {
   return (
     <Accordion index={[0]}>

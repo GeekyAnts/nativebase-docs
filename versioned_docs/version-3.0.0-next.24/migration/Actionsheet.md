@@ -7,9 +7,9 @@ We have sliced Actionsheet into multiple smaller component which not only provid
 
 Migrating Checkbox components can broadly described in these points:
 
-- **options** (prop) → `ActionsheetItem` (component).
-- Pros like **cancelButtonIndex**, **cancelButtonIndex** are _no longer required_ as components like `ActionsheetItem` can be customised as per need.
-- **title** (prop) → `ActionsheetHeader` (component).
+- **options** (prop) → `Actionsheet.Item` (component).
+- Pros like **cancelButtonIndex**, **cancelButtonIndex** are _no longer required_ as components like `Actionsheet.Item` can be customised as per need.
+- **title** (prop) → `Actionsheet.Header` (component).
 - **show(),** **hide()** → `isOpen`, If true, actionsheet will be open..
 
 ## Code Comparison
@@ -73,15 +73,7 @@ export default class ActionSheetExample extends Component {
 
 ```tsx
 import React from 'react';
-import {
-  Button,
-  Actionsheet,
-  ActionsheetContent,
-  ActionsheetFooter,
-  ActionsheetHeader,
-  ActionsheetItem,
-  useDisclose,
-} from 'native-base';
+import { Button, Actionsheet, useDisclose } from 'native-base';
 
 export default function () {
   const { isOpen, onOpen, onClose } = useDisclose();
@@ -90,16 +82,16 @@ export default function () {
       <Button onPress={onOpen}>Actionsheet</Button>
 
       <Actionsheet isOpen={isOpen} onClose={onClose}>
-        <ActionsheetContent>
-          <ActionsheetHeader>Header</ActionsheetHeader>
-          <ActionsheetItem>Option 1</ActionsheetItem>
-          <ActionsheetItem>Option 2</ActionsheetItem>
-          <ActionsheetItem>Option 3</ActionsheetItem>
-          <ActionsheetItem color='red.500'>Delete</ActionsheetItem>
-        </ActionsheetContent>
-        <ActionsheetFooter>
-          <ActionsheetItem onPress={onClose}>Cancel</ActionsheetItem>
-        </ActionsheetFooter>
+        <Actionsheet.Content>
+          <Actionsheet.Header>Header</Actionsheet.Header>
+          <Actionsheet.Item>Option 1</Actionsheet.Item>
+          <Actionsheet.Item>Option 2</Actionsheet.Item>
+          <Actionsheet.Item>Option 3</Actionsheet.Item>
+          <Actionsheet.Item color='red.500'>Delete</Actionsheet.Item>
+        </Actionsheet.Content>
+        <Actionsheet.Footer>
+          <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>
+        </Actionsheet.Footer>
       </Actionsheet>
     </>
   );

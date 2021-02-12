@@ -15,7 +15,7 @@ import { Snackbar } from 'native-base';
 
 ```SnackPlayer name=SnackBar%20Usage
 import React from 'react';
-import { Snackbar, Text, Box, NativeBaseProvider } from 'native-base';
+import { Snackbar, VStack, Alert, AlertIcon, Text, Box, NativeBaseProvider } from 'native-base';
 function SnackbarExample () {
   return (
     <>
@@ -26,17 +26,17 @@ function SnackbarExample () {
       >
         <VStack mx={4} space={4}>
           <Alert>
-            <AlertIcon />
-            <AlertTitle> Hello World</AlertTitle>
+            <Alert.Icon />
+            <Alert.Title> Hello World</Alert.Title>
           </Alert>
           <Alert status="success">
-            <AlertIcon />
-            <AlertTitle>Account created</AlertTitle>
-            <AlertDescription mt={2} ml={12}>
+            <Alert.Icon />
+            <Alert.Title>Account created</Alert.Title>
+            <Alert.Description mt={2} ml={12}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry’s standard dummy text
               ever since the 1500s.
-            </AlertDescription>
+            </Alert.Description>
           </Alert>
         </VStack>
       </Snackbar>

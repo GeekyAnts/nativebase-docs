@@ -23,7 +23,7 @@ import { Menu } from 'native-base';
 
 ```SnackPlayer name=Menu%20Basic
 import React from 'react';
-import { Menu, Divider, IconButton, Icon NativeBaseProvider } from 'native-base';
+import { Menu, Divider, IconButton, Icon, NativeBaseProvider } from 'native-base';
 
 function MenuComponent () {
   return (
