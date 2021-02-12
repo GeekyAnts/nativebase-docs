@@ -10,19 +10,13 @@ An Action Sheet is a dialog that displays a set of options. It appears on top of
 NativeBase exports 5 modal-related components:
 
 - **Actionsheet**: Provides the context and state for all components.
-- **ActionsheetContent**: Wrapper for the **ActionsheetHeader and ActionsheetItem** components.
-- **ActionsheetHeader**: Provides a header to the list.
-- **ActionsheetFooter**: A separated footer component for better customisation support. Wrapper for the **ActionsheetItem** components.
-- **ActionsheetItem**: A button to wrap the options of the Actionsheet.
+- **Actionsheet.Content**: Wrapper for the **Actionsheet.Header and Actionsheet.Item** components.
+- **Actionsheet.Header**: Provides a header to the list.
+- **Actionsheet.Footer**: A separated footer component for better customisation support. Wrapper for the **Actionsheet.Item** components.
+- **Actionsheet.Item**: A button to wrap the options of the Actionsheet.
 
 ```jsx
-import {
-  Actionsheet,
-  ActionsheetContent,
-  ActionsheetFooter,
-  ActionsheetHeader,
-  ActionsheetItem,
-} from 'native-base';
+import { Actionsheet } from 'native-base';
 ```
 
 ## Usage
@@ -32,10 +26,6 @@ import React from "react";
 import {
   Button,
   Actionsheet,
-  ActionsheetContent,
-  ActionsheetFooter,
-  ActionsheetHeader,
-  ActionsheetItem,
   useDisclose,
   NativeBaseProvider,
 } from "native-base";
@@ -45,15 +35,15 @@ function ActionSheetComponent() {
     <>
       <Button onPress={onOpen}>Actionsheet</Button>
       <Actionsheet isOpen={isOpen} onClose={onClose}>
-        <ActionsheetContent>
-          <ActionsheetHeader>Header</ActionsheetHeader>
-          <ActionsheetItem>Option 1</ActionsheetItem>
-          <ActionsheetItem>Option 2</ActionsheetItem>
-          <ActionsheetItem>Option 3</ActionsheetItem>
-        </ActionsheetContent>
-        <ActionsheetFooter>
-          <ActionsheetItem onPress={onClose}>Cancel</ActionsheetItem>
-        </ActionsheetFooter>
+        <Actionsheet.Content>
+          <Actionsheet.Header>Header</Actionsheet.Header>
+          <Actionsheet.Item>Option 1</Actionsheet.Item>
+          <Actionsheet.Item>Option 2</Actionsheet.Item>
+          <Actionsheet.Item>Option 3</Actionsheet.Item>
+        </Actionsheet.Content>
+        <Actionsheet.Footer>
+          <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>
+        </Actionsheet.Footer>
       </Actionsheet>
     </>
   );
@@ -75,10 +65,6 @@ import {
   Button,
   Divider,
   Actionsheet,
-  ActionsheetContent,
-  ActionsheetFooter,
-  ActionsheetHeader,
-  ActionsheetItem,
   useDisclose,
   NativeBaseProvider,
 } from "native-base";
@@ -90,17 +76,17 @@ function ActionSheetComponent() {
       <Button onPress={onOpen}>Actionsheet</Button>
 
       <Actionsheet isOpen={isOpen} onClose={onClose}>
-        <ActionsheetContent>
-          <ActionsheetHeader>Header</ActionsheetHeader>
-          <ActionsheetItem>Option 1</ActionsheetItem>
+        <Actionsheet.Content>
+          <Actionsheet.Header>Header</Actionsheet.Header>
+          <Actionsheet.Item>Option 1</Actionsheet.Item>
           <Divider />
-          <ActionsheetItem>Option 2</ActionsheetItem>
+          <Actionsheet.Item>Option 2</Actionsheet.Item>
           <Divider />
-          <ActionsheetItem>Option 3</ActionsheetItem>
-        </ActionsheetContent>
-        <ActionsheetFooter>
-          <ActionsheetItem onPress={onClose}>Cancel</ActionsheetItem>
-        </ActionsheetFooter>
+          <Actionsheet.Item>Option 3</Actionsheet.Item>
+        </Actionsheet.Content>
+        <Actionsheet.Footer>
+          <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>
+        </Actionsheet.Footer>
       </Actionsheet>
     </>
   );
@@ -121,10 +107,6 @@ import React from "react";
 import {
   Button,
   Actionsheet,
-  ActionsheetContent,
-  ActionsheetFooter,
-  ActionsheetHeader,
-  ActionsheetItem,
   useDisclose,
   NativeBaseProvider,
 } from "native-base";
@@ -136,15 +118,15 @@ function ActionSheetComponent() {
       <Button onPress={onOpen}>Actionsheet</Button>
 
       <Actionsheet isOpen={isOpen} onClose={onClose} disableOverlay>
-        <ActionsheetContent>
-          <ActionsheetHeader>Header</ActionsheetHeader>
-          <ActionsheetItem>Option 1</ActionsheetItem>
-          <ActionsheetItem>Option 2</ActionsheetItem>
-          <ActionsheetItem>Option 3</ActionsheetItem>
-        </ActionsheetContent>
-        <ActionsheetFooter>
-          <ActionsheetItem onPress={onClose}>Cancel</ActionsheetItem>
-        </ActionsheetFooter>
+        <Actionsheet.Content>
+          <Actionsheet.Header>Header</Actionsheet.Header>
+          <Actionsheet.Item>Option 1</Actionsheet.Item>
+          <Actionsheet.Item>Option 2</Actionsheet.Item>
+          <Actionsheet.Item>Option 3</Actionsheet.Item>
+        </Actionsheet.Content>
+        <Actionsheet.Footer>
+          <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>
+        </Actionsheet.Footer>
       </Actionsheet>
     </>
   );
@@ -168,6 +150,6 @@ Implement `Box`, all props of Box can be passed.
 | onClose        | function | Callback when actionsheet is closed. | -       |
 | disableOverlay | boolean  | If true, disables the overlay.       | -       |
 
-ActionsheetContent, ActionsheetHeader, ActionsheetFooter all implement `Box`, all props of Box can be passed.
+Actionsheet.Content, Actionsheet.Header, Actionsheet.Footer all implement `Box`. All props of Box can be passed.
 
-ActionsheetItem implements `Button`, all props of Button can be passed here.
+Actionsheet.Item implements `Button`, all the props of Button can be passed here.
