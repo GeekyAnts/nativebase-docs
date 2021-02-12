@@ -57,4 +57,8 @@ export default function () {
 
 ## Props
 
-**AspectRatio** implements Box , so all the **Box** props can be passed to **AspectRatio**.
+**AspectRatio** implements **Box** , so all the **Box** props can be passed to **AspectRatio**.
+
+| Name  | Type   | Description                      | Default |
+| ----- | ------ | -------------------------------- | ------- |
+| ratio | number | The aspect ratio of the content. | -       |

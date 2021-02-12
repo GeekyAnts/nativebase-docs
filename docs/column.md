@@ -3,7 +3,7 @@ id: Column
 title: Column
 ---
 
-The mandatory wrapper when building Column Layouts
+The mandatory wrapper for building Column Layouts
 
 ## Implements
 
@@ -40,7 +40,7 @@ export default function () {
 
 # Column
 
-It is nothing but the Box which is supposed to be used inside Columns.
+This is the Box to be used inside Columns.
 
 ## Implements
 
@@ -50,9 +50,9 @@ It is nothing but the Box which is supposed to be used inside Columns.
 
 ```jsx
 <Columns space={3} height={100} mb={3}>
-  <Column borderRadius={4} shadow={1} flexGrow={1} bg='green.500' />
-  <Column borderRadius={4} shadow={1} width={1 / 2.5} bg='pink.300' />
-  <Column borderRadius={4} shadow={1} flexGrow={1.5} bg='indigo.800' />
+	<Column borderRadius={4} shadow={1} flexGrow={1} bg='green.500' />
+	<Column borderRadius={4} shadow={1} width={1 / 2.5} bg='pink.300' />
+	<Column borderRadius={4} shadow={1} flexGrow={1.5} bg='indigo.800' />
 </Columns>
 ```
 

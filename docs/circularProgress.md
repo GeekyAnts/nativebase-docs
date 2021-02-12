@@ -137,7 +137,7 @@ export default function () {
 
 ## Indeterminate Progress
 
-Setting the progress to indeterminate means you're not able to determine the value upfront. Pass the isIndeterminate prop to activate this state.
+Setting the progress to indeterminate means that the value can't be determined upfront. Pass the isIndeterminate prop to activate this state.
 
 ```SnackPlayer name=CircularProgress%20Indeterminate Progress
 import React from 'react';

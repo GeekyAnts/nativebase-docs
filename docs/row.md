@@ -3,8 +3,6 @@ id: row
 title: Row
 ---
 
-# 38. HStack/ Row
-
 HStack aligns items horizontally.
 
 ## Implements

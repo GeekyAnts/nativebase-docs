@@ -17,9 +17,9 @@ import { useTheme } from 'native-base';
 
 ```jsx
 function Example() {
-  const theme = useTheme();
+	const theme = useTheme();
 
-  return <Box>{/* Do something with the theme */}</Box>;
+	return <Box>{/* Do something with the theme */}</Box>;
 }
 ```
 
@@ -37,25 +37,25 @@ import { useToken } from 'native-base';
 
 ```jsx
 function Example() {
-  const [warning1, red2] = useToken(
-    // the key within the theme, in this case `theme.colors`
-    'colors',
-    // the subkey(s), resolving to `theme.colors.warning.1`
-    ['warning.100', 'red.200']
-    // a single fallback or fallback array matching the length of the previous arg
-  );
+	const [warning1, red2] = useToken(
+		// the key within the theme, in this case `theme.colors`
+		'colors',
+		// the subkey(s), resolving to `theme.colors.warning.1`
+		['warning.100', 'red.200'],
+		// a single fallback or fallback array matching the length of the previous arg
+	);
 
-  return (
-    <Box bg={warning1}>
-      <Text color={red2}>wonderful gradients</Text>
-    </Box>
-  );
+	return (
+		<Box bg={warning1}>
+			<Text color={red2}>wonderful gradients</Text>
+		</Box>
+	);
 }
 ```
 
 ## useDisclose
 
-`useDisclosure` is a custom hook used to help handle common `open`, `close`, or `toggle` scenarios. It can be used to control feedback component such as **Modal**, **AlertDialog**, **Drawer**, etc.
+`useDisclosure` is a custom hook used to help handle common `open`, `close`, or `toggle` scenarios. It can be used to control feedback components such as **Modal**, **AlertDialog**, **Drawer**, etc.
 
 ## Import
 
@@ -121,14 +121,13 @@ export default function () {
 }
 ```
 
-## Return value
+## Returns
 
 The `useDisclosure` hook returns an object with the following fields:
 
-`isOpen`: ( **boolean** ) Show the component; triggers the enter or exit states.
-
-`onClose`: ( **function** ) Callback function to set a falsy value for the `isOpen` parameter.
-
-`onOpen`: ( **function** ) Callback function to set a truthy value for the `isOpen` parameter.
-
-`onToggle`: ( **function** ) Callback function to toggle the value of the `isOpen` parameter.
+| Name     | Type     | Description                                                       | Default |
+| -------- | -------- | ----------------------------------------------------------------- | ------- |
+| isOpen   | boolean  | Show the component; triggers the enter or exit states.            | -       |
+| onClose  | function | Callback function to set a falsy value for the isOpen parameter.  | -       |
+| onOpen   | function | Callback function to set a truthy value for the isOpen parameter. | -       |
+| onToggle | function | Callback function to toggle the value of the isOpen parameter.    | -       |
