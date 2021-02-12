@@ -10,11 +10,11 @@ The Avatar component is used to represent a user and it can display a profile pi
 NativeBase exports 3 avatar-related components:
 
 - `Avatar`: An image that represents the user.
-- `AvatarBadge`: A wrapper that displays its content on the bottom right corner of the avatar.
-- `AvatarGroup`: A wrapper to stack multiple avatars together.
+- `Avatar.Badge`: A wrapper that displays its content on the bottom right corner of the avatar.
+- `Avatar.Group`: A wrapper to stack multiple avatars together.
 
 ```jsx
-import { Avatar, AvatarBadge } from 'native-base';
+import { Avatar } from 'native-base';
 ```
 
 ## Example
@@ -181,7 +181,7 @@ export default function () {
 
 ```SnackPlayer name=Avatar%20Example(Avatar Badge)
 import React from "react";
-import { Avatar, HStack, AvatarBadge, NativeBaseProvider } from "native-base";
+import { Avatar, HStack, NativeBaseProvider } from "native-base";
 
 function AvatarComponent() {
   return (
@@ -190,13 +190,13 @@ function AvatarComponent() {
         source={{ uri: "https://nativebase.io/assets/img/front-page-icon.png" }}
         name={"Native Base"}
       >
-        <AvatarBadge bg={"red.200"} />
+        <Avatar.Badge bg={"red.200"} />
       </Avatar>
       <Avatar
         source={{ uri: "https://nativebase.io/assets/img/front-page-icon.png" }}
         name={"Native Base"}
       >
-        <AvatarBadge borderColor="papayawhip" bg="tomato" />
+        <Avatar.Badge borderColor="papayawhip" bg="tomato" />
       </Avatar>
     </HStack>
   );
@@ -214,11 +214,11 @@ export default function () {
 
 ```SnackPlayer name=Avatar%20Example(Avatar Group)
 import React from "react";
-import { Avatar, AvatarGroup, NativeBaseProvider } from "native-base";
+import { Avatar, NativeBaseProvider } from "native-base";
 
 function AvatarComponent() {
   return (
-    <AvatarGroup size="lg" max={4}>
+    <Avatar.Group size="lg" max={4}>
       <Avatar
         name="Sanket Sahu"
         source={{
@@ -258,7 +258,7 @@ function AvatarComponent() {
             "https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg",
         }}
       />
-    </AvatarGroup>
+    </Avatar.Group>
   );
 }
 export default function () {

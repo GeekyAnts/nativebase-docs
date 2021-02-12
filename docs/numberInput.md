@@ -196,15 +196,15 @@ export default function () {
 | keepWithinRange    | boolean  | If true and you use the stepper or up/down arrow keys, the value will not exceed the max or go lower than min. |         |
 | focusInputOnChange | boolean  | If true, the input will be focused as you increment or decrement the value with the stepper.                   |         |
 
-`NumberInput` composes `Input` so you can pass all `Input` props.
+`NumberInput` composes `Input` so you can pass all the `Input` props.
 
 ### **NumberInputStepper Props**
 
-`NumberInputStepper` composes `VStack` so you can pass all `VStack` props.
+`NumberInputStepper` composes `VStack` so you can pass all the `VStack` props.
 
 ### **NumberDecrementStepper and NumberIncrementStepper Props**
 
-`NumberDecrementStepper` and `NumberIncrementStepper` composes the `Box` props so you can pass all `Box` props.
+`NumberDecrementStepper` and `NumberIncrementStepper` composes the `Box` props so you can pass all the `Box` props.
 
 ### NumberDecrementStepper and NumberIncrementStepper
 

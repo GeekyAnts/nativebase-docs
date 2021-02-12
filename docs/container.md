@@ -3,7 +3,7 @@ id: container
 title: Container
 ---
 
-`Container` are used to constrain a content's width to the current breakpoint, while keeping it fluid.
+`Container` is used to constrain a content's width to the current breakpoint, while keeping it fluid.
 
 ## Implements
 
@@ -11,7 +11,7 @@ title: Container
 
 ## Usage
 
-To contain any piece of content, wrap in the Container component.
+To include content, wrap it in the Container component.
 
 ## Example
 
@@ -43,7 +43,7 @@ export default function () {
 
 ## Props
 
-**Container** composes **Box** so you can pass all `Box` related props in addition to this
+**Container** implements **Box.**
 
 ### Container
 

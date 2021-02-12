@@ -3,7 +3,7 @@ id: appBar
 title: AppBar
 ---
 
-AppBar component can be used to create app headers.
+The AppBar component can be used to create app headers.
 
 ## Usage
 
@@ -76,12 +76,12 @@ Implements `Box`, all props of Box can be passed.
 
 ## AppBar.Left Props
 
-Implements `HStack` , all props of HStack can be passed.
+Implements `HStack` , all the props of HStack can be passed.
 
 ## AppBar.Content Props
 
-Implements `HStack` , all props of HStack can be passed.
+Implements `HStack` , all the props of HStack can be passed.
 
 ## AppBar.Right Props
 
-Implements `HStack` , all props of HStack can be passed.
+Implements `HStack` , all the props of HStack can be passed.

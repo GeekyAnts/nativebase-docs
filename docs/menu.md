@@ -19,7 +19,7 @@ NativeBase uses 5 components for rendering menus:
 import { Menu } from 'native-base';
 ```
 
-## Example (Usage)
+## Basic
 
 ```SnackPlayer name=Menu%20Basic
 import React from 'react';
@@ -49,7 +49,7 @@ export default function () {
 }
 ```
 
-## Example (MenuGroup)
+## Group
 
 ```SnackPlayer name=Menu%20Example (MenuGroup)
 import React from 'react';
@@ -90,7 +90,7 @@ export default function () {
 }
 ```
 
-## Example (MenuOptionGroups)
+## MenuOptionGroups
 
 ```SnackPlayer name=Menu%20Example (MenuOptionGroups)
 import React from 'react';
