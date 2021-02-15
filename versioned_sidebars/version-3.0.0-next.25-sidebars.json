@@ -1,0 +1,605 @@
+{
+  "version-3.0.0-next.25/componentsSidebar": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Introduction",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/nativebase"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/setup-provider"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Features",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/color-mode"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/nativebase-factory"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/responsive-style"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Layout",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/aspectRatio"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/box"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/center"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/Column"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/container"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/flex"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/hStack"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/row"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/simpleGrid"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/stack"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/view"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/VStack"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/wrap"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/ZStack"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Forms",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/button"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/checkBox"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/formControl"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/iconButton"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/input"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/numberInput"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/link"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/pinInput"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/radio"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/select"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/slider"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/switch"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/textArea"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/typeAhead"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Data Display",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/badge"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/closeButton"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/code"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/divider"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/Kbd"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/list"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/stat"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/tag"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Feedback",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/alert"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/circularProgress"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/progress"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/skeleton"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/snackBar"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/spinner"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/toast"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Typography",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/text"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/heading"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Overlay",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/alertDialog"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/menu"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/modal"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/overlay"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/popOver"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Disclosure",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/accordion"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/actionSheet"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/breadcrumb"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/collapse"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/tab"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Media and Icons",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/avatar"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/image"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Others",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/appBar"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/FAB"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/transition"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Hooks",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/use-disclosure"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/use-popOver"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/use-breakPoint-value"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/use-clipboard"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/use-media-query"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/use-theme"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/use-token"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/use-color-mode"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/use-color-mode-value"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Theme",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/default-theme"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Examples",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/todo-example"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Community Integration",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/react-hook-forms"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/nativebase-formik-ui"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Recipes",
+      "items": [
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Designs",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/buildingCard"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/buildingSearchBar"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Forms",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/form"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Layout",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/appDrawer"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Theme",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/customizingTheme"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/darkMode"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/customizingComponents"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/breakpoint"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/theme"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Migration",
+      "items": [
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Components",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Accordion"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Actionsheet"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Badge"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Button"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Card"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Checkbox"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/FABs"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Footer Tab"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Header"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Icon"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Layout"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Picker"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Radio Button"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Searchbar"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Spinner"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Tabs"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Thumbnail"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Toast"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.25/migration/Typography"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "More",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/changelog"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.0.0-next.25/faq"
+        }
+      ]
+    }
+  ]
+}
