@@ -14,7 +14,7 @@ NativeBase exports 3 avatar-related components:
 - `Avatar.Group`: A wrapper to stack multiple avatars together.
 
 ```jsx
-import { Avatar } from "native-base"
+import { Avatar } from "native-base";
 ```
 
 ## Basic
@@ -292,8 +292,8 @@ export default function () {
 
 ### Avatar
 
-| Name   | Type                    | Description                         | Default |
-| ------ | ----------------------- | ----------------------------------- | ------- |
-| size   | 2xl, lg, md, sm, xl, xs | The size of the avatar.             | md      |
-| source | ImageSourcePropType     | The image source of the avatar.     | -       |
-| _text  | TextProps               | Text styling for fallback Text.     | -       |
+| Name   | Type                    | Description                     | Default |
+| ------ | ----------------------- | ------------------------------- | ------- |
+| size   | 2xl, lg, md, sm, xl, xs | The size of the avatar.         | md      |
+| source | ImageSourcePropType     | The image source of the avatar. | -       |
+| \_text | TextProps               | Text styling for fallback Text. | -       |

@@ -12,6 +12,7 @@
 
 :root {
     --ifm-color-primary: #3e3a6f;
+    --ifm-link-color: #6863A9;
     --ifm-color-primary-dark: rgb(33, 175, 144);
     --ifm-color-primary-darker: rgb(31, 165, 136);
     --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -137,7 +138,7 @@
 }
 
 .homeSplashFade {
-    background-color: #3e3a6f;
+    background-color: #6863A9;
     /* background-color: #47b8c5; */
 }
 
@@ -175,7 +176,7 @@
     padding: 15px 35px;
     border-radius: 10px;
     background-color: white;
-    color: #3e3a6f;
+    color: #6863A9;
     font-weight: 700;
     font-size: 15px;
 }
@@ -242,7 +243,7 @@
 }
 
 .backlink h2 a:hover {
-    color: #3e3a6f;
+    color: #6863A9;
 }
 
 .moreProjects {
