@@ -10,16 +10,16 @@ The Avatar component is used to represent a user and it can display a profile pi
 NativeBase exports 3 avatar-related components:
 
 - `Avatar`: An image that represents the user.
-- `AvatarBadge`: A wrapper that displays its content on the bottom right corner of the avatar.
-- `AvatarGroup`: A wrapper to stack multiple avatars together.
+- `Avatar.Badge`: A wrapper that displays its content on the bottom right corner of the avatar.
+- `Avatar.Group`: A wrapper to stack multiple avatars together.
 
 ```jsx
-import { Avatar, AvatarBadge } from 'native-base';
+import { Avatar } from "native-base"
 ```
 
-## Example
+## Basic
 
-```SnackPlayer name=Avatar%20Example
+```SnackPlayer name=Avatar%20Basic
 import React from "react";
 import { Avatar, HStack, NativeBaseProvider } from "native-base";
 
@@ -27,47 +27,59 @@ function AvatarComponent() {
   return (
     <HStack space={2}>
       <Avatar
-        name="Sanket Sahu"
+        borderWidth={1}
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg',
         }}
-      />
+      >
+        SS
+      </Avatar>
       <Avatar
-        name="Gaurav Guha"
+        borderWidth={1}
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg',
         }}
-      />
+      >
+        GG
+      </Avatar>
       <Avatar
-        name="Rohit Singh"
+        borderWidth={1}
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1260766060401188864/ySJfMIbZ_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1352844693151731713/HKO7cnlW_400x400.jpg',
         }}
-      />
+      >
+        RS
+      </Avatar>
       <Avatar
-        name="Ankur Kedia"
+        borderWidth={1}
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
         }}
-      />
+      >
+        AK
+      </Avatar>
       <Avatar
-        name="Suraj Ahmed"
+        borderWidth={1}
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/983582580372004864/h9ccP0Ea_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/983582580372004864/h9ccP0Ea_400x400.jpg',
         }}
-      />
+      >
+        SC
+      </Avatar>
       <Avatar
-        name="Rehman Baig"
+        borderWidth={1}
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1320985200663293952/lE_Kg6vr_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1320985200663293952/lE_Kg6vr_400x400.jpg',
         }}
-      />
+      >
+        MR
+      </Avatar>
     </HStack>
   );
 }
@@ -80,9 +92,9 @@ export default function () {
 }
 ```
 
-## Example (Sizes)
+## Sizes
 
-```SnackPlayer name=Avatar%20Example(Sizes)
+```SnackPlayer name=Avatar%20Sizes
 import React from "react";
 import { Avatar, HStack, NativeBaseProvider } from "native-base";
 
@@ -91,52 +103,58 @@ function AvatarComponent() {
     <HStack space={1}>
       <Avatar
         size="xs"
-        name="Sanket Sahu"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg',
         }}
-      />
+      >
+        SS
+      </Avatar>
       <Avatar
         size="sm"
-        name="Himanshu Satija"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/929409889788510208/gRr2f7rZ_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/929409889788510208/gRr2f7rZ_400x400.jpg',
         }}
-      />
+      >
+        HS
+      </Avatar>
       <Avatar
         size="md"
-        name="Rohit Singh"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1260766060401188864/ySJfMIbZ_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1352844693151731713/HKO7cnlW_400x400.jpg',
         }}
-      />
+      >
+        RS
+      </Avatar>
       <Avatar
         size="lg"
-        name="Ankur Kedia"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
         }}
-      />
+      >
+        AK
+      </Avatar>
       <Avatar
         size="xl"
-        name="Gaurav Guha"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg',
         }}
-      />
+      >
+        GG
+      </Avatar>
       <Avatar
         size="2xl"
-        name="Rehman Baig"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1320985200663293952/lE_Kg6vr_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1320985200663293952/lE_Kg6vr_400x400.jpg',
         }}
-      />
+      >
+        RB
+      </Avatar>
     </HStack>
   );
 }
@@ -149,9 +167,35 @@ export default function () {
 }
 ```
 
-## Example (Fallbacks)
+## Fallbacks
 
-```SnackPlayer name=Avatar%20Example(Fallbacks)
+```SnackPlayer name=Avatar%20Fallbacks
+import React from "react";
+import { Avatar, HStack, NativeBaseProvider } from "native-base";
+
+function AvatarComponent() {
+  return (
+    <HStack>
+      <Avatar mr={1} source={{ uri: 'https://bit.ly/broken-link' }}>
+        RS
+      </Avatar>
+      <Avatar source={{ uri: 'https://bit.ly/broken-link' }}>MR</Avatar>
+      <Avatar source={{ uri: 'https://bit.ly/broken-link' }} />
+    </HStack>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <AvatarComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+## Avatar Badge
+
+```SnackPlayer name=Avatar%20Avatar%20Badge
 import React from "react";
 import { Avatar, HStack, NativeBaseProvider } from "native-base";
 
@@ -159,44 +203,16 @@ function AvatarComponent() {
   return (
     <HStack>
       <Avatar
-        mr={1}
-        name="Rohit"
-        source={{ uri: "https://bit.ly/broken-link" }}
-      />
-      <Avatar name="Rehman" source={{ uri: "https://bit.ly/broken-link" }} />
-      <Avatar source={{ uri: "https://bit.ly/broken-link" }} />
-    </HStack>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <AvatarComponent />
-    </NativeBaseProvider>
-  );
-}
-```
-
-## Example (Avatar Badge)
-
-```SnackPlayer name=Avatar%20Example(Avatar Badge)
-import React from "react";
-import { Avatar, HStack, AvatarBadge, NativeBaseProvider } from "native-base";
-
-function AvatarComponent() {
-  return (
-    <HStack>
-      <Avatar
-        source={{ uri: "https://nativebase.io/assets/img/front-page-icon.png" }}
-        name={"Native Base"}
+        source={{ uri: 'https://alpha.nativebase.io/img/native-base-icon.png' }}
       >
-        <AvatarBadge bg={"red.200"} />
+        NB
+        <Avatar.Badge bg={'red.200'} />
       </Avatar>
       <Avatar
-        source={{ uri: "https://nativebase.io/assets/img/front-page-icon.png" }}
-        name={"Native Base"}
+        source={{ uri: 'https://alpha.nativebase.io/img/native-base-icon.png' }}
       >
-        <AvatarBadge borderColor="papayawhip" bg="tomato" />
+        NB
+        <Avatar.Badge borderColor="papayawhip" bg="tomato" />
       </Avatar>
     </HStack>
   );
@@ -210,55 +226,57 @@ export default function () {
 }
 ```
 
-## Example (Avatar Group)
+## Avatar Group
 
-```SnackPlayer name=Avatar%20Example(Avatar Group)
+```SnackPlayer name=Avatar%20Avatar%20Group
 import React from "react";
-import { Avatar, AvatarGroup, NativeBaseProvider } from "native-base";
+import { Avatar, NativeBaseProvider } from "native-base";
 
 function AvatarComponent() {
   return (
-    <AvatarGroup size="lg" max={4}>
+    <Avatar.Group size="lg" max={4}>
       <Avatar
-        name="Sanket Sahu"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg',
         }}
-      />
+      >
+        SS
+      </Avatar>
       <Avatar
-        name="Ankur Kedia"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
         }}
-      />
+      >
+        AK
+      </Avatar>
       <Avatar
-        name="Rohit Singh"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1260766060401188864/ySJfMIbZ_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1352844693151731713/HKO7cnlW_400x400.jpg',
         }}
-      />
+      >
+        RS
+      </Avatar>
       <Avatar
-        name="Rehman Baig"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1320985200663293952/lE_Kg6vr_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1320985200663293952/lE_Kg6vr_400x400.jpg',
         }}
-      />
+      >
+        MR
+      </Avatar>
+      <Avatar source={{ uri: 'https://bit.ly/code-beast' }}>CB</Avatar>
       <Avatar
-        name="Christian Nwamba"
-        source={{ uri: "https://bit.ly/code-beast" }}
-      />
-      <Avatar
-        name="Gaurav Guha"
         source={{
           uri:
-            "https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg",
+            'https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg',
         }}
-      />
-    </AvatarGroup>
+      >
+        GG
+      </Avatar>
+    </Avatar.Group>
   );
 }
 export default function () {
@@ -277,5 +295,5 @@ export default function () {
 | Name   | Type                    | Description                         | Default |
 | ------ | ----------------------- | ----------------------------------- | ------- |
 | size   | 2xl, lg, md, sm, xl, xs | The size of the avatar.             | md      |
-| name   | string                  | The name of the user in the avatar. | -       |
 | source | ImageSourcePropType     | The image source of the avatar.     | -       |
+| _text  | TextProps               | Text styling for fallback Text.     | -       |
