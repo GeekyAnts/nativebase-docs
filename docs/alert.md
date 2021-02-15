@@ -15,7 +15,7 @@ NativeBase exports 5 modal-related components:
 - `Alert.Description`: The description of the alert to be announced by screen readers.
 
 ```jsx
-import { Alert } from "native-base";
+import { Alert } from 'native-base';
 ```
 
 ## Basic
@@ -207,16 +207,55 @@ export default function () {
 }
 ```
 
+## Action
+
+```SnackPlayer name=Alert%20Basic
+import React from "react";
+import { Alert, CloseButton, Collapse, Button, NativeBaseProvider } from "native-base";
+function AlertComponent() {
+	const [show, setShow] = React.useState(true);
+  const handleToggle = (val: boolean) => setShow(val);
+  return (
+    <>
+      <Collapse isOpen={show}>
+        <Alert
+          status="error"
+          action={
+            <CloseButton size={'xs'} onPress={() => handleToggle(false)} />
+          }
+        >
+          <Alert.Icon />
+          <Alert.Title>Error Alert</Alert.Title>
+          <Alert.Description>description goes here</Alert.Description>
+        </Alert>
+      </Collapse>
+      <Button size={'sm'} onPress={() => handleToggle(true)}>
+        Re-Open
+      </Button>
+    </>
+  );
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <AlertComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
 ## Props
 
 ### Alert
 
 Implement `Box`, all the props of Box can be passed.
 
-| Name    | Type                                   | Description                            | Default |
-| ------- | -------------------------------------- | -------------------------------------- | ------- |
-| status  | error, info, success, warning          | The status of the alert.               | info    |
-| variant | left-accent, solid, subtle, top-accent | The variant of the alert style to use. | subtle  |
+| Name    | Type                                   | Description                                                                   | Default |
+| ------- | -------------------------------------- | ----------------------------------------------------------------------------- | ------- |
+| status  | error, info, success, warning          | The status of the alert.                                                      | info    |
+| variant | left-accent, solid, subtle, top-accent | The variant of the alert style to use.                                        | subtle  |
+| action  | JSX.Element                            | The action to display. It renders after the message, at the end of the alert. | -       |
 
 ### Alert.Icon
 
