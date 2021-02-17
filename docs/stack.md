@@ -35,7 +35,11 @@ export default function () {
 
 > If you want to pass custom components (not a nativebase imported component) as direct Children of Stack, VStack, HStack, or ZStack you must wrap that in a `Box` for Stacks to work as expected.
 
-## Extra props
+## Props
 
-- `style`: Applies user-defined styles and accepts a `stylesheet`.
-- `children` : Renders components as `Box` children. Accepts a `JSX.Element` or an array of `JSX.Element`
+| Name     | Type        | Description                                  | Default |
+| -------- | ----------- | -------------------------------------------- | ------- |
+| divider  | JSX.Element | The divider element to use between elements. | -       |
+| space    | MarginProps | The space between each stack item.           | -       |
+| reversed | boolean     | The direction to stack the elements          | -       |
+| children | JSX.Element | The elements to be stacked.                  | -       |

@@ -53,4 +53,5 @@ export default function () {
 | -------- | ----------- | -------------------------------------------- | ------- |
 | divider  | JSX.Element | The divider element to use between elements. | -       |
 | space    | MarginProps | The space between each stack item.           | -       |
-| reversed | boolean     | The direction to stack the elements.         | -       |
+| reversed | boolean     | The direction to stack the elements          | -       |
+| children | JSX.Element | The elements to be stacked.                  | -       |

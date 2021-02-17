@@ -124,6 +124,13 @@ export default function () {
 }
 ```
 
-## Extra props
+## Props
 
-- `style`: Applies user-defined styles and accepts a `stylesheet`.
+| Name    | Type                                                              | Description                                           | Default |
+| ------- | ----------------------------------------------------------------- | ----------------------------------------------------- | ------- |
+| size    | `sm` , `lg` , `small` , `large`                                   | Applies box shadow and accepts a number from 0 to 9   | -       |
+| style   | stylesheet                                                        | Applies user-defined styles and accepts a stylesheet. | -       |
+| variant | 'custom', 'dotted', 'multiColorDotted', 'stroked', 'squareDotted' | Variant of spinner to use.                            | -       |
+
+| duration | number | Time(in ms) for spinner to complete a rotation | 1900 |
+| renderProp | JSX.Element | Manual component to be rendered as a Spinner | - |

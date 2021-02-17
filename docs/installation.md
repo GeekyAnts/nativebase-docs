@@ -24,7 +24,7 @@ values={[
 <TabItem value="yarn">
 
 ```bash
-yarn add native-base@next react-native-svg @expo/vector-icons styled-components styled-system
+yarn add native-base@next react-native-svg @expo/vector-icons styled-components styled-system react-native-safe-area-context
 ```
 
 </TabItem>
@@ -32,7 +32,7 @@ yarn add native-base@next react-native-svg @expo/vector-icons styled-components 
 <TabItem value="npm">
 
 ```bash
-npm i native-base@next react-native-svg @expo/vector-icons styled-components styled-system
+npm i native-base@next react-native-svg @expo/vector-icons styled-components styled-system react-native-safe-area-context
 ```
 
 </TabItem>

@@ -43,7 +43,9 @@ export default function () {
 
 ## Props
 
-- `divider` : ( **JSX.Element** ) The divider element to use between elements.
-- `space` : ( **MarginProps** ) The space between each stack item.
-- `reversed` : ( **boolean** ) The direction to stack the elements.
-- `children` : ( **JSX.Element | JSX.Element[]** ) The elements to be stacked.
+| Name     | Type        | Description                                  | Default |
+| -------- | ----------- | -------------------------------------------- | ------- |
+| divider  | JSX.Element | The divider element to use between elements. | -       |
+| space    | MarginProps | The space between each stack item.           | -       |
+| reversed | boolean     | The direction to stack the elements          | -       |
+| children | JSX.Element | The elements to be stacked.                  | -       |
