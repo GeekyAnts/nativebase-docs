@@ -47,4 +47,4 @@ export default function () {
 | shadow        | number                                   | Applies box shadow and accepts a number from 0 to 9                                   | -       |
 | style         | stylesheet                               | Applies user-defined styles and accepts a stylesheet.                                 | -       |
 | children      | JSX.Element                              | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
-| SafeAreaProps | [SafeAreaProps](../safe-area-view-props) | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
+| SafeAreaProps | [SafeAreaProps](safe-area-view-props.md) | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
