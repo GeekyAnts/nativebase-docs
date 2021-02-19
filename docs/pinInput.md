@@ -43,32 +43,32 @@ import { PinInput, Stack, NativeBaseProvider } from 'native-base';
 function PinInputComponent () {
   return (
     <Stack space={5}>
-      <PinInput inputSize="2xl">
+      <PinInput size="2xl">
         <PinInput.Field />
         <PinInput.Field />
         <PinInput.Field />
       </PinInput>
-      <PinInput inputSize="xl">
+      <PinInput size="xl">
         <PinInput.Field />
         <PinInput.Field />
         <PinInput.Field />
       </PinInput>
-      <PinInput inputSize="lg">
+      <PinInput size="lg">
         <PinInput.Field />
         <PinInput.Field />
         <PinInput.Field />
       </PinInput>
-      <PinInput inputSize="md">
+      <PinInput size="md">
         <PinInput.Field />
         <PinInput.Field />
         <PinInput.Field />
       </PinInput>
-      <PinInput inputSize="sm">
+      <PinInput size="sm">
         <PinInput.Field />
         <PinInput.Field />
         <PinInput.Field />
       </PinInput>
-      <PinInput inputSize="xsm">
+      <PinInput size="xs">
         <PinInput.Field />
         <PinInput.Field />
         <PinInput.Field />
