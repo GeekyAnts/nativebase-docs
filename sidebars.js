@@ -1,7 +1,12 @@
 module.exports = {
   componentsSidebar: {
     Introduction: ['nativebase', 'installation', 'setup-provider'],
-    Features: ['color-mode', 'nativebase-factory', 'responsive-style'],
+    Features: [
+      'color-mode',
+      'nativebase-factory',
+      'responsive-style',
+      'safe-area-view-props',
+    ],
     Layout: [
       'aspectRatio',
       'box',
