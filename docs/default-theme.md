@@ -3,7 +3,7 @@ id: default-theme
 title: Default Theme
 ---
 
-import ColorsBlock from "../src/components/ColorsBlocks";
+import { ColorsBlock, Fontslocks, SpaceBlocks } from "../src/components/index";
 
 The theme object is where you define your application's color palette, type scale, font stacks, breakpoints, border radius values, and more.
 
@@ -82,41 +82,15 @@ export default {
     '6xl': 64,
   },
 };
-
-export default typography;
 ```
+
+<FontBlocks/>
 
 ## **Size**
 
 The `size` key allows you to customize the global spacing and sizing scale for your project. By default these spacing value can be referenced by the `padding`, `margin`, and `top`, `left`, `right`, `bottom` props.
 
-```jsx
-export default {
-  0: '0',
-  1: '4px',
-  2: '8px',
-  3: '12px',
-  4: '16px',
-  5: '20px',
-  6: '24px',
-  7: '28px',
-  8: '32px',
-  9: '36px',
-  10: '40px',
-  12: '48px',
-  16: '64px',
-  20: '80px',
-  24: '96px',
-  32: '128px',
-  40: '160px',
-  48: '192px',
-  56: '224px',
-  64: '256px',
-  72: '288px',
-  80: '320px',
-  96: '384px',
-};
-```
+<SpaceBlocks/>
 
 ## Shadows
 

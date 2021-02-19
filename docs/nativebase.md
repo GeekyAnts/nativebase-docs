@@ -23,3 +23,7 @@ We have two types of components — Primitives and Composite.
 
 - **Primitive components** are the building blocks.
 - **Composite components** are made up of primitive components.
+
+## Notes on Web 🚨
+
+Please note that Web support is still under development. Nativebase will work on web, but we are still working towards a more comprehensive web experience for your apps.

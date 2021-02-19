@@ -1,6 +1,6 @@
 import React from 'react';
 import ColorComponent from './ColorComponent';
-const colorsData = {
+const COLORS = {
   singletons: {
     white: '#FFFFFF',
     black: '#000000',
@@ -284,14 +284,18 @@ const colorsData = {
     900: '#0f172a',
   },
 };
-const ColorsBlock = ({}) => {
+const ColorsBlocks = ({}) => {
   return (
     <div>
-      {Object.keys(colorsData).map((key) => (
-        <ColorComponent variants={colorsData[key]} name={key} />
+      {Object.keys(COLORS).map((key, index) => (
+        <ColorComponent
+          variants={COLORS[key]}
+          name={key}
+          key={`space-block-${key}-${index}`}
+        />
       ))}
     </div>
   );
 };
 
-export default ColorsBlock;
+export default ColorsBlocks;

@@ -8,24 +8,27 @@ const ColorComponent = ({ name, variants }) => {
       <div
         style={{
           display: 'grid',
-          'grid-gap': '1rem',
-          'grid-template-columns': 'repeat( auto-fit, minmax(200px, 1fr) )',
+          gridGap: '1rem',
+          gridTemplateColumns: 'repeat( auto-fit, minmax(200px, 1fr) )',
           marginTop: '1rem',
         }}
       >
-        {Object.keys(variants).map((variant) => {
+        {Object.keys(variants).map((variant, key) => {
           return (
-            <div style={{ display: 'flex', 'flex-direction': 'row' }}>
+            <div
+              style={{ display: 'flex', flexDirection: 'row' }}
+              key={`color-component-${variant}-${key}`}
+            >
               <div
                 style={{
                   width: '3rem',
                   height: '3rem',
-                  'background-color': variants[variant],
-                  'border-radius': '0.375rem',
-                  'margin-right': '0.5rem',
+                  backgroundColor: variants[variant],
+                  borderRadius: '0.375rem',
+                  marginRight: '0.5rem',
                 }}
               />
-              <div style={{ display: 'flex', 'flex-direction': 'column' }}>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <div style={{ fontWeight: 'bold' }}>
                   {`${name !== 'Singletons' ? name : ''} ${
                     variant.charAt(0).toUpperCase() + variant.slice(1)
