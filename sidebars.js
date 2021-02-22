@@ -60,7 +60,7 @@ module.exports = {
     ],
     Typography: ['text', 'heading'],
     Overlay: ['alertDialog', 'menu', 'modal', 'overlay', 'popOver'],
-    Disclosure: ['accordion', 'actionSheet', 'breadcrumb', 'collapse', 'tab'],
+    Disclosure: ['accordion', 'actionSheet', 'breadcrumb', 'collapse', 'tabs'],
     'Media and Icons': ['avatar', 'icon', 'image'],
     Others: ['appBar', 'FAB', 'transition'],
     Hooks: [
