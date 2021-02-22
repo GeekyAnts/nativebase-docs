@@ -17,7 +17,7 @@ import { Select } from 'native-base';
 
 ## Basic
 
-```jsx
+```SnackPlayer name=Basic
 import React from 'react';
 import { Icon, Select, NativeBaseProvider } from 'native-base';
 
@@ -48,7 +48,7 @@ export default function () {
 
 ## Native
 
-```jsx
+```SnackPlayer name=Native
 import React from 'react';
 import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
 
@@ -85,7 +85,7 @@ export default function () {
 
 ## Styled
 
-```jsx
+```SnackPlayer name=Styled
 import React from 'react';
 import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
 
