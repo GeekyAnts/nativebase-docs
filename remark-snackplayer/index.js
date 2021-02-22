@@ -1,14 +1,13 @@
-"use strict";
-const visit = require("unist-util-visit-parents");
-const u = require("unist-builder");
-const dedent = require("dedent");
-const fromEntries = require("object.fromentries");
+'use strict';
+const visit = require('unist-util-visit-parents');
+const u = require('unist-builder');
+const dedent = require('dedent');
+const fromEntries = require('object.fromentries');
 
-const parseParams = (paramString = "") => {
+const parseParams = (paramString = '') => {
   const params = fromEntries(new URLSearchParams(paramString));
-
   if (!params.platform) {
-    params.platform = "web";
+    params.platform = 'web';
   }
 
   return params;
@@ -18,32 +17,46 @@ const processNode = (node, parent) => {
   return new Promise(async (resolve, reject) => {
     try {
       const params = parseParams(node.meta);
-
+      const NBversion = '3.0.0-next.27';
       // Gather necessary Params
-      const name = params.name ? decodeURIComponent(params.name) : "Example";
+      let name = params.name ? decodeURIComponent(params.name) : 'Example';
       const description = params.description
         ? decodeURIComponent(params.description)
-        : "Example usage";
+        : 'Example usage';
       const sampleCode = node.value;
       const encodedSampleCode = encodeURIComponent(sampleCode);
-      const platform = params.platform || "web";
-      const supportedPlatforms = params.supportedPlatforms || "ios,android,web";
-      const theme = params.theme || "light";
-      const preview = params.preview || "true";
-      const loading = params.loading || "lazy";
-
+      const platform = params.platform || 'web';
+      const supportedPlatforms = params.supportedPlatforms || 'ios,android,web';
+      const theme = params.theme || 'light';
+      const preview = params.preview || 'true';
+      const loading = params.loading || 'lazy';
       // Generate Node for SnackPlayer
-      let dependencies =
-        "react-is,expo-font,native-base@3.0.0-next.14,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper";
+      let dependencies = `react-is,expo-font,native-base@${NBversion},styled-system,expo-constants,react-native-web,react-native-svg,styled-components,@expo/vector-icons`;
 
-      if (name.split(" ")[0] == "Formik") {
-        dependencies =
-          "react-is,expo-font,native-base@3.0.0-next.14,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,@native-base/formik-ui,formik,yup";
-      } else if (name.split(" ")[0] == "ReactHookForms") {
-        dependencies =
-          "react-is,expo-font,native-base@3.0.0-next.14,styled-system,expo-constants,react-native-svg,styled-components,@expo/vector-icons,react-native-paper,react-hook-form";
+      if (name.split(' ')[0] === 'Formik') {
+        dependencies += ',@native-base/formik-ui,formik,yup';
+      } else if (name.split(' ')[0] === 'ReactHookForms') {
+        dependencies += ',react-hook-form';
       }
-      const snackPlayerDiv = u("html", {
+      // const files = {
+      //   // Inlined code
+      //   'App.tsx': {
+      //     type: 'CODE',
+      //     contents: 'console.log("hello world!");'
+      //   },
+      //   // Externally hosted code (JavaScript, Markdown, JSON)
+      //   'data/data.json': {
+      //     type: 'CODE',
+      //     url: 'https://mysite/data.json'
+      //   },
+      //   // Externally hosted assets (images, fonts)
+      //   'assets/image.png': {
+      //     type: 'ASSET',
+      //     contents: 'https://mysite/image.png'
+      //   }
+      // };
+      // data-snack-files="${dependencies}"
+      const snackPlayerDiv = u('html', {
         value: dedent`
           <div
             class="snack-player"
@@ -75,9 +88,9 @@ const SnackPlayer = () => {
     new Promise(async (resolve, reject) => {
       const nodesToProcess = [];
       // Parse all CodeBlocks
-      visit(tree, "code", (node, parent) => {
+      visit(tree, 'code', (node, parent) => {
         // Add SnackPlayer CodeBlocks to processing queue
-        if (node.lang == "SnackPlayer") {
+        if (node.lang == 'SnackPlayer') {
           nodesToProcess.push(processNode(node, parent));
         }
       });

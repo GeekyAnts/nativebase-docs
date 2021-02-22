@@ -1,0 +1,84 @@
+---
+id: simpleGrid
+title: SimpleGrid
+---
+
+SimpleGrid provides an interface to create responsive grids using simple props.
+
+## Import
+
+```jsx
+import { SimpleGrid } from "native-base";
+```
+
+## Usage
+
+### Using columns
+
+```SnackPlayer name=SimpleGrid%20Usage
+import { SimpleGrid, Box, NativeBaseProvider } from 'native-base';
+import React from 'react';
+
+const items = 12;
+const data = Array(items).fill(0);
+
+function SimpleGridComponent() {
+  return (
+    <SimpleGrid columns={3} spacing={4}>
+      {data.map((_item, index) => {
+        return <Box key={index} bg="#d1d1d1" height={100} width={100}></Box>;
+      })}
+    </SimpleGrid>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <SimpleGridComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+### Using minChildWidth
+
+```SnackPlayer name=SimpleGrid%20minWidthChild
+import { SimpleGrid, Box, NativeBaseProvider } from 'native-base';
+import React from 'react';
+
+const items = 12;
+const data = Array(items).fill(0);
+
+function SimpleGridComponent() {
+  return (
+    <SimpleGrid minChildWidth={60} spacing={4}>
+      {data.map((_item, index) => {
+        return <Box key={index} bg="#d2d2d2" height={60} width={60}></Box>;
+      })}
+    </SimpleGrid>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <SimpleGridComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+## Props
+
+### SimpleGrid
+
+`columns`: ( number **\***) \***\*To \*\***set minimum child width of a grid item. Default is **0**.\*
+
+`minChildWidth`: ( number **\***) \***\*To \*\***set minimum child width of a grid item. Default is **0**.\*
+
+`spacing`: ( number **\***) \***\*To \*\***set horizontal and vertical spacing between grid items. Default is **0**.\*
+
+`spacingX`: ( number **\***) \***\*To \*\***set horizontal spacing between grid items. Default is **0**.\*
+
+`spacingY`: ( number **\***) \***\*To \*\***set vertical spacing between grid items. Default is **0**.\*
+
+**Note:** Either of `columns` or `minChildWidth` is required.

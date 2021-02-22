@@ -8,7 +8,7 @@ title: Wrap
 ## **Import**
 
 ```jsx
-import { Wrap } from "native-base";
+import { Wrap } from 'native-base';
 ```
 
 ## Implements
@@ -25,16 +25,16 @@ import { Wrap, Center, NativeBaseProvider } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap flexDir="row">
-      <Center w="180px" h="80px" bg="red.2">
+      <Center w="180px" h="80px" bg="red.200">
         Box 1
       </Center>
-      <Center w="180px" h="80px" bg="green.2">
+      <Center w="180px" h="80px" bg="green.200">
         Box 2
       </Center>
       <Center w="180px" h="80px" bg="tomato">
         Box 3
       </Center>
-      <Center w="180px" h="80px" bg="blue.2">
+      <Center w="180px" h="80px" bg="blue.200">
         Box 4
       </Center>
     </Wrap>
@@ -59,16 +59,16 @@ import { Wrap, Center, NativeBaseProvider  } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap spacing={10} flexDir="row">
-      <Center w="180px" h="80px" bg="red.2">
+      <Center w="180px" h="80px" bg="red.200">
         Box 1
       </Center>
-      <Center w="180px" h="80px" bg="green.2">
+      <Center w="180px" h="80px" bg="green.200">
         Box 2
       </Center>
       <Center w="180px" h="80px" bg="tomato">
         Box 3
       </Center>
-      <Center w="180px" h="80px" bg="blue.2">
+      <Center w="180px" h="80px" bg="blue.200">
         Box 4
       </Center>
     </Wrap>
@@ -95,16 +95,16 @@ import { Wrap, Center, NativeBaseProvider  } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap spacing={10} align="center" direction="row">
-      <Center w="100px" h="80px" bg="red.2">
+      <Center w="100px" h="80px" bg="red.200">
         Box 1
       </Center>
-      <Center w="100px" h="40px" bg="green.2">
+      <Center w="100px" h="40px" bg="green.200">
         Box 2
       </Center>
       <Center w="100px" h="60px" bg="tomato">
         Box 3
       </Center>
-      <Center w="180px" h="80px" bg="blue.2">
+      <Center w="180px" h="80px" bg="blue.200">
         Box 4
       </Center>
     </Wrap>
@@ -127,16 +127,16 @@ import { Wrap, Center, NativeBaseProvider  } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap spacing={10} justify="center" direction="row">
-      <Center w="100px" h="80px" bg="red.2">
+      <Center w="100px" h="80px" bg="red.200">
         Box 1
       </Center>
-      <Center w="100px" h="40px" bg="green.2">
+      <Center w="100px" h="40px" bg="green.200">
         Box 2
       </Center>
       <Center w="100px" h="60px" bg="tomato">
         Box 3
       </Center>
-      <Center w="180px" h="80px" bg="blue.2">
+      <Center w="180px" h="80px" bg="blue.200">
         Box 4
       </Center>
     </Wrap>

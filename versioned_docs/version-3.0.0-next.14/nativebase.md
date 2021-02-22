@@ -11,19 +11,7 @@ We want to build and ship apps fast with the highest quality. We want to focus o
 
 # Inspirations
 
-Ant Design, Braid Design System, Bootstrap, TailwindCSS, Flutter Material
-
-### Comparing the available options
-
-| Name                | Web | Mobile  | Design System | Customizable | Components             | Language   | Docs      | Popularity |
-| ------------------- | --- | ------- | ------------- | ------------ | ---------------------- | ---------- | --------- | ---------- |
-| Ant Design          | Yes | Partial | Yes           | Low          | Many                   | JavaScript | Very good |            |
-| Braid Design System | Yes | No      | Yes           | Medium       | Many                   | JavaScript | Good      |            |
-| Bootstrap           | Yes | No      | Yes           | Medium       | Limited                | CSS        | Very good |            |
-| TailwindCSS         | Yes | Partial | Yes           | High         | Rich (with TailwindUI) | CSS        | Very good |            |
-| Flutter Material    | Yes | Yes     | Yes           | High         | Many                   | Dart       | Average   |            |
-| NativeBase 3.0      | Yes | Yes     | Yes           | High         | Rich                   | JavaScript | Very good |            |
-|                     |     |         |               |              |                        |            |           |            |
+Ant Design, Braid Design System, Bootstrap, TailwindCSS, Flutter, Material.
 
 # API
 
@@ -35,11 +23,3 @@ We have two types of components — Primitives and Composite.
 
 - **Primitive components** are the building blocks.
 - **Composite components** are made up of primitive components.
-
-# Constraints
-
-- Space (Margin / Padding)
-- Colors
-- Fonts
-- Font-sizes
-- Border-thickness

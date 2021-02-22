@@ -1,4 +1,4 @@
-import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 export default (() => {
   if (!ExecutionEnvironment.canUseDOM) {
@@ -6,35 +6,32 @@ export default (() => {
   }
 
   const updateSnacksTheme = () => {
-    const theme = document.querySelector("html").dataset.theme;
-    document.querySelectorAll(".snack-player").forEach((snack) => {
-      snack.dataset.snackTheme = "dark";
+    const theme = document.querySelector('html').dataset.theme;
+    document.querySelectorAll('.snack-player').forEach((snack) => {
+      snack.dataset.snackTheme = 'dark';
     });
   };
 
   const initSnackPlayers = () => {
-    // console.log("initSnackPlayers");
     updateSnacksTheme();
     window.ExpoSnack && window.ExpoSnack.initialize();
   };
 
   const setupTabPanelsMutationObservers = () => {
-    const tabPanels = document.querySelectorAll("[role=tabpanel]");
-    // console.log('setupTabPanelsMutationObservers', {tabPanels});
+    const tabPanels = document.querySelectorAll('[role=tabpanel]');
     tabPanels.forEach((tabPanel) => {
       new MutationObserver((mutations, observer) => {
         initSnackPlayers();
-        // console.log('tabPanel MutationObserver triggered', {tabPanels});
       }).observe(tabPanel, { childList: true });
     });
   };
 
-  if (document.readyState === "complete") {
+  if (document.readyState === 'complete') {
     updateSnacksTheme();
     setupTabPanelsMutationObservers();
   } else {
-    document.addEventListener("readystatechange", () => {
-      if (document.readyState === "complete") {
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'complete') {
         updateSnacksTheme();
         setupTabPanelsMutationObservers();
       }
@@ -46,15 +43,15 @@ export default (() => {
   // see https://github.com/expo/snack-web/blob/master/src/client/components/EmbedCode.tsx#L60
   const setupThemeSynchronization = () => {
     new MutationObserver((mutations, observer) => {
-      if ("ExpoSnack" in window) {
-        document.querySelectorAll(".snack-player").forEach((container) => {
+      if ('ExpoSnack' in window) {
+        document.querySelectorAll('.snack-player').forEach((container) => {
           updateSnacksTheme();
           window.ExpoSnack && window.ExpoSnack.remove(container);
           window.ExpoSnack && window.ExpoSnack.append(container);
         });
       }
-    }).observe(document.getElementsByTagName("html")[0], {
-      attributeFilter: ["data-theme"],
+    }).observe(document.getElementsByTagName('html')[0], {
+      attributeFilter: ['data-theme'],
       attributes: true,
       childList: false,
       subtree: false,

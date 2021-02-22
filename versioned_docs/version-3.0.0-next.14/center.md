@@ -12,7 +12,7 @@ title: Center
 ## **Import**
 
 ```jsx
-import { Center, Square, Circle } from "native-base";
+import { Center, Square, Circle } from 'native-base';
 ```
 
 - **Center:** Centers its child, pass `width` and `height`
@@ -28,7 +28,7 @@ import React from 'react';
 import { Center, NativeBaseProvider } from 'native-base';
 function CenterComponent() {
   return (
-    <Center bg="red.4" height={200} width={200}>
+    <Center bg="red.400" height={200} width={200}>
       This is the Center
     </Center>
   );
@@ -54,11 +54,11 @@ import { Center, Box, HStack, Icon, NativeBaseProvider } from "native-base";
 function CenterComponent() {
   return (
     <HStack>
-      <Center w="40px" h="40px" bg="blue.2" color="white">
+      <Center w="40px" h="40px" bg="blue.200" color="white">
         <Icon
           name="audiotrack"
           type="MaterialIcons"
-          color="red.3"
+          color="red.300"
           boxSize={6}
         />
       </Center>
@@ -104,7 +104,7 @@ function CenterComponent() {
           boxSize={8}
         />
       </Circle>
-      <Square size="lg" bg="blue.3">
+      <Square size="lg" bg="blue.300">
         <Box fontWeight="bold" fontSize="lg" color="white">
           20
         </Box>

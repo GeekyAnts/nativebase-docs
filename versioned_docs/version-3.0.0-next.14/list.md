@@ -12,7 +12,7 @@ List is used to display list items.
 ## Import
 
 ```jsx
-import { List, ListItem, ListIcon, Ol, Ul, Li } from "native-base";
+import { List, ListItem, ListIcon, Ol, Ul, Li } from 'native-base';
 ```
 
 ## Usage
@@ -24,19 +24,19 @@ import { Li, Heading, Ul, Ol, Box, NativeBaseProvider } from 'native-base';
 function ListComponent () {
   return (
     <Box height="50%">
-      <Heading fontSize={32} color="indigo.5">
+      <Heading fontSize={32} color="indigo.500">
         Unordered List
       </Heading>
-      <Ol my={2} fontSize={24} spacing={4} color="red.2">
+      <Ol my={2} fontSize={24} spacing={4} color="red.200">
         <Li>Inferno</Li>
         <Li>Mirage</Li>
         <Li>Dust 2</Li>
         <Li>Nuke</Li>
       </Ol>
-      <Heading fontSize={32} color="indigo.5">
+      <Heading fontSize={32} color="indigo.500">
         Ordered List
       </Heading>
-      <Ul mt={2} fontSize={24} spacing={4} color="red.2">
+      <Ul mt={2} fontSize={24} spacing={4} color="red.200">
         <Li>Inferno</Li>
         <Li>Mirage</Li>
         <Li>Dust 2</Li>
@@ -63,18 +63,18 @@ import { List, Heading, Box, ListIcon, Li, NativeBaseProvider } from 'native-bas
 function ListComponent () {
   return (
     <Box height="50%">
-      <Heading color="indigo.5">List with Icons</Heading>
-      <List mt={2} fontSize={32} spacing={4} color="red.2">
+      <Heading color="indigo.500">List with Icons</Heading>
+      <List mt={2} fontSize={32} spacing={4} color="red.200">
         <Li>
           <ListIcon
             name="check-circle-outline"
-            color="green.4"
+            color="green.400"
             type="MaterialIcons"
           />
           Server went up
         </Li>
         <Li>
-          <ListIcon name="cancel" color="red.4" type="MaterialIcons" />
+          <ListIcon name="cancel" color="red.400" type="MaterialIcons" />
           Server went down
         </Li>
         <Li>
@@ -82,7 +82,7 @@ function ListComponent () {
           Graphs and stats
         </Li>
         <Li>
-          <ListIcon name="attach-file" color="gray.4" type="MaterialIcons" />
+          <ListIcon name="attach-file" color="gray.400" type="MaterialIcons" />
           Attachments
         </Li>
       </List>

@@ -12,7 +12,7 @@ title: Flex
 ## Import
 
 ```jsx
-import { Flex, Spacer } from "native-base";
+import { Flex, Spacer } from 'native-base';
 ```
 
 - `Flex`: a **Box** with `display: flex`
@@ -42,7 +42,7 @@ function FlexComponent () {
         <Text>Box 1</Text>
       </Center>
       <Spacer />
-      <Center bg="green.5" h="100" w="100px">
+      <Center bg="green.500" h="100" w="100px">
         <Text>Box 2</Text>
       </Center>
     </Flex>
@@ -72,7 +72,7 @@ function FlexComponent () {
         <Text>Box 1</Text>
       </Center>
       <Spacer />
-      <Center bg="green.5" h="100" w="100px">
+      <Center bg="green.500" h="100" w="100px">
         <Text>Box 2</Text>
       </Center>
     </Flex>

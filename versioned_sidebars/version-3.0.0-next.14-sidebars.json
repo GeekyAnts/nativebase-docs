@@ -38,29 +38,6 @@
         {
             "collapsed": true,
             "type": "category",
-            "label": "Example",
-            "items": [{
-                "type": "doc",
-                "id": "version-3.0.0-next.14/todo-example"
-            }]
-        },
-        {
-            "collapsed": true,
-            "type": "category",
-            "label": "Community Integration",
-            "items": [{
-                    "type": "doc",
-                    "id": "version-3.0.0-next.14/react-hook-forms"
-                },
-                {
-                    "type": "doc",
-                    "id": "version-3.0.0-next.14/nativebase-formik-ui"
-                }
-            ]
-        },
-        {
-            "collapsed": true,
-            "type": "category",
             "label": "Layout",
             "items": [{
                     "type": "doc",
@@ -308,7 +285,7 @@
                 },
                 {
                     "type": "doc",
-                    "id": "version-3.0.0-next.14/breadCrumb"
+                    "id": "version-3.0.0-next.14/breadcrumb"
                 },
                 {
                     "type": "doc",
@@ -398,6 +375,29 @@
                 "type": "doc",
                 "id": "version-3.0.0-next.14/default-theme"
             }]
+        },
+        {
+            "collapsed": true,
+            "type": "category",
+            "label": "Examples",
+            "items": [{
+                "type": "doc",
+                "id": "version-3.0.0-next.14/todo-example"
+            }]
+        },
+        {
+            "collapsed": true,
+            "type": "category",
+            "label": "Community Integration",
+            "items": [{
+                    "type": "doc",
+                    "id": "version-3.0.0-next.14/react-hook-forms"
+                },
+                {
+                    "type": "doc",
+                    "id": "version-3.0.0-next.14/nativebase-formik-ui"
+                }
+            ]
         },
         {
             "collapsed": true,

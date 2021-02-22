@@ -23,7 +23,7 @@ function IconComponent() {
   return (
     <>
       <Icon type="Ionicons" name="md-checkmark-circle" />
-      <Icon name="menu" type="MaterialIcons" color="teal.2" size={20} />
+      <Icon name="menu" type="MaterialIcons" color="teal.200" size={20} />
     </>
   );
 }
@@ -43,7 +43,7 @@ import React from "react";
 import { Icon, NativeBaseProvider,Path } from "native-base";
 function IconComponent() {
   return (
-    <Icon viewBox="0 0 200 200" color="blue.3" size={12}>
+    <Icon viewBox="0 0 200 200" color="blue.300" size={12}>
       <Path d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0" />
     </Icon>
   );
@@ -76,7 +76,7 @@ function CreateIconExample() {
       />,
     ],
   });
-  return <CustomIcon color="red.2" size={12} />;
+  return <CustomIcon color="red.200" size={12} />;
 }
 export default function () {
   return (
