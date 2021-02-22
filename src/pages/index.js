@@ -114,6 +114,9 @@ function Home() {
             >
               GET STARTED
             </Link>
+            {/* <div id='tailwind'>
+              <div className='text-red-600'>This is tailwind</div>
+            </div> */}
             {/* <Link
               className="github-button"
               href="https://github.com/GeekyAnts/NativeBase"

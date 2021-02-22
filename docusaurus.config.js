@@ -17,6 +17,7 @@ module.exports = {
   favicon: 'img/native-base-icon.png',
   organizationName: 'nativebase', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
+  plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
     respectPrefersColorScheme: true,
     algolia: {
