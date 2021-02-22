@@ -5,6 +5,14 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import {
+  Hero,
+  Features as NewFeatures,
+  FeaturesBlocks,
+  FeaturesWorld,
+  News,
+  Cta,
+} from './../components/Home';
 
 const features = [
   {
@@ -66,7 +74,7 @@ function Home() {
       title={`${siteConfig.title} | A complete component library for React Native Ecosystem`}
       description='A complete component library for React Native Ecosystem'
     >
-      <header className={clsx(styles.mainBanner)}>
+      {/* <header className={clsx(styles.mainBanner)}>
         <div className='container '>
           <div
             className={clsx(
@@ -114,27 +122,18 @@ function Home() {
             >
               GET STARTED
             </Link>
-            {/* <div id='tailwind'>
-              <div className='text-red-600'>This is tailwind</div>
-            </div> */}
-            {/* <Link
-              className="github-button"
-              href="https://github.com/GeekyAnts/NativeBase"
-              data-icon="octicon-star"
-              data-count-href="https://github.com/GeekyAnts/NativeBase"
-              data-show-count="true"
-              data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub"
-              // style={{ color: "white" }}
-            >
-              Stars
-            </Link> */}
           </div>
         </div>
-      </header>
-      <main>
-        <section className={styles.features}>
-          <Features />
+      </header> */}
+      <main id='tailwind'>
+        <section className={styles.features + 'flex-1'}>
+          <Hero />
+          <NewFeatures />
+          <FeaturesBlocks />
+          <FeaturesWorld />
+          <News />
+          <Cta />
+          {/* <Features /> */}
         </section>
       </main>
     </Layout>

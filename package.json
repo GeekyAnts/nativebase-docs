@@ -16,6 +16,7 @@
     "@docusaurus/core": "2.0.0-alpha.70",
     "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@mdx-js/react": "^1.6.21",
+    "@tailwindcss/custom-forms": "^0.2.1",
     "clsx": "^1.1.1",
     "docusaurus-tailwindcss-loader": "file:plugins/docusaurus-tailwindcss-loader",
     "postcss": "^7.0.34",
