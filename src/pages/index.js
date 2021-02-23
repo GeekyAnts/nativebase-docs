@@ -126,7 +126,9 @@ function Home() {
         </div>
       </header> */}
 			<main id='tailwind'>
-				<section className={styles.features + 'flex-1 font-inter'}>
+				<section
+					className={styles.features + 'flex-1 font-inter overflow-hidden'}
+				>
 					<Hero />
 					<NewFeatures />
 					<FeaturesBlocks />
