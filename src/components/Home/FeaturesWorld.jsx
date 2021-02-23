@@ -1,28 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export function FeaturesWorld() {
-	return (
-		<section>
-			<div className='max-w-6xl mx-auto px-4 sm:px-6'>
-				<div className='py-12 md:py-20'>
-					{/* Section header */}
-					<div className='max-w-3xl mx-auto text-center pb-12 md:pb-16'>
-						<h1 className='h2 mb-4 text-4xl font-normal'>
-							See what others have to say about NativeBase
-						</h1>
-						{/* <p className='text-xl text-gray-600'>
+  return (
+    <section>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="py-12 md:py-20">
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+            <h1 className="h2 mb-4 text-4xl font-normal">
+              See what others have to say about NativeBase
+            </h1>
+            {/* <p className='text-xl text-gray-600'>
 							Duis aute irure dolor in reprehenderit in voluptate velit esse
 							cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
 							cupidatat.
 						</p> */}
-					</div>
+          </div>
 
-					{/* World illustration */}
-					{/* <div className='flex flex-col items-center pt-12 md:pt-16'>
+          {/* World illustration */}
+          {/* <div className='flex flex-col items-center pt-12 md:pt-16'>
 						<div className='relative'> */}
-					{/* Halo effect */}
-					{/* <svg
+          {/* Halo effect */}
+          {/* <svg
 								className='absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none'
 								width='800'
 								height='800'
@@ -36,16 +36,16 @@ export function FeaturesWorld() {
 									<circle className='pulse pulse-2' cx='400' cy='400' r='200' />
 								</g>
 							</svg> */}
-					{/* Globe image */}
-					{/* <img
+          {/* Globe image */}
+          {/* <img
 								className='relative rounded-full shadow-xl'
 								src={'/img/home/planet.png'}
 								width='400'
 								height='400'
 								alt='Planet'
 							/> */}
-					{/* Static dots */}
-					{/* <svg
+          {/* Static dots */}
+          {/* <svg
 								className='absolute top-0 w-full h-auto'
 								viewBox='0 0 400 400'
 								style={{ left: '12%' }}
@@ -201,8 +201,8 @@ export function FeaturesWorld() {
 									/>
 								</g>
 							</svg> */}
-					{/* Dynamic dots */}
-					{/* <svg
+          {/* Dynamic dots */}
+          {/* <svg
 								className='absolute max-w-full'
 								width='48'
 								height='48'
@@ -245,8 +245,8 @@ export function FeaturesWorld() {
 									<circle cx='24' cy='24' r='8' />
 								</g>
 							</svg> */}
-					{/* Avatars */}
-					{/* <img
+          {/* Avatars */}
+          {/* <img
 								className='absolute max-w-full transform animate-float'
 								src={'/img/home/planet-avatar-01.png'}
 								width='261'
@@ -262,8 +262,8 @@ export function FeaturesWorld() {
 								alt='Planet avatar 02'
 								style={{ width: '88.7%', bottom: '-20%', right: '-18%' }}
 							/> */}
-					{/* Black icon */}
-					{/* <svg
+          {/* Black icon */}
+          {/* <svg
 								className='absolute top-0 max-w-full w-20 h-auto rounded-full shadow-xl'
 								viewBox='0 0 80 80'
 								style={{ width: '20%', left: '6%' }}
@@ -282,8 +282,8 @@ export function FeaturesWorld() {
 									strokeWidth='2'
 								/>
 							</svg> */}
-					{/* Blue icon */}
-					{/* <svg
+          {/* Blue icon */}
+          {/* <svg
 								className='absolute max-w-full w-16 h-auto rounded-full shadow-xl'
 								viewBox='0 0 64 64'
 								style={{ width: '16%', top: '32%', left: '-27%' }}
@@ -309,8 +309,8 @@ export function FeaturesWorld() {
 									fill='none'
 								/>
 							</svg> */}
-					{/* White icon */}
-					{/* <svg
+          {/* White icon */}
+          {/* <svg
 								className='absolute max-w-full w-16 h-auto rounded-full shadow-xl'
 								viewBox='0 0 64 64'
 								style={{ width: '16%', top: '55%', right: '-16%' }}
@@ -328,16 +328,16 @@ export function FeaturesWorld() {
 									d='M37.11 32.44l-1.69 4.646-8.458-3.078.676-1.859-4.773 1.42 2.744 4.156.677-1.858 9.396 3.42a.994.994 0 001.278-.587l2.03-5.576-1.88-.684zM27.037 30.878l1.691-4.646 8.457 3.078-.676 1.858 4.773-1.42-2.744-4.155-.676 1.858-9.397-3.42a.994.994 0 00-1.278.587l-2.03 5.576 1.88.684z'
 								/>
 							</svg> */}
-					{/* </div>
+          {/* </div>
 					</div> */}
 
-					{/* Articles list */}
-					<div className='max-w-sm mx-auto md:max-w-none'>
-						<div className='grid gap-12 md:grid-cols-3 md:col-gap-6 md:row-gap-8 items-start'>
-							{/* 1st article */}
-							<article className='flex flex-col h-full' data-aos='zoom-y-out'>
-								<header>
-									{/* <Link to='/blog-post' className='block mb-6'>
+          {/* Articles list */}
+          <div className="max-w-sm mx-auto md:max-w-none">
+            <div className="grid gap-12 md:grid-cols-3 md:col-gap-6 md:row-gap-8 items-start">
+              {/* 1st article */}
+              <article className="flex flex-col h-full" data-aos="zoom-y-out">
+                <header>
+                  {/* <Link to='/blog-post' className='block mb-6'>
 										<figure className='relative h-0 pb-9/16 overflow-hidden translate-z-0 rounded'>
 											<img
 												className='absolute inset-0 w-full h-full object-cover transform scale-105 hover:-translate-y-1 transition duration-700 ease-out'
@@ -348,7 +348,7 @@ export function FeaturesWorld() {
 											/>
 										</figure>
 									</Link> */}
-									{/* <div className='mb-3'>
+                  {/* <div className='mb-3'>
 										<ul className='list-none flex flex-wrap text-xs font-medium -m-1'>
 											<li className='m-1'>
 												<a
@@ -368,48 +368,48 @@ export function FeaturesWorld() {
 											</li>
 										</ul>
 									</div> */}
-									<h3 className='text-lg leading-snug tracking-tight font-normal'>
-										<Link to='/blog-post' className='text-black'>
-											“How HubSpot saved 25% on developing costs by switching to
-											Simple.”
-										</Link>
-									</h3>
-								</header>
-								<footer className='text-sm flex items-center mt-4'>
-									<div className='flex flex-shrink-0 mr-3'>
-										<a className='relative' href='#0'>
-											<span
-												className='absolute inset-0 -m-px'
-												aria-hidden='true'
-											>
-												<span className='absolute inset-0 -m-px bg-white rounded-full'></span>
-											</span>
-											<img
-												className='relative rounded-full'
-												src={'/img/home/news-author-01.jpg'}
-												width='32'
-												height='32'
-												alt='Author 01'
-											/>
-										</a>
-									</div>
-									<div>
-										<span className='text-gray-600'>By </span>
-										<a className='font-medium hover:underline' href='#0'>
-											Lisa Allison
-										</a>
-									</div>
-								</footer>
-							</article>
+                  <h3 className="text-lg leading-snug tracking-tight font-normal">
+                    <Link to="/blog-post" className="text-black">
+                      “How HubSpot saved 25% on developing costs by switching to
+                      Simple.”
+                    </Link>
+                  </h3>
+                </header>
+                <footer className="text-sm flex items-center mt-4">
+                  <div className="flex flex-shrink-0 mr-3">
+                    <a className="relative" href="#0">
+                      <span
+                        className="absolute inset-0 -m-px"
+                        aria-hidden="true"
+                      >
+                        <span className="absolute inset-0 -m-px bg-white rounded-full"></span>
+                      </span>
+                      <img
+                        className="relative rounded-full"
+                        src={"/img/home/news-author-01.jpg"}
+                        width="32"
+                        height="32"
+                        alt="Author 01"
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <span className="text-gray-600">By </span>
+                    <a className="font-medium hover:underline" href="#0">
+                      Lisa Allison
+                    </a>
+                  </div>
+                </footer>
+              </article>
 
-							{/* 2nd article */}
-							<article
-								className='flex flex-col h-full'
-								data-aos='zoom-y-out'
-								data-aos-delay='150'
-							>
-								<header>
-									{/* <Link to='/blog-post' className='block mb-6'>
+              {/* 2nd article */}
+              <article
+                className="flex flex-col h-full"
+                data-aos="zoom-y-out"
+                data-aos-delay="150"
+              >
+                <header>
+                  {/* <Link to='/blog-post' className='block mb-6'>
 										<figure className='relative h-0 pb-9/16 overflow-hidden translate-z-0 rounded'>
 											<img
 												className='absolute inset-0 w-full h-full object-cover transform scale-105 translate-z-0 hover:-translate-y-1 transition duration-700 ease-out'
@@ -420,7 +420,7 @@ export function FeaturesWorld() {
 											/>
 										</figure>
 									</Link> */}
-									{/* <div className='mb-3'>
+                  {/* <div className='mb-3'>
 										<ul className='list-none flex flex-wrap text-xs font-medium -m-1'>
 											<li className='m-1'>
 												<a
@@ -440,48 +440,48 @@ export function FeaturesWorld() {
 											</li>
 										</ul>
 									</div> */}
-									<h3 className='text-lg leading-snug tracking-tight font-normal'>
-										<Link to='/blog-post' className='text-black'>
-											“How Facebook brought 13% cost savings to their bottom
-											line with Simple’s products.”
-										</Link>
-									</h3>
-								</header>
-								<footer className='text-sm flex items-center mt-4'>
-									<div className='flex flex-shrink-0 mr-3'>
-										<a className='relative -ml-2' href='#0'>
-											<span
-												className='absolute inset-0 -m-px'
-												aria-hidden='true'
-											>
-												<span className='absolute inset-0 -m-px bg-white rounded-full'></span>
-											</span>
-											<img
-												className='relative rounded-full'
-												src={'/img/home/news-author-02.jpg'}
-												width='32'
-												height='32'
-												alt='Author 03'
-											/>
-										</a>
-									</div>
-									<div>
-										<span className='text-gray-600'>By </span>
-										<a className='font-medium hover:underline' href='#0'>
-											Knut Mayer
-										</a>
-									</div>
-								</footer>
-							</article>
+                  <h3 className="text-lg leading-snug tracking-tight font-normal">
+                    <Link to="/blog-post" className="text-black">
+                      “How Facebook brought 13% cost savings to their bottom
+                      line with Simple’s products.”
+                    </Link>
+                  </h3>
+                </header>
+                <footer className="text-sm flex items-center mt-4">
+                  <div className="flex flex-shrink-0 mr-3">
+                    <a className="relative -ml-2" href="#0">
+                      <span
+                        className="absolute inset-0 -m-px"
+                        aria-hidden="true"
+                      >
+                        <span className="absolute inset-0 -m-px bg-white rounded-full"></span>
+                      </span>
+                      <img
+                        className="relative rounded-full"
+                        src={"/img/home/news-author-02.jpg"}
+                        width="32"
+                        height="32"
+                        alt="Author 03"
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <span className="text-gray-600">By </span>
+                    <a className="font-medium hover:underline" href="#0">
+                      Knut Mayer
+                    </a>
+                  </div>
+                </footer>
+              </article>
 
-							{/* 3rd article */}
-							<article
-								className='flex flex-col h-full'
-								data-aos='zoom-y-out'
-								data-aos-delay='300'
-							>
-								<header>
-									{/* <Link to='/blog-post' className='block mb-6'>
+              {/* 3rd article */}
+              <article
+                className="flex flex-col h-full"
+                data-aos="zoom-y-out"
+                data-aos-delay="300"
+              >
+                <header>
+                  {/* <Link to='/blog-post' className='block mb-6'>
 										<figure className='relative h-0 pb-9/16 overflow-hidden translate-z-0 rounded'>
 											<img
 												className='absolute inset-0 w-full h-full object-cover transform scale-105 translate-z-0 hover:-translate-y-1 transition duration-700 ease-out'
@@ -492,7 +492,7 @@ export function FeaturesWorld() {
 											/>
 										</figure>
 									</Link> */}
-									{/* <div className='mb-3'>
+                  {/* <div className='mb-3'>
 										<ul className='list-none flex flex-wrap text-xs font-medium -m-1'>
 											<li className='m-1'>
 												<a
@@ -512,43 +512,43 @@ export function FeaturesWorld() {
 											</li>
 										</ul>
 									</div> */}
-									<h3 className='text-lg leading-snug tracking-tight font-normal'>
-										<Link to='/blog-post' className='text-black'>
-											“How Tinder grew 115% and saved 120 Hours each week by
-											outsourcing to Simple.”
-										</Link>
-									</h3>
-								</header>
-								<footer className='text-sm flex items-center mt-4'>
-									<div className='flex flex-shrink-0 mr-3'>
-										<a className='relative' href='#0'>
-											<span
-												className='absolute inset-0 -m-px'
-												aria-hidden='true'
-											>
-												<span className='absolute inset-0 -m-px bg-white rounded-full'></span>
-											</span>
-											<img
-												className='relative rounded-full'
-												src={'/img/home/news-author-01.jpg'}
-												width='32'
-												height='32'
-												alt='Author 01'
-											/>
-										</a>
-									</div>
-									<div>
-										<span className='text-gray-600'>By </span>
-										<a className='font-medium hover:underline' href='#0'>
-											Lisa Allison
-										</a>
-									</div>
-								</footer>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+                  <h3 className="text-lg leading-snug tracking-tight font-normal">
+                    <Link to="/blog-post" className="text-black">
+                      “How Tinder grew 115% and saved 120 Hours each week by
+                      outsourcing to Simple.”
+                    </Link>
+                  </h3>
+                </header>
+                <footer className="text-sm flex items-center mt-4">
+                  <div className="flex flex-shrink-0 mr-3">
+                    <a className="relative" href="#0">
+                      <span
+                        className="absolute inset-0 -m-px"
+                        aria-hidden="true"
+                      >
+                        <span className="absolute inset-0 -m-px bg-white rounded-full"></span>
+                      </span>
+                      <img
+                        className="relative rounded-full"
+                        src={"/img/home/news-author-01.jpg"}
+                        width="32"
+                        height="32"
+                        alt="Author 01"
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <span className="text-gray-600">By </span>
+                    <a className="font-medium hover:underline" href="#0">
+                      Lisa Allison
+                    </a>
+                  </div>
+                </footer>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
