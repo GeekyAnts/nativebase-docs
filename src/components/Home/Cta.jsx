@@ -93,7 +93,7 @@ export function Cta() {
 							<div>
 								<a
 									className='btn text-primary-600 bg-white rounded-md py-3 px-5'
-									href='#0'
+									href='https://discord.com/invite/TSgCw2UPmb'
 								>
 									Join Discord
 								</a>

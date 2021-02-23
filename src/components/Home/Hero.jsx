@@ -68,15 +68,15 @@ export function Hero() {
 								<div>
 									<a
 										className='btn text-white bg-primary-400 hover:bg-primary-500 w-full mb-4 sm:w-auto sm:mb-0 rounded-md py-3 px-5 flex'
-										href='#0'
+										href='docs/nativebase'
 									>
-										Start free trial
+										Get Started
 									</a>
 								</div>
 								<div>
 									<a
 										className='btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex'
-										href='#0'
+										href='https://github.com/GeekyAnts/nativebase'
 									>
 										<Ball className='mr-2' />
 										{starCount}
