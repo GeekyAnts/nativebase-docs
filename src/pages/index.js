@@ -1,10 +1,10 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import styles from "./styles.module.css";
 import {
   Hero,
   Features as NewFeatures,
@@ -12,52 +12,52 @@ import {
   FeaturesWorld,
   News,
   Cta,
-} from './../components/Home';
+} from "./../components/Home";
 
 const features = [
   {
-    title: 'Accessible',
-    imageUrl: '/img/NB-feature-icons/SVG/Accessible.svg',
-    description: 'Maximise app usage with our accessible design.',
+    title: "Accessible",
+    imageUrl: "/img/NB-feature-icons/SVG/Accessible.svg",
+    description: "Maximise app usage with our accessible design.",
   },
   {
-    title: 'Responsive',
-    imageUrl: '/img/NB-feature-icons/SVG/Responsive.svg',
-    description: 'Create responsive apps with ease from the get-go.',
+    title: "Responsive",
+    imageUrl: "/img/NB-feature-icons/SVG/Responsive.svg",
+    description: "Create responsive apps with ease from the get-go.",
   },
   {
-    title: 'Themeable',
-    imageUrl: '/img/NB-feature-icons/SVG/Themeable.svg',
-    description: 'Customise your app theme and component styles.',
+    title: "Themeable",
+    imageUrl: "/img/NB-feature-icons/SVG/Themeable.svg",
+    description: "Customise your app theme and component styles.",
   },
   {
-    title: 'Consistent',
-    imageUrl: '/img/NB-feature-icons/SVG/Consistent.svg',
-    description: 'Make accurate predictions for web, Android & iOS.',
+    title: "Consistent",
+    imageUrl: "/img/NB-feature-icons/SVG/Consistent.svg",
+    description: "Make accurate predictions for web, Android & iOS.",
   },
 ];
 
 const Features = () => (
-  <div className='container'>
-    <div className='row'>
+  <div className="container">
+    <div className="row">
       {features.map((feature, key) => {
         return (
-          <div className={clsx('col col--3', styles.textAlignCenter)}>
+          <div className={clsx("col col--3", styles.textAlignCenter)}>
             <img
               src={feature.imageUrl}
-              height='58px'
-              width='80px'
+              height="58px"
+              width="80px"
               className={clsx(styles.image)}
             ></img>
             <h3
               style={{
-                fontSize: '20px',
+                fontSize: "20px",
                 letterSpacing: 0,
               }}
             >
               {feature.title}
             </h3>
-            <p style={{ color: '#5e5e5e', fontWeight: '500' }}>
+            <p style={{ color: "#5e5e5e", fontWeight: "500" }}>
               {feature.description}
             </p>
           </div>
@@ -72,7 +72,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title} | A complete component library for React Native Ecosystem`}
-      description='A complete component library for React Native Ecosystem'
+      description="A complete component library for React Native Ecosystem"
     >
       {/* <header className={clsx(styles.mainBanner)}>
         <div className='container '>
@@ -125,8 +125,10 @@ function Home() {
           </div>
         </div>
       </header> */}
-      <main id='tailwind'>
-        <section className={styles.features + 'flex-1'}>
+      <main id="tailwind">
+        <section
+          className={styles.features + "flex-1 font-inter overflow-hidden"}
+        >
           <Hero />
           <NewFeatures />
           <FeaturesBlocks />
