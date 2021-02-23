@@ -14,6 +14,7 @@ title: Changelog
 - Changes for tabs API.
 - fix: now using outline for focus ring to prevent layout shift.
 - Added focus ring on checkbox and radio.
-- Changes for List API and added virtualized list example .
+- Changes for List API and added virtualized list example.
+- Fixes for factory component proptypes
 
 For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.0-next.28).
