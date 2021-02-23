@@ -43,7 +43,7 @@ export function Hero() {
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
             <h1
-              className="font-inter text-5xl md:text-6xl font-normal leading-tighter tracking-tighter mb-4"
+              className="font-inter text-5xl md:text-6xl leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
               A complete <br /> component library for <br /> the{" "}

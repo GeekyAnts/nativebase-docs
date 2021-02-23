@@ -14,9 +14,7 @@ export function FeaturesBlocks() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4 text-4xl  font-normal">
-              Explore NativeBase
-            </h2>
+            <h2 className="h2 mb-4 text-4xl">Explore NativeBase</h2>
             <p className="text-xl text-gray-600">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
@@ -62,12 +60,12 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-normal leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1">
                 Accessible
               </h4>
               <p className="text-gray-600 text-center">
-                Maximise app usage with our accessible design. Build in
-                accordance with the latest accessibility standards
+                Maximise user experience for your apps. Build in accordance with
+                the latest accessibility standards.
               </p>
             </div>
 
@@ -104,11 +102,12 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-normal leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1">
                 Responsive
               </h4>
               <p className="text-gray-600 text-center">
-                Create responsive apps with ease from the get-go.
+                Create responsive apps from the get-go. Save precious time and
+                effort in developing and maintaining your code.
               </p>
             </div>
 
@@ -148,11 +147,12 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-normal leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1">
                 Themeable
               </h4>
               <p className="text-gray-600 text-center">
-                Customise your app theme and component styles.
+                Customise your app theme and component styles. Personalise for
+                your brand voice and target audience.
               </p>
             </div>
 
@@ -191,11 +191,12 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-normal leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1">
                 Consistent
               </h4>
               <p className="text-gray-600 text-center">
-                Make accurate predictions for web, Android & iOS.
+                Follow your instincts and make accurate predictions for web,
+                Android & iOS. Test and maintain code easily.
               </p>
             </div>
 
@@ -229,11 +230,11 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-normal leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1">
                 Dark Mode
               </h4>
               <p className="text-gray-600 text-center">
-                Add the extremely popular Dark mode to you apps smoothly. Boost
+                Add the extremely popular Dark Mode to your apps smoothly. Boost
                 your UI with enhanced visual ergonomics.
               </p>
             </div>
@@ -264,11 +265,12 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-normal leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1">
                 Others
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                ipsum dolor sit amet.
               </p>
             </div>
           </div>

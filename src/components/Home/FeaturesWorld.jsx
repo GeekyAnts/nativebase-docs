@@ -8,7 +8,7 @@ export function FeaturesWorld() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 text-4xl font-normal">
+            <h1 className="h2 mb-4 text-4xl">
               See what others have to say about NativeBase
             </h1>
             {/* <p className='text-xl text-gray-600'>

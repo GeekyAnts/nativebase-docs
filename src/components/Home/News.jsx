@@ -8,7 +8,7 @@ export function News() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2  font-normal text-4xl">
+            <h2 className="h2 text-4xl">
               The most innovative articles choose GeekyAnts
             </h2>
           </div>
