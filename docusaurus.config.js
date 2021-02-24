@@ -25,32 +25,25 @@ module.exports = {
       indexName: 'nativebase-v3',
     },
     navbar: {
-      title: 'NativeBase 3.0',
+      // title: "NativeBase 3.0",
       logo: {
         alt: 'NativeBase Logo',
         src: 'img/native-base-icon.png',
       },
       // style: "dark",
       items: [
-        {
-          to: 'docs/nativebase',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'right',
-        },
-        { to: 'docs/faq', label: 'FAQ', position: 'right' },
-        { type: 'docsVersionDropdown', position: 'left' },
-        {
-          href: 'https://github.com/GeekyAnts/nativebase',
-          label: 'GitHub',
-          position: 'right',
-        },
-        {
-          href:
-            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
-          label: 'Hire The Creators',
-          position: 'right',
-        },
+        { type: 'docsVersionDropdown', position: 'right' },
+        // {
+        //   href: "https://github.com/GeekyAnts/nativebase",
+        //   label: "GitHub",
+        //   position: "left",
+        // },
+        // {
+        //   href:
+        //     "https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase",
+        //   label: "Hire The Creators",
+        //   position: "left",
+        // },
       ],
     },
     footer: {

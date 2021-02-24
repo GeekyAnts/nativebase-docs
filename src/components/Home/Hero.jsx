@@ -1,11 +1,11 @@
-import React from "react";
-import Ball from "../../img/Ball";
-import PullR from "../../img/PullR";
+import React from 'react';
+import Ball from '../../img/Ball';
+import PullR from '../../img/PullR';
 
 export function Hero() {
   const [starCount, setStarCount] = React.useState(0);
   React.useEffect(() => {
-    fetch("https://api.github.com/repos/GeekyAnts/NativeBase")
+    fetch('https://api.github.com/repos/GeekyAnts/NativeBase')
       .then((response) => response.json())
       .then((data) => setStarCount(data.stargazers_count));
   }, []);
@@ -46,7 +46,7 @@ export function Hero() {
               className="font-inter text-5xl md:text-6xl leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              A complete <br /> component library for <br /> the{" "}
+              A complete <br /> component library for <br /> the{' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-teal-400">
                 React Ecosystem
               </span>
@@ -97,7 +97,7 @@ export function Hero() {
               <div className="flex flex-col justify-center">
                 <img
                   className="mx-auto"
-                  src={"/img/home/hero-image-01.png"}
+                  src={'/img/home/hero-image-01.png'}
                   width="768"
                   height="432"
                   alt="Hero"

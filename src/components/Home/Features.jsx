@@ -1,7 +1,7 @@
-import React from "react";
-import illustration from "../../img/Illustration.png";
-import qrCode from "../../img/QR-code.png";
-import expo from "../../img/expo.png";
+import React from 'react';
+import illustration from '../../img/Illustration.png';
+import qrCode from '../../img/QR-code.png';
+import expo from '../../img/expo.png';
 
 export function Features() {
   return (
@@ -17,7 +17,7 @@ export function Features() {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 text-4xl">
+            <h1 className="h2 mb-4 text-4xl text-gray-900">
               NativeBase Kitchen Sink
             </h1>
             <p className="text-xl text-gray-600">

@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function News() {
   return (
@@ -69,7 +69,7 @@ export function News() {
                     <figure className="relative h-0 pb-9/16 overflow-hidden translate-z-0 rounded">
                       <img
                         className="absolute inset-0 w-full h-full object-cover transform scale-105 hover:-translate-y-1 transition duration-700 ease-out"
-                        src={"/img/home/news-01.jpg"}
+                        src={'/img/home/news-01.jpg'}
                         width="352"
                         height="198"
                         alt="News 01"
@@ -97,7 +97,7 @@ export function News() {
                     </ul>
                   </div>
                   <h3 className="text-lg leading-snug tracking-tight font-normal">
-                    <Link to="/blog-post" className="text-black">
+                    <Link to="/blog-post" className="text-gray-600">
                       “How HubSpot saved 25% on developing costs by switching to
                       Simple.”
                     </Link>
@@ -141,7 +141,7 @@ export function News() {
                     <figure className="relative h-0 pb-9/16 overflow-hidden translate-z-0 rounded">
                       <img
                         className="absolute inset-0 w-full h-full object-cover transform scale-105 translate-z-0 hover:-translate-y-1 transition duration-700 ease-out"
-                        src={"/img/home/news-02.jpg"}
+                        src={'/img/home/news-02.jpg'}
                         width="352"
                         height="198"
                         alt="News 02"
@@ -169,7 +169,7 @@ export function News() {
                     </ul>
                   </div>
                   <h3 className="text-lg leading-snug tracking-tight font-normal">
-                    <Link to="/blog-post" className="text-black">
+                    <Link to="/blog-post" className="text-gray-600">
                       “How Facebook brought 13% cost savings to their bottom
                       line with Simple’s products.”
                     </Link>
@@ -213,7 +213,7 @@ export function News() {
                     <figure className="relative h-0 pb-9/16 overflow-hidden translate-z-0 rounded">
                       <img
                         className="absolute inset-0 w-full h-full object-cover transform scale-105 translate-z-0 hover:-translate-y-1 transition duration-700 ease-out"
-                        src={"/img/home/news-03.jpg"}
+                        src={'/img/home/news-03.jpg'}
                         width="352"
                         height="198"
                         alt="News 03"
@@ -241,7 +241,7 @@ export function News() {
                     </ul>
                   </div>
                   <h3 className="text-lg leading-snug tracking-tight font-normal">
-                    <Link to="/blog-post" className="text-black">
+                    <Link to="/blog-post" className="text-gray-600">
                       “How Tinder grew 115% and saved 120 Hours each week by
                       outsourcing to Simple.”
                     </Link>
