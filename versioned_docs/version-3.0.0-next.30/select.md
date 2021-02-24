@@ -22,28 +22,29 @@ import React from 'react';
 import { Icon, Select, NativeBaseProvider } from 'native-base';
 
 function SelectComponent() {
-	let [language, setLanguage] = React.useState < string > '';
-	return (
-		<Select
-			selectedValue={language}
-			minWidth={200}
-			onValueChange={(itemValue: string) => setLanguage(itemValue)}
-		>
-			<Select.Item label='JavaScript' value='js' />
-			<Select.Item label='TypeScript' value='ts' />
-			<Select.Item label='C' value='c' />
-			<Select.Item label='Python' value='py' />
-			<Select.Item label='Java' value='java' />
-		</Select>
-	);
+  let [language, setLanguage] = React.useState('');
+  return (
+    <Select
+      selectedValue={language}
+      minWidth={200}
+      onValueChange={(itemValue: string) => setLanguage(itemValue)}
+    >
+      <Select.Item label="JavaScript" value="js" />
+      <Select.Item label="TypeScript" value="ts" />
+      <Select.Item label="C" value="c" />
+      <Select.Item label="Python" value="py" />
+      <Select.Item label="Java" value="java" />
+    </Select>
+  );
 }
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<SelectComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <SelectComponent />
+    </NativeBaseProvider>
+  );
 }
+
 ```
 
 ## Native
@@ -53,33 +54,34 @@ import React from 'react';
 import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
 
 function SelectComponent() {
-	let [language, setLanguage] = React.useState < string > 'js';
-	return (
-		<VStack alignItems='center' space={2}>
-			<Select
-				variant='native' //defaultValue
-				selectedValue={language}
-				minWidth={200}
-				onValueChange={(itemValue: string) => setLanguage(itemValue)}
-				androidIconColor='gray.500'
-				androidPrompt='Language you love:'
-			>
-				<Select.Item label='JavaScript' value='js' />
-				<Select.Item label='TypeScript' value='ts' />
-				<Select.Item label='C' value='c' />
-				<Select.Item label='Python' value='py' />
-				<Select.Item label='Java' value='java' />
-			</Select>
-			<Text>{language}</Text>
-		</VStack>
-	);
+  let [language, setLanguage] = React.useState('js');
+  return (
+    <VStack alignItems="center" space={2}>
+      <Select
+        variant="native" //defaultValue
+        selectedValue={language}
+        minWidth={200}
+        onValueChange={(itemValue: string) => setLanguage(itemValue)}
+        androidIconColor="gray.500"
+        androidPrompt="Language you love:"
+      >
+        <Select.Item label="JavaScript" value="js" />
+        <Select.Item label="TypeScript" value="ts" />
+        <Select.Item label="C" value="c" />
+        <Select.Item label="Python" value="py" />
+        <Select.Item label="Java" value="java" />
+      </Select>
+      <Text>{language}</Text>
+    </VStack>
+  );
 }
+
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<SelectComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <SelectComponent />
+    </NativeBaseProvider>
+  );
 }
 ```
 
@@ -90,7 +92,7 @@ import React from 'react';
 import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
 
 function SelectComponent () {
-	let [language, setLanguage] = React.useState<string>('js');
+	let [language, setLanguage] = React.useState('js');
   return (
     <VStack alignItems="center" space={2}>
       <Select
@@ -119,6 +121,7 @@ function SelectComponent () {
       </Select>
       <Text>{language}</Text>
     </VStack>
+	);
 }
 export default function () {
   return (
