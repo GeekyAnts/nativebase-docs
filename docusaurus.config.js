@@ -66,7 +66,7 @@ module.exports = {
           ariaLabel: 'Theme',
         },
         {
-          to: 'docs/nativebase',
+          to: '/docs/nativebase',
           // activeBasePath: "docs",
           label: 'Docs',
           position: 'right',

@@ -210,7 +210,7 @@ export function FeaturesWorld() {
 								style={{ width: '12%', top: '45%', left: '50%' }}
 								xmlns='http://www.w3.org/2000/svg'
 							>
-								<g className='fill-current text-primary-600'>
+								<g className='fill-current text-primary-700'>
 									<circle
 										className='pulse pulse-mini pulse-1'
 										cx='24'
@@ -234,7 +234,7 @@ export function FeaturesWorld() {
 								style={{ width: '12%', top: '19%', left: '46%' }}
 								xmlns='http://www.w3.org/2000/svg'
 							>
-								<g className='fill-current text-primary-600'>
+								<g className='fill-current text-primary-700'>
 									<circle className='pulse pulse-mini' cx='24' cy='24' r='8' />
 									<circle
 										className='pulse pulse-mini pulse-2'
@@ -290,7 +290,7 @@ export function FeaturesWorld() {
 								xmlns='http://www.w3.org/2000/svg'
 							>
 								<circle
-									className='fill-current text-primary-600'
+									className='fill-current text-primary-700'
 									cx='32'
 									cy='32'
 									r='32'
@@ -352,7 +352,7 @@ export function FeaturesWorld() {
 										<ul className='list-none flex flex-wrap text-xs font-medium -m-1'>
 											<li className='m-1'>
 												<a
-													className='inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-indigo-400 hover:bg-indigo-600 transition duration-150 ease-in-out'
+													className='inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-primary-500 hover:bg-primary-700 transition duration-150 ease-in-out'
 													href='#0'
 												>
 													Case studies
@@ -424,7 +424,7 @@ export function FeaturesWorld() {
 										<ul className='list-none flex flex-wrap text-xs font-medium -m-1'>
 											<li className='m-1'>
 												<a
-													className='inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-indigo-400 hover:bg-indigo-600 transition duration-150 ease-in-out'
+													className='inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-primary-500 hover:bg-primary-700 transition duration-150 ease-in-out'
 													href='#0'
 												>
 													Case studies
@@ -496,7 +496,7 @@ export function FeaturesWorld() {
 										<ul className='list-none flex flex-wrap text-xs font-medium -m-1'>
 											<li className='m-1'>
 												<a
-													className='inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-indigo-400 hover:bg-indigo-600 transition duration-150 ease-in-out'
+													className='inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-primary-500 hover:bg-primary-700 transition duration-150 ease-in-out'
 													href='#0'
 												>
 													Case studies

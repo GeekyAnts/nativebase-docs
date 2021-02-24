@@ -22,8 +22,8 @@ export function Cta() {
               y2="0.5"
               gradientUnits="objectBoundingBox"
             >
-              <stop offset="0" stopColor="#6186f4" />
-              <stop offset="1" stopColor="#6246e4" />
+              <stop offset="0" stopColor="#10b981" />
+              <stop offset="1" stopColor="#14b8a6" />
             </linearGradient>
           </defs>
           <circle
@@ -55,8 +55,8 @@ export function Cta() {
               y2="0.5"
               gradientUnits="objectBoundingBox"
             >
-              <stop offset="0" stopColor="#6186f4" />
-              <stop offset="1" stopColor="#6246e4" />
+              <stop offset="0" stopColor="#10b981" />
+              <stop offset="1" stopColor="#14b8a6" />
             </linearGradient>
           </defs>
           <circle
@@ -74,7 +74,7 @@ export function Cta() {
         <div className="pb-12 md:pb-20">
           {/* CTA box */}
           <div
-            className="bg-primary-400 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl"
+            className="bg-primary-500 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl"
             data-aos="zoom-y-out"
           >
             <div className="flex flex-col lg:flex-row justify-between items-center">
@@ -92,7 +92,7 @@ export function Cta() {
               {/* CTA button */}
               <div>
                 <a
-                  className="btn text-primary-600 bg-white rounded-md py-3 px-5"
+                  className="btn text-primary-700 bg-white rounded-md py-3 px-5"
                   href="https://discord.com/invite/TSgCw2UPmb"
                 >
                   Join Discord
