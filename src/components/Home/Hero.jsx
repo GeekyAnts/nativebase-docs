@@ -67,7 +67,7 @@ export function Hero() {
               >
                 <div>
                   <a
-                    className="btn text-white bg-primary-400 hover:bg-primary-500 w-full mb-4 sm:w-auto sm:mb-0 rounded-md py-3 px-5 flex"
+                    className="btn text-white bg-primary-500 w-full mb-4 sm:w-auto sm:mb-0 rounded-md py-3 px-5 flex"
                     href="docs/nativebase"
                   >
                     Get Started

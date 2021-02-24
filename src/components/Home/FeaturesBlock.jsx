@@ -33,7 +33,7 @@ export function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-primary-400"
+                    className="fill-current text-primary-500"
                     width="64"
                     height="64"
                     rx="32"
@@ -78,7 +78,7 @@ export function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-primary-400"
+                    className="fill-current text-primary-500"
                     width="64"
                     height="64"
                     rx="32"
@@ -120,7 +120,7 @@ export function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-primary-400"
+                    className="fill-current text-primary-500"
                     width="64"
                     height="64"
                     rx="32"
@@ -165,7 +165,7 @@ export function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-primary-400"
+                    className="fill-current text-primary-500"
                     width="64"
                     height="64"
                     rx="32"
@@ -209,7 +209,7 @@ export function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-primary-400"
+                    className="fill-current text-primary-500"
                     width="64"
                     height="64"
                     rx="32"
@@ -248,7 +248,7 @@ export function FeaturesBlocks() {
               >
                 <g fill="none" fillRule="evenodd">
                   <rect
-                    className="fill-current text-primary-400"
+                    className="fill-current text-primary-500"
                     width="64"
                     height="64"
                     rx="32"
