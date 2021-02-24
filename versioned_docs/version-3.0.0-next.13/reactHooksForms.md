@@ -16,75 +16,75 @@ import {
   FormLabel,
   FormErrorMessage,
   NativeBaseProvider,
-} from "native-base";
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
+} from 'native-base';
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
 
 function FormHookExample() {
   const { control, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    console.log("submiting with ", data);
+    console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
-      <FormControl isRequired isInvalid={"firstName" in errors}>
+    <VStack width='80%' space={4}>
+      <FormControl isRequired isInvalid={'firstName' in errors}>
         <FormLabel>First Name</FormLabel>
         <Controller
           control={control}
           render={({ onChange, onBlur, value }) => (
             <Input
               onBlur={onBlur}
-              placeholder="John"
+              placeholder='John'
               onChangeText={(val) => onChange(val)}
               value={value}
             />
           )}
-          name="firstName"
-          rules={{ required: "Field is required", minLength: 3 }}
-          defaultValue=""
+          name='firstName'
+          rules={{ required: 'Field is required', minLength: 3 }}
+          defaultValue=''
         />
         <FormErrorMessage>{errors.firstName?.message}</FormErrorMessage>
       </FormControl>
-      <FormControl isInvalid={"lastName" in errors}>
+      <FormControl isInvalid={'lastName' in errors}>
         <FormLabel>Last Name</FormLabel>
         <Controller
           control={control}
           render={({ onChange, onBlur, value }) => (
             <Input
               onBlur={onBlur}
-              placeholder="Doe"
+              placeholder='Doe'
               onChangeText={(val) => onChange(val)}
               value={value}
             />
           )}
-          name="lastName"
-          defaultValue=""
+          name='lastName'
+          defaultValue=''
         />
         <FormErrorMessage>{errors.lastName?.message}</FormErrorMessage>
       </FormControl>
-      <FormControl isRequired isInvalid={"age" in errors}>
+      <FormControl isRequired isInvalid={'age' in errors}>
         <FormLabel>Age</FormLabel>
         <Controller
           control={control}
           render={({ onChange, onBlur, value }) => (
             <Input
               onBlur={onBlur}
-              placeholder="24"
+              placeholder='24'
               onChangeText={(val) => onChange(val)}
               value={value}
             />
           )}
-          name="age"
-          rules={{ min: 18, required: "Age is required" }}
-          defaultValue=""
+          name='age'
+          rules={{ min: 18, required: 'Age is required' }}
+          defaultValue=''
         />
         <FormErrorMessage>
-          {errors.age?.type === "required"
+          {errors.age?.type === 'required'
             ? errors.age?.message
-            : errors.age?.type === "min" ?? "Under age"}
+            : errors.age?.type === 'min' ?? 'Under age'}
         </FormErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
+      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
         Submit
       </Button>
     </VStack>
@@ -115,18 +115,18 @@ import {
   Text,
   Icon,
   NativeBaseProvider,
-} from "native-base";
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
+} from 'native-base';
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
 
 function FormHookCheckboxExample() {
   const { control, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    console.log("submiting with ", data);
+    console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
-      <FormControl isRequired isInvalid={"hobbies" in errors}>
+    <VStack width='80%' space={4}>
+      <FormControl isRequired isInvalid={'hobbies' in errors}>
         <FormLabel>Hobbies</FormLabel>
         <Controller
           control={control}
@@ -135,70 +135,70 @@ function FormHookCheckboxExample() {
               onChange={(values) => {
                 onChange(values);
               }}
-              flexDirection="row"
+              flexDirection='row'
             >
               <Checkbox
-                value="dart"
-                colorScheme="orange"
-                icon={<Icon name="bullseye" type="MaterialCommunityIcons" />}
+                value='dart'
+                colorScheme='orange'
+                icon={<Icon name='bullseye' type='MaterialCommunityIcons' />}
               >
                 <Text mx={2}>Darts</Text>
               </Checkbox>
               <Checkbox
-                value="movie"
-                colorScheme="dark"
-                icon={<Icon name="bat" type="MaterialCommunityIcons" />}
+                value='movie'
+                colorScheme='dark'
+                icon={<Icon name='bat' type='MaterialCommunityIcons' />}
               >
                 <Text mx={2}>Movie</Text>
               </Checkbox>
               <Checkbox
-                colorScheme="red"
-                value="camping"
-                icon={<Icon name="campfire" type="MaterialCommunityIcons" />}
+                colorScheme='red'
+                value='camping'
+                icon={<Icon name='campfire' type='MaterialCommunityIcons' />}
               >
                 <Text mx={2}>Camping</Text>
               </Checkbox>
               <Checkbox
-                value="chess"
-                colorScheme="blue"
+                value='chess'
+                colorScheme='blue'
                 icon={
-                  <Icon name="chess-knight" type="MaterialCommunityIcons" />
+                  <Icon name='chess-knight' type='MaterialCommunityIcons' />
                 }
               >
                 <Text mx={2}>Chess</Text>
               </Checkbox>
             </CheckboxGroup>
           )}
-          rules={{ required: "Atleast 1 hobbie needed" }}
-          name="hobbies"
-          defaultValue=""
+          rules={{ required: 'Atleast 1 hobbie needed' }}
+          name='hobbies'
+          defaultValue=''
         />
         <FormErrorMessage>{errors.hobbies?.message}</FormErrorMessage>
       </FormControl>
-      <FormControl isRequired isInvalid={"gender" in errors}>
+      <FormControl isRequired isInvalid={'gender' in errors}>
         <FormLabel>Gender</FormLabel>
         <Controller
           control={control}
           render={({ onChange }) => (
             <RadioGroup
-              name="gender"
-              flexDirection="row"
+              name='gender'
+              flexDirection='row'
               onChange={(val) => onChange(val)}
             >
-              <Radio value="male" colorScheme="blue">
+              <Radio value='male' colorScheme='blue'>
                 <Text mx={2}>Male</Text>
               </Radio>
-              <Radio value="female" colorScheme="pink">
+              <Radio value='female' colorScheme='pink'>
                 <Text mx={2}>Female</Text>
               </Radio>
             </RadioGroup>
           )}
-          name="gender"
-          rules={{ required: "Gender is required" }}
+          name='gender'
+          rules={{ required: 'Gender is required' }}
         />
         <FormErrorMessage>{errors.gender?.message}</FormErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
+      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
         Submit
       </Button>
     </VStack>
@@ -225,49 +225,49 @@ import {
   Select,
   Icon,
   NativeBaseProvider,
-} from "native-base";
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
+} from 'native-base';
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
 
 function FormHookSelectExample() {
   const { control, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    console.log("submiting with ", data);
+    console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
-      <FormControl isRequired isInvalid={"language" in errors}>
+    <VStack width='80%' space={4}>
+      <FormControl isRequired isInvalid={'language' in errors}>
         <FormLabel>Fav language:</FormLabel>
         <Controller
           control={control}
           render={({ onChange, value }) => (
             <Select
-              placeholder="Pick language"
+              placeholder='Pick language'
               selectedValue={value}
               width={150}
               onValueChange={(itemValue: string) => {
                 onChange(itemValue);
               }}
-              selectedItemBg={"teal.400"}
+              selectedItemBg={'teal.400'}
               dropdownOpenIcon={
-                <Icon name="arrow-drop-up" type="MaterialIcons" size={6} />
+                <Icon name='arrow-drop-up' type='MaterialIcons' size={6} />
               }
               dropdownCloseIcon={
-                <Icon name="arrow-drop-down" type="MaterialIcons" size={6} />
+                <Icon name='arrow-drop-down' type='MaterialIcons' size={6} />
               }
             >
-              <Select.Item label="JavaScript" value="js" />
-              <Select.Item label="TypeScript" value="ts" />
-              <Select.Item label="Java" value="java" />
+              <Select.Item label='JavaScript' value='js' />
+              <Select.Item label='TypeScript' value='ts' />
+              <Select.Item label='Java' value='java' />
             </Select>
           )}
-          name="language"
-          rules={{ required: "Field is required" }}
-          defaultValue="js"
+          name='language'
+          rules={{ required: 'Field is required' }}
+          defaultValue='js'
         />
         <FormErrorMessage>{errors.language?.message}</FormErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
+      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
         Submit
       </Button>
     </VStack>
@@ -296,18 +296,18 @@ import {
   SliderFilledTrack,
   SliderThumb,
   NativeBaseProvider,
-} from "native-base";
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
+} from 'native-base';
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
 
 function FormHookSliderExample() {
   const { control, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    console.log("submiting with ", data);
+    console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
-      <FormControl isRequired isInvalid={"like" in errors}>
+    <VStack width='80%' space={4}>
+      <FormControl isRequired isInvalid={'like' in errors}>
         <FormLabel>Amount you like NativeBase</FormLabel>
         <Controller
           control={control}
@@ -319,13 +319,13 @@ function FormHookSliderExample() {
               <SliderThumb />
             </Slider>
           )}
-          name="like"
-          rules={{ required: "Field is required", minLength: 3 }}
+          name='like'
+          rules={{ required: 'Field is required', minLength: 3 }}
           defaultValue={100}
         />
         <FormErrorMessage>{errors.like?.message}</FormErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
+      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
         Submit
       </Button>
     </VStack>
@@ -351,35 +351,35 @@ import {
   FormErrorMessage,
   TextArea,
   NativeBaseProvider,
-} from "native-base";
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
+} from 'native-base';
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
 
 function FormHookTextareaExample() {
   const { control, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    console.log("submiting with ", data);
+    console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
-      <FormControl isRequired isInvalid={"thought" in errors}>
+    <VStack width='80%' space={4}>
+      <FormControl isRequired isInvalid={'thought' in errors}>
         <FormLabel>What do you think?</FormLabel>
         <Controller
           control={control}
           render={({ onChange, value }) => (
             <TextArea
-              placeholder="TextArea"
+              placeholder='TextArea'
               onChangeText={(val) => onChange(val)}
               defaultValue={value}
             />
           )}
-          name="thought"
-          rules={{ required: "Field is required", minLength: 3 }}
-          defaultValue="I love Nativebase."
+          name='thought'
+          rules={{ required: 'Field is required', minLength: 3 }}
+          defaultValue='I love NativeBase.'
         />
         <FormErrorMessage>{errors.thought?.message}</FormErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
+      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
         Submit
       </Button>
     </VStack>
@@ -405,18 +405,18 @@ import {
   FormErrorMessage,
   Switch,
   NativeBaseProvider,
-} from "native-base";
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
+} from 'native-base';
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
 
 function FormHookSwitchExample() {
   const { control, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    console.log("submiting with ", data);
+    console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
-      <FormControl isInvalid={"rememberMe" in errors}>
+    <VStack width='80%' space={4}>
+      <FormControl isInvalid={'rememberMe' in errors}>
         <FormLabel>Remenber me:</FormLabel>
         <Controller
           control={control}
@@ -426,12 +426,12 @@ function FormHookSwitchExample() {
               isChecked={value}
             />
           )}
-          name="rememberMe"
+          name='rememberMe'
           defaultValue={true}
         />
         <FormErrorMessage>{errors.rememberMe?.message}</FormErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
+      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
         Submit
       </Button>
     </VStack>
@@ -461,18 +461,18 @@ import {
   NumberIncrementStepper,
   NumberDecrementStepper,
   NativeBaseProvider,
-} from "native-base";
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
+} from 'native-base';
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
 
 function FormHookNumberInputExample() {
   const { control, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    console.log("submiting with ", data);
+    console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
-      <FormControl isRequired isInvalid={"version" in errors}>
+    <VStack width='80%' space={4}>
+      <FormControl isRequired isInvalid={'version' in errors}>
         <FormLabel>Current Native Base Version:</FormLabel>
         <Controller
           control={control}
@@ -488,13 +488,13 @@ function FormHookNumberInputExample() {
               </NumberInputStepper>
             </NumberInput>
           )}
-          name="version"
-          rules={{ required: "Field is required" }}
+          name='version'
+          rules={{ required: 'Field is required' }}
           defaultValue={3}
         />
         <FormErrorMessage>{errors.version?.message}</FormErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
+      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
         Submit
       </Button>
     </VStack>
@@ -521,18 +521,18 @@ import {
   PinInput,
   PinInputField,
   NativeBaseProvider,
-} from "native-base";
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
+} from 'native-base';
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
 
 function FormHookPinInputExample() {
   const { control, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    console.log("submiting with ", data);
+    console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
-      <FormControl isRequired isInvalid={"otp" in errors}>
+    <VStack width='80%' space={4}>
+      <FormControl isRequired isInvalid={'otp' in errors}>
         <FormLabel>OTP:</FormLabel>
         <Controller
           control={control}
@@ -544,12 +544,12 @@ function FormHookPinInputExample() {
               <PinInputField />
             </PinInput>
           )}
-          name="otp"
-          rules={{ required: "Field is required", minLength: 4, maxLength: 4 }}
+          name='otp'
+          rules={{ required: 'Field is required', minLength: 4, maxLength: 4 }}
         />
         <FormErrorMessage>{errors.otp?.message}</FormErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
+      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
         Submit
       </Button>
     </VStack>

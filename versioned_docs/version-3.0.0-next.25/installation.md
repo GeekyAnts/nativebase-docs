@@ -17,7 +17,7 @@ _For **Installing NativeBase** just copy this and paste in your terminal and Voi
 <Tabs
 defaultValue='yarn'
 values={[
-{ label: 'yarn', value: 'yarn' },
+{ label: 'Yarn', value: 'yarn' },
 { label: 'npm', value: 'npm' }
 ]}>
 
@@ -50,7 +50,7 @@ _Install **NativeBase**_
 <Tabs
 defaultValue='yarn'
 values={[
-{ label: 'yarn', value: 'yarn' },
+{ label: 'Yarn', value: 'yarn' },
 { label: 'npm', value: 'npm' }
 ]}>
 
@@ -97,7 +97,7 @@ _For **Installing NativeBase** just copy this and paste in your terminal._
 <Tabs
 defaultValue='yarn'
 values={[
-{ label: 'yarn', value: 'yarn' },
+{ label: 'Yarn', value: 'yarn' },
 { label: 'npm', value: 'npm' }
 ]}>
 

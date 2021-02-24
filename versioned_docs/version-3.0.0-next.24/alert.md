@@ -15,7 +15,7 @@ NativeBase exports 5 modal-related components:
 - `Alert.Description`: The description of the alert to be announced by screen readers.
 
 ```jsx
-import { Alert } from "native-base";
+import { Alert } from 'native-base';
 ```
 
 ## Basic

@@ -30,7 +30,7 @@ import {
   MenuIcon,
   MenuCommand,
   MenuDivider,
-} from "native-base";
+} from 'native-base';
 ```
 
 ## Example (Usage)
