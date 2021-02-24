@@ -19,6 +19,19 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Theme',
+      collapsed: false,
+      items: [
+        'default-theme',
+        'customizingTheme',
+        'darkMode',
+        'customizingComponents',
+        'breakpoint',
+        'theme',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Layout',
       collapsed: false,
       items: [
@@ -136,12 +149,6 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Theme',
-      collapsed: false,
-      items: ['default-theme'],
-    },
-    {
-      type: 'category',
       label: 'Examples',
       collapsed: false,
       items: ['todo-example'],
@@ -161,13 +168,6 @@ module.exports = {
           Designs: ['buildingCard', 'buildingSearchBar'],
           Forms: ['form'],
           Layout: ['appDrawer'],
-          Theme: [
-            'customizingTheme',
-            'darkMode',
-            'customizingComponents',
-            'breakpoint',
-            'theme',
-          ],
         },
       ],
     },
