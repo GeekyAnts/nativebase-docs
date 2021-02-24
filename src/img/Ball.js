@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 function Ball(props) {
   return (
@@ -12,7 +12,7 @@ function Ball(props) {
         letterSpacing="-0.01em"
       >
         <tspan x={-9.75} y={0}>
-          {"\uF233"}
+          {'\uF233'}
         </tspan>
       </text>
     </svg>

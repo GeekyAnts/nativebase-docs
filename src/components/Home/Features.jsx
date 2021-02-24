@@ -1,7 +1,7 @@
-import React from "react";
-import illustration from "../../img/Illustration.png";
-import qrCode from "../../img/QR-code.png";
-import expo from "../../img/expo.png";
+import React from 'react';
+import illustration from '../../img/Illustration.png';
+import qrCode from '../../img/QR-code.png';
+import expo from '../../img/expo.png';
 
 export function Features() {
   return (

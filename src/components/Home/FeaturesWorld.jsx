@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function FeaturesWorld() {
   return (
@@ -386,7 +386,7 @@ export function FeaturesWorld() {
                       </span>
                       <img
                         className="relative rounded-full"
-                        src={"/img/home/news-author-01.jpg"}
+                        src={'/img/home/news-author-01.jpg'}
                         width="32"
                         height="32"
                         alt="Author 01"
@@ -458,7 +458,7 @@ export function FeaturesWorld() {
                       </span>
                       <img
                         className="relative rounded-full"
-                        src={"/img/home/news-author-02.jpg"}
+                        src={'/img/home/news-author-02.jpg'}
                         width="32"
                         height="32"
                         alt="Author 03"
@@ -530,7 +530,7 @@ export function FeaturesWorld() {
                       </span>
                       <img
                         className="relative rounded-full"
-                        src={"/img/home/news-author-01.jpg"}
+                        src={'/img/home/news-author-01.jpg'}
                         width="32"
                         height="32"
                         alt="Author 01"

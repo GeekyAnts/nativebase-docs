@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 function PullR(props) {
   return (
@@ -12,7 +12,7 @@ function PullR(props) {
         letterSpacing="-0.01em"
       >
         <tspan x={-9.188} y={0}>
-          {"\uF2FC"}
+          {'\uF2FC'}
         </tspan>
       </text>
     </svg>
