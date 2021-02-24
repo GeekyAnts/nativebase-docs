@@ -60,7 +60,7 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1 text-gray-900">
                 Accessible
               </h4>
               <p className="text-gray-600 text-center">
@@ -102,7 +102,7 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1 text-gray-900">
                 Responsive
               </h4>
               <p className="text-gray-600 text-center">
@@ -147,7 +147,7 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1 text-gray-900">
                 Themeable
               </h4>
               <p className="text-gray-600 text-center">
@@ -191,7 +191,7 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1 text-gray-900">
                 Consistent
               </h4>
               <p className="text-gray-600 text-center">
@@ -230,7 +230,7 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1 text-gray-900">
                 Dark Mode
               </h4>
               <p className="text-gray-600 text-center">
@@ -265,7 +265,7 @@ export function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl leading-snug tracking-tight mb-1">
+              <h4 className="text-xl leading-snug tracking-tight mb-1 text-gray-900">
                 Others
               </h4>
               <p className="text-gray-600 text-center">
