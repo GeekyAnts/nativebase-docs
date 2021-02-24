@@ -5,7 +5,7 @@ title: Breakpoints
 
 Breakpoints are the building blocks of responsive design. Use them to control when your layout can be adapted at a particular viewport or device size.
 
-Nativebase provides these default breakpoints and you can update with using extendTheme.
+NativeBase provides these default breakpoints and you can update with using extendTheme.
 
 ```tsx
 breakpoints = {
@@ -20,16 +20,16 @@ breakpoints = {
 `useBreakpointValue` is a custom hook which returns the value for the current breakpoint from the provided responsive values object. This hook also responds to the window resizing and returning the appropriate value for the new window size.
 
 ```jsx
-import React from "react";
-import { Box, useBreakpointValue } from "native-base";
+import React from 'react';
+import { Box, useBreakpointValue } from 'native-base';
 export default () => {
   const color = useBreakpointValue({
-    base: "red.200",
-    sm: "blue.200",
-    md: "blue.200",
+    base: 'red.200',
+    sm: 'blue.200',
+    md: 'blue.200',
   });
   return (
-    <Box bg={color} w={"100px"}>
+    <Box bg={color} w={'100px'}>
       This is a box
     </Box>
   );

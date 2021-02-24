@@ -3,4 +3,4 @@ id: faq
 title: FAQ's
 ---
 
-Nativebase FAQ's Coming Soon.
+NativeBase FAQ's Coming Soon.

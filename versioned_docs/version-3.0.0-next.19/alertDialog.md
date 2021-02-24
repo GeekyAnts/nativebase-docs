@@ -27,7 +27,7 @@ import {
   AlertDialogHeader,
   AlertDialogContent,
   AlertDialogOverlay,
-} from "native-base";
+} from 'native-base';
 ```
 
 ## Example

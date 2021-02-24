@@ -443,12 +443,12 @@ To manage Typography options, the theme object supports the following keys:
 ```jsx
 export default {
   letterSpacings: {
-    tighter: "-0.08px",
-    tight: "-0.4px",
-    normal: "0",
-    wide: "0.4px",
-    wider: "0.8px",
-    widest: "1.6px",
+    tighter: '-0.08px',
+    tight: '-0.4px',
+    normal: '0',
+    wide: '0.4px',
+    wider: '0.8px',
+    widest: '1.6px',
   },
   lineHeights: {
     none: 1,
@@ -456,15 +456,15 @@ export default {
     short: 1.375,
     base: 1.5,
     tall: 1.625,
-    taller: "2",
-    3: "12px",
-    4: "16px",
-    5: "20px",
-    6: "24px",
-    7: "28px",
-    8: "32px",
-    9: "36px",
-    10: "40px",
+    taller: '2',
+    3: '12px',
+    4: '16px',
+    5: '20px',
+    6: '24px',
+    7: '28px',
+    8: '32px',
+    9: '36px',
+    10: '40px',
   },
   fontWeights: {
     hairline: 100,
@@ -488,11 +488,11 @@ export default {
     md: 16,
     lg: 18,
     xl: 20,
-    "2xl": 24,
-    "3xl": 30,
-    "4xl": 36,
-    "5xl": 48,
-    "6xl": 64,
+    '2xl': 24,
+    '3xl': 30,
+    '4xl': 36,
+    '5xl': 48,
+    '6xl': 64,
   },
 };
 
@@ -505,29 +505,29 @@ The `size` key allows you to customize the global spacing and sizing scale for
 
 ```jsx
 export default {
-  0: "0",
-  1: "4px",
-  2: "8px",
-  3: "12px",
-  4: "16px",
-  5: "20px",
-  6: "24px",
-  7: "28px",
-  8: "32px",
-  9: "36px",
-  10: "40px",
-  12: "48px",
-  16: "64px",
-  20: "80px",
-  24: "96px",
-  32: "128px",
-  40: "160px",
-  48: "192px",
-  56: "224px",
-  64: "256px",
-  72: "288px",
-  80: "320px",
-  96: "384px",
+  0: '0',
+  1: '4px',
+  2: '8px',
+  3: '12px',
+  4: '16px',
+  5: '20px',
+  6: '24px',
+  7: '28px',
+  8: '32px',
+  9: '36px',
+  10: '40px',
+  12: '48px',
+  16: '64px',
+  20: '80px',
+  24: '96px',
+  32: '128px',
+  40: '160px',
+  48: '192px',
+  56: '224px',
+  64: '256px',
+  72: '288px',
+  80: '320px',
+  96: '384px',
 };
 ```
 
@@ -538,7 +538,7 @@ The `shadow` key allows you to customize the global box shadow for your project.
 ```jsx
 export default {
   0: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 1,
@@ -548,7 +548,7 @@ export default {
     elevation: 1,
   },
   1: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 1,
@@ -558,7 +558,7 @@ export default {
     elevation: 2,
   },
   2: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 1,
@@ -568,7 +568,7 @@ export default {
     elevation: 3,
   },
   3: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -578,7 +578,7 @@ export default {
     elevation: 4,
   },
   4: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -588,7 +588,7 @@ export default {
     elevation: 5,
   },
   5: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 3,
@@ -598,7 +598,7 @@ export default {
     elevation: 6,
   },
   6: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 3,
@@ -608,7 +608,7 @@ export default {
     elevation: 7,
   },
   7: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 4,
@@ -618,7 +618,7 @@ export default {
     elevation: 8,
   },
   8: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 4,
@@ -628,7 +628,7 @@ export default {
     elevation: 9,
   },
   9: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 5,

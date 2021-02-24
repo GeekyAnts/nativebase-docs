@@ -89,8 +89,8 @@ By default Next.js doesn't support static assets like an Expo project. Because t
   - The order is important because Expo can mix in the location of vector icons to the existing font loader.
 
   ```jsx
-  const { withExpo } = require("@expo/next-adapter");
-  const withFonts = require("next-fonts");
+  const { withExpo } = require('@expo/next-adapter');
+  const withFonts = require('next-fonts');
 
   module.exports = withExpo(
     withFonts({

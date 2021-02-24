@@ -17,9 +17,9 @@ import { useTheme } from 'native-base';
 
 ```jsx
 function Example() {
-	const theme = useTheme();
+  const theme = useTheme();
 
-	return <Box>{/* Do something with the theme */}</Box>;
+  return <Box>{/* Do something with the theme */}</Box>;
 }
 ```
 
@@ -37,19 +37,19 @@ import { useToken } from 'native-base';
 
 ```jsx
 function Example() {
-	const [warning1, red2] = useToken(
-		// the key within the theme, in this case `theme.colors`
-		'colors',
-		// the subkey(s), resolving to `theme.colors.warning.1`
-		['warning.100', 'red.200'],
-		// a single fallback or fallback array matching the length of the previous arg
-	);
+  const [warning1, red2] = useToken(
+    // the key within the theme, in this case `theme.colors`
+    'colors',
+    // the subkey(s), resolving to `theme.colors.warning.1`
+    ['warning.100', 'red.200']
+    // a single fallback or fallback array matching the length of the previous arg
+  );
 
-	return (
-		<Box bg={warning1}>
-			<Text color={red2}>wonderful gradients</Text>
-		</Box>
-	);
+  return (
+    <Box bg={warning1}>
+      <Text color={red2}>wonderful gradients</Text>
+    </Box>
+  );
 }
 ```
 

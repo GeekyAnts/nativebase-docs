@@ -1,33 +1,31 @@
 ---
 id: theme
-title: How to use Nativebase theme
+title: How to use NativeBase theme
 ---
 
-There will be time when you want to access the theme object itself. Well np worries Nativebase provides with the `useTheme` hook to solve that problem.
+There will be time when you want to access the theme object itself. Well np worries NativeBase provides with the `useTheme` hook to solve that problem.
 
-But why we need the theme object? Maybe show of the your color pallets 😁
+But why we need the theme object? Maybe show you the color palettes 😁
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/03b86b10-10f8-4b5e-9ef6-251977282274/Screenshot_2021-01-19_at_5.24.12_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/03b86b10-10f8-4b5e-9ef6-251977282274/Screenshot_2021-01-19_at_5.24.12_PM.png)
+## useColorModeValue
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b9efc1b-4234-4305-b5cb-9c38f7a23023/Screenshot_2021-01-19_at_5.24.18_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b9efc1b-4234-4305-b5cb-9c38f7a23023/Screenshot_2021-01-19_at_5.24.18_PM.png)
+```SnackPlayer name=Box%20Example
+import React from 'react';
+import { NativeBaseProvider, useColorModeValue, Button, useTheme, SimpleGrid } from 'native-base';
 
-```tsx
-import React from "react";
-import { useColorModeValue, Button, useTheme, SimpleGrid } from "native-base";
-
-export default function () {
+function ColorPalete() {
   const { colors } = useTheme();
   const template = () => {
     let temp = [];
     for (const colorKey in colors) {
       // skipping singleton colors
-      if (colorKey === "black" || colorKey === "white") {
+      if (colorKey === 'black' || colorKey === 'white') {
       } else
         temp.push(
           <Button
-            size="lg"
+            size='lg'
             colorScheme={colorKey}
-            variant={useColorModeValue("solid", "outline")}
+            variant={useColorModeValue('solid', 'outline')}
           >
             {colorKey[0]}
           </Button>
@@ -42,16 +40,23 @@ export default function () {
     </SimpleGrid>
   );
 }
+  export default function () {
+    return (
+      <NativeBaseProvider>
+        <ColorPalete />
+      </NativeBaseProvider>
+    );
+  }
 ```
 
 Don't want the entire object, instead something vary specific. Don't we got you covered with our `useToken` hook. Let’s see an example.
 
-```tsx
-import React from "react";
-import { useToken, Box, SimpleGrid } from "native-base";
+```SnackPlayer name=useToken
+import React from 'react';
+import { useToken, Box, SimpleGrid,NativeBaseProvider } from 'native-base';
 
-export default function () {
-  const colors = useToken("colors", "amber");
+function Tokens () {
+  const colors = useToken('colors', 'amber');
   const template = () => {
     let temp = [];
     for (const colorKey in colors) {
@@ -62,6 +67,11 @@ export default function () {
 
   return <SimpleGrid columns={10}>{template()}</SimpleGrid>;
 }
+export default function () {
+    return (
+      <NativeBaseProvider>
+        <ColorPalete />
+      </NativeBaseProvider>
+    );
+  }
 ```
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b3f5de8-30a8-43ca-986d-c72e811298e6/Screenshot_2021-01-19_at_6.11.52_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b3f5de8-30a8-43ca-986d-c72e811298e6/Screenshot_2021-01-19_at_6.11.52_PM.png)

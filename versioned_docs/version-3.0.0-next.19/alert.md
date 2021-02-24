@@ -21,7 +21,7 @@ import {
   AlertTitle,
   AlertDescription,
   AlertCloseButton,
-} from "native-base";
+} from 'native-base';
 ```
 
 ## Usage

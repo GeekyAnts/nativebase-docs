@@ -3,22 +3,22 @@ id: darkMode
 title: Making components dark mode compatible
 ---
 
-By default, most of Nativebase's components are dark mode compatible. In some scenario, you might need to make your component respond to color mode. There are 2 way to achieve this:
+By default, most of NativeBase's components are dark mode compatible. In some scenario, you might need to make your component respond to color mode. There are 2 way to achieve this:
 
 1. By updating component's theme
 2. By using useColorModeValue
 
 ## 1. By updating component's theme
 
-In this approach we use NB's `extendTheme` function to customise the components and the use themeTools to make the component dark mode compatible.
+In this approach we use NativeBase's `extendTheme` function to customise the components and the use themeTools to make the component dark mode compatible.
 
 Note: Changes on the theme will be reflected on the entire application.
 
 ```tsx
-import React from "react";
-import { NativeBaseProvider, themeTools } from "native-base";
-import { extendTheme } from "native-base";
-import { Content } from "./Content";
+import React from 'react';
+import { NativeBaseProvider, themeTools } from 'native-base';
+import { extendTheme } from 'native-base';
+import { Content } from './Content';
 
 export default function () {
   const theme = extendTheme({
@@ -26,7 +26,7 @@ export default function () {
       Heading: {
         baseStyle: (props: any) => {
           return {
-            color: themeTools.mode("red.300", "blue.300")(props),
+            color: themeTools.mode('red.300', 'blue.300')(props),
           };
         },
       },
@@ -44,19 +44,19 @@ In the above example, the Heading component's color property will now respond to
 
 ## 2. By using useColorModeValue
 
-In this approach we use NB's `useColorModeValue` function and update specific props instead of updating the entire theme.
+In this approach we use NativeBase's `useColorModeValue` function and update specific props instead of updating the entire theme.
 
 Note: Changes on the theme will be reflected on the entire application.
 
 ```tsx
-import React from "react";
-import { useColorModeValue, Button } from "native-base";
+import React from 'react';
+import { useColorModeValue, Button } from 'native-base';
 
 export default function () {
   return (
     <Button
-      colorScheme={useColorModeValue("teal", "amber")}
-      variant={useColorModeValue("solid", "outline")}
+      colorScheme={useColorModeValue('teal', 'amber')}
+      variant={useColorModeValue('solid', 'outline')}
     >
       Sample
     </Button>

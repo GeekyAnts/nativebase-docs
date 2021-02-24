@@ -193,4 +193,4 @@ Internal link for Community Integration ( Formik and React Hook Forms ).
 
 # Community Integration
 
-Nativebase can be used with other popular Form libraries like Formik and React Hook Forms as well. For more details checkout Community Integration section of the docs.
+NativeBase can be used with other popular Form libraries like Formik and React Hook Forms as well. For more details checkout Community Integration section of the docs.

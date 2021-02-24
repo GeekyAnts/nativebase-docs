@@ -14,7 +14,7 @@ NativeBase exports 3 avatar-related components:
 - `Avatar.Group`: A wrapper to stack multiple avatars together.
 
 ```jsx
-import { Avatar } from "native-base";
+import { Avatar } from 'native-base';
 ```
 
 ## Basic
@@ -205,13 +205,13 @@ function AvatarComponent() {
       <Avatar
         source={{ uri: 'https://alpha.nativebase.io/img/native-base-icon.png' }}
       >
-        NB
+        NativeBase
         <Avatar.Badge bg={'red.200'} />
       </Avatar>
       <Avatar
         source={{ uri: 'https://alpha.nativebase.io/img/native-base-icon.png' }}
       >
-        NB
+        NativeBase
         <Avatar.Badge borderColor="papayawhip" bg="tomato" />
       </Avatar>
     </HStack>

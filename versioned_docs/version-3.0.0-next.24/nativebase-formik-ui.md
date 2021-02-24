@@ -5,12 +5,12 @@ NativeBase Formik Integrated Components. No need of managing and using formik ho
 
 ## Installation
 
-To **Install Nativebase-Formik-UI** just copy this and paste in your terminal.\_
+To **Install NativeBase-Formik-UI** just copy this and paste in your terminal.\_
 
 <Tabs
 defaultValue='yarn'
 values={[
-{ label: 'yarn', value: 'yarn' },
+{ label: 'Yarn', value: 'yarn' },
 { label: 'npm', value: 'npm' }
 ]}>
 

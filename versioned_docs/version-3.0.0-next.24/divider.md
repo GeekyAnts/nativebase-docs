@@ -86,7 +86,7 @@ function DividerComponent() {
       <Divider borderColor="blue.500" mx={4} orientation="vertical" />
       <Text>Beautiful</Text>
       <Divider borderColor="green.500" mx={4} orientation="vertical" />
-      <Text>Nativebase</Text>
+      <Text>NativeBase</Text>
     </Flex>
   );
 }

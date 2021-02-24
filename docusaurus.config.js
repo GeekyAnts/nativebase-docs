@@ -18,6 +18,7 @@ module.exports = {
   organizationName: 'nativebase', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     respectPrefersColorScheme: true,
     algolia: {
       apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
@@ -94,7 +95,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/GeekyAnts/Nativebase',
+              href: 'https://github.com/GeekyAnts/NativeBase',
             },
             {
               label: 'Contribution Guidelines',
