@@ -22,7 +22,7 @@ import React from 'react';
 import { Icon, Select, NativeBaseProvider } from 'native-base';
 
 function SelectComponent() {
-	let [language, setLanguage] = React.useState < string > '';
+	let [language, setLanguage] = React.useState('');
 	return (
 		<Select
 			selectedValue={language}
@@ -53,7 +53,7 @@ import React from 'react';
 import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
 
 function SelectComponent() {
-	let [language, setLanguage] = React.useState < string > 'js';
+	let [language, setLanguage] = React.useState('js');
 	return (
 		<VStack alignItems='center' space={2}>
 			<Select
@@ -90,7 +90,7 @@ import React from 'react';
 import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
 
 function SelectComponent () {
-	let [language, setLanguage] = React.useState<string>('js');
+	let [language, setLanguage] = React.useState('js');
   return (
     <VStack alignItems="center" space={2}>
       <Select
@@ -119,6 +119,7 @@ function SelectComponent () {
       </Select>
       <Text>{language}</Text>
     </VStack>
+	);
 }
 export default function () {
   return (
