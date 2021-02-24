@@ -23,7 +23,7 @@ export function Cta() {
               gradientUnits="objectBoundingBox"
             >
               <stop offset="0" stopColor="#10b981" />
-              <stop offset="1" stopColor="#14b8a6" />
+              <stop offset="1" stopColor="#6186F4" />
             </linearGradient>
           </defs>
           <circle
@@ -56,7 +56,7 @@ export function Cta() {
               gradientUnits="objectBoundingBox"
             >
               <stop offset="0" stopColor="#10b981" />
-              <stop offset="1" stopColor="#14b8a6" />
+              <stop offset="1" stopColor="#6186F4" />
             </linearGradient>
           </defs>
           <circle
