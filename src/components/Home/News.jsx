@@ -97,7 +97,7 @@ export function News() {
                     </ul>
                   </div>
                   <h3 className="text-lg leading-snug tracking-tight font-normal">
-                    <Link to="/blog-post" className="text-black">
+                    <Link to="/blog-post" className="text-gray-600">
                       “How HubSpot saved 25% on developing costs by switching to
                       Simple.”
                     </Link>
@@ -169,7 +169,7 @@ export function News() {
                     </ul>
                   </div>
                   <h3 className="text-lg leading-snug tracking-tight font-normal">
-                    <Link to="/blog-post" className="text-black">
+                    <Link to="/blog-post" className="text-gray-600">
                       “How Facebook brought 13% cost savings to their bottom
                       line with Simple’s products.”
                     </Link>
@@ -241,7 +241,7 @@ export function News() {
                     </ul>
                   </div>
                   <h3 className="text-lg leading-snug tracking-tight font-normal">
-                    <Link to="/blog-post" className="text-black">
+                    <Link to="/blog-post" className="text-gray-600">
                       “How Tinder grew 115% and saved 120 Hours each week by
                       outsourcing to Simple.”
                     </Link>
