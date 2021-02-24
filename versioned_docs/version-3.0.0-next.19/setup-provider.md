@@ -8,11 +8,11 @@ NativeBaseProvider is a component that makes the theme available throughout your
 **App.js**
 
 ```jsx
-import React from "react";
+import React from 'react';
 // 1. import `NativeBaseProvider` component
-import { NativeBaseProvider, Text, View } from "native-base";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet } from "react-native";
+import { NativeBaseProvider, Text, View } from 'native-base';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet } from 'react-native';
 
 export default function App() {
   // 2. Use at the root of your app
@@ -20,7 +20,7 @@ export default function App() {
     <NativeBaseProvider>
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
-        <StatusBar style="auto" />
+        <StatusBar style='auto' />
       </View>
     </NativeBaseProvider>
   );
@@ -29,9 +29,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 ```
@@ -44,13 +44,13 @@ NativeBase 3.0 provides an `extendTheme` function that deep merges the default
 
 ```jsx
 // 1. Import the extendTheme function
-import { extendTheme, NativeBaseProvider } from "native-base";
+import { extendTheme, NativeBaseProvider } from 'native-base';
 // 2. Extend the theme to include custom colors, fonts, etc
 const newColorTheme = {
   brand: {
-    900: "#8287af",
-    800: "#7c83db",
-    700: "#b3bef6",
+    900: '#8287af',
+    800: '#7c83db',
+    700: '#b3bef6',
   },
 };
 const theme = extendTheme({ colors: newColorTheme });

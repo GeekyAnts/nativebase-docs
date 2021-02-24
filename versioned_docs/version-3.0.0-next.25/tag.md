@@ -129,11 +129,11 @@ function TagComponent() {
       <Avatar
         mr={2}
         source={{ uri: 'https://nativebase.io/assets/img/front-page-icon.png' }}
-        name={'Nativebase'}
+        name={'NativeBase'}
         width={6}
         height={6}
       />
-      Nativebase
+      NativeBase
     </Tag>
   );
 }

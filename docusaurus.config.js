@@ -19,6 +19,7 @@ module.exports = {
   projectName: 'website', // Usually your repo name.
   plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
+    hideableSidebar: true,
     respectPrefersColorScheme: true,
     algolia: {
       apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
@@ -38,39 +39,39 @@ module.exports = {
           to: 'https://market.nativebase.io/',
           label: 'Market',
           position: 'right',
-          ariaLabel: 'Market',
+          'aria-label': 'Market',
         },
         {
           to:
             'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
           label: 'Hire Us',
           position: 'right',
-          ariaLabel: 'Hire GeekyAnts',
+          'aria-label': 'Hire GeekyAnts',
         },
         {
           to: 'https://github.com/GeekyAnts/nativebase',
           label: 'GitHub',
           position: 'right',
-          ariaLabel: 'GitHub',
+          'aria-label': 'GitHub',
         },
         {
           to: 'https://discord.com/invite/TSgCw2UPmb',
           label: 'Discord',
           position: 'right',
-          ariaLabel: 'Discord',
+          'aria-label': 'Discord',
         },
         {
           // to: 'docs/nativebase',
           label: 'Theme',
           position: 'right',
-          ariaLabel: 'Theme',
+          'aria-label': 'Theme',
         },
         {
           to: '/docs/nativebase',
           // activeBasePath: "docs",
           label: 'Docs',
           position: 'right',
-          ariaLabel: 'Docs',
+          'aria-label': 'Docs',
         },
       ],
     },
@@ -116,7 +117,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/GeekyAnts/Nativebase',
+              href: 'https://github.com/GeekyAnts/NativeBase',
             },
             {
               label: 'Contribution Guidelines',
@@ -131,7 +132,7 @@ module.exports = {
               dataCountHref: 'https://github.com/GeekyAnts/NativeBase',
               dataShowCount: 'true',
               dataCountAriaLabel: '# stargazers on GitHub',
-              ariaLabel: 'Star this project on GitHub',
+              'aria-label': 'Star this project on GitHub',
             },
           ],
         },
@@ -156,15 +157,13 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/nativebase/website/main',
           remarkPlugins: [require('./remark-snackplayer')],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl: 'https://github.com/nativebase/website/main',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css')],

@@ -15,36 +15,113 @@ Creates a dropdown list of items with the selected item in closed view.
 import { Select } from 'native-base';
 ```
 
-## Example
+## Basic
 
-```SnackPlayer name=Select%20Example
+```SnackPlayer name=Basic
 import React from 'react';
 import { Icon, Select, NativeBaseProvider } from 'native-base';
 
-function SelectComponent () {
+function SelectComponent() {
   let [language, setLanguage] = React.useState('');
   return (
     <Select
-      placeholder="Pick language"
-      _placeholder={{ color: 'teal.500' }}
       selectedValue={language}
-      width={150}
+      minWidth={200}
       onValueChange={(itemValue: string) => setLanguage(itemValue)}
-      selectedItemBg={'blue.500'}
-      _selectedItem={{ color: 'white' }}
-      dropdownOpenIcon={
-        <Icon name="arrow-drop-up" type="MaterialIcons" size={6} />
-      }
-      dropdownCloseIcon={
-        <Icon name="arrow-drop-down" type="MaterialIcons" size={6} />
-      }
-      _item={{ color: 'red.500' }}
     >
       <Select.Item label="JavaScript" value="js" />
       <Select.Item label="TypeScript" value="ts" />
+      <Select.Item label="C" value="c" />
+      <Select.Item label="Python" value="py" />
       <Select.Item label="Java" value="java" />
     </Select>
   );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <SelectComponent />
+    </NativeBaseProvider>
+  );
+}
+
+```
+
+## Native
+
+```SnackPlayer name=Native
+import React from 'react';
+import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
+
+function SelectComponent() {
+  let [language, setLanguage] = React.useState('js');
+  return (
+    <VStack alignItems="center" space={2}>
+      <Select
+        variant="native" //defaultValue
+        selectedValue={language}
+        minWidth={200}
+        onValueChange={(itemValue: string) => setLanguage(itemValue)}
+        androidIconColor="gray.500"
+        androidPrompt="Language you love:"
+      >
+        <Select.Item label="JavaScript" value="js" />
+        <Select.Item label="TypeScript" value="ts" />
+        <Select.Item label="C" value="c" />
+        <Select.Item label="Python" value="py" />
+        <Select.Item label="Java" value="java" />
+      </Select>
+      <Text>{language}</Text>
+    </VStack>
+  );
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <SelectComponent />
+    </NativeBaseProvider>
+  );
+}
+```
+
+## Styled
+
+```SnackPlayer name=Styled
+import React from 'react';
+import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
+
+function SelectComponent () {
+	let [language, setLanguage] = React.useState('js');
+  return (
+    <VStack alignItems="center" space={2}>
+      <Select
+        variant="styled"
+        placeholder="Pick language"
+        _placeholder={{ color: 'teal.500' }}
+        selectedValue={language}
+        width={150}
+        onValueChange={(itemValue: string) => setLanguage(itemValue)}
+        selectedItemBg={'blue.500'}
+        _selectedItem={{ color: 'white' }}
+        // isDisabled
+        dropdownOpenIcon={
+          <Icon name="arrow-drop-up" type="MaterialIcons" size={6} />
+        }
+        dropdownCloseIcon={
+          <Icon name="arrow-drop-down" type="MaterialIcons" size={6} />
+        }
+        _item={{ color: 'red.500' }}
+      >
+        <Select.Item label="JavaScript" value="js" />
+        <Select.Item label="TypeScript" value="ts" />
+        <Select.Item label="Java" value="java" />
+        <Select.Item label="C" value="c" />
+        <Select.Item label="Python" value="py" />
+      </Select>
+      <Text>{language}</Text>
+    </VStack>
+	);
 }
 export default function () {
   return (
@@ -59,19 +136,26 @@ export default function () {
 
 ### Select
 
-| Name              | Type        | Description                                                                                           | Default  |
-| ----------------- | ----------- | ----------------------------------------------------------------------------------------------------- | -------- |
-| placeholder       | string      | The placeholder attribute specifies a short hint that describes the expected value of an select field | -        |
-| \_placeholder     | TextProps   | Text props to be applied to placeholder                                                               | -        |
-| selectedValue     | string      | The default value which is selected                                                                   | -        |
-| onValueChange     | function    | Callback for on change on input value.                                                                | -        |
-| itemStyle         | stylesheet  |                                                                                                       | -        |
-| selectedItemBg    | string      | Background color for selected item                                                                    | blue.500 |
-| \_selectedItem    | TextProps   | Text props to be applied to the selected item                                                         | white    |
-| isDisabled        | boolean     | If true, the button will be disabled.                                                                 | -        |
-| dropdownIcon      | JSX.Element | If given, updates the dropdown Icon.                                                                  | -        |
-| dropdownOpenIcon  | JSX.Element | If given, updates the dropdown Icon, when opened.                                                     | -        |
-| dropdownCloseIcon | JSX.Element | If given, updates the dropdown Icon, when closed.                                                     | -        |
+| Name              | Type             | Description                                                                                                                        | Default  |
+| ----------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| placeholder       | string           | The placeholder attribute specifies a short hint that describes the expected value of a selected field (only for styled variant).  | -        |
+| \_placeholder     | TextProps        | Text props to be applied to placeholder (only for styled variant).                                                                 | -        |
+| selectedValue     | string           | The default value which is selected.                                                                                               | -        |
+| onValueChange     | function         | Callback for on change on the input value.                                                                                         | -        |
+| selectedItemBg    | string           | Background color for the selected item (only for styled variant).                                                                  | blue.500 |
+| \_selectedItem    | TextProps        | Text prop for selected item (only for styled variant).                                                                             | -        |
+| isDisabled        | boolean          | If true, the button will be disabled (not supported on ios for native variant).                                                    | -        |
+| dropdownIcon      | JSX.Element      | If given, updates the dropdown Icon (only for styled variant).                                                                     | -        |
+| dropdownOpenIcon  | JSX.Element      | If given, updates the dropdown Icon when opened (only for styled variant).                                                         | -        |
+| dropdownCloseIcon | JSX.Element      | If given, updates the dropdown Icon when closed (only for styled variant).                                                         | -        |
+| variant           | native, styled   | The variant of the select style to use.                                                                                            | native   |
+| \_ios             |                  | Props which you only want to pass to ios device.                                                                                   | -        |
+| \_android         |                  | Props which you only want to pass to android device.                                                                               | -        |
+| \_web             |                  | Props which you only want to pass to web device.                                                                                   | -        |
+| \_item            | TextProps        | TextProps to be applied to the label (only for styled variant).                                                                    | -        |
+| androidMode       | dialog, dropdown | On Android, specifies how to display the selection items when the user taps on the picker (only for native variant).               | dialog   |
+| androidIconColor  | string           | On Android, specifies color of dropdown triangle. Input value can any color from theme like default.300 (only for native variant). | -        |
+| androidPrompt     | string           | On Android, prompt string for this picker, used on Android in dialog mode as the title of the dialog (only for native variant).    | -        |
 
 ### Select Item
 
@@ -79,5 +163,5 @@ export default function () {
 | ---------- | --------- | ---------------------------------------------------------------------------------------------- | ------- |
 | label      | string    | The label which will be displayed.                                                             | -       |
 | value      | string    | The value to be used for the item. This is the value that will be returned on form submission. | -       |
-| isDisabled | boolean   | If true, the item will be disabled.                                                            | -       |
-| \_label    | TextProps | TextProps to be applied to label                                                               | -       |
+| isDisabled | boolean   | If true, the item will be disabled (only for `styled` variant).                                | -       |
+| \_label    | TextProps | TextProps to be applied to label (only for `styled` variant).                                  | -       |
