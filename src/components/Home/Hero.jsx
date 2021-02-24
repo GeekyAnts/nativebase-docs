@@ -1,6 +1,6 @@
 import React from 'react';
-import Ball from '../../img/Ball';
-import PullR from '../../img/PullR';
+import GitHub from '../../img/GitHub';
+import Star from '../../img/Star';
 
 export function Hero() {
   const [starCount, setStarCount] = React.useState(0);
@@ -47,7 +47,7 @@ export function Hero() {
               data-aos="zoom-y-out"
             >
               A complete <br /> component library for <br /> the{' '}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-teal-400">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-blue-400">
                 React Ecosystem
               </span>
             </h1>
@@ -78,9 +78,9 @@ export function Hero() {
                     className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex"
                     href="https://github.com/GeekyAnts/nativebase"
                   >
-                    <Ball className="mr-2" />
+                    <GitHub fill="#fff" className="mr-2" />
                     {starCount}
-                    <PullR className="ml-2" />
+                    <Star className="ml-2" />
                   </a>
                 </div>
               </div>

@@ -25,29 +25,57 @@ module.exports = {
       indexName: 'nativebase-v3',
     },
     navbar: {
-      // title: "NativeBase 3.0",
+      title: 'NativeBase 3.0',
       logo: {
         alt: 'NativeBase Logo',
         src: 'img/native-base-icon.png',
       },
+
       // style: "dark",
       items: [
-        { type: 'docsVersionDropdown', position: 'right' },
-        // {
-        //   href: "https://github.com/GeekyAnts/nativebase",
-        //   label: "GitHub",
-        //   position: "left",
-        // },
-        // {
-        //   href:
-        //     "https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase",
-        //   label: "Hire The Creators",
-        //   position: "left",
-        // },
+        { type: 'docsVersionDropdown', position: 'left' },
+        {
+          to: 'https://market.nativebase.io/',
+          label: 'Market',
+          position: 'right',
+          ariaLabel: 'Market',
+        },
+        {
+          to:
+            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          label: 'Hire Us',
+          position: 'right',
+          ariaLabel: 'Hire GeekyAnts',
+        },
+        {
+          to: 'https://github.com/GeekyAnts/nativebase',
+          label: 'GitHub',
+          position: 'right',
+          ariaLabel: 'GitHub',
+        },
+        {
+          to: 'https://discord.com/invite/TSgCw2UPmb',
+          label: 'Discord',
+          position: 'right',
+          ariaLabel: 'Discord',
+        },
+        {
+          // to: 'docs/nativebase',
+          label: 'Theme',
+          position: 'right',
+          ariaLabel: 'Theme',
+        },
+        {
+          to: 'docs/nativebase',
+          // activeBasePath: "docs",
+          label: 'Docs',
+          position: 'right',
+          ariaLabel: 'Docs',
+        },
       ],
     },
     footer: {
-      style: 'dark',
+      // style: 'dark',
       links: [
         {
           title: 'Docs',
@@ -95,16 +123,16 @@ module.exports = {
               href:
                 'https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md',
             },
-            // {
-            //   label: "Stars",
-            //   href: "https://github.com/GeekyAnts/NativeBase",
-            //   // className: "github-button",
-            //   dataIcon: "octicon-star",
-            //   dataCountHref: "https://github.com/GeekyAnts/NativeBase",
-            //   dataShowCount: "true",
-            //   dataCountAriaLabel: "# stargazers on GitHub",
-            //   ariaLabel: "Star this project on GitHub",
-            // },
+            {
+              label: 'Stars',
+              href: 'https://github.com/GeekyAnts/NativeBase',
+              // className: "github-button",
+              dataIcon: 'octicon-star',
+              dataCountHref: 'https://github.com/GeekyAnts/NativeBase',
+              dataShowCount: 'true',
+              dataCountAriaLabel: '# stargazers on GitHub',
+              ariaLabel: 'Star this project on GitHub',
+            },
           ],
         },
         {
