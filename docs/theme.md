@@ -70,7 +70,7 @@ function Tokens () {
 export default function () {
     return (
       <NativeBaseProvider>
-        <ColorPalete />
+        <Tokens />
       </NativeBaseProvider>
     );
   }
