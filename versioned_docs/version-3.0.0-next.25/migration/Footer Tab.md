@@ -1,7 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-With Nativebase v3 we have removed FooterTab components because as it's very simple to create using Tabs components. Here an example to show the code comparison.
+With NativeBase v3 we have removed FooterTab components because as it's very simple to create using Tabs components. Here an example to show the code comparison.
 
 ## Code Comparison
 

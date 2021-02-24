@@ -9,22 +9,22 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Accessible',
-    imageUrl: '/img/NB-feature-icons/SVG/Accessible.svg',
+    imageUrl: '/img/feature-icons/SVG/Accessible.svg',
     description: 'Maximise app usage with our accessible design.',
   },
   {
     title: 'Responsive',
-    imageUrl: '/img/NB-feature-icons/SVG/Responsive.svg',
+    imageUrl: '/img/feature-icons/SVG/Responsive.svg',
     description: 'Create responsive apps with ease from the get-go.',
   },
   {
     title: 'Themeable',
-    imageUrl: '/img/NB-feature-icons/SVG/Themeable.svg',
+    imageUrl: '/img/feature-icons/SVG/Themeable.svg',
     description: 'Customise your app theme and component styles.',
   },
   {
     title: 'Consistent',
-    imageUrl: '/img/NB-feature-icons/SVG/Consistent.svg',
+    imageUrl: '/img/feature-icons/SVG/Consistent.svg',
     description: 'Make accurate predictions for web, Android & iOS.',
   },
 ];
@@ -80,7 +80,7 @@ function Home() {
               src={'/img/native-base-icon.png'}
               width='47.5px'
               height='55px'
-              alt='Nativebase'
+              alt='NativeBase'
               style={{ marginRight: '10px' }}
             />
 

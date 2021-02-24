@@ -26,7 +26,7 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-} from "native-base";
+} from 'native-base';
 ```
 
 ## Usage

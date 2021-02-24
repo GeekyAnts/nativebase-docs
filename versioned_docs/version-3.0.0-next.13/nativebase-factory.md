@@ -1,17 +1,17 @@
 ---
 id: nativebase-factory
-title: Nativebase Factory
+title: NativeBase Factory
 ---
 
-Nativebase factory is a function that converts non-nativebase components to nativebase enabled components so you can pass style props to them.
+NativeBase factory is a function that converts non-nativebase components to nativebase enabled components so you can pass style props to them.
 
 ```jsx
-import { NBFactory } from "native-base";
+import { NBFactory } from 'native-base';
 ```
 
 ## Usage
 
-```SnackPlayer name=Nativebase%20Factory%20Usage
+```SnackPlayer name=NativeBase%20Factory%20Usage
 import React from 'react';
 import { NBFactory, NativeBaseProvider } from 'native-base';
 import { Image, View } from 'react-native';
@@ -33,7 +33,7 @@ export default function () {
 
 ## Defining component theme
 
-```SnackPlayer name=Nativebase%20Factory%20Component%20Theme
+```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
 import React from 'react';
 import { NBFactory, NativeBaseProvider } from 'native-base';
 import { View } from 'react-native';
@@ -58,7 +58,7 @@ export default function () {
 
 ## Using mode in component theme
 
-```SnackPlayer name=Nativebase%20Factory%20Component%20Theme
+```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
 import React from 'react';
 import { NBFactory, themeTools, NativeBaseProvider } from 'native-base';
 import { View } from 'react-native';
@@ -86,7 +86,7 @@ export default function () {
 
 ## Using ref
 
-```SnackPlayer name=Nativebase%20Factory%20Using%20Ref
+```SnackPlayer name=NativeBase%20Factory%20Using%20Ref
 import React from 'react';
 import { NBFactory, Button, NativeBaseProvider } from 'native-base';
 import { TextInput } from 'react-native';

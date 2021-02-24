@@ -3,7 +3,7 @@ id: customizingComponents
 title: Customising Components
 ---
 
-Nativebase theme is complex object which looks like
+NativeBase theme is complex object which looks like
 
 ```tsx
 // theme
@@ -17,13 +17,13 @@ Nativebase theme is complex object which looks like
 }
 ```
 
-using NB's `extendTheme` function, we can update theme object. A simple example to illustrate the process of updating the theme.
+using NativeBase's `extendTheme` function, we can update theme object. A simple example to illustrate the process of updating the theme.
 
 ```tsx
-import React from "react";
-import { NativeBaseProvider, themeTools } from "native-base";
-import { extendTheme } from "native-base";
-import { Content } from "./Content";
+import React from 'react';
+import { NativeBaseProvider, themeTools } from 'native-base';
+import { extendTheme } from 'native-base';
+import { Content } from './Content';
 
 export default function () {
   const theme = extendTheme({
@@ -31,26 +31,26 @@ export default function () {
       Button: {
         // Can simply pass default props to change default behaviour of components.
         defaultProps: {
-          colorScheme: "red",
+          colorScheme: 'red',
         },
       },
       Checkbox: {
         defaultProps: {
-          size: "lg",
-          colorScheme: "amber",
+          size: 'lg',
+          colorScheme: 'amber',
         },
       },
       Avatar: {
         baseStyle: {
-          borderRadius: "md",
+          borderRadius: 'md',
         },
       },
       Heading: {
         // Can pass also function, giving you access themeingTools
         baseStyle: (props: any) => {
           return {
-            color: themeTools.mode("red.300", "blue.300")(props),
-            fontWeight: "normal",
+            color: themeTools.mode('red.300', 'blue.300')(props),
+            fontWeight: 'normal',
           };
         },
       },

@@ -80,7 +80,7 @@ function Composition({ loaded }: any) {
           <Skeleton variant="circle" size={12} />
         )}
         <Text fontWeight="bold" fontSize="lg" ml={2}>
-          {loaded ? 'Nativebase' : <Skeleton>Nativebase</Skeleton>}
+          {loaded ? 'NativeBase' : <Skeleton>NativeBase</Skeleton>}
         </Text>
       </HStack>
       <Box size={200} mt={1}>

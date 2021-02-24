@@ -3,11 +3,11 @@ import TabItem from '@theme/TabItem';
 
 ## Grid
 
-EasyGrid can be used Nativebase v3 and with v3 we also provide SimpleGrid [form more details checkout docs] as well.
+EasyGrid can be used NativeBase v3 and with v3 we also provide SimpleGrid [form more details checkout docs] as well.
 
 ## List
 
-With Nativebase v3 we have removed List components because as it's very simple to create various list layout using primitive components.
+With NativeBase v3 we have removed List components because as it's very simple to create various list layout using primitive components.
 
 ### Code Comparison
 
