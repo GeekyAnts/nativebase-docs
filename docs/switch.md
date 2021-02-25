@@ -13,7 +13,7 @@ The `Switch` component is an alternative to the Checkbox component. You can swit
 
 ```SnackPlayer name=Switch%20Example
 import React from 'react';
-import { Switch, HStack, Text, NativeBaseProvider } from 'native-base';
+import { Switch, HStack, Text, NativeBaseProvider, Center } from 'native-base';
 
 function SwitchComponent () {
   return (
@@ -23,10 +23,13 @@ function SwitchComponent () {
     </HStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <SwitchComponent />
+      <Center flex={1}>
+        <SwitchComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -36,7 +39,7 @@ export default function () {
 
 ```SnackPlayer name=Switch%20Sizes
 import React from 'react';
-import { Switch, NativeBaseProvider } from 'native-base';
+import { Switch, NativeBaseProvider, Center } from 'native-base';
 
 function SwitchComponent () {
   return (
@@ -47,10 +50,13 @@ function SwitchComponent () {
     </>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <SwitchComponent />
+      <Center flex={1}>
+        <SwitchComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -60,21 +66,24 @@ export default function () {
 
 ```SnackPlayer name=Switch%20Background
 import React from 'react';
-import { VStack,Switch, NativeBaseProvider } from 'native-base';
+import { VStack,Switch, NativeBaseProvider, Center } from 'native-base';
 
 function SwitchComponent () {
   return (
-		<VStack space={4}>
+    <VStack space={4}>
       <Switch />
       <Switch offTrackColor="rose.200" onTrackColor="lime.200" />
       <Switch offThumbColor="rose.200" onThumbColor="lime.200" />
     </VStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <SwitchComponent />
+      <Center flex={1}>
+        <SwitchComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

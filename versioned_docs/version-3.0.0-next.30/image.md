@@ -14,13 +14,13 @@ Generic Image components from `react-native`
 
 ```SnackPlayer name=Image%20Example
 import React from 'react';
-import { Box, Image, NativeBaseProvider } from 'native-base';
+import { Box, Image, NativeBaseProvider, Center } from 'native-base';
 function ImageComponent () {
   return (
     <Box size={200}>
       <Image
         source={{
-          uri: 'httpBoxs://nativebase.io/assets/img/front-page-icon.png',
+          uri: 'https://nativebase.io/assets/img/front-page-icon.png',
         }}
       />
     </Box>
@@ -29,7 +29,9 @@ function ImageComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ImageComponent />
+      <Center flex={1}>
+        <ImageComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -39,7 +41,7 @@ export default function () {
 
 ```SnackPlayer name=Image%20Example(Sizes)
 import React from 'react';
-import { HStack, Image, NativeBaseProvider } from 'native-base';
+import { HStack, Image, NativeBaseProvider, Center } from 'native-base';
 function ImageComponent() {
   return (
     <HStack alignItems="center">
@@ -72,7 +74,9 @@ function ImageComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ImageComponent />
+      <Center flex={1}>
+        <ImageComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -82,7 +86,7 @@ export default function () {
 
 ```SnackPlayer name=Image%20Example(Border)
 import React from 'react';
-import { Image, NativeBaseProvider } from 'native-base';
+import { Image, NativeBaseProvider, Center } from 'native-base';
 function ImageComponent() {
   return (
     <Image
@@ -98,7 +102,9 @@ function ImageComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ImageComponent />
+      <Center flex={1}>
+        <ImageComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -108,7 +114,7 @@ export default function () {
 
 ```SnackPlayer name=Image%20Example(Fallback)
 import React from 'react';
-import { Image, NativeBaseProvider } from 'native-base';
+import { Image, NativeBaseProvider, Center } from 'native-base';
 function ImageComponent () {
   return (
     <Image
@@ -128,7 +134,9 @@ function ImageComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ImageComponent />
+      <Center flex={1}>
+        <ImageComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -138,7 +146,7 @@ export default function () {
 
 ```SnackPlayer name=Image%20Example(With Ref)
 import React from 'react';
-import { Box, Image, NativeBaseProvider } from 'native-base';
+import { Box, Image, NativeBaseProvider, Center } from 'native-base';
 function ImageComponent () {
   const myRef: any = React.useRef({});
   React.useEffect(() => {
@@ -158,7 +166,9 @@ function ImageComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ImageComponent />
+      <Center flex={1}>
+        <ImageComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

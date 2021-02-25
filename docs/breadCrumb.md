@@ -23,7 +23,8 @@ import {
   Breadcrumb,
   Box,
   Heading,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 function BreadcrumbComponent () {
   return (
@@ -53,7 +54,9 @@ function BreadcrumbComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreadcrumbComponent />
+      <Center flex={1}>
+        <BreadcrumbComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -70,6 +73,7 @@ import {
   Box,
   Heading,
   NativeBaseProvider,
+  Center,
   Icon
 } from 'native-base';
 function BreadcrumbComponent () {
@@ -103,7 +107,9 @@ function BreadcrumbComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreadcrumbComponent />
+      <Center flex={1}>
+        <BreadcrumbComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -119,7 +125,8 @@ import {
   Box,
   Heading,
   Icon,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 function BreadcrumbComponent () {
   return (
@@ -149,7 +156,9 @@ function BreadcrumbComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreadcrumbComponent />
+      <Center flex={1}>
+        <BreadcrumbComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -161,7 +170,7 @@ Breadcrumb composes Box so you can pass all Box props to change the style of the
 
 ```SnackPlayer name=Breadcrumb%20Composition
 import React from 'react';
-import { NativeBaseProvider, Breadcrumb, Box, Heading, Icon } from 'native-base';
+import { NativeBaseProvider, Breadcrumb, Box, Heading, Icon, Center } from 'native-base';
 function BreadcrumbComponent () {
   return (
     <Box>
@@ -196,7 +205,9 @@ function BreadcrumbComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreadcrumbComponent />
+      <Center flex={1}>
+        <BreadcrumbComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

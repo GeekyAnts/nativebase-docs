@@ -3,7 +3,7 @@ id: hStack
 title: HStack/ Row
 ---
 
-HStack aligns items horizontally.
+The HStack aligns items horizontally.
 
 ## Implements
 
@@ -19,7 +19,7 @@ import { HStack } from 'native-base';
 
 ```SnackPlayer name=HStack%20Usage
 import React from 'react';
-import { HStack, Text, Divider, Heading, Stack, NativeBaseProvider } from 'native-base';
+import { HStack, Text, Divider, Heading, Stack, NativeBaseProvider, Center } from 'native-base';
 
 function HStackComponent () {
   return (
@@ -35,7 +35,9 @@ function HStackComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <HStackComponent />
+      <Center flex={1}>
+        <HStackComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

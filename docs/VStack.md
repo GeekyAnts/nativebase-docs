@@ -19,7 +19,7 @@ import { VStack } from 'native-base';
 
 ```SnackPlayer name=VStack%20Usage
 import React from 'react';
-import { VStack, Text, Divider, Heading, NativeBaseProvider } from 'native-base';
+import { VStack, Text, Divider, Heading, NativeBaseProvider, Center } from 'native-base';
 
 function VStackComponent () {
   return (
@@ -39,7 +39,9 @@ function VStackComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <VStackComponent />
+      <Center flex={1}>
+        <VStackComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

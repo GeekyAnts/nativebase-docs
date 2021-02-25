@@ -20,7 +20,7 @@ import { Collapse } from 'native-base';
 
 ```SnackPlayer name=Collapse%20Usage
 import React from 'react';
-import { NativeBaseProvider, Collapse, Stack, Heading, Button, Box, NativeBaseProvillapser } from 'native-base';
+import { NativeBaseProvider, Collapse, Stack, Heading, Button, Box, Center } from 'native-base';
 function CollapseComponent() {
   const [show, setShow] = React.useState(false);
   const handleToggle = () => setShow(!show);
@@ -47,7 +47,9 @@ function CollapseComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CollapseComponent />
+      <Center flex={1}>
+        <CollapseComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -57,7 +59,7 @@ export default function () {
 
 ```SnackPlayer name=Collapse%20Animation Duration
 import React from 'react';
-import { Collapse, Stack, Heading, Button, Box, NativeBaseProvider } from 'native-base';
+import { Collapse, Stack, Heading, Button, Box, NativeBaseProvider, Center } from 'native-base';
 
 function CollapseComponent () {
   const [show, setShow] = React.useState(false);
@@ -90,7 +92,9 @@ function CollapseComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CollapseComponent />
+      <Center flex={1}>
+        <CollapseComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -100,7 +104,7 @@ export default function () {
 
 ```SnackPlayer name=Collapse%20onAnimationStart & onAnimationEnd
 import React from 'react';
-import { Collapse, Stack, Heading, Button, Box, Text, NativeBaseProvider } from 'native-base';
+import { Collapse, Stack, Heading, Button, Box, Text, NativeBaseProvider, Center } from 'native-base';
 function CollapseComponent () {
   const [show, setShow] = React.useState(false);
   const handleToggle = () => setShow(!show);
@@ -145,7 +149,9 @@ function CollapseComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CollapseComponent />
+      <Center flex={1}>
+        <CollapseComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

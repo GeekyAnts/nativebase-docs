@@ -19,7 +19,7 @@ import { HStack } from 'native-base';
 
 ```SnackPlayer name=Row%20Usage
 import React from 'react';
-import { HStack, Text, Divider, Heading, Stack, NativeBaseProvider } from 'native-base';
+import { HStack, Text, Divider, Heading, Stack, NativeBaseProvider, Center } from 'native-base';
 
 function RowComponent() {
   return (
@@ -35,7 +35,9 @@ function RowComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <RowComponent />
+      <Center flex={1}>
+        <RowComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

@@ -26,7 +26,9 @@ function SkeletonComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SkeletonComponent />
+      <Center flex={1}>
+        <SkeletonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -36,7 +38,7 @@ export default function () {
 
 ```SnackPlayer name=Skeleton%20Color
 import React from 'react';
-import { NativeBaseProvider, Skeleton, VStack } from 'native-base';
+import { NativeBaseProvider, Skeleton, VStack, Center } from 'native-base';
 function SkeletonComponent () {
   return (
     <VStack space={5} width="90%">
@@ -54,7 +56,9 @@ function SkeletonComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SkeletonComponent />
+      <Center flex={1}>
+        <SkeletonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -64,7 +68,7 @@ export default function () {
 
 ```SnackPlayer name=Skeleton%20IsLoaded
 import React from 'react';
-import { NativeBaseProvider, Box, Skeleton, Stack, Text, Avatar, HStack, Image } from 'native-base';
+import { NativeBaseProvider, Box, Skeleton, Stack, Text, Avatar, HStack, Image, Center } from 'native-base';
 function Composition({ loaded }: any) {
   return (
     <Stack size={200}>
@@ -102,10 +106,12 @@ function Composition({ loaded }: any) {
 export default function () {
   return (
     <NativeBaseProvider>
-      <HStack space={10}>
-      <Composition />
-      <Composition loaded />
-    </HStack>
+      <Center flex={1}>
+        <HStack space={10}>
+          <Composition />
+          <Composition loaded />
+        </HStack>
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -115,9 +121,9 @@ export default function () {
 
 ### Skeleton
 
-| Name       | Type               | Description                       | Default |
-| ---------- | ------------------ | --------------------------------- | ------- |
-| startColor | string             | The color at the animation start. | -       |
-| endColor   | string             | The color at the animation end.   | -       |
-| variant    | circle, rect, text | Variation of Skeleton to use      | text    |
-| size       | number, string     | The size of the Skeleton          | -       |
+| Name       | Type                     | Description                       | Default |
+| ---------- | ------------------------ | --------------------------------- | ------- |
+| startColor | string                   | The color at the animation start. | -       |
+| endColor   | string                   | The color at the animation end.   | -       |
+| variant    | `circle`, `rect`, `text` | Variation of Skeleton to use      | text    |
+| size       | number, string           | The size of the Skeleton          | -       |

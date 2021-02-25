@@ -17,6 +17,7 @@ import {
   HStack,
   Heading,
   Icon,
+  Center,
   NativeBaseProvider
 } from "native-base";
 
@@ -54,6 +55,7 @@ export default function () {
   };
   return (
     <NativeBaseProvider>
+    <Center flex={1}>
     <VStack space={4} flex={1} w="90%" mt={4}>
       <Heading color="emerald.400">Todo App</Heading>
       <Input
@@ -101,6 +103,7 @@ export default function () {
         ))}
       </VStack>
     </VStack>
+    </Center>
    </NativeBaseProvider>
   );
 }

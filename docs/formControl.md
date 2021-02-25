@@ -20,7 +20,8 @@ import React from 'react';
 import {
   FormControl,
   Input,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function FormControlComponent () {
@@ -38,7 +39,9 @@ function FormControlComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormControlComponent />
+      <Center flex={1}>
+        <FormControlComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -49,7 +52,7 @@ export default function () {
 ```SnackPlayer name=FormControl%20Example(CustomStyle)
 import React from 'react';
 import {
-  FormControl, Input, Stack, Text, NativeBaseProvider
+  FormControl, Input, Stack, Text, NativeBaseProvider, Center
 } from 'native-base';
 
 function FormControlComponent () {
@@ -100,7 +103,9 @@ function FormControlComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormControlComponent />
+      <Center flex={1}>
+        <FormControlComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

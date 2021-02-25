@@ -12,7 +12,7 @@ title: Spinner
 
 ```SnackPlayer name=Spinner%20Usage
 import React from 'react';
-import { Spinner, NativeBaseProvider } from 'native-base';
+import { Spinner, NativeBaseProvider, Center } from 'native-base';
 
 function SpinnerComponent () {
   return <Spinner />;
@@ -20,7 +20,9 @@ function SpinnerComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SpinnerComponent />
+      <Center flex={1}>
+        <SpinnerComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -30,7 +32,7 @@ export default function () {
 
 ```SnackPlayer name=Spinner%20Example(colors)
 import React from 'react';
-import { Spinner, HStack, NativeBaseProvider } from 'native-base';
+import { Spinner, HStack, NativeBaseProvider,Center } from 'native-base';
 
 function SpinnerComponent () {
   return (
@@ -45,7 +47,9 @@ function SpinnerComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SpinnerComponent />
+      <Center flex={1}>
+        <SpinnerComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -55,7 +59,7 @@ export default function () {
 
 ```SnackPlayer name=Spinner%20Example(Sizes)
 import React from 'react';
-import { Spinner, HStack, NativeBaseProvider } from 'native-base';
+import { Spinner, HStack, NativeBaseProvider, Center } from 'native-base';
 
 function SpinnerComponent () {
   return (
@@ -68,7 +72,9 @@ function SpinnerComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SpinnerComponent />
+      <Center flex={1}>
+        <SpinnerComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -78,7 +84,7 @@ export default function () {
 
 ```SnackPlayer name=Spinner%20Example(Variant)
 import React from 'react';
-import { Spinner, HStack, Icon, NativeBaseProvider } from 'native-base';
+import { Spinner, HStack, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function SpinnerComponent () {
   return (
@@ -98,7 +104,9 @@ function SpinnerComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SpinnerComponent />
+      <Center flex={1}>
+        <SpinnerComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -108,7 +116,7 @@ export default function () {
 
 ```SnackPlayer name=Spinner%20Example(Duration)
 import React from 'react';
-import { Spinner, HStack, NativeBaseProvider } from 'native-base';
+import { Spinner, HStack, NativeBaseProvider, Center } from 'native-base';
 
 function SpinnerComponent () {
   return (
@@ -118,7 +126,9 @@ function SpinnerComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SpinnerComponent />
+      <Center flex={1}>
+        <SpinnerComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -126,11 +136,9 @@ export default function () {
 
 ## Props
 
-| Name    | Type                                                              | Description                                           | Default |
-| ------- | ----------------------------------------------------------------- | ----------------------------------------------------- | ------- |
-| size    | `sm` , `lg` , `small` , `large`                                   | Applies box shadow and accepts a number from 0 to 9   | -       |
-| style   | stylesheet                                                        | Applies user-defined styles and accepts a stylesheet. | -       |
-| variant | 'custom', 'dotted', 'multiColorDotted', 'stroked', 'squareDotted' | Variant of spinner to use.                            | -       |
-
-| duration | number | Time(in ms) for spinner to complete a rotation | 1900 |
-| renderProp | JSX.Element | Manual component to be rendered as a Spinner | - |
+| Name       | Type                                                              | Description                                         | Default |
+| ---------- | ----------------------------------------------------------------- | --------------------------------------------------- | ------- |
+| size       | `sm` , `lg` , `small` , `large`                                   | Applies box shadow and accepts a number from 0 to 9 | -       |
+| variant    | `custom`, `dotted`, `multiColorDotted`, `stroked`, `squareDotted` | Variant of spinner to use.                          | -       |
+| duration   | number                                                            | Time(in ms) for spinner to complete a rotation      | 1900    |
+| renderProp | JSX.Element                                                       | Manual component to be rendered as a Spinner        | -       |

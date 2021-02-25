@@ -8,14 +8,14 @@ A Typeahead component and hook that helps you in implementing Autocomplete Input
 ## Import
 
 ```jsx
-import { useTypeahead, Typeahead } from "native-base";
+import { useTypeahead, Typeahead } from 'native-base';
 ```
 
 ## Typeahead Component
 
 ```SnackPlayer name=Typeahead%20Typeahead%20Component
 import React from 'react';
-import { Typeahead, Box, Text, Icon, Heading, NativeBaseProvider } from 'native-base';
+import { Typeahead, Box, Text, Icon, Heading, NativeBaseProvider, Center } from 'native-base';
 
 let countries = [
   'Afghanistan',
@@ -55,7 +55,9 @@ export function TypeaheadUsingComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TypeaheadUsingComponent />
+      <Center flex={1}>
+        <TypeaheadUsingComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -65,7 +67,7 @@ export default function () {
 
 ```SnackPlayer name=Typeahead%20Typeahead%20Component%20with%20RenderItem
 import React from 'react';
-import { Typeahead, Box, Text, Icon, Heading, useColorMode, NativeBaseProvider } from 'native-base';
+import { Typeahead, Box, Text, Icon, Heading, useColorMode, NativeBaseProvider, Center } from 'native-base';
 
 let countries = [
   { name: 'Afghanistan', abbr: 'AFG' },
@@ -118,7 +120,9 @@ export function TypeaheadUsingComponentWithRenderItem() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TypeaheadUsingComponentWithRenderItem />
+      <Center flex={1}>
+        <TypeaheadUsingComponentWithRenderItem />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -136,7 +140,8 @@ import {
   Text,
   Icon,
   IconButton,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 import { ScrollView } from 'react-native';
 
@@ -187,9 +192,9 @@ export function TypeaheadUsingHook() {
           {...getToggleButtonProps()}
           icon={
             isOpen ? (
-              <Icon name="arrow-drop-up" type="MaterialIcons" size={12} />
+              <Icon name="arrow-drop-up" type="MaterialIcons" size={10} />
             ) : (
-              <Icon name="arrow-drop-down" type="MaterialIcons" size={12} />
+              <Icon name="arrow-drop-down" type="MaterialIcons" size={10} />
             )
           }
         />
@@ -219,7 +224,9 @@ export function TypeaheadUsingHook() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TypeaheadUsingHook />
+      <Center flex={1}>
+        <TypeaheadUsingHook />
+      </Center>
     </NativeBaseProvider>
   );
 }

@@ -19,7 +19,8 @@ import {
   NumberInputStepper,
   NumberIncrementStepper,
   NumberDecrementStepper,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function NumberInputComponent () {
@@ -36,7 +37,9 @@ function NumberInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <NumberInputComponent />
+      <Center flex={1}>
+        <NumberInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -52,7 +55,8 @@ import {
   NumberInputStepper,
   NumberIncrementStepper,
   NumberDecrementStepper,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 function NumberInputComponent () {
   return (
@@ -68,7 +72,9 @@ function NumberInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <NumberInputComponent />
+      <Center flex={1}>
+        <NumberInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -84,7 +90,8 @@ import {
   NumberInputStepper,
   NumberIncrementStepper,
   NumberDecrementStepper,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 function NumberInputComponent () {
   return (
@@ -100,7 +107,9 @@ function NumberInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <NumberInputComponent />
+      <Center flex={1}>
+        <NumberInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -116,7 +125,8 @@ import {
   NumberInputStepper,
   NumberIncrementStepper,
   NumberDecrementStepper,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 function NumberInputComponent () {
   return (
@@ -132,7 +142,9 @@ function NumberInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <NumberInputComponent />
+      <Center flex={1}>
+        <NumberInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -150,14 +162,15 @@ import {
   NumberIncrementStepper,
   NumberDecrementStepper,
   Container,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function NumberInputComponent () {
   return (
     <Container>
       <FormControl isRequired isInvalid>
-        <FormControl.Label>How many components we have</FormControl.Label>
+        <FormControl.Label>Number of components?</FormControl.Label>
         <NumberInput>
           <NumberInputField />
           <NumberInputStepper>
@@ -174,7 +187,9 @@ function NumberInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <NumberInputComponent />
+      <Center flex={1}>
+        <NumberInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

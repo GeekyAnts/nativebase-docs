@@ -19,7 +19,7 @@ import { CircularProgress, Heading, Center, NativeBaseProvider } from 'native-ba
 function CircularProgressComponent () {
   return (
     <Center>
-      <Heading>Default CircularProgress</Heading>
+      <Heading size="md">Default CircularProgress</Heading>
       <CircularProgress mt={6} value={80} />
     </Center>
   );
@@ -27,7 +27,9 @@ function CircularProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CircularProgressComponent />
+      <Center flex={1}>
+        <CircularProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -43,7 +45,7 @@ import { CircularProgress, Heading, Center, NativeBaseProvider } from 'native-ba
 function CircularProgressComponent () {
   return (
     <Center>
-      <Heading>Changing the size</Heading>
+      <Heading size="md">Changing the size</Heading>
       <CircularProgress mt={6} value={60} size={60} />
     </Center>
   );
@@ -51,7 +53,9 @@ function CircularProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CircularProgressComponent />
+      <Center flex={1}>
+        <CircularProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -67,7 +71,7 @@ import { CircularProgress, Heading, Center, NativeBaseProvider } from 'native-ba
 function CircularProgressComponent () {
   return (
     <Center>
-      <Heading>Changing the thickness</Heading>
+      <Heading size="md">Changing the thickness</Heading>
       <CircularProgress mt={6} value={30} thickness={7} />
     </Center>
   );
@@ -75,7 +79,9 @@ function CircularProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CircularProgressComponent />
+      <Center flex={1}>
+        <CircularProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -91,7 +97,7 @@ import { CircularProgress, Heading, Center, NativeBaseProvider } from 'native-ba
 function CircularProgressComponent () {
   return (
     <Center>
-      <Heading>Changing the color</Heading>
+      <Heading size="md">Changing the color</Heading>
       <CircularProgress mt={6} value={50} color="red.200" />
     </Center>
   );
@@ -99,7 +105,9 @@ function CircularProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CircularProgressComponent />
+      <Center flex={1}>
+        <CircularProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -112,13 +120,13 @@ import React from 'react';
 import {
   CircularProgress,
   Heading,
-  Center,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 function CircularProgressComponent () {
   return (
     <Center>
-      <Heading>Adding label</Heading>
+      <Heading size="md">Adding label</Heading>
       <CircularProgress mt={6} value={45} size={60} color="red.200">
         <CircularProgress.Label>45%</CircularProgress.Label>
       </CircularProgress>
@@ -128,7 +136,9 @@ function CircularProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CircularProgressComponent />
+      <Center flex={1}>
+        <CircularProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -149,7 +159,7 @@ import {
 function CircularProgressComponent () {
   return (
     <Center>
-      <Heading>Indeterminate Progress</Heading>
+      <Heading size="md">Indeterminate Progress</Heading>
       <CircularProgress mt={6} value={50} isIndeterminate color="red.200">
         <CircularProgress.Label>50%</CircularProgress.Label>
       </CircularProgress>
@@ -159,7 +169,9 @@ function CircularProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CircularProgressComponent />
+      <Center flex={1}>
+        <CircularProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -169,13 +181,13 @@ export default function () {
 
 ### CircularProgress
 
-| Name            | Type                                      | Description                                                                           | Default |
-| --------------- | ----------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
-| size            | 2xl, 3xl, 4xl, lg, md, number, sm, xl, xs | The size of circular progress.                                                        | -       |
-| max             | number                                    | Maximum value defining 100% progress made (must be higher than 'min')                 | -       |
-| min             | number                                    | Minimum value defining 'no progress' (must be lower than 'max')                       | -       |
-| value           | number                                    | Current progress (must be between min/max)                                            | -       |
-| isIndeterminate | boolean                                   | Puts the component into indeterminate state. When passed, the 'value' prop is ignored | -       |
-| thickness       | number, string                            | The thickness of the progress indicator                                               | -       |
-| trackColor      | string                                    | The color name of the progress track. Use a color key from the theme object           | -       |
-| color           | string                                    | The color of the progress indicator. Use a color key from the theme object            | -       |
+| Name            | Type                                                      | Description                                                                           | Default |
+| --------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
+| size            | `2xl`, `3xl`, `4xl`, `lg`, `md`, `sm`, `xl`, `xs`, number | The size of circular progress.                                                        | -       |
+| max             | number                                                    | Maximum value defining 100% progress made (must be higher than 'min')                 | -       |
+| min             | number                                                    | Minimum value defining 'no progress' (must be lower than 'max')                       | -       |
+| value           | number                                                    | Current progress (must be between min/max)                                            | -       |
+| isIndeterminate | boolean                                                   | Puts the component into indeterminate state. When passed, the 'value' prop is ignored | -       |
+| thickness       | number, string                                            | The thickness of the progress indicator                                               | -       |
+| trackColor      | string                                                    | The color name of the progress track. Use a color key from the theme object           | -       |
+| color           | string                                                    | The color of the progress indicator. Use a color key from the theme object            | -       |

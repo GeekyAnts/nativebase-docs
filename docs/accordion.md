@@ -17,336 +17,353 @@ import { Accordion } from 'native-base';
 
 ```SnackPlayer name=Basic
 import React from 'react';
-import { Accordion, NativeBaseProvider } from 'native-base';
+import { Accordion, NativeBaseProvider, Center } from 'native-base';
 
 function AccordionComponent() {
-	return (
-		<Accordion index={[0, 1]}>
-			<Accordion.Item>
-				<Accordion.Summary>
-					Section 1 title
-					<Accordion.Icon />
-				</Accordion.Summary>
-				<Accordion.Details>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.
-				</Accordion.Details>
-			</Accordion.Item>
-			<Accordion.Item>
-				<Accordion.Summary>
-					Section 2 title
-					<Accordion.Icon />
-				</Accordion.Summary>
-				<Accordion.Details>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.
-				</Accordion.Details>
-			</Accordion.Item>
-			<Accordion.Item>
-				<Accordion.Summary>
-					Section 3 title
-					<Accordion.Icon />
-				</Accordion.Summary>
-				<Accordion.Details>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.
-				</Accordion.Details>
-			</Accordion.Item>
-		</Accordion>
-	);
+  return (
+    <Accordion index={[0, 1]}>
+      <Accordion.Item>
+        <Accordion.Summary>
+          Section 1 title
+          <Accordion.Icon />
+        </Accordion.Summary>
+        <Accordion.Details>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </Accordion.Details>
+      </Accordion.Item>
+      <Accordion.Item>
+        <Accordion.Summary>
+          Section 2 title
+          <Accordion.Icon />
+        </Accordion.Summary>
+        <Accordion.Details>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </Accordion.Details>
+      </Accordion.Item>
+      <Accordion.Item>
+        <Accordion.Summary>
+          Section 3 title
+          <Accordion.Icon />
+        </Accordion.Summary>
+        <Accordion.Details>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </Accordion.Details>
+      </Accordion.Item>
+    </Accordion>
+  );
 }
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<AccordionComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <AccordionComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
 }
+
 ```
 
 ## Multiple
 
 ```SnackPlayer name=Multilple
 import React from 'react';
-import { Accordion, Box, NativeBaseProvider } from 'native-base';
+import { Accordion, Box, NativeBaseProvider, Center } from 'native-base';
 
 function AccordionComponent() {
-	return (
-		<Box m={3}>
-			<Accordion allowMultiple>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box>Section 1 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box>Section 2 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box>Section 3 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-			</Accordion>
-		</Box>
-	);
+  return (
+    <Box m={3}>
+      <Accordion allowMultiple>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box>Section 1 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box>Section 2 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box>Section 3 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+      </Accordion>
+    </Box>
+  );
 }
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<AccordionComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <AccordionComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
 }
+
 ```
 
 ## Default Index
 
 ```SnackPlayer name=DefaultIndex
 import React from 'react';
-import { Accordion, Box, NativeBaseProvider } from 'native-base';
+import { Accordion, Box, NativeBaseProvider, Center } from 'native-base';
 
 function AccordionComponent() {
-	return (
-		<Box m={3}>
-			<Accordion allowMultiple defaultIndex={[0, 2]}>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box>Section 1 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box>Section 2 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box>Section 3 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-			</Accordion>
-		</Box>
-	);
+  return (
+    <Box m={3}>
+      <Accordion allowMultiple defaultIndex={[0, 2]}>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box>Section 1 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box>Section 2 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box>Section 3 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+      </Accordion>
+    </Box>
+  );
 }
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<AccordionComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+       <AccordionComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
 }
+
 ```
 
 ## Toggle
 
 ```SnackPlayer name=Toggle
 import React from 'react';
-import { Accordion, Box, NativeBaseProvider } from 'native-base';
+import { Accordion, Box, NativeBaseProvider, Center } from 'native-base';
 
 function AccordionComponent() {
-	return (
-		<Box m={3}>
-			<Accordion allowToggle defaultIndex={[2]}>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box>Section 1 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box>Section 2 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box>Section 3 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-			</Accordion>
-		</Box>
-	);
+  return (
+    <Box m={3}>
+      <Accordion allowToggle defaultIndex={[2]}>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box>Section 1 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box>Section 2 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box>Section 3 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+      </Accordion>
+    </Box>
+  );
 }
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<AccordionComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <AccordionComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
 }
+
 ```
 
 ## Expanded Style
 
 ```SnackPlayer name=Style
 import React from 'react';
-import { Accordion, Box, NativeBaseProvider } from 'native-base';
+import { Accordion, Box, NativeBaseProvider, Center } from 'native-base';
 
 function AccordionComponent() {
-	return (
-		<Box m={3}>
-			<Accordion allowMultiple>
-				<Accordion.Item>
-					<Accordion.Summary _expanded={{ backgroundColor: 'orange.300' }}>
-						<Box>Click me to see a different style</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-				<Accordion.Item id={9} isDisabled>
-					<Accordion.Summary _disabled={{ backgroundColor: 'gray.300' }}>
-						<Box>I'm Disabled 😢</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
-			</Accordion>
-		</Box>
-	);
+  return (
+    <Box m={3}>
+      <Accordion allowMultiple>
+        <Accordion.Item>
+          <Accordion.Summary _expanded={{backgroundColor: 'orange.300'}}>
+            <Box>Click me to see a different style</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+        <Accordion.Item id={9} isDisabled>
+          <Accordion.Summary _disabled={{backgroundColor: 'gray.300'}}>
+            <Box>I'm Disabled 😢</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+      </Accordion>
+    </Box>
+  );
 }
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<AccordionComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <AccordionComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
 }
+
 ```
 
 ## Accessing Internal State
 
 ```SnackPlayer name=InternalState
 import React from 'react';
-import { Accordion, Box, NativeBaseProvider } from 'native-base';
+import { Accordion, Box, NativeBaseProvider, Center } from 'native-base';
 
 function AccordionComponent() {
-	return (
-		<Box m={3}>
-			<Accordion allowMultiple defaultIndex={[1]}>
-				<Accordion.Item>
-					<Accordion.Summary>
-						<Box textAlign='left'>Section 1 title</Box>
-						<Accordion.Icon />
-					</Accordion.Summary>
-					<Accordion.Details>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.
-					</Accordion.Details>
-				</Accordion.Item>
+  return (
+    <Box m={3}>
+      <Accordion allowMultiple defaultIndex={[1]}>
+        <Accordion.Item>
+          <Accordion.Summary>
+            <Box textAlign="left">Section 1 title</Box>
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
 
-				<Accordion.Item>
-					{({ isExpanded }: any) => (
-						<>
-							<Accordion.Summary>
-								<Box textAlign='left'>{isExpanded ? 'Fire' : 'Snow'}</Box>
-								{isExpanded ? (
-									<Icon name='fire' type='MaterialCommunityIcons' />
-								) : (
-									<Icon name='snowflake' type='MaterialCommunityIcons' />
-								)}
-							</Accordion.Summary>
-							<Accordion.Details>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								nisi ut aliquip ex ea commodo consequat.
-							</Accordion.Details>
-						</>
-					)}
-				</Accordion.Item>
-			</Accordion>
-		</Box>
-	);
+        <Accordion.Item>
+          {({isExpanded}: any) => (
+            <>
+              <Accordion.Summary>
+                <Box textAlign="left">{isExpanded ? 'Fire' : 'Snow'}</Box>
+                {isExpanded ? (
+                  <Icon name="fire" type="MaterialCommunityIcons" />
+                ) : (
+                  <Icon name="snowflake" type="MaterialCommunityIcons" />
+                )}
+              </Accordion.Summary>
+              <Accordion.Details>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </Accordion.Details>
+            </>
+          )}
+        </Accordion.Item>
+      </Accordion>
+    </Box>
+  );
 }
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<AccordionComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <AccordionComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
 }
 ```
 
@@ -369,14 +386,14 @@ export default function () {
 | id         | string  | A unique id for the accordion item.             | -       |
 | isDisabled | boolean | If true, the accordion header will be disabled. | -       |
 
-## Accordion.Summary props
+### Accordion.Summary
 
 **Accrodion.Summary** renders a button and composes **Box**. All the **Box** props can be passed to **Accrodion.Summary** and you can style it by passing pseudo style props like `_expanded`, `_disabled`, `_hover`, etc.
 
-## Accordion.Details props
+### Accordion.Details
 
 **AccordionDetails** renders a **Box** and composes **Collapse** to provide height animation.
 
-## Accordion.Icon props
+### Accordion.Icon
 
 **AccordionIcon** renders an Icon and composes **Icon**.

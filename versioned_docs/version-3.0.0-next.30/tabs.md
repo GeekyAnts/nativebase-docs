@@ -23,7 +23,7 @@ import { Tabs } from 'native-base';
 
 ```SnackPlayer name=Tab%20Usage
 import React from 'react';
-import { Tabs, NativeBaseProvider } from 'native-base';
+import { Tabs, NativeBaseProvider, Center } from 'native-base';
 
 function TabComponent() {
   return (
@@ -44,7 +44,9 @@ function TabComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TabComponent />
+      <Center flex={1}>
+        <TabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -59,7 +61,8 @@ import {
   Heading,
   Tabs,
   Text,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function TabComponent() {
@@ -85,7 +88,9 @@ function TabComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TabComponent />
+      <Center flex={1}>
+        <TabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -95,7 +100,7 @@ export default function () {
 
 ```SnackPlayer name=Tab%20Variant
 import React from 'react';
-import { VStack, Tabs, NativeBaseProvider } from 'native-base';
+import { VStack, Tabs, NativeBaseProvider, Center } from 'native-base';
 
 function TabComponent() {
   return (
@@ -166,7 +171,9 @@ function TabComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TabComponent />
+      <Center flex={1}>
+        <TabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -176,7 +183,7 @@ export default function () {
 
 ```SnackPlayer name=Tab%20TabsAlignment
 import React from 'react';
-import { VStack, Tabs, NativeBaseProvider } from 'native-base';
+import { VStack, Tabs, NativeBaseProvider, Center } from 'native-base';
 
 function TabComponent() {
   return (
@@ -223,7 +230,9 @@ function TabComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TabComponent />
+      <Center flex={1}>
+        <TabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -233,7 +242,7 @@ export default function () {
 
 ```SnackPlayer name=Tab%20Colors
 import React from 'react';
-import { VStack, Tabs, NativeBaseProvider } from 'native-base';
+import { VStack, Tabs, NativeBaseProvider, Center } from 'native-base';
 
 function TabComponent() {
   return (
@@ -304,7 +313,9 @@ function TabComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TabComponent />
+      <Center flex={1}>
+        <TabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -314,7 +325,7 @@ export default function () {
 
 ```SnackPlayer name=Tab%20Sizes
 import React from 'react';
-import { VStack, Tabs, NativeBaseProvider} from 'native-base';
+import { VStack, Tabs, NativeBaseProvider, Center} from 'native-base';
 
 function TabComponent() {
   return (
@@ -364,7 +375,9 @@ function TabComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TabComponent />
+      <Center flex={1}>
+        <TabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -374,7 +387,7 @@ export default function () {
 
 ```SnackPlayer name=Tab%20FittedTabs
 import React from 'react';
-import { Box, Tabs, NativeBaseProvider } from 'native-base';
+import { Box, Tabs, NativeBaseProvider, Center } from 'native-base';
 
 function TabComponent() {
   return (
@@ -397,7 +410,9 @@ function TabComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TabComponent />
+      <Center flex={1}>
+        <TabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -407,7 +422,7 @@ export default function () {
 
 ```SnackPlayer name=Tab%20TabBarOnly
 import React from 'react';
-import { Tabs, NativeBaseProvider } from 'native-base';
+import { Tabs, NativeBaseProvider, Center } from 'native-base';
 
 function TabComponent() {
   return (
@@ -424,7 +439,9 @@ function TabComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TabComponent />
+      <Center flex={1}>
+        <TabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -436,15 +453,15 @@ Implement `Box`, all props of Box can be passed.
 
 ### Tabs
 
-| Name         | Type                                                                     | Description                                                                                                       | Default |
-| ------------ | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| align        | center, end, start                                                       | The alignments of the tab.                                                                                        | start   |
-| colorScheme  | string                                                                   | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | -       |
-| defaultIndex | number                                                                   | The index of the open tab.                                                                                        | -       |
-| index        | number                                                                   | If given, update the default open tab.                                                                            | 0       |
-| size         | lg, md, sm                                                               | The size of the tab.                                                                                              | md      |
-| isFitted     | boolean                                                                  | The tabs will spread in the TabBar.                                                                               | -       |
-| onChange     | function                                                                 | The callback invoked when tab is changed.                                                                         | -       |
-| variant      | enclosed, enclosed-colored, line, soft-rounded, solid-box, solid-rounded | The variant of the tabs style to use.                                                                             | line    |
+| Name         | Type                                                                                 | Description                                                                                                       | Default |
+| ------------ | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| align        | `center`, `end`, `start`                                                             | The alignments of the tab.                                                                                        | `start` |
+| colorScheme  | string                                                                               | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | -       |
+| defaultIndex | number                                                                               | The index of the open tab.                                                                                        | -       |
+| index        | number                                                                               | If given, update the default open tab.                                                                            | 0       |
+| size         | `lg`, `md`, `sm`                                                                     | The size of the tab.                                                                                              | `md`    |
+| isFitted     | boolean                                                                              | The tabs will spread in the TabBar.                                                                               | -       |
+| onChange     | function                                                                             | The callback invoked when tab is changed.                                                                         | -       |
+| variant      | `enclosed`, `enclosed-colored`, `line`, `soft-rounded`, `solid-box`, `solid-rounded` | The variant of the tabs style to use.                                                                             | line    |
 
 Tabs.Bar, Tabs.Tab, Tabs.Views, Tabs.View all implement [`Box`](box.md), all the props of Box can be passed to it.

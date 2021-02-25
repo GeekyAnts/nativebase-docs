@@ -21,7 +21,7 @@ import { Heading } from 'native-base';
 
 ```SnackPlayer name=Heading%20Example
 import React from 'react';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, NativeBaseProvider, Center } from 'native-base';
 
 function HeadingComponent () {
   return <Heading> I'm a Heading</Heading>;
@@ -29,7 +29,9 @@ function HeadingComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <HeadingComponent />
+      <Center flex={1}>
+        <HeadingComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -39,7 +41,7 @@ export default function () {
 
 ```SnackPlayer name=Heading%20Example(Sizes)
 import React from 'react';
-import { Heading, VStack, NativeBaseProvider } from 'native-base';
+import { Heading, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function HeadingComponent () {
   return (
@@ -56,7 +58,9 @@ function HeadingComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <HeadingComponent />
+      <Center flex={1}>
+        <HeadingComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -66,7 +70,7 @@ export default function () {
 
 ```SnackPlayer name=Heading%20Example(Truncate)
 import React from 'react';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, NativeBaseProvider, Center } from 'native-base';
 
 function HeadingComponent () {
   return (
@@ -78,7 +82,9 @@ function HeadingComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <HeadingComponent />
+      <Center flex={1}>
+        <HeadingComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -88,7 +94,7 @@ export default function () {
 
 ```SnackPlayer name=Heading%20Example(Overriden)
 import React from 'react';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, NativeBaseProvider, Center } from 'native-base';
 
 function HeadingComponent () {
   return (
@@ -100,7 +106,9 @@ function HeadingComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <HeadingComponent />
+      <Center flex={1}>
+        <HeadingComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -110,7 +118,7 @@ export default function () {
 
 ```SnackPlayer name=Heading%20Example(Composition)
 import React from 'react';
-import { Box, Text, Button, Heading, NativeBaseProvider } from 'native-base';
+import { Box, Text, Button, Heading, NativeBaseProvider, Center } from 'native-base';
 
 function HeadingComponent () {
   return (
@@ -129,7 +137,9 @@ function HeadingComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <HeadingComponent />
+      <Center flex={1}>
+        <HeadingComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -139,6 +149,6 @@ export default function () {
 
 ### Heading
 
-| Name | Type                    | Description              | Default |
-| ---- | ----------------------- | ------------------------ | ------- |
-| size | 2xl, lg, md, sm, xl, xs | The size of the heading. | xl      |
+| Name | Type                                | Description              | Default |
+| ---- | ----------------------------------- | ------------------------ | ------- |
+| size | `xs`, `sm`, `md`, `lg`, `xl`,`2xl`, | The size of the heading. | `xl`    |

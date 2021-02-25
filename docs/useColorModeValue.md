@@ -15,7 +15,7 @@ import { useColorModeValue } from 'native-base';
 
 ```SnackPlayer name=useColorModeValue
 import React from 'react';
-import { NativeBaseProvider, useColorModeValue, Text } from 'native-base';
+import { NativeBaseProvider, useColorModeValue, Text, Center } from 'native-base';
 
 const UseColorModeValue = () => (
   <Text fontSize='lg'>
@@ -28,7 +28,9 @@ const UseColorModeValue = () => (
 export default function () {
   return (
     <NativeBaseProvider>
-      <UseColorModeValue />
+      <Center flex={1}>
+        <UseColorModeValue />
+      </Center>
     </NativeBaseProvider>
   );
 }

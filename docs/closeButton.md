@@ -15,14 +15,17 @@ import { CloseButton } from 'native-base';
 
 ```SnackPlayer name=CloseButton%20Example
 import React from 'react';
-import { CloseButton, NativeBaseProvider } from 'native-base';
+import { CloseButton, NativeBaseProvider, Center } from 'native-base';
 function CloseButtonComponent () {
   return <CloseButton />;
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CloseButtonComponent />
+      <Center flex={1}>
+        <CloseButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -32,7 +35,7 @@ export default function () {
 
 ```SnackPlayer name=CloseButton%20Example(Sizes)
 import React from 'react';
-import { CloseButton, HStack, NativeBaseProvider } from 'native-base';
+import { CloseButton, HStack, NativeBaseProvider, Center } from 'native-base';
 function CloseButtonComponent () {
   return (
     <HStack space="md">
@@ -42,10 +45,13 @@ function CloseButtonComponent () {
     </HStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CloseButtonComponent />
+      <Center flex={1}>
+        <CloseButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

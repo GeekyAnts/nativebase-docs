@@ -25,7 +25,8 @@ import React from 'react';
 import {
   Popover,
   Button,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function PopoverComponent () {
@@ -45,7 +46,9 @@ function PopoverComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PopoverComponent />
+      <Center flex={1}>
+        <PopoverComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -58,7 +61,8 @@ import React from 'react';
 import {
   Popover,
   Button,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function PopoverComponent () {
@@ -78,7 +82,9 @@ function PopoverComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PopoverComponent />
+      <Center flex={1}>
+        <PopoverComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -92,7 +98,8 @@ import {
   Popover,
   Button,
   Input,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function PopoverComponent () {
@@ -124,27 +131,29 @@ function PopoverComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PopoverComponent />
+      <Center flex={1}>
+        <PopoverComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
 ```
 
-> You can pass custom backgroundColor using bg or backgroundColor, borderColor and borderWidth to Popover.
+> You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColor` and `borderWidth` to Popover.
 
 ## Props
 
 ### Popover
 
-| Name            | Type                                     | Description                                                               | Default |
-| --------------- | ---------------------------------------- | ------------------------------------------------------------------------- | ------- |
-| onOpen          | function                                 | Callback fired when the popover opens.                                    | -       |
-| onClose         | function                                 | Callback fired when the popover closes.                                   | -       |
-| initialFocusRef | React.Ref                                | The ref of the element that should receive focus when the popover opens.  | -       |
-| finalFocusRef   | React.Ref                                | The ref of the element that should receive focus when the popover closes. | -       |
-| closeOnBlur     | boolean                                  | If true, the popover will close when you blur it out by pressing outside. | -       |
-| id              | string                                   | The top-level id to use for the Popover and it's sub-components.          | -       |
-| size            | full, lg, md, number, sm, string, xl, xs | Size of the Popover component.                                            | -       |
+| Name            | Type                                             | Description                                                               | Default |
+| --------------- | ------------------------------------------------ | ------------------------------------------------------------------------- | ------- |
+| onOpen          | function                                         | Callback fired when the popover opens.                                    | -       |
+| onClose         | function                                         | Callback fired when the popover closes.                                   | -       |
+| initialFocusRef | React.Ref                                        | The ref of the element that should receive focus when the popover opens.  | -       |
+| finalFocusRef   | React.Ref                                        | The ref of the element that should receive focus when the popover closes. | -       |
+| closeOnBlur     | boolean                                          | If true, the popover will close when you blur it out by pressing outside. | -       |
+| id              | string                                           | The top-level id to use for the Popover and it's sub-components.          | -       |
+| size            | `xs`, `sm`,`md`,`lg`,`xl`,`full`, number, string | Size of the Popover component.                                            | -       |
 
 `Popover.Content` composes `Box` and has the ability to smartly position itself.
 

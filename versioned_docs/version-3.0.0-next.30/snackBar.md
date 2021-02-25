@@ -15,7 +15,7 @@ import { Snackbar } from 'native-base';
 
 ```SnackPlayer name=SnackBar%20Usage
 import React from 'react';
-import { Snackbar, VStack, Alert, AlertIcon, Text, Box, NativeBaseProvider } from 'native-base';
+import { Snackbar, VStack, Alert, AlertIcon, Text, Box, NativeBaseProvider, Center } from 'native-base';
 function SnackbarExample () {
   return (
     <>
@@ -46,7 +46,9 @@ function SnackbarExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SnackbarExample />
+      <Center flex={1}>
+        <SnackbarExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -63,7 +65,8 @@ import {
   AlertDescription,
   useSnackbar,
   VStack,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 function SnackbarExample () {
   const { setSnackbar } = useSnackbar();
@@ -101,7 +104,9 @@ function SnackbarExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SnackbarExample />
+      <Center flex={1}>
+        <SnackbarExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
