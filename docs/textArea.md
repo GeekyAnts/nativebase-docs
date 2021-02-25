@@ -76,7 +76,7 @@ import React from 'react';
 import { TextArea, Heading, Center, Text, Stack, NativeBaseProvider } from 'native-base';
 
 function TextAreaComponent () {
-  const Sizes: any = ['xsm', 'sm', 'md', 'lg', 'xl', '2xl'];
+	const Sizes: any = ['xs', 'sm', 'md', 'lg', 'xl', '2xl'];
   return (
     <Stack space={4}>
       <Center>
@@ -86,7 +86,9 @@ function TextAreaComponent () {
         <Text>TextArea with different font sizes</Text>
       </Center>
       {Sizes.map((value: string) => {
-        return <TextArea w="90%" inputSize={value} placeholder={value} />;
+        return (
+          <TextArea key={value} w="90%" size={value} placeholder={value} />
+        );
       })}
     </Stack>
   );
