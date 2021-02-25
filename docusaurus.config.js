@@ -17,6 +17,7 @@ module.exports = {
   favicon: 'img/native-base-icon.png',
   organizationName: 'nativebase', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
+  plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
     hideableSidebar: true,
     respectPrefersColorScheme: true,
@@ -30,31 +31,52 @@ module.exports = {
         alt: 'NativeBase Logo',
         src: 'img/native-base-icon.png',
       },
+
       // style: "dark",
       items: [
-        {
-          to: 'docs/nativebase',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'right',
-        },
-        { to: 'docs/faq', label: 'FAQ', position: 'right' },
         { type: 'docsVersionDropdown', position: 'left' },
         {
-          href: 'https://github.com/GeekyAnts/nativebase',
-          label: 'GitHub',
+          to: 'https://market.nativebase.io/',
+          label: 'Market',
           position: 'right',
+          'aria-label': 'Market',
         },
         {
-          href:
+          to:
             'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
-          label: 'Hire The Creators',
+          label: 'Hire Us',
           position: 'right',
+          'aria-label': 'Hire GeekyAnts',
+        },
+        {
+          to: 'https://github.com/GeekyAnts/nativebase',
+          label: 'GitHub',
+          position: 'right',
+          'aria-label': 'GitHub',
+        },
+        {
+          to: 'https://discord.com/invite/TSgCw2UPmb',
+          label: 'Discord',
+          position: 'right',
+          'aria-label': 'Discord',
+        },
+        {
+          // to: 'docs/nativebase',
+          label: 'Theme',
+          position: 'right',
+          'aria-label': 'Theme',
+        },
+        {
+          to: '/docs/nativebase',
+          // activeBasePath: "docs",
+          label: 'Docs',
+          position: 'right',
+          'aria-label': 'Docs',
         },
       ],
     },
     footer: {
-      style: 'dark',
+      // style: 'dark',
       links: [
         {
           title: 'Docs',
@@ -102,16 +124,16 @@ module.exports = {
               href:
                 'https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md',
             },
-            // {
-            //   label: "Stars",
-            //   href: "https://github.com/GeekyAnts/NativeBase",
-            //   // className: "github-button",
-            //   dataIcon: "octicon-star",
-            //   dataCountHref: "https://github.com/GeekyAnts/NativeBase",
-            //   dataShowCount: "true",
-            //   dataCountAriaLabel: "# stargazers on GitHub",
-            //   ariaLabel: "Star this project on GitHub",
-            // },
+            {
+              label: 'Stars',
+              href: 'https://github.com/GeekyAnts/NativeBase',
+              // className: "github-button",
+              dataIcon: 'octicon-star',
+              dataCountHref: 'https://github.com/GeekyAnts/NativeBase',
+              dataShowCount: 'true',
+              dataCountAriaLabel: '# stargazers on GitHub',
+              'aria-label': 'Star this project on GitHub',
+            },
           ],
         },
         {
@@ -135,15 +157,13 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/nativebase/website/main',
           remarkPlugins: [require('./remark-snackplayer')],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl: 'https://github.com/nativebase/website/main',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css')],

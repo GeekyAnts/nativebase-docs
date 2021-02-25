@@ -4,6 +4,7 @@
   "tslint.enable": true,
   "tslint.autoFixOnSave": true,
   "flow.enabled": false,
+  "editor.indent_"
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.formatOnSave": true,
