@@ -1,68 +1,69 @@
 /* stylelint-disable docusaurus/copyright-header */
 
+
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
 
 .justifyCenter {
-  justify-content: center;
+    justify-content: center;
 }
 
 .alignCenter {
-  align-items: center;
+    align-items: center;
 }
 
 .displayFlex {
-  display: flex;
+    display: flex;
 }
 
 .textAlignCenter {
-  text-align: center;
+    text-align: center;
 }
 
 .marginVerticalAuto {
-  margin-top: auto;
-  margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .mainBanner {
-  padding: 6rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background-color: #3e3a6f;
-  color: white;
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #3e3a6f;
+    color: white;
 }
 
 .image {
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
 }
 
 @media screen and (max-width: 966px) {
-  .mainBanner {
-    padding: 4rem;
-  }
+    .mainBanner {
+        padding: 4rem;
+    }
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
 }
 
 .sizeSmall {
-  font-size: small;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  background: white;
+    font-size: small;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background: white;
 }
 
 .features {
-  display: flex;
-  align-items: center;
-  padding: 8rem 0;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8rem 0;
+    width: 100%;
 }

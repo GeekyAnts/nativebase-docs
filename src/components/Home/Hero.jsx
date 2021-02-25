@@ -25,9 +25,9 @@ export function Hero() {
         >
           <defs>
             <linearGradient x1="1" y1=".5" x2="0" y2="1" id="illustration-01">
-              <stop stopColor="#6186F4" offset="0%" />
+              <stop stopColor="#10b981" offset="0%" />
               {/* <stop stopColor='#6186F4' offset='77.402%' /> */}
-              <stop stopColor="#6246E4" offset="100%" />
+              <stop stopColor="#6186F4" offset="100%" />
             </linearGradient>
           </defs>
           <g fill="url(#illustration-01)" fillRule="evenodd">
@@ -47,7 +47,7 @@ export function Hero() {
               data-aos="zoom-y-out"
             >
               A complete <br /> component library for <br /> the{' '}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-blue-400">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-indigo-400">
                 React Ecosystem
               </span>
             </h1>

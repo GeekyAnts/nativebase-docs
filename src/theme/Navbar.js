@@ -120,8 +120,8 @@ function Navbar() {
                     href={item.to}
                     className={`${
                       isDarkTheme
-                        ? 'bg-gray-50 text-black'
-                        : 'bg-gray-900 text-white '
+                        ? 'bg-primary-500 text-black'
+                        : 'bg-primary-500 text-white '
                     } py-2 px-4 border-0 ml-4 rounded hidden md:inline-block navbar__item navbar__link`}
                   >
                     Get Started
