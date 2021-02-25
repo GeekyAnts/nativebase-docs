@@ -26,7 +26,7 @@ module.exports = {
       indexName: 'nativebase-v3',
     },
     navbar: {
-      title: 'NativeBase 3.0',
+      title: 'NativeBase 3.0 (alpha)',
       logo: {
         alt: 'NativeBase Logo',
         src: 'img/native-base-icon.png',
