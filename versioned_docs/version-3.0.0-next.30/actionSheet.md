@@ -23,12 +23,7 @@ import { Actionsheet } from 'native-base';
 
 ```SnackPlayer name=ActionSheet%20Usage
 import React from "react";
-import {
-  Button,
-  Actionsheet,
-  useDisclose,
-  NativeBaseProvider,
-} from "native-base";
+import { Button, Actionsheet, useDisclose, NativeBaseProvider, Center } from "native-base";
 function ActionSheetComponent() {
   const { isOpen, onOpen, onClose } = useDisclose();
   return (
@@ -51,7 +46,9 @@ function ActionSheetComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ActionSheetComponent />
+      <Center flex={1}>
+        <ActionSheetComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -61,20 +58,13 @@ export default function () {
 
 ```SnackPlayer name=ActionSheet%20Composition
 import React from "react";
-import {
-  Button,
-  Divider,
-  Actionsheet,
-  useDisclose,
-  NativeBaseProvider,
-} from "native-base";
+import { Button, Divider, Actionsheet, useDisclose, NativeBaseProvider, Center } from "native-base";
 
 function ActionSheetComponent() {
   const { isOpen, onOpen, onClose } = useDisclose();
   return (
     <>
       <Button onPress={onOpen}>Actionsheet</Button>
-
       <Actionsheet isOpen={isOpen} onClose={onClose}>
         <Actionsheet.Content>
           <Actionsheet.Header>Header</Actionsheet.Header>
@@ -94,7 +84,9 @@ function ActionSheetComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ActionSheetComponent />
+      <Center flex={1}>
+        <ActionSheetComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -104,12 +96,7 @@ export default function () {
 
 ```SnackPlayer name=ActionSheet%20DisplayOverlay
 import React from "react";
-import {
-  Button,
-  Actionsheet,
-  useDisclose,
-  NativeBaseProvider,
-} from "native-base";
+import { Button, Actionsheet, useDisclose, NativeBaseProvider, Center } from "native-base";
 
 function ActionSheetComponent() {
   const { isOpen, onOpen, onClose } = useDisclose();
@@ -134,7 +121,9 @@ function ActionSheetComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ActionSheetComponent />
+      <Center flex={1}>
+        <ActionSheetComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

@@ -22,7 +22,7 @@ import { Alert } from 'native-base';
 
 ```SnackPlayer name=Alert%20Basic
 import React from "react";
-import { Alert, CloseButton, Box, NativeBaseProvider } from "native-base";
+import { Alert, CloseButton, Box, NativeBaseProvider, Center } from "native-base";
 function AlertComponent() {
 	return (
     <Box mx={3}>
@@ -39,7 +39,9 @@ function AlertComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AlertComponent />
+      <Center flex={1}>
+        <AlertComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -49,7 +51,7 @@ export default function () {
 
 ```SnackPlayer name=Alert%20Status
 import React from "react";
-import { Stack, Alert, HStack, NativeBaseProvider } from "native-base";
+import { Stack, Alert, HStack, NativeBaseProvider, Center } from "native-base";
 
 function AlertComponent() {
 	return (
@@ -80,7 +82,9 @@ function AlertComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AlertComponent />
+      <Center flex={1}>
+        <AlertComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -90,7 +94,7 @@ export default function () {
 
 ```SnackPlayer name=Alert%20Variant
 import React from "react";
-import { Alert, Stack, NativeBaseProvider } from "native-base";
+import { Alert, Stack, NativeBaseProvider, Center } from "native-base";
 
 function AlertComponent() {
 	return (
@@ -125,7 +129,9 @@ function AlertComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AlertComponent />
+      <Center flex={1}>
+        <AlertComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -135,7 +141,7 @@ export default function () {
 
 ```SnackPlayer name=Alert%20Composition
 import React from "react";
-import { Alert, CloseButton, Box, VStack, NativeBaseProvider } from "native-base";
+import { Alert, CloseButton, Box, VStack, NativeBaseProvider, Center } from "native-base";
 
 function AlertComponent() {
 	return (
@@ -201,7 +207,9 @@ function AlertComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AlertComponent />
+      <Center flex={1}>
+        <AlertComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -211,7 +219,7 @@ export default function () {
 
 ```SnackPlayer name=Alert%20Basic
 import React from "react";
-import { Alert, CloseButton, Collapse, Button, NativeBaseProvider } from "native-base";
+import { Alert, CloseButton, Collapse, Button, NativeBaseProvider, Center } from "native-base";
 function AlertComponent() {
 	const [show, setShow] = React.useState(true);
   const handleToggle = (val: boolean) => setShow(val);
@@ -239,7 +247,9 @@ function AlertComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AlertComponent />
+      <Center flex={1}>
+        <AlertComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

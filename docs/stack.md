@@ -14,20 +14,22 @@ Stack aligns items vertically.
 
 ```SnackPlayer name=Stack%20Example
 import React from "react";
-import { Stack, Box, NativeBaseProvider } from "native-base";
+import { Stack, Box, NativeBaseProvider, Center } from "native-base";
 function StackComponent() {
   return (
     <Stack space={3} mb={3}>
-      <Box borderRadius={4} height={70} shadow={1} bg="red.400" />
-      <Box borderRadius={4} shadow={1} height={70} bg="purple.500" />
-      <Box borderRadius={4} shadow={1} height={70} bg="yellow.300" />
+      <Box borderRadius={4} size={10} bg="red.400" />
+      <Box borderRadius={4} size={10} bg="purple.500" />
+      <Box borderRadius={4} size={10} bg="yellow.300" />
     </Stack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <StackComponent />
+      <Center flex={1}>
+        <StackComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

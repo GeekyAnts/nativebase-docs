@@ -16,7 +16,7 @@ AlertDialog component is used to interrupt the user with a mandatory confirmatio
 - `AlertDialog.CloseButton`: The button that closes the dialog.
 
 ```jsx
-import { AlertDialog } from "native-base";
+import { AlertDialog } from 'native-base';
 ```
 
 ## Basic
@@ -24,6 +24,7 @@ import { AlertDialog } from "native-base";
 ```SnackPlayer name=AlertDialog%20Basic
 import React from "react";
 import { AlertDialog, Button, Center, NativeBaseProvider } from "native-base";
+
 
 function AlertDialogComponent() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -65,7 +66,9 @@ function AlertDialogComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AlertDialogComponent />
+      <Center flex={1}>
+        <AlertDialogComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -116,7 +119,9 @@ function AlertDialogComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AlertDialogComponent />
+      <Center flex={1}>
+        <AlertDialogComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

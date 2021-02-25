@@ -14,20 +14,22 @@ import { ZStack } from 'native-base';
 
 ```SnackPlayer name=ZStack%20Usage
 import React from "react";
-import { ZStack, Box, NativeBaseProvider } from "native-base";
+import { ZStack, Box, NativeBaseProvider, Center } from "native-base";
 
 function ZStackComponent() {
   return (
     <ZStack alignItems="center">
-      <Box p={16} bg="black" />
-      <Box p={10} bg="red.200" />
+      <Box size={20} bg="black" />
+      <Box size={10} bg="red.200" />
     </ZStack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <ZStackComponent />
+      <Center flex={1}>
+        <ZStackComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -35,38 +37,32 @@ export default function () {
 
 You can pass `alignItems="center"` `justifyContent="center"` to vertically and horizontally center the children.
 
-```SnackPlayer name=ZStack%20Usage1
+```SnackPlayer name=ZStack%20Center
 import React from "react";
-import { ZStack, Box, Text, NativeBaseProvider } from "native-base";
+import { ZStack, Box, Text, NativeBaseProvider, Center } from "native-base";
 
 function ZStackComponent() {
   return (
-    <Box px={8}>
-      <ZStack alignItems="center" justifyContent="center" height="50%">
-        <Box p={24} bg="blue.500" />
-        <Box p={16} bg="black" />
-        <Box p={10} bg="red.200" />
+      <ZStack alignItems="center" justifyContent="center">
+        <Box size={24} bg="blue.500" />
+        <Box size={16} bg="emerald.500" />
+        <Box size={10} bg="indigo.300" />
         <Text>Not Inside</Text>
       </ZStack>
-      <Text lineHeight={8} letterSpacing={1.2} textAlign="center">
-        Pass alignItems="center" and justifyContent="center" to ZStack to
-        achieve this structure
-      </Text>
-    </Box>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <ZStackComponent />
+      <Center flex={1}>
+        <ZStackComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
 ```
 
 ## Props
-
-### ZStack
 
 | Name     | Type    | Description                          | Default |
 | -------- | ------- | ------------------------------------ | ------- |

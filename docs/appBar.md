@@ -16,11 +16,12 @@ import {
   Text,
   VStack,
   NativeBaseProvider,
+  Center
 } from "native-base";
 
 function AppBarComponent() {
   return (
-    <AppBar shadow={1} height={80}>
+    <AppBar>
       <AppBar.Left>
         <IconButton
           accessibilityLabel="Navigate back"
@@ -57,7 +58,9 @@ function AppBarComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AppBarComponent />
+      <Center flex={1}>
+        <AppBarComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
