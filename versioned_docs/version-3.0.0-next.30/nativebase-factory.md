@@ -13,8 +13,8 @@ import { NBFactory } from 'native-base';
 
 ```SnackPlayer name=NativeBase%20Factory%20Usage
 import React from 'react';
-import { NBFactory, NativeBaseProvider } from 'native-base';
-import { Image, View } from 'react-native';
+import { NBFactory, NativeBaseProvider, Center } from 'native-base';
+import { View } from 'react-native';
 
 function NBFactoryViewExample () {
   const NBFactoryView = NBFactory(View);
@@ -25,7 +25,9 @@ function NBFactoryViewExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <NBFactoryViewExample />
+      <Center flex={1}>
+        <NBFactoryViewExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -35,7 +37,7 @@ export default function () {
 
 ```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
 import React from 'react';
-import { NBFactory, NativeBaseProvider } from 'native-base';
+import { NBFactory, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
 
 function NBFactoryViewExample () {
@@ -50,7 +52,9 @@ function NBFactoryViewExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <NBFactoryViewExample />
+      <Center flex={1}>
+        <NBFactoryViewExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -60,7 +64,7 @@ export default function () {
 
 ```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
 import React from 'react';
-import { NBFactory, themeTools, NativeBaseProvider } from 'native-base';
+import { NBFactory, themeTools, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
 
 function NBFactoryViewModeExample () {
@@ -78,7 +82,9 @@ function NBFactoryViewModeExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <NBFactoryViewModeExample />
+      <Center flex={1}>
+        <NBFactoryViewModeExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -88,7 +94,7 @@ export default function () {
 
 ```SnackPlayer name=NativeBase%20Factory%20Using%20Ref
 import React from 'react';
-import { NBFactory, Button, NativeBaseProvider } from 'native-base';
+import { NBFactory, Button, NativeBaseProvider,Center } from 'native-base';
 import { TextInput } from 'react-native';
 
 function NBFactoryViewRefExample () {
@@ -110,7 +116,9 @@ function NBFactoryViewRefExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <NBFactoryViewRefExample />
+      <Center flex={1}>
+        <NBFactoryViewRefExample />
+      </Center>
     </NativeBaseProvider>
   );
 }

@@ -22,7 +22,7 @@ import { Button, ButtonGroup } from 'native-base';
 
 ```SnackPlayer name=Button%20Example
 import React from 'react';
-import { Button, NativeBaseProvider } from 'native-base';
+import { Button, NativeBaseProvider, Center } from 'native-base';
 
 function ButtonComponent () {
   return (
@@ -34,7 +34,9 @@ function ButtonComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ButtonComponent />
+      <Center flex={1}>
+        <ButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -44,23 +46,25 @@ export default function () {
 
 ```SnackPlayer name=Button%20Example(Sizes)
 import React from 'react';
-import { Button, HStack, NativeBaseProvider } from 'native-base';
+import { Button, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function ButtonComponent () {
   return (
-    <HStack space={2}>
+    <VStack space={2}>
       {['xs', 'sm', 'md', 'lg'].map((size: any) => (
         <Button size={size} colorScheme="teal">
           Button
         </Button>
       ))}
-    </HStack>
+    </VStack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <ButtonComponent />
+      <Center flex={1}>
+        <ButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -70,23 +74,25 @@ export default function () {
 
 ```SnackPlayer name=Button%20Example(variants)
 import React from 'react';
-import { Button, HStack, NativeBaseProvider } from 'native-base';
+import { Button, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function ButtonComponent () {
   return (
-    <HStack space={2}>
+    <VStack space={2}>
       {['solid', 'outline', 'ghost', 'link'].map((variant: any) => (
         <Button variant={variant} colorScheme="teal">
           Button
         </Button>
       ))}
-    </HStack>
+    </VStack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <ButtonComponent />
+      <Center flex={1}>
+        <ButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -96,11 +102,11 @@ export default function () {
 
 ```SnackPlayer name=Button%20Example(loading)
 import React from 'react';
-import { Button, HStack, NativeBaseProvider } from 'native-base';
+import { Button, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function ButtonComponent () {
   return (
-    <HStack space={2}>
+    <VStack space={2}>
       <Button colorScheme="teal" isLoading>
         Button
       </Button>
@@ -115,13 +121,15 @@ function ButtonComponent () {
       >
         Button
       </Button>
-    </HStack>
+    </VStack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <ButtonComponent />
+      <Center flex={1}>
+        <ButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -131,11 +139,11 @@ export default function () {
 
 ```SnackPlayer name=Button%20Example(Icons)
 import React from 'react';
-import { Button, HStack, Icon, NativeBaseProvider } from 'native-base';
+import { Button, VStack, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function ButtonComponent () {
   return (
-    <HStack space={2}>
+    <VStack space={2}>
       <Button
         startIcon={<Icon name="menu" size={6} type="MaterialIcons" />}
         colorScheme="indigo"
@@ -149,13 +157,15 @@ function ButtonComponent () {
       >
         Menu
       </Button>
-    </HStack>
+    </VStack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <ButtonComponent />
+      <Center flex={1}>
+        <ButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -165,7 +175,7 @@ export default function () {
 
 ```SnackPlayer name=Button%20Example(ButtonGroup)
 import React from 'react';
-import { Button, ButtonGroup, NativeBaseProvider } from 'native-base';
+import { Button, ButtonGroup, NativeBaseProvider, Center } from 'native-base';
 
 function ButtonComponent () {
   return (
@@ -178,7 +188,9 @@ function ButtonComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ButtonComponent />
+      <Center flex={1}>
+        <ButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -188,7 +200,7 @@ export default function () {
 
 ```SnackPlayer name=Button%20Example(Composition)
 import React from 'react';
-import { Button, NativeBaseProvider } from 'native-base';
+import { Button, NativeBaseProvider, Center } from 'native-base';
 
 function ButtonComponent () {
   return (
@@ -206,7 +218,9 @@ function ButtonComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ButtonComponent />
+      <Center flex={1}>
+        <ButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -216,7 +230,7 @@ export default function () {
 
 ```SnackPlayer name=Button%20Example(With Ref)
 import React from 'react';
-import { Button, NativeBaseProvider } from 'native-base';
+import { Button, NativeBaseProvider, Center } from 'native-base';
 
 function ButtonComponent () {
   const myRef: any = React.useRef({});
@@ -236,7 +250,9 @@ function ButtonComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ButtonComponent />
+      <Center flex={1}>
+        <ButtonComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

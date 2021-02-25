@@ -11,8 +11,8 @@ title: AspectRatio
 
 ```SnackPlayer name=AspectRatio%20Example
 import React from "react";
-import { AspectRatio, Box, NativeBaseProvider } from "native-base";
-function AspectRationComponent() {
+import { AspectRatio, Box, NativeBaseProvider, Center } from "native-base";
+function Component() {
   return (
     <AspectRatio height={200} bg="black">
       <Box bg="red.400" />
@@ -22,7 +22,9 @@ function AspectRationComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AspectRationComponent />
+      <Center flex={1}>
+        <Component />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -32,8 +34,8 @@ export default function () {
 
 ```SnackPlayer name=AspectRatio%20ExampleEmbedImage
 import React from "react";
-import { AspectRatio, Image, NativeBaseProvider } from "native-base";
-function AspectRationComponent() {
+import { AspectRatio, Image, NativeBaseProvider, Center } from "native-base";
+function Component() {
   return (
     <AspectRatio ratio={0.5} height={200}>
       <Image
@@ -45,10 +47,13 @@ function AspectRationComponent() {
     </AspectRatio>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <AspectRationComponent />
+      <Center flex={1}>
+        <Component />
+      </Center>
     </NativeBaseProvider>
   );
 }

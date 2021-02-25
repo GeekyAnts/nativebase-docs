@@ -27,7 +27,7 @@ For Example to make a `Box` width or w responsive using the array syntax, here's
 
 ```SnackPlayer name=Responsive%20Usage
 import React from 'react';
-import { Box, NativeBaseProvider } from 'native-base';
+import { Box, NativeBaseProvider, Center } from 'native-base';
 function BreakpointExample () {
   return (
     <Box bg="red.200" w={['100px', '400px', '560px']}>
@@ -38,7 +38,9 @@ function BreakpointExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreakpointExample />
+      <Center flex={1}>
+        <BreakpointExample />
+       </Center>
     </NativeBaseProvider>
   );
 }
@@ -63,7 +65,9 @@ function BreakpointExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreakpointExample />
+      <Center flex={1}>
+        <BreakpointExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -75,7 +79,7 @@ This works for every style prop in the theme specification, which means you can 
 
 ```SnackPlayer name=Responsive%20Example
 import React from 'react';
-import { Box, NativeBaseProvider } from 'native-base';
+import { Box, NativeBaseProvider, Center } from 'native-base';
 function BreakpointExample () {
   return (
     <>
@@ -107,7 +111,9 @@ function BreakpointExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreakpointExample />
+      <Center flex={1}>
+        <BreakpointExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -119,7 +125,7 @@ Here's a simple example of a component that uses a stacked layout on small scree
 
 ```SnackPlayer name=Responsive%20Demo
 import React from 'react';
-import { Box, Text, Image, Link, NativeBaseProvider } from 'native-base';
+import { Box, Text, Image, Link, NativeBaseProvider, Center } from 'native-base';
 function BreakpointExample () {
   return (
     <Box flexDir={{ base: 'column', sm: 'column', md: 'row' }}>
@@ -156,7 +162,9 @@ function BreakpointExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BreakpointExample />
+      <Center flex={1}>
+        <BreakpointExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
