@@ -21,7 +21,7 @@ import { Avatar } from 'native-base';
 
 ```SnackPlayer name=Avatar%20Basic
 import React from "react";
-import { Avatar, HStack, NativeBaseProvider } from "native-base";
+import { Avatar, HStack, NativeBaseProvider, Center } from "native-base";
 
 function AvatarComponent() {
   return (
@@ -34,15 +34,6 @@ function AvatarComponent() {
         }}
       >
         SS
-      </Avatar>
-      <Avatar
-        borderWidth={1}
-        source={{
-          uri:
-            'https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg',
-        }}
-      >
-        GG
       </Avatar>
       <Avatar
         borderWidth={1}
@@ -86,7 +77,9 @@ function AvatarComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AvatarComponent />
+      <Center flex={1}>
+        <AvatarComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -96,7 +89,7 @@ export default function () {
 
 ```SnackPlayer name=Avatar%20Sizes
 import React from "react";
-import { Avatar, HStack, NativeBaseProvider } from "native-base";
+import { Avatar, HStack, NativeBaseProvider, Center } from "native-base";
 
 function AvatarComponent() {
   return (
@@ -161,7 +154,9 @@ function AvatarComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AvatarComponent />
+      <Center flex={1}>
+        <AvatarComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -171,7 +166,7 @@ export default function () {
 
 ```SnackPlayer name=Avatar%20Fallbacks
 import React from "react";
-import { Avatar, HStack, NativeBaseProvider } from "native-base";
+import { Avatar, HStack, NativeBaseProvider, Center } from "native-base";
 
 function AvatarComponent() {
   return (
@@ -187,7 +182,9 @@ function AvatarComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AvatarComponent />
+      <Center flex={1}>
+        <AvatarComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -197,7 +194,7 @@ export default function () {
 
 ```SnackPlayer name=Avatar%20Avatar%20Badge
 import React from "react";
-import { Avatar, HStack, NativeBaseProvider } from "native-base";
+import { Avatar, HStack, NativeBaseProvider, Center } from "native-base";
 
 function AvatarComponent() {
   return (
@@ -220,7 +217,9 @@ function AvatarComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AvatarComponent />
+      <Center flex={1}>
+        <AvatarComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -230,7 +229,7 @@ export default function () {
 
 ```SnackPlayer name=Avatar%20Avatar%20Group
 import React from "react";
-import { Avatar, NativeBaseProvider } from "native-base";
+import { Avatar, NativeBaseProvider, Center } from "native-base";
 
 function AvatarComponent() {
   return (
@@ -282,7 +281,9 @@ function AvatarComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <AvatarComponent />
+      <Center flex={1}>
+        <AvatarComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -292,8 +293,8 @@ export default function () {
 
 ### Avatar
 
-| Name   | Type                    | Description                     | Default |
-| ------ | ----------------------- | ------------------------------- | ------- |
-| size   | 2xl, lg, md, sm, xl, xs | The size of the avatar.         | md      |
-| source | ImageSourcePropType     | The image source of the avatar. | -       |
-| \_text | TextProps               | Text styling for fallback Text. | -       |
+| Name   | Type                                | Description                     | Default |
+| ------ | ----------------------------------- | ------------------------------- | ------- |
+| size   | `2xl`, `xl`, `lg`, `md`, `sm`, `xs` | The size of the avatar.         | `md`    |
+| source | ImageSourcePropType                 | The image source of the avatar. | -       |
+| \_text | TextProps                           | Text styling for fallback Text. | -       |

@@ -19,7 +19,7 @@ import { Text } from 'native-base';
 
 ```SnackPlayer name=Text%20ChangingFontSize
 import React from 'react';
-import { Text, VStack, NativeBaseProvider } from 'native-base';
+import { Text, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function TextComponent () {
   return (
@@ -40,7 +40,9 @@ function TextComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TextComponent />
+      <Center flex={1}>
+        <TextComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -50,7 +52,7 @@ export default function () {
 
 ```SnackPlayer name=Text%20Truncated
 import React from 'react';
-import { Text, VStack, Heading, NativeBaseProvider } from 'native-base';
+import { Text, VStack, Heading, NativeBaseProvider, Center } from 'native-base';
 
 function TextComponent () {
   return (
@@ -72,7 +74,9 @@ function TextComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TextComponent />
+      <Center flex={1}>
+        <TextComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -82,7 +86,7 @@ export default function () {
 
 ```SnackPlayer name=Text%20Nested
 import React from 'react';
-import { Text, VStack, NativeBaseProvider } from 'native-base';
+import { Text, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function TextComponent () {
   return (
@@ -96,7 +100,9 @@ function TextComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TextComponent />
+      <Center flex={1}>
+        <TextComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -106,7 +112,7 @@ export default function () {
 
 ```SnackPlayer name=Text%20Overridden
 import React from 'react';
-import { Text, VStack, NativeBaseProvider } from 'native-base';
+import { Text, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function TextComponent () {
   return (
@@ -130,7 +136,9 @@ function TextComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TextComponent />
+      <Center flex={1}>
+        <TextComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -138,17 +146,14 @@ export default function () {
 
 ## Props
 
-### Text
-
-| Name          | Type                            | Description                                                                                        | Default |
-| ------------- | ------------------------------- | -------------------------------------------------------------------------------------------------- | ------- |
-| style         | stylesheet                      | Applies user-defined styles                                                                        | -       |
-| fontSize      | 2xl, lg, md, number, sm, xl, xs | The size of font.                                                                                  | -       |
-| noOfLines     | number                          | Used to truncate text at a specific number of lines                                                | -       |
-| isTruncated   | boolean                         | If true, it'll render an ellipsis when the text exceeds the width of the viewport or maxWidth set. | -       |
-| bold          | boolean                         | Make the text bold.                                                                                | -       |
-| italic        | boolean                         | Make the text italic.                                                                              | -       |
-| underline     | boolean                         | Underline the text .                                                                               | -       |
-| strikeThrough | boolean                         | a horizontal line through its center.                                                              | -       |
-| sub           | boolean                         | text will have smaller font size.                                                                  | -       |
-| highlight     | boolean                         | Highlight the text with a yellow background.                                                       | -       |
+| Name          | Type                                        | Description                                                                                        | Default |
+| ------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------- |
+| fontSize      | `2xl`, `lg`, `md`, `sm`, `xl`, `xs`, number | The size of font.                                                                                  | -       |
+| noOfLines     | number                                      | Used to truncate text at a specific number of lines                                                | -       |
+| isTruncated   | boolean                                     | If true, it'll render an ellipsis when the text exceeds the width of the viewport or maxWidth set. | -       |
+| bold          | boolean                                     | Make the text bold.                                                                                | -       |
+| italic        | boolean                                     | Make the text italic.                                                                              | -       |
+| underline     | boolean                                     | Underline the text .                                                                               | -       |
+| strikeThrough | boolean                                     | a horizontal line through its center.                                                              | -       |
+| sub           | boolean                                     | text will have smaller font size.                                                                  | -       |
+| highlight     | boolean                                     | Highlight the text with a yellow background.                                                       | -       |

@@ -16,13 +16,13 @@ NativeBase exports 4 modal-related components:
 
 ```jsx
 import {
-	Fade,
-	ScaleFade
+  Fade,
+  ScaleFade
   Slide,
-	SlideFade
+  SlideFade
   SliderTrack,
   SliderFilledTrack,
-  SliderThumb,
+SliderThumb,
 } from "native-base";
 ```
 
@@ -30,7 +30,7 @@ import {
 
 ```SnackPlayer name=Transition%20Fade
 import React from 'react';
-import { Fade, Button, Box, NativeBaseProvider } from 'native-base';
+import { Fade, Button, Box, NativeBaseProvider, Center } from 'native-base';
 function FadeExample () {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -50,7 +50,9 @@ function FadeExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FadeExample />
+      <Center flex={1}>
+        <FadeExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -60,7 +62,7 @@ export default function () {
 
 ```SnackPlayer name=Transition%20ScaleFade
 import React from 'react';
-import { ScaleFade, Button, Box, NativeBaseProvider } from 'native-base';
+import { ScaleFade, Button, Box, NativeBaseProvider, Center } from 'native-base';
 function ScaleFadeExample () {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -80,7 +82,9 @@ function ScaleFadeExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ScaleFadeExample />
+      <Center flex={1}>
+        <ScaleFadeExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -90,7 +94,7 @@ export default function () {
 
 ```SnackPlayer name=Transition%20Slide
 import React from 'react';
-import { Slide, Button, Box, NativeBaseProvider } from 'native-base';
+import { Slide, Button, Box, NativeBaseProvider, Center } from 'native-base';
 function SlideExample () {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -110,7 +114,9 @@ function SlideExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SlideExample />
+      <Center flex={1}>
+        <SlideExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -156,7 +162,9 @@ function SlideExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SlideExample />
+      <Center flex={1}>
+        <SlideExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -204,7 +212,9 @@ function SlideExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SlideExample />
+      <Center flex={1}>
+        <SlideExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -214,7 +224,7 @@ export default function () {
 
 ```SnackPlayer name=Transition%20SlideFade
 import React from 'react';
-import { SlideFade, Button, Box, NativeBaseProvider } from 'native-base';
+import { SlideFade, Button, Box, NativeBaseProvider, Center } from 'native-base';
 function SlideFadeExample () {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -234,7 +244,9 @@ function SlideFadeExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SlideFadeExample />
+      <Center flex={1}>
+        <SlideFadeExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -259,11 +271,11 @@ export default function () {
 
 ### Slide
 
-| Name      | Type    | Description                                            | Default |
-| --------- | ------- | ------------------------------------------------------ | ------- |
-| in        | boolean | Show the component; triggers the enter or exit states. | -       |
-| duration  | number  | Duration of animation in mili second.                  | 500     |
-| placement | string  | The direction to slide drawer from.                    | bottom  |
+| Name      | Type            | Description                                            | Default  |
+| --------- | --------------- | ------------------------------------------------------ | -------- |
+| in        | boolean         | Show the component; triggers the enter or exit states. | -        |
+| duration  | number          | Duration of animation in mili second.                  | 500      |
+| placement | `top` ,`bottom` | The direction to slide drawer from.                    | `bottom` |
 
 ### SlideFade
 

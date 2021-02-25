@@ -13,7 +13,7 @@ The keyboard key component exists to show which key or combination of keys perfo
 
 ```SnackPlayer name=KBD%20Example
 import React from 'react';
-import { VStack, HStack, Kbd, Text, NativeBaseProvider } from 'native-base';
+import { VStack, HStack, Kbd, Text, NativeBaseProvider, Center } from 'native-base';
 
 function KbdComponent () {
   return (
@@ -39,7 +39,9 @@ function KbdComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <KbdComponent />
+      <Center flex={1}>
+        <KbdComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

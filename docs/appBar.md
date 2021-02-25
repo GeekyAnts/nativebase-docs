@@ -15,8 +15,7 @@ import {
   Icon,
   Text,
   VStack,
-  NativeBaseProvider,
-  Center
+  NativeBaseProvider
 } from "native-base";
 
 function AppBarComponent() {
@@ -58,9 +57,7 @@ function AppBarComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
-        <AppBarComponent />
-      </Center>
+      <AppBarComponent />
     </NativeBaseProvider>
   );
 }
@@ -79,12 +76,12 @@ Implements `Box`, all props of Box can be passed.
 
 ## AppBar.Left Props
 
-Implements `HStack` , all the props of HStack can be passed.
+Implements [`HStack`](hStack.md) , all the props of HStack can be passed.
 
 ## AppBar.Content Props
 
-Implements `HStack` , all the props of HStack can be passed.
+Implements [`HStack`](hStack.md) , all the props of HStack can be passed.
 
 ## AppBar.Right Props
 
-Implements `HStack` , all the props of HStack can be passed.
+Implements [`HStack`](hStack.md) , all the props of HStack can be passed.

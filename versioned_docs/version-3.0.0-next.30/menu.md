@@ -23,7 +23,7 @@ import { Menu } from 'native-base';
 
 ```SnackPlayer name=Menu%20Basic
 import React from 'react';
-import { Menu, Divider, IconButton, Icon, NativeBaseProvider } from 'native-base';
+import { Menu, Divider, IconButton, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function MenuComponent () {
   return (
@@ -43,7 +43,9 @@ function MenuComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <MenuComponent />
+      <Center flex={1}>
+        <MenuComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -53,7 +55,7 @@ export default function () {
 
 ```SnackPlayer name=Menu%20Example (MenuGroup)
 import React from 'react';
-import { Menu, Divider, IconButton, Icon, NativeBaseProvider} from 'native-base';
+import { Menu, Divider, IconButton, Icon, NativeBaseProvider, Center} from 'native-base';
 
 function MenuComponent () {
   return (
@@ -84,7 +86,9 @@ function MenuComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <MenuComponent />
+      <Center flex={1}>
+        <MenuComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -94,7 +98,7 @@ export default function () {
 
 ```SnackPlayer name=Menu%20Example (MenuOptionGroups)
 import React from 'react';
-import { Menu, IconButton, Divider, Icon, NativeBaseProvider } from 'native-base';
+import { Menu, IconButton, Divider, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function MenuComponent () {
   return (
@@ -128,7 +132,9 @@ function MenuComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <MenuComponent />
+      <Center flex={1}>
+        <MenuComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

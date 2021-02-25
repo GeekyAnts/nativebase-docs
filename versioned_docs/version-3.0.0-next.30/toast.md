@@ -8,14 +8,14 @@ Toast is used to show alerts on top of an overlay. Toast will close itself when 
 ## Import
 
 ```jsx
-import { useToast } from "native-base";
+import { useToast } from 'native-base';
 ```
 
 ## Basic
 
 ```SnackPlayer name=Toast%20Basic
 import React from 'react';
-import { Button, useToast, VStack, NativeBaseProvider } from 'native-base';
+import { Button, useToast, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function ToastComponent () {
   const toast = useToast();
@@ -25,7 +25,6 @@ function ToastComponent () {
         toast({
           position: 'top',
           title: 'Toast Top',
-          _title:{ fontSize : "xl" },
         });
       }}
     >
@@ -36,7 +35,9 @@ function ToastComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ToastComponent />
+      <Center flex={1}>
+        <ToastComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -47,7 +48,7 @@ export default function () {
 
 ```SnackPlayer name=Toast%20Position
 import React from 'react';
-import { Button, useToast, VStack, NativeBaseProvider } from 'native-base';
+import { Button, useToast, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function ToastComponent () {
   const toast = useToast();
@@ -89,7 +90,9 @@ function ToastComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ToastComponent />
+      <Center flex={1}>
+        <ToastComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -99,7 +102,7 @@ export default function () {
 
 ```SnackPlayer name=Toast%20Offset
 import React from 'react';
-import { Button, useToast, NativeBaseProvider } from 'native-base';
+import { Button, useToast, NativeBaseProvider, Center } from 'native-base';
 
 function ToastComponent () {
   const toast = useToast();
@@ -122,7 +125,9 @@ function ToastComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ToastComponent />
+      <Center flex={1}>
+        <ToastComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -132,10 +137,10 @@ export default function () {
 
 ### Toast
 
-| Name     | Type                  | Description                                             | Default |
-| -------- | --------------------- | ------------------------------------------------------- | ------- |
-| title    | string                | The title of the toast.                                 | -       |
-| \_title  | TextProps Object      | Object that contains props for Title styling.           | -       |
-| duration | long, number, short   | The duration of toast. If number, then in mili-seconds. | 2000    |
-| position | bottom, center, top   | The position at which toast will appear.                | bottom  |
-| offset   | {x: number y: number} | The offset of toast from regular position.              | -       |
+| Name     | Type                      | Description                                             | Default |
+| -------- | ------------------------- | ------------------------------------------------------- | ------- |
+| title    | string                    | The title of the toast.                                 | -       |
+| \_title  | TextProps                 | Object that contains props for Title styling.           | -       |
+| duration | `long`, `short`, number   | The duration of toast. If number, then in mili-seconds. | 2000    |
+| position | `bottom`, `center`, `top` | The position at which toast will appear.                | bottom  |
+| offset   | {x: number y: number}     | The offset of toast from regular position.              | -       |

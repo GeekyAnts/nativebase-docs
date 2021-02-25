@@ -8,14 +8,14 @@ Badges are used to highlight an item's status for quick recognition.
 ## Import
 
 ```jsx
-import { Badge } from "native-base";
+import { Badge } from 'native-base';
 ```
 
 ## Basic
 
 ```SnackPlayer name=Badge%20Basic
 import React from 'react';
-import { Badge, NativeBaseProvider } from 'native-base';
+import { Badge, NativeBaseProvider, Center } from 'native-base';
 
 function BadgeComponent () {
   return <Badge>DEFAULT BADGE</Badge>;
@@ -23,7 +23,9 @@ function BadgeComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BadgeComponent />
+      <Center flex={1}>
+        <BadgeComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -33,7 +35,7 @@ export default function () {
 
 ```SnackPlayer name=Badge%20Color%20Scheme
 import React from 'react';
-import { Badge, HStack, NativeBaseProvider } from 'native-base';
+import { Badge, HStack, NativeBaseProvider, Center } from 'native-base';
 
 function BadgeComponent () {
   return (
@@ -56,7 +58,9 @@ function BadgeComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BadgeComponent />
+      <Center flex={1}>
+        <BadgeComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -66,7 +70,7 @@ export default function () {
 
 ```SnackPlayer name=Badge%20EVariants
 import React from 'react';
-import { Badge, HStack, NativeBaseProvider } from 'native-base';
+import { Badge, HStack, NativeBaseProvider, Center } from 'native-base';
 
 function BadgeComponent () {
   return (
@@ -86,7 +90,9 @@ function BadgeComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BadgeComponent />
+      <Center flex={1}>
+        <BadgeComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

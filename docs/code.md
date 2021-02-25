@@ -15,14 +15,16 @@ import { Code } from 'native-base';
 
 ```SnackPlayer name=Code%20Example
 import React from 'react';
-import { Code, NativeBaseProvider } from 'native-base';
+import { Code, NativeBaseProvider, Center } from 'native-base';
 function CodeComponent () {
   return <Code colorScheme="success">Hello World!</Code>;
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <CodeComponent />
+      <Center flex={1}>
+        <CodeComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -32,7 +34,7 @@ export default function () {
 
 ```SnackPlayer name=Code%20Example(Colors)
 import React from 'react';
-import { Code, Stack, NativeBaseProvider } from 'native-base';
+import { Code, Stack, NativeBaseProvider, Center } from 'native-base';
 function CodeComponent () {
   return (
     <Stack space={4}>
@@ -46,7 +48,9 @@ function CodeComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CodeComponent />
+      <Center flex={1}>
+        <CodeComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

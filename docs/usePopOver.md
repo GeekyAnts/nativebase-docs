@@ -8,14 +8,14 @@ title: usePopover
 ## Import
 
 ```jsx
-import { usePopover } from "native-base";
+import { usePopover } from 'native-base';
 ```
 
 ### Usage
 
 ```SnackPlayer name=usePopover%20Usage
 import React from "react";
-import { Button, usePopover, Box, NativeBaseProvider } from "native-base";
+import { Button, usePopover, Box, NativeBaseProvider, Center } from "native-base";
 
 function UsePopoverExample() {
   const { setPopover } = usePopover();
@@ -42,7 +42,9 @@ function UsePopoverExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <UsePopoverExample />
+      <Center flex={1}>
+        <UsePopoverExample />
+      </Center>
     </NativeBaseProvider>
   );
 }

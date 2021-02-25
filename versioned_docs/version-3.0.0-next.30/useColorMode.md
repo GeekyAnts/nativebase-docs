@@ -15,33 +15,36 @@ import { useColorMode } from 'native-base';
 
 ```SnackPlayer name=useColorMode
 import React from 'react';
-import { NativeBaseProvider, VStack, useColorMode, Text, Button } from 'native-base';
+import { NativeBaseProvider, VStack, useColorMode, Text, Button, Center } from 'native-base';
 
-function UseColorMode () {
-	const { colorMode, toggleColorMode } = useColorMode();
-	return (
-		<VStack space={4} p={2} w='90%'>
-			<Text fontSize='lg'>
-				The active color mode is <Text bold>{colorMode}</Text>
-			</Text>
-			<Button onPress={toggleColorMode}>Toggle</Button>
-		</VStack>
-	);
+function UseColorMode() {
+  const {colorMode, toggleColorMode} = useColorMode();
+  return (
+    <VStack space={4} p={2} w="90%">
+      <Text fontSize="lg">
+        The active color mode is <Text bold>{colorMode}</Text>
+      </Text>
+      <Button onPress={toggleColorMode}>Toggle</Button>
+    </VStack>
+  );
 }
 
 export default function () {
   return (
     <NativeBaseProvider>
-      <UseColorMode />
+      <Center flex={1}>
+        <UseColorMode />
+      </Center>
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ## Return
 
-| Name            | Type     | Description                                | Default |
-| --------------- | -------- | ------------------------------------------ | ------- |
-| colorMode       | string   | The active color mode (light or dark).     | -       |
-| setColorMode    | function | Use to set color mode.                     | -       |
-| toggleColorMode | function | Use to toggle between light and dark mode. | -       |
+| Name            | Type            | Description                                | Default |
+| --------------- | --------------- | ------------------------------------------ | ------- |
+| colorMode       | `light`, `dark` | The active color mode                      | `light` |
+| setColorMode    | function        | Use to set color mode.                     | -       |
+| toggleColorMode | function        | Use to toggle between light and dark mode. | -       |

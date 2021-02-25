@@ -83,7 +83,9 @@ function ModalComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ModalComponent />
+      <Center flex={1}>
+        <ModalComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -182,7 +184,9 @@ function ModalComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ModalComponent />
+      <Center flex={1}>
+        <ModalComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -254,7 +258,9 @@ function ModalComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ModalComponent />
+      <Center flex={1}>
+        <ModalComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -329,7 +335,9 @@ function ModalComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ModalComponent />
+      <Center flex={1}>
+        <ModalComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -341,20 +349,20 @@ export default function () {
 
 ### Modal
 
-| Name                | Type                                     | Description                                                                 | Default |
-| ------------------- | ---------------------------------------- | --------------------------------------------------------------------------- | ------- |
-| isOpen              | boolean                                  | If true, the modal will open.                                               | -       |
-| onClose             | function                                 | Callback invoked to close the modal.                                        | -       |
-| motionPreset        | fade, none, slide                        | The default animation or transition to apply to the modal.                  | -       |
-| initialFocusRef     | React.ref                                | The least destructive action to get focus when dialog is open.              | -       |
-| finalFocusRef       | React.ref                                | The least destructive action to get focus when dialog is closed. (ios only) | -       |
-| size                | full, lg, md, number, sm, string, xl, xs | The content of the modal.                                                   | -       |
-| closeOnOverlayClick | boolean                                  | If true, the modal will close when the overlay is clicked.                  | -       |
-| id                  | string                                   | The top-level id to use for the modal and it's sub-components.              | -       |
-| avoidKeyboard       | boolean                                  | If true, Modal will avoid keyboard to overlap.                              | -       |
-| closeOnOverlayClick | boolean                                  | If true, clicking on overlay will close the modal.                          | -       |
-| overlayVisible      | boolean                                  | To set the visibility the overlay.                                          | -       |
-| overlayColor        | string                                   | To set the color of overlay.                                                | -       |
+| Name                | Type                                             | Description                                                                 | Default |
+| ------------------- | ------------------------------------------------ | --------------------------------------------------------------------------- | ------- |
+| isOpen              | boolean                                          | If true, the modal will open.                                               | -       |
+| onClose             | function                                         | Callback invoked to close the modal.                                        | -       |
+| motionPreset        | `fade`, `none`, `slide`                          | The default animation or transition to apply to the modal.                  | -       |
+| initialFocusRef     | React.ref                                        | The least destructive action to get focus when dialog is open.              | -       |
+| finalFocusRef       | React.ref                                        | The least destructive action to get focus when dialog is closed. (ios only) | -       |
+| size                | `xs`, `sm`,`md`,`lg`,`xl`,`full`, number, string | The content of the modal.                                                   | -       |
+| closeOnOverlayClick | boolean                                          | If true, the modal will close when the overlay is clicked.                  | -       |
+| id                  | string                                           | The top-level id to use for the modal and it's sub-components.              | -       |
+| avoidKeyboard       | boolean                                          | If true, Modal will avoid keyboard to overlap.                              | -       |
+| closeOnOverlayClick | boolean                                          | If true, clicking on overlay will close the modal.                          | -       |
+| overlayVisible      | boolean                                          | To set the visibility the overlay.                                          | -       |
+| overlayColor        | string                                           | To set the color of overlay.                                                | -       |
 
 ### Child **components**
 
