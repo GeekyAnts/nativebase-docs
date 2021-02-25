@@ -13,15 +13,22 @@
 /* You can override the default Infima variables here. */
 
 :root {
-  --ifm-link-color: #2dd4bf;
-  --ifm-color-primary-dark: #0d9488;
-  --ifm-color-primary-darker: #0f766e;
-  --ifm-color-primary-darkest: #115e59;
-  --ifm-color-primary: #14b8a6;
-  --ifm-color-primary-light: #5eead4;
-  --ifm-color-primary-lighter: #99f6e4;
-  --ifm-color-primary-lightest: #c7d2fe;
+  --ifm-link-color: #10b981;
+  --ifm-color-primary-dark: #059669;
+  --ifm-color-primary-darker: #047857;
+  --ifm-color-primary-darkest: #065f46;
+  --ifm-color-primary: #34d399;
+  --ifm-color-primary-light: #6ee7b7;
+  --ifm-color-primary-lighter: #a7f3d0;
+  --ifm-color-primary-lightest: #d1fae5;
+
   --ifm-code-font-size: 95%;
+}
+
+html[data-theme='dark'] .DocSearch-Button-Key {
+  background: #20232a;
+  box-shadow: inset 0 -2px 0 0 #565657, inset 0 0 1px 1px #737373,
+    0 2px 2px 0 rgba(3, 4, 9, 0.3);
 }
 
 .docusaurus-highlight-code-line {
