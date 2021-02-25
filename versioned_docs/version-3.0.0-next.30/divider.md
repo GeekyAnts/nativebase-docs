@@ -66,7 +66,7 @@ export default function () {
 
 ## Composition
 
-You can use `borderColor` to change the divider's color and `borderWidth` to change it's width.
+You can use `bg` or `backgroundColor` to change the divider's color and `width` and `height` to change its width and height respectively.
 
 ```SnackPlayer name=Divider%20Composition
 import React from "react";
@@ -76,16 +76,11 @@ function DividerComponent() {
   return (
     <Flex direction="row" p={4}>
       <Text>Simple</Text>
-      <Divider
-        borderColor="red.500"
-        borderWidth={2}
-        mx={4}
-        orientation="vertical"
-      />
+      <Divider bg="red.500" w={1} mx={4} orientation="vertical" />
       <Text>Easy</Text>
-      <Divider borderColor="blue.500" mx={4} orientation="vertical" />
+      <Divider bg="blue.500" mx={4} orientation="vertical" />
       <Text>Beautiful</Text>
-      <Divider borderColor="green.500" mx={4} orientation="vertical" />
+      <Divider bg="green.500" mx={4} orientation="vertical" />
       <Text>NativeBase</Text>
     </Flex>
   );

@@ -11,7 +11,7 @@ But why we need the theme object? Maybe show you the color palettes 😁
 
 ```SnackPlayer name=Box%20Example
 import React from 'react';
-import { NativeBaseProvider, useColorModeValue, Button, useTheme, SimpleGrid } from 'native-base';
+import { NativeBaseProvider, useColorModeValue, Button, useTheme, SimpleGrid, Center } from 'native-base';
 
 function ColorPalete() {
   const { colors } = useTheme();
@@ -43,7 +43,9 @@ function ColorPalete() {
   export default function () {
     return (
       <NativeBaseProvider>
-        <ColorPalete />
+        <Center flex={1}>
+          <ColorPalete />
+        </Center>
       </NativeBaseProvider>
     );
   }
@@ -53,7 +55,7 @@ Don't want the entire object, instead something vary specific. Don't we got you 
 
 ```SnackPlayer name=useToken
 import React from 'react';
-import { useToken, Box, SimpleGrid,NativeBaseProvider } from 'native-base';
+import { useToken, Box, SimpleGrid, NativeBaseProvider, Center } from 'native-base';
 
 function Tokens () {
   const colors = useToken('colors', 'amber');
@@ -70,7 +72,9 @@ function Tokens () {
 export default function () {
     return (
       <NativeBaseProvider>
-        <Tokens />
+        <Center flex={1}>
+          <Tokens />
+        </Center>
       </NativeBaseProvider>
     );
   }

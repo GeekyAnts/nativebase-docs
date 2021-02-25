@@ -369,7 +369,7 @@ export default function () {
 | name             | string         | The name of the input field in a checkbox.                                                                            | -       |
 | value            | number, string | The value to be used in the checkbox input. This is the value that will be returned on form submission.               | -       |
 | colorScheme      | string         | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red").     | default |
-| defaultIsChecked | boolean        | If true, the checkbox will be initially checked.                                                                      | -       |
+| defaultIsChecked | boolean        | If true, the checkbox will be initially checked. (use `defaultValue` prop if using it inside Checkbox.Group)          | -       |
 | isChecked        | boolean        | If true, the checkbox will be checked. You'll need to pass onChange to update it's value (since it's now controlled). | -       |
 | isIndeterminate  | boolean        | If true, the checkbox will be indeterminate. This only affects the icon shown inside checkbox.                        | -       |
 | size             | lg, md, sm     | The size (width and height) of the checkbox.                                                                          | md      |
