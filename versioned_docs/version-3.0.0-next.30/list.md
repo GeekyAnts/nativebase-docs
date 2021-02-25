@@ -19,7 +19,7 @@ import { List } from 'native-base';
 
 ```SnackPlayer name=Basic
 import React from 'react';
-import { List, Heading, Box, NativeBaseProvider } from 'native-base';
+import { List, Heading, Box, NativeBaseProvider, Center } from 'native-base';
 
 function ListComponent () {
 	return (
@@ -37,7 +37,9 @@ function ListComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ListComponent />
+      <Center flex={1}>
+        <ListComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -47,7 +49,7 @@ export default function () {
 
 ```SnackPlayer name=OrderedList
 import React from 'react';
-import { List, Heading, Box, NativeBaseProvider } from 'native-base';
+import { List, Heading, Box, NativeBaseProvider, Center } from 'native-base';
 
 function ListComponent () {
 	return (
@@ -65,7 +67,9 @@ function ListComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ListComponent />
+      <Center flex={1}>
+        <ListComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -75,7 +79,7 @@ export default function () {
 
 ```SnackPlayer name=UnOrderedList
 import React from 'react';
-import { List, Heading, Box, NativeBaseProvider } from 'native-base';
+import { List, Heading, Box, NativeBaseProvider, Center } from 'native-base';
 
 function ListComponent () {
 	return (
@@ -93,7 +97,9 @@ function ListComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ListComponent />
+      <Center flex={1}>
+        <ListComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -103,7 +109,7 @@ export default function () {
 
 ```SnackPlayer name=StyledList
 import React from 'react';
-import { List, Heading, Box, NativeBaseProvider } from 'native-base';
+import { List, Heading, Box, NativeBaseProvider, Center } from 'native-base';
 
 function ListComponent () {
 	return (
@@ -127,7 +133,9 @@ function ListComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ListComponent />
+      <Center flex={1}>
+        <ListComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -137,7 +145,7 @@ export default function () {
 
 ```SnackPlayer name=ListWithIcon
 import React from 'react';
-import { List, Heading, Box, NativeBaseProvider } from 'native-base';
+import { List, Heading, Box, NativeBaseProvider, Center } from 'native-base';
 
 function ListComponent () {
 	return (
@@ -171,7 +179,9 @@ function ListComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ListComponent />
+      <Center flex={1}>
+        <ListComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -182,7 +192,7 @@ export default function () {
 ```SnackPlayer name=VirtualizedList
 import React from 'react';
 import { VirtualizedList } from 'react-native';
-import { List, NativeBaseProvider } from 'native-base';
+import { List, NativeBaseProvider, Center } from 'native-base';
 
 const DATA: any = [];
 
@@ -209,7 +219,7 @@ const Item = ({ title }: any) => (
 
 function ListComponent () {
   return (
-		<VirtualizedList
+    <VirtualizedList
       data={DATA}
       initialNumToRender={4}
       renderItem={({ item }) => <Item title={item.title} />}
@@ -222,7 +232,9 @@ function ListComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ListComponent />
+      <Center flex={1}>
+        <ListComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

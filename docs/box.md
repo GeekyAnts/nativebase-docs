@@ -19,18 +19,21 @@ This is a generic component for low level layout needs. It is similar to `<div /
 
 ```SnackPlayer name=Box%20Example
 import React from "react";
-import { Box, NativeBaseProvider } from "native-base";
-function BoxComponent() {
+import { Box, NativeBaseProvider, Center } from "native-base";
+function Component() {
   return (
     <Box width="100%" bg="orange.400" p={4} >
       This is a Box
     </Box>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <BoxComponent />
+      <Center flex={1}>
+        <Component />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -40,8 +43,8 @@ export default function () {
 
 ```SnackPlayer name=Box%20Composition
 import React from "react";
-import { Box, Heading, Divider, Flex, NativeBaseProvider } from "native-base";
-function BoxComponent() {
+import { Box, Heading, Divider, Flex, Center, NativeBaseProvider } from "native-base";
+function Component() {
   return (
     <Box width="100%" bg="blue.300" p={4} color="blue.700">
       <Heading size="xl">Title</Heading>
@@ -65,7 +68,9 @@ function BoxComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BoxComponent />
+      <Center flex={1}>
+        <Component />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -75,9 +80,9 @@ export default function () {
 
 ```SnackPlayer name=Box%20Example(With ref)
 import React from "react";
-import { Box, NativeBaseProvider } from "native-base";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
-function BoxComponent() {
+function Component() {
   const myRef: any = React.useRef({});
   React.useEffect(() => {
     myRef?.current.setNativeProps({
@@ -95,7 +100,9 @@ function BoxComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <BoxComponent />
+      <Center flex={1}>
+        <Component />
+      </Center>
     </NativeBaseProvider>
   );
 }

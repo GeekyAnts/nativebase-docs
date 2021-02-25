@@ -14,15 +14,18 @@ The `Checkbox` component is used in forms when a user needs to select multiple v
 
 ```SnackPlayer name=CheckBox%20Usage
 import React from "react";
-import { Checkbox, NativeBaseProvider } from "native-base";
+import { Checkbox, NativeBaseProvider, Center } from "native-base";
 
 function CheckboxComponent() {
   return <Checkbox />;
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CheckboxComponent />
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -32,24 +35,27 @@ export default function () {
 
 ```SnackPlayer name=CheckBox%20Disabled
 import React from "react";
-import { Checkbox, HStack, Text, NativeBaseProvider } from "native-base";
+import { Checkbox, VStack, Text, NativeBaseProvider, Center } from "native-base";
 
 function CheckboxComponent() {
   return (
-    <HStack>
+    <VStack>
       <Checkbox isDisabled>
         <Text m={2}>Checkbox</Text>
       </Checkbox>
       <Checkbox isDisabled defaultIsChecked>
         <Text m={2}>Checkbox</Text>
       </Checkbox>
-    </HStack>
+    </VStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CheckboxComponent />
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -59,7 +65,7 @@ export default function () {
 
 ```SnackPlayer name=CheckBox%20Invalid
 import React from "react";
-import { Checkbox, HStack, Text, NativeBaseProvider } from "native-base";
+import { Checkbox, HStack, Text, NativeBaseProvider, Center } from "native-base";
 
 function CheckboxComponent() {
   return (
@@ -70,10 +76,13 @@ function CheckboxComponent() {
     </HStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CheckboxComponent />
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -83,11 +92,11 @@ export default function () {
 
 ```SnackPlayer name=CheckBox%20Custom Color
 import React from "react";
-import { Checkbox, HStack, Text, NativeBaseProvider } from "native-base";
+import { Checkbox, VStack, Text, NativeBaseProvider, Center } from "native-base";
 
 function CheckboxComponent() {
   return (
-    <HStack>
+    <VStack>
       <Checkbox colorScheme="critical" defaultIsChecked>
         <Text mx={2}>Critical</Text>
       </Checkbox>
@@ -100,13 +109,16 @@ function CheckboxComponent() {
       <Checkbox colorScheme="purple" defaultIsChecked>
         <Text mx={2}>Purple</Text>
       </Checkbox>
-    </HStack>
+    </VStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CheckboxComponent />
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -116,11 +128,11 @@ export default function () {
 
 ```SnackPlayer name=CheckBox%20CustomIcon
 import React from "react";
-import { Checkbox, HStack, Text, Icon, NativeBaseProvider } from "native-base";
+import { Checkbox, VStack, Text, Icon, NativeBaseProvider, Center } from "native-base";
 
 function CheckboxComponent() {
   return (
-    <HStack>
+    <VStack>
       <Checkbox
         colorScheme="orange"
         size="md"
@@ -153,13 +165,16 @@ function CheckboxComponent() {
       >
         <Text mx={2}>Chess</Text>
       </Checkbox>
-    </HStack>
+    </VStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CheckboxComponent />
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -169,7 +184,7 @@ export default function () {
 
 ```SnackPlayer name=CheckBox%20Size
 import React from "react";
-import { Checkbox, HStack, Text, Icon, NativeBaseProvider } from "native-base";
+import { Checkbox, HStack, Text, Icon, NativeBaseProvider, Center } from "native-base";
 
 function CheckboxComponent() {
   return (
@@ -191,10 +206,13 @@ function CheckboxComponent() {
     </HStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CheckboxComponent />
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -210,6 +228,7 @@ import {
   View,
   HStack,
   NativeBaseProvider,
+   Center
 } from "native-base";
 
 function CheckboxComponent() {
@@ -249,10 +268,13 @@ function CheckboxComponent() {
     </View>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CheckboxComponent />
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -269,6 +291,7 @@ import {
   Text,
   Container,
   NativeBaseProvider,
+  Center
 } from "native-base";
 
 function CheckboxComponent() {
@@ -315,10 +338,13 @@ function CheckboxComponent() {
     </Container>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CheckboxComponent />
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -328,7 +354,7 @@ export default function () {
 
 ```SnackPlayer name=CheckBox%20 With Ref
 import React from "react";
-import { Checkbox, Icon, NativeBaseProvider } from "native-base";
+import { Checkbox, Icon, NativeBaseProvider, Center } from "native-base";
 
 function CheckboxComponent() {
   const myRef: any = React.useRef({});
@@ -351,10 +377,13 @@ function CheckboxComponent() {
     </Checkbox>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
-      <CheckboxComponent />
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -369,7 +398,7 @@ export default function () {
 | name             | string         | The name of the input field in a checkbox.                                                                            | -       |
 | value            | number, string | The value to be used in the checkbox input. This is the value that will be returned on form submission.               | -       |
 | colorScheme      | string         | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red").     | default |
-| defaultIsChecked | boolean        | If true, the checkbox will be initially checked.                                                                      | -       |
+| defaultIsChecked | boolean        | If true, the checkbox will be initially checked. (use `defaultValue` prop if using it inside Checkbox.Group)          | -       |
 | isChecked        | boolean        | If true, the checkbox will be checked. You'll need to pass onChange to update it's value (since it's now controlled). | -       |
 | isIndeterminate  | boolean        | If true, the checkbox will be indeterminate. This only affects the icon shown inside checkbox.                        | -       |
 | size             | lg, md, sm     | The size (width and height) of the checkbox.                                                                          | md      |

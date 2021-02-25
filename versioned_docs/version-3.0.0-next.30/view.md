@@ -14,13 +14,13 @@ Generic View component from `react-native`
 
 ```SnackPlayer name=View%20Example
 import React from "react";
-import { Text, VStack, NativeBaseProvider, View } from "native-base";
+import { Text, VStack, NativeBaseProvider, View, Center } from "native-base";
 
 function ViewComponent() {
   return (
     <View
       width="100%"
-      height={100}
+      height={32}
       bg="blue.400"
       justifyContent="center"
       alignItems="center"
@@ -32,7 +32,9 @@ function ViewComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ViewComponent />
+      <Center flex={1}>
+        <ViewComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

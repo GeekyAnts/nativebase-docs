@@ -51,7 +51,9 @@ function FlexComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FlexComponent />
+      <Center flex={1}>
+        <FlexComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -81,7 +83,9 @@ function FlexComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FlexComponent />
+      <Center flex={1}>
+        <FlexComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

@@ -25,16 +25,16 @@ import { Wrap, Center, NativeBaseProvider } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap flexDir="row">
-      <Center w="180px" h="80px" bg="red.200">
+      <Center size={20} bg="red.200">
         Box 1
       </Center>
-      <Center w="180px" h="80px" bg="green.200">
+      <Center size={20} bg="green.200">
         Box 2
       </Center>
-      <Center w="180px" h="80px" bg="tomato">
+      <Center size={20} bg="tomato">
         Box 3
       </Center>
-      <Center w="180px" h="80px" bg="blue.200">
+      <Center size={20} bg="blue.200">
         Box 4
       </Center>
     </Wrap>
@@ -43,7 +43,9 @@ function WrapComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <WrapComponent />
+      <Center flex={1}>
+        <WrapComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -59,16 +61,16 @@ import { Wrap, Center, NativeBaseProvider  } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap spacing={10} flexDir="row">
-      <Center w="180px" h="80px" bg="red.200">
+      <Center size={20} bg="red.200">
         Box 1
       </Center>
-      <Center w="180px" h="80px" bg="green.200">
+      <Center size={20} bg="green.200">
         Box 2
       </Center>
-      <Center w="180px" h="80px" bg="tomato">
+      <Center size={20} bg="tomato">
         Box 3
       </Center>
-      <Center w="180px" h="80px" bg="blue.200">
+      <Center size={20} bg="blue.200">
         Box 4
       </Center>
     </Wrap>
@@ -77,7 +79,9 @@ function WrapComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <WrapComponent />
+      <Center flex={1}>
+        <WrapComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -91,20 +95,20 @@ You can pass shorthands for alignItems and justifyContent as align and justify r
 
 ```SnackPlayer name=Wrap%20Align
 import React from 'react';
-import { Wrap, Center, NativeBaseProvider  } from 'native-base';
+import { Wrap, Center, NativeBaseProvider } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap spacing={10} align="center" direction="row">
-      <Center w="100px" h="80px" bg="red.200">
+      <Center size={20} bg="red.200">
         Box 1
       </Center>
-      <Center w="100px" h="40px" bg="green.200">
+      <Center size={16} bg="green.200">
         Box 2
       </Center>
-      <Center w="100px" h="60px" bg="tomato">
+      <Center size={12} bg="tomato">
         Box 3
       </Center>
-      <Center w="180px" h="80px" bg="blue.200">
+      <Center size={10} bg="blue.200">
         Box 4
       </Center>
     </Wrap>
@@ -113,7 +117,9 @@ function WrapComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <WrapComponent />
+      <Center flex={1}>
+        <WrapComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -127,16 +133,16 @@ import { Wrap, Center, NativeBaseProvider  } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap spacing={10} justify="center" direction="row">
-      <Center w="100px" h="80px" bg="red.200">
+      <Center size={20} bg="red.200">
         Box 1
       </Center>
-      <Center w="100px" h="40px" bg="green.200">
+      <Center size={16} bg="green.200">
         Box 2
       </Center>
-      <Center w="100px" h="60px" bg="tomato">
+      <Center size={12} bg="tomato">
         Box 3
       </Center>
-      <Center w="180px" h="80px" bg="blue.200">
+      <Center size={10} bg="blue.200">
         Box 4
       </Center>
     </Wrap>
@@ -145,7 +151,9 @@ function WrapComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <WrapComponent />
+      <Center flex={1}>
+        <WrapComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

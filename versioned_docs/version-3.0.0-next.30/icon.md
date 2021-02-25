@@ -13,11 +13,11 @@ You can use icons in multiple ways in NativeBase:
 
 - All icons types from [@expo/vector-icon](https://github.com/expo/vector-icons)
 
-## Example
+## Basic Usage
 
 ```SnackPlayer name=Icon%20Example
 import React from "react";
-import { Icon, NativeBaseProvider } from "native-base";
+import { Icon, NativeBaseProvider, Center } from "native-base";
 function IconComponent() {
   return (
     <>
@@ -29,7 +29,9 @@ function IconComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <IconComponent />
+      <Center flex={1}>
+        <IconComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -37,11 +39,11 @@ export default function () {
 
 Apart from the icons provided by [@expo/vector-icon](https://github.com/expo/vector-icons), you can also create custom icons using SVG. You can use all the components from [react-native-svg](https://github.com/react-native-svg/react-native-svg).
 
-## Example (custom)
+## Custom
 
 ```SnackPlayer name=Icon%20Example (custom)
 import React from "react";
-import { Icon, NativeBaseProvider } from "native-base";
+import { Icon, NativeBaseProvider, Center } from "native-base";
 import { Rect, Path, Circle } from 'react-native-svg';
 
 function IconComponent() {
@@ -61,17 +63,19 @@ function IconComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <IconComponent />
+      <Center flex={1}>
+        <IconComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
 ```
 
-## Example (createIcon)
+## createIcon
 
-```SnackPlayer name=Icon%20Example (createIcon)
+```SnackPlayer name=Icon%20(createIcon)
 import React from "react";
-import { createIcon, NativeBaseProvider } from "native-base";
+import { createIcon, NativeBaseProvider, Center } from "native-base";
 import { Path, Circle } from 'react-native-svg';
 
 function CreateIconExample() {
@@ -90,7 +94,9 @@ function CreateIconExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CreateIconExample />
+      <Center flex={1}>
+        <CreateIconExample />
+      </Center>
     </NativeBaseProvider>
   );
 }

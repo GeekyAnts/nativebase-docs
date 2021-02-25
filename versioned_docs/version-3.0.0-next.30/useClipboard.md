@@ -16,7 +16,7 @@ The `useClipboard` hook returns an object with the following fields:
 ## Import
 
 ```jsx
-import { useClipboard } from "native-base";
+import { useClipboard } from 'native-base';
 ```
 
 ## Usage
@@ -31,6 +31,7 @@ import {
   Input,
   useClipboard,
   NativeBaseProvider,
+  Center
 } from "native-base";
 
 function UseClipboardExample() {
@@ -64,7 +65,9 @@ function UseClipboardExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <UseClipboardExample />
+      <Center flex={1}>
+        <UseClipboardExample />
+      </Center>
     </NativeBaseProvider>
   );
 }

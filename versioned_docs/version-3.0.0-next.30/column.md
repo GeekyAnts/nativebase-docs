@@ -14,10 +14,10 @@ The mandatory wrapper for building Column Layouts
 
 ```SnackPlayer name=Columns%20Example
 import React from "react";
-import { Column, Text, NativeBaseProvider } from "native-base";
+import { Column, Text, NativeBaseProvider, Center } from "native-base";
 function ColumnComponent() {
   return (
-    <Column borderRadius={4} flexGrow={1} bg="green.500">
+    <Column borderRadius={4} bg="green.500">
       <Text>Test Text</Text>
       <Text>Testing this text with HStacks</Text>
     </Column>
@@ -26,7 +26,9 @@ function ColumnComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ColumnComponent />
+      <Center flex={1}>
+        <ColumnComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -49,9 +51,9 @@ This is the Box to be used inside Columns.
 
 ```jsx
 <Columns space={3} height={100} mb={3}>
-	<Column borderRadius={4} shadow={1} flexGrow={1} bg='green.500' />
-	<Column borderRadius={4} shadow={1} width={1 / 2.5} bg='pink.300' />
-	<Column borderRadius={4} shadow={1} flexGrow={1.5} bg='indigo.800' />
+  <Column borderRadius={4} shadow={1} flexGrow={1} bg='green.500' />
+  <Column borderRadius={4} shadow={1} width={1 / 2.5} bg='pink.300' />
+  <Column borderRadius={4} shadow={1} flexGrow={1.5} bg='indigo.800' />
 </Columns>
 ```
 

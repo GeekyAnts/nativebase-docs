@@ -15,7 +15,7 @@ import { Overlay, useOverlay } from 'native-base';
 
 ```SnackPlayer name=Overlay%20Usage
 import React from 'react';
-import { Button, useOverlay, NativeBaseProvider } from 'native-base';
+import { Button, useOverlay, NativeBaseProvider, Center } from 'native-base';
 
 function OverlayComponent () {
   const { closeOverlay, setOverlay } = useOverlay();
@@ -33,7 +33,9 @@ function OverlayComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <OverlayComponent />
+      <Center flex={1}>
+        <OverlayComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -43,7 +45,7 @@ export default function () {
 
 ```SnackPlayer name=Overlay%20Customized
 import React from 'react';
-import { Button, useOverlay, VStack, NativeBaseProvider } from 'native-base';
+import { Button, useOverlay, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function OverlayComponent () {
 	const [disableOverlay, setDisableOverlay] = React.useState(false);
@@ -75,7 +77,9 @@ function OverlayComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <OverlayComponent />
+      <Center flex={1}>
+        <OverlayComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

@@ -17,7 +17,7 @@ import { Tag } from 'native-base';
 
 ```SnackPlayer name=Tag%20Example
 import React from 'react';
-import { Tag, NativeBaseProvider, View,useColorModeValue } from 'native-base';
+import { Tag, NativeBaseProvider, View,useColorModeValue, Center } from 'native-base';
 
 function TagComponent () {
   return <Tag colorScheme="green">NativeBase</Tag>;
@@ -31,7 +31,9 @@ export default function () {
       alignItems="center"
       bg={useColorModeValue(`gray.50`, `gray.800`)}
     >
-      <TagComponent />
+      <Center flex={1}>
+        <TagComponent />
+      </Center>
       </View>
     </NativeBaseProvider>
   );
@@ -42,23 +44,25 @@ export default function () {
 
 ```SnackPlayer name=Tag%20Example(Variants)
 import React from 'react';
-import { Tag, HStack, NativeBaseProvider } from 'native-base';
+import { Tag, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function TagComponent() {
   return (
-    <HStack space={4} alignItems="flex-start">
+    <VStack space={4} alignItems="flex-start">
       {['solid', 'subtle', 'outline'].map((variant: any) => (
         <Tag key={variant} variant={variant} colorScheme="green">
           NativeBase
         </Tag>
       ))}
-    </HStack>
+    </VStack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <TagComponent />
+      <Center flex={1}>
+        <TagComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -68,23 +72,25 @@ export default function () {
 
 ```SnackPlayer name=Tag%20Example(Sizes)
 import React from 'react';
-import { Tag, HStack, NativeBaseProvider } from 'native-base';
+import { Tag, VStack, NativeBaseProvider, Center } from 'native-base';
 
 function TagComponent() {
   return (
-    <HStack space={4} alignItems="flex-start">
+    <VStack space={4} alignItems="flex-start">
       {['sm', 'md', 'lg'].map((size) => (
         <Tag size={size} key={size} variant="solid" colorScheme="green">
           NativeBase
         </Tag>
       ))}
-    </HStack>
+    </VStack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <TagComponent />
+      <Center flex={1}>
+        <TagComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -94,7 +100,7 @@ export default function () {
 
 ```SnackPlayer name=Tag%20Example(with icon)
 import React from 'react';
-import { Tag, Icon, NativeBaseProvider } from 'native-base';
+import { Tag, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function TagComponent() {
   return (
@@ -107,7 +113,9 @@ function TagComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TagComponent />
+      <Center flex={1}>
+        <TagComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -120,7 +128,8 @@ import React from 'react';
 import {
   Tag,
   Avatar,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function TagComponent() {
@@ -140,7 +149,9 @@ function TagComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TagComponent />
+      <Center flex={1}>
+        <TagComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

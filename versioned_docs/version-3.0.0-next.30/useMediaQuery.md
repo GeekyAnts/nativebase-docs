@@ -8,14 +8,14 @@ title: useMediaQuery
 ## Import
 
 ```jsx
-import { useMediaQuery } from "native-base";
+import { useMediaQuery } from 'native-base';
 ```
 
 ### Usage (max-height)
 
 ```SnackPlayer name=useMediaQuery%20Usage(max-height)
 import React from "react";
-import { Text, useMediaQuery, NativeBaseProvider } from "native-base";
+import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
 function UseMediaQueryExample() {
   const [isSmaller] = useMediaQuery({ maxHeight: 512 });
@@ -28,7 +28,9 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <UseMediaQueryExample />
+      <Center flex={1}>
+        <UseMediaQueryExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -38,7 +40,7 @@ export default function () {
 
 ```SnackPlayer name=useMediaQuery%20Usage(min-width)
 import React from "react";
-import { Text, useMediaQuery, NativeBaseProvider } from "native-base";
+import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
 function UseMediaQueryExample() {
   const [isLargerThan512] = useMediaQuery({ minWidth: 512 });
@@ -51,7 +53,9 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <UseMediaQueryExample />
+      <Center flex={1}>
+        <UseMediaQueryExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -61,7 +65,7 @@ export default function () {
 
 ```SnackPlayer name=useMediaQuery%20Usage(orientation)
 import React from "react";
-import { Text, useMediaQuery, NativeBaseProvider } from "native-base";
+import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
 function UseMediaQueryExample() {
   const [isLandScape, isPortrait] = useMediaQuery([
@@ -78,7 +82,9 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <UseMediaQueryExample />
+      <Center flex={1}>
+        <UseMediaQueryExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -88,4 +94,4 @@ export default function () {
 
 The `useMediaQuery` hook returns an array of booleans, indicating whether the given query matches or queries match.
 
-Why an array? `useMediaQuery` accepts both an object and an array of object, but will always return an array. This way, you can combine multiple media queries which will be individually matched in a single call. The options to use are still limited to `maxWidth` | `minWidth` | `maxHeight` | `minHeight` | `orientation`
+Why an array? `useMediaQuery` accepts both an object and an array of object, but will always return an array. This way, you can combine multiple media queries which will be individually matched in a single call. The options to use are still limited to `maxWidth`, `minWidth`, `maxHeight`, `minHeight`, `orientation`.

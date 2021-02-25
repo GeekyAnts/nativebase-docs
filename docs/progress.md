@@ -19,7 +19,7 @@ import { Progress } from 'native-base';
 
 ```SnackPlayer name=Progress%20Usage
 import React from 'react';
-import { Box, Progress, NativeBaseProvider } from 'native-base';
+import { Box, Progress, NativeBaseProvider, Center } from 'native-base';
 
 function ProgressComponent () {
   return (
@@ -31,7 +31,9 @@ function ProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ProgressComponent />
+        <Center flex={1}>
+        <ProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -41,7 +43,7 @@ export default function () {
 
 ```SnackPlayer name=Progress%20ColorSchemeSizes
 import React from 'react';
-import { Box, Progress, NativeBaseProvider } from 'native-base';
+import { Box, Progress, NativeBaseProvider, Center } from 'native-base';
 
 function ProgressComponent () {
   return (
@@ -58,7 +60,9 @@ function ProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ProgressComponent />
+      <Center flex={1}>
+        <ProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -68,7 +72,7 @@ export default function () {
 
 ```SnackPlayer name=Progress%20Rounded
 import React from 'react';
-import { Box, Progress, NativeBaseProvider } from 'native-base';
+import { Box, Progress, NativeBaseProvider, Center } from 'native-base';
 
 function ProgressComponent () {
   return (
@@ -80,7 +84,9 @@ function ProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ProgressComponent />
+      <Center flex={1}>
+        <ProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -102,7 +108,9 @@ function ProgressComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ProgressComponent />
+      <Center flex={1}>
+        <ProgressComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -112,8 +120,8 @@ export default function () {
 
 ### Progress
 
-| Name        | Type                    | Description                                                                                                       | Default |
-| ----------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| value       | number                  | value of Progress.                                                                                                | -       |
-| colorScheme | string                  | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
-| size        | 2xl, lg, md, sm, xl, xs | defines height of Progress                                                                                        | md      |
+| Name        | Type                                | Description                                                                                                       | Default |
+| ----------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| value       | number                              | value of Progress.                                                                                                | -       |
+| colorScheme | string                              | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
+| size        | `2xl`, `lg`, `md`, `sm`, `xl`, `xs` | defines height of Progress                                                                                        | md      |

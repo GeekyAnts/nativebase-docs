@@ -15,12 +15,12 @@ import {
   Icon,
   Text,
   VStack,
-  NativeBaseProvider,
+  NativeBaseProvider
 } from "native-base";
 
 function AppBarComponent() {
   return (
-    <AppBar shadow={1} height={80}>
+    <AppBar>
       <AppBar.Left>
         <IconButton
           accessibilityLabel="Navigate back"
@@ -76,12 +76,12 @@ Implements `Box`, all props of Box can be passed.
 
 ## AppBar.Left Props
 
-Implements `HStack` , all the props of HStack can be passed.
+Implements [`HStack`](hStack.md) , all the props of HStack can be passed.
 
 ## AppBar.Content Props
 
-Implements `HStack` , all the props of HStack can be passed.
+Implements [`HStack`](hStack.md) , all the props of HStack can be passed.
 
 ## AppBar.Right Props
 
-Implements `HStack` , all the props of HStack can be passed.
+Implements [`HStack`](hStack.md) , all the props of HStack can be passed.

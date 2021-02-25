@@ -5,10 +5,6 @@ title: Making App drawer
 
 Creating an app drawer like layout is very common and with NativeBase's SimpleGrid make this extremely simple while still keeping it extremely customisable. Here is an example to illustrate it.
 
-<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/57b6426c-012b-4a18-a96f-a93d505a4f72/Screenshot_2021-01-19_at_6.35.50_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/57b6426c-012b-4a18-a96f-a93d505a4f72/Screenshot_2021-01-19_at_6.35.50_PM.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/231b210c-f72c-47cb-81ba-ea7a9c0be590/Screenshot_2021-01-19_at_6.35.46_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/231b210c-f72c-47cb-81ba-ea7a9c0be590/Screenshot_2021-01-19_at_6.35.46_PM.png) -->
-
 ```SnackPlayer name=AppDrawer
 import React from "react";
 import { IconButton, SimpleGrid, Icon, NativeBaseProvider } from "native-base";

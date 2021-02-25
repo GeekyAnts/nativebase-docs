@@ -17,7 +17,7 @@ To include content, wrap it in the Container component.
 
 ```SnackPlayer name=Container%20Example
 import React from 'react';
-import { Container, Text, Heading, NativeBaseProvider } from 'native-base';
+import { Container, Text, Heading, NativeBaseProvider, Center } from 'native-base';
 function ContainerComponent() {
   return (
     <Container>
@@ -35,7 +35,9 @@ function ContainerComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <ContainerComponent />
+      <Center flex={1}>
+        <ContainerComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

@@ -16,7 +16,7 @@ import { SimpleGrid } from 'native-base';
 ### Using columns
 
 ```SnackPlayer name=SimpleGrid%20Usage
-import { SimpleGrid, Box, NativeBaseProvider } from 'native-base';
+import { SimpleGrid, Box, NativeBaseProvider, Center } from 'native-base';
 import React from 'react';
 
 const items = 12;
@@ -34,7 +34,9 @@ function SimpleGridComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SimpleGridComponent />
+      <Center flex={1}>
+        <SimpleGridComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -43,7 +45,7 @@ export default function () {
 ### Using minChildWidth
 
 ```SnackPlayer name=SimpleGrid%20minWidthChild
-import { SimpleGrid, Box, NativeBaseProvider } from 'native-base';
+import { SimpleGrid, Box, NativeBaseProvider, Center } from 'native-base';
 import React from 'react';
 
 const items = 12;
@@ -61,7 +63,9 @@ function SimpleGridComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SimpleGridComponent />
+      <Center flex={1}>
+        <SimpleGridComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

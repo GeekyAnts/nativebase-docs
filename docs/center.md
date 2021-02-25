@@ -36,7 +36,9 @@ function CenterComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CenterComponent />
+      <Center flex={1}>
+        <CenterComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -59,7 +61,6 @@ function CenterComponent() {
           name="audiotrack"
           type="MaterialIcons"
           color="red.300"
-          boxSize={6}
         />
       </Center>
       <Center w="40px" h="40px" bg="tomato">
@@ -73,7 +74,9 @@ function CenterComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CenterComponent />
+      <Center flex={1}>
+        <CenterComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -91,6 +94,7 @@ import {
   Box,
   HStack,
   Icon,
+  Center,
   NativeBaseProvider,
 } from "native-base";
 function CenterComponent() {
@@ -101,7 +105,6 @@ function CenterComponent() {
           name="audiotrack"
           type="MaterialIcons"
           color="white"
-          boxSize={8}
         />
       </Circle>
       <Square size="lg" bg="blue.300">
@@ -115,7 +118,9 @@ function CenterComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <CenterComponent />
+      <Center flex={1}>
+        <CenterComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

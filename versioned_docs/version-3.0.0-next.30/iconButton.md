@@ -13,7 +13,7 @@ title: IconButton
 
 ```SnackPlayer name=IconButton%20Example
 import React from 'react';
-import { IconButton, Icon, NativeBaseProvider } from 'native-base';
+import { IconButton, Icon, NativeBaseProvider, Center } from 'native-base';
 function IconButtonExample () {
   return (
     <IconButton
@@ -26,7 +26,9 @@ function IconButtonExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <IconButtonExample />
+      <Center flex={1}>
+        <IconButtonExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -36,7 +38,7 @@ export default function () {
 
 ```SnackPlayer name=IconButton%20Example(Sizes)
 import React from 'react';
-import { HStack, IconButton, Icon, NativeBaseProvider } from 'native-base';
+import { HStack, IconButton, Icon, NativeBaseProvider, Center } from 'native-base';
 function IconButtonExample () {
   return (
     <HStack space={4}>
@@ -54,7 +56,9 @@ function IconButtonExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <IconButtonExample />
+      <Center flex={1}>
+        <IconButtonExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -64,7 +68,7 @@ export default function () {
 
 ```SnackPlayer name=IconButton%20Example(Variants)
 import React from 'react';
-import { HStack, IconButton, Icon, NativeBaseProvider } from 'native-base';
+import { HStack, IconButton, Icon, NativeBaseProvider, Center } from 'native-base';
 function IconButtonExample () {
   return (
     <HStack space={4}>
@@ -81,7 +85,9 @@ function IconButtonExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <IconButtonExample />
+      <Center flex={1}>
+        <IconButtonExample />
+      </Center>
     </NativeBaseProvider>
   );
 }

@@ -13,7 +13,7 @@ The `PinInput` component is similar to the `Input` component, but it is optimize
 
 ```SnackPlayer name=PinInput%20Usage
 import React from 'react';
-import { PinInput, NativeBaseProvider } from 'native-base';
+import { PinInput, NativeBaseProvider, Center } from 'native-base';
 
 function PinInputComponent () {
   return (
@@ -28,7 +28,9 @@ function PinInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PinInputComponent />
+      <Center flex={1}>
+        <PinInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -38,7 +40,7 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20Sizes
 import React from 'react';
-import { PinInput, Stack, NativeBaseProvider } from 'native-base';
+import { PinInput, Stack, NativeBaseProvider, Center } from 'native-base';
 
 function PinInputComponent () {
   return (
@@ -79,7 +81,9 @@ function PinInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PinInputComponent />
+      <Center flex={1}>
+        <PinInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -89,7 +93,7 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20DefaultValue
 import React from 'react';
-import { PinInput, Stack, NativeBaseProvider } from 'native-base';
+import { PinInput, Stack, NativeBaseProvider, Center } from 'native-base';
 
 function PinInputComponent () {
   return (
@@ -110,7 +114,9 @@ function PinInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PinInputComponent />
+      <Center flex={1}>
+        <PinInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -120,7 +126,7 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20Placeholder
 import React from 'react';
-import { PinInput, NativeBaseProvider } from 'native-base';
+import { PinInput, NativeBaseProvider, Center } from 'native-base';
 
 function PinInputComponent () {
   return (
@@ -134,7 +140,9 @@ function PinInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PinInputComponent />
+      <Center flex={1}>
+        <PinInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -144,7 +152,7 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20Manage Focus
 import React from 'react';
-import { PinInput, NativeBaseProvider } from 'native-base';
+import { PinInput, NativeBaseProvider, Center } from 'native-base';
 
 function PinInputComponent () {
   return (
@@ -159,7 +167,9 @@ function PinInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PinInputComponent />
+      <Center flex={1}>
+        <PinInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -169,7 +179,7 @@ export default function () {
 
 ```SnackPlayer name=PinInput%20Variants
 import React from 'react';
-import { PinInput, Stack, NativeBaseProvider } from 'native-base';
+import { PinInput, Stack, NativeBaseProvider, Center } from 'native-base';
 
 function PinInputComponent () {
   return (
@@ -205,7 +215,9 @@ function PinInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PinInputComponent />
+      <Center flex={1}>
+        <PinInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -219,7 +231,8 @@ import {
   PinInput,
   Center,
   FormControl,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function PinInputComponent () {
@@ -244,7 +257,9 @@ function PinInputComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <PinInputComponent />
+      <Center flex={1}>
+        <PinInputComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

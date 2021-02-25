@@ -19,7 +19,7 @@ import { Select } from 'native-base';
 
 ```SnackPlayer name=Basic
 import React from 'react';
-import { Icon, Select, NativeBaseProvider } from 'native-base';
+import { Icon, Select, NativeBaseProvider, Center } from 'native-base';
 
 function SelectComponent() {
 	let [language, setLanguage] = React.useState < string > '';
@@ -38,11 +38,13 @@ function SelectComponent() {
 	);
 }
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<SelectComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <SelectComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
 }
 ```
 
@@ -50,7 +52,7 @@ export default function () {
 
 ```SnackPlayer name=Native
 import React from 'react';
-import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
+import { Icon, Select, NativeBaseProvider, VStack, Text, Center } from 'native-base';
 
 function SelectComponent() {
 	let [language, setLanguage] = React.useState < string > 'js';
@@ -75,11 +77,13 @@ function SelectComponent() {
 	);
 }
 export default function () {
-	return (
-		<NativeBaseProvider>
-			<SelectComponent />
-		</NativeBaseProvider>
-	);
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <SelectComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
 }
 ```
 
@@ -87,7 +91,7 @@ export default function () {
 
 ```SnackPlayer name=Styled
 import React from 'react';
-import { Icon, Select, NativeBaseProvider, VStack, Text } from 'native-base';
+import { Icon, Select, NativeBaseProvider, VStack, Text, Center } from 'native-base';
 
 function SelectComponent () {
 	let [language, setLanguage] = React.useState<string>('js');
@@ -123,7 +127,9 @@ function SelectComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SelectComponent />
+      <Center flex={1}>
+        <SelectComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

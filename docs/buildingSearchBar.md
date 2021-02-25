@@ -14,7 +14,7 @@ Here are some examples to should easily and quickly we can create so many types 
 
 ```SnackPlayer name=Search%20Bar
 import React from "react";
-import { VStack, Input, Button, Icon, Text, NativeBaseProvider } from "native-base";
+import { VStack, Input, Button, Icon, Text, NativeBaseProvider, Center } from "native-base";
 
 function SearchBar(){
 return   <VStack w="90%" space={4}>
@@ -64,7 +64,9 @@ return   <VStack w="90%" space={4}>
 export default function () {
   return (
     <NativeBaseProvider>
-      <SearchBar/>
+      <Center flex={1}>
+        <SearchBar/>
+      </Center>
     </NativeBaseProvider>
   );
 }

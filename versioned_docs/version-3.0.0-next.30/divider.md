@@ -21,7 +21,7 @@ The Divider displays a thin horizontal or vertical line.
 
 ```SnackPlayer name=Divider%20Usage
 import React from "react";
-import { Divider, NativeBaseProvider } from "native-base";
+import { Divider, NativeBaseProvider, Center } from "native-base";
 
 function DividerComponent() {
   return <Divider mt={5} />;
@@ -29,7 +29,9 @@ function DividerComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <DividerComponent />
+      <Center flex={1}>
+        <DividerComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -58,7 +60,9 @@ function DividerComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <DividerComponent />
+      <Center flex={1}>
+        <DividerComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -66,26 +70,21 @@ export default function () {
 
 ## Composition
 
-You can use `borderColor` to change the divider's color and `borderWidth` to change it's width.
+You can use `bg` or `backgroundColor` to change the divider's color and `width` and `height` to change its width and height respectively.
 
 ```SnackPlayer name=Divider%20Composition
 import React from "react";
-import { Divider, Flex, Text, NativeBaseProvider } from "native-base";
+import { Divider, Flex, Text, NativeBaseProvider, Center } from "native-base";
 
 function DividerComponent() {
   return (
     <Flex direction="row" p={4}>
       <Text>Simple</Text>
-      <Divider
-        borderColor="red.500"
-        borderWidth={2}
-        mx={4}
-        orientation="vertical"
-      />
+      <Divider bg="red.500" w={1} mx={4} orientation="vertical" />
       <Text>Easy</Text>
-      <Divider borderColor="blue.500" mx={4} orientation="vertical" />
+      <Divider bg="blue.500" mx={4} orientation="vertical" />
       <Text>Beautiful</Text>
-      <Divider borderColor="green.500" mx={4} orientation="vertical" />
+      <Divider bg="green.500" mx={4} orientation="vertical" />
       <Text>NativeBase</Text>
     </Flex>
   );
@@ -93,7 +92,9 @@ function DividerComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <DividerComponent />
+      <Center flex={1}>
+        <DividerComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

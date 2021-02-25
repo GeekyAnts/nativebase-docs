@@ -26,6 +26,7 @@ import {
   Text,
   Box,
   NativeBaseProvider,
+  Center
 } from "native-base";
 
 function LinkComponent() {
@@ -41,7 +42,9 @@ function LinkComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <LinkComponent />
+      <Center flex={1}>
+        <LinkComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -58,6 +61,7 @@ import {
   Text,
   Box,
   NativeBaseProvider,
+  Center
 } from "native-base";
 
 function LinkComponent() {
@@ -73,7 +77,9 @@ function LinkComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <LinkComponent />
+      <Center flex={1}>
+        <LinkComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -90,6 +96,7 @@ import {
   Text,
   Box,
   NativeBaseProvider,
+  Center
 } from "native-base";
 
 function LinkComponent() {
@@ -105,7 +112,9 @@ function LinkComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <LinkComponent />
+      <Center flex={1}>
+        <LinkComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -122,6 +131,7 @@ import {
   Text,
   Box,
   NativeBaseProvider,
+  Center
 } from "native-base";
 
 function LinkComponent() {
@@ -142,7 +152,9 @@ function LinkComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <LinkComponent />
+      <Center flex={1}>
+        <LinkComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -159,6 +171,7 @@ import {
   Text,
   Box,
   NativeBaseProvider,
+  Center
 } from "native-base";
 
 function LinkComponent() {
@@ -186,7 +199,9 @@ function LinkComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <LinkComponent />
+      <Center flex={1}>
+        <LinkComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

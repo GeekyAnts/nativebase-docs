@@ -3,7 +3,7 @@ id: stat
 title: Stat
 ---
 
-Stat provides a beautiful structure to display statistics and data.
+The Stat provides a beautiful structure to display statistics and data.
 
 ## Implements
 
@@ -23,7 +23,8 @@ import {
   Stat,
   Box,
   Heading,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function StatComponent () {
@@ -41,7 +42,9 @@ function StatComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <StatComponent />
+      <Center flex={1}>
+        <StatComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -55,7 +58,8 @@ import {
   Stat,
   Heading,
   Box,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function StatComponent () {
@@ -86,7 +90,9 @@ function StatComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <StatComponent />
+      <Center flex={1}>
+        <StatComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

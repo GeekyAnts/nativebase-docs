@@ -57,7 +57,9 @@ function UseDiscloseExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <UseDiscloseExample />
+      <Center flex={1}>
+        <UseDiscloseExample />
+      </Center>
     </NativeBaseProvider>
   );
 }

@@ -13,11 +13,9 @@ Followed by the image which flows till the very edge.
 
 And lastly a description.
 
-<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a9dfc8d-a080-4f55-928b-6535065c727c/Screenshot_2021-01-18_at_6.20.13_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a9dfc8d-a080-4f55-928b-6535065c727c/Screenshot_2021-01-18_at_6.20.13_PM.png) -->
-
 ```SnackPlayer name=Card
 import React from "react";
-import { VStack, HStack, Avatar, Image, Text, NativeBaseProvider } from "native-base";
+import { VStack, HStack, Avatar, Image, Text, NativeBaseProvider, Center } from "native-base";
 
 function CardComponent(){
  return<VStack m={4} space={4} border={1} borderRadius="lg">
@@ -54,7 +52,9 @@ function CardComponent(){
 export default function () {
   return (
   <NativeBaseProvider>
-   <CardComponent/>
+    <Center flex={1}>
+      <CardComponent/>
+    </Center>
   </NativeBaseProvider>
   );
 }

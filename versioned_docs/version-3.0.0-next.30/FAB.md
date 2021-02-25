@@ -19,7 +19,7 @@ import { Fab } from 'native-base';
 
 ```SnackPlayer name=FAB%20Example
 import React from 'react';
-import { Fab, Icon, NativeBaseProvider } from 'native-base';
+import { Fab, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function FabComponent() {
   return (
@@ -33,7 +33,9 @@ function FabComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FabComponent />
+      <Center flex={1}>
+        <FabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -42,7 +44,7 @@ export default function () {
 ## Custom Position
 
 ```SnackPlayer name=FAB%20Custom Position
-import { Fab, Icon, Text, NativeBaseProvider } from 'native-base';
+import { Fab, Icon, Text, NativeBaseProvider, Center } from 'native-base';
 import React from 'react';
 
 function FabComponent () {
@@ -60,7 +62,9 @@ function FabComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FabComponent />
+      <Center flex={1}>
+        <FabComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -74,6 +78,6 @@ Takes `IconButtonProps`
 
 ### FAB
 
-| Name      | Type   | Description                                                                                  | Default |
-| --------- | ------ | -------------------------------------------------------------------------------------------- | ------- |
-| placement | string | Applies pre-defined placements and accepts topRight \| topLeft \| bottomRight \| bottomLeft. | -       |
+| Name      | Type                                             | Description         | Default       |
+| --------- | ------------------------------------------------ | ------------------- | ------------- |
+| placement | `topRight`,`topLeft`,`bottomRight`, `bottomLeft` | Applies placements. | `bottomRight` |
