@@ -18,7 +18,7 @@ export function News() {
             <ul className="list-none flex flex-wrap justify-center text-sm font-medium -m-2">
               <li className="m-2">
                 <a
-                  className="inline-flex text-center text-gray-100 py-2 px-4 rounded-full bg-indigo-400 hover:bg-indigo-700 transition duration-150 ease-in-out"
+                  className="inline-flex text-center text-gray-100 py-2 px-4 rounded-full bg-primary-500 hover:bg-primary-800 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Developers
@@ -80,7 +80,7 @@ export function News() {
                     <ul className="list-none flex flex-wrap text-xs font-medium -m-1">
                       <li className="m-1">
                         <a
-                          className="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-indigo-400 hover:bg-indigo-600 transition duration-150 ease-in-out"
+                          className="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-primary-500 hover:bg-primary-700 transition duration-150 ease-in-out"
                           href="#0"
                         >
                           Case studies
@@ -152,7 +152,7 @@ export function News() {
                     <ul className="list-none flex flex-wrap text-xs font-medium -m-1">
                       <li className="m-1">
                         <a
-                          className="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-indigo-400 hover:bg-indigo-600 transition duration-150 ease-in-out"
+                          className="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-primary-500 hover:bg-primary-700 transition duration-150 ease-in-out"
                           href="#0"
                         >
                           Case studies
@@ -224,7 +224,7 @@ export function News() {
                     <ul className="list-none flex flex-wrap text-xs font-medium -m-1">
                       <li className="m-1">
                         <a
-                          className="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-indigo-400 hover:bg-indigo-600 transition duration-150 ease-in-out"
+                          className="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-primary-500 hover:bg-primary-700 transition duration-150 ease-in-out"
                           href="#0"
                         >
                           Case studies
