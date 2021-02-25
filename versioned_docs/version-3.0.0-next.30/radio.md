@@ -14,7 +14,7 @@ title: Radio
 
 ```SnackPlayer name=Radio%20Usage
 import React from 'react';
-import { Radio, Text, NativeBaseProvider } from 'native-base';
+import { Radio, Text, NativeBaseProvider, Center } from 'native-base';
 
 function RadioComponent () {
   return (
@@ -34,7 +34,9 @@ function RadioComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <RadioComponent />
+      <Center flex={1}>
+        <RadioComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -44,7 +46,7 @@ export default function () {
 
 ```SnackPlayer name=Radio%20Disabled
 import React from 'react';
-import { Radio, Text,  NativeBaseProvider } from 'native-base';
+import { Radio, Text,  NativeBaseProvider, Center } from 'native-base';
 
 function RadioComponent () {
   return (
@@ -64,7 +66,9 @@ function RadioComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <RadioComponent />
+      <Center flex={1}>
+        <RadioComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -74,7 +78,7 @@ export default function () {
 
 ```SnackPlayer name=Radio%20Invalid
 import React from 'react';
-import { Radio, Text, NativeBaseProvider } from 'native-base';
+import { Radio, Text, NativeBaseProvider, Center } from 'native-base';
 
 function RadioComponent () {
   return (
@@ -88,7 +92,9 @@ function RadioComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <RadioComponent />
+      <Center flex={1}>
+        <RadioComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -98,7 +104,7 @@ export default function () {
 
 ```SnackPlayer name=Radio%20Sizes
 import React from 'react';
-import { Radio,  Text, NativeBaseProvider } from 'native-base';
+import { Radio,  Text, NativeBaseProvider, Center } from 'native-base';
 
 function RadioComponent () {
   return (
@@ -118,7 +124,9 @@ function RadioComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <RadioComponent />
+      <Center flex={1}>
+        <RadioComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -128,7 +136,7 @@ export default function () {
 
 ```SnackPlayer name=Radio%20Custom Color
 import React from 'react';
-import { Radio,  Text, NativeBaseProvider } from 'native-base';
+import { Radio,  Text, NativeBaseProvider, Center } from 'native-base';
 
 function RadioComponent () {
   return (
@@ -148,7 +156,9 @@ function RadioComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <RadioComponent />
+      <Center flex={1}>
+        <RadioComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -158,7 +168,7 @@ export default function () {
 
 ```SnackPlayer name=Radio%20Custom Icon
 import React from 'react';
-import { Radio,  Text, Icon, NativeBaseProvider } from 'native-base';
+import { Radio,  Text, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function RadioComponent () {
   return (
@@ -190,7 +200,9 @@ function RadioComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <RadioComponent />
+      <Center flex={1}>
+        <RadioComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -205,7 +217,8 @@ import {
   Text,
   FormControl,
   Container,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function RadioComponent () {
@@ -233,7 +246,9 @@ function RadioComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <RadioComponent />
+      <Center flex={1}>
+        <RadioComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -243,7 +258,7 @@ export default function () {
 
 ```SnackPlayer name=Radio%20With Ref
 import React from 'react';
-import {  Radio, Icon, NativeBaseProvider } from 'native-base';
+import {  Radio, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function RadioComponent () {
   const myRef: any = React.useRef({});
@@ -284,7 +299,9 @@ function RadioComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <RadioComponent />
+      <Center flex={1}>
+        <RadioComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }

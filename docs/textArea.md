@@ -31,7 +31,9 @@ function TextAreaComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TextAreaComponent />
+      <Center flex={1}>
+        <TextAreaComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -63,7 +65,9 @@ function TextAreaComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TextAreaComponent />
+      <Center flex={1}>
+        <TextAreaComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -94,7 +98,9 @@ function TextAreaComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TextAreaComponent />
+      <Center flex={1}>
+        <TextAreaComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -130,7 +136,9 @@ function TextAreaComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <TextAreaComponent />
+      <Center flex={1}>
+        <TextAreaComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
