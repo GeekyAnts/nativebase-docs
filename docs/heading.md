@@ -3,13 +3,11 @@ id: heading
 title: Heading
 ---
 
-Headings are used for rendering headlines.
-
-`Heading` composes `Text` so you can use all the style props.
+Headings are used for rendering headlines. `Heading` composes [`Text`](text.md) so you can use all the style props.
 
 ## Implements
 
-- `Text` from [react-native](https://reactnative.dev/docs/text)
+- [`Text`](https://reactnative.dev/docs/text) from [React Native](https://reactnative.dev)
 
 ## Import
 
@@ -18,6 +16,8 @@ import { Heading } from 'native-base';
 ```
 
 ## Example
+
+### Basic
 
 ```SnackPlayer name=Heading%20Example
 import React from 'react';
@@ -37,7 +37,7 @@ export default function () {
 }
 ```
 
-## Example (Sizes)
+### Sizes
 
 ```SnackPlayer name=Heading%20Example(Sizes)
 import React from 'react';
@@ -66,7 +66,7 @@ export default function () {
 }
 ```
 
-## Example (Truncate)
+### Truncate
 
 ```SnackPlayer name=Heading%20Example(Truncate)
 import React from 'react';
@@ -90,7 +90,7 @@ export default function () {
 }
 ```
 
-## Example (Overriden)
+### Override
 
 ```SnackPlayer name=Heading%20Example(Overriden)
 import React from 'react';
@@ -114,7 +114,7 @@ export default function () {
 }
 ```
 
-## Example (Composition)
+### Composition
 
 ```SnackPlayer name=Heading%20Example(Composition)
 import React from 'react';
@@ -147,8 +147,6 @@ export default function () {
 
 ## Props
 
-### Heading
-
 | Name | Type                                | Description              | Default |
 | ---- | ----------------------------------- | ------------------------ | ------- |
-| size | `xs`, `sm`, `md`, `lg`, `xl`,`2xl`, | The size of the heading. | `xl`    |
+| size | `2xl`, `xl`, `lg`, `md`,`sm`, `xs`, | The size of the heading. | `xl`    |

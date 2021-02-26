@@ -3,7 +3,7 @@ id: code
 title: Code
 ---
 
-Code is a component used to display inline code. It is composed from the Box component with a mono font family for displaying code
+`Code` is a component used to display inline code. It is composed from the Box component with a mono font family for displaying code.
 
 ## Import
 
@@ -11,9 +11,11 @@ Code is a component used to display inline code. It is composed from the Box com
 import { Code } from 'native-base';
 ```
 
-## Example
+## Examples
 
-```SnackPlayer name=Code%20Example
+### Basic
+
+```SnackPlayer name=Code%20Basic
 import React from 'react';
 import { Code, NativeBaseProvider, Center } from 'native-base';
 function CodeComponent () {
@@ -30,7 +32,7 @@ export default function () {
 }
 ```
 
-## Example (Colors)
+### Colors
 
 ```SnackPlayer name=Code%20Example(Colors)
 import React from 'react';
@@ -58,11 +60,9 @@ export default function () {
 
 ## Props
 
-### Code
+`Code` implements **[Box](box.md)**, so all the Box Props can be passed to it.
 
-`Code` implements `Box`.
-
-| Name        | Type            | Description                                                                                                       | Default |
-| ----------- | --------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| children    | React.ReactNode | The content of the code.                                                                                          | -       |
-| colorScheme | string          | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | -       |
+| Name        | Type      | Description                                                                                                       | Default |
+| ----------- | --------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| children    | ReactNode | The content of the code.                                                                                          | -       |
+| colorScheme | string    | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | -       |

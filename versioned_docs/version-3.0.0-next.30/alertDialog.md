@@ -3,7 +3,7 @@ id: alertDialog
 title: AlertDialog
 ---
 
-AlertDialog component is used to interrupt the user with a mandatory confirmation or action. AlertDialog composes `Modal` so you can use all its props.
+`AlertDialog` component is used to interrupt the user with a mandatory confirmation or action. AlertDialog composes [`Modal`](modal.md) so you can use all its props.
 
 ## Import
 
@@ -19,7 +19,9 @@ AlertDialog component is used to interrupt the user with a mandatory confirmatio
 import { AlertDialog } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=AlertDialog%20Basic
 import React from "react";
@@ -74,7 +76,7 @@ export default function () {
 }
 ```
 
-## Transition
+### Transition
 
 ```SnackPlayer name=AlertDialog%20Transition
 import React from "react";
@@ -129,9 +131,7 @@ export default function () {
 
 ## Props
 
-AlertDialog and its components compose the Modal component. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of Modal.
-
-### AlertDialog
+AlertDialog and its components compose the **[Modal](modal.md)** component, so all the [`Modal props`](modal.md#props) can be passed to it. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of `Modal`.
 
 | Name                | Type      | Description                                                    | Default |
 | ------------------- | --------- | -------------------------------------------------------------- | ------- |

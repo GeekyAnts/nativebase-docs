@@ -7,7 +7,7 @@ The Stat provides a beautiful structure to display statistics and data.
 
 ## Implements
 
-- `Box`,`Text`,`Icon` from native-base
+- [`Box`](box.md),[`Text`](text.md),[`Icon`](icon.md).
 
 ## Import
 
@@ -15,7 +15,9 @@ The Stat provides a beautiful structure to display statistics and data.
 import { Stat } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Stat%20Usage
 import React from 'react';
@@ -50,7 +52,7 @@ export default function () {
 }
 ```
 
-## Stat with Indicator
+### Stat with Indicator
 
 ```SnackPlayer name=Stat%20WithIndicator
 import React from 'react';
@@ -100,7 +102,7 @@ export default function () {
 
 ## **Props**
 
-- `Stat.Label`, `Stat.Number` composes the `Text` component.
-- `Stat.Arrow` composes the `Icon` component but only accepts **_increase_** and **_decrease_** as **type**, yielding icon respectively.
-- `Stat`, `Stat.HelpText` composes the `Box` component.
-- `Stat.Group` composes the `HStack` component.
+- `Stat.Label`, `Stat.Number` composes the [`Text`](text.md) component.
+- `Stat.Arrow` composes the [`Icon`](icon.md) component but only accepts **_increase_** and **_decrease_** as **type**, yielding icon respectively.
+- `Stat`, `Stat.HelpText` composes the [`Box`](box.md) component.
+- `Stat.Group` composes the [`HStack`](hStack.md) component.

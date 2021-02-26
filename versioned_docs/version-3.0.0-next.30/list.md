@@ -7,7 +7,7 @@ List is used to display list items.
 
 ## Implements
 
-- `Box`, `VStack` from native-base
+- [`Box`](box.md), [`VStack`](VStack.md).
 
 ## Import
 
@@ -15,9 +15,11 @@ List is used to display list items.
 import { List } from 'native-base';
 ```
 
-## Basic
+## Examples
 
-```SnackPlayer name=Basic
+### Basic
+
+```SnackPlayer name=List%20Basic
 import React from 'react';
 import { List, Heading, Box, NativeBaseProvider, Center } from 'native-base';
 
@@ -45,7 +47,7 @@ export default function () {
 }
 ```
 
-## Ordered List
+### Ordered List
 
 ```SnackPlayer name=OrderedList
 import React from 'react';
@@ -75,7 +77,7 @@ export default function () {
 }
 ```
 
-## Unordered List
+### Unordered List
 
 ```SnackPlayer name=UnOrderedList
 import React from 'react';
@@ -105,7 +107,7 @@ export default function () {
 }
 ```
 
-## Styled List
+### Styled List
 
 ```SnackPlayer name=StyledList
 import React from 'react';
@@ -141,7 +143,7 @@ export default function () {
 }
 ```
 
-## List with ListIcon
+### List with ListIcon
 
 ```SnackPlayer name=ListWithIcon
 import React from 'react';
@@ -187,7 +189,7 @@ export default function () {
 }
 ```
 
-## Virtualized List
+### Virtualized List
 
 ```SnackPlayer name=VirtualizedList
 import React from 'react';
@@ -242,13 +244,13 @@ export default function () {
 
 ## Props
 
-### List Props
+### List
 
 | Name    | Type   | Description                                              | Default |
 | ------- | ------ | -------------------------------------------------------- | ------- |
 | spacing | number | The space between each list item.                        | -       |
 | start   | number | The starting number for Ol or List with ol/ordered prop. | -       |
 
-**List and List.Item** composes **Box** so you can pass all **Box** Props.
+**List and List.Item** composes **[Box](box.md)**, so all the [`Box Props`](box.md#props) can be passed to it.
 
-**List.Icon** composes **Icon** so you can pass all Icon Props.
+**List.Icon** composes **[Icon](icon.md)**, so all the [`Icon Props`](icon.md#props) can be passed to it.

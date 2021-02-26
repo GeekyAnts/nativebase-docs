@@ -3,11 +3,11 @@ id: VStack
 title: VStack
 ---
 
-VStack aligns items vertically.
+`VStack` aligns items vertically.
 
 ## Implements
 
-- `Stack` from nativebase
+- [`Stack`](stack.md)
 
 ## Import
 
@@ -49,11 +49,9 @@ export default function () {
 
 ## Props
 
-### VStack
-
-| Name     | Type        | Description                                  | Default |
-| -------- | ----------- | -------------------------------------------- | ------- |
-| divider  | JSX.Element | The divider element to use between elements. | -       |
-| space    | MarginProps | The space between each stack item.           | -       |
-| reversed | boolean     | The direction to stack the elements          | -       |
-| children | JSX.Element | The elements to be stacked.                  | -       |
+| Name     | Type                                                  | Description                                  | Default |
+| -------- | ----------------------------------------------------- | -------------------------------------------- | ------- |
+| divider  | JSX.Element                                           | The divider element to use between elements. | -       |
+| space    | [`MarginProps`](https://styled-system.com/api/#space) | The space between each stack item.           | -       |
+| reversed | boolean                                               | The direction to stack the elements          | -       |
+| children | JSX.Element                                           | The elements to be stacked.                  | -       |

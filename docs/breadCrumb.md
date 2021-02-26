@@ -5,7 +5,7 @@ title: Breadcrumb
 
 ## Implements
 
-- `Link`, `Flex` from nativebase
+- [`Link`](link.md), [`Flex`](flex.md).
 
 ## Import
 
@@ -13,7 +13,9 @@ title: Breadcrumb
 import { Breadcrumb } from 'nativebase';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 Add `isCurrentPage` prop to the `Breadcrumb.Item` that matches the current path.
 
@@ -62,7 +64,7 @@ export default function () {
 }
 ```
 
-## Separators
+### Icon Separators
 
 Change the `separator` used in the breadcrumb by passing a string, like `'-'` or any Component.
 
@@ -115,8 +117,7 @@ export default function () {
 }
 ```
 
-<br/>
-<br/>
+### Text Separators
 
 ```SnackPlayer name=Breadcrumb%20String%20Separator
 import React from 'react';
@@ -164,7 +165,7 @@ export default function () {
 }
 ```
 
-## Composition
+### Composition
 
 Breadcrumb composes Box so you can pass all Box props to change the style of the breadcrumbs. Let's say we need to increase the fontSize and change color of the breadcrumbs.
 
@@ -217,10 +218,10 @@ export default function () {
 
 ### Breadcrumb
 
-| Name      | Type                     | Description                                         | Default |
-| --------- | ------------------------ | --------------------------------------------------- | ------- |
-| separator | JSX.Element, string      | The visual separator between the breadcrumb item.   | -       |
-| spacing   | StyledSystem.MarginProps | The left and right margin applied to the separator. | -       |
+| Name      | Type                                                  | Description                                       | Default |
+| --------- | ----------------------------------------------------- | ------------------------------------------------- | ------- |
+| separator | JSX.Element, string                                   | The visual separator between the breadcrumb item. | -       |
+| spacing   | [`MarginProps`](https://styled-system.com/api/#space) | The space between each stack item.                | -       |
 
 ### Breadcrumb.Item
 
@@ -228,6 +229,6 @@ export default function () {
 | ------------- | ------- | -------------------------------------------------------------- | ------- |
 | isCurrentPage | boolean | If true, it indicates that the breadcrumb link is active page. | -       |
 
-### **Breadcrumb.Link Props**
+### Breadcrumb.Link
 
-The Breadcrumb.Link composes the `Link` component so you can use all Link props.
+`Breadcrumb.Link` composes the [`Link`](link.md) component so you can use all Link props.

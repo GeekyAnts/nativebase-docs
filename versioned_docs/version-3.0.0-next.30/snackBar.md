@@ -3,7 +3,7 @@ id: snackBar
 title: SnackBar
 ---
 
-Snackbars inform users about a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen. They shouldn’t interrupt the user experience and don’t require user input to disappear.
+`Snackbar` informs users about a process that an app has performed or will perform. It appears temporarily, towards the bottom of the screen. It shouldn’t interrupt the user experience and doesn't require user input to disappear.
 
 ## Import
 
@@ -11,7 +11,9 @@ Snackbars inform users about a process that an app has performed or will perform
 import { Snackbar } from 'native-base';
 ```
 
-## Usage
+## Example
+
+### Usage
 
 ```SnackPlayer name=SnackBar%20Usage
 import React from 'react';
@@ -54,7 +56,7 @@ export default function () {
 }
 ```
 
-## Using Hook
+### Using Hook
 
 ```SnackPlayer name=SnackBar%20Hooks
 import React from 'react';
@@ -114,9 +116,7 @@ export default function () {
 
 ## Props
 
-### Actionsheet
-
-Implement `Slide`, all props of `Box` and `Slide` can be passed.
+Implement [`Slide`](transition.md#slide), all props of [`Box`](box.md) and [`Slide`](transition.md#slide) can be passed.
 
 | Name                      | Type   | Description                                                    | Default |
 | ------------------------- | ------ | -------------------------------------------------------------- | ------- |

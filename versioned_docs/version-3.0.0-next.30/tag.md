@@ -3,7 +3,7 @@ id: tag
 title: Tag
 ---
 
-Tag component is used for items that need to be labeled, categorized, or organized using keywords that describe them.
+`Tag` component is used for items that need to be labeled, categorized, or organized using keywords that describe them.
 
 ## Import
 
@@ -11,7 +11,7 @@ Tag component is used for items that need to be labeled, categorized, or organiz
 import { Tag } from 'native-base';
 ```
 
-## Usage
+## Examples
 
 ### Basic
 

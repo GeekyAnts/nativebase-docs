@@ -7,7 +7,7 @@ A floating action button is a circular icon button that hovers over content to p
 
 ## Implements
 
-- `IconButton` from `native-base`.
+- [`IconButton`](iconButton.md)
 
 ## Import
 
@@ -16,6 +16,8 @@ import { Fab } from 'native-base';
 ```
 
 ## Example
+
+### Basic
 
 ```SnackPlayer name=FAB%20Example
 import React from 'react';
@@ -41,7 +43,7 @@ export default function () {
 }
 ```
 
-## Custom Position
+### Custom Position
 
 ```SnackPlayer name=FAB%20Custom Position
 import { Fab, Icon, Text, NativeBaseProvider, Center } from 'native-base';
@@ -70,13 +72,9 @@ export default function () {
 }
 ```
 
-## Extra props
-
-Takes `IconButtonProps`
-
 ## Props
 
-### FAB
+`FAB` implements **[IconButton](iconButton.md)**, so all the [`IconButton Props`](iconButton.md#props) can be passed to it.
 
 | Name      | Type                                             | Description         | Default       |
 | --------- | ------------------------------------------------ | ------------------- | ------------- |

@@ -11,7 +11,9 @@ Circular Progress is used to indicate the progress for determinate and indetermi
 import { CircularProgress } from 'native-base';
 ```
 
-## Usage
+## Examples
+
+### Usage
 
 ```SnackPlayer name=CircularProgress%20Usage
 import React from 'react';
@@ -35,7 +37,7 @@ export default function () {
 }
 ```
 
-## CircularProgress Sizes
+### CircularProgress Sizes
 
 You can add a size prop to the CircularProgress to add a custom size or choose from defined sizes.
 
@@ -61,7 +63,7 @@ export default function () {
 }
 ```
 
-## CircularProgress Thickness
+### CircularProgress Thickness
 
 You can add the thickness prop to update the thickness of the progress ring.
 
@@ -87,7 +89,7 @@ export default function () {
 }
 ```
 
-## CircularProgress Color
+### CircularProgress Color
 
 You can add the color prop to apply any color that the theme contains.
 
@@ -113,7 +115,7 @@ export default function () {
 }
 ```
 
-## CircularProgress Label
+### CircularProgress Label
 
 ```SnackPlayer name=CircularProgress%20Label
 import React from 'react';
@@ -144,7 +146,7 @@ export default function () {
 }
 ```
 
-## Indeterminate Progress
+### Indeterminate Progress
 
 Setting the progress to indeterminate means that the value can't be determined upfront. Pass the isIndeterminate prop to activate this state.
 
@@ -179,15 +181,13 @@ export default function () {
 
 ## Props
 
-### CircularProgress
-
-| Name            | Type                                                      | Description                                                                           | Default |
-| --------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
-| size            | `2xl`, `3xl`, `4xl`, `lg`, `md`, `sm`, `xl`, `xs`, number | The size of circular progress.                                                        | -       |
-| max             | number                                                    | Maximum value defining 100% progress made (must be higher than 'min')                 | -       |
-| min             | number                                                    | Minimum value defining 'no progress' (must be lower than 'max')                       | -       |
-| value           | number                                                    | Current progress (must be between min/max)                                            | -       |
-| isIndeterminate | boolean                                                   | Puts the component into indeterminate state. When passed, the 'value' prop is ignored | -       |
-| thickness       | number, string                                            | The thickness of the progress indicator                                               | -       |
-| trackColor      | string                                                    | The color name of the progress track. Use a color key from the theme object           | -       |
-| color           | string                                                    | The color of the progress indicator. Use a color key from the theme object            | -       |
+| Name            | Type                                                   | Description                                                                           | Default |
+| --------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------- | ------- |
+| size            | `4xl`,`3xl`,`2xl`, `xl`,`lg`, `md`, `sm`, `xs`, number | The size of circular progress.                                                        | `lg`    |
+| max             | number                                                 | Maximum value defining 100% progress made (must be higher than 'min')                 | -       |
+| min             | number                                                 | Minimum value defining 'no progress' (must be lower than 'max')                       | -       |
+| value           | number                                                 | Current progress (must be between min/max)                                            | -       |
+| isIndeterminate | boolean                                                | Puts the component into indeterminate state. When passed, the 'value' prop is ignored | -       |
+| thickness       | number, string                                         | The thickness of the progress indicator                                               | -       |
+| trackColor      | string                                                 | The color name of the progress track. Use a color key from the theme object           | -       |
+| color           | string                                                 | The color of the progress indicator. Use a color key from the theme object            | -       |

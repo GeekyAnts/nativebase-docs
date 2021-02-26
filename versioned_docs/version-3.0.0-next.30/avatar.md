@@ -3,7 +3,7 @@ id: avatar
 title: Avatar
 ---
 
-The Avatar component is used to represent a user and it can display a profile picture, initials or a fallback icon.
+`Avatar` component is used to represent a user and it can display a profile picture, initials or a fallback icon.
 
 ## Import
 
@@ -17,7 +17,9 @@ NativeBase exports 3 avatar-related components:
 import { Avatar } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Avatar%20Basic
 import React from "react";
@@ -85,7 +87,7 @@ export default function () {
 }
 ```
 
-## Sizes
+### Sizes
 
 ```SnackPlayer name=Avatar%20Sizes
 import React from "react";
@@ -162,7 +164,7 @@ export default function () {
 }
 ```
 
-## Fallbacks
+### Fallbacks
 
 ```SnackPlayer name=Avatar%20Fallbacks
 import React from "react";
@@ -190,7 +192,7 @@ export default function () {
 }
 ```
 
-## Avatar Badge
+### Avatar Badge
 
 ```SnackPlayer name=Avatar%20Avatar%20Badge
 import React from "react";
@@ -225,7 +227,7 @@ export default function () {
 }
 ```
 
-## Avatar Group
+### Avatar Group
 
 ```SnackPlayer name=Avatar%20Avatar%20Group
 import React from "react";
@@ -291,10 +293,8 @@ export default function () {
 
 ## Props
 
-### Avatar
-
 | Name   | Type                                | Description                     | Default |
 | ------ | ----------------------------------- | ------------------------------- | ------- |
 | size   | `2xl`, `xl`, `lg`, `md`, `sm`, `xs` | The size of the avatar.         | `md`    |
 | source | ImageSourcePropType                 | The image source of the avatar. | -       |
-| \_text | TextProps                           | Text styling for fallback Text. | -       |
+| \_text | [`TextProps`](text.md#props)        | Text styling for fallback Text. | -       |

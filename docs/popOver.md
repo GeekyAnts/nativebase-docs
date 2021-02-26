@@ -1,6 +1,6 @@
 ---
 id: popOver
-title: PopOver
+title: Popover
 ---
 
 `Popover` is a non-modal dialog that floats around a trigger. It's used to display contextual information to the user, and should be paired with a pressable trigger element.
@@ -18,7 +18,9 @@ title: PopOver
 import { Popover } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Popover%20Basic
 import React from 'react';
@@ -54,7 +56,7 @@ export default function () {
 }
 ```
 
-## Size
+### Size
 
 ```SnackPlayer name=Popover%20Size
 import React from 'react';
@@ -90,7 +92,7 @@ export default function () {
 }
 ```
 
-## initialFocusRef and closeOnBlur
+### initialFocusRef and closeOnBlur
 
 ```SnackPlayer name=Popover%20initialFocusRef%20and%20closeOnBlur
 import React from 'react';
@@ -139,11 +141,11 @@ export default function () {
 }
 ```
 
-> You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColor` and `borderWidth` to Popover.
+:::tip Tip
+You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColor` and `borderWidth` to Popover.
+:::
 
 ## Props
-
-### Popover
 
 | Name            | Type                                             | Description                                                               | Default |
 | --------------- | ------------------------------------------------ | ------------------------------------------------------------------------- | ------- |
@@ -155,8 +157,22 @@ export default function () {
 | id              | string                                           | The top-level id to use for the Popover and it's sub-components.          | -       |
 | size            | `xs`, `sm`,`md`,`lg`,`xl`,`full`, number, string | Size of the Popover component.                                            | -       |
 
-`Popover.Content` composes `Box` and has the ability to smartly position itself.
+### Popover.Content
 
-`Popover.Header`, `Popover.Footer` and `Popover.Body` composes the `Box`.
+`Popover.Content` composes the [`Box`](box.md) component.
 
-`Popover.CloseButton` composes the `CloseButton` component.
+### Popover.Header
+
+`Popover.Header` composes the [`Box`](box.md) component.
+
+### Popover.Footer
+
+`Popover.Footer` composes the [`Box`](box.md) component.
+
+### Popover.Body
+
+`Popover.Body` composes the [`Box`](box.md) component.
+
+### Popover.CloseButton 
+
+`Popover.CloseButton` composes the [`CloseButton`](closeButton.md) component.

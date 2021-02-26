@@ -7,11 +7,13 @@ title: IconButton
 
 ## Implements
 
-- `Button` from native-base/Button
+- [`Button`](button.md)
 
-## Example
+## Examples
 
-```SnackPlayer name=IconButton%20Example
+### Basic
+
+```SnackPlayer name=IconButton%20Basic
 import React from 'react';
 import { IconButton, Icon, NativeBaseProvider, Center } from 'native-base';
 function IconButtonExample () {
@@ -34,9 +36,9 @@ export default function () {
 }
 ```
 
-## Example (Sizes)
+### Sizes
 
-```SnackPlayer name=IconButton%20Example(Sizes)
+```SnackPlayer name=IconButton%20Sizes
 import React from 'react';
 import { HStack, IconButton, Icon, NativeBaseProvider, Center } from 'native-base';
 function IconButtonExample () {
@@ -64,9 +66,9 @@ export default function () {
 }
 ```
 
-## Example (Variants)
+### Variants
 
-```SnackPlayer name=IconButton%20Example(Variants)
+```SnackPlayer name=IconButton%20Variants
 import React from 'react';
 import { HStack, IconButton, Icon, NativeBaseProvider, Center } from 'native-base';
 function IconButtonExample () {
@@ -95,10 +97,8 @@ export default function () {
 
 ## Props
 
-### IconButton
+**IconButton** implements **[Button](button.md)**, so all the **Button** Props can be passed to **IconButton**.
 
-**IconButton** implements **Button** , so all the **Button** Props can be passed to **IconButton**.
-
-| Name | Type        | Description                                                                                 | Default |
-| ---- | ----------- | ------------------------------------------------------------------------------------------- | ------- |
-| icon | JSX.Element | The icon to be used. Refer to the Icons section of the docs for the available icon options. | -       |
+| Name | Type        | Description                                                                                             | Default |
+| ---- | ----------- | ------------------------------------------------------------------------------------------------------- | ------- |
+| icon | JSX.Element | The icon to be used. Refer to the [`Icon`](icon.md) section of the docs for the available icon options. | -       |

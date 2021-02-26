@@ -3,12 +3,12 @@ id: box
 title: Box
 ---
 
-This is a generic component for low level layout needs. It is similar to `<div />` in HTML.
+This is a generic component for low level layout needs. It is similar to a [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) in HTML.
 
 ## Implements
 
-- [`View`](https://reactnative.dev/docs/view) from [react-native](https://reactnative.dev/docs/view)
-- [`color`](https://styled-system.com/api/#color), [`space`](https://styled-system.com/api/#space), [`layout`](https://styled-system.com/api/#layout), [`flexbox`](https://styled-system.com/api/#flexbox) & [`border`](https://styled-system.com/api/#border) from [style-system](https://styled-system.com/api/)
+- [`View`](https://reactnative.dev/docs/view) from [React Native](https://reactnative.dev)
+- [`color`](https://styled-system.com/api/#color), [`space`](https://styled-system.com/api/#space), [`layout`](https://styled-system.com/api/#layout), [`flexbox`](https://styled-system.com/api/#flexbox) & [`border`](https://styled-system.com/api/#border) from [style-system](https://styled-system.com)
 
 ### The Box component is useful in some common use cases like:
 
@@ -113,5 +113,4 @@ export default function () {
 | Name     | Type        | Description                                                                           | Default |
 | -------- | ----------- | ------------------------------------------------------------------------------------- | ------- |
 | shadow   | number      | Applies box shadow and accepts a number from 0 to 9                                   | -       |
-| style    | stylesheet  | Applies user-defined styles and accepts a stylesheet.                                 | -       |
 | children | JSX.Element | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |

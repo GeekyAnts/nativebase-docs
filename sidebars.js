@@ -42,7 +42,6 @@ module.exports = {
         'container',
         'flex',
         'hStack',
-        'row',
         'simpleGrid',
         'stack',
         'view',

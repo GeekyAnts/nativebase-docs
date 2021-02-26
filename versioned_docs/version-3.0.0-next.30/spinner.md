@@ -5,10 +5,11 @@ title: Spinner
 
 ## Implements
 
-- `ActivityIndicator` from react-native
-- `color`
+- [`ActivityIndicator`](https://reactnative.dev/docs/activityindicator) from [`React Native`](https://reactnative.dev)
 
-## Example
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Spinner%20Usage
 import React from 'react';
@@ -28,7 +29,7 @@ export default function () {
 }
 ```
 
-## Example (Colors)
+### Colors
 
 ```SnackPlayer name=Spinner%20Example(colors)
 import React from 'react';
@@ -55,7 +56,7 @@ export default function () {
 }
 ```
 
-## Example (Sizes)
+### Sizes
 
 ```SnackPlayer name=Spinner%20Example(Sizes)
 import React from 'react';
@@ -80,7 +81,7 @@ export default function () {
 }
 ```
 
-## Example (Variant)
+### Variant
 
 ```SnackPlayer name=Spinner%20Example(Variant)
 import React from 'react';
@@ -112,7 +113,7 @@ export default function () {
 }
 ```
 
-## Example (Duration)
+### Duration
 
 ```SnackPlayer name=Spinner%20Example(Duration)
 import React from 'react';

@@ -19,7 +19,9 @@ NativeBase exports 5 modal-related components:
 import { Actionsheet } from 'native-base';
 ```
 
-## Usage
+## Examples
+
+### Usage
 
 ```SnackPlayer name=ActionSheet%20Usage
 import React from "react";
@@ -54,7 +56,7 @@ export default function () {
 }
 ```
 
-## Composition
+### Composition
 
 ```SnackPlayer name=ActionSheet%20Composition
 import React from "react";
@@ -92,7 +94,7 @@ export default function () {
 }
 ```
 
-## DisableOverlay
+### DisableOverlay
 
 ```SnackPlayer name=ActionSheet%20DisplayOverlay
 import React from "react";
@@ -131,14 +133,12 @@ export default function () {
 
 ## Props
 
-Implement `Box`, all props of Box can be passed.
-
 | Name           | Type     | Description                          | Default |
 | -------------- | -------- | ------------------------------------ | ------- |
 | isOpen         | boolean  | If true, actionsheet will be open.   | -       |
 | onClose        | function | Callback when actionsheet is closed. | -       |
 | disableOverlay | boolean  | If true, disables the overlay.       | -       |
 
-Actionsheet.Content, Actionsheet.Header, Actionsheet.Footer all implement `Box`. All props of Box can be passed.
+`ActionSheet`, `Actionsheet.Content`, `Actionsheet.Header`, `Actionsheet.Footer` implement **[Box](box.md)**, so all the Box Props can be passed to them.
 
-Actionsheet.Item implements `Button`, all the props of Button can be passed here.
+Actionsheet.Item implements [`Button`](button.md), all the props of `Button` can be passed here.

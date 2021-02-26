@@ -3,12 +3,12 @@ id: collapse
 title: Collapse
 ---
 
-Collapse is used to create regions of content that can expand or collapse with a simple animation.
+`Collapse` is used to create regions of content that can expand or collapse with a simple animation.
 
 ## Implements
 
-- `Box` from native-base
-- `LayoutAnimation` from react-native
+- [`Box`](box.md)
+- [`LayoutAnimation`](https://reactnative.dev/docs/layoutanimation) from [`React Native`](https://reactnative.dev)
 
 ## Import
 
@@ -16,7 +16,9 @@ Collapse is used to create regions of content that can expand or collapse with a
 import { Collapse } from 'native-base';
 ```
 
-## Usage
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Collapse%20Usage
 import React from 'react';
@@ -55,7 +57,7 @@ export default function () {
 }
 ```
 
-## Animation Duration, Starting Height and Ending Height
+### Animation Duration, Starting Height and Ending Height
 
 ```SnackPlayer name=Collapse%20Animation Duration
 import React from 'react';
@@ -100,7 +102,7 @@ export default function () {
 }
 ```
 
-## onAnimationStart & onAnimationEnd
+### onAnimationStart & onAnimationEnd
 
 ```SnackPlayer name=Collapse%20onAnimationStart & onAnimationEnd
 import React from 'react';
@@ -158,8 +160,6 @@ export default function () {
 ```
 
 ## Props
-
-### Collapse
 
 | Name             | Type     | Description                                                                     | Default |
 | ---------------- | -------- | ------------------------------------------------------------------------------- | ------- |

@@ -3,7 +3,7 @@ id: overlay
 title: Overlay
 ---
 
-The overlay is the fundamental component for positioning and controlling new components on top of existing ones.
+`Overlay` is the fundamental component for positioning and controlling new components on top of existing ones.
 
 ## Import
 
@@ -11,7 +11,9 @@ The overlay is the fundamental component for positioning and controlling new com
 import { Overlay, useOverlay } from 'native-base';
 ```
 
-## Usage
+## Examples
+
+### Usage
 
 ```SnackPlayer name=Overlay%20Usage
 import React from 'react';
@@ -41,7 +43,7 @@ export default function () {
 }
 ```
 
-## Customised
+### Customised
 
 ```SnackPlayer name=Overlay%20Customized
 import React from 'react';
@@ -87,11 +89,9 @@ export default function () {
 
 ## Props
 
-### Overlay
-
-| Name                   | Type                | Description                                       | Default |
-| ---------------------- | ------------------- | ------------------------------------------------- | ------- |
-| disableOverlay         | boolean             | If true, it disables the overlay.                 | false   |
-| position               | bottom, center, top | Vertically position the component on the overlay. | -       |
-| defaultBackgroundColor | string              | Set background color of overlay.                  | -       |
-| animationDuration      | number              | Duration for fade animation of the overlay.       | -       |
+| Name                   | Type                      | Description                                       | Default |
+| ---------------------- | ------------------------- | ------------------------------------------------- | ------- |
+| disableOverlay         | boolean                   | If true, it disables the overlay.                 | false   |
+| position               | `bottom`, `center`, `top` | Vertically position the component on the overlay. | -       |
+| defaultBackgroundColor | string                    | Set background color of overlay.                  | -       |
+| animationDuration      | number                    | Duration for fade animation of the overlay.       | -       |

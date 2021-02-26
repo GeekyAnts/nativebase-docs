@@ -13,9 +13,11 @@ import { Progress } from 'native-base';
 
 ## Implements
 
-- `Box` from nativebase
+- [`Box`](box.md)
 
-## Usage
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Progress%20Usage
 import React from 'react';
@@ -39,7 +41,7 @@ export default function () {
 }
 ```
 
-## Progress colorScheme and Sizes
+### Progress colorScheme and Sizes
 
 ```SnackPlayer name=Progress%20ColorSchemeSizes
 import React from 'react';
@@ -68,7 +70,7 @@ export default function () {
 }
 ```
 
-## Rounded Progress
+### Rounded Progress
 
 ```SnackPlayer name=Progress%20Rounded
 import React from 'react';
@@ -92,7 +94,7 @@ export default function () {
 }
 ```
 
-## Custom Track Color
+### Custom Track Color
 
 ```SnackPlayer name=Progress%20Custom Track Color
 import React from 'react';
@@ -118,10 +120,8 @@ export default function () {
 
 ## Props
 
-### Progress
-
-| Name        | Type                                | Description                                                                                                       | Default |
-| ----------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| value       | number                              | value of Progress.                                                                                                | -       |
-| colorScheme | string                              | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
-| size        | `2xl`, `lg`, `md`, `sm`, `xl`, `xs` | defines height of Progress                                                                                        | md      |
+| Name        | Type                               | Description                                                                                                       | Default |
+| ----------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| value       | number                             | value of Progress.                                                                                                | -       |
+| colorScheme | string                             | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
+| size        | `2xl`, `xl`,`lg`, `md`, `sm`, `xs` | defines height of Progress                                                                                        | `md`    |

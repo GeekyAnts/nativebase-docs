@@ -7,9 +7,11 @@ The keyboard key component exists to show which key or combination of keys perfo
 
 ## Implements
 
-- `View` from react-native
+- [`Box`](box.md)
 
-## Example
+## Examples
+
+### Basic
 
 ```SnackPlayer name=KBD%20Example
 import React from 'react';
@@ -49,12 +51,4 @@ export default function () {
 
 ## Props
 
-`Kbd` implements `Box`.
-
-### Kbd
-
-| Name      | Type           | Description                          | Default |
-| --------- | -------------- | ------------------------------------ | ------- |
-| textStyle | TextStyle      | The style to be applied to the text. | -       |
-| fontSize  | number, string | Font size to apply to the text.      | -       |
-| shadow    | number         | Shadow variant to apply to box.      | -       |
+`Kbd` implements **[Box](box.md)**, so all the Box Props can be passed to it.

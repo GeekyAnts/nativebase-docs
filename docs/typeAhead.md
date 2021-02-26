@@ -3,7 +3,7 @@ id: typeAhead
 title: TypeAhead(Autocomplete)
 ---
 
-A Typeahead component and hook that helps you in implementing Autocomplete Inputs.
+A `Typeahead` component and hook that helps you in implementing Autocomplete Inputs.
 
 ## Import
 
@@ -11,7 +11,9 @@ A Typeahead component and hook that helps you in implementing Autocomplete Input
 import { useTypeahead, Typeahead } from 'native-base';
 ```
 
-## Typeahead Component
+## Examples
+
+### Typeahead Component
 
 ```SnackPlayer name=Typeahead%20Typeahead%20Component
 import React from 'react';
@@ -63,7 +65,7 @@ export default function () {
 }
 ```
 
-## Typeahead Component with RenderItem
+### Typeahead Component with RenderItem
 
 ```SnackPlayer name=Typeahead%20Typeahead%20Component%20with%20RenderItem
 import React from 'react';
@@ -128,7 +130,7 @@ export default function () {
 }
 ```
 
-## useTypeahead Hook
+### useTypeahead Hook
 
 ```SnackPlayer name=Typeahead%20TypeaheadHooks
 import React from 'react';

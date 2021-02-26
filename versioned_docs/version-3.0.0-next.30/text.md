@@ -3,11 +3,11 @@ id: text
 title: Text
 ---
 
-`Text` is used to render text and paragraphs within an interface. It is build on the `Text` component from `react-native`
+`Text` is used to render text and paragraphs within an interface.
 
 ## Implements
 
-- `Text` from [react-native](https://reactnative.dev/docs/text)
+- [`Text`](https://reactnative.dev/docs/text) from [React Native](https://reactnative.dev)
 
 ## Import
 
@@ -15,7 +15,9 @@ title: Text
 import { Text } from 'native-base';
 ```
 
-## ChangingFontSize
+## Examples
+
+### ChangingFontSize
 
 ```SnackPlayer name=Text%20ChangingFontSize
 import React from 'react';
@@ -48,7 +50,7 @@ export default function () {
 }
 ```
 
-## Truncated
+### Truncated
 
 ```SnackPlayer name=Text%20Truncated
 import React from 'react';
@@ -82,7 +84,7 @@ export default function () {
 }
 ```
 
-## Nested
+### Nested
 
 ```SnackPlayer name=Text%20Nested
 import React from 'react';
@@ -108,7 +110,7 @@ export default function () {
 }
 ```
 
-## Overridden
+### Overridden
 
 ```SnackPlayer name=Text%20Overridden
 import React from 'react';

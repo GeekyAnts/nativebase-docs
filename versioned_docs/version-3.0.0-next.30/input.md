@@ -7,8 +7,8 @@ The `Input` component is a component that is used to get user input in a text fi
 
 ## Implements
 
-- `TextInput` from [react-native](https://reactnative.dev/docs/textinput)
-- `Box` from native-base.
+- [`TextInput`](https://reactnative.dev/docs/textinput) from [`React Native`](https://reactnative.dev)
+- [`Box`](box.md)
 
 ## Import
 
@@ -21,7 +21,9 @@ import {
 } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Input%20Basic
 import React from 'react';
@@ -41,7 +43,7 @@ export default function () {
 }
 ```
 
-## Input Sizes
+### Input Sizes
 
 ```SnackPlayer name=Image%20Sizes
 import React from 'react';
@@ -73,7 +75,7 @@ export default function () {
 }
 ```
 
-## Input Variants
+### Input Variants
 
 ```SnackPlayer name=Image%20Variants
 import React from 'react';
@@ -104,7 +106,7 @@ export default function () {
 }
 ```
 
-## Input Addons
+### Input Addons
 
 ```SnackPlayer name=Image%20Addons
 import React from 'react';
@@ -132,7 +134,7 @@ export default function () {
 }
 ```
 
-## Input Elements
+### Input Elements
 
 ```SnackPlayer name=Image%20Input%20Elements
 import React from 'react';
@@ -163,7 +165,7 @@ export default function () {
 }
 ```
 
-## Password Input
+### Password Input
 
 ```SnackPlayer name=Image%20Password%20Input
 import React from 'react';
@@ -196,7 +198,7 @@ export default function () {
 }
 ```
 
-## Controlled Input
+### Controlled Input
 
 ```SnackPlayer name=Image%20Controlled%20Input
 import React from 'react';
@@ -224,7 +226,7 @@ export default function () {
 }
 ```
 
-## Input Focused and Error Border Colors
+### Input Focused and Error Border Colors
 
 ```SnackPlayer name=Image%20Input%20Focused%20and%20Error%20Border%20Colors
 import React from 'react';
@@ -264,26 +266,24 @@ export default function () {
 
 ## Props
 
-### Input
-
-| Name              | Type                                           | Description                                                                                           | Default |
-| ----------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------- |
-| variant           | filled, outline, rounded, underlined, unstyled | The variant of the input style to use.                                                                | outline |
-| isDisabled        | boolean                                        | If true, the input will be disabled.                                                                  | -       |
-| isInvalid         | boolean                                        | If true, the input will indicate an error.                                                            | -       |
-| isReadOnly        | boolean                                        | If true, prevents the value of the input from being edited.                                           | -       |
-| size              | 2xl, lg, md, sm, xl, xs                        | The size of the button.                                                                               | md      |
-| onChange          | function                                       | Callback for on change on input value.                                                                | -       |
-| placeholder       | string                                         | The placeholder attribute specifies a short hint that describes the expected value of an input field. | -       |
-| errorMessage      | string                                         | error message to be shown when input is invalid.                                                      | -       |
-| \_errorMessage    | TextProps                                      | Props to be passed to errorMessage.                                                                   | -       |
-| isFullWidth       | boolean                                        | If true, the input element will span the full width of its parent                                     | -       |
-| focusBorderColor  | string                                         | The border color when the input is focused.                                                           | -       |
-| errorBorderColor  | string                                         | The border color when isInvalid is set to true.                                                       | -       |
-| errorMessageColor | string                                         | The font color of error message.                                                                      | -       |
-| ariaLabel         | string                                         | An accessible label for the input.                                                                    | -       |
-| InputLeftElement  | JSX.Element                                    | If given, adds the provided element to the left of the input.                                         | -       |
-| InputRightElement | JSX.Element                                    | If given, adds the provided element to the right of the input.                                        | -       |
-| type              | password, string, text                         | Using the type 'password', user can mask the input.                                                   | -       |
-| label             | string                                         | If given, adds a floating label to the input.                                                         | -       |
-| \_label           | TextProps                                      | Props to be passed to label to change its text styling.                                               | -       |
+| Name              | Type                                                     | Description                                                                                           | Default   |
+| ----------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------- |
+| variant           | `filled`, `outline`, `rounded`, `underlined`, `unstyled` | The variant of the input style to use.                                                                | `outline` |
+| isDisabled        | boolean                                                  | If true, the input will be disabled.                                                                  | -         |
+| isInvalid         | boolean                                                  | If true, the input will indicate an error.                                                            | -         |
+| isReadOnly        | boolean                                                  | If true, prevents the value of the input from being edited.                                           | -         |
+| size              | `2xl`, `lg`, `md`, `sm`, `xl`, `xs`                      | The size of the button.                                                                               | `md`      |
+| onChange          | function                                                 | Callback for on change on input value.                                                                | -         |
+| placeholder       | string                                                   | The placeholder attribute specifies a short hint that describes the expected value of an input field. | -         |
+| errorMessage      | string                                                   | error message to be shown when input is invalid.                                                      | -         |
+| \_errorMessage    | TextProps                                                | Props to be passed to errorMessage.                                                                   | -         |
+| isFullWidth       | boolean                                                  | If true, the input element will span the full width of its parent                                     | -         |
+| focusBorderColor  | string                                                   | The border color when the input is focused.                                                           | -         |
+| errorBorderColor  | string                                                   | The border color when isInvalid is set to true.                                                       | -         |
+| errorMessageColor | string                                                   | The font color of error message.                                                                      | -         |
+| ariaLabel         | string                                                   | An accessible label for the input.                                                                    | -         |
+| InputLeftElement  | JSX.Element                                              | If given, adds the provided element to the left of the input.                                         | -         |
+| InputRightElement | JSX.Element                                              | If given, adds the provided element to the right of the input.                                        | -         |
+| type              | `password`, string, text                                 | Using the type `password`, user can mask the input.                                                   | -         |
+| label             | string                                                   | If given, adds a floating label to the input.                                                         | -         |
+| \_label           | [`TextProps`](text.md#props)                             | Props to be passed to label to change its text styling.                                               | -         |

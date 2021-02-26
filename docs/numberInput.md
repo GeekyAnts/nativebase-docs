@@ -3,13 +3,15 @@ id: numberInput
 title: NumberInput
 ---
 
-The `NumberInput` component is similar to the `Input` component, but it has controls for incrementing or decrementing numeric values.
+The `NumberInput` component is similar to the [`Input`](input.md) component, but it has controls for incrementing or decrementing numeric values.
 
 ## Implements
 
-- `Input` from native-base/Input
+- [`Input`](input.md)
 
-## Usage
+## Examples
+
+## Basic
 
 ```SnackPlayer name=NumberInput%20Usage
 import React from 'react';
@@ -45,7 +47,7 @@ export default function () {
 }
 ```
 
-## Default Value
+### Default Value
 
 ```SnackPlayer name=NumberInput%20Default Value
 import React from 'react';
@@ -80,7 +82,7 @@ export default function () {
 }
 ```
 
-## Min Max
+### Min Max
 
 ```SnackPlayer name=NumberInput%20Min Max
 import React from 'react';
@@ -115,7 +117,7 @@ export default function () {
 }
 ```
 
-## Steps
+### Steps
 
 ```SnackPlayer name=NumberInput%20Steps
 import React from 'react';
@@ -150,7 +152,7 @@ export default function () {
 }
 ```
 
-## Form Controlled
+### Form Controlled
 
 ```SnackPlayer name=NumberInput%20Form Controlled
 import React from 'react';
@@ -197,7 +199,7 @@ export default function () {
 
 ## Props
 
-### **NumberInputField Props**
+### NumberInputField
 
 | Name               | Type     | Description                                                                                                    | Default |
 | ------------------ | -------- | -------------------------------------------------------------------------------------------------------------- | ------- |
@@ -211,19 +213,19 @@ export default function () {
 | keepWithinRange    | boolean  | If true and you use the stepper or up/down arrow keys, the value will not exceed the max or go lower than min. |         |
 | focusInputOnChange | boolean  | If true, the input will be focused as you increment or decrement the value with the stepper.                   |         |
 
-`NumberInput` composes `Input` so you can pass all the `Input` props.
+`NumberInput` composes [`Input`](input.md) so you can pass all the [`Input props`](input.md#props).
 
-### **NumberInputStepper Props**
+### NumberInputStepper
 
-`NumberInputStepper` composes `VStack` so you can pass all the `VStack` props.
-
-### **NumberDecrementStepper and NumberIncrementStepper Props**
-
-`NumberDecrementStepper` and `NumberIncrementStepper` composes the `Box` props so you can pass all the `Box` props.
+`NumberInputStepper` composes [`VStack`](VStack.md) so you can pass all the [`VStack props`](VStack.md#props).
 
 ### NumberDecrementStepper and NumberIncrementStepper
 
-| Name       | Type | Description                                 | Default |
-| ---------- | ---- | ------------------------------------------- | ------- |
-| \_disabled | any  | Pass custom style object for disabled state | -       |
-| \_active   | any  | Pass custom style object for active state   | -       |
+`NumberDecrementStepper` and `NumberIncrementStepper` composes the [`Box`](box.md) props so you can pass all the [`Box props`](box.md#props).
+
+### NumberDecrementStepper and NumberIncrementStepper
+
+| Name       | Type       | Description                                 | Default |
+| ---------- | ---------- | ------------------------------------------- | ------- |
+| \_disabled | StyleProps | Pass custom style object for disabled state | -       |
+| \_active   | StyleProps | Pass custom style object for active state   | -       |

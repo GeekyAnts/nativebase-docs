@@ -57,7 +57,7 @@ function ColorModeExample () {
           borderWidth={2}
           source={{
             uri:
-              'https://pbs.twimg.com/profile_images/1260766060401188864/ySJfMIbZ_400x400.jpg',
+              'https://pbs.twimg.com/profile_images/1352844693151731713/HKO7cnlW_400x400.jpg',
           }}
         />
       </HStack>

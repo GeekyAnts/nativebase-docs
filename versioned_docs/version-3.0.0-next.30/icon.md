@@ -5,7 +5,7 @@ title: Icon
 
 You can use icons in multiple ways in NativeBase:
 
-- Use `@expo/vector-icons` in your components
+- Use [`@expo/vector-icons`](https://github.com/expo/vector-icons) in your components
 - Create icon by creating an SVG Icon
 - Create icon using createIcon function and use it as a component
 
@@ -13,7 +13,9 @@ You can use icons in multiple ways in NativeBase:
 
 - All icons types from [@expo/vector-icon](https://github.com/expo/vector-icons)
 
-## Basic Usage
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Icon%20Example
 import React from "react";
@@ -39,7 +41,7 @@ export default function () {
 
 Apart from the icons provided by [@expo/vector-icon](https://github.com/expo/vector-icons), you can also create custom icons using SVG. You can use all the components from [react-native-svg](https://github.com/react-native-svg/react-native-svg).
 
-## Custom
+### Custom
 
 ```SnackPlayer name=Icon%20Example (custom)
 import React from "react";
@@ -71,7 +73,7 @@ export default function () {
 }
 ```
 
-## createIcon
+### createIcon
 
 ```SnackPlayer name=Icon%20(createIcon)
 import React from "react";

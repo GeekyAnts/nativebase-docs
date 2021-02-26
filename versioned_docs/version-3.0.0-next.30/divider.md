@@ -13,9 +13,11 @@ import { Divider } from 'native-base';
 
 ## Implements
 
-- `View` from react-native
+- [`View`](https://reactnative.dev/docs/view) from [React Native](https://reactnative.dev).
 
-## Usage
+## Examples
+
+### Basic
 
 The Divider displays a thin horizontal or vertical line.
 
@@ -37,7 +39,7 @@ export default function () {
 }
 ```
 
-## Divider Orientation
+### Divider Orientation
 
 Pass the `orientation` prop and set it to either `horizontal` or `vertical`.
 
@@ -68,7 +70,7 @@ export default function () {
 }
 ```
 
-## Composition
+### Composition
 
 You can use `bg` or `backgroundColor` to change the divider's color and `width` and `height` to change its width and height respectively.
 
@@ -102,8 +104,6 @@ export default function () {
 
 ## Props
 
-### Divider
-
-| Name        | Type                 | Description                     | Default |
-| ----------- | -------------------- | ------------------------------- | ------- |
-| orientation | horizontal, vertical | The orientation of the divider. | -       |
+| Name        | Type                     | Description                     | Default |
+| ----------- | ------------------------ | ------------------------------- | ------- |
+| orientation | `horizontal`, `vertical` | The orientation of the divider. | -       |

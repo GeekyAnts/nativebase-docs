@@ -11,7 +11,9 @@ title: useMediaQuery
 import { useMediaQuery } from 'native-base';
 ```
 
-### Usage (max-height)
+## Example
+
+### max-height
 
 ```SnackPlayer name=useMediaQuery%20Usage(max-height)
 import React from "react";
@@ -36,7 +38,7 @@ export default function () {
 }
 ```
 
-### Usage (min-width)
+### min-width
 
 ```SnackPlayer name=useMediaQuery%20Usage(min-width)
 import React from "react";
@@ -61,7 +63,7 @@ export default function () {
 }
 ```
 
-### Usage (orientation)
+### orientation
 
 ```SnackPlayer name=useMediaQuery%20Usage(orientation)
 import React from "react";
