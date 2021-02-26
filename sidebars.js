@@ -38,7 +38,6 @@ module.exports = {
         'aspectRatio',
         'box',
         'center',
-        'Column',
         'container',
         'flex',
         'hStack',
