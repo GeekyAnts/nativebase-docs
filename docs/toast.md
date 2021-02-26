@@ -3,7 +3,7 @@ id: toast
 title: Toast
 ---
 
-Toast is used to show alerts on top of an overlay. Toast will close itself when the close button is clicked, or after a timeout — the default is 5 seconds. The toast component is used to give feeback to users after an action has taken place.
+`Toast` is used to show alerts on top of an overlay. `Toast` will close itself when the close button is clicked, or after a timeout — the default is 5 seconds. The toast component is used to give feeback to users after an action has taken place.
 
 ## Import
 
@@ -11,7 +11,9 @@ Toast is used to show alerts on top of an overlay. Toast will close itself when 
 import { useToast } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Toast%20Basic
 import React from 'react';
@@ -43,8 +45,7 @@ export default function () {
 }
 ```
 
-<br/>
-<br/>
+### Position
 
 ```SnackPlayer name=Toast%20Position
 import React from 'react';
@@ -98,7 +99,7 @@ export default function () {
 }
 ```
 
-## Offset
+### Offset
 
 ```SnackPlayer name=Toast%20Offset
 import React from 'react';
@@ -135,12 +136,10 @@ export default function () {
 
 ## Props
 
-### Toast
-
-| Name     | Type                      | Description                                             | Default |
-| -------- | ------------------------- | ------------------------------------------------------- | ------- |
-| title    | string                    | The title of the toast.                                 | -       |
-| \_title  | TextProps                 | Object that contains props for Title styling.           | -       |
-| duration | `long`, `short`, number   | The duration of toast. If number, then in mili-seconds. | 2000    |
-| position | `bottom`, `center`, `top` | The position at which toast will appear.                | bottom  |
-| offset   | {x: number y: number}     | The offset of toast from regular position.              | -       |
+| Name     | Type                      | Description                                             | Default  |
+| -------- | ------------------------- | ------------------------------------------------------- | -------- |
+| title    | string                    | The title of the toast.                                 | -        |
+| \_title  | TextProps                 | Object that contains props for Title styling.           | -        |
+| duration | `long`, `short`, number   | The duration of toast. If number, then in mili-seconds. | 2000     |
+| position | `bottom`, `center`, `top` | The position at which toast will appear.                | `bottom` |
+| offset   | {x: number y: number}     | The offset of toast from regular position.              | -        |

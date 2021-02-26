@@ -1,8 +1,8 @@
-ZStack aligns items absolutely.
+`ZStack` aligns items absolutely in the z-axis.
 
 ## Implements
 
-- `View` from nativebase
+- [`View`](view.md)
 
 ## Import
 
@@ -34,6 +34,8 @@ export default function () {
   );
 }
 ```
+
+<br/>
 
 You can pass `alignItems="center"` `justifyContent="center"` to vertically and horizontally center the children.
 

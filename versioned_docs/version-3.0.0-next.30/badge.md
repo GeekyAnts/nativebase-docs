@@ -3,7 +3,7 @@ id: badge
 title: Badge
 ---
 
-Badges are used to highlight an item's status for quick recognition.
+`Badges` are used to highlight an item's status for quick recognition.
 
 ## Import
 
@@ -11,7 +11,9 @@ Badges are used to highlight an item's status for quick recognition.
 import { Badge } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Badge%20Basic
 import React from 'react';
@@ -31,7 +33,7 @@ export default function () {
 }
 ```
 
-## Color Scheme
+### Color Scheme
 
 ```SnackPlayer name=Badge%20Color%20Scheme
 import React from 'react';
@@ -66,7 +68,7 @@ export default function () {
 }
 ```
 
-## Variants
+### Variants
 
 ```SnackPlayer name=Badge%20EVariants
 import React from 'react';
@@ -100,11 +102,9 @@ export default function () {
 
 ## Props
 
-`Badge` compose the `Box` component. So all it's props can be passed to `Badge`.
+`Badge` compose the [`Box`](box.md) component. So all it's props can be passed to `Badge`.
 
-### Badge
-
-| Name        | Type                   | Description                                                           | Default |
-| ----------- | ---------------------- | --------------------------------------------------------------------- | ------- |
-| variant     | outline, solid, subtle | The style variant of the badge.                                       | subtle  |
-| colorScheme | string                 | The color scheme to use for the badge. Must be a key in theme.colors. | -       |
+| Name        | Type                         | Description                                                           | Default  |
+| ----------- | ---------------------------- | --------------------------------------------------------------------- | -------- |
+| variant     | `outline`, `solid`, `subtle` | The style variant of the badge.                                       | `subtle` |
+| colorScheme | string                       | The color scheme to use for the badge. Must be a key in theme.colors. | -        |

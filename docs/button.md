@@ -7,7 +7,7 @@ The `Button` component is used to trigger an action or event.
 
 ## Implements
 
-- [`TouchableOpacity`](https://reactnative.dev/docs/touchableopacity) form react-native**.**
+- [`TouchableOpacity`](https://reactnative.dev/docs/touchableopacity) form [`React Native`](https://reactnative.dev)
 
 ## Import
 
@@ -18,7 +18,9 @@ import { Button, ButtonGroup } from 'native-base';
 - **Button** : The button component with support for custom icons, spinners, etc.
 - **ButtonGroup** : Used to group buttons whose actions are related, with an option to flush them together.
 
-## Example
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Button%20Example
 import React from 'react';
@@ -42,9 +44,9 @@ export default function () {
 }
 ```
 
-## Example (Sizes)
+### Sizes
 
-```SnackPlayer name=Button%20Example(Sizes)
+```SnackPlayer name=Button%20Sizes
 import React from 'react';
 import { Button, VStack, NativeBaseProvider, Center } from 'native-base';
 
@@ -70,9 +72,9 @@ export default function () {
 }
 ```
 
-## Example (variants)
+### Variants
 
-```SnackPlayer name=Button%20Example(variants)
+```SnackPlayer name=Button%20variants
 import React from 'react';
 import { Button, VStack, NativeBaseProvider, Center } from 'native-base';
 
@@ -98,9 +100,9 @@ export default function () {
 }
 ```
 
-## Example (loading)
+### Loading
 
-```SnackPlayer name=Button%20Example(loading)
+```SnackPlayer name=Button%20Loading
 import React from 'react';
 import { Button, VStack, NativeBaseProvider, Center } from 'native-base';
 
@@ -135,9 +137,9 @@ export default function () {
 }
 ```
 
-## Example (Icons)
+### Icons
 
-```SnackPlayer name=Button%20Example(Icons)
+```SnackPlayer name=Button%20Icons
 import React from 'react';
 import { Button, VStack, Icon, NativeBaseProvider, Center } from 'native-base';
 
@@ -171,9 +173,9 @@ export default function () {
 }
 ```
 
-## Example (ButtonGroup)
+### ButtonGroup
 
-```SnackPlayer name=Button%20Example(ButtonGroup)
+```SnackPlayer name=Button%20ButtonGroup
 import React from 'react';
 import { Button, ButtonGroup, NativeBaseProvider, Center } from 'native-base';
 
@@ -196,9 +198,9 @@ export default function () {
 }
 ```
 
-## Example (Composition)
+### Composition
 
-```SnackPlayer name=Button%20Example(Composition)
+```SnackPlayer name=Button%20Composition
 import React from 'react';
 import { Button, NativeBaseProvider, Center } from 'native-base';
 
@@ -226,9 +228,9 @@ export default function () {
 }
 ```
 
-## Example (With Ref)
+### Basic (With Ref)
 
-```SnackPlayer name=Button%20Example(With Ref)
+```SnackPlayer name=Button%20Basic(With Ref)
 import React from 'react';
 import { Button, NativeBaseProvider, Center } from 'native-base';
 
@@ -260,21 +262,19 @@ export default function () {
 
 ## Props
 
-### Button
-
-| Name        | Type                                  | Description                                                                                                       | Default |
-| ----------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| ariaLabel   | string                                | An accessible label for the button, useful when you render only an icon in the button.                            | -       |
-| highlight   | number                                | Active opacity of the button.                                                                                     | -       |
-| colorScheme | string                                | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | gray    |
-| startIcon   | JSX.Element                           | The start icon element to use in the button.                                                                      | -       |
-| endIcon     | JSX.Element                           | The end icon element to use in the button.                                                                        | -       |
-| spinner     | JSX.Element                           | The spinner element to use when isLoading is set to true.                                                         | -       |
-| variant     | ghost, link, outline, solid, unstyled | The variant of the button style to use.                                                                           | solid   |
-| isDisabled  | boolean                               | If true, the button will be disabled.                                                                             | -       |
-| isLoading   | boolean                               | If true, the button will show a spinner.                                                                          | -       |
-| loadingText | string                                | The label to show in the button when isLoading is true. If no text is passed, it only shows the spinner           | -       |
-| size        | lg, md, sm, xs                        | The size of the button.                                                                                           | md      |
-| shadow      | number                                | Shadow to apply to button.                                                                                        | -       |
-| onPress     | function                              | Callback for onPress.                                                                                             | -       |
-| \_text      | TextProps                             | Props to style the child text                                                                                     | -       |
+| Name        | Type                                            | Description                                                                                                       | Default |
+| ----------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| ariaLabel   | string                                          | An accessible label for the button, useful when you render only an icon in the button.                            | -       |
+| highlight   | number                                          | Active opacity of the button.                                                                                     | -       |
+| colorScheme | string                                          | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | gray    |
+| startIcon   | JSX.Element                                     | The start icon element to use in the button.                                                                      | -       |
+| endIcon     | JSX.Element                                     | The end icon element to use in the button.                                                                        | -       |
+| spinner     | JSX.Element                                     | The spinner element to use when isLoading is set to true.                                                         | -       |
+| variant     | `ghost`,` link`,` outline`,` solid`,` unstyled` | The variant of the button style to use.                                                                           | solid   |
+| isDisabled  | boolean                                         | If true, the button will be disabled.                                                                             | -       |
+| isLoading   | boolean                                         | If true, the button will show a spinner.                                                                          | -       |
+| loadingText | string                                          | The label to show in the button when isLoading is true. If no text is passed, it only shows the spinner           | -       |
+| size        | `lg`, `md`, `sm`, `xs`                          | The size of the button.                                                                                           | `md`    |
+| shadow      | number                                          | Shadow to apply to button.                                                                                        | -       |
+| onPress     | function                                        | Callback for onPress.                                                                                             | -       |
+| \_text      | [`TextProps`](text.md#props)                    | Props to style the child text                                                                                     | -       |

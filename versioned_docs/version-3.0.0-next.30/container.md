@@ -3,11 +3,11 @@ id: container
 title: Container
 ---
 
-`Container` is used to constrain a content's width to the current breakpoint, while keeping it fluid.
+The `Container` is used to constrain a content's width to the current breakpoint, while keeping it fluid.
 
 ## Implements
 
-- `Box` from native-base/Box
+- [`Box`](box.md)
 
 ## Usage
 
@@ -45,7 +45,7 @@ export default function () {
 
 ## Props
 
-**Container** implements **Box.**
+**Container** implements **[Box](box.md)**, so all the Box Props can be passed to it.
 
 ### Container
 

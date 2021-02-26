@@ -3,11 +3,11 @@ id: alert
 title: Alert
 ---
 
-Alerts are used to communicate a state that affects a system, feature or page.
+`Alerts` are used to communicate a state that affects a system, feature or page.
 
 ## Import
 
-NativeBase exports 5 modal-related components:
+NativeBase exports 5 Alert related components:
 
 - `Alert`: The wrapper for alert components.
 - `Alert.Icon`: The visual icon for the alert that changes based on the `status` prop.
@@ -18,7 +18,9 @@ NativeBase exports 5 modal-related components:
 import { Alert } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Alert%20Basic
 import React from "react";
@@ -47,7 +49,7 @@ export default function () {
 }
 ```
 
-## Status
+### Status
 
 ```SnackPlayer name=Alert%20Status
 import React from "react";
@@ -90,7 +92,7 @@ export default function () {
 }
 ```
 
-## Variant
+### Variant
 
 ```SnackPlayer name=Alert%20Variant
 import React from "react";
@@ -137,7 +139,7 @@ export default function () {
 }
 ```
 
-## Composition
+### Composition
 
 ```SnackPlayer name=Alert%20Composition
 import React from "react";
@@ -215,7 +217,7 @@ export default function () {
 }
 ```
 
-## Action
+### Action
 
 ```SnackPlayer name=Alert%20Basic
 import React from "react";
@@ -259,22 +261,22 @@ export default function () {
 
 ### Alert
 
-Implement `Box`, all the props of Box can be passed.
+`Alert` implements **[Box](box.md)**, so all the Box Props can be passed to it.
 
-| Name    | Type                                   | Description                                                                   | Default |
-| ------- | -------------------------------------- | ----------------------------------------------------------------------------- | ------- |
-| status  | error, info, success, warning          | The status of the alert.                                                      | info    |
-| variant | left-accent, solid, subtle, top-accent | The variant of the alert style to use.                                        | subtle  |
-| action  | JSX.Element                            | The action to display. It renders after the message, at the end of the alert. | -       |
+| Name    | Type                                           | Description                                                                   | Default  |
+| ------- | ---------------------------------------------- | ----------------------------------------------------------------------------- | -------- |
+| status  | `error`, `info`, `success`, `warning`          | The status of the alert.                                                      | `info`   |
+| variant | `left-accent`, `solid`, `subtle`, `top-accent` | The variant of the alert style to use.                                        | `subtle` |
+| action  | JSX.Element                                    | The action to display. It renders after the message, at the end of the alert. | -        |
 
 ### Alert.Icon
 
-`Alert.Icon` composes `Icon` and changes the icon based on the status prop.
+`Alert.Icon` composes [`Icon`](icon.md) and changes the icon based on the status prop.
 
 ### Alert.Title
 
-`Alert.Title` composes the `Text` component.
+`Alert.Title` composes the [`Text`](text.md) component.
 
 ### Alert.Description
 
-`Alert.Description` composes the `Text` component.
+`Alert.Description` composes the [`Text`](text.md) component.

@@ -19,7 +19,9 @@ NativeBase uses 5 components for rendering menus:
 import { Menu } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Menu%20Basic
 import React from 'react';
@@ -51,7 +53,7 @@ export default function () {
 }
 ```
 
-## Group
+### Group
 
 ```SnackPlayer name=Menu%20Example (MenuGroup)
 import React from 'react';
@@ -94,7 +96,7 @@ export default function () {
 }
 ```
 
-## MenuOptionGroups
+### MenuOptionGroups
 
 ```SnackPlayer name=Menu%20Example (MenuOptionGroups)
 import React from 'react';
@@ -153,16 +155,16 @@ export default function () {
 
 ### MenuItem
 
-| Name          | Type      | Description                                               | Default |
-| ------------- | --------- | --------------------------------------------------------- | ------- |
-| isDisabled    | boolean   | If true, the menu item will be disabled.                  | -       |
-| onPress       | function  | Function that is called on press.                         | -       |
-| \_text        | TextStyle | Props to pass on to Text.                                 | -       |
-| closeOnSelect | boolean   | If true, the menu will close when a menu item is clicked. | -       |
+| Name          | Type                         | Description                                               | Default |
+| ------------- | ---------------------------- | --------------------------------------------------------- | ------- |
+| isDisabled    | boolean                      | If true, the menu item will be disabled.                  | -       |
+| onPress       | function                     | Function that is called on press.                         | -       |
+| \_text        | [`TextStyle`](text.md#props) | Props to pass on to Text.                                 | -       |
+| closeOnSelect | boolean                      | If true, the menu will close when a menu item is clicked. | -       |
 
 ### **MenuItemOption**
 
-Extends MenuItem.
+Extends `MenuItem`.
 
 ### MenuItemOption
 
@@ -172,16 +174,16 @@ Extends MenuItem.
 
 ### MenuGroup
 
-| Name    | Type      | Description                 | Default |
-| ------- | --------- | --------------------------- | ------- |
-| title   | string    | The title of the menu group | -       |
-| \_title | TextStyle | Props to pass on to Text.   | -       |
+| Name    | Type                         | Description                 | Default |
+| ------- | ---------------------------- | --------------------------- | ------- |
+| title   | string                       | The title of the menu group | -       |
+| \_title | [`TextStyle`](text.md#props) | Props to pass on to Text.   | -       |
 
 ### MenuOptionGroup
 
 | Name         | Type                               | Description                                         | Default |
 | ------------ | ---------------------------------- | --------------------------------------------------- | ------- |
-| type         | checkbox, radio                    | Used to add roles menuitemradio or menuitemcheckbox | -       |
+| type         | `checkbox`, `radio`                | Used to add roles menuitemradio or menuitemcheckbox | -       |
 | defaultValue | number, number[], string, string[] | The initial value of the option group.              | -       |
 | value        | number, string                     | The value of the option group.                      | -       |
 | onChange     | function                           | Function called when selection changes              | -       |

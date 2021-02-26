@@ -26,7 +26,9 @@ SliderThumb,
 } from "native-base";
 ```
 
-## Fade
+## Examples
+
+### Fade
 
 ```SnackPlayer name=Transition%20Fade
 import React from 'react';
@@ -58,7 +60,7 @@ export default function () {
 }
 ```
 
-## ScaleFade
+### ScaleFade
 
 ```SnackPlayer name=Transition%20ScaleFade
 import React from 'react';
@@ -90,7 +92,7 @@ export default function () {
 }
 ```
 
-## Slide
+### Slide
 
 ```SnackPlayer name=Transition%20Slide
 import React from 'react';
@@ -122,7 +124,7 @@ export default function () {
 }
 ```
 
-## Slide wrapped inside parent
+### Slide wrapped inside parent
 
 ```SnackPlayer name=Transition%20Slide With Parent
 import React from 'react';
@@ -170,7 +172,7 @@ export default function () {
 }
 ```
 
-## Slide Composition
+### Slide Composition
 
 ```SnackPlayer name=Transition%20Slide Composition
 import React from 'react';
@@ -220,7 +222,7 @@ export default function () {
 }
 ```
 
-## SlideFade
+### SlideFade
 
 ```SnackPlayer name=Transition%20SlideFade
 import React from 'react';

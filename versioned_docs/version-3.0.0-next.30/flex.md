@@ -3,11 +3,11 @@ id: flex
 title: Flex
 ---
 
-`Flex` is a `Box` with `display: flex` and comes with helpful style shorthand.
+`Flex` is a [`Box`](box.md) with `display: flex` and comes with helpful style shorthand.
 
 ## Implements
 
-- `Box` from native-base
+- [`Box`](box.md)
 
 ## Import
 
@@ -15,7 +15,7 @@ title: Flex
 import { Flex, Spacer } from 'native-base';
 ```
 
-- `Flex`: a **Box** with `display: flex`
+- `Flex`: a **[Box](box.md)** with `display: flex`
 - `Spacer`: creates an adjustable, empty space that can be used to tune the spacing between child elements within `Flex`
 
 ## Usage
@@ -93,4 +93,4 @@ export default function () {
 
 ## Props
 
-**Flex** is a **Box** with `display : flex` , so all the `Box Props` can be passed to **Flex.**
+**Flex** implements **[Box](box.md)**, so all the Box Props can be passed to it.

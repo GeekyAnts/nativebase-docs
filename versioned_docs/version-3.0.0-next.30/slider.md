@@ -18,7 +18,9 @@ NativeBase exports 4 slider-related components:
 import { Slider } from 'native-base';
 ```
 
-## Usage
+## Examples
+
+### Usage
 
 ```SnackPlayer name=Slider%20Usage
 import React from 'react';
@@ -49,7 +51,7 @@ export default function () {
 }
 ```
 
-## Color
+### Color
 
 ```SnackPlayer name=Slider%20Color
 import React from 'react';
@@ -80,7 +82,7 @@ export default function () {
 }
 ```
 
-## Value
+### Value
 
 ```SnackPlayer name=Slider%20Value
 import React from 'react';
@@ -125,7 +127,7 @@ export default function () {
 }
 ```
 
-## Size
+### Size
 
 ```SnackPlayer name=Slider%20Size
 import React from 'react';
@@ -168,7 +170,7 @@ export default function () {
 }
 ```
 
-## Customised
+### Customised
 
 ```SnackPlayer name=Slider%20Customized
 import React from 'react';
@@ -199,7 +201,7 @@ export default function () {
 }
 ```
 
-## Form Controlled
+### Form Controlled
 
 ```SnackPlayer name=Slider%20Form Controlled
 import React from 'react';
@@ -240,28 +242,28 @@ export default function () {
 
 ### Slider
 
-| Name            | Type                 | Description                                                                                                       | Default    |
-| --------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------- |
-| value           | number               | The value of the slider in controlled mode                                                                        | -          |
-| defaultValue    | number               | The initial value of the slider in uncontrolled mode                                                              | -          |
-| min             | number               | The minimum allowed value of the slider. Cannot be greater than max.                                              | 0          |
-| max             | number               | The maximum allowed value of the slider. Cannot be less than min.                                                 | 100        |
-| step            | number               | The step in which increments/decrements have to be made                                                           | -          |
-| colorScheme     | string               | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default    |
-| size            | lg, md, sm           | The size (width and height) of the slider.                                                                        | md         |
-| id              | string               | The base id to use for the slider and its components                                                              | -          |
-| isDisabled      | boolean              | If true, the slider will be disabled                                                                              | -          |
-| isReadOnly      | boolean              | If true, the slider will be in read-only state                                                                    |            |
-| isReversed      | boolean              | If true, the value will be incremented or decremented in reverse.                                                 |            |
-| icon            | JSX.Element          | If given, will use this icon instead of the default.                                                              | -          |
-| isInvalid       | boolean              | If true, the checkbox is marked as invalid. Changes style of unchecked state.                                     | -          |
-| onChange        | function             | function gets called whenever the slider handle is being dragged or clicked                                       | -          |
-| onChangeEnd     | function             | function gets called whenever the user stops dragging the slider handle.                                          | -          |
-| aria-label      | string               | The static string to use used for aria-label if no visible label is used.                                         | -          |
-| aria-labelledby | string               | The static string aria-labelledby that points to the ID of the element that serves as label for the slider        | -          |
-| aria-valuetext  | string               | The static string to use used for aria-valuetext                                                                  | -          |
-| orientation     | horizontal, vertical | Sets the orientation of the slider.                                                                               | horizontal |
+| Name            | Type                     | Description                                                                                                       | Default      |
+| --------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------- | ------------ |
+| value           | number                   | The value of the slider in controlled mode                                                                        | -            |
+| defaultValue    | number                   | The initial value of the slider in uncontrolled mode                                                              | -            |
+| min             | number                   | The minimum allowed value of the slider. Cannot be greater than max.                                              | 0            |
+| max             | number                   | The maximum allowed value of the slider. Cannot be less than min.                                                 | 100          |
+| step            | number                   | The step in which increments/decrements have to be made                                                           | -            |
+| colorScheme     | string                   | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default      |
+| size            | `lg`, `md`, `sm`         | The size (width and height) of the slider.                                                                        | `md`         |
+| id              | string                   | The base id to use for the slider and its components                                                              | -            |
+| isDisabled      | boolean                  | If true, the slider will be disabled                                                                              | -            |
+| isReadOnly      | boolean                  | If true, the slider will be in read-only state                                                                    |              |
+| isReversed      | boolean                  | If true, the value will be incremented or decremented in reverse.                                                 |              |
+| icon            | JSX.Element              | If given, will use this icon instead of the default.                                                              | -            |
+| isInvalid       | boolean                  | If true, the checkbox is marked as invalid. Changes style of unchecked state.                                     | -            |
+| onChange        | function                 | function gets called whenever the slider handle is being dragged or clicked                                       | -            |
+| onChangeEnd     | function                 | function gets called whenever the user stops dragging the slider handle.                                          | -            |
+| aria-label      | string                   | The static string to use used for aria-label if no visible label is used.                                         | -            |
+| aria-labelledby | string                   | The static string aria-labelledby that points to the ID of the element that serves as label for the slider        | -            |
+| aria-valuetext  | string                   | The static string to use used for aria-valuetext                                                                  | -            |
+| orientation     | `horizontal`, `vertical` | Sets the orientation of the slider.                                                                               | `horizontal` |
 
-### Child **components**
+### Children components
 
-- `Slider.Track`, `Slider.FilledTrack`, and `Slider.Thumb` composes the `Box` component.
+- `Slider.Track`, `Slider.FilledTrack`, and `Slider.Thumb` composes the [`Box`](box.md) component.

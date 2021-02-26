@@ -3,12 +3,12 @@ id: view
 title: View
 ---
 
-Generic View component from `react-native`
+A generic [`View`](https://reactnative.dev/docs/view) from [React Native](https://reactnative.dev/docs/view)
 
 ## Implements
 
-- [`View`](https://reactnative.dev/docs/view) from [`react-native`](https://reactnative.dev/docs/view)
-- [`color`](https://styled-system.com/api/#color), [`space`](https://styled-system.com/api/#space), [`layout`](https://styled-system.com/api/#layout), [`flexbox`](https://styled-system.com/api/#flexbox), [`position`](https://styled-system.com/api/#flexbox) & [`border`](https://styled-system.com/api/#border) from [`style-system`](https://styled-system.com/api/)
+- [`View`](https://reactnative.dev/docs/view) from [`React Native`](https://reactnative.dev)
+- [`color`](https://styled-system.com/api/#color), [`space`](https://styled-system.com/api/#space), [`layout`](https://styled-system.com/api/#layout), [`flexbox`](https://styled-system.com/api/#flexbox), [`position`](https://styled-system.com/api/#flexbox) & [`border`](https://styled-system.com/api/#border) from [`style-system`](https://styled-system.com/)
 
 ## Example
 
@@ -41,8 +41,6 @@ export default function () {
 ```
 
 ## Props
-
-### View
 
 | Name          | Type                                     | Description                                                                           | Default |
 | ------------- | ---------------------------------------- | ------------------------------------------------------------------------------------- | ------- |

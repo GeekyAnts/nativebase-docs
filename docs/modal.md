@@ -21,7 +21,9 @@ NativeBase exports Modal Compound component:
 import { Modal } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Modal%20Basic
 import React from 'react';
@@ -91,7 +93,7 @@ export default function () {
 }
 ```
 
-## Modal Sizes
+### Modal Sizes
 
 You can pass `size` prop to NativeBase Modal , it can take `xs` , `sm`, `md`, `lg`, `xl`, `full` that maps to **40%**, **48%**, **60%**, **75%**, **90%** and **100%** respectively , or a string or a numerical width of the Modal.
 
@@ -192,7 +194,7 @@ export default function () {
 }
 ```
 
-## intialFocusRef and finalFocusRef Example
+### intialFocusRef and finalFocusRef Example
 
 ```SnackPlayer name=Modal%20Refs
 import React from 'react';
@@ -266,7 +268,7 @@ export default function () {
 }
 ```
 
-## Modal with avoidKeyboard
+### Modal with avoidKeyboard
 
 ```SnackPlayer name=Modal%20avoidKeyboard
 import React from 'react';
@@ -343,7 +345,11 @@ export default function () {
 }
 ```
 
-> If you want a specifically aligned Modal, pass `justifyContent` and `alignItems` to Modal.
+<br/>
+
+:::tip Tip
+If you want a specifically aligned Modal, pass `justifyContent` and `alignItems` to Modal.
+:::
 
 ## Props
 
@@ -364,7 +370,7 @@ export default function () {
 | overlayVisible      | boolean                                          | To set the visibility the overlay.                                          | -       |
 | overlayColor        | string                                           | To set the color of overlay.                                                | -       |
 
-### Child **components**
+### Children components
 
-- `Modal.Overlay`, `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the `Box` component.
-- `Modal.CloseButton` composes the `CloseButton`.
+- `Modal.Overlay`, `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the [`Box`](box.md) component.
+- `Modal.CloseButton` composes the [`CloseButton`](closeButton.md).

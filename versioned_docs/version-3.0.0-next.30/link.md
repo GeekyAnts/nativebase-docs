@@ -3,7 +3,7 @@ id: link
 title: Link
 ---
 
-Links are accessible elements used primarily for navigation. This component is styled to resemble a hyperlink.
+`Links` are accessible elements used primarily for navigation. This component is styled to resemble a hyperlink.
 
 ## **Import**
 
@@ -13,11 +13,13 @@ import { Link } from 'native-base';
 
 ## Implements
 
-- `View`, `Linking`, `TouchableWithoutFeedback` from react-native
+- `View`, `Linking`, `TouchableWithoutFeedback` from [`React Native`](https://reactnative.dev)
 
-## Usage
+## Examples
 
-```SnackPlayer name=Link%20Usage
+### Basic
+
+```SnackPlayer name=Link%20Basic
 import React from "react";
 import {
   Heading,
@@ -50,7 +52,7 @@ export default function () {
 }
 ```
 
-## External Link
+### External Link
 
 ```SnackPlayer name=Link%20External link
 import React from "react";
@@ -85,7 +87,7 @@ export default function () {
 }
 ```
 
-## Link without Underline
+### Link without Underline
 
 ```SnackPlayer name=Link%20Link without Underline
 import React from "react";
@@ -120,7 +122,7 @@ export default function () {
 }
 ```
 
-## Link custom OnClick
+### Link custom OnClick
 
 ```SnackPlayer name=Link%20Link custom OnClick
 import React from "react";
@@ -160,7 +162,7 @@ export default function () {
 }
 ```
 
-## Link around containers
+### Link around containers
 
 ```SnackPlayer name=Link%20Link around containers
 import React from "react";
@@ -209,9 +211,7 @@ export default function () {
 
 ## Props
 
-Apart from these all the `Box` component props can be passed.
-
-### Link
+Link implements **[Box](box.md)**, so all the Box Props can be passed to it.
 
 | Name       | Type     | Description                               | Default |
 | ---------- | -------- | ----------------------------------------- | ------- |

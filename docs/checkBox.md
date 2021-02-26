@@ -7,10 +7,12 @@ The `Checkbox` component is used in forms when a user needs to select multiple v
 
 ## Implements
 
-- `TouchableOpacity` from react-native.
-- `Box` from native-base.
+- [`TouchableOpacity`](https://reactnative.dev/docs/touchableopacity) form [`React Native`](https://reactnative.dev)
+- [`Box`](box.md)
 
-## Usage
+## Examples
+
+### Basic
 
 ```SnackPlayer name=CheckBox%20Usage
 import React from "react";
@@ -31,7 +33,7 @@ export default function () {
 }
 ```
 
-## Disabled
+### Disabled
 
 ```SnackPlayer name=CheckBox%20Disabled
 import React from "react";
@@ -61,7 +63,7 @@ export default function () {
 }
 ```
 
-## Invalid
+### Invalid
 
 ```SnackPlayer name=CheckBox%20Invalid
 import React from "react";
@@ -88,7 +90,7 @@ export default function () {
 }
 ```
 
-## Custom Color
+### Custom Color
 
 ```SnackPlayer name=CheckBox%20Custom Color
 import React from "react";
@@ -124,7 +126,7 @@ export default function () {
 }
 ```
 
-## Custom Icon
+### Custom Icon
 
 ```SnackPlayer name=CheckBox%20CustomIcon
 import React from "react";
@@ -180,7 +182,7 @@ export default function () {
 }
 ```
 
-## Size
+### Size
 
 ```SnackPlayer name=CheckBox%20Size
 import React from "react";
@@ -218,7 +220,7 @@ export default function () {
 }
 ```
 
-## Checkbox Group
+### Checkbox Group
 
 ```SnackPlayer name=CheckBox%20CheckBox Group
 import React from "react";
@@ -280,7 +282,7 @@ export default function () {
 }
 ```
 
-## Form Controlled
+### Form Controlled
 
 ```SnackPlayer name=CheckBox%20Form Controlled
 import React from "react";
@@ -350,7 +352,7 @@ export default function () {
 }
 ```
 
-## With Ref
+### Basic(With Ref)
 
 ```SnackPlayer name=CheckBox%20 With Ref
 import React from "react";
@@ -393,24 +395,24 @@ export default function () {
 
 ### Checkbox
 
-| Name             | Type           | Description                                                                                                           | Default |
-| ---------------- | -------------- | --------------------------------------------------------------------------------------------------------------------- | ------- |
-| name             | string         | The name of the input field in a checkbox.                                                                            | -       |
-| value            | number, string | The value to be used in the checkbox input. This is the value that will be returned on form submission.               | -       |
-| colorScheme      | string         | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red").     | default |
-| defaultIsChecked | boolean        | If true, the checkbox will be initially checked. (use `defaultValue` prop if using it inside Checkbox.Group)          | -       |
-| isChecked        | boolean        | If true, the checkbox will be checked. You'll need to pass onChange to update it's value (since it's now controlled). | -       |
-| isIndeterminate  | boolean        | If true, the checkbox will be indeterminate. This only affects the icon shown inside checkbox.                        | -       |
-| size             | lg, md, sm     | The size (width and height) of the checkbox.                                                                          | md      |
-| isDisabled       | boolean        | If true, the checkbox will be disabled                                                                                | -       |
-| icon             | JSX.Element    | If given, will use this icon instead of the default.                                                                  | -       |
-| isInvalid        | boolean        | If true, the checkbox is marked as invalid. Changes style of unchecked state.                                         | -       |
-| onChange         | function       | Function called when the state of the checkbox changes.                                                               | -       |
-| children         | JSX.Element    | The children of the checkbox.                                                                                         | -       |
-
-`Checkbox.Group` implements `Box`.
+| Name             | Type             | Description                                                                                                           | Default |
+| ---------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------- | ------- |
+| name             | string           | The name of the input field in a checkbox.                                                                            | -       |
+| value            | number, string   | The value to be used in the checkbox input. This is the value that will be returned on form submission.               | -       |
+| colorScheme      | string           | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red").     | default |
+| defaultIsChecked | boolean          | If true, the checkbox will be initially checked. (use `defaultValue` prop if using it inside Checkbox.Group)          | -       |
+| isChecked        | boolean          | If true, the checkbox will be checked. You'll need to pass onChange to update it's value (since it's now controlled). | -       |
+| isIndeterminate  | boolean          | If true, the checkbox will be indeterminate. This only affects the icon shown inside checkbox.                        | -       |
+| size             | `lg`, `md`, `sm` | The size (width and height) of the checkbox.                                                                          | `md`    |
+| isDisabled       | boolean          | If true, the checkbox will be disabled                                                                                | -       |
+| icon             | JSX.Element      | If given, will use this icon instead of the default.                                                                  | -       |
+| isInvalid        | boolean          | If true, the checkbox is marked as invalid. Changes style of unchecked state.                                         | -       |
+| onChange         | function         | Function called when the state of the checkbox changes.                                                               | -       |
+| children         | JSX.Element      | The children of the checkbox.                                                                                         | -       |
 
 ### Checkbox.Group
+
+`Checkbox.Group` implements **[Box](box.md)**.
 
 | Name         | Type     | Description                                                            | Default |
 | ------------ | -------- | ---------------------------------------------------------------------- | ------- |
@@ -422,9 +424,9 @@ The following props can be set on `Checkbox.Group` and they will be forwarded to
 
 ### Shared Style Props
 
-| Name        | Type       | Description                                                                                                       | Default |
-| ----------- | ---------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| colorScheme | string     | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
-| size        | lg, md, sm | The size (width and height) of the checkbox.                                                                      | md      |
-| isDisabled  | boolean    | If true, the checkbox will be disabled                                                                            | -       |
-| isInvalid   | boolean    | If true, the checkbox is marked as invalid. Changes style of unchecked state.                                     | -       |
+| Name        | Type             | Description                                                                                                       | Default |
+| ----------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| colorScheme | string           | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
+| size        | `lg`, `md`, `sm` | The size (width and height) of the checkbox.                                                                      | `md`    |
+| isDisabled  | boolean          | If true, the checkbox will be disabled                                                                            | -       |
+| isInvalid   | boolean          | If true, the checkbox is marked as invalid. Changes style of unchecked state.                                     | -       |

@@ -3,9 +3,11 @@ id: appBar
 title: AppBar
 ---
 
-The AppBar component can be used to create app headers.
+`AppBar` component can be used to create app headers.
 
-## Usage
+## Examples
+
+### Usage
 
 ```SnackPlayer name=AppBar%20Usage
 import React from "react";
@@ -65,7 +67,7 @@ export default function () {
 
 ## Props
 
-Implements `Box`, all props of Box can be passed.
+`AppBar` implements **[Box](box.md)**, so all the Box Props can be passed to it.
 
 ### AppBar Props
 
@@ -74,14 +76,14 @@ Implements `Box`, all props of Box can be passed.
 | statusBarHeight | number | Defaults to SafeAreaView on iOS and Statusbar.height on android.       | -       |
 | space           | number | Space between AppBar.Left, AppBar.Content and AppBar.Right components. | 2       |
 
-## AppBar.Left Props
+### AppBar.Left
 
 Implements [`HStack`](hStack.md) , all the props of HStack can be passed.
 
-## AppBar.Content Props
+### AppBar.Content
 
 Implements [`HStack`](hStack.md) , all the props of HStack can be passed.
 
-## AppBar.Right Props
+### AppBar.Right
 
 Implements [`HStack`](hStack.md) , all the props of HStack can be passed.

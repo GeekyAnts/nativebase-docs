@@ -7,12 +7,14 @@ title: Radio
 
 ## Implements
 
-- `TouchableOpacity` from react-native.
-- `Box` from native-base.
+- [`TouchableOpacity`](https://reactnative.dev/docs/touchableopacity) form [`React Native`](https://reactnative.dev)
+- [`Box`](box.md)
 
-## Usage
+## Examples
 
-```SnackPlayer name=Radio%20Usage
+### Basic
+
+```SnackPlayer name=Radio%20Basic
 import React from 'react';
 import { Radio, Text, NativeBaseProvider, Center } from 'native-base';
 
@@ -42,7 +44,7 @@ export default function () {
 }
 ```
 
-## Disabled
+### Disabled
 
 ```SnackPlayer name=Radio%20Disabled
 import React from 'react';
@@ -74,7 +76,7 @@ export default function () {
 }
 ```
 
-## Invalid
+### Invalid
 
 ```SnackPlayer name=Radio%20Invalid
 import React from 'react';
@@ -100,7 +102,7 @@ export default function () {
 }
 ```
 
-## Size
+### Size
 
 ```SnackPlayer name=Radio%20Sizes
 import React from 'react';
@@ -132,7 +134,7 @@ export default function () {
 }
 ```
 
-## Custom Color
+### Custom Color
 
 ```SnackPlayer name=Radio%20Custom Color
 import React from 'react';
@@ -164,7 +166,7 @@ export default function () {
 }
 ```
 
-## Custom Icon
+### Custom Icon
 
 ```SnackPlayer name=Radio%20Custom Icon
 import React from 'react';
@@ -208,7 +210,7 @@ export default function () {
 }
 ```
 
-## Form Controlled
+### Form Controlled
 
 ```SnackPlayer name=Radio%20Form Controlled
 import React from 'react';
@@ -254,7 +256,7 @@ export default function () {
 }
 ```
 
-## With Ref
+### Basic (With Ref)
 
 ```SnackPlayer name=Radio%20With Ref
 import React from 'react';
@@ -311,24 +313,24 @@ export default function () {
 
 ### Radio
 
-| Name             | Type           | Description                                                                                                       | Default |
-| ---------------- | -------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| name             | string         | The name of the input field in a radio (Useful for form submission).                                              | -       |
-| id               | string         | The id assigned to input field.                                                                                   |         |
-| value            | number, string | The value to be used in the radio input. This is the value that will be returned on form submission               | -       |
-| colorScheme      | string         | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
-| defaultIsChecked | boolean        | If true, the radio will be initially checked.                                                                     | -       |
-| size             | lg, md, sm     | The size (width and height) of the radio.                                                                         | md      |
-| isDisabled       | boolean        | If true, the radio will be disabled                                                                               | -       |
-| icon             | JSX.Element    | If given, will use this icon instead of the default.                                                              | -       |
-| isInvalid        | boolean        | If true, the radio is marked as invalid. Changes style of unchecked state.                                        | -       |
-| onChange         | function       | Function called when the state of the radio changes.                                                              | -       |
-| children         | JSX.Element    | The children of the radio.                                                                                        | -       |
-| ariaLabel        | string         | An accessible label for the radio in event there's no visible label or children was passed                        | -       |
-
-`Radio.Group` implements `Box`.
+| Name             | Type             | Description                                                                                                       | Default |
+| ---------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| name             | string           | The name of the input field in a radio (Useful for form submission).                                              | -       |
+| id               | string           | The id assigned to input field.                                                                                   |         |
+| value            | number, string   | The value to be used in the radio input. This is the value that will be returned on form submission               | -       |
+| colorScheme      | string           | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
+| defaultIsChecked | boolean          | If true, the radio will be initially checked.                                                                     | -       |
+| size             | `lg`, `md`, `sm` | The size (width and height) of the radio.                                                                         | `md`    |
+| isDisabled       | boolean          | If true, the radio will be disabled                                                                               | -       |
+| icon             | JSX.Element      | If given, will use this icon instead of the default.                                                              | -       |
+| isInvalid        | boolean          | If true, the radio is marked as invalid. Changes style of unchecked state.                                        | -       |
+| onChange         | function         | Function called when the state of the radio changes.                                                              | -       |
+| children         | JSX.Element      | The children of the radio.                                                                                        | -       |
+| ariaLabel        | string           | An accessible label for the radio in event there's no visible label or children was passed                        | -       |
 
 ### Radio Group
+
+`Radio.Group` implements **[Box](box.md)**, so all the Box Props can be passed to it.
 
 | Name         | Type     | Description                                                         | Default |
 | ------------ | -------- | ------------------------------------------------------------------- | ------- |
@@ -336,13 +338,13 @@ export default function () {
 | defaultValue | Array    | The initial value of the radio group.                               | -       |
 | onChange     | function | The callback fired when any children radio is checked or unchecked. | -       |
 
-The following props can be set on `Radio.Group` and they will be forwarded to all children `Radio` components.
-
 ### Shared Style Props
 
-| Name        | Type       | Description                                                                                                       | Default |
-| ----------- | ---------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| colorScheme | string     | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
-| size        | lg, md, sm | The size (width and height) of the radio.                                                                         | md      |
-| isDisabled  | boolean    | If true, the radio will be disabled                                                                               | -       |
-| isInvalid   | boolean    | If true, the radio is marked as invalid. Changes style of unchecked state.                                        | -       |
+The following props can be set on `Radio.Group` and they will be forwarded to all children `Radio` components.
+
+| Name        | Type             | Description                                                                                                       | Default   |
+| ----------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- | --------- |
+| colorScheme | string           | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | `default` |
+| size        | `lg`, `md`, `sm` | The size (width and height) of the radio.                                                                         | `md`      |
+| isDisabled  | boolean          | If true, the radio will be disabled                                                                               | -         |
+| isInvalid   | boolean          | If true, the radio is marked as invalid. Changes style of unchecked state.                                        | -         |

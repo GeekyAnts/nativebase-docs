@@ -19,7 +19,9 @@ NativeBase exports 5 modal-related components:
 import { Tabs } from 'native-base';
 ```
 
-## Usage
+## Examples
+
+### Usage
 
 ```SnackPlayer name=Tab%20Usage
 import React from 'react';
@@ -52,7 +54,7 @@ export default function () {
 }
 ```
 
-## Composition
+### Composition
 
 ```SnackPlayer name=Tab%20Composition
 import React from 'react';
@@ -96,7 +98,7 @@ export default function () {
 }
 ```
 
-## Variant
+### Variant
 
 ```SnackPlayer name=Tab%20Variant
 import React from 'react';
@@ -179,7 +181,7 @@ export default function () {
 }
 ```
 
-## TabsAlignment
+### TabsAlignment
 
 ```SnackPlayer name=Tab%20TabsAlignment
 import React from 'react';
@@ -238,7 +240,7 @@ export default function () {
 }
 ```
 
-## Colors
+### Colors
 
 ```SnackPlayer name=Tab%20Colors
 import React from 'react';
@@ -321,7 +323,7 @@ export default function () {
 }
 ```
 
-## Size
+### Sizes
 
 ```SnackPlayer name=Tab%20Sizes
 import React from 'react';
@@ -383,7 +385,7 @@ export default function () {
 }
 ```
 
-## FittedTabs
+### FittedTabs
 
 ```SnackPlayer name=Tab%20FittedTabs
 import React from 'react';
@@ -418,7 +420,7 @@ export default function () {
 }
 ```
 
-## TabBarOnly
+### TabBarOnly
 
 ```SnackPlayer name=Tab%20TabBarOnly
 import React from 'react';
@@ -449,7 +451,7 @@ export default function () {
 
 ## Props
 
-Implement `Box`, all props of Box can be passed.
+`Tabs` implements **[Box](box.md)**, so all the Box Props can be passed to it.
 
 ### Tabs
 
@@ -462,6 +464,6 @@ Implement `Box`, all props of Box can be passed.
 | size         | `lg`, `md`, `sm`                                                                     | The size of the tab.                                                                                              | `md`    |
 | isFitted     | boolean                                                                              | The tabs will spread in the TabBar.                                                                               | -       |
 | onChange     | function                                                                             | The callback invoked when tab is changed.                                                                         | -       |
-| variant      | `enclosed`, `enclosed-colored`, `line`, `soft-rounded`, `solid-box`, `solid-rounded` | The variant of the tabs style to use.                                                                             | line    |
+| variant      | `enclosed`, `enclosed-colored`, `line`, `soft-rounded`, `solid-box`, `solid-rounded` | The variant of the tabs style to use.                                                                             | `line`  |
 
-Tabs.Bar, Tabs.Tab, Tabs.Views, Tabs.View all implement [`Box`](box.md), all the props of Box can be passed to it.
+`Tabs.Bar`, `Tabs.Tab`, `Tabs.Views`, `Tabs.View` all implement [`Box`](box.md), all the props of Box can be passed to it.

@@ -13,7 +13,7 @@ import { Wrap } from 'native-base';
 
 ## Implements
 
-- `Flex` from native-base/Flex
+- [`Flex`](flex.md)
 
 ## Usage
 
@@ -89,7 +89,7 @@ export default function () {
 
 ## Alignment and Justify
 
-You can pass shorthands for alignItems and justifyContent as align and justify respectively.
+You can pass shorthands for `alignItems` and `justifyContent` as `align` and `justify` respectively.
 
 `align` prop changes the alignment of the child along the main axis.
 
@@ -125,7 +125,7 @@ export default function () {
 }
 ```
 
-`justify` prop changes the alignment of the child along the cross axis.
+The `justify` prop changes the alignment of the child along the cross axis.
 
 ```SnackPlayer name=Wrap%20Justify
 import React from 'react';
@@ -161,13 +161,13 @@ export default function () {
 
 ## Props
 
-In addition to this, all the **Flex** Props can be passed to **Wrap** as well.
+In addition to this, all the **Flex** Props can be passed to **[Wrap](wrap.md)** as well.
 
 ### Wrap
 
 | Name      | Type           | Description                                          | Default |
 | --------- | -------------- | ---------------------------------------------------- | ------- |
-| spacing   | String, number | The divider element to use between elements.         | -       |
+| spacing   | string, number | The divider element to use between elements.         | -       |
 | justify   | justifyContent | The justifyContent value (for cross axis alignment). | -       |
 | align     | alignItems     | The alignItems value (for main axis alignment).      | -       |
 | direction | flexDirection  | The flexDirection value.                             | -       |

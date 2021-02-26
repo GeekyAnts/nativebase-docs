@@ -3,13 +3,15 @@ id: pinInput
 title: PinInput
 ---
 
-The `PinInput` component is similar to the `Input` component, but it is optimized for entering sequences of digits.
+The `PinInput` component is similar to the [`Input`](input.md) component, but it is optimized for entering sequences of digits.
 
 ## Implements
 
-- `Input` from native-base/Input
+- [`Input`](input.md)
 
-## Usage
+## Examples
+
+### Usage
 
 ```SnackPlayer name=PinInput%20Usage
 import React from 'react';
@@ -36,7 +38,7 @@ export default function () {
 }
 ```
 
-## Size
+### Size
 
 ```SnackPlayer name=PinInput%20Sizes
 import React from 'react';
@@ -89,7 +91,7 @@ export default function () {
 }
 ```
 
-## Default Value
+### Default Value
 
 ```SnackPlayer name=PinInput%20DefaultValue
 import React from 'react';
@@ -122,7 +124,7 @@ export default function () {
 }
 ```
 
-## Placeholder
+### Placeholder
 
 ```SnackPlayer name=PinInput%20Placeholder
 import React from 'react';
@@ -148,7 +150,7 @@ export default function () {
 }
 ```
 
-## Manage Focus
+### Manage Focus
 
 ```SnackPlayer name=PinInput%20Manage Focus
 import React from 'react';
@@ -175,7 +177,7 @@ export default function () {
 }
 ```
 
-## Variants
+### Variants
 
 ```SnackPlayer name=PinInput%20Variants
 import React from 'react';
@@ -223,7 +225,7 @@ export default function () {
 }
 ```
 
-## Form Controlled
+### Form Controlled
 
 ```SnackPlayer name=PinInput%20Form
 import React from 'react';
@@ -267,16 +269,18 @@ export default function () {
 
 ## **Props**
 
-PinInput passes all the props to it's children (`PinInput.Field` only).
+### PinInput
 
-| Name         | Type        | Description                                                                                           | Default |
-| ------------ | ----------- | ----------------------------------------------------------------------------------------------------- | ------- |
-| manageFocus  | boolean     | The style variant of the badge.                                                                       | true    |
-| defaultValue | string      | The default value of the pin input. Example '32'.                                                     | -       |
-| value        | string      | The value of the the pin input. This is the value that will be returned when the pin input is filled. | -       |
-| space        | MarginProps | The space between each stack item.                                                                    | -       |
-| onChange     | function    | Function called on input change                                                                       | -       |
+PinInput passes all the props to its children (`PinInput.Field`) only.
 
-### **PinInput.Field**
+| Name         | Type                                                  | Description                                                                                           | Default |
+| ------------ | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------- |
+| manageFocus  | boolean                                               | The style variant of the badge.                                                                       | true    |
+| defaultValue | string                                                | The default value of the pin input. Example '32'.                                                     | -       |
+| value        | string                                                | The value of the the pin input. This is the value that will be returned when the pin input is filled. | -       |
+| space        | [`MarginProps`](https://styled-system.com/api/#space) | The space between each stack item.                                                                    | -       |
+| onChange     | function                                              | Function called on input change                                                                       | -       |
 
-PinInput.Field composes `Input` so you can pass all the `Input` props.
+### PinInput.Field
+
+PinInput.Field composes [`Input`](input.md) so you can pass all the [`Input props`](input.md#props).

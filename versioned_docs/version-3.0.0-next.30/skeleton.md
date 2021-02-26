@@ -7,13 +7,15 @@ title: Skeleton
 
 ## Implements
 
-- `Skeleton` composes `Box` so you can pass all `Box` props to change its style.
+- [`Box`](box.md)
 
-## Usage
+## Examples
+
+### Usage
 
 ```SnackPlayer name=Skeleton%20Usage
 import React from 'react';
-import { NativeBaseProvider, Skeleton, Stack, Text } from 'native-base';
+import { NativeBaseProvider, Skeleton, Stack, Text, Center } from 'native-base';
 function SkeletonComponent() {
   return (
     <Stack width="90%">
@@ -34,7 +36,7 @@ export default function () {
 }
 ```
 
-## Color
+### Color
 
 ```SnackPlayer name=Skeleton%20Color
 import React from 'react';
@@ -64,7 +66,7 @@ export default function () {
 }
 ```
 
-## IsLoaded
+### IsLoaded
 
 ```SnackPlayer name=Skeleton%20IsLoaded
 import React from 'react';
@@ -119,11 +121,11 @@ export default function () {
 
 ## Props
 
-### Skeleton
+`Skeleton` composes [`Box`](box.md) so you can pass all [`Box props`](box.md#props) to it.
 
 | Name       | Type                     | Description                       | Default |
 | ---------- | ------------------------ | --------------------------------- | ------- |
 | startColor | string                   | The color at the animation start. | -       |
 | endColor   | string                   | The color at the animation end.   | -       |
-| variant    | `circle`, `rect`, `text` | Variation of Skeleton to use      | text    |
+| variant    | `circle`, `rect`, `text` | Variation of Skeleton to use      | `text`  |
 | size       | number, string           | The size of the Skeleton          | -       |

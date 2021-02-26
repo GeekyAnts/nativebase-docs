@@ -7,9 +7,11 @@ The `Switch` component is an alternative to the Checkbox component. You can swit
 
 ## Implements
 
-- `Switch` from react-native
+- [`Switch`](https://reactnative.dev/docs/switch) from [`React Native`](https://reactnative.dev)
 
-## Example
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Switch%20Example
 import React from 'react';
@@ -35,7 +37,7 @@ export default function () {
 }
 ```
 
-## Example(Sizes)
+### Sizes
 
 ```SnackPlayer name=Switch%20Sizes
 import React from 'react';
@@ -62,7 +64,7 @@ export default function () {
 }
 ```
 
-## Example(Background)
+### Background
 
 ```SnackPlayer name=Switch%20Background
 import React from 'react';
@@ -91,20 +93,18 @@ export default function () {
 
 ## Props
 
-### Switch
-
-| Name               | Type       | Description                                                                      | Default |
-| ------------------ | ---------- | -------------------------------------------------------------------------------- | ------- |
-| name               | string     | The input name of the Switch when used in a form.                                | -       |
-| size               | lg, md, sm | The size (width and height) of the switch.                                       | md      |
-| isChecked          | boolean    | If true, set the Switch to the checked state.                                    | -       |
-| defaultIsChecked   | boolean    | If true, the checkbox will be initially checked.                                 | -       |
-| isDisabled         | boolean    | If true, set the disabled to the invalid state.                                  | -       |
-| isInvalid          | boolean    | If true, set the switch to the invalid state.                                    | -       |
-| onTrackColor       | string     | The track color of the Switch when on.                                           | -       |
-| offTrackColor      | string     | The track color of the Switch when off.                                          | -       |
-| onThumbColor       | string     | The thumb color of the Switch when on.                                           | -       |
-| offThumbColor      | string     | The thumb color of the Switch when off.                                          | -       |
-| onToggle           | function   | Function called when the state of the Switch changes.                            | -       |
-| accessibilityLabel | string     | The https://reactnative.dev/docs/accessibility#accessibilitylabel for component. | -       |
-| accessibilityHint  | string     | https://reactnative.dev/docs/accessibility#accessibilityhint for component       |         |
+| Name               | Type             | Description                                                                                          | Default |
+| ------------------ | ---------------- | ---------------------------------------------------------------------------------------------------- | ------- |
+| name               | string           | The input name of the Switch when used in a form.                                                    | -       |
+| size               | `lg`, `md`, `sm` | The size (width and height) of the switch.                                                           | `md`    |
+| isChecked          | boolean          | If true, set the Switch to the checked state.                                                        | -       |
+| defaultIsChecked   | boolean          | If true, the checkbox will be initially checked.                                                     | -       |
+| isDisabled         | boolean          | If true, set the disabled to the invalid state.                                                      | -       |
+| isInvalid          | boolean          | If true, set the switch to the invalid state.                                                        | -       |
+| onTrackColor       | string           | The track color of the Switch when on.                                                               | -       |
+| offTrackColor      | string           | The track color of the Switch when off.                                                              | -       |
+| onThumbColor       | string           | The thumb color of the Switch when on.                                                               | -       |
+| offThumbColor      | string           | The thumb color of the Switch when off.                                                              | -       |
+| onToggle           | function         | Function called when the state of the Switch changes.                                                | -       |
+| accessibilityLabel | string           | [`Accessibilty label`](https://reactnative.dev/docs/accessibility#accessibilitylabel) for component. | -       |
+| accessibilityHint  | string           | [`Accessibilty hint`](https://reactnative.dev/docs/accessibility#accessibilityhint) for component    |         |

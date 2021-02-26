@@ -7,7 +7,7 @@ title: Center
 
 ## Implements
 
-- `Box` from native-base/Box
+- [`Box`](box.md)
 
 ## **Import**
 
@@ -128,4 +128,4 @@ export default function () {
 
 ## Props
 
-**Center** implements **Box** , so all the `Box` Props can be passed to **Center.**
+**Center** implements **[Box](box.md)**, so all the Box Props can be passed to it.

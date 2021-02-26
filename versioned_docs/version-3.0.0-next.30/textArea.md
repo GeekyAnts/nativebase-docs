@@ -7,9 +7,11 @@ The `Textarea` component allows you to easily create multi-line text inputs.
 
 ## Implements
 
-- `Input` from nativebase
+- [`Input`](input.md)
 
-## Usage
+## Examples
+
+### Usage
 
 ```SnackPlayer name=TextArea%20Usage
 import React from 'react';
@@ -39,7 +41,7 @@ export default function () {
 }
 ```
 
-## Invalid and Disabled TextArea
+### Invalid and Disabled TextArea
 
 ```SnackPlayer name=TextArea%20Invalid and Disabled TextArea
 import React from 'react';
@@ -73,14 +75,14 @@ export default function () {
 }
 ```
 
-## TextArea Sizes
+### TextArea Sizes
 
 ```SnackPlayer name=TextArea%20TextArea Sizes
 import React from 'react';
 import { TextArea, Heading, Center, Text, Stack, NativeBaseProvider } from 'native-base';
 
 function TextAreaComponent () {
-  const Sizes: any = ['xsm', 'sm', 'md', 'lg', 'xl', '2xl'];
+	const Sizes: any = ['xs', 'sm', 'md', 'lg', 'xl', '2xl'];
   return (
     <Stack space={4}>
       <Center>
@@ -90,7 +92,9 @@ function TextAreaComponent () {
         <Text>TextArea with different font sizes</Text>
       </Center>
       {Sizes.map((value: string) => {
-        return <TextArea w="90%" inputSize={value} placeholder={value} />;
+        return (
+          <TextArea key={value} w="90%" size={value} placeholder={value} />
+        );
       })}
     </Stack>
   );
@@ -106,7 +110,7 @@ export default function () {
 }
 ```
 
-## Value Controlled TextArea
+### Value Controlled TextArea
 
 ```SnackPlayer name=TextArea%20Value Controlled TextArea
 import React, { useState } from 'react';
@@ -146,10 +150,8 @@ export default function () {
 
 ## Props
 
-### TextArea
-
 | Name       | Type   | Description                                     | Default |
 | ---------- | ------ | ----------------------------------------------- | ------- |
 | totalLines | number | maps to react-native TextInput's numberOfLines. | -       |
 
-As `TextArea` extends `Input`, all Input Props can be passed to TextArea.
+As `TextArea` composes [`Input`](input.md), all [`Input Props`](input.md#props) can be passed to it.

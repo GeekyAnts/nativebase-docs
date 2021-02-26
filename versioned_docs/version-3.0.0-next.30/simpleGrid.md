@@ -3,7 +3,7 @@ id: simpleGrid
 title: SimpleGrid
 ---
 
-SimpleGrid provides an interface to create responsive grids using simple props.
+`SimpleGrid` provides an interface to create responsive grids using simple props.
 
 ## Import
 
@@ -73,14 +73,12 @@ export default function () {
 
 ## Props
 
-### SimpleGrid
+| Name          | Type   | Description                                                           | Default |
+| ------------- | ------ | --------------------------------------------------------------------- | ------- |
+| columns       | number | Number of columns in a row                                            | 0       |
+| minChildWidth | number | Number to set the minimum child width of a grid item.                 | 0       |
+| spacing       | number | Number to set the horizontal and vertical spacing between grid items. | 0       |
+| spacingX      | number | Number to set the horizontal spacing between grid items.              | 0       |
+| spacingY      | number | Number to set the vertical spacing between grid items.                | 0       |
 
-| Name          | Type   | Description                                                       | Default |
-| ------------- | ------ | ----------------------------------------------------------------- | ------- |
-| columns       | number | Number to set minimum child width of a grid item.                 | 0       |
-| minChildWidth | number | Number to set minimum child width of a grid item.                 | 0       |
-| spacing       | number | Number to set horizontal and vertical spacing between grid items. | 0       |
-| spacingX      | number | Number to set horizontal spacing between grid items.              | 0       |
-| spacingY      | number | Number to set vertical spacing between grid items.                | 0       |
-
-**Note:** Either of `columns` or `minChildWidth` is required.
+**Note:** Either `columns` or `minChildWidth` is required.

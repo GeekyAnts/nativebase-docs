@@ -5,7 +5,7 @@ title: Accordion
 
 ## Implements
 
-- `Collapse`, `Box` from native-base
+- [`Collapse`](collapse.md), [`Box`](box.md)
 
 ## Import
 
@@ -13,7 +13,9 @@ title: Accordion
 import { Accordion } from 'native-base';
 ```
 
-## Basic
+## Examples
+
+### Basic
 
 ```SnackPlayer name=Basic
 import React from 'react';
@@ -73,7 +75,7 @@ export default function () {
 
 ```
 
-## Multiple
+### Multiple
 
 ```SnackPlayer name=Multilple
 import React from 'react';
@@ -135,7 +137,7 @@ export default function () {
 
 ```
 
-## Default Index
+### Default Index
 
 ```SnackPlayer name=DefaultIndex
 import React from 'react';
@@ -197,7 +199,7 @@ export default function () {
 
 ```
 
-## Toggle
+### Toggle
 
 ```SnackPlayer name=Toggle
 import React from 'react';
@@ -259,7 +261,7 @@ export default function () {
 
 ```
 
-## Expanded Style
+### Expanded Style
 
 ```SnackPlayer name=Style
 import React from 'react';
@@ -309,7 +311,7 @@ export default function () {
 
 ```
 
-## Accessing Internal State
+### Accessing Internal State
 
 ```SnackPlayer name=InternalState
 import React from 'react';
@@ -388,12 +390,12 @@ export default function () {
 
 ### Accordion.Summary
 
-**Accrodion.Summary** renders a button and composes **Box**. All the **Box** props can be passed to **Accrodion.Summary** and you can style it by passing pseudo style props like `_expanded`, `_disabled`, `_hover`, etc.
+**Accrodion.Summary** renders a button and composes **[Box](box.md)**. All the **Box** props can be passed to **Accrodion.Summary** and you can style it by passing pseudo style props like `_expanded`, `_disabled`, `_hover`, etc.
 
 ### Accordion.Details
 
-**AccordionDetails** renders a **Box** and composes **Collapse** to provide height animation.
+**AccordionDetails** renders a **Box** and composes **[Collapse](collapse.md)** to provide height animation.
 
 ### Accordion.Icon
 
-**AccordionIcon** renders an Icon and composes **Icon**.
+**AccordionIcon** renders an Icon and composes **[Icon](icon.md)**.
