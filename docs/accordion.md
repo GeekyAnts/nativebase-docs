@@ -315,7 +315,7 @@ export default function () {
 
 ```SnackPlayer name=InternalState
 import React from 'react';
-import { Accordion, Box, NativeBaseProvider, Center } from 'native-base';
+import { Accordion, Box, NativeBaseProvider, Center, Icon } from 'native-base';
 
 function AccordionComponent() {
   return (

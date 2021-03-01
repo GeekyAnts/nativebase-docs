@@ -63,8 +63,6 @@ import React from 'react';
 import {
   Button,
   Alert,
-  AlertIcon,
-  AlertDescription,
   useSnackbar,
   VStack,
   NativeBaseProvider,
@@ -74,8 +72,8 @@ function SnackbarExample () {
   const { setSnackbar } = useSnackbar();
   const template = (
     <Alert status="success">
-      <AlertIcon />
-      <AlertDescription>Welldone, we are proud of you.</AlertDescription>
+      <Alert.Icon />
+      <Alert.Description>Welldone, we are proud of you.</Alert.Description>
     </Alert>
   );
   return (
