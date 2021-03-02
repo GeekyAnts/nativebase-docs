@@ -21,7 +21,6 @@
   --ifm-color-primary-light: #6ee7b7;
   --ifm-color-primary-lighter: #a7f3d0;
   --ifm-color-primary-lightest: #d1fae5;
-
   --ifm-code-font-size: 95%;
 }
 
@@ -40,9 +39,8 @@ html[data-theme='dark'] .DocSearch-Button-Key {
 
 .snack-player {
   overflow: hidden;
-  background: #212121;
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
+  border: 1px solid var(--ifm-table-border-color);
+  border-radius: 8px;
   height: 505px;
   width: 100%;
 }

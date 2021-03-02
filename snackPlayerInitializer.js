@@ -8,7 +8,7 @@ export default (() => {
   const updateSnacksTheme = () => {
     const theme = document.querySelector('html').dataset.theme;
     document.querySelectorAll('.snack-player').forEach((snack) => {
-      snack.dataset.snackTheme = 'dark';
+      snack.dataset.snackTheme = theme;
     });
   };
 

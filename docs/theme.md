@@ -3,14 +3,13 @@ id: theme
 title: How to use NativeBase theme
 ---
 
-There will be time when you want to access the theme object itself. Well np worries NativeBase provides with the `useTheme` hook to solve that problem.
+There will be times when you want to access the theme object itself. Well no worries NativeBase provides [`useTheme`](/useTheme.md) hook to solve your problem.
 
-But why we need the theme object? Maybe show you the color palettes 😁
+## useTheme
 
-## useColorModeValue
-
-```SnackPlayer name=Box%20Example
+```SnackPlayer name=useTheme%20Demo
 import React from 'react';
+import { ScrollView } from 'react-native';
 import { NativeBaseProvider, useColorModeValue, Button, useTheme, SimpleGrid, Center } from 'native-base';
 
 function ColorPalete() {
@@ -25,7 +24,6 @@ function ColorPalete() {
           <Button
             size='lg'
             colorScheme={colorKey}
-            variant={useColorModeValue('solid', 'outline')}
           >
             {colorKey[0]}
           </Button>
@@ -35,15 +33,17 @@ function ColorPalete() {
   };
 
   return (
-    <SimpleGrid columns={5} spacing={4}>
-      {template()}
-    </SimpleGrid>
+    <ScrollView>
+      <SimpleGrid columns={3} spacing={4}>
+        {template()}
+      </SimpleGrid>
+    </ScrollView>
   );
 }
   export default function () {
     return (
       <NativeBaseProvider>
-        <Center flex={1}>
+        <Center flex={1} p={3}>
           <ColorPalete />
         </Center>
       </NativeBaseProvider>
@@ -51,9 +51,11 @@ function ColorPalete() {
   }
 ```
 
-Don't want the entire object, instead something vary specific. Don't we got you covered with our `useToken` hook. Let’s see an example.
+## useToken
 
-```SnackPlayer name=useToken
+Don't want the entire object, instead something vary specific? No problem we have a solution for that too with our [`useToken`](/useToken.md) hook. Let’s see an example.
+
+```SnackPlayer name=useToken%20Demo
 import React from 'react';
 import { useToken, Box, SimpleGrid, NativeBaseProvider, Center } from 'native-base';
 
@@ -67,7 +69,7 @@ function Tokens () {
     return temp;
   };
 
-  return <SimpleGrid columns={10}>{template()}</SimpleGrid>;
+  return <SimpleGrid columns={5}>{template()}</SimpleGrid>;
 }
 export default function () {
     return (
