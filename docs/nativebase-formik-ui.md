@@ -1,11 +1,11 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-NativeBase Formik Integrated Components. No need of managing and using formik hooks just use these components and NativeBase will do that for you.
+NativeBase FormikUI Components. No need of using and managing formik hooks manually just use these components and NativeBase will do that for you.
 
 ## Installation
 
-To **Install NativeBase-Formik-UI** just copy this and paste in your terminal.\_
+To **Install NativeBase-Formik-UI** just copy this and paste in your terminal.
 
 <Tabs
 defaultValue='yarn'
@@ -47,7 +47,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -98,7 +98,9 @@ function FormikCheckboxBasicExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikCheckboxBasicExample />
+      <Center flex={1}>
+        <FormikCheckboxBasicExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -109,7 +111,7 @@ export default function () {
 
 ### Custom
 
-```SnackPlayer name=Formik%20Checkbox%20Custom
+```SnackPlayer name=Formik%20Checkbox%20with%20FormControl
 import React from 'react';
 import {
   Checkbox,
@@ -120,7 +122,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl, NativeBaseProvider } from 'native-base';
+import { Heading, FormControl, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -156,7 +158,9 @@ function FormikCheckboxCustomExample() {
             <Checkbox name="newsletter" mt={4}>
               <Text mx={2}>Subscribe to Our Newsletter</Text>
             </Checkbox>
-            <FormControl.ErrorMessage>{errors.newsletter}</FormControl.ErrorMessage>
+            <FormControl.ErrorMessage>
+              {errors.newsletter}
+            </FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -178,7 +182,9 @@ function FormikCheckboxCustomExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikCheckboxCustomExample />
+      <Center flex={1}>
+        <FormikCheckboxCustomExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -192,90 +198,6 @@ export default function () {
 ```SnackPlayer name=Formik%20Input%20Basic
 import React from 'react';
 import {
-  Input,
-  SubmitButton,
-  ResetButton,
-  Box,
-  ButtonGroup,
-} from '@native-base/formik-ui';
-import { Formik } from 'formik';
-import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
-import * as Yup from 'yup';
-
-const validationSchema = Yup.object().shape({
-  email: Yup.string()
-    .email('Please enter valid email')
-    .required('Email Address is Required'),
-  password: Yup.string()
-    .min(8, ({ min }) => `Password must be at least ${min} characters`)
-    .required('Password is required'),
-});
-
-function FormikInputBasicExample() {
-  const onSubmit = async (values) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log(values);
-  };
-  return (
-    <Formik
-      initialValues={{
-        email: '',
-        password: '',
-      }}
-      onSubmit={onSubmit}
-      validationSchema={validationSchema}
-    >
-      {({ values, errors }) => (
-        <Box>
-          <Heading>Login form using Custom FormControl</Heading>
-          <FormControl mt={4} isRequired isInvalid={errors.email}>
-            <FormControl.Label color="teal.600">Email Address</FormControl.Label>
-            <Input name="email" mt={2} placeholder="jane.doe@example.com" />
-            <FormControl.ErrorMessage>{errors.email}</FormControl.ErrorMessage>
-          </FormControl>
-          <FormControl mt={4} isRequired isInvalid={errors.password}>
-            <FormControl.Label color="orange.600">Password</FormControl.Label>
-            <Input
-              name="password"
-              type="password"
-              mt={2}
-              placeholder="MyPassword"
-            />
-            <FormControl.ErrorMessage>{errors.password}</FormControl.ErrorMessage>
-          </FormControl>
-          <Box pb={4} />
-          <ButtonGroup spacing={6}>
-            <SubmitButton colorScheme="info">Login</SubmitButton>
-            <ResetButton colorScheme="yellow">Reset</ResetButton>
-          </ButtonGroup>
-          <Box mt={4} bg="gray.100" p={3}>
-            <Heading size="sm" mb={2}>
-              Current State
-            </Heading>
-            Values: {JSON.stringify(values, null, 2)}
-            Errors: {JSON.stringify(errors, null, 2)}
-          </Box>
-        </Box>
-      )}
-    </Formik>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <FormikInputBasicExample />
-    </NativeBaseProvider>
-  );
-}
-```
-
-<br/>
-
-### Custom
-
-```SnackPlayer name=Formik%20Input%20Custom
-import React from 'react';
-import {
   InputControl,
   SubmitButton,
   ResetButton,
@@ -284,7 +206,7 @@ import {
   NativeBaseProvider
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -348,7 +270,99 @@ export default function () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikInputCustomExample />
+      <Center flex={1}>
+        <FormikInputCustomExample />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+<br/>
+
+### Custom
+
+```SnackPlayer name=Formik%20Input%20with%20FormControl
+import React from 'react';
+import {
+  Input,
+  SubmitButton,
+  ResetButton,
+  Box,
+  ButtonGroup,
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading, FormControl, Center, NativeBaseProvider } from 'native-base';
+import * as Yup from 'yup';
+
+const validationSchema = Yup.object().shape({
+  email: Yup.string()
+    .email('Please enter valid email')
+    .required('Email Address is Required'),
+  password: Yup.string()
+    .min(8, ({ min }) => `Password must be at least ${min} characters`)
+    .required('Password is required'),
+});
+
+function FormikInputBasicExample() {
+  const onSubmit = async (values) => {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    console.log(values);
+  };
+  return (
+    <Formik
+      initialValues={{
+        email: '',
+        password: '',
+      }}
+      onSubmit={onSubmit}
+      validationSchema={validationSchema}
+    >
+      {({ values, errors }) => (
+        <Box>
+          <Heading>Login form using Custom FormControl</Heading>
+          <FormControl mt={4} isRequired isInvalid={errors.email}>
+            <FormControl.Label color="teal.600">
+              Email Address
+            </FormControl.Label>
+            <Input name="email" mt={2} placeholder="jane.doe@example.com" />
+            <FormControl.ErrorMessage>{errors.email}</FormControl.ErrorMessage>
+          </FormControl>
+          <FormControl mt={4} isRequired isInvalid={errors.password}>
+            <FormControl.Label color="orange.600">Password</FormControl.Label>
+            <Input
+              name="password"
+              type="password"
+              mt={2}
+              placeholder="MyPassword"
+            />
+            <FormControl.ErrorMessage>
+              {errors.password}
+            </FormControl.ErrorMessage>
+          </FormControl>
+          <Box pb={4} />
+          <ButtonGroup spacing={6}>
+            <SubmitButton colorScheme="info">Login</SubmitButton>
+            <ResetButton colorScheme="yellow">Reset</ResetButton>
+          </ButtonGroup>
+          <Box mt={4} bg="gray.100" p={3}>
+            <Heading size="sm" mb={2}>
+              Current State
+            </Heading>
+            Values: {JSON.stringify(values, null, 2)}
+            Errors: {JSON.stringify(errors, null, 2)}
+          </Box>
+        </Box>
+      )}
+    </Formik>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <FormikInputBasicExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -361,6 +375,82 @@ export default function () {
 ```SnackPlayer name=Formik%20NumberInput%20Basic
 import React from 'react';
 import {
+  NumberInputControl,
+  NumberInputStepper,
+  NumberIncrementStepper,
+  NumberDecrementStepper,
+  SubmitButton,
+  ResetButton,
+  Box,
+  ButtonGroup,
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading, Center, NativeBaseProvider } from 'native-base';
+import * as Yup from 'yup';
+
+const validationSchema = Yup.object().shape({
+  age: Yup.number()
+    .min(18, ({ min }) => `Age must be at least ${min} years old`)
+    .required('Please specify your age, it is important.'),
+});
+
+function FormikNumberInputBasicExample() {
+  const onSubmit = async (values) => {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    console.log(values);
+  };
+  return (
+    <Formik
+      initialValues={{
+        age: 0,
+      }}
+      onSubmit={onSubmit}
+      validationSchema={validationSchema}
+    >
+      {({ values, errors }) => (
+        <Box mt={4}>
+          <Heading>Let's check if you are eligible.</Heading>
+          <NumberInputControl mt={4} name="age" label="Age ?">
+            <NumberInputStepper>
+              <NumberIncrementStepper />
+              <NumberDecrementStepper />
+            </NumberInputStepper>
+          </NumberInputControl>
+          <Box pb={4} />
+          <ButtonGroup spacing={6}>
+            <SubmitButton colorScheme="teal">Next</SubmitButton>
+            <ResetButton colorScheme="yellow">Reset</ResetButton>
+          </ButtonGroup>
+          <Box mt={4} bg="gray.100" p={3}>
+            <Heading size="sm" mb={2}>
+              Current State
+            </Heading>
+            Values: {JSON.stringify(values, null, 2)}
+            Errors: {JSON.stringify(errors, null, 2)}
+          </Box>
+        </Box>
+      )}
+    </Formik>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <FormikNumberInputBasicExample />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+<br/>
+
+### Custom
+
+```SnackPlayer name=Formik%20NumberInput%20with%20FormControl
+import React from 'react';
+import {
   NumberInput,
   NumberInputStepper,
   NumberIncrementStepper,
@@ -371,7 +461,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading,   FormControl,   NativeBaseProvider } from 'native-base';
+import { Heading, FormControl, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -379,10 +469,9 @@ const validationSchema = Yup.object().shape({
     18,
     ({ min }) => `Age must be at least ${min} years old`
   ),
-  // .required('Please specify your age, it is important.'),
 });
 
-export default function FormikNumberInputBasicExample() {
+function FormikNumberInputCustomExample() {
   const onSubmit = async (values) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
@@ -428,39 +517,39 @@ export default function FormikNumberInputBasicExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikNumberInputBasicExample />
+      <Center flex={1}>
+        <FormikNumberInputCustomExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
 ```
 
-<br/>
+## PinInput
 
-### Custom
+### Basic
 
-```SnackPlayer name=Formik%20NumberInput%20Custom
+```SnackPlayer name=Formik%20PinInput%20Basic
 import React from 'react';
 import {
-  NumberInputControl,
-  NumberInputStepper,
-  NumberIncrementStepper,
-  NumberDecrementStepper,
+  PinInputControl,
+  PinInput,
   SubmitButton,
   ResetButton,
   Box,
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
-  age: Yup.number()
-    .min(18, ({ min }) => `Age must be at least ${min} years old`)
-    .required('Please specify your age, it is important.'),
+  otp: Yup.string().required(
+    'Please specify your otp, it is required to proceed forward.'
+  ),
 });
 
-export default function () {
+function FormikPinInputBasicExample() {
   const onSubmit = async (values) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(values);
@@ -468,20 +557,20 @@ export default function () {
   return (
     <Formik
       initialValues={{
-        age: 0,
+        otp: '',
       }}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
     >
       {({ values, errors }) => (
         <Box mt={4}>
-          <Heading>Let's check if you are eligible.</Heading>
-          <NumberInputControl mt={4} name="age" label="Age ?">
-            <NumberInputStepper>
-              <NumberIncrementStepper />
-              <NumberDecrementStepper />
-            </NumberInputStepper>
-          </NumberInputControl>
+          <Heading>Verify your Phone Number</Heading>
+          <PinInputControl mt={4} name="otp" label="Enter Your Otp" isRequired>
+            <PinInput.Field />
+            <PinInput.Field />
+            <PinInput.Field />
+            <PinInput.Field />
+          </PinInputControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
             <SubmitButton colorScheme="teal">Next</SubmitButton>
@@ -502,7 +591,87 @@ export default function () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikNumberInputCustomExample />
+      <Center flex={1}>
+        <FormikPinInputBasicExample />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+<br/>
+
+### Custom
+
+```SnackPlayer name=Formik%20PinInput%20with%20FormControl
+import React from 'react';
+import {
+  PinInput,
+  SubmitButton,
+  ResetButton,
+  Box,
+  ButtonGroup,
+} from '@native-base/formik-ui';
+import { Formik } from 'formik';
+import { Heading, FormControl, Center, NativeBaseProvider } from 'native-base';
+import * as Yup from 'yup';
+
+const validationSchema = Yup.object().shape({
+  otp: Yup.string().required('Please specify your otp, it is important.'),
+});
+
+function FormikPinInputCustomExample() {
+  const onSubmit = async (values) => {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    console.log(values);
+  };
+  return (
+    <Formik
+      initialValues={{
+        otp: '',
+      }}
+      onSubmit={onSubmit}
+      validationSchema={validationSchema}
+      enablereinitialize
+    >
+      {({ values, errors }) => (
+        <Box mt={4}>
+          <Heading>Confirm Your Identity</Heading>
+          <FormControl mt={4} isInvalid={errors.otp}>
+            <FormControl.Label>
+              Please enter the OTP. Trust me , I won't steal anything 😉 .
+            </FormControl.Label>
+            <PinInput mt={2} name="otp">
+              <PinInput.Field />
+              <PinInput.Field />
+              <PinInput.Field />
+              <PinInput.Field />
+            </PinInput>
+            <FormControl.ErrorMessage>{errors.otp}</FormControl.ErrorMessage>
+          </FormControl>
+          <Box pb={4} />
+          <ButtonGroup spacing={6}>
+            <SubmitButton colorScheme="teal">Next</SubmitButton>
+            <ResetButton colorScheme="yellow">Reset</ResetButton>
+          </ButtonGroup>
+          <Box mt={4} bg="gray.100" p={3}>
+            <Heading size="sm" mb={2}>
+              Current State
+            </Heading>
+            Values: {JSON.stringify(values, null, 2)}
+            Errors: {JSON.stringify(errors, null, 2)}
+          </Box>
+        </Box>
+      )}
+    </Formik>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <FormikPinInputCustomExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -525,7 +694,7 @@ import {
   Text,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -551,7 +720,7 @@ function FormikRadioBasicExample() {
           <RadioGroupControl
             mt={4}
             name="color"
-            label="What's your faviourate Color ?"
+            label="What's your favourite Color ?"
           >
             <HStack space={4}>
               <Radio value="#ff0000">
@@ -588,7 +757,9 @@ function FormikRadioBasicExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikRadioBasicExample />
+      <Center flex={1}>
+        <FormikRadioBasicExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -598,7 +769,7 @@ export default function () {
 
 ### Custom
 
-```SnackPlayer name=Formik%20Radio%20Custom
+```SnackPlayer name=Formik%20Radio%20with%20FormControl
 import React from 'react';
 import {
   Radio,
@@ -611,7 +782,7 @@ import {
   Text,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
+import { Heading, FormControl, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -635,11 +806,11 @@ function FormikRadioCustomExample() {
         <Box mt={4}>
           <Heading>Let's Try to Know You More.</Heading>
           <FormControl mt={4} isRequired isInvalid={errors.color}>
-            <FormControl.Label>What's your faviourate Color ?</FormControl.Label>
+            <FormControl.Label>What's your favourite Color ?</FormControl.Label>
             <RadioGroup
               mt={2}
               name="color"
-              label="What's your faviourate Color ?"
+              label="What's your favourite Color ?"
             >
               <HStack space={4}>
                 <Radio value="#ff0000">
@@ -678,7 +849,9 @@ function FormikRadioCustomExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikRadioCustomExample />
+      <Center flex={1}>
+        <FormikRadioCustomExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -700,7 +873,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -724,7 +897,7 @@ function FormikSelectBasicExample() {
         <Box mt={4}>
           <Heading>
             {values.language === ''
-              ? 'Please Tell Your Faviorate Programming Language'
+              ? 'Please Tell Your Favourite Programming Language'
               : 'You said you love ' + values.language + ' 👌🏻'}
           </Heading>
           <SelectControl
@@ -767,7 +940,9 @@ function FormikSelectBasicExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikSelectBasicExample />
+      <Center flex={1}>
+        <FormikSelectBasicExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -777,7 +952,7 @@ export default function () {
 
 ### Custom
 
-```SnackPlayer name=Formik%20Select%20Custom
+```SnackPlayer name=Formik%20Select%20with%20FormControl
 import React from 'react';
 import {
   SelectFormik,
@@ -789,7 +964,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl,   NativeBaseProvider } from 'native-base';
+import { Heading, FormControl, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -813,11 +988,12 @@ function FormikSelectCustomExample() {
         <Box mt={4}>
           <Heading>
             {values.language === ''
-              ? 'Please Tell Your Faviorate Programming Language'
+              ? 'Please Tell Your Favourite Programming Language'
               : 'You said you love ' + values.language + ' 👌🏻'}
           </Heading>
           <FormControl mt={4} isInvalid={errors.language}>
             <SelectFormik
+              variant="styled"
               name="language"
               label="Pick language"
               placeholder="Pick language"
@@ -836,7 +1012,9 @@ function FormikSelectCustomExample() {
               <Select.Item label="TypeScript" value="ts" />
               <Select.Item label="Java" value="java" />
             </SelectFormik>
-            <FormControl.ErrorMessage>{errors.language}</FormControl.ErrorMessage>
+            <FormControl.ErrorMessage>
+              {errors.language}
+            </FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -858,7 +1036,9 @@ function FormikSelectCustomExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikSelectCustomExample />
+      <Center flex={1}>
+        <FormikSelectCustomExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -871,9 +1051,7 @@ export default function () {
 ```SnackPlayer name=Formik%20Slider%20Basic
 import React from 'react';
 import {
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
+  Slider,
   SliderControl,
   SubmitButton,
   ResetButton,
@@ -882,7 +1060,7 @@ import {
   Text,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -906,7 +1084,7 @@ function FormikSliderBasicExample() {
     >
       {({ values, errors }) => (
         <Box mt={4}>
-          <Heading>Rate NativeBase V3 Formik Integration (0-10) 😬</Heading>
+          <Heading>Rate NativeBase-Formik-UI (0-10) 😬</Heading>
           <Text>You have rated us {Math.floor(values.rating)}</Text>
           <SliderControl
             name="rating"
@@ -916,10 +1094,10 @@ function FormikSliderBasicExample() {
             min={0}
             max={10}
           >
-            <SliderTrack>
-              <SliderFilledTrack />
-            </SliderTrack>
-            <SliderThumb />
+            <Slider.Track>
+              <Slider.FilledTrack />
+            </Slider.Track>
+            <Slider.Thumb />
           </SliderControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -941,7 +1119,9 @@ function FormikSliderBasicExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikSliderBasicExample />
+      <Center flex={1}>
+        <FormikSliderBasicExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -951,12 +1131,9 @@ export default function () {
 
 ### Custom
 
-```SnackPlayer name=Formik%20Slider%20Custom
+```SnackPlayer name=Formik%20Slider%20with%20FormControl
 import React from 'react';
 import {
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
   Slider,
   SubmitButton,
   ResetButton,
@@ -965,7 +1142,7 @@ import {
   Text,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
+import { Heading, FormControl, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -989,15 +1166,15 @@ function FormikSliderCustomExample() {
     >
       {({ values, errors }) => (
         <Box mt={4}>
-          <Heading>Rate NativeBase V3 Formik Integration (0-10) 😬</Heading>
+          <Heading>Rate NativeBase-Formik-UI (0-10) 😬</Heading>
           <Text>You have rated us {Math.floor(values.rating)}</Text>
           <FormControl isInvalid={errors.rating}>
             <FormControl.Label>Slider Label</FormControl.Label>
             <Slider name="rating" colorScheme="cyan" min={0} max={10}>
-              <SliderTrack>
-                <SliderFilledTrack />
-              </SliderTrack>
-              <SliderThumb />
+              <Slider.Track>
+                <Slider.FilledTrack />
+              </Slider.Track>
+              <Slider.Thumb />
             </Slider>
             <FormControl.ErrorMessage>{errors.rating}</FormControl.ErrorMessage>
           </FormControl>
@@ -1021,7 +1198,9 @@ function FormikSliderCustomExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikSliderCustomExample />
+      <Center flex={1}>
+        <FormikSliderCustomExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -1042,7 +1221,7 @@ import {
   Icon,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -1093,7 +1272,9 @@ function FormikSwitchBasicExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikSwitchBasicExample />
+      <Center flex={1}>
+        <FormikSwitchBasicExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -1103,7 +1284,7 @@ export default function () {
 
 ### Custom
 
-```SnackPlayer name=Formik%20Switch%20Custom
+```SnackPlayer name=Formik%20Switch%20with%20FormControl
 import React from 'react';
 import {
   Switch,
@@ -1114,7 +1295,7 @@ import {
   Icon,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
+import { Heading, FormControl, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -1147,7 +1328,9 @@ function FormikSwitchCustomExample() {
           <FormControl mt={4} isInvalid={errors.switchon}>
             <FormControl.Label>Toggle Switch</FormControl.Label>
             <Switch mt={2} name="switchon" label="Toggle Switch" />
-            <FormControl.ErrorMessage>{errors.switchon}</FormControl.ErrorMessage>
+            <FormControl.ErrorMessage>
+              {errors.switchon}
+            </FormControl.ErrorMessage>
           </FormControl>
           <Box pb={4} />
           <ButtonGroup spacing={6}>
@@ -1169,7 +1352,9 @@ function FormikSwitchCustomExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikSwitchCustomExample />
+      <Center flex={1}>
+        <FormikSwitchCustomExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -1189,7 +1374,7 @@ import {
   ButtonGroup,
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, NativeBaseProvider } from 'native-base';
+import { Heading, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -1240,7 +1425,9 @@ function FormikTextareaBasicExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikTextareaBasicExample />
+      <Center flex={1}>
+        <FormikTextareaBasicExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -1250,7 +1437,7 @@ export default function () {
 
 ### Custom
 
-```SnackPlayer name=Formik%20TextArea%20Custom
+```SnackPlayer name=Formik%20TextArea%20with%20FormControl
 import React from 'react';
 import {
   TextArea,
@@ -1258,10 +1445,9 @@ import {
   ResetButton,
   Box,
   ButtonGroup,
-  NativeBaseProvider
 } from '@native-base/formik-ui';
 import { Formik } from 'formik';
-import { Heading, FormControl,     NativeBaseProvider } from 'native-base';
+import { Heading, FormControl, Center, NativeBaseProvider } from 'native-base';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -1309,13 +1495,15 @@ function FormikTextareaCustomExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <FormikTextareaCustomExample />
+      <Center flex={1}>
+        <FormikTextareaCustomExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
 ```
 
-> **Note**: `@native-base/formik-ui` provides some basic helper components from `native-base` so you don't have to keep track of those components, but it's not possible to provide each and every component , therefore there can be situation where you have to import components from `native-base` manually.
+> **Note**: `@native-base/formik-ui` provides some basic helper components from `native-base` so you don't have to keep track of those components, but it's not possible to provide each and every component , therefore there can be situations where you have to import components from `native-base` separately.
 
 ## Props
 
