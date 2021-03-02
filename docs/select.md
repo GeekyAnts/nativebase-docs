@@ -158,13 +158,15 @@ export default function () {
 | dropdownIcon      | JSX.Element                  | If given, updates the dropdown Icon (only for styled variant).                                                                       | -          |
 | dropdownOpenIcon  | JSX.Element                  | If given, updates the dropdown Icon when opened (only for styled variant).                                                           | -          |
 | dropdownCloseIcon | JSX.Element                  | If given, updates the dropdown Icon when closed (only for styled variant).                                                           | -          |
-| \_ios             |                              | Props which you only want to pass to ios device.                                                                                     | -          |
-| \_android         |                              | Props which you only want to pass to android device.                                                                                 | -          |
-| \_web             |                              | Props which you only want to pass to web device.                                                                                     | -          |
+| \_ios             | _StyleProps_                 | Props which you only want to pass to ios device.                                                                                     | -          |
+| \_android         | _StyleProps_                 | Props which you only want to pass to android device.                                                                                 | -          |
+| \_web             | _StyleProps_                 | Props which you only want to pass to web device.                                                                                     | -          |
 | \_item            | [`TextProps`](text.md#props) | TextProps to be applied to the label (only for styled variant).                                                                      | -          |
 | androidMode       | `dialog`, `dropdown`         | On Android, specifies how to display the selection items when the user taps on the picker (only for native variant).                 | `dialog`   |
 | androidIconColor  | string                       | On Android, specifies color of dropdown triangle. Input value can any color from theme like `default.300` (only for native variant). | -          |
 | androidPrompt     | string                       | On Android, prompt string for this picker, used on Android in dialog mode as the title of the dialog (only for native variant).      | -          |
+
+**Select** can be styled using pseudo style props like `_isInvalid`, `_isDisabled` and `_hover`.
 
 ### Select Item
 
