@@ -22,7 +22,7 @@ function UseTokenHookExample() {
     // the key within the theme, in this case `theme.colors`
     "colors",
     // the subkey(s), resolving to `theme.colors.warning.1`
-    ["warning.100", "red.400"]
+    ["emerald.200", "red.400"]
     // a single fallback or fallback array matching the length of the previous arg
   );
 

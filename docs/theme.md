@@ -1,83 +1,73 @@
 ---
 id: theme
-title: How to use NativeBase theme
+title: How to use theme
 ---
 
-There will be times when you want to access the theme object itself. Well no worries NativeBase provides [`useTheme`](/useTheme.md) hook to solve your problem.
+NativeBase provides multiple tools to use the central theme defined in the app. First tool is [`useTheme`](/useTheme.md), which you can use to access the values from the current theme.
 
 ## useTheme
 
 ```SnackPlayer name=useTheme%20Demo
 import React from 'react';
-import { ScrollView } from 'react-native';
-import { NativeBaseProvider, useColorModeValue, Button, useTheme, SimpleGrid, Center } from 'native-base';
+import {
+  NativeBaseProvider,
+  useTheme,
+  SimpleGrid,
+  Center,
+  Box,
+} from 'native-base';
 
 function ColorPalete() {
   const { colors } = useTheme();
-  const template = () => {
-    let temp = [];
-    for (const colorKey in colors) {
-      // skipping singleton colors
-      if (colorKey === 'black' || colorKey === 'white') {
-      } else
-        temp.push(
-          <Button
-            size='lg'
-            colorScheme={colorKey}
-          >
-            {colorKey[0]}
-          </Button>
-        );
-    }
-    return temp.reverse();
-  };
-
   return (
-    <ScrollView>
-      <SimpleGrid columns={3} spacing={4}>
-        {template()}
-      </SimpleGrid>
-    </ScrollView>
+    <SimpleGrid columns={5}>
+      {Object.keys(colors['emerald']).map((colorKey) => (
+        <Box p={5} bg={`emerald.${colorKey}`} />
+      ))}
+    </SimpleGrid>
   );
 }
-  export default function () {
-    return (
-      <NativeBaseProvider>
-        <Center flex={1} p={3}>
-          <ColorPalete />
-        </Center>
-      </NativeBaseProvider>
-    );
-  }
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1} p={3}>
+        <ColorPalete />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+
 ```
 
 ## useToken
 
-Don't want the entire object, instead something vary specific? No problem we have a solution for that too with our [`useToken`](/useToken.md) hook. Let’s see an example.
+You can also get specific values from the theme with [`useToken`](/useToken.md) hook.
 
 ```SnackPlayer name=useToken%20Demo
 import React from 'react';
-import { useToken, Box, SimpleGrid, NativeBaseProvider, Center } from 'native-base';
+import { useToken, Box, NativeBaseProvider, Center, Text } from 'native-base';
 
-function Tokens () {
-  const colors = useToken('colors', 'amber');
-  const template = () => {
-    let temp = [];
-    for (const colorKey in colors) {
-      temp.push(<Box p={5} bg={`amber.${colorKey}`} />);
-    }
-    return temp;
-  };
-
-  return <SimpleGrid columns={5}>{template()}</SimpleGrid>;
+function Tokens() {
+  const [contrastThreshold, lightText] = useToken('colors', [
+    'contrastThreshold',
+    'lightText',
+  ]);
+  return (
+    <Box bg="emerald.400" flexDirection="row">
+      Contrast threshold is: <Text color={lightText} fontWeight="bold">
+        {contrastThreshold}
+      </Text>
+    </Box>
+  );
 }
 export default function () {
-    return (
-      <NativeBaseProvider>
-        <Center flex={1}>
-          <Tokens />
-        </Center>
-      </NativeBaseProvider>
-    );
-  }
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <Tokens />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+
 ```

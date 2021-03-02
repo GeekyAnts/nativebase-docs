@@ -59,9 +59,9 @@ export default function () {
 }
 ```
 
-In the above example, the following changes we have made:
+In the above example, the following changes have been made:
 
 - Added a new color named **primary**.
 - Updated one of the shade of **amber** color.
 - Updated the initial color mode to **dark**. Default is **light**.
-- Finally passed the new **theme** object to the **NativeBaseProvide**.
+- Finally passed the new **theme** object to the **NativeBaseProvider**.
