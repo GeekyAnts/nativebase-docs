@@ -30,9 +30,9 @@ function AlertComponent() {
     <Box mx={3}>
       <Alert status="error">
         <Alert.Icon />
-        <Alert.Title>Error Alert</Alert.Title>
-        <Alert.Description>description goes here</Alert.Description>
-        <CloseButton />
+        <Alert.Title>Error</Alert.Title>
+        <Alert.Description>Description</Alert.Description>
+        <CloseButton  p={0} />
       </Alert>
     </Box>
   );
@@ -52,33 +52,21 @@ export default function () {
 ### Status
 
 ```SnackPlayer name=Alert%20Status
-import React from "react";
-import { Stack, Alert, HStack, NativeBaseProvider, Center } from "native-base";
+import React from 'react';
+import { Stack, Alert, HStack, NativeBaseProvider, Center } from 'native-base';
 
 function AlertComponent() {
-	return (
-    <HStack>
-      {['subtle', 'solid', 'outline'].map((key: any) => (
-        <Stack space={3} mx={3}>
-          <Alert status="error" variant={key}>
+  return (
+    <Stack space={3}>
+      {['error', 'warning', 'info', 'success'].map((key) => {
+        return (
+          <Alert status={key}>
             <Alert.Icon />
-            <Alert.Title>This is an error alert</Alert.Title>
+            <Alert.Title>{`This is an ${key} alert`}</Alert.Title>
           </Alert>
-          <Alert status="warning" variant={key}>
-            <Alert.Icon />
-            <Alert.Title>This is a warning alert</Alert.Title>
-          </Alert>
-          <Alert status="info" variant={key}>
-            <Alert.Icon />
-            <Alert.Title>This is an info alert</Alert.Title>
-          </Alert>
-          <Alert status="success" variant={key}>
-            <Alert.Icon />
-            <Alert.Title>This is a success alert</Alert.Title>
-          </Alert>
-        </Stack>
-      ))}
-    </HStack>
+        );
+      })}
+    </Stack>
   );
 }
 export default function () {
@@ -96,20 +84,21 @@ export default function () {
 
 ```SnackPlayer name=Alert%20Variant
 import React from "react";
+import { ScrollView } from "react-native";
 import { Alert, Stack, NativeBaseProvider, Center } from "native-base";
 
 function AlertComponent() {
 	return (
-    <Stack space={4} mx={3}>
-      <Alert variant="solid" status="teal">
+    <Stack space={4} m={3}>
+      <Alert status="teal" variant="solid">
         <Alert.Icon />
         <Alert.Title>Alert Solid Variant</Alert.Title>
       </Alert>
-      <Alert variant="left-accent" status="success">
+      <Alert status="success" variant="left-accent">
         <Alert.Icon />
         <Alert.Title>Alert Left Accent Variant</Alert.Title>
       </Alert>
-      <Alert variant="top-accent" status="error">
+      <Alert status="error" variant="top-accent">
         <Alert.Icon />
         <Alert.Title>Alert Top Accent Variant</Alert.Title>
       </Alert>
@@ -131,8 +120,10 @@ function AlertComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
-        <AlertComponent />
+      <Center flex={1} >
+        <ScrollView>
+          <AlertComponent />
+        </ScrollView>
       </Center>
     </NativeBaseProvider>
   );
@@ -142,12 +133,20 @@ export default function () {
 ### Composition
 
 ```SnackPlayer name=Alert%20Composition
-import React from "react";
-import { Alert, CloseButton, Box, VStack, NativeBaseProvider, Center } from "native-base";
+import React from 'react';
+import { ScrollView } from 'react-native';
+import {
+  Alert,
+  CloseButton,
+  Box,
+  VStack,
+  NativeBaseProvider,
+  Center,
+} from 'native-base';
 
 function AlertComponent() {
-	return (
-    <VStack mx={2} space={3}>
+  return (
+    <VStack m={3} space={3}>
       <Alert
         status="success"
         display="flex"
@@ -156,7 +155,6 @@ function AlertComponent() {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        height="200px"
       >
         <Alert.Icon boxSize="40px" mr={0} />
         <Alert.Title mt={4} mb={2}>
@@ -176,7 +174,6 @@ function AlertComponent() {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        height="200px"
       >
         <Alert.Icon boxSize="40px" mr={0} />
         <Alert.Title mt={4} mb={2}>
@@ -210,7 +207,9 @@ export default function () {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <AlertComponent />
+        <ScrollView>
+          <AlertComponent />
+        </ScrollView>
       </Center>
     </NativeBaseProvider>
   );
@@ -219,12 +218,19 @@ export default function () {
 
 ### Action
 
-```SnackPlayer name=Alert%20Basic
-import React from "react";
-import { Alert, CloseButton, Collapse, Button, NativeBaseProvider, Center } from "native-base";
+```SnackPlayer name=Alert%20Action
+import React from 'react';
+import {
+  Alert,
+  CloseButton,
+  Collapse,
+  Button,
+  NativeBaseProvider,
+  Center,
+} from 'native-base';
 function AlertComponent() {
-	const [show, setShow] = React.useState(true);
-  const handleToggle = (val: boolean) => setShow(val);
+  const [show, setShow] = React.useState(true);
+  const handleToggle = (val) => setShow(val);
   return (
     <>
       <Collapse isOpen={show}>
@@ -263,11 +269,11 @@ export default function () {
 
 `Alert` implements **[Box](box.md)**, so all the Box Props can be passed to it.
 
-| Name    | Type                                           | Description                                                                   | Default  |
-| ------- | ---------------------------------------------- | ----------------------------------------------------------------------------- | -------- |
-| status  | `error`, `info`, `success`, `warning`          | The status of the alert.                                                      | `info`   |
-| variant | `left-accent`, `solid`, `subtle`, `top-accent` | The variant of the alert style to use.                                        | `subtle` |
-| action  | JSX.Element                                    | The action to display. It renders after the message, at the end of the alert. | -        |
+| Name    | Type                                                                      | Description                                                                   | Default  |
+| ------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | -------- |
+| status  | `error`, `info`, `success`, `warning` or any color from theme.            | The status of the alert.                                                      | `info`   |
+| variant | `left-accent`, `solid`, `subtle`, `top-accent` ,`outline`,`outline-light` | The variant of the alert style to use.                                        | `subtle` |
+| action  | JSX.Element                                                               | The action to display. It renders after the message, at the end of the alert. | -        |
 
 ### Alert.Icon
 
