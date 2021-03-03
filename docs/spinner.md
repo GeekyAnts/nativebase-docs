@@ -85,11 +85,11 @@ export default function () {
 
 ```SnackPlayer name=Spinner%20Example(Variant)
 import React from 'react';
-import { Spinner, HStack, Icon, NativeBaseProvider, Center } from 'native-base';
+import { Spinner, Stack, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function SpinnerComponent () {
   return (
-   <HStack space={2}>
+   <Stack space={2}>
       <Spinner />
       <Spinner color="danger.400" variant="dotted" />
       <Spinner color="blue.500" variant="stroked" />
@@ -99,7 +99,7 @@ function SpinnerComponent () {
         variant="custom"
         renderProp={<Icon name="bat" type="MaterialCommunityIcons" size={12} />}
       />
-    </HStack>
+    </Stack>
   );
 }
 export default function () {
