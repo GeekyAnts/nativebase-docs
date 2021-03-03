@@ -108,3 +108,77 @@ export default function () {
   );
 }
 ```
+
+## useColorMode
+
+If you want to define some conditionals based on current color mode or change the color mode then you can try [useColorMode](useColorMode.md).
+
+```SnackPlayer name=useColorMode
+import React from 'react';
+import {
+  NativeBaseProvider,
+  VStack,
+  useColorMode,
+  Text,
+  Button,
+  Center,
+} from 'native-base';
+
+function UseColorMode() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  return (
+    <Center flex={1} bg={colorMode === 'dark' ? 'black' : 'white'}>
+      <Text fontSize="lg" display="flex">
+        The active color mode is <Text bold>{colorMode}</Text>
+      </Text>
+      <Button onPress={toggleColorMode}>Toggle</Button>
+    </Center>
+  );
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UseColorMode />
+    </NativeBaseProvider>
+  );
+}
+
+```
+
+## useColorModeValue
+
+If you do not want to add conditionals for color mode everywhere and keep the code clean, then you can use [useColorModeValue](useColorModeValue.md) hook. It takes two parameters, light mode value as the first and dark mode value as second.
+
+```SnackPlayer name=useColorModeValue
+import React from 'react';
+import {
+  NativeBaseProvider,
+  useColorMode,
+  Text,
+  Button,
+  Center,
+  useColorModeValue,
+} from 'native-base';
+
+function UseColorMode() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  return (
+    <Center flex={1} bg={useColorModeValue('white', 'black')}>
+      <Text fontSize="lg" display="flex">
+        The active color mode is <Text bold>{useColorModeValue('Light', 'Dark')}</Text>
+      </Text>
+      <Button onPress={toggleColorMode}>Toggle</Button>
+    </Center>
+  );
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <UseColorMode />
+    </NativeBaseProvider>
+  );
+}
+
+```
