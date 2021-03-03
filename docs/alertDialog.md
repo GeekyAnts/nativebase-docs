@@ -25,8 +25,12 @@ import { AlertDialog } from 'native-base';
 
 ```SnackPlayer name=AlertDialog%20Basic
 import React from "react";
-import { AlertDialog, Button, Center, NativeBaseProvider } from "native-base";
-
+import {
+  AlertDialog,
+  Button,
+  Center,
+  NativeBaseProvider,
+} from "native-base";
 
 function AlertDialogComponent() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -40,24 +44,23 @@ function AlertDialogComponent() {
         onClose={onClose}
         motionPreset={"fade"}
       >
-        <AlertDialog.Overlay justifyContent="center">
-          <AlertDialog.Content>
-            <AlertDialog.Header fontSize="lg" fontWeight="bold">
-              Delete Customer
-            </AlertDialog.Header>
-            <AlertDialog.Body>
-              Are you sure? You can't undo this action afterwards.
-            </AlertDialog.Body>
-            <AlertDialog.Footer>
-              <Button ref={cancelRef} onPress={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme="red" onPress={onClose} ml={3}>
-                Delete
-              </Button>
-            </AlertDialog.Footer>
-          </AlertDialog.Content>
-        </AlertDialog.Overlay>
+        <AlertDialog.Overlay justifyContent="center" />
+        <AlertDialog.Content>
+          <AlertDialog.Header fontSize="lg" fontWeight="bold">
+            Delete Customer
+          </AlertDialog.Header>
+          <AlertDialog.Body>
+            Are you sure? You can't undo this action afterwards.
+          </AlertDialog.Body>
+          <AlertDialog.Footer>
+            <Button ref={cancelRef} onPress={onClose}>
+              Cancel
+            </Button>
+            <Button colorScheme="red" onPress={onClose} ml={3}>
+              Delete
+            </Button>
+          </AlertDialog.Footer>
+        </AlertDialog.Content>
       </AlertDialog>
       <Button colorScheme="danger" onPress={() => setIsOpen(!isOpen)}>
         Delete Customer
