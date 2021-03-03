@@ -1,6 +1,6 @@
 ---
 id: theme
-title: How to use theme
+title: Using Theme
 ---
 
 NativeBase provides multiple tools to use the central theme defined in the app. First tool is [`useTheme`](/useTheme.md), which you can use to access the values from the current theme.
@@ -70,4 +70,41 @@ export default function () {
   );
 }
 
+```
+
+## useContrastText
+
+If you are defining the background yourself and pass a contrasting color to the text then you can use [`useContrastText`](use-contrast-text).
+
+```SnackPlayer name=useContrastText
+
+import React from 'react';
+import { Button, useContrastText, NativeBaseProvider, Center } from 'native-base';
+function UseContrastingTextHook () {
+  const bgDark = 'gray.900';
+  const bgLight = 'gray.50';
+  const colorContrastDark = useContrastText(bgDark);
+  const colorContrastLight = useContrastText(bgLight);
+
+  return (
+    <>
+      <Button bg={bgDark} _text={{ color: colorContrastDark }}>
+        NativeBase
+      </Button>
+      <Button bg={bgLight} _text={{ color: colorContrastLight }}>
+        NativeBase
+      </Button>
+    </>
+  );
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <UseContrastingTextHook />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
 ```

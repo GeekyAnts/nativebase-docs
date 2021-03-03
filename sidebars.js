@@ -143,6 +143,7 @@ module.exports = {
         'use-token',
         'use-color-mode',
         'use-color-mode-value',
+        'use-contrast-text',
       ],
     },
     {
