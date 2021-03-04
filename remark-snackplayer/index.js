@@ -31,7 +31,7 @@ const processNode = (node, parent) => {
       const preview = params.preview || 'true';
       const loading = params.loading || 'lazy';
       // Generate Node for SnackPlayer
-      let dependencies = `react-is,expo-font,native-base@${NBversion},styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons`;
+      let dependencies = `react-is,expo-font,native-base@${NBversion},styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons,@react-native-picker/picker`;
 
       if (name.split(' ')[0] === 'Formik') {
         dependencies += ',@native-base/formik-ui,formik,yup';
