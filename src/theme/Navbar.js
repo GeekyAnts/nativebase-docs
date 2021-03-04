@@ -118,15 +118,10 @@ function Navbar() {
                 return (
                   <a
                     href={item.to}
-                    className={`${
-                      isDarkTheme ? 'text-black' : 'text-white'
-                    } bg-primary-400 py-2 px-4 border-0 ml-4 rounded hidden md:inline-block navbar__item navbar__link`}
+                    className={`text-white bg-primary-400 py-2 px-4 border-0 ml-4 rounded hidden md:inline-block navbar__item navbar__link`}
                   >
                     Get Started
-                    <RightArrow
-                      fill={isDarkTheme ? '#000' : '#fff'}
-                      className="ml-2"
-                    />
+                    <RightArrow fill={'#fff'} className="ml-2" />
                   </a>
                 );
               case 'Theme':
