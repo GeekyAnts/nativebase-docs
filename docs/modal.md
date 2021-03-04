@@ -351,6 +351,18 @@ export default function () {
 If you want a specifically aligned Modal, pass `justifyContent` and `alignItems` to Modal.
 :::
 
+## Accessibility
+
+Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geekyants.com/docs/useFocusRing) which follows the [Dialog Modal WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal) and [Disclosure WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#disclosure).
+
+### Keyboard Interactions
+
+| Key             | Description                                                                                                                                                                              |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Tab`           | Moves focus to the next tabbable element inside the dialog. If focus is on the last tabbable element inside the dialog, moves focus to the first tabbable element inside the dialog.     |
+| `Shift` + `Tab` | Moves focus to the previous tabbable element inside the dialog. If focus is on the first tabbable element inside the dialog, moves focus to the last tabbable element inside the dialog. |
+| `Enter`         | activates the disclosure control and toggles the visibility of the disclosure content.                                                                                                   |
+
 ## Props
 
 ### Modal

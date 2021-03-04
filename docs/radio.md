@@ -309,6 +309,21 @@ export default function () {
 }
 ```
 
+## Accessibility
+
+Uses React Native ARIA [@react-native-aria/radio](https://react-native-aria.geekyants.com/docs/useRadioGroup) which follows the [Radio Group WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#radiobutton).
+
+### Keyboard Interactions
+
+| Key          | Description                                                                        |
+| ------------ | ---------------------------------------------------------------------------------- |
+| `Tab`        | Moves focus to either the checked radio item or the first radio item in the group. |
+| `Space`      | When focus is on an unchecked radio item, checks it.                               |
+| `ArrowDown`  | Moves focus to the next radio item in the group.                                   |
+| `ArrowRight` | Moves focus to the next radio item in the group.                                   |
+| `ArrowUp`    | Moves focus to the previous radio item in the group.                               |
+| `ArrowLeft`  | Moves focus to the previous radio item in the group.                               |
+
 ## Props
 
 ### Radio

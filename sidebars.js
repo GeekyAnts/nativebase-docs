@@ -15,6 +15,7 @@ module.exports = {
         'nativebase-factory',
         'responsive-style',
         'safe-area-view-props',
+        'accessibility',
       ],
     },
     {

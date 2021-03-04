@@ -391,6 +391,16 @@ export default function () {
 }
 ```
 
+## Accessibility
+
+Uses React Native ARIA [@react-native-aria/checkbox](https://react-native-aria.geekyants.com/docs/useCheckbox) which follows the [Checkbox WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#checkbox).
+
+### Keyboard Interactions
+
+| Key     | Description                   |
+| ------- | ----------------------------- |
+| `Space` | Checks/unchecks the checkbox. |
+
 ## Props
 
 ### Checkbox
