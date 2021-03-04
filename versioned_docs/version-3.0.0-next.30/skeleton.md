@@ -79,7 +79,7 @@ function Composition({ loaded }: any) {
           <Avatar
             name="Ankur Kedia"
             source={{
-              uri: 'https://nativebase.github.io/img/native-base-icon.png',
+              uri: 'https://nativebase.github.io/img/nativebase-icon.png',
             }}
           />
         ) : (
