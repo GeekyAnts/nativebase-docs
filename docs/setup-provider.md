@@ -70,26 +70,26 @@ If you want to do something with the color modes in your app, you can use colorM
 
 In the below example we will show how to store the active ColorMode in a async storage, so it can be consistent all around our app.
 
-```jsx
+```tsx
 import React from 'react';
 import { NativeBaseProvider, ColorMode } from 'native-base';
 import type { StorageManager } from 'native-base';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default ({ theme }) => {
-  const colorModeManager = {
+export default ({ children, theme }: any) => {
+  const colorModeManager: StorageManager = {
     get: async () => {
       try {
-        let val = await AsyncStorage.getItem('@my-app-color-mode');
+        let val = await AsyncStorage.getItem('@example-wrapper-mode');
         return val === 'dark' ? 'dark' : 'light';
       } catch (e) {
         console.log(e);
         return 'light';
       }
     },
-    set: async (value) => {
+    set: async (value: ColorMode) => {
       try {
-        await AsyncStorage.setItem('@my-app-color-mode', value);
+        await AsyncStorage.setItem('@example-wrapper-mode', value);
       } catch (e) {
         console.log(e);
       }
