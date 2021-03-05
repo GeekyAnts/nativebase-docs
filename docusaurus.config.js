@@ -116,6 +116,10 @@ module.exports = {
           title: 'More',
           items: [
             {
+              href: 'https://trello.com/b/Dt2ZBNMP/nativebase-v3-public',
+              label: 'Roadmap',
+            },
+            {
               label: 'GitHub',
               href: 'https://github.com/GeekyAnts/NativeBase',
             },
