@@ -49,6 +49,12 @@ module.exports = {
           'aria-label': 'Hire GeekyAnts',
         },
         {
+          to: 'https://trello.com/b/Dt2ZBNMP/nativebase-v3-public',
+          label: 'Roadmap',
+          position: 'right',
+          'aria-label': 'Roadmap',
+        },
+        {
           to: 'https://github.com/GeekyAnts/nativebase',
           label: 'GitHub',
           position: 'right',
