@@ -1,7 +1,7 @@
 module.exports = {
   title: 'NativeBase',
   tagline: 'A complete component library for React Native Ecosystem',
-  url: 'https://nativebase.io',
+  url: 'https://alpha.nativebase.io',
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [

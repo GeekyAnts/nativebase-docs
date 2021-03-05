@@ -144,6 +144,7 @@ module.exports = {
         'use-color-mode',
         'use-color-mode-value',
         'use-contrast-text',
+        'use-accessible-colors',
       ],
     },
     {
