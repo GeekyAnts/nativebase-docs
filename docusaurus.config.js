@@ -1,7 +1,7 @@
 module.exports = {
   title: 'NativeBase',
   tagline: 'A complete component library for React Native Ecosystem',
-  url: 'https://nativebase.io',
+  url: 'https://alpha.nativebase.io',
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
@@ -115,6 +115,10 @@ module.exports = {
         {
           title: 'More',
           items: [
+            {
+              href: 'https://trello.com/b/Dt2ZBNMP/nativebase-v3-public',
+              label: 'Roadmap',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/GeekyAnts/NativeBase',
