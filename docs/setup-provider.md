@@ -80,7 +80,7 @@ export default ({ children, theme }: any) => {
   const colorModeManager: StorageManager = {
     get: async () => {
       try {
-        let val = await AsyncStorage.getItem('@example-wrapper-mode');
+        let val = await AsyncStorage.getItem('@my-app-color-mode');
         return val === 'dark' ? 'dark' : 'light';
       } catch (e) {
         console.log(e);
@@ -89,7 +89,7 @@ export default ({ children, theme }: any) => {
     },
     set: async (value: ColorMode) => {
       try {
-        await AsyncStorage.setItem('@example-wrapper-mode', value);
+        await AsyncStorage.setItem('@my-app-color-mode', value);
       } catch (e) {
         console.log(e);
       }
