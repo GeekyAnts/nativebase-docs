@@ -3,7 +3,7 @@ id: setup-provider
 title: Setup NativeBase Provider
 ---
 
-NativeBaseProvider is a component that makes the theme available throughout your App for use using React's Context API. You need to Add NativeBaseProvider to the Root of your App, for example this is how `App.js`, that get's generated when you create a App using Expo should be updated in order to make NativeBase Components work as they are intended to be.
+NativeBaseProvider is a component that makes the theme available throughout your app. It uses React's Context API. Add NativeBaseProvider to the root of your app and update App.js as follows:
 
 **App.js**
 
@@ -20,7 +20,7 @@ export default function App() {
     <NativeBaseProvider>
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
-        <StatusBar style='auto' />
+        <StatusBar style="auto" />
       </View>
     </NativeBaseProvider>
   );
@@ -63,3 +63,50 @@ function App() {
   );
 }
 ```
+
+## Add colorModeManager (Optional)
+
+If you want to do something with the color modes in your app, you can use colorModeManager Prop of NativeBaseProvider to achieve it.
+
+In the below example we will show how to store the active ColorMode in a async storage, so it can be consistent all around our app.
+
+```tsx
+import React from 'react';
+import { NativeBaseProvider, ColorMode } from 'native-base';
+import type { StorageManager } from 'native-base';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+export default ({ children, theme }: any) => {
+  const colorModeManager: StorageManager = {
+    get: async () => {
+      try {
+        let val = await AsyncStorage.getItem('@my-app-color-mode');
+        return val === 'dark' ? 'dark' : 'light';
+      } catch (e) {
+        console.log(e);
+        return 'light';
+      }
+    },
+    set: async (value: ColorMode) => {
+      try {
+        await AsyncStorage.setItem('@my-app-color-mode', value);
+      } catch (e) {
+        console.log(e);
+      }
+    },
+  };
+  return (
+    <NativeBaseProvider theme={theme} colorModeManager={colorModeManager}>
+      {/* Your App Goes Here */}
+    </NativeBaseProvider>
+  );
+};
+```
+
+## NativeBaseProvider Props
+
+| Name                 | Type                                | Description                                                                                                                                | Default                  |
+| -------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
+| initialWindowMetrics | Object                              | Mock data for frame and insets. [Refer this](https://github.com/th3rdwave/react-native-safe-area-context#testing) for further information. | -                        |
+| colorModeManager     | { get : Function , set : Function } | Manage Color mode in your app                                                                                                              | -                        |
+| theme                | Object                              | use custom theme in your app                                                                                                               | NativeBase Default Theme |
