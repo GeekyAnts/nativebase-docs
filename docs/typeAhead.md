@@ -242,12 +242,19 @@ export default function () {
 | -------------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | options              | Array          | Array of items that you need to search for autocomplete.                                                                                                             | -       |
 | getOptionLabel       | function       | Used to determine the string value for a given option. It's used to fill the input.                                                                                  | -       |
+| getOptionKey         | function       | Used to determine the key for a given option.                                                                                                                        | -       |
 | renderItem           | function       | expects a callback function that returns the JSX Element that you want to be rendered in dropdown. It requires a variable which is an Item from data array provided. | -       |
 | toggleIcon           | function       | Function to control the design of Toggle button. It exposes isOpen which is a boolean that tells if the dropdown is open or not.                                     | -       |
 | dropdownHeight       | number, string | height of the Typeahead dropdown                                                                                                                                     | 200px   |
 | numberOfItems        | number         | Total number of items to be shown at a time in the dropdown.                                                                                                         | -       |
 | inputValue           | string         | To set Typeahead's value. Mainly used in controlled input situations.                                                                                                | -       |
 | onSelectedItemChange | function       | Callback function that gets called when selected Item changes in Typeahead.                                                                                          | -       |
+| disabledKeys         | Array          | Array of item keys. Used to specify disabled items. Keys can be specified using getOptionKey                                                                         | -       |
+| label                | string         | Text description of the combobox                                                                                                                                     | -       |
+
+### Accessibility
+
+Uses React Native ARIA [@react-native-aria/combobox](https://react-native-aria.geekyants.com/docs/useCombobox) which follows the [Combobox WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#combobox).
 
 ### useTypeahead Hook
 
