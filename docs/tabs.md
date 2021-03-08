@@ -467,3 +467,9 @@ export default function () {
 | variant      | `enclosed`, `enclosed-colored`, `line`, `soft-rounded`, `solid-box`, `solid-rounded` | The variant of the tabs style to use.                                                                             | `line`  |
 
 `Tabs.Bar`, `Tabs.Tab`, `Tabs.Views`, `Tabs.View` all implement [`Box`](box.md), all the props of Box can be passed to it.
+
+### Accessibility
+
+If ` <Tabs.Tab>` includes an element other than plain text, please pass accessibilityLabel attribute. `<Tabs.Tab accessibilityLabel="something that describes this tab">`
+
+Uses React Native ARIA [@react-native-aria/tabs](https://react-native-aria.geekyants.com/docs/useTabs) which follows the [Tabs WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#tabpanel).
