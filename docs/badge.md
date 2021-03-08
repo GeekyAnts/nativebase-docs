@@ -70,7 +70,7 @@ export default function () {
 
 ### Variants
 
-```SnackPlayer name=Badge%20EVariants
+```SnackPlayer name=Badge%20Variants
 import React from 'react';
 import { Badge, HStack, NativeBaseProvider, Center } from 'native-base';
 
@@ -86,6 +86,33 @@ function BadgeComponent () {
       <Badge mx={2} colorScheme="success" variant="outline">
         OUTLINE
       </Badge>
+    </HStack>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <BadgeComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+### Composition
+
+```SnackPlayer name=Badge%20Composition
+import React from 'react';
+import { Badge, HStack, Button, Center, NativeBaseProvider } from 'native-base';
+
+function BadgeComponent() {
+  return (
+    <HStack>
+      <Button colorScheme="teal">
+        Notifications
+        <Badge ml={2}>10</Badge>
+      </Button>
     </HStack>
   );
 }
