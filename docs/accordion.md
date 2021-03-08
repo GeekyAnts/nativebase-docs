@@ -141,6 +141,7 @@ export default function () {
 
 ```SnackPlayer name=DefaultIndex
 import React from 'react';
+import { ScrollView } from 'react-native';
 import { Accordion, Box, NativeBaseProvider, Center } from 'native-base';
 
 function AccordionComponent() {
@@ -191,7 +192,9 @@ export default function () {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-       <AccordionComponent />
+        <ScrollView>
+          <AccordionComponent />
+        </ScrollView>
       </Center>
     </NativeBaseProvider>
   );
