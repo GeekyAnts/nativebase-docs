@@ -470,4 +470,6 @@ export default function () {
 
 ### Accessibility
 
+If ` <Tabs.Tab>` includes an element other than plain text, please pass accessibilityLabel attribute. `<Tabs.Tab accessibilityLabel="something that describes this tab">`
+
 Uses React Native ARIA [@react-native-aria/tabs](https://react-native-aria.geekyants.com/docs/useTabs) which follows the [Tabs WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#tabpanel).
