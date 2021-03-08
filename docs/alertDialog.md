@@ -11,7 +11,6 @@ title: AlertDialog
 - `AlertDialog.Header`: contains the title announced by screen readers.
 - `AlertDialog.Body`: contains the description announced by screen readers.
 - `AlertDialog.Footer`: contains the actions of the dialog.
-- `AlertDialog.Overlay`: The dimmed overlay behind the dialog.
 - `AlertDialog.Content`: The wrapper for the alert dialog's content.
 - `AlertDialog.CloseButton`: The button that closes the dialog.
 
@@ -44,7 +43,6 @@ function AlertDialogComponent() {
         onClose={onClose}
         motionPreset={"fade"}
       >
-        <AlertDialog.Overlay justifyContent="center" />
         <AlertDialog.Content>
           <AlertDialog.Header fontSize="lg" fontWeight="bold">
             Delete Customer
@@ -98,8 +96,6 @@ function AlertDialogComponent() {
         isOpen={isOpen}
         isCentered
       >
-        <AlertDialog.Overlay />
-
         <AlertDialog.Content>
           <AlertDialog.CloseButton />
           <AlertDialog.Header>Discard Changes?</AlertDialog.Header>
