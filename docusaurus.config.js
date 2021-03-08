@@ -14,7 +14,7 @@ module.exports = {
   ],
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-new.ico',
   organizationName: 'nativebase', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
   plugins: ['docusaurus-tailwindcss-loader'],
@@ -29,7 +29,8 @@ module.exports = {
       title: 'NativeBase 3.0 (alpha)',
       logo: {
         alt: 'NativeBase Logo',
-        src: 'img/nativebase-icon.png',
+        src: 'img/nativebase-icon-new.png',
+        // src: 'img/nativebase-icon.png',
       },
 
       // style: "dark",
