@@ -56,7 +56,9 @@ module.exports = {
       collapsed: false,
       items: [
         'button',
+        'cascader',
         'checkBox',
+        'date-picker',
         'formControl',
         'iconButton',
         'input',
@@ -83,6 +85,7 @@ module.exports = {
         'Kbd',
         'list',
         'stat',
+        'swipable-list',
         'tag',
       ],
     },
@@ -116,7 +119,14 @@ module.exports = {
       type: 'category',
       label: 'Disclosure',
       collapsed: false,
-      items: ['accordion', 'actionSheet', 'breadcrumb', 'collapse', 'tabs'],
+      items: [
+        'accordion',
+        'actionSheet',
+        'breadcrumb',
+        'collapse',
+        'pagination',
+        'tabs',
+      ],
     },
     {
       type: 'category',
