@@ -384,6 +384,8 @@ export default function () {
 | defaultIndex  | Number[], number | The initial index(es) of the expanded accordion item. Must be an array for allowMultiple={true} to work. | -       |
 | onChange      | function         | The callback invoked when accordion items are expanded or collapsed.                                     | -       |
 
+**Accordion** uses **[Collapse](collapse.md)** to provide height animation.
+
 ### AccordionItem
 
 | Name       | Type    | Description                                     | Default |
@@ -397,7 +399,7 @@ export default function () {
 
 ### Accordion.Details
 
-**AccordionDetails** renders a **Box** and composes **[Collapse](collapse.md)** to provide height animation.
+**AccordionDetails** composes **[Collapse](collapse.md)** to provide height animation.
 
 ### Accordion.Icon
 
