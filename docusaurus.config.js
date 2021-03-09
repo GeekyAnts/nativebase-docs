@@ -29,7 +29,7 @@ module.exports = {
       title: 'NativeBase',
       logo: {
         alt: 'NativeBase Logo',
-        src: 'img/nativebase-icon-new.png',
+        src: 'img/nativebase-new-icon.png',
         // src: 'img/nativebase-icon.png',
       },
 
