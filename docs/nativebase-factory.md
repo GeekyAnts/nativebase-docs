@@ -6,27 +6,27 @@ title: NativeBase Factory
 NativeBase factory is a function that converts non-nativebase components to nativebase enabled components so you can pass style props to them.
 
 ```jsx
-import { NBFactory } from 'native-base';
+import { Factory } from 'native-base';
 ```
 
 ## Usage
 
 ```SnackPlayer name=NativeBase%20Factory%20Usage
 import React from 'react';
-import { NBFactory, NativeBaseProvider, Center } from 'native-base';
+import { Factory, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
 
-function NBFactoryViewExample () {
-  const NBFactoryView = NBFactory(View);
+function FactoryViewExample () {
+  const FactoryView = Factory(View);
   return (
-      <NBFactoryView bg="teal.200" height={50} width={50} />
+      <FactoryView bg="teal.200" height={50} width={50} />
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <NBFactoryViewExample />
+        <FactoryViewExample />
       </Center>
     </NativeBaseProvider>
   );
@@ -37,23 +37,23 @@ export default function () {
 
 ```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
 import React from 'react';
-import { NBFactory, NativeBaseProvider, Center } from 'native-base';
+import { Factory, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
 
-function NBFactoryViewExample () {
-  const NBFactoryView = NBFactory(View, {
+function FactoryViewExample () {
+  const FactoryView = Factory(View, {
     baseStyle: {
       bg: 'cyan.300',
       borderRadius: 'md',
     },
   });
-  return <NBFactoryView height={50} width={50} />;
+  return <FactoryView height={50} width={50} />;
 }
 export default function () {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <NBFactoryViewExample />
+        <FactoryViewExample />
       </Center>
     </NativeBaseProvider>
   );
@@ -64,11 +64,11 @@ export default function () {
 
 ```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
 import React from 'react';
-import { NBFactory, themeTools, NativeBaseProvider, Center } from 'native-base';
+import { Factory, themeTools, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
 
-function NBFactoryViewModeExample () {
-  const NBFactoryView = NBFactory(View, {
+function FactoryViewModeExample () {
+  const FactoryView = Factory(View, {
     baseStyle: (props) => {
       return {
         bg: themeTools.mode('rose.500', 'cyan.300')(props),
@@ -76,14 +76,14 @@ function NBFactoryViewModeExample () {
       };
     },
   });
-  return <NBFactoryView height={50} width={50} />;
+  return <FactoryView height={50} width={50} />;
 }
 
 export default function () {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <NBFactoryViewModeExample />
+        <FactoryViewModeExample />
       </Center>
     </NativeBaseProvider>
   );
@@ -94,11 +94,11 @@ export default function () {
 
 ```SnackPlayer name=NativeBase%20Factory%20Using%20Ref
 import React from 'react';
-import { NBFactory, Button, NativeBaseProvider,Center } from 'native-base';
+import { Factory, Button, NativeBaseProvider,Center } from 'native-base';
 import { TextInput } from 'react-native';
 
-function NBFactoryViewRefExample () {
-  const NBInput = NBFactory(TextInput);
+function FactoryViewRefExample () {
+  const NBInput = Factory(TextInput);
   const inputRef = React.useRef(null);
   return (
     <>
@@ -117,7 +117,7 @@ export default function () {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <NBFactoryViewRefExample />
+        <FactoryViewRefExample />
       </Center>
     </NativeBaseProvider>
   );

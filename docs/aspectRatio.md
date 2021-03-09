@@ -16,7 +16,7 @@ import React from "react";
 import { AspectRatio, Box, NativeBaseProvider, Center } from "native-base";
 function Component() {
   return (
-    <AspectRatio height={200} bg="black">
+    <AspectRatio height={200} bg="black" ratio={4/3}>
       <Box bg="red.400" />
     </AspectRatio>
   );
