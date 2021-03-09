@@ -10,7 +10,6 @@ A Modal is a window overlaid on either the primary window or another dialog wind
 NativeBase exports Modal Compound component:
 
 - `Modal`: The wrapper that provides context for its children.
-- `Modal.Overlay`: The dimmed overlay behind the modal dialog.
 - `Modal.Content`: The container for the modal dialog's content.
 - `Modal.Header`: The header that labels the modal dialog.
 - `Modal.Footer`: The footer that houses the modal actions.
@@ -384,5 +383,5 @@ Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geek
 
 ### Children components
 
-- `Modal.Overlay`, `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the [`Box`](box.md) component.
+- `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the [`Box`](box.md) component.
 - `Modal.CloseButton` composes the [`CloseButton`](closeButton.md).
