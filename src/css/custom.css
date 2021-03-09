@@ -265,3 +265,33 @@ html[data-theme='dark'] .DocSearch-Button-Key {
     margin-left: 15px;
   }
 }
+/* sidebar badge */
+.menu__link[href*='/swipable-list']:after,
+.menu__link[href*='/date-picker']:after,
+.menu__link[href*='/cascader']:after,
+.menu__link[href*='/pagination']:after {
+  content: 'Coming soon';
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  margin-right: -6px;
+  padding: 3px 6px;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 3px;
+  color: var(--ifm-color-primary);
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 10px;
+  height: 10px;
+  font-weight: 600;
+}
+
+.menu__link[href*='/swipable-list'],
+.menu__link[href*='/date-picker'],
+.menu__link[href*='/cascader'],
+.menu__link[href*='/pagination'] {
+  pointer-events: none;
+  cursor: not-allowed;
+  text-decoration: none;
+  opacity: 0.6;
+}
