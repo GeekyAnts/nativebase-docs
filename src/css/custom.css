@@ -301,6 +301,7 @@ html[data-theme='dark'] .DocSearch-Button-Key {
     margin-left: 15px;
   }
 }
+
 /* sidebar badge */
 .menu__link[href*='/swipable-list']:after,
 .menu__link[href*='/date-picker']:after,
