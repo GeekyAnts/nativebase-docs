@@ -332,3 +332,70 @@ html[data-theme='dark'] .DocSearch-Button-Key {
   text-decoration: none;
   opacity: 0.6;
 }
+
+.label {
+  display: inline-block;
+  position: relative;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 16px;
+  border-radius: 16px;
+}
+
+/* Label skeuomorphic hole */
+.label:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+/* Basic label */
+.label.basic {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+/* Label variants */
+.label.android {
+  background: #9bbb37;
+}
+.label.android:before {
+  border-right-color: #9bbb37;
+}
+.label.web {
+  background: #004466;
+}
+.label.web:before {
+  border-right-color: #004466;
+}
+
+.label.ios {
+  background: #222;
+}
+.label.ios:before {
+  border-right-color: #222;
+}
+
+html[data-theme='dark'] .label {
+  color: #2c2c2c;
+}
+html[data-theme='dark'] .label:after {
+  background: var(--ifm-background-color);
+}
+
+html[data-theme='dark'] .label.ios {
+  background: #fff;
+}
+html[data-theme='dark'] .label.web {
+  background: #e2e8f0;
+}
+html[data-theme='dark'] .label:before {
+  border-right-color: #fff;
+}
