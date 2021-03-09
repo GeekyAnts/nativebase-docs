@@ -15,7 +15,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon-new.ico',
-  organizationName: 'nativebase', // Usually your GitHub org/user name.
+  organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
   plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
@@ -35,7 +35,16 @@ module.exports = {
 
       // style: "dark",
       items: [
-        { type: 'docsVersionDropdown', position: 'left' },
+        {
+          type: 'docsVersionDropdown',
+          position: 'left',
+        },
+        {
+          to: '/docs/nativebase',
+          label: 'Docs',
+          position: 'right',
+          'aria-label': 'Docs',
+        },
         {
           to: 'https://market.nativebase.io/',
           label: 'Market',
@@ -46,6 +55,13 @@ module.exports = {
           to:
             'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
           label: 'Hire Us',
+          position: 'right',
+          'aria-label': 'Hire GeekyAnts',
+        },
+        {
+          to:
+            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          label: 'Components',
           position: 'right',
           'aria-label': 'Hire GeekyAnts',
         },
@@ -66,13 +82,6 @@ module.exports = {
           label: 'Theme',
           position: 'right',
           'aria-label': 'Theme',
-        },
-        {
-          to: '/docs/nativebase',
-          // activeBasePath: "docs",
-          label: 'Docs',
-          position: 'right',
-          'aria-label': 'Docs',
         },
       ],
     },

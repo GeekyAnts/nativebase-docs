@@ -98,10 +98,6 @@ function Navbar() {
           })}
         </div>
         <div className="navbar__items navbar__items--right">
-          <SearchBar
-            handleSearchBarToggle={setIsSearchBarExpanded}
-            isSearchBarExpanded={isSearchBarExpanded}
-          />
           {rightItems.map((item, i) => {
             switch (item.label) {
               case 'GitHub':
@@ -109,27 +105,27 @@ function Navbar() {
                   <a
                     target="_blank"
                     href={item.to}
-                    className="mt-1 hidden md:inline-block navbar__item navbar__link"
+                    className="hidden md:flex navbar__item navbar__link"
                   >
                     <GitHub fill={isDarkTheme ? '#EAEAEA' : '#4C4C4C'} />
                   </a>
                 );
-              case 'Docs':
-                return (
-                  <a
-                    href={item.to}
-                    className={`text-white bg-primary-400 py-2 px-4 border-0 ml-4 rounded hidden md:inline-block navbar__item navbar__link`}
-                  >
-                    Get Started
-                    <RightArrow fill={'#fff'} className="ml-2" />
-                  </a>
-                );
+              // case 'Docs':
+              //   return (
+              //     <a
+              //       href={item.to}
+              //       className={`text-white bg-primary-400 py-2 px-4 border-0 ml-4 rounded hidden md:inline-block navbar__item navbar__link`}
+              //     >
+              //       Get Started
+              //       <RightArrow fill={'#fff'} className="ml-2" />
+              //     </a>
+              //   );
               case 'Theme':
                 return (
                   !disableColorModeSwitch && (
                     <button
                       onClick={onToggleChange}
-                      className="bg-transparent border-0 hidden md:inline-block navbar__item navbar__link"
+                      className="bg-transparent border-0 hidden md:flex navbar__item navbar__link"
                     >
                       {isDarkTheme ? (
                         <Sun fill={isDarkTheme ? '#EAEAEA' : '#4C4C4C'} />
@@ -150,17 +146,21 @@ function Navbar() {
                   <a
                     target="_blank"
                     href={item.to}
-                    className="mt-1 border-0 hidden md:inline-block navbar__item navbar__link"
+                    className="border-0 hidden md:flex navbar__item navbar__link"
                   >
                     <Discord fill={isDarkTheme ? '#EAEAEA' : '#4C4C4C'} />
                   </a>
                 );
               case 'Market':
-                return <NavbarItem {...item} className="ml-4" key={i} />;
+                return <NavbarItem {...item} key={i} />;
               default:
                 return <NavbarItem {...item} key={i} />;
             }
           })}
+          <SearchBar
+            handleSearchBarToggle={setIsSearchBarExpanded}
+            isSearchBarExpanded={isSearchBarExpanded}
+          />
         </div>
       </div>
       <div
