@@ -19,20 +19,30 @@ import { VStack } from 'native-base';
 
 ```SnackPlayer name=VStack%20Usage
 import React from 'react';
-import { VStack, Text, Divider, Heading, NativeBaseProvider, Center } from 'native-base';
+import { VStack, NativeBaseProvider, Center } from 'native-base';
 
-function VStackComponent () {
+function HStackComponent () {
   return (
-    <VStack
-      divider={<Divider borderColor="red.200" />}
-      space={4}
-      width="100%"
-    >
-      <Heading>VStack</Heading>
-      <Text>Test Text</Text>
-      <Text>Testing this text with Stacks</Text>
-      <Text>Testing this text with Stacks</Text>
-      <Text>Testing this text with Stacks</Text>
+    <VStack space={3}>
+      <Center
+        size={16}
+        bg="emerald.400"
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
+        Box 1
+      </Center>
+      <Center
+        bg="lightBlue.400"
+        size={16}
+        rounded="xl"
+        _text={{ color: 'white'}}
+      >
+        Box 2
+      </Center>
+      <Center size={16} bg="violet.400" rounded="xl" _text={{ color: 'white' }}>
+        Box 3
+      </Center>
     </VStack>
   );
 }
@@ -40,7 +50,7 @@ export default function () {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <VStackComponent />
+        <HStackComponent />
       </Center>
     </NativeBaseProvider>
   );

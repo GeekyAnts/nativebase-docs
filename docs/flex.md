@@ -33,21 +33,34 @@ While you can pass the verbose props, using the shorthand can save you some time
 
 ```SnackPlayer name=Flex%20Example
 import React from 'react';
-import { Flex, Text, Spacer, Center, NativeBaseProvider } from 'native-base';
+import { Flex, Spacer, Center, NativeBaseProvider } from 'native-base';
 
-function FlexComponent () {
+function FlexComponent() {
   return (
-    <Flex direction="row">
-      <Center w="100px" bg="tomato">
-        <Text>Box 1</Text>
+    <Flex h={56} w={20} justify="space-between">
+      <Center
+        size={16}
+        bg="emerald.400"
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
+        Box 1
       </Center>
-      <Spacer />
-      <Center bg="green.500" h="100" w="100px">
-        <Text>Box 2</Text>
+      <Center
+        bg="lightBlue.400"
+        size={16}
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
+        Box 2
+      </Center>
+      <Center size={16} bg="violet.400" rounded="xl" _text={{ color: 'white' }}>
+        Box 3
       </Center>
     </Flex>
   );
-};
+}
+
 export default function () {
   return (
     <NativeBaseProvider>
@@ -65,21 +78,32 @@ You can pass Spacer to add Space between Flex items.
 
 ```SnackPlayer name=Flex%20Example(Spacer)
 import React from 'react';
-import { Flex, Text, Spacer, Center, NativeBaseProvider } from 'native-base';
+import { Flex, Spacer, Center, NativeBaseProvider } from 'native-base';
 
-function FlexComponent () {
+function FlexComponent() {
   return (
-    <Flex>
-      <Center w="100px" bg="tomato">
-        <Text>Box 1</Text>
+    <Flex h={56} w={20} justify="space-between">
+      <Center
+        size={16}
+        bg="emerald.400"
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
+        Box 1
       </Center>
       <Spacer />
-      <Center bg="green.500" h="100" w="100px">
-        <Text>Box 2</Text>
+      <Center
+        size={16}
+        bg="lightBlue.400"
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
+        Box 2
       </Center>
     </Flex>
   );
-};
+}
+
 export default function () {
   return (
     <NativeBaseProvider>

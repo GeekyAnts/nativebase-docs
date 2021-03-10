@@ -24,9 +24,9 @@ const data = Array(items).fill(0);
 
 function SimpleGridComponent() {
   return (
-    <SimpleGrid columns={3} spacing={4}>
+    <SimpleGrid columns={3} spacing={2}>
       {data.map((_item, index) => {
-        return <Box key={index} bg="#d1d1d1" height={100} width={100}></Box>;
+        return <Box key={index} bg="emerald.400" size={16} rounded="lg"></Box>;
       })}
     </SimpleGrid>
   );
@@ -53,9 +53,9 @@ const data = Array(items).fill(0);
 
 function SimpleGridComponent() {
   return (
-    <SimpleGrid minChildWidth={60} spacing={4}>
+    <SimpleGrid minChildWidth={10} spacing={3}>
       {data.map((_item, index) => {
-        return <Box key={index} bg="#d2d2d2" height={60} width={60}></Box>;
+        return <Box key={index} bg="emerald.400" size={10} rounded="lg"></Box>;
       })}
     </SimpleGrid>
   );
