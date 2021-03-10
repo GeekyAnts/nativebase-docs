@@ -19,7 +19,7 @@ module.exports = {
   projectName: 'website', // Usually your repo name.
   plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
-    hideableSidebar: true,
+    // hideableSidebar: true,
     respectPrefersColorScheme: true,
     algolia: {
       apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
