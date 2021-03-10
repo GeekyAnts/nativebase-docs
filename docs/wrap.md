@@ -26,17 +26,27 @@ import React from 'react';
 import { Wrap, Center, NativeBaseProvider } from 'native-base';
 function WrapComponent () {
   return (
-    <Wrap flexDir="row">
-      <Center size={20} bg="red.200">
+    <Wrap direction="row">
+      <Center
+        size={16}
+        bg="emerald.400"
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
         Box 1
       </Center>
-      <Center size={20} bg="green.200">
+      <Center
+        bg="lightBlue.400"
+        size={16}
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
         Box 2
       </Center>
-      <Center size={20} bg="tomato">
+      <Center size={16} bg="violet.400" rounded="xl" _text={{ color: 'white' }}>
         Box 3
       </Center>
-      <Center size={20} bg="blue.200">
+      <Center size={16} bg="rose.400" rounded="xl" _text={{ color: 'white' }}>
         Box 4
       </Center>
     </Wrap>
@@ -62,18 +72,31 @@ import React from 'react';
 import { Wrap, Center, NativeBaseProvider  } from 'native-base';
 function WrapComponent () {
   return (
-    <Wrap spacing={10} flexDir="row">
-      <Center size={20} bg="red.200">
+    <Wrap spacing={10} direction="row">
+      <Center
+        size={16}
+        bg="emerald.400"
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
         Box 1
       </Center>
-      <Center size={20} bg="green.200">
+      <Center
+        bg="lightBlue.400"
+        size={16}
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
         Box 2
       </Center>
-      <Center size={20} bg="tomato">
+      <Center size={16} bg="violet.400" rounded="xl" _text={{ color: 'white' }}>
         Box 3
       </Center>
-      <Center size={20} bg="blue.200">
+      <Center size={16} bg="rose.400" rounded="xl" _text={{ color: 'white' }}>
         Box 4
+      </Center>
+      <Center size={16} bg="red.400" rounded="xl" _text={{ color: 'white' }}>
+        Box 5
       </Center>
     </Wrap>
   );
@@ -101,17 +124,30 @@ import { Wrap, Center, NativeBaseProvider } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap spacing={10} align="center" direction="row">
-      <Center size={20} bg="red.200">
+      <Center
+        size={16}
+        bg="emerald.400"
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
         Box 1
       </Center>
-      <Center size={16} bg="green.200">
+      <Center
+        bg="lightBlue.400"
+        size={20}
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
         Box 2
       </Center>
-      <Center size={12} bg="tomato">
+      <Center size={16} bg="violet.400" rounded="xl" _text={{ color: 'white' }}>
         Box 3
       </Center>
-      <Center size={10} bg="blue.200">
+      <Center size={24} bg="rose.400" rounded="xl" _text={{ color: 'white' }}>
         Box 4
+      </Center>
+      <Center size={16} bg="red.400" rounded="xl" _text={{ color: 'white' }}>
+        Box 5
       </Center>
     </Wrap>
   );
@@ -135,17 +171,30 @@ import { Wrap, Center, NativeBaseProvider  } from 'native-base';
 function WrapComponent () {
   return (
     <Wrap spacing={10} justify="center" direction="row">
-      <Center size={20} bg="red.200">
+      <Center
+        size={16}
+        bg="emerald.400"
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
         Box 1
       </Center>
-      <Center size={16} bg="green.200">
+      <Center
+        bg="lightBlue.400"
+        size={16}
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
         Box 2
       </Center>
-      <Center size={12} bg="tomato">
+      <Center size={16} bg="violet.400" rounded="xl" _text={{ color: 'white' }}>
         Box 3
       </Center>
-      <Center size={10} bg="blue.200">
+      <Center size={16} bg="rose.400" rounded="xl" _text={{ color: 'white' }}>
         Box 4
+      </Center>
+      <Center size={16} bg="red.400" rounded="xl" _text={{ color: 'white' }}>
+        Box 5
       </Center>
     </Wrap>
   );

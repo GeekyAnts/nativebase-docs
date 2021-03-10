@@ -39,11 +39,11 @@ import React from "react";
 import { AspectRatio, Image, NativeBaseProvider, Center } from "native-base";
 function Component() {
   return (
-    <AspectRatio ratio={0.5} height={200}>
+    <AspectRatio ratio={0.87} height={200}>
       <Image
         resizeMode="cover"
         source={{
-          uri: "https://reactnative.dev/img/tiny_logo.png",
+          uri: "https://alpha.nativebase.io/img/nativebase-icon-new.png",
         }}
       />
     </AspectRatio>

@@ -21,13 +21,13 @@ import { Text, VStack, NativeBaseProvider, View, Center } from "native-base";
 function ViewComponent() {
   return (
     <View
-      width="100%"
-      height={32}
-      bg="blue.400"
+      size={48}
+      bg="emerald.400"
       justifyContent="center"
       alignItems="center"
+      rounded="md"
     >
-      <Text color="white">This is Text</Text>
+      <Text color="white">This is a View</Text>
     </View>
   );
 }

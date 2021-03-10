@@ -21,17 +21,31 @@ import { HStack } from 'native-base';
 
 ```SnackPlayer name=HStack%20Usage
 import React from 'react';
-import { HStack, Text, Divider, Heading, Stack, NativeBaseProvider, Center } from 'native-base';
+import { HStack, NativeBaseProvider, Center } from 'native-base';
 
 function HStackComponent () {
   return (
-    <Stack space={4}>
-      <Heading>HStack</Heading>
-      <HStack divider={<Divider borderColor="red.200" />} reversed space={8}>
-        <Text>Test Text</Text>
-        <Text>Testing this text with HStacks</Text>
-      </HStack>
-    </Stack>
+    <HStack space={3}>
+      <Center
+        size={16}
+        bg="emerald.400"
+        rounded="xl"
+        _text={{ color: 'white' }}
+      >
+        Box 1
+      </Center>
+      <Center
+        bg="lightBlue.400"
+        size={16}
+        rounded="xl"
+        _text={{ color: 'white'}}
+      >
+        Box 2
+      </Center>
+      <Center size={16} bg="violet.400" rounded="xl" _text={{ color: 'white' }}>
+        Box 3
+      </Center>
+    </HStack>
   );
 }
 export default function () {

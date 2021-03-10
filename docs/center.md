@@ -30,7 +30,7 @@ import React from 'react';
 import { Center, NativeBaseProvider } from 'native-base';
 function CenterComponent() {
   return (
-    <Center bg="red.400" height={200} width={200}>
+    <Center bg="emerald.400" height={200} width={200} rounded="xl" _text={{fontWeight: "semibold", color: "white"}}>
       This is the Center
     </Center>
   );
@@ -52,25 +52,20 @@ Center can be used to nicely position icons in the center and add frames around 
 
 ```SnackPlayer name=Center%20IconFrames
 import React from "react";
-import { Center, Box, HStack, Icon, NativeBaseProvider } from "native-base";
+import { Center, HStack, Icon, NativeBaseProvider } from "native-base";
 function CenterComponent() {
   return (
-    <HStack>
-      <Center w="40px" h="40px" bg="blue.200" color="white">
-        <Icon
-          name="audiotrack"
-          type="MaterialIcons"
-          color="red.300"
-        />
+    <HStack space={2}>
+      <Center size={10} bg="emerald.400" rounded="xl">
+        <Icon name="audiotrack" type="MaterialIcons" color="white" />
       </Center>
-      <Center w="40px" h="40px" bg="tomato">
-        <Box fontWeight="bold" fontSize="lg" color="white">
-          20
-        </Box>
+      <Center size={10} bg="violet.400" rounded="xl" _text={{ color: "white", fontWeight: "semibold" }}>
+        20
       </Center>
     </HStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
@@ -91,7 +86,6 @@ import React from "react";
 import {
   Circle,
   Square,
-  Box,
   HStack,
   Icon,
   Center,
@@ -99,22 +93,22 @@ import {
 } from "native-base";
 function CenterComponent() {
   return (
-    <HStack>
-      <Circle size={98} bg="tomato">
-        <Icon
-          name="audiotrack"
-          type="MaterialIcons"
-          color="white"
-        />
+    <HStack space={2}>
+      <Circle size={10} bg="emerald.400">
+        <Icon name="audiotrack" type="MaterialIcons" color="white" />
       </Circle>
-      <Square size="lg" bg="blue.300">
-        <Box fontWeight="bold" fontSize="lg" color="white">
-          20
-        </Box>
+      <Square
+        size={10}
+        bg="violet.400"
+        rounded="xl"
+        _text={{ color: 'white', fontWeight: 'semibold' }}
+      >
+        20
       </Square>
     </HStack>
   );
 }
+
 export default function () {
   return (
     <NativeBaseProvider>
