@@ -30,6 +30,29 @@
     --ifm-global-radius: 0.4rem;
 }
 
+.main-wrapper {
+    max-width: 1400px;
+    width: 1400px;
+    align-self: center;
+}
+
+@media (max-width: 1400px) {
+    #__docusaurus {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .main-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1320px) and (min-width: 997px) {
+    .container {
+        max-width: calc(var(--ifm-container-width) - 125px - var(--ifm-spacing-horizontal) * 2);
+    }
+}
+
 html[data-theme='dark'] .DocSearch-Button-Key {
     background: #20232a;
     box-shadow: inset 0 -2px 0 0 #565657, inset 0 0 1px 1px #737373, 0 2px 2px 0 rgba(3, 4, 9, 0.3);
@@ -57,22 +80,32 @@ html[data-theme='dark'] .DocSearch-Button-Key {
     /* background-color: #3e3a6f;
   box-shadow: none;
   color: white; */
-    height: 72px;
+    height: 64px;
 }
 
 .navbar .navbar__inner {
-    max-width: 1520px;
+    max-width: 1360px;
     margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+.main-wrapper .menu {
+    padding: 0;
 }
 
 .navbar .navbar__title {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .navbar .navbar__link {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.navbar .dropdown a {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .navbar .navbar__brand:hover {
