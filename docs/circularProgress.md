@@ -89,7 +89,7 @@ function CircularProgressComponent() {
   return (
     <Center>
       <Heading size="md">Changing the thickness</Heading>
-      <CircularProgress mt={6} value={30} thickness={7} />
+      <CircularProgress mt={6} value={70} thickness={10} />
     </Center>
   );
 }
@@ -135,7 +135,7 @@ export default function () {
 }
 ```
 
-## CircularProgress TrackColor
+### CircularProgress TrackColor
 
 You can add the trackColor prop to apply any color that the theme contains to the CircularProgress track.
 
@@ -166,11 +166,11 @@ export default function () {
 }
 ```
 
-## CircularProgress Min and Max
+### CircularProgress Min and Max
 
 You can add min and max props to manage what is the start and end value of your CircularProgress.
 
-```SnackPlayer name=CircularProgress%min%20max
+```SnackPlayer name=CircularProgress%20min%20max
 import React from 'react';
 import {
   CircularProgress,
@@ -189,7 +189,9 @@ function CircularProgressComponent() {
         min={100}
         size={100}
         color="red.200"
-      />
+      >
+        550%
+      </CircularProgress>
     </Center>
   );
 }
