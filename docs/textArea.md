@@ -30,6 +30,8 @@ function TextAreaComponent () {
     </Stack>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -64,6 +66,8 @@ function TextAreaComponent () {
     </Stack>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -137,6 +141,8 @@ function TextAreaComponent () {
     </Stack>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
