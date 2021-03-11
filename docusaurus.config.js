@@ -140,10 +140,11 @@ module.exports = {
             },
             {
               label: 'Stars',
-              href: 'https://github.com/GeekyAnts/NativeBase',
+              href: 'https://github.com/GeekyAnts/NativeBase/stargazers',
               // className: "github-button",
               dataIcon: 'octicon-star',
-              dataCountHref: 'https://github.com/GeekyAnts/NativeBase',
+              dataCountHref:
+                'https://github.com/GeekyAnts/NativeBase/stargazers',
               dataShowCount: 'true',
               dataCountAriaLabel: '# stargazers on GitHub',
               'aria-label': 'Star this project on GitHub',
