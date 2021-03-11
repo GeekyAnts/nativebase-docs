@@ -22,6 +22,7 @@ function CheckboxComponent() {
   return <Checkbox />;
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -52,6 +53,7 @@ function CheckboxComponent() {
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -79,6 +81,7 @@ function CheckboxComponent() {
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -98,7 +101,7 @@ import { Checkbox, VStack, Text, NativeBaseProvider, Center } from "native-base"
 
 function CheckboxComponent() {
   return (
-    <VStack>
+    <VStack space={2}>
       <Checkbox colorScheme="critical" defaultIsChecked>
         <Text mx={2}>Critical</Text>
       </Checkbox>
@@ -115,6 +118,7 @@ function CheckboxComponent() {
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -134,7 +138,7 @@ import { Checkbox, VStack, Text, Icon, NativeBaseProvider, Center } from "native
 
 function CheckboxComponent() {
   return (
-    <VStack>
+    <VStack space={2}>
       <Checkbox
         colorScheme="orange"
         size="md"
@@ -171,6 +175,7 @@ function CheckboxComponent() {
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -186,11 +191,11 @@ export default function () {
 
 ```SnackPlayer name=CheckBox%20Size
 import React from "react";
-import { Checkbox, HStack, Text, Icon, NativeBaseProvider, Center } from "native-base";
+import { Checkbox, VStack, Text, Icon, NativeBaseProvider, Center } from "native-base";
 
 function CheckboxComponent() {
   return (
-    <HStack>
+    <VStack space={2} alignItems="center">
       <Checkbox colorScheme="red.200" size="sm" defaultIsChecked>
         <Text mx={2}>Checkbox</Text>
       </Checkbox>
@@ -205,10 +210,11 @@ function CheckboxComponent() {
       <Checkbox colorScheme="yellow.200" size="lg" defaultIsChecked>
         <Text mx={2}>Checkbox</Text>
       </Checkbox>
-    </HStack>
+    </VStack>
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -233,6 +239,7 @@ import {
   Center,
   Box,
   Heading,
+  Stack,
   NativeBaseProvider,
 } from "native-base";
 
@@ -250,22 +257,24 @@ function CheckboxComponent() {
           setGroupValue(values || []);
         }}
       >
-        <Checkbox value="Item 1 ">
+      <Stack space={2} alignItems="flex-start">
+        <Checkbox value="Item 1">
           <Text mx={2}>Item 1</Text>
         </Checkbox>
-        <Checkbox value="Item 2 ">
+        <Checkbox value="Item 2">
           <Text mx={2}>Item 2</Text>
         </Checkbox>
-        <Checkbox value="Item 3 ">
+        <Checkbox value="Item 3">
           <Text mx={2}>Item 3</Text>
         </Checkbox>
         <Checkbox
           colorScheme="orange"
           isIndeterminate
-          value="Indeterminate Item "
+          value="Indeterminate Item"
         >
           <Text mx={2}>Indeterminate Item</Text>
         </Checkbox>
+      </Stack>
       </Checkbox.Group>
       <VStack mt={3}>
         <Box>
@@ -279,6 +288,7 @@ function CheckboxComponent() {
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -301,7 +311,8 @@ import {
   Text,
   Container,
   NativeBaseProvider,
-  Center
+  Center,
+   Stack
 } from "native-base";
 
 function CheckboxComponent() {
@@ -318,22 +329,24 @@ function CheckboxComponent() {
           }}
           alignItems="flex-start"
         >
-          <Checkbox value="Item 1 ">
-            <Text mx={2}>Item 1</Text>
-          </Checkbox>
-          <Checkbox value="Item 2 ">
-            <Text mx={2}>Item 2</Text>
-          </Checkbox>
-          <Checkbox value="Item 3 ">
-            <Text mx={2}>Item 3</Text>
-          </Checkbox>
-          <Checkbox
-            colorScheme="orange"
-            isIndeterminate
-            value="Indeterminate Item "
-          >
-            <Text mx={2}>Indeterminate Item</Text>
-          </Checkbox>
+          <Stack space={2} alignItems="flex-start">
+            <Checkbox value="Item 1">
+              <Text mx={2}>Item 1</Text>
+            </Checkbox>
+            <Checkbox value="Item 2">
+              <Text mx={2}>Item 2</Text>
+            </Checkbox>
+            <Checkbox value="Item 3">
+              <Text mx={2}>Item 3</Text>
+            </Checkbox>
+            <Checkbox
+              colorScheme="orange"
+              isIndeterminate
+              value="Indeterminate Item"
+            >
+              <Text mx={2}>Indeterminate Item</Text>
+            </Checkbox>
+          </Stack>
         </Checkbox.Group>
         <FormControl.HelperText>We'll keep this between us.</FormControl.HelperText>
         <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
@@ -349,6 +362,7 @@ function CheckboxComponent() {
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -360,7 +374,7 @@ export default function () {
 }
 ```
 
-### Basic(With Ref)
+### Basic (With Ref)
 
 ```SnackPlayer name=CheckBox%20With%20Ref
 import React from "react";
@@ -388,6 +402,7 @@ function CheckboxComponent() {
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
