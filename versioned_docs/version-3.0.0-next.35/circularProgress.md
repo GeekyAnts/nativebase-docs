@@ -17,8 +17,13 @@ import { CircularProgress } from 'native-base';
 
 ```SnackPlayer name=CircularProgress%20Usage
 import React from 'react';
-import { CircularProgress, Heading, Center, NativeBaseProvider } from 'native-base';
-function CircularProgressComponent () {
+import {
+  CircularProgress,
+  Heading,
+  Center,
+  NativeBaseProvider,
+} from 'native-base';
+function CircularProgressComponent() {
   return (
     <Center>
       <Heading size="md">Default CircularProgress</Heading>
@@ -43,8 +48,13 @@ You can add a size prop to the CircularProgress to add a custom size or choose f
 
 ```SnackPlayer name=CircularProgress%20Sizes
 import React from 'react';
-import { CircularProgress, Heading, Center, NativeBaseProvider } from 'native-base';
-function CircularProgressComponent () {
+import {
+  CircularProgress,
+  Heading,
+  Center,
+  NativeBaseProvider,
+} from 'native-base';
+function CircularProgressComponent() {
   return (
     <Center>
       <Heading size="md">Changing the size</Heading>
@@ -69,12 +79,17 @@ You can add the thickness prop to update the thickness of the progress ring.
 
 ```SnackPlayer name=CircularProgress%20Thickness
 import React from 'react';
-import { CircularProgress, Heading, Center, NativeBaseProvider } from 'native-base';
-function CircularProgressComponent () {
+import {
+  CircularProgress,
+  Heading,
+  Center,
+  NativeBaseProvider,
+} from 'native-base';
+function CircularProgressComponent() {
   return (
     <Center>
       <Heading size="md">Changing the thickness</Heading>
-      <CircularProgress mt={6} value={30} thickness={7} />
+      <CircularProgress mt={6} value={70} thickness={10} />
     </Center>
   );
 }
@@ -95,12 +110,88 @@ You can add the color prop to apply any color that the theme contains.
 
 ```SnackPlayer name=CircularProgress%20Color
 import React from 'react';
-import { CircularProgress, Heading, Center, NativeBaseProvider } from 'native-base';
-function CircularProgressComponent () {
+import {
+  CircularProgress,
+  Heading,
+  Center,
+  NativeBaseProvider,
+} from 'native-base';
+function CircularProgressComponent() {
   return (
     <Center>
       <Heading size="md">Changing the color</Heading>
       <CircularProgress mt={6} value={50} color="red.200" />
+    </Center>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <CircularProgressComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+### CircularProgress TrackColor
+
+You can add the trackColor prop to apply any color that the theme contains to the CircularProgress track.
+
+```SnackPlayer name=CircularProgress%20TrackColor
+import React from 'react';
+import {
+  CircularProgress,
+  Heading,
+  Center,
+  NativeBaseProvider,
+} from 'native-base';
+function CircularProgressComponent() {
+  return (
+    <Center>
+      <Heading>Changing the Track Color</Heading>
+      <CircularProgress mt={6} value={50} trackColor="blue.100" />
+    </Center>
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <CircularProgressComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+### CircularProgress Min and Max
+
+You can add min and max props to manage what is the start and end value of your CircularProgress.
+
+```SnackPlayer name=CircularProgress%20min%20max
+import React from 'react';
+import {
+  CircularProgress,
+  Heading,
+  Center,
+  NativeBaseProvider,
+} from 'native-base';
+function CircularProgressComponent() {
+  return (
+    <Center>
+      <Heading>Min and Max</Heading>
+      <CircularProgress
+        mt={6}
+        value={550}
+        max={1000}
+        min={100}
+        size={100}
+        color="red.200"
+      >
+        550%
+      </CircularProgress>
     </Center>
   );
 }
@@ -123,14 +214,20 @@ import {
   CircularProgress,
   Heading,
   NativeBaseProvider,
-  Center
+  Center,
 } from 'native-base';
-function CircularProgressComponent () {
+function CircularProgressComponent() {
   return (
     <Center>
       <Heading size="md">Adding label</Heading>
-      <CircularProgress mt={6} value={45} size={60} color="red.200">
-        <CircularProgress.Label>45%</CircularProgress.Label>
+      <CircularProgress
+        mt={6}
+        value={45}
+        size={60}
+        color="red.200"
+        _text={{ color: 'blue.400' }}
+      >
+        45%
       </CircularProgress>
     </Center>
   );
@@ -156,14 +253,14 @@ import {
   CircularProgress,
   Center,
   Heading,
-  NativeBaseProvider
+  NativeBaseProvider,
 } from 'native-base';
-function CircularProgressComponent () {
+function CircularProgressComponent() {
   return (
     <Center>
       <Heading size="md">Indeterminate Progress</Heading>
       <CircularProgress mt={6} value={50} isIndeterminate color="red.200">
-        <CircularProgress.Label>50%</CircularProgress.Label>
+        50%
       </CircularProgress>
     </Center>
   );
@@ -191,3 +288,4 @@ export default function () {
 | thickness       | number, string                                         | The thickness of the progress indicator                                               | -       |
 | trackColor      | string                                                 | The color name of the progress track. Use a color key from the theme object           | -       |
 | color           | string                                                 | The color of the progress indicator. Use a color key from the theme object            | -       |
+| \_text          | [TextProps](text.md#props)                             | Text styling for Label Text.                                                          | -       |
