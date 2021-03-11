@@ -56,7 +56,17 @@ module.exports = {
       collapsed: false,
       items: [
         'button',
+        {
+          type: 'link',
+          label: 'Cascader',
+          href: 'cascader',
+        },
         'checkBox',
+        {
+          type: 'link',
+          label: 'DatePicker',
+          href: 'date-picker',
+        },
         'formControl',
         'iconButton',
         'input',
@@ -83,6 +93,11 @@ module.exports = {
         'Kbd',
         'list',
         'stat',
+        {
+          type: 'link',
+          label: 'Swipable List',
+          href: 'swipable-list',
+        },
         'tag',
       ],
     },
@@ -116,7 +131,18 @@ module.exports = {
       type: 'category',
       label: 'Disclosure',
       collapsed: false,
-      items: ['accordion', 'actionSheet', 'breadcrumb', 'collapse', 'tabs'],
+      items: [
+        'accordion',
+        'actionSheet',
+        'breadcrumb',
+        'collapse',
+        {
+          type: 'link',
+          label: 'Pagination',
+          href: 'pagination',
+        },
+        'tabs',
+      ],
     },
     {
       type: 'category',

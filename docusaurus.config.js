@@ -15,27 +15,36 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon-new.ico',
-  organizationName: 'nativebase', // Usually your GitHub org/user name.
+  organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
   plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
-    hideableSidebar: true,
+    // hideableSidebar: true,
     respectPrefersColorScheme: true,
     algolia: {
       apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
       indexName: 'nativebase-v3',
     },
     navbar: {
-      title: 'NativeBase 3.0 (alpha)',
+      title: 'NativeBase',
       logo: {
         alt: 'NativeBase Logo',
-        src: 'img/nativebase-icon-new.png',
+        src: 'img/nativebase-new-icon.png',
         // src: 'img/nativebase-icon.png',
       },
 
       // style: "dark",
       items: [
-        { type: 'docsVersionDropdown', position: 'left' },
+        {
+          type: 'docsVersionDropdown',
+          position: 'left',
+        },
+        {
+          to: '/docs/nativebase',
+          label: 'Docs',
+          position: 'right',
+          'aria-label': 'Docs',
+        },
         {
           to: 'https://market.nativebase.io/',
           label: 'Market',
@@ -46,6 +55,13 @@ module.exports = {
           to:
             'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
           label: 'Hire Us',
+          position: 'right',
+          'aria-label': 'Hire GeekyAnts',
+        },
+        {
+          to:
+            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          label: 'Components',
           position: 'right',
           'aria-label': 'Hire GeekyAnts',
         },
@@ -66,13 +82,6 @@ module.exports = {
           label: 'Theme',
           position: 'right',
           'aria-label': 'Theme',
-        },
-        {
-          to: '/docs/nativebase',
-          // activeBasePath: "docs",
-          label: 'Docs',
-          position: 'right',
-          'aria-label': 'Docs',
         },
       ],
     },
@@ -131,10 +140,11 @@ module.exports = {
             },
             {
               label: 'Stars',
-              href: 'https://github.com/GeekyAnts/NativeBase',
+              href: 'https://github.com/GeekyAnts/NativeBase/stargazers',
               // className: "github-button",
               dataIcon: 'octicon-star',
-              dataCountHref: 'https://github.com/GeekyAnts/NativeBase',
+              dataCountHref:
+                'https://github.com/GeekyAnts/NativeBase/stargazers',
               dataShowCount: 'true',
               dataCountAriaLabel: '# stargazers on GitHub',
               'aria-label': 'Star this project on GitHub',

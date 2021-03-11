@@ -1,5 +1,6 @@
 /* stylelint-disable docusaurus/copyright-header */
 
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -13,50 +14,120 @@
 /* You can override the default Infima variables here. */
 
 :root {
-  --ifm-link-color: #10b981;
-  --ifm-color-primary-dark: #059669;
-  --ifm-color-primary-darker: #047857;
-  --ifm-color-primary-darkest: #065f46;
-  --ifm-color-primary: #34d399;
-  --ifm-color-primary-light: #6ee7b7;
-  --ifm-color-primary-lighter: #a7f3d0;
-  --ifm-color-primary-lightest: #d1fae5;
-  --ifm-code-font-size: 95%;
+    --ifm-link-color: #10b981;
+    --ifm-color-primary-dark: #059669;
+    --ifm-color-primary-darker: #047857;
+    --ifm-color-primary-darkest: #065f46;
+    --ifm-color-primary: #2ec990;
+    --ifm-color-primary-light: #6ee7b7;
+    --ifm-color-primary-lighter: #a7f3d0;
+    --ifm-color-primary-lightest: #d1fae5;
+    --ifm-code-font-size: 95%;
+    --ifm-navbar-item-padding-horizontal: 20px;
+    --ifm-navbar-padding-vertical: 12px;
+    --ifm-navbar-padding-horizontal: 16px;
+    --doc-sidebar-border-radius: 100%;
+    --ifm-global-radius: 0.4rem;
+}
+
+.main-wrapper {
+    max-width: 1400px;
+    width: 1400px;
+    align-self: center;
+}
+
+@media (max-width: 1400px) {
+    #__docusaurus {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .main-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1320px) and (min-width: 997px) {
+    .container {
+        max-width: calc(var(--ifm-container-width) - 125px - var(--ifm-spacing-horizontal) * 2);
+    }
 }
 
 html[data-theme='dark'] .DocSearch-Button-Key {
-  background: #20232a;
-  box-shadow: inset 0 -2px 0 0 #565657, inset 0 0 1px 1px #737373,
-    0 2px 2px 0 rgba(3, 4, 9, 0.3);
+    background: #20232a;
+    box-shadow: inset 0 -2px 0 0 #565657, inset 0 0 1px 1px #737373, 0 2px 2px 0 rgba(3, 4, 9, 0.3);
+    top: 0;
+    margin-right: 0;
+    margin-left: 0.4rem;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+    background-color: rgb(72, 77, 91);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
 }
 
 .snack-player {
-  overflow: hidden;
-  border: 1px solid var(--ifm-table-border-color);
-  border-radius: 8px;
-  height: 505px;
-  width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--ifm-table-border-color);
+    border-radius: 8px;
+    height: 505px;
+    width: 100%;
 }
 
-/* .navbar {
-  background-color: #3e3a6f;
+.navbar {
+    /* background-color: #3e3a6f;
   box-shadow: none;
-  color: white;
+  color: white; */
+    height: 64px;
 }
-.navbar__item {
-  color: hsla(0, 0%, 100%, 0.8);
+
+.navbar .navbar__inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
 }
+
+.main-wrapper .menu {
+    padding: 0;
+}
+
+.navbar .navbar__title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar .navbar__link {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.navbar .dropdown a {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.navbar .navbar__brand:hover {
+    color: var(--brand);
+}
+
+.navbar .navbar__logo {
+    width: 38px;
+    height: 42.68px;
+}
+
+.navbar .DocSearch-Button {
+    border-radius: var(--ifm-global-radius);
+}
+
+
+/*
 .navbar__link:hover,
 .navbar__link--active {
   color: white;
 } */
+
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -65,203 +136,318 @@ html[data-theme='dark'] .DocSearch-Button-Key {
  * LICENSE file in the root directory of this source tree.
  */
 
+
 /* your custom css */
 
 @media (max-width: 480px) {
-  .headerTitleWithLogo {
-    display: block !important;
-  }
-  .component-screenshot {
-    width: 90%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
-  .projectTitle > small {
-    font-size: 45% !important;
-  }
-  .projectTitle .customLogo {
-    font-size: 75% !important;
-  }
+    .headerTitleWithLogo {
+        display: block !important;
+    }
+    .component-screenshot {
+        width: 90%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
+    .projectTitle>small {
+        font-size: 45% !important;
+    }
+    .projectTitle .customLogo {
+        font-size: 75% !important;
+    }
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
-  .component-screenshot {
-    width: 70%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 70%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-  .component-screenshot {
-    width: 70%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 70%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
-  .component-screenshot {
-    width: 70%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 70%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
-  .component-screenshot {
-    width: 50%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 50%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
-  .component-screenshot {
-    width: 40%;
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 10px;
-  }
+    .component-screenshot {
+        width: 40%;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
 }
 
 .blockContent h2 {
-  text-align: left !important;
-  font-size: 22px;
+    text-align: left !important;
+    font-size: 22px;
 }
 
 .blockContent div {
-  text-align: left !important;
+    text-align: left !important;
 }
 
 .blockContent small {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .mainContainer .container.paddingTop {
-  padding-top: 0px;
+    padding-top: 0px;
 }
 
 .homeSplashFade {
-  background-color: #6863a9;
-  /* background-color: #47b8c5; */
+    background-color: #6863a9;
+    /* background-color: #47b8c5; */
 }
 
 .homeSplashFade .projectTitle {
-  color: white;
+    color: white;
 }
 
 .homeSplashFade .button {
-  color: white;
-  border-color: white;
+    color: white;
+    border-color: white;
 }
 
 .navigationSlider .slidingNav ul li a {
-  border-radius: 3px;
+    border-radius: 3px;
 }
 
 .navigationSlider .slidingNav ul li a:hover {
-  border-radius: 3px;
-  color: #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
 }
 
 .logo {
-  height: 70% !important;
+    height: 70% !important;
 }
 
 .customLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .homeSplashFade .button {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding: 15px 35px;
-  border-radius: 10px;
-  background-color: white;
-  color: #6863a9;
-  font-weight: 700;
-  font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 15px 35px;
+    border-radius: 10px;
+    background-color: white;
+    color: #6863a9;
+    font-weight: 700;
+    font-size: 15px;
 }
 
-.projectTitle > small {
-  display: block;
-  font-size: 65%;
-  line-height: 1.5em;
-  margin: 1.3em 25px;
+.projectTitle>small {
+    display: block;
+    font-size: 65%;
+    line-height: 1.5em;
+    margin: 1.3em 25px;
 }
 
 .tagline {
-  font-weight: 300;
-  letter-spacing: 1.5px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
 }
 
 .custom_row {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
 }
 
 .custom_row:after {
-  content: '';
-  display: table;
-  clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
-.column_list > div {
-  text-align: center;
+.column_list>div {
+    text-align: center;
 }
 
-.column_list > div > p {
-  color: #5e5e5e;
+.column_list>div>p {
+    color: #5e5e5e;
 }
 
 .column_list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  grid-gap: 3rem;
-  align-items: flex-start;
-  text-align: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 3rem;
+    align-items: flex-start;
+    text-align: left;
 }
+
 
 /* backlinks section */
 
 .backlink {
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .backlink img {
-  vertical-align: middle;
-  margin-right: 10px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .backlink h2 {
-  margin-bottom: 5px;
-  margin-top: 0px;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 .backlink h2 a {
-  color: black;
+    color: black;
 }
 
 .backlink h2 a:hover {
-  color: #6863a9;
+    color: #6863a9;
 }
 
 .moreProjects {
-  padding-left: 12.6%;
-  padding-right: 12.6%;
+    padding-left: 12.6%;
+    padding-right: 12.6%;
 }
 
 #moreProjectsHeading {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
-  .moreProjects {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 15px;
-  }
+    .moreProjects {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 15px;
+    }
+}
+
+
+/* sidebar badge */
+
+.menu__link[href*='/swipable-list']:after,
+.menu__link[href*='/date-picker']:after,
+.menu__link[href*='/cascader']:after,
+.menu__link[href*='/pagination']:after {
+    content: 'Coming soon';
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-right: -6px;
+    padding: 3px 6px;
+    border: 1px solid var(--ifm-color-primary);
+    border-radius: 3px;
+    color: var(--ifm-color-primary);
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 10px;
+    height: 10px;
+    font-weight: 600;
+}
+
+.menu__link[href*='/swipable-list'],
+.menu__link[href*='/date-picker'],
+.menu__link[href*='/cascader'],
+.menu__link[href*='/pagination'] {
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.label {
+    display: inline-block;
+    position: relative;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 16px;
+    border-radius: 16px;
+}
+
+
+/* Label skeuomorphic hole */
+
+.label:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+
+/* Basic label */
+
+.label.basic {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+/* Label variants */
+
+.label.android {
+    background: #9bbb37;
+}
+
+.label.android:before {
+    border-right-color: #9bbb37;
+}
+
+.label.web {
+    background: #004466;
+}
+
+.label.web:before {
+    border-right-color: #004466;
+}
+
+.label.ios {
+    background: #222;
+}
+
+.label.ios:before {
+    border-right-color: #222;
+}
+
+html[data-theme='dark'] .label {
+    color: #2c2c2c;
+}
+
+html[data-theme='dark'] .label:after {
+    background: var(--ifm-background-color);
+}
+
+html[data-theme='dark'] .label.ios {
+    background: #fff;
+}
+
+html[data-theme='dark'] .label.web {
+    background: #e2e8f0;
+}
+
+html[data-theme='dark'] .label:before {
+    border-right-color: #fff;
 }
