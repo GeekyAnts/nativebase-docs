@@ -226,6 +226,35 @@ export default function () {
 }
 ```
 
+### Form Controlled
+
+```SnackPlayer name=Image%20Input%20Focused%20and%20Error%20Border%20Colors
+import React from 'react';
+import { Input, NativeBaseProvider, FormControl, Center } from 'native-base';
+
+function InputComponent () {
+  return (
+    <FormControl isRequired isInvalid p={2}>
+      <FormControl.Label>Form Controlled Input</FormControl.Label>
+      <Input placeholder="FormControl is providing me isInvalid prop" my={2} size='xs' p={1} />
+      <FormControl.HelperText>I am a Helper text 😊</FormControl.HelperText>
+      <FormControl.ErrorMessage>
+        I'll only appear when FormControl have isInvalid props.
+      </FormControl.ErrorMessage>
+    </FormControl>
+  );
+};
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <InputComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
 ### Input Focused and Error Border Colors
 
 ```SnackPlayer name=Image%20Input%20Focused%20and%20Error%20Border%20Colors
@@ -248,7 +277,6 @@ function InputComponent () {
         placeholder="Here is a sample placeholder"
         isInvalid
         errorBorderColor="yellow"
-        errorMessage="This is an Error Message"
       />
     </Stack>
   );
@@ -275,12 +303,9 @@ export default function () {
 | size              | `2xl`, `lg`, `md`, `sm`, `xl`, `xs`                      | The size of the button.                                                                               | `md`      |
 | onChange          | function                                                 | Callback for on change on input value.                                                                | -         |
 | placeholder       | string                                                   | The placeholder attribute specifies a short hint that describes the expected value of an input field. | -         |
-| errorMessage      | string                                                   | error message to be shown when input is invalid.                                                      | -         |
-| \_errorMessage    | TextProps                                                | Props to be passed to errorMessage.                                                                   | -         |
 | isFullWidth       | boolean                                                  | If true, the input element will span the full width of its parent                                     | -         |
 | focusBorderColor  | string                                                   | The border color when the input is focused.                                                           | -         |
 | errorBorderColor  | string                                                   | The border color when isInvalid is set to true.                                                       | -         |
-| errorMessageColor | string                                                   | The font color of error message.                                                                      | -         |
 | ariaLabel         | string                                                   | An accessible label for the input.                                                                    | -         |
 | InputLeftElement  | JSX.Element                                              | If given, adds the provided element to the left of the input.                                         | -         |
 | InputRightElement | JSX.Element                                              | If given, adds the provided element to the right of the input.                                        | -         |
