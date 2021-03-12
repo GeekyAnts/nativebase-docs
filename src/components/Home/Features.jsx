@@ -68,7 +68,7 @@ export function Features() {
         <div className="grid grid-cols-3 gap-4">
           <div className="col-span-2">
             <div
-              data-snack-id="@theankurkedia/4be3ba"
+              data-snack-id="@theankurkedia/accessible"
               data-snack-platform="web"
               data-snack-preview="true"
               data-snack-theme="dark"
