@@ -87,8 +87,7 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Hero image */}
-          {/* <div>
+          <div>
             <div
               className="relative flex justify-center mb-8"
               data-aos="zoom-y-out"
@@ -108,7 +107,7 @@ export function Hero() {
                     width: '1080px',
                     height: '672px',
                   }}
-                ></div>
+                />
                 {/* <svg
                   className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto"
                   width="768"
@@ -177,7 +176,7 @@ export function Hero() {
                 </svg> */}
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

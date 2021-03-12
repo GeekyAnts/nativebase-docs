@@ -14,6 +14,7 @@ import {
   Community,
   Cta,
   More,
+  Stats,
 } from './../components/Home';
 
 function Home() {
@@ -30,12 +31,13 @@ function Home() {
         >
           <Hero />
           <NewFeatures />
-          <FeaturesBlocks />
+          {/* <FeaturesBlocks /> */}
           {/* <FeaturesWorld /> */}
           {/* <News /> */}
+          <Stats />
           <Community />
-          <More />
           <Cta />
+          <More />
         </section>
       </main>
     </Layout>
