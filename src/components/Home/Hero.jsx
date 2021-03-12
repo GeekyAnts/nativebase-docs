@@ -88,7 +88,7 @@ export function Hero() {
           </div>
 
           {/* Hero image */}
-          <div>
+          {/* <div>
             <div
               className="relative flex justify-center mb-8"
               data-aos="zoom-y-out"
@@ -170,7 +170,7 @@ export function Hero() {
                 </svg>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
