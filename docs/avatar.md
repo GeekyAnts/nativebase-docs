@@ -293,8 +293,23 @@ export default function () {
 
 ## Props
 
+### Avatar
+
 | Name   | Type                                | Description                     | Default |
 | ------ | ----------------------------------- | ------------------------------- | ------- |
 | size   | `2xl`, `xl`, `lg`, `md`, `sm`, `xs` | The size of the avatar.         | `md`    |
 | source | ImageSourcePropType                 | The image source of the avatar. | -       |
 | \_text | [`TextProps`](text.md#props)        | Text styling for fallback Text. | -       |
+
+`Avatar` composes the [`Box`](box.md) component.
+
+### Avatar.Group
+
+| Name    | Type   | Description               | Default |
+| ------- | ------ | ------------------------- | ------- |
+| max     | number | The max number of avatar. | -       |
+| spacing | number | The distance each avatar. | `-4`    |
+
+### Avatar.Badge
+
+`Avatar.Badge` composes the [`Box`](box.md) component.
