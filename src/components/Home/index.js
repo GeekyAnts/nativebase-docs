@@ -4,3 +4,6 @@ export { FeaturesBlocks } from './FeaturesBlock';
 export { FeaturesWorld } from './FeaturesWorld';
 export { News } from './News';
 export { Cta } from './Cta';
+export { Community } from './Community';
+export { More } from './More';
+export { Stats } from './Stats';
