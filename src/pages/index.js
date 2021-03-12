@@ -11,6 +11,7 @@ import {
   FeaturesBlocks,
   FeaturesWorld,
   News,
+  Community,
   Cta,
   More,
 } from './../components/Home';
@@ -32,8 +33,9 @@ function Home() {
           <FeaturesBlocks />
           {/* <FeaturesWorld /> */}
           {/* <News /> */}
-          <Cta />
+          <Community />
           <More />
+          <Cta />
         </section>
       </main>
     </Layout>

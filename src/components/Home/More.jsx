@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import { SVGs } from './../SVGs';
 const products = [
   {
@@ -18,19 +17,6 @@ const products = [
     product: 'React Pluggable',
     link: 'https://react-pluggable.github.io/',
   },
-  {
-    product: 'Flutter Starter',
-    link: 'https://flutter-starter.github.io/',
-  },
-  // no logo
-  // {
-  //   product: 'NativeBase Market',
-  //   link: 'https://fluttermarket.com/',
-  // },
-  // {
-  //   product: 'Flutter Market',
-  //   link: 'https://market.nativebase.io/',
-  // },
 ];
 
 function Product({ product, link }) {
@@ -58,10 +44,10 @@ export function More() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 text-4xl">More from GeekyAnts</h2>
+            <h2 className="h2 text-4xl">From The Authors</h2>
           </div>
           <div className="max-w-sm mx-auto md:max-w-none">
-            <div className="grid gap-4 md:grid-cols-5 md:col-gap-6 md:row-gap-8 items-start">
+            <div className="grid gap-4 md:grid-cols-4 md:col-gap-6 md:row-gap-8 items-start">
               {products.map((props, idx) => {
                 return (
                   <article
