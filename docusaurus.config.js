@@ -59,13 +59,6 @@ module.exports = {
           'aria-label': 'Hire GeekyAnts',
         },
         {
-          to:
-            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
-          label: 'Components',
-          position: 'right',
-          'aria-label': 'Hire GeekyAnts',
-        },
-        {
           to: 'https://github.com/GeekyAnts/nativebase',
           label: 'GitHub',
           position: 'right',

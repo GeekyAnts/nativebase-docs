@@ -1,10 +1,9 @@
 import React from 'react';
-import clsx from 'clsx';
+// import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Navbar from '@theme/Navbar';
-import Link from '@docusaurus/Link';
+// import Navbar from '@theme/Navbar';
+// import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import {
   Hero,
@@ -13,6 +12,7 @@ import {
   FeaturesWorld,
   News,
   Cta,
+  More,
 } from './../components/Home';
 
 function Home() {
@@ -33,6 +33,7 @@ function Home() {
           {/* <FeaturesWorld /> */}
           {/* <News /> */}
           <Cta />
+          <More />
         </section>
       </main>
     </Layout>
