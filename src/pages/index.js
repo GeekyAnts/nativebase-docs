@@ -29,7 +29,7 @@ function Home() {
           className={styles.features + 'flex-1 font-inter overflow-hidden'}
         >
           <Hero />
-          {/* <NewFeatures /> */}
+          <NewFeatures />
           <FeaturesBlocks />
           {/* <FeaturesWorld /> */}
           {/* <News /> */}

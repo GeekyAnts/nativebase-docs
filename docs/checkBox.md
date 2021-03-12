@@ -95,7 +95,7 @@ export default function () {
 
 ### Custom Color
 
-```SnackPlayer name=CheckBox%20Custom Color
+```SnackPlayer name=CheckBox%20Custom%20Color
 import React from "react";
 import { Checkbox, VStack, Text, NativeBaseProvider, Center } from "native-base";
 
@@ -228,27 +228,33 @@ export default function () {
 
 ### Checkbox Group
 
-```SnackPlayer name=CheckBox%20CheckBox Group
+```SnackPlayer name=CheckBox%20Group
 import React from "react";
 import {
   Checkbox,
   Text,
   View,
   HStack,
+  VStack,
+  Center,
+  Box,
+  Heading,
+  Stack,
   NativeBaseProvider,
-   Center,
-   Stack
 } from "native-base";
 
 function CheckboxComponent() {
   const [groupValue, setGroupValue] = React.useState(["Item 1 ", "Item 3 "]);
   return (
-    <View display="flex" justifyContent="space-between" alignItems="checkBox">
+    <View display="flex" justifyContent="space-between" alignItems="center" m={3}>
+      <HStack mb={2} alignItems="baseline">
+        <Heading mt={3}>CheckboxGroup </Heading>
+      </HStack>
       <Checkbox.Group
         colorScheme="green"
         defaultValue={groupValue}
         onChange={(values) => {
-          setGroupValue(values);
+          setGroupValue(values || []);
         }}
       >
       <Stack space={2} alignItems="flex-start">
@@ -270,12 +276,14 @@ function CheckboxComponent() {
         </Checkbox>
       </Stack>
       </Checkbox.Group>
-      <HStack mt={3} alignItems="baseline">
-        <Text fontSize="md">Selected Values: </Text>
-        <Text fontSize="md" bold>
-          {groupValue}
-        </Text>
-      </HStack>
+      <VStack mt={3}>
+        <Box>
+          <Text fontSize="md">Selected Values: </Text>
+          <Text fontSize="md" bold>
+            {groupValue}
+          </Text>
+        </Box>
+      </VStack>
     </View>
   );
 }
@@ -294,7 +302,7 @@ export default function () {
 
 ### Form Controlled
 
-```SnackPlayer name=CheckBox%20Form Controlled
+```SnackPlayer name=CheckBox%20Form%20Controlled
 import React from "react";
 import {
   FormControl,
@@ -368,7 +376,7 @@ export default function () {
 
 ### Basic (With Ref)
 
-```SnackPlayer name=CheckBox%20 With Ref
+```SnackPlayer name=CheckBox%20With%20Ref
 import React from "react";
 import { Checkbox, Icon, NativeBaseProvider, Center } from "native-base";
 
