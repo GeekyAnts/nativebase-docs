@@ -14,13 +14,13 @@ module.exports = {
   ],
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon-new.ico',
+  favicon: 'img/favicon.ico',
   organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
   plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
     // hideableSidebar: true,
-    respectPrefersColorScheme: true,
+    // respectPrefersColorScheme: true,
     algolia: {
       apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
       indexName: 'nativebase-v3',
@@ -29,8 +29,7 @@ module.exports = {
       title: 'NativeBase',
       logo: {
         alt: 'NativeBase Logo',
-        src: 'img/nativebase-new-icon.png',
-        // src: 'img/nativebase-icon.png',
+        src: 'img/icon.png',
       },
 
       // style: "dark",
@@ -55,13 +54,6 @@ module.exports = {
           to:
             'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
           label: 'Hire Us',
-          position: 'right',
-          'aria-label': 'Hire GeekyAnts',
-        },
-        {
-          to:
-            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
-          label: 'Components',
           position: 'right',
           'aria-label': 'Hire GeekyAnts',
         },

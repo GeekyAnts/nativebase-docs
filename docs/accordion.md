@@ -19,55 +19,60 @@ import { Accordion } from 'native-base';
 
 ```SnackPlayer name=Basic
 import React from 'react';
-import { Accordion, NativeBaseProvider, Center } from 'native-base';
+import { ScrollView } from 'react-native';
+import { Accordion, NativeBaseProvider, Center, Box } from 'native-base';
 
 function AccordionComponent() {
   return (
-    <Accordion index={[0, 1]}>
-      <Accordion.Item>
-        <Accordion.Summary>
-          Section 1 title
-          <Accordion.Icon />
-        </Accordion.Summary>
-        <Accordion.Details>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </Accordion.Details>
-      </Accordion.Item>
-      <Accordion.Item>
-        <Accordion.Summary>
-          Section 2 title
-          <Accordion.Icon />
-        </Accordion.Summary>
-        <Accordion.Details>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </Accordion.Details>
-      </Accordion.Item>
-      <Accordion.Item>
-        <Accordion.Summary>
-          Section 3 title
-          <Accordion.Icon />
-        </Accordion.Summary>
-        <Accordion.Details>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </Accordion.Details>
-      </Accordion.Item>
-    </Accordion>
+    <Box m={3}>
+      <Accordion index={[0, 1]}>
+        <Accordion.Item>
+          <Accordion.Summary>
+            Section 1 title
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+        <Accordion.Item>
+          <Accordion.Summary>
+            Section 2 title
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+        <Accordion.Item>
+          <Accordion.Summary>
+            Section 3 title
+            <Accordion.Icon />
+          </Accordion.Summary>
+          <Accordion.Details>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Accordion.Details>
+        </Accordion.Item>
+      </Accordion>
+    </Box>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <AccordionComponent />
+        <ScrollView>
+          <AccordionComponent />
+        </ScrollView>
       </Center>
     </NativeBaseProvider>
   );
@@ -87,7 +92,7 @@ function AccordionComponent() {
       <Accordion allowMultiple>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box>Section 1 title</Box>
+            Section 1 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -99,7 +104,7 @@ function AccordionComponent() {
         </Accordion.Item>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box>Section 2 title</Box>
+            Section 2 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -111,7 +116,7 @@ function AccordionComponent() {
         </Accordion.Item>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box>Section 3 title</Box>
+            Section 3 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -150,7 +155,7 @@ function AccordionComponent() {
       <Accordion allowMultiple defaultIndex={[0, 2]}>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box>Section 1 title</Box>
+            Section 1 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -162,7 +167,7 @@ function AccordionComponent() {
         </Accordion.Item>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box>Section 2 title</Box>
+            Section 2 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -174,7 +179,7 @@ function AccordionComponent() {
         </Accordion.Item>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box>Section 3 title</Box>
+            Section 3 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -214,7 +219,7 @@ function AccordionComponent() {
       <Accordion allowToggle defaultIndex={[2]}>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box>Section 1 title</Box>
+            Section 1 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -226,7 +231,7 @@ function AccordionComponent() {
         </Accordion.Item>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box>Section 2 title</Box>
+            Section 2 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -238,7 +243,7 @@ function AccordionComponent() {
         </Accordion.Item>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box>Section 3 title</Box>
+            Section 3 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -275,8 +280,8 @@ function AccordionComponent() {
     <Box m={3}>
       <Accordion allowMultiple>
         <Accordion.Item>
-          <Accordion.Summary _expanded={{backgroundColor: 'orange.300'}}>
-            <Box>Click me to see a different style</Box>
+          <Accordion.Summary _expanded={{ backgroundColor: 'orange.300' }}>
+            Click me to see a different style
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -287,8 +292,8 @@ function AccordionComponent() {
           </Accordion.Details>
         </Accordion.Item>
         <Accordion.Item id={9} isDisabled>
-          <Accordion.Summary _disabled={{backgroundColor: 'gray.300'}}>
-            <Box>I'm Disabled 😢</Box>
+          <Accordion.Summary>
+            I'm Disabled 😢
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -326,7 +331,7 @@ function AccordionComponent() {
       <Accordion allowMultiple defaultIndex={[1]}>
         <Accordion.Item>
           <Accordion.Summary>
-            <Box textAlign="left">Section 1 title</Box>
+            Section 1 title
             <Accordion.Icon />
           </Accordion.Summary>
           <Accordion.Details>
@@ -338,12 +343,16 @@ function AccordionComponent() {
         </Accordion.Item>
 
         <Accordion.Item>
-          {({isExpanded}: any) => (
+          {({ isExpanded }: any) => (
             <>
               <Accordion.Summary>
-                <Box textAlign="left">{isExpanded ? 'Fire' : 'Snow'}</Box>
+                {isExpanded ? 'Fire' : 'Snow'}
                 {isExpanded ? (
-                  <Icon name="fire" type="MaterialCommunityIcons" />
+                  <Icon
+                    name="fire"
+                    color="white"
+                    type="MaterialCommunityIcons"
+                  />
                 ) : (
                   <Icon name="snowflake" type="MaterialCommunityIcons" />
                 )}
@@ -384,6 +393,8 @@ export default function () {
 | defaultIndex  | Number[], number | The initial index(es) of the expanded accordion item. Must be an array for allowMultiple={true} to work. | -       |
 | onChange      | function         | The callback invoked when accordion items are expanded or collapsed.                                     | -       |
 
+**Accordion** uses **[Collapse](collapse.md)** to provide height animation.
+
 ### AccordionItem
 
 | Name       | Type    | Description                                     | Default |
@@ -397,7 +408,7 @@ export default function () {
 
 ### Accordion.Details
 
-**AccordionDetails** renders a **Box** and composes **[Collapse](collapse.md)** to provide height animation.
+**AccordionDetails** composes **[Collapse](collapse.md)** to provide height animation.
 
 ### Accordion.Icon
 

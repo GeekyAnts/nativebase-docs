@@ -51,16 +51,16 @@ import { Input, NativeBaseProvider,Stack,Center,Heading } from 'native-base';
 
 function InputComponent () {
   return (
-    <Stack alignItems="center" space={4}>
+    <Stack space={4}>
       <Center>
-        <Heading>Size Input</Heading>
+        <Heading>Input Sizes</Heading>
       </Center>
-      <Input w="90%" size="xs" placeholder="xs Input" />
-      <Input w="90%" size="sm" placeholder="sm Input" />
-      <Input w="90%" size="md" placeholder="md Input" />
-      <Input w="90%" size="lg" placeholder="lg Input" />
-      <Input w="90%" size="xl" placeholder="xl Input" />
-      <Input w="90%" size="2xl" placeholder="2xl Input" />
+      <Input size="xs" placeholder="xs Input" />
+      <Input size="sm" placeholder="sm Input" />
+      <Input size="md" placeholder="md Input" />
+      <Input size="lg" placeholder="lg Input" />
+      <Input size="xl" placeholder="xl Input" />
+      <Input size="2xl" placeholder="2xl Input" />
     </Stack>
   );
 };
@@ -110,19 +110,28 @@ export default function () {
 
 ```SnackPlayer name=Image%20Addons
 import React from 'react';
-import { Input, InputGroup, InputLeftAddon, InputRightAddon, NativeBaseProvider,Stack, Text, Center } from 'native-base';
+import {
+  Input,
+  InputGroup,
+  InputLeftAddon,
+  InputRightAddon,
+  NativeBaseProvider,
+  Stack,
+  Text,
+  Center,
+} from 'native-base';
 
-function InputComponent () {
+function InputComponent() {
   return (
     <Stack space={4}>
-      <InputGroup>
-        <InputLeftAddon children={<Text>https://</Text>} />
+      <InputGroup mx={3}>
+        <InputLeftAddon children={'https://'} />
         <Input w="70%" placeholder="nativebase" />
-        <InputRightAddon children={<Text>.io</Text>} />
+        <InputRightAddon children={'.io'} />
       </InputGroup>
     </Stack>
   );
-};
+}
 export default function () {
   return (
     <NativeBaseProvider>
@@ -179,7 +188,13 @@ function InputComponent () {
       w="70%"
       type={show ? 'text' : 'password'}
       InputRightElement={
-        <Button ml={1} onPress={handleClick}>
+        <Button
+          ml={1}
+          roundedLeft={0}
+          roundedRight="md"
+          colorScheme="default"
+          onPress={handleClick}
+        >
           {show ? 'Hide' : 'Show'}
         </Button>
       }
@@ -265,16 +280,16 @@ function InputComponent () {
   return (
     <Stack space={4}>
       <Input
-        placeholder="Here is a sample placeholder"
-        focusBorderColor="green"
+        placeholder="focusBorderColor Example"
+        focusBorderColor="green.400"
       />
       <Input
-        placeholder="Here is a sample placeholder"
-        focusBorderColor="pink"
+        placeholder="focusBorderColor Example"
+        focusBorderColor="pink.400"
       />
-      <Input placeholder="Here is a sample placeholder" isInvalid />
+      <Input placeholder="Invalid Input Example" isInvalid />
       <Input
-        placeholder="Here is a sample placeholder"
+        placeholder="errorBorderColor Example"
         isInvalid
         errorBorderColor="yellow"
       />
@@ -312,3 +327,5 @@ export default function () {
 | type              | `password`, string, text                                 | Using the type `password`, user can mask the input.                                                   | -         |
 | label             | string                                                   | If given, adds a floating label to the input.                                                         | -         |
 | \_label           | [`TextProps`](text.md#props)                             | Props to be passed to label to change its text styling.                                               | -         |
+
+Apart from these all the [Native TextInput Props](https://reactnative.dev/docs/textinput#props) from React Native can be passed to Input.
