@@ -142,18 +142,16 @@
           "id": "version-3.0.0-next.35/button"
         },
         {
-          "type": "link",
-          "label": "Cascader",
-          "href": "cascader"
+          "type": "doc",
+          "id": "version-3.0.0-next.35/cascader"
         },
         {
           "type": "doc",
           "id": "version-3.0.0-next.35/checkBox"
         },
         {
-          "type": "link",
-          "label": "DatePicker",
-          "href": "date-picker"
+          "type": "doc",
+          "id": "version-3.0.0-next.35/date-picker"
         },
         {
           "type": "doc",
@@ -239,9 +237,8 @@
           "id": "version-3.0.0-next.35/stat"
         },
         {
-          "type": "link",
-          "label": "Swipable List",
-          "href": "swipable-list"
+          "type": "doc",
+          "id": "version-3.0.0-next.35/swipable-list"
         },
         {
           "type": "doc",
@@ -348,9 +345,8 @@
           "id": "version-3.0.0-next.35/collapse"
         },
         {
-          "type": "link",
-          "label": "Pagination",
-          "href": "pagination"
+          "type": "doc",
+          "id": "version-3.0.0-next.35/pagination"
         },
         {
           "type": "doc",

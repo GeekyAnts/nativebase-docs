@@ -202,13 +202,13 @@ function AvatarComponent() {
   return (
     <HStack>
       <Avatar
-        source={{ uri: 'https://alpha.nativebase.io/img/nativebase-icon.png' }}
+        source={{ uri: 'https://alpha.nativebase.io/img/icon.png' }}
       >
         NativeBase
         <Avatar.Badge bg={'red.200'} />
       </Avatar>
       <Avatar
-        source={{ uri: 'https://alpha.nativebase.io/img/nativebase-icon.png' }}
+        source={{ uri: 'https://alpha.nativebase.io/img/icon.png' }}
       >
         NativeBase
         <Avatar.Badge borderColor="papayawhip" bg="tomato" />
