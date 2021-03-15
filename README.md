@@ -118,7 +118,7 @@ The `src/theme` subdirectory contains the swizzled React components from the Doc
 1.  `git checkout -b the-name-of-my-branch` to create a branch.
     > replace `the-name-of-my-branch` with a suitable name, such as `update-animations-page`
 
-### Make the change
+### Make the changes
 
 1.  Follow the "[Running locally](#running-locally)" instructions.
 1.  Save the files and check in the browser.
