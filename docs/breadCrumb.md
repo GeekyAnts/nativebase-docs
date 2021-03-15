@@ -171,22 +171,26 @@ Breadcrumb composes Box so you can pass all Box props to change the style of the
 
 ```SnackPlayer name=Breadcrumb%20Composition
 import React from 'react';
-import { NativeBaseProvider, Breadcrumb, Box, Heading, Icon, Center } from 'native-base';
+import { NativeBaseProvider, Breadcrumb, Box, Heading, Icon, Center, HStack, Text } from 'native-base';
 function BreadcrumbComponent () {
   return (
     <Box>
       <Heading mb={4}>Breadcrumb Composition</Heading>
-      <Breadcrumb spacing={2} fontSize="lg">
+       <Breadcrumb spacing={2} fontSize="lg">
         <Breadcrumb.Item>
           <Breadcrumb.Link>
-            <Icon name="home" mr={1} />
-            Home
+            <HStack>
+              <Icon name="home" mr={1} />
+              <Text>Home</Text>
+            </HStack>
           </Breadcrumb.Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
           <Breadcrumb.Link href="https://alpha.nativebase.io/" isExternal>
-            <Icon name="file-document" type="MaterialCommunityIcons" mr={1} />
-            Docs
+            <HStack>
+              <Icon name="file-document" type="MaterialCommunityIcons" mr={1} />
+              <Text>Docs</Text>
+            </HStack>
           </Breadcrumb.Link>
         </Breadcrumb.Item>
 
@@ -195,8 +199,10 @@ function BreadcrumbComponent () {
             href="https://github.com/GeekyAnts/nativebase"
             isExternal
           >
-            <Icon name="github" type="AntDesign" mr={1} />
-            Github (This is currently active)
+            <HStack>
+              <Icon name="github" type="AntDesign" mr={1} />
+              <Text>Github (This is currently active)</Text>
+            </HStack>
           </Breadcrumb.Link>
         </Breadcrumb.Item>
       </Breadcrumb>
@@ -232,3 +238,11 @@ export default function () {
 ### Breadcrumb.Link
 
 `Breadcrumb.Link` composes the [`Link`](link.md) component so you can use all Link props.
+
+## Accessibility
+[Breadcrumbs ARIA Spec](https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html)
+
+- The Breadcrumbs are rendered in a nav to denote that it is a navigation landmark.
+- The Breadcrumb nav has aria-label set to breadcrumb.
+- The BreadcrumbItem with isCurrentPage prop adds the aria-current=page to the BreadcrumbLink.
+The separator has role set to presentation to denote that its for presentation purposes.
