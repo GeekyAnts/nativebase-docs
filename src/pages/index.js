@@ -8,9 +8,9 @@ import styles from './styles.module.css';
 import {
   Hero,
   Features as NewFeatures,
-  FeaturesBlocks,
-  FeaturesWorld,
-  News,
+  // FeaturesBlocks,
+  // FeaturesWorld,
+  // News,
   Community,
   Cta,
   More,
