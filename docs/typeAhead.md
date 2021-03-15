@@ -54,6 +54,8 @@ export function TypeaheadUsingComponent() {
     </Box>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -119,6 +121,8 @@ export function TypeaheadUsingComponentWithRenderItem() {
     </Box>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -162,6 +166,7 @@ let countries = [
   'Norway',
 ];
 
+// Example template which wraps component with NativeBaseProvider
 export function TypeaheadUsingHook() {
   const [inputItems, setInputItems] = React.useState(countries);
 
