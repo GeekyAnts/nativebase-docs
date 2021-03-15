@@ -43,7 +43,7 @@ export function TypeaheadUsingComponent() {
       <Typeahead
         options={filteredItems}
         onChange={setFilterText}
-        onSelectedItemChange={console.log}
+        onSelectedItemChange={(value) => console.log("Selected Item ", value)}
         getOptionKey={(item) => item.id}
         getOptionLabel={(item) => item.value}
         label="Select your favorite animal"
@@ -102,7 +102,7 @@ export function TypeaheadUsingComponentWithRenderItem() {
       onChange={setFilterText}
       getOptionLabel={(item) => item.value}
       getOptionKey={(item) => item.id}
-      onSelectedItemChange={console.log}
+      onSelectedItemChange={(value) => console.log("Selected Item ", value)}
       label="Select your favorite animal"
       renderItem={(item: any) => {
         return (
