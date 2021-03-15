@@ -15,7 +15,6 @@ import {
   Cta,
   More,
   Stats,
-  Creators,
 } from './../components/Home';
 
 function Home() {
@@ -39,7 +38,6 @@ function Home() {
           <Community />
           <Cta />
           <More />
-          <Creators />
         </section>
       </main>
     </Layout>

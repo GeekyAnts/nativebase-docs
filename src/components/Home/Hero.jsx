@@ -7,7 +7,7 @@ export function Hero() {
   React.useEffect(() => {
     fetch('https://api.github.com/repos/GeekyAnts/NativeBase')
       .then((response) => response.json())
-      .then((data) => setStarCount(data.stargazers_count.toLocaleString()));
+      .then((data) => setStarCount(data.stargazers_count));
   }, []);
 
   return (
