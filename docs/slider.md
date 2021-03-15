@@ -20,7 +20,7 @@ import { Slider } from 'native-base';
 
 ## Examples
 
-### Usage
+### Basic
 
 ```SnackPlayer name=Slider%20Usage
 import React from 'react';
@@ -43,6 +43,8 @@ function SliderComponent () {
     </Box>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -77,6 +79,8 @@ function SliderComponent () {
     </Box>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -128,6 +132,8 @@ function SliderComponent () {
     </Box>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -146,13 +152,14 @@ import React from 'react';
 import {
   Center,
   Slider,
-  VStack,
-  NativeBaseProvider
+  Stack,
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function SliderComponent () {
   return (
-    <VStack space={4} mx={10}>
+    <Stack space={4} mx={10}>
       <Slider defaultValue={40} colorScheme="red" size="lg">
         <Slider.Track>
           <Slider.FilledTrack />
@@ -171,13 +178,14 @@ function SliderComponent () {
         </Slider.Track>
         <Slider.Thumb />
       </Slider>
-    </VStack>
+    </Stack>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
-
       <Center flex={1}>
         <SliderComponent />
       </Center>
@@ -194,7 +202,8 @@ import {
   Slider,
   Center,
   Icon,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function SliderComponent () {
@@ -209,6 +218,8 @@ function SliderComponent () {
     </Slider>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -228,8 +239,8 @@ import {
   FormControl,
   Slider,
   VStack,
-  Center,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function SliderComponent () {
@@ -249,6 +260,8 @@ function SliderComponent () {
     </VStack>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>

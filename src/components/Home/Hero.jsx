@@ -87,7 +87,6 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Hero image */}
           <div>
             <div
               className="relative flex justify-center mb-8"
@@ -95,14 +94,21 @@ export function Hero() {
               data-aos-delay="450"
             >
               <div className="flex flex-col justify-center">
-                <img
-                  className="mx-auto"
-                  src={'/img/home/hero-image-01.png'}
-                  width="768"
-                  height="432"
-                  alt="Hero"
+                <div
+                  data-snack-id="@theankurkedia/nativebase-music-player"
+                  data-snack-platform="web"
+                  data-snack-preview="true"
+                  data-snack-theme="dark"
+                  style={{
+                    overflow: 'hidden',
+                    background: '#212121',
+                    border: '1px solid var(--color-border)',
+                    borderRadius: '4px',
+                    width: '1080px',
+                    height: '672px',
+                  }}
                 />
-                <svg
+                {/* <svg
                   className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto"
                   width="768"
                   height="432"
@@ -167,7 +173,7 @@ export function Hero() {
                       <use fill="url(#hero-ill-e)" xlinkHref="#hero-ill-d" />
                     </g>
                   </g>
-                </svg>
+                </svg> */}
               </div>
             </div>
           </div>
