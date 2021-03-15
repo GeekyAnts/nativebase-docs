@@ -116,20 +116,16 @@ import {
   InputLeftAddon,
   InputRightAddon,
   NativeBaseProvider,
-  Stack,
-  Text,
   Center,
 } from 'native-base';
 
 function InputComponent() {
   return (
-    <Stack space={4}>
-      <InputGroup>
-        <InputLeftAddon children={'https://'} />
-        <Input w="70%" placeholder="nativebase" />
-        <InputRightAddon children={'.io'} />
-      </InputGroup>
-    </Stack>
+    <InputGroup>
+      <InputLeftAddon w={20} children={'https://'} />
+      <Input w={32} placeholder="nativebase" />
+      <InputRightAddon w={12} children={'.io'} />
+    </InputGroup>
   );
 }
 export default function () {
@@ -141,6 +137,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Input Elements
@@ -154,12 +151,12 @@ function InputComponent () {
     <Input
       w="90%"
       InputLeftElement={
-        <Icon name="phone" fontSize="xl" type="MaterialIcons" />
+        <Icon name="phone" fontSize="xl" type="MaterialIcons" px={2}/>
       }
       InputRightElement={
-        <Icon name="person" fontSize="xl" type="MaterialIcons" />
+        <Icon name="person" fontSize="xl" type="MaterialIcons" px={2}/>
       }
-      placeholder="Left and Right InputElement"
+      placeholder="InputElement"
     />
   );
 };
@@ -178,7 +175,7 @@ export default function () {
 
 ```SnackPlayer name=Image%20Password%20Input
 import React from 'react';
-import { Input, NativeBaseProvider,Button, Center } from 'native-base';
+import { Input, NativeBaseProvider, Button, Center } from 'native-base';
 
 function InputComponent () {
   const [show, setShow] = React.useState(false);
@@ -189,10 +186,9 @@ function InputComponent () {
       type={show ? 'text' : 'password'}
       InputRightElement={
         <Button
-          ml={1}
           roundedLeft={0}
           roundedRight="md"
-          colorScheme="default"
+          colorScheme="emerald"
           onPress={handleClick}
         >
           {show ? 'Hide' : 'Show'}
@@ -249,7 +245,7 @@ import { Input, NativeBaseProvider, FormControl, Center } from 'native-base';
 
 function InputComponent () {
   return (
-    <FormControl isRequired isInvalid p={2}>
+    <FormControl isRequired isInvalid p={2} w={"80%"}>
       <FormControl.Label>Form Controlled Input</FormControl.Label>
       <Input placeholder="FormControl is providing me isInvalid prop" my={2} size='xs' p={1} />
       <FormControl.HelperText>I am a Helper text 😊</FormControl.HelperText>

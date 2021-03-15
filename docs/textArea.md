@@ -15,18 +15,13 @@ The `Textarea` component allows you to easily create multi-line text inputs.
 
 ```SnackPlayer name=TextArea%20Usage
 import React from 'react';
-import { TextArea, Heading, Center, Text, Stack, NativeBaseProvider } from 'native-base';
+import { TextArea, Heading, Center, Stack, NativeBaseProvider } from 'native-base';
 
 function TextAreaComponent () {
   return (
-    <Stack space={4}>
-      <Center>
-        <Heading>TextArea</Heading>
-      </Center>
-      <Center>
-        <Text>Default TextArea</Text>
-      </Center>
-      <TextArea w="90%" h="100" placeholder="Text Area Placeholder" />
+    <Stack space={4} mx={8}>
+      <Heading>Default</Heading>
+      <TextArea h={24} placeholder="Type here" />
     </Stack>
   );
 }
@@ -47,22 +42,15 @@ export default function () {
 
 ```SnackPlayer name=TextArea%20Invalid and Disabled TextArea
 import React from 'react';
-import { TextArea, Heading, Center, Text, Stack, NativeBaseProvider } from 'native-base';
+import { TextArea, Heading, Center, Stack, NativeBaseProvider } from 'native-base';
 
 function TextAreaComponent () {
   return (
-    <Stack space={4}>
-      <Center>
-        <Heading>TextArea</Heading>
-      </Center>
-      <Center>
-        <Text>Invalid TextArea</Text>
-      </Center>
-      <TextArea placeholder="Invalid TextArea" w="90%" isInvalid />
-      <Center>
-        <Text>Disabled TextArea</Text>
-      </Center>
-      <TextArea placeholder="Disabled TextArea" w="90%" isDisabled />
+    <Stack space={4} mx={8}>
+      <Heading>Invalid</Heading>
+      <TextArea placeholder="Type here" h={24} isInvalid />
+      <Heading>Disabled</Heading>
+      <TextArea placeholder="Type here" h={24} isDisabled />
     </Stack>
   );
 }
@@ -79,46 +67,11 @@ export default function () {
 }
 ```
 
-### TextArea Sizes
-
-```SnackPlayer name=TextArea%20TextArea Sizes
-import React from 'react';
-import { TextArea, Heading, Center, Text, Stack, NativeBaseProvider } from 'native-base';
-
-function TextAreaComponent () {
-	const Sizes: any = ['xs', 'sm', 'md', 'lg', 'xl', '2xl'];
-  return (
-    <Stack space={4}>
-      <Center>
-        <Heading>TextArea</Heading>
-      </Center>
-      <Center>
-        <Text>TextArea with different font sizes</Text>
-      </Center>
-      {Sizes.map((value: string) => {
-        return (
-          <TextArea key={value} w="90%" size={value} placeholder={value} />
-        );
-      })}
-    </Stack>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <TextAreaComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
-```
-
 ### Value Controlled TextArea
 
 ```SnackPlayer name=TextArea%20Value Controlled TextArea
 import React, { useState } from 'react';
-import { TextArea, Heading, Center, Text, Stack, NativeBaseProvider } from 'native-base';
+import { TextArea, Heading, Center, Stack, NativeBaseProvider } from 'native-base';
 
 function TextAreaComponent () {
   const [textAreaValue, setTextAreaValue] = useState('Value Controlled');
@@ -126,15 +79,10 @@ function TextAreaComponent () {
     setTextAreaValue(e.currentTarget.value);
   };
   return (
-    <Stack space={4}>
-      <Center>
-        <Heading>TextArea</Heading>
-      </Center>
-      <Center>
-        <Text>Value Controlled TextArea</Text>
-      </Center>
+    <Stack space={4} mx={8}>
+      <Heading>Value Controlled</Heading>
       <TextArea
-        w="90%"
+        h={24}
         value={textAreaValue}
         onChange={demoValueControlledTextArea}
       />
