@@ -77,58 +77,9 @@ export default function () {
 }
 ```
 
-## **More Examples**
+## Demo
 
-This works for every style prop in the theme specification, which means you can change the style of most properties at a given breakpoint.
-
-```SnackPlayer name=Responsive%20Example
-import React from 'react';
-import { Box, NativeBaseProvider, Center } from 'native-base';
-function BreakpointExample() {
-  return (
-    <>
-      <Box
-        height={{
-          base: '75%', // 0-768px
-          md: '50%', // 768px-1280,
-          xl: '25%', // 1280px+
-        }}
-        bg="teal.400"
-        width={[
-          '75%', // 0-480px
-          '50%', // 480px-768px
-          '25%', // 768px-992px
-          '15%', // 992px+
-        ]}
-      />
-      {/* responsive font size */}
-      <Box fontSize={['sm', 'md', 'lg', 'xl']}>Font Size</Box>
-      {/* responsive margin */}
-      <Box mt={[2, 4, 6, 8]} width='100%' height={6} bg='green.400' />
-      {/* responsive padding */}
-      <Box bg='red.200' p={[2, 4, 6, 8]}>
-        Padding
-      </Box>
-    </>
-  );
-}
-
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <BreakpointExample />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
-
-```
-
-## **Demo**
-
-Here's a simple example of a component that uses a stacked layout on small screens, and a side-by-side layout on larger screens :
+Here's a simple example of a component that uses a stacked layout on small screens, and a side-by-side layout on larger screens.
 
 ```SnackPlayer name=Responsive%20Demo
 import React from 'react';

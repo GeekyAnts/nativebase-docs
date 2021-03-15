@@ -21,18 +21,23 @@ import {
   FormControl,
   Input,
   NativeBaseProvider,
-  Center
+  Center,
+  Stack
 } from 'native-base';
 
 function FormControlComponent () {
   return (
     <FormControl isRequired isInvalid>
-      <FormControl.Label>Favorite framework</FormControl.Label>
-      <Input p={2} placeholder="Is it react?" />
-      <FormControl.HelperText>
-        We'll keep this between us.
-      </FormControl.HelperText>
-      <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
+      <Stack mx={8}>
+        <FormControl.Label>Favorite framework</FormControl.Label>
+        <Input p={2} mt={2} placeholder="Is it react?" />
+        <FormControl.HelperText mt={1}>
+          We'll keep this between us.
+        </FormControl.HelperText>
+        <FormControl.ErrorMessage mt={1}>
+          Something is wrong.
+        </FormControl.ErrorMessage>
+      </Stack>
     </FormControl>
   );
 }
@@ -57,8 +62,8 @@ import {
 
 function FormControlComponent () {
   return (
-    <Stack width="90%" space={4}>
-      <Text bold underline>
+    <Stack width="80%" space={4}>
+      <Text bold>
         Default:
       </Text>
       <FormControl>
@@ -69,7 +74,7 @@ function FormControlComponent () {
         </FormControl.HelperText>
         <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
       </FormControl>
-      <Text bold underline>
+      <Text bold>
         Custom style for disable:
       </Text>
       <FormControl isDisabled>
@@ -97,7 +102,7 @@ function FormControlComponent () {
         </FormControl.HelperText>
         <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
       </FormControl>
-      <Text bold underline>
+      <Text bold>
         Custom style for invalid:
       </Text>
       <FormControl isRequired isInvalid>

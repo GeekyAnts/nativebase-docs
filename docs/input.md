@@ -51,7 +51,7 @@ import { Input, NativeBaseProvider,Stack,Center,Heading } from 'native-base';
 
 function InputComponent () {
   return (
-    <Stack space={4}>
+    <Stack space={4} mx={8}>
       <Center>
         <Heading>Input Sizes</Heading>
       </Center>
@@ -83,7 +83,7 @@ import { Input, NativeBaseProvider,Stack,Center,Heading } from 'native-base';
 
 function InputComponent () {
   return (
-    <Stack space={4}>
+    <Stack space={4} mx={8}>
       <Center>
         <Heading>Input Variants</Heading>
       </Center>
@@ -124,7 +124,7 @@ import {
 function InputComponent() {
   return (
     <Stack space={4}>
-      <InputGroup mx={3}>
+      <InputGroup>
         <InputLeftAddon children={'https://'} />
         <Input w="70%" placeholder="nativebase" />
         <InputRightAddon children={'.io'} />
