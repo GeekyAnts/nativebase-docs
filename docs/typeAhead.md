@@ -101,7 +101,7 @@ export function TypeaheadUsingComponentWithRenderItem() {
       disabledKeys={[2]}
       onChange={setFilterText}
       getOptionLabel={(item) => item.value}
-      getOptionKey={(item) => item.key}
+      getOptionKey={(item) => item.id}
       onSelectedItemChange={console.log}
       label="Select your favorite animal"
       renderItem={(item: any) => {
