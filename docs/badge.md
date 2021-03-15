@@ -19,7 +19,7 @@ import { Badge } from 'native-base';
 import React from 'react';
 import { Badge, NativeBaseProvider, Center } from 'native-base';
 
-function BadgeComponent () {
+function BadgeComponent() {
   return <Badge>DEFAULT BADGE</Badge>;
 }
 export default function () {
@@ -31,30 +31,23 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Color Scheme
 
 ```SnackPlayer name=Badge%20Color%20Scheme
 import React from 'react';
-import { Badge, HStack, NativeBaseProvider, Center } from 'native-base';
+import { Badge, Stack, NativeBaseProvider, Center } from 'native-base';
 
-function BadgeComponent () {
+function BadgeComponent() {
   return (
-    <HStack>
-      <Badge m={2} colorScheme="success">
-        SUCCESS
-      </Badge>
-      <Badge m={2} colorScheme="danger">
-        DANGER
-      </Badge>
-      <Badge m={2} colorScheme="gray">
-        GRAY
-      </Badge>
-      <Badge m={2} colorScheme="dark">
-        DARK
-      </Badge>
-    </HStack>
+    <Stack space={4} alignItems="center">
+      <Badge colorScheme="success">SUCCESS</Badge>
+      <Badge colorScheme="danger">DANGER</Badge>
+      <Badge colorScheme="gray">GRAY</Badge>
+      <Badge colorScheme="dark">DARK</Badge>
+    </Stack>
   );
 }
 export default function () {
@@ -66,27 +59,26 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Variants
 
 ```SnackPlayer name=Badge%20Variants
 import React from 'react';
-import { Badge, HStack, NativeBaseProvider, Center } from 'native-base';
+import { Badge, Stack, NativeBaseProvider, Center } from 'native-base';
 
-function BadgeComponent () {
+function BadgeComponent() {
   return (
-    <HStack>
-      <Badge mx={2} colorScheme="success" variant="solid">
+    <Stack space={4} alignItems="center">
+      <Badge colorScheme="success" variant="solid">
         SOLID
       </Badge>
-      <Badge mx={2} colorScheme="success">
-        SUBTLE
-      </Badge>
-      <Badge mx={2} colorScheme="success" variant="outline">
+      <Badge colorScheme="success">SUBTLE</Badge>
+      <Badge colorScheme="success" variant="outline">
         OUTLINE
       </Badge>
-    </HStack>
+    </Stack>
   );
 }
 export default function () {
@@ -98,22 +90,21 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Composition
 
 ```SnackPlayer name=Badge%20Composition
 import React from 'react';
-import { Badge, HStack, Button, Center, NativeBaseProvider } from 'native-base';
+import { Badge, Text, Stack, Button, Center, NativeBaseProvider } from 'native-base';
 
 function BadgeComponent() {
   return (
-    <HStack>
-      <Button colorScheme="teal">
-        Notifications
-        <Badge ml={2}>10</Badge>
-      </Button>
-    </HStack>
+    <Button colorScheme='emerald'>
+      <Text color='white'>Notifications</Text>
+      <Badge ml={2}>10</Badge>
+    </Button>
   );
 }
 export default function () {

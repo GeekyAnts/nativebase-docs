@@ -207,7 +207,7 @@ const getItemCount = (_data: any) => 500;
 
 const Item = ({ title }: any) => (
   <List.Item
-    bg="emerald.200"
+    bg="emerald.400"
     borderRadius="md"
     justifyContent="center"
     _text={{ fontSize: '2xl' }}
@@ -219,7 +219,7 @@ const Item = ({ title }: any) => (
   </List.Item>
 );
 
-function ListComponent () {
+function ListComponent() {
   return (
     <VirtualizedList
       data={DATA}
@@ -240,6 +240,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ## Props
