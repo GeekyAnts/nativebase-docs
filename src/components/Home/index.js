@@ -7,4 +7,3 @@ export { Cta } from './Cta';
 export { Community } from './Community';
 export { More } from './More';
 export { Stats } from './Stats';
-export { Creators } from './Creators';
