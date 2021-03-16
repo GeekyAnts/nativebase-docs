@@ -120,3 +120,7 @@ Implement [`Slide`](transition.md#slide), all props of [`Box`](box.md) and [`Sli
 | ------------------------- | ------ | -------------------------------------------------------------- | ------- |
 | autoHideDuration          | number | The number of milliseconds to wait before dismissing snackbar. | -       |
 | accessibilityAnnouncement | string | String to be announced by the screen reader.                   | -       |
+| accessibilityLiveRegion   | `none` , `polite` , `assertive`   | To read the content to Talkback and screen reader on web. [Read more](https://reactnative.dev/docs/accessibility#accessibilityliveregion-android)              | polite        |
+## Accessibility
+- On Android and Web, Snackbar renders under a View with accessibilityLiveRegion which announces the content rendered inside it to screen reader devices.
+- On iOS, accessibilityLiveRegion is not supported yet, so we use the [accessibilityAnnouncement](https://reactnative.dev/docs/accessibilityinfo#announceforaccessibility) to announce the content.
