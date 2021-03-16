@@ -22,11 +22,15 @@ import { Divider } from 'native-base';
 The Divider displays a thin horizontal or vertical line.
 
 ```SnackPlayer name=Divider%20Usage
-import React from "react";
-import { Divider, NativeBaseProvider, Center } from "native-base";
+import React from 'react';
+import { Divider, NativeBaseProvider, Center, Box } from 'native-base';
 
 function DividerComponent() {
-  return <Divider mt={5} />;
+  return (
+    <Box w={48}>
+      <Divider/>
+    </Box>
+  );
 }
 export default function () {
   return (
@@ -37,6 +41,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Divider Orientation
@@ -51,9 +56,9 @@ import { Divider, Center, Box, NativeBaseProvider } from "native-base";
 
 function DividerComponent() {
   return (
-    <Box w="100%">
+    <Box w={48}>
       <Divider orientation="horizontal" mb={4} />
-      <Center height="50px">
+      <Center height={12}>
         <Divider orientation="vertical" />
       </Center>
     </Box>
@@ -75,20 +80,20 @@ export default function () {
 You can use `bg` or `backgroundColor` to change the divider's color and `width` and `height` to change its width and height respectively.
 
 ```SnackPlayer name=Divider%20Composition
-import React from "react";
-import { Divider, Flex, Text, NativeBaseProvider, Center } from "native-base";
+import React from 'react';
+import { Divider, HStack, Text, NativeBaseProvider, Center } from 'native-base';
 
 function DividerComponent() {
   return (
-    <Flex direction="row" p={4}>
+    <HStack p={4}>
       <Text>Simple</Text>
-      <Divider bg="red.500" w={1} mx={4} orientation="vertical" />
+      <Divider bg="red.500" mx={2} orientation="vertical" />
       <Text>Easy</Text>
-      <Divider bg="blue.500" mx={4} orientation="vertical" />
+      <Divider bg="blue.500" mx={2} orientation="vertical" />
       <Text>Beautiful</Text>
-      <Divider bg="green.500" mx={4} orientation="vertical" />
+      <Divider bg="green.500" mx={2} orientation="vertical" />
       <Text>NativeBase</Text>
-    </Flex>
+    </HStack>
   );
 }
 export default function () {
@@ -100,6 +105,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ## Props

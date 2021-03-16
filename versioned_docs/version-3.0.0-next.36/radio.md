@@ -289,7 +289,7 @@ export default function () {
 
 ```SnackPlayer name=Radio%20With Ref
 import React from 'react';
-import {  Stack, Radio, Icon, NativeBaseProvider, Center } from 'native-base';
+import { Stack, Radio, Icon, NativeBaseProvider, Center } from 'native-base';
 
 function RadioComponent () {
   const myRef: any = React.useRef({});

@@ -352,15 +352,14 @@ If you want a specifically aligned Modal, pass `justifyContent` and `alignItems`
 
 ## Accessibility
 
-Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geekyants.com/docs/useFocusRing) which follows the [Dialog Modal WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal) and [Disclosure WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#disclosure).
-
+Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geekyants.com/docs/FocusScope) which follows the [Dialog Modal WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal).
 ### Keyboard Interactions
 
 | Key             | Description                                                                                                                                                                              |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Tab`           | Moves focus to the next tabbable element inside the dialog. If focus is on the last tabbable element inside the dialog, moves focus to the first tabbable element inside the dialog.     |
 | `Shift` + `Tab` | Moves focus to the previous tabbable element inside the dialog. If focus is on the first tabbable element inside the dialog, moves focus to the last tabbable element inside the dialog. |
-| `Enter`         | activates the disclosure control and toggles the visibility of the disclosure content.                                                                                                   |
+| `Escape`         | Closes the dialog                                                                                                   |
 
 ## Props
 
@@ -380,6 +379,8 @@ Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geek
 | closeOnOverlayClick | boolean                                          | If true, clicking on overlay will close the modal.                          | -       |
 | overlayVisible      | boolean                                          | To set the visibility the overlay.                                          | -       |
 | overlayColor        | string                                           | To set the color of overlay.                                                | -       |
+| isKeyboardDismissable        | boolean                                           | If false, modal cannot be closed using Escape key on web. | true
+| accessibilityLabel        | string                                           |  To set label for the modal, this will be announced by screenreader | -
 
 ### Children components
 

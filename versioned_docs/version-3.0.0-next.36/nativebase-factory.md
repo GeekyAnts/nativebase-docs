@@ -19,9 +19,11 @@ import { View } from 'react-native';
 function FactoryViewExample () {
   const FactoryView = Factory(View);
   return (
-      <FactoryView bg="teal.200" height={50} width={50} />
+      <FactoryView bg="emerald.400" borderRadius={4} size={16} />
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -47,8 +49,10 @@ function FactoryViewExample () {
       borderRadius: 'md',
     },
   });
-  return <FactoryView height={50} width={50} />;
+  return <FactoryView size={16} />;
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -76,9 +80,10 @@ function FactoryViewModeExample () {
       };
     },
   });
-  return <FactoryView height={50} width={50} />;
+  return <FactoryView size={16}/>;
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -94,25 +99,28 @@ export default function () {
 
 ```SnackPlayer name=NativeBase%20Factory%20Using%20Ref
 import React from 'react';
-import { Factory, Button, NativeBaseProvider,Center } from 'native-base';
+import { Factory, Button, Stack, NativeBaseProvider,Center } from 'native-base';
 import { TextInput } from 'react-native';
 
 function FactoryViewRefExample () {
   const NBInput = Factory(TextInput);
   const inputRef = React.useRef(null);
   return (
-    <>
-      <NBInput ref={inputRef} height={10} border={1} borderColor="cyan.400" />
+    <Stack space={4}>
+      <NBInput ref={inputRef} height={10} border={1} borderColor='cyan.400' borderRadius='md'/>
       <Button
+        colorScheme='emerald'
         onPress={() => {
           inputRef?.current?.focus();
         }}
       >
         Set Focus
       </Button>
-    </>
+    </Stack>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -124,8 +132,9 @@ export default function () {
 }
 ```
 
-## Params:
+## Params
 
-•`component`: (React component). Original component to be passed on which nativebase props have to be applied.
-
-• `componentTheme`: This object can include `baseStyle`, `sizes`, `variants`, `defaultProps`
+| Name           | Type            | Description                                                                   | Default |
+| -------------- | --------------- | ----------------------------------------------------------------------------- | ------- |
+| component      | React component | Original component to be passed on which nativebase props have to be applied. | -       |
+| componentTheme | Object          | This object can include `baseStyle`, `sizes`, `variants`, `defaultProps`      | -       |
