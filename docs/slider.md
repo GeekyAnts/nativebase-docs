@@ -24,15 +24,11 @@ import { Slider } from 'native-base';
 
 ```SnackPlayer name=Slider%20Usage
 import React from 'react';
-import {
-  Slider,
-  Box,
-  NativeBaseProvider
-} from 'native-base';
+import { Slider, Center, Box, NativeBaseProvider } from 'native-base';
 
-function SliderComponent () {
+function SliderComponent() {
   return (
-    <Box mx={5}>
+    <Box w={48}>
       <Slider defaultValue={70}>
         <Slider.Track>
           <Slider.FilledTrack />
@@ -47,25 +43,24 @@ function SliderComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SliderComponent />
+      <Center flex={1}>
+        <SliderComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Color
 
 ```SnackPlayer name=Slider%20Color
 import React from 'react';
-import {
-  Slider,
-  Box,
-  NativeBaseProvider
-} from 'native-base';
+import { Slider, Center, Box, NativeBaseProvider } from 'native-base';
 
-function SliderComponent () {
+function SliderComponent() {
   return (
-    <Box mx={5}>
+    <Box w={48}>
       <Slider defaultValue={70} colorScheme="pink.200">
         <Slider.Track>
           <Slider.FilledTrack />
@@ -80,46 +75,47 @@ function SliderComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SliderComponent />
+      <Center flex={1}>
+        <SliderComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Value
 
 ```SnackPlayer name=Slider%20Value
 import React from 'react';
-import {
-  Slider,
-  Stack,
-  Text,
-  NativeBaseProvider
-} from 'native-base';
+import { Slider, Center, Text, Box, NativeBaseProvider } from 'native-base';
 
-function SliderComponent () {
+function SliderComponent() {
   const [onChangeValue, setOnChangeValue] = React.useState(70);
   const [onChangeEndValue, setOnChangeEndValue] = React.useState(70);
   return (
-    <Stack mx={5} space={4} alignItems="center">
+    <Box alignItems="center" w={48}>
       <Text>onChangeValue - {onChangeValue}</Text>
-      <Text>onChangeEndValue - {onChangeEndValue}</Text>
-      <Slider
-        defaultValue={70}
-        colorScheme="cyan"
-        onChange={(v) => {
-          setOnChangeValue(Math.floor(v));
-        }}
-        onChangeEnd={(v) => {
-          v && setOnChangeEndValue(Math.floor(v));
-        }}
-      >
-        <Slider.Track>
-          <Slider.FilledTrack />
-        </Slider.Track>
-        <Slider.Thumb />
-      </Slider>
-    </Stack>
+      <Text mt={4}>onChangeEndValue - {onChangeEndValue}</Text>
+
+      <Box mx={5} width="80%" mt={4}>
+        <Slider
+          defaultValue={70}
+          colorScheme="cyan"
+          onChange={(v: any) => {
+            setOnChangeValue(Math.floor(v));
+          }}
+          onChangeEnd={(v: any) => {
+            v && setOnChangeEndValue(Math.floor(v));
+          }}
+        >
+          <Slider.Track>
+            <Slider.FilledTrack />
+          </Slider.Track>
+          <Slider.Thumb />
+        </Slider>
+      </Box>
+    </Box>
   );
 }
 
@@ -127,26 +123,24 @@ function SliderComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <SliderComponent />
+      <Center flex={1}>
+        <SliderComponent />
+      </Center>
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Size
 
 ```SnackPlayer name=Slider%20Size
 import React from 'react';
-import {
-  Slider,
-  Stack,
-  NativeBaseProvider,
-  Center
-} from 'native-base';
+import { Center, Slider, Stack, NativeBaseProvider } from 'native-base';
 
-function SliderComponent () {
+function SliderComponent() {
   return (
-    <Stack space={4} mx={10}>
+    <Stack space={4} w={48}>
       <Slider defaultValue={40} colorScheme="red" size="lg">
         <Slider.Track>
           <Slider.FilledTrack />
@@ -179,29 +173,27 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Customised
 
 ```SnackPlayer name=Slider%20Customized
 import React from 'react';
-import {
-  Slider,
-  Icon,
-  NativeBaseProvider,
-  Center
-} from 'native-base';
+import { Slider, Center, Icon, NativeBaseProvider, Box } from 'native-base';
 
-function SliderComponent () {
+function SliderComponent() {
   return (
-    <Slider defaultValue={70} colorScheme="purple">
-      <Slider.Track bg="orange.100">
-        <Slider.FilledTrack bg="orange.400" />
-      </Slider.Track>
-      <Slider.Thumb>
-        <Icon name="circle" type="MaterialIcons" />
-      </Slider.Thumb>
-    </Slider>
+    <Box w={48}>
+      <Slider defaultValue={70} colorScheme="purple" w={48}>
+        <Slider.Track bg="orange.100">
+          <Slider.FilledTrack bg="orange.400" />
+        </Slider.Track>
+        <Slider.Thumb>
+          <Icon name="circle" type="MaterialIcons" />
+        </Slider.Thumb>
+      </Slider>
+    </Box>
   );
 }
 
@@ -215,6 +207,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Form Controlled

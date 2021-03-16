@@ -37,14 +37,14 @@ export default function () {
 
 ```SnackPlayer name=CloseButton%20Example(Sizes)
 import React from 'react';
-import { CloseButton, HStack, NativeBaseProvider, Center } from 'native-base';
+import { CloseButton, Stack, NativeBaseProvider, Center } from 'native-base';
 function CloseButtonComponent () {
   return (
-    <HStack space="md">
+    <Stack space={4} alignItems="center">
       <CloseButton size="sm" color="teal.200" />
       <CloseButton size="md" color="red.200" />
       <CloseButton size="lg" color="blue.200" />
-    </HStack>
+    </Stack>
   );
 }
 

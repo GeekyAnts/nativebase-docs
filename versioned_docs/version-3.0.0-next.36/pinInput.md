@@ -233,8 +233,7 @@ import {
   PinInput,
   Center,
   FormControl,
-  NativeBaseProvider,
-  Center
+  NativeBaseProvider
 } from 'native-base';
 
 function PinInputComponent () {
@@ -249,7 +248,7 @@ function PinInputComponent () {
           <PinInput.Field />
         </PinInput>
         <FormControl.HelperText>
-          An otp is send to number ending with +91-XXXXX-XX007.
+          OTP will be sent to the number.
         </FormControl.HelperText>
         <FormControl.ErrorMessage>Please Retry.</FormControl.ErrorMessage>
       </FormControl>

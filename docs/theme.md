@@ -27,6 +27,8 @@ function ColorPalete() {
     </SimpleGrid>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -45,7 +47,7 @@ You can also get specific values from the theme with [`useToken`](/useToken.md) 
 
 ```SnackPlayer name=useToken%20Demo
 import React from 'react';
-import { useToken, Box, NativeBaseProvider, Center, Text } from 'native-base';
+import { useToken, NativeBaseProvider, Center, Text } from 'native-base';
 
 function Tokens() {
   const [contrastThreshold, lightText] = useToken('colors', [
@@ -53,13 +55,15 @@ function Tokens() {
     'lightText',
   ]);
   return (
-    <Box bg="emerald.400" flexDirection="row">
+    <Center bg="emerald.400" flexDirection="row" p={4} rounded={4}>
       Contrast threshold is: <Text color={lightText} fontWeight="bold">
         {contrastThreshold}
       </Text>
-    </Box>
+    </Center>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -79,25 +83,26 @@ If you are defining the background yourself and pass a contrasting color to the 
 ```SnackPlayer name=useContrastText
 
 import React from 'react';
-import { Button, useContrastText, NativeBaseProvider, Center } from 'native-base';
+import { Button, Stack, useContrastText, NativeBaseProvider, Center } from 'native-base';
 function UseContrastingTextHook () {
-  const bgDark = 'gray.900';
-  const bgLight = 'gray.50';
+  const bgDark = 'emerald.700';
+  const bgLight = 'emerald.200';
   const colorContrastDark = useContrastText(bgDark);
   const colorContrastLight = useContrastText(bgLight);
 
   return (
-    <>
+    <Stack space={4}>
       <Button bg={bgDark} _text={{ color: colorContrastDark }}>
         NativeBase
       </Button>
       <Button bg={bgLight} _text={{ color: colorContrastLight }}>
         NativeBase
       </Button>
-    </>
+    </Stack>
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -136,6 +141,7 @@ function UseColorMode() {
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -173,6 +179,7 @@ function UseColorMode() {
   );
 }
 
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>

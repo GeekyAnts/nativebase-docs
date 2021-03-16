@@ -17,46 +17,44 @@ import { Tag } from 'native-base';
 
 ```SnackPlayer name=Tag%20Example
 import React from 'react';
-import { Tag, NativeBaseProvider, View,useColorModeValue, Center } from 'native-base';
+import { Tag, NativeBaseProvider, Center } from 'native-base';
 
-function TagComponent () {
-  return <Tag colorScheme="green">NativeBase</Tag>;
+function TagComponent() {
+  return <Tag colorScheme="emerald">NativeBase</Tag>;
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
-    <View
-      flex={1}
-      justifyContent="center"
-      alignItems="center"
-      bg={useColorModeValue(`gray.50`, `gray.800`)}
-    >
       <Center flex={1}>
         <TagComponent />
       </Center>
-      </View>
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Variants
 
 ```SnackPlayer name=Tag%20Example(Variants)
 import React from 'react';
-import { Tag, VStack, NativeBaseProvider, Center } from 'native-base';
+import { Tag, Stack, NativeBaseProvider, Center } from 'native-base';
 
 function TagComponent() {
   return (
-    <VStack space={4} alignItems="flex-start">
+    <Stack space={4} alignItems="flex-start">
       {['solid', 'subtle', 'outline'].map((variant: any) => (
         <Tag key={variant} variant={variant} colorScheme="green">
           NativeBase
         </Tag>
       ))}
-    </VStack>
+    </Stack>
   );
 }
+
+// Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
     <NativeBaseProvider>
@@ -66,23 +64,24 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Sizes
 
 ```SnackPlayer name=Tag%20Example(Sizes)
 import React from 'react';
-import { Tag, VStack, NativeBaseProvider, Center } from 'native-base';
+import { Tag, Stack, NativeBaseProvider, Center } from 'native-base';
 
 function TagComponent() {
   return (
-    <VStack space={4} alignItems="flex-start">
+    <Stack space={4} alignItems="center">
       {['sm', 'md', 'lg'].map((size) => (
         <Tag size={size} key={size} variant="solid" colorScheme="green">
           NativeBase
         </Tag>
       ))}
-    </VStack>
+    </Stack>
   );
 }
 export default function () {
@@ -94,6 +93,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### With icon

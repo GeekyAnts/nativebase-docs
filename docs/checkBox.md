@@ -34,6 +34,73 @@ export default function () {
 }
 ```
 
+## Examples
+
+### Controlled
+
+```SnackPlayer name=CheckBox%20Controlled
+import React from "react";
+import { Checkbox, NativeBaseProvider, Center, Text } from "native-base";
+
+function CheckboxComponent() {
+  const [groupValues, setGroupValues] = React.useState([]);
+  return (
+    <Checkbox.Group onChange={setGroupValues} value={groupValues}>
+      <Checkbox value="one">
+        <Text m={2}>One</Text>
+      </Checkbox>
+      <Checkbox value="two">
+        <Text m={2}>Two</Text>
+      </Checkbox>
+    </Checkbox.Group>
+    );
+}
+
+// Example template which wraps component with NativeBaseProvider
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+## Examples
+
+### Uncontrolled
+
+```SnackPlayer name=CheckBox%20Uncontrolled
+import React from "react";
+import { Checkbox, NativeBaseProvider, Center, Text } from "native-base";
+
+function CheckboxComponent() {
+  return (
+    <Checkbox.Group>
+      <Checkbox value="one">
+        <Text m={2}>Hello world</Text>
+      </Checkbox>
+      <Checkbox value="two">
+        <Text m={2}>Hello world</Text>
+      </Checkbox>
+    </Checkbox.Group>
+  );
+}
+
+// Example template which wraps component with NativeBaseProvider
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <CheckboxComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
 ### Disabled
 
 ```SnackPlayer name=CheckBox%20Disabled

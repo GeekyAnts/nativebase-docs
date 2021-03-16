@@ -21,17 +21,11 @@ import { Stat } from 'native-base';
 
 ```SnackPlayer name=Stat%20Usage
 import React from 'react';
-import {
-  Stat,
-  Box,
-  Heading,
-  NativeBaseProvider,
-  Center
-} from 'native-base';
+import { Stat, Box, Heading, NativeBaseProvider, Center } from 'native-base';
 
-function StatComponent () {
+function StatComponent() {
   return (
-    <Box>
+    <Box mx={4}>
       <Heading>Basic Stat Usage</Heading>
       <Stat mt={6}>
         <Stat.Label>Collected Fees</Stat.Label>
@@ -50,6 +44,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Stat with Indicator
@@ -61,14 +56,15 @@ import {
   Heading,
   Box,
   NativeBaseProvider,
-  Center
+  Center,
+  Stack,
 } from 'native-base';
 
-function StatComponent () {
+function StatComponent() {
   return (
-    <Box>
+    <Stack mx={4}>
       <Heading>Stat with Indicator</Heading>
-      <Stat.Group mt={6} color="indigo.5">
+      <Stat.Group color="indigo.5">
         <Stat>
           <Stat.Label>Sent</Stat.Label>
           <Stat.Number>3,670</Stat.Number>
@@ -86,7 +82,7 @@ function StatComponent () {
           </Stat.HelpText>
         </Stat>
       </Stat.Group>
-    </Box>
+    </Stack>
   );
 }
 export default function () {
@@ -98,6 +94,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ## **Props**

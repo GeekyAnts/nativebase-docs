@@ -51,7 +51,7 @@ import { Input, NativeBaseProvider,Stack,Center,Heading } from 'native-base';
 
 function InputComponent () {
   return (
-    <Stack space={4}>
+    <Stack space={4} mx={8}>
       <Center>
         <Heading>Input Sizes</Heading>
       </Center>
@@ -83,7 +83,7 @@ import { Input, NativeBaseProvider,Stack,Center,Heading } from 'native-base';
 
 function InputComponent () {
   return (
-    <Stack space={4}>
+    <Stack space={4} mx={8}>
       <Center>
         <Heading>Input Variants</Heading>
       </Center>
@@ -116,20 +116,16 @@ import {
   InputLeftAddon,
   InputRightAddon,
   NativeBaseProvider,
-  Stack,
-  Text,
   Center,
 } from 'native-base';
 
 function InputComponent() {
   return (
-    <Stack space={4}>
-      <InputGroup mx={3}>
-        <InputLeftAddon children={'https://'} />
-        <Input w="70%" placeholder="nativebase" />
-        <InputRightAddon children={'.io'} />
-      </InputGroup>
-    </Stack>
+    <InputGroup>
+      <InputLeftAddon w={20} children={'https://'} />
+      <Input w={32} placeholder="nativebase" />
+      <InputRightAddon w={12} children={'.io'} />
+    </InputGroup>
   );
 }
 export default function () {
@@ -141,6 +137,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Input Elements
@@ -154,12 +151,12 @@ function InputComponent () {
     <Input
       w="90%"
       InputLeftElement={
-        <Icon name="phone" fontSize="xl" type="MaterialIcons" />
+        <Icon name="phone" fontSize="xl" type="MaterialIcons" px={2}/>
       }
       InputRightElement={
-        <Icon name="person" fontSize="xl" type="MaterialIcons" />
+        <Icon name="person" fontSize="xl" type="MaterialIcons" px={2}/>
       }
-      placeholder="Left and Right InputElement"
+      placeholder="InputElement"
     />
   );
 };
@@ -178,7 +175,7 @@ export default function () {
 
 ```SnackPlayer name=Image%20Password%20Input
 import React from 'react';
-import { Input, NativeBaseProvider,Button, Center } from 'native-base';
+import { Input, NativeBaseProvider, Button, Center } from 'native-base';
 
 function InputComponent () {
   const [show, setShow] = React.useState(false);
@@ -189,10 +186,9 @@ function InputComponent () {
       type={show ? 'text' : 'password'}
       InputRightElement={
         <Button
-          ml={1}
           roundedLeft={0}
           roundedRight="md"
-          colorScheme="default"
+          colorScheme="emerald"
           onPress={handleClick}
         >
           {show ? 'Hide' : 'Show'}
@@ -241,6 +237,35 @@ export default function () {
 }
 ```
 
+### Form Controlled
+
+```SnackPlayer name=Image%20Input%20Focused%20and%20Error%20Border%20Colors
+import React from 'react';
+import { Input, NativeBaseProvider, FormControl, Center } from 'native-base';
+
+function InputComponent () {
+  return (
+    <FormControl isRequired isInvalid p={2} w={"80%"}>
+      <FormControl.Label>Form Controlled Input</FormControl.Label>
+      <Input placeholder="FormControl is providing me isInvalid prop" my={2} size='xs' p={1} />
+      <FormControl.HelperText>I am a Helper text 😊</FormControl.HelperText>
+      <FormControl.ErrorMessage>
+        I'll only appear when FormControl have isInvalid props.
+      </FormControl.ErrorMessage>
+    </FormControl>
+  );
+};
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <InputComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
 ### Input Focused and Error Border Colors
 
 ```SnackPlayer name=Image%20Input%20Focused%20and%20Error%20Border%20Colors
@@ -262,8 +287,7 @@ function InputComponent () {
       <Input
         placeholder="errorBorderColor Example"
         isInvalid
-        errorBorderColor="yellow.400"
-        errorMessage="This is an Error Message"
+        errorBorderColor="yellow"
       />
     </Stack>
   );
@@ -290,12 +314,9 @@ export default function () {
 | size              | `2xl`, `lg`, `md`, `sm`, `xl`, `xs`                      | The size of the button.                                                                               | `md`      |
 | onChange          | function                                                 | Callback for on change on input value.                                                                | -         |
 | placeholder       | string                                                   | The placeholder attribute specifies a short hint that describes the expected value of an input field. | -         |
-| errorMessage      | string                                                   | error message to be shown when input is invalid.                                                      | -         |
-| \_errorMessage    | TextProps                                                | Props to be passed to errorMessage.                                                                   | -         |
 | isFullWidth       | boolean                                                  | If true, the input element will span the full width of its parent                                     | -         |
 | focusBorderColor  | string                                                   | The border color when the input is focused.                                                           | -         |
 | errorBorderColor  | string                                                   | The border color when isInvalid is set to true.                                                       | -         |
-| errorMessageColor | string                                                   | The font color of error message.                                                                      | -         |
 | ariaLabel         | string                                                   | An accessible label for the input.                                                                    | -         |
 | InputLeftElement  | JSX.Element                                              | If given, adds the provided element to the left of the input.                                         | -         |
 | InputRightElement | JSX.Element                                              | If given, adds the provided element to the right of the input.                                        | -         |
