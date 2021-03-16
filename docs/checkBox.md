@@ -34,8 +34,6 @@ export default function () {
 }
 ```
 
-## Examples
-
 ### Controlled
 
 ```SnackPlayer name=CheckBox%20Controlled
@@ -67,8 +65,6 @@ export default function () {
   );
 }
 ```
-
-## Examples
 
 ### Uncontrolled
 
