@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Discord from '../../img/Discord';
 export function Cta() {
   return (
     <section className="relative">
@@ -70,34 +70,27 @@ export function Cta() {
         </svg>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div>
         <div className="pb-12 md:pb-20">
-          {/* CTA box */}
           <div
-            className="bg-primary-500 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl"
+            className="flex flex-row justify-around items-center bg-primary-500 py-10 px-12 md:py-16 md:px-16 shadow-2xl"
             data-aos="zoom-y-out"
           >
-            <div className="flex flex-col lg:flex-row justify-between items-center">
-              {/* CTA content */}
-              <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
-                <h3 className="h3 text-white mb-2 text-3xl">
-                  Chat with us on Discord
-                </h3>
-                <p className="text-white text-lg opacity-75">
-                  We have a generous free tier available to get you started
-                  right away.
-                </p>
-              </div>
-
-              {/* CTA button */}
-              <div>
-                <a
-                  className="btn text-primary-700 bg-white rounded-md py-3 px-5"
-                  href="https://discord.com/invite/TSgCw2UPmb"
-                >
-                  Join Discord
-                </a>
-              </div>
+            <div className="p-4 rounded-full h-28 w-28 flex justify-center items-center bg-indigo-400">
+              <Discord fill="white" height={56} width={56} />
+            </div>
+            <div className="text-center">
+              <h3 className="h3 text-white text-3xl mb-0">
+                Chat with us on Discord
+              </h3>
+            </div>
+            <div>
+              <a
+                className="btn text-primary-700 bg-white rounded-md py-3 px-5"
+                href="https://discord.com/invite/TSgCw2UPmb"
+              >
+                Join Discord
+              </a>
             </div>
           </div>
         </div>

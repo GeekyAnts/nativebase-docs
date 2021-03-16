@@ -1,3 +1,8 @@
+---
+id: nativebase-formik-ui
+title: NativeBase Formik UI
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

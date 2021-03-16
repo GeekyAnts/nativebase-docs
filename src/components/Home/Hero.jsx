@@ -94,7 +94,7 @@ export function Hero() {
               data-aos-delay="450"
             >
               <div className="flex flex-col justify-center">
-                <div
+                {/* <div
                   data-snack-id="@theankurkedia/nativebase-music-player"
                   data-snack-platform="web"
                   data-snack-preview="true"
@@ -107,7 +107,7 @@ export function Hero() {
                     width: '1080px',
                     height: '672px',
                   }}
-                />
+                /> */}
                 {/* <svg
                   className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto"
                   width="768"

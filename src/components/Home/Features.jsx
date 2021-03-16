@@ -1,33 +1,8 @@
 import React from 'react';
-import useThemeContext from '@theme/hooks/useThemeContext';
-import illustration from '../../img/Illustration.png';
-import qrCode from '../../img/QR-code.png';
-import expo from '../../img/expo.png';
 
 export function Features() {
-  const { isDarkTheme } = useThemeContext();
-  const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
   return (
     <section className="relative">
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div
-        className={'absolute inset-0 pointer-events-none ' + foldBg}
-        aria-hidden="true"
-      />
-      {/* <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div> */}
-
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-12 md:pt-20">
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="h2 mb-4 text-4xl">Now Available for Web</h1>
-            <p className="text-xl">
-              Follow your instincts and make accurate predictions for web,
-              Android & iOS. Test and maintain code easily.
-            </p>
-          </div>
-        </div>
-      </div>
       {/* <div
         className={
           'my-16 md:my-20 p-8 rounded-md relative max-w-6xl mx-auto px-4 sm:px-6'

@@ -16,6 +16,8 @@ import {
   More,
   Stats,
   Creators,
+  Kitchensink,
+  Web,
 } from './../components/Home';
 
 function Home() {
@@ -31,7 +33,10 @@ function Home() {
           className={styles.features + 'flex-1 font-inter overflow-hidden'}
         >
           <Hero />
+          <Web />
+          <Kitchensink />
           <NewFeatures />
+
           {/* <FeaturesBlocks /> */}
           {/* <FeaturesWorld /> */}
           {/* <News /> */}
