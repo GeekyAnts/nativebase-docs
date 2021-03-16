@@ -143,3 +143,9 @@ export default function () {
 | duration | `long`, `short`, number   | The duration of toast. If number, then in mili-seconds. | 2000     |
 | position | `bottom`, `center`, `top` | The position at which toast will appear.                | `bottom` |
 | offset   | {x: number y: number}     | The offset of toast from regular position.              | -        |
+| accessibilityLiveRegion   | `none` , `polite` , `assertive`   | To read the content to Talkback and screen reader on web. [Read more](https://reactnative.dev/docs/accessibility#accessibilityliveregion-android)              | polite        |
+| accessibilityAnnouncement   | string   | Toast description to be announced on iOS devices.             | -        |
+
+## Accessibility
+- On Android and Web, Toast renders under a View with accessibilityLiveRegion which announces the content rendered inside it to screen reader devices.
+- On iOS, accessibilityLiveRegion is not supported yet, so we use the [accessibilityAnnouncement](https://reactnative.dev/docs/accessibilityinfo#announceforaccessibility) to announce the content. 
