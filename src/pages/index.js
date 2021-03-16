@@ -1,24 +1,25 @@
-import React from 'react';
-// import clsx from 'clsx';
-import Layout from '@theme/Layout';
 // import Navbar from '@theme/Navbar';
 // import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './styles.module.css';
+// import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import React from 'react';
 import {
-  Hero,
-  Features as NewFeatures,
+  Accessibility,
   // FeaturesBlocks,
   // FeaturesWorld,
   // News,
   Community,
+  Creators,
   Cta,
+  Features as NewFeatures,
+  Hero,
+  Kitchensink,
   More,
   Stats,
-  Creators,
-  Kitchensink,
   Web,
 } from './../components/Home';
+import styles from './styles.module.css';
 
 function Home() {
   const context = useDocusaurusContext();
@@ -35,6 +36,7 @@ function Home() {
           <Hero />
           <Web />
           <Kitchensink />
+          <Accessibility />
           <NewFeatures />
 
           {/* <FeaturesBlocks /> */}

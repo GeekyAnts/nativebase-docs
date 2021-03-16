@@ -1,5 +1,6 @@
 import React from 'react';
 import Discord from '../../img/Discord';
+
 export function Cta() {
   return (
     <section className="relative">
@@ -73,7 +74,7 @@ export function Cta() {
       <div>
         <div className="pb-12 md:pb-20">
           <div
-            className="flex flex-row justify-around items-center bg-primary-500 py-10 px-12 md:py-16 md:px-16 shadow-2xl"
+            className="flex flex-row justify-around items-center bg-primary-400 py-10 px-12 md:py-16 md:px-16 shadow-2xl"
             data-aos="zoom-y-out"
           >
             <div className="p-4 rounded-full h-28 w-28 flex justify-center items-center bg-indigo-400">
