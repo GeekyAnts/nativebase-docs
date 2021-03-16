@@ -122,6 +122,6 @@ export default function () {
 
 | Name        | Type                               | Description                                                                                                       | Default |
 | ----------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| value       | number                             | value of Progress.                                                                                                | -       |
+| value       | number                             | value of Progress.                                                                                                | `0`     |
 | colorScheme | string                             | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
 | size        | `2xl`, `xl`,`lg`, `md`, `sm`, `xs` | defines height of Progress                                                                                        | `md`    |
