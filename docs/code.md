@@ -3,7 +3,7 @@ id: code
 title: Code
 ---
 
-`Code` is a component used to display inline code. It is composed from the Box component with a mono font family for displaying code.
+`Code` is a component used to display inline code. It is composed from the Box component with a mono font family (_Courier_ on ios) for displaying code.
 
 ## Import
 
