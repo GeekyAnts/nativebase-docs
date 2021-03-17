@@ -14,3 +14,4 @@ export { Stats } from './Stats';
 export { Themeable } from './Themeable';
 export { UtilityProps } from './UtilityProps';
 export { Web } from './Web';
+export { WatchTalk } from './WatchTalk';

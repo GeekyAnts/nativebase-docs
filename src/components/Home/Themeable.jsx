@@ -46,7 +46,7 @@ export function Themeable() {
           // style={{ border: '1px solid black' }}
         >
           <div
-            className="flex-1 bg-gray-700 w-1"
+            className="flex-1 bg-gray-700 w-1 overflow-hidden rounded-lg"
             style={{ zIndex: 1, maxHeight: '39rem' }}
           >
             <CodeComponent code={exampleCode} />

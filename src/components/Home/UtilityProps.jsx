@@ -133,7 +133,7 @@ export function UtilityProps() {
             </div>
           </div>
           <div
-            className="flex-1 bg-gray-700 w-1"
+            className="flex-1 bg-gray-700 w-1 overflow-hidden rounded-lg"
             style={{ maxHeight: '39rem' }}
           >
             <CodeComponent code={exampleCode} />
