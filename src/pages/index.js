@@ -62,11 +62,11 @@ function Home() {
           <UtilityProps />
           <Themeable />
           <Responsive />
-          <WatchTalk />
           {/* <FeaturesBlocks /> */}
           {/* <FeaturesWorld /> */}
           {/* <News /> */}
           <Stats />
+          <WatchTalk />
           <Community />
           <Cta />
           <Creators />
