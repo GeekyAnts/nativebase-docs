@@ -2,20 +2,72 @@ import React from 'react';
 import { CodeComponent } from './CodeComponent';
 
 const exampleCode = `
-import React, { useState } from "react";
-
-function Example() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
+<Box width={72} bg="gray.50" shadow={4}>
+  <Box>
+    <AspectRatio ratio={16 / 9}>
+      <Image
+        source={{
+          uri:
+            'https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg',
+        }}
+        alt="image"
+      />
+    </AspectRatio>
+    <Center
+      bg="red.500"
+      _text={{ color: 'white', fontWeight: '700', fontSize: 'xs' }}
+      position="absolute"
+      bottom={0}
+      px={2}
+      py={1}
+    >
+      PHOTOS
+    </Center>
+    <Center
+      p={1}
+      rounded="full"
+      bg="red.500"
+      boxSize={10}
+      position="absolute"
+      right={0}
+      m={2}
+      _text={{
+        color: 'white',
+        textAlign: 'center',
+        fontWeight: '700',
+        fontSize: 'xs',
+      }}
+    >
+      27 MAR
+    </Center>
+  </Box>
+  <Stack p={4} space={3}>
+    <Stack space={2}>
+      <Heading size="md">Life in the Garden City</Heading>
+      <Heading size="sm" color="red.500" fontWeight="500">
+        The Silicon Valley of India.
+      </Heading>
+    </Stack>
+    <Text lineHeight={6} fontWeight={400}>
+      Bengaluru (also called Bangalore) is the center of India's high-tech
+      industry. The city is also known for its parks and nightlife.
+    </Text>
+    <HStack alignItems="center" space={4} justifyContent="space-between">
+      <HStack alignItems="center">
+        <Icon name="access-time" color="gray.500" />
+        <Text ml={1} color="gray.500" fontWeight="500">
+          6 mins ago
+        </Text>
+      </HStack>
+      <HStack alignItems="center">
+        <Icon name="ios-chatbubbles" type="Ionicons" color="gray.500" />
+        <Text ml={1} color="gray.500" fontWeight="500">
+          39 comments
+        </Text>
+      </HStack>
+    </HStack>
+  </Stack>
+</Box>
 `.trim();
 
 export function Web() {
@@ -32,22 +84,22 @@ export function Web() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="flex items-center">
           <div
-            className="flex-1 bg-gray-700 flex flex-col justify-center"
+            className="flex-1 bg-gray-700 flex flex-col justify-center w-2"
             style={{ height: 420 }}
           >
             <CodeComponent code={exampleCode} />
           </div>
-          <div className="flex flex-1 items-center">
+          <div className="flex items-center">
             <img
               className="rounded-3xl"
               style={{ zIndex: 1 }}
-              src={'/src/img/kitchensink-ios.gif'}
+              src={'/img/home/main-mobile.png'}
               width="223"
               height="478"
-              alt="Kitchen Sink iOS"
+              alt="NativeBase Works on Mobile and Web"
             />
           </div>
-          <div className="flex-1 flex flex-col justify-center pl-4">
+          <div className="flex-1 flex flex-col justify-center p-12">
             <h1 className="h2 mb-4 text-4xl">
               Now Available for both Mobile & Web
             </h1>
@@ -58,15 +110,7 @@ export function Web() {
           </div>
         </div>
         <div className="mt-10">
-          <ul className="list-none flex justify-center text-sm font-medium mb-0 ml-3">
-            <li className="m-2">
-              <button
-                className="inline-flex text-center py-2 px-4 rounded-full border-2 border-solid invisible"
-                href="#0"
-              >
-                Empty
-              </button>
-            </li>
+          <ul className="list-none flex justify-center text-sm font-medium mb-0 pl-0">
             <li className="m-2">
               <button
                 className="inline-flex text-center text-gray-100 py-2 px-4 rounded-full bg-purple-400 hover:bg-purple-800 transition duration-150 ease-in-out border-purple-300 border-2 border-solid"

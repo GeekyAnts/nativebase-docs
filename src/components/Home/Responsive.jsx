@@ -2,20 +2,39 @@ import React from 'react';
 import { CodeComponent } from './CodeComponent';
 
 const exampleCode = `
-import React, { useState } from "react";
-
-function Example() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
+<Box
+  flexDirection={{ base: 'column', md: 'row' }}
+  shadow={4}
+  rounded="xl"
+  overflow="hidden"
+>
+  <Box width={{ md: 24 }} height={{ base: 32, md: '100%' }}>
+    <Image
+      source={{
+        uri:
+          'https://static.nike.com/a/images/f_auto/dpr_2.0/w_1328,c_limit/b56d1e9b-3861-4c89-995d-b8fb6240a762/nike-just-do-it.jpg'
+      }}
+      alt="Shoes"
+    />
+  </Box>
+  <Stack p={3} space={2} minW={32}>
+    <Text fontSize="xs" color="red.400" fontWeight="semibold">
+      Just In
+    </Text>
+    <Stack space={1}>
+      <Heading size="sm">Jordan MA2</Heading>
+      <Text fontWeight="medium" color="blueGray.600">
+        Older Kids' Shoe
+      </Text>
+      <Text fontWeight="medium" color="blueGray.600">
+        2 colors
+      </Text>
+    </Stack>
+    <Text fontSize="md" fontWeight="semibold" color="blueGray.600">
+      $ 150
+    </Text>
+  </Stack>
+</Box>
 `.trim();
 
 export function Responsive() {
@@ -46,14 +65,17 @@ export function Responsive() {
               <img
                 className="rounded-3xl"
                 style={{ zIndex: 1 }}
-                src={'/src/img/kitchensink-ios.gif'}
+                src={'/img/home/responsive.png'}
                 width="223"
                 height="478"
                 alt="Kitchen Sink iOS"
               />
             </div>
           </div>
-          <div className="flex-1 bg-gray-700">
+          <div
+            className="flex-1 bg-gray-700 w-1"
+            style={{ maxHeight: '39rem' }}
+          >
             <CodeComponent code={exampleCode} />
           </div>
         </div>

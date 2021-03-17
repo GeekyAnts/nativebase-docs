@@ -2,20 +2,24 @@ import React from 'react';
 import { CodeComponent } from './CodeComponent';
 
 const exampleCode = `
-import React, { useState } from "react";
-
-function Example() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
+<>
+  <Alert variant="left-accent" status="success">
+    <Alert.Icon />
+    <Alert.Title>Success</Alert.Title>
+  </Alert>
+  <Alert variant="solid" status="warning">
+    <Alert.Icon />
+    <Alert.Title>Warning</Alert.Title>
+  </Alert>
+  <Alert variant="top-accent" status="error">
+    <Alert.Icon />
+    <Alert.Title>Error</Alert.Title>
+  </Alert>
+  <Alert  variant="outline" status="info">
+    <Alert.Icon />
+    <Alert.Title>Ingo</Alert.Title>
+  </Alert>
+</>
 `.trim();
 
 export function Themeable() {
@@ -41,16 +45,19 @@ export function Themeable() {
           className="flex flex-row rounded-md shadow-xl"
           // style={{ border: '1px solid black' }}
         >
-          <div className="flex-1 bg-gray-700" style={{ zIndex: 1 }}>
+          <div
+            className="flex-1 bg-gray-700 w-1"
+            style={{ zIndex: 1, maxHeight: '39rem' }}
+          >
             <CodeComponent code={exampleCode} />
           </div>
           <div className="max-w-3xl mx-auto text-center flex-1 flex justify-center items-center pt-12 md:pt-20 py-10 px-8 md:py-16 md:px-12">
             <img
               className="rounded-3xl"
-              src={'/src/img/kitchensink-ios.gif'}
+              src={'/img/home/themeable.png'}
               width="223"
               height="478"
-              alt="Kitchen Sink iOS"
+              alt="NativeBase Themeable"
             />
           </div>
         </div>
