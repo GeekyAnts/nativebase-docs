@@ -14,7 +14,7 @@ export function CodeComponent({ code }) {
               height: '100%',
               textAlign: 'left',
               padding: ' 0.5em',
-              overflow: 'scroll',
+              overflow: 'auto',
             }}
           >
             {tokens.map((line, i) => {
