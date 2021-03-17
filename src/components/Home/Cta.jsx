@@ -87,10 +87,10 @@ export function Cta() {
             </div>
             <div>
               <a
-                className="btn text-primary-700 bg-white rounded-md py-3 px-5"
+                className="btn text-primary-700 bg-white rounded-md py-3 px-5 text-lg"
                 href="https://discord.com/invite/TSgCw2UPmb"
               >
-                Join Discord
+                Join the #NativeBase Discord!
               </a>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CodeComponent } from './CodeComponent';
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 const exampleCode = `
 <Box width={80} p={5} rounded="xl" shadow={4}>
@@ -93,6 +94,9 @@ export function UtilityProps() {
   // TODO: change this
   const foldBg = '';
   // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
+  const { isDarkTheme } = useThemeContext();
+  const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
+  const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   return (
     <section className="relative">
       <div
@@ -101,10 +105,10 @@ export function UtilityProps() {
       />
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="h2 mb-4 text-4xl text-gray-800">
+          <h1 className={`h2 mb-4 text-4xl ${headingColor}`}>
             Now Supporting Utility Props
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className={`text-xl ${subHeadingColor}`}>
             Powered by{' '}
             <a
               className="span"

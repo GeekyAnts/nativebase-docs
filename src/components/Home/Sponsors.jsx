@@ -71,19 +71,28 @@ const creators = [
   },
 ];
 
-export function Creators() {
+export function Sponsors() {
+  const [creators, setCreators] = React.useState(0);
+  React.useEffect(() => {
+    fetch('https://api.github.com/repos/geekyants/nativebase/contributors')
+      .then((response) => response.json())
+      .then((data) => setStarCount(data));
+  }, []);
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 text-4xl text-gray-800">Meet the Creators</h2>
+            <h2 className="h2 text-4xl text-gray-800">Our Sponsors</h2>
             <p className="text-xl text-gray-600">
-              NativeBase 3.0 has come to fruition only due to the amazing team
-              that worked tirelessly on it. Here are our creators:
+              We are very grateful to those who believe in what we do. Here's to
+              all our wonderful sponsors!
             </p>
           </div>
-          <ul className="flex flex-wrap justify-center max-w-4xl pl-0 mx-auto mb-0">
+          <a href="https://opencollective.com/NativeBase">
+            <img src="https://opencollective.com/NativeBase/individuals.svg?width=890" />
+          </a>
+          {/* <ul className="flex flex-wrap justify-center max-w-4xl pl-0 mx-auto">
             {creators.map((contributor) => (
               <a
                 key={contributor.id}
@@ -99,7 +108,7 @@ export function Creators() {
                 ></img>
               </a>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </div>
     </section>

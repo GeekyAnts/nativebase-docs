@@ -5,12 +5,15 @@ export function WatchTalk() {
   const { isDarkTheme } = useThemeContext();
   const foldBg = !isDarkTheme ? 'bg-green-50' : 'bg-green-200';
   return (
-    <section className={'relative mb-20 ' + foldBg}>
+    <section className={'relative ' + foldBg}>
       <div
         className={'absolute inset-0 pointer-events-none '}
         aria-hidden="true"
       />
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 min-h-6xl">
+      <div
+        className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 min-h-6xl"
+        style={{ zIndex: 1 }}
+      >
         <center>
           <h1 className="h2 mb-10 text-gray-800 text-4xl">Watch our Talk</h1>
           <p className="text-xl text-gray-600">
@@ -39,7 +42,6 @@ export function WatchTalk() {
           height="578"
           viewBox="0 0 1360 578"
           xmlns="http://www.w3.org/2000/svg"
-          id="hithere"
         >
           <defs>
             <linearGradient x1="1" y1=".5" x2="0" y2="1" id="illustration-02">

@@ -10,16 +10,16 @@ import {
   Community,
   Creators,
   Cta,
-  Features as NewFeatures,
   Hero,
   Kitchensink,
   More,
   Responsive,
+  Sponsors,
   Stats,
   Themeable,
   UtilityProps,
-  Web,
   WatchTalk,
+  Web,
 } from './../components/Home';
 import styles from './styles.module.css';
 
@@ -66,9 +66,10 @@ function Home() {
           {/* <FeaturesWorld /> */}
           {/* <News /> */}
           <Stats />
-          <Community />
           <WatchTalk />
+          <Community />
           <Cta />
+          {/* <Sponsors /> */}
           <Creators />
           <More />
         </section>

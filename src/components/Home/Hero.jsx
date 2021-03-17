@@ -1,6 +1,7 @@
 import React from 'react';
 import GitHub from '../../img/GitHub';
 import Star from '../../img/Star';
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 export function Hero() {
   const [starCount, setStarCount] = React.useState(0);
@@ -9,7 +10,8 @@ export function Hero() {
       .then((response) => response.json())
       .then((data) => setStarCount(data.stargazers_count.toLocaleString()));
   }, []);
-
+  const { isDarkTheme } = useThemeContext();
+  const subHeadColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   return (
     <section className="relative">
       {/* Illustration behind hero content */}
@@ -52,7 +54,7 @@ export function Hero() {
               </span>
             </h1>
             <div>
-              <p className="text-2xl max-w-3xl mx-auto mt-8 text-gray-600">
+              <p className={`text-2xl max-w-3xl mx-auto mt-8 ${subHeadColor}`}>
                 NativeBase 3.0 provides a consistent UI across Web, Android &
                 iOS, out of the box Accessibility and supports Utility Props
               </p>
