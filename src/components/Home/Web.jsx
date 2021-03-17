@@ -88,7 +88,7 @@ export function Web() {
       <div className="block sm:hidden">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20">
           <div className="flex-1 flex flex-col justify-center p-4">
-            <h1 className="h2 mb-4 text-4xl text-gray-800 text-center">
+            <h1 className="h2 mb-4 text-3xl text-gray-800 text-center">
               Now Available for both Mobile & Web
             </h1>
             <p className="text-xl text-gray-600">

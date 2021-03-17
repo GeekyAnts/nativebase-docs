@@ -70,7 +70,7 @@ export function Kitchensink() {
                     <img
                       className="rounded-3xl"
                       style={{ zIndex: 1 }}
-                      src={'/src/img/kitchensink-ios.gif'}
+                      src={'/img/kitchensink-ios.gif'}
                       width="223"
                       height="478"
                       alt="Kitchen Sink iOS"
@@ -78,37 +78,15 @@ export function Kitchensink() {
                   </div>
                 </div>
                 <div>
-                  {/* <div className="flex flex-row items-end mb-6">
-                    <img
-                      // className='absolute max-w-full transform animate-float animation-delay-1000'
-                      src={'/img/kitchensink-qr.png'}
-                      width="159"
-                      height="159"
-                      alt="Kitchen Sink QR"
-                      // style={{ width: '88.7%', bottom: '-20%', right: '-18%' }}
-                    />
-                    <a
-                      className="btn text-white bg-indigo-400 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex"
-                      href="https://github.com/nativebase/kitchensink"
-                    >
-                      <GitHub fill="#fff" className="mr-2" />
-                      Github
-                    </a>
-                  </div>
-                  <div className="flex text-left items-center">
-                    <img
-                      className="mr-4"
-                      src={'/img/expo.png'}
-                      width="41"
-                      height="41"
-                      alt="Expo icon"
-                    />
-                    <p className="m-0">
-                      Scan with the <span className="font-semibold">Expo</span>{' '}
-                      app on your Android device to access Kitchen Sink.
-                    </p> */}
                   <a
-                    className=""
+                    className="btn mt-7 text-white bg-gray-700 sm:ml-4 rounded-md py-3 px-5 items-center flex justify-center"
+                    href="https://github.com/nativebase/kitchensink"
+                  >
+                    <GitHub fill="#fff" className="mr-2" />
+                    Github
+                  </a>
+                  <a
+                    className="btn mt-4 text-white bg-indigo-400 sm:ml-4 rounded-md py-3 px-5 items-center flex justify-center"
                     target="_blank"
                     href="exp://expo.io/@theankurkedia/accessible+b8sF0lsgIn"
                   >
@@ -167,7 +145,7 @@ export function Kitchensink() {
                     />
                     <p className="m-0">
                       Scan with the <span className="font-semibold">Expo</span>{' '}
-                      app on your Android device to access Kitchen Sink.
+                      app on your Mobile device to access Kitchen Sink.
                     </p>
                   </div>
                 </div>
