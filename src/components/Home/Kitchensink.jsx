@@ -88,7 +88,7 @@ export function Kitchensink() {
                   <a
                     className="btn mt-4 text-white bg-indigo-400 sm:ml-4 rounded-md py-3 px-5 items-center flex justify-center"
                     target="_blank"
-                    href="exp://expo.io/@theankurkedia/accessible+b8sF0lsgIn"
+                    href="exp://expo.host/@mdrehman/kitchensink-v3"
                   >
                     Open with Expo Go
                   </a>
