@@ -1,13 +1,17 @@
 import React from 'react';
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 export function Stats() {
+  const { isDarkTheme } = useThemeContext();
+  const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
+
   return (
     <section>
       <div
         className="rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl pb-12 md:pb-20 max-w-6xl mx-auto px-4 sm:px-6"
         data-aos="zoom-y-out"
       >
-        <h1 className="h2 mb-6 text-4xl text-center text-gray-800">
+        <h1 className={`h2 mb-6 text-4xl text-center ${headingColor}`}>
           We are growing
         </h1>
         <div class="grid grid-cols-2 gap-4">

@@ -4,6 +4,7 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 export function WatchTalk() {
   const { isDarkTheme } = useThemeContext();
   const foldBg = !isDarkTheme ? 'bg-green-50' : 'bg-green-200';
+
   return (
     <section className={'relative ' + foldBg}>
       <div

@@ -1,4 +1,5 @@
 import React from 'react';
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 // TODO: When dynamically fetching the creators.
 // const [creators, setCreators] = React.useState(0);
@@ -72,13 +73,16 @@ const creators = [
 ];
 
 export function Creators() {
+  const { isDarkTheme } = useThemeContext();
+  const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
+  const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 text-4xl text-gray-800">Meet the Creators</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className={`h2 text-4xl ${headingColor}`}>Meet the Creators</h2>
+            <p className={`text-xl ${subHeadingColor}`}>
               NativeBase 3.0 has come to fruition only due to the amazing team
               that worked tirelessly on it. Here are our creators:
             </p>

@@ -14,7 +14,7 @@ import {
   Kitchensink,
   More,
   Responsive,
-  Sponsors,
+  // Sponsors,
   Stats,
   Themeable,
   UtilityProps,

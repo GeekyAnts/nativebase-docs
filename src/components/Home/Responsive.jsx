@@ -1,5 +1,6 @@
 import React from 'react';
 import { CodeComponent } from './CodeComponent';
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 const exampleCode = `
 <Box
@@ -42,6 +43,9 @@ export function Responsive() {
   // TODO: change this
   const foldBg = '';
   // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
+  const { isDarkTheme } = useThemeContext();
+  const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
+  const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   return (
     <section className="relative">
       <div
@@ -50,10 +54,10 @@ export function Responsive() {
       />
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="h2 mb-4 text-4xl text-gray-800">
+          <h1 className={`h2 mb-4 text-4xl ${headingColor}`}>
             Responsiveness made easy
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className={`text-xl ${subHeadingColor}`}>
             Instead of manually adding responsiveness, NativeBase V3 allows you
             to provide object and array values to add responsive styles.
           </p>
