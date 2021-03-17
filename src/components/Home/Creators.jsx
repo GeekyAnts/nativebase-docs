@@ -49,7 +49,7 @@ const creators = [
     id: 54400869,
     login: 'makkarMeenu',
     avatar_url: 'https://avatars.githubusercontent.com/u/54400869?v=4',
-    html_url: '"https://github.com/makkarMeenu',
+    html_url: 'https://github.com/makkarMeenu',
   },
   {
     id: 48080578,

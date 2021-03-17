@@ -448,7 +448,7 @@ function CheckboxComponent() {
   return (
     <Checkbox
       colorScheme="success"
-      icon={<Icon name="bullseye" type="MaterialCommunityIcons" opacity={0} />}
+      icon={<Icon name="bullseye" type="MaterialCommunityIcons" opacity={1} />}
       ref={myRef}
       onChange={(_, state) => {
         if (state)

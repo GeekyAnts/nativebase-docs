@@ -31,7 +31,7 @@ import {
 function BreadcrumbComponent () {
   return (
     <Box>
-      <Heading mb={4}>This is a Default Breadcrumb</Heading>
+      <Heading mb={4}>Default Breadcrumb</Heading>
       <Breadcrumb>
         <Breadcrumb.Item isCurrentPage>
           <Breadcrumb.Link>Home (This is currently active)</Breadcrumb.Link>
@@ -240,9 +240,10 @@ export default function () {
 `Breadcrumb.Link` composes the [`Link`](link.md) component so you can use all Link props.
 
 ## Accessibility
+
 [Breadcrumbs ARIA Spec](https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html)
 
 - The Breadcrumbs are rendered in a nav to denote that it is a navigation landmark.
 - The Breadcrumb nav has aria-label set to breadcrumb.
 - The BreadcrumbItem with isCurrentPage prop adds the aria-current=page to the BreadcrumbLink.
-The separator has role set to presentation to denote that its for presentation purposes.
+  The separator has role set to presentation to denote that its for presentation purposes.
