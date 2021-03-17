@@ -37,8 +37,8 @@ export function Themeable() {
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="h2 mb-4 text-4xl">Themeable</h1>
           <p className="text-xl">
-            Customise your app theme and component styles. Personalise UI for
-            your brand voice and target audience.
+            Themeability is one of the core elements of NativeBase. Customise
+            your app theme and component styles to your heart's content.
           </p>
         </div>
         <div
