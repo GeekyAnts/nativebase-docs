@@ -95,7 +95,7 @@ As mentioned above, the `docs` folder contains the markdown source files for all
 
 The NativeBase website is versioned to allow users to go back and see the API reference docs for any given native-base version. A new version of the website is generally generated whenever there is a new native-base release. When this happens, any changes made to the `docs` and `sidebars.json` files will be copied over to the corresponding location within `versioned_docs` and `versioned_sidebars`.
 
-> **_Note:_** Do not edit the auto-generated files within `versioned_docs` or `versioned_sidebars` unless you are sure it is necessary. Edits made to older versions will not be propagated to newer versions of the docs.
+> **_Note:_** Do not edit the auto-generated files within `versioned_docs` or `versioned_sidebars` unless you are sure it is necessary. Edits made to older versions will not be propagated to newer versions of the documentation.
 
 Docusaurus keeps track of the list of versions for the site in the `versions.json` file. The ordering of the versions in this file should be in reverse chronological order.
 
