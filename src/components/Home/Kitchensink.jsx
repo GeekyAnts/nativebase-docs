@@ -101,7 +101,7 @@ export function Kitchensink() {
                 <img
                   className="rounded-3xl"
                   style={{ zIndex: 1 }}
-                  src={'/src/img/kitchensink-ios.gif'}
+                  src={'/img/kitchensink-ios.gif'}
                   width="223"
                   height="478"
                   alt="Kitchen Sink iOS"

@@ -11,14 +11,17 @@ export function Accessibility() {
           <h3 className="h3 text-white text-4xl mb-0">
             Out of the Box Accessibility
           </h3>
-          <a
-            className="text-white text-lg mb-0"
-            href="http://react-native-aria.geekyants.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by React Native ARIA
-          </a>
+          <p className="text-white text-lg mb-0">
+            Powered by{' '}
+            <a
+              className="span text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://react-native-aria.geekyants.com/"
+            >
+              React Native ARIA.
+            </a>
+          </p>
           <p className="pt-4 mb-0 max-w-xl">
             React Native ARIA provides React hooks that enable you to build
             accessible design systems in no time.

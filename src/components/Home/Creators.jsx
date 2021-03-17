@@ -77,7 +77,11 @@ export function Creators() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 text-4xl">Meet The Creators</h2>
+            <h2 className="h2 text-4xl text-gray-800">Meet the Creators</h2>
+            <p className="text-xl text-gray-600">
+              NativeBase 3.0 has come to fruition only due to the amazing team
+              that worked tirelessly on it. Here are our creators:
+            </p>
           </div>
           <ul className="flex flex-wrap justify-center max-w-4xl pl-0 mx-auto">
             {creators.map((contributor) => (

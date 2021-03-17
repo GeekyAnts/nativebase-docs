@@ -51,7 +51,13 @@ export function Hero() {
                 React Ecosystem
               </span>
             </h1>
-            <div className="max-w-3xl mx-auto  mt-20">
+            <div>
+              <p className="text-2xl max-w-3xl mx-auto mt-8 text-gray-600">
+                NativeBase 3.0 provides a consistent UI across Web, Android &
+                iOS, out of the box Accessibility and supports Utility Props
+              </p>
+            </div>
+            <div className="max-w-2xl mx-auto mt-20">
               {/* <p
                 className="text-xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"

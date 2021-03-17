@@ -28,7 +28,11 @@ export function Community() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 text-4xl">Join Our Community</h2>
+            <h2 className="h2 text-4xl text-gray-800">Join our Community</h2>
+            <p className="text-xl text-gray-600">
+              We have a lively community built on our shared love for React &
+              React Native. Check out our recent blog posts and come join us!
+            </p>
           </div>
 
           {/* Articles list */}

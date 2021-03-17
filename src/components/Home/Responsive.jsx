@@ -50,17 +50,15 @@ export function Responsive() {
       />
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="h2 mb-4 text-4xl">Responsive</h1>
-          <p className="text-xl">
-            Create responsive apps from the get-go. Instead of manually adding
-            responsiveness, NativeBase V3 allows you to provide object and array
-            values to add responsive styles.
+          <h1 className="h2 mb-4 text-4xl text-gray-800">
+            Responsiveness made easy
+          </h1>
+          <p className="text-xl text-gray-600">
+            Instead of manually adding responsiveness, NativeBase V3 allows you
+            to provide object and array values to add responsive styles.
           </p>
         </div>
-        <div
-          className="flex flex-row rounded-md shadow-xl"
-          // style={{ border: '1px solid black' }}
-        >
+        <div className="flex flex-row rounded-md shadow-xl">
           <div className="max-w-3xl mx-auto text-center flex-1">
             <div className="flex justify-center items-center pt-12 md:pt-20 py-10 px-8 md:py-16 md:px-12">
               <img
