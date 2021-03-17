@@ -67,7 +67,6 @@ function Home() {
           {/* <News /> */}
           <Stats />
           <Community />
-          <WatchTalk />
           <Cta />
           <Creators />
           <More />
