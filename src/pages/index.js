@@ -19,6 +19,7 @@ import {
   Themeable,
   UtilityProps,
   Web,
+  WatchTalk,
 } from './../components/Home';
 import styles from './styles.module.css';
 
@@ -61,6 +62,7 @@ function Home() {
           <UtilityProps />
           <Themeable />
           <Responsive />
+          <WatchTalk />
           {/* <FeaturesBlocks /> */}
           {/* <FeaturesWorld /> */}
           {/* <News /> */}
