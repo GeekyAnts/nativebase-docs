@@ -70,7 +70,10 @@ const exampleCode = `
   </Stack>
 </Box>
 `.trim();
-
+// {/* visible on sm */}
+// <div className="block sm:hidden"></div>
+// {/* visible on md and above */}
+// <div className="hidden md:block"></div>
 export function Web() {
   const { isDarkTheme } = useThemeContext();
   const foldBg = !isDarkTheme ? 'bg-green-50' : 'bg-green-200';
@@ -81,28 +84,11 @@ export function Web() {
         className={'absolute inset-0 pointer-events-none '}
         aria-hidden="true"
       />
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20">
-        <div className="flex items-center">
-          <div
-            className="flex-1 flex flex-col justify-center w-2 overflow-hidden rounded-lg"
-            style={{ height: 420 }}
-          >
-            <CodeComponent code={exampleCode} />
-          </div>
-          <div className="flex items-center">
-            <img
-              className={`shadow-sm rounded-${
-                activePlatform === 'web' ? 'lg' : '3xl'
-              }`}
-              style={{ zIndex: 1 }}
-              src={`/img/home/main-${activePlatform}.png`}
-              width="223"
-              height="478"
-              alt="NativeBase Works on Mobile and Web"
-            />
-          </div>
-          <div className="flex-1 flex flex-col justify-center p-12">
-            <h1 className="h2 mb-4 text-4xl text-gray-800">
+      {/* visible on sm */}
+      <div className="block sm:hidden">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20">
+          <div className="flex-1 flex flex-col justify-center p-4">
+            <h1 className="h2 mb-4 text-4xl text-gray-800 text-center">
               Now Available for both Mobile & Web
             </h1>
             <p className="text-xl text-gray-800">
@@ -110,55 +96,158 @@ export function Web() {
               Android and iOS with ease.
             </p>
           </div>
+          <div className="">
+            <div
+              className="flex-1 flex flex-col justify-center w-full overflow-hidden rounded-lg "
+              style={{ height: 420 }}
+            >
+              <CodeComponent code={exampleCode} />
+            </div>
+            <div className="flex justify-center">
+              <img
+                className={`shadow-sm rounded-${
+                  activePlatform === 'web' ? 'lg' : '3xl'
+                }`}
+                style={{ zIndex: 1 }}
+                src={`/img/home/main-${activePlatform}.png`}
+                width="223"
+                height="478"
+                alt="NativeBase Works on Mobile and Web"
+              />
+            </div>
+          </div>
+          <div className="mt-10">
+            <ul className="list-none flex justify-center text-sm font-medium mb-0 pl-0">
+              <li className="m-2">
+                <button
+                  className={
+                    activePlatform === 'android'
+                      ? 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid bg-purple-400 text-gray-100 hover:bg-purple-800'
+                      : 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid text-purple-400'
+                  }
+                  href="#0"
+                  onClick={() => {
+                    setActivePlatform('android');
+                  }}
+                >
+                  Android
+                </button>
+              </li>
+              <li className="m-2">
+                <button
+                  className={
+                    activePlatform === 'ios'
+                      ? 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid bg-purple-400 text-gray-100 hover:bg-purple-800'
+                      : 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid text-purple-400'
+                  }
+                  href="#0"
+                  onClick={() => {
+                    setActivePlatform('ios');
+                  }}
+                >
+                  iOS
+                </button>
+              </li>
+              <li className="m-2">
+                <button
+                  className={
+                    activePlatform === 'web'
+                      ? 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid bg-purple-400 text-gray-100 hover:bg-purple-800'
+                      : 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid text-purple-400'
+                  }
+                  href="#0"
+                  onClick={() => {
+                    setActivePlatform('web');
+                  }}
+                >
+                  Web
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="mt-10">
-          <ul className="list-none flex justify-center text-sm font-medium mb-0 pl-0">
-            <li className="m-2">
-              <button
-                className={
-                  activePlatform === 'android'
-                    ? 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid bg-purple-400 text-gray-100 hover:bg-purple-800'
-                    : 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid text-purple-400'
-                }
-                href="#0"
-                onClick={() => {
-                  setActivePlatform('android');
-                }}
-              >
-                Android
-              </button>
-            </li>
-            <li className="m-2">
-              <button
-                className={
-                  activePlatform === 'ios'
-                    ? 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid bg-purple-400 text-gray-100 hover:bg-purple-800'
-                    : 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid text-purple-400'
-                }
-                href="#0"
-                onClick={() => {
-                  setActivePlatform('ios');
-                }}
-              >
-                iOS
-              </button>
-            </li>
-            <li className="m-2">
-              <button
-                className={
-                  activePlatform === 'web'
-                    ? 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid bg-purple-400 text-gray-100 hover:bg-purple-800'
-                    : 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid text-purple-400'
-                }
-                href="#0"
-                onClick={() => {
-                  setActivePlatform('web');
-                }}
-              >
-                Web
-              </button>
-            </li>
-          </ul>
+      </div>
+      {/* visible on md and above */}
+      <div className="hidden md:block">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20">
+          <div className="flex items-center">
+            <div
+              className="flex-1 flex flex-col justify-center w-2 overflow-hidden rounded-lg"
+              style={{ height: 420 }}
+            >
+              <CodeComponent code={exampleCode} />
+            </div>
+            <div className="flex items-center">
+              <img
+                className={`shadow-sm rounded-${
+                  activePlatform === 'web' ? 'lg' : '3xl'
+                }`}
+                style={{ zIndex: 1 }}
+                src={`/img/home/main-${activePlatform}.png`}
+                width="223"
+                height="478"
+                alt="NativeBase Works on Mobile and Web"
+              />
+            </div>
+            <div className="flex-1 flex flex-col justify-center p-12">
+              <h1 className="h2 mb-4 text-4xl text-gray-800">
+                Now Available for both Mobile & Web
+              </h1>
+              <p className="text-xl text-gray-800">
+                Powered by React Native Web. Build consistent UIs across Web,
+                Android and iOS with ease.
+              </p>
+            </div>
+          </div>
+          <div className="mt-10">
+            <ul className="list-none flex justify-center text-sm font-medium mb-0 pl-0">
+              <li className="m-2">
+                <button
+                  className={
+                    activePlatform === 'android'
+                      ? 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid bg-purple-400 text-gray-100 hover:bg-purple-800'
+                      : 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid text-purple-400'
+                  }
+                  href="#0"
+                  onClick={() => {
+                    setActivePlatform('android');
+                  }}
+                >
+                  Android
+                </button>
+              </li>
+              <li className="m-2">
+                <button
+                  className={
+                    activePlatform === 'ios'
+                      ? 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid bg-purple-400 text-gray-100 hover:bg-purple-800'
+                      : 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid text-purple-400'
+                  }
+                  href="#0"
+                  onClick={() => {
+                    setActivePlatform('ios');
+                  }}
+                >
+                  iOS
+                </button>
+              </li>
+              <li className="m-2">
+                <button
+                  className={
+                    activePlatform === 'web'
+                      ? 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid bg-purple-400 text-gray-100 hover:bg-purple-800'
+                      : 'inline-flex text-center py-2 px-4 rounded-full bg-transparent hover:bg-purple-100 transition duration-150 ease-in-out  border-purple-300 border-2 border-solid text-purple-400'
+                  }
+                  href="#0"
+                  onClick={() => {
+                    setActivePlatform('web');
+                  }}
+                >
+                  Web
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
