@@ -105,7 +105,7 @@ The main config file for the website can be found at `docusaurus.config.js`. Thi
 
 The `src/components` subdirectory contains JavaScript and React components that are used in different parts of the website.
 
-The `src/pages` subdirectory contains the React components that make up the non-documentation pages of the site, such as the landing page.
+The `src/pages` subdirectory contains the React components that make up the non-documentation pages of the site, such as the landing page..
 
 The `src/theme` subdirectory contains the swizzled React components from the Docusaurus theme.
 

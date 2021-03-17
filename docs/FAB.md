@@ -26,9 +26,35 @@ import { Fab, Icon, NativeBaseProvider, Center } from 'native-base';
 function FabComponent() {
   return (
     <Fab
-      placement={'bottomRight'}
       bg="teal.200"
       icon={<Icon name="plus" type="AntDesign" />}
+    />
+  );
+}
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <FabComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+### Placement
+
+```SnackPlayer name=FAB%20Custom Position
+import { Fab, Icon, Text, NativeBaseProvider, Center } from 'native-base';
+import React from 'react';
+
+function FabComponent () {
+  return (
+    <Fab
+      bg="lime.200"
+      placement="top-left"
+      icon={<Icon name="plus" type="AntDesign" />}
+      label={<Text fontSize="sm">Click</Text>}
     />
   );
 }
@@ -51,14 +77,12 @@ import React from 'react';
 
 function FabComponent () {
   return (
-      <Fab
-        bg="teal.200"
-        position="absolute"
-        bottom={4}
-        right={24}
-        icon={<Icon name="plus" type="AntDesign" />}
-        label={<Text fontSize="sm">Click</Text>}
-      />
+    <Fab
+      bg="amber.200"
+      bottom={4}
+      right={24}
+      label={<Text fontSize="sm">Click</Text>}
+    />
   );
 }
 export default function () {
