@@ -35,8 +35,10 @@ export function Themeable() {
       />
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="h2 mb-4 text-4xl">Themeable</h1>
-          <p className="text-xl">
+          <h1 className="h2 mb-4 text-4xl text-gray-800">
+            Highly themeable, the only limit is your imagination
+          </h1>
+          <p className="text-xl text-gray-600">
             Themeability is one of the core elements of NativeBase. Customise
             your app theme and component styles to your heart's content.
           </p>

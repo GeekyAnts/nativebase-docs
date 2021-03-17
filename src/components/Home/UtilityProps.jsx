@@ -101,8 +101,10 @@ export function UtilityProps() {
       />
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="h2 mb-4 text-4xl">Now Supporting Utility Props</h1>
-          <p className="text-xl">
+          <h1 className="h2 mb-4 text-4xl text-gray-800">
+            Now Supporting Utility Props
+          </h1>
+          <p className="text-xl text-gray-600">
             Powered by{' '}
             <a
               className="span"

@@ -12,7 +12,12 @@ export function WatchTalk() {
       />
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 min-h-6xl">
         <center>
-          <h1 className="h2 mb-10 text-gray-800 text-4xl">Watch the talk</h1>
+          <h1 className="h2 mb-10 text-gray-800 text-4xl">Watch our Talk</h1>
+          <p className="text-xl text-gray-600">
+            Join Sankhadeep Roy & Sanket Sahu from GeekyAnts as they discuss
+            previous versions of NativeBase & the roadmap for NativeBase 3.0,
+            all while building it live.
+          </p>
           <iframe
             className="mx-auto"
             width="70%"

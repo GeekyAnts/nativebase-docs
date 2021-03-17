@@ -2,14 +2,16 @@ import React from 'react';
 
 export function Stats() {
   return (
-    <section className="relative">
-      <div className="max-w-6xl mx-auto px-3 sm:px-4">
+    <section>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
           <div
             className=" rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl"
             data-aos="zoom-y-out"
           >
-            <h1 className="h2 mb-6 text-4xl text-center">We are growing</h1>
+            <h1 className="h2 mb-6 text-4xl text-center text-gray-800">
+              We are growing
+            </h1>
             <div class="grid grid-cols-2 gap-4">
               <div className="max-w-3xl mx-auto text-left">
                 <p className="mb-0 text-6xl text-indigo-400 font-semibold">

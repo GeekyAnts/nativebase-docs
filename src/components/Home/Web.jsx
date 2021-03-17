@@ -91,9 +91,17 @@ export function Web() {
             <h1 className="h2 mb-4 text-4xl text-gray-800 text-center">
               Now Available for both Mobile & Web
             </h1>
-            <p className="text-xl text-gray-800">
-              Powered by React Native Web. Build consistent UIs across Web,
-              Android and iOS with ease.
+            <p className="text-xl text-gray-600">
+              Powered by{' '}
+              <a
+                className="span"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://necolas.github.io/react-native-web/"
+              >
+                React Native Web.{' '}
+              </a>{' '}
+              Build consistent UIs across Web, Android and iOS with ease.
             </p>
           </div>
           <div className="">
@@ -193,9 +201,17 @@ export function Web() {
               <h1 className="h2 mb-4 text-4xl text-gray-800">
                 Now Available for both Mobile & Web
               </h1>
-              <p className="text-xl text-gray-800">
-                Powered by React Native Web. Build consistent UIs across Web,
-                Android and iOS with ease.
+              <p className="text-xl text-gray-600">
+                Powered by{' '}
+                <a
+                  className="span"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://necolas.github.io/react-native-web/"
+                >
+                  React Native Web.{' '}
+                </a>{' '}
+                Build consistent UIs across Web, Android and iOS with ease.
               </p>
             </div>
           </div>

@@ -107,7 +107,13 @@ function FactoryViewRefExample () {
   const inputRef = React.useRef(null);
   return (
     <Stack space={4}>
-      <NBInput ref={inputRef} height={10} border={1} borderColor='cyan.400' borderRadius='md'/>
+      <NBInput
+        placeholder='Click on the button'
+        ref={inputRef}
+        p={2}
+        border={1}
+        borderColor='cyan.400'
+        borderRadius='md'/>
       <Button
         colorScheme='emerald'
         onPress={() => {
