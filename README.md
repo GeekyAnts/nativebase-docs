@@ -125,7 +125,7 @@ The `src/theme` subdirectory contains the swizzled React components from the Doc
 1.  Some changes may require a server restart to generate new files. (Pages in `docs` always do!)
 1.  Edits to pages in `docs` will only be visible in the latest version of the documentation, called "Next", located under the `docs/next` path.
 
-Visit **http://localhost:3000/docs/next/YOUR-DOCS-PAGE** to see your work.
+Visit **http://localhost:3000/docs/next/YOUR-DOCS-PAGE** to see your work..
 
 ### Test the change
 
