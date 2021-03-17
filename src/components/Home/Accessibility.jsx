@@ -3,7 +3,7 @@ import React from 'react';
 export function Accessibility() {
   return (
     <section className="relative">
-      <div className="pb-12 md:pb-20">
+      <div className="my-12 md:my-20">
         <div
           className="flex flex-col bg-primary-400 py-10 px-12 md:py-16 md:px-16 shadow-2xl text-left"
           data-aos="zoom-y-out"

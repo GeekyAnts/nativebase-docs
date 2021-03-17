@@ -69,7 +69,6 @@ export function Kitchensink() {
             <div className="flex-1">
               <div className="flex justify-center items-center">
                 <div
-                  id="hithere"
                   className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
                   aria-hidden="true"
                   style={{ zIndex: 0 }}
@@ -112,38 +111,6 @@ export function Kitchensink() {
           </div>
         </div>
       </div>
-
-      {/* <div
-        className={
-          'my-16 md:my-20 p-8 rounded-md relative max-w-6xl mx-auto px-4 sm:px-6'
-        }
-      >
-        <div className="grid grid-cols-3 gap-4">
-          <div className="col-span-2">
-            <div
-              data-snack-id="@theankurkedia/accessible"
-              data-snack-platform="web"
-              data-snack-preview="true"
-              data-snack-theme="dark"
-              style={{
-                overflow: 'hidden',
-                background: '#212121',
-                border: '1px solid var(--color-border)',
-                borderRadius: '4px',
-                width: '100%',
-                height: '500px',
-              }}
-            />
-          </div>
-          <div className="flex flex-col justify-center text-right">
-            <h1 className="h2 mb-4 text-4xl">Accessible</h1>
-            <p className="text-xl">
-              Maximise user experience for your apps. Build in accordance with
-              the latest accessibility standards.
-            </p>
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 }

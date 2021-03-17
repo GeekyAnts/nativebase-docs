@@ -22,7 +22,12 @@ const products = [
 function Product({ product, link }) {
   return (
     <div className={'col col--3'}>
-      <a href={link} style={{ textDecorationLine: 'none' }} target="_blank">
+      <a
+        href={link}
+        style={{ textDecorationLine: 'none' }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div
           className="text-center max-h-sm flex justify-center align-center"
           style={{

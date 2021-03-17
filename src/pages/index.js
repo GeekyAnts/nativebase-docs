@@ -1,7 +1,5 @@
-// import Navbar from '@theme/Navbar';
-// import Link from '@docusaurus/Link';
+import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-// import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import React from 'react';
 import {
@@ -16,7 +14,10 @@ import {
   Hero,
   Kitchensink,
   More,
+  Responsive,
   Stats,
+  Themeable,
+  UtilityProps,
   Web,
 } from './../components/Home';
 import styles from './styles.module.css';
@@ -26,9 +27,29 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`${siteConfig.title} | A complete component library for React Native Ecosystem`}
-      description="A complete component library for React Native Ecosystem"
+      title={`${siteConfig.title} | A complete component library for React Ecosystem`}
+      description="A complete component library for React Ecosystem"
     >
+      <Head>
+        <meta property="og:title" content="NativeBase" />
+        <meta
+          property="og:description"
+          content="A Complete Component Library for the React Ecosystem"
+        />
+        <meta
+          name="keywords"
+          content="Open Source, OSS, Component Library, React, React Native, Accessible, Consistent, Responsive, Utility Props"
+        />
+        <meta
+          property="og:url"
+          content="[https://nativebase.io](https://nativebase.io/)"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:site_name" content="NativeBase" />
+        <meta name="twitter:image:alt" content="NativeBase" />
+        <meta property="og:image" content="/img/nativebase-og.png" />
+        <meta name="twitter:site" content="@NativeBaseIO" />
+      </Head>
       <main id="tailwind">
         <section
           className={styles.features + 'flex-1 font-inter overflow-hidden'}
@@ -37,8 +58,9 @@ function Home() {
           <Web />
           <Kitchensink />
           <Accessibility />
-          <NewFeatures />
-
+          <UtilityProps />
+          <Themeable />
+          <Responsive />
           {/* <FeaturesBlocks /> */}
           {/* <FeaturesWorld /> */}
           {/* <News /> */}

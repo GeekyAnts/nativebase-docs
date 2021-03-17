@@ -9,5 +9,8 @@ export { Hero } from './Hero';
 export { Kitchensink } from './Kitchensink';
 export { More } from './More';
 export { News } from './News';
+export { Responsive } from './Responsive';
 export { Stats } from './Stats';
+export { Themeable } from './Themeable';
+export { UtilityProps } from './UtilityProps';
 export { Web } from './Web';
