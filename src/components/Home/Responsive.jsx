@@ -52,8 +52,9 @@ export function Responsive() {
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="h2 mb-4 text-4xl">Responsive</h1>
           <p className="text-xl">
-            Create responsive apps from the get-go. Save precious time and
-            effort in developing and maintaining your code.
+            Create responsive apps from the get-go. Instead of manually adding
+            responsiveness, NativeBase V3 allows you to provide object and array
+            values to add responsive styles.
           </p>
         </div>
         <div

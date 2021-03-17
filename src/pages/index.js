@@ -66,7 +66,6 @@ function Home() {
           {/* <FeaturesWorld /> */}
           {/* <News /> */}
           <Stats />
-          <WatchTalk />
           <Community />
           <Cta />
           <Creators />

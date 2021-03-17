@@ -95,7 +95,7 @@ As mentioned above, the `docs` folder contains the markdown source files for all
 
 The NativeBase website is versioned to allow users to go back and see the API reference docs for any given native-base version. A new version of the website is generally generated whenever there is a new native-base release. When this happens, any changes made to the `docs` and `sidebars.json` files will be copied over to the corresponding location within `versioned_docs` and `versioned_sidebars`.
 
-> **_Note:_** Do not edit the auto-generated files within `versioned_docs` or `versioned_sidebars` unless you are sure it is necessary. Edits made to older versions will not be propagated to newer versions of the docs.
+> **_Note:_** Do not edit the auto-generated files within `versioned_docs` or `versioned_sidebars` unless you are sure it is necessary. Edits made to older versions will not be propagated to newer versions of the documentation.
 
 Docusaurus keeps track of the list of versions for the site in the `versions.json` file. The ordering of the versions in this file should be in reverse chronological order.
 
@@ -105,7 +105,7 @@ The main config file for the website can be found at `docusaurus.config.js`. Thi
 
 The `src/components` subdirectory contains JavaScript and React components that are used in different parts of the website.
 
-The `src/pages` subdirectory contains the React components that make up the non-documentation pages of the site, such as the landing page.
+The `src/pages` subdirectory contains the React components that make up the non-documentation pages of the site, such as the landing page..
 
 The `src/theme` subdirectory contains the swizzled React components from the Docusaurus theme.
 

@@ -106,8 +106,8 @@ export function Web() {
               Now Available for both Mobile & Web
             </h1>
             <p className="text-xl text-gray-800">
-              NativeBase 3.0 I powered by React Native Web. Build consistent UIs
-              across Web, Android and iOS with ease.
+              Powered by React Native Web. Build consistent UIs across Web,
+              Android and iOS with ease.
             </p>
           </div>
         </div>
