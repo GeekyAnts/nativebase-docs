@@ -84,35 +84,22 @@ export function Web() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="flex items-center">
           <div
-            className="flex-1 bg-gray-700 flex flex-col justify-center w-2 overflow-hidden rounded-lg"
+            className="flex-1 flex flex-col justify-center w-2 overflow-hidden rounded-lg"
             style={{ height: 420 }}
           >
             <CodeComponent code={exampleCode} />
           </div>
           <div className="flex items-center">
-            {activePlatform === 'web' ? (
-              <img
-                className="rounded-sm"
-                style={{
-                  zIndex: 1,
-                  position: 'absolute',
-                  left: '25%',
-                  bottom: '25.5%',
-                }}
-                src={'/img/home/main-web.png'}
-                height="300"
-                alt="NativeBase Works on Mobile and Web"
-              />
-            ) : (
-              <img
-                className="rounded-3xl"
-                style={{ zIndex: 1 }}
-                src={'/img/home/main-mobile.png'}
-                width="223"
-                height="478"
-                alt="NativeBase Works on Mobile and Web"
-              />
-            )}
+            <img
+              className={`shadow-sm rounded-${
+                activePlatform === 'web' ? 'lg' : '3xl'
+              }`}
+              style={{ zIndex: 1 }}
+              src={`/img/home/main-${activePlatform}.png`}
+              width="223"
+              height="478"
+              alt="NativeBase Works on Mobile and Web"
+            />
           </div>
           <div className="flex-1 flex flex-col justify-center p-12">
             <h1 className="h2 mb-4 text-4xl text-gray-800">

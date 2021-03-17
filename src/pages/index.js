@@ -68,7 +68,6 @@ function Home() {
           <Stats />
           <WatchTalk />
           <Community />
-          <WatchTalk />
           <Cta />
           <Creators />
           <More />
