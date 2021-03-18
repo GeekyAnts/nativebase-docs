@@ -139,7 +139,7 @@ export default function () {
 | onClose        | function | Callback when actionsheet is closed. | -       |
 | disableOverlay | boolean  | If true, disables the overlay.       | -       |
 
-`ActionSheet`, `Actionsheet.Content`, `Actionsheet.Header`, `Actionsheet.Footer` implement **[Box](box.md)**, so all the Box Props can be passed to them.
+`ActionSheet`, `Actionsheet.Content`, `Actionsheet.Header`, `Actionsheet.Footer` implement **[Box](box.md)**. All the props of Box can be passed to them.
 
 Actionsheet.Item implements [`Button`](button.md), all the props of `Button` can be passed here.
 
