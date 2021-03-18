@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <Layout
-      title={`${siteConfig.title} | A complete component library for React Ecosystem`}
+      title={`Privacy Policy - ${siteConfig.title} | A complete component library for React Ecosystem`}
       description="A complete component library for React Ecosystem"
     >
       <Head>

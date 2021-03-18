@@ -10,7 +10,7 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`${siteConfig.title} | A complete component library for React Ecosystem`}
+      title={`Cookie Policy - ${siteConfig.title} | A complete component library for React Ecosystem`}
       description="A complete component library for React Ecosystem"
     >
       <Head>

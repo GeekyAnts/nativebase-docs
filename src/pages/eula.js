@@ -9,7 +9,7 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`${siteConfig.title} | A complete component library for React Ecosystem`}
+      title={`End User License Agreement - ${siteConfig.title} | A complete component library for React Ecosystem`}
       description="A complete component library for React Ecosystem"
     >
       <Head>
