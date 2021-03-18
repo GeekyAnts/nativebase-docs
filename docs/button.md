@@ -293,3 +293,8 @@ export default function () {
 | shadow      | number                                          | Shadow to apply to button.                                                                                        | -       |
 | onPress     | function                                        | Callback for onPress.                                                                                             | -       |
 | \_text      | [`TextProps`](text.md#props)                    | Props to style the child text                                                                                     | -       |
+
+## Accessibility
+
+- Button has `role` set to `button`
+- When Button has focus, Space or Enter activates it.

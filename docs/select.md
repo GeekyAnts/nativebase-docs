@@ -182,3 +182,7 @@ export default function () {
 | value      | string                       | The value to be used for the item. This is the value that will be returned on form submission. | -       |
 | isDisabled | boolean                      | If true, the item will be disabled (only for `styled` variant).                                | -       |
 | \_label    | [`TextProps`](text.md#props) | TextProps to be applied to label (only for `styled` variant).                                  | -       |
+
+## Accessibility
+
+- use `native` variant. Accessibility improvements on styled variant is in-progress.

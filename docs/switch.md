@@ -108,3 +108,9 @@ export default function () {
 | onToggle           | function         | Function called when the state of the Switch changes.                                                | -       |
 | accessibilityLabel | string           | [`Accessibilty label`](https://reactnative.dev/docs/accessibility#accessibilitylabel) for component. | -       |
 | accessibilityHint  | string           | [`Accessibilty hint`](https://reactnative.dev/docs/accessibility#accessibilityhint) for component    |         |
+
+## Accessibility
+
+- On mobile, uses native switch which is fully accessible.
+- On web, it uses checkbox with a `role` set to `switch`.
+- `Spacebar` toggles the switch.

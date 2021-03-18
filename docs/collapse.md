@@ -151,3 +151,8 @@ export default function () {
 | endingHeight     | number   | The height you want the content in it's expanded state. Set to auto by default. | -       |
 | onAnimationStart | function | The function to be called when the collapse animation starts.                   | -       |
 | onAnimationEnd   | function | The function to be called when the collapse animation starts.                   | -       |
+
+## Accessibility
+Collapse currently just provides a way to hide/show component.
+
+Make sure you follow the [disclosure accessibility spec](https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-img-long-description.html) while implementing a collapse.
