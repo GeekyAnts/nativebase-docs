@@ -79,14 +79,14 @@ export function Kitchensink() {
                 </div>
                 <div>
                   <a
-                    className="btn mt-7 text-white bg-gray-700 sm:ml-4 rounded-md py-3 px-5 items-center flex justify-center"
+                    className="btn mt-7 text-white bg-gray-700 sm:ml-4 rounded-md py-3 px-5 items-center flex justify-center no-underline"
                     href="https://github.com/nativebase/kitchensink"
                   >
                     <GitHub fill="#fff" className="mr-2" />
                     Github
                   </a>
                   <a
-                    className="btn mt-4 text-white bg-indigo-400 sm:ml-4 rounded-md py-3 px-5 items-center flex justify-center"
+                    className="btn mt-4 text-white bg-indigo-400 sm:ml-4 rounded-md py-3 px-5 items-center flex justify-center no-underline"
                     target="_blank"
                     href="exp://expo.host/@mdrehman/kitchensink-v3"
                   >
@@ -128,7 +128,7 @@ export function Kitchensink() {
                       // style={{ width: '88.7%', bottom: '-20%', right: '-18%' }}
                     />
                     <a
-                      className="btn text-white bg-indigo-400 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex"
+                      className="btn text-white bg-indigo-400 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex no-underline"
                       href="https://github.com/nativebase/kitchensink"
                     >
                       <GitHub fill="#fff" className="mr-2" />
