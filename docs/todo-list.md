@@ -3,7 +3,7 @@ id: todo-example
 title: Todo-List
 ---
 
-A simple Todo App made using NativeBase 3.0.
+A simple To Do App made using NativeBase 3.0.
 
 ```SnackPlayer name=TodoList%20Examples
 import React from "react";
