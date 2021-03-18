@@ -144,6 +144,23 @@ module.exports = {
           ],
         },
         {
+          title: 'Other',
+          items: [
+            {
+              label: 'Privacy Policy',
+              href: '/privacy-policy',
+            },
+            {
+              label: 'Cookie Policy',
+              href: '/cookie-policy',
+            },
+            {
+              href: '/eula',
+              label: 'EULA',
+            },
+          ],
+        },
+        {
           title: ' ',
           items: [
             {
