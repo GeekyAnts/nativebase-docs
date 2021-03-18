@@ -22,7 +22,7 @@ function ImageComponent () {
     <Box size={200}>
       <Image
         source={{
-          uri: 'https://nativebase.io/assets/img/front-page-icon.png',
+          uri: 'https://alpha.nativebase.io/img/icon.png',
         }}
       />
     </Box>
@@ -51,7 +51,7 @@ function ImageComponent() {
         size={12}
         resizeMode="cover"
         source={{
-          uri: 'https://nativebase.io/assets/img/front-page-icon.png',
+          uri: 'https://alpha.nativebase.io/img/icon.png',
         }}
         alt="nativebase"
       />
@@ -59,14 +59,14 @@ function ImageComponent() {
         size={20}
         resizeMode="cover"
         source={{
-          uri: 'https://nativebase.io/assets/img/front-page-icon.png',
+          uri: 'https://alpha.nativebase.io/img/icon.png',
         }}
         alt="nativebase"
       />
       <Image
         size={32}
         source={{
-          uri: 'https://nativebase.io/assets/img/front-page-icon.png',
+          uri: 'https://alpha.nativebase.io/img/icon.png',
         }}
         alt="nativebase"
       />
@@ -96,7 +96,7 @@ function ImageComponent() {
       alt="nativebase"
       borderRadius={100}
       source={{
-        uri: 'https://nativebase.io/assets/img/front-page-icon.png',
+        uri: 'https://alpha.nativebase.io/img/icon.png',
       }}
     />
   );
@@ -125,7 +125,7 @@ function ImageComponent () {
       borderRadius={100}
       source={{
         uri: 'https://-page-icon.png',
-        // uri: 'https://nativebase.io/assets/img/front-page-icon.png',
+        // uri: 'https://alpha.nativebase.io/img/icon.png',
       }}
       fallbackSource={{
         uri: 'https://www.w3schools.com/css/img_lights.jpg',
@@ -159,7 +159,7 @@ function ImageComponent () {
       <Image
         ref={myRef}
         source={{
-          uri: 'https://nativebase.io/assets/img/front-page-icon.png',
+          uri: 'https://alpha.nativebase.io/img/icon.png',
         }}
       />
     </Box>
