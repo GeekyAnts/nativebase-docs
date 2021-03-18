@@ -75,7 +75,7 @@ export function Hero() {
               >
                 <div>
                   <a
-                    className="btn text-white bg-primary-400 w-full mb-4 sm:w-auto sm:mb-0 rounded-md py-3 px-5 flex"
+                    className="btn text-white bg-primary-400 w-full mb-4 sm:w-auto sm:mb-0 rounded-md py-3 px-5 flex no-underline"
                     href="docs/nativebase"
                   >
                     Get Started
@@ -83,7 +83,7 @@ export function Hero() {
                 </div>
                 <div>
                   <a
-                    className="btn text-white bg-indigo-400 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex"
+                    className="btn text-white bg-indigo-400 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex no-underline"
                     href="https://github.com/GeekyAnts/nativebase"
                   >
                     <GitHub fill="#fff" className="mr-2" />
