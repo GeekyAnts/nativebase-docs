@@ -64,9 +64,9 @@ export default function () {
 
 ### Color and background color
 
-```SnackPlayer name=Color%20and%20background%20CO]olor
+```SnackPlayer name=Color%20and%20background%20COolor
 import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
+import { Box as NBBox, NativeBaseProvider, Center, Text } from 'native-base';
 
 const Box = (props) => {
   return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
@@ -75,18 +75,15 @@ const Box = (props) => {
 function Component() {
   return (
     <>
+      { /* raw CSS color value */ }
+      <Box bg='#fdba74' />
       { /* picks up a nested color value using dot notation */ }
       { /* => `theme.colors.lightBlue[300]` */ }
-      <Box bg='lightBlue.300' />
-      { /* raw CSS color value */ }
-      <Box
-        bgColor='#fdba74'
-        py={3}
-        _text={{
-          color: 'red.500',
-          fontWeight: 'bold'
-        }}
-      >I ❤️   NativeBase</Box>
+      <Box bgColor='lightBlue.200' py={3}
+      >
+        { /* using theme colors to set text color */ }
+        <Text color='red.500' fontWeight='bold'> I ❤️   NativeBase</Text>
+      </Box>
       { /* verbose prop */ }
       <Box backgroundColor='indigo.300' />
     </>
@@ -113,48 +110,6 @@ export default function () {
 | bgColor        | background-color | colors    |
 | opacity        | opacity          | none      |
 
-### Gradient - Does not Work
-
-```SnackPlayer name=Margin%20and%20padding
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
-
-const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' {...props} />
-}
-
-function Component() {
-  return (
-    <>
-      { /* picks up a nested color value using dot notation */ }
-      { /* => `theme.colors.lightBlue[300]` */ }
-      <Box bgGradient="linear(to-l, #7928CA,#FF0080)" />
-      { /* raw CSS color value */ }
-      <Box bgColor='#fdba74' />
-      { /* verbose prop */ }
-      <Box backgroundColor='indigo.300' />
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <Component />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
-
-```
-
-<br />
-
-| Prop                   | CSS Property     | Theme Key |
-| ---------------------- | ---------------- | --------- |
-| bgGradient             | background-image | none      |
-| bgClip, backgroundClip | background-clip  | none      |
-
 ### Typography
 
 ```SnackPlayer name=Typography
@@ -171,9 +126,10 @@ function Component() {
       { /* font-size of `theme.fontSizes.md` */ }
       <Text fontSize="md" >Sample Text </Text>
       { /* font-size `32px` */ }
-      <Text fontSize={32} >Sample Text </Text>
+      <Text fontSize={32} textDecoration='underline'>Sample Text </Text>
       { /* font-size `'2em'` */ }
-      <Text fontSize='2em' >Sample Text </Text>
+      { /* font-size of `theme.fontWeights.bold` */ }
+      <Text fontSize='2em' fontWeight='bold'>Sample Text </Text>
       { /* text-align `left` on all viewports and `center` from the first breakpoint and up */ }
       <Text textAlign={[ 'left', 'center' ]} >Sample Text </Text>
     </>
@@ -318,104 +274,6 @@ export default function () {
 | justifySelf                         | justify-self    | none      |
 | alignSelf                           | align-self      | none      |
 | order                               | order           | none      |
-
-### Grid Layout - Does not exist
-
-```SnackPlayer name=Margin%20and%20padding
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
-
-const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
-}
-
-function Component() {
-  return (
-    <>
-      { /* picks up a nested color value using dot notation */ }
-      { /* => `theme.colors.lightBlue[300]` */ }
-      <Box bg='lightBlue.300' />
-      { /* raw CSS color value */ }
-      <Box bgColor='#fdba74' />
-      { /* verbose prop */ }
-      <Box backgroundColor='indigo.300' />
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <Component />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
-
-```
-
-<br />
-
-| Prop                                   | CSS Property          | Theme Key |
-| -------------------------------------- | --------------------- | --------- |
-| gridGap, \*gap                         | grid-gap              | space     |
-| gridRowGap, \*rowGap                   | grid-row-gap          | space     |
-| gridColumnGap, \*columnGap             | grid-column-gap       | space     |
-| gridColumn, \*column                   | grid-column           | none      |
-| gridRow, \*row                         | grid-row              | none      |
-| gridArea, \*area                       | grid-area             | none      |
-| gridAutoFlow, \*autoFlow               | grid-auto-flow        | none      |
-| gridAutoRows, \*autoRows               | grid-auto-rows        | none      |
-| gridAutoColumns, \*autoColumns         | grid-auto-columns     | none      |
-| gridTemplateRows, \*templateRows       | grid-template-rows    | none      |
-| gridTemplateColumns, \*templateColumns | grid-template-columns | none      |
-| gridTemplateAreas, \*templateAreas     | grid-template-areas   | none      |
-
-### Background - Not Sure
-
-```SnackPlayer name=Margin%20and%20padding
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
-
-const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
-}
-
-function Component() {
-  return (
-    <>
-      { /* picks up a nested color value using dot notation */ }
-      { /* => `theme.colors.lightBlue[300]` */ }
-      <Box bg='lightBlue.300' />
-      { /* raw CSS color value */ }
-      <Box bgColor='#fdba74' />
-      { /* verbose prop */ }
-      <Box backgroundColor='indigo.300' />
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <Component />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
-
-```
-
-<br />
-
-| Prop                              | CSS Property          | Theme Key |
-| --------------------------------- | --------------------- | --------- |
-| bg, background                    | background            | none      |
-| bgImage, backgroundImage          | background-image      | none      |
-| bgSize, backgroundSize            | background-size       | none      |
-| bgPosition,backgroundPosition     | background-position   | none      |
-| bgRepeat,backgroundRepeat         | background-repeat     | none      |
-| bgAttachment,backgroundAttachment | background-attachment | none      |
 
 ### Borders
 
@@ -604,105 +462,3 @@ export default function () {
 | Prop   | CSS Property | Theme Field |
 | ------ | ------------ | ----------- |
 | shadow | box-shadow   | shadows     |
-
-### Pseudo
-
-```SnackPlayer name=Pseudo
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
-
-const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
-}
-
-function Component() {
-  return (
-    <>
-      <Box
-        _text={{
-          color: 'gray.500',
-          fontWeight: 'bold'
-        }}
-      > This is sample text.</Box>
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <Component />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
-
-```
-
-<br />
-
-| Prop   | CSS Property | Theme Field |
-| ------ | ------------ | ----------- |
-| \_text | none         | none        |
-
-### Other Props - Not relevent right now.
-
-```SnackPlayer name=Margin%20and%20padding
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
-
-const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
-}
-
-function Component() {
-  return (
-    <>
-      { /* picks up a nested color value using dot notation */ }
-      { /* => `theme.colors.lightBlue[300]` */ }
-      <Box bg='lightBlue.300' />
-      { /* raw CSS color value */ }
-      <Box bgColor='#fdba74' />
-      { /* verbose prop */ }
-      <Box backgroundColor='indigo.300' />
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <Component />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
-
-```
-
-<br />
-
-| Prop            | CSS Property     | Theme Field |
-| --------------- | ---------------- | ----------- |
-| animation       | animation        | none        |
-| appearance      | appearance       | none        |
-| transform       | transform        | none        |
-| transformOrigin | transform-origin | none        |
-| visibility      | visibility       | none        |
-| whiteSpace      | white-space      | none        |
-| userSelect      | user-select      | none        |
-| pointerEvents   | pointer-events   | none        |
-| wordBreak       | word-break       | none        |
-| overflowWrap    | overflow-wrap    | none        |
-| textOverflow    | text-overflow    | none        |
-| boxSizing       | box-sizing       | none        |
-| cursor          | cursor           | none        |
-| resize          | resize           | none        |
-| transition      | transition       | none        |
-| objectFit       | object-fit       | none        |
-| objectPosition  | object-position  | none        |
-| objectPosition  | object-position  | none        |
-| float           | float            | none        |
-| fill            | fill             | colors      |
-| stroke          | stroke           | colors      |
-| outline         | outline          | none        |
