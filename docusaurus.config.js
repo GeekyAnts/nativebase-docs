@@ -118,10 +118,6 @@ module.exports = {
           title: 'More',
           items: [
             {
-              href: 'https://trello.com/b/Dt2ZBNMP/nativebase-v3-public',
-              label: 'Roadmap',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/GeekyAnts/NativeBase',
             },
@@ -131,15 +127,12 @@ module.exports = {
                 'https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md',
             },
             {
-              label: 'Stars',
-              href: 'https://github.com/GeekyAnts/NativeBase/stargazers',
-              // className: "github-button",
-              dataIcon: 'octicon-star',
-              dataCountHref:
-                'https://github.com/GeekyAnts/NativeBase/stargazers',
-              dataShowCount: 'true',
-              dataCountAriaLabel: '# stargazers on GitHub',
-              'aria-label': 'Star this project on GitHub',
+              label: 'Privacy Policy',
+              href: '/privacy-policy',
+            },
+            {
+              label: 'Cookie Policy',
+              href: '/cookie-policy',
             },
           ],
         },

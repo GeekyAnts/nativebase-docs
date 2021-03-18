@@ -20,6 +20,7 @@ import {
   UtilityProps,
   WatchTalk,
   Web,
+  PolicyAcceptDialog,
 } from './../components/Home';
 import styles from './styles.module.css';
 
@@ -73,6 +74,8 @@ function Home() {
           <Creators />
           <More />
         </section>
+        {/* Cookie Policy Fold */}
+        <PolicyAcceptDialog />
       </main>
     </Layout>
   );
