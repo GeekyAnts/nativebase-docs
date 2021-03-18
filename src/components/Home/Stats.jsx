@@ -14,23 +14,29 @@ export function Stats() {
         <h1 className={`h2 mb-6 text-4xl text-center ${headingColor}`}>
           We are growing
         </h1>
-        <div class="grid grid-cols-2 gap-4">
-          <div className="max-w-3xl mx-auto text-left">
-            <p className="mb-0 text-6xl text-indigo-400 font-semibold">38.2k</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="max-w-3xl mx-6 md:mx-auto text-left">
+            <p className="mb-0 text-5xl md:text-6xl text-indigo-400 font-semibold">
+              38.2k
+            </p>
             <p className="text-xl">Downloads per week</p>
           </div>
-          <div className="max-w-3xl mx-auto text-left">
-            <p className="mb-0 text-6xl text-indigo-400 font-semibold">14.8k</p>
+          <div className="max-w-3xl mx-6 md:mx-auto text-left">
+            <p className="mb-0 text-5xl md:text-6xl text-indigo-400 font-semibold">
+              14.8k
+            </p>
             <p className="text-xl">Github stars</p>
           </div>
-          <div className="max-w-3xl mx-auto text-left ">
-            <p className="mb-0 pr-20 text-6xl text-indigo-400 font-semibold">
+          <div className="max-w-3xl mx-6 md:mx-auto text-left ">
+            <p className="mb-0 pr-20 text-5xl md:text-6xl text-indigo-400 font-semibold">
               196
             </p>
             <p className="text-xl">Contributors</p>
           </div>
-          <div className="max-w-3xl mx-auto text-left">
-            <p className="mb-0 text-6xl text-indigo-400 font-semibold">53.6k</p>
+          <div className="max-w-3xl mx-6 md:mx-auto text-left">
+            <p className="mb-0 text-5xl md:text-6xl text-indigo-400 font-semibold">
+              53.6k
+            </p>
             <p className="text-xl">Dependents</p>
           </div>
         </div>
