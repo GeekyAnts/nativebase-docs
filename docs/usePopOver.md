@@ -71,3 +71,5 @@ The `usePopover` hook returns an object with the following fields:
 `onClose`: (function) Callback for closing the popover
 
 `parentComponentConfig`: (object) The config which can be passed from parent to children
+
+`isKeyboardDismissable`: (boolean) Specifies whether popover can be closed using Escape key. Defaults to true

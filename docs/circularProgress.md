@@ -289,3 +289,9 @@ export default function () {
 | trackColor      | string                                                 | The color name of the progress track. Use a color key from the theme object           | -       |
 | color           | string                                                 | The color of the progress indicator. Use a color key from the theme object            | -       |
 | \_text          | [TextProps](text.md#props)                             | Text styling for Label Text.                                                          | -       |
+
+## Accessibility
+
+- On web and mobile, Progress has `role` set to `progressbar` to denote that it is a progress bar.
+- On web, `aria-valuenow`, `aria-valuemin` and `aria-valuemax` to ensure the progress percent is visible to screen readers.
+- On mobile, [accessibilityValue](https://reactnative.dev/docs/accessibility#accessibilityvalue) is used to ensure it's announced by Talkback and VoiceOver.

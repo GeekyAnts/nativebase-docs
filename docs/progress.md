@@ -125,3 +125,9 @@ export default function () {
 | value       | number                             | value of Progress.                                                                                                | `0`     |
 | colorScheme | string                             | The color of the radio when it's checked. This should be one of the color keys in the theme (e.g."green", "red"). | default |
 | size        | `2xl`, `xl`,`lg`, `md`, `sm`, `xs` | defines height of Progress                                                                                        | `md`    |
+
+## Accessibility
+
+- On web and mobile, Progress has `role` set to `progressbar` to denote that it is a progress bar.
+- On web, `aria-valuenow`, `aria-valuemin` and `aria-valuemax` to ensure the progress percent is visible to screen readers.
+- On mobile, [accessibilityValue](https://reactnative.dev/docs/accessibility#accessibilityvalue) is used to ensure it's announced by Talkback and VoiceOver.

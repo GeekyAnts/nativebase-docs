@@ -281,3 +281,8 @@ export default function () {
 ### Children components
 
 - `Slider.Track`, `Slider.FilledTrack`, and `Slider.Thumb` composes the [`Box`](box.md) component.
+
+## Accessibility
+
+- Slider is fully accessibile on native side using swipe gesture on iOS and volume button on Android.
+- Keyboard accessibility on web is still in-progress.

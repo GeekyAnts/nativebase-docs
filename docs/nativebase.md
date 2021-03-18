@@ -3,11 +3,11 @@ id: nativebase
 title: NativeBase 3.0
 ---
 
-A universal design system for mobile & web built for React Native and React with the same API. Ships a bunch of components for most of the use-cases that includes Button, AppBar, Dialog, Modal and what not.
+A universal design system built for React and React Native apps with a single API. NativeBase 3.0 ships components for most use cases including Button, AppBar, Dialog, Modal, etc.
 
 ## Why?
 
-We want to build and ship accessible apps fast with the highest quality. We want to focus on the business logic and to solve real problems.
+We want to build and ship high-quality apps quickly. Using NativeBase 3.0 facilitates this and gives us room to focus on solving important business problems.
 
 ## Inspirations
 
@@ -15,7 +15,7 @@ Material UI, Chakra UI, Ant Design, Braid Design System, Bootstrap, TailwindCSS,
 
 ## API
 
-Declarative and imperative. Declarative for components and imperative for all the actions.
+NativeBase 3.0 is both Declarative and Imperative. It is Declarative for components and Imperative for actions.
 
 ## Design Principle
 
