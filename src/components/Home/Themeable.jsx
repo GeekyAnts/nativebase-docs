@@ -3,24 +3,39 @@ import { CodeComponent } from './CodeComponent';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 const exampleCode = `
-<>
-  <Alert variant="left-accent" status="success">
-    <Alert.Icon />
-    <Alert.Title>Success</Alert.Title>
-  </Alert>
-  <Alert variant="solid" status="warning">
-    <Alert.Icon />
-    <Alert.Title>Warning</Alert.Title>
-  </Alert>
-  <Alert variant="top-accent" status="error">
-    <Alert.Icon />
-    <Alert.Title>Error</Alert.Title>
-  </Alert>
-  <Alert  variant="outline" status="info">
-    <Alert.Icon />
-    <Alert.Title>Ingo</Alert.Title>
-  </Alert>
-</>
+<Box rounded="pill" w={64} shadow={4}>
+  <Image
+    h={64}
+    rounded="pill"
+    source={require("./assets/forest.jpeg")}
+    alt="NativeBase Card"
+  />
+  <Center position="absolute" height="100%" width="100%">
+    <Icon
+      type="AntDesign"
+      name="play"
+      color="gray.200"
+      size={12}
+      opacity={0.8}
+    />
+  </Center>
+  <HStack
+    position="absolute"
+    bottom={4}
+    w={64}
+    px={4}
+    alignItems="center"
+    justifyContent="space-between"
+  >
+    <Stack>
+      <Heading color="gray.200" size="md">
+        Sacred Grove
+      </Heading>
+      <Text color="gray.200">Meghalaya</Text>
+    </Stack>
+    <Icon name="more-horizontal" type="Feather" color="white" />
+  </HStack>
+</Box>
 `.trim();
 
 export function Themeable() {

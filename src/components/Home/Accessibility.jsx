@@ -22,7 +22,7 @@ export function Accessibility() {
               React Native ARIA.
             </a>
           </p>
-          <p className="pt-4 mb-0 max-w-xl">
+          <p className="pt-4 mb-0 max-w-xl text-white">
             React Native ARIA provides React hooks that enable you to build
             accessible design systems in no time.
           </p>
