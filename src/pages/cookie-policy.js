@@ -3,6 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import React from 'react';
 import styles from './styles.module.css';
+import { PolicyAcceptDialog } from './../components/Home';
 
 function Home() {
   const context = useDocusaurusContext();
@@ -210,6 +211,7 @@ function Home() {
             Bangalore – 560076, Karnataka, India
           </p>
         </section>
+        <PolicyAcceptDialog />
       </main>
     </Layout>
   );
