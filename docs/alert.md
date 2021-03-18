@@ -286,3 +286,7 @@ export default function () {
 ### Alert.Description
 
 `Alert.Description` composes the [`Text`](text.md) component.
+
+## Accessibility
+
+Alert has `role` set to `alert`.

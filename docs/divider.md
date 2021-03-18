@@ -113,3 +113,7 @@ export default function () {
 | Name        | Type                     | Description                     | Default |
 | ----------- | ------------------------ | ------------------------------- | ------- |
 | orientation | `horizontal`, `vertical` | The orientation of the divider. | -       |
+
+## Accessibility
+
+- Divider has role set to `separator` and `aria-orientation` to either `horizontal` or `vertical`.
