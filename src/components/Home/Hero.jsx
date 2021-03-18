@@ -48,15 +48,16 @@ export function Hero() {
               className="font-inter text-5xl md:text-6xl leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              A complete <br /> component library for <br /> the{' '}
+              Mobile first accessible <br /> components for <br />
+              {/* A Complete <br /> Component Library for <br /> the{' '} */}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-indigo-400">
-                React Ecosystem
+                React Native & Web.
               </span>
             </h1>
             <div>
               <p className={`text-2xl max-w-3xl mx-auto mt-8 ${subHeadColor}`}>
-                NativeBase 3.0 provides a consistent UI across Web, Android &
-                iOS, out of the box Accessibility and supports Utility Props
+                An accessible & utility-first component library to build your
+                design system for all the platforms (web in alpha).
               </p>
             </div>
             <div className="max-w-2xl mx-auto mt-20">
