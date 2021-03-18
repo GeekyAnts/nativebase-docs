@@ -16,3 +16,4 @@ export { Themeable } from './Themeable';
 export { UtilityProps } from './UtilityProps';
 export { WatchTalk } from './WatchTalk';
 export { Web } from './Web';
+export { PolicyAcceptDialog } from './PolicyAcceptDialog';
