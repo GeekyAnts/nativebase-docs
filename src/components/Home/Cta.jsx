@@ -171,26 +171,31 @@ export function Cta() {
         </div>
 
         <div>
-          <div className="pb-12 md:pb-20">
+          <div className="pb-12 md:pb-20 ">
             <div
-              className="flex flex-row justify-around items-center bg-primary-400 py-10 px-12 md:py-16 md:px-16 shadow-2xl"
+              className="bg-primary-400 justify-center flex w-full shadow-2xl"
               data-aos="zoom-y-out"
             >
-              <div className="p-4 rounded-full h-28 w-28 flex justify-center items-center bg-indigo-400">
-                <Discord fill="white" height={56} width={56} />
-              </div>
-              <div className="text-center">
-                <h3 className="h3 text-white text-3xl mb-0">
-                  Chat with us on Discord
-                </h3>
-              </div>
-              <div>
-                <a
-                  className="btn text-primary-700 bg-white rounded-md py-3 px-5 text-lg no-underline"
-                  href="https://discord.com/invite/TSgCw2UPmb"
-                >
-                  Join the #NativeBase Discord!
-                </a>
+              <div
+                style={{ maxWidth: 1440 }}
+                className="flex flex-row justify-around items-center w-full py-10 px-12 md:py-16 md:px-16 "
+              >
+                <div className="p-4 rounded-full h-28 w-28 flex justify-center items-center bg-indigo-400">
+                  <Discord fill="white" height={56} width={56} />
+                </div>
+                <div className="text-center">
+                  <h3 className="h3 text-white text-3xl mb-0">
+                    Chat with us on Discord
+                  </h3>
+                </div>
+                <div>
+                  <a
+                    className="btn text-primary-700 bg-white rounded-md py-3 px-5 text-lg no-underline"
+                    href="https://discord.com/invite/TSgCw2UPmb"
+                  >
+                    Join the #NativeBase Discord!
+                  </a>
+                </div>
               </div>
             </div>
           </div>
