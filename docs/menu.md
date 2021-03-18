@@ -187,3 +187,7 @@ Extends `MenuItem`.
 | defaultValue | number, number[], string, string[] | The initial value of the option group.              | -       |
 | value        | number, string                     | The value of the option group.                      | -       |
 | onChange     | function                           | Function called when selection changes              | -       |
+
+## Accessibility
+
+- WIP (Work in progress).

@@ -467,3 +467,22 @@ export default function () {
 | variant      | `enclosed`, `enclosed-colored`, `line`, `soft-rounded`, `solid-box`, `solid-rounded` | The variant of the tabs style to use.                                                                             | `line`  |
 
 `Tabs.Bar`, `Tabs.Tab`, `Tabs.Views`, `Tabs.View` all implement [`Box`](box.md), all the props of Box can be passed to it.
+
+## Accessibility
+
+### Keyboard
+
+- `ArrowRight` Moves focus to the next tab
+- `ArrowLeft` Moves focus to the previous tab
+- `Tab` When focus moves into the tab list, places focus on the active tab element
+- `Home` Moves focus to the first tab
+- `End` Moves focus to the last tab
+
+### ARIA roles
+
+- Tab has role set to `tab`
+- `aria-selected` is set to true when a tab is selected and all other Tabs have it set to false
+- `aria-controls` is set to the tabpanel's id
+- Tablist has `role` set to `tablist`
+- TabPanel has `role` set to `tabpanel`
+- `aria-labelledby` is set to the id of the Tab that labels the TabPanel

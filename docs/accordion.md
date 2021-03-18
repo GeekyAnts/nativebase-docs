@@ -413,3 +413,7 @@ export default function () {
 ### Accordion.Icon
 
 **AccordionIcon** renders an Icon and composes **[Icon](icon.md)**.
+
+## Accessibility
+
+WIP (Work in progress)

@@ -19,6 +19,7 @@ import { IconButton, Icon, NativeBaseProvider, Center } from 'native-base';
 function IconButtonExample () {
   return (
     <IconButton
+      accessibilityLabel="search"
       colorScheme="emerald"
       variant="outline"
       icon={<Icon name={'search'} />}
@@ -48,6 +49,7 @@ function IconButtonExample () {
     <Stack space={4}>
       {['sm', 'md', 'lg'].map((size: any) => (
         <IconButton
+          accessibilityLabel="menu"
           size={size}
           variant="solid"
           colorScheme="emerald"
@@ -80,6 +82,7 @@ function IconButtonExample () {
     <Stack space={4}>
       {['outline', 'solid', 'ghost'].map((variant: any) => (
         <IconButton
+          accessibilityLabel="menu"
           key={variant}
           variant={variant}
           colorScheme="teal"
@@ -111,6 +114,11 @@ export default function () {
 
 **IconButton** implements **[Button](button.md)**, so all the **Button** Props can be passed to **IconButton**.
 
-| Name | Type        | Description                                                                                             | Default |
-| ---- | ----------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| icon | JSX.Element | The icon to be used. Refer to the [`Icon`](icon.md) section of the docs for the available icon options. | -       |
+| Name               | Type        | Description                                                                                             | Default |
+| ------------------ | ----------- | ------------------------------------------------------------------------------------------------------- | ------- |
+| icon               | JSX.Element | The icon to be used. Refer to the [`Icon`](icon.md) section of the docs for the available icon options. | -       |
+| accessibilityLabel | string      | A11y: A label that describes the button                                                                 | -       |
+
+## Accessibility
+
+- Use accessibilityLabel for labelling icon buttons to make sure it's announced by screen reader devices.
