@@ -383,7 +383,7 @@ import {
 } from "native-base";
 
 function CheckboxComponent() {
-  const [groupValue, setGroupValue] = React.useState(["Item 1 ", "Item 3 "]);
+  const [groupValue, setGroupValue] = React.useState(["Item 1", "Item 3"]);
   return (
     <Container>
       <FormControl isRequired isInvalid>
