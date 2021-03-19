@@ -17,10 +17,15 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
-  plugins: ['docusaurus-tailwindcss-loader'],
+  plugins: ['docusaurus-tailwindcss-loader'
+  // '@docusaurus/plugin-google-gtag'
+],
   themeConfig: {
     // hideableSidebar: true,
     // respectPrefersColorScheme: true,
+    // gtag: {
+    //   trackingID: 'UA-76655074-1',
+    // },
     algolia: {
       apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
       indexName: 'nativebase-v3',
@@ -118,10 +123,6 @@ module.exports = {
           title: 'More',
           items: [
             {
-              href: 'https://trello.com/b/Dt2ZBNMP/nativebase-v3-public',
-              label: 'Roadmap',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/GeekyAnts/NativeBase',
             },
@@ -131,15 +132,12 @@ module.exports = {
                 'https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md',
             },
             {
-              label: 'Stars',
-              href: 'https://github.com/GeekyAnts/NativeBase/stargazers',
-              // className: "github-button",
-              dataIcon: 'octicon-star',
-              dataCountHref:
-                'https://github.com/GeekyAnts/NativeBase/stargazers',
-              dataShowCount: 'true',
-              dataCountAriaLabel: '# stargazers on GitHub',
-              'aria-label': 'Star this project on GitHub',
+              label: 'Privacy Policy',
+              href: '/privacy-policy',
+            },
+            {
+              label: 'Cookie Policy',
+              href: '/cookie-policy',
             },
           ],
         },

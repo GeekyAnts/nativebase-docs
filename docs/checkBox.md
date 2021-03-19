@@ -34,8 +34,6 @@ export default function () {
 }
 ```
 
-## Examples
-
 ### Controlled
 
 ```SnackPlayer name=CheckBox%20Controlled
@@ -67,8 +65,6 @@ export default function () {
   );
 }
 ```
-
-## Examples
 
 ### Uncontrolled
 
@@ -383,7 +379,7 @@ import {
 } from "native-base";
 
 function CheckboxComponent() {
-  const [groupValue, setGroupValue] = React.useState(["Item 1 ", "Item 3 "]);
+  const [groupValue, setGroupValue] = React.useState(["Item 1", "Item 3"]);
   return (
     <Container>
       <FormControl isRequired isInvalid>
@@ -452,7 +448,7 @@ function CheckboxComponent() {
   return (
     <Checkbox
       colorScheme="success"
-      icon={<Icon name="bullseye" type="MaterialCommunityIcons" opacity={0} />}
+      icon={<Icon name="bullseye" type="MaterialCommunityIcons" opacity={1} />}
       ref={myRef}
       onChange={(_, state) => {
         if (state)

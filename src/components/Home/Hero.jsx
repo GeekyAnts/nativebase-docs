@@ -1,6 +1,7 @@
 import React from 'react';
 import GitHub from '../../img/GitHub';
 import Star from '../../img/Star';
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 export function Hero() {
   const [starCount, setStarCount] = React.useState(0);
@@ -9,7 +10,8 @@ export function Hero() {
       .then((response) => response.json())
       .then((data) => setStarCount(data.stargazers_count.toLocaleString()));
   }, []);
-
+  const { isDarkTheme } = useThemeContext();
+  const subHeadColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   return (
     <section className="relative">
       {/* Illustration behind hero content */}
@@ -46,12 +48,19 @@ export function Hero() {
               className="font-inter text-5xl md:text-6xl leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              A complete <br /> component library for <br /> the{' '}
+              Mobile first accessible <br /> components for <br />
+              {/* A Complete <br /> Component Library for <br /> the{' '} */}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-indigo-400">
-                React Ecosystem
+                React Native & Web.
               </span>
             </h1>
-            <div className="max-w-3xl mx-auto  mt-20">
+            <div>
+              <p className={`text-2xl max-w-3xl mx-auto mt-8 ${subHeadColor}`}>
+                An accessible & utility-first component library to build your
+                design system for all the platforms (web in alpha).
+              </p>
+            </div>
+            <div className="max-w-2xl mx-auto mt-20">
               {/* <p
                 className="text-xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"
@@ -67,7 +76,7 @@ export function Hero() {
               >
                 <div>
                   <a
-                    className="btn text-white bg-primary-400 w-full mb-4 sm:w-auto sm:mb-0 rounded-md py-3 px-5 flex"
+                    className="btn text-white bg-primary-400 w-full mb-4 sm:w-auto sm:mb-0 rounded-md py-3 px-5 flex no-underline"
                     href="docs/nativebase"
                   >
                     Get Started
@@ -75,7 +84,7 @@ export function Hero() {
                 </div>
                 <div>
                   <a
-                    className="btn text-white bg-indigo-400 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex"
+                    className="btn text-white bg-indigo-400 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex no-underline"
                     href="https://github.com/GeekyAnts/nativebase"
                   >
                     <GitHub fill="#fff" className="mr-2" />
@@ -94,7 +103,7 @@ export function Hero() {
               data-aos-delay="450"
             >
               <div className="flex flex-col justify-center">
-                <div
+                {/* <div
                   data-snack-id="@theankurkedia/nativebase-music-player"
                   data-snack-platform="web"
                   data-snack-preview="true"
@@ -107,7 +116,7 @@ export function Hero() {
                     width: '1080px',
                     height: '672px',
                   }}
-                />
+                /> */}
                 {/* <svg
                   className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto"
                   width="768"

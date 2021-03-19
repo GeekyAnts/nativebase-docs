@@ -139,6 +139,16 @@ export default function () {
 | onClose        | function | Callback when actionsheet is closed. | -       |
 | disableOverlay | boolean  | If true, disables the overlay.       | -       |
 
-`ActionSheet`, `Actionsheet.Content`, `Actionsheet.Header`, `Actionsheet.Footer` implement **[Box](box.md)**, so all the Box Props can be passed to them.
+`ActionSheet`, `Actionsheet.Content`, `Actionsheet.Header`, `Actionsheet.Footer` implement **[Box](box.md)**. All the props of Box can be passed to them.
 
 Actionsheet.Item implements [`Button`](button.md), all the props of `Button` can be passed here.
+
+## Accessibility
+
+- ActionSheet has `aria-modal` set to true.
+- ActionSheet has `role` set to `dialog`.
+- When the ActionSheet opens, focus is trapped within it.
+- Pressing Esc closes the ActionSheet.
+- When the ActionSheet opens, focus is automatically set to the first enabled element.
+- Clicking on the overlay closes the ActionSheet.
+- Scrolling is blocked on the elements behind the ActionSheet.

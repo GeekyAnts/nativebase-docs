@@ -155,3 +155,7 @@ export default function () {
 | isReadOnly | boolean | If true, this prop is passed to its children. | -       |
 
 **FormControl.Label**, **FormControl.HelperText**, and **FormControl.ErrorMessage** can be styled using pseudo style props like `_invalid` and `_disabled`.
+
+## Accessibility
+
+WIP (Work in progress)

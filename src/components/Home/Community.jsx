@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 const articles = [
   {
@@ -23,17 +23,26 @@ const articles = [
   },
 ];
 export function Community() {
+  const { isDarkTheme } = useThemeContext();
+  const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
+  const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 text-4xl">Join Our Community</h2>
+            <h2 className={`h2 text-3xl md:text-4xl ${headingColor}`}>
+              Join our Community
+            </h2>
+            <p className={`text-lg md:text-xl ${subHeadingColor}`}>
+              We have a lively community built on our shared love for React &
+              React Native. Check out our recent blog posts and come join us!
+            </p>
           </div>
 
           {/* Articles list */}
           <div className="max-w-sm mx-auto md:max-w-none">
-            <div className="grid gap-12 md:grid-cols-3 md:col-gap-4 md:row-gap-6 items-start">
+            <div className="grid gap-2 md:gap-12 md:grid-cols-3 md:col-gap-4 md:row-gap-6 items-start">
               {articles.map(({ name, link, src }) => {
                 return (
                   <article
