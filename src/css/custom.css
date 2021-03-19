@@ -29,6 +29,11 @@
   --ifm-global-radius: 0.4rem;
 }
 
+.main-wrapper-docs {
+  max-width: 1400px;
+  width: 1400px;
+  align-self: center;
+}
 /* .main-wrapper {
   max-width: 1400px;
   width: 1400px;
