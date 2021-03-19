@@ -11,7 +11,7 @@ import {
   Creators,
   Cta,
   Hero,
-  Kitchensink,
+  // Kitchensink,
   More,
   Responsive,
   // Sponsors,
@@ -58,7 +58,7 @@ function Home() {
         >
           <Hero />
           <Web />
-          <Kitchensink />
+          {/* <Kitchensink /> */}
           <Accessibility />
           <UtilityProps />
           <Themeable />
