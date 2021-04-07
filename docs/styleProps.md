@@ -5,6 +5,8 @@ title: Style Props
 
 Style props are a way to alter the style of a component by simply passing props to it. It helps to save time by providing helpful shorthand ways to style components.
 
+NativeBase implements [styled-system](https://styled-system.com/table) to achieve this.
+
 ## Reference
 
 The following table shows a list of every style prop and the properties within each group.
