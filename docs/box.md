@@ -56,7 +56,7 @@ import {
   Center,
   HStack,
   Stack,
-  Center,
+  useColorModeValue,
   NativeBaseProvider,
 } from 'native-base';
 function BoxComponent() {
@@ -205,8 +205,9 @@ export default function () {
 
 ## Props
 
-| Name     | Type        | Description                                                                           | Default |
-| -------- | ----------- | ------------------------------------------------------------------------------------- | ------- |
-| children | JSX.Element | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
+| Name          | Type                                     | Description                                                                           | Default |
+| ------------- | ---------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
+| children      | JSX.Element                              | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
+| safeAreaProps | [SafeAreaProps](safe-area-view-props.md) | Allows the Box to accomodate safeAreaView functionality                               | -       |
 
 It further supports [`color`](styleProps.md#color-and-background-color), [`space`](styleProps.md#margin-and-padding), [`layout`](styleProps.md#layout-width-and-height), [`flexbox`](styleProps.md#flexbox) & [`border`](styleProps.md#borders) from [style-system](styleProps.md).
