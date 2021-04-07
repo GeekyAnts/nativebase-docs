@@ -13,10 +13,15 @@ title: Spinner
 
 ```SnackPlayer name=Spinner%20Usage
 import React from 'react';
-import { Spinner, NativeBaseProvider, Center } from 'native-base';
+import { Spinner, HStack, Heading, NativeBaseProvider, Center } from 'native-base';
 
 function SpinnerComponent () {
-  return <Spinner />;
+  return (
+    <HStack space={2}>
+      <Heading color="primary.300">Spinner</Heading>
+      <Spinner accessibilityLabel="Loading posts" />
+    </HStack>
+  );
 }
 export default function () {
   return (
