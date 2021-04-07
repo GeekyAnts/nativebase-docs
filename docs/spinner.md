@@ -90,6 +90,6 @@ export default function () {
 
 Spinner composes [`ActivityIndicator`](https://reactnative.dev/docs/activityindicator) so all `ActivityIndicator` Props can be passed to Spinner.
 
-| Name | Type                            | Description                                         | Default |
-| ---- | ------------------------------- | --------------------------------------------------- | ------- |
-| size | `sm` , `lg` , `small` , `large` | Applies box shadow and accepts a number from 0 to 9 | -       |
+| Name | Type                                        | Description   | Default |
+| ---- | ------------------------------------------- | ------------- | ------- |
+| size | `sm` , `lg` , `small` , `large` or `Number` | Spinner sizes | `lg`    |
