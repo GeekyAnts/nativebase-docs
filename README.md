@@ -91,7 +91,7 @@ website/
 
 As mentioned above, the `docs` folder contains the markdown source files for all of the docs pages in the NativeBase website. In most cases, you will want to edit the files within this directory. If you're adding a new doc or you need to alter the order the docs appear in the sidebar, take a look at the `sidebars.json` file in the `website` directory. The sidebars file contains a list of document ids that should match those defined in the header metadata (aka frontmatter) of the docs markdown files.
 
-### Versioned docs
+### Versioned documentation
 
 The NativeBase website is versioned to allow users to go back and see the API reference docs for any given native-base version. A new version of the website is generally generated whenever there is a new native-base release. When this happens, any changes made to the `docs` and `sidebars.json` files will be copied over to the corresponding location within `versioned_docs` and `versioned_sidebars`.
 
