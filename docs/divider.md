@@ -27,7 +27,7 @@ import { Divider, Heading, Icon, NativeBaseProvider, Center, Box } from 'native-
 
 function DividerComponent() {
   return (
-    <Box>
+    <Box w={190}>
       <Heading mx={3}>
         Chrome <Icon ml="auto" type="AntDesign" name="chrome" />
       </Heading>
