@@ -33,31 +33,34 @@ While you can pass the verbose props, using the shorthand can save you some time
 
 ```SnackPlayer name=Flex%20Example
 import React from 'react';
-import { Flex, Spacer, Center, NativeBaseProvider } from 'native-base';
+import { Flex, Spacer, Center, Button, Heading, NativeBaseProvider } from 'native-base';
 
 function FlexComponent() {
+  const [direction, setDirection]: any = React.useState('column');
   return (
-    <Flex h={56} w={20} justify="space-between">
-      <Center
-        size={16}
-        bg="emerald.400"
-        rounded="xl"
-        _text={{ color: 'white' }}
+    <Center flex={1}>
+      <Heading mb={3}>Primary Shades</Heading>
+      <Button
+        my={3}
+        onPress={() => setDirection(direction === 'row' ? 'column' : 'row')}
       >
-        Box 1
-      </Center>
-      <Center
-        bg="lightBlue.400"
-        size={16}
-        rounded="xl"
-        _text={{ color: 'white' }}
-      >
-        Box 2
-      </Center>
-      <Center size={16} bg="violet.400" rounded="xl" _text={{ color: 'white' }}>
-        Box 3
-      </Center>
-    </Flex>
+        Change Flex Direction
+      </Button>
+      <Flex flexDirection={direction}>
+        <Center size={16} bg="primary.100" _text={{ color: 'gray.800' }}>
+          100
+        </Center>
+        <Center size={16} bg="primary.200" _text={{ color: 'white' }}>
+          200
+        </Center>
+        <Center bg="primary.300" size={16} _text={{ color: 'white' }}>
+          300
+        </Center>
+        <Center size={16} bg="primary.400" _text={{ color: 'white' }}>
+          400
+        </Center>
+      </Flex>
+    </Center>
   );
 }
 
@@ -65,9 +68,7 @@ function FlexComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
-        <FlexComponent />
-      </Center>
+      <FlexComponent />
     </NativeBaseProvider>
   );
 }
@@ -79,29 +80,32 @@ You can pass Spacer to add Space between Flex items.
 
 ```SnackPlayer name=Flex%20Example(Spacer)
 import React from 'react';
-import { Flex, Spacer, Center, NativeBaseProvider } from 'native-base';
+import { Flex, Spacer, Center, Heading, NativeBaseProvider } from 'native-base';
 
 function FlexComponent() {
   return (
-    <Flex h={56} w={20} justify="space-between">
-      <Center
-        size={16}
-        bg="emerald.400"
-        rounded="xl"
-        _text={{ color: 'white' }}
-      >
-        Box 1
-      </Center>
-      <Spacer />
-      <Center
-        size={16}
-        bg="lightBlue.400"
-        rounded="xl"
-        _text={{ color: 'white' }}
-      >
-        Box 2
-      </Center>
-    </Flex>
+    <Center flex={1}>
+      <Heading mb={3}>Adding Spacer</Heading>
+      <Flex h={56} w={20}>
+        <Center
+          size={16}
+          bg="primary.400"
+          rounded="xl"
+          _text={{ color: 'white' }}
+        >
+          Box 1
+        </Center>
+        <Spacer />
+        <Center
+          size={16}
+          bg="secondary.400"
+          rounded="xl"
+          _text={{ color: 'white' }}
+        >
+          Box 2
+        </Center>
+      </Flex>
+    </Center>
   );
 }
 
@@ -109,9 +113,7 @@ function FlexComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
-        <FlexComponent />
-      </Center>
+      <FlexComponent />
     </NativeBaseProvider>
   );
 }
