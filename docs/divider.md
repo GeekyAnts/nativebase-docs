@@ -123,8 +123,8 @@ export default function () {
 | Name        | Type                               | Description                     | Default      |
 | ----------- | ---------------------------------- | ------------------------------- | ------------ |
 | orientation | `horizontal`, `vertical`           | The orientation of the divider. | `horizontal` |
-| borderColor | [`color`](default-theme.md#colors) | Divider's color.                | `muted.200`  |
-| borderWidth | number                             | Divider's width.                | `1`          |
+| bg          | [`color`](default-theme.md#colors) | Divider's color.                | `muted.200`  |
+| size        | `number`                           | Divider's width in px.          | `1`          |
 
 Apart from the above props, you can pass all the [`Box`](box.md#props) props.
 

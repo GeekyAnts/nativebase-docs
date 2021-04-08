@@ -19,28 +19,37 @@ import { VStack } from 'native-base';
 
 ```SnackPlayer name=VStack%20Usage
 import React from 'react';
-import { VStack, NativeBaseProvider, Center } from 'native-base';
+import { VStack, Center, Heading, NativeBaseProvider } from 'native-base';
 
 function HStackComponent () {
   return (
-    <VStack space={3}>
+    <VStack space={4} alignItems="center">
+      <Heading>VStack</Heading>
       <Center
         size={16}
-        bg="emerald.400"
-        rounded="xl"
+        bg="primary.400"
+        rounded="md"
         _text={{ color: 'white' }}
+        shadow={3}
       >
         Box 1
       </Center>
       <Center
-        bg="lightBlue.400"
+        bg="secondary.400"
         size={16}
-        rounded="xl"
-        _text={{ color: 'white'}}
+        rounded="md"
+        _text={{ color: 'white' }}
+        shadow={3}
       >
         Box 2
       </Center>
-      <Center size={16} bg="violet.400" rounded="xl" _text={{ color: 'white' }}>
+      <Center
+        size={16}
+        bg="emerald.400"
+        rounded="md"
+        _text={{ color: 'white' }}
+        shadow={3}
+      >
         Box 3
       </Center>
     </VStack>
@@ -58,6 +67,10 @@ export default function () {
   );
 }
 ```
+
+### Important 🚨
+
+> If you want to pass custom components (not a NativeBase imported component) as direct children of Stack, VStack, HStack, or ZStack you must wrap that in a [`Box`](box.md) for Stacks to work as expected.
 
 ## Props
 

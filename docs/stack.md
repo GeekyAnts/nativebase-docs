@@ -14,13 +14,51 @@ title: Stack
 
 ```SnackPlayer name=Stack%20Example
 import React from "react";
-import { Stack, Box, NativeBaseProvider, Center } from "native-base";
+import { Stack, Center, Heading, Button, NativeBaseProvider } from "native-base";
 function StackComponent() {
+  const [direction, setDirection]: any = React.useState('column');
   return (
-    <Stack space={3} mb={3}>
-      <Box borderRadius={4} size={10} bg="red.400" />
-      <Box borderRadius={4} size={10} bg="purple.500" />
-      <Box borderRadius={4} size={10} bg="yellow.300" />
+    <Stack space={3} alignItems="center">
+        <Heading>Stack - {direction === 'row' ? 'Row' : 'Column'}</Heading>
+      <Stack
+        direction={direction}
+        space={3}
+        mb={3}
+        alignItems="center"
+      >
+        <Center
+          size={16}
+          bg="primary.400"
+          rounded="md"
+          _text={{ color: 'white' }}
+          shadow={3}
+        >
+          Box 1
+        </Center>
+        <Center
+          bg="secondary.400"
+          size={16}
+          rounded="md"
+          _text={{ color: 'white' }}
+          shadow={3}
+        >
+          Box 2
+        </Center>
+        <Center
+          size={16}
+          bg="emerald.400"
+          rounded="md"
+          _text={{ color: 'white' }}
+          shadow={3}
+        >
+          Box 3
+        </Center>
+      </Stack>
+      <Button
+        onPress={() => setDirection(direction === 'row' ? 'column' : 'row')}
+      >
+        Change Stack Direction
+      </Button>
     </Stack>
   );
 }
@@ -37,13 +75,55 @@ export default function () {
 }
 ```
 
-> If you want to pass custom components (not a nativebase imported component) as direct Children of Stack, VStack, HStack, or ZStack you must wrap that in a [`Box`](box.md) for Stacks to work as expected.
+## Stack with Divider
+
+```SnackPlayer name=Stack%20with%20Divider
+import React from "react";
+import { Stack, Heading, Divider, Box, Center, NativeBaseProvider } from "native-base";
+function StackComponent() {
+  return (
+    <Stack space={3} alignItems="center">
+      <Heading>Stack with Divider</Heading>
+      <Box>
+        <Stack
+          direction="row"
+          space={3}
+          mb={3}
+          alignItems="center"
+          divider={<Divider bg="red.200" />}
+        >
+          <Box>NativeBase</Box>
+          <Box>Easy</Box>
+          <Box>Simple</Box>
+          <Box>Fun</Box>
+        </Stack>
+      </Box>
+    </Stack>
+  );
+}
+
+// Example template which wraps component with NativeBaseProvider
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <StackComponent />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+### Important 🚨
+
+> If you want to pass custom components (not a NativeBase imported component) as direct children of Stack, VStack, HStack, or ZStack you must wrap that in a [`Box`](box.md) for Stacks to work as expected.
 
 ## Props
 
-| Name     | Type                                                  | Description                                  | Default |
-| -------- | ----------------------------------------------------- | -------------------------------------------- | ------- |
-| divider  | JSX.Element                                           | The divider element to use between elements. | -       |
-| space    | [`MarginProps`](https://styled-system.com/api/#space) | The space between each stack item.           | -       |
-| reversed | boolean                                               | The direction to stack the elements          | -       |
-| children | JSX.Element                                           | The elements to be stacked.                  | -       |
+| Name      | Type                                                  | Description                                  | Default  |
+| --------- | ----------------------------------------------------- | -------------------------------------------- | -------- |
+| divider   | JSX.Element                                           | The divider element to use between elements. | -        |
+| direction | `row` or `column`                                     | Stack's direction.                           | `column` |
+| space     | [`MarginProps`](https://styled-system.com/api/#space) | The space between each stack item.           | -        |
+| reversed  | boolean                                               | The direction to stack the elements          | -        |
+| children  | JSX.Element                                           | The elements to be stacked.                  | -        |
