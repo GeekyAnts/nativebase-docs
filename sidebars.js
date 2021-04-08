@@ -63,6 +63,7 @@ module.exports = {
         'formControl',
         'iconButton',
         'input',
+        'textField',
         'numberInput',
         'link',
         'pinInput',

@@ -9,6 +9,7 @@ The `Input` component is a component that is used to get user input in a text fi
 
 - [`TextInput`](https://reactnative.dev/docs/textinput) from [`React Native`](https://reactnative.dev)
 - [`Box`](box.md)
+- [`HStack`](hStack.md)
 
 ## Import
 
@@ -247,49 +248,12 @@ function InputComponent () {
   return (
     <FormControl isRequired isInvalid p={2} w={"80%"}>
       <FormControl.Label>Form Controlled Input</FormControl.Label>
-      <Input placeholder="FormControl is providing me isInvalid prop" my={2} size='xs' p={1} />
+      <Input placeholder="FormControl is providing me isInvalid prop" my={2} size='xs' />
       <FormControl.HelperText>I am a Helper text 😊</FormControl.HelperText>
       <FormControl.ErrorMessage>
         I'll only appear when FormControl have isInvalid props.
       </FormControl.ErrorMessage>
     </FormControl>
-  );
-};
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <InputComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
-```
-
-### Input Focused and Error Border Colors
-
-```SnackPlayer name=Image%20Input%20Focused%20and%20Error%20Border%20Colors
-import React from 'react';
-import { Input, NativeBaseProvider,Stack, Center } from 'native-base';
-
-function InputComponent () {
-  return (
-    <Stack space={4}>
-      <Input
-        placeholder="focusBorderColor Example"
-        focusBorderColor="green.400"
-      />
-      <Input
-        placeholder="focusBorderColor Example"
-        focusBorderColor="pink.400"
-      />
-      <Input placeholder="Invalid Input Example" isInvalid />
-      <Input
-        placeholder="errorBorderColor Example"
-        isInvalid
-        errorBorderColor="yellow"
-      />
-    </Stack>
   );
 };
 export default function () {
@@ -315,13 +279,16 @@ export default function () {
 | onChange          | function                                                 | Callback for on change on input value.                                                                | -         |
 | placeholder       | string                                                   | The placeholder attribute specifies a short hint that describes the expected value of an input field. | -         |
 | isFullWidth       | boolean                                                  | If true, the input element will span the full width of its parent                                     | -         |
-| focusBorderColor  | string                                                   | The border color when the input is focused.                                                           | -         |
-| errorBorderColor  | string                                                   | The border color when isInvalid is set to true.                                                       | -         |
 | ariaLabel         | string                                                   | An accessible label for the input.                                                                    | -         |
 | InputLeftElement  | JSX.Element                                              | If given, adds the provided element to the left of the input.                                         | -         |
 | InputRightElement | JSX.Element                                              | If given, adds the provided element to the right of the input.                                        | -         |
-| type              | `password`, string, text                                 | Using the type `password`, user can mask the input.                                                   | -         |
-| label             | string                                                   | If given, adds a floating label to the input.                                                         | -         |
-| \_label           | [`TextProps`](text.md#props)                             | Props to be passed to label to change its text styling.                                               | -         |
+| type              | `password`                                               | Using the type `password`, user can mask the input.                                                   | -         |
+| \_hover           | any                                                      | [Input Porps](input.md#props) passed here will be applied on hovered state.                           | -         |
+| \_focus           | any                                                      | [Input Porps](input.md#props) passed here will be applied on focused state.                           | -         |
+| \_disabled        | any                                                      | [Input Porps](input.md#props) passed here will be applied on disabled state.                          | -         |
+| \_invalid         | any                                                      | [Input Porps](input.md#props) passed here will be applied on invalid state.                           | -         |
+| \_ios             | any                                                      | [Input Porps](input.md#props) passed here will be applied on ios only.                                | -         |
+| \_android         | any                                                      | [Input Porps](input.md#props) passed here will be applied on android only.                            | -         |
+| \_web             | any                                                      | [Input Porps](input.md#props) passed here will be applied on web only.                                | -         |
 
 Apart from these all the [Native TextInput Props](https://reactnative.dev/docs/textinput#props) from React Native can be passed to Input.
