@@ -22,8 +22,9 @@ function ImageComponent () {
     <Box size={200}>
       <Image
         source={{
-          uri: 'https://alpha.nativebase.io/img/icon.png',
+          uri: 'https://wallpaperaccess.com/full/317501.jpg',
         }}
+        alt="Alternate Text"
       />
     </Box>
   );
@@ -46,29 +47,29 @@ import React from 'react';
 import { HStack, Image, NativeBaseProvider, Center } from 'native-base';
 function ImageComponent() {
   return (
-    <HStack alignItems="center">
+    <HStack alignItems="center" space={2}>
       <Image
         size={12}
         resizeMode="cover"
         source={{
-          uri: 'https://alpha.nativebase.io/img/icon.png',
+          uri: 'https://wallpaperaccess.com/full/317501.jpg',
         }}
-        alt="nativebase"
+        alt="Alternate Text"
       />
       <Image
         size={20}
         resizeMode="cover"
         source={{
-          uri: 'https://alpha.nativebase.io/img/icon.png',
+          uri: 'https://wallpaperaccess.com/full/317501.jpg',
         }}
-        alt="nativebase"
+        alt="Alternate Text"
       />
       <Image
         size={32}
         source={{
-          uri: 'https://alpha.nativebase.io/img/icon.png',
+          uri: 'https://wallpaperaccess.com/full/317501.jpg',
         }}
-        alt="nativebase"
+        alt="Alternate Text"
       />
     </HStack>
   );
@@ -93,11 +94,12 @@ function ImageComponent() {
   return (
     <Image
       size={150}
-      alt="nativebase"
+      resizeMode={'contain'}
       borderRadius={100}
       source={{
-        uri: 'https://alpha.nativebase.io/img/icon.png',
+        uri: 'https://wallpaperaccess.com/full/317501.jpg',
       }}
+      alt="Alternate Text"
     />
   );
 }
@@ -121,11 +123,11 @@ function ImageComponent () {
   return (
     <Image
       size={150}
-      alt="nativebase"
+      alt="fallback text"
       borderRadius={100}
       source={{
         uri: 'https://-page-icon.png',
-        // uri: 'https://alpha.nativebase.io/img/icon.png',
+        // uri: 'https://wallpaperaccess.com/full/317501.jpg',
       }}
       fallbackSource={{
         uri: 'https://www.w3schools.com/css/img_lights.jpg',
@@ -159,8 +161,9 @@ function ImageComponent () {
       <Image
         ref={myRef}
         source={{
-          uri: 'https://alpha.nativebase.io/img/icon.png',
+          uri: 'https://wallpaperaccess.com/full/317501.jpg',
         }}
+        alt="Alternate Text"
       />
     </Box>
   );
@@ -187,3 +190,5 @@ export default function () {
 | ignoreFallback | boolean                      | Opt out of the fallbackSource logic and show alternative text           | -       |
 | size           | number                       | Define the box size of image.                                           | -       |
 | \_alt          | [`TextProps`](text.md#props) | Text styling for alt.                                                   | -       |
+
+Apart from above props Image compose `React Native Image` component, so you can pass all [Image](https://reactnative.dev/docs/image#props) Props.
