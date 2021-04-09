@@ -8,7 +8,7 @@ This is a generic component for low level layout needs. It is similar to a [`div
 ## Implements
 
 - [`View`](https://reactnative.dev/docs/view) from [React Native](https://reactnative.dev)
-- [`color`](https://styled-system.com/api/#color), [`space`](https://styled-system.com/api/#space), [`layout`](https://styled-system.com/api/#layout), [`flexbox`](https://styled-system.com/api/#flexbox) & [`border`](https://styled-system.com/api/#border) from [style-system](https://styled-system.com)
+- [`color`](styleProps.md#color-and-background-color), [`space`](styleProps.md#margin-and-padding), [`layout`](styleProps.md#layout-width-and-height), [`flexbox`](styleProps.md#flexbox) & [`border`](styleProps.md#borders) from [style-system](styleProps.md).
 
 ## Example
 
@@ -19,7 +19,12 @@ import React from "react";
 import { Box, NativeBaseProvider, Center } from "native-base";
 function Component() {
   return (
-    <Box width="100%" bg="orange.400" p={4} >
+    <Box
+      w={'90%'}
+      bg="primary.400"
+      p={4}
+      _text={{ fontSize: 'md', fontWeight: 'bold', color: 'white' }}
+    >
       This is a Box
     </Box>
   );
@@ -51,12 +56,12 @@ import {
   Center,
   HStack,
   Stack,
-  Center,
+  useColorModeValue,
   NativeBaseProvider,
 } from 'native-base';
 function BoxComponent() {
   return (
-    <Box width={72} bg="gray.50" shadow={4}>
+    <Box width={72} bg={useColorModeValue('gray.50', 'gray.700')} shadow={4}>
       <Box>
         <AspectRatio ratio={16 / 9}>
           <Image
@@ -95,10 +100,14 @@ function BoxComponent() {
           27 MAR
         </Center>
       </Box>
-      <Stack p={4} space={3}>
+      <Stack p={4} space={4}>
         <Stack space={2}>
-          <Heading size="md">Life in the Garden City</Heading>
-          <Heading size="sm" color="red.500" fontWeight="500">
+          <Heading size="sm">Life in the Garden City</Heading>
+          <Heading
+            size="xs"
+            color={useColorModeValue('red.500', 'red.300')}
+            fontWeight="500"
+          >
             The Silicon Valley of India.
           </Heading>
         </Stack>
@@ -108,13 +117,18 @@ function BoxComponent() {
         </Text>
         <HStack alignItems="center" space={4} justifyContent="space-between">
           <HStack alignItems="center">
-            <Icon name="access-time" color="gray.500" />
+            <Icon name="access-time" color="gray.500" size="sm" />
             <Text ml={1} color="gray.500" fontWeight="500">
               6 mins ago
             </Text>
           </HStack>
           <HStack alignItems="center">
-            <Icon name="ios-chatbubbles" type="Ionicons" color="gray.500" />
+            <Icon
+              name="ios-chatbubbles"
+              type="Ionicons"
+              color="gray.500"
+              size="sm"
+            />
             <Text ml={1} color="gray.500" fontWeight="500">
               39 comments
             </Text>
@@ -154,7 +168,14 @@ function Component() {
     });
   }, [myRef]);
   return (
-    <Box width="100%" bg="orange.300" p={4} color="white" ref={myRef}>
+    <Box
+      width="90%"
+      bg="primary.400"
+      p={4}
+      shadow={2}
+      _text={{ fontSize: 'md', fontWeight: 'bold', color: 'white' }}
+      ref={myRef}
+    >
       This is a Box
     </Box>
   );
@@ -184,7 +205,9 @@ export default function () {
 
 ## Props
 
-| Name     | Type        | Description                                                                           | Default |
-| -------- | ----------- | ------------------------------------------------------------------------------------- | ------- |
-| shadow   | number      | Applies box shadow and accepts a number from 0 to 9                                   | -       |
-| children | JSX.Element | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
+| Name          | Type                                     | Description                                                                           | Default |
+| ------------- | ---------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
+| children      | JSX.Element                              | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
+| safeAreaProps | [SafeAreaProps](safe-area-view-props.md) | Allows the Box to accomodate safeAreaView functionality                               | -       |
+
+It further supports [`color`](styleProps.md#color-and-background-color), [`space`](styleProps.md#margin-and-padding), [`layout`](styleProps.md#layout-width-and-height), [`flexbox`](styleProps.md#flexbox) & [`border`](styleProps.md#borders) from [style-system](styleProps.md).

@@ -16,7 +16,7 @@ To make your components respect the [SafeAreaView](https://reactnative.dev/docs/
 Internally, NativeBase uses [useSafeAreaInsets](https://docs.expo.io/versions/latest/sdk/safe-area-context/#hooks) hook of [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context).
 
 :::info
-SafeAreaView props can only be applied on [View](view.md) as of now. To make you App SafeArea safe, just wrap your app with a View and pass safeArea props to it.
+SafeAreaView props can only be applied on [Box](box.md) as of now. To make you App SafeArea safe, just wrap your app with a Box and pass safeArea props to it.
 :::
 
 ## Examples
@@ -25,13 +25,13 @@ SafeAreaView props can only be applied on [View](view.md) as of now. To make you
 
 ```SnackPlayer name=SafeAreaView%20Boolean
 import React from 'react';
-import { NativeBaseProvider, View, Text } from 'native-base';
+import { NativeBaseProvider, Box, Text } from 'native-base';
 function MyComponent() {
   return (
     // This would look different on devices with different insets
-    <View bg='teal.400' rounded='xl' size={24} safeArea>
+    <Box bg='teal.400' rounded='xl' size={24} safeArea>
       <Text>NativeBase</Text>
-    </View>
+    </Box>
   );
 }
 
@@ -49,13 +49,13 @@ export default function () {
 
 ```SnackPlayer name=SafeAreaView%20Boolean
 import React from 'react';
-import { NativeBaseProvider, View, Text } from 'native-base';
+import { NativeBaseProvider, Box, Text } from 'native-base';
 function MyComponent() {
   return (
     // This would look same on all devices
-    <View bg='teal.400' rounded='xl' size={24} safeAreaTop={8}>
+    <Box bg='teal.400' rounded='xl' size={24} safeAreaTop={8}>
       <Text>NativeBase</Text>
-    </View>
+    </Box>
   );
 }
 
