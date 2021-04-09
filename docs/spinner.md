@@ -13,10 +13,15 @@ title: Spinner
 
 ```SnackPlayer name=Spinner%20Usage
 import React from 'react';
-import { Spinner, NativeBaseProvider, Center } from 'native-base';
+import { Spinner, HStack, Heading, NativeBaseProvider, Center } from 'native-base';
 
 function SpinnerComponent () {
-  return <Spinner />;
+  return (
+    <HStack space={2}>
+      <Heading color="primary.300">Spinner</Heading>
+      <Spinner accessibilityLabel="Loading posts" />
+    </HStack>
+  );
 }
 export default function () {
   return (
@@ -85,6 +90,6 @@ export default function () {
 
 Spinner composes [`ActivityIndicator`](https://reactnative.dev/docs/activityindicator) so all `ActivityIndicator` Props can be passed to Spinner.
 
-| Name | Type                            | Description                                         | Default |
-| ---- | ------------------------------- | --------------------------------------------------- | ------- |
-| size | `sm` , `lg` , `small` , `large` | Applies box shadow and accepts a number from 0 to 9 | -       |
+| Name | Type                                        | Description   | Default |
+| ---- | ------------------------------------------- | ------------- | ------- |
+| size | `sm` , `lg` , `small` , `large` or `Number` | Spinner sizes | `lg`    |
