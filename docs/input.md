@@ -13,12 +13,7 @@ The `Input` component is a component that is used to get user input in a text fi
 ## Import
 
 ```jsx
-import {
-  Input,
-  InputGroup,
-  InputLeftAddon,
-  InputRightAddon,
-} from 'native-base';
+import { Input, InputGroup } from 'native-base';
 ```
 
 ## Examples
@@ -106,7 +101,7 @@ export default function () {
 }
 ```
 
-### Input Addons
+<!-- ### Input Addons
 
 ```SnackPlayer name=Image%20Addons
 import React from 'react';
@@ -138,7 +133,7 @@ export default function () {
   );
 }
 
-```
+``` -->
 
 ### Input Elements
 
@@ -324,4 +319,4 @@ export default function () {
 | label             | string                                                   | If given, adds a floating label to the input.                                                         | -         |
 | \_label           | [`TextProps`](text.md#props)                             | Props to be passed to label to change its text styling.                                               | -         |
 
-Apart from these all the [Native TextInput Props](https://reactnative.dev/docs/textinput#props) from React Native can be passed to Input.
+Apart from these all the [Native TextInput Props](https://reactnative.dev/docs/textinput#props) from React Native can be passed to Input. It further supports [`color`](styleProps.md#color-and-background-color), [`space`](styleProps.md#margin-and-padding), [`layout`](styleProps.md#layout-width-and-height), [`flexbox`](styleProps.md#flexbox), [`border`](styleProps.md#borders) and [`typography`](styleProps.md#typography) props from [style-system](styleProps.md).

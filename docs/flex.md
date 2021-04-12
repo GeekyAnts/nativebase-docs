@@ -121,4 +121,4 @@ export default function () {
 
 ## Props
 
-**Flex** implements **[Box](box.md)**, so all the Box Props can be passed to it.
+**Flex** implements **[Box](box.md)**, so all the Box Props can be passed to it, i.e. [`color`](styleProps.md#color-and-background-color), [`space`](styleProps.md#margin-and-padding), [`layout`](styleProps.md#layout-width-and-height), [`flexbox`](styleProps.md#flexbox) & [`border`](styleProps.md#borders) props from [style-system](styleProps.md).
