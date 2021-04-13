@@ -3,12 +3,12 @@ id: stack
 title: Stack
 ---
 
-`Stack` aligns items vertically.
+`Stack` aligns items either `vertically` or `horizontaly` (default is `vertical`).
 
 ## Implements
 
-- [`View`](https://reactnative.dev/docs/view) from [React Native](https://reactnative.dev/docs/view)
-- `space`, `border`, `layout`, `flexbox` and `color` from [style-system](https://styled-system.com/api)
+- [`Box`](box.md) from [NativeBase](nativebase.md)
+- [`color`](styleProps.md#color-and-background-color), [`space`](styleProps.md#margin-and-padding), [`layout`](styleProps.md#layout-width-and-height), [`flexbox`](styleProps.md#flexbox) & [`border`](styleProps.md#borders) from [style-system](styleProps.md)
 
 ## Example
 
@@ -120,10 +120,10 @@ export default function () {
 
 ## Props
 
-| Name      | Type                                                  | Description                                  | Default  |
-| --------- | ----------------------------------------------------- | -------------------------------------------- | -------- |
-| divider   | JSX.Element                                           | The divider element to use between elements. | -        |
-| direction | `row` or `column`                                     | Stack's direction.                           | `column` |
-| space     | [`MarginProps`](https://styled-system.com/api/#space) | The space between each stack item.           | -        |
-| reversed  | boolean                                               | The direction to stack the elements          | -        |
-| children  | JSX.Element                                           | The elements to be stacked.                  | -        |
+| Name      | Type              | Description                                  | Default  |
+| --------- | ----------------- | -------------------------------------------- | -------- |
+| divider   | JSX.Element       | The divider element to use between elements. | -        |
+| direction | `row` or `column` | Stack's direction.                           | `column` |
+| reversed  | boolean           | The direction to stack the elements          | -        |
+
+It further supports [`color`](styleProps.md#color-and-background-color), [`space`](styleProps.md#margin-and-padding), [`layout`](styleProps.md#layout-width-and-height), [`flexbox`](styleProps.md#flexbox) & [`border`](styleProps.md#borders) props from [style-system](styleProps.md).
