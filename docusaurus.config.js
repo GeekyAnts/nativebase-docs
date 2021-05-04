@@ -163,7 +163,10 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/nativebase/website/tree/main',
-          remarkPlugins: [require('./remark-snackplayer')],
+          remarkPlugins: [
+            require('./remark-snackplayer'),
+            require('./nb-automation-plugin'),
+          ],
         },
         blog: {
           showReadingTime: true,

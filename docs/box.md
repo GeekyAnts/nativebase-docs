@@ -14,27 +14,8 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 ### Basic
 
-```SnackPlayer name=Box%20Example
-import React from "react";
-import { Box, NativeBaseProvider, Center } from "native-base";
-function Component() {
-  return (
-    <Box width="100%" bg="orange.400" p={4} >
-      This is a Box
-    </Box>
-  );
-}
+```NBAutomateExample path=primitives,box,basic.tsx
 
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <Component />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ### Composition
