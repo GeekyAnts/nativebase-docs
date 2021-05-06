@@ -17,9 +17,10 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
-  plugins: ['docusaurus-tailwindcss-loader'
-  // '@docusaurus/plugin-google-gtag'
-],
+  plugins: [
+    'docusaurus-tailwindcss-loader',
+    // '@docusaurus/plugin-google-gtag'
+  ],
   themeConfig: {
     // hideableSidebar: true,
     // respectPrefersColorScheme: true,
@@ -166,6 +167,7 @@ module.exports = {
           remarkPlugins: [
             require('./remark-snackplayer'),
             require('./nb-automation-plugin'),
+            require('./component-prop-table'),
           ],
         },
         blog: {

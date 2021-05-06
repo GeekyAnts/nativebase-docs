@@ -5,6 +5,10 @@ title: Box
 
 This is a generic component for low level layout needs. It is similar to a [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) in HTML.
 
+```ComponentPropTable path=primitives,Box,types.ts
+
+```
+
 ## Implements
 
 - [`View`](https://reactnative.dev/docs/view) from [React Native](https://reactnative.dev)

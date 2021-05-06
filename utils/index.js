@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const docgen = require('react-docgen-typescript');
 
 const storybookExamplePath = path.resolve(
   __dirname,
@@ -18,6 +19,11 @@ const getSnackPlayerCodeSnippet = (...args) => {
 
   return fileContent;
 };
+const getPropDetail = (...args) => {
+  const filePath = path.resolve('./myNB/src/components/', ...args);
+  const fileData = docgen.parse(filePath);
+  return fileData;
+};
 
-module.exports = { getSnackPlayerCodeSnippet };
+module.exports = { getSnackPlayerCodeSnippet, getPropDetail };
 // getSnackPlayer('primitives', 'Box', 'basic.tsx');
