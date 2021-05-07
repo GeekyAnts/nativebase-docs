@@ -37,14 +37,25 @@ const filter = (obb, val) => {
   return uni;
 };
 
-const getPropDetail = (...args) => {
-  const filePath = path.resolve(componentsRootPath, ...args);
+const simplifyMeta = (meta) => {
+  let val = meta.split('=');
+  return {
+    path: val[1].split(' ')[0].split(','),
+    showStylingProps: val[2],
+  };
+};
+
+// Meta: example
+// path=primitives,Box,index.tsx showStylingProps=true
+const getPropDetail = (meta) => {
+  const { path: subPath, showStylingProps } = simplifyMeta(meta);
+  const filePath = path.resolve(componentsRootPath, ...subPath);
   console.log('filepath: ', filePath);
   const fileData = docgen.parse(filePath);
 
   // NOTE: writing on code for testing
 
-  fs.writeFileSync('test1.json', JSON.stringify(fileData));
+  // fs.writeFileSync('test1.json', JSON.stringify(fileData));
   // console.log('written on test1: ', Object.keys(fileData[0].props).length);
 
   // filter(fileData[0].props, {
@@ -78,9 +89,11 @@ const getPropDetail = (...args) => {
   //   link: `style-props#safearea`,
   // });
 
-  return fileData;
+  return [fileData, showStylingProps];
 };
 // getPropDetail('primitives', 'Box', 'types.ts');
+// getPropDetail('primitives', 'Box', 'index.tsx');
+getPropDetail('path=primitives,Box,index.tsx');
 
 module.exports = { getSnackPlayerCodeSnippet, getPropDetail };
 // getSnackPlayer('primitives', 'Box', 'basic.tsx');

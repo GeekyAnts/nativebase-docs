@@ -4,14 +4,14 @@ const u = require('unist-builder');
 const dedent = require('dedent');
 const fs = require('fs');
 const { getPropDetail } = require('../utils');
-const { propsMap } = require('./propsMap');
+const { internalPropsMap, rnPropsMap, StylingPropsMap } = require('./propsMap');
 
-const processNode = (node, parent, code) => {
+const processNode = (node, parent, code, showStylingProps) => {
   return new Promise(async (resolve, reject) => {
     try {
       // Generate Node for PropTable
       const snackPlayerDiv = u('html', {
-        value: dedent`${propTable(code)}
+        value: dedent`${propTable(code, showStylingProps)}
         `,
       });
 
@@ -33,6 +33,13 @@ const templateGenerator = (componentDetails) => {
       const { name, description, type, parent, defaultValue } = propsObject[
         prop
       ];
+      const MapValue =
+        internalPropsMap[type.name] ||
+        rnPropsMap[type.name] ||
+        StylingPropsMap[type.name];
+      let newType = type.name.replace(/\</g, '&lt;'); //for <
+      newType = newType.replace(/\>/g, '&gt;'); //for >
+
       if (parent.name === `I${displayName}Props`) {
         temp =
           temp +
@@ -42,11 +49,9 @@ const templateGenerator = (componentDetails) => {
         </td>
         <td>
           ${
-            propsMap[type.name]
-              ? `<a href="${propsMap[type.name].link}">${
-                  propsMap[type.name].name
-                }</a>`
-              : type.name
+            MapValue
+              ? `<a href="${MapValue.link}">${MapValue.name}</a>`
+              : newType
           }
         </td>
         <td>
@@ -84,9 +89,12 @@ const templateGenerator = (componentDetails) => {
   `;
 };
 
-const propTable = (typesArray) => {
+const propTable = (typesArray, showStylingProps) => {
   return typesArray.map((component) => {
-    return `${templateGenerator(component)} ${implementSection(component)}`;
+    return `${templateGenerator(component)} ${implementSection(
+      component,
+      showStylingProps
+    )}`;
   });
 };
 
@@ -98,17 +106,22 @@ const implementsTemplateGenerator = (arr) => {
   });
   return temp;
 };
-const implementSection = (componentDetails) => {
+const implementSection = (componentDetails, showStylingProps) => {
   const { displayName, props } = componentDetails;
   let implementsArray = new Set();
   for (let prop in props) {
     const { name, description, type, parent, defaultValue } = props[prop];
-    let cond = propsMap[parent.name];
-    if (cond && parent.name !== `I${displayName}Props`) {
+    const MapValue = showStylingProps
+      ? internalPropsMap[parent.name] ||
+        rnPropsMap[parent.name] ||
+        StylingPropsMap[parent.name]
+      : internalPropsMap[parent.name] || rnPropsMap[parent.name];
+
+    if (MapValue && parent.name !== `I${displayName}Props`) {
       implementsArray.add(
-        cond.link.startsWith('http')
-          ? `<a href="${cond.link}"><code>${cond.name}</code></a>`
-          : `<a href="${cond.link}">${cond.name}</a>`
+        MapValue.link.startsWith('http')
+          ? `<a href="${MapValue.link}"><code>${MapValue.name}</code></a>`
+          : `<a href="${MapValue.link}">${MapValue.name}</a>`
       );
     }
   }
@@ -125,11 +138,13 @@ const ComponentPropTable = () => {
       // Parse all CodeBlocks
       visit(tree, 'code', (node, parent) => {
         if (node.lang == 'ComponentPropTable') {
-          const code = getPropDetail(...node.meta.split('path=')[1].split(','));
+          const [code, showStylingProps] = getPropDetail(node.meta);
           // NOTE: writing on code for testing
           // console.log('written on test2');
           fs.writeFileSync('test2.js', JSON.stringify(code));
-          nodesToProcess.push(processNode(node, parent, code));
+          nodesToProcess.push(
+            processNode(node, parent, code, showStylingProps)
+          );
         }
       });
 

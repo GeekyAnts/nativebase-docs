@@ -165,6 +165,6 @@ export default function () {
 
 ## Props
 
-```ComponentPropTable path=primitives,Box,index.tsx
+```ComponentPropTable path=primitives,Box,index.tsx showStylingProps=true
 
 ```

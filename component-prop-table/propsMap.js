@@ -97,6 +97,28 @@ const textProps = {
     link: 'https://reactnative.dev/docs/text',
   },
 };
+const rnProps = {
+  ViewStyle: {
+    doc: '',
+    name: 'ViewStyle',
+    link: 'https://reactnative.dev/docs/view-style-props',
+  },
+  ViewProps: {
+    doc: '',
+    name: 'View',
+    link: 'https://reactnative.dev/docs/view',
+  },
+  TextProps: {
+    doc: '',
+    name: 'TextProp',
+    link: 'https://reactnative.dev/docs/text',
+  },
+  PressableProps: {
+    doc: '',
+    name: 'Pressablero',
+    link: 'https://reactnative.dev/docs/pressable',
+  },
+};
 // Styling props
 const borderProps = {
   ITextProps: { doc: 'text.md', name: 'Text', link: 'text#props' },
@@ -393,10 +415,9 @@ const platformProps = {
 };
 
 module.exports = {
-  propsMap: {
-    ...internalProps,
-    ...viewProps,
-    ...textProps,
+  internalPropsMap: internalProps,
+  rnPropsMap: rnProps,
+  StylingPropsMap: {
     ...borderProps,
     ...colorProps,
     ...typographyProps,
@@ -412,4 +433,5 @@ module.exports = {
     ...transformProps,
     ...platformProps,
   },
+  
 };
