@@ -120,7 +120,7 @@ const implementSection = (componentDetails, showStylingProps) => {
       ? internalPropsMap[parent.name] ||
         rnPropsMap[parent.name] ||
         StylingPropsMap[parent.name]
-      : internalPropsMap[parent.name] || rnPropsMap[parent.name];
+      : internalPropsMap[parent.name];
 
     if (MapValue && parent.name !== `I${displayName}Props`) {
       implementsArray.add(
@@ -146,7 +146,7 @@ const ComponentPropTable = () => {
           const [code, showStylingProps] = getPropDetail(node.meta);
           // NOTE: writing on code for testing
           // console.log('written on test2');
-          fs.writeFileSync('test2.js', JSON.stringify(code));
+          // fs.writeFileSync('test2.js', JSON.stringify(code));
           nodesToProcess.push(
             processNode(node, parent, code, showStylingProps)
           );
