@@ -28,6 +28,9 @@
   --doc-sidebar-border-radius: 100%;
   --ifm-global-radius: 0.4rem;
 }
+html[data-theme='dark'] {
+  --ifm-navbar-background-color: #191a1b;
+}
 
 .main-wrapper-docs {
   max-width: 1400px;
@@ -83,13 +86,14 @@ html[data-theme='dark'] .DocSearch-Button-Key {
   width: 100%;
 }
 
-.navbar {
-  /* background-color: #3e3a6f;
-  box-shadow: none;
-  color: white; */
-  height: 64px;
+html[data-theme='light'] .utilitySection {
+  background-color: rgba(243, 244, 246, 1);
 }
 
+.navbar {
+  box-shadow: none;
+  height: 64px;
+}
 .navbar .navbar__inner {
   max-width: 1360px;
   margin: 0 auto;
@@ -125,7 +129,8 @@ html[data-theme='dark'] .DocSearch-Button-Key {
 }
 
 .navbar .DocSearch-Button {
-  border-radius: var(--ifm-global-radius);
+  margin-right: 16px;
+  /* border-radius: var(--ifm-global-radius); */
 }
 
 /*
@@ -354,7 +359,7 @@ html[data-theme='dark'] .DocSearch-Button-Key {
   top: 1px;
   margin-right: -6px;
   padding: 3px 6px;
-  border: 1px solid var(--ifm-color-primary);
+  //border: 1px solid var(--ifm-color-primary);
   border-radius: 3px;
   color: var(--ifm-color-primary);
   text-transform: uppercase;

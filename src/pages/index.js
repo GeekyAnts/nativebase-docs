@@ -27,6 +27,7 @@ import styles from './styles.module.css';
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+
   return (
     <Layout
       title={`${siteConfig.title} | A complete component library for React Ecosystem`}
@@ -53,27 +54,32 @@ function Home() {
         <meta name="twitter:site" content="@NativeBaseIO" />
       </Head>
       <main id="tailwind">
-        <section
-          className={styles.features + 'flex-1 font-inter overflow-hidden'}
-        >
-          <Hero />
-          <Web />
-          {/* <Kitchensink /> */}
-          <Accessibility />
-          <UtilityProps />
-          <Themeable />
-          <Responsive />
-          {/* <FeaturesBlocks /> */}
-          {/* <FeaturesWorld /> */}
-          {/* <News /> */}
-          <Stats />
-          <WatchTalk />
-          <Community />
-          <Cta />
-          {/* <Sponsors /> */}
-          <Creators />
-          <More />
-        </section>
+        <div className="overflow-hidden lg:px-8 relative">
+          <section
+            className={
+              styles.features +
+              'flex-1 max-w-6xl mx-auto md:px-8 lg:px-0 font-inter overflow-hidden'
+            }
+          >
+            <Hero />
+            <UtilityProps />
+            <Themeable />
+            <Accessibility />
+            <Web />
+            {/* <Kitchensink /> */}
+            <Responsive />
+            {/* <FeaturesBlocks /> */}
+            {/* <FeaturesWorld /> */}
+            {/* <News /> */}
+            <Stats />
+            <WatchTalk />
+            <Community />
+            <Cta />
+            {/* <Sponsors /> */}
+            <Creators />
+            <More />
+          </section>
+        </div>
         {/* Cookie Policy Fold */}
         <PolicyAcceptDialog />
       </main>
