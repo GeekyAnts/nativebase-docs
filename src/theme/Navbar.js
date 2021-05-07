@@ -37,6 +37,7 @@ function Navbar() {
     if (window.location.href.indexOf('/docs/') !== -1) {
       document.getElementsByClassName('main-wrapper')[0].className +=
         ' main-wrapper-docs';
+      setIsLandingPage(false);
     }
   }, []);
   const {
@@ -47,6 +48,7 @@ function Navbar() {
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
+  const [isLandingPage, setIsLandingPage] = useState(true);
   useLockBodyScroll(sidebarShown);
   const showSidebar = useCallback(() => {
     setSidebarShown(true);
@@ -76,138 +78,152 @@ function Navbar() {
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: !isNavbarVisible,
       })}
+      // style={{ paddingLeft: '2rem' }}
     >
-      <div className="navbar__inner">
-        <div className="navbar__items">
-          {items != null && items.length !== 0 && (
-            <div
-              aria-label="Navigation bar toggle"
-              className="navbar__toggle"
-              role="button"
-              tabIndex={0}
-              onClick={showSidebar}
-              onKeyDown={showSidebar}
-            >
-              <IconMenu />
-            </div>
-          )}
-          <Logo
-            className="navbar__brand"
-            imageClassName="navbar__logo"
-            titleClassName={clsx('navbar__title', {
-              [styles.hideLogoText]: isSearchBarExpanded,
+      <div className={`navbar__inner ${isLandingPage ? 'lg:px-4' : ''}`}>
+        <div
+          className={`flex justify-around mx-auto md:px-4 lg:px-0 w-full  ${
+            isLandingPage ? 'max-w-6xl' : ''
+          }`}
+        >
+          <div className="navbar__items ">
+            {items != null && items.length !== 0 && (
+              <div
+                aria-label="Navigation bar toggle"
+                className="navbar__toggle"
+                role="button"
+                tabIndex={0}
+                onClick={showSidebar}
+                onKeyDown={showSidebar}
+              >
+                <IconMenu />
+              </div>
+            )}
+            <Logo
+              className="navbar__brand"
+              imageClassName="navbar__logo"
+              titleClassName={clsx('navbar__title', {
+                [styles.hideLogoText]: isSearchBarExpanded,
+              })}
+            />
+
+            {leftItems.map((item, i) => {
+              return <NavbarItem {...item} key={i} />;
             })}
-          />
-
-          {leftItems.map((item, i) => {
-            return <NavbarItem {...item} key={i} />;
-          })}
-        </div>
-        <div className="navbar__items navbar__items--right">
-          {rightItems.map((item, i) => {
-            switch (item.label) {
-              case 'GitHub':
-                return (
-                  <a
-                    target="_blank"
-                    href={item.to}
-                    className="hidden md:flex navbar__item navbar__link"
-                  >
-                    <GitHub fill={isDarkTheme ? '#EAEAEA' : '#4C4C4C'} />
-                  </a>
-                );
-              // case 'Docs':
-              //   return (
-              //     <a
-              //       href={item.to}
-              //       className={`text-white bg-primary-400 py-2 px-4 border-0 ml-4 rounded hidden md:inline-block navbar__item navbar__link`}
-              //     >
-              //       Get Started
-              //       <RightArrow fill={'#fff'} className="ml-2" />
-              //     </a>
-              //   );
-              case 'Theme':
-                return (
-                  !disableColorModeSwitch && (
-                    <button
-                      onClick={onToggleChange}
-                      className="bg-transparent border-0 hidden md:flex navbar__item navbar__link"
+          </div>
+          <div className="navbar__items navbar__items--right max-w-3xl">
+            <SearchBar
+              handleSearchBarToggle={setIsSearchBarExpanded}
+              isSearchBarExpanded={isSearchBarExpanded}
+            />
+            {rightItems.map((item, i) => {
+              switch (item.label) {
+                case 'GitHub':
+                  return (
+                    <a
+                      target="_blank"
+                      href={item.to}
+                      className="hidden md:flex navbar__item navbar__link"
                     >
-                      {isDarkTheme ? (
-                        <Sun fill={isDarkTheme ? '#EAEAEA' : '#4C4C4C'} />
-                      ) : (
-                        <Moon fill={isDarkTheme ? '#EAEAEA' : '#4C4C4C'} />
-                      )}
-                    </button>
-                    // <Toggle
-                    //   className={styles.displayOnlyInLargeViewport}
-                    //   aria-label="Dark mode toggle"
-                    //   checked={isDarkTheme}
-                    //   onChange={onToggleChange}
-                    // />
-                  )
-                );
-              case 'Discord':
-                return (
-                  <a
-                    target="_blank"
-                    href={item.to}
-                    className="border-0 hidden md:flex navbar__item navbar__link"
-                  >
-                    <Discord fill={isDarkTheme ? '#EAEAEA' : '#4C4C4C'} />
-                  </a>
-                );
-              case 'Market':
-                return <NavbarItem {...item} key={i} />;
-              default:
-                return <NavbarItem {...item} key={i} />;
-            }
-          })}
-          <SearchBar
-            handleSearchBarToggle={setIsSearchBarExpanded}
-            isSearchBarExpanded={isSearchBarExpanded}
-          />
+                      <GitHub fill={isDarkTheme ? '#EAEAEA' : '#777e86'} />
+                    </a>
+                  );
+                case 'Docs':
+                  return (
+                    <a
+                      href={item.to}
+                      className={`border-0 bg-white hover:bg-gray-400 text-gray-500 font-semibold py-1 px-5 rounded no-underline hidden md:inline-block ml-4`}
+                      style={{
+                        border: '1px solid rgba(209, 213, 219,1)',
+                      }}
+                    >
+                      Docs
+                    </a>
+                  );
+                case 'Theme':
+                  return (
+                    !disableColorModeSwitch && (
+                      <button
+                        onClick={onToggleChange}
+                        className="bg-transparent border-0 hidden md:flex navbar__item navbar__link"
+                      >
+                        {isDarkTheme ? (
+                          <Sun fill={isDarkTheme ? '#EAEAEA' : '#777e86'} />
+                        ) : (
+                          <Moon fill={isDarkTheme ? '#EAEAEA' : '#777e86'} />
+                        )}
+                      </button>
+                      // <Toggle
+                      //   className={styles.displayOnlyInLargeViewport}
+                      //   aria-label="Dark mode toggle"
+                      //   checked={isDarkTheme}
+                      //   onChange={onToggleChange}
+                      // />
+                    )
+                  );
+                case 'Discord':
+                  return (
+                    <a
+                      target="_blank"
+                      href={item.to}
+                      className="border-0 hidden md:flex navbar__item navbar__link"
+                    >
+                      <Discord fill={isDarkTheme ? '#EAEAEA' : '#777e86'} />
+                    </a>
+                  );
+                case 'Market':
+                  return <NavbarItem {...item} key={i} />;
+                default:
+                  return <NavbarItem {...item} key={i} />;
+              }
+            })}
+          </div>
         </div>
-      </div>
-      <div
-        role="presentation"
-        className="navbar-sidebar__backdrop"
-        onClick={hideSidebar}
-      />
-      <div className="navbar-sidebar">
-        <div className="navbar-sidebar__brand">
-          <Logo
-            className="navbar__brand"
-            imageClassName="navbar__logo"
-            titleClassName="navbar__title"
-            onClick={hideSidebar}
-          />
+        <div
+          role="presentation"
+          className="navbar-sidebar__backdrop"
+          onClick={hideSidebar}
+        />
+        <div className="navbar-sidebar">
+          <div className="navbar-sidebar__brand">
+            <Logo
+              className="navbar__brand"
+              imageClassName="navbar__logo"
+              titleClassName="navbar__title"
+              onClick={hideSidebar}
+            />
 
-          {!disableColorModeSwitch && (
-            <button
-              onClick={onToggleChange}
-              className="bg-transparent ml-3 p-0 border-0"
-            >
-              {isDarkTheme ? <Sun /> : <Moon />}
-            </button>
-            // <Toggle
-            //   className={styles.displayOnlyInLargeViewport}
-            //   aria-label="Dark mode toggle"
-            //   checked={isDarkTheme}
-            //   onChange={onToggleChange}
-            // />
-          )}
-        </div>
-        <div className="navbar-sidebar__items">
-          <div className="menu">
-            <ul className="menu__list">
-              {items
-                .slice(0)
-                .reverse()
-                .map((item, i) => (
-                  <NavbarItem mobile {...item} onClick={hideSidebar} key={i} />
-                ))}
-            </ul>
+            {!disableColorModeSwitch && (
+              <button
+                onClick={onToggleChange}
+                className="bg-transparent ml-3 p-0 border-0"
+              >
+                {isDarkTheme ? <Sun /> : <Moon />}
+              </button>
+              // <Toggle
+              //   className={styles.displayOnlyInLargeViewport}
+              //   aria-label="Dark mode toggle"
+              //   checked={isDarkTheme}
+              //   onChange={onToggleChange}
+              // />
+            )}
+          </div>
+          <div className="navbar-sidebar__items">
+            <div className="menu">
+              <ul className="menu__list">
+                {items
+                  .slice(0)
+                  .reverse()
+                  .map((item, i) => (
+                    <NavbarItem
+                      mobile
+                      {...item}
+                      onClick={hideSidebar}
+                      key={i}
+                    />
+                  ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

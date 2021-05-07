@@ -12,7 +12,7 @@ export function CodeComponent({ code }) {
             ...style,
             height: '100%',
             textAlign: 'left',
-            padding: ' 0.5em',
+            padding: '2rem 2rem 2rem 2rem',
             overflow: 'auto',
           }}
         >
