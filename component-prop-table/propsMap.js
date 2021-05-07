@@ -1,6 +1,7 @@
 const internalProps = {
   IBoxProps: { doc: 'box.md', name: 'Box', link: 'box#props' },
   ITextProps: { doc: 'text.md', name: 'Text', link: 'text#props' },
+  IIconProps: { doc: 'icon.md', name: 'Icon', link: 'icon#props' },
 };
 // RN props
 const viewProps = {
@@ -433,5 +434,4 @@ module.exports = {
     ...transformProps,
     ...platformProps,
   },
-  
 };

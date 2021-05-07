@@ -74,7 +74,7 @@ const SnackPlayer = () => {
       // Parse all CodeBlocks
       visit(tree, 'code', (node, parent) => {
         // Add SnackPlayer CodeBlocks to processing queue
-        if (node.lang == 'NBAutomateExample') {
+        if (node.lang == 'ComponentSnackPlayer') {
           const code = getSnackPlayerCodeSnippet(
             ...node.meta.split('path=')[1].split(',')
           );

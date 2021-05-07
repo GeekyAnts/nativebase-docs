@@ -14,7 +14,7 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 ### Basic
 
-```NBAutomateExample path=primitives,box,basic.tsx
+```ComponentSnackPlayer path=primitives,box,basic.tsx
 
 ```
 

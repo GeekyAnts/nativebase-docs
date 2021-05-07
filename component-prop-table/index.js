@@ -27,6 +27,8 @@ const processNode = (node, parent, code, showStylingProps) => {
 
 const templateGenerator = (componentDetails) => {
   const { displayName, props } = componentDetails;
+  let propExists = false;
+
   const template = (propsObject) => {
     let temp = '';
     for (let prop in propsObject) {
@@ -41,6 +43,7 @@ const templateGenerator = (componentDetails) => {
       newType = newType.replace(/\>/g, '&gt;'); //for >
 
       if (parent.name === `I${displayName}Props`) {
+        propExists = true;
         temp =
           temp +
           `<tr>
@@ -67,8 +70,9 @@ const templateGenerator = (componentDetails) => {
     return temp;
   };
 
-  return `
-  <h3>${displayName}</h3>
+  const templateString = template(props);
+  return propExists
+    ? `
   <table>
     <tr>
       <th>
@@ -84,9 +88,10 @@ const templateGenerator = (componentDetails) => {
         Default
       </th>
     </tr>
-    ${template(props)}
+    ${templateString}
   </table>
-  `;
+  `
+    : '';
 };
 
 const propTable = (typesArray, showStylingProps) => {
@@ -98,11 +103,11 @@ const propTable = (typesArray, showStylingProps) => {
   });
 };
 
-const implementsTemplateGenerator = (arr) => {
+const implementsTemplateGenerator = (set) => {
   let temp = '';
-  [...arr].map((item) => {
-    // TODO: last element should have . (dot)
-    temp = temp + item + ', ';
+  const arr = [...set];
+  [...arr].map((item, i) => {
+    temp = temp + item + (i === arr.length - 1 ? '' : ', ');
   });
   return temp;
 };
