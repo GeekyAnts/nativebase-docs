@@ -148,6 +148,10 @@ export default function () {
 
 ## Props
 
+```ComponentPropTable path=primitives,Text,index.tsx
+
+```
+
 | Name          | Type                                        | Description                                                                                        | Default |
 | ------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------- |
 | fontSize      | `2xl`, `lg`, `md`, `sm`, `xl`, `xs`, number | The size of font.                                                                                  | -       |

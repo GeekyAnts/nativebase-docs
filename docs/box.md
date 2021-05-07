@@ -5,10 +5,6 @@ title: Box
 
 This is a generic component for low level layout needs. It is similar to a [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) in HTML.
 
-```ComponentPropTable path=primitives,Box,types.ts
-
-```
-
 ## Implements
 
 - [`View`](https://reactnative.dev/docs/view) from [React Native](https://reactnative.dev)
@@ -169,7 +165,6 @@ export default function () {
 
 ## Props
 
-| Name     | Type        | Description                                                                           | Default |
-| -------- | ----------- | ------------------------------------------------------------------------------------- | ------- |
-| shadow   | number      | Applies box shadow and accepts a number from 0 to 9                                   | -       |
-| children | JSX.Element | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
+```ComponentPropTable path=primitives,Box,index.tsx
+
+```

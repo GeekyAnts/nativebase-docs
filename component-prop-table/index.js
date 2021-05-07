@@ -4,6 +4,7 @@ const u = require('unist-builder');
 const dedent = require('dedent');
 const fs = require('fs');
 const { getPropDetail } = require('../utils');
+const { propsMap } = require('./propsMap');
 
 const processNode = (node, parent, code) => {
   return new Promise(async (resolve, reject) => {
@@ -29,24 +30,35 @@ const templateGenerator = (componentDetails) => {
   const template = (propsObject) => {
     let temp = '';
     for (let prop in propsObject) {
-      const { name, description, type, defaultValue } = propsObject[prop];
-      temp =
-        temp +
-        `<tr>
+      const { name, description, type, parent, defaultValue } = propsObject[
+        prop
+      ];
+      if (parent.name === `I${displayName}Props`) {
+        temp =
+          temp +
+          `<tr>
         <td>
           ${name}
         </td>
         <td>
-          ${type.name}
+          ${
+            propsMap[type.name]
+              ? `<a href="${propsMap[type.name].link}">${
+                  propsMap[type.name].name
+                }</a>`
+              : type.name
+          }
         </td>
         <td>
           ${description || '-'}
         </td>
         <td>
-          ${defaultValue || '-'}
+          ${defaultValue ? defaultValue.value : '-'}
         </td>
       </tr>`;
+      }
     }
+
     return temp;
   };
 
@@ -73,7 +85,37 @@ const templateGenerator = (componentDetails) => {
 };
 
 const propTable = (typesArray) => {
-  return typesArray.map((component) => templateGenerator(component));
+  return typesArray.map((component) => {
+    return `${templateGenerator(component)} ${implementSection(component)}`;
+  });
+};
+
+const implementsTemplateGenerator = (arr) => {
+  let temp = '';
+  [...arr].map((item) => {
+    // TODO: last element should have . (dot)
+    temp = temp + item + ', ';
+  });
+  return temp;
+};
+const implementSection = (componentDetails) => {
+  const { displayName, props } = componentDetails;
+  let implementsArray = new Set();
+  for (let prop in props) {
+    const { name, description, type, parent, defaultValue } = props[prop];
+    let cond = propsMap[parent.name];
+    if (cond && parent.name !== `I${displayName}Props`) {
+      implementsArray.add(
+        cond.link.startsWith('http')
+          ? `<a href="${cond.link}"><code>${cond.name}</code></a>`
+          : `<a href="${cond.link}">${cond.name}</a>`
+      );
+    }
+  }
+
+  const implementsTemplate = implementsTemplateGenerator(implementsArray);
+
+  return `<p>${componentDetails.displayName} implements ${implementsTemplate}</p>`;
 };
 
 const ComponentPropTable = () => {
@@ -86,7 +128,7 @@ const ComponentPropTable = () => {
           const code = getPropDetail(...node.meta.split('path=')[1].split(','));
           // NOTE: writing on code for testing
           // console.log('written on test2');
-          // fs.writeFileSync('test2.js', JSON.stringify(code));
+          fs.writeFileSync('test2.js', JSON.stringify(code));
           nodesToProcess.push(processNode(node, parent, code));
         }
       });
