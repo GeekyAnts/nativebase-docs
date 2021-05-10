@@ -5,6 +5,7 @@ const docgen = require('react-docgen-typescript');
 const storybookExamplePath = path.resolve(
   __dirname,
   '..',
+  '..',
   'NativeBase',
   'example',
   'storybook',
@@ -13,6 +14,7 @@ const storybookExamplePath = path.resolve(
 );
 const componentsRootPath = path.resolve(
   __dirname,
+  '..',
   '..',
   'NativeBase',
   'src',

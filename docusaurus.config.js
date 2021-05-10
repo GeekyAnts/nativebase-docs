@@ -166,8 +166,8 @@ module.exports = {
           editUrl: 'https://github.com/nativebase/website/tree/main',
           remarkPlugins: [
             require('./remark-snackplayer'),
-            require('./nb-automation-plugin'),
-            require('./component-prop-table'),
+            require('./nb-plugins/component-snackplayer'),
+            require('./nb-plugins/component-prop-table'),
           ],
         },
         blog: {

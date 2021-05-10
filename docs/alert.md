@@ -22,7 +22,7 @@ import { Alert } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Alert,basic.tsx
+```ComponentSnackPlayer path=composites,Alert,usage.tsx
 
 ```
 
@@ -46,7 +46,7 @@ import { Alert } from 'native-base';
 
 ### Action
 
-```ComponentSnackPlayer path=composites,Alert,composition.tsx
+```ComponentSnackPlayer path=composites,Alert,action.tsx
 
 ```
 

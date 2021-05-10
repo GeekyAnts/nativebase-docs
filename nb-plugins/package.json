@@ -1,8 +1,8 @@
 {
-  "name": "nb-automation-plugin",
+  "name": "nb-plugin",
   "version": "0.0.1",
   "private": true,
-  "description": "NB Automation plugin",
+  "description": "NB plugin",
   "main": "src/index.js",
   "keywords": [
     "remark",
@@ -25,7 +25,9 @@
     "unist-util-visit-parents": "^3.1.1"
   },
   "devDependencies": {
+    "react-docgen-typescript": "^1.22.0",
     "remark": "^12.0.1",
-    "tape": "^5.0.1"
+    "tape": "^5.0.1",
+    "typescript": "^4.2.4"
   }
 }
