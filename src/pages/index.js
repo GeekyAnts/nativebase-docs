@@ -9,8 +9,10 @@ import {
   // News,
   Community,
   Creators,
+  ComponentLibrary,
   Cta,
   Hero,
+  Utility,
   // Kitchensink,
   More,
   Responsive,
@@ -58,13 +60,15 @@ function Home() {
           <section
             className={
               styles.features +
-              'flex-1 max-w-6xl mx-auto md:px-8 lg:px-0 font-inter overflow-hidden'
+              'flex-1 max-w-6xl mx-auto md:px-8 lg:px-0 font-inter  overflow-visible'
             }
           >
             <Hero />
             <UtilityProps />
             <Themeable />
             <Accessibility />
+            <Utility />
+            <ComponentLibrary />
             <Web />
             {/* <Kitchensink /> */}
             <Responsive />
