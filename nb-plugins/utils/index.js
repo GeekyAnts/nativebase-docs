@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const docgen = require('react-docgen-typescript');
+const {
+  transformStorybookToDocExample,
+} = require('../storybook-example-transformer');
 
 const storybookExamplePath = path.resolve(
   __dirname,
@@ -25,8 +28,9 @@ const getSnackPlayerCodeSnippet = (...args) => {
   console.log('snippet args received', args);
   const filePath = path.resolve(storybookExamplePath, ...args);
   const fileContent = fs.readFileSync(filePath, { encoding: 'utf-8' });
+  const transformedFile = transformStorybookToDocExample(fileContent);
 
-  return fileContent;
+  return transformedFile;
 };
 
 const filter = (obb, val) => {
