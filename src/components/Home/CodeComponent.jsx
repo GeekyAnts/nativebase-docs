@@ -3,12 +3,12 @@ import Highlight, { defaultProps } from 'prism-react-renderer';
 
 import palenight from 'prism-react-renderer/themes/palenight';
 
-export function CodeComponent({ code, class1 }) {
+export function CodeComponent({ code, classStyle }) {
   return (
     <Highlight {...defaultProps} code={code} theme={palenight} language="jsx">
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          className={`${className} ${class1}`}
+          className={`${className} ${classStyle}`}
           style={{
             ...style,
             height: '100%',

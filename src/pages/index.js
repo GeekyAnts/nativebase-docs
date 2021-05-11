@@ -13,9 +13,11 @@ import {
   Cta,
   Hero,
   Utility,
+  Universal,
   // Kitchensink,
   More,
   Responsive,
+  DarkMode,
   // Sponsors,
   Stats,
   Themeable,
@@ -69,9 +71,12 @@ function Home() {
             <Accessibility />
             <Utility />
             <ComponentLibrary />
-            <Web />
-            {/* <Kitchensink /> */}
             <Responsive />
+            <DarkMode />
+            <Universal />
+            {/* <Web /> */}
+            {/* <Kitchensink /> */}
+
             {/* <FeaturesBlocks /> */}
             {/* <FeaturesWorld /> */}
             {/* <News /> */}

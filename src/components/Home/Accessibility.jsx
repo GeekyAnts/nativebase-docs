@@ -449,10 +449,10 @@ export function Accessibility() {
           </div>
 
           {/* grid */}
-          <div className="grid bg-indigo-800 rounded-md mt-10 py-10 grid-cols-1 md:grid-cols-3 gap-y-10  text-white">
+          <div className="grid bg-indigo-800 rounded-md mt-10 py-6 grid-cols-1 md:grid-cols-3 gap-y-10  text-white">
             <div className="text-center py-2">
               <div>{SVG['Keyboard Interactions']}</div>
-              <div className="mt-7 font-bold">Keyboard Interactions</div>
+              <div className="mt-5 font-bold">Keyboard Interactions</div>
               <div className="flex mt-1.5 justify-center text-center">
                 <div className="w-3/4">
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -462,7 +462,7 @@ export function Accessibility() {
             </div>
             <div className="text-center py-2">
               <div>{SVG['Screen Readers']}</div>
-              <div className="mt-7 font-bold">Screen Readers</div>
+              <div className="mt-5 font-bold">Screen Readers</div>
               <div className="flex mt-1.5 justify-center text-center">
                 <div className="w-3/4">
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -472,7 +472,7 @@ export function Accessibility() {
             </div>
             <div className="text-center py-2">
               <div>{SVG['Contrast Ratio']}</div>
-              <div className="mt-7 font-bold">Contrast Ratio</div>
+              <div className="mt-5 font-bold">Contrast Ratio</div>
               <div className="flex mt-1.5 justify-center text-center">
                 <div className="w-3/4">
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
