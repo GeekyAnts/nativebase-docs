@@ -191,7 +191,7 @@ export function Utility() {
           {/* grid */}
           <div className="flex flex-col space-y-10 lg:space-y-0 lg:flex-row rounded-md">
             <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-3">
-              <div className="h-72  flex justify-center relative w-full mt-6">
+              <div className="h-72 flex justify-center relative w-full mt-6">
                 <div className="h-full bg-white w-full flex items-center justify-center rounded-lg shadow-xl lg:absolute lg:-right-5 md:top-0">
                   <button className="px-12 py-3 rounded-md border-0 bg-blue-800 text-white text-md font-bold ">
                     Hello
@@ -201,7 +201,7 @@ export function Utility() {
             </div>
 
             <div className="flex-1 rounded-lg overflow-hidden px-0 md:px-0">
-              <CodeComponent class1={'px-10 py-20'} code={exampleCode} />
+              <CodeComponent classStyle={'px-10 py-20'} code={exampleCode} />
             </div>
           </div>
         </div>

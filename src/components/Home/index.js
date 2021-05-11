@@ -14,6 +14,8 @@ export { Sponsors } from './Sponsors';
 export { Stats } from './Stats';
 export { Themeable } from './Themeable';
 export { UtilityProps } from './UtilityProps';
+export { Universal } from './Universal';
+export { DarkMode } from './DarkMode';
 export { ComponentLibrary } from './ComponentLibrary';
 export { Utility } from './Utility';
 export { WatchTalk } from './WatchTalk';

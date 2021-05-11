@@ -434,7 +434,7 @@ export function Themeable() {
             </p>
 
             <a
-              className="span text-indigo-700"
+              className="span text-indigo-500"
               target="_blank"
               rel="noopener noreferrer"
               href="https://react-native-aria.geekyants.com/"
@@ -523,7 +523,7 @@ export function Themeable() {
               className="flex-1 rounded-lg overflow-hidden px-0 md:px-0"
               // style={{ zIndex: 1, maxHeight: '39rem' }}
             >
-              <CodeComponent class1={'px-10 py-10'} code={exampleCode} />
+              <CodeComponent classStyle={'px-10 py-10'} code={exampleCode} />
             </div>
           </div>
           {/* Circle part*/}

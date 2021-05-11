@@ -78,73 +78,6 @@ export function ComponentLibrary() {
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
-      {/* visible on sm */}
-      <div className="hidden">
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className={`h2 mb-4 text-3xl ${headingColor}`}>
-              Highly themeable, the only limit is your imagination
-            </h1>
-            <p className={`text-lg ${subHeadingColor}`}>
-              Themeability is one of the core elements of NativeBase. Customise
-              your app theme and component styles to your heart's content.
-            </p>
-          </div>
-          <div
-            className="rounded-md"
-            // style={{ border: '1px solid black' }}
-          >
-            <div
-              className="flex-1  w-full overflow-hidden rounded-lg"
-              style={{ zIndex: 1, maxHeight: '39rem' }}
-            >
-              <CodeComponent code={exampleCode} />
-            </div>
-            <div className="max-w-3xl mx-auto text-center flex-1 flex justify-center items-center pt-12 md:pt-20 py-10 px-8 md:py-16 md:px-12">
-              <img
-                className="rounded-3xl"
-                src={'/img/home/themeable.png'}
-                width="223"
-                height="478"
-                alt="NativeBase Themeable"
-              />
-            </div>
-          </div>
-          {/* Circle part*/}
-          <div
-            className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
-            aria-hidden="true"
-            style={{ zIndex: 0 }}
-          >
-            <svg
-              width="1360"
-              height="578"
-              viewBox="0 0 1360 578"
-              xmlns="http://www.w3.org/2000/svg"
-              id="hithere"
-            >
-              <defs>
-                <linearGradient
-                  x1="1"
-                  y1=".5"
-                  x2="0"
-                  y2="1"
-                  id="illustration-02"
-                >
-                  <stop stopColor="#34d399" offset="0%" />
-                  <stop stopColor="#818cf8" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="url(#illustration-02)" fillRule="evenodd">
-                <circle cx="300" cy="260" r="200" opacity="0.3" />
-                {/* <circle cx="155" cy="443" r="64" opacity="0.3" /> */}
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
-      {/* visible on md and above */}
-
       <div className="px-4 md:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl">
@@ -205,7 +138,7 @@ export function ComponentLibrary() {
             </a>
           </div>
           <div
-            className="flex flex-col lg:flex-row rounded-md"
+            className="flex flex-col lg:flex-row space-y-10  lg:space-y-0 rounded-md"
             // style={{ border: '1px solid black' }}
           >
             <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-20">
@@ -214,14 +147,13 @@ export function ComponentLibrary() {
                 <div className="text-left lg:text-center w-1/3">
                   <a
                     id="forms-btn"
-                    style={{ borderBottom: '3px solid rgba(29, 78, 216,1)' }}
+                    style={{ borderBottom: '3px solid #047857' }}
                     onClick={(e) => {
                       document.getElementById('interaction-btn').style.border =
                         'none';
                       document.getElementById('avatar-btn').style.border =
                         'none';
-                      e.target.style.borderBottom =
-                        '3px solid rgba(29, 78, 216,1)';
+                      e.target.style.borderBottom = '3px solid #047857';
                       setCurrentTheme('forms');
                     }}
                     className={`pb-2 cursor-pointer border-0 ${subHeadingColor}`}
@@ -238,8 +170,7 @@ export function ComponentLibrary() {
                         'none';
                       document.getElementById('avatar-btn').style.border =
                         'none';
-                      e.target.style.borderBottom =
-                        '3px solid rgba(29, 78, 216,1)';
+                      e.target.style.borderBottom = '3px solid #047857';
                       setCurrentTheme('interaction');
                     }}
                   >
@@ -254,8 +185,7 @@ export function ComponentLibrary() {
                         'none';
                       document.getElementById('forms-btn').style.border =
                         'none';
-                      e.target.style.borderBottom =
-                        '3px solid rgba(29, 78, 216,1)';
+                      e.target.style.borderBottom = '3px solid #047857';
                       setCurrentTheme('avatar');
                     }}
                     className={`pb-2 cursor-pointer border-0  ${subHeadingColor}`}
@@ -264,8 +194,8 @@ export function ComponentLibrary() {
                   </a>
                 </div>
               </div>
-              <div className="h-full flex justify-center relative w-full mt-10">
-                <div className="h-full w-full bg-white rounded-lg shadow-xl px-1 md:px-4 py-4 lg:absolute lg:-right-5 md:top-0">
+              <div className="h-full flex justify-center  relative w-full mt-10">
+                <div className="h-72 lg:h-full w-full bg-white rounded-lg lg:shadow-xl px-1 md:px-4 py-4 lg:absolute lg:-right-5 md:top-0">
                   {/* {currentTheme === 'color' ? (
                     <ColorTheme />
                   ) : currentTheme === 'interaction' ? (
@@ -277,43 +207,9 @@ export function ComponentLibrary() {
               </div>
             </div>
 
-            <div
-              className="flex-1 rounded-lg overflow-hidden px-0 md:px-0"
-              // style={{ zIndex: 1, maxHeight: '39rem' }}
-            >
-              <CodeComponent class1={'px-10 py-10'} code={exampleCode} />
+            <div className="flex-1 rounded-lg overflow-hidden px-0 md:px-0">
+              <CodeComponent classStyle={'px-10 py-10'} code={exampleCode} />
             </div>
-          </div>
-          {/* Circle part*/}
-          <div
-            className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
-            aria-hidden="true"
-            style={{ zIndex: 0 }}
-          >
-            <svg
-              width="1360"
-              height="578"
-              viewBox="0 0 1360 578"
-              xmlns="http://www.w3.org/2000/svg"
-              id="hithere"
-            >
-              <defs>
-                <linearGradient
-                  x1="1"
-                  y1=".5"
-                  x2="0"
-                  y2="1"
-                  id="illustration-02"
-                >
-                  <stop stopColor="#34d399" offset="0%" />
-                  <stop stopColor="#818cf8" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="url(#illustration-02)" fillRule="evenodd">
-                <circle cx="300" cy="260" r="200" opacity="0.3" />
-                {/* <circle cx="155" cy="443" r="64" opacity="0.3" /> */}
-              </g>
-            </svg>
           </div>
         </div>
       </div>
