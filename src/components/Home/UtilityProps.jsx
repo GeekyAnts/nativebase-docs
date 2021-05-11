@@ -333,42 +333,10 @@ export function UtilityProps() {
           </div>
 
           <div
-            className="flex-1 rounded-tr-lg rounded-br-lg overflow-hidden px-0 md:px-0"
+            className="flex-1 bg-red-500 rounded-none rounded-tr-lg rounded-br-lg overflow-hidden px-0 md:px-0"
             // style={{ maxHeight: '39rem' }}
           >
             <CodeComponent code={exampleCode} />
-          </div>
-
-          {/* Circle part*/}
-          <div
-            className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
-            aria-hidden="true"
-            style={{ zIndex: 0 }}
-          >
-            <svg
-              width="1360"
-              height="578"
-              viewBox="0 0 1360 578"
-              xmlns="http://www.w3.org/2000/svg"
-              id="hithere"
-            >
-              <defs>
-                <linearGradient
-                  x1="1"
-                  y1=".5"
-                  x2="0"
-                  y2="1"
-                  id="illustration-02"
-                >
-                  <stop stopColor="#34d399" offset="0%" />
-                  <stop stopColor="#818cf8" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="url(#illustration-02)" fillRule="evenodd">
-                <circle cx="300" cy="260" r="200" opacity="0.3" />
-                {/* <circle cx="155" cy="443" r="64" opacity="0.3" /> */}
-              </g>
-            </svg>
           </div>
         </div>
       </div>
