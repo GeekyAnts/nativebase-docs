@@ -268,17 +268,14 @@ export function UtilityProps() {
                 <div className="text-center w-1/3">
                   <a
                     id="mobile-btn"
-                    style={{ borderBottom: '3px solid rgba(29, 78, 216,1)' }}
+                    className={`pb-2 ${
+                      currentTheme === 'mobile'
+                        ? 'border-b-3 border-solid border-pink-700'
+                        : ''
+                    }  border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
-                      document.getElementById('tablet-btn').style.border =
-                        'none';
-                      document.getElementById('desktop-btn').style.border =
-                        'none';
-                      e.target.style.borderBottom =
-                        '3px solid rgba(29, 78, 216,1)';
                       setCurrentTheme('mobile');
                     }}
-                    className={`pb-2 cursor-pointer border-0 text-lg ${subHeadingColor}`}
                   >
                     Mobile
                   </a>
@@ -286,14 +283,12 @@ export function UtilityProps() {
                 <div className="text-center w-1/3">
                   <a
                     id="tablet-btn"
-                    className={`pb-2  cursor-pointer border-0 text-lg ${subHeadingColor}`}
+                    className={`pb-2 ${
+                      currentTheme === 'tablet'
+                        ? 'border-b-3 border-solid border-pink-700'
+                        : ''
+                    }   border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
-                      document.getElementById('mobile-btn').style.border =
-                        'none';
-                      document.getElementById('desktop-btn').style.border =
-                        'none';
-                      e.target.style.borderBottom =
-                        '3px solid rgba(29, 78, 216,1)';
                       setCurrentTheme('tablet');
                     }}
                   >
@@ -303,16 +298,14 @@ export function UtilityProps() {
                 <div className="text-center w-1/3">
                   <a
                     id="desktop-btn"
+                    className={`pb-2 ${
+                      currentTheme === 'desktop'
+                        ? 'border-b-3 border-solid border-pink-700'
+                        : ''
+                    }   border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
-                      document.getElementById('tablet-btn').style.border =
-                        'none';
-                      document.getElementById('mobile-btn').style.border =
-                        'none';
-                      e.target.style.borderBottom =
-                        '3px solid rgba(29, 78, 216,1)';
                       setCurrentTheme('desktop');
                     }}
-                    className={`pb-2 cursor-pointer border-0 text-lg ${subHeadingColor}`}
                   >
                     Desktop
                   </a>

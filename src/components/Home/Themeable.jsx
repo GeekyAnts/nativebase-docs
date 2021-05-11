@@ -451,18 +451,15 @@ export function Themeable() {
               <div className="flex w-full lg:w-3/4 mx-auto  flex-row">
                 <div className="text-left lg:text-center w-1/3">
                   <a
+                    className={`pb-2 ${
+                      currentTheme === 'color'
+                        ? 'border-b-3 border-solid border-blue-700'
+                        : ''
+                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
                     id="color-btn"
-                    style={{ borderBottom: '3px solid rgba(29, 78, 216,1)' }}
                     onClick={(e) => {
-                      document.getElementById('sizing-btn').style.border =
-                        'none';
-                      document.getElementById('typography-btn').style.border =
-                        'none';
-                      e.target.style.borderBottom =
-                        '3px solid rgba(29, 78, 216,1)';
                       setCurrentTheme('color');
                     }}
-                    className={`pb-2 cursor-pointer border-0 ${subHeadingColor}`}
                   >
                     Color
                   </a>
@@ -470,14 +467,12 @@ export function Themeable() {
                 <div className="text-left lg:text-center w-1/3">
                   <a
                     id="sizing-btn"
-                    className={`pb-2  cursor-pointer border-0  ${subHeadingColor}`}
+                    className={`pb-2 ${
+                      currentTheme === 'sizing'
+                        ? 'border-b-3 border-solid border-blue-700'
+                        : ''
+                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
-                      document.getElementById('color-btn').style.border =
-                        'none';
-                      document.getElementById('typography-btn').style.border =
-                        'none';
-                      e.target.style.borderBottom =
-                        '3px solid rgba(29, 78, 216,1)';
                       setCurrentTheme('sizing');
                     }}
                   >
@@ -487,16 +482,14 @@ export function Themeable() {
                 <div className="text-left lg:text-center w-1/3">
                   <a
                     id="typography-btn"
+                    className={`pb-2 ${
+                      currentTheme === 'typography'
+                        ? 'border-b-3 border-solid border-blue-700'
+                        : ''
+                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
-                      document.getElementById('sizing-btn').style.border =
-                        'none';
-                      document.getElementById('color-btn').style.border =
-                        'none';
-                      e.target.style.borderBottom =
-                        '3px solid rgba(29, 78, 216,1)';
                       setCurrentTheme('typography');
                     }}
-                    className={`pb-2 cursor-pointer border-0  ${subHeadingColor}`}
                   >
                     Typography
                   </a>
