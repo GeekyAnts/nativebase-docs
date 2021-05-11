@@ -520,7 +520,7 @@ export function Themeable() {
             </div>
 
             <div
-              className="flex-1 rounded-tr-lg rounded-br-lg overflow-hidden px-0 md:px-0"
+              className="flex-1 rounded-lg overflow-hidden px-0 md:px-0"
               // style={{ zIndex: 1, maxHeight: '39rem' }}
             >
               <CodeComponent class1={'px-10 py-10'} code={exampleCode} />

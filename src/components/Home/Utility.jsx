@@ -200,7 +200,7 @@ export function Utility() {
               </div>
             </div>
 
-            <div className="flex-1 rounded-tr-lg rounded-br-lg overflow-hidden px-0 md:px-0">
+            <div className="flex-1 rounded-lg overflow-hidden px-0 md:px-0">
               <CodeComponent class1={'px-10 py-20'} code={exampleCode} />
             </div>
           </div>
