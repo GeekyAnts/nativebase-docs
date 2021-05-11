@@ -147,16 +147,14 @@ export function ComponentLibrary() {
                 <div className="text-left lg:text-center w-1/3">
                   <a
                     id="forms-btn"
-                    style={{ borderBottom: '3px solid #047857' }}
+                    className={`pb-2 ${
+                      currentTheme === 'forms'
+                        ? 'border-b-3 border-solid border-pink-700'
+                        : ''
+                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
-                      document.getElementById('interaction-btn').style.border =
-                        'none';
-                      document.getElementById('avatar-btn').style.border =
-                        'none';
-                      e.target.style.borderBottom = '3px solid #047857';
                       setCurrentTheme('forms');
                     }}
-                    className={`pb-2 cursor-pointer border-0 ${subHeadingColor}`}
                   >
                     Forms
                   </a>
@@ -164,13 +162,12 @@ export function ComponentLibrary() {
                 <div className="text-left lg:text-center w-1/3">
                   <a
                     id="interaction-btn"
-                    className={`pb-2  cursor-pointer border-0  ${subHeadingColor}`}
-                    onClick={(e) => {
-                      document.getElementById('forms-btn').style.border =
-                        'none';
-                      document.getElementById('avatar-btn').style.border =
-                        'none';
-                      e.target.style.borderBottom = '3px solid #047857';
+                    className={`pb-2 ${
+                      currentTheme === 'interaction'
+                        ? 'border-b-3 border-solid border-pink-700'
+                        : ''
+                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
+                    onClick={() => {
                       setCurrentTheme('interaction');
                     }}
                   >
@@ -179,16 +176,15 @@ export function ComponentLibrary() {
                 </div>
                 <div className="text-left lg:text-center w-1/3">
                   <a
+                    className={`pb-2 ${
+                      currentTheme === 'avatar'
+                        ? 'border-b-3 border-solid border-pink-700'
+                        : ''
+                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
                     id="avatar-btn"
-                    onClick={(e) => {
-                      document.getElementById('interaction-btn').style.border =
-                        'none';
-                      document.getElementById('forms-btn').style.border =
-                        'none';
-                      e.target.style.borderBottom = '3px solid #047857';
+                    onClick={() => {
                       setCurrentTheme('avatar');
                     }}
-                    className={`pb-2 cursor-pointer border-0  ${subHeadingColor}`}
                   >
                     Avatar
                   </a>
