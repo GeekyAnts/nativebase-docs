@@ -115,7 +115,7 @@ module.exports = {
       type: 'category',
       label: 'Overlay',
       collapsed: false,
-      items: ['alertDialog', 'menu', 'modal', 'overlay', 'popOver'],
+      items: ['alertDialog', 'menu', 'modal', 'overlay', 'popOver', 'tooltip'],
     },
     {
       type: 'category',
