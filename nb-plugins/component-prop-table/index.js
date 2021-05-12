@@ -32,9 +32,8 @@ const templateGenerator = (componentDetails) => {
   const template = (propsObject) => {
     let temp = '';
     for (let prop in propsObject) {
-      const { name, description, type, parent, defaultValue } = propsObject[
-        prop
-      ];
+      const { name, description, type, parent, defaultValue } =
+        propsObject[prop];
       const MapValue =
         internalPropsMap[type.name] ||
         rnPropsMap[type.name] ||
@@ -132,8 +131,11 @@ const implementSection = (componentDetails, showStylingProps) => {
   }
 
   const implementsTemplate = implementsTemplateGenerator(implementsArray);
+  if (implementsTemplate) {
+    return `<p>${componentDetails.displayName} implements ${implementsTemplate}</p>`;
+  }
 
-  return `<p>${componentDetails.displayName} implements ${implementsTemplate}</p>`;
+  return ``;
 };
 
 const ComponentPropTable = () => {

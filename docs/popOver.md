@@ -45,7 +45,7 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 
 ## Props
 
-```ComponentPropTable path=primitives,Popover,Popover.tsx
+```ComponentPropTable path=composites,Popover,Popover.tsx
 
 ```
 
