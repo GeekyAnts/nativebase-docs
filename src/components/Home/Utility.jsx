@@ -61,13 +61,14 @@ const SVGs = {
       width="22.526"
       height="28.581"
       viewBox="0 0 129 146"
+      fill=""
     >
       <g id="Group_535" data-name="Group 535" transform="translate(378 -6741)">
         <g
           id="Path_339"
           data-name="Path 339"
           transform="translate(-378 6887) rotate(-90)"
-          fill="none"
+          fill="white"
         >
           <path
             d="M109.5,0,146,64.5,109.5,129h-73L0,64.5,36.5,0Z"
@@ -123,10 +124,7 @@ const exampleCode = `
 `.trim();
 
 export function Utility() {
-  // const { isDarkTheme } = useThemeContext();
-  // TODO: change this
   const foldBg = '';
-  // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
@@ -155,30 +153,30 @@ export function Utility() {
                 </span>
               </span>
               <a
-                className={`span ${subHeadingColor}`}
+                className={`${subHeadingColor}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://react-native-aria.geekyants.com/"
               >
-                Styled System.
+                Styled System
               </a>
             </p>
             <p className={`text-xl ${subHeadingColor}`}>
               Powered by{' '}
               <a
-                className="span"
+                className=""
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://styled-system.com/"
               >
-                Styled System{' '}
+                Styled System
               </a>{' '}
               so you can rapidly build custom UI components with
               constraint-based utility style props.
             </p>
             <p className="">
               <a
-                className="span text-blue-800"
+                className="text-blue-800"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://react-native-aria.geekyants.com/"
@@ -206,68 +204,6 @@ export function Utility() {
           </div>
         </div>
       </div>
-      {/* <div className="px-4 md:px-0">
-        <div className="relative py-12 md:py-20">
-          <div className="max-w-3xl">
-            <p className=" w-10 h-10 items-center rounded-md flex justify-center bg-pink-700">
-              {SVGs['Logo']}
-            </p>
-            <h3 className="h3 text-4xl mb-0">
-              <span>Now Supporting </span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-800">
-                Utility Props
-              </span>
-            </h3>
-            <p className="mt-2 text-lg font-semibold mb-0">
-              <span>Built on top of</span>
-              <span className="h-10 ml-2 mr-2 px-3 relative">
-                <span className="absolute -top-1.5 left-0">
-                  {SVGs['Styled Logo']}
-                </span>
-              </span>
-              <span>Styled System</span>
-            </p>
-            <p className={`max-w-xl mt-4  mb-0 ${subHeadingColor}`}>
-              Powered by{' '}
-              <a
-                className="span"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://styled-system.com/"
-              >
-                Styled System{' '}
-              </a>{' '}
-              so you can rapidly build custom UI components with
-              constraint-based utility style props.
-            </p>
-            <p className="mt-4">
-              <a
-                className="span text-blue-800"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://react-native-aria.geekyants.com/"
-              >
-                Learn More
-              </a>
-            </p>
-          </div>
-          <div className="flex flex-col space-y-10 lg:space-y-0 lg:flex-row rounded-md">
-            <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-3">
-              <div className="h-72  flex justify-center relative w-full mt-6">
-                <div className="h-full bg-white w-full flex items-center justify-center rounded-lg shadow-xl lg:absolute lg:-right-5 md:top-0">
-                  <button className="px-12 py-3 rounded-md border-0 bg-blue-800 text-white text-md font-bold ">
-                    Hello
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex-1 rounded-tr-lg rounded-br-lg overflow-hidden px-0 md:px-0">
-              <CodeComponent class1={'px-10 py-20'} code={exampleCode} />
-            </div>
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 }

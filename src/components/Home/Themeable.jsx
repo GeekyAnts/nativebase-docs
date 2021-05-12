@@ -195,147 +195,111 @@ function Typography() {
 function Sizing() {
   return (
     <div style={{ fontSize: '10px' }}>
-      <div class="rounded-t-xl overflow-hidden bg-gradient-to-r from-emerald-50 to-teal-100">
-        <table className="table-auto border-none">
+      <div class="flex w-3/4 pl-0 md:pl-36 overflow-hidden">
+        <table className="table-auto  border-none">
           <thead className="border-none">
-            <tr>
-              <th className="px-4 py-2">Value</th>
-              <th className="px-4 py-2">Pixels</th>
-              <th className="px-4 py-2">Representation</th>
+            <tr className="border-none">
+              <th className="border-none">Value</th>
+              <th className="border-none text-left px-6">Pixels</th>
+              <th className="border-none">Representation</th>
             </tr>
           </thead>
-          <tbody>
-            <tr className="bg-white py-0">
-              <td class="border px-4 py-2">1</td>
-              <td class="border-none flex px-4 space-x-4 items-center">
-                <span>4px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '4px' }}
-                ></div>
+          <tbody className="border-none">
+            <tr className="border-none">
+              <td class="border-none">1</td>
+              <td class="flex border-none px-6 py-2 space-x-4 items-center">
+                <span className="w-6">4px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '4px' }}></div>
               </td>
-              <td class="border px-4"></td>
+              <td class="border-none px-4"></td>
             </tr>
-            <tr className="bg-white border-none">
-              <td>2</td>
-              <td class="flex space-x-4 items-center">
-                <span>8px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '8px' }}
-                ></div>
+            <tr className="bg-white border-b-1">
+              <td className="border-none">2</td>
+              <td class="flex border-none px-6 py-2 space-x-4 items-center">
+                <span className="w-6">8px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '8px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
-            <tr>
-              <td>3</td>
-              <td class="flex space-x-4 items-center">
-                <span>12px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '12px' }}
-                ></div>
+            <tr className="border-1 bg-white">
+              <td className="border-none py-1">3</td>
+              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+                <span className="w-6">12px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '12px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
-            <tr>
-              <td>4</td>
-              <td class="flex space-x-4 items-center">
-                <span>16px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '16px' }}
-                ></div>
+            <tr className="border-b-1 bg-white">
+              <td className="border-none">4</td>
+              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+                <span className="w-6">16px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '16px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
-            <tr>
-              <td>5</td>
-              <td class="flex space-x-4 items-center">
-                <span>20px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '20px' }}
-                ></div>
+            <tr className="border-b-1 bg-white">
+              <td className="border-none">5</td>
+              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+                <span className="w-6">20px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '20px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
-            <tr>
-              <td>6</td>
-              <td class="flex space-x-4 items-center">
-                <span>24px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '24px' }}
-                ></div>
+            <tr className="border-b-1 bg-white">
+              <td className="border-none">6</td>
+              <td class="flex px-6 py-2 border-none een-1 space-x-4 items-center">
+                <span className="w-6">24px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '24px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none bg-white"></td>
             </tr>
-            <tr>
-              <td>7</td>
-              <td class="flex space-x-4 items-center">
-                <span>28px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '28px' }}
-                ></div>
+            <tr className="border-b-1">
+              <td className="border-none">7</td>
+              <td class="flex px-6 py-2 border-none een-1 space-x-4 items-center">
+                <span className="w-6">28px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '28px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
-            <tr>
-              <td>8</td>
-              <td class="flex space-x-4 items-center">
-                <span>32px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '32px' }}
-                ></div>
+            <tr className="border-b-1 bg-white">
+              <td className="border-none">8</td>
+              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+                <span className="w-6">32px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '32px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
-            <tr>
-              <td>9</td>
-              <td class="flex space-x-4 items-center">
-                <span>36px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '36px' }}
-                ></div>
+            <tr className="border-b-1 bg-white">
+              <td className="border-none">9</td>
+              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+                <span className="w-6">36px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '36px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
-            <tr className="py-1">
-              <td>10</td>
-              <td class="flex space-x-4 items-center">
-                <span>40px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '40px' }}
-                ></div>
+            <tr className="border-1 bg-white">
+              <td className="border-none">10</td>
+              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+                <span className="w-6">40px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '40px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
-            <tr>
-              <td>12</td>
-              <td class="flex space-x-4 items-center">
-                <span>48px</span>
-                <div
-                  class="h-2 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '48px' }}
-                ></div>
+            <tr className="border-1 bg-white">
+              <td className="border-none">12</td>
+              <td class="flex px-6 py-2 border-none een-1 space-x-4 items-center">
+                <span className="w-6">48px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '48px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
-            <tr>
-              <td>16</td>
-              <td class="flex space-x-4 items-center">
-                <span>64px</span>
-                <div
-                  class="h-4 bg-gradient-to-br from-purple-200 to-purple-600"
-                  style={{ width: '64px' }}
-                ></div>
+            <tr className="border-1 bg-white">
+              <td className="border-none">16</td>
+              <td class="flex border-none px-6 py-2  space-x-4 items-center">
+                <span className="w-6">64px</span>
+                <div class="h-3 bg-purple-800" style={{ width: '64px' }}></div>
               </td>
-              <td></td>
+              <td className="border-none"></td>
             </tr>
           </tbody>
         </table>
@@ -377,11 +341,11 @@ export function Themeable() {
   // const { isDarkTheme } = useThemeContext();
   // TODO: change this
   const foldBg = '';
-  // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
+  // const foldBg = !isDarkTheme ? 'bg-green-100' : '';
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-900' : 'text-gray-100';
-  const [currentTheme, setCurrentTheme] = useState('color');
+  const [currentTheme, setCurrentTheme] = useState('sizing');
   return (
     <section className="relative">
       <div
@@ -434,7 +398,7 @@ export function Themeable() {
             </p>
 
             <a
-              className="span text-indigo-500"
+              className="text-indigo-500"
               target="_blank"
               rel="noopener noreferrer"
               href="https://react-native-aria.geekyants.com/"
@@ -455,7 +419,7 @@ export function Themeable() {
                       currentTheme === 'color'
                         ? 'border-b-3 border-solid border-blue-700'
                         : ''
-                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
+                    }  border-0 cursor-pointer ${subHeadingColor}`}
                     id="color-btn"
                     onClick={(e) => {
                       setCurrentTheme('color');
@@ -471,7 +435,7 @@ export function Themeable() {
                       currentTheme === 'sizing'
                         ? 'border-b-3 border-solid border-blue-700'
                         : ''
-                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
+                    }   border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
                       setCurrentTheme('sizing');
                     }}
@@ -486,7 +450,7 @@ export function Themeable() {
                       currentTheme === 'typography'
                         ? 'border-b-3 border-solid border-blue-700'
                         : ''
-                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
+                    }   border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
                       setCurrentTheme('typography');
                     }}
@@ -497,14 +461,10 @@ export function Themeable() {
               </div>
               <div className="h-full flex justify-center relative w-full mt-10">
                 <div className="h-full w-full bg-white rounded-lg shadow-xl px-1 md:px-4 py-4 lg:absolute lg:-right-5 md:top-0">
-                  {/* <Sizing /> */}
-                  {/* <ColorTheme /> */}
-                  {/* <Typography /> */}
                   {currentTheme === 'color' ? (
                     <ColorTheme />
                   ) : currentTheme === 'sizing' ? (
-                    // <Sizing />
-                    ''
+                    <Sizing />
                   ) : (
                     <Typography />
                   )}
@@ -518,37 +478,6 @@ export function Themeable() {
             >
               <CodeComponent classStyle={'px-10 py-10'} code={exampleCode} />
             </div>
-          </div>
-          {/* Circle part*/}
-          <div
-            className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
-            aria-hidden="true"
-            style={{ zIndex: 0 }}
-          >
-            <svg
-              width="1360"
-              height="578"
-              viewBox="0 0 1360 578"
-              xmlns="http://www.w3.org/2000/svg"
-              id="hithere"
-            >
-              <defs>
-                <linearGradient
-                  x1="1"
-                  y1=".5"
-                  x2="0"
-                  y2="1"
-                  id="illustration-02"
-                >
-                  <stop stopColor="#34d399" offset="0%" />
-                  <stop stopColor="#818cf8" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="url(#illustration-02)" fillRule="evenodd">
-                <circle cx="300" cy="260" r="200" opacity="0.3" />
-                {/* <circle cx="155" cy="443" r="64" opacity="0.3" /> */}
-              </g>
-            </svg>
           </div>
         </div>
       </div>

@@ -26,6 +26,7 @@
   --ifm-navbar-padding-vertical: 12px;
   --ifm-navbar-padding-horizontal: 16px;
   --doc-sidebar-border-radius: 100%;
+  --ifm-table-cell-padding: '10px';
   --ifm-global-radius: 0.4rem;
 }
 html[data-theme='dark'] {

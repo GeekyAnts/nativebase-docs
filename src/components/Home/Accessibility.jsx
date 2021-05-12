@@ -420,17 +420,17 @@ export function Accessibility() {
                 </span>
               </span>
               <a
-                className={`span ${subHeadingColor}`}
+                className={`${subHeadingColor}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://react-native-aria.geekyants.com/"
               >
-                React Native ARIA.
+                React Native ARIA
               </a>
             </p>
             <p className={`text-xl ${subHeadingColor}`}>
-              Themeability is one of the core elements of NativeBase. Customise
-              your app theme and component styles to your heart's content.
+              Powered by React Native ARIA, which provides React hooks that
+              enable you to build accessible design systems in no time.
             </p>
             <p className="text-indigo-500">
               <a
@@ -455,8 +455,8 @@ export function Accessibility() {
               <div className="mt-5 font-bold">Keyboard Interactions</div>
               <div className="flex mt-1.5 justify-center text-center">
                 <div className="w-3/4">
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print
+                  NativeBase primitives provide basic keyboard support for your
+                  apps so that users can navigate it without a mouse.
                 </div>
               </div>
             </div>
@@ -465,8 +465,9 @@ export function Accessibility() {
               <div className="mt-5 font-bold">Screen Readers</div>
               <div className="flex mt-1.5 justify-center text-center">
                 <div className="w-3/4">
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print
+                  Screen readers facilitate text-to-speech conversion and
+                  automatically detect important content to be conveyed to
+                  people with visual disabilities.
                 </div>
               </div>
             </div>
@@ -475,8 +476,9 @@ export function Accessibility() {
               <div className="mt-5 font-bold">Contrast Ratio</div>
               <div className="flex mt-1.5 justify-center text-center">
                 <div className="w-3/4">
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print
+                  NativeBase provides a contrasting colour based on the theme by
+                  default. You can also customise the contrast ratio using the
+                  useAccessibleColors hook.
                 </div>
               </div>
             </div>
@@ -484,87 +486,5 @@ export function Accessibility() {
         </div>
       </div>
     </section>
-    // <section className="relative px-4 md:px-0 overflow-visible">
-    //   <div className="my-12 md:my-20">
-    //     <div className="flex w-full" data-aos="zoom-y-out">
-    //       <div className="flex flex-col w-full text-left">
-    //         <p className=" w-10 h-10 items-center rounded-md flex justify-center bg-pink-700">
-    //           {SVG['Accessibility']}
-    //         </p>
-    //         <h3 className="h3 text-4xl mb-0">
-    //           <span>Out of the Box </span>
-    //           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-800 to-pink-700">
-    //             Accessibility
-    //           </span>
-    //         </h3>
-    //         <p className="mt-2 font-semibold text-lg mb-0">
-    //           <span>Powered By </span>
-    //           <span className="h-20 px-3 relative">
-    //             <span className="absolute top-0 left-0">
-    //               {SVG['React Native Aria']}{' '}
-    //             </span>
-    //           </span>
-    //           <a
-    //             className={`span ${subHeadingColor}`}
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //             href="https://react-native-aria.geekyants.com/"
-    //           >
-    //             React Native ARIA.
-    //           </a>
-    //         </p>
-    //         <p className="mt-4 mb-0 max-w-xl">
-    //           React Native ARIA provides React hooks that enable you to build
-    //           accessible design systems in no time.
-    //         </p>
-    //         <p className="mt-4">
-    //           <a
-    //             className="span text-pink-700"
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //             href="https://react-native-aria.geekyants.com/"
-    //           >
-    //             Learn More
-    //           </a>
-    //         </p>
-    //       </div>
-    //       <div className="hidden absolute -top-16 z-50 -right-20  lg:inline-block">
-    //         {SVG['React Native']}
-    //       </div>
-    //     </div>
-    //     <div className="grid bg-indigo-800 rounded-md mt-5 py-10 grid-cols-1 md:grid-cols-3 gap-y-10  text-white">
-    //       <div className="text-center py-2">
-    //         <div>{SVG['Keyboard Interactions']}</div>
-    //         <div className="mt-7 font-bold">Keyboard Interactions</div>
-    //         <div className="flex mt-1.5 justify-center text-center">
-    //           <div className="w-3/4">
-    //             Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-    //             used in laying out print
-    //           </div>
-    //         </div>
-    //       </div>
-    //       <div className="text-center py-2">
-    //         <div>{SVG['Screen Readers']}</div>
-    //         <div className="mt-7 font-bold">Screen Readers</div>
-    //         <div className="flex mt-1.5 justify-center text-center">
-    //           <div className="w-3/4">
-    //             Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-    //             used in laying out print
-    //           </div>
-    //         </div>
-    //       </div>
-    //       <div className="text-center py-2">
-    //         <div>{SVG['Contrast Ratio']}</div>
-    //         <div className="mt-7 font-bold">Contrast Ratio</div>
-    //         <div className="flex mt-1.5 justify-center text-center">
-    //           <div className="w-3/4">
-    //             Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-    //             used in laying out print
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
   );
 }

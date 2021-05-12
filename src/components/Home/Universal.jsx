@@ -166,7 +166,7 @@ export function Universal() {
             </p>
 
             <a
-              className="span text-yellow-400"
+              className="text-yellow-400"
               target="_blank"
               rel="noopener noreferrer"
               href="https://react-native-aria.geekyants.com/"
