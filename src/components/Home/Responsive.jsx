@@ -253,7 +253,7 @@ export function Responsive() {
             </p>
 
             <a
-              className="span text-green-700"
+              className="text-green-700"
               target="_blank"
               rel="noopener noreferrer"
               href="https://react-native-aria.geekyants.com/"
@@ -287,37 +287,6 @@ export function Responsive() {
             >
               <CodeComponent classStyle={'pr-20 py-10'} code={exampleCode} />
             </div>
-          </div>
-          {/* Circle part*/}
-          <div
-            className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
-            aria-hidden="true"
-            style={{ zIndex: 0 }}
-          >
-            <svg
-              width="1360"
-              height="578"
-              viewBox="0 0 1360 578"
-              xmlns="http://www.w3.org/2000/svg"
-              id="hithere"
-            >
-              <defs>
-                <linearGradient
-                  x1="1"
-                  y1=".5"
-                  x2="0"
-                  y2="1"
-                  id="illustration-02"
-                >
-                  <stop stopColor="#34d399" offset="0%" />
-                  <stop stopColor="#818cf8" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="url(#illustration-02)" fillRule="evenodd">
-                <circle cx="300" cy="260" r="200" opacity="0.3" />
-                {/* <circle cx="155" cy="443" r="64" opacity="0.3" /> */}
-              </g>
-            </svg>
           </div>
         </div>
       </div>

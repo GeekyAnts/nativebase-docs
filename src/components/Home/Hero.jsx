@@ -41,12 +41,12 @@ export function Hero() {
               <div
                 className={`text-2xl max-w-3xl w-full md:w-10/12  ${subHeadColor}`}
               >
-                An accessible & utility-first component library to build your
-                design system for all the platforms{' '}
+                NativeBase is an accessible, utility-first library that helps
+                you build a consistent design system across Android, iOS and Web
                 {/* <span className="hidden lg:inline">
                   <br />
                 </span> */}
-                (web in alpha).
+                {/* (web in alpha). */}
               </div>
             </div>
             <div className="flex justify-center md:justify-start">

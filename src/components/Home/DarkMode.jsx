@@ -3,6 +3,44 @@ import { CodeComponent } from './CodeComponent';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 const SVGs = {
+  Logo: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="43"
+      height="43"
+      viewBox="0 0 43 43"
+    >
+      <g id="Group_600" data-name="Group 600" transform="translate(-66 -56)">
+        <g id="Group_577" data-name="Group 577" transform="translate(-3 1)">
+          <rect
+            id="Rectangle_166"
+            data-name="Rectangle 166"
+            width="43"
+            height="43"
+            rx="8"
+            transform="translate(69 55)"
+            fill="#d97706"
+          />
+        </g>
+        <g id="Group_583" data-name="Group 583">
+          <path
+            id="Icon_ionic-md-moon"
+            data-name="Icon ionic-md-moon"
+            d="M10.432,7.1a9.05,9.05,0,0,1,.708-3.523A9.888,9.888,0,1,0,23.083,15.522,9.126,9.126,0,0,1,10.432,7.1Z"
+            transform="translate(70.09 69.018)"
+            fill="#fff"
+          />
+          <path
+            id="Icon_ionic-md-sunny"
+            data-name="Icon ionic-md-sunny"
+            d="M11.176,2.25H9.622V4.579h1.554V2.25Zm4.7,1.59-1.4,1.4,1.088,1.088,1.4-1.4L15.873,3.84Zm-10.945,0L3.84,4.928l1.4,1.4L6.325,5.237l-1.4-1.4Zm5.473,1.9A4.658,4.658,0,1,0,15.058,10.4,4.671,4.671,0,0,0,10.4,5.743Zm8.151,3.882H16.223v1.554h2.329V9.626Zm-13.973,0H2.25v1.554H4.579V9.626Zm10.985,4.85-1.088,1.088,1.4,1.4,1.088-1.088-1.4-1.4Zm-10.327,0-1.4,1.4,1.088,1.088,1.4-1.4L5.237,14.476Zm5.938,1.747H9.622v2.329h1.554V16.223Z"
+            transform="translate(82.772 60.656)"
+            fill="#fff"
+          />
+        </g>
+      </g>
+    </svg>
+  ),
   Light: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +96,6 @@ const exampleCode = `
 `.trim();
 
 export function DarkMode() {
-  // const { isDarkTheme } = useThemeContext();
-  // TODO: change this
   const foldBg = '';
   // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
   const { isDarkTheme } = useThemeContext();
@@ -74,51 +110,7 @@ export function DarkMode() {
       <div className="px-4 md:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="43"
-              height="43"
-              viewBox="0 0 43 43"
-            >
-              <g
-                id="Group_600"
-                data-name="Group 600"
-                transform="translate(-66 -56)"
-              >
-                <g
-                  id="Group_577"
-                  data-name="Group 577"
-                  transform="translate(-3 1)"
-                >
-                  <rect
-                    id="Rectangle_166"
-                    data-name="Rectangle 166"
-                    width="43"
-                    height="43"
-                    rx="8"
-                    transform="translate(69 55)"
-                    fill="#d97706"
-                  />
-                </g>
-                <g id="Group_583" data-name="Group 583">
-                  <path
-                    id="Icon_ionic-md-moon"
-                    data-name="Icon ionic-md-moon"
-                    d="M10.432,7.1a9.05,9.05,0,0,1,.708-3.523A9.888,9.888,0,1,0,23.083,15.522,9.126,9.126,0,0,1,10.432,7.1Z"
-                    transform="translate(70.09 69.018)"
-                    fill="#fff"
-                  />
-                  <path
-                    id="Icon_ionic-md-sunny"
-                    data-name="Icon ionic-md-sunny"
-                    d="M11.176,2.25H9.622V4.579h1.554V2.25Zm4.7,1.59-1.4,1.4,1.088,1.088,1.4-1.4L15.873,3.84Zm-10.945,0L3.84,4.928l1.4,1.4L6.325,5.237l-1.4-1.4Zm5.473,1.9A4.658,4.658,0,1,0,15.058,10.4,4.671,4.671,0,0,0,10.4,5.743Zm8.151,3.882H16.223v1.554h2.329V9.626Zm-13.973,0H2.25v1.554H4.579V9.626Zm10.985,4.85-1.088,1.088,1.4,1.4,1.088-1.088-1.4-1.4Zm-10.327,0-1.4,1.4,1.088,1.088,1.4-1.4L5.237,14.476Zm5.938,1.747H9.622v2.329h1.554V16.223Z"
-                    transform="translate(82.772 60.656)"
-                    fill="#fff"
-                  />
-                </g>
-              </g>
-            </svg>
-
+            {SVGs['Logo']}
             <h1 className={`h2 mb-4 mt-2 text-4xl ${headingColor}`}>
               <span className="">Now With </span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
@@ -126,12 +118,12 @@ export function DarkMode() {
               </span>
             </h1>
             <p className={`text-xl ${subHeadingColor}`}>
-              Themeability is one of the core elements of NativeBase. Customise
-              your app theme and component styles to your heart's content.
+              Building apps with a dark mode setting just got a whole lot
+              easier. NativeBase is now optimised for light and dark modes.
             </p>
 
             <a
-              className="span text-yellow-600"
+              className="text-yellow-600"
               target="_blank"
               rel="noopener noreferrer"
               href="https://react-native-aria.geekyants.com/"
@@ -162,37 +154,6 @@ export function DarkMode() {
             >
               <CodeComponent classStyle={'px-10 py-10'} code={exampleCode} />
             </div>
-          </div>
-          {/* Circle part*/}
-          <div
-            className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
-            aria-hidden="true"
-            style={{ zIndex: 0 }}
-          >
-            <svg
-              width="1360"
-              height="578"
-              viewBox="0 0 1360 578"
-              xmlns="http://www.w3.org/2000/svg"
-              id="hithere"
-            >
-              <defs>
-                <linearGradient
-                  x1="1"
-                  y1=".5"
-                  x2="0"
-                  y2="1"
-                  id="illustration-02"
-                >
-                  <stop stopColor="#34d399" offset="0%" />
-                  <stop stopColor="#818cf8" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="url(#illustration-02)" fillRule="evenodd">
-                <circle cx="300" cy="260" r="200" opacity="0.3" />
-                {/* <circle cx="155" cy="443" r="64" opacity="0.3" /> */}
-              </g>
-            </svg>
           </div>
         </div>
       </div>

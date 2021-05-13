@@ -124,12 +124,13 @@ export function ComponentLibrary() {
               </span>
             </h1>
             <p className={`text-xl ${subHeadingColor}`}>
-              Themeability is one of the core elements of NativeBase. Customise
-              your app theme and component styles to your heart's content.
+              NativeBase offers over 60 components so you can build seamlessly.
+              It includes action sheets, menus, spinners, popovers, breadcrumbs
+              and more.
             </p>
 
             <a
-              className="span text-green-700"
+              className="text-green-700"
               target="_blank"
               rel="noopener noreferrer"
               href="https://react-native-aria.geekyants.com/"
@@ -143,7 +144,7 @@ export function ComponentLibrary() {
           >
             <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-20">
               {/* tabs */}
-              <div className="flex w-full lg:w-3/4 mx-auto  flex-row">
+              <div className="flex w-full  lg:w-3/4 mx-auto  flex-row">
                 <div className="text-left lg:text-center w-1/3">
                   <a
                     id="forms-btn"
@@ -151,7 +152,7 @@ export function ComponentLibrary() {
                       currentTheme === 'forms'
                         ? 'border-b-3 border-solid border-pink-700'
                         : ''
-                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
+                    }  border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
                       setCurrentTheme('forms');
                     }}
@@ -159,14 +160,14 @@ export function ComponentLibrary() {
                     Forms
                   </a>
                 </div>
-                <div className="text-left lg:text-center w-1/3">
+                <div className="text-left  lg:text-center w-1/3">
                   <a
                     id="interaction-btn"
                     className={`pb-2 ${
                       currentTheme === 'interaction'
                         ? 'border-b-3 border-solid border-pink-700'
                         : ''
-                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
+                    }  border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={() => {
                       setCurrentTheme('interaction');
                     }}
@@ -174,13 +175,13 @@ export function ComponentLibrary() {
                     Interaction
                   </a>
                 </div>
-                <div className="text-left lg:text-center w-1/3">
+                <div className="text-left  lg:text-center w-1/3">
                   <a
                     className={`pb-2 ${
                       currentTheme === 'avatar'
                         ? 'border-b-3 border-solid border-pink-700'
                         : ''
-                    }  bg-white border-0 cursor-pointer ${subHeadingColor}`}
+                    }  border-0 cursor-pointer ${subHeadingColor}`}
                     id="avatar-btn"
                     onClick={() => {
                       setCurrentTheme('avatar');
