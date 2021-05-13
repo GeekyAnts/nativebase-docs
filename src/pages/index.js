@@ -27,18 +27,16 @@ import {
   PolicyAcceptDialog,
 } from './../components/Home';
 import styles from './styles.module.css';
-
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
-
   return (
     <Layout
       title={`${siteConfig.title} | A complete component library for React Ecosystem`}
       description="A complete component library for React Ecosystem"
     >
       <Head>
-        <meta property="og:title" content="NativeBase" />
+        <meta property="og:title" content="NativeBase"></meta>
         <meta
           property="og:description"
           content="A Complete Component Library for the React Ecosystem"
@@ -76,14 +74,13 @@ function Home() {
             <Universal />
             {/* <Web /> */}
             {/* <Kitchensink /> */}
-
             {/* <FeaturesBlocks /> */}
             {/* <FeaturesWorld /> */}
             {/* <News /> */}
             <Stats />
-            <WatchTalk />
             <Community />
-            <Cta />
+            {/* <Cta /> */}
+            <WatchTalk />
             {/* <Sponsors /> */}
             <Creators />
             <More />
@@ -95,5 +92,4 @@ function Home() {
     </Layout>
   );
 }
-
 export default Home;

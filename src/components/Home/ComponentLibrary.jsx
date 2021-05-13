@@ -133,7 +133,7 @@ export function ComponentLibrary() {
               className="text-green-700"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://react-native-aria.geekyants.com/"
+              // href=""
             >
               Learn More
             </a>

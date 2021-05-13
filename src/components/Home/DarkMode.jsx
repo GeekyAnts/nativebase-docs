@@ -126,7 +126,7 @@ export function DarkMode() {
               className="text-yellow-600"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://react-native-aria.geekyants.com/"
+              // href="https://react-native-aria.geekyants.com/"
             >
               Learn More
             </a>
