@@ -315,49 +315,51 @@ export function Stats() {
               your app theme and component styles to your heart's content.
             </p>
           </div>
-          <div class="w-full flex flex-col items-center justify-center md:flex-row md:gap-x-24 md:gap-y-0 lg:space-y-0 lg:justify-start lg:gap-x-16 gap-y-10 xl:gap-x-24 flex-wrap mt-20">
+          <div className="grid grid-cols-2 mt-20 lg:grid-cols-4 gap-4">
             <div className="">
-              <div className="h-48 w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
+              <div className="h-32 w-32 md:h-48 md:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                 <div className="">{SVGs['Downloads']}</div>
-                <div className="font-bold text-4xl ">38.2k</div>
+                <div className="font-bold text-2xl md:text-4xl ">38.2k</div>
               </div>
               <p
-                className={`text-center text-xl mt-2.5  font-semibold ${subHeadingColor}`}
+                className={`pl-3 text-xl mt-2.5  font-semibold ${subHeadingColor}`}
               >
                 Downloads / week
               </p>
             </div>
             <div>
-              <div className="h-48 w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
+              <div className="h-32 w-32 md:h-48 md:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                 <div className="">{SVGs['GithubStars']}</div>
-                <div className="font-bold text-4xl ">14.8k</div>
+                <div className="font-bold text-2xl md:text-4xl ">14.8k</div>
               </div>
               <p
-                className={`text-center  text-xl mt-2.5  font-semibold ${subHeadingColor}`}
+                className={`pl-2 md:pl-10   text-xl mt-2.5  font-semibold ${subHeadingColor}`}
               >
                 Github Stars
               </p>
             </div>
             <div>
-              <div className="h-48 w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
+              <div className="h-32 w-32  md:h-48 md:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                 <div className="flex h-12 items-center">
                   {SVGs['Contributors']}
                 </div>
-                <div className="font-bold  text-4xl ">196</div>
+                <div className="font-bold text-2xl md:text-4xl ">196</div>
               </div>
               <p
-                className={`text-center  text-xl mt-2.5  font-semibold ${subHeadingColor}`}
+                className={`pl-0 md:pl-10  text-xl mt-2.5  font-semibold ${subHeadingColor}`}
               >
                 Contributions
               </p>
             </div>
             <div>
-              <div className="h-48 w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
+              <div className="h-32 w-32  md:h-48 md:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                 <div className="">{SVGs['Dependents']}</div>
-                <div className="font-bold -mb-1 text-4xl ">53.6k</div>
+                <div className="font-bold -mb-1 text-2xl md:text-4xl ">
+                  53.6k
+                </div>
               </div>
               <p
-                className={`text-center  text-xl mt-2.5  font-semibold ${subHeadingColor}`}
+                className={`pl-2 md:pl-10   text-xl mt-2.5  font-semibold ${subHeadingColor}`}
               >
                 Dependents
               </p>

@@ -169,7 +169,7 @@ export function Universal() {
               className="text-yellow-400"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://react-native-aria.geekyants.com/"
+              // href="https://react-native-aria.geekyants.com/"
             >
               Learn More
             </a>

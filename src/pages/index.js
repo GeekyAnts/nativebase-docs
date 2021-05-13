@@ -27,30 +27,25 @@ import {
   PolicyAcceptDialog,
 } from './../components/Home';
 import styles from './styles.module.css';
-
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
-
   return (
     <Layout
       title={`${siteConfig.title} | A complete component library for React Ecosystem`}
       description="A complete component library for React Ecosystem"
     >
       <Head>
-        <meta property="og:title" content="NativeBase" />
+        <meta property="og:title" content="NativeBase"></meta>
         <meta
           property="og:description"
-          content="A Complete Component Library for the React Ecosystem"
+          content="Mobile-First, Accessible Components for React Native & Web"
         />
         <meta
           name="keywords"
-          content="Open Source, OSS, Component Library, React, React Native, Accessible, Consistent, Responsive, Utility Props"
+          content="Open Source, OSS, Component Library, React, React Native, Accessible, Mobile-First, Styled System, ARIA, Consistent, Responsive, Utility Props"
         />
-        <meta
-          property="og:url"
-          content="[https://nativebase.io](https://nativebase.io/)"
-        />
+        <meta property="og:url" content="https://nativebase.io" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="NativeBase" />
         <meta name="twitter:image:alt" content="NativeBase" />
@@ -76,14 +71,13 @@ function Home() {
             <Universal />
             {/* <Web /> */}
             {/* <Kitchensink /> */}
-
             {/* <FeaturesBlocks /> */}
             {/* <FeaturesWorld /> */}
             {/* <News /> */}
             <Stats />
-            <WatchTalk />
             <Community />
-            <Cta />
+            {/* <Cta /> */}
+            <WatchTalk />
             {/* <Sponsors /> */}
             <Creators />
             <More />
@@ -95,5 +89,4 @@ function Home() {
     </Layout>
   );
 }
-
 export default Home;
