@@ -4,6 +4,7 @@ const internalProps = {
   IIconProps: { doc: 'icon.md', name: 'Icon', link: 'icon#props' },
   IStackProps: { doc: 'stack.md', name: 'Stack', link: 'stack#props' },
   IButtonProps: { doc: 'button.md', name: 'Button', link: 'button#props' },
+  IPressableProps: { doc: 'button.md', name: 'Button', link: 'button#props' },
 };
 // RN props
 const viewProps = {
