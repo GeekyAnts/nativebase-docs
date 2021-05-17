@@ -33,6 +33,6 @@ title: Text
 
 ## Props
 
-```ComponentPropTable path=primitives,Text,index.tsx
+```ComponentPropTable path=primitives,Text,index.tsx showStylingProps=true
 
 ```
