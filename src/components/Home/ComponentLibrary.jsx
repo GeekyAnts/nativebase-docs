@@ -127,7 +127,7 @@ export function ComponentLibrary() {
               </p>
               <p className="mt-7">
                 <a
-                  className="text-pink-700 no-underline border-0 hover:border-b-2 border-solid hover:border-pink-700 font-bold"
+                  className="text-green-700 no-underline border-0 hover:border-b-2 border-solid hover:border-green-700 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
                   href=""
@@ -149,7 +149,7 @@ export function ComponentLibrary() {
                     id="forms-btn"
                     className={`pb-1 ${
                       currentTheme === 'forms'
-                        ? 'border-b-2 border-solid border-pink-700'
+                        ? 'border-b-2 border-solid border-green-700'
                         : ''
                     }  border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
@@ -164,7 +164,7 @@ export function ComponentLibrary() {
                     id="interaction-btn"
                     className={`pb-1 ${
                       currentTheme === 'interaction'
-                        ? 'border-b-2 border-solid border-pink-700'
+                        ? 'border-b-2 border-solid border-green-700'
                         : ''
                     }  border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={() => {
@@ -178,7 +178,7 @@ export function ComponentLibrary() {
                   <a
                     className={`pb-1 ${
                       currentTheme === 'avatar'
-                        ? 'border-b-2 border-solid border-pink-700'
+                        ? 'border-b-2 border-solid border-green-700'
                         : ''
                     }  border-0 cursor-pointer ${subHeadingColor}`}
                     id="avatar-btn"
