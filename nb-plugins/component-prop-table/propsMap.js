@@ -15,6 +15,11 @@ const internalProps = {
     name: 'Image Source',
     link: 'https://reactnative.dev/docs/image#source',
   },
+  IActionsheetContentProps: {
+    doc: 'actionsheet.md',
+    name: 'Actionsheet.Content',
+    link: 'actionsheet#actionsheetcontent',
+  },
 };
 // RN props
 const viewProps = {
