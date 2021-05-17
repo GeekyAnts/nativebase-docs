@@ -5,94 +5,39 @@ title: Switch
 
 The `Switch` component is an alternative to the Checkbox component. You can switch between enabled or disabled states.
 
-## Implements
-
-- [`Switch`](https://reactnative.dev/docs/switch) from [`React Native`](https://reactnative.dev)
-
 ## Examples
 
 ### Basic
 
-```SnackPlayer name=Switch%20Example
-import React from 'react';
-import { Switch, NativeBaseProvider, Center } from 'native-base';
+```ComponentSnackPlayer path=primitives,switch,Basic.tsx
 
-function SwitchComponent () {
-  return (
-    <Switch />
-  );
-}
-
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <SwitchComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ### Sizes
 
-```SnackPlayer name=Switch%20Sizes
-import React from 'react';
-import { Stack, Switch, NativeBaseProvider, Center } from 'native-base';
+```ComponentSnackPlayer path=primitives,switch,Sizes.tsx
 
-function SwitchComponent () {
-  return (
-    <Stack space={4}>
-      <Switch size="sm" />
-      <Switch size="md" />
-      <Switch size="lg" />
-    </Stack>
-  );
-}
-
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <SwitchComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ### Background
 
-```SnackPlayer name=Switch%20Background
-import React from 'react';
-import { Stack,Switch, NativeBaseProvider, Center } from 'native-base';
+```ComponentSnackPlayer path=primitives,switch,SwitchBgColor.tsx
 
-function SwitchComponent () {
-  return (
-    <Stack space={4}>
-      <Switch />
-      <Switch offTrackColor="lightBlue.400" onTrackColor="emerald.400" />
-      <Switch offThumbColor="lightBlue.400" onThumbColor="emerald.400" />
-    </Stack>
-  );
-}
+```
 
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <SwitchComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
+### Color Schemes
+
+```ComponentSnackPlayer path=primitives,switch,ColorSchemes.tsx
+
 ```
 
 ## Props
 
+```ComponentPropTable path=primitives,Switch,index.tsx showStylingProps=true
+
+```
+
+<!--
 | Name               | Type             | Description                                                                                          | Default |
 | ------------------ | ---------------- | ---------------------------------------------------------------------------------------------------- | ------- |
 | name               | string           | The input name of the Switch when used in a form.                                                    | -       |
@@ -107,7 +52,7 @@ export default function () {
 | offThumbColor      | string           | The thumb color of the Switch when off.                                                              | -       |
 | onToggle           | function         | Function called when the state of the Switch changes.                                                | -       |
 | accessibilityLabel | string           | [`Accessibilty label`](https://reactnative.dev/docs/accessibility#accessibilitylabel) for component. | -       |
-| accessibilityHint  | string           | [`Accessibilty hint`](https://reactnative.dev/docs/accessibility#accessibilityhint) for component    |         |
+| accessibilityHint  | string           | [`Accessibilty hint`](https://reactnative.dev/docs/accessibility#accessibilityhint) for component    |         | -->
 
 ## Accessibility
 
