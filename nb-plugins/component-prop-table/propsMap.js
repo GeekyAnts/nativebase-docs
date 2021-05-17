@@ -5,6 +5,16 @@ const internalProps = {
   IStackProps: { doc: 'stack.md', name: 'Stack', link: 'stack#props' },
   IButtonProps: { doc: 'button.md', name: 'Button', link: 'button#props' },
   IPressableProps: { doc: 'button.md', name: 'Button', link: 'button#props' },
+  ImageProps: {
+    doc: '',
+    name: 'Image from React Native',
+    link: 'https://reactnative.dev/docs/image',
+  },
+  ImageSourcePropType: {
+    doc: '',
+    name: 'Image Source',
+    link: 'https://reactnative.dev/docs/image#source',
+  },
 };
 // RN props
 const viewProps = {
@@ -17,6 +27,11 @@ const viewProps = {
     doc: '',
     name: 'View',
     link: 'https://reactnative.dev/docs/view',
+  },
+  ImageProps: {
+    doc: '',
+    name: 'Image',
+    link: 'https://reactnative.dev/docs/image',
   },
   ViewPropsAndroid: {
     doc: '',
@@ -106,6 +121,11 @@ const rnProps = {
     doc: '',
     name: 'ViewStyle',
     link: 'https://reactnative.dev/docs/view-style-props',
+  },
+  ImageProps: {
+    doc: '',
+    name: 'Image',
+    link: 'https://reactnative.dev/docs/image',
   },
   ViewProps: {
     doc: '',
