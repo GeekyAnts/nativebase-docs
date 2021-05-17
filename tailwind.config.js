@@ -72,10 +72,8 @@ module.exports = {
           50: '#50BFC2',
           100: '#1A84B2',
           200: '#35628F',
+          300: '#475569',
         },
-      },
-      borderWidth: {
-        3: '3px',
       },
       boxShadow: {
         xs: '0 0 0 1px rgba(0, 0, 0, 0.16)',
@@ -203,6 +201,8 @@ module.exports = {
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    borderWidth: ['hover'],
+    borderStyle: ['hover'],
     translate: ['responsive', 'hover', 'focus', 'group-hover'],
     boxShadow: ['responsive', 'hover', 'focus', 'focus-within'],
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],

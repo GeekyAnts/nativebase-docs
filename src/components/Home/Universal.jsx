@@ -1,13 +1,28 @@
 import React from 'react';
-import { CodeComponent } from './CodeComponent';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 const SVGs = {
-  IOS: (
+  Logo: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="60"
-      height="60"
+      width="29.25"
+      height="29.25"
+      viewBox="0 0 29.25 29.25"
+    >
+      <path
+        id="Icon_ionic-md-globe"
+        data-name="Icon ionic-md-globe"
+        d="M18,3.375A14.625,14.625,0,1,0,32.625,18,14.625,14.625,0,0,0,18,3.375Zm-1.515,27.07A12.537,12.537,0,0,1,8.46,9.868a13.891,13.891,0,0,1,.142,1.7c-.115,1.673-.28,2.72.7,4.132a6.817,6.817,0,0,1,.661,1.974c.182.623.907.949,1.408,1.333,1.01.774,1.976,1.674,3.046,2.355.707.45,1.148.673.941,1.536a5.449,5.449,0,0,1-.572,1.738,3.523,3.523,0,0,0,.587,1.574c.527.527,1.05,1.011,1.625,1.485C17.887,28.431,16.91,29.387,16.485,30.445Zm10.379-3.581a12.446,12.446,0,0,1-6.508,3.451A5.2,5.2,0,0,1,21.9,28.251a5.238,5.238,0,0,0,1.385-1.712,11.894,11.894,0,0,1,.955-1.632c.5-.766-1.225-1.922-1.783-2.164a18.377,18.377,0,0,1-3.316-2.065c-.795-.559-2.409.292-3.306-.1A17.3,17.3,0,0,1,12.52,18.3c-1.1-.83-1.049-1.8-1.049-3.023.864.032,2.092-.239,2.665.455.181.219.8,1.2,1.219.85.34-.284-.252-1.424-.366-1.692-.352-.824.8-1.145,1.392-1.7.771-.729,2.424-1.872,2.293-2.394s-1.654-2-2.549-1.771c-.134.035-1.315,1.272-1.543,1.467q.009-.606.018-1.212c0-.255-.476-.517-.454-.681.056-.416,1.214-1.17,1.5-1.5-.2-.126-.89-.717-1.1-.631-.5.21-1.074.355-1.579.565a3.211,3.211,0,0,0-.047-.5A12.416,12.416,0,0,1,16.112,5.6l.99.4.7.83.7.72.61.2.969-.914-.25-.652V5.6a12.4,12.4,0,0,1,5.31,2.1c-.284.025-.6.067-.947.112a3.151,3.151,0,0,0-.49-.184c.459.987.938,1.961,1.425,2.935.52,1.041,1.673,2.157,1.875,3.256.239,1.295.073,2.471.2,3.995a6.823,6.823,0,0,0,1.654,3.134,3.312,3.312,0,0,0,1.293.157A12.459,12.459,0,0,1,26.864,26.864Z"
+        transform="translate(-3.375 -3.375)"
+        fill="#fff"
+      />
+    </svg>
+  ),
+  iOS: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="80"
+      height="80"
       viewBox="0 0 80 80"
     >
       <g id="Group_607" data-name="Group 607" transform="translate(-610 -394)">
@@ -32,8 +47,8 @@ const SVGs = {
   Android: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="60"
-      height="60"
+      width="80"
+      height="80"
       viewBox="0 0 80 80"
     >
       <g id="Group_606" data-name="Group 606" transform="translate(-365 -404)">
@@ -58,74 +73,43 @@ const SVGs = {
   Web: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="60"
-      height="60"
+      width="80"
+      height="80"
       viewBox="0 0 80 80"
     >
-      <g id="Group_608" data-name="Group 608" transform="translate(-1034 -399)">
-        <rect
-          id="Rectangle_250"
-          data-name="Rectangle 250"
-          width="80"
-          height="80"
-          transform="translate(1034 399)"
-          fill="none"
-        />
-        <g
-          id="Icon_ionic-logo-windows"
-          data-name="Icon ionic-logo-windows"
-          transform="translate(1038.6 403.488)"
-        >
-          <path
-            id="Path_352"
-            data-name="Path 352"
-            d="M55.525,18.633H16.313v28.3l39.212,5.692V18.633Z"
-            transform="translate(15.31 18.207)"
-            fill="#fff"
-          />
-          <path
-            id="Path_353"
-            data-name="Path 353"
-            d="M31.343,18.633H2.25V42.35l29.093,4.222V18.633Z"
-            transform="translate(-2.25 18.207)"
-            fill="#fff"
-          />
-          <path
-            id="Path_354"
-            data-name="Path 354"
-            d="M55.525,2.25l-39.212,5.6V36.561H55.525V2.25Z"
-            transform="translate(15.31 -2.25)"
-            fill="#fff"
-          />
-          <path
-            id="Path_355"
-            data-name="Path 355"
-            d="M31.343,4.9,2.25,9.059V33.25H31.343V4.9Z"
-            transform="translate(-2.25 1.06)"
-            fill="#fff"
-          />
-        </g>
-      </g>
+      <path
+        id="globe"
+        d="M68.278,11.722a39.991,39.991,0,1,0,0,56.556A39.969,39.969,0,0,0,68.278,11.722ZM66.607,62.577a40.086,40.086,0,0,0-5.974-4.424,64.677,64.677,0,0,0,2.412-15.605H74.8a34.578,34.578,0,0,1-8.2,20.029ZM5.2,42.548H16.955a64.677,64.677,0,0,0,2.412,15.605,40.087,40.087,0,0,0-5.974,4.424A34.579,34.579,0,0,1,5.2,42.548Zm8.2-25.126a40.086,40.086,0,0,0,5.974,4.424,64.677,64.677,0,0,0-2.412,15.605H5.2A34.579,34.579,0,0,1,13.394,17.422Zm24.058,4.95a34.623,34.623,0,0,1-11.879-3.01C27.733,13.8,31.717,7.125,37.452,5.472Zm0,5.106v9.972h-15.4a60.045,60.045,0,0,1,1.933-13.213A39.723,39.723,0,0,0,37.452,27.479Zm0,15.069V52.52a39.723,39.723,0,0,0-13.465,3.241,60.045,60.045,0,0,1-1.933-13.213Zm0,15.078v16.9c-5.735-1.654-9.718-8.326-11.879-13.891A34.623,34.623,0,0,1,37.452,57.626Zm5.1,0a34.623,34.623,0,0,1,11.879,3.01C52.267,66.2,48.284,72.874,42.549,74.527Zm0-5.106V42.548h15.4a60.045,60.045,0,0,1-1.933,13.213A39.723,39.723,0,0,0,42.549,52.52Zm0-15.069V27.479a39.723,39.723,0,0,0,13.465-3.241,60.045,60.045,0,0,1,1.933,13.213Zm0-15.078V5.472c5.735,1.654,9.718,8.327,11.879,13.891A34.627,34.627,0,0,1,42.549,22.373ZM54,8.016a34.741,34.741,0,0,1,9.034,5.769,35.027,35.027,0,0,1-4.1,3.112A38.369,38.369,0,0,0,54,8.016ZM21.071,16.9a35.04,35.04,0,0,1-4.1-3.112A34.741,34.741,0,0,1,26,8.016,38.382,38.382,0,0,0,21.071,16.9Zm0,46.206A38.372,38.372,0,0,0,26,71.983a34.741,34.741,0,0,1-9.034-5.769A35.027,35.027,0,0,1,21.071,63.1Zm37.859,0a35.044,35.044,0,0,1,4.1,3.112A34.741,34.741,0,0,1,54,71.983,38.367,38.367,0,0,0,58.93,63.1Zm4.116-25.651a64.675,64.675,0,0,0-2.412-15.605,40.094,40.094,0,0,0,5.974-4.424,34.579,34.579,0,0,1,8.2,20.029Z"
+        transform="translate(0 0)"
+        fill="#fff"
+      />
     </svg>
   ),
 };
-const exampleCode = `
-<Box>
-  fontSize={4}
-  fontWeight='bold'
-  p={3}
-  mb={[4,5]}
-  color='white'
-  bg='primary'>
-  Hello
-</Box>
-`.trim();
+
+const themes = [
+  {
+    svg: SVGs['Android'],
+    heading: 'Android',
+    subHeading:
+      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print',
+  },
+  {
+    svg: SVGs['iOS'],
+    heading: 'iOS',
+    subHeading:
+      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print',
+  },
+  {
+    svg: SVGs['Web'],
+    heading: 'Web',
+    subHeading:
+      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print',
+  },
+];
 
 export function Universal() {
-  // const { isDarkTheme } = useThemeContext();
-  // TODO: change this
   const foldBg = '';
-  // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
@@ -137,74 +121,47 @@ export function Universal() {
       />
       <div className="px-4 md:px-0">
         <div className="relative py-12 md:py-20">
-          <div className="max-w-3xl">
-            <p className="w-10 h-10 items-center rounded-md flex justify-center bg-yellow-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="29.25"
-                height="29.25"
-                viewBox="0 0 29.25 29.25"
-              >
-                <path
-                  id="Icon_ionic-md-globe"
-                  data-name="Icon ionic-md-globe"
-                  d="M18,3.375A14.625,14.625,0,1,0,32.625,18,14.625,14.625,0,0,0,18,3.375Zm-1.515,27.07A12.537,12.537,0,0,1,8.46,9.868a13.891,13.891,0,0,1,.142,1.7c-.115,1.673-.28,2.72.7,4.132a6.817,6.817,0,0,1,.661,1.974c.182.623.907.949,1.408,1.333,1.01.774,1.976,1.674,3.046,2.355.707.45,1.148.673.941,1.536a5.449,5.449,0,0,1-.572,1.738,3.523,3.523,0,0,0,.587,1.574c.527.527,1.05,1.011,1.625,1.485C17.887,28.431,16.91,29.387,16.485,30.445Zm10.379-3.581a12.446,12.446,0,0,1-6.508,3.451A5.2,5.2,0,0,1,21.9,28.251a5.238,5.238,0,0,0,1.385-1.712,11.894,11.894,0,0,1,.955-1.632c.5-.766-1.225-1.922-1.783-2.164a18.377,18.377,0,0,1-3.316-2.065c-.795-.559-2.409.292-3.306-.1A17.3,17.3,0,0,1,12.52,18.3c-1.1-.83-1.049-1.8-1.049-3.023.864.032,2.092-.239,2.665.455.181.219.8,1.2,1.219.85.34-.284-.252-1.424-.366-1.692-.352-.824.8-1.145,1.392-1.7.771-.729,2.424-1.872,2.293-2.394s-1.654-2-2.549-1.771c-.134.035-1.315,1.272-1.543,1.467q.009-.606.018-1.212c0-.255-.476-.517-.454-.681.056-.416,1.214-1.17,1.5-1.5-.2-.126-.89-.717-1.1-.631-.5.21-1.074.355-1.579.565a3.211,3.211,0,0,0-.047-.5A12.416,12.416,0,0,1,16.112,5.6l.99.4.7.83.7.72.61.2.969-.914-.25-.652V5.6a12.4,12.4,0,0,1,5.31,2.1c-.284.025-.6.067-.947.112a3.151,3.151,0,0,0-.49-.184c.459.987.938,1.961,1.425,2.935.52,1.041,1.673,2.157,1.875,3.256.239,1.295.073,2.471.2,3.995a6.823,6.823,0,0,0,1.654,3.134,3.312,3.312,0,0,0,1.293.157A12.459,12.459,0,0,1,26.864,26.864Z"
-                  transform="translate(-3.375 -3.375)"
-                  fill="#fff"
-                />
-              </svg>
-            </p>
-
-            <h1 className={`h2 mb-4 mt-2 text-4xl ${headingColor}`}>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-yellow-400">
-                Universal
+          <div className="max-w-4xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
+            <span className="mt-2">
+              <span className="w-10 h-10 items-center rounded-md flex justify-center bg-yellow-400">
+                {SVGs['Logo']}
               </span>
-            </h1>
-            <p className={`text-xl ${subHeadingColor}`}>
-              Themeability is one of the core elements of NativeBase. Customise
-              your app theme and component styles to your heart's content.
-            </p>
-
-            <a
-              className="text-yellow-400"
-              target="_blank"
-              rel="noopener noreferrer"
-              // href="https://react-native-aria.geekyants.com/"
-            >
-              Learn More
-            </a>
+            </span>
+            <span>
+              <h2 className={`leading-snug text-4xl ${headingColor}`}>
+                <span>Consistent across </span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-yellow-400">
+                  Web, Android & iOS
+                </span>
+              </h2>
+              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+                Whether you're building for the web, Android or iOS, we've got
+                you covered. Fast-track your dev process with universal
+                components.
+              </p>
+              <p className="mt-7">
+                <a
+                  className="text-yellow-400 no-underline border-0 hover:border-b-2 border-solid hover:border-yellow-400 font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href=""
+                >
+                  Learn More
+                </a>
+              </p>
+            </span>
           </div>
+
+          {/* themes */}
           <div className="grid bg-yellow-600 rounded-md mt-10 py-6 grid-cols-1 md:grid-cols-3 gap-y-10  text-white">
-            <div className="text-center py-2">
-              <div>{SVGs['Android']}</div>
-              <div className="mt-5 font-bold">Android</div>
-              <div className="flex mt-1.5 justify-center text-center">
-                <div className="w-3/4">
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print
+            {themes.map((theme, idx) => {
+              return (
+                <div className="text-center py-2" key={idx}>
+                  <div>{theme['svg']}</div>
+                  <div className="mt-5 font-bold">{theme['heading']}</div>
                 </div>
-              </div>
-            </div>
-            <div className="text-center py-2">
-              <div>{SVGs['IOS']}</div>
-              <div className="mt-5 font-bold">iOS</div>
-              <div className="flex mt-1.5 justify-center text-center">
-                <div className="w-3/4">
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print
-                </div>
-              </div>
-            </div>
-            <div className="text-center py-2">
-              <div>{SVGs['Web']}</div>
-              <div className="mt-5 font-bold">Web</div>
-              <div className="flex mt-1.5 justify-center text-center">
-                <div className="w-3/4">
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>

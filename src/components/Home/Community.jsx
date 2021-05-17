@@ -2,6 +2,39 @@ import React from 'react';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 const SVGs = {
+  Logo: (
+    <p className="w-10 h-10 items-center rounded-md flex justify-center bg-blue-400">
+      <svg
+        id="connect"
+        xmlns="http://www.w3.org/2000/svg"
+        width="27.145"
+        height="27.145"
+        viewBox="0 0 27.145 27.145"
+      >
+        <path
+          id="Path_387"
+          data-name="Path 387"
+          d="M36.355,3.25a10.682,10.682,0,0,1,11.254,0,3.207,3.207,0,1,0,.4-1.6,12.33,12.33,0,0,0-12.061,0,3.166,3.166,0,1,0,.4,1.6Zm0,0"
+          transform="translate(-28.409)"
+          fill="#fff"
+        />
+        <path
+          id="Path_388"
+          data-name="Path 388"
+          d="M202.362,244.181a3.181,3.181,0,1,0-3.181,3.181A3.184,3.184,0,0,0,202.362,244.181Zm0,0"
+          transform="translate(-185.608 -228.223)"
+          fill="#fff"
+        />
+        <path
+          id="Path_389"
+          data-name="Path 389"
+          d="M22.374,120a4.777,4.777,0,0,0-4.772,4.772v2.439a.8.8,0,0,0,.8.8h5.268a10.332,10.332,0,0,1-6.019,7.094,4.734,4.734,0,0,0-8.147,0,10.332,10.332,0,0,1-6.019-7.094H8.748a.8.8,0,0,0,.8-.8v-2.439a4.772,4.772,0,1,0-9.543,0v2.439a.8.8,0,0,0,.8.8H1.857A11.906,11.906,0,0,0,8.9,136.57a4.78,4.78,0,0,0-.1.979v2.439a.8.8,0,0,0,.8.8h7.953a.8.8,0,0,0,.8-.8v-2.439a4.78,4.78,0,0,0-.1-.979,11.906,11.906,0,0,0,7.047-8.564H26.35a.8.8,0,0,0,.8-.8v-2.439A4.777,4.777,0,0,0,22.374,120Zm0,0"
+          transform="translate(0 -113.638)"
+          fill="#fff"
+        />
+      </svg>
+    </p>
+  ),
   StackOverflow: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -137,47 +170,20 @@ export function Community() {
     <section>
       <div className="">
         <div className="py-12 px-4 md:px-0 md:py-20">
-          <div className="max-w-3xl pb-12 md:pb-20">
-            <p className="w-10 h-10 items-center rounded-md flex justify-center bg-blue-400">
-              <svg
-                id="connect"
-                xmlns="http://www.w3.org/2000/svg"
-                width="27.145"
-                height="27.145"
-                viewBox="0 0 27.145 27.145"
-              >
-                <path
-                  id="Path_387"
-                  data-name="Path 387"
-                  d="M36.355,3.25a10.682,10.682,0,0,1,11.254,0,3.207,3.207,0,1,0,.4-1.6,12.33,12.33,0,0,0-12.061,0,3.166,3.166,0,1,0,.4,1.6Zm0,0"
-                  transform="translate(-28.409)"
-                  fill="#fff"
-                />
-                <path
-                  id="Path_388"
-                  data-name="Path 388"
-                  d="M202.362,244.181a3.181,3.181,0,1,0-3.181,3.181A3.184,3.184,0,0,0,202.362,244.181Zm0,0"
-                  transform="translate(-185.608 -228.223)"
-                  fill="#fff"
-                />
-                <path
-                  id="Path_389"
-                  data-name="Path 389"
-                  d="M22.374,120a4.777,4.777,0,0,0-4.772,4.772v2.439a.8.8,0,0,0,.8.8h5.268a10.332,10.332,0,0,1-6.019,7.094,4.734,4.734,0,0,0-8.147,0,10.332,10.332,0,0,1-6.019-7.094H8.748a.8.8,0,0,0,.8-.8v-2.439a4.772,4.772,0,1,0-9.543,0v2.439a.8.8,0,0,0,.8.8H1.857A11.906,11.906,0,0,0,8.9,136.57a4.78,4.78,0,0,0-.1.979v2.439a.8.8,0,0,0,.8.8h7.953a.8.8,0,0,0,.8-.8v-2.439a4.78,4.78,0,0,0-.1-.979,11.906,11.906,0,0,0,7.047-8.564H26.35a.8.8,0,0,0,.8-.8v-2.439A4.777,4.777,0,0,0,22.374,120Zm0,0"
-                  transform="translate(0 -113.638)"
-                  fill="#fff"
-                />
-              </svg>
-            </p>
-            <h1 className={`h2 mb-4  mt-2 text-4xl ${headingColor}`}>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
-                Our Community
-              </span>
-            </h1>
-            <p className={`text-lg md:text-xl ${subHeadingColor}`}>
-              We have a lively community built on our shared love for React &
-              React Native. Check out our recent blog posts and come join us!
-            </p>
+          <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7 pb-12 md:pb-20">
+            <span className="mt-2">{SVGs['Logo']}</span>
+            <span>
+              <h2 className={`leading-snug text-4xl ${headingColor}`}>
+                <span>Our</span>{' '}
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+                  Community
+                </span>
+              </h2>
+              <p className={`text-xl mt-7 leading-normal ${subHeadingColor}`}>
+                We have a lively community built on our shared love for React &
+                React Native. Join us!
+              </p>
+            </span>
           </div>
 
           <div className="pb-20  flex flex-col  items-center">

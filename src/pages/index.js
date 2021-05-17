@@ -13,12 +13,13 @@ import {
   Cta,
   Hero,
   Utility,
+  Reviews,
   Universal,
   // Kitchensink,
   More,
   Responsive,
   DarkMode,
-  // Sponsors,
+  Sponsors,
   Stats,
   Themeable,
   UtilityProps,
@@ -78,8 +79,9 @@ function Home() {
             <Community />
             {/* <Cta /> */}
             <WatchTalk />
-            {/* <Sponsors /> */}
+            <Reviews />
             <Creators />
+            <Sponsors />
             <More />
           </section>
         </div>

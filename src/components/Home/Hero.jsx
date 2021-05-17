@@ -25,7 +25,7 @@ export function Hero() {
             <h1
               className={`font-inter text-5xl leading-tighter max-w-3xl md:leading-snug tracking-normal mb-0 ${headColor}`}
             >
-              Mobile first accessible <br /> components for {''}
+              Mobile-First, Accessible <br /> Components for {''}
               {/* A Complete <br /> Component Library for <br /> the{' '} */}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-400">
                 React{' '}
@@ -34,7 +34,7 @@ export function Hero() {
                 </span>
               </span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-700 to-blue-700">
-                Native & Web.
+                Native & Web
               </span>
             </h1>
             <div>
@@ -60,14 +60,14 @@ export function Hero() {
               </p> */}
               <div className="max-w-xs pt-4 sm:max-w-none flex w-full flex-col md:flex-row items-center">
                 <a
-                  className="btn text-white bg-blue-400 font-semibold w-full md:w-48 justify-center md:px-10 mb-4 sm:mb-0 rounded py-3 no-underline flex"
+                  className="btn text-white bg-secondary-50 font-semibold w-full md:w-48 justify-center md:px-10 mb-4 sm:mb-0 rounded-lg py-3 no-underline flex"
                   href="docs/nativebase"
                 >
                   Get Started
                 </a>
 
                 <a
-                  className="btn max-w-xs font-bold bg-white text-gray-500 border no-underline w-full sm:ml-4 rounded py-3 md:w-48 justify-center md:px-5 items-center flex"
+                  className="btn max-w-xs font-bold bg-white text-gray-500 border no-underline w-full sm:ml-4 rounded-lg py-3 md:w-48 justify-center md:px-5 items-center flex"
                   href="https://github.com/GeekyAnts/nativebase"
                   style={{ border: '1px solid rgba(209, 213, 219,1)' }}
                 >

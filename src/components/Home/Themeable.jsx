@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { CodeComponent } from './CodeComponent';
-import { SVGs } from './../SVGs';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 function ColorTheme() {
@@ -195,8 +194,8 @@ function Typography() {
 function Sizing() {
   return (
     <div style={{ fontSize: '10px' }}>
-      <div class="flex w-3/4 pl-0 md:pl-36 overflow-hidden">
-        <table className="table-auto  border-none">
+      <div class="flex w-3/4 pl-0 text-gray-900 md:pl-36 overflow-hidden">
+        <table className="table-auto sizing-theme border-none p-0">
           <thead className="border-none">
             <tr className="border-none">
               <th className="border-none">Value</th>
@@ -205,101 +204,101 @@ function Sizing() {
             </tr>
           </thead>
           <tbody className="border-none">
-            <tr className="border-none">
-              <td class="border-none">1</td>
+            <tr className="border-none py-0">
+              <td class="border-none py-2">1</td>
               <td class="flex border-none px-6 py-2 space-x-4 items-center">
                 <span className="w-6">4px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '4px' }}></div>
               </td>
-              <td class="border-none px-4"></td>
+              <td class="border-none px-4 py-2"></td>
             </tr>
-            <tr className="bg-white border-b-1">
-              <td className="border-none">2</td>
-              <td class="flex border-none px-6 py-2 space-x-4 items-center">
+            <tr className="bg-white border-b-1 border-gray-200">
+              <td className="border-none py-2 ">2</td>
+              <td class="flex border-none  px-6 py-2 space-x-4 items-center">
                 <span className="w-6">8px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '8px' }}></div>
               </td>
-              <td className="border-none"></td>
+              <td className="border-none py-2"></td>
             </tr>
-            <tr className="border-1 bg-white">
-              <td className="border-none py-1">3</td>
-              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+            <tr className="border-1 border-gray-200 bg-white">
+              <td className="border-none py-2">3</td>
+              <td class="flex border-none px-6 py-2  space-x-4 items-center">
                 <span className="w-6">12px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '12px' }}></div>
               </td>
-              <td className="border-none"></td>
+              <td className="border-none py-2"></td>
             </tr>
-            <tr className="border-b-1 bg-white">
-              <td className="border-none">4</td>
-              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+            <tr className="border-b-1 border-gray-200 bg-white">
+              <td className="border-none py-2">4</td>
+              <td class="flex border-none px-6 py-2 space-x-4 items-center">
                 <span className="w-6">16px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '16px' }}></div>
               </td>
               <td className="border-none"></td>
             </tr>
-            <tr className="border-b-1 bg-white">
-              <td className="border-none">5</td>
-              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+            <tr className="border-b-1 border-gray-200 bg-white">
+              <td className="border-none py-2">5</td>
+              <td class="flex border-none px-6 py-2 space-x-4 items-center">
                 <span className="w-6">20px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '20px' }}></div>
               </td>
-              <td className="border-none"></td>
+              <td className="border-none py-2"></td>
             </tr>
-            <tr className="border-b-1 bg-white">
-              <td className="border-none">6</td>
-              <td class="flex px-6 py-2 border-none een-1 space-x-4 items-center">
+            <tr className="border-b-1 border-gray-200 bg-white">
+              <td className="border-none py-2">6</td>
+              <td class="flex px-6 py-2 border-none space-x-4 items-center">
                 <span className="w-6">24px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '24px' }}></div>
+                <div class="h-3 bg-purple-800 " style={{ width: '24px' }}></div>
               </td>
-              <td className="border-none bg-white"></td>
+              <td className="border-none py-2 bg-white"></td>
             </tr>
-            <tr className="border-b-1">
-              <td className="border-none">7</td>
-              <td class="flex px-6 py-2 border-none een-1 space-x-4 items-center">
+            <tr className="border-b-1 border-gray-200">
+              <td className="border-none py-2">7</td>
+              <td class="flex px-6 py-2 border-none  space-x-4 items-center">
                 <span className="w-6">28px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '28px' }}></div>
               </td>
-              <td className="border-none"></td>
+              <td className="border-none py-2"></td>
             </tr>
-            <tr className="border-b-1 bg-white">
-              <td className="border-none">8</td>
-              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+            <tr className="border-b-1 border-gray-200 bg-white">
+              <td className="border-none py-2">8</td>
+              <td class="flex border-none py-2 px-6  space-x-4 items-center">
                 <span className="w-6">32px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '32px' }}></div>
               </td>
-              <td className="border-none"></td>
+              <td className="border-none py-2"></td>
             </tr>
-            <tr className="border-b-1 bg-white">
-              <td className="border-none">9</td>
-              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+            <tr className="border-b-1 border-gray-200 bg-white">
+              <td className="border-none py-2">9</td>
+              <td class="flex border-none py-2 px-6  space-x-4 items-center">
                 <span className="w-6">36px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '36px' }}></div>
               </td>
-              <td className="border-none"></td>
+              <td className="border-none py-2"></td>
             </tr>
-            <tr className="border-1 bg-white">
-              <td className="border-none">10</td>
-              <td class="flex border-none px-6 py-2 een-1 space-x-4 items-center">
+            <tr className="border-1 border-gray-200 bg-white">
+              <td className="border-none py-2">10</td>
+              <td class="flex border-none py-2 px-6  space-x-4 items-center">
                 <span className="w-6">40px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '40px' }}></div>
               </td>
-              <td className="border-none"></td>
+              <td className="border-none py-2"></td>
             </tr>
-            <tr className="border-1 bg-white">
-              <td className="border-none">12</td>
-              <td class="flex px-6 py-2 border-none een-1 space-x-4 items-center">
+            <tr className="border-1  border-gray-200 bg-white">
+              <td className="border-none py-2">12</td>
+              <td class="flex px-6 border-none py-2 space-x-4 items-center">
                 <span className="w-6">48px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '48px' }}></div>
               </td>
-              <td className="border-none"></td>
+              <td className="border-none py-2"></td>
             </tr>
-            <tr className="border-1 bg-white">
-              <td className="border-none">16</td>
-              <td class="flex border-none px-6 py-2  space-x-4 items-center">
+            <tr className="border-1 border-gray-200 bg-white">
+              <td className="border-none py-2">16</td>
+              <td class="flex border-none py-2 px-6  space-x-4 items-center">
                 <span className="w-6">64px</span>
                 <div class="h-3 bg-purple-800" style={{ width: '64px' }}></div>
               </td>
-              <td className="border-none"></td>
+              <td className="border-none py-2"></td>
             </tr>
           </tbody>
         </table>
@@ -337,11 +336,40 @@ const exampleCode = `
 </Box>
 `.trim();
 
+const SVGs = {
+  Logo: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="43"
+      height="43"
+      viewBox="0 0 43 43"
+    >
+      <g id="Group_453" data-name="Group 453" transform="translate(-74 -39)">
+        <rect
+          id="Rectangle_166"
+          data-name="Rectangle 166"
+          width="43"
+          height="43"
+          rx="7"
+          transform="translate(74 39)"
+          fill="#6366F1"
+        />
+        <path
+          id="Icon_awesome-paint-roller"
+          data-name="Icon awesome-paint-roller"
+          d="M17.691,5.443V1.361A1.361,1.361,0,0,0,16.33,0H1.361A1.361,1.361,0,0,0,0,1.361V5.443A1.361,1.361,0,0,0,1.361,6.8H16.33A1.361,1.361,0,0,0,17.691,5.443Zm1.361-2.722V8.165a1.361,1.361,0,0,1-1.361,1.361h-6.8a2.721,2.721,0,0,0-2.722,2.722v1.361A1.361,1.361,0,0,0,6.8,14.969v5.443a1.361,1.361,0,0,0,1.361,1.361h2.722a1.361,1.361,0,0,0,1.361-1.361V14.969a1.361,1.361,0,0,0-1.361-1.361V12.247h6.8a4.082,4.082,0,0,0,4.082-4.082V5.443A2.721,2.721,0,0,0,19.051,2.722Z"
+          transform="translate(84.762 49.761)"
+          fill="#fff"
+        />
+      </g>
+    </svg>
+  ),
+};
+
 export function Themeable() {
   // const { isDarkTheme } = useThemeContext();
   // TODO: change this
   const foldBg = '';
-  // const foldBg = !isDarkTheme ? 'bg-green-100' : '';
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-900' : 'text-gray-100';
@@ -355,69 +383,44 @@ export function Themeable() {
 
       <div className="px-4 md:px-0">
         <div className="relative py-12 md:py-20">
-          <div className="max-w-3xl">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="43"
-              height="43"
-              viewBox="0 0 43 43"
-            >
-              <g
-                id="Group_453"
-                data-name="Group 453"
-                transform="translate(-74 -39)"
-              >
-                <rect
-                  id="Rectangle_166"
-                  data-name="Rectangle 166"
-                  width="43"
-                  height="43"
-                  rx="7"
-                  transform="translate(74 39)"
-                  fill="#3ca2cb"
-                />
-                <path
-                  id="Icon_awesome-paint-roller"
-                  data-name="Icon awesome-paint-roller"
-                  d="M17.691,5.443V1.361A1.361,1.361,0,0,0,16.33,0H1.361A1.361,1.361,0,0,0,0,1.361V5.443A1.361,1.361,0,0,0,1.361,6.8H16.33A1.361,1.361,0,0,0,17.691,5.443Zm1.361-2.722V8.165a1.361,1.361,0,0,1-1.361,1.361h-6.8a2.721,2.721,0,0,0-2.722,2.722v1.361A1.361,1.361,0,0,0,6.8,14.969v5.443a1.361,1.361,0,0,0,1.361,1.361h2.722a1.361,1.361,0,0,0,1.361-1.361V14.969a1.361,1.361,0,0,0-1.361-1.361V12.247h6.8a4.082,4.082,0,0,0,4.082-4.082V5.443A2.721,2.721,0,0,0,19.051,2.722Z"
-                  transform="translate(84.762 49.761)"
-                  fill="#fff"
-                />
-              </g>
-            </svg>
-
-            <h1 className={`h2 mb-4 mt-2 text-4xl ${headingColor}`}>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-indigo-500">
-                Highly themeable,{' '}
-              </span>
-              <span>the only limit is your imagination</span>
-            </h1>
-            <p className={`text-xl ${subHeadingColor}`}>
-              Themeability is one of the core elements of NativeBase. Customise
-              your app theme and component styles to your heart's content.
-            </p>
-
-            <a
-              className="text-indigo-500"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://react-native-aria.geekyants.com/"
-            >
-              Learn More
-            </a>
+          <div className="max-w-3xl max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
+            <span className="mt-2 w-16">{SVGs['Logo']}</span>
+            <span>
+              <h2 className={`leading-snug text-4xl ${headingColor}`}>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-indigo-500">
+                  Highly themeable,{' '}
+                </span>
+                <span>the only limit is your imagination</span>
+              </h2>
+              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+                Themeability is one of the core elements of NativeBase.
+                Customise your app theme and component styles to your heart's
+                content.
+              </p>
+              <p className="mt-7">
+                <a
+                  className="text-indigo-500 no-underline border-0 hover:border-b-2 border-solid hover:border-indigo-500 font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://react-native-aria.geekyants.com/"
+                >
+                  Learn More
+                </a>
+              </p>
+            </span>
           </div>
           <div
             className="flex flex-col lg:flex-row rounded-md"
             // style={{ border: '1px solid black' }}
           >
-            <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-20">
+            <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-16">
               {/* tabs */}
-              <div className="flex w-full lg:w-3/4 mx-auto  flex-row">
-                <div className="text-left lg:text-center w-1/3">
+              <div className="flex w-full lg:w-3/4 mx-auto flex-row">
+                <div className="text-left md:text-center w-1/3">
                   <a
                     className={`pb-2 ${
                       currentTheme === 'color'
-                        ? 'border-b-3 border-solid border-blue-700'
+                        ? 'border-b-2 border-solid border-blue-700'
                         : ''
                     }  border-0 cursor-pointer ${subHeadingColor}`}
                     id="color-btn"
@@ -428,12 +431,12 @@ export function Themeable() {
                     Color
                   </a>
                 </div>
-                <div className="text-left lg:text-center w-1/3">
+                <div className="text-left md:text-center w-1/3">
                   <a
                     id="sizing-btn"
                     className={`pb-2 ${
                       currentTheme === 'sizing'
-                        ? 'border-b-3 border-solid border-blue-700'
+                        ? 'border-b-2 border-solid border-blue-700'
                         : ''
                     }   border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
@@ -443,12 +446,12 @@ export function Themeable() {
                     Sizing
                   </a>
                 </div>
-                <div className="text-left lg:text-center w-1/3">
+                <div className="text-left md:text-center w-1/3">
                   <a
                     id="typography-btn"
                     className={`pb-2 ${
                       currentTheme === 'typography'
-                        ? 'border-b-3 border-solid border-blue-700'
+                        ? 'border-b-2 border-solid border-blue-700'
                         : ''
                     }   border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
@@ -472,10 +475,7 @@ export function Themeable() {
               </div>
             </div>
 
-            <div
-              className="flex-1 rounded-lg overflow-hidden px-0 md:px-0"
-              // style={{ zIndex: 1, maxHeight: '39rem' }}
-            >
+            <div className="flex-1  rounded-lg overflow-hidden px-0 md:px-0">
               <CodeComponent classStyle={'px-10 py-10'} code={exampleCode} />
             </div>
           </div>

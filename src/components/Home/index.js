@@ -14,6 +14,7 @@ export { Sponsors } from './Sponsors';
 export { Stats } from './Stats';
 export { Themeable } from './Themeable';
 export { UtilityProps } from './UtilityProps';
+export { Reviews } from './Reviews';
 export { Universal } from './Universal';
 export { DarkMode } from './DarkMode';
 export { ComponentLibrary } from './ComponentLibrary';
