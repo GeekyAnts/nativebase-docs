@@ -20,6 +20,11 @@ const internalProps = {
     name: 'Actionsheet.Content',
     link: 'actionsheet#actionsheetcontent',
   },
+  SwitchProps: {
+    doc: '',
+    name: 'Switch from React Native',
+    link: 'https://reactnative.dev/docs/switch',
+  },
 };
 // RN props
 const viewProps = {
