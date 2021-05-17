@@ -109,27 +109,30 @@ export function DarkMode() {
       />
       <div className="px-4 md:px-0">
         <div className="relative py-12 md:py-20">
-          <div className="max-w-3xl">
-            {SVGs['Logo']}
-            <h1 className={`h2 mb-4 mt-2 text-4xl ${headingColor}`}>
-              <span className="">Now With </span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
-                Dark Mode
-              </span>
-            </h1>
-            <p className={`text-xl ${subHeadingColor}`}>
-              Building apps with a dark mode setting just got a whole lot
-              easier. NativeBase is now optimised for light and dark modes.
-            </p>
-
-            <a
-              className="text-yellow-600"
-              target="_blank"
-              rel="noopener noreferrer"
-              // href="https://react-native-aria.geekyants.com/"
-            >
-              Learn More
-            </a>
+          <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
+            <span className="mt-1">{SVGs['Logo']}</span>
+            <span>
+              <h2 className={`text-4xl leading-snug ${headingColor}`}>
+                <span className="">Now With </span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
+                  Dark Mode
+                </span>
+              </h2>
+              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+                Building apps with a dark mode setting just got a whole lot
+                easier. NativeBase is now optimised for light and dark modes.
+              </p>
+              <p className="mt-7">
+                <a
+                  className="text-yellow-600 no-underline border-0 hover:border-b-2 border-solid hover:border-yellow-600 font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href=""
+                >
+                  Learn More
+                </a>
+              </p>
+            </span>
           </div>
           <div
             className="flex mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0 rounded-md"

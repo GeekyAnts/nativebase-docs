@@ -26,7 +26,6 @@
   --ifm-navbar-padding-vertical: 12px;
   --ifm-navbar-padding-horizontal: 16px;
   --doc-sidebar-border-radius: 100%;
-  --ifm-table-cell-padding: '10px';
   --ifm-global-radius: 0.4rem;
 }
 html[data-theme='dark'] {
@@ -38,6 +37,7 @@ html[data-theme='dark'] {
   width: 1400px;
   align-self: center;
 }
+
 /* .main-wrapper {
   max-width: 1400px;
   width: 1400px;
@@ -85,10 +85,6 @@ html[data-theme='dark'] .DocSearch-Button-Key {
   border-radius: 8px;
   height: 505px;
   width: 100%;
-}
-
-html[data-theme='light'] .utilitySection {
-  background-color: rgba(243, 244, 246, 1);
 }
 
 .navbar {

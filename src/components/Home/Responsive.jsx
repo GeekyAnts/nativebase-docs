@@ -3,6 +3,35 @@ import { CodeComponent } from './CodeComponent';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 const SVGs = {
+  Logo: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="43"
+      height="43"
+      viewBox="0 0 43 43"
+    >
+      <g id="Group_578" data-name="Group 578" transform="translate(-66 -26)">
+        <g id="Group_577" data-name="Group 577" transform="translate(-3 -29)">
+          <rect
+            id="Rectangle_166"
+            data-name="Rectangle 166"
+            width="43"
+            height="43"
+            rx="8"
+            transform="translate(69 55)"
+            fill="#10b981"
+          />
+        </g>
+        <path
+          id="Icon_open-resize-both"
+          data-name="Icon open-resize-both"
+          d="M11.133,0l4.62,4.62L4.62,15.753,0,11.133V22.266H11.133l-4.62-4.62L17.646,6.513l4.62,4.62V0Z"
+          transform="translate(76.367 36.367)"
+          fill="#fff"
+        />
+      </g>
+    </svg>
+  ),
   Expand: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -205,61 +234,29 @@ export function Responsive() {
 
       <div className="px-4 md:px-0">
         <div className="relative py-12 md:py-20">
-          <div className="max-w-3xl">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="43"
-              height="43"
-              viewBox="0 0 43 43"
-            >
-              <g
-                id="Group_578"
-                data-name="Group 578"
-                transform="translate(-66 -26)"
-              >
-                <g
-                  id="Group_577"
-                  data-name="Group 577"
-                  transform="translate(-3 -29)"
+          <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
+            <span className="mt-2">{SVGs['Logo']}</span>
+            <span>
+              <h2 className={`leading-snug text-4xl ${headingColor}`}>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-400">
+                  Responsiveness
+                </span>
+              </h2>
+              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+                Instead of manually adding responsiveness, NativeBase V3 allows
+                you to provide object and array values to add responsive styles.
+              </p>
+              <p className="mt-7">
+                <a
+                  className="text-green-500 no-underline border-0 hover:border-b-2 border-solid hover:border-green-500 font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://react-native-aria.geekyants.com/"
                 >
-                  <rect
-                    id="Rectangle_166"
-                    data-name="Rectangle 166"
-                    width="43"
-                    height="43"
-                    rx="8"
-                    transform="translate(69 55)"
-                    fill="#10b981"
-                  />
-                </g>
-                <path
-                  id="Icon_open-resize-both"
-                  data-name="Icon open-resize-both"
-                  d="M11.133,0l4.62,4.62L4.62,15.753,0,11.133V22.266H11.133l-4.62-4.62L17.646,6.513l4.62,4.62V0Z"
-                  transform="translate(76.367 36.367)"
-                  fill="#fff"
-                />
-              </g>
-            </svg>
-
-            <h1 className={`h2 mb-4 mt-2 text-4xl ${headingColor}`}>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-400">
-                Responsiveness
-              </span>
-            </h1>
-            <p className={`text-xl ${subHeadingColor}`}>
-              Instead of manually adding responsiveness, NativeBase V3 allows
-              you to provide object and array values to add responsive styles.
-            </p>
-
-            <a
-              className="text-green-700"
-              target="_blank"
-              rel="noopener noreferrer"
-              // href="https://react-native-aria.geekyants.com/"
-            >
-              Learn More
-            </a>
+                  Learn More
+                </a>
+              </p>
+            </span>
           </div>
           <div
             className="flex mt-10 flex-col space-y-10 lg:space-y-0 lg:flex-row-reverse rounded-md"

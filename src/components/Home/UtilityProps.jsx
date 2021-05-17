@@ -168,31 +168,33 @@ export function UtilityProps() {
   // const { isDarkTheme } = useThemeContext();
   // TODO: change this
   const foldBg = '';
-  // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
+
   const { isDarkTheme } = useThemeContext();
+  const themeBg = !isDarkTheme ? 'bg-gray-100' : '';
+  // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-900' : 'text-gray-200';
   const [currentTheme, setCurrentTheme] = useState('mobile');
   return (
-    <section className="relative">
+    <section className="relative py-20">
       <div
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
       <div>
-        <div className="relative flex rounded-lg flex-col-reverse lg:flex-row utilitySection px-5 md:px-0">
+        <div className="relative flex rounded flex-col space-y-10 lg:space-y-0 lg:flex-row  px-5 md:px-0">
           <div
-            className={`sm:w-full rounded-lg lg:w-1/2 flex justify-center sm:items-center md:items-start py-20 `}
+            className={`sm:w-full rounded-lg ${themeBg} lg:rounded-none lg:rounded-tl-lg lg:rounded-bl-lg lg:w-1/2 flex justify-center sm:items-center md:items-start py-20 `}
           >
             <div className="w-full lg:w-8/12 h-1/2 ">
               {/* tabs */}
               <div className="flex flex-row">
-                <div className="text-left lg:text-center  w-1/3">
+                <div className="text-center  w-1/3">
                   <a
                     id="mobile-btn"
                     className={`pb-2 ${
                       currentTheme === 'mobile'
-                        ? 'border-b-3 border-solid border-blue-700'
+                        ? 'border-b-2 border-solid border-blue-700'
                         : ''
                     }  border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
@@ -202,12 +204,12 @@ export function UtilityProps() {
                     Mobile
                   </a>
                 </div>
-                <div className="text-left lg:text-center w-1/3">
+                <div className="text-center w-1/3">
                   <a
                     id="tablet-btn"
                     className={`pb-2 ${
                       currentTheme === 'tablet'
-                        ? 'border-b-3 border-solid border-blue-700'
+                        ? 'border-b-2 border-solid border-blue-700'
                         : ''
                     }   border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
@@ -217,12 +219,12 @@ export function UtilityProps() {
                     Tablet
                   </a>
                 </div>
-                <div className="text-left lg:text-center w-1/3">
+                <div className="text-center w-1/3">
                   <a
                     id="desktop-btn"
                     className={`pb-2 ${
                       currentTheme === 'desktop'
-                        ? 'border-b-3 border-solid border-blue-700'
+                        ? 'border-b-2 border-solid border-blue-700'
                         : ''
                     }   border-0 cursor-pointer ${subHeadingColor}`}
                     onClick={(e) => {
@@ -234,7 +236,7 @@ export function UtilityProps() {
                 </div>
               </div>
               {/* content */}
-              <div className="mt-8 text-center">
+              <div className="mt-10 text-center">
                 <img
                   className="rounded-3xl"
                   style={{ zIndex: 1 }}
@@ -248,10 +250,10 @@ export function UtilityProps() {
           </div>
 
           <div
-            className="flex-1 rounded-none  rounded-tr-lg rounded-br-lg overflow-hidden px-0 md:px-0"
+            className="flex-1 rounded-lg lg:rounded-none lg:rounded-tr-lg lg:rounded-br-lg overflow-hidden px-0 md:px-0"
             // style={{ maxHeight: '39rem' }}
           >
-            <CodeComponent code={exampleCode} />
+            <CodeComponent classStyle={'px-4 py-10'} code={exampleCode} />
           </div>
         </div>
       </div>

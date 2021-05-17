@@ -136,54 +136,55 @@ export function Utility() {
       />
       <div className="px-4 md:px-0">
         <div className="relative py-12 md:py-20">
-          <div className="max-w-3xl">
-            {SVGs['Logo']}
-
-            <h1 className={`h2 mb-4 mt-2 text-4xl ${headingColor}`}>
-              <span>Now Supporting </span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-800">
-                Utility Props
-              </span>
-            </h1>
-            <p className="font-semibold text-lg">
-              <span>Powered By</span>
-              <span className="h-10 ml-2 mr-2 px-3 relative">
-                <span className="absolute -top-1.5 left-0">
-                  {SVGs['Styled Logo']}
+          <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
+            <span className="mt-1 w-16">{SVGs['Logo']}</span>
+            <span>
+              <h2 className={`text-4xl  ${headingColor}`}>
+                <span>Now Supporting </span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-800">
+                  Utility Props
                 </span>
-              </span>
-              <a
-                className={`${subHeadingColor}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://react-native-aria.geekyants.com/"
-              >
-                Styled System
-              </a>
-            </p>
-            <p className={`text-xl ${subHeadingColor}`}>
-              Powered by{' '}
-              <a
-                className=""
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://styled-system.com/"
-              >
-                Styled System
-              </a>{' '}
-              so you can rapidly build custom UI components with
-              constraint-based utility style props.
-            </p>
-            <p className="">
-              <a
-                className="text-blue-800"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://react-native-aria.geekyants.com/"
-              >
-                Learn More
-              </a>
-            </p>
+              </h2>
+              <p className="font-semibold text-md">
+                <span>Powered By</span>
+                <span className="h-10 ml-2 mr-2 px-3 relative">
+                  <span className="absolute -top-1.5 left-0">
+                    {SVGs['Styled Logo']}
+                  </span>
+                </span>
+                <a
+                  className={`${subHeadingColor}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://react-native-aria.geekyants.com/"
+                >
+                  Styled System
+                </a>
+              </p>
+              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+                Powered by{' '}
+                <a
+                  className=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://styled-system.com/"
+                >
+                  Styled System
+                </a>{' '}
+                so you can rapidly build custom UI components with
+                constraint-based utility style props.
+              </p>
+              <p className="mt-7">
+                <a
+                  className="text-blue-800 no-underline border-0 hover:border-b-2 border-solid hover:border-blue-800 font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://react-native-aria.geekyants.com/"
+                >
+                  Learn More
+                </a>
+              </p>
+            </span>
           </div>
 
           {/* grid */}
