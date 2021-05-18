@@ -25,6 +25,11 @@ const internalProps = {
     name: 'Switch from React Native',
     link: 'https://reactnative.dev/docs/switch',
   },
+  IFormControlProps: {
+    doc: 'formControl.md',
+    name: 'FormControl',
+    link: 'formControl#formcontrol',
+  },
 };
 // RN props
 const viewProps = {

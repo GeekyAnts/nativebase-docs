@@ -50,11 +50,7 @@ const templateGenerator = (componentDetails) => {
           ${name}
         </td>
         <td>
-          ${
-            MapValue
-              ? `<a href="${MapValue.link}">${MapValue.name}</a>`
-              : newType
-          }
+          ${MapValue ? `<a href="${MapValue.link}">${type.name}</a>` : newType}
         </td>
         <td>
           ${description || '-'}
