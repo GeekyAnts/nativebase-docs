@@ -47,24 +47,24 @@ export function WatchTalk() {
           style={{ zIndex: 1 }}
         >
           <center className="">
-            <h1 className={`h2 mb-10 text-4xl ${headingColor}`}>
+            <h1 className={`h2 mb-5 text-4xl ${headingColor}`}>
               Watch our Talk
             </h1>
+            <p
+              className={`text-xl w-full lg:w-7/12 font-medium mx-auto  ${subHeadingColor}`}
+            >
+              Check out Sanket Sahu's talk on building an accessible component
+              library for native and web at React Day Bangalore.
+            </p>
             <iframe
               className="w-full mx-auto lg:w-3/4"
               // width="70%"
               height="400"
               src="https://www.youtube.com/embed/1P26X_GSHO8"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
-            <p
-              className={`text-xl w-full lg:w-3/4 mx-auto mt-10  ${subHeadingColor}`}
-            >
-              Check out Sanket Sahu's talk on building an accessible component
-              library for native and web at React Day Bangalore.
-            </p>
           </center>
         </div>
         <div className="px-4 md:px-0 py-20 lg:px-0">
@@ -82,9 +82,13 @@ export function WatchTalk() {
                 </p>
               </div>
               <div className="col-span-2 lg:justify-end flex items-center">
-                <button className="bg-blue-400 border-none rounded-md px-8 text-xl py-4 text-white font-semibold">
+                <a
+                  className="typeform-share button btn bg-blue-400 border-none rounded-md px-8 text-xl py-3 text-white font-semibold"
+                  href="https://form.typeform.com/to/hjPoXR42?typeform-medium=embed-snippet"
+                  data-mode="drawer_right"
+                >
                   Send Invite
-                </button>
+                </a>
               </div>
             </div>
           </div>

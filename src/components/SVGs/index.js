@@ -14,7 +14,7 @@ export const SVGs = {
             d="M25,50C14.676,49-.745,34.8.036,25.148S14.461-.811,24.882.078,51.065,15.606,49.952,25.04,35.312,51,25,50Z"
             transform="translate(-0.008 -0.043)"
             fill="#3740ce"
-            fill-rule="evenodd"
+            fillRule="evenodd"
           />
           <path
             id="FS"
@@ -38,7 +38,7 @@ export const SVGs = {
         id="Rectangle"
         d="M11.616,0H98.524A11.623,11.623,0,0,1,110.14,11.616V98.524A11.623,11.623,0,0,1,98.524,110.14H11.616A11.623,11.623,0,0,1,0,98.524V11.616A11.623,11.623,0,0,1,11.616,0Z"
         fill="#78468e"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       />
       <path
         id="Path_1"
@@ -117,7 +117,7 @@ export const SVGs = {
               transform="translate(0.048 0.048)"
               fill="none"
               stroke="#fff"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </g>
           <g id="Polygon_1" transform="translate(6.384 30.626) rotate(180)">
@@ -148,7 +148,7 @@ export const SVGs = {
               transform="translate(0.048 14.902) rotate(-90)"
               fill="none"
               stroke="#fff"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </g>
           <g id="Polygon_2" transform="translate(1.079 8.329)">
@@ -174,7 +174,7 @@ export const SVGs = {
               transform="translate(0.048 0.048)"
               fill="none"
               stroke="#fff"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </g>
         </g>
@@ -192,7 +192,7 @@ export const SVGs = {
               transform="translate(0.036 0.048)"
               fill="none"
               stroke="#fff"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </g>
           <g id="Polygon_1-2" transform="translate(6.667 30.704) rotate(180)">
@@ -222,7 +222,7 @@ export const SVGs = {
               transform="translate(0.046 0.049)"
               fill="none"
               stroke="#fff"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </g>
           <g id="Polygon_2-2" transform="translate(1.409 8.193)">
@@ -252,7 +252,7 @@ export const SVGs = {
               transform="translate(0.048 0.048)"
               fill="none"
               stroke="#fff"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </g>
         </g>
@@ -286,7 +286,7 @@ export const SVGs = {
               transform="translate(2.026 0.048) rotate(90)"
               fill="none"
               stroke="#fff"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </g>
           <g id="Polygon_2-3" transform="translate(0 0)">

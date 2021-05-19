@@ -14,6 +14,7 @@ export function CodeComponent({ code, classStyle }) {
             height: '100%',
             borderRadius: '0',
             textAlign: 'left',
+            fontSize: '14px',
             // padding: '2rem 2rem 2rem 2rem',
             overflow: 'auto',
           }}
@@ -34,7 +35,7 @@ export function CodeComponent({ code, classStyle }) {
                     opacity: 0.5,
                   }}
                 >
-                  {i + 1}
+                  {/* {i + 1} */}
                 </div>
                 <div style={{ display: 'table-cell' }}>
                   {line.map((token, key) => (

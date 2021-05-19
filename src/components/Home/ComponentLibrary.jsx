@@ -109,7 +109,7 @@ export function ComponentLibrary() {
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
-      <div className="px-4 md:px-0">
+      <div className="px-6 md:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <span className="mt-1">{SVGs['Logo']}</span>
@@ -125,16 +125,16 @@ export function ComponentLibrary() {
                 seamlessly. It includes action sheets, menus, spinners,
                 popovers, breadcrumbs and more.
               </p>
-              <p className="mt-7">
+              {/* <p className="mt-7">
                 <a
-                  className="text-green-700 no-underline border-0 hover:border-b-2 border-solid hover:border-green-700 font-bold"
+                  className="text-green-700 no-underline border-0 border-b-2 border-solid hover:border-green-700 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
                   href=""
                 >
                   Learn More
                 </a>
-              </p>
+              </p> */}
             </span>
           </div>
           <div
@@ -143,55 +143,55 @@ export function ComponentLibrary() {
           >
             <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-20">
               {/* tabs */}
-              <div className="flex w-full  lg:w-3/4 mx-auto  flex-row">
-                <div className="text-left md:text-center w-1/3">
+              <div className="flex px-6 space-x-6 flex-row">
+                <div className="text-left">
                   <a
                     id="forms-btn"
-                    className={`pb-1 ${
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
                       currentTheme === 'forms'
-                        ? 'border-b-2 border-solid border-green-700'
+                        ? 'border-b-2 text-green-700 border-solid border-green-700'
                         : ''
-                    }  border-0 cursor-pointer ${subHeadingColor}`}
+                    }  border-0 cursor-pointer`}
                     onClick={(e) => {
                       setCurrentTheme('forms');
                     }}
                   >
-                    Forms
+                    FORMS
                   </a>
                 </div>
-                <div className="text-left md:text-center w-1/3">
+                <div className="text-left">
                   <a
                     id="interaction-btn"
-                    className={`pb-1 ${
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
                       currentTheme === 'interaction'
-                        ? 'border-b-2 border-solid border-green-700'
+                        ? 'border-b-2 text-green-700 border-solid border-green-700'
                         : ''
-                    }  border-0 cursor-pointer ${subHeadingColor}`}
+                    }  border-0 cursor-pointer`}
                     onClick={() => {
                       setCurrentTheme('interaction');
                     }}
                   >
-                    Interaction
+                    INTERACTION
                   </a>
                 </div>
-                <div className="text-left md:text-center w-1/3">
+                <div className="text-left">
                   <a
-                    className={`pb-1 ${
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
                       currentTheme === 'avatar'
-                        ? 'border-b-2 border-solid border-green-700'
+                        ? 'border-b-2 text-green-700 border-solid border-green-700'
                         : ''
-                    }  border-0 cursor-pointer ${subHeadingColor}`}
+                    }  border-0 cursor-pointer`}
                     id="avatar-btn"
                     onClick={() => {
                       setCurrentTheme('avatar');
                     }}
                   >
-                    Avatar
+                    AVATAR
                   </a>
                 </div>
               </div>
-              <div className="h-full flex justify-center  relative w-full mt-10">
-                <div className="h-72 lg:h-full w-full bg-white rounded-lg lg:shadow-xl px-1 md:px-4 py-4 lg:absolute lg:-right-5 md:top-0">
+              <div className="h-full flex justify-center bg-white rounded-lg themeable relative w-full mt-5">
+                <div className="h-full w-full bg-white md:px-4 py-4 rounded-lg lg:absolute lg:-right-5 md:top-0">
                   {/* {currentTheme === 'color' ? (
                     <ColorTheme />
                   ) : currentTheme === 'interaction' ? (

@@ -43,7 +43,7 @@ const products = [
 
 function Product({ product, link, productColor }) {
   return (
-    <div className={'w-32'}>
+    <div className={'px-3'}>
       <a
         href={link}
         style={{ textDecorationLine: 'none' }}
@@ -74,9 +74,9 @@ export function More() {
     <section>
       <div className="px-4 md:px-0">
         <div className="py-12  md:py-20">
-          <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7 pb-12 md:pb-20">
-            <span className="mt-2">{Logo}</span>
-            <span>
+          <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7 pb-12 md:pb-20">
+            <div className="mt-2 w-10">{Logo}</div>
+            <div>
               <h2 className={`leading-snug text-4xl ${headingColor}`}>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-purple-700">
                   More from the Authors
@@ -86,14 +86,14 @@ export function More() {
                 Interested in knowing what else we've worked on? We're
                 delighted! Take a look at our other projects.
               </p>
-            </span>
+            </div>
           </div>
           <div className="max-w-sm mx-auto md:max-w-none">
             <div className="flex md:pl-16 flex-wrap gap-y-5 md:gap-y-0 gap-x-0.5">
               {products.map((props, idx) => {
                 return (
-                  <article className="" data-aos="zoom-y-out">
-                    <Product productColor={productColor} key={idx} {...props} />
+                  <article className="" data-aos="zoom-y-out" key={idx}>
+                    <Product productColor={productColor} {...props} />
                   </article>
                 );
               })}

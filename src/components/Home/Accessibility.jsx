@@ -426,25 +426,24 @@ export function Accessibility() {
         aria-hidden="true"
       /> */}
 
-      <div className="px-4 md:px-0">
+      <div className="px-6 md:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
-            <span className="mt-2">
-              <span className="mt-2">{SVGs['Accessibility']}</span>
-              {/* <span className="w-10 h-10 items-center rounded-md flex justify-center bg-pink-700">
+            <div className="mt-2">{SVGs['Accessibility']}</div>
+            {/* <span className="w-10 h-10 items-center rounded-md flex justify-center bg-pink-700">
                 {SVGs['Accessibility']}
               </span> */}
-            </span>
 
-            <span>
-              <h2 className={`leading-snug text-4xl ${headingColor}`}>
-                <span>Out of the Box </span>
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-800 to-pink-700">
-                  Accessibility
+            <div>
+              <h2
+                className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
+              >
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-700 to-pink-900">
+                  Out of the box Accessibility
                 </span>
               </h2>
-              <p className="font-semibold text-md">
-                <span>Powered By </span>
+              <p className="text-sm md:text-base font-semibold text-md">
+                <span>Powered by </span>
                 <span className="h-20 px-3 relative">
                   <span className="absolute top-0 left-0">
                     {SVGs['React Native Aria']}{' '}
@@ -459,13 +458,15 @@ export function Accessibility() {
                   React Native ARIA
                 </a>
               </p>
-              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+              <p
+                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+              >
                 Powered by React Native ARIA, which provides React hooks that
                 enable you to build accessible design systems in no time.
               </p>
               <p className="mt-7">
                 <a
-                  className="text-pink-700 no-underline border-0 hover:border-b-2 border-solid hover:border-pink-700 font-bold"
+                  className="no-underline border-0 text-pink-700 border-b-2 border-solid hover:border-pink-700 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://react-native-aria.geekyants.com/"
@@ -473,7 +474,7 @@ export function Accessibility() {
                   Learn More
                 </a>
               </p>
-            </span>
+            </div>
 
             <div className="hidden absolute top-4 z-50 -right-16  lg:inline-block">
               {SVGs['React Native']}
@@ -481,16 +482,16 @@ export function Accessibility() {
           </div>
 
           {/* grid */}
-          <div className="grid bg-indigo-800 rounded-md mt-10 py-6 grid-cols-1 lg:grid-cols-3 gap-y-10 text-white">
+          <div className="grid bg-indigo-800 divide-solid divide-y-0 divide-x divide-indigo-400 divide-opacity-40 rounded-md mt-10 grid-cols-1 lg:grid-cols-3 gap-y-10  text-white px-5 py-10">
             {accessibilities.map((accessibilitiy, idx) => {
               return (
-                <div className="text-center py-2 px-3">
+                <div className="text-center px-10 space-y-3" key={idx}>
                   <div>{accessibilitiy['svg']}</div>
-                  <div className="mt-6 font-bold">
+                  <div className="text-lg font-bold">
                     {accessibilitiy['heading']}
                   </div>
-                  <div className="flex mt-1.5 justify-center text-center">
-                    <div className="md:w-3/4 lg:w-full">
+                  <div className="flex justify-center text-center">
+                    <div className="w-full text-sm">
                       {accessibilitiy['subHeading']}
                     </div>
                   </div>

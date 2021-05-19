@@ -94,39 +94,43 @@ export function Creators() {
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   return (
     <section>
-      <div className="px-4 md:px-0">
+      <div className="relative px-6 md:px-0">
         <div className="py-12 md:py-20">
-          <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7 pb-12 md:pb-20">
-            <span className="mt-2">{Logo}</span>
-            <span>
-              <h2 className={`leading-snug text-4xl ${headingColor}`}>
+          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7 pb-12">
+            <div className="mt-2">{Logo}</div>
+            <div>
+              <h2
+                className={`leading-snug max-w-3xl  text-3xl md:text-4xl ${headingColor}`}
+              >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-800">
                   Meet the Creators
                 </span>
               </h2>
-              <p className={`text-xl mt-7 leading-normal  ${subHeadingColor}`}>
+              <p
+                className={`text-lg max-w-3xl  md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
+              >
                 NativeBase 3.0 has come to fruition only due to the amazing team
                 that worked tirelessly on it. Here are our creators:
               </p>
-            </span>
+              <ul className="flex max-w-4xl mt-20 flex-wrap justify-center pl-0 gap-x-4 gap-y-10">
+                {creators.map((contributor) => (
+                  <a
+                    key={contributor.id}
+                    href={contributor.html_url}
+                    target="_blank"
+                  >
+                    <img
+                      className="rounded-full"
+                      alt={contributor.login}
+                      src={contributor.avatar_url}
+                      loading="lazy"
+                      height="114px"
+                    ></img>
+                  </a>
+                ))}
+              </ul>
+            </div>
           </div>
-          <ul className="flex flex-wrap  justify-center max-w-4xl pl-0 mx-auto mb-0">
-            {creators.map((contributor) => (
-              <a
-                key={contributor.id}
-                href={contributor.html_url}
-                target="_blank"
-              >
-                <img
-                  className="rounded-full m-3.5"
-                  alt={contributor.login}
-                  src={contributor.avatar_url}
-                  loading="lazy"
-                  height="114px"
-                ></img>
-              </a>
-            ))}
-          </ul>
         </div>
       </div>
     </section>
