@@ -318,7 +318,7 @@ export function Stats() {
                 NativeBase is a popular component library among devs and we're
                 constantly improving it.
               </p>
-              <div className="w-full flex justify-center mt-20 max-4xl mx-auto">
+              <div className="w-full flex mt-20 max-4xl">
                 <div className="">
                   <div className="w-20 h-20 md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                     <div className="">{SVGs['Downloads']}</div>

@@ -141,6 +141,7 @@ export function Universal() {
                 you covered. Fast-track your dev process with universal
                 components.
               </p>
+
               {/* <p className="mt-7">
                 <a
                   className="text-yellow-400 no-underline border-0 border-b-2 border-solid hover:border-yellow-400 font-bold"
@@ -151,25 +152,25 @@ export function Universal() {
                   Learn More
                 </a>
               </p> */}
+              <div className="rounded-md mt-10 py-6 flex text-white">
+                {themes.map((theme, idx) => {
+                  return (
+                    <div
+                      className={`flex flex-col ${
+                        idx === 1 ? 'z-50' : ''
+                      } ring-10 ring-white -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
+                      key={idx}
+                    >
+                      <div className="">{theme['svg']}</div>
+                      {/* <div className="mt-5 font-bold">{theme['heading']}</div> */}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
           {/* themes */}
-          <div className="rounded-md mt-10 justify-center py-6 flex text-white">
-            {themes.map((theme, idx) => {
-              return (
-                <div
-                  className={`flex flex-col ${
-                    idx === 1 ? 'z-50' : ''
-                  } ring-10 ring-white -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
-                  key={idx}
-                >
-                  <div className="">{theme['svg']}</div>
-                  {/* <div className="mt-5 font-bold">{theme['heading']}</div> */}
-                </div>
-              );
-            })}
-          </div>
         </div>
       </div>
     </section>
