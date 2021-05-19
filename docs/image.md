@@ -47,14 +47,3 @@ Generic Image components from [React Native](https://reactnative.dev).
 ```ComponentPropTable path=primitives,Image,index.tsx  showStylingProps=true
 
 ```
-
-<!--
-### Image
-
-| Name           | Type                         | Description                                                             | Default |
-| -------------- | ---------------------------- | ----------------------------------------------------------------------- | ------- |
-| fallbackSource | ImageSourcePropType          | In event there was an error loading the src, specify a fallback source. | -       |
-| alt            | string                       | The alt text that describes the image                                   | -       |
-| ignoreFallback | boolean                      | Opt out of the fallbackSource logic and show alternative text           | -       |
-| size           | number                       | Define the box size of image.                                           | -       |
-| \_alt          | [`TextProps`](text.md#props) | Text styling for alt.                                                   | -       | -->

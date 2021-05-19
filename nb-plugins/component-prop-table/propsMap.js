@@ -30,6 +30,11 @@ const internalProps = {
     name: 'FormControl',
     link: 'formControl#formcontrol',
   },
+  IInputProps: {
+    doc: 'input.md',
+    name: 'Input',
+    link: 'input#input',
+  },
 };
 // RN props
 const viewProps = {
