@@ -320,7 +320,7 @@ export function Stats() {
               </p>
               <div className="w-full flex mt-20 max-4xl">
                 <div className="">
-                  <div className="w-20 h-20 md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
+                  <div className=" ring-10 ring-white w-20 h-20 md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                     <div className="">{SVGs['Downloads']}</div>
                     <div className="font-bold text-xl md:text-3xl ">38.2k</div>
                   </div>
