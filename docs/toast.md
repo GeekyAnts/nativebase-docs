@@ -5,6 +5,8 @@ title: Toast
 
 `Toast` is used to show alerts on top of an overlay. `Toast` will close itself when the close button is clicked, or after a timeout — the default is 5 seconds. The toast component is used to give feeback to users after an action has taken place.
 
+Toasts can be configured to appear at either the top or the bottom of an application window, and it is possible to have more than one toast onscreen at a time.
+
 ## Import
 
 ```jsx
@@ -15,137 +17,73 @@ import { useToast } from 'native-base';
 
 ### Basic
 
-```SnackPlayer name=Toast%20Basic
-import React from 'react';
-import { Button, useToast, VStack, NativeBaseProvider, Center } from 'native-base';
+```ComponentSnackPlayer path=composites,toast,Basic.tsx
 
-function ToastComponent () {
-  const toast = useToast();
-  return (
-      <Button
-      onPress={() => {
-        toast({
-          position: 'top',
-          title: 'Toast Top',
-        });
-      }}
-    >
-		 Toast
-    </Button>
-  )
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <ToastComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ### Position
 
-```SnackPlayer name=Toast%20Position
-import React from 'react';
-import { Button, useToast, VStack, NativeBaseProvider, Center } from 'native-base';
+```ComponentSnackPlayer path=composites,toast,ToastPositions.tsx
 
-function ToastComponent () {
-  const toast = useToast();
-  return (
-      <VStack space={2}>
-        <Button
-          onPress={() => {
-            toast({
-              position: 'top',
-              title: 'Top Toast',
-            });
-          }}
-        >
-          Top
-        </Button>
-        <Button
-          onPress={() => {
-            toast({
-              position: 'center',
-              title: 'Center',
-            });
-          }}
-        >
-          Center
-        </Button>
-        <Button
-          mx={2}
-          onPress={() => {
-            toast({
-              title: 'Bottom',
-            });
-          }}
-        >
-          Botton
-        </Button>
-      </VStack>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <ToastComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
-### Offset
+### Custom component
 
-```SnackPlayer name=Toast%20Offset
-import React from 'react';
-import { Button, useToast, NativeBaseProvider, Center } from 'native-base';
+Display a custom component instead of the default Toast UI.
 
-function ToastComponent () {
-  const toast = useToast();
+```ComponentSnackPlayer path=composites,toast,CustomComponent.tsx
 
-  return (
-      <Button
-        onPress={() => {
-          toast({
-            position: 'center',
-            duration: 1000,
-            title: 'Toast Center',
-            offset: { x: 100, y: 100 },
-          });
-        }}
-      >
-        Buttom
-      </Button>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <ToastComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
+```
+
+### Closing Toasts
+
+Toasts can be closed imperatively, individually (via the close instance method) or all together (via the closeAll instance method).
+
+```ComponentSnackPlayer path=composites,toast,CloseToast.tsx
+
+```
+
+### Status
+
+You can use status to change the color of your toasts.
+
+```ComponentSnackPlayer path=composites,toast,ToastStatus.tsx
+
+```
+
+### Status
+
+`Toast` uses the same variants as the [Alert](alert.md) component.
+
+```ComponentSnackPlayer path=composites,toast,ToastStatus.tsx
+
+```
+
+### Changing the toast position
+
+Using the `position` prop you can adjust where your toast will be popup from.
+
+```ComponentSnackPlayer path=composites,toast,ToastPositions.tsx
+
+```
+
+### Preventing Duplicate Toast
+
+In some cases you might need to prevent duplicate of specific toasts. To achieve you need to pass an id and use the toast.isActive method to determine when to call toast.show(...).
+
+```ComponentSnackPlayer path=composites,toast,PreventDuplicate.tsx
+
 ```
 
 ## Props
 
-| Name     | Type                      | Description                                             | Default  |
-| -------- | ------------------------- | ------------------------------------------------------- | -------- |
-| title    | string                    | The title of the toast.                                 | -        |
-| \_title  | TextProps                 | Object that contains props for Title styling.           | -        |
-| duration | `long`, `short`, number   | The duration of toast. If number, then in mili-seconds. | 2000     |
-| position | `bottom`, `center`, `top` | The position at which toast will appear.                | `bottom` |
-| offset   | {x: number y: number}     | The offset of toast from regular position.              | -        |
-| accessibilityLiveRegion   | `none` , `polite` , `assertive`   | To read the content to Talkback and screen reader on web. [Read more](https://reactnative.dev/docs/accessibility#accessibilityliveregion-android)              | polite        |
-| accessibilityAnnouncement   | string   | Toast description to be announced on iOS devices.             | -        |
+Below props can be passed while calling toast.show.
+
+```ComponentPropTable path=composites,toast,ToastDummy.tsx
+
+```
 
 ## Accessibility
+
 - On Android and Web, Toast renders under a View with accessibilityLiveRegion which announces the content rendered inside it to screen reader devices.
-- On iOS, accessibilityLiveRegion is not supported yet, so we use the [accessibilityAnnouncement](https://reactnative.dev/docs/accessibilityinfo#announceforaccessibility) to announce the content. 
+- On iOS, accessibilityLiveRegion is not supported yet, so we use the [accessibilityAnnouncement](https://reactnative.dev/docs/accessibilityinfo#announceforaccessibility) to announce the content.

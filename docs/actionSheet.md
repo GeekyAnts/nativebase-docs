@@ -7,12 +7,10 @@ An Action Sheet is a dialog that displays a set of options. It appears on top of
 
 ## Import
 
-NativeBase exports 5 modal-related components:
+NativeBase exports 3 modal-related components:
 
 - **Actionsheet**: Provides the context and state for all components.
 - **Actionsheet.Content**: Wrapper for the **Actionsheet.Header and Actionsheet.Item** components.
-- **Actionsheet.Header**: Provides a header to the list.
-- **Actionsheet.Footer**: A separated footer component for better customisation support. Wrapper for the **Actionsheet.Item** components.
 - **Actionsheet.Item**: A button to wrap the options of the Actionsheet.
 
 ```jsx
@@ -23,125 +21,45 @@ import { Actionsheet } from 'native-base';
 
 ### Usage
 
-```SnackPlayer name=ActionSheet%20Usage
-import React from "react";
-import { Button, Actionsheet, useDisclose, NativeBaseProvider, Center } from "native-base";
-function ActionSheetComponent() {
-  const { isOpen, onOpen, onClose } = useDisclose();
-  return (
-    <>
-      <Button onPress={onOpen}>Actionsheet</Button>
-      <Actionsheet isOpen={isOpen} onClose={onClose}>
-        <Actionsheet.Content>
-          <Actionsheet.Header>Header</Actionsheet.Header>
-          <Actionsheet.Item>Option 1</Actionsheet.Item>
-          <Actionsheet.Item>Option 2</Actionsheet.Item>
-          <Actionsheet.Item>Option 3</Actionsheet.Item>
-        </Actionsheet.Content>
-        <Actionsheet.Footer>
-          <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>
-        </Actionsheet.Footer>
-      </Actionsheet>
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <ActionSheetComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
+```ComponentSnackPlayer path=composites,Actionsheet,Usage.tsx
+
 ```
 
 ### Composition
 
-```SnackPlayer name=ActionSheet%20Composition
-import React from "react";
-import { Button, Divider, Actionsheet, useDisclose, NativeBaseProvider, Center } from "native-base";
+```ComponentSnackPlayer path=composites,Actionsheet,Composition.tsx
 
-function ActionSheetComponent() {
-  const { isOpen, onOpen, onClose } = useDisclose();
-  return (
-    <>
-      <Button onPress={onOpen}>Actionsheet</Button>
-      <Actionsheet isOpen={isOpen} onClose={onClose}>
-        <Actionsheet.Content>
-          <Actionsheet.Header>Header</Actionsheet.Header>
-          <Actionsheet.Item>Option 1</Actionsheet.Item>
-          <Divider />
-          <Actionsheet.Item>Option 2</Actionsheet.Item>
-          <Divider />
-          <Actionsheet.Item>Option 3</Actionsheet.Item>
-        </Actionsheet.Content>
-        <Actionsheet.Footer>
-          <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>
-        </Actionsheet.Footer>
-      </Actionsheet>
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <ActionSheetComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ### DisableOverlay
 
-```SnackPlayer name=ActionSheet%20DisplayOverlay
-import React from "react";
-import { Button, Actionsheet, useDisclose, NativeBaseProvider, Center } from "native-base";
+```ComponentSnackPlayer path=composites,Actionsheet,DisableOverlay.tsx
 
-function ActionSheetComponent() {
-  const { isOpen, onOpen, onClose } = useDisclose();
-  return (
-    <>
-      <Button onPress={onOpen}>Actionsheet</Button>
+```
 
-      <Actionsheet isOpen={isOpen} onClose={onClose} disableOverlay>
-        <Actionsheet.Content>
-          <Actionsheet.Header>Header</Actionsheet.Header>
-          <Actionsheet.Item>Option 1</Actionsheet.Item>
-          <Actionsheet.Item>Option 2</Actionsheet.Item>
-          <Actionsheet.Item>Option 3</Actionsheet.Item>
-        </Actionsheet.Content>
-        <Actionsheet.Footer>
-          <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>
-        </Actionsheet.Footer>
-      </Actionsheet>
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <ActionSheetComponent />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
+### Icons
+
+```ComponentSnackPlayer path=composites,Actionsheet,Icon.tsx
+
 ```
 
 ## Props
 
-| Name           | Type     | Description                          | Default |
-| -------------- | -------- | ------------------------------------ | ------- |
-| isOpen         | boolean  | If true, actionsheet will be open.   | -       |
-| onClose        | function | Callback when actionsheet is closed. | -       |
-| disableOverlay | boolean  | If true, disables the overlay.       | -       |
+### Actionsheet
 
-`ActionSheet`, `Actionsheet.Content`, `Actionsheet.Header`, `Actionsheet.Footer` implement **[Box](box.md)**. All the props of Box can be passed to them.
+```ComponentPropTable path=composites,Actionsheet,Actionsheet.tsx
 
-Actionsheet.Item implements [`Button`](button.md), all the props of `Button` can be passed here.
+```
+
+### Actionsheet.Content
+
+```ComponentPropTable path=composites,Actionsheet,ActionsheetContent.tsx
+
+```
+
+### Actionsheet.Item
+
+ActionsheetItem implements [Button](button.md#props)
 
 ## Accessibility
 

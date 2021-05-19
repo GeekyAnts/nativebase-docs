@@ -3,6 +3,7 @@ const visit = require('unist-util-visit-parents');
 const u = require('unist-builder');
 const dedent = require('dedent');
 const fromEntries = require('object.fromentries');
+const { getSnackPlayerCodeSnippet } = require('../utils');
 
 const parseParams = (paramString = '') => {
   const params = fromEntries(new URLSearchParams(paramString));
@@ -38,24 +39,6 @@ const processNode = (node, parent) => {
       } else if (name.split(' ')[0] === 'ReactHookForms') {
         dependencies += ',react-hook-form';
       }
-      // const files = {
-      //   // Inlined code
-      //   'App.tsx': {
-      //     type: 'CODE',
-      //     contents: 'console.log("hello world!");'
-      //   },
-      //   // Externally hosted code (JavaScript, Markdown, JSON)
-      //   'data/data.json': {
-      //     type: 'CODE',
-      //     url: 'https://mysite/data.json'
-      //   },
-      //   // Externally hosted assets (images, fonts)
-      //   'assets/image.png': {
-      //     type: 'ASSET',
-      //     contents: 'https://mysite/image.png'
-      //   }
-      // };
-      // data-snack-files="${dependencies}"
       const snackPlayerDiv = u('html', {
         value: dedent`
           <div
@@ -69,6 +52,7 @@ const processNode = (node, parent) => {
             data-snack-preview="${preview}"
             data-snack-loading="${loading}"
             data-snack-dependencies="${dependencies}"
+            data-snack-sdkversion="40.0.0"
           ></div>
           `,
       });
@@ -90,7 +74,11 @@ const SnackPlayer = () => {
       // Parse all CodeBlocks
       visit(tree, 'code', (node, parent) => {
         // Add SnackPlayer CodeBlocks to processing queue
-        if (node.lang == 'SnackPlayer') {
+        if (node.lang == 'ComponentSnackPlayer') {
+          const code = getSnackPlayerCodeSnippet(
+            ...node.meta.split('path=')[1].split(',')
+          );
+          node.value = code;
           nodesToProcess.push(processNode(node, parent));
         }
       });
@@ -101,5 +89,3 @@ const SnackPlayer = () => {
 };
 
 module.exports = SnackPlayer;
-
-// https://snack.expo.io/?files=%7B%0A%20%20%2F%2F%20Inlined%20code%0A%20%20%27App.tsx%27%3A%20%7B%0A%20%20%20%20type%3A%20%27CODE%27%2C%0A%20%20%20%20contents%3A%20%27console.log(%22hello%20world!%22)%3B%27%0A%20%20%7D%2C%0A%20%20%2F%2F%20Externally%20hosted%20code%20(JavaScript%2C%20Markdown%2C%20JSON)%0A%20%20%27data%2Fdata.json%27%3A%20%7B%0A%20%20%20%20type%3A%20%27CODE%27%2C%0A%20%20%20%20url%3A%20%27https%3A%2F%2Fmysite%2Fdata.json%27%0A%20%20%7D%2C%0A%20%20%2F%2F%20Externally%20hosted%20assets%20(images%2C%20fonts)%0A%20%20%27assets%2Fimage.png%27%3A%20%7B%0A%20%20%20%20type%3A%20%27ASSET%27%2C%0A%20%20%20%20contents%3A%20%27https%3A%2F%2Fmysite%2Fimage.png%27%0A%20%20%7D%0A%7D

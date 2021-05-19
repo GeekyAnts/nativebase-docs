@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "start": "./clone-src.sh && docusaurus start",
+    "build": "./clone-src.sh && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "deploy-gh": "GIT_USER=nativebase USE_SSH=true yarn deploy",
@@ -24,7 +24,6 @@
     "prism-react-renderer": "^1.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "remark-snackplayer": "^0.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "browserslist": {

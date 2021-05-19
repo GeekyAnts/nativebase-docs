@@ -25,13 +25,13 @@ SafeAreaView props can only be applied on [View](view.md) as of now. To make you
 
 ```SnackPlayer name=SafeAreaView%20Boolean
 import React from 'react';
-import { NativeBaseProvider, View, Text } from 'native-base';
+import { NativeBaseProvider, Box, Text } from 'native-base';
 function MyComponent() {
   return (
     // This would look different on devices with different insets
-    <View bg='teal.400' rounded='xl' size={24} safeArea>
+    <Box bg='teal.400' rounded='xl' size={24} safeArea>
       <Text>NativeBase</Text>
-    </View>
+    </Box>
   );
 }
 
@@ -49,13 +49,13 @@ export default function () {
 
 ```SnackPlayer name=SafeAreaView%20Boolean
 import React from 'react';
-import { NativeBaseProvider, View, Text } from 'native-base';
+import { NativeBaseProvider, Box, Text } from 'native-base';
 function MyComponent() {
   return (
     // This would look same on all devices
-    <View bg='teal.400' rounded='xl' size={24} safeAreaTop={8}>
+    <Box bg='teal.400' rounded='xl' size={24} safeAreaTop={8}>
       <Text>NativeBase</Text>
-    </View>
+    </Box>
   );
 }
 
