@@ -7,6 +7,9 @@ module.exports = {
   important: '#tailwind',
   theme: {
     extend: {
+      ringWidth: {
+        10: '10px',
+      },
       colors: {
         gray: {
           50: '#fafafa',
@@ -69,6 +72,8 @@ module.exports = {
           900: '#064e3b',
         },
         secondary: {
+          20: '#CCCCCC',
+          40: '#888888',
           50: '#50BFC2',
           100: '#1A84B2',
           200: '#35628F',
@@ -120,7 +125,7 @@ module.exports = {
         tight: '-0.01em',
         normal: '0',
         wide: '0.01em',
-        wider: '0.02em',
+        wider: '0.05em',
         widest: '0.4em',
       },
       lineHeight: {

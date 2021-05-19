@@ -36,7 +36,7 @@ export function Reviews() {
   return (
     <section className={'relative '}>
       {/* visible on md and above */}
-      <div className="px-4 md:px-0">
+      <div className="px-6 md:px-0">
         <div className="py-12 md:py-20">
           <div className="max-w-4xl mx-auto text-center pb-12 md:pb-20">
             <h2 className={`h2 text-4xl`}>What are people saying?</h2>
@@ -51,7 +51,7 @@ export function Reviews() {
                   alt=""
                 />
               </div>
-              <div class="text-white lg:col-span-3 px-10 lg:pl-3 lg:pr-10">
+              <div className="text-white lg:col-span-3 px-10 lg:pl-3 lg:pr-10">
                 <p className="text-center lg:text-left">
                   Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s, when an unknown printer took a galley

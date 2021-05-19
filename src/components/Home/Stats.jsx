@@ -21,8 +21,7 @@ const SVGs = {
   Downloads: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      class="h-8 w-8 md:h-14 md:w-14 flex-no-shrink fill-current"
       viewBox="0 0 31.372 40.248"
     >
       <path
@@ -39,8 +38,7 @@ const SVGs = {
       id="handshake_1_"
       data-name="handshake (1)"
       xmlns="http://www.w3.org/2000/svg"
-      width="46.392"
-      height="28.832"
+      class="h-8 w-8 md:h-14 md:w-14 flex-no-shrink fill-current"
       viewBox="0 0 46.392 28.832"
     >
       <path
@@ -161,8 +159,7 @@ const SVGs = {
     <svg
       id="group"
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="34.084"
+      class="h-8 w-8  md:h-14 md:w-14 flex-no-shrink fill-current"
       viewBox="0 0 40 34.084"
     >
       <g
@@ -248,8 +245,7 @@ const SVGs = {
   GithubStars: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      class="h-8 w-8 md:h-14 md:w-14 flex-no-shrink fill-current"
       viewBox="0 0 40 40"
     >
       <g id="Group_639" data-name="Group 639" transform="translate(-336 -333)">
@@ -291,82 +287,109 @@ export function Stats() {
   const foldBg = '';
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
+  const statsColor = !isDarkTheme ? 'text-gray-500' : 'text-gray-400';
+
   return (
     <section className="relative">
       <div
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
-      <div className="px-4 md:px-0">
+      <div className="px-6 md:px-0">
         <div className="relative py-12 md:py-20">
           <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7">
-            <span className="mt-2">
+            <div className="mt-2">
               <p className="w-10 h-10 items-center rounded-md flex justify-center bg-green-600">
                 {SVGs['Logo']}
               </p>
-            </span>
-            <span className="w-full">
-              <h2 className={`leading-snug max-w-3xl text-4xl ${headingColor}`}>
+            </div>
+            <div className="w-full">
+              <h2
+                className={`leading-snug max-w-3xl text-3xl md:text-4xl ${headingColor}`}
+              >
                 <span>We are </span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400">
                   growing
                 </span>
               </h2>
-              <p className={`text-xl mt-7 leading-normal ${subHeadingColor}`}>
+              <p
+                className={`text-lg md:text-xl mt-7 leading-normal ${subHeadingColor}`}
+              >
                 NativeBase is a popular component library among devs and we're
                 constantly improving it.
               </p>
-              <div className="grid w-ful  grid-cols-2 mt-20 lg:grid-cols-4 gap-4">
+              <div className="w-full flex justify-center mt-20 max-4xl mx-auto">
                 <div className="">
-                  <div className="h-32 w-32 md:h-48 md:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
+                  <div className="w-20 h-20 md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                     <div className="">{SVGs['Downloads']}</div>
-                    <div className="font-bold text-2xl md:text-4xl ">38.2k</div>
+                    <div className="font-bold text-xl md:text-3xl ">38.2k</div>
                   </div>
                   <p
-                    className={`pl-3 text-xl mt-2.5  font-semibold ${subHeadingColor}`}
+                    className={`text-center mt-2.5 font-semibold ${statsColor}`}
                   >
                     Downloads / week
                   </p>
                 </div>
-                <div>
-                  <div className="h-32 w-32  md:h-48 md:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
+                <div className="-ml-2 lg:-ml-8">
+                  <div className=" ring-10 ring-white w-20 h-20  md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                     <div className="">{SVGs['GithubStars']}</div>
-                    <div className="font-bold text-2xl md:text-4xl ">14.8k</div>
+                    <div className="font-bold text-2xl md:text-3xl ">14.8k</div>
                   </div>
                   <p
-                    className={`pl-2 md:pl-10 text-xl mt-2.5  font-semibold ${subHeadingColor}`}
+                    className={`text-center mt-2.5 font-semibold ${statsColor}`}
                   >
                     Github Stars
                   </p>
                 </div>
-                <div>
-                  <div className="h-32 w-32   md:h-48 md:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
-                    <div className="flex h-12 items-center">
+                <div className="-ml-2 lg:-ml-8 ">
+                  <div className="ring-10 ring-white w-20 h-20  md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white ring-10 ring-white ">
+                    <div className="flex items-center">
                       {SVGs['Contributors']}
                     </div>
-                    <div className="font-bold text-2xl md:text-4xl ">196</div>
+                    <div className="font-bold mt-1 text-2xl md:text-3xl ">
+                      196
+                    </div>
                   </div>
                   <p
-                    className={`pl-0 md:pl-10 text-xl mt-2.5  font-semibold ${subHeadingColor}`}
+                    className={`text-center mt-2.5 font-semibold ${statsColor}`}
                   >
                     Contributions
                   </p>
                 </div>
-                <div>
-                  <div className="h-32 w-32   md:h-48 md:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
+                {/* <div className="h-16 w-16 md:w-32 border-none md:h-32 lg:h-40 lg:w-40 -ml-2 -mr-2  bg-gray-200 ring-10 ring-white  bg-red-500 lg:-ml-8 lg:-mr-8 z-30 rounded-full">
+                  <img
+                    className=" w-full rounded-full h-full object-cover"
+                    src="https://avatars.githubusercontent.com/u/1733433?v=4"
+                    target="_blank"
+                    width="352"
+                    height="198"
+                    alt="sanket"
+                    objectfit="cover"
+                  />
+                </div>
+                <div className="h-16 w-16 md:w-32 md:h-32 lg:h-40 lg:w-40 -mr-2 lg:-mr-8 z-20 rounded-full">
+                  <img
+                    className=" w-full rounded-full h-full object-cover"
+                    src="https://avatars.githubusercontent.com/u/1733433?v=4"
+                    width="352"
+                    height="198"
+                    alt="atul"
+                    objectfit="cover"
+                  />
+                </div> */}
+                <div className="-ml-2 -ml-2 lg:-ml-8 ">
+                  <div className="w-20 h-20 ring-10 ring-white  md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                     <div className="">{SVGs['Dependents']}</div>
-                    <div className="font-bold -mb-1 text-2xl md:text-4xl ">
-                      53.6k
-                    </div>
+                    <div className="font-bold  text-2xl md:text-3xl">53.6k</div>
                   </div>
                   <p
-                    className={`pl-2 md:pl-10 text-xl mt-2.5  font-semibold ${subHeadingColor}`}
+                    className={`text-center mt-2.5 text-md font-semibold ${statsColor}`}
                   >
                     Dependents
                   </p>
                 </div>
               </div>
-            </span>
+            </div>
           </div>
         </div>
       </div>

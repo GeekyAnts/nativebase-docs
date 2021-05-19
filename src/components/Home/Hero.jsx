@@ -13,43 +13,44 @@ export function Hero() {
   const { isDarkTheme } = useThemeContext();
   const headColor = !isDarkTheme ? 'text-gray-900' : 'text-gray-400';
   const subHeadColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-400';
+  const btnColor = !isDarkTheme ? 'text-secondary-40' : 'text-gray-400';
+  const githubColor = !isDarkTheme ? '#888888' : '#A1A1AA';
+  const btnBorderColor = !isDarkTheme
+    ? 'border-secondary-20'
+    : 'border-gray-400';
   return (
     <section className="relative">
       {/* Illustration behind hero content */}
 
       <div className="w-full md:w-7/12">
         {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-20 px-4 md:px-0 md:pb-20">
+        <div className="pt-6 pb-12 md:pt-20 px-6 md:px-0 md:pb-0">
           {/* Section header */}
-          <div className="pb-12 text-center md:text-left space-y-3 md:px-0 md:space-y-2 md:pb-16">
+          <div className="pb-12 text-left space-y-10 md:px-0 md:space-y-6">
             <h1
-              className={`font-inter text-5xl leading-tighter max-w-3xl md:leading-snug tracking-normal mb-0 ${headColor}`}
+              className={`font-inter text-3xl  md:text-5xl leading-tight max-w-3xl md:leading-snug tracking-normal mt-6 mb-0 ${headColor}`}
             >
-              Mobile-First, Accessible <br /> Components for {''}
+              Mobile-first, accessible <br /> components for {''}
+              <br />
               {/* A Complete <br /> Component Library for <br /> the{' '} */}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-400">
-                React{' '}
-                <span className="hidden lg:inline">
-                  <br />
-                </span>
-              </span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-700 to-blue-700">
-                Native & Web
+              <span className="bg-clip-text  text-transparent bg-gradient-to-r from-secondary-100 to-secondary-50">
+                React Native & Web
               </span>
             </h1>
             <div>
               <div
-                className={`text-2xl max-w-3xl w-full md:w-10/12  ${subHeadColor}`}
+                className={`text-lg  md:text-2xl max-w-3xl w-full md:w-10/12  ${subHeadColor}`}
               >
                 NativeBase is an accessible, utility-first library that helps
                 you build a consistent design system across Android, iOS and Web
+                (alpha)
                 {/* <span className="hidden lg:inline">
                   <br />
                 </span> */}
                 {/* (web in alpha). */}
               </div>
             </div>
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-start">
               {/* <p
                 className="text-xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"
@@ -58,24 +59,39 @@ export function Hero() {
                 Our landing page template works on all devices, so you only have
                 to set it up once, and get beautiful results forever.
               </p> */}
-              <div className="max-w-xs pt-4 sm:max-w-none flex w-full flex-col md:flex-row items-center">
-                <a
-                  className="btn text-white bg-secondary-50 font-semibold w-full md:w-48 justify-center md:px-10 mb-4 sm:mb-0 rounded-lg py-3 no-underline flex"
+              <div className="pt-4 sm:max-w-none flex w-full flex-col md:flex-row items-center gap-x-4">
+                {/* <a
+                  className="btn text-white bg-secondary-50 w-full font-semibold justify-center rounded-lg py-3 flex no-underline"
                   href="docs/nativebase"
                 >
                   Get Started
                 </a>
 
                 <a
-                  className="btn max-w-xs font-bold bg-white text-gray-500 border no-underline w-full sm:ml-4 rounded-lg py-3 md:w-48 justify-center md:px-5 items-center flex"
+                  className={`btn border flex-1 ml-2 border-solid ${btnBorderColor} font-bold no-underline rounded-lg py-3 justify-center items-center flex ${btnColor} `}
                   href="https://github.com/GeekyAnts/nativebase"
-                  style={{ border: '1px solid rgba(209, 213, 219,1)' }}
                 >
                   <GitHub fill="#6e6969" className="mr-2" />
-                  {starCount}
+                  15,990
                   <span className="ml-1"></span>Stars
-                  {/* <Star className="ml-2" fill="#6e6969" /> */}
+                </a> */}
+
+                <a
+                  class="btn text-white bg-secondary-50 font-semibold w-full md:w-64  justify-center md:px-10 mb-4 sm:mb-0 rounded-lg py-3 no-underline flex"
+                  href="docs/nativebase"
+                >
+                  Get Started
                 </a>
+                <div className="h-full flex items-center w-full">
+                  <a
+                    className={`btn border border-solid justify-center ${btnBorderColor} flex-1 md:flex-none font-bold no-underline rounded-lg py-2.5 px-5 flex items-center ${btnColor} `}
+                    href="https://github.com/GeekyAnts/nativebase"
+                  >
+                    <GitHub fill={githubColor} className="mr-2" />
+                    {starCount}
+                    <span className="ml-1"></span>Stars
+                  </a>
+                </div>
               </div>
             </div>
           </div>

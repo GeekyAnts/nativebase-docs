@@ -117,9 +117,9 @@ const SVGs = {
             transform="translate(-6 -3)"
             fill="none"
             stroke="#fff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
           />
           <path
             id="Path_350"
@@ -128,9 +128,9 @@ const SVGs = {
             transform="translate(-12.972 -16.944)"
             fill="none"
             stroke="#fff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
           />
         </g>
       </g>
@@ -164,7 +164,7 @@ const SVGs = {
               transform="translate(-8 -48)"
               fill="#d1d5db"
               stroke="#fff"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <path
               id="Path_305"
@@ -173,7 +173,7 @@ const SVGs = {
               transform="translate(-232.47 -349.874)"
               fill="#d1d5db"
               stroke="#fff"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
           </g>
         </g>
@@ -232,31 +232,35 @@ export function Responsive() {
         aria-hidden="true"
       />
 
-      <div className="px-4 md:px-0">
+      <div className="px-6 md:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
-            <span className="mt-2">{SVGs['Logo']}</span>
-            <span>
-              <h2 className={`leading-snug text-4xl ${headingColor}`}>
+            <div className="mt-2">{SVGs['Logo']}</div>
+            <div>
+              <h2
+                className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
+              >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-400">
                   Responsiveness
                 </span>
               </h2>
-              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+              <p
+                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+              >
                 Instead of manually adding responsiveness, NativeBase V3 allows
                 you to provide object and array values to add responsive styles.
               </p>
-              <p className="mt-7">
+              {/* <p className="mt-7">
                 <a
-                  className="text-green-500 no-underline border-0 hover:border-b-2 border-solid hover:border-green-500 font-bold"
+                  className="text-green-500 no-underline border-0 border-b-2 border-solid hover:border-green-500 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://react-native-aria.geekyants.com/"
                 >
                   Learn More
                 </a>
-              </p>
-            </span>
+              </p> */}
+            </div>
           </div>
           <div
             className="flex mt-10 flex-col space-y-10 lg:space-y-0 lg:flex-row-reverse rounded-md"
@@ -271,7 +275,7 @@ export function Responsive() {
                     {SVGs['Desktop']}
                   </div>
                 </div>
-                <div className="flex-1 shadow-xl  rounded-md h-80 bg-white lg:h-full"></div>
+                <div className="flex-1 themeable  rounded-md h-80 bg-white lg:h-full"></div>
                 <div className="hidden md:inline-block absolute -right-10 top-1/2">
                   {SVGs['Expand']}
                 </div>

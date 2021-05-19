@@ -107,31 +107,35 @@ export function DarkMode() {
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
-      <div className="px-4 md:px-0">
+      <div className="px-6 md:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <span className="mt-1">{SVGs['Logo']}</span>
             <span>
-              <h2 className={`text-4xl leading-snug ${headingColor}`}>
+              <h2
+                className={`text-3xl md:text-4xl leading-snug ${headingColor}`}
+              >
                 <span className="">Now With </span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
                   Dark Mode
                 </span>
               </h2>
-              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+              <p
+                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+              >
                 Building apps with a dark mode setting just got a whole lot
                 easier. NativeBase is now optimised for light and dark modes.
               </p>
-              <p className="mt-7">
+              {/* <p className="mt-7">
                 <a
-                  className="text-yellow-600 no-underline border-0 hover:border-b-2 border-solid hover:border-yellow-600 font-bold"
+                  className="text-yellow-600 no-underline border-0 border-b-2 border-solid hover:border-yellow-600 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
                   href=""
                 >
                   Learn More
                 </a>
-              </p>
+              </p> */}
             </span>
           </div>
           <div
@@ -140,11 +144,22 @@ export function DarkMode() {
           >
             <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-0 lg:py-20">
               {/* <div className="flex w-full lg:w-3/4 mx-auto flex-row"></div> */}
-              <div className="h-72 lg:h-full flex justify-center relative w-full mt-5">
-                <div className="h-full w-full flex items-end justify-center rounded-lg lg:shadow-lg bg-white px-1 md:px-4 py-4 lg:absolute lg:-right-5 md:top-0">
+              <div className="h-72 themeable rounded-lg lg:h-full flex justify-center relative w-full mt-5">
+                <div className="h-full w-full bg-white flex items-end justify-center rounded-lg bg-white px-1 md:px-4 py-4 lg:absolute lg:-right-5 md:top-0">
                   <footer className="flex justify-center space-x-5">
                     <div>{SVGs['Light']}</div>
-                    <div>Toggle</div>
+                    <div class="relative w-10  select-none transition duration-200 ease-in">
+                      <input
+                        type="checkbox"
+                        name="toggle"
+                        id="toggle"
+                        class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                      />
+                      <label
+                        for="toggle"
+                        class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+                      ></label>
+                    </div>
                     <div>{SVGs['Dark']}</div>
                   </footer>
                 </div>

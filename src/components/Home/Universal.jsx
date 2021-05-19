@@ -21,7 +21,7 @@ const SVGs = {
   iOS: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="80"
+      class="h-8 w-8 md:h-20 md:w-20 flex-no-shrink fill-current"
       height="80"
       viewBox="0 0 80 80"
     >
@@ -47,8 +47,7 @@ const SVGs = {
   Android: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="80"
-      height="80"
+      class="h-8 w-8 md:h-20 md:w-20 flex-no-shrink fill-current"
       viewBox="0 0 80 80"
     >
       <g id="Group_606" data-name="Group 606" transform="translate(-365 -404)">
@@ -73,8 +72,7 @@ const SVGs = {
   Web: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="80"
-      height="80"
+      class="h-8 w-8 md:h-20 md:w-20 flex-no-shrink fill-current"
       viewBox="0 0 80 80"
     >
       <path
@@ -119,46 +117,55 @@ export function Universal() {
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
-      <div className="px-4 md:px-0">
+      <div className="px-6 md:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-4xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
-            <span className="mt-2">
+            <div className="mt-2">
               <span className="w-10 h-10 items-center rounded-md flex justify-center bg-yellow-400">
                 {SVGs['Logo']}
               </span>
-            </span>
-            <span>
-              <h2 className={`leading-snug text-4xl ${headingColor}`}>
+            </div>
+            <div>
+              <h2
+                className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
+              >
                 <span>Consistent across </span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-yellow-400">
                   Web, Android & iOS
                 </span>
               </h2>
-              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+              <p
+                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+              >
                 Whether you're building for the web, Android or iOS, we've got
                 you covered. Fast-track your dev process with universal
                 components.
               </p>
-              <p className="mt-7">
+              {/* <p className="mt-7">
                 <a
-                  className="text-yellow-400 no-underline border-0 hover:border-b-2 border-solid hover:border-yellow-400 font-bold"
+                  className="text-yellow-400 no-underline border-0 border-b-2 border-solid hover:border-yellow-400 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
                   href=""
                 >
                   Learn More
                 </a>
-              </p>
-            </span>
+              </p> */}
+            </div>
           </div>
 
           {/* themes */}
-          <div className="grid bg-yellow-600 rounded-md mt-10 py-6 grid-cols-1 md:grid-cols-3 gap-y-10  text-white">
+          <div className="rounded-md mt-10 justify-center py-6 flex text-white">
             {themes.map((theme, idx) => {
               return (
-                <div className="text-center py-2" key={idx}>
-                  <div>{theme['svg']}</div>
-                  <div className="mt-5 font-bold">{theme['heading']}</div>
+                <div
+                  className={`flex flex-col ${
+                    idx === 1 ? 'z-50' : ''
+                  } ring-10 ring-white -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
+                  key={idx}
+                >
+                  <div className="">{theme['svg']}</div>
+                  {/* <div className="mt-5 font-bold">{theme['heading']}</div> */}
                 </div>
               );
             })}

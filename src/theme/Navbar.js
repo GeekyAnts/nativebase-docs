@@ -80,9 +80,9 @@ function Navbar() {
       })}
       // style={{ paddingLeft: '2rem' }}
     >
-      <div className={`navbar__inner ${isLandingPage ? 'lg:px-4' : ''}`}>
+      <div className={`navbar__inner  ${isLandingPage ? 'lg:px-4' : ''}`}>
         <div
-          className={`flex justify-around mx-auto md:px-4 lg:px-0 w-full  ${
+          className={`flex  px-2 justify-around mx-auto md:px-4 lg:px-0 w-full  ${
             isLandingPage ? 'max-w-6xl' : ''
           }`}
         >
@@ -122,6 +122,7 @@ function Navbar() {
                   return (
                     <a
                       target="_blank"
+                      key={i}
                       href={item.to}
                       className="hidden md:flex navbar__item navbar__link"
                     >
@@ -132,6 +133,7 @@ function Navbar() {
                   return (
                     <a
                       href={item.to}
+                      key={i}
                       className={`border-0 bg-white hover:bg-gray-400 text-gray-500 font-semibold py-1 px-5 rounded no-underline hidden md:inline-block ml-4`}
                       style={{
                         border: '1px solid rgba(209, 213, 219,1)',
@@ -144,13 +146,20 @@ function Navbar() {
                   return (
                     !disableColorModeSwitch && (
                       <button
+                        key={i}
                         onClick={onToggleChange}
                         className="bg-transparent border-0 hidden md:flex navbar__item navbar__link"
                       >
                         {isDarkTheme ? (
-                          <Sun fill={isDarkTheme ? '#EAEAEA' : '#777e86'} />
+                          <Sun
+                            key={i}
+                            fill={isDarkTheme ? '#EAEAEA' : '#777e86'}
+                          />
                         ) : (
-                          <Moon fill={isDarkTheme ? '#EAEAEA' : '#777e86'} />
+                          <Moon
+                            key={i}
+                            fill={isDarkTheme ? '#EAEAEA' : '#777e86'}
+                          />
                         )}
                       </button>
                       // <Toggle
@@ -164,17 +173,21 @@ function Navbar() {
                 case 'Discord':
                   return (
                     <a
+                      key={i}
                       target="_blank"
                       href={item.to}
                       className="border-0 hidden md:flex navbar__item navbar__link"
                     >
-                      <Discord fill={isDarkTheme ? '#EAEAEA' : '#777e86'} />
+                      <Discord
+                        key={i}
+                        fill={isDarkTheme ? '#EAEAEA' : '#777e86'}
+                      />
                     </a>
                   );
                 case 'Market':
-                  return <NavbarItem {...item} key={i} />;
+                  return <NavbarItem key={i} {...item} key={i} />;
                 default:
-                  return <NavbarItem {...item} key={i} />;
+                  return <NavbarItem key={i} {...item} key={i} />;
               }
             })}
           </div>

@@ -4,9 +4,9 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 
 function ColorTheme() {
   return (
-    <div className="h-full text-gray-900 overflow-x-auto w-full">
+    <div className="h-full text-gray-900  px-5 py-6 overflow-x-auto w-full">
       <div className="text-sm font-semibold">Rose</div>
-      <div class="grid mt-2 w-96  md:w-full grid-cols-3 gap-x-3 gap-y-5">
+      <div className="grid mt-2 w-96  md:w-full grid-cols-3 gap-x-3 gap-y-5">
         <div className="flex font-semibold space-x-2">
           <div
             className="w-10 h-10 rounded-md"
@@ -109,7 +109,7 @@ function ColorTheme() {
         </div>
       </div>
       <div className="mt-3 text-sm font-semibold">Pink</div>
-      <div class="grid mt-2 w-96  md:w-full grid-cols-3 gap-x-3 gap-y-5">
+      <div className="grid mt-2 w-96  md:w-full grid-cols-3 gap-x-3 gap-y-5">
         <div className="flex font-semibold space-x-2">
           <div
             className="w-10 h-10 rounded-md"
@@ -187,14 +187,16 @@ function Typography() {
       <div className="text-3xl whitespace-nowrap">
         (3XL) The quick brown fox
       </div>
-      <div className="text-4xl whitespace-nowrap">(4XL)The quick brown fox</div>
+      <div className="text-4xl whitespace-nowrap">
+        (4XL) The quick brown fox
+      </div>
     </div>
   );
 }
 function Sizing() {
   return (
     <div style={{ fontSize: '10px' }}>
-      <div class="flex w-3/4 pl-0 text-gray-900 md:pl-36 overflow-hidden">
+      <div className="flex w-10/12 pl-0 text-gray-900 md:pl-36 overflow-hidden">
         <table className="table-auto sizing-theme border-none p-0">
           <thead className="border-none">
             <tr className="border-none">
@@ -205,98 +207,134 @@ function Sizing() {
           </thead>
           <tbody className="border-none">
             <tr className="border-none py-0">
-              <td class="border-none py-2">1</td>
-              <td class="flex border-none px-6 py-2 space-x-4 items-center">
+              <td className="border-none py-2">1</td>
+              <td className="flex border-none px-6 py-2 space-x-4 items-center">
                 <span className="w-6">4px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '4px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '4px' }}
+                ></div>
               </td>
-              <td class="border-none px-4 py-2"></td>
+              <td className="border-none px-4 py-2"></td>
             </tr>
             <tr className="bg-white border-b-1 border-gray-200">
               <td className="border-none py-2 ">2</td>
-              <td class="flex border-none  px-6 py-2 space-x-4 items-center">
+              <td className="flex border-none  px-6 py-2 space-x-4 items-center">
                 <span className="w-6">8px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '8px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '8px' }}
+                ></div>
               </td>
               <td className="border-none py-2"></td>
             </tr>
             <tr className="border-1 border-gray-200 bg-white">
               <td className="border-none py-2">3</td>
-              <td class="flex border-none px-6 py-2  space-x-4 items-center">
+              <td className="flex border-none px-6 py-2  space-x-4 items-center">
                 <span className="w-6">12px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '12px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '12px' }}
+                ></div>
               </td>
               <td className="border-none py-2"></td>
             </tr>
             <tr className="border-b-1 border-gray-200 bg-white">
               <td className="border-none py-2">4</td>
-              <td class="flex border-none px-6 py-2 space-x-4 items-center">
+              <td className="flex border-none px-6 py-2 space-x-4 items-center">
                 <span className="w-6">16px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '16px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '16px' }}
+                ></div>
               </td>
               <td className="border-none"></td>
             </tr>
             <tr className="border-b-1 border-gray-200 bg-white">
               <td className="border-none py-2">5</td>
-              <td class="flex border-none px-6 py-2 space-x-4 items-center">
+              <td className="flex border-none px-6 py-2 space-x-4 items-center">
                 <span className="w-6">20px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '20px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '20px' }}
+                ></div>
               </td>
               <td className="border-none py-2"></td>
             </tr>
             <tr className="border-b-1 border-gray-200 bg-white">
               <td className="border-none py-2">6</td>
-              <td class="flex px-6 py-2 border-none space-x-4 items-center">
+              <td className="flex px-6 py-2 border-none space-x-4 items-center">
                 <span className="w-6">24px</span>
-                <div class="h-3 bg-purple-800 " style={{ width: '24px' }}></div>
+                <div
+                  className="h-3 bg-purple-800 "
+                  style={{ width: '24px' }}
+                ></div>
               </td>
               <td className="border-none py-2 bg-white"></td>
             </tr>
             <tr className="border-b-1 border-gray-200">
               <td className="border-none py-2">7</td>
-              <td class="flex px-6 py-2 border-none  space-x-4 items-center">
+              <td className="flex px-6 py-2 border-none  space-x-4 items-center">
                 <span className="w-6">28px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '28px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '28px' }}
+                ></div>
               </td>
               <td className="border-none py-2"></td>
             </tr>
             <tr className="border-b-1 border-gray-200 bg-white">
               <td className="border-none py-2">8</td>
-              <td class="flex border-none py-2 px-6  space-x-4 items-center">
+              <td className="flex border-none py-2 px-6  space-x-4 items-center">
                 <span className="w-6">32px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '32px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '32px' }}
+                ></div>
               </td>
               <td className="border-none py-2"></td>
             </tr>
             <tr className="border-b-1 border-gray-200 bg-white">
               <td className="border-none py-2">9</td>
-              <td class="flex border-none py-2 px-6  space-x-4 items-center">
+              <td className="flex border-none py-2 px-6  space-x-4 items-center">
                 <span className="w-6">36px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '36px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '36px' }}
+                ></div>
               </td>
               <td className="border-none py-2"></td>
             </tr>
             <tr className="border-1 border-gray-200 bg-white">
               <td className="border-none py-2">10</td>
-              <td class="flex border-none py-2 px-6  space-x-4 items-center">
+              <td className="flex border-none py-2 px-6  space-x-4 items-center">
                 <span className="w-6">40px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '40px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '40px' }}
+                ></div>
               </td>
               <td className="border-none py-2"></td>
             </tr>
             <tr className="border-1  border-gray-200 bg-white">
               <td className="border-none py-2">12</td>
-              <td class="flex px-6 border-none py-2 space-x-4 items-center">
+              <td className="flex px-6 border-none py-2 space-x-4 items-center">
                 <span className="w-6">48px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '48px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '48px' }}
+                ></div>
               </td>
               <td className="border-none py-2"></td>
             </tr>
             <tr className="border-1 border-gray-200 bg-white">
               <td className="border-none py-2">16</td>
-              <td class="flex border-none py-2 px-6  space-x-4 items-center">
+              <td className="flex border-none py-2 px-6  space-x-4 items-center">
                 <span className="w-6">64px</span>
-                <div class="h-3 bg-purple-800" style={{ width: '64px' }}></div>
+                <div
+                  className="h-3 bg-purple-800"
+                  style={{ width: '64px' }}
+                ></div>
               </td>
               <td className="border-none py-2"></td>
             </tr>
@@ -373,7 +411,7 @@ export function Themeable() {
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-900' : 'text-gray-100';
-  const [currentTheme, setCurrentTheme] = useState('sizing');
+  const [currentTheme, setCurrentTheme] = useState('color');
   return (
     <section className="relative">
       <div
@@ -381,25 +419,29 @@ export function Themeable() {
         aria-hidden="true"
       />
 
-      <div className="px-4 md:px-0">
+      <div className="px-6 md:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <span className="mt-2 w-16">{SVGs['Logo']}</span>
             <span>
-              <h2 className={`leading-snug text-4xl ${headingColor}`}>
+              <h2
+                className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
+              >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-indigo-500">
                   Highly themeable,{' '}
                 </span>
                 <span>the only limit is your imagination</span>
               </h2>
-              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+              <p
+                className={`tex-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+              >
                 Themeability is one of the core elements of NativeBase.
                 Customise your app theme and component styles to your heart's
                 content.
               </p>
               <p className="mt-7">
                 <a
-                  className="text-indigo-500 no-underline border-0 hover:border-b-2 border-solid hover:border-indigo-500 font-bold"
+                  className="text-indigo-500 no-underline border-0 border-b-2 border-solid hover:border-indigo-500 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://react-native-aria.geekyants.com/"
@@ -415,55 +457,55 @@ export function Themeable() {
           >
             <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-16">
               {/* tabs */}
-              <div className="flex w-full lg:w-3/4 mx-auto flex-row">
-                <div className="text-left md:text-center w-1/3">
+              <div className="flex px-6 space-x-6 flex-row">
+                <div className="text-left">
                   <a
-                    className={`pb-2 ${
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500  ${
                       currentTheme === 'color'
-                        ? 'border-b-2 border-solid border-blue-700'
+                        ? 'border-b-2 text-indigo-500 border-solid border-blue-700'
                         : ''
-                    }  border-0 cursor-pointer ${subHeadingColor}`}
+                    }  border-0 cursor-pointer`}
                     id="color-btn"
                     onClick={(e) => {
                       setCurrentTheme('color');
                     }}
                   >
-                    Color
+                    COLOR
                   </a>
                 </div>
-                <div className="text-left md:text-center w-1/3">
+                <div className="text-left">
                   <a
                     id="sizing-btn"
-                    className={`pb-2 ${
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
                       currentTheme === 'sizing'
-                        ? 'border-b-2 border-solid border-blue-700'
+                        ? 'border-b-2 text-indigo-500 border-solid border-blue-700'
                         : ''
-                    }   border-0 cursor-pointer ${subHeadingColor}`}
+                    }   border-0 cursor-pointer`}
                     onClick={(e) => {
                       setCurrentTheme('sizing');
                     }}
                   >
-                    Sizing
+                    SIZING
                   </a>
                 </div>
-                <div className="text-left md:text-center w-1/3">
+                <div className="text-left">
                   <a
                     id="typography-btn"
-                    className={`pb-2 ${
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
                       currentTheme === 'typography'
-                        ? 'border-b-2 border-solid border-blue-700'
+                        ? 'border-b-2 text-indigo-500 border-solid border-blue-700'
                         : ''
-                    }   border-0 cursor-pointer ${subHeadingColor}`}
+                    }   border-0 cursor-pointer`}
                     onClick={(e) => {
                       setCurrentTheme('typography');
                     }}
                   >
-                    Typography
+                    TYPOGRAPHY
                   </a>
                 </div>
               </div>
-              <div className="h-full flex justify-center relative w-full mt-10">
-                <div className="h-full w-full bg-white rounded-lg shadow-xl px-1 md:px-4 py-4 lg:absolute lg:-right-5 md:top-0">
+              <div className="h-full flex justify-center bg-white rounded-lg themeable relative w-full mt-5">
+                <div className="h-full w-full bg-white md:px-4 rounded-lg lg:absolute lg:-right-5 md:top-0">
                   {currentTheme === 'color' ? (
                     <ColorTheme />
                   ) : currentTheme === 'sizing' ? (

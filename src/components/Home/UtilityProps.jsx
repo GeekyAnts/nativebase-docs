@@ -176,7 +176,7 @@ export function UtilityProps() {
   const subHeadingColor = !isDarkTheme ? 'text-gray-900' : 'text-gray-200';
   const [currentTheme, setCurrentTheme] = useState('mobile');
   return (
-    <section className="relative py-20">
+    <section className="relative py-8">
       <div
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
@@ -188,50 +188,50 @@ export function UtilityProps() {
           >
             <div className="w-full lg:w-8/12 h-1/2 ">
               {/* tabs */}
-              <div className="flex flex-row">
-                <div className="text-center  w-1/3">
+              <div className="flex justify-center space-x-6 flex-row">
+                <div className="text-center">
                   <a
                     id="mobile-btn"
-                    className={`pb-2 ${
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
                       currentTheme === 'mobile'
-                        ? 'border-b-2 border-solid border-blue-700'
+                        ? 'border-b-2 text-secondary-50 border-solid border-secondary-50'
                         : ''
-                    }  border-0 cursor-pointer ${subHeadingColor}`}
+                    }  border-0 cursor-pointer`}
                     onClick={(e) => {
                       setCurrentTheme('mobile');
                     }}
                   >
-                    Mobile
+                    MOBILE
                   </a>
                 </div>
-                <div className="text-center w-1/3">
+                <div className="text-center">
                   <a
                     id="tablet-btn"
-                    className={`pb-2 ${
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
                       currentTheme === 'tablet'
-                        ? 'border-b-2 border-solid border-blue-700'
+                        ? 'border-b-2 text-secondary-50 border-solid border-secondary-50'
                         : ''
-                    }   border-0 cursor-pointer ${subHeadingColor}`}
+                    }   border-0 cursor-pointer`}
                     onClick={(e) => {
                       setCurrentTheme('tablet');
                     }}
                   >
-                    Tablet
+                    TABLET
                   </a>
                 </div>
-                <div className="text-center w-1/3">
+                <div className="text-center">
                   <a
                     id="desktop-btn"
-                    className={`pb-2 ${
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
                       currentTheme === 'desktop'
-                        ? 'border-b-2 border-solid border-blue-700'
+                        ? 'border-b-2 text-secondary-50 border-solid border-secondary-50'
                         : ''
-                    }   border-0 cursor-pointer ${subHeadingColor}`}
+                    }   border-0 cursor-pointer`}
                     onClick={(e) => {
                       setCurrentTheme('desktop');
                     }}
                   >
-                    Desktop
+                    DESKTOP
                   </a>
                 </div>
               </div>

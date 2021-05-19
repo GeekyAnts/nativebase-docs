@@ -169,10 +169,10 @@ export function Community() {
   return (
     <section>
       <div className="">
-        <div className="py-12 px-4 md:px-0 md:py-20">
+        <div className="py-12 px-6 md:px-0 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7 pb-12 md:pb-20">
-            <span className="mt-2">{SVGs['Logo']}</span>
-            <span>
+            <div className="mt-2">{SVGs['Logo']}</div>
+            <div>
               <h2 className={`leading-snug text-4xl ${headingColor}`}>
                 <span>Our</span>{' '}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
@@ -183,15 +183,15 @@ export function Community() {
                 We have a lively community built on our shared love for React &
                 React Native. Join us!
               </p>
-            </span>
+            </div>
           </div>
 
-          <div className="pb-20  flex flex-col  items-center">
+          <div className="pb-20 flex flex-col  items-center">
             <div className="max-w-3xl w-full  mx-auto">
               <div className="flex justify-center">
                 <div className="h-16 w-16 md:w-32 md:h-32 lg:h-40 lg:w-40 bg-gray-200 rounded-full"></div>
                 <div className="h-16 w-16 md:w-32 md:h-32 lg:h-40 lg:w-40 -ml-2  bg-gray-200 lg:-ml-8 rounded-full"></div>
-                <div className="h-16 w-16 md:w-32 border-none md:h-32 lg:h-40 lg:w-40 -ml-2 -mr-2  bg-gray-200 ring-8 ring-white  bg-red-500 lg:-ml-8 lg:-mr-8 z-50 rounded-full">
+                <div className="h-16 w-16 md:w-32 border-none md:h-32 lg:h-40 lg:w-40 -ml-2 -mr-2  bg-gray-200 ring-8 ring-white  bg-red-500 lg:-ml-8 lg:-mr-8 z-30 rounded-full">
                   <img
                     className=" w-full rounded-full h-full object-cover"
                     src={experts['sanket']}
@@ -199,17 +199,17 @@ export function Community() {
                     width="352"
                     height="198"
                     alt="sanket"
-                    objectFit="cover"
+                    objectfit="cover"
                   />
                 </div>
-                <div className="h-16 w-16 md:w-32 md:h-32 lg:h-40 lg:w-40 -mr-2 lg:-mr-8 z-40 rounded-full">
+                <div className="h-16 w-16 md:w-32 md:h-32 lg:h-40 lg:w-40 -mr-2 lg:-mr-8 z-20 rounded-full">
                   <img
                     className=" w-full rounded-full h-full object-cover"
                     src={experts['atul']}
                     width="352"
                     height="198"
                     alt="atul"
-                    objectFit="cover"
+                    objectfit="cover"
                   />
                 </div>
                 <div className="h-16 w-16 md:w-32 md:h-32 lg:h-40 lg:w-40 bg-gray-200 rounded-full"></div>
@@ -230,9 +230,9 @@ export function Community() {
           {/* Articles list */}
           <div className="max-w-sm mx-auto md:max-w-none px-0 lg:px-14">
             <div className="grid gap-2 md:gap-12 md:grid-cols-3 md:col-gap-4 md:row-gap-6 items-start">
-              {articles.map(({ name, link, src }) => {
+              {articles.map(({ name, link, src }, idx) => {
                 return (
-                  <div className="bg-blue-900 h-48 rounded-md"></div>
+                  <div className="bg-blue-900 h-48 rounded-md" key={idx}></div>
                   // <article
                   //   className="flex flex-col h-full"
                   //   data-aos="zoom-y-out"
@@ -251,7 +251,7 @@ export function Community() {
                   //           width="352"
                   //           height="198"
                   //           alt={name}
-                  //           objectFit="cover"
+                  //           objectfit="cover"
                   //         />
                   //       </figure>
                   //       <h3 className="text-lg leading-snug tracking-tight font-normal px-3">
@@ -264,7 +264,7 @@ export function Community() {
               })}
             </div>
           </div>
-          <div className="mt-20 flex justify-center space-x-10">
+          <div className="mt-20 flex flex-wrap justify-center gap-x-10 gap-y-5">
             <a
               href="https://stackoverflow.com/questions/tagged/native-base"
               className="h-16 w-16 flex items-center justify-center rounded-full shadow-xl bg-white"
