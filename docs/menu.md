@@ -59,7 +59,7 @@ import { Menu } from 'native-base';
 
 ```
 
-MenuItem implements [Pressable](pressable.md#props)
+MenuItem implements [Pressable]
 
 ### **MenuItemOption**
 
