@@ -1,2 +1,0 @@
-// Wrap
-export const Wrap = {};
