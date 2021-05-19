@@ -33,7 +33,7 @@ import { Avatar } from 'native-base';
 
 ### Fallbacks
 
-```ComponentSnackPlayer path=composites,Avatar,fallback.tsx
+```ComponentSnackPlayer path=composites,Avatar,Fallback.tsx
 
 ```
 
