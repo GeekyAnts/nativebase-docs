@@ -1,18 +1,44 @@
 import React from 'react';
 export const SVGs = {
+  'Flutter Starter': (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="70"
+      height="70"
+      viewBox="0 0 50 50.003"
+    >
+      <g id="FlutterStarterLogoLightTheme" transform="translate(-0.008 -0.043)">
+        <g id="Group" transform="translate(0.007 0.043)">
+          <path
+            id="Path-4"
+            d="M25,50C14.676,49-.745,34.8.036,25.148S14.461-.811,24.882.078,51.065,15.606,49.952,25.04,35.312,51,25,50Z"
+            transform="translate(-0.008 -0.043)"
+            fill="#3740ce"
+            fillRule="evenodd"
+          />
+          <path
+            id="FS"
+            d="M116.132,114.637a1.242,1.242,0,0,0,.326-1.068,2.055,2.055,0,0,0-.6-1.172l-6.156-6.246,4.247-4.309a1.237,1.237,0,0,0,.335-1.058A2.038,2.038,0,0,0,113.7,99.6a1.91,1.91,0,0,0-1.164-.6,1.2,1.2,0,0,0-1.043.34l-4.247,4.309-1.481-1.5a6.334,6.334,0,0,1-1.9-3.808,3.991,3.991,0,0,1,1.052-3.458l1.807-1.833A1.237,1.237,0,0,0,107.061,92a2.038,2.038,0,0,0-.587-1.181,1.9,1.9,0,0,0-1.146-.586,1.176,1.176,0,0,0-1.052.331l-1.807,1.833a6.437,6.437,0,0,0-1.7,5.575,10.334,10.334,0,0,0,3.074,6.142l10.087,10.234a1.961,1.961,0,0,0,1.164.6A1.1,1.1,0,0,0,116.132,114.637Zm12.462-12.643a5.651,5.651,0,0,0,1.723-4.564,8.008,8.008,0,0,0-2.422-4.961c-2.086-2.2-4.1-3.137-6.026-2.825a9.1,9.1,0,0,0-4,2.268,7.125,7.125,0,0,1-2.813,1.748c-.736.095-1.6-.369-2.589-1.389a4.729,4.729,0,0,1-1.211-2,2.02,2.02,0,0,1,.391-2.192l4.126-4.186a1.237,1.237,0,0,0,.335-1.058,2.055,2.055,0,0,0-.6-1.172,1.944,1.944,0,0,0-1.136-.6,1.176,1.176,0,0,0-1.052.331l-4.117,4.2a4.457,4.457,0,0,0-1.08,4.243,8.637,8.637,0,0,0,2.384,4.375c2,2.041,3.93,2.9,5.8,2.561A9.159,9.159,0,0,0,120.2,94.52a6.656,6.656,0,0,1,2.925-1.758c.782-.076,1.714.463,2.794,1.6a4.174,4.174,0,0,1,1.295,2.655,3.208,3.208,0,0,1-1.062,2.476l-9.221,9.364a1.237,1.237,0,0,0-.335,1.058,2.038,2.038,0,0,0,.587,1.181,1.9,1.9,0,0,0,1.146.586,1.176,1.176,0,0,0,1.052-.331Z"
+            transform="translate(-90.117 -72.536)"
+            fill="#fff"
+          />
+        </g>
+      </g>
+    </svg>
+  ),
   'React Pluggable': (
     <svg
       id="ReactPluggableLogoWithBackground"
       xmlns="http://www.w3.org/2000/svg"
-      width="110.14"
-      height="110.14"
+      width="60"
+      height="60"
       viewBox="0 0 110.14 110.14"
     >
       <path
         id="Rectangle"
         d="M11.616,0H98.524A11.623,11.623,0,0,1,110.14,11.616V98.524A11.623,11.623,0,0,1,98.524,110.14H11.616A11.623,11.623,0,0,1,0,98.524V11.616A11.623,11.623,0,0,1,11.616,0Z"
         fill="#78468e"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       />
       <path
         id="Path_1"
@@ -60,20 +86,224 @@ export const SVGs = {
   ),
   SyncState: (
     <svg
+      id="Group_375"
+      data-name="Group 375"
       xmlns="http://www.w3.org/2000/svg"
-      xlink="http://www.w3.org/1999/xlink"
-      width="110"
-      height="110"
-      viewBox="0 0 110 110"
+      width="60"
+      height="60"
+      viewBox="0 0 50 50"
     >
-      <g id="Group" transform="translate(-56 -56)">
-        <image
-          id="Bitmap"
-          width="110"
-          height="110"
-          transform="translate(56 56)"
-          href="data:image/png;base64,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"
+      <g id="Group_374" data-name="Group 374">
+        <path
+          id="Rectangle_2"
+          d="M5.176,0H44.824A5.172,5.172,0,0,1,50,5.176V44.824A5.172,5.172,0,0,1,44.824,50H5.176A5.172,5.172,0,0,1,0,44.824V5.176A5.172,5.172,0,0,1,5.176,0Z"
+          fill="#40937b"
         />
+        <g id="Group_3" transform="translate(5.535 16.038) rotate(-90)">
+          <g id="Ellipse_1" transform="translate(0.018 31.191)">
+            <circle
+              id="Oval"
+              cx="3.762"
+              cy="3.762"
+              r="3.762"
+              transform="translate(0 0)"
+              fill="#fff"
+            />
+            <circle
+              id="Oval_1_"
+              cx="3.713"
+              cy="3.713"
+              r="3.713"
+              transform="translate(0.048 0.048)"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="1"
+            />
+          </g>
+          <g id="Polygon_1" transform="translate(6.384 30.626) rotate(180)">
+            <path
+              id="Path"
+              d="M5.131,4.012H0L2.566,0Z"
+              transform="translate(0.087 0.087)"
+              fill="#fff"
+            />
+            <path
+              id="Shape"
+              d="M2.652.183.174,4.051H5.122L2.652.183m0-.183L5.3,4.147H0Z"
+              fill="#fff"
+            />
+          </g>
+          <g id="Rectangle_1" transform="translate(2.719 11.249)">
+            <rect
+              id="Rectangle_1_"
+              width="14.95"
+              height="2.026"
+              transform="translate(0 14.95) rotate(-90)"
+              fill="#fff"
+            />
+            <rect
+              id="Rectangle_2_"
+              width="14.854"
+              height="1.929"
+              transform="translate(0.048 14.902) rotate(-90)"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="1"
+            />
+          </g>
+          <g id="Polygon_2" transform="translate(1.079 8.329)">
+            <path
+              id="Path_1_"
+              d="M5.131,4.109H0L2.566,0Z"
+              transform="translate(0.087 0.087)"
+              fill="#fff"
+            />
+            <path
+              id="Shape_1_"
+              d="M2.652.183.174,4.147H5.131L2.652.183m0-.183L5.3,4.244H0Z"
+              fill="#fff"
+            />
+          </g>
+          <g id="Ellipse_2" transform="translate(0 0)">
+            <circle id="Oval_2_" cx="3.781" cy="3.781" r="3.781" fill="#fff" />
+            <circle
+              id="Oval_3_"
+              cx="3.733"
+              cy="3.733"
+              r="3.733"
+              transform="translate(0.048 0.048)"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="1"
+            />
+          </g>
+        </g>
+        <g id="Group_4" transform="translate(29.905 40.92) rotate(150)">
+          <g id="Ellipse_1-2" transform="translate(0 31.559)">
+            <path
+              id="Oval_4_"
+              d="M3.763,0a3.629,3.629,0,0,1,3.71,3.62A3.756,3.756,0,0,1,3.71,7.292,3.629,3.629,0,0,1,0,3.672,3.756,3.756,0,0,1,3.763,0Z"
+              transform="translate(0 0)"
+              fill="#fff"
+            />
+            <path
+              id="Oval_5_"
+              d="M3.721,0A3.585,3.585,0,0,1,7.389,3.573,3.71,3.71,0,0,1,3.668,7.2,3.585,3.585,0,0,1,0,3.624,3.71,3.71,0,0,1,3.721,0Z"
+              transform="translate(0.036 0.048)"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="1"
+            />
+          </g>
+          <g id="Polygon_1-2" transform="translate(6.667 30.704) rotate(180)">
+            <path
+              id="Path_2_"
+              d="M5.179,4.054,0,4.091,2.619,0Z"
+              transform="translate(0.087 0.086)"
+              fill="#fff"
+            />
+            <path
+              id="Shape_2_"
+              d="M2.7.182.173,4.128,5.18,4.093,2.7.182m0-.182L5.352,4.187,0,4.225Z"
+              transform="translate(0 0)"
+              fill="#fff"
+            />
+          </g>
+          <g id="Rectangle_1-2" transform="translate(2.975 11.368)">
+            <path
+              id="Rectangle_3_"
+              d="M.1.015,2.074,0l-.1,14.907L0,14.921Z"
+              transform="translate(0 0)"
+              fill="#fff"
+            />
+            <path
+              id="Rectangle_4_"
+              d="M.1.014,1.981,0l-.1,14.81L0,14.824Z"
+              transform="translate(0.046 0.049)"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="1"
+            />
+          </g>
+          <g id="Polygon_2-2" transform="translate(1.409 8.193)">
+            <path
+              id="Path_3_"
+              d="M5.179,4.054,0,4.091,2.619,0Z"
+              transform="translate(0.087 0.086)"
+              fill="#fff"
+            />
+            <path
+              id="Shape_3_"
+              d="M2.7.182.173,4.128,5.18,4.093,2.7.182m0-.182L5.352,4.187,0,4.225Z"
+              transform="translate(0 0)"
+              fill="#fff"
+            />
+          </g>
+          <g id="Ellipse_2-2" transform="translate(0.34 0)">
+            <path
+              id="Oval_6_"
+              d="M3.658,0A3.632,3.632,0,0,1,7.264,3.728,3.759,3.759,0,0,1,3.606,7.509,3.632,3.632,0,0,1,0,3.781,3.759,3.759,0,0,1,3.658,0Z"
+              transform="translate(0)"
+              fill="#fff"
+            />
+            <path
+              id="Oval_7_"
+              d="M3.61,0A3.585,3.585,0,0,1,7.168,3.68a3.71,3.71,0,0,1-3.61,3.733A3.585,3.585,0,0,1,0,3.733,3.71,3.71,0,0,1,3.61,0Z"
+              transform="translate(0.048 0.048)"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="1"
+            />
+          </g>
+        </g>
+        <g id="Group_5" transform="translate(36.124 14.918) rotate(30)">
+          <g id="Polygon_1-3" transform="translate(5.387 22.275) rotate(180)">
+            <path
+              id="Path_4_"
+              d="M5.208,4.109H0L2.6,0Z"
+              transform="translate(0.087 0.087)"
+              fill="#fff"
+            />
+            <path
+              id="Shape_4_"
+              d="M2.691.183.174,4.147H5.208L2.691.183m0-.183L5.382,4.244H0Z"
+              transform="translate(0 0)"
+              fill="#fff"
+            />
+          </g>
+          <g id="Rectangle_1-3" transform="translate(1.656 3.108)">
+            <rect
+              id="Rectangle_5_"
+              width="14.921"
+              height="2.074"
+              transform="translate(2.074 0) rotate(90)"
+              fill="#fff"
+            />
+            <rect
+              id="Rectangle_6_"
+              width="14.825"
+              height="1.977"
+              transform="translate(2.026 0.048) rotate(90)"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="1"
+            />
+          </g>
+          <g id="Polygon_2-3" transform="translate(0 0)">
+            <path
+              id="Path_5_"
+              d="M5.208,4.109H0L2.6,0Z"
+              transform="translate(0.087 0.087)"
+              fill="#fff"
+            />
+            <path
+              id="Shape_5_"
+              d="M2.691.183.174,4.147H5.208L2.691.183m0-.183L5.382,4.244H0Z"
+              transform="translate(0 0)"
+              fill="#fff"
+            />
+          </g>
+        </g>
       </g>
     </svg>
   ),
@@ -82,8 +312,8 @@ export const SVGs = {
       id="logo"
       xmlns="http://www.w3.org/2000/svg"
       xlink="http://www.w3.org/1999/xlink"
-      width="111.353"
-      height="111.353"
+      width="60"
+      height="60"
       viewBox="0 0 111.353 111.353"
     >
       <g id="atom-_2_" data-name="atom-(2)" transform="translate(0 0)">
@@ -117,25 +347,47 @@ export const SVGs = {
     </svg>
   ),
   Formst: (
-    <svg width="110px" height="110px" viewBox="0 0 696 696">
-      <g fillRule="nonzero" stroke="none" strokeWidth={1} fill="none">
+    <svg
+      id="Group_344"
+      data-name="Group 344"
+      xmlns="http://www.w3.org/2000/svg"
+      width="70"
+      height="70"
+      viewBox="0 0 50 50"
+    >
+      <g id="Group_36" data-name="Group 36" transform="translate(0 0)">
         <path
-          d="M200.572 112.306h366.852a88.267 88.267 0 0188.271 88.267v366.85a88.271 88.271 0 01-25.853 62.42 88.271 88.271 0 01-62.418 25.852H200.572a88.267 88.267 0 01-88.267-88.271V200.573c0-48.749 39.519-88.267 88.267-88.267z"
-          fill="#FBFBFB"
-          transform="translate(-36 -36) rotate(47 384 384)"
+          id="Path_18"
+          data-name="Path 18"
+          d="M5.747,0H29.63a5.747,5.747,0,0,1,5.747,5.747V29.63a5.747,5.747,0,0,1-5.747,5.747H5.747A5.747,5.747,0,0,1,0,29.63V5.747A5.747,5.747,0,0,1,5.747,0Z"
+          transform="translate(25.873 0) rotate(47)"
+          fill="#534ce9"
         />
         <g
-          transform="translate(-36 -36) translate(127.846 134.043) rotate(13 43.337 410.968)"
-          fill="#534CE9"
+          id="Group_34"
+          data-name="Group 34"
+          transform="translate(7.488 7.915)"
         >
-          <path
-            transform="rotate(33.007 143.686 255.633)"
-            d="M114.31696 170.750924L114.31696 235.218947 216.928727 235.218947 216.928727 280.346562 114.31696 280.346562 114.31696 386.0014 58.0872805 386.0014 58.0872805 125.265588 229.284281 125.265588 229.284281 170.750924z"
-          />
-          <path
-            transform="rotate(-146.993 285.276 156.787)"
-            d="M255.906705 71.9048343L255.906705 136.372857 358.518471 136.372857 358.518471 181.500473 255.906705 181.500473 255.906705 287.15531 199.677025 287.15531 199.677025 26.4194982 370.874026 26.4194982 370.874026 71.9048343z"
-          />
+          <g
+            id="Group_31"
+            data-name="Group 31"
+            transform="translate(6.361 0) rotate(13)"
+          >
+            <path
+              id="Path_21"
+              data-name="Path 21"
+              d="M3.872,3.132V7.571h7.066v3.107H3.872v7.275H0V0H11.788V3.132Z"
+              transform="matrix(0.839, 0.545, -0.545, 0.839, 9.778, 6.799)"
+              fill="#fbfbfb"
+            />
+            <path
+              id="Path_20"
+              data-name="Path 20"
+              d="M3.872,3.132V7.571h7.066v3.107H3.872v7.275H0V0H11.788V3.132Z"
+              transform="matrix(-0.839, -0.545, 0.545, -0.839, 19.638, 21.478)"
+              fill="#fbfbfb"
+            />
+          </g>
         </g>
       </g>
     </svg>

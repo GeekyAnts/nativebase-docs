@@ -14,7 +14,7 @@ module.exports = {
   ],
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
   organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
   plugins: [
@@ -35,7 +35,7 @@ module.exports = {
       title: 'NativeBase',
       logo: {
         alt: 'NativeBase Logo',
-        src: 'img/icon.png',
+        src: 'img/nativebaselogo.svg',
       },
 
       // style: "dark",
@@ -44,25 +44,19 @@ module.exports = {
           type: 'docsVersionDropdown',
           position: 'left',
         },
-        {
-          to: '/docs/nativebase',
-          label: 'Docs',
-          position: 'right',
-          'aria-label': 'Docs',
-        },
-        {
-          to: 'https://market.nativebase.io/',
-          label: 'Market',
-          position: 'right',
-          'aria-label': 'Market',
-        },
-        {
-          to:
-            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
-          label: 'Hire Us',
-          position: 'right',
-          'aria-label': 'Hire GeekyAnts',
-        },
+        // {
+        //   to: 'https://market.nativebase.io/',
+        //   label: 'Market',
+        //   position: 'right',
+        //   'aria-label': 'Market',
+        // },
+        // {
+        //   to:
+        //     'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+        //   label: 'Hire Us',
+        //   position: 'right',
+        //   'aria-label': 'Hire GeekyAnts',
+        // },
         {
           to: 'https://github.com/GeekyAnts/nativebase',
           label: 'GitHub',
@@ -80,6 +74,12 @@ module.exports = {
           label: 'Theme',
           position: 'right',
           'aria-label': 'Theme',
+        },
+        {
+          to: '/docs/nativebase',
+          label: 'Docs',
+          position: 'right',
+          'aria-label': 'Docs',
         },
       ],
     },
