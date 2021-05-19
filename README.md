@@ -139,6 +139,6 @@ If possible, test any visual changes in all latest versions of the following bro
 1.  `git add -A && git commit -m "My message"` to stage and commit your changes.
     > replace `My message` with a commit message, such as `Fixed typo in Accordion Example`
 2.  `git push my-fork-name the-name-of-my-branch`
-3.  Go to the [nativebase/website repo](https://github.com/nativebase/website) and you should see recently pushed branch.
+3.  Go to the [nativebase/website repo](https://github.com/nativebase/website) and you should see recently pushed branches.
 4.  Follow GitHub's instructions and create a Pull Request to merge your branch in `master`.
 5.  Describe briefly your changes (in case of visual changes, please include screenshots).
