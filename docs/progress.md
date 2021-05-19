@@ -15,31 +15,31 @@ import { Progress } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,progress,Basic.tsx
+```ComponentSnackPlayer path=composites,Progress,Basic.tsx
 
 ```
 
 ### Progress colorScheme
 
-```ComponentSnackPlayer path=composites,progress,ColorScheme.tsx
+```ComponentSnackPlayer path=composites,Progress,ColorScheme.tsx
 
 ```
 
 ### Sizes
 
-```ComponentSnackPlayer path=composites,progress,Sizes.tsx
+```ComponentSnackPlayer path=composites,Progress,Sizes.tsx
 
 ```
 
 ### Flat Progress
 
-```ComponentSnackPlayer path=composites,progress,Flat.tsx
+```ComponentSnackPlayer path=composites,Progress,Flat.tsx
 
 ```
 
 ### Custom Track Color
 
-```ComponentSnackPlayer path=composites,progress,CustomBgColor.tsx
+```ComponentSnackPlayer path=composites,Progress,CustomBgColor.tsx
 
 ```
 

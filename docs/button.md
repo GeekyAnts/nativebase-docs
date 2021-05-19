@@ -58,7 +58,7 @@ import { Button, ButtonGroup } from 'native-base';
 
 ### Basic (With Ref)
 
-```ComponentSnackPlayer path=primitives,Button,withRef.tsx
+```ComponentSnackPlayer path=primitives,Button,WithRef.tsx
 
 ```
 

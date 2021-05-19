@@ -9,25 +9,25 @@ The `Switch` component is an alternative to the Checkbox component. You can swit
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,switch,Basic.tsx
+```ComponentSnackPlayer path=primitives,Switch,Basic.tsx
 
 ```
 
 ### Sizes
 
-```ComponentSnackPlayer path=primitives,switch,Sizes.tsx
+```ComponentSnackPlayer path=primitives,Switch,Sizes.tsx
 
 ```
 
 ### Background
 
-```ComponentSnackPlayer path=primitives,switch,SwitchBgColor.tsx
+```ComponentSnackPlayer path=primitives,Switch,SwitchBgColor.tsx
 
 ```
 
 ### Color Schemes
 
-```ComponentSnackPlayer path=primitives,switch,ColorSchemes.tsx
+```ComponentSnackPlayer path=primitives,Switch,ColorSchemes.tsx
 
 ```
 

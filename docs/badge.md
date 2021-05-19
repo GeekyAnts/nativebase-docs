@@ -15,7 +15,7 @@ import { Badge } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Badge,Usage.tsx
+```ComponentSnackPlayer path=composites,Badge,usage.tsx
 
 ```
 

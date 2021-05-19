@@ -17,13 +17,13 @@ import { useToast } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,toast,Basic.tsx
+```ComponentSnackPlayer path=composites,Toast,Basic.tsx
 
 ```
 
 ### Position
 
-```ComponentSnackPlayer path=composites,toast,ToastPositions.tsx
+```ComponentSnackPlayer path=composites,Toast,ToastPositions.tsx
 
 ```
 
@@ -31,7 +31,7 @@ import { useToast } from 'native-base';
 
 Display a custom component instead of the default Toast UI.
 
-```ComponentSnackPlayer path=composites,toast,CustomComponent.tsx
+```ComponentSnackPlayer path=composites,Toast,CustomComponent.tsx
 
 ```
 
@@ -39,7 +39,7 @@ Display a custom component instead of the default Toast UI.
 
 Toasts can be closed imperatively, individually (via the close instance method) or all together (via the closeAll instance method).
 
-```ComponentSnackPlayer path=composites,toast,CloseToast.tsx
+```ComponentSnackPlayer path=composites,Toast,CloseToast.tsx
 
 ```
 
@@ -47,7 +47,7 @@ Toasts can be closed imperatively, individually (via the close instance method) 
 
 You can use status to change the color of your toasts.
 
-```ComponentSnackPlayer path=composites,toast,ToastStatus.tsx
+```ComponentSnackPlayer path=composites,Toast,ToastStatus.tsx
 
 ```
 
@@ -55,7 +55,7 @@ You can use status to change the color of your toasts.
 
 `Toast` uses the same variants as the [Alert](alert.md) component.
 
-```ComponentSnackPlayer path=composites,toast,ToastStatus.tsx
+```ComponentSnackPlayer path=composites,Toast,ToastStatus.tsx
 
 ```
 
@@ -63,7 +63,7 @@ You can use status to change the color of your toasts.
 
 In some cases you might need to prevent duplicate of specific toasts. To achieve you need to pass an id and use the toast.isActive method to determine when to call toast.show(...).
 
-```ComponentSnackPlayer path=composites,toast,PreventDuplicate.tsx
+```ComponentSnackPlayer path=composites,Toast,PreventDuplicate.tsx
 
 ```
 
@@ -71,7 +71,7 @@ In some cases you might need to prevent duplicate of specific toasts. To achieve
 
 Below props can be passed while calling toast.show.
 
-```ComponentPropTable path=composites,toast,ToastDummy.tsx
+```ComponentPropTable path=composites,Toast,ToastDummy.tsx
 
 ```
 

@@ -17,7 +17,7 @@ import { Divider } from 'native-base';
 
 The Divider displays a thin horizontal or vertical line.
 
-```ComponentSnackPlayer path=composites,divider,Basic.tsx
+```ComponentSnackPlayer path=composites,Divider,Basic.tsx
 
 ```
 
@@ -27,7 +27,7 @@ Pass the `orientation` prop and set it to either `horizontal` or `vertical`.
 
 > **Note:** If the horizontal orientation is used, make sure that the parent element is assigned a width and If the vertical orientation is used, make sure that the parent element is assigned a height.
 
-```ComponentSnackPlayer path=composites,divider,Orientation.tsx
+```ComponentSnackPlayer path=composites,Divider,Orientation.tsx
 
 ```
 
@@ -35,7 +35,7 @@ Pass the `orientation` prop and set it to either `horizontal` or `vertical`.
 
 You can use `bg` or `backgroundColor` to change the divider's color and `width` and `height` to change its width and height respectively.
 
-```ComponentSnackPlayer path=composites,divider,Composition.tsx
+```ComponentSnackPlayer path=composites,Divider,Composition.tsx
 
 ```
 

@@ -35,7 +35,7 @@ Apart from the icons provided by [@expo/vector-icon](https://github.com/expo/vec
 
 ### Create Icon
 
-```ComponentSnackPlayer path=primitives,Icon,createIcon.tsx
+```ComponentSnackPlayer path=primitives,Icon,CreateIcon.tsx
 
 ```
 

@@ -9,19 +9,19 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,box,basic.tsx
+```ComponentSnackPlayer path=primitives,Box,basic.tsx
 
 ```
 
 ### Composition
 
-```ComponentSnackPlayer path=primitives,box,composition.tsx
+```ComponentSnackPlayer path=primitives,Box,composition.tsx
 
 ```
 
 ### Basic (With Ref)
 
-```ComponentSnackPlayer path=primitives,box,WithRef.tsx
+```ComponentSnackPlayer path=primitives,Box,WithRef.tsx
 
 ```
 

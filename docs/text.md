@@ -9,25 +9,25 @@ title: Text
 
 ### ChangingFontSize
 
-```ComponentSnackPlayer path=primitives,text,ChangingFontSize.tsx
+```ComponentSnackPlayer path=primitives,Text,ChangingFontSize.tsx
 
 ```
 
 ### Truncated
 
-```ComponentSnackPlayer path=primitives,text,Truncated.tsx
+```ComponentSnackPlayer path=primitives,Text,Truncated.tsx
 
 ```
 
 ### Nested
 
-```ComponentSnackPlayer path=primitives,text,Nested.tsx
+```ComponentSnackPlayer path=primitives,Text,Nested.tsx
 
 ```
 
 ### Overridden
 
-```ComponentSnackPlayer path=primitives,text,Overriden.tsx
+```ComponentSnackPlayer path=primitives,Text,Overriden.tsx
 
 ```
 

@@ -20,37 +20,37 @@ import { Slider } from 'native-base';
 
 ## Examples
 
-```ComponentSnackPlayer path=primitives,slider,usage.tsx
+```ComponentSnackPlayer path=primitives,Slider,usage.tsx
 
 ```
 
 ### Color
 
-```ComponentSnackPlayer path=primitives,slider,color.tsx
+```ComponentSnackPlayer path=primitives,Slider,color.tsx
 
 ```
 
 ### Value
 
-```ComponentSnackPlayer path=primitives,slider,Value.tsx
+```ComponentSnackPlayer path=primitives,Slider,Value.tsx
 
 ```
 
 ### Size
 
-```ComponentSnackPlayer path=primitives,slider,Size.tsx
+```ComponentSnackPlayer path=primitives,Slider,Size.tsx
 
 ```
 
 ### Customised
 
-```ComponentSnackPlayer path=primitives,slider,Customized.tsx
+```ComponentSnackPlayer path=primitives,Slider,Customized.tsx
 
 ```
 
 ### Form Controlled
 
-```ComponentSnackPlayer path=primitives,slider,FormControlled.tsx
+```ComponentSnackPlayer path=primitives,Slider,FormControlled.tsx
 
 ```
 
