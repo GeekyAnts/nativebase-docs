@@ -59,14 +59,6 @@ You can use status to change the color of your toasts.
 
 ```
 
-### Changing the toast position
-
-Using the `position` prop you can adjust where your toast will be popup from.
-
-```ComponentSnackPlayer path=composites,toast,ToastPositions.tsx
-
-```
-
 ### Preventing Duplicate Toast
 
 In some cases you might need to prevent duplicate of specific toasts. To achieve you need to pass an id and use the toast.isActive method to determine when to call toast.show(...).

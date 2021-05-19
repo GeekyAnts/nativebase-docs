@@ -24,7 +24,20 @@
     "prism-react-renderer": "^1.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "remark": "^12.0.1",
+    "tape": "^5.0.1",
+    "@babel/core": "^7.14.0",
+    "@babel/generator": "^7.14.1",
+    "@babel/parser": "^7.14.1",
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/traverse": "^7.14.0",
+    "dedent": "^0.7.0",
+    "object.fromentries": "^2.0.3",
+    "unist-builder": "^2.0.3",
+    "unist-util-visit-parents": "^3.1.1",
+    "react-docgen-typescript": "^1.22.0",
+    "typescript": "^4.2.4"
   },
   "browserslist": {
     "production": [
