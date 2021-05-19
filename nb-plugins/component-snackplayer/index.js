@@ -18,7 +18,7 @@ const processNode = (node, parent) => {
   return new Promise(async (resolve, reject) => {
     try {
       const params = parseParams(node.meta);
-      const NBversion = '3.0.0-next.36';
+      const NBversion = '3.0.0-next.37';
       // Gather necessary Params
       let name = params.name ? decodeURIComponent(params.name) : 'Example';
       const description = params.description
@@ -32,7 +32,7 @@ const processNode = (node, parent) => {
       const preview = params.preview || 'true';
       const loading = params.loading || 'lazy';
       // Generate Node for SnackPlayer
-      let dependencies = `react-is,expo-font,native-base@${NBversion},styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons,@react-native-picker/picker@1.9.2`;
+      let dependencies = `react-is,expo-font,native-base@${NBversion},styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons`;
 
       if (name.split(' ')[0] === 'Formik') {
         dependencies += ',@native-base/formik-ui,formik,yup';
