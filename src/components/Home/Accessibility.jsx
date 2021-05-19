@@ -482,7 +482,7 @@ export function Accessibility() {
           </div>
 
           {/* grid */}
-          <div className="grid bg-indigo-800 divide-solid divide-y-0 divide-x divide-indigo-400 rounded-md mt-10 grid-cols-1 lg:grid-cols-3 gap-y-10  text-white px-5 py-10">
+          <div className="grid bg-indigo-800 divide-solid divide-y-0 divide-x divide-indigo-400 divide-opacity-40 rounded-md mt-10 grid-cols-1 lg:grid-cols-3 gap-y-10  text-white px-5 py-10">
             {accessibilities.map((accessibilitiy, idx) => {
               return (
                 <div className="text-center px-10 space-y-3" key={idx}>
@@ -491,7 +491,7 @@ export function Accessibility() {
                     {accessibilitiy['heading']}
                   </div>
                   <div className="flex justify-center text-center">
-                    <div className="w-full  text-sm">
+                    <div className="w-full text-sm">
                       {accessibilitiy['subHeading']}
                     </div>
                   </div>
