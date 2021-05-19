@@ -69,7 +69,6 @@ import { List } from 'native-base';
 
 ### List.Item
 
-<!--
 ```ComponentPropTable path=primitives,List,ListItem.tsx
 
-``` -->
+```
