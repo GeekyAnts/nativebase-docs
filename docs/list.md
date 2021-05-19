@@ -5,16 +5,6 @@ title: List
 
 List is used to display list items.
 
-## Implements
-
-- [`Box`](box.md), [`VStack`](VStack.md).
-
-## Import
-
-```jsx
-import { List } from 'native-base';
-```
-
 ## Examples
 
 ### Basic
