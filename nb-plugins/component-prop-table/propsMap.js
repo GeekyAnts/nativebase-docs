@@ -159,8 +159,13 @@ const rnProps = {
   },
   PressableProps: {
     doc: '',
-    name: 'Pressablero',
+    name: 'Pressable',
     link: 'https://reactnative.dev/docs/pressable',
+  },
+  SvgProps: {
+    doc: '',
+    name: 'react-native-svg',
+    link: 'https://github.com/react-native-svg/react-native-svg',
   },
 };
 // Styling props

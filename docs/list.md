@@ -69,8 +69,7 @@ import { List } from 'native-base';
 
 ### List.Item
 
+<!--
 ```ComponentPropTable path=primitives,List,ListItem.tsx
 
-```
-
-**List.Icon** composes **[Icon](icon.md)**, so all the [`Icon Props`](icon.md#props) can be passed to it.
+``` -->
