@@ -10,7 +10,7 @@ const SVGs = {
       viewBox="0 0 48 35"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect
             id="Rectangle_280"
             data-name="Rectangle 280"
@@ -21,7 +21,7 @@ const SVGs = {
           />
         </clipPath>
       </defs>
-      <g id="Discord-Logo-Color" clip-path="url(#clip-path)">
+      <g id="Discord-Logo-Color" clipPath="url(#clipPath)">
         <path
           id="Path_415"
           data-name="Path 415"

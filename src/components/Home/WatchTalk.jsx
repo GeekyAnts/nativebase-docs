@@ -24,6 +24,7 @@ export function WatchTalk() {
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
+  const inviteUsColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-100';
 
   return (
     <section>
@@ -62,7 +63,7 @@ export function WatchTalk() {
               </p>
 
               <div className="max-w-3xl mt-20">
-                <p className="text-3xl font-bold text-gray-600">
+                <p className={`text-3xl font-bold ${inviteUsColor}`}>
                   Invite us to speak at your next event{' '}
                 </p>
                 <p className={`text-xl ${subHeadingColor}`}>

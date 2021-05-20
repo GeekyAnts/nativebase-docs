@@ -2,9 +2,25 @@ import React from 'react';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 const SVGs = {
+  Email: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="167.187"
+      height="135.84"
+      viewBox="0 0 167.187 135.84"
+    >
+      <path
+        id="Icon_metro-envelop"
+        data-name="Icon metro-envelop"
+        d="M154.084,5.784H18.244A15.72,15.72,0,0,0,2.571,21.458V125.95a15.72,15.72,0,0,0,15.674,15.674h135.84a15.72,15.72,0,0,0,15.674-15.674V21.458A15.72,15.72,0,0,0,154.084,5.784ZM67.672,74.744l-44.2,34.432v-81.9Zm-36.3-48.062H140.96l-54.8,41.144-54.8-41.144ZM69.395,76.593,86.164,94.6l16.769-18.009,34.377,44.132H35.018L69.395,76.593Zm35.261-1.849,44.2-47.47v81.9Z"
+        transform="translate(-2.571 -5.784)"
+        fill="#fff"
+      />
+    </svg>
+  ),
   Twitter: (
     <svg
-      class="h-5 w-5 flex-no-shrink"
+      className="h-5 w-5 flex-no-shrink"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
     >
@@ -122,7 +138,7 @@ export function Reviews() {
 
   return (
     <section className={'relative '}>
-      <div>
+      <div className="px-6 md:px-0">
         <div>
           <div className="text-center pb-12 md:pb-20">
             <h2 className={`h2 text-4xl`}>What are people saying?</h2>
@@ -130,24 +146,25 @@ export function Reviews() {
               Here's what other React devs have to say about NativeBase.
             </p>
             <div className="mt-10">
-              <div class="md:masonry-2-col space-y-5 lg:masonry-3-col box-border mx-auto before:box-inherit after:box-inherit">
+              <div className="md:masonry-2-col space-y-5 lg:masonry-3-col box-border mx-auto before:box-inherit after:box-inherit">
                 {reviews.map((review, idx) => {
                   return (
                     <div
-                      class={`break-inside bg-transparent ${borderColor} px-4 py-4 border border-solid rounded-lg rounded-lg`}
+                      key={idx}
+                      className={`break-inside bg-transparent ${borderColor} px-4 py-4 border border-solid rounded-lg rounded-lg`}
                     >
                       <p className="flex">
                         <img
-                          class="mt-1 h-8 w-8 rounded-full"
+                          className="mt-1 h-8 w-8 rounded-full"
                           src={review.src}
                           alt=""
                         />
-                        <div className="ml-4">
-                          <div className="font-semibold text-left">
+                        <span className="ml-4 flex flex-col">
+                          <span className="font-semibold text-left">
                             {review.name}
-                          </div>
-                          <div className="text-sm">{review.handle}</div>
-                        </div>
+                          </span>
+                          <span className="text-sm">{review.handle}</span>
+                        </span>
                         <div className="ml-auto">{SVGs['Twitter']}</div>
                       </p>
                       <p className={`text-left text-base ${reviewColor}`}>
@@ -156,6 +173,65 @@ export function Reviews() {
                     </div>
                   );
                 })}
+              </div>
+            </div>
+            <div className="bg-red-500 relative overflow-hidden bg-blue-500 flex items-center mt-20 py-16">
+              <div className="max-w-3xl mx-auto flex flex-col">
+                <h2 className="text-white text-3xl text-left font-bold">
+                  Join our Newsletter
+                </h2>
+                <p className="text-white text-left">
+                  Lorem ipsum is a placeholder text commonly used to demonstrate
+                </p>
+                <div className="text-left mt-5 flex h-10">
+                  <div>
+                    <input
+                      type="text"
+                      className="w-96 outline-none text-gray-800 placeholder-gray-400 px-3  border-0 h-full"
+                      placeholder="Email Address"
+                    ></input>
+                  </div>
+                  <button className="border-0 bg-green-600  w-10 h-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18.207"
+                      height="19.035"
+                      viewBox="0 0 18.207 19.035"
+                    >
+                      <g
+                        id="Icon_feather-arrow-right"
+                        data-name="Icon feather-arrow-right"
+                        transform="translate(-6.5 -6.086)"
+                      >
+                        <path
+                          id="Path_421"
+                          data-name="Path 421"
+                          d="M7.5,18H23.707"
+                          transform="translate(0 -2.396)"
+                          fill="none"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                        <path
+                          id="Path_422"
+                          data-name="Path 422"
+                          d="M18,7.5l8.1,8.1-8.1,8.1"
+                          transform="translate(-2.396)"
+                          fill="none"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="ml-20 -bottom-12 right-32 absolute">
+                {SVGs['Email']}
               </div>
             </div>
           </div>

@@ -21,7 +21,7 @@ const SVGs = {
   Downloads: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="h-8 w-8 md:h-14 md:w-14 flex-no-shrink fill-current"
+      className="h-6 w-6 md:h-14 md:w-14 flex-no-shrink fill-current"
       viewBox="0 0 31.372 40.248"
     >
       <path
@@ -38,7 +38,7 @@ const SVGs = {
       id="handshake_1_"
       data-name="handshake (1)"
       xmlns="http://www.w3.org/2000/svg"
-      class="h-8 w-8 md:h-14 md:w-14 flex-no-shrink fill-current"
+      className="h-6 w-6 md:h-14 md:w-14 flex-no-shrink fill-current"
       viewBox="0 0 46.392 28.832"
     >
       <path
@@ -159,7 +159,7 @@ const SVGs = {
     <svg
       id="group"
       xmlns="http://www.w3.org/2000/svg"
-      class="h-8 w-8  md:h-14 md:w-14 flex-no-shrink fill-current"
+      className="h-6 w-6  md:h-14 md:w-14 flex-no-shrink fill-current"
       viewBox="0 0 40 34.084"
     >
       <g
@@ -245,7 +245,7 @@ const SVGs = {
   GithubStars: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="h-8 w-8 md:h-14 md:w-14 flex-no-shrink fill-current"
+      className="h-6 w-6 md:h-14 md:w-14 flex-no-shrink fill-current"
       viewBox="0 0 40 40"
     >
       <g id="Group_639" data-name="Group 639" transform="translate(-336 -333)">
@@ -268,6 +268,29 @@ const SVGs = {
   ),
 };
 
+const stats = [
+  {
+    name: 'Downloads',
+    value: '38.2k',
+    svg: SVGs['Downloads'],
+  },
+  {
+    name: 'GithubStars',
+    value: '14.8k',
+    svg: SVGs['GithubStars'],
+  },
+  {
+    name: ' Contributions',
+    value: '196',
+    svg: SVGs['Contributors'],
+  },
+  {
+    name: 'Dependents',
+    value: '53.6k',
+    svg: SVGs['Dependents'],
+  },
+];
+
 export function Stats() {
   const [starCount, setStarCount] = React.useState(0);
 
@@ -288,6 +311,7 @@ export function Stats() {
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   const statsColor = !isDarkTheme ? 'text-gray-500' : 'text-gray-400';
+  const ringColor = !isDarkTheme ? 'ring-white' : 'ring-secondary-800';
 
   return (
     <section className="relative">
@@ -318,8 +342,27 @@ export function Stats() {
                 NativeBase is a popular component library among devs and we're
                 constantly improving it.
               </p>
-              <div className="w-full flex mt-20 max-4xl">
-                <div className="">
+              <div className="w-full grid grid-cols-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 mt-20 max-4xl">
+                {stats.map((stat, idx) => {
+                  return (
+                    <div key={idx}>
+                      <div
+                        className={`ring-8 md:ring-10 ${ringColor} w-24 h-24 md:w-44 md:h-44 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white`}
+                      >
+                        <div className="">{stat.svg}</div>
+                        <div className="font-bold text-sm md:text-3xl ">
+                          {stat.value}
+                        </div>
+                      </div>
+                      <p
+                        className={`text-center md:ml-4 text-xs md:text-lg mt-2.5 font-semibold ${statsColor}`}
+                      >
+                        {stat.name}
+                      </p>
+                    </div>
+                  );
+                })}
+                {/* <div className="">
                   <div className=" ring-10 ring-white w-20 h-20 md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                     <div className="">{SVGs['Downloads']}</div>
                     <div className="font-bold text-xl md:text-3xl ">38.2k</div>
@@ -356,27 +399,6 @@ export function Stats() {
                     Contributions
                   </p>
                 </div>
-                {/* <div className="h-16 w-16 md:w-32 border-none md:h-32 lg:h-40 lg:w-40 -ml-2 -mr-2  bg-gray-200 ring-10 ring-white  bg-red-500 lg:-ml-8 lg:-mr-8 z-30 rounded-full">
-                  <img
-                    className=" w-full rounded-full h-full object-cover"
-                    src="https://avatars.githubusercontent.com/u/1733433?v=4"
-                    target="_blank"
-                    width="352"
-                    height="198"
-                    alt="sanket"
-                    objectfit="cover"
-                  />
-                </div>
-                <div className="h-16 w-16 md:w-32 md:h-32 lg:h-40 lg:w-40 -mr-2 lg:-mr-8 z-20 rounded-full">
-                  <img
-                    className=" w-full rounded-full h-full object-cover"
-                    src="https://avatars.githubusercontent.com/u/1733433?v=4"
-                    width="352"
-                    height="198"
-                    alt="atul"
-                    objectfit="cover"
-                  />
-                </div> */}
                 <div className="-ml-2 -ml-2 lg:-ml-8 ">
                   <div className="w-20 h-20 ring-10 ring-white  md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
                     <div className="">{SVGs['Dependents']}</div>
@@ -387,7 +409,7 @@ export function Stats() {
                   >
                     Dependents
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

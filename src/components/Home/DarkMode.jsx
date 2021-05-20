@@ -126,16 +126,16 @@ export function DarkMode() {
                 Building apps with a dark mode setting just got a whole lot
                 easier. NativeBase is now optimised for light and dark modes.
               </p>
-              {/* <p className="mt-7">
+              <p className="mt-7">
                 <a
                   className="text-yellow-600 no-underline border-0 border-b-2 border-solid hover:border-yellow-600 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href=""
+                  href="https://alpha.nativebase.io/docs/darkMode"
                 >
                   Learn More
                 </a>
-              </p> */}
+              </p>
             </span>
           </div>
           <div
@@ -156,7 +156,7 @@ export function DarkMode() {
                         className="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer"
                       />
                       <label
-                        for="toggle"
+                        htmlFor="toggle"
                         className="toggle-label block overflow-hidden h-6 w-12 rounded-full bg-gray-300 cursor-pointer"
                       ></label>
                     </div>
