@@ -5,26 +5,17 @@ const SVGs = {
   microphone: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="70"
-      height="70"
-      viewBox="0 0 94 94"
+      width="19"
+      height="25.396"
+      viewBox="0 0 19 25.396"
     >
-      <g id="Group_697" data-name="Group 697" transform="translate(-137 -1923)">
-        <path
-          id="Path_395"
-          data-name="Path 395"
-          d="M47,0A47,47,0,1,1,0,47,47,47,0,0,1,47,0Z"
-          transform="translate(137 1923)"
-          fill="#60a5fa"
-        />
-        <path
-          id="Icon_awesome-microphone"
-          data-name="Icon awesome-microphone"
-          d="M18.659,37.318A10.178,10.178,0,0,0,28.837,27.14V10.178a10.178,10.178,0,0,0-20.355,0V27.14A10.178,10.178,0,0,0,18.659,37.318ZM35.622,20.355h-1.7a1.7,1.7,0,0,0-1.7,1.7V27.14A13.586,13.586,0,0,1,17.3,40.645c-7.05-.688-12.214-7.026-12.214-14.109V22.051a1.7,1.7,0,0,0-1.7-1.7H1.7a1.7,1.7,0,0,0-1.7,1.7v4.258c0,9.5,6.782,17.975,16.115,19.262v3.62H10.178a1.7,1.7,0,0,0-1.7,1.7v1.7a1.7,1.7,0,0,0,1.7,1.7H27.14a1.7,1.7,0,0,0,1.7-1.7v-1.7a1.7,1.7,0,0,0-1.7-1.7H21.2v-3.58A18.677,18.677,0,0,0,37.318,27.14V22.051A1.7,1.7,0,0,0,35.622,20.355Z"
-          transform="translate(165.71 1942.783)"
-          fill="#fff"
-        />
-      </g>
+      <path
+        id="Icon_open-microphone"
+        data-name="Icon open-microphone"
+        d="M9.211-.141A3.161,3.161,0,0,0,8.8-.046,3.161,3.161,0,0,0,6.334,3.115V9.437a3.161,3.161,0,0,0,6.322,0V3.115A3.161,3.161,0,0,0,9.211-.141ZM1.119,6.276A1.58,1.58,0,0,0,.044,7.857v1.58a9.5,9.5,0,0,0,7.9,9.293v3.351H6.366a3.17,3.17,0,0,0-3.161,3.161H15.88a3.17,3.17,0,0,0-3.161-3.161h-1.58V18.73a9.471,9.471,0,0,0,7.9-9.293V7.857a1.58,1.58,0,1,0-3.161,0v1.58a6.322,6.322,0,0,1-12.644,0V7.857a1.58,1.58,0,0,0-1.865-1.58,1.58,1.58,0,0,0-.19,0Z"
+        transform="translate(-0.042 0.154)"
+        fill="#fff"
+      />
     </svg>
   ),
 };
@@ -35,57 +26,56 @@ export function WatchTalk() {
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
 
   return (
-    <section className={'relative '}>
-      <div
-        className={'absolute inset-0 pointer-events-none '}
-        aria-hidden="true"
-      />
-
-      <div className="">
-        <div
-          className="relative py-10 px-6 lg:px-0  min-h-6xl"
-          style={{ zIndex: 1 }}
-        >
-          <center className="">
-            <h1 className={`h2 mb-5 text-4xl ${headingColor}`}>
-              Watch our Talk
-            </h1>
-            <p
-              className={`text-xl w-full lg:w-7/12 font-medium mx-auto  ${subHeadingColor}`}
-            >
-              Check out Sanket Sahu's talk on building an accessible component
-              library for native and web at React Day Bangalore.
+    <section>
+      <div className="relative px-6 md:px-0">
+        <div className="py-12 md:py-20">
+          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7 pb-12">
+            <p className="w-10 h-10 items-center mt-2 rounded-md flex justify-center bg-blue-600">
+              {SVGs['microphone']}
             </p>
-            <iframe
-              className="w-full mx-auto lg:w-3/4"
-              // width="70%"
-              height="400"
-              src="https://www.youtube.com/embed/1P26X_GSHO8"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </center>
-        </div>
-        <div className="px-4 md:px-0 py-20 lg:px-0">
-          <div className="bg-gray-200 rounded-md py-5 px-0 lg:px-4 ">
-            <div className="grid grid-cols-1  lg:grid-cols-8 gap-4 px-5 lg:px-10">
-              <div className="flex items-center">{SVGs['microphone']}</div>
-              <div className="col-span-5">
-                <p className="text-3xl font-bold text-gray-600 mb-0">
-                  Invite us to speak at your next event
+            <div>
+              <h2
+                className={`leading-snug max-w-3xl  text-3xl md:text-4xl ${headingColor}`}
+              >
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+                  Talks and Articles
+                </span>
+              </h2>
+              <p
+                className={`text-lg max-w-3xl md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
+              >
+                We have a lively community built on our shared love for React &
+                React Native. Join us!
+              </p>
+              <iframe
+                className="mt-5"
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/1P26X_GSHO8"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <p className={`max-w-3xl text-xl mt-4`}>
+                Check out Sanket Sahu's talk on building an accessible component
+                library for native and web at React Day Bangalore.
+              </p>
+
+              <div className="max-w-3xl mt-20">
+                <p className="text-3xl font-bold text-gray-600">
+                  Invite us to speak at your next event{' '}
                 </p>
-                <p className="text-gray-600">
+                <p className={`text-xl ${subHeadingColor}`}>
                   We love sharing knowledge and meeting other passionate devs.
                   Invite a NativeBase creator to speak at your next event, we
                   promise to keep things interesting!
                 </p>
-              </div>
-              <div className="col-span-2 lg:justify-end flex items-center">
                 <a
-                  className="typeform-share button btn bg-blue-400 border-none rounded-md px-8 text-xl py-3 text-white font-semibold"
+                  className="text-blue-800 text-md font-bold no-underline border-0 border-b-2 border-solid border-blue-800 pb-1"
                   href="https://form.typeform.com/to/hjPoXR42?typeform-medium=embed-snippet"
                   data-mode="drawer_right"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Send Invite
                 </a>
@@ -95,5 +85,65 @@ export function WatchTalk() {
         </div>
       </div>
     </section>
+    // <section className={'relative '}>
+    //   <div
+    //     className={'absolute inset-0 pointer-events-none '}
+    //     aria-hidden="true"
+    //   />
+
+    //   <div className="">
+    //     <div
+    //       className="relative py-10 px-6 lg:px-0  min-h-6xl"
+    //       style={{ zIndex: 1 }}
+    //     >
+    //       <cente className="">
+    //         <h1 className={`h2 mb-5 text-4xl ${headingColor}`}>
+    //           Watch our Talk
+    //         </h1>
+    //         <p
+    //           className={`text-xl w-full lg:w-7/12 font-medium mx-auto  ${subHeadingColor}`}
+    //         >
+    //           Check out Sanket Sahu's talk on building an accessible component
+    //           library for native and web at React Day Bangalore.
+    //         </p>
+    //         <iframe
+    //           className="w-full mx-auto lg:w-3/4"
+    //           // width="70%"
+    //           height="400"
+    //           src="https://www.youtube.com/embed/1P26X_GSHO8"
+    //           frameBorder="0"
+    //           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    //           allowFullScreen
+    //         ></iframe>
+    //       </cente>
+    //     </div>
+    //     <div className="px-4 md:px-0 py-20 lg:px-0">
+    //       <div className="bg-gray-200 rounded-md py-5 px-0 lg:px-4 ">
+    //         <div className="grid grid-cols-1  lg:grid-cols-8 gap-4 px-5 lg:px-10">
+    //           <div className="flex items-center">{SVGs['microphone']}</div>
+    //           <div className="col-span-5">
+    //             <p className="text-3xl font-bold text-gray-600 mb-0">
+    //               Invite us to speak at your next event
+    //             </p>
+    //             <p className="text-gray-600">
+    //               We love sharing knowledge and meeting other passionate devs.
+    //               Invite a NativeBase creator to speak at your next event, we
+    //               promise to keep things interesting!
+    //             </p>
+    //           </div>
+    //           <div className="col-span-2 lg:justify-end flex items-center">
+    //             <a
+    //               className="typeform-share button btn bg-blue-400 border-none rounded-md px-8 text-xl py-3 text-white font-semibold"
+    //               href="https://form.typeform.com/to/hjPoXR42?typeform-medium=embed-snippet"
+    //               data-mode="drawer_right"
+    //             >
+    //               Send Invite
+    //             </a>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </section>
   );
 }

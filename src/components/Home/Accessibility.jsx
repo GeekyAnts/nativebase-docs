@@ -124,8 +124,7 @@ const SVGs = {
   'Keyboard Interactions': (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="60"
-      height="60"
+      class="h-20 w-20 flex-no-shrink"
       viewBox="0 0 80 80"
     >
       <g id="Group_484" data-name="Group 484" transform="translate(-328 -355)">
@@ -231,8 +230,7 @@ const SVGs = {
   'Screen Readers': (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="60"
-      height="60"
+      class="h-20 w-20 flex-no-shrink"
       viewBox="0 0 65 57.12"
     >
       <g
@@ -261,8 +259,7 @@ const SVGs = {
     <svg
       id="brightness"
       xmlns="http://www.w3.org/2000/svg"
-      width="60"
-      height="60"
+      class="h-20 w-20 flex-no-shrink"
       viewBox="0 0 79.999 79.999"
     >
       <g id="Group_458" data-name="Group 458" transform="translate(37.656)">
