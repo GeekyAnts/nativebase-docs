@@ -250,16 +250,16 @@ export function Responsive() {
                 Instead of manually adding responsiveness, NativeBase V3 allows
                 you to provide object and array values to add responsive styles.
               </p>
-              {/* <p className="mt-7">
+              <p className="mt-7">
                 <a
                   className="text-green-500 no-underline border-0 border-b-2 border-solid hover:border-green-500 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://react-native-aria.geekyants.com/"
+                  href="https://alpha.nativebase.io/docs/responsive-style"
                 >
                   Learn More
                 </a>
-              </p> */}
+              </p>
             </div>
           </div>
           <div

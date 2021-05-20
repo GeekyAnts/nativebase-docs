@@ -190,6 +190,16 @@ export function Sponsors() {
                 We are very grateful to those who believe in what we do. Here's
                 to all our wonderful sponsors!
               </p>
+              <p className="mt-7">
+                <a
+                  className="no-underline border-0 text-yellow-600 border-b-2 border-solid hover:border-yellow-600 font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://react-native-aria.geekyants.com/"
+                >
+                  Become a sponsor
+                </a>
+              </p>
               <ul className="flex max-w-4xl mt-20 flex-wrap justify-center pl-0 gap-x-4 gap-y-10">
                 {creators.map((contributor) => (
                   <a

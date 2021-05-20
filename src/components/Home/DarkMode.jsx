@@ -126,16 +126,16 @@ export function DarkMode() {
                 Building apps with a dark mode setting just got a whole lot
                 easier. NativeBase is now optimised for light and dark modes.
               </p>
-              {/* <p className="mt-7">
+              <p className="mt-7">
                 <a
                   className="text-yellow-600 no-underline border-0 border-b-2 border-solid hover:border-yellow-600 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href=""
+                  href="https://alpha.nativebase.io/docs/darkMode"
                 >
                   Learn More
                 </a>
-              </p> */}
+              </p>
             </span>
           </div>
           <div
@@ -148,16 +148,16 @@ export function DarkMode() {
                 <div className="h-full w-full bg-white flex items-end justify-center rounded-lg bg-white px-1 md:px-4 py-4 lg:absolute lg:-right-5 md:top-0">
                   <footer className="flex justify-center space-x-5">
                     <div>{SVGs['Light']}</div>
-                    <div class="relative w-10  select-none transition duration-200 ease-in">
+                    <div className="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
                       <input
                         type="checkbox"
                         name="toggle"
                         id="toggle"
-                        class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                        className="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer"
                       />
                       <label
-                        for="toggle"
-                        class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+                        htmlFor="toggle"
+                        className="toggle-label block overflow-hidden h-6 w-12 rounded-full bg-gray-300 cursor-pointer"
                       ></label>
                     </div>
                     <div>{SVGs['Dark']}</div>
