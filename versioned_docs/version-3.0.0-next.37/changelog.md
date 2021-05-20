@@ -5,18 +5,22 @@ title: Changelog
 
 ## Features
 
-- Added box composition examples.
-- Added accessibility support in overlays.
+- Added platform props i.e. \_web, \_ios, \_android.
+- Added interaction props. i.e. \_hover, \_pressed.
+- Support for multiple toast, modal.
+- Added Tooltip component
+- Slider accessibility improvements.
+- Actionsheet swipe gesture
+- Hover, pressed styles on button and pressable elements.
+- Support for responsive value in variant and size
+- Added icons
+- Redesign many components
 
 ## Fixes
 
-- Fixes for components' ui.
-- Fixes for responsive example.
-- Fixes for accordion ui update.
-- Fixes for added controlled value support .
-- Fixes for inputgroup layout props.
-- Fixes for input ui update.
-- Fixes for v3 modal accessibility.
-- Fixes for checkboxgroup example.
+- Fixes for Stack components
+- Fixes for android custom fonts
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.0-next.36).
+`Note`: Few components have been removed from this release and will be added once they are stable.
+
+For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.0-next.37).
