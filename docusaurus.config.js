@@ -45,6 +45,13 @@ module.exports = {
           type: 'docsVersionDropdown',
           position: 'left',
         },
+        {
+          to:
+            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          label: 'Looking for v2.0',
+          position: 'left',
+          'aria-label': 'Looking for v2.0',
+        },
         // {
         //   to: 'https://market.nativebase.io/',
         //   label: 'Market',
@@ -81,6 +88,13 @@ module.exports = {
           label: 'Docs',
           position: 'right',
           'aria-label': 'Docs',
+        },
+        {
+          to:
+            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          label: 'HireUs',
+          position: 'right',
+          'aria-label': 'Hire GeekyAnts',
         },
       ],
     },
@@ -149,7 +163,7 @@ module.exports = {
             {
               label: 'Built with ❤️ at GeekyAnts.',
               href:
-                'https://geekyants.com/?utm_source=nativebase&utm_medium=footer&utm_campaign=nativebase',
+                'https://geekyants.com/?utm_source=RnD&utm_medium=Landing_Page&utm_campaign=NativeBase_3',
             },
           ],
         },

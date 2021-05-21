@@ -169,23 +169,23 @@ export function Utility() {
                   className=""
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://styled-system.com/"
+                  href="https://styled-system.com"
                 >
                   Styled System
                 </a>{' '}
                 so you can rapidly build custom UI components with
                 constraint-based utility style props.
               </p>
-              {/* <p className="mt-7">
+              <p className="mt-7">
                 <a
                   className="text-blue-800 no-underline border-0 border-b-2 border-solid hover:border-blue-800 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://react-native-aria.geekyants.com/"
+                  href="https://styled-system.com"
                 >
                   Learn More
                 </a>
-              </p> */}
+              </p>
             </span>
           </div>
 
