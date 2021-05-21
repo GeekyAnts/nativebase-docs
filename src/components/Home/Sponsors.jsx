@@ -117,8 +117,23 @@ const creators = [
 export function Sponsors() {
   const [sponsors, setSponsors] = React.useState([]);
   React.useEffect(() => {
-    fetch('https://opencollective.com/webpack/members/organizations.json', {
-      mode: 'no-cors',
+    fetch('https://api.opencollective.com/graphql/v2', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Api-Key': '79fa00251fe408696a780d613d07dea1048f42b2',
+      },
+      body: JSON.stringify({
+        query: `
+        query account($slug: String) {
+          account(slug: $slug) {
+            id
+            name
+            slug
+          }
+        }
+         `,
+      }),
     })
       .then((response) => {
         console.log('res', response);
