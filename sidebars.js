@@ -26,6 +26,7 @@ module.exports = {
       items: [
         'default-theme',
         'customizingTheme',
+        'customizingFonts',
         'darkMode',
         'customizingComponents',
         'breakpoint',
