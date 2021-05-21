@@ -54,6 +54,14 @@ function Home() {
         <meta name="twitter:site" content="@NativeBaseIO" />
       </Head>
       <main id="tailwind">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WCCPLQC"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe>
+        </noscript>
         <div className="overflow-hidden lg:px-8 relative">
           <section
             className={
@@ -77,9 +85,10 @@ function Home() {
             {/* <News /> */}
             <Stats />
             <Community />
+            <Reviews />
             {/* <Cta /> */}
             <WatchTalk />
-            <Reviews />
+
             <Creators />
             <Sponsors />
             <More />

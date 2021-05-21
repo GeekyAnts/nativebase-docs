@@ -2,6 +2,36 @@ import React from 'react';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 const SVGs = {
+  DiscordIcon: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      className="h-10 w-10 flex-no-shrink"
+      viewBox="0 0 48 35"
+    >
+      <defs>
+        <clipPath id="clipPath">
+          <rect
+            id="Rectangle_280"
+            data-name="Rectangle 280"
+            width="48"
+            height="35"
+            transform="translate(0 0)"
+            fill="white"
+          />
+        </clipPath>
+      </defs>
+      <g id="Discord-Logo-Color" clipPath="url(#clipPath)">
+        <path
+          id="Path_415"
+          data-name="Path 415"
+          d="M40.288,3.238A41.1,41.1,0,0,0,30.6.414a.15.15,0,0,0-.156.069,25.07,25.07,0,0,0-1.206,2.329,38.526,38.526,0,0,0-10.88,0A23.016,23.016,0,0,0,17.134.483a.156.156,0,0,0-.156-.069A40.986,40.986,0,0,0,7.291,3.238a.137.137,0,0,0-.064.051C1.058,11.952-.632,20.4.2,28.747a.151.151,0,0,0,.062.1A40.5,40.5,0,0,0,12.142,34.5a.16.16,0,0,0,.167-.051A26.283,26.283,0,0,0,14.74,30.73a.139.139,0,0,0-.083-.2,26.759,26.759,0,0,1-3.712-1.663.139.139,0,0,1-.015-.238c.249-.176.5-.359.737-.543a.155.155,0,0,1,.154-.02,29.781,29.781,0,0,0,23.918,0,.154.154,0,0,1,.156.018c.238.185.488.369.739.545a.139.139,0,0,1-.013.238,25.112,25.112,0,0,1-3.714,1.661.14.14,0,0,0-.081.2,29.51,29.51,0,0,0,2.429,3.715.156.156,0,0,0,.167.053,40.37,40.37,0,0,0,11.9-5.646.142.142,0,0,0,.062-.1A35.821,35.821,0,0,0,40.35,3.291.119.119,0,0,0,40.288,3.238ZM15.9,23.666a4.411,4.411,0,0,1-4.277-4.508A4.387,4.387,0,0,1,15.9,14.65a4.362,4.362,0,0,1,4.277,4.508A4.387,4.387,0,0,1,15.9,23.666Zm15.814,0a4.411,4.411,0,0,1-4.277-4.508,4.283,4.283,0,1,1,8.554,0A4.375,4.375,0,0,1,31.717,23.666Z"
+          transform="translate(0.167 -0.352)"
+          fill="white"
+        />
+      </g>
+    </svg>
+  ),
   Logo: (
     <p className="w-10 h-10 items-center rounded-md flex justify-center bg-blue-400">
       <svg
@@ -38,8 +68,7 @@ const SVGs = {
   StackOverflow: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="30"
-      height="30"
+      className="h-10 w-10 flex-no-shrink"
       viewBox="0 0 47.158 55.721"
     >
       <g
@@ -52,14 +81,14 @@ const SVGs = {
           data-name="Icon simple-stackoverflow"
           d="M42.564,50.764V35.9h4.954V55.721H2.766V35.9H7.711V50.764ZM12.673,45.809H37.605V40.848H12.673Zm.6-11.265,24.331,5.082,1.047-4.806L14.326,29.743l-1.052,4.8Zm3.155-11.738L38.961,33.323l2.1-4.527L18.523,18.279l-2.094,4.495v.033Zm6.3-11.109L41.81,27.612l3.155-3.761L25.89,7.94l-3.134,3.754-.023,0ZM35.054,0,31,3,45.871,22.98l4.054-3L35.049,0Z"
           transform="translate(4158.699 2834)"
-          fill="#bbb"
+          fill="white"
         />
         <path
           id="Icon_simple-stackoverflow-2"
           data-name="Icon simple-stackoverflow"
           d="M9.167,45.809H34.1V40.848H9.167Zm.6-11.265L34.1,39.627l1.047-4.806L10.82,29.743l-1.052,4.8Zm3.155-11.738L35.455,33.323l2.1-4.527L15.017,18.279l-2.094,4.495v.033Zm6.3-11.109L38.3,27.612l3.155-3.761L22.384,7.94,19.25,11.694l-.023,0ZM31.548,0,27.494,3,42.364,22.98l4.054-3L31.543,0h0Z"
           transform="translate(4162.205 2834)"
-          fill="#f58025"
+          fill="white"
         />
       </g>
     </svg>
@@ -69,8 +98,7 @@ const SVGs = {
       id="Group_638"
       data-name="Group 638"
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      className="h-10 w-10 flex-no-shrink"
       viewBox="0 0 67.727 67.727"
     >
       <path
@@ -83,15 +111,14 @@ const SVGs = {
         id="github"
         d="M33.282.5C14.894.5,0,15.144,0,33.2a32.759,32.759,0,0,0,22.756,31.03c1.664.308,2.274-.7,2.274-1.573,0-.777-.028-2.834-.042-5.561-9.258,1.972-11.21-4.388-11.21-4.388-1.514-3.775-3.7-4.784-3.7-4.784-3.015-2.027.233-1.986.233-1.986,3.342.227,5.1,3.37,5.1,3.37,2.968,5,7.791,3.556,9.693,2.721a6.925,6.925,0,0,1,2.108-4.374c-7.391-.818-15.16-3.63-15.16-16.161a12.5,12.5,0,0,1,3.425-8.775,11.443,11.443,0,0,1,.291-8.656s2.787-.876,9.152,3.353a31.91,31.91,0,0,1,16.641,0c6.324-4.23,9.111-3.353,9.111-3.353A11.759,11.759,0,0,1,51,22.724,12.546,12.546,0,0,1,54.413,31.5c0,12.564-7.78,15.329-15.185,16.133,1.165.982,2.246,2.987,2.246,6.052,0,4.377-.042,7.893-.042,8.956,0,.857.582,1.88,2.288,1.553A32.66,32.66,0,0,0,66.563,33.2C66.563,15.144,51.661.5,33.282.5Z"
         transform="translate(0.582 1.397)"
-        fill="#15151f"
+        fill="white"
       />
     </svg>
   ),
   Facebook: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="19.281"
-      height="36"
+      className="h-10 w-10 flex-no-shrink"
       viewBox="0 0 19.281 36"
     >
       <path
@@ -99,24 +126,33 @@ const SVGs = {
         data-name="Icon awesome-facebook-f"
         d="M19.627,20.25l1-6.515H14.375V9.507c0-1.782.873-3.52,3.673-3.52h2.842V.44A34.658,34.658,0,0,0,15.846,0C10.7,0,7.332,3.12,7.332,8.769v4.965H1.609V20.25H7.332V36h7.043V20.25Z"
         transform="translate(-1.609)"
-        fill="#4267b2"
+        fill="white"
       />
     </svg>
   ),
   Twitter: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="45.584"
-      height="37.023"
-      viewBox="0 0 45.584 37.023"
+      className="h-10 w-10 flex-no-shrink"
+      viewBox="0 0 50 50"
     >
-      <path
-        id="Icon_awesome-twitter"
-        data-name="Icon awesome-twitter"
-        d="M40.9,12.607c.029.4.029.81.029,1.215,0,4.347-3.559,13.283-3.559,13.283S25.479,40.4,14.346,40.4A26.4,26.4,0,0,1,0,36.209a19.327,19.327,0,0,0,2.256.116,18.71,18.71,0,0,0,11.6-3.991,9.359,9.359,0,0,1-8.735-6.479A11.781,11.781,0,0,0,6.884,26a9.881,9.881,0,0,0,2.459-.318,9.344,9.344,0,0,1-7.491-9.169V16.4a9.409,9.409,0,0,0,4.223,1.186,9.356,9.356,0,0,1-2.892-12.5,26.555,26.555,0,0,0,19.263,9.776,10.546,10.546,0,0,1-.231-2.14A9.351,9.351,0,0,1,38.382,6.331a18.393,18.393,0,0,0,5.929-2.256A9.317,9.317,0,0,1,40.2,9.223a18.729,18.729,0,0,0,5.38-1.446,20.083,20.083,0,0,1-4.686,4.83Z"
-        transform="translate(0 -3.381)"
-        fill="#1da1f2"
-      />
+      <g id="Group_777" data-name="Group 777" transform="translate(-527 -447)">
+        <path
+          id="Icon_awesome-twitter"
+          data-name="Icon awesome-twitter"
+          d="M42.786,13.033c.03.424.03.847.03,1.271,0,12.92-9.834,27.808-27.808,27.808A27.619,27.619,0,0,1,0,37.724a20.219,20.219,0,0,0,2.36.121A19.574,19.574,0,0,0,14.494,33.67a9.791,9.791,0,0,1-9.138-6.778,12.325,12.325,0,0,0,1.846.151,10.337,10.337,0,0,0,2.572-.333,9.775,9.775,0,0,1-7.837-9.592V17a9.843,9.843,0,0,0,4.418,1.241A9.788,9.788,0,0,1,3.328,5.166,27.781,27.781,0,0,0,23.481,15.393a11.033,11.033,0,0,1-.242-2.239A9.783,9.783,0,0,1,40.153,6.467a19.242,19.242,0,0,0,6.2-2.36,9.747,9.747,0,0,1-4.3,5.386A19.593,19.593,0,0,0,47.688,7.98a21.009,21.009,0,0,1-4.9,5.053Z"
+          transform="translate(527 448.315)"
+          fill="#fff"
+        />
+        <rect
+          id="Rectangle_276"
+          data-name="Rectangle 276"
+          width="50"
+          height="50"
+          transform="translate(527 447)"
+          fill="none"
+        />
+      </g>
     </svg>
   ),
   Discord: (
@@ -162,6 +198,33 @@ const articles = [
     src: 'https://miro.medium.com/max/3000/1*GLDQpQCYMUs3DPa7-6F5fQ.png',
   },
 ];
+const socialsHandles = [
+  {
+    name: 'Github',
+    svg: SVGs['Github'],
+    color: '#333333',
+  },
+  {
+    name: 'Stackoverflow',
+    svg: SVGs['StackOverflow'],
+    color: '#F48024',
+  },
+  {
+    name: 'Discord',
+    svg: SVGs['DiscordIcon'],
+    color: '#5865F2',
+  },
+  {
+    name: 'Twitter',
+    svg: SVGs['Twitter'],
+    color: '#1DA1F2',
+  },
+  {
+    name: 'Facebook',
+    svg: SVGs['Facebook'],
+    color: '#4267B2',
+  },
+];
 export function Community() {
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
@@ -169,24 +232,40 @@ export function Community() {
   return (
     <section>
       <div className="">
-        <div className="py-12 px-6 md:px-0 md:py-20">
-          <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7 pb-12 md:pb-20">
+        <div className="py-12 px-6 md:px-0 md:pt-20 md:pb-20">
+          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7">
             <div className="mt-2">{SVGs['Logo']}</div>
-            <div>
-              <h2 className={`leading-snug text-4xl ${headingColor}`}>
+            <div className="w-full">
+              <h2 className={`max-w-3xl leading-snug text-4xl ${headingColor}`}>
                 <span>Our</span>{' '}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
                   Community
                 </span>
               </h2>
-              <p className={`text-xl mt-7 leading-normal ${subHeadingColor}`}>
+              <p
+                className={`max-w-3xl text-xl mt-7 leading-normal ${subHeadingColor}`}
+              >
                 We have a lively community built on our shared love for React &
                 React Native. Join us!
               </p>
+              <section className="py-10 w-full grid grid-cols-1 gap-0.5 md:grid-cols-2 lg:grid-cols-3">
+                {socialsHandles.map((handle, idx) => {
+                  return (
+                    <div
+                      key={idx}
+                      className={`px-8 py-8 h-40`}
+                      style={{ backgroundColor: handle.color }}
+                    >
+                      <p>{handle.svg}</p>
+                      <p className="text-white font-semibold">{handle.name}</p>
+                    </div>
+                  );
+                })}
+              </section>
             </div>
           </div>
 
-          <div className="pb-20 flex flex-col  items-center">
+          <div className="pb-20 hidden flex flex-col  items-center">
             <div className="max-w-3xl w-full  mx-auto">
               <div className="flex justify-center">
                 <div className="h-16 w-16 md:w-32 md:h-32 lg:h-40 lg:w-40 bg-gray-200 rounded-full"></div>
@@ -228,7 +307,7 @@ export function Community() {
           </div>
 
           {/* Articles list */}
-          <div className="max-w-sm mx-auto md:max-w-none px-0 lg:px-14">
+          <div className="max-w-sm hidden mx-auto md:max-w-none px-0 lg:px-14">
             <div className="grid gap-2 md:gap-12 md:grid-cols-3 md:col-gap-4 md:row-gap-6 items-start">
               {articles.map(({ name, link, src }, idx) => {
                 return (
@@ -264,7 +343,7 @@ export function Community() {
               })}
             </div>
           </div>
-          <div className="mt-20 flex flex-wrap justify-center gap-x-10 gap-y-5">
+          <div className="mt-20 hidden flex flex-wrap justify-center gap-x-10 gap-y-5">
             <a
               href="https://stackoverflow.com/questions/tagged/native-base"
               className="h-16 w-16 flex items-center justify-center rounded-full shadow-xl bg-white"

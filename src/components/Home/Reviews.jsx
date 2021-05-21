@@ -2,6 +2,47 @@ import React from 'react';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 const SVGs = {
+  Email: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="167.187"
+      height="135.84"
+      viewBox="0 0 167.187 135.84"
+    >
+      <path
+        id="Icon_metro-envelop"
+        data-name="Icon metro-envelop"
+        d="M154.084,5.784H18.244A15.72,15.72,0,0,0,2.571,21.458V125.95a15.72,15.72,0,0,0,15.674,15.674h135.84a15.72,15.72,0,0,0,15.674-15.674V21.458A15.72,15.72,0,0,0,154.084,5.784ZM67.672,74.744l-44.2,34.432v-81.9Zm-36.3-48.062H140.96l-54.8,41.144-54.8-41.144ZM69.395,76.593,86.164,94.6l16.769-18.009,34.377,44.132H35.018L69.395,76.593Zm35.261-1.849,44.2-47.47v81.9Z"
+        transform="translate(-2.571 -5.784)"
+        fill="#fff"
+      />
+    </svg>
+  ),
+  Twitter: (
+    <svg
+      className="h-5 w-5 flex-no-shrink"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 50 50"
+    >
+      <g id="Group_777" data-name="Group 777" transform="translate(-527 -447)">
+        <path
+          id="Icon_awesome-twitter"
+          data-name="Icon awesome-twitter"
+          d="M42.786,13.033c.03.424.03.847.03,1.271,0,12.92-9.834,27.808-27.808,27.808A27.619,27.619,0,0,1,0,37.724a20.219,20.219,0,0,0,2.36.121A19.574,19.574,0,0,0,14.494,33.67a9.791,9.791,0,0,1-9.138-6.778,12.325,12.325,0,0,0,1.846.151,10.337,10.337,0,0,0,2.572-.333,9.775,9.775,0,0,1-7.837-9.592V17a9.843,9.843,0,0,0,4.418,1.241A9.788,9.788,0,0,1,3.328,5.166,27.781,27.781,0,0,0,23.481,15.393a11.033,11.033,0,0,1-.242-2.239A9.783,9.783,0,0,1,40.153,6.467a19.242,19.242,0,0,0,6.2-2.36,9.747,9.747,0,0,1-4.3,5.386A19.593,19.593,0,0,0,47.688,7.98a21.009,21.009,0,0,1-4.9,5.053Z"
+          transform="translate(527 448.315)"
+          fill="#1da1f2"
+        />
+        <rect
+          id="Rectangle_276"
+          data-name="Rectangle 276"
+          width="50"
+          height="50"
+          transform="translate(527 447)"
+          fill="none"
+        />
+      </g>
+    </svg>
+  ),
   microphone: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,37 +70,168 @@ const SVGs = {
   ),
 };
 
+const reviews = [
+  {
+    name: 'Lisa Miller',
+    handle: '@LisaMillerCool',
+    content: `If you are planning to develop an app using react
+    native, it's a no-brainer to go with Expo. It's like a
+    package of goodies. I don't even understand why it's so
+    awesome. Good job @expo team. You've made our lives
+    simpler.`,
+    src:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Lisa Miller',
+    handle: '@LisaMillerCool',
+    content: `As a career-long web developer, getting push notifications
+    working in @reactnative via @expo feels like black magic.
+    Loving it.`,
+    src:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Lisa Miller',
+    handle: '@LisaMillerCool',
+    content: `The speed at which React Native Web via @expo has evolved in
+    the past 6 months is absolutely wild. My head is spinning.`,
+    src:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Lisa Miller',
+    handle: '@LisaMillerCool',
+    content: `Expo recently made it possible to target web, so you can
+    write a single UI for native and web. I’m continually
+    impressed. Otherwise next.js by @zeithq is incredible. Both
+    of these projects have amazing docs, DX, and fast release
+    cycles.`,
+    src:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Lisa Miller',
+    handle: '@LisaMillerCool',
+    content: `It’s difficult to make a tool that is powerful, easy to use,
+    and stays out of the way. @expo has figured it out and it’s
+    one of the most pleasurable dev experiences I’ve had in my
+    career.`,
+    src:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Lisa Miller',
+    handle: '@LisaMillerCool',
+    content: `I love how @expo allows me to build my standalone apps remotely on their much more powerful servers! Saves time and allows me to continue to use my computer while I wait for the build!
+    `,
+    src:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+];
+
 export function Reviews() {
   const { isDarkTheme } = useThemeContext();
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
+  const reviewColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-100';
+  const borderColor = !isDarkTheme ? 'border-gray-200' : 'border-gray-700';
 
   return (
     <section className={'relative '}>
-      {/* visible on md and above */}
       <div className="px-6 md:px-0">
-        <div className="py-12 md:py-20">
-          <div className="max-w-4xl mx-auto text-center pb-12 md:pb-20">
+        <div>
+          <div className="text-center pb-12 md:pb-20">
             <h2 className={`h2 text-4xl`}>What are people saying?</h2>
             <p className={`text-xl ${subHeadingColor} max-w-3xl mx-auto`}>
               Here's what other React devs have to say about NativeBase.
             </p>
-            <div className="rounded-md bg-purple-400 mt-10 py-12 grid grid-cols-1 lg:grid-cols-4 gap-4">
-              <div className="flex items-center justify-center">
-                <img
-                  className="inline-block h-28 w-28 rounded-full ring-2 ring-white"
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  alt=""
-                />
+            <div className="mt-10">
+              <div className="md:masonry-2-col space-y-5 lg:masonry-3-col box-border mx-auto before:box-inherit after:box-inherit">
+                {reviews.map((review, idx) => {
+                  return (
+                    <div
+                      key={idx}
+                      className={`break-inside bg-transparent ${borderColor} px-4 py-4 border border-solid rounded-lg rounded-lg`}
+                    >
+                      <p className="flex">
+                        <img
+                          className="mt-1 h-8 w-8 rounded-full"
+                          src={review.src}
+                          alt=""
+                        />
+                        <span className="ml-4 flex flex-col">
+                          <span className="font-semibold text-left">
+                            {review.name}
+                          </span>
+                          <span className="text-sm">{review.handle}</span>
+                        </span>
+                        <div className="ml-auto">{SVGs['Twitter']}</div>
+                      </p>
+                      <p className={`text-left text-base ${reviewColor}`}>
+                        {review.content}
+                      </p>
+                    </div>
+                  );
+                })}
               </div>
-              <div className="text-white lg:col-span-3 px-10 lg:pl-3 lg:pr-10">
-                <p className="text-center lg:text-left">
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s, when an unknown printer took a galley
+            </div>
+            <div className="bg-red-500 relative overflow-hidden bg-blue-500 flex items-center mt-20 py-16">
+              <div className="max-w-3xl mx-auto flex flex-col">
+                <h2 className="text-white text-3xl text-left font-bold">
+                  Join our Newsletter
+                </h2>
+                <p className="text-white text-left">
+                  Lorem ipsum is a placeholder text commonly used to demonstrate
                 </p>
-                <p className="text-center lg:text-left mt-3 mb-0">
-                  Lorem Ipsum
-                </p>
-                <p className="text-center lg:text-left mb-0">Lorem Ipsum</p>
+                <div className="text-left mt-5 flex h-10">
+                  <div>
+                    <input
+                      type="text"
+                      className="w-96 outline-none text-gray-800 placeholder-gray-400 px-3  border-0 h-full"
+                      placeholder="Email Address"
+                    ></input>
+                  </div>
+                  <button className="border-0 bg-green-600  w-10 h-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18.207"
+                      height="19.035"
+                      viewBox="0 0 18.207 19.035"
+                    >
+                      <g
+                        id="Icon_feather-arrow-right"
+                        data-name="Icon feather-arrow-right"
+                        transform="translate(-6.5 -6.086)"
+                      >
+                        <path
+                          id="Path_421"
+                          data-name="Path 421"
+                          d="M7.5,18H23.707"
+                          transform="translate(0 -2.396)"
+                          fill="none"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                        <path
+                          id="Path_422"
+                          data-name="Path 422"
+                          d="M18,7.5l8.1,8.1-8.1,8.1"
+                          transform="translate(-2.396)"
+                          fill="none"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="ml-20 -bottom-12 right-32 absolute">
+                {SVGs['Email']}
               </div>
             </div>
           </div>

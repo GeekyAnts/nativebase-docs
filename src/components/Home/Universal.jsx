@@ -21,7 +21,7 @@ const SVGs = {
   iOS: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="h-8 w-8 md:h-20 md:w-20 flex-no-shrink fill-current"
+      className="h-8 w-8 md:h-20 md:w-20 flex-no-shrink fill-current"
       height="80"
       viewBox="0 0 80 80"
     >
@@ -47,7 +47,7 @@ const SVGs = {
   Android: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="h-8 w-8 md:h-20 md:w-20 flex-no-shrink fill-current"
+      className="h-8 w-8 md:h-20 md:w-20 flex-no-shrink fill-current"
       viewBox="0 0 80 80"
     >
       <g id="Group_606" data-name="Group 606" transform="translate(-365 -404)">
@@ -72,7 +72,7 @@ const SVGs = {
   Web: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="h-8 w-8 md:h-20 md:w-20 flex-no-shrink fill-current"
+      className="h-8 w-8 md:h-20 md:w-20 flex-no-shrink fill-current"
       viewBox="0 0 80 80"
     >
       <path
@@ -111,6 +111,8 @@ export function Universal() {
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
+  const ringColor = !isDarkTheme ? 'ring-white' : 'ring-secondary-800';
+
   return (
     <section className="relative">
       <div
@@ -142,23 +144,23 @@ export function Universal() {
                 components.
               </p>
 
-              {/* <p className="mt-7">
+              <p className="mt-7">
                 <a
                   className="text-yellow-400 no-underline border-0 border-b-2 border-solid hover:border-yellow-400 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href=""
+                  href="https://necolas.github.io/react-native-web/docs/"
                 >
                   Learn More
                 </a>
-              </p> */}
+              </p>
               <div className="rounded-md mt-10 py-6 flex text-white">
                 {themes.map((theme, idx) => {
                   return (
                     <div
                       className={`flex flex-col ${
                         idx === 1 ? 'z-50' : ''
-                      } ring-10 ring-white -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
+                      } ring-10 ${ringColor} -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
                       key={idx}
                     >
                       <div className="">{theme['svg']}</div>

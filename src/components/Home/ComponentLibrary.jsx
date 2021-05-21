@@ -125,16 +125,16 @@ export function ComponentLibrary() {
                 seamlessly. It includes action sheets, menus, spinners,
                 popovers, breadcrumbs and more.
               </p>
-              {/* <p className="mt-7">
+              <p className="mt-7">
                 <a
                   className="text-green-700 no-underline border-0 border-b-2 border-solid hover:border-green-700 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href=""
+                  href="https://alpha.nativebase.io/docs/button"
                 >
                   Learn More
                 </a>
-              </p> */}
+              </p>
             </span>
           </div>
           <div
