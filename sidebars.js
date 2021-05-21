@@ -11,7 +11,7 @@ module.exports = {
       label: 'Features',
       collapsed: false,
       items: [
-        'style-props',
+        'utility-props',
         'color-mode',
         'nativebase-factory',
         'responsive-style',

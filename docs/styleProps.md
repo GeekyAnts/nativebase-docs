@@ -1,13 +1,11 @@
 ---
-id: style-props
-title: Style Props
+id: utility-props
+title: Utility Props
 ---
 
 Style props are a way to alter the style of a component by simply passing props to it. It helps to save time by providing helpful shorthand ways to style components.
 
-NativeBase implements [styled-system](https://styled-system.com/table) to achieve this.
-
-## Reference
+## Style Props
 
 The following table shows a list of every style prop and the properties within each group.
 
@@ -47,7 +45,7 @@ export default function () {
 
 <br />
 
-| Prop              | CSS Property                   | Theme Key |
+| Prop              | CSS Equivalent                 | Theme Key |
 | ----------------- | ------------------------------ | --------- |
 | m, margin         | margin                         | space     |
 | mt, marginTop     | margin-top                     | space     |
@@ -105,12 +103,12 @@ export default function () {
 
 <br />
 
-| Prop           | CSS Property     | Theme Key |
+| Prop           | CSS Eqquivalent  | Theme Key |
 | -------------- | ---------------- | --------- |
 | color          | color            | colors    |
 | bg, background | background       | colors    |
 | bgColor        | background-color | colors    |
-| opacity        | opacity          | none      |
+| opacity        | opacity          | -         |
 
 ### Typography
 
@@ -151,17 +149,17 @@ export default function () {
 
 <br />
 
-| Prop           | CSS Property    | Theme Key      |
+| Prop           | CSS Eqquivalent | Theme Key      |
 | -------------- | --------------- | -------------- |
 | fontFamily     | font-family     | fonts          |
 | fontSize       | font-size       | fontSizes      |
 | fontWeight     | font-weight     | fontWeights    |
 | lineHeight     | line-height     | lineHeights    |
 | letterSpacing  | letter-spacing  | letterSpacings |
-| textAlign      | text-align      | none           |
-| fontStyle      | font-style      | none           |
-| textTransform  | text-transform  | none           |
-| textDecoration | text-decoration | none           |
+| textAlign      | text-align      | -              |
+| fontStyle      | font-style      | -              |
+| textTransform  | text-transform  | -              |
+| textDecoration | text-decoration | -              |
 
 ### Layout, width and height
 
@@ -205,20 +203,20 @@ export default function () {
 
 <br />
 
-| Prop            | CSS Property   | Theme Key |
-| --------------- | -------------- | --------- |
-| w, width        | width          | sizes     |
-| h, height       | height         | sizes     |
-| minW, minWidth  | min-width      | sizes     |
-| maxW, maxWidth  | max-width      | sizes     |
-| minH, minHeight | min-height     | sizes     |
-| maxH, maxHeight | max-height     | sizes     |
-| d, display      | display        | none      |
-| boxSize         | width, height  | sizes     |
-| verticalAlign   | vertical-align | none      |
-| overflow        | overflow       | none      |
-| overflowX       | overflowX      | none      |
-| overflowY       | overflowY      | none      |
+| Prop            | CSS Eqquivalent | Theme Key |
+| --------------- | --------------- | --------- |
+| w, width        | width           | sizes     |
+| h, height       | height          | sizes     |
+| minW, minWidth  | min-width       | sizes     |
+| maxW, maxWidth  | max-width       | sizes     |
+| minH, minHeight | min-height      | sizes     |
+| maxH, maxHeight | max-height      | sizes     |
+| d, display      | display         | -         |
+| boxSize         | width, height   | sizes     |
+| verticalAlign   | vertical-align  | -         |
+| overflow        | overflow        | -         |
+| overflowX       | overflowX       | -         |
+| overflowY       | overflowY       | -         |
 
 ### Flexbox
 
@@ -261,21 +259,21 @@ export default function () {
 
 <br />
 
-| Prop                                | CSS Property    | Theme Key |
+| Prop                                | CSS Eqquivalent | Theme Key |
 | ----------------------------------- | --------------- | --------- |
-| alignItems, \*align                 | align-items     | none      |
-| alignContent                        | align-content   | none      |
-| justifyItems                        | justify-items   | none      |
-| justifyContent, \*justify           | justify-content | none      |
-| flexWrap, \*wrap                    | flex-wrap       | none      |
-| flexDirection, flexDir, \*direction | flex-direction  | none      |
-| flex                                | flex            | none      |
-| flexGrow                            | flex-grow       | none      |
-| flexShrink                          | flex-shrink     | none      |
-| flexBasis                           | flex-basis      | none      |
-| justifySelf                         | justify-self    | none      |
-| alignSelf                           | align-self      | none      |
-| order                               | order           | none      |
+| alignItems, \*align                 | align-items     | -         |
+| alignContent                        | align-content   | -         |
+| justifyItems                        | justify-items   | -         |
+| justifyContent, \*justify           | justify-content | -         |
+| flexWrap, \*wrap                    | flex-wrap       | -         |
+| flexDirection, flexDir, \*direction | flex-direction  | -         |
+| flex                                | flex            | -         |
+| flexGrow                            | flex-grow       | -         |
+| flexShrink                          | flex-shrink     | -         |
+| flexBasis                           | flex-basis      | -         |
+| justifySelf                         | justify-self    | -         |
+| alignSelf                           | align-self      | -         |
+| order                               | order           | -         |
 
 ### Borders
 
@@ -310,7 +308,7 @@ export default function () {
 
 <br />
 
-| Prop              | CSS Property        | Theme Field  |
+| Prop              | CSS Eququivalent    | Theme Field  |
 | ----------------- | ------------------- | ------------ |
 | border            | border              | borders      |
 | borderWidth       | border-width        | borderWidths |
@@ -371,7 +369,7 @@ export default function () {
 
 <br />
 
-| Prop                    | CSS Property                                           | Theme Field |
+| Prop                    | CSS Eququivalent                                       | Theme Field |
 | ----------------------- | ------------------------------------------------------ | ----------- |
 | borderRadius            | border-radius                                          | radii       |
 | borderTopLeftRadius     | border-top-left-radius                                 | radii       |
@@ -416,14 +414,14 @@ export default function () {
 
 <br />
 
-| Prop         | CSS Property | Theme Field |
-| ------------ | ------------ | ----------- |
-| pos,position | position     | none        |
-| zIndex       | z-index      | zIndices    |
-| top          | top          | space       |
-| right        | right        | space       |
-| bottom       | bottom       | space       |
-| left         | left         | space       |
+| Prop         | CSS Equivalent | Theme Field |
+| ------------ | -------------- | ----------- |
+| pos,position | position       | -           |
+| zIndex       | z-index        | zIndices    |
+| top          | top            | space       |
+| right        | right          | space       |
+| bottom       | bottom         | space       |
+| left         | left           | space       |
 
 ### Shadow
 
@@ -461,6 +459,39 @@ export default function () {
 
 <br />
 
-| Prop   | CSS Property | Theme Field |
-| ------ | ------------ | ----------- |
-| shadow | box-shadow   | shadows     |
+| Prop   | CSS Equivalent | Theme Field |
+| ------ | -------------- | ----------- |
+| shadow | box-shadow     | shadows     |
+
+## Underscore Props
+
+### Internal Props
+
+Provides a way to pass props to child components inside Composite componets.
+
+| Prop    | Type                       | Description                                              |
+| ------- | -------------------------- | -------------------------------------------------------- |
+| \_stack | [IStackProps](stack#props) | Passed props will be provided to [`Stack`](stack) child. |
+| \_text  | [ITextProps](text#props)   | Passed props will be provided to [`Text`](text) child.   |
+
+### Interaction Props
+
+Provides a way to pass props on certain interaction.
+
+| Prop       | Type                    | Description                                     |
+| ---------- | ----------------------- | ----------------------------------------------- |
+| \_disabled | _Same as the component_ | Passed props will be applied on disabled state. |
+| \_focus    | _Same as the component_ | Passed props will be applied on focused state.  |
+| \_hover    | _Same as the component_ | Passed props will be applied on hovered state.  |
+| \_invalid  | _Same as the component_ | Passed props will be applied on invalid state.  |
+| \_pressed  | _Same as the component_ | Passed props will be applied on pressed state.  |
+
+### Platform Props
+
+Provides a way to pass props bassed on Platform (_android, ios or web_).
+
+| Prop      | Type                    | Description                              |
+| --------- | ----------------------- | ---------------------------------------- |
+| \_android | _Same as the component_ | Passed props will be applied on android. |
+| \_ios     | _Same as the component_ | Passed props will be applied on ios.     |
+| \_web     | _Same as the component_ | Passed props will be applied on web.     |
