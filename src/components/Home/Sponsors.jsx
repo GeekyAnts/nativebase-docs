@@ -1,7 +1,7 @@
 import React from 'react';
 import useThemeContext from '@theme/hooks/useThemeContext';
-// TODO: When dynamically fetching the creators.
-// const [creators, setCreators] = React.useState(0);
+
+// const [, setCreators] = React.useState(0);
 // React.useEffect(() => {
 //   fetch('https://api.github.com/repos/geekyants/nativebase/contributors')
 //     .then((response) => response.json())
@@ -115,60 +115,22 @@ const creators = [
 ];
 
 export function Sponsors() {
-  // const [creators, setCreators] = React.useState(0);
-  // React.useEffect(() => {
-  //   fetch('https://api.github.com/repos/geekyants/nativebase/contributors')
-  //     .then((response) => response.json())
-  //     .then((data) => setStarCount(data));
-  // }, []);
+  const [sponsors, setSponsors] = React.useState([]);
+  React.useEffect(() => {
+    fetch('https://opencollective.com/webpack/members/organizations.json', {
+      mode: 'no-cors',
+    })
+      .then((response) => {
+        console.log('res', response);
+        response.json();
+      })
+      .then((data) => setSponsors(data));
+  }, []);
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
+  console.log(sponsors);
   return (
-    // <section>
-    //   <div className="px-6 md:px-0">
-    //     <div className="py-12 md:py-20">
-    //       <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7 pb-12 md:pb-20">
-    //         <div className="mt-2">
-    //           <p className="w-10 h-10 items-center rounded-md flex justify-center bg-yellow-600">
-    //             {Logo}
-    //           </p>
-    //         </div>
-    //         <div>
-    //           <h2 className={`leading-snug text-4xl ${headingColor}`}>
-    //             <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
-    //               Our Sponsors
-    //             </span>
-    //           </h2>
-    //           <p className={`text-xl mt-7 leading-normal  ${subHeadingColor}`}>
-    //             We are very grateful to those who believe in what we do. Here's
-    //             to all our wonderful sponsors!
-    //           </p>
-    //         </div>
-    //       </div>
-    //       {/* <a href="https://opencollective.com/NativeBase">
-    //         <img src="https://opencollective.com/NativeBase/individuals.svg?width=890" />
-    //       </a> */}
-    //       <ul className="flex flex-wrap justify-center max-w-4xl pl-0 mx-auto">
-    //         {creators.map((contributor) => (
-    //           <a
-    //             key={contributor.id}
-    //             href={contributor.html_url}
-    //             target="_blank"
-    //           >
-    //             <img
-    //               className="rounded-full m-3.5"
-    //               alt={contributor.login}
-    //               src={contributor.avatar_url}
-    //               loading="lazy"
-    //               height="114px"
-    //             ></img>
-    //           </a>
-    //         ))}
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </section>
     <section>
       <div className="relative px-6 md:px-0">
         <div className="">

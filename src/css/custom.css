@@ -63,6 +63,18 @@ input:checked + label {
   width: 1400px;
   align-self: center;
 }
+.ResizePanel-module_ResizeHandleHorizontal__PkS9u {
+  overflow: visible !important;
+  display: inline-block !important;
+  border: 0 !important;
+  background: none !important;
+}
+.ResizePanel-module_ResizeHandleHorizontal__PkS9u span {
+  width: 40px;
+}
+.ResizePanel-module_ResizeHandleHorizontal__PkS9u > span::after {
+  content: '' !important;
+}
 
 /* .main-wrapper {
   max-width: 1400px;

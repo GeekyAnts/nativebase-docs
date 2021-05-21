@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useRef, useState, useCallback } from 'react';
 import { CodeComponent } from './CodeComponent';
+import ResizePanel from 'react-resize-panel';
+
 import useThemeContext from '@theme/hooks/useThemeContext';
+import { useEffect } from 'react';
 
 const SVGs = {
   Logo: (
@@ -34,9 +37,8 @@ const SVGs = {
   ),
   Expand: (
     <svg
+      className="expandSvg h-10 w-10 flex-no-shrink fill-current"
       xmlns="http://www.w3.org/2000/svg"
-      width="39"
-      height="31"
       viewBox="0 0 39 31"
     >
       <g id="Group_580" data-name="Group 580" transform="translate(-865 -553)">
@@ -225,6 +227,45 @@ export function Responsive() {
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
+
+  // const [size, setSize] = useState({ x: 400, y: 300 });
+  // const ref = useRef();
+
+  // const handler = useCallback(() => {
+  //   function onMouseMove(e) {
+  //     setSize((currentSize) => ({
+  //       x: currentSize.x + e.movementX,
+  //     }));
+  //     yarn;
+  //   }
+  //   function onMouseUp() {
+  //     ref.current.removeEventListener('mousemove', onMouseMove);
+  //     ref.current.removeEventListener('mouseup', onMouseUp);
+  //   }
+  //   ref.current.addEventListener('mousemove', onMouseMove);
+  //   ref.current.addEventListener('mouseup', onMouseUp);
+  // }, [size]);
+  useEffect(() => {
+    const handler = document.getElementsByClassName(
+      'ResizePanel-module_ResizeHandleHorizontal__PkS9u'
+    )[0];
+    const expandParent = document.createElement('span');
+    const expandIcon = document.createElement('img');
+    expandIcon.setAttribute('src', 'img/SVG/expand.svg');
+    expandIcon.setAttribute('draggable', false);
+    expandParent.innerHTML = '';
+    handler.innerHTML = '';
+    expandParent.appendChild(expandIcon);
+    handler.appendChild(expandParent);
+  }, []);
+
+  const [size, setSize] = useState({ width: 400, height: 300 });
+  const onResize = (event, { element, size, handle }) => {
+    setSize((currentSize) => ({
+      width: size.width,
+      height: size.height,
+    }));
+  };
   return (
     <section className="relative">
       <div
@@ -257,33 +298,42 @@ export function Responsive() {
                   rel="noopener noreferrer"
                   href="https://alpha.nativebase.io/docs/responsive-style"
                 >
-                  Learn More
+                  Learn Mores
                 </a>
               </p>
             </div>
           </div>
           <div
-            className="flex mt-10 flex-col space-y-10 lg:space-y-0 lg:flex-row-reverse rounded-md"
+            className="flex mt-10 flex-col space-y-10 rounded-md"
             // style={{ border: '1px solid black' }}
           >
-            <div className="relative rounded-lg w-full lg:w-1/2 flex flex-row justify-center md:justify-start items-center">
-              <div className="w-full md:w-1/2  py-2  rounded-md h-3/5 lg:absolute relative lg:-left-5">
-                <div className="flex ml-2 bg-transparent space-x-5">
-                  <div>{SVGs['Mobile']}</div>
-                  <div className="hidden md:inline-block">{SVGs['Tablet']}</div>
-                  <div className="hidden lg:inline-block">
-                    {SVGs['Desktop']}
-                  </div>
-                </div>
-                <div className="flex-1 themeable  rounded-md h-80 bg-white lg:h-full"></div>
-                <div className="hidden md:inline-block absolute -right-10 top-1/2">
-                  {SVGs['Expand']}
-                </div>
-              </div>
-            </div>
-
             <div
-              className="flex-1  rounded-lg overflow-hidden px-0 md:px-0"
+              className="w-full border-0 flex flex-row"
+              style={{
+                height: '450px',
+              }}
+            >
+              <ResizePanel
+                direction="e"
+                className="w-1/3 border-0"
+                style={{
+                  minWidth: '30%',
+                  maxWidth: '100%',
+                }}
+              >
+                <div className="themeable border-0 rounded-lg w-full h-full">
+                  <iframe
+                    src="https://alpha.nativebase.io/"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 'none' }}
+                    title="W3Schools Free Online Web Tutorials"
+                  ></iframe>
+                </div>
+              </ResizePanel>
+            </div>
+            <div
+              className="flex-1 rounded-lg overflow-hidden px-0 md:px-0"
               // style={{ zIndex: 1, maxHeight: '39rem' }}
             >
               <CodeComponent classStyle={'pr-20 py-10'} code={exampleCode} />
