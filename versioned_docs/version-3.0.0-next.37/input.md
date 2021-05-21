@@ -25,11 +25,11 @@ The `Input` component is a component that is used to get user input in a text fi
 
 ```
 
-### Input Addons
+<!-- ### Input Addons
 
 ```ComponentSnackPlayer path=primitives,Input,Addons.tsx
 
-```
+``` -->
 
 ### Input Elements
 

@@ -16,7 +16,7 @@ To make your components respect the [SafeAreaView](https://reactnative.dev/docs/
 Internally, NativeBase uses [useSafeAreaInsets](https://docs.expo.io/versions/latest/sdk/safe-area-context/#hooks) hook of [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context).
 
 :::info
-SafeAreaView props can only be applied on [View](view.md) as of now. To make you App SafeArea safe, just wrap your app with a View and pass safeArea props to it.
+SafeAreaView props can only be applied on [Box](box.md) as of now. To make you App SafeArea safe, just wrap your app with a Box and pass safeArea props to it.
 :::
 
 ## Examples
