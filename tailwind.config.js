@@ -7,6 +7,9 @@ module.exports = {
   important: '#tailwind',
   theme: {
     extend: {
+      ringWidth: {
+        10: '10px',
+      },
       colors: {
         gray: {
           50: '#fafafa',
@@ -68,6 +71,14 @@ module.exports = {
           800: '#065f46',
           900: '#064e3b',
         },
+        secondary: {
+          20: '#CCCCCC',
+          40: '#888888',
+          50: '#50BFC2',
+          100: '#1A84B2',
+          200: '#35628F',
+          300: '#475569',
+        },
       },
       boxShadow: {
         xs: '0 0 0 1px rgba(0, 0, 0, 0.16)',
@@ -114,7 +125,7 @@ module.exports = {
         tight: '-0.01em',
         normal: '0',
         wide: '0.01em',
-        wider: '0.02em',
+        wider: '0.05em',
         widest: '0.4em',
       },
       lineHeight: {
@@ -195,6 +206,8 @@ module.exports = {
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    borderWidth: ['hover'],
+    borderStyle: ['hover'],
     translate: ['responsive', 'hover', 'focus', 'group-hover'],
     boxShadow: ['responsive', 'hover', 'focus', 'focus-within'],
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],

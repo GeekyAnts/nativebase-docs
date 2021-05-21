@@ -1,18 +1,21 @@
 import React from 'react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
+
 import palenight from 'prism-react-renderer/themes/palenight';
 
-export function CodeComponent({ code }) {
+export function CodeComponent({ code, classStyle }) {
   return (
     <Highlight {...defaultProps} code={code} theme={palenight} language="jsx">
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          className={className}
+          className={`${className} ${classStyle}`}
           style={{
             ...style,
             height: '100%',
+            borderRadius: '0',
             textAlign: 'left',
-            padding: ' 0.5em',
+            fontSize: '14px',
+            // padding: '2rem 2rem 2rem 2rem',
             overflow: 'auto',
           }}
         >
@@ -32,7 +35,7 @@ export function CodeComponent({ code }) {
                     opacity: 0.5,
                   }}
                 >
-                  {i + 1}
+                  {/* {i + 1} */}
                 </div>
                 <div style={{ display: 'table-cell' }}>
                   {line.map((token, key) => (
