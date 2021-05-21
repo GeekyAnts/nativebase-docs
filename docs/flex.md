@@ -41,4 +41,4 @@ You can pass Spacer to add Space between Flex items.
 
 ## Props
 
-**Flex** implements **[Box](box.md)**, so all the Box Props can be passed to it, i.e. [`color`](styleProps.md#color-and-background-color), [`space`](styleProps.md#margin-and-padding), [`layout`](styleProps.md#layout-width-and-height), [`flexbox`](styleProps.md#flexbox) & [`border`](styleProps.md#borders) props from [style-system](styleProps.md).
+**Flex** implements **[Box](box.md)**, so all the Box Props can be passed to it, i.e. [`color`](utilityProps#color-and-background-color), [`space`](utilityProps#margin-and-padding), [`layout`](utilityProps#layout-width-and-height), [`flexbox`](utilityProps#flexbox) & [`border`](utilityProps#borders) props from [style-system](utilityProps).

@@ -174,292 +174,300 @@ const borderProps = {
 
   //Border Props
   BorderProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'BorderProps',
-    link: 'style-props#borders',
+    link: 'utility-props#borders',
   },
   BorderWidthProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'BorderProps',
-    link: 'style-props#borders',
+    link: 'utility-props#borders',
   },
   BorderStyleProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'BorderProps',
-    link: 'style-props#borders',
+    link: 'utility-props#borders',
   },
   BorderColorProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'BorderProps',
-    link: 'style-props#borders',
+    link: 'utility-props#borders',
   },
   BorderRadiusProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'BorderProps',
-    link: 'style-props#borders',
+    link: 'utility-props#borders',
   },
   BorderTopProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'BorderProps',
-    link: 'style-props#borders',
+    link: 'utility-props#borders',
   },
   BorderRightProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'BorderProps',
-    link: 'style-props#borders',
+    link: 'utility-props#borders',
   },
   BorderBottomProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'BorderProps',
-    link: 'style-props#borders',
+    link: 'utility-props#borders',
   },
   BorderLeftProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'BorderProps',
-    link: 'style-props#borders',
+    link: 'utility-props#borders',
   },
 };
 const colorProps = {
   ColorProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'ColorProps',
-    link: 'style-props#color-and-background-color',
+    link: 'utility-props#color-and-background-color',
   },
   TextColorProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'ColorProps',
-    link: 'style-props#color-and-background-color',
+    link: 'utility-props#color-and-background-color',
   },
   BackgroundColorProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'ColorProps',
-    link: 'style-props#color-and-background-color',
+    link: 'utility-props#color-and-background-color',
   },
   OpacityProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'ColorProps',
-    link: 'style-props#color-and-background-color',
+    link: 'utility-props#color-and-background-color',
   },
 };
 const flexProps = {
   FlexboxProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'FlexProps',
-    link: 'style-props#flexbox',
+    link: 'utility-props#flexbox',
   },
   FlexProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'FlexProps',
-    link: 'style-props#flexbox',
+    link: 'utility-props#flexbox',
   },
 };
 const layoutProps = {
   LayoutProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   WidthProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   HeightProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   MinWidthProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   MinHeightProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   MaxWidthProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   MaxHeightProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   DisplayProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   VerticalAlignProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   SizeProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
   OverflowProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'LayoutProps',
-    link: 'style-props#layout-width-and-height',
+    link: 'utility-props#layout-width-and-height',
   },
 };
 const positionProps = {
   PositionProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   ZIndexProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   TopProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   RightProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   BottomProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   LeftProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
 };
 const spaceProps = {
   PositionProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   ZIndexProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   TopProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   RightProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   BottomProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
   LeftProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PositionProps',
-    link: 'style-props#position',
+    link: 'utility-props#position',
   },
 };
 const typographyProps = {
   TypographyProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'TypographyProps',
-    link: 'style-props#typography',
+    link: 'utility-props#typography',
   },
   FontFamilyProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'TypographyProps',
-    link: 'style-props#typography',
+    link: 'utility-props#typography',
   },
   FontSizeProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'TypographyProps',
-    link: 'style-props#typography',
+    link: 'utility-props#typography',
   },
   FontWeightProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'TypographyProps',
-    link: 'style-props#typography',
+    link: 'utility-props#typography',
   },
   LineHeightProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'TypographyProps',
-    link: 'style-props#typography',
+    link: 'utility-props#typography',
   },
   LetterSpacingProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'TypographyProps',
-    link: 'style-props#typography',
+    link: 'utility-props#typography',
   },
   FontStyleProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'TypographyProps',
-    link: 'style-props#typography',
+    link: 'utility-props#typography',
   },
   TextAlignProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'TypographyProps',
-    link: 'style-props#typography',
+    link: 'utility-props#typography',
   },
 };
 const backgroundProps = {
   BackgroundProps: {
     doc: '',
     name: 'BackgroundProps',
-    link: 'style-props#background',
+    link: 'utility-props#background',
   },
   BackgroundColorProps: {
     doc: '',
     name: 'BackgroundProps',
-    link: 'style-props#background',
+    link: 'utility-props#background',
   },
 };
 const extraProps = {
-  ExtraProps: { doc: '', name: 'ExtraProps', link: 'style-props#extra-props' },
+  ExtraProps: {
+    doc: '',
+    name: 'ExtraProps',
+    link: 'utility-props#extra-props',
+  },
 };
 const outlineProps = {
-  OutlineProps: { doc: '', name: 'OutlineProps', link: 'style-props#outline' },
+  OutlineProps: {
+    doc: '',
+    name: 'OutlineProps',
+    link: 'utility-props#outline',
+  },
 };
 const safeAreaProps = {
   SafeAreaProps: {
     doc: '',
     name: 'SafeAreaProps',
-    link: 'style-props#safearea',
+    link: 'utility-props#safearea',
   },
 };
 const shadowProps = {
   ShadowProps: {
     doc: '',
     name: 'ShadowProps',
-    link: 'style-props#shadow',
+    link: 'utility-props#shadow',
   },
 };
 const transformProps = {
   TransformProps: {
     doc: '',
     name: 'TransformProps',
-    link: 'style-props#transform',
+    link: 'utility-props#transform',
   },
 };
 const platformProps = {
   PlatformProps: {
-    doc: 'styleProps.md',
+    doc: 'utilityProps.md',
     name: 'PlatformProps',
-    link: 'style-props#color-and-background-color',
+    link: 'utility-props#color-and-background-color',
   },
 };
 
