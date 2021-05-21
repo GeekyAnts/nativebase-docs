@@ -11,7 +11,7 @@ module.exports = {
       label: 'Features',
       collapsed: false,
       items: [
-        'style-props',
+        'utility-props',
         'color-mode',
         'nativebase-factory',
         'responsive-style',
@@ -189,7 +189,7 @@ module.exports = {
       collapsed: false,
       items: [
         {
-          Designs: ['buildingCard', 'buildingSearchBar'],
+          Designs: ['buildingCard', 'buildingSearchBar', 'buildingAppBar'],
           Forms: ['form'],
           Layout: ['appDrawer'],
         },

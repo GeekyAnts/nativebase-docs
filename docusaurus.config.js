@@ -28,6 +28,7 @@ module.exports = {
     //   trackingID: 'UA-76655074-1',
     // },
     algolia: {
+      contextualSearch: true,
       apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
       indexName: 'nativebase-v3',
     },
