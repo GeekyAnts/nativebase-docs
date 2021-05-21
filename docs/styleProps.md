@@ -16,7 +16,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox borderRadius='md' bg='emerald.200' {...props} />
+  return <NBBox borderRadius='md' bg='primary.200' {...props} />
 }
 
 function Component() {
@@ -69,7 +69,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center, Text } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
+  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
 }
 
 function Component() {
@@ -168,7 +168,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox m={2} borderRadius='md' bg='emerald.200' {...props} />
+  return <NBBox m={2} borderRadius='md' bg='primary.200' {...props} />
 }
 
 function Component() {
@@ -225,7 +225,7 @@ import React from 'react';
 import { Box as NBBox, Flex, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
+  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
 }
 
 function Component() {
@@ -282,7 +282,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
+  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
 }
 
 function Component() {
@@ -338,7 +338,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} bg='emerald.200' {...props} />
+  return <NBBox p={5} m={2} bg='primary.200' {...props} />
 }
 
 function Component() {
@@ -388,7 +388,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
+  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
 }
 
 function Component() {
@@ -430,7 +430,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='emerald.200' {...props} />
+  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
 }
 
 function Component() {
@@ -469,6 +469,39 @@ export default function () {
 
 Provides a way to pass props to child components inside Composite componets.
 
+```SnackPlayer name=Internal
+import React from 'react';
+import { Button, NativeBaseProvider, Center } from 'native-base';
+
+function Example() {
+  return (
+      <Button
+        _text= {{
+          // below props will will let you style the text of the button
+          color: 'secondary.400',
+          fontSize: 'xs',
+          fontWeight: 'bolder'
+        }}
+      >
+        Sample Text
+      </Button>
+  );
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <Example />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+
+```
+
+<br />
+
 | Prop    | Type                       | Description                                              |
 | ------- | -------------------------- | -------------------------------------------------------- |
 | \_stack | [IStackProps](stack#props) | Passed props will be provided to [`Stack`](stack) child. |
@@ -477,6 +510,40 @@ Provides a way to pass props to child components inside Composite componets.
 ### Interaction Props
 
 Provides a way to pass props on certain interaction.
+
+```SnackPlayer name=Internal
+import React from 'react';
+import { Button, NativeBaseProvider, Center } from 'native-base';
+
+function Example() {
+  return (
+      <Button
+        _pressed={{
+          // below props will only be applied on button is pressed
+          bg: 'primary.300',
+          _text:{
+            color: 'secondary.400'
+          }
+        }}
+      >
+        Sample Text
+      </Button>
+  );
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <Example />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+
+```
+
+<br />
 
 | Prop       | Type                    | Description                                     |
 | ---------- | ----------------------- | ----------------------------------------------- |
@@ -489,6 +556,41 @@ Provides a way to pass props on certain interaction.
 ### Platform Props
 
 Provides a way to pass props bassed on Platform (_android, ios or web_).
+
+```SnackPlayer name=Internal
+import React from 'react';
+import { Button, NativeBaseProvider, Center } from 'native-base';
+
+function Example() {
+  return (
+      <Button
+        _web={{
+          // below props will only be applied on 'web' platform
+          bg: 'primary.300',
+          _text: {
+            color: 'secondary.400',
+            fontWeight: 'bold'
+          }
+        }}
+      >
+        Sample Text
+      </Button>
+  );
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <Example />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+
+```
+
+<br />
 
 | Prop      | Type                    | Description                              |
 | --------- | ----------------------- | ---------------------------------------- |
