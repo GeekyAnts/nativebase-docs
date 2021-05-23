@@ -176,7 +176,7 @@ export function Reviews() {
               </div>
             </div>
             <div className="bg-red-500 relative overflow-hidden bg-blue-500 flex items-center mt-20 py-16">
-              <div className="max-w-3xl mx-auto flex flex-col">
+              <div className="max-w-3xl bg-red-500 mx-auto flex flex-col">
                 <h2 className="text-white text-3xl text-left font-bold">
                   Join our Newsletter
                 </h2>

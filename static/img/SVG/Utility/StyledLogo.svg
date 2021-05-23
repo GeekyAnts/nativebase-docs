@@ -1,0 +1,53 @@
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22.526"
+      height="28.581"
+      viewBox="0 0 129 146"
+      fill=""
+    >
+      <g id="Group_535" data-name="Group 535" transform="translate(378 -6741)">
+        <g
+          id="Path_339"
+          data-name="Path 339"
+          transform="translate(-378 6887) rotate(-90)"
+          fill="white"
+        >
+          <path
+            d="M109.5,0,146,64.5,109.5,129h-73L0,64.5,36.5,0Z"
+            stroke="none"
+          />
+          <path
+            d="M 39.41559600830078 5 L 5.745071411132812 64.49996185302734 L 39.41561889648438 124 L 106.5845108032227 124 L 140.2549285888672 64.5 L 106.5845108032227 5 L 39.41559600830078 5 M 36.5 0 L 109.5001373291016 0 L 146 64.5 L 109.5001373291016 129 L 36.5 129 L 0 64.49997711181641 L 36.5 0 Z"
+            stroke="none"
+            fill="#000"
+          />
+        </g>
+        <path
+          id="Path_342"
+          data-name="Path 342"
+          d="M0,0V70"
+          transform="translate(-313.5 6744.5)"
+          fill="none"
+          stroke="#000"
+          strokeWidth="1.5"
+        />
+        <path
+          id="Path_341"
+          data-name="Path 341"
+          d="M0,33,60,0"
+          transform="translate(-373.5 6814.5)"
+          fill="none"
+          stroke="#000"
+          strokeWidth="1.5"
+        />
+        <path
+          id="Path_340"
+          data-name="Path 340"
+          d="M63,35,0,0"
+          transform="translate(-313.5 6814.5)"
+          fill="none"
+          stroke="#000"
+          strokeWidth="1.5"
+        />
+      </g>
+    </svg>

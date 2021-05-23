@@ -1,25 +1,6 @@
 import React from 'react';
 import useThemeContext from '@theme/hooks/useThemeContext';
-
-const SVGs = {
-  microphone: (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="19"
-      height="25.396"
-      viewBox="0 0 19 25.396"
-    >
-      <path
-        id="Icon_open-microphone"
-        data-name="Icon open-microphone"
-        d="M9.211-.141A3.161,3.161,0,0,0,8.8-.046,3.161,3.161,0,0,0,6.334,3.115V9.437a3.161,3.161,0,0,0,6.322,0V3.115A3.161,3.161,0,0,0,9.211-.141ZM1.119,6.276A1.58,1.58,0,0,0,.044,7.857v1.58a9.5,9.5,0,0,0,7.9,9.293v3.351H6.366a3.17,3.17,0,0,0-3.161,3.161H15.88a3.17,3.17,0,0,0-3.161-3.161h-1.58V18.73a9.471,9.471,0,0,0,7.9-9.293V7.857a1.58,1.58,0,1,0-3.161,0v1.58a6.322,6.322,0,0,1-12.644,0V7.857a1.58,1.58,0,0,0-1.865-1.58,1.58,1.58,0,0,0-.19,0Z"
-        transform="translate(-0.042 0.154)"
-        fill="#fff"
-      />
-    </svg>
-  ),
-};
-
+import { SVGs } from './icons';
 export function WatchTalk() {
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
@@ -31,9 +12,9 @@ export function WatchTalk() {
       <div className="relative px-6 md:px-0">
         <div className="py-12 md:py-20">
           <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7 pb-12">
-            <p className="w-10 h-10 items-center mt-2 rounded-md flex justify-center bg-blue-600">
+            <div className="w-12 h-12 items-center mt-2 rounded-md flex justify-center bg-blue-600">
               {SVGs['microphone']}
-            </p>
+            </div>
             <div>
               <h2
                 className={`leading-snug max-w-3xl  text-3xl md:text-4xl ${headingColor}`}

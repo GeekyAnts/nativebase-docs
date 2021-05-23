@@ -24,6 +24,7 @@ import {
   Themeable,
   UtilityProps,
   WatchTalk,
+  Cyrus,
   Web,
   PolicyAcceptDialog,
 } from './../components/Home';
