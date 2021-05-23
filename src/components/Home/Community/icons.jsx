@@ -49,7 +49,7 @@ export const SVGs = {
           />
         </clipPath>
       </defs>
-      <g id="Discord-Logo-Color" clip-path="url(#clip-path)">
+      <g id="Discord-Logo-Color" clipPath="url(#clip-path)">
         <path
           id="Path_415"
           data-name="Path 415"

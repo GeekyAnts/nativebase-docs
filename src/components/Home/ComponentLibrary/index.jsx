@@ -46,13 +46,13 @@ export function ComponentLibrary() {
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
-      <div className="px-6 md:px-0">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <span className="mt-1.5">{SVGs.Logo}</span>
             <span>
               <h2 className={`text-4xl leading-snug  ${headingColor}`}>
-                <span className="">Rich </span>
+                <span>Rich </span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-700">
                   Component Library
                 </span>

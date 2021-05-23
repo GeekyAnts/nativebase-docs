@@ -22,6 +22,7 @@ import {
   Sponsors,
   Stats,
   Themeable,
+  NewsLetter,
   UtilityProps,
   WatchTalk,
   Cyrus,
@@ -63,12 +64,9 @@ function Home() {
             style="display:none;visibility:hidden"
           ></iframe>
         </noscript>
-        <div className="overflow-hidden lg:px-8 relative">
+        <div className="overflow-hidden relative">
           <section
-            className={
-              styles.features +
-              'flex-1 max-w-6xl mx-auto md:px-8 lg:px-0 font-inter  overflow-visible'
-            }
+            className={styles.features + 'flex-1 font-inter  overflow-visible'}
           >
             <Hero />
             <UtilityProps />
@@ -87,6 +85,7 @@ function Home() {
             <Stats />
             <Community />
             <Reviews />
+            <NewsLetter />
             {/* <Cta /> */}
             <WatchTalk />
 

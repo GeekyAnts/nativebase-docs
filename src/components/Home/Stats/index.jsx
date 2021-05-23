@@ -53,7 +53,7 @@ export function Stats() {
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
-      <div className="px-6 md:px-0">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
         <div className="relative py-12 md:py-20">
           <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7">
             <div className="mt-2">

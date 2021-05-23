@@ -114,6 +114,7 @@ function Navbar() {
               if (item.label === 'Looking for v2.0')
                 return (
                   <div
+                    key={i}
                     className={`hidden xl:block text-base ${nativeBaseV2Color}`}
                   >
                     Looking for{' '}
@@ -277,6 +278,7 @@ function Navbar() {
                   if (item.label === 'Looking for v2.0')
                     return (
                       <div
+                        key={i}
                         className={`text-base px-4 py-1`}
                         style={{ color: !isDarkTheme ? '#606770' : '#DADDE1' }}
                       >

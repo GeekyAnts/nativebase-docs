@@ -68,7 +68,7 @@ const SVGs = {
         <g
           id="Mask_Group_14"
           data-name="Mask Group 14"
-          clip-path="url(#clip-path)"
+          clipPath="url(#clip-path)"
         >
           <rect
             id="clown-anemonefish-amphiprion-swimming-among-tentacles-its-anemone-home_211453-2"

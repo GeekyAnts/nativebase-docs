@@ -39,9 +39,9 @@ export function Sponsors() {
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   return (
     <section>
-      <div className="relative px-6 md:px-0">
-        <div className="">
-          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7 pb-12 md:pb-20">
+      <div className="relative max-w-6xl mx-auto max-auto px-6 md:px-10 xl:px-0">
+        <div className="py-12 md:py-20">
+          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7">
             <div className="mt-1">
               <p className="w-12 h-12 items-center rounded-md flex justify-center bg-yellow-600">
                 {SVGs.Logo}

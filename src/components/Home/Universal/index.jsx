@@ -36,7 +36,7 @@ export function Universal() {
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
-      <div className="px-6 md:px-0">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <div className="mt-2">
@@ -80,7 +80,7 @@ export function Universal() {
                       } ring-10 ${ringColor} -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
                       key={idx}
                     >
-                      <div className="">{theme.svg}</div>
+                      <div>{theme.svg}</div>
                       {/* <div className="mt-5 font-bold">{theme['heading']}</div> */}
                     </div>
                   );

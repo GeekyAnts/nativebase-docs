@@ -9,10 +9,10 @@ export function WatchTalk() {
 
   return (
     <section>
-      <div className="relative px-6 md:px-0">
+      <div className="relative max-w-6xl mx-auto  px-6 md:px-10 xl:px-0">
         <div className="py-12 md:py-20">
           <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7 pb-12">
-            <div className="w-12 h-12 items-center mt-2 rounded-md flex justify-center bg-blue-600">
+            <div className="w-12 h-12 items-center mt-1 rounded-md flex justify-center bg-blue-600">
               {SVGs['microphone']}
             </div>
             <div>

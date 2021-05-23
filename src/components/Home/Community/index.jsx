@@ -59,9 +59,9 @@ export function Community() {
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
   return (
     <section>
-      <div className="">
-        <div className="py-12 px-6 md:px-0 md:pt-20 md:pb-20">
-          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
+        <div className="py-12 md:py-20">
+          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <div className="mt-2">
               <span className="w-12 h-12 items-center rounded-md flex justify-center bg-blue-400">
                 {SVGs.Logo}
@@ -130,7 +130,7 @@ export function Community() {
                   Join our Experts on
                 </h1>
                 <div className="inline-block align-middle -ml-2">
-                  <a className="" href="https://discord.com/invite/TSgCw2UPmb">
+                  <a href="https://discord.com/invite/TSgCw2UPmb">
                     {/* {SVGs['Discord']} */}
                   </a>
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
-import { CodeComponent } from './CodeComponent';
+import { CodeComponent } from '../CodeComponent';
 import useThemeContext from '@theme/hooks/useThemeContext';
+import { SVGs } from './icons';
 
 const exampleCode = `
 <Box>
@@ -25,18 +26,12 @@ export function Utility() {
         className={'absolute inset-0 pointer-events-none ' + foldBg}
         aria-hidden="true"
       />
-      <div className="px-6 md:px-0">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
-            <span className="mt-0.5">
-              <img
-                className="w-20"
-                src="img/SVG/Utility/Logo.svg"
-                alt="UtilityProps"
-              />
-            </span>
+            <span className="mt-0.5">{SVGs.Logo}</span>
             <span>
-              <h2 className={` text-3xl md:text-4xl  ${headingColor}`}>
+              <h2 className={`text-3xl md:text-4xl  ${headingColor}`}>
                 <span>Now Supporting </span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-800">
                   Utility Props
@@ -46,10 +41,7 @@ export function Utility() {
                 <span>Powered by</span>
                 <span className="h-10 ml-2 mr-2 px-3 relative">
                   <span className="absolute -top-1.5 left-0">
-                    <img
-                      src="img/SVG/Utility/StyledLogo.svg"
-                      alt="StyledSystem"
-                    />
+                    {SVGs.StyledLogo}
                   </span>
                 </span>
                 <a

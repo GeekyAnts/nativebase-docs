@@ -60,9 +60,9 @@ export function More() {
   const productColor = !isDarkTheme ? 'text-gray-600' : 'text-white';
   return (
     <section>
-      <div className="px-4 md:px-0">
-        <div className="py-12  md:py-20">
-          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7 pb-12 md:pb-20">
+      <div className="relative max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
+        <div className="py-12 md:py-20">
+          <header className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7 pb-12 md:pb-20">
             <div className="mt-1">{SVGs.Logo}</div>
             <div>
               <h2 className={`leading-snug text-4xl ${headingColor}`}>
@@ -75,18 +75,18 @@ export function More() {
                 delighted! Take a look at our other projects.
               </p>
             </div>
-          </div>
-          <div className="max-w-sm mx-auto md:max-w-none">
-            <div className="flex md:pl-16 flex-wrap gap-y-5 md:gap-y-0 gap-x-0.5">
+          </header>
+          <main className="max-w-sm mx-auto md:max-w-none">
+            <ul className="flex list-none md:pl-16 flex-wrap gap-y-5 md:gap-y-0 gap-x-0.5">
               {products.map((props, idx) => {
                 return (
-                  <article className="" data-aos="zoom-y-out" key={idx}>
+                  <li data-aos="zoom-y-out" key={idx}>
                     <Product productColor={productColor} {...props} />
-                  </article>
+                  </li>
                 );
               })}
-            </div>
-          </div>
+            </ul>
+          </main>
         </div>
       </div>
     </section>

@@ -138,7 +138,7 @@ export function Reviews() {
 
   return (
     <section className={'relative '}>
-      <div className="px-6 md:px-0">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
         <div>
           <div className="text-center pb-12 md:pb-20">
             <h2 className={`h2 text-4xl`}>What are people saying?</h2>
@@ -165,7 +165,7 @@ export function Reviews() {
                           </span>
                           <span className="text-sm">{review.handle}</span>
                         </span>
-                        <div className="ml-auto">{SVGs['Twitter']}</div>
+                        <span className="ml-auto">{SVGs['Twitter']}</span>
                       </p>
                       <p className={`text-left text-base ${reviewColor}`}>
                         {review.content}
@@ -173,65 +173,6 @@ export function Reviews() {
                     </div>
                   );
                 })}
-              </div>
-            </div>
-            <div className="bg-red-500 relative overflow-hidden bg-blue-500 flex items-center mt-20 py-16">
-              <div className="max-w-3xl bg-red-500 mx-auto flex flex-col">
-                <h2 className="text-white text-3xl text-left font-bold">
-                  Join our Newsletter
-                </h2>
-                <p className="text-white text-left">
-                  Lorem ipsum is a placeholder text commonly used to demonstrate
-                </p>
-                <div className="text-left mt-5 flex h-10">
-                  <div>
-                    <input
-                      type="text"
-                      className="w-96 outline-none text-gray-800 placeholder-gray-400 px-3  border-0 h-full"
-                      placeholder="Email Address"
-                    ></input>
-                  </div>
-                  <button className="border-0 bg-green-600  w-10 h-full">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18.207"
-                      height="19.035"
-                      viewBox="0 0 18.207 19.035"
-                    >
-                      <g
-                        id="Icon_feather-arrow-right"
-                        data-name="Icon feather-arrow-right"
-                        transform="translate(-6.5 -6.086)"
-                      >
-                        <path
-                          id="Path_421"
-                          data-name="Path 421"
-                          d="M7.5,18H23.707"
-                          transform="translate(0 -2.396)"
-                          fill="none"
-                          stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                        <path
-                          id="Path_422"
-                          data-name="Path 422"
-                          d="M18,7.5l8.1,8.1-8.1,8.1"
-                          transform="translate(-2.396)"
-                          fill="none"
-                          stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="ml-20 -bottom-12 right-32 absolute">
-                {SVGs['Email']}
               </div>
             </div>
           </div>
