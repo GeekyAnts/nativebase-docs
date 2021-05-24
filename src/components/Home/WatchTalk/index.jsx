@@ -15,16 +15,16 @@ export function WatchTalk() {
             <div className="w-12 h-12 items-center mt-1 rounded-md flex justify-center bg-blue-600">
               {SVGs['microphone']}
             </div>
-            <div>
+            <div className="max-w-3xl">
               <h2
-                className={`leading-snug max-w-3xl  text-3xl md:text-4xl ${headingColor}`}
+                className={`leading-snug   text-3xl md:text-4xl ${headingColor}`}
               >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
                   Talks and Articles
                 </span>
               </h2>
               <p
-                className={`text-lg max-w-3xl md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
+                className={`text-lg font-medium  md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
               >
                 We have a lively community built on our shared love for React &
                 React Native. Join us!

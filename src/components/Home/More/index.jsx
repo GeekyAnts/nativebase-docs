@@ -64,29 +64,31 @@ export function More() {
         <div className="py-12 md:py-20">
           <header className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7 pb-12 md:pb-20">
             <div className="mt-1">{SVGs.Logo}</div>
-            <div>
+            <div className="max-w-3xl">
               <h2 className={`leading-snug text-4xl ${headingColor}`}>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-purple-700">
                   More from the Authors
                 </span>
               </h2>
-              <p className={`text-xl mt-7 leading-normal ${subHeadingColor}`}>
+              <p
+                className={`text-lg font-medium md:text-xl mt-7 leading-normal ${subHeadingColor}`}
+              >
                 Interested in knowing what else we've worked on? We're
                 delighted! Take a look at our other projects.
               </p>
+              <main className="max-w-sm mx-auto mt-20 md:max-w-none">
+                <div className="flex list-none flex-wrap justify-start gap-y-5 md:gap-y-0 gap-x-0.5">
+                  {products.map((props, idx) => {
+                    return (
+                      <div data-aos="zoom-y-out" key={idx}>
+                        <Product productColor={productColor} {...props} />
+                      </div>
+                    );
+                  })}
+                </div>
+              </main>
             </div>
           </header>
-          <main className="max-w-sm mx-auto md:max-w-none">
-            <ul className="flex list-none md:pl-16 flex-wrap gap-y-5 md:gap-y-0 gap-x-0.5">
-              {products.map((props, idx) => {
-                return (
-                  <li data-aos="zoom-y-out" key={idx}>
-                    <Product productColor={productColor} {...props} />
-                  </li>
-                );
-              })}
-            </ul>
-          </main>
         </div>
       </div>
     </section>

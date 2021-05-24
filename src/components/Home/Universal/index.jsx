@@ -46,7 +46,7 @@ export function Universal() {
             </div>
             <div>
               <h2
-                className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
+                className={`leading-snug max-w-3xl text-3xl md:text-4xl ${headingColor}`}
               >
                 <span>Consistent across </span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-yellow-400">
@@ -54,7 +54,7 @@ export function Universal() {
                 </span>
               </h2>
               <p
-                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+                className={`text-lg max-w-3xl font-medium md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
                 Whether you're building for the web, Android or iOS, we've got
                 you covered. Fast-track your dev process with universal

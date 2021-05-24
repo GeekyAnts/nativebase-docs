@@ -6,6 +6,10 @@ module.exports = {
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
     {
+      src: this.baseUrl + '/js/google-tag-manager.js',
+      defer: true,
+    },
+    {
       src:
         'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,

@@ -47,14 +47,14 @@ export function Sponsors() {
                 {SVGs.Logo}
               </p>
             </div>
-            <div>
+            <div className="max-w-3xl">
               <h2 className={`leading-snug text-4xl ${headingColor}`}>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
                   Our Sponsors
                 </span>
               </h2>
               <p
-                className={`text-lg max-w-3xl  md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
+                className={`text-lg  font-medium  md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
               >
                 We are very grateful to those who believe in what we do. Here's
                 to all our wonderful sponsors!

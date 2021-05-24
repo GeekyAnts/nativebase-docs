@@ -41,7 +41,7 @@ export const DarkMode = () => {
         <div className="relative py-12 md:py-20">
           <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <div className="mt-2">{SVGs['Logo']}</div>
-            <div>
+            <div className="max-w-3xl">
               <h2
                 className={`text-3xl md:text-4xl leading-snug ${headingColor}`}
               >
@@ -51,7 +51,7 @@ export const DarkMode = () => {
                 </span>
               </h2>
               <p
-                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+                className={`text-lg font-medium md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
                 Building apps with a dark mode setting just got a whole lot
                 easier. NativeBase is now optimised for light and dark modes.

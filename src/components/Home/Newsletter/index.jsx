@@ -22,7 +22,7 @@ export function NewsLetter() {
                 <div>
                   <input
                     type="text"
-                    className=" w-72 md:w-96 outline-none text-gray-800 placeholder-gray-400 px-3  border-0 h-full"
+                    className="w-48 md:w-96 outline-none text-gray-800 placeholder-gray-400 px-3  border-0 h-full"
                     placeholder="Email Address"
                   ></input>
                 </div>

@@ -56,7 +56,7 @@ export function Responsive() {
     )[0];
     const expandParent = document.createElement('span');
     const expandIcon = document.createElement('img');
-    expandIcon.setAttribute('src', 'img/SVG/expand.svg');
+    expandIcon.setAttribute('src', '/img/expand.svg');
     expandIcon.setAttribute('draggable', false);
     expandParent.innerHTML = '';
     handler.innerHTML = '';
@@ -82,7 +82,7 @@ export function Responsive() {
         <div className="relative py-12 md:py-20">
           <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <div className="mt-2">{SVGs.Logo}</div>
-            <div>
+            <div className="max-w-3xl">
               <h2
                 className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
               >
@@ -91,7 +91,7 @@ export function Responsive() {
                 </span>
               </h2>
               <p
-                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+                className={`text-lg font-medium md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
                 Instead of manually adding responsiveness, NativeBase V3 allows
                 you to provide object and array values to add responsive styles.
@@ -128,7 +128,7 @@ export function Responsive() {
               >
                 <div className="themeable border-0 rounded-lg w-full h-full">
                   <iframe
-                    src="https://robinjescott.com/"
+                    src=""
                     width="100%"
                     height="100%"
                     style={{ border: 'none' }}

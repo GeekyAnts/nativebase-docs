@@ -4,7 +4,7 @@ import Star from '../../img/Star';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 export function Hero() {
-  const [starCount, setStarCount] = React.useState(0);
+  const [starCount, setStarCount] = React.useState('15K+');
   React.useEffect(() => {
     fetch('https://api.github.com/repos/GeekyAnts/NativeBase')
       .then((response) => response.json())

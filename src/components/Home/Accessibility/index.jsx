@@ -24,15 +24,10 @@ const accessibilities = [
 export function Accessibility() {
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
-  const subHeadingColor = !isDarkTheme ? 'text-gray-900' : 'text-gray-100';
+  const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-100';
   return (
     <section className="relative">
-      {/* <div
-        className={'absolute inset-0 pointer-events-none ' + foldBg}
-        aria-hidden="true"
-      /> */}
-
-      <div className="max-w-6xl mx-auto px-6 md:px-0">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <div>{SVGs.Logo}</div>
@@ -61,7 +56,7 @@ export function Accessibility() {
                 </a>
               </p>
               <p
-                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+                className={`text-lg font-medium md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
                 Powered by React Native ARIA, which provides React hooks that
                 enable you to build accessible design systems in no time.

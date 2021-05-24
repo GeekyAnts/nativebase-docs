@@ -38,7 +38,7 @@ export function ComponentLibrary() {
   // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
-  const subHeadingColor = !isDarkTheme ? 'text-gray-900' : 'text-gray-100';
+  const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-100';
   const [currentTheme, setCurrentTheme] = useState('forms');
   return (
     <section className="relative">
@@ -57,7 +57,9 @@ export function ComponentLibrary() {
                   Component Library
                 </span>
               </h2>
-              <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
+              <p
+                className={`text-lg md:text-xl font-medium leading-normal mt-7 ${subHeadingColor}`}
+              >
                 NativeBase offers over 60 components so you can build
                 seamlessly. It includes action sheets, menus, spinners,
                 popovers, breadcrumbs and more.

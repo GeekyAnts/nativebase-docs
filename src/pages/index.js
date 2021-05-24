@@ -1,12 +1,10 @@
 import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import React from 'react';
 import {
   Accessibility,
-  // FeaturesBlocks,
-  // FeaturesWorld,
-  // News,
   Community,
   Creators,
   ComponentLibrary,
@@ -15,7 +13,6 @@ import {
   Utility,
   Reviews,
   Universal,
-  // Kitchensink,
   More,
   Responsive,
   DarkMode,
@@ -25,7 +22,6 @@ import {
   NewsLetter,
   UtilityProps,
   WatchTalk,
-  Cyrus,
   Web,
   PolicyAcceptDialog,
 } from './../components/Home';
@@ -52,7 +48,14 @@ function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="NativeBase" />
         <meta name="twitter:image:alt" content="NativeBase" />
-        <meta property="og:image" content="/img/nativebase-og.png" />
+        <meta
+          property="og:image"
+          content={useBaseUrl('/img/nativebase-og.png')}
+        />
+        <meta
+          name="twitter:image"
+          content="https://alpha.nativebase.io/img/nativebase-og.png"
+        ></meta>
         <meta name="twitter:site" content="@NativeBaseIO" />
       </Head>
       <main id="tailwind">

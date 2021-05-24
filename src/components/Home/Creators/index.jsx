@@ -82,16 +82,16 @@ export function Creators() {
         <div className="py-12 md:py-20">
           <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <div className="mt-1">{SVGs.Logo}</div>
-            <div>
+            <div className="max-w-3xl">
               <h2
-                className={`leading-snug max-w-3xl  text-3xl md:text-4xl ${headingColor}`}
+                className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
               >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-800">
                   Meet the Creators
                 </span>
               </h2>
               <p
-                className={`text-lg max-w-3xl  md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
+                className={`text-lg font-medium md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
               >
                 NativeBase 3.0 has come to fruition only due to the amazing team
                 that worked tirelessly on it. Here are our creators:

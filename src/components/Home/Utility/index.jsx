@@ -54,7 +54,7 @@ export function Utility() {
                 </a>
               </p>
               <p
-                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+                className={`text-lg font-medium md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
                 Powered by{' '}
                 <a
@@ -70,7 +70,7 @@ export function Utility() {
               </p>
               <p className="mt-7">
                 <a
-                  className="text-blue-800 no-underline border-0 border-b-2 border-solid hover:border-blue-800 font-bold"
+                  className="text-blue-800  no-underline border-0 border-b-2 border-solid hover:border-blue-800 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://styled-system.com"
