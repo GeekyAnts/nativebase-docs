@@ -110,7 +110,7 @@ export function Creators() {
                 className={`text-lg max-w-3xl  md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
               >
                 NativeBase 3.0 has come to fruition only due to the amazing team
-                that worked tirelessly on it. Here are our creators:
+                that worked tirelessly on it. Kudos to our creators!
               </p>
               <ul className="flex max-w-4xl mt-20 flex-wrap justify-center pl-0 gap-x-4 gap-y-10">
                 {creators.map((contributor) => (

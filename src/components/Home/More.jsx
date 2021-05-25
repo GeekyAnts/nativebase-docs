@@ -88,8 +88,8 @@ export function More() {
                 </span>
               </h2>
               <p className={`text-xl mt-7 leading-normal ${subHeadingColor}`}>
-                Interested in knowing what else we've worked on? We're
-                delighted! Take a look at our other projects.
+                Curious about what else we've worked on? We are
+                delighted! Take a look at a few of our other projects.
               </p>
             </div>
           </div>

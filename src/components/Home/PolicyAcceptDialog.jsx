@@ -33,8 +33,8 @@ export function PolicyAcceptDialog() {
         <div className="bg-secondary-300 flex md:px-8 xl:px-0 justify-center items-center w-full rounded-tl-md rounded-tr-md px-5 pb-2 pt-2">
           <div className="flex flex-col max-w-6xl mx-auto md:flex-row space-y-4 lg:space-y-0 w-full xl:w-11/12 py-2 justify-around">
             <div className="text-white flex w-full items-center md:w-8/12 lg:w-3/4 text-xs">
-              We use our own and third-party cookies and other tracking
-              technologies, by continuing to browse the website, you accept our
+              We use cookies (our own and third-party) and other tracking
+              technologies to enhance user experience. By continuing to browse this website, you accept our
               use of cookies and tracking technologies.
             </div>
             <div className="flex justify-start lg:justify-end flex-1">

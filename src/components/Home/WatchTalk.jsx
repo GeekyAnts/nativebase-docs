@@ -45,8 +45,8 @@ export function WatchTalk() {
               <p
                 className={`text-lg max-w-3xl md:text-xl mt-7 leading-normal  ${subHeadingColor}`}
               >
-                We have a lively community built on our shared love for React &
-                React Native. Join us!
+                Check out Sanket Sahu's talk on building an accessible component
+                library for native and web at React Day Bangalore.
               </p>
               <iframe
                 className="mt-5"
@@ -57,11 +57,6 @@ export function WatchTalk() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-              <p className={`max-w-3xl text-xl mt-4`}>
-                Check out Sanket Sahu's talk on building an accessible component
-                library for native and web at React Day Bangalore.
-              </p>
-
               <div className="max-w-3xl mt-20">
                 <p className={`text-3xl font-bold ${inviteUsColor}`}>
                   Invite us to speak at your next event{' '}

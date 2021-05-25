@@ -139,7 +139,7 @@ export function Universal() {
               <p
                 className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
-                Whether you're building for the web, Android or iOS, we've got
+                Whether you're building for the Web, Android or iOS; we've got
                 you covered. Fast-track your dev process with universal
                 components.
               </p>
@@ -158,9 +158,8 @@ export function Universal() {
                 {themes.map((theme, idx) => {
                   return (
                     <div
-                      className={`flex flex-col ${
-                        idx === 1 ? 'z-50' : ''
-                      } ring-10 ${ringColor} -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
+                      className={`flex flex-col ${idx === 1 ? 'z-50' : ''
+                        } ring-10 ${ringColor} -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
                       key={idx}
                     >
                       <div className="">{theme['svg']}</div>

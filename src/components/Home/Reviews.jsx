@@ -141,7 +141,7 @@ export function Reviews() {
       <div className="px-6 md:px-0">
         <div>
           <div className="text-center pb-12 md:pb-20">
-            <h2 className={`h2 text-4xl`}>What are people saying?</h2>
+            <h2 className={`h2 text-4xl`}>See What Others Are Saying</h2>
             <p className={`text-xl ${subHeadingColor} max-w-3xl mx-auto`}>
               Here's what other React devs have to say about NativeBase.
             </p>

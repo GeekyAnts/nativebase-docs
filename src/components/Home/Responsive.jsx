@@ -243,11 +243,12 @@ export function Responsive() {
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-400">
                   Responsiveness
                 </span>
+                <span className=""> Made Easy</span>
               </h2>
               <p
                 className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
-                Instead of manually adding responsiveness, NativeBase V3 allows
+                Instead of manually adding responsiveness, NativeBase v3 allows
                 you to provide object and array values to add responsive styles.
               </p>
               <p className="mt-7">
@@ -264,7 +265,7 @@ export function Responsive() {
           </div>
           <div
             className="flex mt-10 flex-col space-y-10 lg:space-y-0 lg:flex-row-reverse rounded-md"
-            // style={{ border: '1px solid black' }}
+          // style={{ border: '1px solid black' }}
           >
             <div className="relative rounded-lg w-full lg:w-1/2 flex flex-row justify-center md:justify-start items-center">
               <div className="w-full md:w-1/2  py-2  rounded-md h-3/5 lg:absolute relative lg:-left-5">
@@ -284,7 +285,7 @@ export function Responsive() {
 
             <div
               className="flex-1  rounded-lg overflow-hidden px-0 md:px-0"
-              // style={{ zIndex: 1, maxHeight: '39rem' }}
+            // style={{ zIndex: 1, maxHeight: '39rem' }}
             >
               <CodeComponent classStyle={'pr-20 py-10'} code={exampleCode} />
             </div>

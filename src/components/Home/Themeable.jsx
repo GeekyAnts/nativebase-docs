@@ -428,9 +428,9 @@ export function Themeable() {
                 className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
               >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-indigo-500">
-                  Highly themeable,{' '}
+                  Highly Themeable,{' '}
                 </span>
-                <span>the only limit is your imagination</span>
+                <span>the Only Limit Is Your Imagination</span>
               </h2>
               <p
                 className={`tex-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
@@ -453,18 +453,17 @@ export function Themeable() {
           </div>
           <div
             className="flex flex-col lg:flex-row rounded-md"
-            // style={{ border: '1px solid black' }}
+          // style={{ border: '1px solid black' }}
           >
             <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-16">
               {/* tabs */}
               <div className="flex px-6 space-x-6 flex-row">
                 <div className="text-left">
                   <a
-                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500  ${
-                      currentTheme === 'color'
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500  ${currentTheme === 'color'
                         ? 'border-b-2 text-indigo-500 border-solid border-blue-700'
                         : ''
-                    }  border-0 cursor-pointer`}
+                      }  border-0 cursor-pointer`}
                     id="color-btn"
                     onClick={(e) => {
                       setCurrentTheme('color');
@@ -476,11 +475,10 @@ export function Themeable() {
                 <div className="text-left">
                   <a
                     id="sizing-btn"
-                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
-                      currentTheme === 'sizing'
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${currentTheme === 'sizing'
                         ? 'border-b-2 text-indigo-500 border-solid border-blue-700'
                         : ''
-                    }   border-0 cursor-pointer`}
+                      }   border-0 cursor-pointer`}
                     onClick={(e) => {
                       setCurrentTheme('sizing');
                     }}
@@ -491,11 +489,10 @@ export function Themeable() {
                 <div className="text-left">
                   <a
                     id="typography-btn"
-                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
-                      currentTheme === 'typography'
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${currentTheme === 'typography'
                         ? 'border-b-2 text-indigo-500 border-solid border-blue-700'
                         : ''
-                    }   border-0 cursor-pointer`}
+                      }   border-0 cursor-pointer`}
                     onClick={(e) => {
                       setCurrentTheme('typography');
                     }}
@@ -511,8 +508,8 @@ export function Themeable() {
                   ) : currentTheme === 'sizing' ? (
                     <Sizing />
                   ) : (
-                    <Typography />
-                  )}
+                        <Typography />
+                      )}
                 </div>
               </div>
             </div>

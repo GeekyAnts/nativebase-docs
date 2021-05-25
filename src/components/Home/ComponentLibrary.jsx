@@ -121,9 +121,8 @@ export function ComponentLibrary() {
                 </span>
               </h2>
               <p className={`text-xl leading-normal mt-7 ${subHeadingColor}`}>
-                NativeBase offers over 60 components so you can build
-                seamlessly. It includes action sheets, menus, spinners,
-                popovers, breadcrumbs and more.
+                NativeBase offers 40+ components so you can build
+                seamlessly. It includes button, checkbox, flex, stack, menu and more.
               </p>
               <p className="mt-7">
                 <a
@@ -139,7 +138,7 @@ export function ComponentLibrary() {
           </div>
           <div
             className="flex flex-col lg:flex-row space-y-10  lg:space-y-0 rounded-md"
-            // style={{ border: '1px solid black' }}
+          // style={{ border: '1px solid black' }}
           >
             <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-20">
               {/* tabs */}
@@ -147,11 +146,10 @@ export function ComponentLibrary() {
                 <div className="text-left">
                   <a
                     id="forms-btn"
-                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
-                      currentTheme === 'forms'
-                        ? 'border-b-2 text-green-700 border-solid border-green-700'
-                        : ''
-                    }  border-0 cursor-pointer`}
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${currentTheme === 'forms'
+                      ? 'border-b-2 text-green-700 border-solid border-green-700'
+                      : ''
+                      }  border-0 cursor-pointer`}
                     onClick={(e) => {
                       setCurrentTheme('forms');
                     }}
@@ -162,11 +160,10 @@ export function ComponentLibrary() {
                 <div className="text-left">
                   <a
                     id="interaction-btn"
-                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
-                      currentTheme === 'interaction'
-                        ? 'border-b-2 text-green-700 border-solid border-green-700'
-                        : ''
-                    }  border-0 cursor-pointer`}
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${currentTheme === 'interaction'
+                      ? 'border-b-2 text-green-700 border-solid border-green-700'
+                      : ''
+                      }  border-0 cursor-pointer`}
                     onClick={() => {
                       setCurrentTheme('interaction');
                     }}
@@ -176,11 +173,10 @@ export function ComponentLibrary() {
                 </div>
                 <div className="text-left">
                   <a
-                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${
-                      currentTheme === 'avatar'
-                        ? 'border-b-2 text-green-700 border-solid border-green-700'
-                        : ''
-                    }  border-0 cursor-pointer`}
+                    className={`pb-1 text-xs tracking-wider font-bold text-gray-500 ${currentTheme === 'avatar'
+                      ? 'border-b-2 text-green-700 border-solid border-green-700'
+                      : ''
+                      }  border-0 cursor-pointer`}
                     id="avatar-btn"
                     onClick={() => {
                       setCurrentTheme('avatar');

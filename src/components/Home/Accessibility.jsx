@@ -402,13 +402,13 @@ const accessibilities = [
     svg: SVGs['Screen Readers'],
     heading: 'Screen Readers',
     subHeading:
-      'Screen readers facilitate text-to-speech conversion and automatically detect important content to be conveyed to people with visual disabilities.',
+      'Screen readers facilitate text-to-speech conversion and detect crucial content to be conveyed to people with visual disabilities.',
   },
   {
     svg: SVGs['Contrast Ratio'],
     heading: 'Contrast Ratio',
     subHeading:
-      'NativeBase provides a contrasting colour based on the theme by default. You can also customise the contrast ratio using the useAccessibleColors hook.',
+      'NativeBase gives you a contrasting colour based on your theme. You can also customise it using the useAccessibleColors hook.',
   },
 ];
 export function Accessibility() {
@@ -435,7 +435,7 @@ export function Accessibility() {
                 className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
               >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-700 to-pink-900">
-                  Out of the box Accessibility
+                  Out of the Box Accessibility
                 </span>
               </h2>
               <p className="text-sm md:text-base font-semibold text-md">

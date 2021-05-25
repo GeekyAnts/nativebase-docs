@@ -331,15 +331,15 @@ export function Stats() {
               <h2
                 className={`leading-snug max-w-3xl text-3xl md:text-4xl ${headingColor}`}
               >
-                <span>We are </span>
+                <span>We Are </span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400">
-                  growing
+                  Growing
                 </span>
               </h2>
               <p
                 className={`text-lg md:text-xl mt-7 leading-normal ${subHeadingColor}`}
               >
-                NativeBase is a popular component library among devs and we're
+                NativeBase is a popular component library among devs and we are
                 constantly improving it.
               </p>
               <div className="w-full grid grid-cols-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 mt-20 max-4xl">

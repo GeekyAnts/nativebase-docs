@@ -41,8 +41,7 @@ export function Hero() {
               <div
                 className={`text-lg  md:text-2xl max-w-3xl w-full md:w-10/12  ${subHeadColor}`}
               >
-                NativeBase is an accessible, utility-first library that helps
-                you build a consistent design system across Android, iOS and Web
+                NativeBase is an accessible, utility-first library for building consistent design systems across Android, iOS and Web
                 (alpha)
                 {/* <span className="hidden lg:inline">
                   <br />
