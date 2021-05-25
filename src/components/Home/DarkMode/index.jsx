@@ -73,10 +73,9 @@ export const DarkMode = () => {
             // style={{ border: '1px solid black' }}
           >
             <div className="sm:w-full rounded-lg lg:w-1/2 flex flex-col py-0 lg:py-20">
-              {/* <div className="flex w-full lg:w-3/4 mx-auto flex-row"></div> */}
               <div className="h-72 themeable rounded-lg lg:h-full flex justify-center relative w-full mt-5">
                 <div className="h-full w-full bg-white flex items-end justify-center rounded-lg bg-white px-1 md:px-4 py-4 lg:absolute lg:-right-5 md:top-0">
-                  <footer className="flex justify-center space-x-5">
+                  <footer className="flex justify-center items-center  space-x-5">
                     <div>{SVGs['Light']}</div>
                     <div className="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
                       <input
@@ -84,6 +83,7 @@ export const DarkMode = () => {
                         name="toggle"
                         id="toggle"
                         className="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                        style={{ marginTop: '2.1px' }}
                       />
                       <label
                         htmlFor="toggle"

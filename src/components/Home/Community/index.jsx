@@ -80,7 +80,7 @@ export function Community() {
                 We have a lively community built on our shared love for React &
                 React Native. Join us!
               </p>
-              <section className="py-10 w-full grid grid-cols-1 gap-0.5 md:grid-cols-2 lg:grid-cols-3">
+              <section className="py-10 w-full grid grid-cols-2 gap-0.5 md:grid-cols-2 lg:grid-cols-3">
                 {socialsHandles.map((handle, idx) => {
                   return (
                     <div
@@ -89,7 +89,9 @@ export function Community() {
                       style={{ backgroundColor: handle.color }}
                     >
                       <p>{handle.svg}</p>
-                      <p className="text-white font-semibold">{handle.name}</p>
+                      <p className="text-white text-sm md:text-base font-semibold">
+                        {handle.name}
+                      </p>
                     </div>
                   );
                 })}

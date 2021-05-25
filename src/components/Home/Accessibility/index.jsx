@@ -26,7 +26,7 @@ export function Accessibility() {
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-100';
   return (
-    <section className="relative">
+    <section className="relative" style={{ background: '#f8faff' }}>
       <div className="max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
         <div className="relative py-12 md:py-20">
           <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
@@ -58,8 +58,17 @@ export function Accessibility() {
               <p
                 className={`text-lg font-medium md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
-                Powered by React Native ARIA, which provides React hooks that
-                enable you to build accessible design systems in no time.
+                Powered by{' '}
+                <a
+                  className=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://react-native-aria.geekyants.com/"
+                >
+                  React Native ARIA
+                </a>
+                , which provides React hooks that enable you to build accessible
+                design systems in no time.
               </p>
               <p className="mt-7">
                 <a
@@ -79,7 +88,11 @@ export function Accessibility() {
           </div>
 
           {/* grid */}
-          <div className="grid bg-pink-900 divide-solid divide-x-0 divide-y lg:divide-y-0  lg::divide-x divide-pink-400 divide-opacity-40 rounded-md mt-10 grid-cols-1 lg:grid-cols-3 gap-y-10  text-white px-5 py-10">
+          <div
+            className={`grid ${
+              !isDarkTheme ? 'bg-white text-gray-800' : 'bg-white text-gray-900'
+            }} shadow-lg divide-solid divide-x-0 divide-y-0 lg:divide-y-0  lg:divide-x divide-pink-400 divide-opacity-40 rounded-md mt-10 grid-cols-1 lg:grid-cols-3 px-5 py-10`}
+          >
             {accessibilities.map((accessibilitiy, idx) => {
               return (
                 <div

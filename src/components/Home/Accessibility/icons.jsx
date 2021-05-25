@@ -3,7 +3,7 @@ export const SVGs = {
   ScreenReaders: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-20 w-20 flex-no-shrink"
+      className="h-20 w-20 fill-current text-gray-700 flex-no-shrink"
       viewBox="0 0 65 57.12"
     >
       <g
@@ -16,14 +16,12 @@ export const SVGs = {
           data-name="Icon material-person"
           d="M27.323,27.323A10.661,10.661,0,1,0,16.661,16.661,10.658,10.658,0,0,0,27.323,27.323Zm0,5.331C20.206,32.653,6,36.225,6,43.314v5.331H48.645V43.314C48.645,36.225,34.439,32.653,27.323,32.653Z"
           transform="translate(641.355 388.146)"
-          fill="#fff"
         />
         <path
           id="Icon_awesome-wifi"
           data-name="Icon awesome-wifi"
           d="M44.642,10.89a32.692,32.692,0,0,0-44.284,0,1.118,1.118,0,0,0-.025,1.616l2.408,2.389a1.142,1.142,0,0,0,1.575.027,26.976,26.976,0,0,1,36.369,0,1.142,1.142,0,0,0,1.575-.027l2.408-2.389a1.118,1.118,0,0,0-.025-1.616ZM36.75,18.873a21.586,21.586,0,0,0-28.5,0A1.111,1.111,0,0,0,8.21,20.5l2.422,2.39a1.148,1.148,0,0,0,1.55.056,15.836,15.836,0,0,1,20.636,0,1.147,1.147,0,0,0,1.55-.056L36.79,20.5A1.111,1.111,0,0,0,36.75,18.873Z"
           transform="translate(714.385 379.671) rotate(90)"
-          fill="#fff"
         />
       </g>
     </svg>
@@ -32,7 +30,7 @@ export const SVGs = {
     <svg
       id="brightness"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-20 w-20 flex-no-shrink"
+      className="h-20 w-20 fill-current text-gray-700 flex-no-shrink"
       viewBox="0 0 79.999 79.999"
     >
       <g id="Group_458" data-name="Group 458" transform="translate(37.656)">
@@ -42,7 +40,6 @@ export const SVGs = {
             data-name="Path 306"
             d="M243.344,0A2.344,2.344,0,0,0,241,2.344v5a2.344,2.344,0,1,0,4.687,0v-5A2.344,2.344,0,0,0,243.344,0Z"
             transform="translate(-241)"
-            fill="#fff"
           />
         </g>
       </g>
@@ -57,7 +54,6 @@ export const SVGs = {
             data-name="Path 307"
             d="M243.344,450A2.344,2.344,0,0,0,241,452.344v5a2.344,2.344,0,1,0,4.687,0v-5A2.344,2.344,0,0,0,243.344,450Z"
             transform="translate(-241 -450)"
-            fill="#fff"
           />
         </g>
       </g>
@@ -72,7 +68,6 @@ export const SVGs = {
             data-name="Path 308"
             d="M78.831,75.516,75.3,71.981A2.344,2.344,0,0,0,71.981,75.3l3.536,3.536a2.344,2.344,0,0,0,3.314-3.314Z"
             transform="translate(-71.294 -71.294)"
-            fill="#fff"
           />
         </g>
       </g>
@@ -87,7 +82,6 @@ export const SVGs = {
             data-name="Path 309"
             d="M395.615,392.3l-3.536-3.536a2.344,2.344,0,0,0-3.315,3.315l3.536,3.536a2.344,2.344,0,0,0,3.314-3.314Z"
             transform="translate(-388.078 -388.078)"
-            fill="#fff"
           />
         </g>
       </g>
@@ -98,7 +92,6 @@ export const SVGs = {
             data-name="Path 310"
             d="M7.344,241h-5a2.344,2.344,0,1,0,0,4.687h5a2.344,2.344,0,1,0,0-4.687Z"
             transform="translate(0 -241)"
-            fill="#fff"
           />
         </g>
       </g>
@@ -113,7 +106,6 @@ export const SVGs = {
             data-name="Path 311"
             d="M457.344,241h-5a2.344,2.344,0,0,0,0,4.687h5a2.344,2.344,0,0,0,0-4.687Z"
             transform="translate(-450 -241)"
-            fill="#fff"
           />
         </g>
       </g>
@@ -128,7 +120,6 @@ export const SVGs = {
             data-name="Path 312"
             d="M78.831,388.765a2.344,2.344,0,0,0-3.314,0L71.981,392.3a2.344,2.344,0,1,0,3.314,3.315l3.536-3.536A2.344,2.344,0,0,0,78.831,388.765Z"
             transform="translate(-71.294 -388.078)"
-            fill="#fff"
           />
         </g>
       </g>
@@ -143,7 +134,6 @@ export const SVGs = {
             data-name="Path 313"
             d="M395.615,71.982a2.344,2.344,0,0,0-3.314,0l-3.536,3.535a2.344,2.344,0,0,0,3.315,3.315l3.536-3.536A2.344,2.344,0,0,0,395.615,71.982Z"
             transform="translate(-388.078 -71.295)"
-            fill="#fff"
           />
         </g>
       </g>
@@ -158,7 +148,6 @@ export const SVGs = {
             data-name="Path 314"
             d="M121.843,97a24.843,24.843,0,1,0,24.843,24.843A24.872,24.872,0,0,0,121.843,97Zm2.344,44.862V101.824a20.156,20.156,0,0,1,0,40.038Z"
             transform="translate(-97 -97)"
-            fill="#fff"
           />
         </g>
       </g>
@@ -167,7 +156,7 @@ export const SVGs = {
   KeyboardInteractions: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-20 w-20 flex-no-shrink"
+      className="h-20 w-20 fill-current text-gray-700 flex-no-shrink"
       viewBox="0 0 80 80"
     >
       <g id="Group_484" data-name="Group 484" transform="translate(-328 -355)">
@@ -190,14 +179,12 @@ export const SVGs = {
               data-name="Path 321"
               d="M85.876,15.676a3.039,3.039,0,0,0-2.587,1.446v-.989a3.042,3.042,0,0,0-5.631-1.6V13.85a3.042,3.042,0,0,0-5.631-1.6V3.044a3.044,3.044,0,1,0-6.088,0V25.888l-3.424-4.336a3.044,3.044,0,0,0-4.778,3.773l8.789,11.129a7.631,7.631,0,0,0,7.034,4.69h7.3a8.071,8.071,0,0,0,8.062-8.062V18.72A3.044,3.044,0,0,0,85.876,15.676Z"
               transform="translate(-57.081)"
-              fill="#fff"
             />
             <path
               id="Path_322"
               data-name="Path 322"
               d="M130.991,239.446h-18.5a1.714,1.714,0,0,0-1.714,1.714v5.281a1.714,1.714,0,0,0,1.714,1.714h18.5a1.714,1.714,0,0,0,1.714-1.714V241.16A1.714,1.714,0,0,0,130.991,239.446Z"
               transform="translate(-100.866 -195.238)"
-              fill="#fff"
             />
           </g>
           <g id="_x3C_Group_x3E__4_" transform="translate(20.296 0) rotate(40)">
@@ -211,7 +198,6 @@ export const SVGs = {
                 data-name="Path 316"
                 d="M1.4,11.234A1.4,1.4,0,0,1,0,9.83V1.4a1.4,1.4,0,1,1,2.809,0V9.83A1.4,1.4,0,0,1,1.4,11.234Z"
                 transform="translate(0 0)"
-                fill="#fff"
               />
             </g>
             <g
@@ -224,7 +210,6 @@ export const SVGs = {
                 data-name="Path 317"
                 d="M6.37,8.356.411,2.4A1.4,1.4,0,0,1,2.4.411L8.356,6.37A1.4,1.4,0,0,1,6.37,8.356Z"
                 transform="translate(0)"
-                fill="#fff"
               />
             </g>
             <g
@@ -237,7 +222,6 @@ export const SVGs = {
                 data-name="Path 318"
                 d="M.411,8.356a1.4,1.4,0,0,1,0-1.986L6.37.411A1.4,1.4,0,0,1,8.356,2.4L2.4,8.356A1.4,1.4,0,0,1,.411,8.356Z"
                 transform="translate(0)"
-                fill="#fff"
               />
             </g>
             <g
@@ -249,7 +233,6 @@ export const SVGs = {
                 id="Path_319"
                 data-name="Path 319"
                 d="M.411,8.356a1.4,1.4,0,0,1,0-1.986L6.37.411A1.4,1.4,0,0,1,8.356,2.4L2.4,8.356A1.4,1.4,0,0,1,.411,8.356Z"
-                fill="#fff"
               />
             </g>
             <g
@@ -262,7 +245,6 @@ export const SVGs = {
                 data-name="Path 320"
                 d="M9.83,2.809H1.4A1.4,1.4,0,1,1,1.4,0H9.83a1.4,1.4,0,1,1,0,2.809Z"
                 transform="translate(0 0)"
-                fill="#fff"
               />
             </g>
           </g>

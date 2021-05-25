@@ -69,18 +69,18 @@ export function Sponsors() {
                   Become a sponsor
                 </a>
               </p>
-              <ul className="flex max-w-4xl mt-20 flex-wrap pl-0 gap-x-4 gap-y-10">
+              <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5  mt-10 md:mt-20 gap-y-3 gap-x-2">
                 {sponsors.map((sponsor) => (
                   <div key={sponsor.id}>
                     <img
-                      className="rounded-full w-24 h-24"
-                      alt={sponsor.name}
+                      className="rounded-full h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+                      alt={sponsor.login}
                       src={sponsor.image}
                       loading="lazy"
                     ></img>
                   </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>

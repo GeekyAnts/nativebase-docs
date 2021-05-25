@@ -31,7 +31,7 @@ const products = [
 
 function Product({ product, link, productColor }) {
   return (
-    <div className={'px-3'}>
+    <div className={'w-24'}>
       <a
         href={link}
         style={{ textDecorationLine: 'none' }}
@@ -77,7 +77,7 @@ export function More() {
                 delighted! Take a look at our other projects.
               </p>
               <main className="max-w-sm mx-auto mt-20 md:max-w-none">
-                <div className="flex list-none flex-wrap justify-start gap-y-5 md:gap-y-0 gap-x-0.5">
+                <div className="flex list-none flex-wrap justify-start md:justify-start gap-y-5 -gap-x-3">
                   {products.map((props, idx) => {
                     return (
                       <div data-aos="zoom-y-out" key={idx}>

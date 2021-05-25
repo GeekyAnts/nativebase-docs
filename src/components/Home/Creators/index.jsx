@@ -96,21 +96,20 @@ export function Creators() {
                 NativeBase 3.0 has come to fruition only due to the amazing team
                 that worked tirelessly on it. Here are our creators:
               </p>
-              <ul className="flex max-w-4xl mt-20 flex-wrap justify-center pl-0 gap-x-4 gap-y-10">
+              <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-10 md:mt-20 gap-y-3">
                 {creators.map((contributor) => (
-                  <li className="list-none" key={contributor.id}>
+                  <div className="list-none" key={contributor.id}>
                     <a href={contributor.html_url} target="_blank">
                       <img
-                        className="rounded-full"
+                        className="rounded-full h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
                         alt={contributor.login}
                         src={contributor.avatar_url}
                         loading="lazy"
-                        height="114px"
                       ></img>
                     </a>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>
