@@ -126,15 +126,15 @@ export function Stats() {
                   return (
                     <div key={idx}>
                       <div
-                        className={`ring-4 md:ring-8 ${ringColor} w-24 h-24 md:w-44 md:h-44 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white`}
+                        className={`ring-4 md:ring-8 ${ringColor} w-20 h-20 md:w-44 md:h-44 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white`}
                       >
                         <div>{stat.svg}</div>
-                        <div className="font-bold text-sm md:text-3xl ">
+                        <div className="font-bold text-xs md:text-3xl ">
                           {stat.value}
                         </div>
                       </div>
                       <p
-                        className={`text-center md:ml-4 text-xs md:text-lg mt-2.5 font-semibold ${statsColor}`}
+                        className={`text-center md:ml-4 text-xxs md:text-lg mt-2.5 font-semibold ${statsColor}`}
                       >
                         {stat.name}
                       </p>

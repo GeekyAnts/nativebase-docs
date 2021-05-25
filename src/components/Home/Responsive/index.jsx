@@ -109,21 +109,23 @@ export function Responsive() {
             </div>
           </div>
           <div
-            className="flex mt-10 flex-col space-y-10 rounded-md"
+            className="flex mt-10  flex-col space-y-10 rounded-md"
             // style={{ border: '1px solid black' }}
           >
             <div
-              className="w-full border-0 flex flex-row"
+              className="border-0 flex flex-row"
               style={{
                 height: '450px',
+                width: '100%',
               }}
             >
               <ResizePanel
                 direction="e"
-                className="w-1/3 border-0"
+                className="border-0"
                 style={{
-                  minWidth: '30%',
+                  minWidth: '275px',
                   maxWidth: '100%',
+                  width: '30%',
                 }}
               >
                 <div className="themeable border-0 rounded-lg w-full h-full">
@@ -131,6 +133,7 @@ export function Responsive() {
                     src=""
                     width="100%"
                     height="100%"
+                    background="red"
                     style={{ border: 'none' }}
                     title="W3Schools Free Online Web Tutorials"
                   ></iframe>
