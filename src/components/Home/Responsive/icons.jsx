@@ -1,13 +1,9 @@
-import React from 'react';
-import { CodeComponent } from './CodeComponent';
-import useThemeContext from '@theme/hooks/useThemeContext';
-
-const SVGs = {
+import * as React from 'react';
+export const SVGs = {
   Logo: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="43"
-      height="43"
+      className="h-12 w-12"
       viewBox="0 0 43 43"
     >
       <g id="Group_578" data-name="Group 578" transform="translate(-66 -26)">
@@ -34,9 +30,8 @@ const SVGs = {
   ),
   Expand: (
     <svg
+      className="expandSvg h-10 w-10 flex-no-shrink fill-current"
       xmlns="http://www.w3.org/2000/svg"
-      width="39"
-      height="31"
       viewBox="0 0 39 31"
     >
       <g id="Group_580" data-name="Group 580" transform="translate(-865 -553)">
@@ -181,116 +176,3 @@ const SVGs = {
     </svg>
   ),
 };
-const exampleCode = `
-<Box
-  flexDirection={{ base: 'column', md: 'row' }}
-  shadow={4}
-  rounded="xl"
-  overflow="hidden"
->
-  <Box width={{ md: 24 }} height={{ base: 32, md: '100%' }}>
-    <Image
-      source={{
-        uri:
-          'https://static.nike.com/a/images/f_auto/dpr_2.0/w_1328,c_limit/b56d1e9b-3861-4c89-995d-b8fb6240a762/nike-just-do-it.jpg'
-      }}
-      alt="Shoes"
-    />
-  </Box>
-  <Stack p={3} space={2} minW={32}>
-    <Text fontSize="xs" color="red.400" fontWeight="semibold">
-      Just In
-    </Text>
-    <Stack space={1}>
-      <Heading size="sm">Jordan MA2</Heading>
-      <Text fontWeight="medium" color="blueGray.600">
-        Older Kids' Shoe
-      </Text>
-      <Text fontWeight="medium" color="blueGray.600">
-        2 colors
-      </Text>
-    </Stack>
-    <Text fontSize="md" fontWeight="semibold" color="blueGray.600">
-      $ 150
-    </Text>
-  </Stack>
-</Box>
-`.trim();
-
-export function Responsive() {
-  // const { isDarkTheme } = useThemeContext();
-  // TODO: change this
-  const foldBg = '';
-  // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
-  const { isDarkTheme } = useThemeContext();
-  const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
-  const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
-  return (
-    <section className="relative">
-      <div
-        className={'absolute inset-0 pointer-events-none ' + foldBg}
-        aria-hidden="true"
-      />
-
-      <div className="px-6 md:px-0">
-        <div className="relative py-12 md:py-20">
-          <div className="max-w-3xl flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
-            <div className="mt-2">{SVGs['Logo']}</div>
-            <div>
-              <h2
-                className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
-              >
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-400">
-                  Responsiveness
-                </span>
-              </h2>
-              <p
-                className={`text-lg md:text-xl leading-normal mt-7 ${subHeadingColor}`}
-              >
-                Instead of manually adding responsiveness, NativeBase V3 allows
-                you to provide object and array values to add responsive styles.
-              </p>
-              <p className="mt-7">
-                <a
-                  className="text-green-500 no-underline border-0 border-b-2 border-solid hover:border-green-500 font-bold"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://alpha.nativebase.io/docs/responsive-style"
-                >
-                  Learn More
-                </a>
-              </p>
-            </div>
-          </div>
-          <div
-            className="flex mt-10 flex-col space-y-10 lg:space-y-0 lg:flex-row-reverse rounded-md"
-            // style={{ border: '1px solid black' }}
-          >
-            <div className="relative rounded-lg w-full lg:w-1/2 flex flex-row justify-center md:justify-start items-center">
-              <div className="w-full md:w-1/2  py-2  rounded-md h-3/5 lg:absolute relative lg:-left-5">
-                <div className="flex ml-2 bg-transparent space-x-5">
-                  <div>{SVGs['Mobile']}</div>
-                  <div className="hidden md:inline-block">{SVGs['Tablet']}</div>
-                  <div className="hidden lg:inline-block">
-                    {SVGs['Desktop']}
-                  </div>
-                </div>
-                <div className="flex-1 themeable  rounded-md h-80 bg-white lg:h-full"></div>
-                <div className="hidden md:inline-block absolute -right-10 top-1/2">
-                  {SVGs['Expand']}
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="flex-1  rounded-lg overflow-hidden px-0 md:px-0"
-              // style={{ zIndex: 1, maxHeight: '39rem' }}
-            >
-              <CodeComponent classStyle={'pr-20 py-10'} code={exampleCode} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}

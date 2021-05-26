@@ -4,7 +4,7 @@ import Star from '../../img/Star';
 import useThemeContext from '@theme/hooks/useThemeContext';
 
 export function Hero() {
-  const [starCount, setStarCount] = React.useState(0);
+  const [starCount, setStarCount] = React.useState('15K+');
   React.useEffect(() => {
     fetch('https://api.github.com/repos/GeekyAnts/NativeBase')
       .then((response) => response.json())
@@ -19,14 +19,14 @@ export function Hero() {
     ? 'border-secondary-20'
     : 'border-gray-400';
   return (
-    <section className="relative">
+    <section className="max-w-6xl mx-auto relative">
       {/* Illustration behind hero content */}
 
       <div className="w-full md:w-7/12">
         {/* Hero content */}
-        <div className="pt-6 pb-12 md:pt-20 px-6 md:px-0 md:pb-0">
+        <div className="pt-6 pb-12 md:pt-20 px-6 xl:px-0 md:pb-0">
           {/* Section header */}
-          <div className="pb-12 text-left space-y-10 md:px-0 md:space-y-6">
+          <div className="pb-12 text-left space-y-10 xl:px-0 md:space-y-6">
             <h1
               className={`font-inter text-3xl  md:text-5xl leading-tight max-w-3xl md:leading-snug tracking-normal mt-6 mb-0 ${headColor}`}
             >
@@ -41,8 +41,7 @@ export function Hero() {
               <div
                 className={`text-lg  md:text-2xl max-w-3xl w-full md:w-10/12  ${subHeadColor}`}
               >
-                NativeBase is an accessible, utility-first library that helps
-                you build a consistent design system across Android, iOS and Web
+                NativeBase is an accessible, utility-first library for building consistent design systems across Android, iOS and Web
                 (alpha)
                 {/* <span className="hidden lg:inline">
                   <br />

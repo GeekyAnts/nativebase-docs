@@ -17,10 +17,6 @@ import { VStack } from 'native-base';
 
 ```
 
-### Important 🚨
-
-> If you want to pass custom components (not a NativeBase imported component) as direct children of Stack, VStack, HStack, or ZStack you must wrap that in a [`Box`](box.md) for Stacks to work as expected.
-
 ## Props
 
 ```ComponentPropTable path=primitives,Stack,VStack.tsx

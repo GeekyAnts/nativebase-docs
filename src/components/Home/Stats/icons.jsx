@@ -1,7 +1,5 @@
-import React from 'react';
-import useThemeContext from '@theme/hooks/useThemeContext';
-
-const SVGs = {
+import * as React from 'react';
+export const SVGs = {
   Logo: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,27 +16,29 @@ const SVGs = {
       />
     </svg>
   ),
-  Downloads: (
+  Github: (
     <svg
+      id="Group_638"
+      data-name="Group 638"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6 md:h-14 md:w-14 flex-no-shrink fill-current"
-      viewBox="0 0 31.372 40.248"
+      className="h-6 w-7 md:h-14 md:w-14"
+      viewBox="0 0 40 40"
     >
+      <path id="Path_382" data-name="Path 382" d="M0,0H40V40H0Z" fill="none" />
       <path
-        id="Icon_ionic-md-download"
-        data-name="Icon ionic-md-download"
-        d="M38.122,18.7H29.161V4.5H15.711V18.7H6.75L22.436,35.273ZM6.75,40.01v4.737H38.122V40.01Z"
-        transform="translate(-6.75 -4.5)"
+        id="github"
+        d="M19.683.5A19.513,19.513,0,0,0,0,19.842,19.374,19.374,0,0,0,13.458,38.193c.984.182,1.345-.417,1.345-.93,0-.459-.016-1.676-.025-3.289-5.475,1.166-6.63-2.595-6.63-2.595a5.156,5.156,0,0,0-2.19-2.829c-1.783-1.2.138-1.174.138-1.174a4.118,4.118,0,0,1,3.015,1.993c1.755,2.957,4.607,2.1,5.733,1.609a4.1,4.1,0,0,1,1.247-2.587c-4.371-.484-8.966-2.147-8.966-9.558a7.39,7.39,0,0,1,2.026-5.19,6.767,6.767,0,0,1,.172-5.119s1.648-.518,5.413,1.983a18.872,18.872,0,0,1,9.842,0c3.74-2.5,5.388-1.983,5.388-1.983a6.954,6.954,0,0,1,.2,5.119,7.42,7.42,0,0,1,2.018,5.19c0,7.43-4.6,9.066-8.98,9.541a4.589,4.589,0,0,1,1.329,3.579c0,2.588-.025,4.668-.025,5.3,0,.507.344,1.112,1.353.919A19.315,19.315,0,0,0,39.366,19.842,19.516,19.516,0,0,0,19.683.5Z"
+        transform="translate(0.317 0.534)"
         fill="#fff"
       />
     </svg>
   ),
-  Contributors: (
+  Contributions: (
     <svg
       id="handshake_1_"
       data-name="handshake (1)"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6 md:h-14 md:w-14 flex-no-shrink fill-current"
+      className="h-6 w-7 md:h-14 md:w-14"
       viewBox="0 0 46.392 28.832"
     >
       <path
@@ -159,7 +159,7 @@ const SVGs = {
     <svg
       id="group"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6  md:h-14 md:w-14 flex-no-shrink fill-current"
+      className="h-6 w-7 md:h-14 md:w-14"
       viewBox="0 0 40 34.084"
     >
       <g
@@ -242,179 +242,19 @@ const SVGs = {
       </g>
     </svg>
   ),
-  GithubStars: (
+  Downloads: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6 md:h-14 md:w-14 flex-no-shrink fill-current"
-      viewBox="0 0 40 40"
+      className="h-6 w-7 md:h-14 md:w-14"
+      viewBox="0 0 31.372 40.248"
     >
-      <g id="Group_639" data-name="Group 639" transform="translate(-336 -333)">
-        <g id="Group_638" data-name="Group 638" transform="translate(336 333)">
-          <path
-            id="Path_382"
-            data-name="Path 382"
-            d="M0,0H40V40H0Z"
-            fill="none"
-          />
-          <path
-            id="github"
-            d="M19.683.5A19.513,19.513,0,0,0,0,19.842,19.374,19.374,0,0,0,13.458,38.193c.984.182,1.345-.417,1.345-.93,0-.459-.016-1.676-.025-3.289-5.475,1.166-6.63-2.595-6.63-2.595a5.156,5.156,0,0,0-2.19-2.829c-1.783-1.2.138-1.174.138-1.174a4.118,4.118,0,0,1,3.015,1.993c1.755,2.957,4.607,2.1,5.733,1.609a4.1,4.1,0,0,1,1.247-2.587c-4.371-.484-8.966-2.147-8.966-9.558a7.39,7.39,0,0,1,2.026-5.19,6.767,6.767,0,0,1,.172-5.119s1.648-.518,5.413,1.983a18.872,18.872,0,0,1,9.842,0c3.74-2.5,5.388-1.983,5.388-1.983a6.954,6.954,0,0,1,.2,5.119,7.42,7.42,0,0,1,2.018,5.19c0,7.43-4.6,9.066-8.98,9.541a4.589,4.589,0,0,1,1.329,3.579c0,2.588-.025,4.668-.025,5.3,0,.507.344,1.112,1.353.919A19.315,19.315,0,0,0,39.366,19.842,19.516,19.516,0,0,0,19.683.5Z"
-            transform="translate(0.317 0.534)"
-            fill="#fff"
-          />
-        </g>
-      </g>
+      <path
+        id="Icon_ionic-md-download"
+        data-name="Icon ionic-md-download"
+        d="M38.122,18.7H29.161V4.5H15.711V18.7H6.75L22.436,35.273ZM6.75,40.01v4.737H38.122V40.01Z"
+        transform="translate(-6.75 -4.5)"
+        fill="#fff"
+      />
     </svg>
   ),
 };
-
-const stats = [
-  {
-    name: 'Downloads',
-    value: '38.2k',
-    svg: SVGs['Downloads'],
-  },
-  {
-    name: 'GithubStars',
-    value: '14.8k',
-    svg: SVGs['GithubStars'],
-  },
-  {
-    name: ' Contributions',
-    value: '196',
-    svg: SVGs['Contributors'],
-  },
-  {
-    name: 'Dependents',
-    value: '53.6k',
-    svg: SVGs['Dependents'],
-  },
-];
-
-export function Stats() {
-  const [starCount, setStarCount] = React.useState(0);
-
-  // React.useEffect(() => {
-  //   fetch('https://api.github.com/repos/GeekyAnts/NativeBase')
-  //     .then((response) => response.json())
-  //     .then((data) => setStarCount(data.stargazers_count.toLocaleString()));
-
-  //   fetch(
-  //     'https://api.github.com/repos/Geekyants/nativebase/contributors?per_page=196'
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => console.log(data));
-  // }, []);
-
-  const { isDarkTheme } = useThemeContext();
-  const foldBg = '';
-  const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
-  const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
-  const statsColor = !isDarkTheme ? 'text-gray-500' : 'text-gray-400';
-  const ringColor = !isDarkTheme ? 'ring-white' : 'ring-secondary-800';
-
-  return (
-    <section className="relative">
-      <div
-        className={'absolute inset-0 pointer-events-none ' + foldBg}
-        aria-hidden="true"
-      />
-      <div className="px-6 md:px-0">
-        <div className="relative py-12 md:py-20">
-          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0  md:space-x-7">
-            <div className="mt-2">
-              <p className="w-10 h-10 items-center rounded-md flex justify-center bg-green-600">
-                {SVGs['Logo']}
-              </p>
-            </div>
-            <div className="w-full">
-              <h2
-                className={`leading-snug max-w-3xl text-3xl md:text-4xl ${headingColor}`}
-              >
-                <span>We are </span>
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400">
-                  growing
-                </span>
-              </h2>
-              <p
-                className={`text-lg md:text-xl mt-7 leading-normal ${subHeadingColor}`}
-              >
-                NativeBase is a popular component library among devs and we're
-                constantly improving it.
-              </p>
-              <div className="w-full grid grid-cols-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 mt-20 max-4xl">
-                {stats.map((stat, idx) => {
-                  return (
-                    <div key={idx}>
-                      <div
-                        className={`ring-8 md:ring-10 ${ringColor} w-24 h-24 md:w-44 md:h-44 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white`}
-                      >
-                        <div className="">{stat.svg}</div>
-                        <div className="font-bold text-sm md:text-3xl ">
-                          {stat.value}
-                        </div>
-                      </div>
-                      <p
-                        className={`text-center md:ml-4 text-xs md:text-lg mt-2.5 font-semibold ${statsColor}`}
-                      >
-                        {stat.name}
-                      </p>
-                    </div>
-                  );
-                })}
-                {/* <div className="">
-                  <div className=" ring-10 ring-white w-20 h-20 md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
-                    <div className="">{SVGs['Downloads']}</div>
-                    <div className="font-bold text-xl md:text-3xl ">38.2k</div>
-                  </div>
-                  <p
-                    className={`text-center mt-2.5 font-semibold ${statsColor}`}
-                  >
-                    Downloads / week
-                  </p>
-                </div>
-                <div className="-ml-2 lg:-ml-8">
-                  <div className=" ring-10 ring-white w-20 h-20  md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
-                    <div className="">{SVGs['GithubStars']}</div>
-                    <div className="font-bold text-2xl md:text-3xl ">14.8k</div>
-                  </div>
-                  <p
-                    className={`text-center mt-2.5 font-semibold ${statsColor}`}
-                  >
-                    Github Stars
-                  </p>
-                </div>
-                <div className="-ml-2 lg:-ml-8 ">
-                  <div className="ring-10 ring-white w-20 h-20  md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white ring-10 ring-white ">
-                    <div className="flex items-center">
-                      {SVGs['Contributors']}
-                    </div>
-                    <div className="font-bold mt-1 text-2xl md:text-3xl ">
-                      196
-                    </div>
-                  </div>
-                  <p
-                    className={`text-center mt-2.5 font-semibold ${statsColor}`}
-                  >
-                    Contributions
-                  </p>
-                </div>
-                <div className="-ml-2 -ml-2 lg:-ml-8 ">
-                  <div className="w-20 h-20 ring-10 ring-white  md:w-36 md:h-36 lg:h-48 lg:w-48 flex flex-col items-center justify-center rounded-full bg-green-600 text-white">
-                    <div className="">{SVGs['Dependents']}</div>
-                    <div className="font-bold  text-2xl md:text-3xl">53.6k</div>
-                  </div>
-                  <p
-                    className={`text-center mt-2.5 text-md font-semibold ${statsColor}`}
-                  >
-                    Dependents
-                  </p>
-                </div> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
