@@ -124,10 +124,10 @@ export function Responsive() {
                 direction="e"
                 className="border-0"
                 style={{
-                  minWidth: '275px',
+                  minWidth: '270px',
                   maxWidth: '100%',
                   zIndex: '999',
-                  width: '30%',
+                  width: '20%',
                 }}
               >
                 <div className="themeable border-0 rounded-lg w-full h-full">
