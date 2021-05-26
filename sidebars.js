@@ -145,14 +145,25 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Transition',
+      collapsed: false,
+      items: [
+        // 'appBar',
+        'presence-transition',
+        'slide',
+        'stagger',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Others',
       collapsed: false,
       items: [
         // 'appBar',
         'FAB',
-        'transition',
       ],
     },
+
     {
       type: 'category',
       label: 'Hooks',
