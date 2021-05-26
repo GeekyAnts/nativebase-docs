@@ -113,9 +113,8 @@ export function ComponentLibrary() {
               <p
                 className={`text-lg md:text-xl font-medium leading-normal mt-7 ${subHeadingColor}`}
               >
-                NativeBase offers over 60 components so you can build
-                seamlessly. It includes action sheets, menus, spinners,
-                popovers, breadcrumbs and more.
+                NativeBase offers 40+ components so you can build seamlessly. It
+                includes button, checkbox, flex, stack, menu and more.
               </p>
               <p className="mt-7">
                 <a

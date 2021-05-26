@@ -26,7 +26,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.0.0-next.37/style-props"
+          "id": "version-3.0.0-next.37/utility-props"
         },
         {
           "type": "doc",
@@ -394,6 +394,10 @@
             {
               "type": "doc",
               "id": "version-3.0.0-next.37/buildingSearchBar"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.0.0-next.37/buildingAppBar"
             }
           ]
         },

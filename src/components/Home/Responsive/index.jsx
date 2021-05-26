@@ -83,11 +83,12 @@ export function Responsive() {
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-400">
                   Responsiveness
                 </span>
+                <span className=""> Made Easy</span>
               </h2>
               <p
                 className={`text-lg max-w-3xl font-medium md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
-                Instead of manually adding responsiveness, NativeBase V3 allows
+                Instead of manually adding responsiveness, NativeBase v3 allows
                 you to provide object and array values to add responsive styles.
               </p>
               <p className="mt-7">
