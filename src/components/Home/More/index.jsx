@@ -31,7 +31,7 @@ const products = [
 
 function Product({ product, link, productColor }) {
   return (
-    <div className={'w-24'}>
+    <div className={'w-24 lg:w-32'}>
       <a
         href={link}
         style={{ textDecorationLine: 'none' }}

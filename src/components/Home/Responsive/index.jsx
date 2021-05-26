@@ -46,7 +46,6 @@ export function Responsive() {
   // const { isDarkTheme } = useThemeContext();
   // TODO: change this
   const foldBg = '';
-  // const foldBg = !isDarkTheme ? 'bg-gray-100' : '';
   const { isDarkTheme } = useThemeContext();
   const headingColor = !isDarkTheme ? 'text-gray-800' : 'text-gray-200';
   const subHeadingColor = !isDarkTheme ? 'text-gray-600' : 'text-gray-400';
@@ -101,42 +100,38 @@ export function Responsive() {
                   Learn More
                 </a>
               </p>
-              <div
-                className="border-0 mt-10 md:w-full flex flex-row"
-                style={{
-                  height: '450px',
-                }}
-              >
-                <ResizePanel
-                  direction="e"
-                  className="border-0"
-                  style={{
-                    minWidth: '270px',
-                    maxWidth: '95%',
-                    width: '20%',
-                  }}
-                >
-                  <div className="themeable border-0 bg-white z-10 rounded-lg w-full h-full">
-                    <iframe
-                      src=""
-                      width="100%"
-                      height="100%"
-                      z-index="999"
-                      background="red"
-                      style={{ border: 'none' }}
-                      title="W3Schools Free Online Web Tutorials"
-                    ></iframe>
-                  </div>
-                </ResizePanel>
-              </div>
             </div>
           </div>
 
-          <div
-            className="flex mt-10  flex-col rounded-md"
-            // style={{ border: '1px solid black' }}
-          >
-            <div className="flex-1 rounded-lg -mt-10 z-50 overflow-hidden px-0 md:px-0">
+          <div className="flex mt-10  flex-col rounded-md z-0">
+            <div
+              className="border-0 flex flex-row mx-8"
+              style={{
+                height: '450px',
+                width: '100%',
+              }}
+            >
+              <ResizePanel
+                direction="e"
+                className="border-0"
+                style={{
+                  minWidth: '320px',
+                  maxWidth: '95%',
+                  width: '30%',
+                }}
+              >
+                <div className="themeable border-0 rounded-lg w-full h-full overflow-hidden">
+                  <iframe
+                    src="https://nativebase-v3-examples-dashboard-app.vercel.app"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 'none' }}
+                    title="NativeBase v3 responsiveness Example"
+                  ></iframe>
+                </div>
+              </ResizePanel>
+            </div>
+            <div className="flex-1 rounded-lg overflow-hidden px-0 md:px-0 -mt-3 z-50">
               <CodeComponent classStyle={'pr-20 py-10'} code={exampleCode} />
             </div>
           </div>
