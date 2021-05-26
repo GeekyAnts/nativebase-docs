@@ -25,6 +25,12 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 ```
 
+### With Linear Gradiant
+
+```ComponentSnackPlayer path=primitives,Box,LinearGrad.tsx
+
+```
+
 <br/>
 <br/>
 

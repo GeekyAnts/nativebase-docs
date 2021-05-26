@@ -1,5 +1,5 @@
 SRC="NativeBase"
-BRANCH="v3-pre-beta"
+BRANCH="v3-test"
 if [ ! -d "$SRC" ]; then
   # Take action if $DIR exists. #
   git clone https://github.com/GeekyAnts/NativeBase.git
