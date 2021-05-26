@@ -77,7 +77,7 @@ export function Universal() {
                     <div
                       className={`flex flex-col ${
                         idx === 1 ? 'z-50' : ''
-                      } ring-10 ${ringColor} -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
+                      } ring-4 md:ring-8 ${ringColor} -ml-1 md:-ml-1 lg:-ml-3 justify-center items-center bg-yellow-600 h-24 w-24 md:w-40 md:h-40 lg:h-48 lg:w-48 rounded-full py-2`}
                       key={idx}
                     >
                       <div>{theme.svg}</div>

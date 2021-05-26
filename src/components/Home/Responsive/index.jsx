@@ -108,12 +108,13 @@ export function Responsive() {
               </p>
             </div>
           </div>
+
           <div
-            className="flex mt-10  flex-col space-y-10 rounded-md"
+            className="flex mt-10  flex-col rounded-md"
             // style={{ border: '1px solid black' }}
           >
             <div
-              className="border-0 flex flex-row"
+              className="border-0 z-50 flex bg-white flex-row"
               style={{
                 height: '450px',
                 width: '100%',
@@ -125,6 +126,7 @@ export function Responsive() {
                 style={{
                   minWidth: '275px',
                   maxWidth: '100%',
+                  zIndex: '999',
                   width: '30%',
                 }}
               >
@@ -133,6 +135,7 @@ export function Responsive() {
                     src=""
                     width="100%"
                     height="100%"
+                    z-index="999"
                     background="red"
                     style={{ border: 'none' }}
                     title="W3Schools Free Online Web Tutorials"
@@ -141,7 +144,7 @@ export function Responsive() {
               </ResizePanel>
             </div>
             <div
-              className="flex-1 rounded-lg overflow-hidden px-0 md:px-0"
+              className="flex-1 rounded-lg -mt-10 z-0 overflow-hidden px-0 md:px-0"
               // style={{ zIndex: 1, maxHeight: '39rem' }}
             >
               <CodeComponent classStyle={'pr-20 py-10'} code={exampleCode} />

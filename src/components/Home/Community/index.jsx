@@ -85,7 +85,7 @@ export function Community() {
                   return (
                     <div
                       key={idx}
-                      className={`px-8 py-8 h-40`}
+                      className={`px-4 bg-red-500 sm:bg-pink-500 xs:px-8 py-8 h-40`}
                       style={{ backgroundColor: handle.color }}
                     >
                       <p>{handle.svg}</p>
@@ -128,7 +128,7 @@ export function Community() {
                 <div className="h-16 w-16 md:w-32 md:h-32 lg:h-40 lg:w-40 bg-gray-200 rounded-full"></div>
               </div>
               <div className="mt-8 text-center">
-                <h1 className="inline  font-black text-3xl">
+                <h1 className="inline font-black text-3xl">
                   Join our Experts on
                 </h1>
                 <div className="inline-block align-middle -ml-2">
