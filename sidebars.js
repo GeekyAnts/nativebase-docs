@@ -143,17 +143,17 @@ module.exports = {
       collapsed: false,
       items: ['avatar', 'icon', 'image'],
     },
-    {
-      type: 'category',
-      label: 'Transition',
-      collapsed: false,
-      items: [
-        // 'appBar',
-        'presence-transition',
-        'slide',
-        'stagger',
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Transition',
+    //   collapsed: false,
+    //   items: [
+    //     // 'appBar',
+    //     'presence-transition',
+    //     'slide',
+    //     'stagger',
+    //   ],
+    // },
     {
       type: 'category',
       label: 'Others',
