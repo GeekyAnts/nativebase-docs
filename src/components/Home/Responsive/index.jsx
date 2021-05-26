@@ -73,25 +73,20 @@ export function Responsive() {
   };
   return (
     <section className="relative">
-      <div
-        className={'absolute inset-0 pointer-events-none ' + foldBg}
-        aria-hidden="true"
-      />
-
       <div className="max-w-6xl mx-auto px-6 md:px-10 xl:px-0">
-        <div className="relative py-12 md:py-20">
-          <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
+        <div className="relative w-full py-12 md:py-20">
+          <div className="flex w-full flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-7">
             <div className="mt-2">{SVGs.Logo}</div>
-            <div className="max-w-3xl">
+            <div className="w-full">
               <h2
-                className={`leading-snug text-3xl md:text-4xl ${headingColor}`}
+                className={`leading-snug max-w-3xl text-3xl md:text-4xl ${headingColor}`}
               >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-400">
                   Responsiveness
                 </span>
               </h2>
               <p
-                className={`text-lg font-medium md:text-xl leading-normal mt-7 ${subHeadingColor}`}
+                className={`text-lg max-w-3xl font-medium md:text-xl leading-normal mt-7 ${subHeadingColor}`}
               >
                 Instead of manually adding responsiveness, NativeBase V3 allows
                 you to provide object and array values to add responsive styles.
@@ -106,6 +101,34 @@ export function Responsive() {
                   Learn More
                 </a>
               </p>
+              <div
+                className="border-0 mt-10 md:w-full flex flex-row"
+                style={{
+                  height: '450px',
+                }}
+              >
+                <ResizePanel
+                  direction="e"
+                  className="border-0"
+                  style={{
+                    minWidth: '270px',
+                    maxWidth: '95%',
+                    width: '20%',
+                  }}
+                >
+                  <div className="themeable border-0 bg-white z-10 rounded-lg w-full h-full">
+                    <iframe
+                      src=""
+                      width="100%"
+                      height="100%"
+                      z-index="999"
+                      background="red"
+                      style={{ border: 'none' }}
+                      title="W3Schools Free Online Web Tutorials"
+                    ></iframe>
+                  </div>
+                </ResizePanel>
+              </div>
             </div>
           </div>
 
@@ -113,36 +136,6 @@ export function Responsive() {
             className="flex mt-10  flex-col rounded-md"
             // style={{ border: '1px solid black' }}
           >
-            <div
-              className="border-0 flex flex-row"
-              style={{
-                height: '450px',
-                width: '100%',
-              }}
-            >
-              <ResizePanel
-                direction="e"
-                className="border-0"
-                style={{
-                  minWidth: '270px',
-                  maxWidth: '85%',
-                  width: '20%',
-                  marginLeft: '5rem',
-                }}
-              >
-                <div className="themeable border-0 bg-white z-10 rounded-lg w-full h-full">
-                  <iframe
-                    src=""
-                    width="100%"
-                    height="100%"
-                    z-index="999"
-                    background="red"
-                    style={{ border: 'none' }}
-                    title="W3Schools Free Online Web Tutorials"
-                  ></iframe>
-                </div>
-              </ResizePanel>
-            </div>
             <div className="flex-1 rounded-lg -mt-10 z-50 overflow-hidden px-0 md:px-0">
               <CodeComponent classStyle={'pr-20 py-10'} code={exampleCode} />
             </div>
