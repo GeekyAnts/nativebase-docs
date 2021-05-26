@@ -114,7 +114,7 @@ export function Responsive() {
             // style={{ border: '1px solid black' }}
           >
             <div
-              className="border-0 z-50 flex bg-white flex-row"
+              className="border-0 flex flex-row"
               style={{
                 height: '450px',
                 width: '100%',
@@ -125,12 +125,12 @@ export function Responsive() {
                 className="border-0"
                 style={{
                   minWidth: '270px',
-                  maxWidth: '100%',
-                  zIndex: '999',
+                  maxWidth: '85%',
                   width: '20%',
+                  marginLeft: '5rem',
                 }}
               >
-                <div className="themeable border-0 rounded-lg w-full h-full">
+                <div className="themeable border-0 bg-white z-10 rounded-lg w-full h-full">
                   <iframe
                     src=""
                     width="100%"
@@ -143,10 +143,7 @@ export function Responsive() {
                 </div>
               </ResizePanel>
             </div>
-            <div
-              className="flex-1 rounded-lg -mt-10 z-0 overflow-hidden px-0 md:px-0"
-              // style={{ zIndex: 1, maxHeight: '39rem' }}
-            >
+            <div className="flex-1 rounded-lg -mt-10 z-50 overflow-hidden px-0 md:px-0">
               <CodeComponent classStyle={'pr-20 py-10'} code={exampleCode} />
             </div>
           </div>
