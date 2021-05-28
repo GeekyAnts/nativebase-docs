@@ -57,6 +57,7 @@ module.exports = {
       collapsed: false,
       items: [
         'button',
+        'pressable',
         // 'cascader',
         'checkBox',
         // 'date-picker',
