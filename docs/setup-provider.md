@@ -103,6 +103,34 @@ export default ({ children, theme }: any) => {
 };
 ```
 
+## Add external dependencies (Optional)
+
+If you want to use [Gradient feature in Box](box#with-linear-gradient), you need to pass linear gradient dependency as a config object in NativeBaseProvider. This dependency can be either from [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) or [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
+
+```jsx
+import React from 'react';
+import { NativeBaseProvider } from 'native-base';
+
+const config = {
+  dependencies: {
+    // For Expo projects (Bare or managed workflow)
+    'linear-gradient': require('expo-linear-gradient').LinearGradient,
+    // For non expo projects
+    // 'linear-gradient': require('react-native-linear-gradient').default,
+  },
+};
+
+export default () => {
+  return (
+    <NativeBaseProvider config={config}>
+      <Center flex={1}>
+        <Example />
+      </Center>
+    </NativeBaseProvider>
+  );
+};
+```
+
 ## NativeBaseProvider Props
 
 | Name                 | Type                                | Description                                                                                                                                | Default                  |
@@ -110,3 +138,4 @@ export default ({ children, theme }: any) => {
 | initialWindowMetrics | Object                              | Mock data for frame and insets. [Refer this](https://github.com/th3rdwave/react-native-safe-area-context#testing) for further information. | -                        |
 | colorModeManager     | { get : Function , set : Function } | Manage Color mode in your app                                                                                                              | -                        |
 | theme                | Object                              | use custom theme in your app                                                                                                               | NativeBase Default Theme |
+| config               | {dependencies: {}}                  | To include external dependencies. For example - [Linear gradient](box#with-linear-gradient)                                                | -                        |
