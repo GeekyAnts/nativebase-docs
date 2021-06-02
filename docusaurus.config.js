@@ -6,8 +6,7 @@ module.exports = {
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
     {
-      src:
-        'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
+      src: 'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
     },
     { src: 'https://snack.expo.io/embed.js', defer: true },
@@ -37,6 +36,8 @@ module.exports = {
       logo: {
         alt: 'NativeBase Logo',
         src: 'img/nativebaselogo.svg',
+        href: 'alpha.nativebase.io',
+        target: '_self',
       },
 
       // style: "dark",
@@ -46,8 +47,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to:
-            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          to: 'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
           label: 'Looking for v2.0',
           position: 'left',
           'aria-label': 'Looking for v2.0',
@@ -90,8 +90,7 @@ module.exports = {
           'aria-label': 'Docs',
         },
         {
-          to:
-            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          to: 'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
           label: 'HireUs',
           position: 'right',
           'aria-label': 'Hire GeekyAnts',
@@ -144,16 +143,15 @@ module.exports = {
             },
             {
               label: 'Contribution Guidelines',
-              href:
-                'https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md',
+              href: 'https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md',
             },
             {
               label: 'Privacy Policy',
-              href: '/privacy-policy',
+              href: 'https://alpha.nativebase.io/privacy-policy',
             },
             {
               label: 'Cookie Policy',
-              href: '/cookie-policy',
+              href: 'https://alpha.nativebase.io/cookie-policy',
             },
           ],
         },
@@ -162,8 +160,7 @@ module.exports = {
           items: [
             {
               label: 'Built with ❤️ at GeekyAnts.',
-              href:
-                'https://geekyants.com/?utm_source=RnD&utm_medium=Landing_Page&utm_campaign=NativeBase_3',
+              href: 'https://geekyants.com/?utm_source=RnD&utm_medium=Landing_Page&utm_campaign=NativeBase_3',
             },
           ],
         },

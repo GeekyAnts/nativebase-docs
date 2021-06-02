@@ -153,7 +153,7 @@ function Navbar() {
                     <a
                       href={item.to}
                       key={i}
-                      className={`bg-white px-0  border border-solid border-gray-200 hover:bg-gray-400 text-gray-500 font-semibold py-1 px-5 rounded no-underline hidden md:inline-block`}
+                      className={`bg-white px-0  border border-solid border-gray-200 hover:bg-gray-200 text-gray-500 font-semibold py-1 px-5 rounded no-underline hidden md:inline-block`}
                     >
                       Docs
                     </a>
