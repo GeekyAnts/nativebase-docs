@@ -36,7 +36,7 @@ module.exports = {
       logo: {
         alt: 'NativeBase Logo',
         src: 'img/nativebaselogo.svg',
-        href: 'alpha.nativebase.io',
+        href: 'https://alpha.nativebase.io',
         target: '_self',
       },
 
