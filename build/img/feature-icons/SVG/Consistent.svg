@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="71px" viewBox="0 0 71 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="NativeBase-Github" transform="translate(-1155.000000, -694.000000)">
+            <g id="Group-6" transform="translate(121.000000, 695.000000)">
+                <g id="Group-5" transform="translate(940.000000, 0.000000)">
+                    <g id="Group-2" transform="translate(95.000000, 0.000000)">
+                        <path d="M34.5,0 C53.5538239,0 69,15.4461761 69,34.5 C69,53.5538239 53.5538239,69 34.5,69 C21.9701217,69 11.0003473,62.3204009 4.95727941,52.3278052 L7.4307835,52.3280656 C13.2281984,61.1128167 23.187203,66.9090909 34.5,66.9090909 C52.3990467,66.9090909 66.9090909,52.3990467 66.9090909,34.5 C66.9090909,16.6009533 52.3990467,2.09090909 34.5,2.09090909 C16.6009533,2.09090909 2.09090909,16.6009533 2.09090909,34.5 C2.09090909,38.1990125 2.71060773,41.7532867 3.85184983,45.0646673 L1.64776792,45.0651344 C0.577806818,41.7354786 0,38.1852163 0,34.5 C0,15.4461761 15.4461761,0 34.5,0 Z" id="Combined-Shape" stroke="#6863A9" fill="#6863A9" fill-rule="nonzero"></path>
+                        <g id="Group" transform="translate(14.000000, 17.000000)" stroke="#6863A9" stroke-width="2">
+                            <rect id="Rectangle-Copy" x="6" y="0" width="36" height="31" rx="4"></rect>
+                            <rect id="Rectangle" fill="#E3E2EE" x="0" y="9" width="21" height="27" rx="4"></rect>
+                        </g>
+                        <circle id="Oval" stroke="#6863A9" fill="#6863A9" cx="4.5" cy="48.5" r="1.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
