@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   purge: ['./src/**/*.html', './src/**/*.js', './src/**/*.jsx'],
   darkMode: false, // or 'media' or 'class'
@@ -6,6 +7,11 @@ module.exports = {
   },
   important: '#tailwind',
   theme: {
+    screens: {
+      xs: '325px',
+      sm: '375px',
+      ...defaultTheme.screens,
+    },
     extend: {
       ringWidth: {
         10: '10px',
@@ -106,6 +112,7 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       fontSize: {
+        xxs: '0.65rem',
         xs: '0.75rem',
         sm: '0.875rem',
         base: '1rem',

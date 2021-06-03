@@ -19,6 +19,7 @@ export { Universal } from './Universal';
 export { DarkMode } from './DarkMode';
 export { ComponentLibrary } from './ComponentLibrary';
 export { Utility } from './Utility';
+export { NewsLetter } from './Newsletter';
 export { WatchTalk } from './WatchTalk';
 export { Web } from './Web';
 export { PolicyAcceptDialog } from './PolicyAcceptDialog';

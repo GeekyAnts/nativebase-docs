@@ -4,7 +4,26 @@ const internalProps = {
   IIconProps: { doc: 'icon.md', name: 'Icon', link: 'icon#props' },
   IStackProps: { doc: 'stack.md', name: 'Stack', link: 'stack#props' },
   IButtonProps: { doc: 'button.md', name: 'Button', link: 'button#props' },
-  IPressableProps: { doc: 'button.md', name: 'Button', link: 'button#props' },
+  IPressableProps: {
+    doc: 'pressable.md',
+    name: 'Pressable',
+    link: 'pressable#props',
+  },
+  ISupportedTransitions: {
+    doc: 'presence-transition.md',
+    name: 'ISupportedTransitions',
+    link: 'presence-transition#isupportedtransitions',
+  },
+  IStaggerStyleProps: {
+    doc: 'stagger.md',
+    name: 'IStaggerStyleProps',
+    link: 'stagger#istaggerstyleprops',
+  },
+  ITransitionStyleProps: {
+    doc: 'presence-transition.md',
+    name: 'ITransitionStyleProps',
+    link: 'presence-transition#itransitionstyleprops',
+  },
   ImageProps: {
     doc: '',
     name: 'Image from React Native',
