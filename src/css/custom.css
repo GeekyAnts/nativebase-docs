@@ -497,3 +497,9 @@ html[data-theme='dark'] .label.web {
 html[data-theme='dark'] .label:before {
   border-right-color: #fff;
 }
+
+@media (min-width: 325px) {
+  .container {
+    max-width: 100%;
+  }
+}
