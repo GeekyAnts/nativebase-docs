@@ -1,8 +1,7 @@
-NativeBase
+/NativeBase
 # Dependencies
 node_modules
 # Production
-/build
 
 # Generated files
 .docusaurus

@@ -1,6 +1,7 @@
 ---
 id: nativebase
 title: NativeBase 3.0
+slug: /
 ---
 
 A universal design system built for React and React Native apps with a single API. NativeBase 3.0 ships components for most use cases including Button, AppBar, Dialog, Modal, etc.
