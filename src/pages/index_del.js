@@ -1,12 +1,10 @@
 import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import React from 'react';
 import {
   Accessibility,
-  // FeaturesBlocks,
-  // FeaturesWorld,
-  // News,
   Community,
   Creators,
   ComponentLibrary,
@@ -15,13 +13,13 @@ import {
   Utility,
   Reviews,
   Universal,
-  // Kitchensink,
   More,
   Responsive,
   DarkMode,
   Sponsors,
   Stats,
   Themeable,
+  NewsLetter,
   UtilityProps,
   WatchTalk,
   Web,
@@ -51,7 +49,14 @@ function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="NativeBase" />
         <meta name="twitter:image:alt" content="NativeBase" />
-        <meta property="og:image" content="/img/nativebase-og.png" />
+        <meta
+          property="og:image"
+          content={useBaseUrl('/img/nativebase-og.png')}
+        />
+        <meta
+          name="twitter:image"
+          content="https://alpha.nativebase.io/img/nativebase-og.png"
+        ></meta>
         <meta name="twitter:site" content="@NativeBaseIO" />
       </Head>
       <main id="tailwind">
@@ -63,12 +68,9 @@ function Home() {
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
         </noscript>
-        <div className="overflow-hidden lg:px-8 relative">
+        <div className="overflow-hidden relative">
           <section
-            className={
-              styles.features +
-              'flex-1 max-w-6xl mx-auto md:px-8 lg:px-0 font-inter  overflow-visible'
-            }
+            className={styles.features + 'flex-1 font-inter  overflow-visible'}
           >
             <Hero />
             <UtilityProps />
@@ -87,6 +89,7 @@ function Home() {
             <Stats />
             <Community />
             <Reviews />
+            <NewsLetter />
             {/* <Cta /> */}
             <WatchTalk />
 

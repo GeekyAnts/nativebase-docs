@@ -112,6 +112,7 @@ function Navbar() {
               if (item.label === 'Looking for v2.0')
                 return (
                   <div
+                    key={i}
                     className={`hidden xl:block text-base ${nativeBaseV2Color}`}
                   >
                     Looking for{' '}
@@ -151,7 +152,11 @@ function Navbar() {
                     <a
                       href={item.to}
                       key={i}
-                      className={`bg-white px-0  border border-solid border-gray-200 hover:bg-gray-200 text-gray-500 font-semibold py-1 px-5 rounded no-underline hidden md:inline-block`}
+                      className={`${
+                        !isDarkTheme ? 'text-gray-500' : 'text-white'
+                      } px-0 border border-solid ${
+                        !isDarkTheme ? 'border-gray-200' : 'border-gray-600'
+                      }  hover:bg-gray-400  font-semibold py-1 px-5 rounded no-underline hidden md:inline-block`}
                     >
                       Docs
                     </a>
@@ -161,7 +166,12 @@ function Navbar() {
                     <a
                       href={item.to}
                       key={i}
-                      className={`border-0 px-0 bg-white border border-solid border-gray-200 text-gray-500 font-semibold py-1 rounded no-underline hidden md:inline-block px-2 ml-4`}
+                      className={`border-0 ${
+                        !isDarkTheme ? 'text-gray-500' : 'text-white'
+                      }
+                       px-0 border border-solid ${
+                         !isDarkTheme ? 'border-gray-200' : 'border-gray-600'
+                       } font-semibold py-1 rounded no-underline hidden md:inline-block px-2 ml-4`}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -266,6 +276,7 @@ function Navbar() {
                   if (item.label === 'Looking for v2.0')
                     return (
                       <div
+                        key={i}
                         className={`text-base px-4 py-1`}
                         style={{ color: !isDarkTheme ? '#606770' : '#DADDE1' }}
                       >

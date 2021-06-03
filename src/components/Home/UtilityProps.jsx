@@ -68,7 +68,7 @@ const SVGs = {
         <g
           id="Mask_Group_14"
           data-name="Mask Group 14"
-          clip-path="url(#clip-path)"
+          clipPath="url(#clip-path)"
         >
           <rect
             id="clown-anemonefish-amphiprion-swimming-among-tentacles-its-anemone-home_211453-2"
@@ -182,7 +182,7 @@ export function UtilityProps() {
         aria-hidden="true"
       />
       <div>
-        <div className="relative flex rounded flex-col space-y-10 lg:space-y-0 lg:flex-row  px-5 md:px-0">
+        <div className="relative max-w-6xl mx-auto flex rounded flex-col space-y-10 lg:space-y-0 lg:flex-row  px-6 md:px-10 xl:px-0">
           <div
             className={`sm:w-full rounded-lg ${themeBg} lg:rounded-none lg:rounded-tl-lg lg:rounded-bl-lg lg:w-1/2 flex justify-center sm:items-center md:items-start py-20 `}
           >

@@ -26,6 +26,7 @@ module.exports = {
       items: [
         'default-theme',
         'customizingTheme',
+        'customizingFonts',
         'darkMode',
         'customizingComponents',
         'breakpoint',
@@ -57,6 +58,7 @@ module.exports = {
       collapsed: false,
       items: [
         'button',
+        'pressable',
         // 'cascader',
         'checkBox',
         // 'date-picker',
@@ -145,14 +147,25 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Transition',
+      collapsed: false,
+      items: [
+        // 'appBar',
+        'presence-transition',
+        'slide',
+        'stagger',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Others',
       collapsed: false,
       items: [
         // 'appBar',
         'FAB',
-        'transition',
       ],
     },
+
     {
       type: 'category',
       label: 'Hooks',

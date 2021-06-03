@@ -1,13 +1,9 @@
-import React from 'react';
-import { CodeComponent } from './CodeComponent';
-import useThemeContext from '@theme/hooks/useThemeContext';
-
-const SVGs = {
+import * as React from 'react';
+export const SVGs = {
   Logo: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="43"
-      height="43"
+      className="h-12 w-12"
       viewBox="0 0 43 43"
     >
       <g id="Group_578" data-name="Group 578" transform="translate(-66 -26)">
@@ -34,9 +30,8 @@ const SVGs = {
   ),
   Expand: (
     <svg
+      className="expandSvg h-10 w-10 flex-no-shrink fill-current"
       xmlns="http://www.w3.org/2000/svg"
-      width="39"
-      height="31"
       viewBox="0 0 39 31"
     >
       <g id="Group_580" data-name="Group 580" transform="translate(-865 -553)">
