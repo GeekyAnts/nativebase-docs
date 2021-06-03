@@ -16,8 +16,8 @@ module.exports = {
     },
     { src: 'https://snack.expo.io/embed.js', defer: true },
   ],
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.svg',
   organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.

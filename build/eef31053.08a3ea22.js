@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1532],{1603:function(e,n,t){"use strict";t.r(n);var a=t(0),o=t.n(a);n.default=()=>(o.a.useEffect((()=>{window.location.href="https://discord.com/invite/TSgCw2UPmb"}),[]),o.a.createElement(o.a.Fragment,null))}}]);
