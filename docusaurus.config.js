@@ -78,13 +78,13 @@ module.exports = {
           'aria-label': 'Discord',
         },
         {
-          // to: 'docs/nativebase',
+          // to: 'nativebase',
           label: 'Theme',
           position: 'right',
           'aria-label': 'Theme',
         },
         {
-          to: '/docs/nativebase',
+          to: '/',
           label: 'Docs',
           position: 'right',
           'aria-label': 'Docs',
@@ -105,15 +105,15 @@ module.exports = {
           items: [
             {
               label: 'Introduction',
-              to: 'docs/nativebase',
+              to: '/',
             },
             {
               label: 'Examples',
-              to: 'docs/todo-example',
+              to: '/todo-example',
             },
             {
               label: 'FAQ',
-              to: 'docs/faq',
+              to: '/faq',
             },
           ],
         },
@@ -181,6 +181,7 @@ module.exports = {
             require('./nb-plugins/component-snackplayer'),
             require('./nb-plugins/component-prop-table'),
           ],
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,

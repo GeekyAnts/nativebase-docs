@@ -34,11 +34,9 @@ function splitNavItemsByPosition(items) {
 
 function Navbar() {
   React.useEffect(() => {
-    if (window.location.href.indexOf('/docs/') !== -1) {
       document.getElementsByClassName('main-wrapper')[0].className +=
         ' main-wrapper-docs';
       setIsLandingPage(false);
-    }
   }, []);
   const {
     navbar: { items, hideOnScroll, style },

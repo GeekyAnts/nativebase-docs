@@ -444,7 +444,7 @@ export function Themeable() {
                   className="text-indigo-500 no-underline border-0 border-b-2 border-solid hover:border-indigo-500 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://alpha.nativebase.io/docs/default-theme"
+                  href="https://alpha.nativebase.io/default-theme"
                 >
                   Learn More
                 </a>
