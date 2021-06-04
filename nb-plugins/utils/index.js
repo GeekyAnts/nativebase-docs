@@ -55,7 +55,7 @@ const simplifyMeta = (meta) => {
 const getPropDetail = (meta) => {
   const { path: subPath, showStylingProps } = simplifyMeta(meta);
   const filePath = path.resolve(componentsRootPath, ...subPath);
-  console.log('filepath: ', filePath);
+  // console.log('filepath: ', filePath);
   const fileData = docgen.parse(filePath);
 
   // NOTE: writing on code for testing
@@ -108,7 +108,7 @@ const getGitTagBasedOnVersion = (version) => {
 };
 
 const getVersion = (directory) => {
-  console.log('mamamam ', directory);
+  // console.log('mamamam ', directory);
   if (directory.includes('versioned_docs')) {
     return directory.split('versioned_docs/version-')[1];
   }
@@ -119,6 +119,7 @@ const getVersion = (directory) => {
 function gitCheckoutForVersion(v) {
   const a = shell.cd(repoPath);
   const b = shell.exec('git checkout ' + v);
+  console.log("sjsjs ", a.code, b.code)
   if (a.code !== 0 || b.code !== 0) {
     throw new Error('git command failed');
   }
@@ -126,7 +127,7 @@ function gitCheckoutForVersion(v) {
 
 function checkoutBasedOnVersion(directory) {
   const branch = getGitTagBasedOnVersion(getVersion(directory));
-  console.log('checking out ', branch);
+  // console.log('checking out ', branch);
   gitCheckoutForVersion(branch);
 }
 
