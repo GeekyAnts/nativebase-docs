@@ -10,7 +10,8 @@
     "deploy": "docusaurus deploy",
     "deploy-gh": "GIT_USER=nativebase USE_SSH=true yarn deploy",
     "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "clear": "docusaurus clear",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@babel/core": "^7.14.0",
