@@ -3,10 +3,7 @@ const visit = require('unist-util-visit-parents');
 const u = require('unist-builder');
 const dedent = require('dedent');
 const fromEntries = require('object.fromentries');
-const {
-  getSnackPlayerCodeSnippet,
-  checkoutBasedOnVersion,
-} = require('../utils');
+const { getSnackPlayerCodeSnippet, getProjectPath } = require('../utils');
 
 const parseParams = (paramString = '') => {
   const params = fromEntries(new URLSearchParams(paramString));
@@ -71,7 +68,7 @@ const processNode = (node, parent) => {
 };
 
 const SnackPlayer = (...args) => {
-  checkoutBasedOnVersion(args[0].directory);
+  const repoPath = getProjectPath(args[0].directory);
 
   return (tree) =>
     new Promise(async (resolve, reject) => {
@@ -81,6 +78,7 @@ const SnackPlayer = (...args) => {
         // Add SnackPlayer CodeBlocks to processing queue
         if (node.lang == 'ComponentSnackPlayer') {
           const code = getSnackPlayerCodeSnippet(
+            repoPath,
             ...node.meta.split('path=')[1].split(',')
           );
           node.value = code;

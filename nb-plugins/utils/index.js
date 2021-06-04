@@ -10,18 +10,14 @@ const prettier = require('prettier');
 
 const repoPath = path.resolve(__dirname, '..', '..', 'NativeBase');
 
-const storybookExamplePath = path.resolve(
-  repoPath,
-  'example',
-  'storybook',
-  'stories',
-  'components'
-);
-const componentsRootPath = path.resolve(repoPath, 'src', 'components');
+const storybookExamplePath = (repoPath) =>
+  path.resolve(repoPath, 'example', 'storybook', 'stories', 'components');
+const componentsRootPath = (repoPath) =>
+  path.resolve(repoPath, 'src', 'components');
 
-const getSnackPlayerCodeSnippet = (...args) => {
+const getSnackPlayerCodeSnippet = (repoPath, ...examplePath) => {
   // console.log('snippet args received', args);
-  const filePath = path.resolve(storybookExamplePath, ...args);
+  const filePath = path.resolve(storybookExamplePath(repoPath), ...examplePath);
   const fileContent = fs.readFileSync(filePath, { encoding: 'utf-8' });
   let transformedFile = transformStorybookToDocExample(fileContent);
   transformedFile = prettier.format(transformedFile, {
@@ -52,9 +48,9 @@ const simplifyMeta = (meta) => {
 
 // Meta: example
 // path=primitives,Box,index.tsx showStylingProps=true
-const getPropDetail = (meta) => {
+const getPropDetail = (repoPath, meta) => {
   const { path: subPath, showStylingProps } = simplifyMeta(meta);
-  const filePath = path.resolve(componentsRootPath, ...subPath);
+  const filePath = path.resolve(componentsRootPath(repoPath), ...subPath);
   // console.log('filepath: ', filePath);
   const fileData = docgen.parse(filePath);
 
@@ -98,14 +94,7 @@ const getPropDetail = (meta) => {
 };
 // getPropDetail('primitives', 'Box', 'types.ts');
 // getPropDetail('primitives', 'Box', 'index.tsx');
-getPropDetail('path=primitives,Box,index.tsx');
-
-const getGitTagBasedOnVersion = (version) => {
-  if (version === 'next') {
-    return 'v3-pre-beta';
-  }
-  return 'v' + version;
-};
+// getPropDetail('path=primitives,Box,index.tsx');
 
 const getVersion = (directory) => {
   // console.log('mamamam ', directory);
@@ -119,23 +108,21 @@ const getVersion = (directory) => {
 function gitCheckoutForVersion(v) {
   const a = shell.cd(repoPath);
   const b = shell.exec('git checkout ' + v);
-  console.log("sjsjs ", a.code, b.code)
   if (a.code !== 0 || b.code !== 0) {
     throw new Error('git command failed');
   }
 }
 
-function checkoutBasedOnVersion(directory) {
-  const branch = getGitTagBasedOnVersion(getVersion(directory));
-  // console.log('checking out ', branch);
-  gitCheckoutForVersion(branch);
+function getProjectPath(directory) {
+  const rootPath = path.resolve(__dirname, '..', '..', 'versioned_repo');
+
+  return path.resolve(rootPath, getVersion(directory), 'NativeBase');
 }
 
 module.exports = {
   getSnackPlayerCodeSnippet,
   getPropDetail,
-  getGitTagBasedOnVersion,
+  getProjectPath,
   getVersion,
-  checkoutBasedOnVersion,
 };
 // getSnackPlayer('primitives', 'Box', 'basic.tsx');
