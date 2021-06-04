@@ -1,32 +1,26 @@
 const fs = require('fs');
 const path = require('path');
 const docgen = require('react-docgen-typescript');
+const shell = require('shelljs');
+
 const {
   transformStorybookToDocExample,
 } = require('../storybook-example-transformer');
 const prettier = require('prettier');
 
+const repoPath = path.resolve(__dirname, '..', '..', 'NativeBase');
+
 const storybookExamplePath = path.resolve(
-  __dirname,
-  '..',
-  '..',
-  'NativeBase',
+  repoPath,
   'example',
   'storybook',
   'stories',
   'components'
 );
-const componentsRootPath = path.resolve(
-  __dirname,
-  '..',
-  '..',
-  'NativeBase',
-  'src',
-  'components'
-);
+const componentsRootPath = path.resolve(repoPath, 'src', 'components');
 
 const getSnackPlayerCodeSnippet = (...args) => {
-  console.log('snippet args received', args);
+  // console.log('snippet args received', args);
   const filePath = path.resolve(storybookExamplePath, ...args);
   const fileContent = fs.readFileSync(filePath, { encoding: 'utf-8' });
   let transformedFile = transformStorybookToDocExample(fileContent);
@@ -106,5 +100,41 @@ const getPropDetail = (meta) => {
 // getPropDetail('primitives', 'Box', 'index.tsx');
 getPropDetail('path=primitives,Box,index.tsx');
 
-module.exports = { getSnackPlayerCodeSnippet, getPropDetail };
+const getGitTagBasedOnVersion = (version) => {
+  if (version === 'next') {
+    return 'v3-pre-beta';
+  }
+  return 'v' + version;
+};
+
+const getVersion = (directory) => {
+  console.log('mamamam ', directory);
+  if (directory.includes('versioned_docs')) {
+    return directory.split('versioned_docs/version-')[1];
+  }
+
+  return 'next';
+};
+
+function gitCheckoutForVersion(v) {
+  const a = shell.cd(repoPath);
+  const b = shell.exec('git checkout ' + v);
+  if (a.code !== 0 || b.code !== 0) {
+    throw new Error('git command failed');
+  }
+}
+
+function checkoutBasedOnVersion(directory) {
+  const branch = getGitTagBasedOnVersion(getVersion(directory));
+  console.log('checking out ', branch);
+  gitCheckoutForVersion(branch);
+}
+
+module.exports = {
+  getSnackPlayerCodeSnippet,
+  getPropDetail,
+  getGitTagBasedOnVersion,
+  getVersion,
+  checkoutBasedOnVersion,
+};
 // getSnackPlayer('primitives', 'Box', 'basic.tsx');

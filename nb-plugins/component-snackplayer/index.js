@@ -3,7 +3,10 @@ const visit = require('unist-util-visit-parents');
 const u = require('unist-builder');
 const dedent = require('dedent');
 const fromEntries = require('object.fromentries');
-const { getSnackPlayerCodeSnippet } = require('../utils');
+const {
+  getSnackPlayerCodeSnippet,
+  checkoutBasedOnVersion,
+} = require('../utils');
 
 const parseParams = (paramString = '') => {
   const params = fromEntries(new URLSearchParams(paramString));
@@ -67,7 +70,9 @@ const processNode = (node, parent) => {
   });
 };
 
-const SnackPlayer = () => {
+const SnackPlayer = (...args) => {
+  checkoutBasedOnVersion(args[0].directory);
+
   return (tree) =>
     new Promise(async (resolve, reject) => {
       const nodesToProcess = [];

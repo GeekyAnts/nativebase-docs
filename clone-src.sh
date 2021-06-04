@@ -8,4 +8,4 @@ cd NativeBase
 git pull origin
 git checkout "$BRANCH"
 git pull origin "$BRANCH"
-yarn
+# yarn
