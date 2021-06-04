@@ -10,8 +10,7 @@ module.exports = {
       defer: true,
     },
     {
-      src:
-        'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
+      src: 'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
     },
     { src: 'https://snack.expo.io/embed.js', defer: true },

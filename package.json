@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "./clone-src.sh && docusaurus start",
-    "build": "./clone-src.sh && docusaurus build",
+    "start": "BUILDING=dev && node ./build-init.js && docusaurus start",
+    "build": "BUILDING=prod && node ./build-init.js && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "deploy-gh": "GIT_USER=nativebase USE_SSH=true yarn deploy",
     "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "clear": "docusaurus clear",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@babel/core": "^7.14.0",
@@ -27,6 +28,7 @@
     "dedent": "^0.7.0",
     "docusaurus-tailwindcss-loader": "file:plugins/docusaurus-tailwindcss-loader",
     "object.fromentries": "^2.0.3",
+    "patch-package": "^6.4.7",
     "postcss": "^7.0.34",
     "postcss-import": "^12.0.0",
     "prettier": "^2.3.0",
@@ -36,6 +38,7 @@
     "react-dom": "^16.8.4",
     "react-resize-panel": "^0.3.5",
     "remark": "^12.0.1",
+    "shelljs": "^0.8.4",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "tape": "^5.0.1",
     "typescript": "^4.2.4",
