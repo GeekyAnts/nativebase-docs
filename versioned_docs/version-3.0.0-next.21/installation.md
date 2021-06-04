@@ -9,7 +9,7 @@ To have `NativeBase` components running onto your native apps, all you need to d
 
 Expo helps you make React Native apps with no build configuration. It works on macOS, Windows, and Linux. Refer this link for additional information on [Expo](https://docs.expo.io/) and setting up an Expo starter app.
 
-_For **Installing NativeBase** just copy this and paste in your terminal and Voila! you are good to go to [Setup NativeBaseProvider](/docs/setup-provider)_
+_For **Installing NativeBase** just copy this and paste in your terminal and Voila! you are good to go to [Setup NativeBaseProvider](setup-provider)_
 
 **_Using yarn_**
 

@@ -85,7 +85,7 @@ input:checked + label {
 @media (max-width: 1400px) {
   #__docusaurus {
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   .main-wrapper {
     max-width: 100%;

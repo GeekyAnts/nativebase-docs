@@ -3,7 +3,7 @@ const visit = require('unist-util-visit-parents');
 const u = require('unist-builder');
 const dedent = require('dedent');
 const fs = require('fs');
-const { getPropDetail } = require('../utils');
+const { getPropDetail, getProjectPath } = require('../utils');
 const { internalPropsMap, rnPropsMap, StylingPropsMap } = require('./propsMap');
 
 const processNode = (node, parent, code, showStylingProps) => {
@@ -134,14 +134,16 @@ const implementSection = (componentDetails, showStylingProps) => {
   return ``;
 };
 
-const ComponentPropTable = () => {
+const ComponentPropTable = (...args) => {
+  const repoPath = getProjectPath(args[0].directory);
+
   return (tree) =>
     new Promise(async (resolve, reject) => {
       const nodesToProcess = [];
       // Parse all CodeBlocks
       visit(tree, 'code', (node, parent) => {
         if (node.lang == 'ComponentPropTable') {
-          const [code, showStylingProps] = getPropDetail(node.meta);
+          const [code, showStylingProps] = getPropDetail(repoPath, node.meta);
           // NOTE: writing on code for testing
           // console.log('written on test2');
           // fs.writeFileSync('test2.json', JSON.stringify(code));

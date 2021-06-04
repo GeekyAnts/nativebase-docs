@@ -77,7 +77,7 @@ export function Hero() {
 
                 <a
                   className="btn text-white bg-secondary-50 font-semibold w-full md:w-64  justify-center md:px-10 mb-4 sm:mb-0 rounded-lg py-3 no-underline flex"
-                  href="docs/nativebase"
+                  href="/nativebase"
                 >
                   Get Started
                 </a>
