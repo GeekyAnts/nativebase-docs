@@ -201,11 +201,11 @@ module.exports = {
       label: 'Recipes',
       collapsed: false,
       items: [
-        {
-          Designs: ['buildingCard', 'buildingSearchBar', 'buildingAppBar'],
-          Forms: ['form'],
-          Layout: ['appDrawer'],
-        },
+        'buildingCard',
+        'buildingSearchBar',
+        'buildingAppBar',
+        'form',
+        'appDrawer',
       ],
     },
     {

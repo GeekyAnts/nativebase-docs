@@ -1,6 +1,6 @@
 ---
 id: buildingSearchBar
-title: Building SearchBar
+title: SearchBar
 ---
 
 Search-bar are one of the most commonly seen variation of input. Here are design to make life easier.

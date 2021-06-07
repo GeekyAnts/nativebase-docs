@@ -1,6 +1,6 @@
 ---
 id: buildingAppBar
-title: Building AppBar
+title: AppBar
 ---
 
 The top app bar provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.

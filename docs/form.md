@@ -1,6 +1,6 @@
 ---
 id: form
-title: Building a form with Validation
+title: Form with Validation
 ---
 
 Apps often require users to enter information into a text field. For example, you might require users to log in with an email address and password combination.
