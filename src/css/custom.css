@@ -13,20 +13,21 @@
 /* You can override the default Infima variables here. */
 
 :root {
-  --ifm-link-color: #10b981;
-  --ifm-color-primary-dark: #059669;
-  --ifm-color-primary-darker: #047857;
-  --ifm-color-primary-darkest: #065f46;
-  --ifm-color-primary: #2ec990;
-  --ifm-color-primary-light: #6ee7b7;
-  --ifm-color-primary-lighter: #a7f3d0;
-  --ifm-color-primary-lightest: #d1fae5;
+  --ifm-link-color: #06b6d4;
+  --ifm-color-primary-dark: #22d3ee;
+  --ifm-color-primary-darker: #06b6d4;
+  --ifm-color-primary-darkest: #0891b2;
+  --ifm-color-primary: #06b6d4;
+  --ifm-color-primary-light: #67e8f9;
+  --ifm-color-primary-lighter: #a5f3fc;
+  --ifm-color-primary-lightest: #cffafe;
   --ifm-code-font-size: 95%;
   --ifm-navbar-item-padding-horizontal: 20px;
   --ifm-navbar-padding-vertical: 12px;
   --ifm-navbar-padding-horizontal: 16px;
   --doc-sidebar-border-radius: 100%;
   --ifm-global-radius: 0.4rem;
+  --ifm-toc-border-color: transparent;
 }
 html[data-theme='dark'] {
   --ifm-navbar-background-color: #191a1b;
@@ -502,4 +503,56 @@ html[data-theme='dark'] .label:before {
   .container {
     max-width: 100%;
   }
+}
+
+.kichen-sink-iframe {
+  border: 10px solid black;
+  border-radius: 54px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 356px;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+.kichen-sink-iframe-notch {
+  width: 60%;
+}
+
+.kichen-sink-iframe-iframe {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.kichen-sink-iframe-safe-aria {
+  height: 100px;
+  background-color: rgb(15, 23, 42);
+  width: 100%;
+  position: absolute;
+  z-index: -29;
+  top: -10px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.menu {
+  --doc-sidebar-width: 240px;
+}
+
+.menu__list-item {
+  font-size: 0.875rem;
+}
+
+html[data-theme='light'] .menu__link.menu__link--sublist {
+  color: black;
+}
+
+.menu__link.menu__link--sublist {
+  text-transform: uppercase;
 }

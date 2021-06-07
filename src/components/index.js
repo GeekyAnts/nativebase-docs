@@ -4,3 +4,5 @@ export { default as SpaceBlocks } from './space/SpaceBlocks';
 export { default as IosBadge } from './IosBadge';
 export { default as AndroidBadge } from './AndroidBadge';
 export { default as WebBadge } from './WebBadge';
+export { default as KitchenSinkIframe } from './KitchenSinkIframe';
+export { default as TileLink } from './TileLink';

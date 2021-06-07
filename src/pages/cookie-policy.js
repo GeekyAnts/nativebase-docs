@@ -33,7 +33,7 @@ function Home() {
         <meta property="og:image" content="/img/nativebase-og.png" />
         <meta name="twitter:site" content="@NativeBaseIO" />
       </Head>
-      <main id="tailwind">
+      <main className="tailwind">
         <section
           className={
             styles.features + 'flex-1 font-inter overflow-hidden my-20 mx-5'
