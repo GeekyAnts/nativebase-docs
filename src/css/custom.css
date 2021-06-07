@@ -511,8 +511,9 @@ html[data-theme='dark'] .label:before {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 356px;
-  height: 650px;
+  width: 360px;
+  max-width: 95vw;
+  height: 680px;
   position: relative;
   overflow: hidden;
 }
@@ -542,7 +543,7 @@ html[data-theme='dark'] .label:before {
 }
 
 .menu {
-  --doc-sidebar-width: 240px;
+  --doc-sidebar-width: 200px;
 }
 
 .menu__list-item {
