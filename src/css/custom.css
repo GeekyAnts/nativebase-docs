@@ -85,7 +85,7 @@ input:checked + label {
 @media (max-width: 1400px) {
   #__docusaurus {
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   .main-wrapper {
     max-width: 100%;
@@ -496,4 +496,10 @@ html[data-theme='dark'] .label.web {
 
 html[data-theme='dark'] .label:before {
   border-right-color: #fff;
+}
+
+@media (min-width: 325px) {
+  .container {
+    max-width: 100%;
+  }
 }

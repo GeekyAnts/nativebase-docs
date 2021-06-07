@@ -34,11 +34,9 @@ function splitNavItemsByPosition(items) {
 
 function Navbar() {
   React.useEffect(() => {
-    if (window.location.href.indexOf('/docs/') !== -1) {
       document.getElementsByClassName('main-wrapper')[0].className +=
         ' main-wrapper-docs';
       setIsLandingPage(false);
-    }
   }, []);
   const {
     navbar: { items, hideOnScroll, style },
@@ -155,10 +153,10 @@ function Navbar() {
                       href={item.to}
                       key={i}
                       className={`${
-                        !isDarkTheme ? 'text-gray-500' : 'text-white'
+                        !isDarkTheme ? 'text-gray-500 hover:bg-gray-100' : 'text-white hover:bg-gray-600'
                       } px-0 border border-solid ${
                         !isDarkTheme ? 'border-gray-200' : 'border-gray-600'
-                      }  hover:bg-gray-400  font-semibold py-1 px-5 rounded no-underline hidden md:inline-block`}
+                      }  font-semibold py-1 px-5 rounded no-underline hidden md:inline-block`}
                     >
                       Docs
                     </a>
@@ -169,11 +167,11 @@ function Navbar() {
                       href={item.to}
                       key={i}
                       className={`border-0 ${
-                        !isDarkTheme ? 'text-gray-500' : 'text-white'
+                        !isDarkTheme ? 'text-gray-500 hover:bg-gray-100' : 'text-white hover:bg-gray-600'
                       }
                        px-0 border border-solid ${
                          !isDarkTheme ? 'border-gray-200' : 'border-gray-600'
-                       } font-semibold py-1 rounded no-underline hidden md:inline-block px-2 ml-4`}
+                       }  font-semibold py-1 rounded no-underline hidden md:inline-block px-2 ml-4`}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

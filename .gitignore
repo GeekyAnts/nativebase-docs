@@ -1,8 +1,7 @@
-NativeBase
+/NativeBase
 # Dependencies
 node_modules
 # Production
-/build
 
 # Generated files
 .docusaurus
@@ -18,3 +17,6 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+build/
+versioned_repo/

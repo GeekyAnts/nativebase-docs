@@ -3,7 +3,7 @@ const visit = require('unist-util-visit-parents');
 const u = require('unist-builder');
 const dedent = require('dedent');
 const fs = require('fs');
-const { getPropDetail } = require('../utils');
+const { getPropDetail, getProjectPath } = require('../utils');
 const { internalPropsMap, rnPropsMap, StylingPropsMap } = require('./propsMap');
 
 const processNode = (node, parent, code, showStylingProps) => {
@@ -134,7 +134,9 @@ const implementSection = (componentDetails, showStylingProps) => {
   return ``;
 };
 
-const ComponentPropTable = () => {
+const ComponentPropTable = (...args) => {
+  const repoPath = getProjectPath(args[0].directory);
+
   return (tree) =>
     new Promise(async (resolve, reject) => {
       const nodesToProcess = [];

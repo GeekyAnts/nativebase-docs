@@ -10,14 +10,13 @@ module.exports = {
       defer: true,
     },
     {
-      src:
-        'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
+      src: 'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
     },
     { src: 'https://snack.expo.io/embed.js', defer: true },
   ],
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.svg',
   organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
@@ -41,6 +40,8 @@ module.exports = {
       logo: {
         alt: 'NativeBase Logo',
         src: 'img/nativebaselogo.svg',
+        href: 'https://alpha.nativebase.io',
+        target: '_self',
       },
 
       // style: "dark",
@@ -50,8 +51,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to:
-            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          to: 'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
           label: 'Looking for v2.0',
           position: 'left',
           'aria-label': 'Looking for v2.0',
@@ -82,20 +82,19 @@ module.exports = {
           'aria-label': 'Discord',
         },
         {
-          // to: 'docs/nativebase',
+          // to: 'nativebase',
           label: 'Theme',
           position: 'right',
           'aria-label': 'Theme',
         },
         {
-          to: '/docs/nativebase',
+          to: '/',
           label: 'Docs',
           position: 'right',
           'aria-label': 'Docs',
         },
         {
-          to:
-            'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
+          to: 'https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase',
           label: 'HireUs',
           position: 'right',
           'aria-label': 'Hire GeekyAnts',
@@ -110,15 +109,15 @@ module.exports = {
           items: [
             {
               label: 'Introduction',
-              to: 'docs/nativebase',
+              to: '/',
             },
             {
               label: 'Examples',
-              to: 'docs/todo-example',
+              to: '/todo-example',
             },
             {
               label: 'FAQ',
-              to: 'docs/faq',
+              to: '/faq',
             },
           ],
         },
@@ -148,16 +147,15 @@ module.exports = {
             },
             {
               label: 'Contribution Guidelines',
-              href:
-                'https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md',
+              href: 'https://github.com/GeekyAnts/NativeBase/blob/master/CONTRIBUTING.md',
             },
             {
               label: 'Privacy Policy',
-              href: '/privacy-policy',
+              href: 'https://alpha.nativebase.io/privacy-policy',
             },
             {
               label: 'Cookie Policy',
-              href: '/cookie-policy',
+              href: 'https://alpha.nativebase.io/cookie-policy',
             },
           ],
         },
@@ -166,8 +164,7 @@ module.exports = {
           items: [
             {
               label: 'Built with ❤️ at GeekyAnts.',
-              href:
-                'https://geekyants.com/?utm_source=RnD&utm_medium=Landing_Page&utm_campaign=NativeBase_3',
+              href: 'https://geekyants.com/?utm_source=RnD&utm_medium=Landing_Page&utm_campaign=NativeBase_3',
             },
           ],
         },
@@ -188,6 +185,7 @@ module.exports = {
             require('./nb-plugins/component-snackplayer'),
             require('./nb-plugins/component-prop-table'),
           ],
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,

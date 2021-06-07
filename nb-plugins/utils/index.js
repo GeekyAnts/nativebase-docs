@@ -1,33 +1,23 @@
 const fs = require('fs');
 const path = require('path');
 const docgen = require('react-docgen-typescript');
+const shell = require('shelljs');
+
 const {
   transformStorybookToDocExample,
 } = require('../storybook-example-transformer');
 const prettier = require('prettier');
 
-const storybookExamplePath = path.resolve(
-  __dirname,
-  '..',
-  '..',
-  'NativeBase',
-  'example',
-  'storybook',
-  'stories',
-  'components'
-);
-const componentsRootPath = path.resolve(
-  __dirname,
-  '..',
-  '..',
-  'NativeBase',
-  'src',
-  'components'
-);
+const repoPath = path.resolve(__dirname, '..', '..', 'NativeBase');
 
-const getSnackPlayerCodeSnippet = (...args) => {
-  console.log('snippet args received', args);
-  const filePath = path.resolve(storybookExamplePath, ...args);
+const storybookExamplePath = (repoPath) =>
+  path.resolve(repoPath, 'example', 'storybook', 'stories', 'components');
+const componentsRootPath = (repoPath) =>
+  path.resolve(repoPath, 'src', 'components');
+
+const getSnackPlayerCodeSnippet = (repoPath, ...examplePath) => {
+  // console.log('snippet args received', args);
+  const filePath = path.resolve(storybookExamplePath(repoPath), ...examplePath);
   const fileContent = fs.readFileSync(filePath, { encoding: 'utf-8' });
   let transformedFile = transformStorybookToDocExample(fileContent);
   transformedFile = prettier.format(transformedFile, {
@@ -77,8 +67,11 @@ const simplifyMeta = (meta) => {
 const getPropDetail = (meta) => {
   const { path: subPath, ...objectifiedMeta } = simplifyMeta(meta);
   const filePath = path.resolve(componentsRootPath, ...subPath);
+  const filePath = path.resolve(componentsRootPath(repoPath), ...subPath);
   console.log('filepath: ', filePath);
   const code = docgen.parse(filePath);
+  // console.log('filepath: ', filePath);
+  const fileData = docgen.parse(filePath);
 
   // NOTE: writing on code for testing
   // fs.writeFileSync('test1.json', JSON.stringify(code));
@@ -86,6 +79,29 @@ const getPropDetail = (meta) => {
 
   return { code, ...objectifiedMeta };
 };
+// getPropDetail('primitives', 'Box', 'types.ts');
+// getPropDetail('primitives', 'Box', 'index.tsx');
+// getPropDetail('path=primitives,Box,index.tsx');
 
-module.exports = { getSnackPlayerCodeSnippet, getPropDetail, simplifyMeta };
+const getVersion = (directory) => {
+  // console.log('mamamam ', directory);
+  if (directory.includes('versioned_docs')) {
+    return directory.split('versioned_docs/version-')[1];
+  }
+
+  return 'next';
+};
+
+function getProjectPath(directory) {
+  const rootPath = path.resolve(__dirname, '..', '..', 'versioned_repo');
+
+  return path.resolve(rootPath, getVersion(directory), 'NativeBase');
+}
+
+module.exports = {
+  getSnackPlayerCodeSnippet,
+  getPropDetail,
+  getProjectPath,
+  getVersion,
+};
 // getSnackPlayer('primitives', 'Box', 'basic.tsx');
