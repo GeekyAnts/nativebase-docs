@@ -4,7 +4,7 @@ title: NativeBase
 slug: /
 ---
 
-import { KitchenSinkIframe, TileLink } from '../src/components';
+import { KitchenSinkIframe, TileLink, NBHistory } from '../src/components';
 import TOCInline from '@theme/TOCInline';
 
 <div className="tailwind">
@@ -21,12 +21,12 @@ import TOCInline from '@theme/TOCInline';
             title="Installation Guide"
             description="Refer nstallation guide to setup NativeBase in your React Native
               project"
-            className="bg-cyan-500"
+            className="bg-cyan-700"
           />
           <TileLink
             title="Playground"
             description="Try out NativeBase in expo's snackplayer"
-            className="bg-teal-500"
+            className="bg-teal-700"
           />
         </div>
         <div className="row">
@@ -34,34 +34,72 @@ import TOCInline from '@theme/TOCInline';
             title="Theming"
             description="Refer installation guide to setup NativeBase in your React Native
               project"
-            className="bg-pink-500"
+            className="bg-pink-700"
           />
           <TileLink
             title="Recipes"
             description="Refer installation guide to setup NativeBase in your React Native
               project"
-            className="bg-indigo-500"
+            className="bg-indigo-700"
           />
         </div>
+        
       </div>
     </div>
     <div className="col col--3 hidden md:block">
       <KitchenSinkIframe />
     </div>
   </div>
+  <h2 className="text-3xl mb-12">Brief history of NativeBase</h2>
+  <div className="mt-4 w-100 flex justify-center">
+    <NBHistory />
+  </div>
+<h2 className="text-3xl mt-20">Goals</h2>
+<div className="mt-8">
+  <h4 className="text-xl">Multi Platform</h4>
+  <div>
+    Not only NB supports multiple platforms but it provides an option to
+    customize properties using platform specific props. (etc add more things)
+  </div>
 </div>
 
-<h1>hello world</h1>
-We want to build and ship high-quality apps quickly. Using NativeBase 3.0 facilitates
-this and gives us room to focus on solving important business problems.
+<div className="mt-8">
+  <h4 className="text-xl">Inherently beautiful</h4>
+  <div>
+    NB ships with a default theme which provides out of the box beautiful
+    components.
+  </div>
+</div>
 
-Material UI, Chakra UI, Ant Design, Braid Design System, Bootstrap, TailwindCSS, Flutter.
+<div className="mt-8">
+  <h4 className="text-xl">Accessible
+</h4>
+  <div>
+    Out of the box accessibility, focus management, keyboard 
+navigation.
 
-NativeBase 3.0 is both Declarative and Imperative. It is Declarative for components and Imperative for actions.
+  </div>
+</div>
 
-We have two types of components — Primitives and Composite.
+<div className="mt-8">
+  <h4 className="text-xl">Themable
 
-- **Primitive components** are the building blocks.
-- **Composite components** are made up of primitive components.
+</h4>
+  <div>
+   NB ships with a default theme which can be extended as 
+you desire.
 
-Please note that Web support is still under development. NativeBase will work on web, but we are still working towards a more comprehensive web experience for your apps.
+  </div>
+</div>
+
+<div className="mt-8">
+  <h4 className="text-xl">Customisable
+
+</h4>
+  <div>
+  You can customize not only theme but specific components.
+
+  </div>
+</div>
+
+</div>
