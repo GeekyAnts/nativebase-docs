@@ -59,8 +59,8 @@ input:checked + label {
 }
 
 .main-wrapper-docs {
-  max-width: 1400px;
-  width: 1400px;
+  max-width: 100%;
+  width: 100%;
   align-self: center;
 }
 .ResizePanel-module_ResizeHandleHorizontal__PkS9u {
@@ -130,8 +130,8 @@ html[data-theme='dark'] .DocSearch-Button-Key {
   height: 64px;
 }
 .navbar .navbar__inner {
-  max-width: 1360px;
-  margin: 0 auto;
+  /* max-width: 1360px; */
+  /* margin: 0 auto; */
   flex-wrap: nowrap;
 }
 
