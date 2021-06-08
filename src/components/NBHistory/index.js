@@ -19,8 +19,8 @@ export default function NBHistory() {
           style={{ marginLeft: '-12px' }}
         ></div>
         <div
-          className={'ml-8 py-6 px-8 bg-indigo-500 shadow-xl rounded-md'}
-          style={{ maxWidth: '80%', width: '500px' }}
+          className={'ml-8 py-5 px-6 bg-indigo-500 shadow-xl rounded-md'}
+          style={{ maxWidth: '100%', width: '100%' }}
         >
           <h4>v3</h4>
           <span>
@@ -37,8 +37,8 @@ export default function NBHistory() {
           style={{ marginLeft: '-12px' }}
         ></div>
         <div
-          className={'ml-8 py-6 px-8 shadow-xl rounded-md ' + bgColor}
-          style={{ maxWidth: '80%', width: '500px' }}
+          className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + bgColor}
+          style={{ maxWidth: '100%', width: '100%' }}
         >
           <h4>v2</h4>
           <span>
@@ -55,8 +55,8 @@ export default function NBHistory() {
           style={{ marginLeft: '-12px' }}
         ></div>
         <div
-          className={'ml-8 py-6 px-8 shadow-xl rounded-md ' + bgColor}
-          style={{ maxWidth: '80%', width: '500px' }}
+          className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + bgColor}
+          style={{ maxWidth: '100%', width: '100%' }}
         >
           <h4>v1</h4>
           <span>

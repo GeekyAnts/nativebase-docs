@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 export default function KitchenSinkIframe() {
-  useEffect(() => {}, []);
   return (
     <div className="kichen-sink-iframe mx-auto">
       <svg class="kichen-sink-iframe-notch" viewBox="0 0 219 31">

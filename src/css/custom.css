@@ -542,8 +542,8 @@ html[data-theme='dark'] .label:before {
   background: transparent;
 }
 
-.menu {
-  --doc-sidebar-width: 200px;
+.main-wrapper {
+  --doc-sidebar-width: 270px;
 }
 
 .menu__list-item {
