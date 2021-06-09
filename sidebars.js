@@ -9,9 +9,9 @@ module.exports = {
         'installation',
         {
           type: 'category',
-          label: 'Platform installation',
+          label: 'Installation guide',
           collapsed: true,
-          items: ['install-rn', 'install-expo', 'install-cra', 'install-next'],
+          items: ['install-expo', 'install-rn', 'install-cra', 'install-next'],
         },
         'setup-provider',
       ],
