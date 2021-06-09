@@ -35,7 +35,10 @@ function Home() {
       description="A complete component library for React Ecosystem"
     >
       <Head>
-        <meta http-equiv="refresh" content="0;url=https://alpha.nativebase.io/" />
+        <meta
+          http-equiv="refresh"
+          content="0;url=https://alpha.nativebase.io/"
+        />
         <meta property="og:title" content="NativeBase"></meta>
         <meta
           property="og:description"
@@ -59,7 +62,7 @@ function Home() {
         ></meta>
         <meta name="twitter:site" content="@NativeBaseIO" />
       </Head>
-      <main id="tailwind">
+      <main className="tailwind">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WCCPLQC"
