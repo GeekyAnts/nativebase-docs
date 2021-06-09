@@ -543,7 +543,7 @@ html[data-theme='dark'] .label:before {
 }
 
 .main-wrapper {
-  --doc-sidebar-width: 270px;
+  --doc-sidebar-width: 280px;
 }
 
 .menu__list-item {

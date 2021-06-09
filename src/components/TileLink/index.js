@@ -1,15 +1,19 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 
-export default function TileLink({ title, description, className = '' }) {
+export default function TileLink({ title, description, className = '', url }) {
   return (
-    <div
+    <Link
+      to={url}
       className={
-        'col col--5 rounded-md pt-6 px-4 shadow-2xl mx-2 mb-2 transform motion-safe:hover:scale-110 ' +
+        'no-underline col col--5 rounded-md pt-6 px-4 shadow-2xl mx-2 mb-2 transform transition-transform	hover:scale-105 ' +
         className
       }
     >
-      <div className="uppercase font-bold text-sm text-white mb-2">{title}</div>
+      <div className="capitalize font-bold text-md text-white mb-2">
+        {title}
+      </div>
       <p className="text-gray-100 text-sm leading-5">{description}</p>
-    </div>
+    </Link>
   );
 }
