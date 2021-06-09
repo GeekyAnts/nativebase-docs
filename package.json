@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "BUILDING=dev && node ./build-init.js && docusaurus start",
-    "build": "BUILDING=prod && node ./build-init.js && docusaurus build",
+    "start": "cross-env BUILDING=dev node ./build-init.js && docusaurus start",
+    "build": "cross-env BUILDING=prod node ./build-init.js && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "deploy-gh": "GIT_USER=nativebase USE_SSH=true yarn deploy",
@@ -56,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

@@ -202,8 +202,15 @@ module.exports = {
       collapsed: false,
       items: [
         {
-          Designs: ['buildingCard', 'buildingSearchBar', 'buildingAppBar'],
-          Forms: ['form'],
+          Designs: [
+            'buildingCard',
+            'buildingSearchBar',
+            'buildingAppBar',
+            'buildingDrawerNavigation',
+            'buildingTabView',
+            'buildingSwipeList',
+          ],
+          Forms: ['form', 'loginsignupforms'],
           Layout: ['appDrawer'],
         },
       ],

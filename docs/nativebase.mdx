@@ -1,0 +1,107 @@
+---
+id: nativebase
+title: NativeBase
+slug: /
+---
+
+import { KitchenSinkIframe, TileLink, NBHistory } from '../src/components';
+import TOCInline from '@theme/TOCInline';
+
+<div className="tailwind">
+  <div className="row">
+    <div className="col col--9 mb-12">
+      <p className="text-xl">
+        NativeBase is a design system and component library enabling users to
+        build universal apps. It is built on top of React Native allowing you to
+        develop apps on android, iOS and the web.
+      </p>
+      <div className="mt-8 pl-2">
+        <div className="row mb-2">
+          <TileLink
+            title="Installation Guide"
+            url="/installation"
+            description="Refer installation guide to setup NativeBase in your React Native
+              project"
+            className="bg-cyan-600"
+          />
+          <TileLink
+            title="Playground"
+            url="https://snack.expo.io/@nishanbende/example"
+            description="Try out NativeBase in expo's snackplayer"
+            className="bg-teal-600"
+          />
+        </div>
+        <div className="row">
+          <TileLink
+            title="Theming"
+            url="/default-theme"
+            description="Checkout the theming guide to create your own design system"
+            className="bg-pink-600"
+          />
+          <TileLink
+            title="Recipes"
+            url="/recipes/login"
+            description="Checkout commonly used recipes in an appliation"
+            className="bg-indigo-600"
+          />
+        </div>
+        
+      </div>
+    </div>
+    <div className="col col--3 mb-12">
+      <KitchenSinkIframe />
+    </div>
+  </div>
+  <h2 className="text-3xl mb-12">Brief history of NativeBase</h2>
+  <div className="mt-4 ml-4">
+    <NBHistory />
+  </div>
+<h2 className="text-3xl mt-12">Goals</h2>
+<div className="mt-8">
+  <h4 className="text-xl">Multi Platform</h4>
+  <div>
+    Not only NB supports multiple platforms but it provides an option to
+    customize properties using platform specific props. (etc add more things)
+  </div>
+</div>
+
+<div className="mt-8">
+  <h4 className="text-xl">Inherently beautiful</h4>
+  <div>
+    NB ships with a default theme which provides out of the box beautiful
+    components.
+  </div>
+</div>
+
+<div className="mt-8">
+  <h4 className="text-xl">Accessible
+</h4>
+  <div>
+    Out of the box accessibility, focus management, keyboard 
+navigation.
+
+  </div>
+</div>
+
+<div className="mt-8">
+  <h4 className="text-xl">Themable
+
+</h4>
+  <div>
+   NB ships with a default theme which can be extended as 
+you desire.
+
+  </div>
+</div>
+
+<div className="mt-8">
+  <h4 className="text-xl">Customisable
+
+</h4>
+  <div>
+  You can customize not only theme but specific components.
+
+  </div>
+</div>
+
+</div>
