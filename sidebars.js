@@ -202,7 +202,14 @@ module.exports = {
       collapsed: false,
       items: [
         {
-          Designs: ['buildingCard', 'buildingSearchBar', 'buildingAppBar'],
+          Designs: [
+            'buildingCard',
+            'buildingSearchBar',
+            'buildingAppBar',
+            'buildingDrawerNavigation',
+            'buildingTabView',
+            'buildingSwipeList',
+          ],
           Forms: ['form'],
           Layout: ['appDrawer'],
         },
