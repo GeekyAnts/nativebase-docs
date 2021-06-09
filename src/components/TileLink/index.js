@@ -6,13 +6,11 @@ export default function TileLink({ title, description, className = '', url }) {
     <Link
       to={url}
       className={
-        'no-underline col col--5 rounded-md pt-6 px-4 shadow-2xl mx-2 mb-2 transform transition-transform	hover:scale-105 ' +
+        'no-underline col col--5 rounded-md pt-6 px-4 shadow-2xl mx-2 mb-2 ' +
         className
       }
     >
-      <div className="capitalize font-bold text-md text-white mb-2">
-        {title}
-      </div>
+      <div className="font-bold text-md text-white mb-2">{title}</div>
       <p className="text-gray-100 text-sm leading-5">{description}</p>
     </Link>
   );
