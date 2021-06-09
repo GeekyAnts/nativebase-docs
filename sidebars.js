@@ -210,7 +210,7 @@ module.exports = {
             'buildingTabView',
             'buildingSwipeList',
           ],
-          Forms: ['form'],
+          Forms: ['form', 'loginsignupforms'],
           Layout: ['appDrawer'],
         },
       ],
