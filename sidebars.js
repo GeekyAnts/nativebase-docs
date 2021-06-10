@@ -4,7 +4,17 @@ module.exports = {
       type: 'category',
       label: 'Introduction',
       collapsed: false,
-      items: ['nativebase', 'installation', 'setup-provider'],
+      items: [
+        'nativebase',
+        'installation',
+        {
+          type: 'category',
+          label: 'Installation guide',
+          collapsed: true,
+          items: ['install-expo', 'install-rn', 'install-cra', 'install-next'],
+        },
+        'setup-provider',
+      ],
     },
     {
       type: 'category',
