@@ -3,9 +3,7 @@ id: installation
 title: Installation
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import { TileLink } from '../src/components';
+import { InstallationTiles } from '../src/components';
 
 **NativeBase** is supported in [Expo](https://docs.expo.io/get-started/installation/) or React Native CLI initiated apps. Web support is made possible by [react-native-web](https://necolas.github.io/react-native-web/).
 
@@ -13,66 +11,6 @@ Refer the guides shown below to setup NativeBase in your React app.
 
 <div className="tailwind">
   <div className="mt-4 mb-8">
-    <div className="row">
-      <TileLink
-        title="Install in Expo project"
-        url="install-expo"
-        description="Follow this guide to install NativeBase in your existing or new Expo project"
-        className="bg-gray-700 mt-2"
-        imgSrc="/img/expo.svg"
-        imgStyle={{
-          top: 5,
-          right: -148,
-          width: 200,
-          height: 200,
-          opacity: 0.2,
-        }}
-      />
-      <TileLink
-        title="Install in React Native CLI project"
-        url="install-rn"
-        description="Follow this guide to install NativeBase in your existing or new React Native CLI inititiated project"
-        className="bg-gray-700  mt-2"
-        imgSrc="/img/react-native.svg"
-        imgStyle={{
-          top: -22,
-          right: -25,
-          height: 90,
-          width: 90,
-          opacity: 0.2,
-        }}
-      />
-    </div>
-    <div className="row mt-2">
-      <TileLink
-        title="Install in NextJS project"
-        url="install-next"
-        description="Follow this guide to install NativeBase in your existing or new React Native CLI inititiated project"
-        className="bg-gray-700"
-        imgSrc="/img/next.svg"
-        imgStyle={{
-          top: -10,
-          right: -14,
-          height: 120,
-          width: 120,
-          opacity: 0.2,
-        }}
-      />
-      <TileLink
-        title="Install in Create React App project"
-        url="install-cra"
-        description="Follow this guide to install NativeBase in your existing or new React Native CLI inititiated project"
-        className="bg-gray-700"
-        imgSrc="/img/cra.svg"
-        imgStyle={{
-          top: -22,
-          right: -25,
-          height: 90,
-          width: 90,
-          opacity: 0.2,
-        }}
-      />
-    </div>
-
+    <InstallationTiles />
   </div>
 </div>
