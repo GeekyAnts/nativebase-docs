@@ -203,15 +203,14 @@ module.exports = {
       items: [
         {
           Designs: [
-            'buildingCard',
-            'buildingSearchBar',
             'buildingAppBar',
+            'buildingCard',
             'buildingDrawerNavigation',
             'buildingTabView',
             'buildingSwipeList',
           ],
-          Forms: ['form', 'loginsignupforms'],
-          Layout: ['appDrawer'],
+          Forms: ['form', 'loginsignupforms', 'buildingSearchBar'],
+          Layout: ['appDrawer', 'footer'],
         },
       ],
     },
