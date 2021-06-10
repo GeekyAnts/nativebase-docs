@@ -4,23 +4,18 @@ module.exports = {
       type: 'category',
       label: 'Introduction',
       collapsed: false,
-      items: [
-        'nativebase',
-        'installation',
-        {
-          type: 'category',
-          label: 'Installation guide',
-          collapsed: true,
-          items: ['install-expo', 'install-rn', 'install-cra', 'install-next'],
-        },
-        'setup-provider',
-      ],
+      items: ['nativebase', 'installation', 'setup-provider'],
     },
     {
       type: 'category',
       label: 'Core concepts',
       collapsed: false,
-      items: ['utility-first'],
+      items: [
+        'utility-first',
+        'design-tokens',
+        'interaction-styles',
+        'platform-styles',
+      ],
     },
     {
       type: 'category',
@@ -259,6 +254,22 @@ module.exports = {
       label: 'More',
       collapsed: false,
       items: ['changelog', 'faq'],
+    },
+    {
+      type: 'doc',
+      id: 'install-expo',
+    },
+    {
+      type: 'doc',
+      id: 'install-rn',
+    },
+    {
+      type: 'doc',
+      id: 'install-cra',
+    },
+    {
+      type: 'doc',
+      id: 'install-next',
     },
   ],
 };

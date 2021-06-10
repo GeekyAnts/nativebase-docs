@@ -3,15 +3,13 @@ id: utility-first
 title: Utility First
 ---
 
+import { UtilityFirstExample } from '../src/components';
+
 React Native has a great StyleSheet API which is optimal for component-based systems. NativeBase leverages it and adds a layer of utility props and constraint based designed tokens on top of it.
 
 To understand utility props, let's take an example.
 
-<div className="tailwind">
-    <div className="bg-indigo-50 p-8 text-center rounded-xl mb-8">
-        <img src="/img/ang-card.png" style={{height: '200px'}} />
-    </div>
-</div>
+<UtilityFirstExample />
 
 Let's try the traditional way of building the above card in React Native.
 
@@ -85,11 +83,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-<div className="tailwind">
-    <div className="bg-indigo-50 p-8 text-center rounded-xl mb-8">
-        <img src="/img/ang-card.png" style={{height: '200px'}} />
-    </div>
-</div>
+<UtilityFirstExample />
 
 Now let's try to build the same card using NativeBase.
 
