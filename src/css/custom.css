@@ -557,3 +557,8 @@ html[data-theme='light'] .menu__link.menu__link--sublist {
 .menu__link.menu__link--sublist {
   text-transform: uppercase;
 }
+
+.menu__link--sublist:after {
+  height: 0.875rem;
+  width: 0.875rem;
+}

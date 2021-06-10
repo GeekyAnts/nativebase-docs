@@ -8,6 +8,8 @@ export default function TileLink({
   url,
   imgSrc,
   imgStyle,
+  titleClassName = 'text-white',
+  descriptionClassName = 'text-gray-100',
 }) {
   return (
     <Link
@@ -17,8 +19,10 @@ export default function TileLink({
         className
       }
     >
-      <div className="font-bold text-md text-white mb-2">{title}</div>
-      <p className="text-gray-100 text-sm leading-5">{description}</p>
+      <div className={'font-bold text-md mb-2 ' + titleClassName}>{title}</div>
+      <p className={' text-sm leading-5 ' + descriptionClassName}>
+        {description}
+      </p>
       <div
         className="absolute h-20 w-20"
         style={imgStyle ? imgStyle : { right: -20, top: -10 }}

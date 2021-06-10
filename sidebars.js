@@ -18,6 +18,12 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Core concepts',
+      collapsed: false,
+      items: ['utility-first'],
+    },
+    {
+      type: 'category',
       label: 'Features',
       collapsed: false,
       items: [
