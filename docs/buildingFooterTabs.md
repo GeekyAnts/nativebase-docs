@@ -1,5 +1,5 @@
 ---
-id: footer
+id: buildingFooterTabs
 title: Footer
 ---
 
@@ -7,4 +7,4 @@ With NativeBase v3 we have removed FooterTab components because as it's very sim
 
 ## Example:
 
-<iframe src="https://snack.expo.io/@amars29/footer-nb?preview=true&platform=web&theme=dark" height="600" width="100%" />  
+<iframe src="https://snack.expo.io/@amars29/footer-nb?preview=true&platform=web&theme=dark" height="600" width="100%" />

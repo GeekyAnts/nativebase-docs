@@ -1,14 +1,15 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-In v3 Toast can be created using useToast hook
+In v3 Toast can be created using **useToast** hook
 
 ## Overview
 
 Migrating Toast components can broadly described in these points:
 
-- **buttonText, type** is no longer supported.
-- **position** has been replacd by **placement**
+- **buttonText** is no longer supported.
+- **type** (prop) → **status** prop.
+- **position** (prop) → **placement** prop.
 
 ## Code Comparison
 
@@ -34,6 +35,8 @@ export default class ToastExample extends Component {
             onPress={() =>
               Toast.show({
                 text: 'Wrong password!',
+                position: 'bottom',
+                type: 'warning',
               })
             }
           >
@@ -61,6 +64,8 @@ export default function () {
       onPress={() => {
         toast.show({
           title: 'Wrong password',
+          placement: 'bottom',
+          status: 'warning',
         });
       }}
     >

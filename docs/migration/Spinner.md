@@ -7,7 +7,7 @@ Migrating to v3 will provide a lot more **size**, **color** and **customisation*
 
 Migrating Spinner components can broadly described in these points:
 
-- Get 2 size options, namely sm/small and lg/large or pass a number as a size prop.
+- Get 2 size options, namely **sm/small** and **lg/large** or pass a number as a **size** prop.
 - In v3 the color are provided by theme, so the shade for the color should be passed along with the color name.
 
 ## Code Comparison

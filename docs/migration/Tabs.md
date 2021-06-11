@@ -1,16 +1,20 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Migrating to v3 will provide a lot more **design**, **size, variation**, **color** and **customisation** option.
+API for Tabs is in progress, till then you can check this [recipe](buildingTabView.md) for building Tabs.
 
-We have sliced Tabs into multiple smaller component which not only provides more control over the the code but also makes it more readable.
+<!-- Migrating to v3 will provide a lot more **design**, **size, variation**, **color** and **customisation** option.
+
+We have sliced Tabs into multiple smaller components which not only provides more control over the the code but also makes it more readable.
 
 ## Overview
 
 Migrating Tabs components can broadly described in these points:
 
-- Separated `TabViews` and `TabBar`. Providing more control over the structure and design.
+- Separated `Tab View` and `Tab Bar`. Providing more control over the structure and design.
 - Each **Tab** can be more than string.
+- **initialPage** (prop) → **defaultIndex** (prop), **page** (prop) → **index** (prop)
+- The styling props have been deprecated, in v3 **Tabs** implements **Box** so it can be designed using Box props.
 
 ## Code Comparison
 
@@ -55,4 +59,4 @@ values={[
 ```
 
 </TabItem>
-</Tabs>
+</Tabs> -->
