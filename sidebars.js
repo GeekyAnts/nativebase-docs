@@ -8,6 +8,17 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Core concepts',
+      collapsed: false,
+      items: [
+        'utility-first',
+        'design-tokens',
+        'interaction-styles',
+        'platform-styles',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Features',
       collapsed: false,
       items: [
@@ -250,6 +261,22 @@ module.exports = {
       label: 'More',
       collapsed: false,
       items: ['changelog', 'faq'],
+    },
+    {
+      type: 'doc',
+      id: 'install-expo',
+    },
+    {
+      type: 'doc',
+      id: 'install-rn',
+    },
+    {
+      type: 'doc',
+      id: 'install-cra',
+    },
+    {
+      type: 'doc',
+      id: 'install-next',
     },
   ],
 };
