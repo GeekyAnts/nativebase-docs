@@ -5,9 +5,9 @@ Migrating to v3 will provide a lot more **size**, **color** and **customisation*
 
 ## Overview
 
-Migrating Badge components can broadly described in these points:
+Migrating Spinner components can broadly described in these points:
 
-- Also get 2 size options, namely sm and lg.
+- Get 2 size options, namely sm/small and lg/large or pass a number as a size prop.
 - In v3 the color are provided by theme, so the shade for the color should be passed along with the color name.
 
 ## Code Comparison
@@ -33,8 +33,9 @@ values={[
 ```tsx
 <Spinner />
 <Spinner color="danger.400" />
-<Spinner color="green.500" />
-<Spinner color="blue.500" />
+<Spinner size="sm" />
+<Spinner color="blue.500" size="lg" />
+<Spinner color="yellow.500" size={50} />
 ```
 
 </TabItem>

@@ -8,6 +8,7 @@ In v3 Toast can be created using useToast hook
 Migrating Toast components can broadly described in these points:
 
 - **buttonText, type** is no longer supported.
+- **position** has been replacd by **placement**
 
 ## Code Comparison
 
@@ -58,7 +59,7 @@ export default function () {
   return (
     <Button
       onPress={() => {
-        toast({
+        toast.show({
           title: 'Wrong password',
         });
       }}
