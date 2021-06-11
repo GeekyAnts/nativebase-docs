@@ -4,6 +4,7 @@ title: Utility First
 ---
 
 import { UtilityFirstExample } from '../src/components';
+import { KitchenSinkIframe, TileLink, NBHistory } from '../src/components';
 
 React Native has a great StyleSheet API which is optimal for component-based systems. NativeBase leverages it and adds a layer of utility props and constraint based designed tokens on top of it.
 
@@ -141,15 +142,41 @@ export default function App() {
 The above example demonstrates the usage of [utility props](utility-props) alongwith [VStack](vstack), [HStack](hstack) components. This approach allows us to style components without using StyleSheet API.
 
 Apart from productivity boost and saving time there are other benefits by styling components using utility props.
+No need to name styles anymore, no need to define an object and think about naming them.
 
-- You don't need to name styles anymore, no need to define an object and think about naming them.
-
-- Using utility-first props, you can focus on creating reusable components instead of reusable StyleSheet.
+Using utility-first props, you can focus on creating reusable components instead of reusable stylesheets.
 
 Once you start writing styles this way, any other way will feel cumbersome.
+
+> Put simply, utility first approach opens up the Avatar state within developers.
+
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="/img/aang-avatar-state.gif"
+    alt="aang transitioning to avatar state"
+  />
+</div>
 
 ### Run the above examples in expo snack
 
 [Using RN StyleSheet](https://snack.expo.io/@nishanbende/utility-props-example-rn)
 
 [Using Utility props](https://snack.expo.io/@nishanbende/utility-props-example)
+
+Once you had a cup of tea, let's proceed to the next section!
+
+<div className="tailwind">
+  <div className="row mb-8">
+    <TileLink
+      title="Design tokens"
+      url="design-tokens"
+      description="Refer design token guide to understand how utility props map to your theme values"
+      className="bg-gray-600"
+    />
+  </div>
+  <img
+    className="mx-auto"
+    src="/img/iroh-tea.webp"
+    alt="uncle iroh holding cup of tea"
+  />
+</div>

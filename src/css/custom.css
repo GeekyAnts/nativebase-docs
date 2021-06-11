@@ -18,7 +18,7 @@
   --ifm-color-primary-darker: #06b6d4;
   --ifm-color-primary-darkest: #0891b2;
   --ifm-color-primary: #06b6d4;
-  --ifm-color-primary-light: #67e8f9;
+  --ifm-color-primary-light: #cfe1e4;
   --ifm-color-primary-lighter: #a5f3fc;
   --ifm-color-primary-lightest: #cffafe;
   --ifm-code-font-size: 95%;
@@ -28,8 +28,8 @@
   --doc-sidebar-border-radius: 100%;
   --ifm-global-radius: 0.4rem;
   --ifm-toc-border-color: transparent;
-  --ifm-menu-color-background-active: rgba(6, 182, 212, 0.1);
-  --ifm-menu-color-active: #0891b2;
+  --ifm-menu-color-background-active: rgba(32, 179, 196, 0.1);
+  --ifm-menu-color-active: #0fbde9;
 }
 html[data-theme='dark'] {
   --ifm-navbar-background-color: #191a1b;
