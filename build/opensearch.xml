@@ -4,8 +4,8 @@
   <ShortName>NativeBase</ShortName>
   <Description>Search NativeBase</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://alpha.nativebase.io/img/favicon.svg</Image>
-  <Url type="text/html" method="get" template="https://alpha.nativebase.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://alpha.nativebase.io/opensearch.xml" />
-  <moz:SearchForm>https://alpha.nativebase.io</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://alpha-docs.nativebase.io/img/favicon.svg</Image>
+  <Url type="text/html" method="get" template="https://alpha-docs.nativebase.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://alpha-docs.nativebase.io/opensearch.xml" />
+  <moz:SearchForm>https://alpha-docs.nativebase.io</moz:SearchForm>
 </OpenSearchDescription>

@@ -3,7 +3,7 @@ id: customizingTheme
 title: Customising Theme
 ---
 
-Theme is one core elements of NativeBase. And the extent of customising you can bring to your application by updating it, is only limited your imagination. NativeBase theme is complex object which looks like
+Theme is one core elements of NativeBase. And the extent of customising you can bring to your application by updating it, is only limited by your imagination. NativeBase theme is complex object which looks like
 
 ```tsx
 // theme
@@ -65,3 +65,9 @@ In the above example, the following changes have been made:
 - Updated one of the shade of **amber** color.
 - Updated the initial color mode to **dark**. Default is **light**.
 - Finally passed the new **theme** object to the **NativeBaseProvider**.
+
+### Using the new tokens in components
+
+```jsx
+<Box bg="primary.500" />
+```

@@ -3,7 +3,7 @@ import TabItem from '@theme/TabItem';
 
 ## Grid
 
-EasyGrid can be used NativeBase v3 and with v3 we also provide SimpleGrid [form more details checkout docs] as well.
+You can easily design layouts with HStack or VStack and with v3 we also provide SimpleGrid, for more details checkout docs as well.
 
 ## List
 
@@ -26,7 +26,7 @@ values={[
       <Text>Simon Mignolet</Text>
     </Left>
     <Right>
-      <Icon name='arrow-forward' />
+      <Icon name="arrow-forward" />
     </Right>
   </ListItem>
   <ListItem>
@@ -34,7 +34,7 @@ values={[
       <Text>Nathaniel Clyne</Text>
     </Left>
     <Right>
-      <Icon name='arrow-forward' />
+      <Icon name="arrow-forward" />
     </Right>
   </ListItem>
   <ListItem>
@@ -42,7 +42,7 @@ values={[
       <Text>Dejan Lovren</Text>
     </Left>
     <Right>
-      <Icon name='arrow-forward' />
+      <Icon name="arrow-forward" />
     </Right>
   </ListItem>
 </List>
@@ -52,18 +52,18 @@ values={[
 <TabItem value="v3">
 
 ```tsx
-<VStack space={3} divider={<Divider />} w='90%'>
-  <HStack justifyContent='space-between'>
+<VStack space={3} divider={<Divider />} w="90%">
+  <HStack justifyContent="space-between">
     <Text>Simon Mignolet</Text>
-    <Icon name='arrow-forward' />
+    <Icon name="arrow-forward" />
   </HStack>
-  <HStack justifyContent='space-between'>
+  <HStack justifyContent="space-between">
     <Text>Nathaniel Clyne</Text>
-    <Icon name='arrow-forward' />
+    <Icon name="arrow-forward" />
   </HStack>
-  <HStack justifyContent='space-between'>
+  <HStack justifyContent="space-between">
     <Text>Dejan Lovren</Text>
-    <Icon name='arrow-forward' />
+    <Icon name="arrow-forward" />
   </HStack>
 </VStack>
 ```

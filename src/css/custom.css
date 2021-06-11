@@ -18,7 +18,7 @@
   --ifm-color-primary-darker: #06b6d4;
   --ifm-color-primary-darkest: #0891b2;
   --ifm-color-primary: #06b6d4;
-  --ifm-color-primary-light: #67e8f9;
+  --ifm-color-primary-light: #cfe1e4;
   --ifm-color-primary-lighter: #a5f3fc;
   --ifm-color-primary-lightest: #cffafe;
   --ifm-code-font-size: 95%;
@@ -28,6 +28,8 @@
   --doc-sidebar-border-radius: 100%;
   --ifm-global-radius: 0.4rem;
   --ifm-toc-border-color: transparent;
+  --ifm-menu-color-background-active: rgba(32, 179, 196, 0.1);
+  --ifm-menu-color-active: #0fbde9;
 }
 html[data-theme='dark'] {
   --ifm-navbar-background-color: #191a1b;
@@ -546,14 +548,36 @@ html[data-theme='dark'] .label:before {
   --doc-sidebar-width: 280px;
 }
 
+.menu__link--sublist {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
 .menu__list-item {
   font-size: 0.875rem;
 }
 
 html[data-theme='light'] .menu__link.menu__link--sublist {
-  color: black;
+  color: rgb(17, 24, 39);
+}
+
+html[data-theme='dark'] .menu__link.menu__link--sublist {
+  color: rgb(250, 250, 250);
 }
 
 .menu__link.menu__link--sublist {
   text-transform: uppercase;
+}
+
+.menu__link--sublist:after {
+  height: 0.5rem;
+  width: 0.875rem;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.menu:hover.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--ifm-scrollbar-thumb-background-color);
 }
