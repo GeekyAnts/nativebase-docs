@@ -7,3 +7,4 @@ export { default as WebBadge } from './WebBadge';
 export { default as KitchenSinkIframe } from './KitchenSinkIframe';
 export { default as TileLink } from './TileLink';
 export { default as NBHistory } from './NBHistory';
+export { default as InstallationTiles } from './InstallationTiles';

@@ -1,6 +1,6 @@
 ---
 id: loginsignupforms
-title: Authorization Forms
+title: Login/Signup Forms
 ---
 
 

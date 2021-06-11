@@ -1,6 +1,6 @@
 ---
 id: buildingSwipeList
-title: SwipeList
+title: Swipe List
 ---
 
 SwipeListView is a vertical ListView with rows that swipe open and closed. Handles default native behavior such as closing rows when ListView is scrolled or when other rows are opened.
