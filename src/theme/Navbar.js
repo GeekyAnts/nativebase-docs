@@ -84,7 +84,7 @@ function Navbar() {
       <div className={`navbar__inner  ${isLandingPage ? 'lg:px-4' : ''}`}>
         <div
           className={`flex px-2 justify-around mx-auto md:px-4 lg:px-0 w-full  ${
-            isLandingPage ? 'max-w-6xl' : ''
+            isLandingPage ? 'max-w-6xl' : 'max-w-7xl'
           }`}
         >
           <div className="navbar__items ">
@@ -128,7 +128,7 @@ function Navbar() {
               else return <NavbarItem {...item} key={i} />;
             })}
           </div>
-          <div className="navbar__items navbar__items--right max-w-3xl">
+          <div className="max-w-3xl navbar__items navbar__items--right">
             <SearchBar
               handleSearchBarToggle={setIsSearchBarExpanded}
               isSearchBarExpanded={isSearchBarExpanded}
@@ -179,7 +179,7 @@ function Navbar() {
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
-                        className="h-2 w-2 md:h-5 md:w-5 flex-no-shrink fill-current -mb-1 mr-2"
+                        className="w-2 h-2 mr-2 -mb-1 fill-current md:h-5 md:w-5 flex-no-shrink"
                         viewBox="0 0 41.5 41.265"
                       >
                         <image
@@ -199,7 +199,7 @@ function Navbar() {
                       <button
                         key={i}
                         onClick={onToggleChange}
-                        className="bg-transparent px-0 mr-3 lg:px-3 border-0 hidden md:flex navbar__item navbar__link"
+                        className="hidden px-0 mr-3 bg-transparent border-0 lg:px-3 md:flex navbar__item navbar__link"
                       >
                         {isDarkTheme ? (
                           <Sun
@@ -227,7 +227,7 @@ function Navbar() {
                       key={i}
                       target="_blank"
                       href={item.to}
-                      className="border-0 hidden px-0 mr-4 lg:mr-0 lg:px-3 md:flex navbar__item navbar__link"
+                      className="hidden px-0 mr-4 border-0 lg:mr-0 lg:px-3 md:flex navbar__item navbar__link"
                     >
                       <Discord
                         key={i}
@@ -260,7 +260,7 @@ function Navbar() {
             {!disableColorModeSwitch && (
               <button
                 onClick={onToggleChange}
-                className="bg-transparent ml-3 p-0 border-0"
+                className="p-0 ml-3 bg-transparent border-0"
               >
                 {isDarkTheme ? <Sun /> : <Moon />}
               </button>
