@@ -10,12 +10,7 @@ module.exports = {
       type: 'category',
       label: 'Core concepts',
       collapsed: false,
-      items: [
-        'utility-first',
-        'design-tokens',
-        'interaction-styles',
-        'platform-styles',
-      ],
+      items: ['utility-first', 'design-tokens', 'interaction-styles'],
     },
     {
       type: 'category',
