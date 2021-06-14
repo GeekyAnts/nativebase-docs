@@ -22,7 +22,7 @@ const cloneRepos = () => {
       shellJS.exec('git checkout ' + FALLBACK_BRANCH);
     }
     if (process.env.BUILDING === 'prod') {
-      shellJS.exec('yarn');
+      // shellJS.exec('yarn');
     }
     shellJS.cd('..');
     shellJS.cd('..');
