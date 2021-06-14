@@ -10,7 +10,12 @@ module.exports = {
       type: 'category',
       label: 'Core concepts',
       collapsed: false,
-      items: ['utility-first', 'design-tokens', 'interaction-styles'],
+      items: [
+        'utility-first',
+        'design-tokens',
+        'interaction-styles',
+        'responsive-style',
+      ],
     },
     {
       type: 'category',
@@ -20,7 +25,6 @@ module.exports = {
         'utility-props',
         'color-mode',
         'nativebase-factory',
-        'responsive-style',
         'safe-area-view-props',
         'accessibility',
       ],

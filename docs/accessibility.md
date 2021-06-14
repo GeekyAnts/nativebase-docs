@@ -7,7 +7,7 @@ NativeBase comes with the latest accessibility standards out of the box includin
 
 ## Accessible Roles
 
-NativeBase uses [React Native ARIA](https://react-native-aria.geekyants.com/) to implements [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.2/) standards to its components. This is designed to provide meaning for controls that aren't built using components provided by the platform. For example, if you use a View instead of a Button component to create a Button, there is `accessibiltyRole` attribute that you need to add to the View in order to convey that it's a Button for screen readers or voice recognition tools.
+NativeBase uses [React Native ARIA](https://react-native-aria.geekyants.com/) to implements [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.2/) standards to its components. This is designed to provide meaning for controls that aren't built using components provided by the platform.
 
 ## Accessible Labels
 
