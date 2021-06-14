@@ -5,7 +5,7 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,6 +31,16 @@
   --ifm-toc-border-color: transparent;
   --ifm-menu-color-background-active: rgba(32, 179, 196, 0.1);
   --ifm-menu-color-active: #0fbde9;
+  --ifm-font-family-base:'Poppins', sans-serif;
+  --ifm-navbar-padding-vertical:0;
+  --ifm-navbar-padding-horizontal:0;
+  --ifm-spacing-horizontal:4rem;
+}
+
+@media (max-width: 600px) {
+  :root{
+  --ifm-spacing-horizontal:1rem;}
+
 }
 html[data-theme='dark'] {
   --ifm-navbar-background-color: #111827;
@@ -49,6 +59,8 @@ html[data-theme='dark'] .menu__link.menu__link--sublist {
 .themeable {
   box-shadow: 0 0 50px rgb(0 0 0 / 15%);
 }
+
+
 
 @layer utilities {
   @variants responsive {
@@ -80,7 +92,7 @@ input:checked + label {
 }
 
 .main-wrapper {
-  max-width: 80rem;
+  max-width: 90rem;
   width: 1400px;
   align-self: center;
 }
@@ -131,9 +143,12 @@ html[data-theme='dark'] .DocSearch-Button-Key {
 .navbar {
   box-shadow: none;
   height: 64px;
-  max-width: 80rem;
+  max-width: 86rem;
   align-self: center;
   border-bottom: 1px solid #e0e0e0;
+  background-color: #1118277a;
+  backdrop-filter: blur(10px);
+  
 }
 html[data-theme='dark'] .navbar {
   border-bottom: 1px solid #333;
@@ -410,7 +425,7 @@ html[data-theme='dark'] .navbar {
   top: 1px;
   margin-right: -6px;
   padding: 3px 6px;
-  //border: 1px solid var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
   border-radius: 3px;
   color: var(--ifm-color-primary);
   text-transform: uppercase;
