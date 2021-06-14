@@ -41,10 +41,10 @@ export default function App() {
         mx="auto"
         w="100%"
       >
-        <Heading size="2xl">
+        <Heading size="lg">
           Welcome
         </Heading>
-        <Heading color="coolGray.400" size="md">
+        <Heading color="coolGray.400" size="md" mt={1}>
           Sign in to continue!
         </Heading>
 
@@ -139,10 +139,10 @@ return (
         w="100%"
         safeAr
       >
-        <Heading size="2xl">
+        <Heading size="lg">
           Create Account
         </Heading>
-        <Heading color="coolGray.400" size="md">
+        <Heading color="coolGray.400" size="md" mt={1}>
           Sign up to get Started!
         </Heading>
 
