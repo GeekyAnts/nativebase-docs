@@ -27,7 +27,6 @@
   --ifm-navbar-padding-horizontal: 16px;
   --doc-sidebar-border-radius: 100%;
   --ifm-global-radius: 0.4rem;
-  --ifm-navbar-height: 5rem;
   --ifm-toc-border-color: transparent;
   --ifm-menu-color-background-active: rgba(32, 179, 196, 0.1);
   --ifm-menu-color-active: #0fbde9;
@@ -561,6 +560,8 @@ html[data-theme='dark'] .label:before {
 .menu__link--sublist {
   font-size: 0.75rem;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .menu__list-item {
