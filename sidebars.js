@@ -8,6 +8,17 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Core concepts',
+      collapsed: false,
+      items: [
+        'utility-first',
+        'design-tokens',
+        'interaction-styles',
+        'platform-styles',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Features',
       collapsed: false,
       items: [
@@ -201,11 +212,17 @@ module.exports = {
       label: 'Recipes',
       collapsed: false,
       items: [
-        'buildingCard',
-        'buildingSearchBar',
-        'buildingAppBar',
-        'form',
-        'appDrawer',
+        {
+          Designs: [
+            'buildingAppBar',
+            'buildingCard',
+            'buildingDrawerNavigation',
+            'buildingTabView',
+            'buildingSwipeList',
+          ],
+          Forms: ['form', 'loginsignupforms', 'buildingSearchBar'],
+          Layout: ['appDrawer', 'buildingFooterTabs'],
+        },
       ],
     },
     {
@@ -221,15 +238,21 @@ module.exports = {
             'migration/Button',
             'migration/Card',
             'migration/Checkbox',
+            'migration/DatePicker',
+            'migration/DeckSwiper',
+            'migration/Drawer',
             'migration/FABs',
-            'migration/Footer Tab',
+            'migration/FooterTab',
+            'migration/Form',
             'migration/Header',
             'migration/Icon',
             'migration/Layout',
             'migration/Picker',
             'migration/Radio Button',
             'migration/Searchbar',
+            'migration/Segment',
             'migration/Spinner',
+            'migration/SwipeList',
             'migration/Tabs',
             'migration/Thumbnail',
             'migration/Toast',
@@ -243,6 +266,22 @@ module.exports = {
       label: 'More',
       collapsed: false,
       items: ['changelog', 'faq'],
+    },
+    {
+      type: 'doc',
+      id: 'install-expo',
+    },
+    {
+      type: 'doc',
+      id: 'install-rn',
+    },
+    {
+      type: 'doc',
+      id: 'install-cra',
+    },
+    {
+      type: 'doc',
+      id: 'install-next',
     },
   ],
 };

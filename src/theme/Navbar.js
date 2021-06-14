@@ -34,9 +34,9 @@ function splitNavItemsByPosition(items) {
 
 function Navbar() {
   React.useEffect(() => {
-      document.getElementsByClassName('main-wrapper')[0].className +=
-        ' main-wrapper-docs';
-      setIsLandingPage(false);
+    document.getElementsByClassName('main-wrapper')[0].className +=
+      ' main-wrapper-docs';
+    setIsLandingPage(false);
   }, []);
   const {
     navbar: { items, hideOnScroll, style },
@@ -71,9 +71,8 @@ function Navbar() {
     : 'text-gray-100';
   return (
     <nav
-      id="tailwind"
       ref={navbarRef}
-      className={clsx('navbar', 'navbar--fixed-top', {
+      className={clsx('navbar', 'tailwind', 'navbar--fixed-top', {
         'navbar--dark': style === 'dark',
         'navbar--primary': style === 'primary',
         'navbar-sidebar--show': sidebarShown,
@@ -153,7 +152,9 @@ function Navbar() {
                       href={item.to}
                       key={i}
                       className={`${
-                        !isDarkTheme ? 'text-gray-500 hover:bg-gray-100' : 'text-white hover:bg-gray-600'
+                        !isDarkTheme
+                          ? 'text-gray-500 hover:bg-gray-100'
+                          : 'text-white hover:bg-gray-600'
                       } px-0 border border-solid ${
                         !isDarkTheme ? 'border-gray-200' : 'border-gray-600'
                       }  font-semibold py-1 px-5 rounded no-underline hidden md:inline-block`}
@@ -167,7 +168,9 @@ function Navbar() {
                       href={item.to}
                       key={i}
                       className={`border-0 ${
-                        !isDarkTheme ? 'text-gray-500 hover:bg-gray-100' : 'text-white hover:bg-gray-600'
+                        !isDarkTheme
+                          ? 'text-gray-500 hover:bg-gray-100'
+                          : 'text-white hover:bg-gray-600'
                       }
                        px-0 border border-solid ${
                          !isDarkTheme ? 'border-gray-200' : 'border-gray-600'

@@ -1,7 +1,7 @@
 module.exports = {
   title: 'NativeBase',
   tagline: 'A complete component library for React Native Ecosystem',
-  url: 'https://alpha.nativebase.io',
+  url: 'https://alpha-docs.nativebase.io',
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
@@ -30,6 +30,9 @@ module.exports = {
     // gtag: {
     //   trackingID: 'UA-76655074-1',
     // },
+    prism: {
+      theme: require('prism-react-renderer/themes/nightOwl'),
+    },
     algolia: {
       contextualSearch: true,
       apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',

@@ -1,9 +1,9 @@
 ---
 id: use-disclosure
-title: useDisclosure
+title: useDisclose
 ---
 
-`useDisclosure` is a custom hook used to help handle common `open`, `close`, or `toggle` scenarios. It can be used to control feedback component such as **Modal**, **AlertDialog**, **Drawer**, etc.
+`useDisclose` is a custom hook used to help handle common `open`, `close`, or `toggle` scenarios. It can be used to control feedback component such as **Modal**, **AlertDialog**, **Drawer**, etc.
 
 ## Import
 
@@ -28,8 +28,7 @@ function UseDiscloseExample() {
   const { isOpen, onOpen, onClose } = useDisclose();
   return (
     <>
-      <Modal isCentered isOpen={isOpen} onClose={onClose}>
-        <Modal.Overlay />
+      <Modal isOpen={isOpen} onClose={onClose}>
         <Modal.Content>
           <Modal.CloseButton />
           <Modal.Header fontSize="4xl" fontWeight="bold">

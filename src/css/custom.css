@@ -13,20 +13,23 @@
 /* You can override the default Infima variables here. */
 
 :root {
-  --ifm-link-color: #10b981;
-  --ifm-color-primary-dark: #059669;
-  --ifm-color-primary-darker: #047857;
-  --ifm-color-primary-darkest: #065f46;
-  --ifm-color-primary: #2ec990;
-  --ifm-color-primary-light: #6ee7b7;
-  --ifm-color-primary-lighter: #a7f3d0;
-  --ifm-color-primary-lightest: #d1fae5;
+  --ifm-link-color: #06b6d4;
+  --ifm-color-primary-dark: #22d3ee;
+  --ifm-color-primary-darker: #06b6d4;
+  --ifm-color-primary-darkest: #0891b2;
+  --ifm-color-primary: #06b6d4;
+  --ifm-color-primary-light: #cfe1e4;
+  --ifm-color-primary-lighter: #a5f3fc;
+  --ifm-color-primary-lightest: #cffafe;
   --ifm-code-font-size: 95%;
   --ifm-navbar-item-padding-horizontal: 20px;
   --ifm-navbar-padding-vertical: 12px;
   --ifm-navbar-padding-horizontal: 16px;
   --doc-sidebar-border-radius: 100%;
   --ifm-global-radius: 0.4rem;
+  --ifm-toc-border-color: transparent;
+  --ifm-menu-color-background-active: rgba(32, 179, 196, 0.1);
+  --ifm-menu-color-active: #0fbde9;
 }
 html[data-theme='dark'] {
   --ifm-navbar-background-color: #191a1b;
@@ -59,8 +62,8 @@ input:checked + label {
 }
 
 .main-wrapper-docs {
-  max-width: 1400px;
-  width: 1400px;
+  max-width: 100%;
+  width: 100%;
   align-self: center;
 }
 .ResizePanel-module_ResizeHandleHorizontal__PkS9u {
@@ -130,8 +133,8 @@ html[data-theme='dark'] .DocSearch-Button-Key {
   height: 64px;
 }
 .navbar .navbar__inner {
-  max-width: 1360px;
-  margin: 0 auto;
+  /* max-width: 1360px; */
+  /* margin: 0 auto; */
   flex-wrap: nowrap;
 }
 
@@ -502,4 +505,79 @@ html[data-theme='dark'] .label:before {
   .container {
     max-width: 100%;
   }
+}
+
+.kichen-sink-iframe {
+  border: 10px solid black;
+  border-radius: 54px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  max-width: 95vw;
+  height: 680px;
+  position: relative;
+  overflow: hidden;
+}
+
+.kichen-sink-iframe-notch {
+  width: 60%;
+}
+
+.kichen-sink-iframe-iframe {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.kichen-sink-iframe-safe-aria {
+  height: 100px;
+  background-color: rgb(15, 23, 42);
+  width: 100%;
+  position: absolute;
+  z-index: -29;
+  top: -10px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main-wrapper {
+  --doc-sidebar-width: 280px;
+}
+
+.menu__link--sublist {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.menu__list-item {
+  font-size: 0.875rem;
+}
+
+html[data-theme='light'] .menu__link.menu__link--sublist {
+  color: rgb(17, 24, 39);
+}
+
+html[data-theme='dark'] .menu__link.menu__link--sublist {
+  color: rgb(250, 250, 250);
+}
+
+.menu__link.menu__link--sublist {
+  text-transform: uppercase;
+}
+
+.menu__link--sublist:after {
+  height: 0.5rem;
+  width: 0.875rem;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.menu:hover.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--ifm-scrollbar-thumb-background-color);
 }

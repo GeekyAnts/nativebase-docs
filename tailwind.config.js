@@ -1,11 +1,11 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.js', './src/**/*.jsx'],
+  purge: ['./src/**/*.html', './src/**/*.js', './src/**/*.jsx', './docs/*.mdx'],
   darkMode: false, // or 'media' or 'class'
   corePlugins: {
     preflight: false,
   },
-  important: '#tailwind',
+  important: '.tailwind',
   theme: {
     screens: {
       xs: '325px',
@@ -40,6 +40,18 @@ module.exports = {
           700: '#1d4ed8',
           800: '#1e40af',
           900: '#1e3a8a',
+        },
+        cyan: {
+          50: '#ecfeff',
+          100: '#cffafe',
+          200: '#a5f3fc',
+          300: '#67e8f9',
+          400: '#22d3ee',
+          500: '#06b6d4',
+          600: '#0891b2',
+          700: '#0e7490',
+          800: '#155e75',
+          900: '#164e63',
         },
         indigo: {
           50: '#eef2ff',
@@ -77,6 +89,18 @@ module.exports = {
           800: '#065f46',
           900: '#064e3b',
         },
+        pink: {
+          50: '#fdf2f8',
+          100: '#fce7f3',
+          200: '#fbcfe8',
+          300: '#f9a8d4',
+          400: '#f472b6',
+          500: '#ec4899',
+          600: '#db2777',
+          700: '#be185d',
+          800: '#9d174d',
+          900: '#831843',
+        },
         secondary: {
           20: '#CCCCCC',
           40: '#888888',
@@ -92,12 +116,9 @@ module.exports = {
         sm: '0 1px 2px 0 rgba(0, 0, 0, 0.16)',
         default:
           '0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.03)',
-        md:
-          '0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
-        lg:
-          '0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02)',
-        xl:
-          '0 20px 25px -5px rgba(0, 0, 0, 0.12), 0 10px 10px -5px rgba(0, 0, 0, 0.02)',
+        md: '0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+        lg: '0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02)',
+        xl: '0 20px 25px -5px rgba(0, 0, 0, 0.12), 0 10px 10px -5px rgba(0, 0, 0, 0.02)',
         '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.15)',
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.04)',
         outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',

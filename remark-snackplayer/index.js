@@ -50,7 +50,9 @@ const processNode = (node, parent) => {
 
       // Generate Node for SnackPlayer
       let dependencies = `react-is,expo-font,native-base@${NBversion},styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons,expo-linear-gradient`;
-      dependencies = `${dependencies},${simplifedMeta.dependencies}`;
+      dependencies = `${dependencies},${
+        simplifedMeta.dependencies ?? simplifedMeta.dependencies
+      }`;
 
       if (name.split(' ')[0] === 'Formik') {
         dependencies += ',@native-base/formik-ui,formik,yup';

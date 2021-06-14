@@ -66,12 +66,9 @@ const simplifyMeta = (meta) => {
 // path=primitives,Box,index.tsx showStylingProps=true
 const getPropDetail = (meta) => {
   const { path: subPath, ...objectifiedMeta } = simplifyMeta(meta);
-  const filePath = path.resolve(componentsRootPath, ...subPath);
   const filePath = path.resolve(componentsRootPath(repoPath), ...subPath);
   console.log('filepath: ', filePath);
   const code = docgen.parse(filePath);
-  // console.log('filepath: ', filePath);
-  const fileData = docgen.parse(filePath);
 
   // NOTE: writing on code for testing
   // fs.writeFileSync('test1.json', JSON.stringify(code));
