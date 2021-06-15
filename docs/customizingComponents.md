@@ -3,21 +3,11 @@ id: customizingComponents
 title: Customising Components
 ---
 
-NativeBase theme is complex object which looks like
+Theme customisation is at the heart of NativeBase. Using NativeBase's `extendTheme` function, we can customise components.
 
-```tsx
-// theme
-{
-	colors: {...},
-	fonts: {...},
-	.
-	.
-	.
-	config: {...},
-}
-```
+Components can be customised by overriding baseStyle/defaultProps or adding a new variant.
 
-using NativeBase's `extendTheme` function, we can update theme object. You can customize the components at multiple levels.
+Let's customise a Button component to include rounded borders and red colorScheme.
 
 ## Basic
 
@@ -30,6 +20,9 @@ export default function () {
     components: {
       Button: {
         // Can simply pass default props to change default behaviour of components.
+        baseStyle: {
+          rounded: 'md',
+        },
         defaultProps: {
           colorScheme: 'red',
         },
@@ -53,7 +46,32 @@ export default function () {
 
 From the above example we can observe that we customize components by passing the **components** object with the **key** being the **name** of the **component**. Whereas you set `defaultProps` or `baseStyle` to customize the components.
 
-Both defaultProps and baseStyle can either be simple object or function. You can use object simple use cases while the function when you want to use `themeTools`.
+### Difference between baseStyle and defaultProps?
+
+#### Base Style
+
+- As the name suggests, it's used to define the base style of a component.
+- Base style can be a function or a plain object. Use function if you want to get access to defaultProps, current colorMode (light/dark) and theme object.
+
+Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3-pre-beta/src/theme/components/button.ts#L5)
+
+#### Default Props
+
+- Default props can be used to initialize props of a component.
+- For e.g. You have a Button component and it has 2 variants. i.e. outline, solid. You can use it like.
+
+Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3-pre-beta/src/theme/components/button.ts#L201)
+
+```jsx
+<Button variant="ghost">
+<Button variant="outline">
+
+
+// What variant should it pick if it's not passed?
+<Button />
+```
+
+When variant in defaultProps is `solid` the above button will use solid variant.
 
 ## Customizing Base Style
 
@@ -136,3 +154,7 @@ export default function () {
 }
 
 ```
+
+<br />
+
+NativeBase ships with default styles for each components. [You can find it here](https://github.com/GeekyAnts/NativeBase/tree/v3-pre-beta/src/theme/components)
