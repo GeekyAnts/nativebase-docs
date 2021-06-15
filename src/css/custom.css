@@ -24,6 +24,7 @@
   --ifm-code-font-size: 95%;
   --ifm-navbar-item-padding-horizontal: 20px;
   --ifm-navbar-padding-vertical: 12px;
+  --ifm-navbar-height: 5rem;
   --ifm-navbar-padding-horizontal: 16px;
   --doc-sidebar-border-radius: 100%;
   --ifm-global-radius: 0.4rem;
@@ -32,7 +33,18 @@
   --ifm-menu-color-active: #0fbde9;
 }
 html[data-theme='dark'] {
-  --ifm-navbar-background-color: #191a1b;
+  --ifm-navbar-background-color: #111827;
+  --ifm-toc-border-color: transparent;
+  --ifm-background-color: #111827;
+  --docsearch-searchbox-background: #111827;
+  --docsearch-searchbox-focus-background: #111827;
+  --ifm-menu-color: #9ba4af;
+  --ifm-footer-background-color: #111827;
+  --ifm-toc-link-color: #9ba4af;
+}
+
+html[data-theme='dark'] .menu__link.menu__link--sublist {
+  color: #cbd5e1 !important;
 }
 .themeable {
   box-shadow: 0 0 50px rgb(0 0 0 / 15%);
@@ -66,24 +78,12 @@ input:checked + label {
   width: 100%;
   align-self: center;
 }
-.ResizePanel-module_ResizeHandleHorizontal__PkS9u {
-  overflow: visible !important;
-  display: inline-block !important;
-  border: 0 !important;
-  background: none !important;
-}
-.ResizePanel-module_ResizeHandleHorizontal__PkS9u span {
-  width: 40px;
-}
-.ResizePanel-module_ResizeHandleHorizontal__PkS9u > span::after {
-  content: '' !important;
-}
 
-/* .main-wrapper {
-  max-width: 1400px;
+.main-wrapper {
+  max-width: 80rem;
   width: 1400px;
   align-self: center;
-} */
+}
 
 @media (max-width: 1400px) {
   #__docusaurus {
@@ -131,6 +131,12 @@ html[data-theme='dark'] .DocSearch-Button-Key {
 .navbar {
   box-shadow: none;
   height: 64px;
+  max-width: 80rem;
+  align-self: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+html[data-theme='dark'] .navbar {
+  border-bottom: 1px solid #333;
 }
 .navbar .navbar__inner {
   /* max-width: 1360px; */
@@ -507,6 +513,10 @@ html[data-theme='dark'] .label:before {
   }
 }
 
+.container {
+  max-width: 72rem !important;
+}
+
 .kichen-sink-iframe {
   border: 10px solid black;
   border-radius: 54px;
@@ -553,6 +563,8 @@ html[data-theme='dark'] .label:before {
 .menu__link--sublist {
   font-size: 0.75rem;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .menu__list-item {

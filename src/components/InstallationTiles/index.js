@@ -4,7 +4,7 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 
 export default function InstallationTiles() {
   const { isDarkTheme } = useThemeContext();
-  const bgColor = isDarkTheme ? 'bg-gray-800' : 'bg-gray-600';
+  const bgColor = isDarkTheme ? 'bg-blueGray-700' : 'bg-gray-600';
 
   return (
     <>
@@ -38,7 +38,7 @@ export default function InstallationTiles() {
           }}
         />
       </div>
-      <div className="row mt-2">
+      <div className="mt-2 row">
         <TileLink
           title="Install in NextJS project"
           url="install-next"

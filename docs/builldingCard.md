@@ -1,6 +1,6 @@
 ---
 id: buildingCard
-title: Building Card
+title: Card
 ---
 
 A card is a flexible and extensible content container. It comes in caries shapes and sizes and here we'll make few of them.
