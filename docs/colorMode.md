@@ -1,6 +1,6 @@
 ---
 id: color-mode
-title: Color Mode
+title: Dark mode
 ---
 
 When you use the `NativebaseProvider` at the root of your app, you can automatically use color mode in your apps.

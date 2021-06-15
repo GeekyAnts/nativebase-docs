@@ -1,4 +1,5 @@
 module.exports = {
+  themes: ['@docusaurus/theme-live-codeblock'],
   title: 'NativeBase',
   tagline: 'A complete component library for React Native Ecosystem',
   url: 'https://alpha-docs.nativebase.io',

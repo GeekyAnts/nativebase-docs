@@ -9,7 +9,7 @@ export default function KitchenSinkIframe() {
           fill-rule="evenodd"
         ></path>
       </svg>
-      <div className="kichen-sink-iframe-safe-aria"></div>
+      {/* <div className="kichen-sink-iframe-safe-aria"></div> */}
       <iframe
         loading="lazy"
         importance="low"

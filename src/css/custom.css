@@ -532,6 +532,7 @@ html[data-theme='dark'] .label:before {
 
 .kichen-sink-iframe-notch {
   width: 60%;
+  z-index: 1;
 }
 
 .kichen-sink-iframe-iframe {
@@ -539,6 +540,7 @@ html[data-theme='dark'] .label:before {
   width: 100%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  position: absolute;
 }
 
 .kichen-sink-iframe-safe-aria {
@@ -592,4 +594,8 @@ html[data-theme='dark'] .menu__link.menu__link--sublist {
 
 .menu:hover.thin-scrollbar::-webkit-scrollbar-thumb {
   background: var(--ifm-scrollbar-thumb-background-color);
+}
+
+main {
+  overflow-x: hidden;
 }

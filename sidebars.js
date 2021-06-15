@@ -14,7 +14,7 @@ module.exports = {
         'utility-first',
         'design-tokens',
         'interaction-styles',
-        'platform-styles',
+        'responsive-style',
       ],
     },
     {
@@ -25,7 +25,6 @@ module.exports = {
         'utility-props',
         'color-mode',
         'nativebase-factory',
-        'responsive-style',
         'safe-area-view-props',
         'accessibility',
       ],
