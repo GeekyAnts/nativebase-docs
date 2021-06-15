@@ -146,12 +146,14 @@ html[data-theme='dark'] .DocSearch-Button-Key {
   max-width: 86rem;
   align-self: center;
   border-bottom: 1px solid #e0e0e0;
-  background-color: #1118277a;
+  background-color: rgba(255, 255, 255, 0.479);
   backdrop-filter: blur(10px);
   
 }
 html[data-theme='dark'] .navbar {
   border-bottom: 1px solid #333;
+  background-color: #1118277a;
+  backdrop-filter: blur(10px);
 }
 .navbar .navbar__inner {
   /* max-width: 1360px; */
