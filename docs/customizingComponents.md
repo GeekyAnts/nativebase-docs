@@ -44,7 +44,7 @@ export default function () {
 }
 ```
 
-From the above example we can observe that we customize components by passing the **components** object with the **key** being the **name** of the **component**. Whereas you set `defaultProps` or `baseStyle` to customize the components.
+As shown above, we can customize components by passing the **components** object with the **key** being the **name** of the **component**. Whereas you set `defaultProps` or `baseStyle` to customize the components.
 
 ### Difference between baseStyle and defaultProps?
 
