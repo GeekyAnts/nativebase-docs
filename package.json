@@ -11,7 +11,9 @@
     "deploy-gh": "GIT_USER=nativebase USE_SSH=true yarn deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "install-plugins": "cd nb-plugins && yarn && cd .. && cd remark-snackplayer && yarn"
+    
   },
   "dependencies": {
     "@babel/core": "^7.14.0",

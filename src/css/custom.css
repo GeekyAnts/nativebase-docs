@@ -5,7 +5,7 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,6 +31,23 @@
   --ifm-toc-border-color: transparent;
   --ifm-menu-color-background-active: rgba(32, 179, 196, 0.1);
   --ifm-menu-color-active: #0fbde9;
+  --ifm-navbar-padding-vertical:0;
+  --ifm-navbar-padding-horizontal:0;
+  --ifm-spacing-horizontal:4rem;
+  --ifm-background-color: #F9FAFB;
+  --docsearch-searchbox-background: #F9FAFB;
+  --docsearch-searchbox-focus-background: #F9FAFB;
+  --ifm-navbar-background-color: #F9FAFB;
+}
+
+h1,h2,h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 600px) {
+  :root{
+  --ifm-spacing-horizontal:1rem;}
+
 }
 html[data-theme='dark'] {
   --ifm-navbar-background-color: #111827;
@@ -41,6 +58,7 @@ html[data-theme='dark'] {
   --ifm-menu-color: #9ba4af;
   --ifm-footer-background-color: #111827;
   --ifm-toc-link-color: #9ba4af;
+
 }
 
 html[data-theme='dark'] .menu__link.menu__link--sublist {
@@ -49,6 +67,8 @@ html[data-theme='dark'] .menu__link.menu__link--sublist {
 .themeable {
   box-shadow: 0 0 50px rgb(0 0 0 / 15%);
 }
+
+
 
 @layer utilities {
   @variants responsive {
@@ -80,7 +100,7 @@ input:checked + label {
 }
 
 .main-wrapper {
-  max-width: 80rem;
+  max-width: 90rem;
   width: 1400px;
   align-self: center;
 }
@@ -131,12 +151,25 @@ html[data-theme='dark'] .DocSearch-Button-Key {
 .navbar {
   box-shadow: none;
   height: 64px;
-  max-width: 80rem;
+  max-width: 86rem;
   align-self: center;
   border-bottom: 1px solid #e0e0e0;
+  background-color: transparent;
+  
 }
 html[data-theme='dark'] .navbar {
   border-bottom: 1px solid #333;
+  background-color: transparent;
+  /* backdrop-filter: blur(10px); */
+}
+.navbar-small {
+  /* background-color: rgba(255, 255, 255, 0.199);
+  backdrop-filter: blur(10px); */
+  
+}
+html[data-theme='dark'] .navbar-small {
+  background-color: #111827c7;
+  backdrop-filter: blur(10px);
 }
 .navbar .navbar__inner {
   /* max-width: 1360px; */
@@ -410,7 +443,7 @@ html[data-theme='dark'] .navbar {
   top: 1px;
   margin-right: -6px;
   padding: 3px 6px;
-  //border: 1px solid var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
   border-radius: 3px;
   color: var(--ifm-color-primary);
   text-transform: uppercase;
@@ -514,7 +547,7 @@ html[data-theme='dark'] .label:before {
 }
 
 .container {
-  max-width: 72rem !important;
+  max-width: 93rem !important;
 }
 
 .kichen-sink-iframe {
@@ -532,7 +565,9 @@ html[data-theme='dark'] .label:before {
 
 .kichen-sink-iframe-notch {
   width: 60%;
-  z-index: 1;
+  position: absolute;
+  z-index: 9;
+  top: -3px;
 }
 
 .kichen-sink-iframe-iframe {
@@ -544,11 +579,12 @@ html[data-theme='dark'] .label:before {
 }
 
 .kichen-sink-iframe-safe-aria {
-  height: 100px;
-  background-color: rgb(15, 23, 42);
+  /* height: 100px; */
+  /* background-color: rgb(15, 23, 42); */
+  background-color: red;
   width: 100%;
   position: absolute;
-  z-index: -29;
+  z-index: 9;
   top: -10px;
 }
 
