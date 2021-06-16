@@ -3,13 +3,16 @@ id: customizingTheme
 title: Customising Theme
 ---
 
-Theme is one core elements of NativeBase. And the extent of customising you can bring to your application by updating it, is only limited by your imagination. NativeBase theme is complex object which looks like
+import { NativeBaseProvider, Box } from 'native-base';
+
+Theme is one core elements of NativeBase. You can customize NativeBase's theme as per your liking. NativeBase theme is complex object which looks like
 
 ```tsx
 // theme
 {
 	colors: {...},
-	fonts: {...},
+    fontSizes: {...},
+ 	fonts: {...},
 	.
 	.
 	.
@@ -17,7 +20,7 @@ Theme is one core elements of NativeBase. And the extent of customising you can 
 }
 ```
 
-It have many other properties but in this recipe, well only few of them (namely colors, fonts, and config) and well update it using NativeBase's `extendTheme` function, we can update theme object. A simple example to illustrate the process of updating the theme.
+It has many [other properties](default-theme) but in this recipe, we'll only update few of them (namely colors, fonts, and config) using NativeBase's `extendTheme` function.
 
 ```tsx
 import React from 'react';
@@ -68,6 +71,38 @@ In the above example, the following changes have been made:
 
 ### Using the new tokens in components
 
-```jsx
-<Box bg="primary.500" />
+```jsx live
+function App() {
+  const theme = extendTheme({
+    colors: {
+      // Add new color
+      primary: {
+        50: '#E3F2F9',
+        100: '#C5E4F3',
+        200: '#A2D4EC',
+        300: '#7AC1E4',
+        400: '#47A9DA',
+        500: '#0088CC',
+        600: '#007AB8',
+        700: '#006BA1',
+        800: '#005885',
+        900: '#003F5E',
+      },
+      // Redefinig only one shade, rest of the color will remain same.
+      amber: {
+        400: '#d97706',
+      },
+    },
+    config: {
+      // Changing initialColorMode to 'dark'
+      initialColorMode: 'dark',
+    },
+  });
+
+  return (
+    <NativeBaseProvider theme={theme}>
+      <Box bg="primary.500" p={4} />
+    </NativeBaseProvider>
+  );
+}
 ```
