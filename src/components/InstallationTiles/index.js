@@ -8,7 +8,7 @@ export default function InstallationTiles() {
 
   return (
     <>
-      <div className="row">
+      <div className="row -m-2">
         <TileLink
           title="Install in Expo project"
           url="install-expo"
@@ -38,7 +38,7 @@ export default function InstallationTiles() {
           }}
         />
       </div>
-      <div className="mt-2 row">
+      <div className="mt-2 -m-2 row">
         <TileLink
           title="Install in NextJS project"
           url="install-next"

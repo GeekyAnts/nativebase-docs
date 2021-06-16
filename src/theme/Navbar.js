@@ -81,9 +81,9 @@ function Navbar() {
       })}
       // style={{ paddingLeft: '2rem' }}
     >
-      <div className={`navbar__inner bg-transparent backdrop-blur-sm py-8 px-2 ${isLandingPage ? 'lg:px-4' : ''}`}>
+      <div className={`navbar__inner bg-transparent backdrop-blur-sm  lg:px-2 ${isLandingPage ? 'lg:px-4' : ''}`}>
         <div
-          className={`flex px-2  justify-around mx-auto md:px-4 lg:px-0 w-full  ${
+          className={`flex px-2 navbar-small bg-blueGray-50 justify-around mx-auto md:px-4 lg:px-0 w-full  ${
             isLandingPage ? 'max-w-6xl' : ''
           }`}
         >
