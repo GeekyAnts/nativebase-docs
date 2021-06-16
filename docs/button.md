@@ -76,6 +76,8 @@ import { Button, ButtonGroup } from 'native-base';
 
 ```
 
+## Styling
+
 ## Accessibility
 
 - Button has `role` set to `button`
