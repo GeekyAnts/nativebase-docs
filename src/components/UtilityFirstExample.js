@@ -33,7 +33,7 @@ export function UtilityFirstExample() {
             </VStack>
             <Pressable
               rounded="sm"
-              bg="primary.400"
+              bg="primary.500"
               alignSelf="flex-start"
               py={2}
               px={3}
