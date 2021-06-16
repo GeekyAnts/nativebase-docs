@@ -42,7 +42,7 @@ function AppDrawer(){
           colorScheme="indigo"
           variant="solid"
           p={4}
-          icon={<Icon name={icon} as={MaterialIcons} size={6} />}
+          icon={<Icon name={icon} as={MaterialIcons} size={6} color="white"/>}
         />
       ))}
     </SimpleGrid>
