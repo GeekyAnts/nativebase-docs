@@ -3,6 +3,8 @@ id: actionSheet
 title: ActionSheet
 ---
 
+import { ComponentTheme } from '../src/components';
+
 An Action Sheet is a dialog that displays a set of options. It appears on top of the app's content.
 
 ## Import
@@ -60,6 +62,10 @@ import { Actionsheet } from 'native-base';
 ### Actionsheet.Item
 
 ActionsheetItem implements [Button](button.md#props)
+
+## Styling
+
+<ComponentTheme name="actionsheet" />
 
 ## Accessibility
 

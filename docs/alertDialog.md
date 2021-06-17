@@ -3,6 +3,8 @@ id: alertDialog
 title: AlertDialog
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `AlertDialog` component is used to interrupt the user with a mandatory confirmation or action. AlertDialog composes [`Modal`](modal.md) so you can use all its props.
 
 ## Import
@@ -127,6 +129,10 @@ export default function () {
   );
 }
 ```
+
+## Styling
+
+<ComponentTheme name="alertDialog" />
 
 ## Props
 

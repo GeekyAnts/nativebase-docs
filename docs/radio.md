@@ -3,6 +3,8 @@ id: radio
 title: Radio
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Radio` is used when only one choice may be selected in a series of options.
 
 ## Examples
@@ -89,3 +91,7 @@ Uses React Native ARIA [@react-native-aria/radio](https://react-native-aria.geek
 | `ArrowRight` | Moves focus to the next radio item in the group.                                   |
 | `ArrowUp`    | Moves focus to the previous radio item in the group.                               |
 | `ArrowLeft`  | Moves focus to the previous radio item in the group.                               |
+
+## Styling
+
+<ComponentTheme name="radio" />

@@ -3,6 +3,8 @@ id: toast
 title: Toast
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Toast` is used to show alerts on top of an overlay. `Toast` will close itself when the close button is clicked, or after a timeout — the default is 5 seconds. The toast component is used to give feeback to users after an action has taken place.
 
 Toasts can be configured to appear at either the top or the bottom of an application window, and it is possible to have more than one toast onscreen at a time.
@@ -79,3 +81,7 @@ Below props can be passed while calling toast.show.
 
 - On Android and Web, Toast renders under a View with accessibilityLiveRegion which announces the content rendered inside it to screen reader devices.
 - On iOS, accessibilityLiveRegion is not supported yet, so we use the [accessibilityAnnouncement](https://reactnative.dev/docs/accessibilityinfo#announceforaccessibility) to announce the content.
+
+## Styling
+
+<ComponentTheme name="toast" />
