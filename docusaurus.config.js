@@ -31,6 +31,9 @@ module.exports = {
     // gtag: {
     //   trackingID: 'UA-76655074-1',
     // },
+    colorMode: {
+      defaultMode: 'dark',
+    },
     prism: {
       theme: require('prism-react-renderer/themes/nightOwl'),
     },
