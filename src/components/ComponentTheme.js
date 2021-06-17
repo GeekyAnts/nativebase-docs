@@ -6,7 +6,7 @@ const url = REPO_LINK + '/tree/' + REPO_BRANCH;
 
 const extendComponentInstruction = (name) => {
   return `
-import { extendTheme } from "native-base";
+import { extendTheme, NativeBaseProvider } from "native-base";
 
 const theme = extendTheme({
     components: {
