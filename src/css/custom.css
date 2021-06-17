@@ -24,7 +24,7 @@
   --ifm-code-font-size: 95%;
   --ifm-navbar-item-padding-horizontal: 20px;
   --ifm-navbar-padding-vertical: 12px;
-  --ifm-navbar-height: 0rem;
+  /* --ifm-navbar-height: 0rem; */
   --ifm-navbar-padding-horizontal: 16px;
   --doc-sidebar-border-radius: 100%;
   --ifm-global-radius: 0.4rem;
@@ -69,8 +69,11 @@ html[data-theme='dark'] .menu__link.menu__link--sublist {
   box-shadow: 0 0 50px rgb(0 0 0 / 15%);
 }
 
-.navbar {
-  margin-bottom: 10px;
+.menu--responsive {
+  margin-top: 10px;
+}
+.tableOfContents_node_modules-\@docusaurus-theme-classic-lib-next-theme-TOC- {
+  top:0 !important;
 }
 
 @layer utilities {
