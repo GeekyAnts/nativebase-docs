@@ -1,6 +1,8 @@
+const { transformSync } = require('@babel/core');
 const { parse } = require('@babel/parser');
 const traverse = require('@babel/traverse').default;
 const generate = require('@babel/generator').default;
+const t = require('@babel/types');
 
 const getImportSpecifier = (name) => {
   return {
@@ -44,6 +46,14 @@ const transform = (ast) => {
         }
       }
     },
+    enter(path) {
+      if (t.isFunctionTypeParam(path.node)) {
+        // path.node.type = null;
+      }
+      if (t.isTypeAnnotation(path.node)) {
+        // path.node = null;
+      }
+    },
   });
 };
 
@@ -59,10 +69,10 @@ export default () => {
 };
 `;
 
-function transformStorybookToDocExample(code) {
+function transformStorybookToDocExample(code, path) {
   const ast = parse(code, {
     sourceType: 'module',
-    plugins: ['jsx'],
+    plugins: ['jsx', 'typescript'],
   });
   transform(ast);
   const output = generate(ast);
