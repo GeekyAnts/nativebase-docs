@@ -240,9 +240,9 @@ html[data-theme='dark'] .navbar-small {
   .projectTitle .customLogo {
     font-size: 75% !important;
   }
-  .ResizePanel-module_ResizeHandleHorizontal__PkS9u {
+  /* .ResizePanel-module_ResizeHandleHorizontal__PkS9u {
     display: none !important;
-  }
+  } */
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
@@ -251,10 +251,10 @@ html[data-theme='dark'] .navbar-small {
     border: 1px solid rgb(228, 228, 228);
     border-radius: 10px;
   }
-  .ResizePanel-module_ResizeHandleHorizontal__PkS9u {
+  /* .ResizePanel-module_ResizeHandleHorizontal__PkS9u {
     width: 100% !important;
     min-width: 'none';
-  }
+  } */
 }
 
 @media only screen and (min-width: 1024px) {
