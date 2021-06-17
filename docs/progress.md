@@ -3,6 +3,8 @@ id: progress
 title: Progress
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Progress` is used to display the progress status for a task that takes a long time or consists of several steps.
 
 ## Import
@@ -48,6 +50,10 @@ import { Progress } from 'native-base';
 ```ComponentPropTable path=composites,Progress,index.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="progress" />
 
 ## Accessibility
 

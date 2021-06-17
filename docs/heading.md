@@ -3,6 +3,8 @@ id: heading
 title: Heading
 ---
 
+import { ComponentTheme } from '../src/components';
+
 Headings are used for rendering headlines. `Heading` composes [`Text`](text.md) so you can use all the style props.
 
 ## Import
@@ -48,3 +50,7 @@ import { Heading } from 'native-base';
 ```ComponentPropTable path=primitives,Heading,index.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="formControl" fileName="form-control" />

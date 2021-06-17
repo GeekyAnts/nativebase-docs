@@ -29,7 +29,9 @@ function MyApp() {
 `;
 };
 
-export function ComponentTheme({ name }) {
+export function ComponentTheme({ name, componentName, fileName }) {
+  fileName = fileName ?? name;
+
   return (
     <VStack
       space={4}
@@ -42,7 +44,7 @@ export function ComponentTheme({ name }) {
           NativeBase ships with a default theme for each component.{' '}
           <Link
             _text={{ textDecorationLine: 'none' }}
-            href={url + '/' + 'src/theme/components/' + name + '.ts'}
+            href={url + '/' + 'src/theme/components/' + fileName + '.ts'}
             isExternal
           >
             <Text
@@ -63,12 +65,12 @@ export function ComponentTheme({ name }) {
         </Text>
       </Box>
       <Heading size="sm">
-        We can easily extend the {name} component using extendTheme function as
-        shown below.
+        We can easily extend the {name} component theme using extendTheme
+        function as shown below.
       </Heading>
       <CodeBlock className="language-jsx">
         {extendComponentInstruction(
-          name[0].toUpperCase() + name.slice(1, name.length)
+          componentName ?? name[0].toUpperCase() + name.slice(1, name.length)
         )}
       </CodeBlock>
       <Link

@@ -3,6 +3,8 @@ id: slider
 title: Slider
 ---
 
+import { ComponentTheme } from '../src/components';
+
 The `Slider` is used to allow users to make selections from a range of values.
 
 ## Import
@@ -66,7 +68,6 @@ import { Slider } from 'native-base';
 
 - `Slider.Track`, `Slider.FilledTrack`, and `Slider.Thumb` composes the [`Box`](box.md) component.
 
-## Accessibility
+## Styling
 
-- Slider is fully accessibile on native side using swipe gesture on iOS and volume button on Android.
-- Keyboard accessibility on web is still in-progress.
+<ComponentTheme name="Slider" />
