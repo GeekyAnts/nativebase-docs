@@ -17,8 +17,11 @@ And lastly a description.
 import React from "react";
 import { VStack, HStack, Avatar, Image, Text, NativeBaseProvider, Center } from "native-base";
 
+import { ScrollView } from 'react-native';
 function CardComponent(){
- return<VStack m={4} space={4} border={1} borderRadius="lg">
+ return(
+   <ScrollView>
+ <VStack mx={4} my={12}  space={4} border={1} borderRadius="lg" safeArea>
       <HStack alignItems="center" px={4} pt={4}>
         <Avatar borderWidth={1} size="lg" />
         <VStack ml={2} space={2}>
@@ -46,7 +49,10 @@ function CardComponent(){
         </Text>
       </VStack>
     </VStack>
+    </ScrollView>
+    );
 }
+
 
 
 export default function () {

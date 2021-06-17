@@ -3,6 +3,8 @@ id: popOver
 title: Popover
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Popover` is a non-modal dialog that floats around a trigger. It's used to display contextual information to the user, and should be paired with a pressable trigger element.
 
 ## Import
@@ -72,3 +74,7 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 ### Popover.CloseButton 
 
 `Popover.CloseButton` composes the [`Button`](button.md) component.
+
+## Styling
+
+<ComponentTheme name="popover" />

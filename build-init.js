@@ -1,9 +1,10 @@
 const shellJS = require('shelljs');
+const { REPO_BRANCH, REPO_LINK } = require('./constants');
 const versions = require('./versions.json');
 
-const URL = 'https://github.com/GeekyAnts/NativeBase.git';
+const URL = REPO_LINK + '.git';
 
-const FALLBACK_BRANCH = 'v3-pre-beta';
+const FALLBACK_BRANCH = REPO_BRANCH;
 const FOLDER = 'versioned_repo';
 shellJS.mkdir(FOLDER);
 shellJS.cd(FOLDER);

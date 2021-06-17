@@ -3,6 +3,8 @@ id: skeleton
 title: Skeleton
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Skeleton` is used to display the loading state of a component.
 
 ## Implements
@@ -129,3 +131,7 @@ export default function () {
 | endColor   | string                   | The color at the animation end.   | -       |
 | variant    | `circle`, `rect`, `text` | Variation of Skeleton to use      | `text`  |
 | size       | number, string           | The size of the Skeleton          | -       |
+
+## Styling
+
+<ComponentTheme name="skeleton" />
