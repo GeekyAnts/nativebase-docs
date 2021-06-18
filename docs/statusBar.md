@@ -7,9 +7,9 @@ Component to control the app status bar.
 
 ## Example
 
-```ComponentSnackPlayer path=basic,StatusBar,basic.tsx
+<!-- ```ComponentSnackPlayer path=basic,StatusBar,basic.tsx
 
-```
+``` -->
 
 ## Props
 

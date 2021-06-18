@@ -78,12 +78,12 @@ export default function () {
 
 ### AppBar.Left
 
-Implements [`HStack`](hStack.md) , all the props of HStack can be passed.
+Implements [`HStack`](hStack.md), all the props of HStack can be passed.
 
 ### AppBar.Content
 
-Implements [`HStack`](hStack.md) , all the props of HStack can be passed.
+Implements [`HStack`](hStack.md), all the props of HStack can be passed.
 
 ### AppBar.Right
 
-Implements [`HStack`](hStack.md) , all the props of HStack can be passed.
+Implements [`HStack`](hStack.md), all the props of HStack can be passed.
