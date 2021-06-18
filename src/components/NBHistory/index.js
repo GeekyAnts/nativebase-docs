@@ -16,19 +16,19 @@ export default function NBHistory() {
     >
       <div className="flex items-center">
         <div
-          className={'w-5 h-5 rounded-full ' + activeBg}
+          className="w-5 h-5 bg-gray-500 rounded-full"
           style={{ marginLeft: '-12px' }}
         ></div>
         <div
-          className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + activeBg}
+          className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + bgColor}
           style={{ maxWidth: '100%', width: '100%' }}
         >
-          <h4>NativeBase v3</h4>
+          <h4>NativeBase v1.x</h4>
           <span>
-            We wanted to make NativeBase the go-to component library for anyone
-            building with React Native. This version is accessible, highly
-            customisable and consistent across android, iOS & web. That's not
-            all though, read on for the full benefits of using v3.
+            NativeBase started out as an open source framework that enabled
+            developers to build high-quality mobile apps using React Native. The
+            first version included UITabBar on iOS and Drawer on Android.
+            NativeBase v1 was very well-received by the dev community.
           </span>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function NBHistory() {
           className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + bgColor}
           style={{ maxWidth: '100%', width: '100%' }}
         >
-          <h4>NativeBase v2</h4>
+          <h4>NativeBase v2.x</h4>
           <span>
             The second version was released with new components, preset themes,
             unified icons & more. The main focus of v2 was to make components
@@ -54,19 +54,20 @@ export default function NBHistory() {
 
       <div className="flex items-center mt-8">
         <div
-          className="w-5 h-5 bg-gray-500 rounded-full"
+          className={'w-5 h-5 rounded-full ' + activeBg}
           style={{ marginLeft: '-12px' }}
         ></div>
         <div
-          className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + bgColor}
+          className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + activeBg}
           style={{ maxWidth: '100%', width: '100%' }}
         >
-          <h4>NativeBase v1</h4>
+          <h4>NativeBase v3.x</h4>
           <span>
-            NativeBase started out as an open source framework that enabled
-            developers to build high-quality mobile apps using React Native. The
-            first version included UITabBar on iOS and Drawer on Android.
-            NativeBase v1 was very well-received by the dev community.
+            We wanted to make NativeBase the go-to component library for anyone
+            building with React Native and Web (in alpha). This version is
+            accessible, highly customizable and consistent across android, iOS &
+            web. That's not all though, read on for the full benefits of using
+            v3.
           </span>
         </div>
       </div>
