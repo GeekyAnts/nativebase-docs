@@ -3,6 +3,8 @@ id: text
 title: Text
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Text` is used to render text and paragraphs within an interface.
 
 ## Examples
@@ -36,3 +38,7 @@ title: Text
 ```ComponentPropTable path=primitives,Text,index.tsx showStylingProps=true
 
 ```
+
+## Styling
+
+<ComponentTheme name="text" />

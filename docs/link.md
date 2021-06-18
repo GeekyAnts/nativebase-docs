@@ -3,6 +3,8 @@ id: link
 title: Link
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Links` are accessible elements used primarily for navigation. This component is styled to resemble a hyperlink.
 
 ## **Import**
@@ -56,3 +58,7 @@ Link implements **[Box](box.md)**, so all the Box Props can be passed to it.
 | ---------- | -------- | ----------------------------------------- | ------- |
 | isExternal | boolean  | If true, the link will open in a browser. | -       |
 | onClick    | function | Function called when the link is clicked. | -       | -->
+
+## Styling
+
+<ComponentTheme name="link" />

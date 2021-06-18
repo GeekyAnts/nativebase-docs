@@ -3,6 +3,8 @@ id: badge
 title: Badge
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Badges` are used to highlight an item's status for quick recognition.
 
 ## Import
@@ -42,3 +44,7 @@ import { Badge } from 'native-base';
 ```ComponentPropTable path=composites,Badge,index.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="badge" />
