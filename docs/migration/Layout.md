@@ -3,7 +3,7 @@ import TabItem from '@theme/TabItem';
 
 ## Grid
 
-You can easily design layouts with HStack or VStack and with v3 we also provide SimpleGrid, for more details checkout docs as well.
+You can easily design layouts with [Row](hStack.md) or [Column](VStack.md) components.
 
 ## List
 

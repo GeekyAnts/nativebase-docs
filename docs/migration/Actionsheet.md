@@ -1,7 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-We have sliced Actionsheet into multiple smaller component which not only provides more control over the the code but also makes it more readable.
+We have sliced [`Actionsheet`](actionSheet.md) into multiple smaller component which not only provides more control over the the code but also makes it more readable.
 
 ## Overview
 
@@ -10,7 +10,7 @@ Migrating Checkbox components can broadly described in these points:
 - **options** (prop) → `Actionsheet.Item` (component).
 - Pros like **cancelButtonIndex**, **cancelButtonIndex** are _no longer required_ as components like `Actionsheet.Item` can be customised as per need.
 - **title** (prop) → `Actionsheet.Header` (component).
-- **show(),** **hide()** → `isOpen`, If true, actionsheet will be open..
+- Declarative approach to show and hide using `isOpen` prop, instead of `show()` and `hide()`.
 
 ## Code Comparison
 
@@ -87,7 +87,7 @@ export default function () {
           <Actionsheet.Item>Option 1</Actionsheet.Item>
           <Actionsheet.Item>Option 2</Actionsheet.Item>
           <Actionsheet.Item>Option 3</Actionsheet.Item>
-          <Actionsheet.Item color='red.500'>Delete</Actionsheet.Item>
+          <Actionsheet.Item color="red.500">Delete</Actionsheet.Item>
         </Actionsheet.Content>
         <Actionsheet.Footer>
           <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>

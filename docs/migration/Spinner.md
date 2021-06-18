@@ -1,7 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Migrating to v3 will provide a lot more **size**, **color** and **customisation** option.
+Migrating [`Spinner`](spinner.md) to v3 will provide a lot more **size**, **color** and **customisation** option.
 
 ## Overview
 

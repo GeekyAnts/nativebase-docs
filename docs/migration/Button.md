@@ -1,20 +1,20 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Migrating to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
+Migrating [`Button`](button.mdx) to v3 will provide a lot more **design**, **size**, **color** and **customisation** options.
 
 ## Overview
 
 Migrating Button components can broadly described in these points:
 
-- No need to wrap you text inside text component anymore.
-- `isDisabled` is the new prop which when **true** disable's the button.
+- No need to wrap you text inside `Text` component anymore.
+- `isDisabled` prop can be used to disable the button.
 - Icons in Button:
-  `leftIcon` and `rightIcon` the new alternative to iconLeft and iconRight respectively, and now it accepts **tsx.Element**.
+  `leftIcon` and `rightIcon` are the new alternative to iconLeft and iconRight respectively and they accept **tsx.Element**.
 - Colors of the Buttons:
   In v3 the color is controlled by `colorScheme` prop. So all the color providing props [ **light**, **info**, **success**, **warning**, **danger** and **dark** ] can be passed as value (and more) to `colorScheme` props.
 - Design of the Button:
-  With v3 were providing some mostly frequently used design as `variants` [ like **solid**, **outline**, **ghost**, **link** and **unstyled** ] and lot more customisation.
+  With v3 we're providing some mostly frequently used designs as `variants` [ **solid**, **outline**, **ghost**, **link** and **unstyled** ] and lot more customisation.
 - Sizes of the Button:
   In v3 the size is controlled by `size` prop. And it accepts pre-defined sizes [ like xs, sm md, lg ] and also custom values.
 
@@ -46,7 +46,7 @@ values={[
 ![Button/Screenshot_2021-01-22_at_12.53.09_PM.png](Button/Screenshot_2021-01-22_at_12.53.09_PM.png)
 
 ```tsx
-<Button colorScheme='success'>Success</Button>
+<Button colorScheme="success">Success</Button>
 ```
 
 </TabItem>
@@ -78,7 +78,7 @@ values={[
 ![Button/Screenshot_2021-01-22_at_2.38.52_PM.png](Button/Screenshot_2021-01-22_at_2.38.52_PM.png)
 
 ```tsx
-<Button size='sm' colorScheme='default'>
+<Button size="sm" colorScheme="default">
   Default Small
 </Button>
 ```
@@ -128,7 +128,7 @@ values={[
 ![Button/Screenshot_2021-01-22_at_1.15.34_PM.png](Button/Screenshot_2021-01-22_at_1.15.34_PM.png)
 
 ```tsx
-<Button variant='outline' colorScheme='success'>
+<Button variant="outline" colorScheme="success">
   Success
 </Button>
 ```
@@ -136,7 +136,7 @@ values={[
 ![Button/Screenshot_2021-01-22_at_1.22.36_PM.png](Button/Screenshot_2021-01-22_at_1.22.36_PM.png)
 
 ```tsx
-<Button variant='ghost' colorScheme='success'>
+<Button variant="ghost" colorScheme="success">
   Success
 </Button>
 ```
@@ -144,7 +144,7 @@ values={[
 ![Button/Screenshot_2021-01-22_at_1.20.36_PM.png](Button/Screenshot_2021-01-22_at_1.20.36_PM.png)
 
 ```tsx
-<Button borderRadius='pill' colorScheme='success'>
+<Button borderRadius="pill" colorScheme="success">
   Success
 </Button>
 ```
@@ -168,7 +168,7 @@ values={[
 
 ```tsx
 <Button iconLeft dark>
-  <Icon name='cog' />
+  <Icon name="cog" />
   <Text>Settings</Text>
 </Button>
 ```
@@ -180,8 +180,8 @@ values={[
 
 ```tsx
 <Button
-  leftIcon={<Icon name='cog-outline' type='Ionicons' color='white' />}
-  colorScheme='dark'
+  leftIcon={<Icon name="cog-outline" type="Ionicons" color="white" />}
+  colorScheme="dark"
 >
   Settings
 </Button>
