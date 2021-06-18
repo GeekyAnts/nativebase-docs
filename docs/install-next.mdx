@@ -10,10 +10,10 @@ import { TileLink } from '../src/components';
 ### Create a new NextJS project with react-native-web template
 
 ```bash
-npx create-next-app --example with-react-native-web with-react-native-web-app
+npx create-react-native-app -t with-nextjs
 ```
 
-[Refer this link](https://necolas.github.io/react-native-web/docs/installation/) for additional installation instruction.
+[Refer this guide](https://docs.expo.io/guides/using-nextjs/) if you need more configuration.
 
 ### Install dependencies
 
@@ -50,7 +50,7 @@ Put the below code in your App.js
 import React from 'react';
 import { NativeBaseProvider, Box } from 'native-base';
 
-function App() {
+export default function App() {
   return (
     <NativeBaseProvider>
       <Box>Hello world</Box>
