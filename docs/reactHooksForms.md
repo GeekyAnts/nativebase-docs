@@ -24,7 +24,7 @@ function FormHookExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width='80%' space={4}>
+    <VStack width="80%" space={4}>
       <FormControl isRequired isInvalid={'firstName' in errors}>
         <FormControl.Label>First Name</FormControl.Label>
         <Controller
@@ -32,14 +32,14 @@ function FormHookExample() {
           render={({ onChange, onBlur, value }) => (
             <Input
               onBlur={onBlur}
-              placeholder='John'
+              placeholder="John"
               onChangeText={(val) => onChange(val)}
               value={value}
             />
           )}
-          name='firstName'
+          name="firstName"
           rules={{ required: 'Field is required', minLength: 3 }}
-          defaultValue=''
+          defaultValue=""
         />
         <FormControl.ErrorMessage>
           {errors.firstName?.message}
@@ -52,13 +52,13 @@ function FormHookExample() {
           render={({ onChange, onBlur, value }) => (
             <Input
               onBlur={onBlur}
-              placeholder='Doe'
+              placeholder="Doe"
               onChangeText={(val) => onChange(val)}
               value={value}
             />
           )}
-          name='lastName'
-          defaultValue=''
+          name="lastName"
+          defaultValue=""
         />
         <FormControl.ErrorMessage>
           {errors.lastName?.message}
@@ -71,14 +71,14 @@ function FormHookExample() {
           render={({ onChange, onBlur, value }) => (
             <Input
               onBlur={onBlur}
-              placeholder='24'
+              placeholder="24"
               onChangeText={(val) => onChange(val)}
               value={value}
             />
           )}
-          name='age'
+          name="age"
           rules={{ min: 18, required: 'Age is required' }}
-          defaultValue=''
+          defaultValue=""
         />
         <FormControl.ErrorMessage>
           {errors.age?.type === 'required'
@@ -86,7 +86,7 @@ function FormHookExample() {
             : errors.age?.type === 'min' ?? 'Under age'}
         </FormControl.ErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
+      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
         Submit
       </Button>
     </VStack>
@@ -123,7 +123,7 @@ function FormHookCheckboxExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width='80%' space={4}>
+    <VStack width="80%" space={4}>
       <FormControl isRequired isInvalid={'hobbies' in errors}>
         <FormControl.Label>Hobbies</FormControl.Label>
         <Controller
@@ -133,34 +133,34 @@ function FormHookCheckboxExample() {
               onChange={(values) => {
                 onChange(values);
               }}
-              flexDirection='row'
+              flexDirection="row"
             >
               <Checkbox
-                value='dart'
-                colorScheme='orange'
-                icon={<Icon name='bullseye' type='MaterialCommunityIcons' />}
+                value="dart"
+                colorScheme="orange"
+                icon={<Icon name="bullseye" type="MaterialCommunityIcons" />}
               >
                 <Text mx={2}>Darts</Text>
               </Checkbox>
               <Checkbox
-                value='movie'
-                colorScheme='dark'
-                icon={<Icon name='bat' type='MaterialCommunityIcons' />}
+                value="movie"
+                colorScheme="dark"
+                icon={<Icon name="bat" type="MaterialCommunityIcons" />}
               >
                 <Text mx={2}>Movie</Text>
               </Checkbox>
               <Checkbox
-                colorScheme='red'
-                value='camping'
-                icon={<Icon name='campfire' type='MaterialCommunityIcons' />}
+                colorScheme="red"
+                value="camping"
+                icon={<Icon name="campfire" type="MaterialCommunityIcons" />}
               >
                 <Text mx={2}>Camping</Text>
               </Checkbox>
               <Checkbox
-                value='chess'
-                colorScheme='blue'
+                value="chess"
+                colorScheme="blue"
                 icon={
-                  <Icon name='chess-knight' type='MaterialCommunityIcons' />
+                  <Icon name="chess-knight" type="MaterialCommunityIcons" />
                 }
               >
                 <Text mx={2}>Chess</Text>
@@ -168,8 +168,8 @@ function FormHookCheckboxExample() {
             </Checkbox.Group>
           )}
           rules={{ required: 'Atleast 1 hobbie needed' }}
-          name='hobbies'
-          defaultValue=''
+          name="hobbies"
+          defaultValue=""
         />
         <FormControl.ErrorMessage>
           {errors.hobbies?.message}
@@ -181,26 +181,26 @@ function FormHookCheckboxExample() {
           control={control}
           render={({ onChange }) => (
             <Radio.Group
-              name='gender'
-              flexDirection='row'
+              name="gender"
+              flexDirection="row"
               onChange={(val) => onChange(val)}
             >
-              <Radio value='male' colorScheme='blue'>
+              <Radio value="male" colorScheme="blue">
                 <Text mx={2}>Male</Text>
               </Radio>
-              <Radio value='female' colorScheme='pink'>
+              <Radio value="female" colorScheme="pink">
                 <Text mx={2}>Female</Text>
               </Radio>
             </Radio.Group>
           )}
-          name='gender'
+          name="gender"
           rules={{ required: 'Gender is required' }}
         />
         <FormControl.ErrorMessage>
           {errors.gender?.message}
         </FormControl.ErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
+      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
         Submit
       </Button>
     </VStack>
@@ -235,14 +235,14 @@ function FormHookSelectExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width='80%' space={4}>
+    <VStack width="80%" space={4}>
       <FormControl isRequired isInvalid={'language' in errors}>
         <FormControl.Label>Fav language:</FormControl.Label>
         <Controller
           control={control}
           render={({ onChange, value }) => (
             <Select
-              placeholder='Pick language'
+              placeholder="Pick language"
               selectedValue={value}
               width={150}
               onValueChange={(itemValue: string) => {
@@ -250,26 +250,26 @@ function FormHookSelectExample() {
               }}
               selectedItemBg={'teal.400'}
               dropdownOpenIcon={
-                <Icon name='arrow-drop-up' type='MaterialIcons' size={6} />
+                <Icon name="arrow-drop-up" type="MaterialIcons" size={6} />
               }
               dropdownCloseIcon={
-                <Icon name='arrow-drop-down' type='MaterialIcons' size={6} />
+                <Icon name="arrow-drop-down" type="MaterialIcons" size={6} />
               }
             >
-              <Select.Item label='JavaScript' value='js' />
-              <Select.Item label='TypeScript' value='ts' />
-              <Select.Item label='Java' value='java' />
+              <Select.Item label="JavaScript" value="js" />
+              <Select.Item label="TypeScript" value="ts" />
+              <Select.Item label="Java" value="java" />
             </Select>
           )}
-          name='language'
+          name="language"
           rules={{ required: 'Field is required' }}
-          defaultValue='js'
+          defaultValue="js"
         />
         <FormControl.ErrorMessage>
           {errors.language?.message}
         </FormControl.ErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
+      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
         Submit
       </Button>
     </VStack>
@@ -303,7 +303,7 @@ function FormHookSliderExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width='80%' space={4}>
+    <VStack width="80%" space={4}>
       <FormControl isRequired isInvalid={'like' in errors}>
         <FormControl.Label>Amount you like NativeBase</FormControl.Label>
         <Controller
@@ -316,7 +316,7 @@ function FormHookSliderExample() {
               <Slider.Thumb />
             </Slider>
           )}
-          name='like'
+          name="like"
           rules={{ required: 'Field is required', minLength: 3 }}
           defaultValue={100}
         />
@@ -324,7 +324,7 @@ function FormHookSliderExample() {
           {errors.like?.message}
         </FormControl.ErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
+      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
         Submit
       </Button>
     </VStack>
@@ -358,27 +358,27 @@ function FormHookTextareaExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width='80%' space={4}>
+    <VStack width="80%" space={4}>
       <FormControl isRequired isInvalid={'thought' in errors}>
         <FormControl.Label>What do you think?</FormControl.Label>
         <Controller
           control={control}
           render={({ onChange, value }) => (
             <TextArea
-              placeholder='TextArea'
+              placeholder="TextArea"
               onChangeText={(val) => onChange(val)}
               defaultValue={value}
             />
           )}
-          name='thought'
+          name="thought"
           rules={{ required: 'Field is required', minLength: 3 }}
-          defaultValue='I love NativeBase.'
+          defaultValue="I love NativeBase."
         />
         <FormControl.ErrorMessage>
           {errors.thought?.message}
         </FormControl.ErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
+      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
         Submit
       </Button>
     </VStack>
@@ -412,7 +412,7 @@ function FormHookSwitchExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width='80%' space={4}>
+    <VStack width="80%" space={4}>
       <FormControl isInvalid={'rememberMe' in errors}>
         <FormControl.Label>Remenber me:</FormControl.Label>
         <Controller
@@ -423,14 +423,14 @@ function FormHookSwitchExample() {
               isChecked={value}
             />
           )}
-          name='rememberMe'
+          name="rememberMe"
           defaultValue={true}
         />
         <FormControl.ErrorMessage>
           {errors.rememberMe?.message}
         </FormControl.ErrorMessage>
       </FormControl>
-      <Button onPress={handleSubmit(onSubmit)} colorScheme='pink'>
+      <Button onPress={handleSubmit(onSubmit)} colorScheme="pink">
         Submit
       </Button>
     </VStack>
@@ -445,6 +445,7 @@ export default function () {
 }
 ```
 
+<!--
 ## NumberInput
 
 ```jsx
@@ -506,8 +507,8 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-```
-
+``` -->
+<!--
 ## PinInput
 
 ```jsx
@@ -561,4 +562,4 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-```
+``` -->
