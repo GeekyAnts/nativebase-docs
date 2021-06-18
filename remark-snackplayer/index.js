@@ -13,15 +13,32 @@ const parseParams = (paramString = '') => {
   return params;
 };
 
+const simplifyMeta = (meta) => {
+  let variables = null;
+  variables = meta.split(' ');
+  let objectifiedMeta = {};
+
+  variables.map((variable) => {
+    if (variable) {
+      const temp = variable.split('=');
+      objectifiedMeta[temp[0]] = temp[1];
+    }
+  });
+  return { ...objectifiedMeta };
+};
+
 const processNode = (node, parent) => {
   return new Promise(async (resolve, reject) => {
     try {
       const params = parseParams(node.meta);
+      const simplifedMeta = simplifyMeta(node.meta);
       const NBversion = '3.0.0-next.40';
       // Gather necessary Params
-      let name = params.name ? decodeURIComponent(params.name) : 'Example';
-      const description = params.description
-        ? decodeURIComponent(params.description)
+      let name = simplifedMeta.name
+        ? decodeURIComponent(simplifedMeta.name)
+        : 'Example';
+      const description = simplifedMeta.description
+        ? decodeURIComponent(simplifedMeta.description)
         : 'Example usage';
       const sampleCode = node.value;
       const encodedSampleCode = encodeURIComponent(sampleCode);
@@ -30,8 +47,12 @@ const processNode = (node, parent) => {
       const theme = params.theme || 'light';
       const preview = params.preview || 'true';
       const loading = params.loading || 'lazy';
+
       // Generate Node for SnackPlayer
       let dependencies = `react-is,expo-font,native-base@${NBversion},styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons,expo-linear-gradient`;
+      dependencies = `${dependencies},${
+        simplifedMeta.dependencies ? simplifedMeta.dependencies : ''
+      }`;
 
       if (name.split(' ')[0] === 'Formik') {
         dependencies += ',@native-base/formik-ui,formik,yup';
