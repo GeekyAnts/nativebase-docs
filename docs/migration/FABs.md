@@ -1,7 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Migrating to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
+Migrating [`FAB`](FAB.md) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
 
 ## Overview
 
@@ -28,11 +28,11 @@ export default function () {
       <Header />
       <View style={{ flex: 1 }}>
         <Fab
-          direction='up'
+          direction="up"
           style={{ backgroundColor: '#5067FF' }}
-          position='bottomRight'
+          position="bottomRight"
         >
-          <Icon name='share' />
+          <Icon name="share" />
         </Fab>
       </View>
     </Container>
@@ -50,10 +50,10 @@ import { Fab, Icon } from 'native-base';
 export default function () {
   return (
     <Fab
-      placement='bottomRight'
-      colorScheme='blue'
-      size='lg'
-      icon={<Icon name='share' type='Entypo' />}
+      placement="bottomRight"
+      colorScheme="blue"
+      size="lg"
+      icon={<Icon name="share" type="Entypo" />}
     />
   );
 }

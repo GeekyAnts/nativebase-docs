@@ -82,12 +82,12 @@ function Navbar() {
       // style={{ paddingLeft: '2rem' }}
     >
       <div
-        className={`navbar__inner bg-transparent backdrop-blur-sm lg:px-2 ${
+        className={`navbar__inner bg-transparent backdrop-blur-sm  ${
           isLandingPage ? 'lg:px-4' : ''
         }`}
       >
         <div
-          className={`flex px-4 navbar-small bg-blueGray-50 justify-around mx-auto md:px-6 lg:px-0 w-full  ${
+          className={`flex px-4 navbar-small bg-blueGray-50 justify-around mx-auto md:px-6 lg:px-2 w-full  ${
             isLandingPage ? 'max-w-6xl' : ''
           }`}
         >
@@ -118,11 +118,11 @@ function Navbar() {
                     key={i}
                     className={`hidden xl:block text-base ${nativeBaseV2Color}`}
                   >
-                    Looking for{' '}
+                    looking for{' '}
                     <a
                       href="https://v2.nativebase.io/"
                       target="_blank"
-                      className="leading-5 text-secondary-50"
+                      className={`leading-5 text-cyan-${isDarkTheme?'600':'700'} font-medium`}
                     >
                       v2.0
                     </a>

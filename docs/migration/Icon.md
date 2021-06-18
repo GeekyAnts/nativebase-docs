@@ -1,7 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Migrating to v3 will provide a lot more **customisation** option. Apart from the icons provided by [@expo/vector-icon](https://github.com/expo/vector-icons), you can also create custom icons using SVG.
+Migrating [`Icon`](icon.md) to v3 will provide a lot more **customisation** option. You can also create custom icons using SVG.
 
 ## Overview
 
@@ -25,6 +25,7 @@ values={[
 ```tsx
 import React, { Component } from 'react';
 import { Icon } from 'native-base';
+
 export default class IconExample extends Component {
   render() {
     return (
@@ -51,6 +52,7 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { Icon } from 'native-base';
 import { Ionicons, FontAwesome } from '@expo/vector-icons';
+
 export default function () {
   return (
     <>

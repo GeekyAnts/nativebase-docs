@@ -242,9 +242,10 @@ module.exports = {
       label: 'Migration',
       collapsed: false,
       items: [
+        'migration/Guide',
         {
-          Components: [
-            'migration/Accordion',
+          'Components Migration': [
+            // 'migration/Accordion',
             'migration/Actionsheet',
             'migration/Badge',
             'migration/Button',

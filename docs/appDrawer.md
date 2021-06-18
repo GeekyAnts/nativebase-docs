@@ -1,6 +1,6 @@
 ---
 id: appDrawer
-title: Making App drawer
+title: App drawer
 ---
 
 Creating an app drawer like layout is very common and with NativeBase's SimpleGrid make this extremely simple while still keeping it extremely customisable. Here is an example to illustrate it.
@@ -8,9 +8,8 @@ Creating an app drawer like layout is very common and with NativeBase's SimpleGr
 ```SnackPlayer name=AppDrawer
 import React from "react";
 import { IconButton, SimpleGrid, Icon, NativeBaseProvider } from "native-base";
- import {
-  MaterialIcons,
-} from "@expo/vector-icons";
+import {MaterialIcons} from '@expo/vector-icons';
+
 function AppDrawer(){
   const icons = [
     "bolt",
@@ -42,7 +41,7 @@ function AppDrawer(){
           colorScheme="indigo"
           variant="solid"
           p={4}
-          icon={<Icon name={icon} as={MaterialIcons} size={6} color="white"/>}
+          icon={<Icon name={icon} as={MaterialIcons} size='sm' />}
         />
       ))}
     </SimpleGrid>
