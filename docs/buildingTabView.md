@@ -5,9 +5,9 @@ title: Tab View
 
 A cross-platform Tab View component for React Native
 
-## Example:
+## Example
 
-Here is an example to show how easily and quickly we can use  [react-native-tab-view](https://www.npmjs.com/package/react-native-tab-view) in NB.
+Here is an example to show how easily and quickly we can use [react-native-tab-view](https://www.npmjs.com/package/react-native-tab-view) in NB.
 
 ```SnackPlayer name=TabView dependencies=react-native-linear-gradient,react-native-tab-view,react-native-pager-view@5.0.12
 
@@ -38,9 +38,9 @@ const renderScene = SceneMap({
 });
 
 export default function TabViewExample() {
-  
 
-  
+
+
 
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
@@ -62,21 +62,21 @@ export default function TabViewExample() {
           });
 
           return (
-            <Box  
+            <Box
              flex = {1}
               alignItems= 'center'
               p= {4}
               cursor="pointer"
              >
             <Pressable
-            
+
               onPress={() => {
                 console.log(i);
                 setIndex(i);}}>
                <Animated.Text style={{ opacity }}>{route.title}</Animated.Text>
             </Pressable>
             </Box>
-           
+
           );
         })}
       </Box>

@@ -41,11 +41,7 @@ function AppDrawer(){
           colorScheme="indigo"
           variant="solid"
           p={4}
-<<<<<<< HEAD
           icon={<Icon name={icon} as={MaterialIcons} size='sm' />}
-=======
-          icon={<Icon name={icon} as={MaterialIcons} size={6} color="white"/>}
->>>>>>> development
         />
       ))}
     </SimpleGrid>
@@ -59,4 +55,3 @@ export default function () {
   );
 }
 ```
-

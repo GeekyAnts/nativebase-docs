@@ -5,7 +5,7 @@ title: SearchBar
 
 Search-bar are one of the most commonly seen variation of input. Here are design to make life easier.
 
-## Example:
+## Example
 
 Here are some examples to show how easily and quickly we can create so many types of search-bars.
 

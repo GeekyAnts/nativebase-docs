@@ -3,10 +3,7 @@ id: loginsignupforms
 title: Login/Signup Forms
 ---
 
-
-
-## Example:
-
+## Example
 
 ### Login Form
 
@@ -28,7 +25,7 @@ import {
 } from 'native-base';
 
 export default function App() {
-  
+
  return (
       <NativeBaseProvider>
       <Box
@@ -78,7 +75,7 @@ export default function App() {
               Login
           </Button>
           <Button
-          
+
             bg="blueGray.200"
             opacity="0.5"
             _text={{ color: 'lightBlue.600', fontSize: 'sm' }}
@@ -108,8 +105,6 @@ export default function App() {
 }
 ```
 
-
-
 ### Signup Form
 
 ```SnackPlayer name=Signup dependencies=react-native-linear-gradient
@@ -130,7 +125,7 @@ import {
 } from 'native-base';
 
 export default function App() {
-  
+
 return (
     <NativeBaseProvider>
       <Box flex={1} p={2} bg="white" px={5} mt={{ base: 10, lg:0 }}
@@ -154,7 +149,7 @@ return (
               </Text>
             </FormControl.Label>
             <Input />
-            
+
           </FormControl>
           <FormControl>
             <FormControl.Label>
@@ -171,9 +166,9 @@ return (
               </Text>
             </FormControl.Label>
             <Input type="password" />
-            
+
           </FormControl>
-          <Button 
+          <Button
           bg="cyan.500"
            _text={{ color: 'white' }} >
              Signup

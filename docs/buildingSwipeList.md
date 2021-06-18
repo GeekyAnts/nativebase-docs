@@ -5,7 +5,7 @@ title: Swipe List
 
 SwipeListView is a vertical ListView with rows that swipe open and closed. Handles default native behavior such as closing rows when ListView is scrolled or when other rows are opened.
 
-## Example:
+## Example
 
 Here is an example to show how easily and quickly we can use [react-native-swipe-list](https://www.npmjs.com/package/react-native-swipe-list-view) in NativeBase.
 
@@ -82,15 +82,15 @@ function Basic() {
     );
 
     const renderHiddenItem = (data, rowMap) => (
-        <HStack 
+        <HStack
         flex= {1}
         pl={2}
         >
             <Text alignSelf="center">Left</Text>
-            <Pressable 
+            <Pressable
              px={4}
-              ml='auto' 
-              cursor="pointer" 
+              ml='auto'
+              cursor="pointer"
               bg="dark.500"
               justifyContent="center"
               onPress={() => closeRow(rowMap, data.item.key)}
@@ -100,10 +100,10 @@ function Basic() {
               >
                 <Icon as={<Ionicons name="close"  />} color='white'/>
             </Pressable>
-            <Pressable  
+            <Pressable
               px={4}
-              cursor="pointer" 
-              bg="red.500" 
+              cursor="pointer"
+              bg="red.500"
               justifyContent="center"
               onPress={() => deleteRow(rowMap, data.item.key)}
               _pressed={{

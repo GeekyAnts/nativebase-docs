@@ -5,11 +5,9 @@ title: Drawer Navigation
 
 Common pattern in navigation is to use drawer from left (sometimes right) side for navigating between screens.
 
-## Example:
+## Example
 
 Here is an example to show how easily and quickly we can use React Native's [DrawerNavigation](https://reactnavigation.org/docs/drawer-based-navigation/) in NB.
-
-
 
 ```SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/stack@5.1.0,@react-navigation/drawer,@react-navigation/native@5.0.8,react-native-vector-icons,react-native-gesture-handler@1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@3.0.0,react-native-reanimated@2.1.0
 import * as React from 'react';

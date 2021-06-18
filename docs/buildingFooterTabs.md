@@ -5,7 +5,7 @@ title: Footer
 
 With NativeBase v3 we have removed FooterTab components because as it's very simple to create it using HStack component. Here is an example of how we can make Footer in our Apps.
 
-## Example:
+## Example
 
 ```SnackPlayer name=Footer dependencies=react-native-linear-gradient
 import React from 'react';
@@ -109,7 +109,7 @@ export default function App() {
             </Center>
           </Pressable>
         </HStack>
-      </Box> 
+      </Box>
     </NativeBaseProvider>
   );
 }
