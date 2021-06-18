@@ -1,7 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-With v3 we have replaced the **Picker** with `Select` as react-native picker have been deprecated.
+With v3 we have replaced the **Picker** with [`Select`](select.md).
 
 ## Code Comparison
 

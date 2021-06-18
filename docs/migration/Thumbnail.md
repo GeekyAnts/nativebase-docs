@@ -1,9 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Migrating to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
-
-With v3 we have replaced the **Thumbnail** with `Image`. And we also provide `Avatar` as well.
+With v3 we have replaced the **Thumbnail** with [`Image`](image.md). And we also provide [`Avatar`](avatar.md) as well.
 
 ## Code Comparison
 
@@ -52,15 +50,15 @@ export default function () {
   const uri = 'https://facebook.github.io/react-native/docs/assets/favicon.png';
 
   return (
-    <VStack space={2} alignItems='center'>
+    <VStack space={2} alignItems="center">
       <Text>Square Thumbnail</Text>
-      <Image size={12} source={{ uri: uri }} alt='react-native' />
-      <Image size={16} source={{ uri: uri }} alt='react-native' />
-      <Image size={20} source={{ uri: uri }} alt='react-native' />
+      <Image size={12} source={{ uri: uri }} alt="react-native" />
+      <Image size={16} source={{ uri: uri }} alt="react-native" />
+      <Image size={20} source={{ uri: uri }} alt="react-native" />
       <Text>Circular Thumbnail</Text>
-      <Avatar size='xs' source={{ uri: uri }} />
-      <Avatar size='md' source={{ uri: uri }} />
-      <Avatar size='lg' source={{ uri: uri }} />
+      <Avatar size="xs" source={{ uri: uri }} />
+      <Avatar size="md" source={{ uri: uri }} />
+      <Avatar size="lg" source={{ uri: uri }} />
     </VStack>
   );
 }

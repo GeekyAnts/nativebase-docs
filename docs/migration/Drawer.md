@@ -1,1 +1,1 @@
-With NativeBase v3 we have removed **Drawer** component. To view example for Drawer built using React Native's [DrawerNavigation](https://reactnavigation.org/docs/drawer-based-navigation/) in NB, checkout this [recipe](buildingDrawerNavigation.md).
+Drawer component is still in progress, until it's done you can check out the recipe of integrating React Navigation's [DrawerNavigation](https://reactnavigation.org/docs/drawer-based-navigation/) in NB.
