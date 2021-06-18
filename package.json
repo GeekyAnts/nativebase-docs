@@ -1,80 +1,81 @@
 {
-  "name": "docs-v-2",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "cross-env BUILDING=dev node ./build-init.js && docusaurus start",
-    "build": "cross-env BUILDING=prod node ./build-init.js && docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "deploy-gh": "GIT_USER=nativebase USE_SSH=true yarn deploy",
-    "serve": "docusaurus serve",
-    "clear": "docusaurus clear",
-    "postinstall": "patch-package",
-    "install-plugins": "cd nb-plugins && yarn && cd .. && cd remark-snackplayer && yarn"
-    
-  },
-  "dependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/generator": "^7.14.1",
-    "@babel/parser": "^7.14.1",
-    "@babel/plugin-syntax-jsx": "^7.12.13",
-    "@babel/plugin-transform-typescript": "^7.14.6",
-    "@babel/preset-typescript": "^7.14.5",
-    "@babel/traverse": "^7.14.0",
-    "@babel/types": "^7.14.5",
-    "@docusaurus/core": "2.0.0-alpha.70",
-    "@docusaurus/preset-classic": "2.0.0-alpha.70",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.0",
-    "@mdx-js/react": "^1.6.21",
-    "@tailwindcss/custom-forms": "^0.2.1",
-    "axios": "^0.21.1",
-    "babel-plugin-transform-react-createelement-to-jsx": "^1.1.0",
-    "clsx": "^1.1.1",
-    "dedent": "^0.7.0",
-    "docusaurus-tailwindcss-loader": "file:plugins/docusaurus-tailwindcss-loader",
-    "native-base": "^3.0.0-next.40",
-    "object.fromentries": "^2.0.3",
-    "patch-package": "^6.4.7",
-    "postcss": "^7.0.34",
-    "postcss-import": "^12.0.0",
-    "prettier": "^2.3.0",
-    "prism-react-renderer": "^1.2.0",
-    "react": "^16.8.4",
-    "react-docgen-typescript": "^1.22.0",
-    "react-dom": "^16.8.4",
-    "react-native-safe-area-context": "^3.2.0",
-    "react-native-svg": "^12.1.1",
-    "react-native-web": "^0.16.5",
-    "react-resize-panel": "^0.3.5",
-    "remark": "^12.0.1",
-    "shelljs": "^0.8.4",
-    "styled-components": "^5.3.0",
-    "styled-system": "^5.1.5",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "tape": "^5.0.1",
-    "typescript": "^4.2.4",
-    "unist-builder": "^2.0.3",
-    "unist-util-visit-parents": "^3.1.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "terser-webpack-plugin": "4.2.2"
-  },
-  "resolutions": {
-    "terser": "4.8.0"
-  }
+    "name": "docs-v-2",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "docusaurus": "docusaurus",
+        "start": "cross-env BUILDING=dev node ./build-init.js && docusaurus start",
+        "build": "cross-env BUILDING=prod node ./build-init.js && docusaurus build",
+        "swizzle": "docusaurus swizzle",
+        "deploy": "docusaurus deploy",
+        "deploy-gh": "GIT_USER=nativebase USE_SSH=true yarn deploy",
+        "serve": "docusaurus serve",
+        "clear": "docusaurus clear",
+        "postinstall": "patch-package",
+        "install-plugins": "cd nb-plugins && yarn && cd .. && cd remark-snackplayer && yarn"
+
+    },
+    "dependencies": {
+        "@babel/core": "^7.14.0",
+        "@babel/generator": "^7.14.1",
+        "@babel/parser": "^7.14.1",
+        "@babel/plugin-syntax-jsx": "^7.12.13",
+        "@babel/plugin-transform-typescript": "^7.14.6",
+        "@babel/preset-typescript": "^7.14.5",
+
+        "@babel/traverse": "^7.14.0",
+        "@babel/types": "^7.14.5",
+        "@docusaurus/core": "2.0.0-alpha.70",
+        "@docusaurus/preset-classic": "2.0.0-alpha.70",
+        "@docusaurus/theme-live-codeblock": "^2.0.0-beta.0",
+        "@mdx-js/react": "^1.6.21",
+        "@tailwindcss/custom-forms": "^0.2.1",
+        "axios": "^0.21.1",
+        "babel-plugin-transform-react-createelement-to-jsx": "^1.1.0",
+        "clsx": "^1.1.1",
+        "dedent": "^0.7.0",
+        "docusaurus-tailwindcss-loader": "file:plugins/docusaurus-tailwindcss-loader",
+        "native-base": "^3.0.0-next.40",
+        "object.fromentries": "^2.0.3",
+        "patch-package": "^6.4.7",
+        "postcss": "^7.0.34",
+        "postcss-import": "^12.0.0",
+        "prettier": "^2.3.0",
+        "prism-react-renderer": "^1.2.0",
+        "react": "^16.8.4",
+        "react-docgen-typescript": "^1.22.0",
+        "react-dom": "^16.8.4",
+        "react-native-safe-area-context": "^3.2.0",
+        "react-native-svg": "^12.1.1",
+        "react-native-web": "^0.16.5",
+        "react-resize-panel": "^0.3.5",
+        "remark": "^12.0.1",
+        "shelljs": "^0.8.4",
+        "styled-components": "^5.3.0",
+        "styled-system": "^5.1.5",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+        "tape": "^5.0.1",
+        "typescript": "^4.2.4",
+        "unist-builder": "^2.0.3",
+        "unist-util-visit-parents": "^3.1.1"
+    },
+    "browserslist": {
+        "production": [
+            ">0.5%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "terser-webpack-plugin": "4.2.2"
+    },
+    "resolutions": {
+        "terser": "4.8.0"
+    }
 }

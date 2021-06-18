@@ -12,11 +12,21 @@ A generic [`View`](https://reactnative.dev/docs/view) from [React Native](https:
 
 ## Example
 
-### Basic
+```ComponentSnackPlayer path=basic,View,Basic.tsx
 
+```
+
+## Props
+
+```ComponentPropTable path=basic,View,View.tsx showStylingProps=true
+
+```
+
+
+<!-- 
 ```SnackPlayer name=View%20Example
 import React from "react";
-import { Text, VStack, NativeBaseProvider, View, Center } from "native-base";
+import { Text, VStack, NativeBaseProvider, View, Center } from "nat`ive-base";
 
 function ViewComponent() {
   return (
@@ -42,13 +52,5 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-```
+``` -->
 
-## Props
-
-| Name          | Type                                     | Description                                                                           | Default |
-| ------------- | ---------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
-| shadow        | number                                   | Applies box shadow and accepts a number from 0 to 9                                   | -       |
-| style         | stylesheet                               | Applies user-defined styles and accepts a stylesheet.                                 | -       |
-| children      | JSX.Element                              | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |
-| SafeAreaProps | [SafeAreaProps](safe-area-view-props.md) | Renders components as Box children. Accepts a JSX.Element or an array of JSX.Element. | -       |

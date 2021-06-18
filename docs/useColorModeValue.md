@@ -32,7 +32,7 @@ function UseColorMode() {
         The active color mode is
         <Text bold>{useColorModeValue('Light', 'Dark')}</Text>
       </Text>
-      <Button onPress={toggleColorMode}>Toggle</Button>
+      <Button m={2} onPress={toggleColorMode}>Toggle</Button>
     </Center>
   );
 }
