@@ -3,6 +3,8 @@ id: modal
 title: Modal
 ---
 
+import { ComponentTheme } from '../src/components';
+
 A Modal is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is **inert**, meaning that users cannot interact with it.
 
 ## Import
@@ -84,3 +86,7 @@ Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geek
 
 - `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the [`Box`](box.md) component.
 - `Modal.CloseButton` composes the [`Button`](button.md).
+
+## Styling
+
+<ComponentTheme name="modal" />

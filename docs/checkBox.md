@@ -3,6 +3,8 @@ id: checkBox
 title: CheckBox
 ---
 
+import { ComponentTheme } from '../src/components';
+
 The `Checkbox` component is used in forms when a user needs to select multiple values from several options.
 
 ## Examples
@@ -86,6 +88,10 @@ The `Checkbox` component is used in forms when a user needs to select multiple v
 ```ComponentPropTable path=primitives,Checkbox,CheckboxGroup.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="checkbox" />
 
 ## Accessibility
 

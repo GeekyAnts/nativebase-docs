@@ -3,6 +3,8 @@ id: tooltip
 title: Tooltip
 ---
 
+import { ComponentTheme } from '../src/components';
+
 A tooltip is a brief, informative message that appears when a user interacts with an element. Tooltips are usually initiated in one of two ways: through a mouse-hover gesture or through a keyboard-hover gesture.
 
 ## Import
@@ -42,3 +44,7 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 ```ComponentPropTable path=composites,Tooltip,Tooltip.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="tooltip" />

@@ -3,6 +3,8 @@ id: menu
 title: Menu
 ---
 
+import { ComponentTheme } from '../src/components';
+
 A dropdown menu for the common dropdown menu button design pattern.
 
 ## Import
@@ -83,6 +85,6 @@ Extends `MenuItem`.
 
 ```
 
-## Accessibility
+## Styling
 
-- WIP (Work in progress).
+<ComponentTheme name="menu" />

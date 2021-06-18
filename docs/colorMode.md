@@ -1,6 +1,6 @@
 ---
 id: color-mode
-title: Color Mode
+title: Color mode (Dark Mode)
 ---
 
 When you use the `NativebaseProvider` at the root of your app, you can automatically use color mode in your apps.
@@ -66,10 +66,11 @@ function ColorModeExample () {
 }
 
 const LocalWrapper = ({ children }) => {
+  const bg = useColorModeValue('gray.200', 'gray.800')
   return (
     <Center
       flex={1}
-      bg={useColorModeValue('gray.200', 'gray.800')}
+      bg={bg}
     >
       {children}
     </Center>

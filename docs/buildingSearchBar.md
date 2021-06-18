@@ -19,7 +19,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 
 function SearchBar(){
   return (
-    <VStack mx={2} space={4}>
+    <VStack mx={2} space={4} w={{base:'90%',sm:'200'}}>
       <Input
         placeholder="Search..."
         variant="filled"

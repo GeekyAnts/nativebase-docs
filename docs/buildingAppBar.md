@@ -17,7 +17,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 function AppBar(){
   return (
-    <VStack space={4} flex={1} >
+    <VStack space={4} flex={1} safeArea>
       <HStack bg='primary.300' justifyContent='space-between'>
         <HStack alignItems='center'>
           <IconButton icon={<Icon as={<MaterialIcons name='menu' />} />} />

@@ -53,11 +53,11 @@ import React from 'react';
 import { useColorModeValue, Button } from 'native-base';
 
 export default function () {
+  const colorScheme = useColorModeValue('teal', 'amber');
+  const variant = useColorModeValue('solid', 'outline');
+
   return (
-    <Button
-      colorScheme={useColorModeValue('teal', 'amber')}
-      variant={useColorModeValue('solid', 'outline')}
-    >
+    <Button colorScheme={colorScheme} variant={variant}>
       Sample
     </Button>
   );

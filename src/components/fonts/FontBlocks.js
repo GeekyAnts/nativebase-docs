@@ -1,6 +1,7 @@
 import React from 'react';
 import FontSizeComponent from './FontSizeComponent';
 const FONT_SIZES = {
+  xxs: 10,
   xs: 12,
   sm: 14,
   md: 16,
@@ -10,7 +11,10 @@ const FONT_SIZES = {
   '3xl': 30,
   '4xl': 36,
   '5xl': 48,
-  '6xl': 64,
+  '6xl': 60,
+  '7xl': 72,
+  '8xl': 96,
+  '9xl': 128,
 };
 
 const FontBlocks = ({}) => {

@@ -19,13 +19,24 @@ const getSnackPlayerCodeSnippet = (repoPath, ...examplePath) => {
   // console.log('snippet args received', args);
   const filePath = path.resolve(storybookExamplePath(repoPath), ...examplePath);
   const fileContent = fs.readFileSync(filePath, { encoding: 'utf-8' });
-  let transformedFile = transformStorybookToDocExample(fileContent);
-  transformedFile = prettier.format(transformedFile, {
-    semi: false,
-    parser: 'babel',
-  });
-
-  return transformedFile;
+  try {
+    let transformedFile = transformStorybookToDocExample(
+      fileContent,
+      examplePath
+    );
+    transformedFile = prettier.format(transformedFile, {
+      semi: false,
+      parser: 'babel',
+    });
+    return transformedFile;
+  } catch (e) {
+    console.log(
+      'Babel transform error in snackplayer example. Check file ',
+      repoPath,
+      examplePath,
+      e
+    );
+  }
 };
 
 const filter = (obb, val) => {

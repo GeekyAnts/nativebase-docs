@@ -3,6 +3,8 @@ id: formControl
 title: Form Control
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `FormControl` provides context such as `isInvalid`, `isDisabled`, and `isRequired` to form elements.
 
 ## Examples
@@ -44,3 +46,7 @@ title: Form Control
 ```ComponentPropTable path=composites,FormControl,FormControlHelperText.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="formControl" fileName="form-control" />
