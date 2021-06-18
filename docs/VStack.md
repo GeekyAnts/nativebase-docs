@@ -13,9 +13,9 @@ import { VStack } from 'native-base';
 
 ## Usage
 
-<!-- ```ComponentSnackPlayer path=primitives,VStack,basic.tsx
+```ComponentSnackPlayer path=primitives,VStack,basic.tsx
 
-``` -->
+```
 
 ## Props
 
