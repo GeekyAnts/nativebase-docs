@@ -7,13 +7,12 @@ Provides a view that moves out of the way of virtual keyboard automatically. It 
 
 ## Example
 
-<!-- ```ComponentSnackPlayer path=basic,KeyboardAvoidingView,basic.tsx
+```ComponentSnackPlayer path=basic,KeyboardAvoidingView,basic.tsx
 
-``` -->
+```
 
 ## Props
 
 ```ComponentPropTable path=basic,KeyboardAvoidingView,KeyboardAvoidingView.tsx showStylingProps=true
 
 ```
-
