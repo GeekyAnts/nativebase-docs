@@ -106,6 +106,21 @@ header h1 {
   top: 0 !important;
 }
 
+.prism-code::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+.prism-code::-webkit-scrollbar-track {
+  width: 0px !important;
+  height: 0px !important;
+}
+.prism-code::-webkit-scrollbar-thumb {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
 .markdown code {
   font-weight: 700;
 }
