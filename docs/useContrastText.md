@@ -27,7 +27,7 @@ function UseContrastingTextHook () {
 
   return (
     <>
-      <Button bg={bgDark} _text={{ color: colorContrastDark }}>
+      <Button bg={bgDark} _text={{ color: colorContrastDark }} my={6}>
         NativeBase
       </Button>
       <Button bg={bgLight} _text={{ color: colorContrastLight }}>

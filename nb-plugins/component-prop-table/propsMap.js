@@ -171,6 +171,31 @@ const rnProps = {
     name: 'View',
     link: 'https://reactnative.dev/docs/view',
   },
+  ScrollViewProps: {
+    doc: '',
+    name: 'ScrollView',
+    link: 'https://reactnative.dev/docs/scrollview',
+  },
+  KeyboardAvoidViewProps: {
+    doc: '',
+    name: 'KeyboardAvoidView',
+    link: 'https://reactnative.dev/docs/keyboardavoidingview',
+  },
+  StatusBarProps: {
+    doc: '',
+    name: 'StatusBar',
+    link: 'https://reactnative.dev/docs/statusbar',
+  },
+  FlatListProps: {
+    doc: '',
+    name: 'FlatList',
+    link: 'https://reactnative.dev/docs/flatlist',
+  },
+  SectionListProps: {
+    doc: '',
+    name: 'SectionList',
+    link: 'https://reactnative.dev/docs/sectionlist',
+  },
   TextProps: {
     doc: '',
     name: 'TextProp',

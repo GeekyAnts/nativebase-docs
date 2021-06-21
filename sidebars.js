@@ -97,7 +97,7 @@ module.exports = {
         // 'code',
         'divider',
         // 'Kbd',
-        'list',
+        // 'list',
         // 'stat',
         // 'swipable-list',
         // 'tag',
@@ -175,6 +175,19 @@ module.exports = {
         'FAB',
       ],
     },
+    {
+      type: 'category',
+      label: 'RN Components',
+      collapsed: false,
+      items: [
+        'scrollview',
+        'view',
+        'keyboardAvoidingView',
+        'statusBar',
+        'flatList',
+        'sectionList',
+      ],
+    },
 
     {
       type: 'category',
@@ -182,7 +195,7 @@ module.exports = {
       collapsed: false,
       items: [
         'use-disclosure',
-        'use-popOver',
+        // 'use-popOver',
         'use-breakPoint-value',
         'use-clipboard',
         'use-media-query',

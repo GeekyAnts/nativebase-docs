@@ -20,6 +20,7 @@ import {
   Center,
   NativeBaseProvider
 } from "native-base";
+import { FontAwesome5 } from '@expo/vector-icons';
 
 export default function () {
   const instState = [
@@ -60,18 +61,19 @@ export default function () {
       <Heading color="emerald.400">Todo App</Heading>
       <Input
         variant="filled"
-        w="100%"
+        
         InputRightElement={
-          <Button
-            colorScheme="emerald"
+          <IconButton
+            icon={<Icon as={FontAwesome5} name="plus" size={4} />}
+           colorScheme="emerald"
             ml={1}
             onPress={() => {
               addItem(inputValue);
               setInputValue("");
             }}
-          >
-            <Icon type="FontAwesome5" name="plus" />
-          </Button>
+
+            mr={1}/>
+
         }
         onChangeText={(v) => setInputValue(v)}
         value={inputValue}
@@ -82,6 +84,7 @@ export default function () {
           <HStack
             w="100%"
             justifyContent="space-between"
+            alignItems="center"
             key={item.title + itemI.toString()}
           >
             <Checkbox
@@ -96,7 +99,7 @@ export default function () {
             </Checkbox>
             <IconButton
               colorScheme="emerald"
-              icon={<Icon type="FontAwesome5" name="trash" />}
+              icon={<Icon as={FontAwesome5} name="trash" size={5} />}
               onPress={() => handleDelete(itemI)}
             />
           </HStack>
