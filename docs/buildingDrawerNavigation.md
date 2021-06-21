@@ -33,10 +33,10 @@ function Component(props) {
   return (
     <HStack alignItems="center" mt={6}>
       <Pressable onPress={() => props.navigation.toggleDrawer()}>
-        <HamburgerIcon ml={2}/>
+        <HamburgerIcon ml={2} size="sm"/>
       </Pressable>
       <Center flex={1} >
-        <Heading>{props.route.name} Screen</Heading>
+        <Heading size="md">{props.route.name} Screen</Heading>
       </Center>
     </HStack>
   );

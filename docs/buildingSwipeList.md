@@ -27,7 +27,7 @@ export default function App() {
     return (
       <NativeBaseProvider >
         <Box textAlign="center" bg= 'white' flex= {1} safeAreaTop>
-          <Heading my={6} textAlign="center">Swipe list Example</Heading>
+          <Heading my={6} textAlign="center" size="lg">Swipe list Example</Heading>
             <Basic />
         </Box>
         </NativeBaseProvider>
