@@ -85,8 +85,7 @@ export function ComponentTheme({ name, componentName, fileName }) {
             borderColor: 'gray.900',
           }}
           borderStyle="dashed"
-          rounded="md"
-          p={1}
+          py={1}
           borderColor="secondary.300"
           fontWeight="bold"
         >

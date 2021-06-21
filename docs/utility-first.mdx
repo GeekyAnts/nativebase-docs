@@ -16,6 +16,8 @@ To understand utility props, let's take an example.
 
 Let's try the traditional way of building the above card in React Native.
 
+<div style={{maxWidth: "100%", width:"800px"}}>
+
 ```jsx
 import * as React from 'react';
 import { Text, View, StyleSheet, Image, Pressable } from 'react-native';
@@ -91,6 +93,8 @@ const styles = StyleSheet.create({
 });
 ```
 
+</div>
+
 <UtilityFirstExample />
 
 <br />
@@ -98,6 +102,8 @@ const styles = StyleSheet.create({
 Now let's try to build the same card using NativeBase.
 
 With NativeBase, you can apply styles directly in the layout using shorthands.
+
+<div style={{maxWidth: "100%", width:"800px"}}>
 
 ```jsx
 import * as React from 'react';
@@ -165,6 +171,8 @@ export function UtilityFirstExample() {
   );
 }
 ```
+
+</div>
 
 The above example demonstrates the usage of [utility props](utility-props) alongwith [VStack](vstack), [HStack](hstack) components. This approach allows us to style components without using StyleSheet API.
 

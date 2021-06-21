@@ -21,6 +21,7 @@ const cloneRepos = () => {
     const a = shellJS.exec('git checkout ' + 'v' + v);
     if (a.code !== 0) {
       shellJS.exec('git checkout ' + FALLBACK_BRANCH);
+      shellJS.exec('git pull');
     }
     if (process.env.BUILDING === 'prod') {
       shellJS.exec('yarn');

@@ -7,13 +7,13 @@ When you use the `NativebaseProvider` at the root of your app, you can automat
 
 By default, most components are dark mode compatible. To handle color mode manually in your application, use the `useColorMode` or `useColorModeValue` hooks.
 
-## **useColorMode**
+## useColorMode
 
 `useColorMode` is a React hook that gives you access to the current color mode, and a function to toggle the color mode.
 
 Calling toggleColorMode anywhere in your app tree toggles the color mode.
 
-## **useColorModeValue**
+## useColorModeValue
 
 `useColorModeValue` is a React hook used to change any value or style based on the color mode. It takes 2 arguments: the value in light mode, and the value in dark mode.
 
