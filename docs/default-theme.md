@@ -17,7 +17,7 @@ We recommend adding a palette that ranges from `50` to `900`. Tools like **[
 
 <ColorsBlock/>
 
-## **Typography**
+## Typography
 
 To manage Typography options, the theme object supports the following keys:
 
@@ -94,7 +94,7 @@ const typography = {
 
 <FontBlocks/>
 
-## **Size**
+## Size
 
 The `size` key allows you to customize the global spacing and sizing scale for your project. By default these spacing value can be referenced by the `padding`, `margin`, and `top`, `left`, `right`, `bottom` props.
 

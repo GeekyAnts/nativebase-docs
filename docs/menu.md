@@ -63,7 +63,7 @@ import { Menu } from 'native-base';
 
 MenuItem implements [Pressable]
 
-### **MenuItemOption**
+### MenuItemOption
 
 Extends `MenuItem`.
 
