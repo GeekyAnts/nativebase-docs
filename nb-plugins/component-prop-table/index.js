@@ -143,9 +143,8 @@ const ComponentPropTable = (...args) => {
       // Parse all CodeBlocks
       visit(tree, 'code', (node, parent) => {
         if (node.lang == 'ComponentPropTable') {
-          const { code, showStylingProps } = getPropDetail(node.meta);
+          const { code, showStylingProps } = getPropDetail(node.meta, repoPath);
           // NOTE: writing on code for testing
-          // console.log('written on test2');
           // fs.writeFileSync('test2.json', JSON.stringify(code));
           nodesToProcess.push(
             processNode(node, parent, code, showStylingProps)

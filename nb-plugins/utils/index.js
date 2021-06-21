@@ -75,20 +75,17 @@ const simplifyMeta = (meta) => {
 
 // NOTE: meta sample
 // path=primitives,Box,index.tsx showStylingProps=true
-const getPropDetail = (meta) => {
+const getPropDetail = (meta, repoPath) => {
   const { path: subPath, ...objectifiedMeta } = simplifyMeta(meta);
-  const filePath = path.resolve(componentsRootPath(repoPath), ...subPath);
+  const filePath = path.resolve(repoPath, 'src', 'components', ...subPath);
   console.log('filepath: ', filePath);
   const code = docgen.parse(filePath);
 
   // NOTE: writing on code for testing
   // fs.writeFileSync('test1.json', JSON.stringify(code));
-  // console.log('written on test1: ', Object.keys(code[0].props).length);
 
   return { code, ...objectifiedMeta };
 };
-// getPropDetail('primitives', 'Box', 'types.ts');
-// getPropDetail('primitives', 'Box', 'index.tsx');
 // getPropDetail('path=primitives,Box,index.tsx');
 
 const getVersion = (directory) => {
