@@ -3,6 +3,8 @@ id: iconButton
 title: IconButton
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `IconButton` composes the `Button` component. It is generally used to make an Icon pressable.
 
 ## Examples
@@ -30,6 +32,10 @@ title: IconButton
 ```ComponentPropTable path=composites,IconButton,index.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="iconButton" />
 
 ## Accessibility
 

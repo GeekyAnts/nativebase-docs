@@ -1,16 +1,20 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Migrating to v3 will provide a lot more **design**, **size, variation**, **color** and **customisation** option.
+API for Tabs is in progress, in the meantine you can check this [recipe](buildingTabView.md) for building Tabs.
 
-We have sliced Tabs into multiple smaller component which not only provides more control over the the code but also makes it more readable.
+<!-- Migrating to v3 will provide a lot more **design**, **size, variation**, **color** and **customisation** option.
+
+We have sliced Tabs into multiple smaller components which not only provides more control over the the code but also makes it more readable.
 
 ## Overview
 
 Migrating Tabs components can broadly described in these points:
 
-- Separated `TabViews` and `TabBar`. Providing more control over the structure and design.
+- Separated `Tab View` and `Tab Bar`. Providing more control over the structure and design.
 - Each **Tab** can be more than string.
+- **initialPage** (prop) → **defaultIndex** (prop), **page** (prop) → **index** (prop)
+- The styling props have been deprecated, in v3 **Tabs** implements **Box** so it can be designed using Box props.
 
 ## Code Comparison
 
@@ -24,13 +28,13 @@ values={[
 
 ```tsx
 <Tabs>
-  <Tab heading='One'>
+  <Tab heading="One">
     <Text>One</Text>
   </Tab>
-  <Tab heading='Two'>
+  <Tab heading="Two">
     <Text>Two</Text>
   </Tab>
-  <Tab heading='Three'>
+  <Tab heading="Three">
     <Text>Three</Text>
   </Tab>
 </Tabs>
@@ -41,18 +45,18 @@ values={[
 
 ```tsx
 <Tabs>
-  <TabBar>
-    <Tab>One</Tab>
-    <Tab>Two</Tab>
-    <Tab>Three</Tab>
-  </TabBar>
-  <TabViews>
-    <TabView>One</TabView>
-    <TabView>Two</TabView>
-    <TabView>Three</TabView>
-  </TabViews>
+  <Tabs.Bar>
+    <Tabs.Tab>One</Tabs.Tab>
+    <Tabs.Tab>Two</Tabs.Tab>
+    <Tabs.Tab>Three</Tabs.Tab>
+  </Tabs.Bar>
+  <Tabs.Views>
+    <Tabs.View>One</Tabs.View>
+    <Tabs.View>Two</Tabs.View>
+    <Tabs.View>Three</Tabs.View>
+  </Tabs.Views>
 </Tabs>
 ```
 
 </TabItem>
-</Tabs>
+</Tabs> -->

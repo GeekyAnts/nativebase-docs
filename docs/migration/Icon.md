@@ -1,13 +1,16 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Migrating to v3 will provide a lot more **customisation** option. Apart from the icons provided by [@expo/vector-icon](https://github.com/expo/vector-icons), you can also create custom icons using SVG.
+Migrating [`Icon`](icon.md) to v3 will provide a lot more **customisation** option. You can also create custom icons using SVG.
 
 ## Overview
 
 Migrating Icon components can broadly described in these points:
 
-- **ios** and **android** props have been deprecated.
+- **ios**, **android** and **type** props have been deprecated.
+- default Icon type i.e **Ionicons** has been removed, now v3 does not uses any.
+- v3 uses a third-party icon library ( such as @expo/vector-icons ), with **as** prop.
+- custom colors and size can be added using **color** and **size** props.
 
 ## Code Comparison
 
@@ -20,13 +23,24 @@ values={[
 <TabItem value="v2">
 
 ```tsx
-<Icon name='home' /> // same
-<Icon type='FontAwesome' name='home' /> //same
-<Icon
-  ios='ios-menu'
-  android='md-menu'
-  style={{ fontSize: 20, color: 'red' }}
-/>
+import React, { Component } from 'react';
+import { Icon } from 'native-base';
+
+export default class IconExample extends Component {
+  render() {
+    return (
+      <>
+        <Icon name="home" />
+        <Icon
+          ios="ios-menu"
+          android="md-menu"
+          style={{ fontSize: 20, color: 'red' }}
+        />
+        <Icon type="FontAwesome" name="home" />
+      </>
+    );
+  }
+}
 // need to re-write
 ```
 
@@ -34,12 +48,26 @@ values={[
 <TabItem value="v3">
 
 ```tsx
-<Icon name='home' /> // same
-<Icon type='FontAwesome' name='home' /> //same
-<Icon
-  name={Platform.OS ? 'ios-menu' : 'md-menu'}
-  style={{ fontSize: 20, color: 'red' }}
-/>
+import React from 'react';
+import { Platform } from 'react-native';
+import { Icon } from 'native-base';
+import { Ionicons, FontAwesome } from '@expo/vector-icons';
+
+export default function () {
+  return (
+    <>
+      <Icon as={Ionicons} name="home" />
+      <Icon
+        as={Ionicons}
+        name={Platform.OS ? 'ios-menu' : 'md-menu'}
+        size={20}
+        color="red"
+      />
+      <Icon as={FontAwesome} name="home" />
+    </>
+  );
+}
+
 // v3 version
 ```
 

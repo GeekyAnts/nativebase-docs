@@ -1,11 +1,11 @@
 ---
 id: buildingAppBar
-title: Building AppBar
+title: AppBar
 ---
 
 The top app bar provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.
 
-## Example:
+## Example
 
 We can easily create it using basic layout components from NativeBase.
 
@@ -17,7 +17,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 function AppBar(){
   return (
-    <VStack space={4} flex={1} >
+    <VStack space={4} flex={1} safeArea>
       <HStack bg='primary.300' justifyContent='space-between'>
         <HStack alignItems='center'>
           <IconButton icon={<Icon as={<MaterialIcons name='menu' />} />} />

@@ -39,7 +39,7 @@ function UseClipboardExample() {
   const [pasteText, setPasteText] = React.useState("");
   const { value, onCopy, hasCopied } = useClipboard();
   return (
-    <VStack space={2}>
+    <VStack space={2} mx={2}>
       <HStack space={3}>
         <Input
           w="60%"

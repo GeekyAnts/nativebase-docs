@@ -3,7 +3,7 @@ id: design-tokens
 title: Design tokens
 ---
 
-Design tokens are the values needed to construct a design system. These values can represent spacing, color, typography etc. Design tokens help to achieve consistency in building user interfaces across all platforms.
+Design tokens are the values or constants needed to construct a design system. These values can represent spacing, color, typography etc. Design tokens help to achieve consistency in building user interfaces across all platforms.
 
 Let's take an example by defining a space and color design tokens.
 
@@ -66,4 +66,4 @@ The above Box will be translated to
 
 With NativeBase, you can create your own design system. NativeBase follows [styled-system's specification](https://styled-system.com/theme-specification/) to construct design system.
 
-Checkout the [default NativeBase theme](default-theme) and how you can customize it [here](customizingTheme).
+Checkout the **[default NativeBase theme](default-theme)** and how to customize it **[here](customizingTheme)**.

@@ -1,11 +1,11 @@
 ---
 id: buildingSearchBar
-title: Building SearchBar
+title: SearchBar
 ---
 
 Search-bar are one of the most commonly seen variation of input. Here are design to make life easier.
 
-## Example:
+## Example
 
 Here are some examples to show how easily and quickly we can create so many types of search-bars.
 
@@ -19,7 +19,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 
 function SearchBar(){
   return (
-    <VStack mx={2} space={4}>
+    <VStack mx={2} space={4} w={{base:'90%',sm:'200'}}>
       <Input
         placeholder="Search..."
         variant="filled"

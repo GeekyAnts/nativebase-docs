@@ -1,4 +1,5 @@
 module.exports = {
+  themes: ['@docusaurus/theme-live-codeblock'],
   title: 'NativeBase',
   tagline: 'A complete component library for React Native Ecosystem',
   url: 'https://alpha-docs.nativebase.io',
@@ -30,6 +31,9 @@ module.exports = {
     // gtag: {
     //   trackingID: 'UA-76655074-1',
     // },
+    colorMode: {
+      defaultMode: 'dark',
+    },
     prism: {
       theme: require('prism-react-renderer/themes/nightOwl'),
     },

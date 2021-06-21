@@ -1,7 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-**H1**, **H2** and **H3** all have been deprecated and replaced with `Heading` component. V3 components will more size variations and better customisation.
+**H1**, **H2** and **H3** all have been replaced with [`Heading`](heading.md) component.
 
 ## Code Comparison
 

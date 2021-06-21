@@ -3,6 +3,8 @@ id: textArea
 title: TextArea
 ---
 
+import { ComponentTheme } from '../src/components';
+
 The `Textarea` component allows you to easily create multi-line text inputs.
 
 ## Examples
@@ -30,3 +32,7 @@ The `Textarea` component allows you to easily create multi-line text inputs.
 ```ComponentPropTable path=primitives,TextArea,index.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="textArea" />

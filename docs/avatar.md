@@ -3,6 +3,8 @@ id: avatar
 title: Avatar
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Avatar` component is used to represent a user and it can display a profile picture, initials or a fallback icon.
 
 ## Import
@@ -68,3 +70,7 @@ import { Avatar } from 'native-base';
 ```ComponentPropTable path=composites,Avatar,Badge.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="avatar" />

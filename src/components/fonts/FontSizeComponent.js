@@ -26,6 +26,7 @@ const FontSizeComponent = ({ name, value }) => {
           textOverflow: 'ellipsis',
           whiteSpace: 'nowrap',
           overflow: 'hidden',
+          maxWidth: '600px',
           marginLeft: '20px',
         }}
       >

@@ -12,7 +12,11 @@ To understand utility props, let's take an example.
 
 <UtilityFirstExample />
 
+<br />
+
 Let's try the traditional way of building the above card in React Native.
+
+<div style={{maxWidth: "100%", width:"800px"}}>
 
 ```jsx
 import * as React from 'react';
@@ -35,7 +39,6 @@ export default function App() {
           source={{
             uri: 'https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg',
           }}
-          alt="Aang flying and surrounded by clouds"
           style={styles.avatar}
         />
       </View>
@@ -45,9 +48,13 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#7c3aed',
+    backgroundColor: '#0891b2',
     paddingVertical: 16,
     paddingHorizontal: 12,
+    borderRadius: 5,
+    alignSelf: 'center',
+    width: 375,
+    maxWidth: '100%',
   },
   timings: {
     color: '#fff',
@@ -71,31 +78,38 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   button: {
-    backgroundColor: '#a78bfa',
+    backgroundColor: '#22d3ee',
     alignSelf: 'flex-start',
     paddingHorizontal: 10,
     paddingVertical: 5,
+    borderRadius: 3,
   },
   buttonText: {
     fontWeight: 'bold',
     color: 'white',
     textTransform: 'uppercase',
+    fontSize: 14,
   },
 });
 ```
 
+</div>
+
 <UtilityFirstExample />
+
+<br />
 
 Now let's try to build the same card using NativeBase.
 
 With NativeBase, you can apply styles directly in the layout using shorthands.
 
+<div style={{maxWidth: "100%", width:"800px"}}>
+
 ```jsx
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
 import {
-  Box,
   NativeBaseProvider,
+  Box,
   HStack,
   VStack,
   Text,
@@ -103,10 +117,18 @@ import {
   Image,
 } from 'native-base';
 
-export default function App() {
+export function UtilityFirstExample() {
   return (
     <NativeBaseProvider>
-      <Box bg="#7c3aed" py={4} px={3}>
+      <Box
+        bg="primary.600"
+        py={4}
+        px={3}
+        rounded="md"
+        alignSelf="center"
+        width={375}
+        maxWidth="100%"
+      >
         <HStack justifyContent="space-between">
           <Box justifyContent="space-between">
             <VStack space={2}>
@@ -117,8 +139,19 @@ export default function App() {
                 Let's talk about avatar!
               </Text>
             </VStack>
-            <Pressable bg="#a78bfa" alignSelf="flex-start" py={2} px={3}>
-              <Text textTransform="uppercase" fontWeight="bold" color="white">
+            <Pressable
+              rounded="sm"
+              bg="primary.400"
+              alignSelf="flex-start"
+              py={2}
+              px={3}
+            >
+              <Text
+                textTransform="uppercase"
+                fontSize={'sm'}
+                fontWeight="bold"
+                color="white"
+              >
                 Remind me
               </Text>
             </Pressable>
@@ -139,6 +172,8 @@ export default function App() {
 }
 ```
 
+</div>
+
 The above example demonstrates the usage of [utility props](utility-props) alongwith [VStack](vstack), [HStack](hstack) components. This approach allows us to style components without using StyleSheet API.
 
 Apart from productivity boost and saving time there are other benefits by styling components using utility props.
@@ -157,16 +192,12 @@ Once you start writing styles this way, any other way will feel cumbersome.
   />
 </div>
 
-### Run the above examples in expo snack
-
-[Using RN StyleSheet](https://snack.expo.io/@nishanbende/utility-props-example-rn)
-
-[Using Utility props](https://snack.expo.io/@nishanbende/utility-props-example)
+<br />
 
 Once you had a cup of tea, let's proceed to the next section!
 
 <div className="tailwind">
-  <div className="row mb-8">
+  <div className="row mb-8 -ml-2">
     <TileLink
       title="Design tokens"
       url="design-tokens"
@@ -179,4 +210,5 @@ Once you had a cup of tea, let's proceed to the next section!
     src="/img/iroh-tea.webp"
     alt="uncle iroh holding cup of tea"
   />
+
 </div>

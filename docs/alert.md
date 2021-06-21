@@ -3,6 +3,8 @@ id: alert
 title: Alert
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Alerts` are used to communicate a state that affects a system, feature or page.
 
 ## Import
@@ -75,6 +77,10 @@ import { Alert } from 'native-base';
 ```ComponentPropTable path=composites,Alert,AlertDescription.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="alert" />
 
 ## Accessibility
 

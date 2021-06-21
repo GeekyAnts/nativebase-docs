@@ -1,6 +1,6 @@
 ---
 id: form
-title: Building a form with Validation
+title: Form with Validation
 ---
 
 Apps often require users to enter information into a text field. For example, you might require users to log in with an email address and password combination.
@@ -30,7 +30,7 @@ function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
 
   return (
-    <VStack width="80%">
+    <VStack width="90%" mt={20} mx={3}>
       <FormControl isRequired>
         <FormControl.Label>Name</FormControl.Label>
         <Input
@@ -90,7 +90,7 @@ function  BuildingAFormExample() {
   };
 
   return (
-    <VStack width="80%">
+    <VStack width="90%" mt={20} mx={3}>
       <FormControl isRequired >
         <FormControl.Label>Name</FormControl.Label>
         <Input
@@ -153,7 +153,7 @@ function BuildingAFormExample() {
   };
 
   return (
-    <VStack width="80%" space={4}>
+    <VStack width="80%" space={4} width="90%" mt={20} mx={3}>
       <FormControl isRequired isInvalid={'name' in errors}>
         <FormControl.Label>Name</FormControl.Label>
         <Input

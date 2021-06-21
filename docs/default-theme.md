@@ -17,7 +17,7 @@ We recommend adding a palette that ranges from `50` to `900`. Tools like **[
 
 <ColorsBlock/>
 
-## **Typography**
+## Typography
 
 To manage Typography options, the theme object supports the following keys:
 
@@ -28,14 +28,18 @@ To manage Typography options, the theme object supports the following keys:
 - `letterSpacings`
 
 ```jsx
-export default {
+const typography = {
   letterSpacings: {
-    tighter: '-0.08px',
-    tight: '-0.4px',
-    normal: '0',
-    wide: '0.4px',
-    wider: '0.8px',
-    widest: '1.6px',
+    xxs: -1.5,
+    xs: -0.5,
+    sm: 0,
+    md: 0.1,
+    lg: 0.15,
+    xl: 0.25,
+    '2xl': 0.4,
+    '3xl': 0.5,
+    '4xl': 1.25,
+    '5xl': 1.5,
   },
   lineHeights: {
     none: 1,
@@ -65,11 +69,12 @@ export default {
     black: 900,
   },
   fonts: {
-    heading: `Courier`,
-    body: `Courier`,
-    mono: `monospace`,
+    heading: '',
+    body: '',
+    mono: '',
   },
   fontSizes: {
+    xxs: 10,
     xs: 12,
     sm: 14,
     md: 16,
@@ -79,14 +84,17 @@ export default {
     '3xl': 30,
     '4xl': 36,
     '5xl': 48,
-    '6xl': 64,
+    '6xl': 60,
+    '7xl': 72,
+    '8xl': 96,
+    '9xl': 128,
   },
 };
 ```
 
 <FontBlocks/>
 
-## **Size**
+## Size
 
 The `size` key allows you to customize the global spacing and sizing scale for your project. By default these spacing value can be referenced by the `padding`, `margin`, and `top`, `left`, `right`, `bottom` props.
 
