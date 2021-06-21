@@ -106,9 +106,17 @@ header h1 {
 /* .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock- {
   border-radius: var(--ifm-global-radius);
 } */
+::-webkit-scrollbar {
+  width: 0px !important;
+}
+.prism-code::-webkit-scrollbar-track {
+  width: 0px !important;
+  height: 0px !important;
+}
 ::-webkit-scrollbar-thumb {
   display: none !important;
   height: 0 !important;
+  width: 0 !important;
   /* background-color: red !important;
   border: 4px solid transparent !important;
   border-radius: 8px !important;
@@ -118,6 +126,7 @@ header h1 {
   ::-webkit-scrollbar {
   display: none !important;
   height: 0 !important;
+  width: 0 !important;
 }
 .codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock- {
   -ms-overflow-style: none !important;
