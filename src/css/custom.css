@@ -58,6 +58,9 @@ html[data-theme='dark'] h3 {
 html[data-theme='dark'] h4 {
   color: #ffff;
 }
+html[data-theme='dark'] {
+  --ifm-dropdown-background-color: #1e293b !important;
+}
 
 @media (max-width: 600px) {
   :root {
