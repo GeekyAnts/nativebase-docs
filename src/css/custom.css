@@ -654,10 +654,6 @@ html[data-theme='dark'] .menu__link.menu__link--sublist {
   background: var(--ifm-scrollbar-thumb-background-color);
 }
 
-main {
-  overflow-x: hidden;
-}
-
 /* as we've reduced --ifm-spacing-horizontal in paddin, we'll give it back to snack-player */
 .snack-player {
   width: calc(100% + var(--ifm-spacing-horizontal));
