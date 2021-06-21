@@ -28,10 +28,6 @@ const docs = [
     name: 'Examples',
     url: 'https://alpha-docs.nativebase.io/todo-example',
   },
-  {
-    name: 'FAQ',
-    url: 'https://alpha-docs.nativebase.io/faq',
-  },
 ];
 const more = [
   {
