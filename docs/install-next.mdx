@@ -7,13 +7,22 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { TileLink } from '../src/components';
 
-### Create a new project with Expo NextJS template
+  <Tabs
+  defaultValue='expo'
+  values={[
+  { label: 'Using Expo NextJS template (recommended)', value: 'expo' },
+  { label: 'Using NextJS CLI', value: 'next' }
+  ]}>
+
+  <TabItem value="expo">
+
+### Create a new project using Expo NextJS template
 
 ```bash
 npx create-react-native-app -t with-nextjs
 ```
 
-[Refer this guide](https://docs.expo.io/guides/using-nextjs/) if you need more configuration.
+[Refer official guide](https://docs.expo.io/guides/using-nextjs/) if you need additional configurations.
 
 ### Install dependencies
 
@@ -36,6 +45,104 @@ yarn add native-base@next react-native-svg styled-components styled-system react
 
 ```bash
 npm install native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+```
+
+  </TabItem>
+
+  </Tabs>
+
+  </TabItem>
+
+  <TabItem value="next">
+
+### Create a new project using NextJS CLI with react native web template
+
+```bash
+npx create-next-app --example with-react-native-web with-react-native-web-app
+```
+
+[Refer official guide](https://necolas.github.io/react-native-web/docs/installation/) if you need additional configurations.
+
+### Install dependencies
+
+  <Tabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+  <TabItem value="yarn">
+
+```bash
+yarn add native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+```
+
+  </TabItem>
+
+  <TabItem value="npm">
+
+```bash
+npm install native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+```
+
+  </TabItem>
+
+  </Tabs>
+
+We'll need 2 more additional steps.
+
+1. Install dependencies.
+
+```bash
+  // Using npm
+  npm i next-compose-plugins next-transpile-modules --save-dev
+
+  // Using yarn
+  yarn add next-compose-plugins next-transpile-modules -D
+```
+
+2. Replace next.config.js with the below content.
+
+```js
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')([
+  'native-base',
+  'react-native-svg',
+  'styled-components',
+  'react-native-safe-area-context',
+  '@react-aria/visually-hidden',
+  '@react-native-aria/button',
+  '@react-native-aria/checkbox',
+  '@react-native-aria/combobox',
+  '@react-native-aria/focus',
+  '@react-native-aria/interactions',
+  '@react-native-aria/listbox',
+  '@react-native-aria/overlays',
+  '@react-native-aria/radio',
+  '@react-native-aria/slider',
+  '@react-native-aria/tabs',
+  '@react-native-aria/utils',
+  '@react-stately/combobox',
+  '@react-stately/radio',
+]);
+
+module.exports = withPlugins([withTM], {
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      // Transform all direct `react-native` imports to `react-native-web`
+      'react-native$': 'react-native-web',
+    };
+    config.resolve.extensions = [
+      '.web.js',
+      '.web.ts',
+      '.web.tsx',
+      ...config.resolve.extensions,
+    ];
+    return config;
+  },
+});
 ```
 
   </TabItem>
