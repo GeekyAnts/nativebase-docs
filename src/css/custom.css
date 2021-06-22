@@ -101,10 +101,6 @@ header h1 {
 .menu--responsive {
   margin-top: 10px;
 }
-.tableOfContents_node_modules-\@docusaurus-theme-classic-lib-next-theme-TOC-,
-.tableOfContents_2xL {
-  top: 0 !important;
-}
 
 .prism-code::-webkit-scrollbar {
   width: 0px !important;
