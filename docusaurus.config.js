@@ -23,14 +23,14 @@ module.exports = {
   projectName: 'website', // Usually your repo name.
   plugins: [
     'docusaurus-tailwindcss-loader',
-    // '@docusaurus/plugin-google-gtag'
+    '@docusaurus/plugin-google-gtag'
   ],
   themeConfig: {
     // hideableSidebar: true,
     // respectPrefersColorScheme: true,
-    // gtag: {
-    //   trackingID: 'UA-76655074-1',
-    // },
+    gtag: {
+      trackingID: 'G-ZTSFCSJK8X',
+    },
     colorMode: {
       defaultMode: 'dark',
     },
