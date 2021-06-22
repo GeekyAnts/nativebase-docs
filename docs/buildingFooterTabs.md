@@ -25,8 +25,7 @@ import {
   Center,
   Pressable,
 } from 'native-base';
-import { FontAwesome5 } from '@expo/vector-icons';
-import { AntDesign, Ionicons, FontAwesome } from '@expo/vector-icons';
+import { MaterialCommunityIcons , MaterialIcons} from '@expo/vector-icons';
 
 export default function App() {
   const [selected, setSelected] = React.useState(1);
@@ -34,9 +33,8 @@ export default function App() {
     <NativeBaseProvider>
        <Box flex={1} bg="white" safeAreaTop>
         <Center flex={1}>
-          <Text fontSize="lg">Body Text</Text>
         </Center>
-        <HStack bg="purple.500" alignItems="center" safeAreaBottom shadow={6}>
+        <HStack bg="primary.500" alignItems="center" safeAreaBottom shadow={6}>
           <Pressable
             cursor="pointer"
             opacity={selected === 0 ? 1 : 0.5}
@@ -47,12 +45,12 @@ export default function App() {
             <Center>
               <Icon
                 mb={1}
-                as={<AntDesign name="heart" />}
+                as={<MaterialCommunityIcons name="heart" />}
                 color="white"
-                size="sm"
+                size="xs"
               />
 
-              <Text color="white">Favorites</Text>
+              <Text color="white" fontSize={14}>Favorites</Text>
             </Center>
           </Pressable>
           <Pressable
@@ -65,17 +63,17 @@ export default function App() {
             <Center>
               <Icon
                 mb={1}
-                as={<Ionicons name="musical-note" />}
+                as={<MaterialCommunityIcons name="music-note" />}
                 color="white"
-                size="sm"
+                size="xs"
               />
 
-              <Text color="white">Music</Text>
+              <Text color="white" fontSize={14}>Music</Text>
             </Center>
           </Pressable>
           <Pressable
             cursor="pointer"
-            opacity={selected === 2 ? 1 : 0.5}
+            opacity={selected === 2 ? 1 : 0.6}
             py={2}
             flex={1}
             onPress={() => setSelected(2)}
@@ -83,12 +81,12 @@ export default function App() {
             <Center>
               <Icon
                 mb={1}
-                as={<Ionicons name="location-sharp" />}
+                as={<MaterialIcons name="location-pin" />}
                 color="white"
-                size="sm"
+                size="xs"
               />
 
-              <Text color="white">Places</Text>
+              <Text color="white" fontSize={14}>Places</Text>
             </Center>
           </Pressable>
           <Pressable
@@ -101,11 +99,11 @@ export default function App() {
             <Center>
               <Icon
                 mb={1}
-                as={<FontAwesome name="newspaper-o" />}
+                as={<MaterialCommunityIcons name="newspaper" />}
                 color="white"
-                size="sm"
+                size="xs"
               />
-              <Text color="white">News</Text>
+              <Text color="white" fontSize={14}>News</Text>
             </Center>
           </Pressable>
         </HStack>
