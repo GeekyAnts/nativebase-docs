@@ -3,7 +3,7 @@ id: heading
 title: Heading
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 Headings are used for rendering headlines. `Heading` composes [`Text`](text.md) so you can use all the style props.
 

@@ -3,7 +3,7 @@ id: formControl
 title: Form Control
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 `FormControl` provides context such as `isInvalid`, `isDisabled`, and `isRequired` to form elements.
 
