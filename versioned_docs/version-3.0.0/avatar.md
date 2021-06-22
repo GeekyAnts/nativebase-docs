@@ -3,7 +3,7 @@ id: avatar
 title: Avatar
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 `Avatar` component is used to represent a user and it can display a profile picture, initials or a fallback icon.
 

@@ -3,7 +3,7 @@ id: menu
 title: Menu
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 A dropdown menu for the common dropdown menu button design pattern.
 
