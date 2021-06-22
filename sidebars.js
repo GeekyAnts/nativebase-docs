@@ -177,7 +177,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'RN Components',
+      label: 'ReactNative Components',
       collapsed: false,
       items: [
         'scrollview',

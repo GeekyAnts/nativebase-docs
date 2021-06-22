@@ -47,7 +47,7 @@ module.exports = {
       logo: {
         alt: 'NativeBase Logo',
         src: 'img/nativebaselogo.svg',
-        href: 'https://alpha.nativebase.io',
+        href: 'https://nativebase.io',
         target: '_self',
       },
 
@@ -158,11 +158,11 @@ module.exports = {
             },
             {
               label: 'Privacy Policy',
-              href: 'https://alpha.nativebase.io/privacy-policy',
+              href: 'https://nativebase.io/privacy-policy',
             },
             {
               label: 'Cookie Policy',
-              href: 'https://alpha.nativebase.io/cookie-policy',
+              href: 'https://nativebase.io/cookie-policy',
             },
           ],
         },

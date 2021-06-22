@@ -58,6 +58,9 @@ html[data-theme='dark'] h3 {
 html[data-theme='dark'] h4 {
   color: #ffff;
 }
+html[data-theme='dark'] {
+  --ifm-dropdown-background-color: #1e293b !important;
+}
 
 @media (max-width: 600px) {
   :root {
@@ -98,9 +101,20 @@ header h1 {
 .menu--responsive {
   margin-top: 10px;
 }
-.tableOfContents_node_modules-\@docusaurus-theme-classic-lib-next-theme-TOC-,
-.tableOfContents_2xL {
-  top: 0 !important;
+
+.prism-code::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+.prism-code::-webkit-scrollbar-track {
+  width: 0px !important;
+  height: 0px !important;
+}
+.prism-code::-webkit-scrollbar-thumb {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
 }
 
 .markdown code {
