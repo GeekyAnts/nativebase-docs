@@ -7,15 +7,17 @@ Apps often require users to enter information into a text field. For example, yo
 
 To make apps secure and easy to use, check whether the information the user has provided is valid. If the user has correctly filled out the form, process the information. If the user submits incorrect information, display a friendly error message letting them know what went wrong.
 
+## Example
+
 In this example, learn how to add validation to a form that has a single text field using the following steps:
 
 1. Create an Input wrapped in FormControl.
 2. Add validation logic.
 3. Create a button to validate and submit the form.
 
-## 1. Create an Input wrapped in FormControl.
+### Step 1
 
-Description
+Create an Input wrapped in FormControl.
 
 ```SnackPlayer name=Form%20Example
 import React from "react";
@@ -24,23 +26,24 @@ import {
   FormControl,
   Input,
   NativeBaseProvider,
+  Center
 } from "native-base";
 
 function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
 
   return (
-    <VStack width="90%" mt={20} mx={3}>
+    <VStack width="90%" mx={3}>
       <FormControl isRequired>
-        <FormControl.Label>Name</FormControl.Label>
+        <FormControl.Label _text={{bold: true}}>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormControl.HelperText>
+        <FormControl.HelperText _text={{fontSize: 'xs'}}>
           Name should contain atleast 3 character.
         </FormControl.HelperText>
-        <FormControl.ErrorMessage>Error Name</FormControl.ErrorMessage>
+        <FormControl.ErrorMessage _text={{fontSize: 'xs'}}>Error Name</FormControl.ErrorMessage>
       </FormControl>
     </VStack>
   );
@@ -48,16 +51,17 @@ function BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
+    <Center flex={1}>
       <BuildingAFormExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
-
 ```
 
-## 2. Add validation logic.
+### Step 2
 
-Description
+Add validation logic.
 
 ```SnackPlayer name=Form%20Example(Validation)
 import React from 'react';
@@ -65,7 +69,8 @@ import {
   VStack,
   FormControl,
   Input,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 
@@ -90,17 +95,17 @@ function  BuildingAFormExample() {
   };
 
   return (
-    <VStack width="90%" mt={20} mx={3}>
-      <FormControl isRequired >
-        <FormControl.Label>Name</FormControl.Label>
+    <VStack width="90%" mx={3}>
+      <FormControl isRequired>
+        <FormControl.Label _text={{bold: true}}>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormControl.HelperText>
+        <FormControl.HelperText _text={{fontSize: 'xs'}}>
           Name should contain atleast 3 character.
         </FormControl.HelperText>
-        <FormControl.ErrorMessage>{errors.name}</FormControl.ErrorMessage>
+        <FormControl.ErrorMessage _text={{fontSize: 'xs'}}>Error Name</FormControl.ErrorMessage>
       </FormControl>
     </VStack>
   );
@@ -108,15 +113,17 @@ function  BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
+    <Center flex={1}>
       <BuildingAFormExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
 ```
 
-## 3. Create a button to validate and submit the form.
+### Step 3
 
-Description
+Create a button to validate and submit the form.
 
 ```SnackPlayer name=Form%20Example(Validate and Submit)
 import React from 'react';
@@ -125,7 +132,8 @@ import {
   Button,
   FormControl,
   Input,
-  NativeBaseProvider
+  NativeBaseProvider,
+  Center
 } from 'native-base';
 
 function BuildingAFormExample() {
@@ -153,35 +161,39 @@ function BuildingAFormExample() {
   };
 
   return (
-    <VStack width="80%" space={4} width="90%" mt={20} mx={3}>
+    <VStack width="90%" mx={3}>
       <FormControl isRequired isInvalid={'name' in errors}>
-        <FormControl.Label>Name</FormControl.Label>
+        <FormControl.Label _text={{bold: true}}>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormControl.HelperText>
+        {'name' in errors ?
+        <FormControl.ErrorMessage _text={{fontSize: 'xs', color: 'error.500', fontWeight: 500}}>Error</FormControl.ErrorMessage>
+:
+
+        <FormControl.HelperText _text={{fontSize: 'xs'}}>
           Name should contain atleast 3 character.
         </FormControl.HelperText>
-        <FormControl.ErrorMessage>{errors.name}</FormControl.ErrorMessage>
+        }
       </FormControl>
-      <Button onPress={onSubmit} colorScheme="amber">
-        Submit
-      </Button>
+    <Button onPress={onSubmit} mt={5} colorScheme="cyan">
+      Submit
+    </Button>
     </VStack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
+    <Center flex={1}>
       <BuildingAFormExample />
+      </Center>
     </NativeBaseProvider>
   );
 }
 ```
 
-Internal link for Community Integration ( Formik and React Hook Forms ).
+## Community Integration
 
-# Community Integration
-
-NativeBase can be used with other popular Form libraries like Formik and React Hook Forms as well. For more details checkout Community Integration section of the docs.
+NativeBase can be used with other popular Form libraries like [`Formik`](nativebase-formik-ui.md) and [`React Hook Forms`](reactHooksForm.md) as well. For more details checkout Community Integration section of the docs.

@@ -9,7 +9,7 @@ title: Login/Signup Forms
 
 ```SnackPlayer name=login dependencies=react-native-linear-gradient
 import * as React from 'react';
-import { FontAwesome5 } from '@expo/vector-icons';
+import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 import {
   NativeBaseProvider,
   Box,
@@ -21,7 +21,9 @@ import {
   Link,
   Button,
   Icon,
+  IconButton,
   HStack,
+  Divider
 } from 'native-base';
 
 export default function App() {
@@ -31,70 +33,77 @@ export default function App() {
       <Box
         flex={1}
         p={2}
-        bg="white"
-        px={5}
-        mt={{ base: 16, lg: 0 }}
-        maxWidth="600px"
-        mx="auto"
-        w="100%"
+        w="90%"
+        mx='auto'
       >
-        <Heading size="lg">
+        <Heading size="lg" color='primary.500'>
           Welcome
         </Heading>
-        <Heading color="coolGray.400" size="md" mt={1}>
+        <Heading color="muted.400" size="xs">
           Sign in to continue!
         </Heading>
 
-        <VStack space={5} mt={20}>
+        <VStack space={2} mt={5}>
           <FormControl>
-            <FormControl.Label>
-              <Text bold fontSize="sm" >
+            <FormControl.Label _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
                 Email ID
-              </Text>
             </FormControl.Label>
             <Input />
           </FormControl>
-          <FormControl mb={6}>
-            <FormControl.Label>
-              <Text bold fontSize="sm">
+          <FormControl mb={5}>
+            <FormControl.Label  _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
                 Password
-              </Text>
             </FormControl.Label>
             <Input type="password" />
-            <FormControl.HelperText>
-              <Link
-                _text={{ fontSize: 'xs', fontWeight: '700', color:'cyan.500' }}
-                alignSelf="flex-end"
-                mt={1}
-              >
-                Forget Password?
-              </Link>
-            </FormControl.HelperText>
+            <Link
+              _text={{ fontSize: 'xs', fontWeight: '700', color:'cyan.500' }}
+              alignSelf="flex-end"
+              mt={1}
+            >
+              Forget Password?
+            </Link>
           </FormControl>
-          <Button bg='cyan.500' colorScheme="cyan" _text={{color: 'white' }}>
+          <VStack  space={2}>
+          <Button colorScheme="cyan" _text={{color: 'white' }}>
               Login
           </Button>
-          <Button
 
-            bg="blueGray.200"
-            opacity="0.5"
-            _text={{ color: 'lightBlue.600', fontSize: 'sm' }}
+<HStack justifyContent="center" alignItem='center'>
+          <IconButton
+            variant='unstyled'
             startIcon={
               <Icon
-                as={<FontAwesome5 name="facebook-square" />}
-                color="lightBlue.600"
+                as={< MaterialCommunityIcons name="facebook" />}
+                color='muted.700'
+                size='sm'
+              />
+            }
+          />
+          <IconButton
+            variant='unstyled'
+            startIcon={
+              <Icon
+                as={< MaterialCommunityIcons name="google" />}
+                color='muted.700'
                 size="sm"
               />
             }
-            _pressed={{
-              bg: 'blueGray.400',
-            }}
-          >
-            Connect with Facebook
-          </Button>
-          <HStack mt={12} justifyContent="center">
-            <Text>I'm a new user. </Text>
-            <Link _text={{ color: 'cyan.500' }} href="#">
+          />
+          <IconButton
+            variant='unstyled'
+            startIcon={
+              <Icon
+                as={< MaterialCommunityIcons name="github" />}
+                color='muted.700'
+                size="sm"
+              />
+            }
+          />
+          </HStack>
+          </VStack>
+          <HStack justifyContent="center">
+            <Text fontSize='sm' color='muted.700' fontWeight={400}>I'm a new user. </Text>
+            <Link _text={{ color: 'cyan.500', bold: true, fontSize: 'sm' }} href="#">
               Sign Up
             </Link>
           </HStack>
@@ -109,7 +118,7 @@ export default function App() {
 
 ```SnackPlayer name=Signup dependencies=react-native-linear-gradient
 import * as React from 'react';
-import { FontAwesome5 } from '@expo/vector-icons';
+import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 import {
   NativeBaseProvider,
   Box,
@@ -121,81 +130,85 @@ import {
   Link,
   Button,
   Icon,
+  IconButton,
   HStack,
+  Divider
 } from 'native-base';
 
 export default function App() {
 
-return (
-    <NativeBaseProvider>
-      <Box flex={1} p={2} bg="white" px={5} mt={{ base: 10, lg:0 }}
-        maxWidth="600px"
-        mx="auto"
-        w="100%"
-        safeAr
+ return (
+      <NativeBaseProvider>
+      <Box
+        flex={1}
+        p={2}
+        w="90%"
+        mx='auto'
       >
-        <Heading size="lg">
-          Create Account
+        <Heading size="lg" color='primary.500'>
+          Welcome
         </Heading>
-        <Heading color="coolGray.400" size="md" mt={1}>
-          Sign up to get Started!
+        <Heading color="muted.400" size="xs">
+          Sign up to continue!
         </Heading>
 
-        <VStack space={5} mt={{ base: 20, lg: 8 }}>
-         <FormControl>
-            <FormControl.Label>
-              <Text bold fontSize="sm" >
-               Fullname
-              </Text>
+        <VStack space={2} mt={5}>
+          <FormControl>
+            <FormControl.Label _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
+                Email
             </FormControl.Label>
             <Input />
-
           </FormControl>
           <FormControl>
-            <FormControl.Label>
-              <Text bold fontSize="sm" >
-                Email ID
-              </Text>
-            </FormControl.Label>
-            <Input />
-          </FormControl>
-          <FormControl mb={6}>
-            <FormControl.Label>
-              <Text bold fontSize="sm" >
+            <FormControl.Label  _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
                 Password
-              </Text>
             </FormControl.Label>
             <Input type="password" />
-
           </FormControl>
-          <Button
-          bg="cyan.500"
-           _text={{ color: 'white' }} >
-             Signup
+          <FormControl>
+            <FormControl.Label  _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
+               Confirm Password
+            </FormControl.Label>
+            <Input type="password" />
+          </FormControl>
+          <VStack  space={2}  mt={5}>
+          <Button colorScheme="cyan" _text={{color: 'white' }}>
+              SignUp
           </Button>
-          <Button
-            bg="blueGray.200"
-            opacity="0.5"
-            _text={{ color: 'lightBlue.600', fontSize: 'sm' }}
+
+<HStack justifyContent="center" alignItem='center' >
+          <IconButton
+            variant='unstyled'
             startIcon={
               <Icon
-                as={<FontAwesome5 name="facebook-square" />}
-                color="lightBlue.600"
+                as={< MaterialCommunityIcons name="facebook" />}
+                color='muted.700'
+                size='sm'
+              />
+            }
+          />
+          <IconButton
+            variant='unstyled'
+            startIcon={
+              <Icon
+                as={< MaterialCommunityIcons name="google" />}
+                color='muted.700'
                 size="sm"
               />
             }
-            _pressed={{
-              bg: 'blueGray.400',
-            }}
-          >
-            Connect with Facebook
-          </Button>
-          <HStack mt={12} justifyContent="center">
-            <Text>I'm a already a member. </Text>
-            <Link _text={{ color: 'cyan.500' }} href="#">
-              Sign In
-            </Link>
+          />
+          <IconButton
+            variant='unstyled'
+            startIcon={
+              <Icon
+                as={< MaterialCommunityIcons name="github" />}
+                color='muted.700'
+                size="sm"
+              />
+            }
+          />
           </HStack>
+          </VStack>
         </VStack>
       </Box>
     </NativeBaseProvider>
