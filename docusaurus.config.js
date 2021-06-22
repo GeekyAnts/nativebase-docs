@@ -6,10 +6,10 @@ module.exports = {
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
-    {
-      src: this.baseUrl + '/js/google-tag-manager.js',
-      defer: true,
-    },
+    // {
+    //   src: this.baseUrl + '/js/google-tag-manager.js',
+    //   defer: true,
+    // },
     {
       src: 'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
@@ -21,10 +21,7 @@ module.exports = {
   favicon: 'img/favicon.svg',
   organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
-  plugins: [
-    'docusaurus-tailwindcss-loader',
-    '@docusaurus/plugin-google-gtag'
-  ],
+  plugins: ['docusaurus-tailwindcss-loader', '@docusaurus/plugin-google-gtag'],
   themeConfig: {
     // hideableSidebar: true,
     // respectPrefersColorScheme: true,
