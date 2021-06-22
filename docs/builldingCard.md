@@ -15,45 +15,35 @@ And lastly a description.
 
 ```SnackPlayer name=Card
 import React from "react";
-import { VStack, HStack, Avatar, Image, Text, NativeBaseProvider, Center } from "native-base";
+import { VStack, HStack, Avatar, Image, Text, NativeBaseProvider,
+AspectRatio, Center, Box, Stack, Heading } from "native-base";
 
-import { ScrollView } from 'react-native';
 function CardComponent(){
  return(
-   <ScrollView>
- <VStack mx={4} my={12}  space={4} border={1} borderRadius="lg" safeArea>
-      <HStack alignItems="center" px={4} pt={4}>
-        <Avatar borderWidth={1} size="lg" />
-        <VStack ml={2} space={2}>
-          <Text fontSize="lg" bold underline>
-            Title
-          </Text>
-          <Text>Sub Title</Text>
-        </VStack>
-      </HStack>
-      <Image
-        w="100%"
-        height={72}
-        source={{
-          uri:
-            "https://images.pexels.com/photos/5199154/pexels-photo-5199154.jpeg?cs=srgb&dl=pexels-tamara-velazquez-5199154.jpg&fm=jpg",
-        }}
-        alt="NativeBase logo"
-      ></Image>
-      <VStack px={4} pb={4}>
-        <Text>
-          NativeBase <Text bold>v3</Text> a universal Design System for Mobile &
-          Web built for React Native and React with the same API. Ships a bunch
-          of components for most of the use-cases that includes Button, AppBar,
-          Dialog, Modal and what not.
+    <Box
+      shadow={2}
+      rounded="lg"
+      maxWidth="90%"
+    >
+      <Image source={{uri: "https://sample-example.nativebase.io/static/media/dawki-river.ebbf5434.png"}} alt="image base" width={"100%"} height={150} roundedTop="md" />
+      <Text bold position="absolute" color="white" top={0} m={[4, 4, 8]}>
+        NEWS
+      </Text>
+      <Stack space={4} p={[4, 4, 8]}>
+        <Text color="gray.400">June 22, 2021</Text>
+        <Heading size={["md", "lg", "md"]} noOfLines={2}>
+          The Stunning Dawki River in Meghalaya is So Clear That Boats Appear
+          Floating in Air
+        </Heading>
+        <Text lineHeight={[5, 5, 7]} noOfLines={[4, 4, 2]}>
+          With lush green meadows, rivers clear as crystal, pine-covered
+          hills, gorgeous waterfalls, lakes and majestic forests, the
+          mesmerizing. Meghalaya is truly a Nature lover’s paradise…
         </Text>
-      </VStack>
-    </VStack>
-    </ScrollView>
+      </Stack>
+      </Box>
     );
 }
-
-
 
 export default function () {
   return (
