@@ -21,7 +21,7 @@ module.exports = {
   favicon: 'img/favicon.svg',
   organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
-  plugins: ['docusaurus-tailwindcss-loader', '@docusaurus/plugin-google-gtag'],
+  plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
     // hideableSidebar: true,
     // respectPrefersColorScheme: true,
