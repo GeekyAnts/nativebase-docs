@@ -98,7 +98,7 @@ function CustomDrawerContent(props) {
             ))}
           </VStack>
           <VStack space={5}>
-            <Text fontWeight={500} px={5} color="gray.500">Labels</Text>
+            <Text fontWeight={500} fontSize={14} px={5} color="gray.500">Labels</Text>
             <VStack space={3}>
               <Pressable
                 px={5}
