@@ -10,6 +10,7 @@ SwipeListView is a vertical ListView with rows that swipe open and closed. Handl
 Here is an example to show how easily and quickly we can use [react-native-swipe-list](https://www.npmjs.com/package/react-native-swipe-list-view) in NativeBase.
 
 ```SnackPlayer name=SwipeList dependencies=react-native-swipe-list-view
+
 import React, { useState } from 'react';
 import {
     Dimensions,
@@ -17,7 +18,7 @@ import {
     View,
 } from 'react-native';
 
-import {NativeBaseProvider,Box, Text,Pressable,Heading,IconButton,Icon, HStack } from 'native-base';
+import {NativeBaseProvider,Box, Text,Pressable,Heading,IconButton,Icon, HStack, Avatar } from 'native-base';
 import { SwipeListView } from 'react-native-swipe-list-view';
 import { MaterialIcons,Ionicons } from '@expo/vector-icons';
 
@@ -60,8 +61,8 @@ function Basic() {
         console.log('This row opened', rowKey);
     };
 
-    const renderItem = data => (
-        <Box >
+    const renderItem = ({item, index}) => (
+        <Box>
             <Pressable
                 onPress={() => console.log('You touched me')}
                 alignItems= 'center'
@@ -76,7 +77,17 @@ function Basic() {
                 }}
                 py={8}
             >
-                  <Text >I am {data.item.text} in a SwipeListView</Text>
+
+                  <HStack width="100%" px={4}>
+                    <HStack space={2} alignItems="center">
+                      <Avatar color="white" bg={"secondary.700"}>
+                        {index}
+                      </Avatar>
+                      <Text>
+                        {item.text}
+                      </Text>
+                    </HStack>
+                  </HStack>
             </Pressable>
             </Box>
     );
@@ -86,7 +97,6 @@ function Basic() {
         flex= {1}
         pl={2}
         >
-            <Text alignSelf="center">Left</Text>
             <Pressable
              px={4}
               ml='auto'
@@ -122,7 +132,6 @@ function Basic() {
                 data={listData}
                 renderItem={renderItem}
                 renderHiddenItem={renderHiddenItem}
-                leftOpenValue={45}
                 rightOpenValue={-130}
                 previewRowKey={'0'}
                 previewOpenValue={-40}
