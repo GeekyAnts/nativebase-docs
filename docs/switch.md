@@ -40,5 +40,11 @@ The `Switch` component is an alternative to the Checkbox component. You can swit
 ## Accessibility
 
 - On mobile, uses native switch which is fully accessible.
-- On web, it uses checkbox with a `role` set to `switch`.
-- `Spacebar` toggles the switch.
+- On web, it uses checkbox with a [role](https://www.w3.org/TR/wai-aria-1.2/#switch) set to `switch`.
+
+
+### Keyboard Interactions
+
+| Name                | Description |
+| --------------------|-------------|
+| Space   | Toggles the component's state. |
