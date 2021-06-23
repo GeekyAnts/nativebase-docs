@@ -88,3 +88,8 @@ Extends `MenuItem`.
 ## Styling
 
 <ComponentTheme name="menu" />
+
+
+## Accessibility
+
+Adheres to the [Menu WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#menu)
