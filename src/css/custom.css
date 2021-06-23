@@ -673,18 +673,6 @@ html[data-theme='dark'] .menu__link.menu__link--sublist {
   width: calc(100% + var(--ifm-spacing-horizontal));
 }
 
-a[href*='/next/install-expo'].menu__link {
-  display: none !important;
-}
-a[href*='/next/install-rn'].menu__link {
-  display: none !important;
-}
-a[href*='/next/install-cra'].menu__link {
-  display: none !important;
-}
-a[href*='/next/install-next'].menu__link {
-  display: none !important;
-}
 a[href*='/install-expo'].menu__link {
   display: none !important;
 }
