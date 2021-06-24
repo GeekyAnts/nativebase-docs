@@ -50,6 +50,8 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 <ComponentTheme name="tooltip" />
 
 ## Accessibility
+
+Adheres to the [Tooltip WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-1.1/#tooltip)
 ### Keyboard Interactions
 
 | Name                | Description |

@@ -62,8 +62,3 @@ List is used to display list items.
 ```ComponentPropTable path=primitives,List,ListItem.tsx
 
 ```
-
-
-## Accessibility
-
-Adheres to the [List WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#Listbox)
