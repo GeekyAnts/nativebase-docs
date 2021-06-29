@@ -65,3 +65,25 @@ export default function () {
 ```
 
 In the above example, you'll get a **solid teal Button** in **light** mode whereas an **outline amber Button** in **dark** mode. You can get creative and make other properties respond to the color mode as well.
+
+## 3. By using \_ligth and \_dark props
+
+In this approach we pass the required props inside \_light and \_dark based on the requirement.
+
+```tsx
+import React from 'react';
+import { Button } from 'native-base';
+
+export default function () {
+  return (
+    <Button
+      _light={{ bg: 'teal', _text: { color: 'white' } }}
+      _dark={{ bg: 'amber' }}
+    >
+      Sample
+    </Button>
+  );
+}
+```
+
+In the above example, you'll get a **teal Button** in **light** mode whereas an **amber Button** in **dark** mode. You can get creative and make other properties respond to the color mode as well.
