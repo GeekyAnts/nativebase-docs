@@ -7,7 +7,36 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { TileLink } from '../../src/components';
 
-### Create a new CRA project
+  <Tabs
+  defaultValue='template'
+  values={[
+  { label: 'NativeBase template', value: 'template' },
+  { label: 'Create React app CLI', value: 'cli' }
+  ]}>
+
+  <TabItem value="template">
+
+The easiest way to get started with NativeBase in create react app is using NativeBase template.
+
+### JavaScript
+
+```bash
+npx create-react-app my-app --template nativebase
+yarn start
+```
+
+### TypeScript
+
+```bash
+npx create-react-app my-app --template nativebase-typescript
+yarn start
+```
+
+  </TabItem>
+
+  <TabItem value="cli">
+
+Create a new CRA project
 
 ```bash
 npx create-react-app my-app
@@ -59,6 +88,10 @@ function App() {
   );
 }
 ```
+
+  </TabItem>
+
+  </Tabs>
 
 <div style={{ textAlign: 'center' }}>
   <img src="/img/minion.gif" />
