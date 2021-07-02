@@ -1,6 +1,6 @@
 ---
 id: formControl
-title: Form Control
+title: FormControl
 ---
 
 import { ComponentTheme } from '../src/components';

@@ -78,3 +78,17 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 ## Styling
 
 <ComponentTheme name="popover" />
+
+## Accessibility
+
+Adheres to the [Dialog WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal)
+
+### Keyboard Interactions
+
+| Name                | Description |
+| --------------------|-------------|
+| Space   | Opens/closes the popover. |
+| Enter   | Opens/closes the popover. |
+| Tab     | Moves focus to the next focusable element. |
+| Shift + Tab | Moves focus to the previous focusable element. |
+| Esc     | Closes the popover and moves focus to Popover.Trigger. | 

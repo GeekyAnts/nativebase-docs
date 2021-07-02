@@ -2,14 +2,14 @@ module.exports = {
   themes: ['@docusaurus/theme-live-codeblock'],
   title: 'NativeBase',
   tagline: 'A complete component library for React Native Ecosystem',
-  url: 'https://alpha-docs.nativebase.io',
+  url: 'https://docs.nativebase.io',
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
-    // {
-    //   src: this.baseUrl + '/js/google-tag-manager.js',
-    //   defer: true,
-    // },
+    {
+      src: '/js/fix-location.js',
+      defer: true,
+    },
     {
       src: 'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
