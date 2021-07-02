@@ -10,5 +10,3 @@ if (
     window.location.pathname.substr(0, window.location.pathname.length - 1)
   );
 }
-
-alert('eeffe');
