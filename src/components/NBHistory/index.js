@@ -17,7 +17,7 @@ export default function NBHistory() {
       <div className="flex items-center">
         <div
           className="w-5 h-5 bg-gray-500 rounded-full"
-          style={{ marginLeft: '-12px' }}
+          style={{ marginLeft: '-12px', flexShrink: 0 }}
         ></div>
         <div
           className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + bgColor}
@@ -36,7 +36,7 @@ export default function NBHistory() {
       <div className="flex items-center mt-8">
         <div
           className="w-5 h-5 bg-gray-500 rounded-full"
-          style={{ marginLeft: '-12px' }}
+          style={{ marginLeft: '-12px', flexShrink: 0 }}
         ></div>
         <div
           className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + bgColor}
@@ -55,7 +55,7 @@ export default function NBHistory() {
       <div className="flex items-center mt-8">
         <div
           className={'w-5 h-5 rounded-full ' + activeBg}
-          style={{ marginLeft: '-12px' }}
+          style={{ marginLeft: '-12px', flexShrink: 0 }}
         ></div>
         <div
           className={'ml-8 py-5 px-6 shadow-xl rounded-md ' + activeBg}
