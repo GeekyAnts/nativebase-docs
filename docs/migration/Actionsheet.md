@@ -8,8 +8,8 @@ We have sliced [`Actionsheet`](actionSheet.md) into multiple smaller component w
 Migrating Checkbox components can broadly described in these points:
 
 - **options** (prop) → `Actionsheet.Item` (component).
-- Pros like **cancelButtonIndex**, **cancelButtonIndex** are _no longer required_ as components like `Actionsheet.Item` can be customised as per need.
-- **title** (prop) → `Actionsheet.Header` (component).
+- Props like **cancelButtonIndex**, **cancelButtonIndex** are _no longer required_ as components like `Actionsheet.Item` can be customised as per need.
+<!-- - **title** (prop) → `Actionsheet.Header` (component). -->
 - Declarative approach to show and hide using `isOpen` prop, instead of `show()` and `hide()`.
 
 ## Code Comparison
