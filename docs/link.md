@@ -62,3 +62,7 @@ Link implements **[Box](box.md)**, so all the Box Props can be passed to it.
 ## Styling
 
 <ComponentTheme name="link" />
+
+## Accessibility
+
+Adheres to the [Link WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#link)

@@ -20,6 +20,7 @@ import { TileLink } from '../src/components';
 
 ```bash
 npx create-react-native-app -t with-nextjs
+cd [project]/
 ```
 
 [Refer official guide](https://docs.expo.io/guides/using-nextjs/) if you need additional configurations.
@@ -36,7 +37,7 @@ npx create-react-native-app -t with-nextjs
   <TabItem value="yarn">
 
 ```bash
-yarn add native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+yarn add native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
   </TabItem>
@@ -44,7 +45,7 @@ yarn add native-base@next react-native-svg styled-components styled-system react
   <TabItem value="npm">
 
 ```bash
-npm install native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+npm install native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
   </TabItem>
@@ -75,7 +76,7 @@ npx create-next-app --example with-react-native-web with-react-native-web-app
   <TabItem value="yarn">
 
 ```bash
-yarn add native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+yarn add react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
   </TabItem>
@@ -83,7 +84,7 @@ yarn add native-base@next react-native-svg styled-components styled-system react
   <TabItem value="npm">
 
 ```bash
-npm install native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+npm install react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
   </TabItem>
@@ -151,7 +152,7 @@ module.exports = withPlugins([withTM], {
 
 ### Run the Hello world example
 
-Put the below code in your App.js
+Put the below code in your pages/index.js
 
 ```jsx
 import React from 'react';

@@ -1,6 +1,6 @@
 const REPO_LINK = 'https://github.com/GeekyAnts/NativeBase';
 
-const REPO_BRANCH = 'v3-pre-beta';
+const REPO_BRANCH = 'development';
 
 module.exports = {
   REPO_LINK,
