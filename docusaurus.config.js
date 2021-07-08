@@ -6,8 +6,16 @@ module.exports = {
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
+    // {
+    //   src: this.baseUrl + '/js/google-tag-manager.js',
+    //   defer: true,
+    // },
     {
-      src: this.baseUrl + '/js/google-tag-manager.js',
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-ZTSFCSJK8X',
+      async: true,
+    },
+    {
+      src: '/js/google-analytics.js',
       defer: true,
     },
     {
