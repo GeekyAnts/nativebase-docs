@@ -9,7 +9,7 @@ Migrating Checkbox components can broadly described in these points:
 
 - **options** (prop) → `Actionsheet.Item` (component).
 - Props like **cancelButtonIndex**, **cancelButtonIndex** are _no longer required_ as components like `Actionsheet.Item` can be customised as per need.
-<!-- - **title** (prop) → `Actionsheet.Header` (component). -->
+- **title** (prop) → NativeBase components such as `Heading` and `Text` can be used inside `ActionSheet.Content` to show the title. 
 - Declarative approach to show and hide using `isOpen` prop, instead of `show()` and `hide()`.
 
 ## Code Comparison
