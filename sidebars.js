@@ -4,7 +4,12 @@ module.exports = {
       type: 'category',
       label: 'Introduction',
       collapsed: false,
-      items: ['nativebase', 'installation', 'setup-provider'],
+      items: [
+        'nativebase',
+        'installation',
+        'setup-provider',
+        'vsCodeExtension',
+      ],
     },
     {
       type: 'category',
