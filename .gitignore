@@ -20,3 +20,5 @@ yarn-error.log*
 
 versioned_repo/
 build/
+www/
+old_build/

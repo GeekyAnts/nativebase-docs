@@ -78,7 +78,7 @@ const simplifyMeta = (meta) => {
 const getPropDetail = (meta, repoPath) => {
   const { path: subPath, ...objectifiedMeta } = simplifyMeta(meta);
   const filePath = path.resolve(repoPath, 'src', 'components', ...subPath);
-  console.log('filepath: ', filePath);
+  // console.log('filepath: ', filePath);
   const code = docgen.parse(filePath);
 
   // NOTE: writing on code for testing

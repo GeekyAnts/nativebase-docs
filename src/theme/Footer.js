@@ -28,10 +28,6 @@ const docs = [
     name: 'Examples',
     url: 'https://alpha-docs.nativebase.io/todo-example',
   },
-  {
-    name: 'FAQ',
-    url: 'https://alpha-docs.nativebase.io/faq',
-  },
 ];
 const more = [
   {
@@ -52,7 +48,10 @@ const more = [
   },
 ];
 export default function Footer() {
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
+  const { isDarkTheme } = useThemeContext();
+  const linkHoverColor = isDarkTheme
+    ? 'hover:text-cyan-700'
+    : 'hover:text-cyan-600';
   return (
     <div className="tailwind">
       <div
@@ -74,7 +73,7 @@ export default function Footer() {
                 return (
                   <div className="text-gray-500 hover:underline" key={idx}>
                     <a
-                      className={`hover:text-cyan-500 ${
+                      className={` ${linkHoverColor} ${
                         isDarkTheme ? 'text-gray-200' : 'text-gray-500'
                       }`}
                       rel="noreferrer"
@@ -100,7 +99,7 @@ export default function Footer() {
                 return (
                   <div className="hover:underline " key={idx}>
                     <a
-                      className={`hover:text-cyan-500 ${
+                      className={` ${linkHoverColor} ${
                         isDarkTheme ? 'text-gray-200' : 'text-gray-500'
                       }`}
                       rel="noreferrer"
@@ -127,7 +126,7 @@ export default function Footer() {
                 return (
                   <div className="hover:underline" key={idx}>
                     <a
-                      className={`hover:text-cyan-500 ${
+                      className={` ${linkHoverColor} ${
                         isDarkTheme ? 'text-gray-200' : 'text-gray-500'
                       } `}
                       rel="noreferrer"
@@ -144,7 +143,7 @@ export default function Footer() {
           <div className="flex flex-col space-y-5 text-gray-500 list-none">
             <div className="hover:underline">
               <a
-                className={`hover:text-cyan-500 ${
+                className={` ${linkHoverColor} ${
                   isDarkTheme ? 'text-gray-200' : 'text-gray-500'
                 }`}
                 href="https://geekyants.com/?utm_source=RnD&utm_medium=Landing_Page&utm_campaign=NativeBase_3"
@@ -233,10 +232,14 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
+            <div
+              className={`text-sm ${
+                isDarkTheme ? 'text-gray-200' : 'text-gray-500 '
+              }`}
+            >
+              Copyright © 2021 NativeBase
+            </div>
           </div>
-        </div>
-        <div className="mt-10 text-center text-gray-500 md:mt-5">
-          Copyright © 2021 NativeBase
         </div>
       </div>
     </div>
