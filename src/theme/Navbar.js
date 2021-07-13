@@ -118,11 +118,13 @@ function Navbar() {
                     key={i}
                     className={`hidden xl:block text-base ${nativeBaseV2Color}`}
                   >
-                    looking for{' '}
+                    Looking for{' '}
                     <a
                       href="https://v2.nativebase.io/"
                       target="_blank"
-                      className={`leading-5 text-cyan-${isDarkTheme?'600':'700'} font-medium`}
+                      className={`leading-5 text-cyan-${
+                        isDarkTheme ? '600' : '700'
+                      } font-medium`}
                     >
                       v2.0
                     </a>
@@ -284,8 +286,8 @@ function Navbar() {
                     return (
                       <div
                         key={i}
-                        className={`text-base px-4 py-1`}
-                        style={{ color: !isDarkTheme ? '#606770' : '#DADDE1' }}
+                        className={`px-4 text-sm py-1`}
+                        style={{ color: !isDarkTheme ? '#606770' : '#9BA4AF' }}
                       >
                         Looking for{' '}
                         <a

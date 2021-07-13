@@ -48,3 +48,15 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 ## Styling
 
 <ComponentTheme name="tooltip" />
+
+## Accessibility
+
+Adheres to the [Tooltip WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-1.1/#tooltip)
+### Keyboard Interactions
+
+| Name                | Description |
+| --------------------|-------------|
+| Space   | If open, closes the tooltip without delay. |
+| Enter   | If open, closes the tooltip without delay. |
+| Tab     | Moves focus to the next focusable element. |
+| Esc     | If open, closes the tooltip without delay. | 

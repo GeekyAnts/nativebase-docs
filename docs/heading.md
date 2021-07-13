@@ -53,4 +53,4 @@ import { Heading } from 'native-base';
 
 ## Styling
 
-<ComponentTheme name="formControl" fileName="form-control" />
+<ComponentTheme name="heading" fileName="heading" />

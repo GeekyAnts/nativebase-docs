@@ -57,6 +57,6 @@ import { Progress } from 'native-base';
 
 ## Accessibility
 
-- On web and mobile, Progress has `role` set to `progressbar` to denote that it is a progress bar.
+- Adheres to the `progressbar` [role requirements.](https://www.w3.org/TR/wai-aria-1.2/#progressbar)
 - On web, `aria-valuenow`, `aria-valuemin` and `aria-valuemax` to ensure the progress percent is visible to screen readers.
 - On mobile, [accessibilityValue](https://reactnative.dev/docs/accessibility#accessibilityvalue) is used to ensure it's announced by Talkback and VoiceOver.
