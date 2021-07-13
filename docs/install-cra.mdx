@@ -7,7 +7,38 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { TileLink } from '../src/components';
 
-### Create a new CRA project
+  <Tabs
+  defaultValue='template'
+  values={[
+  { label: 'New Project', value: 'template' },
+  { label: 'Existing Project', value: 'cli' }
+  ]}>
+
+  <TabItem value="template">
+
+The easiest way to get started with NativeBase in create react app is using NativeBase template.
+
+### JavaScript
+
+```bash
+npx create-react-app my-app --template nativebase
+cd my-app/
+yarn start
+```
+
+### TypeScript
+
+```bash
+npx create-react-app my-app --template nativebase-typescript
+cd my-app/
+yarn start
+```
+
+  </TabItem>
+
+  <TabItem value="cli">
+
+Create a new CRA project If not exist
 
 ```bash
 npx create-react-app my-app
@@ -28,7 +59,7 @@ cd my-app
   <TabItem value="yarn">
 
 ```bash
-yarn add react-native-web native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+yarn add react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
   </TabItem>
@@ -36,7 +67,7 @@ yarn add react-native-web native-base@next react-native-svg styled-components st
   <TabItem value="npm">
 
 ```bash
-npm install react-native-web native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+npm install react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
   </TabItem>
@@ -59,6 +90,10 @@ function App() {
   );
 }
 ```
+
+  </TabItem>
+
+  </Tabs>
 
 <div style={{ textAlign: 'center' }}>
   <img src="/img/minion.gif" />

@@ -12,7 +12,7 @@ An Action Sheet is a dialog that displays a set of options. It appears on top of
 NativeBase exports 3 modal-related components:
 
 - **Actionsheet**: Provides the context and state for all components.
-- **Actionsheet.Content**: Wrapper for the **Actionsheet.Header and Actionsheet.Item** components.
+- **Actionsheet.Content**: Component to wrap the list of **Actionsheet.Item** components.
 - **Actionsheet.Item**: A button to wrap the options of the Actionsheet.
 
 ```jsx

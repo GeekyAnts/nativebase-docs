@@ -15,7 +15,7 @@ export default function KitchenSinkIframe() {
         importance="low"
         frameBorder="0"
         className="kichen-sink-iframe-iframe"
-        src="https://kitchen-sink.vercel.app/"
+        src="https://kitchensink.nativebase.io/"
       ></iframe>
     </div>
   );

@@ -177,7 +177,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'RN Components',
+      label: 'ReactNative Components',
       collapsed: false,
       items: [
         'scrollview',
@@ -211,7 +211,7 @@ module.exports = {
       type: 'category',
       label: 'Examples',
       collapsed: false,
-      items: ['todo-example'],
+      items: ['todo-example', 'kitchen-sink'],
     },
     {
       type: 'category',
