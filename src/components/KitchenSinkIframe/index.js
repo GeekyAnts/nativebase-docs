@@ -9,13 +9,13 @@ export default function KitchenSinkIframe() {
           fill-rule="evenodd"
         ></path>
       </svg>
-      <div className="kichen-sink-iframe-safe-aria"></div>
+      {/* <div className="kichen-sink-iframe-safe-aria"></div> */}
       <iframe
         loading="lazy"
         importance="low"
         frameBorder="0"
         className="kichen-sink-iframe-iframe"
-        src="https://kitchen-sink.vercel.app/"
+        src="https://kitchensink.nativebase.io/"
       ></iframe>
     </div>
   );

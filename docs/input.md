@@ -3,6 +3,8 @@ id: input
 title: Input
 ---
 
+import { ComponentTheme } from '../src/components';
+
 The `Input` component is a component that is used to get user input in a text field.
 
 ## Examples
@@ -68,3 +70,7 @@ The `Input` component is a component that is used to get user input in a text fi
 ```ComponentPropTable path=primitives,Input,InputGroup.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="input" />

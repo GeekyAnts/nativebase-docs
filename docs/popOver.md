@@ -3,6 +3,8 @@ id: popOver
 title: Popover
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Popover` is a non-modal dialog that floats around a trigger. It's used to display contextual information to the user, and should be paired with a pressable trigger element.
 
 ## Import
@@ -72,3 +74,21 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 ### Popover.CloseButton 
 
 `Popover.CloseButton` composes the [`Button`](button.md) component.
+
+## Styling
+
+<ComponentTheme name="popover" />
+
+## Accessibility
+
+Adheres to the [Dialog WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal)
+
+### Keyboard Interactions
+
+| Name                | Description |
+| --------------------|-------------|
+| Space   | Opens/closes the popover. |
+| Enter   | Opens/closes the popover. |
+| Tab     | Moves focus to the next focusable element. |
+| Shift + Tab | Moves focus to the previous focusable element. |
+| Esc     | Closes the popover and moves focus to Popover.Trigger. | 

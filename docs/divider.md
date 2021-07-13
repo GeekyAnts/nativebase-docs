@@ -3,6 +3,8 @@ id: divider
 title: Divider
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `Divider` is used to visually separate content in a list or group.
 
 ## **Import**
@@ -44,6 +46,10 @@ You can use `bg` or `backgroundColor` to change the divider's color and `width` 
 ```ComponentPropTable path=composites,Divider,index.tsx
 
 ```
+
+## Styling
+
+<ComponentTheme name="divider" />
 
 ## Accessibility
 

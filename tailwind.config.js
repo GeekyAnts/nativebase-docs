@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 module.exports = {
   purge: ['./src/**/*.html', './src/**/*.js', './src/**/*.jsx', './docs/*.mdx'],
   darkMode: false, // or 'media' or 'class'
@@ -29,6 +30,7 @@ module.exports = {
           800: '#27272a',
           900: '#18181b',
         },
+        blueGray: colors.blueGray,
         blue: {
           50: '#eff6ff',
           100: '#dbeafe',
@@ -65,6 +67,8 @@ module.exports = {
           800: '#3730a3',
           900: '#312e81',
         },
+        coolGray: colors.coolGray,
+        blueGray: colors.blueGray,
         teal: {
           50: '#f0fdfa',
           100: '#ccfbf1',

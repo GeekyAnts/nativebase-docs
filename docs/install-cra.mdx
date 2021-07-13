@@ -7,14 +7,43 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { TileLink } from '../src/components';
 
-### Create a new CRA project
+  <Tabs
+  defaultValue='template'
+  values={[
+  { label: 'NativeBase template', value: 'template' },
+  { label: 'Create React app CLI', value: 'cli' }
+  ]}>
+
+  <TabItem value="template">
+
+The easiest way to get started with NativeBase in create react app is using NativeBase template.
+
+### JavaScript
+
+```bash
+npx create-react-app my-app --template nativebase
+yarn start
+```
+
+### TypeScript
+
+```bash
+npx create-react-app my-app --template nativebase-typescript
+yarn start
+```
+
+  </TabItem>
+
+  <TabItem value="cli">
+
+Create a new CRA project
 
 ```bash
 npx create-react-app my-app
 cd my-app
 ```
 
-[Refer this link](https://necolas.github.io/react-native-web/docs/installation/) for additional installation instruction.
+[Refer this guide](https://necolas.github.io/react-native-web/docs/installation/) if you need additional configurations.
 
 ### Install dependencies
 
@@ -28,7 +57,7 @@ cd my-app
   <TabItem value="yarn">
 
 ```bash
-yarn add react-native-web native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+yarn add react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
   </TabItem>
@@ -36,7 +65,7 @@ yarn add react-native-web native-base@next react-native-svg styled-components st
   <TabItem value="npm">
 
 ```bash
-npm install react-native-web native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+npm install react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
   </TabItem>
@@ -60,32 +89,36 @@ function App() {
 }
 ```
 
+  </TabItem>
+
+  </Tabs>
+
 <div style={{ textAlign: 'center' }}>
   <img src="/img/minion.gif" />
 </div>
 
 <div className="tailwind">
   <div className="mt-4 mb-8">
-    <div className="row">
+    <div className="row pl-0 ml-0">
       <TileLink
         title="Customize NativeBaseProvider"
-        url="/setup-provider"
+        url="setup-provider"
         description="NativeBaseProvider provides theme throughout your application"
-        className="bg-gray-700 mt-2"
+        className="bg-blueGray-600 mt-2"
       />
       <TileLink
         title="Theme"
-        url="/setup-provider"
+        url="default-theme"
         description="Read more about the default NativeBase theme and how to override it"
-        className="bg-gray-700  mt-2"
+        className="bg-blueGray-600  mt-2"
       />
     </div>
-    <div className="row mt-2">
+    <div className="row mt-2 pl-0 ml-0">
       <TileLink
         title="Utility props"
-        url="/utility-props"
+        url="utility-props"
         description="Shorthands of commonly used styling props which maps with the provided theme"
-        className="bg-gray-700"
+        className="bg-blueGray-600"
       />
     </div>
   </div>

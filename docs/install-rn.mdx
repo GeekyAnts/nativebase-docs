@@ -10,7 +10,7 @@ import { TileLink } from '../src/components';
 ### Create a new project
 
 ```bash
-react-native init AwesomeNativeBase
+npx react-native init AwesomeNativeBase
 cd AwesomeNativeBase
 ```
 
@@ -26,7 +26,7 @@ values={[
 <TabItem value="yarn">
 
 ```bash
-yarn add native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+yarn add native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
 </TabItem>
@@ -34,7 +34,7 @@ yarn add native-base@next react-native-svg styled-components styled-system react
 <TabItem value="npm">
 
 ```bash
-npm install native-base@next react-native-svg styled-components styled-system react-native-safe-area-context
+npm install native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
 </TabItem>
@@ -71,26 +71,26 @@ function App() {
 
 <div className="tailwind">
   <div className="mt-4 mb-8">
-    <div className="row">
+    <div className="row pl-0 ml-0">
       <TileLink
         title="Customize NativeBaseProvider"
-        url="/setup-provider"
+        url="setup-provider"
         description="NativeBaseProvider provides theme throughout your application"
-        className="bg-gray-700 mt-2"
+        className="bg-blueGray-600 mt-2"
       />
       <TileLink
         title="Theme"
-        url="/setup-provider"
+        url="default-theme"
         description="Read more about the default NativeBase theme and how to override it"
-        className="bg-gray-700  mt-2"
+        className="bg-blueGray-600  mt-2"
       />
     </div>
-    <div className="row mt-2">
+    <div className="row mt-2 pl-0 ml-0">
       <TileLink
         title="Utility props"
-        url="/utility-props"
+        url="utility-props"
         description="Shorthands of commonly used styling props which maps with the provided theme"
-        className="bg-gray-700"
+        className="bg-blueGray-600"
       />
     </div>
   </div>

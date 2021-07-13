@@ -1,6 +1,6 @@
 ---
 id: nativebase
-title: NativeBase
+title: Getting Started
 slug: /
 ---
 
@@ -8,40 +8,37 @@ import { KitchenSinkIframe, TileLink, NBHistory } from '../src/components';
 import TOCInline from '@theme/TOCInline';
 
 <div className="tailwind">
-  <div className="row">
-    <div className="col col--9 mb-12">
-      <p className="text-xl">
-        NativeBase is a design system and component library enabling users to
-        build universal apps. It is built on top of React Native allowing you to
-        develop apps on android, iOS and the web.
+  <div className="row m-0">
+    <div className="col col--9 mb-12 p-0">
+      <p className="text-md">
+       NativeBase is a component library that enables devs to build universal design systems. It is built on top of React Native, allowing you to develop apps for Android, iOS and the Web.
       </p>
-      <div className="mt-8 pl-2">
-        <div className="row mb-2">
+      <div className="mt-8 pl-2 -ml-1">
+        <div className="row mb-2 m-0 -ml-3">
           <TileLink
             title="Installation Guide"
             url="installation"
-            description="Refer installation guide to setup NativeBase in your React Native
-              project"
+            description="Setup NativeBase in your project"
             className="bg-cyan-600"
           />
           <TileLink
             title="Playground"
             url="https://snack.expo.io/@nishanbende/example"
-            description="Try out NativeBase in expo's snackplayer"
+            description="Try NativeBase on Snack by Expo"
             className="bg-teal-600"
           />
         </div>
-        <div className="row">
+        <div className="row m-0 -ml-3">
           <TileLink
             title="Theming"
             url="default-theme"
-            description="Checkout the theming guide to create your own design system"
+            description="Create your own Design System"
             className="bg-pink-600"
           />
           <TileLink
             title="Recipes"
-            url="recipes/login"
-            description="Checkout commonly used recipes in an appliation"
+            url="loginsignupforms"
+            description="Popular Recipes for Apps"
             className="bg-indigo-600"
           />
         </div>
@@ -52,45 +49,35 @@ import TOCInline from '@theme/TOCInline';
       <KitchenSinkIframe />
     </div>
   </div>
-  <h2 className="text-3xl mb-12">Brief history of NativeBase</h2>
+  <h2 className="text-3xl mb-12">A Brief History of NativeBase</h2>
   <div className="mt-4 ml-4">
     <NBHistory />
   </div>
-<h2 className="text-3xl mt-12">Goals</h2>
+<h2 className="text-3xl mt-12">What's New with NativeBase v3?</h2>
+
+We had clear goals in mind while building version 3. Take a look at some of the new features we added:
+
 <div className="mt-8">
-  <h4 className="text-xl">Multi Platform</h4>
+  <h4 className="text-xl">Multiplatform</h4>
   <div>
-    Not only NB supports multiple platforms but it provides an option to
-    customize properties using platform specific props. (etc add more things)
+    NativeBase supports multiple platforms; android, iOS and web. You can also
+    customise properties using platform-specific props.
   </div>
 </div>
 
 <div className="mt-8">
-  <h4 className="text-xl">Inherently beautiful</h4>
+  <h4 className="text-xl">Inherently Beautiful</h4>
   <div>
-    NB ships with a default theme which provides out of the box beautiful
-    components.
+    NativeBase ships with a default theme that provides beautiful components,
+    out of the box.
   </div>
 </div>
 
 <div className="mt-8">
-  <h4 className="text-xl">Accessible
-</h4>
+  <h4 className="text-xl">Accessible</h4>
   <div>
-    Out of the box accessibility, focus management, keyboard 
-navigation.
-
-  </div>
-</div>
-
-<div className="mt-8">
-  <h4 className="text-xl">Themable
-
-</h4>
-  <div>
-   NB ships with a default theme which can be extended as 
-you desire.
-
+    This version has out of the box accessibility including focus management,
+    keyboard navigation and more.
   </div>
 </div>
 
@@ -99,8 +86,7 @@ you desire.
 
 </h4>
   <div>
-  You can customize not only theme but specific components.
-
+The default theme can be extended as you desire. You can also customise specific components for your app needs.
   </div>
 </div>
 

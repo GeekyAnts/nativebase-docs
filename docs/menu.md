@@ -3,6 +3,8 @@ id: menu
 title: Menu
 ---
 
+import { ComponentTheme } from '../src/components';
+
 A dropdown menu for the common dropdown menu button design pattern.
 
 ## Import
@@ -61,7 +63,7 @@ import { Menu } from 'native-base';
 
 MenuItem implements [Pressable]
 
-### **MenuItemOption**
+### MenuItemOption
 
 Extends `MenuItem`.
 
@@ -83,6 +85,11 @@ Extends `MenuItem`.
 
 ```
 
+## Styling
+
+<ComponentTheme name="menu" />
+
+
 ## Accessibility
 
-- WIP (Work in progress).
+Adheres to the [Menu WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#menu)

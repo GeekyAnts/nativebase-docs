@@ -3,6 +3,8 @@ id: alertDialog
 title: AlertDialog
 ---
 
+import { ComponentTheme } from '../src/components';
+
 `AlertDialog` component is used to interrupt the user with a mandatory confirmation or action. AlertDialog composes [`Modal`](modal.md) so you can use all its props.
 
 ## Import
@@ -128,6 +130,10 @@ export default function () {
 }
 ```
 
+## Styling
+
+<ComponentTheme name="alertDialog" />
+
 ## Props
 
 AlertDialog and its components compose the **[Modal](modal.md)** component, so all the [`Modal props`](modal.md#props) can be passed to it. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of `Modal`.
@@ -135,3 +141,20 @@ AlertDialog and its components compose the **[Modal](modal.md)** component, so a
 | Name                | Type      | Description                                                    | Default |
 | ------------------- | --------- | -------------------------------------------------------------- | ------- |
 | leastDestructiveRef | React.Ref | The least destructive action to get focus when dialog is open. | -       |
+
+
+## Accessibility
+
+Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#alertdialog)
+
+### Keyboard Interactions
+
+| Name                | Description |
+| --------------------|-------------|
+| Space   | Opens/closes the dialog. |
+| Enter   | Opens/closes the dialog. |
+| Tab     | Moves focus to the next focusable element. |
+| Shift + Tab | Moves focus to the previous focusable element. |
+| Esc     | Closes the dialog and moves focus to AlertDialog.Trigger. | 
+
+

@@ -1,12 +1,13 @@
 module.exports = {
+  themes: ['@docusaurus/theme-live-codeblock'],
   title: 'NativeBase',
   tagline: 'A complete component library for React Native Ecosystem',
-  url: 'https://alpha-docs.nativebase.io',
+  url: 'https://docs.nativebase.io',
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [
     {
-      src: this.baseUrl + '/js/google-tag-manager.js',
+      src: '/js/fix-location.js',
       defer: true,
     },
     {
@@ -20,16 +21,16 @@ module.exports = {
   favicon: 'img/favicon.svg',
   organizationName: 'nativebase',
   projectName: 'website', // Usually your repo name.
-  plugins: [
-    'docusaurus-tailwindcss-loader',
-    // '@docusaurus/plugin-google-gtag'
-  ],
+  plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
     // hideableSidebar: true,
     // respectPrefersColorScheme: true,
-    // gtag: {
-    //   trackingID: 'UA-76655074-1',
-    // },
+    gtag: {
+      trackingID: 'G-ZTSFCSJK8X',
+    },
+    colorMode: {
+      defaultMode: 'dark',
+    },
     prism: {
       theme: require('prism-react-renderer/themes/nightOwl'),
     },
@@ -43,7 +44,7 @@ module.exports = {
       logo: {
         alt: 'NativeBase Logo',
         src: 'img/nativebaselogo.svg',
-        href: 'https://alpha.nativebase.io',
+        href: 'https://nativebase.io',
         target: '_self',
       },
 
@@ -154,11 +155,11 @@ module.exports = {
             },
             {
               label: 'Privacy Policy',
-              href: 'https://alpha.nativebase.io/privacy-policy',
+              href: 'https://nativebase.io/privacy-policy',
             },
             {
               label: 'Cookie Policy',
-              href: 'https://alpha.nativebase.io/cookie-policy',
+              href: 'https://nativebase.io/cookie-policy',
             },
           ],
         },

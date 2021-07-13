@@ -3,6 +3,8 @@ id: slider
 title: Slider
 ---
 
+import { ComponentTheme } from '../src/components';
+
 The `Slider` is used to allow users to make selections from a range of values.
 
 ## Import
@@ -66,7 +68,24 @@ import { Slider } from 'native-base';
 
 - `Slider.Track`, `Slider.FilledTrack`, and `Slider.Thumb` composes the [`Box`](box.md) component.
 
+## Styling
+
+<ComponentTheme name="Slider" />
+
+
 ## Accessibility
 
-- Slider is fully accessibile on native side using swipe gesture on iOS and volume button on Android.
-- Keyboard accessibility on web is still in-progress.
+Adheres to the [Slider WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#slidertwothumb)
+
+### Keyboard Interactions
+
+| Name              | Description |
+| ------------------|-------------|
+| ArrowRight        | Increments/decrements by the step value depending on orientation.|
+| ArrowLeft         | Increments/decrements by the step value depending on orientation.
+| ArrowUp           | Increases the value by the step amount.
+| ArrowDown         | Decreases the value by the step amount.
+
+
+
+
