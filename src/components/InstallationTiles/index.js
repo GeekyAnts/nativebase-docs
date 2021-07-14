@@ -24,9 +24,9 @@ export default function InstallationTiles() {
           }}
         />
         <TileLink
-          title="Install in React Native CLI project"
+          title="Install in React Native project"
           url="install-rn"
-          description="Follow this guide to install NativeBase in your existing or new React Native CLI inititiated project"
+          description="Follow this guide to install NativeBase in your existing or new React Native inititiated project"
           className={'mt-2 ' + bgColor}
           imgSrc="/img/react-native.svg"
           imgStyle={{
@@ -40,9 +40,9 @@ export default function InstallationTiles() {
       </div>
       <div className="mt-2 -m-2 row">
         <TileLink
-          title="Install in NextJS project"
+          title="Install in Next.js project"
           url="install-next"
-          description="Follow this guide to install NativeBase in your existing or new React Native CLI inititiated project"
+          description="Follow this guide to install NativeBase in your existing or new Next.js project"
           className={'mt-2 ' + bgColor}
           imgSrc="/img/next.svg"
           imgStyle={{
@@ -56,7 +56,7 @@ export default function InstallationTiles() {
         <TileLink
           title="Install in Create React App project"
           url="install-cra"
-          description="Follow this guide to install NativeBase in your existing or new React Native CLI inititiated project"
+          description="Follow this guide to install NativeBase in your existing or new React project"
           className={'mt-2 ' + bgColor}
           imgSrc="/img/cra.svg"
           imgStyle={{

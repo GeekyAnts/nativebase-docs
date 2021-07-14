@@ -1,6 +1,6 @@
 ---
 id: install-next
-title: Install in NextJS project
+title: Install in Next.js project
 ---
 
 import Tabs from '@theme/Tabs';
@@ -8,61 +8,93 @@ import TabItem from '@theme/TabItem';
 import { TileLink } from '../src/components';
 
   <Tabs
-  defaultValue='expo'
+  defaultValue='new'
   values={[
-  { label: 'Using Expo NextJS template (recommended)', value: 'expo' },
-  { label: 'Using NextJS CLI', value: 'next' }
+  { label: 'New Project', value: 'new' },
+  { label: 'Existing Project', value: 'existing' }
   ]}>
 
-  <TabItem value="expo">
+  
+  <TabItem value="new">
 
-### Create a new project using Expo NextJS template
+### Create a new project using Next.js CLI with NativeBase template
 
-```bash
-npx create-react-native-app -t with-nextjs
-cd [project]/
-```
-
-[Refer official guide](https://docs.expo.io/guides/using-nextjs/) if you need additional configurations.
-
-### Install dependencies
-
-  <Tabs
+<Tabs
   defaultValue='yarn'
   values={[
   { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
+  { label: 'npx', value: 'npx' }
   ]}>
 
   <TabItem value="yarn">
 
+<h4>Choose your preferred setting and start your development swiftly 🚀</h4>
+
+<Tabs
+  defaultValue='Javascript'
+  values={[
+  { label: 'Javascript', value: 'Javascript' },
+  { label: 'Typescript', value: 'Typescript' }
+  ]}>
+
+  <TabItem value="Javascript">
+
 ```bash
-yarn add native-base react-native-svg styled-components styled-system react-native-safe-area-context
+yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
 ```
+
+ <h4>Yey! you are all set, start editing src/pages/index.js now.</h4>
 
   </TabItem>
 
-  <TabItem value="npm">
+  <TabItem value="Typescript">
 
 ```bash
-npm install native-base react-native-svg styled-components styled-system react-native-safe-area-context
+yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
 ```
+ <h4>Yey! you are all set, start editing src/pages/index.tsx now.</h4>
 
   </TabItem>
+  </Tabs>
+  </TabItem>
 
+<TabItem value="npx">
+
+<h4>Choose your preferred setting and start your development swiftly 🚀</h4>
+
+<Tabs
+  defaultValue='Javascript'
+  values={[
+  { label: 'Javascript', value: 'Javascript' },
+  { label: 'Typescript', value: 'Typescript' }
+  ]}>
+
+  <TabItem value="Javascript">
+
+```bash
+npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
+```
+
+ <h4>Yey! you are all set, start editing src/pages/index.js now.</h4>
+  </TabItem>
+
+  <TabItem value="Typescript">
+
+```bash
+npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
+```
+
+ <h4>Yey! you are all set, start editing src/pages/index.tsx now.</h4>
+
+  </TabItem>
   </Tabs>
 
   </TabItem>
+  </Tabs>
 
-  <TabItem value="next">
 
-### Create a new project using NextJS CLI with react native web template
-
-```bash
-npx create-next-app --example with-react-native-web with-react-native-web-app
-```
-
-[Refer official guide](https://necolas.github.io/react-native-web/docs/installation/) if you need additional configurations.
+  </TabItem>
+<TabItem value="existing">
 
 ### Install dependencies
 
@@ -95,15 +127,32 @@ We'll need 2 more additional steps.
 
 1. Install dependencies.
 
-```bash
-  // Using npm
-  npm i next-compose-plugins next-transpile-modules --save-dev
+<Tabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
 
-  // Using yarn
+  <TabItem value="yarn">
+
+```bash
   yarn add next-compose-plugins next-transpile-modules -D
 ```
 
-2. Replace next.config.js with the below content.
+  </TabItem>
+
+  <TabItem value="npm">
+
+```bash
+  npm i next-compose-plugins next-transpile-modules --save-dev
+```
+
+  </TabItem>
+
+  </Tabs>
+
+2. Update your next.config.js with the below content.
 
 ```js
 const withPlugins = require('next-compose-plugins');
@@ -128,7 +177,10 @@ const withTM = require('next-transpile-modules')([
   '@react-stately/radio',
 ]);
 
-module.exports = withPlugins([withTM], {
+module.exports = withPlugins([
+    withTM,
+    // your plugins go here.  
+  ], {
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
@@ -145,27 +197,38 @@ module.exports = withPlugins([withTM], {
   },
 });
 ```
-
-  </TabItem>
-
-  </Tabs>
-
 ### Run the Hello world example
 
-Put the below code in your pages/index.js
+Replace the below code in your pages/_app.js
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, Box } from 'native-base';
+import "../styles/globals.css";
+import { NativeBaseProvider } from "native-base";
 
-export default function App() {
+function MyApp({ Component, pageProps }) {
   return (
     <NativeBaseProvider>
-      <Box>Hello world</Box>
+      <Component {...pageProps} />
     </NativeBaseProvider>
   );
 }
+
+export default MyApp;
 ```
+and put this in your pages/index.js
+
+```jsx
+import React from "react";
+import { Box } from "native-base";
+
+export default function App() {
+  return <Box>Hello world</Box>;
+}
+```
+
+  </TabItem>
+  </Tabs>
+
 
 <div style={{ textAlign: 'center' }}>
   <img src="/img/minion.gif" />

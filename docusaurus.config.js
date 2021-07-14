@@ -10,6 +10,10 @@ module.exports = {
       src: '/js/fix-location.js',
       defer: true,
     },
+    // {
+    //   src: '/js/add-metas.js',
+    //   defer: true,
+    // },
     {
       src: 'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
@@ -19,10 +23,35 @@ module.exports = {
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.svg',
-  organizationName: 'nativebase',
-  projectName: 'website', // Usually your repo name.
+  organizationName: 'Geekyants',
+  projectName: 'nativebase-docs', // Usually your repo name.
   plugins: ['docusaurus-tailwindcss-loader'],
   themeConfig: {
+    image: 'https://nativebase.io/img/nativebase-og.png',
+    metadatas: [
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { property: 'og:site_name', content: 'NativeBase' },
+      {
+        name: 'twitter:image:alt',
+        content:
+          'NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive.',
+      },
+      { name: 'twitter:site', content: '@NativeBaseIO' },
+      {
+        property: 'og:title',
+        content:
+          'NativeBase: Mobile-first, accessible components for React Native & Web',
+      },
+      {
+        property: 'og:description',
+        content:
+          'NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive.',
+      },
+      {
+        property: 'og:url',
+        content: 'https://docs.nativebase.io',
+      },
+    ],
     // hideableSidebar: true,
     // respectPrefersColorScheme: true,
     gtag: {
@@ -183,7 +212,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/nativebase/website/tree/main',
+          editUrl: 'https://github.com/geekyants/nativebase-docs/tree/main',
           remarkPlugins: [
             require('./remark-snackplayer'),
             require('./nb-plugins/component-snackplayer'),
@@ -194,7 +223,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/nativebase/website/tree/main',
+          editUrl: 'https://github.com/geekyants/nativebase-docs/tree/main',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css')],
