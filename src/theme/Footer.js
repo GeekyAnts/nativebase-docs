@@ -40,11 +40,11 @@ const more = [
   },
   {
     name: 'Privacy Policy',
-    url: 'https://alpha.nativebase.io/privacy-policy',
+    url: 'https://nativebase.io/privacy-policy',
   },
   {
     name: 'Cookie Policy',
-    url: 'https://alpha.nativebase.io/cookie-policy',
+    url: 'https://nativebase.io/cookie-policy',
   },
 ];
 export default function Footer() {

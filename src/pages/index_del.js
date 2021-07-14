@@ -35,10 +35,7 @@ function Home() {
       description="A complete component library for React Ecosystem"
     >
       <Head>
-        <meta
-          http-equiv="refresh"
-          content="0;url=https://alpha.nativebase.io/"
-        />
+        <meta http-equiv="refresh" content="0;url=https://nativebase.io/" />
         <meta property="og:title" content="NativeBase"></meta>
         <meta
           property="og:description"
@@ -58,7 +55,7 @@ function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://alpha.nativebase.io/img/nativebase-og.png"
+          content="https://nativebase.io/img/nativebase-og.png"
         ></meta>
         <meta name="twitter:site" content="@NativeBaseIO" />
       </Head>

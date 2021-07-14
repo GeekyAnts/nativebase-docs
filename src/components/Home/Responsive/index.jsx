@@ -106,7 +106,7 @@ export function Responsive() {
                   className="text-green-500 no-underline border-0 border-b-2 border-solid hover:border-green-500 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://alpha.nativebase.io/docs/responsive-style"
+                  href="https://nativebase.io/docs/responsive-style"
                 >
                   Learn More
                 </a>

@@ -61,7 +61,7 @@ export const DarkMode = () => {
                   className="text-yellow-600 no-underline border-0 border-b-2 border-solid hover:border-yellow-600 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://alpha.nativebase.io/darkMode"
+                  href="https://nativebase.io/darkMode"
                 >
                   Learn More
                 </a>

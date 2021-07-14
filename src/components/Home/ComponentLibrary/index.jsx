@@ -121,7 +121,7 @@ export function ComponentLibrary() {
                   className="text-green-700 no-underline border-0 border-b-2 border-solid hover:border-green-700 font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://alpha.nativebase.io/button"
+                  href="https://nativebase.io/button"
                 >
                   Learn More
                 </a>
