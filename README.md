@@ -1,6 +1,6 @@
-# [nativebase.io](https://alpha.nativebase.io/)
+# [nativebase.io](https://nativebase.io/)
 
-This repo contains the website configuration and documentation for [NativeBase website](https://alpha.nativebase.io/).
+This repo contains the website configuration and documentation for [NativeBase website](https://nativebase.io/).
 
 ## Contents
 
@@ -113,8 +113,8 @@ The `src/theme` subdirectory contains the swizzled React components from the Doc
 
 ### Create a branch
 
-1.  `git checkout master` in your local repository.
-1.  `git pull origin master` to ensure you have the latest main code.
+1.  `git checkout development` in your local repository.
+1.  `git pull origin development` to ensure you have the latest main code.
 1.  `git checkout -b the-name-of-my-branch` to create a branch.
     > replace `the-name-of-my-branch` with a suitable name, such as `update-animations-page`
 
