@@ -1,0 +1,263 @@
+---
+id: install-next
+title: Install in Next.js project
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { TileLink } from '../../src/components';
+
+  <Tabs
+  defaultValue='new'
+  values={[
+  { label: 'New Project', value: 'new' },
+  { label: 'Existing Project', value: 'existing' }
+  ]}>
+
+  <TabItem value="new">
+
+### Create a new project using Next.js CLI with NativeBase template
+
+<div class="tailwind">
+<Tabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npx', value: 'npx' },
+  ]}>
+
+  <TabItem value="yarn">
+
+<h4>Choose your preferred setting and start your development swiftly 🚀</h4>
+
+<h4 className="mt-8 font-mono">Plain Javascript</h4>
+<div style={{maxWidth:"750px"}}>
+
+```bash
+  yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
+```
+
+</div>
+Yey! you are all set, start editing src/pages/index.js now.
+
+<h4 className="mt-8 font-mono">With Typescript</h4>
+<div style={{maxWidth:"750px"}}>
+
+```bash
+  yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
+```
+
+</div>
+Yey! you are all set, start editing src/pages/index.tsx now.
+
+  </TabItem>
+
+<TabItem value="npx">
+
+<h4>Choose your preferred setting and start your development swiftly 🚀</h4>
+
+<h4 className="mt-8 font-mono">Plain Javascript</h4>
+<div style={{maxWidth:"750px"}}>
+
+```bash
+  npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
+```
+
+</div>
+
+Yey! you are all set, start editing src/pages/index.js now.
+
+<h4 className="mt-8 font-mono">With Typescript</h4>
+<div style={{maxWidth:"750px"}}>
+
+```bash
+  npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
+```
+
+</div>
+
+Yey! you are all set, start editing src/pages/index.tsx now.
+
+  </TabItem>
+  </Tabs>
+</div>
+
+  </TabItem>
+<TabItem value="existing">
+
+### Install dependencies
+
+  <Tabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+  <TabItem value="yarn">
+
+<div style={{maxWidth:"750px"}}>
+
+```bash
+yarn add react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
+```
+
+</div>
+
+  </TabItem>
+
+  <TabItem value="npm">
+
+<div style={{maxWidth:"750px"}}>
+
+```bash
+npm install react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
+```
+
+</div>
+
+  </TabItem>
+
+  </Tabs>
+
+We'll need 2 more additional steps.
+
+1. Install dev dependencies.
+
+<Tabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+  <TabItem value="yarn">
+
+```bash
+  yarn add next-compose-plugins next-transpile-modules -D
+```
+
+  </TabItem>
+
+  <TabItem value="npm">
+
+```bash
+  npm i next-compose-plugins next-transpile-modules --save-dev
+```
+
+  </TabItem>
+
+  </Tabs>
+
+2. Update your next.config.js with the below content.
+
+```js
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')([
+  'native-base',
+  'react-native-svg',
+  'styled-components',
+  'react-native-safe-area-context',
+  '@react-aria/visually-hidden',
+  '@react-native-aria/button',
+  '@react-native-aria/checkbox',
+  '@react-native-aria/combobox',
+  '@react-native-aria/focus',
+  '@react-native-aria/interactions',
+  '@react-native-aria/listbox',
+  '@react-native-aria/overlays',
+  '@react-native-aria/radio',
+  '@react-native-aria/slider',
+  '@react-native-aria/tabs',
+  '@react-native-aria/utils',
+  '@react-stately/combobox',
+  '@react-stately/radio',
+]);
+
+module.exports = withPlugins(
+  [
+    withTM,
+    // your plugins go here.
+  ],
+  {
+    webpack: (config) => {
+      config.resolve.alias = {
+        ...(config.resolve.alias || {}),
+        // Transform all direct `react-native` imports to `react-native-web`
+        'react-native$': 'react-native-web',
+      };
+      config.resolve.extensions = [
+        '.web.js',
+        '.web.ts',
+        '.web.tsx',
+        ...config.resolve.extensions,
+      ];
+      return config;
+    },
+  }
+);
+```
+
+### Run the Hello world example
+
+Replace the below code in your pages/\_app.js
+
+```jsx
+import '../styles/globals.css';
+import { NativeBaseProvider } from 'native-base';
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <NativeBaseProvider>
+      <Component {...pageProps} />
+    </NativeBaseProvider>
+  );
+}
+
+export default MyApp;
+```
+
+and put this in your pages/index.js
+
+```jsx
+import React from 'react';
+import { Box } from 'native-base';
+
+export default function App() {
+  return <Box>Hello world</Box>;
+}
+```
+
+  </TabItem>
+  </Tabs>
+
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/minion.gif" />
+</div>
+
+<div className="tailwind">
+  <div className="mt-4 mb-8">
+    <div className="row pl-0 ml-0">
+      <TileLink
+        title="Customize NativeBaseProvider"
+        url="setup-provider"
+        description="NativeBaseProvider provides theme throughout your application"
+        className="bg-blueGray-600 mt-2"
+      />
+      <TileLink
+        title="Theme"
+        url="default-theme"
+        description="Read more about the default NativeBase theme and how to override it"
+        className="bg-blueGray-600  mt-2"
+      />
+    </div>
+    <div className="row mt-2 pl-0 ml-0">
+      <TileLink
+        title="Utility props"
+        url="utility-props"
+        description="Shorthands of commonly used styling props which maps with the provided theme"
+        className="bg-blueGray-600"
+      />
+    </div>
+  </div>
+</div>
