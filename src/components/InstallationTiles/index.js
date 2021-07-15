@@ -56,7 +56,7 @@ export default function InstallationTiles() {
         <TileLink
           title="Install in Create React App project"
           url="install-cra"
-          description="Follow this guide to install NativeBase in your existing or new Next.js project"
+          description="Follow this guide to install NativeBase in your existing or new React project"
           className={'mt-2 ' + bgColor}
           imgSrc="/img/cra.svg"
           imgStyle={{

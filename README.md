@@ -1,6 +1,6 @@
-# [nativebase.io](https://alpha.nativebase.io/)
+# [nativebase.io](https://nativebase.io/)
 
-This repo contains the website configuration and documentation for [NativeBase website](https://alpha.nativebase.io/).
+This repo contains the website configuration and documentation for [NativeBase website](https://nativebase.io/).
 
 ## Contents
 

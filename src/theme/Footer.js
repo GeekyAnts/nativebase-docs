@@ -22,11 +22,11 @@ const communities = [
 const docs = [
   {
     name: 'Introduction',
-    url: 'https://alpha-docs.nativebase.io/',
+    url: 'https://docs.nativebase.io/',
   },
   {
     name: 'Examples',
-    url: 'https://alpha-docs.nativebase.io/todo-example',
+    url: 'https://docs.nativebase.io/todo-example',
   },
 ];
 const more = [
@@ -40,11 +40,11 @@ const more = [
   },
   {
     name: 'Privacy Policy',
-    url: 'https://alpha.nativebase.io/privacy-policy',
+    url: 'https://nativebase.io/privacy-policy',
   },
   {
     name: 'Cookie Policy',
-    url: 'https://alpha.nativebase.io/cookie-policy',
+    url: 'https://nativebase.io/cookie-policy',
   },
 ];
 export default function Footer() {
