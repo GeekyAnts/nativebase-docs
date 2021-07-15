@@ -10,8 +10,8 @@ import { TileLink } from '../src/components';
   <Tabs
   defaultValue='template'
   values={[
-  { label: 'NativeBase template', value: 'template' },
-  { label: 'Create React app CLI', value: 'cli' }
+  { label: 'New Project', value: 'template' },
+  { label: 'Existing Project', value: 'cli' }
   ]}>
 
   <TabItem value="template">
@@ -22,6 +22,7 @@ The easiest way to get started with NativeBase in create react app is using Nati
 
 ```bash
 npx create-react-app my-app --template nativebase
+cd my-app/
 yarn start
 ```
 
@@ -29,6 +30,7 @@ yarn start
 
 ```bash
 npx create-react-app my-app --template nativebase-typescript
+cd my-app/
 yarn start
 ```
 
@@ -36,7 +38,7 @@ yarn start
 
   <TabItem value="cli">
 
-Create a new CRA project
+Create a new CRA project If not exist
 
 ```bash
 npx create-react-app my-app
