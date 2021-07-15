@@ -19,79 +19,67 @@ import { TileLink } from '../src/components';
 
 ### Create a new project using Next.js CLI with NativeBase template
 
+<div class="tailwind">
 <Tabs
   defaultValue='yarn'
   values={[
   { label: 'yarn', value: 'yarn' },
-  { label: 'npx', value: 'npx' }
+  { label: 'npx', value: 'npx' },
   ]}>
 
   <TabItem value="yarn">
 
 <h4>Choose your preferred setting and start your development swiftly 🚀</h4>
 
-<Tabs
-  defaultValue='Javascript'
-  values={[
-  { label: 'Javascript', value: 'Javascript' },
-  { label: 'Typescript', value: 'Typescript' }
-  ]}>
-
-  <TabItem value="Javascript">
+<h4 className="mt-8 font-mono">Plain Javascript</h4>
+<div style={{maxWidth:"750px"}}>
 
 ```bash
-yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
+  yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
 ```
 
- <h4>Yey! you are all set, start editing src/pages/index.js now.</h4>
+</div>
+Yey! you are all set, start editing src/pages/index.js now.
 
-  </TabItem>
-
-  <TabItem value="Typescript">
+<h4 className="mt-8 font-mono">With Typescript</h4>
+<div style={{maxWidth:"750px"}}>
 
 ```bash
-yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
+  yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
 ```
- <h4>Yey! you are all set, start editing src/pages/index.tsx now.</h4>
+</div>
+Yey! you are all set, start editing src/pages/index.tsx now.
 
   </TabItem>
-  </Tabs>
-  </TabItem>
+  
 
 <TabItem value="npx">
 
 <h4>Choose your preferred setting and start your development swiftly 🚀</h4>
 
-<Tabs
-  defaultValue='Javascript'
-  values={[
-  { label: 'Javascript', value: 'Javascript' },
-  { label: 'Typescript', value: 'Typescript' }
-  ]}>
-
-  <TabItem value="Javascript">
+<h4 className="mt-8 font-mono">Plain Javascript</h4>
+<div style={{maxWidth:"750px"}}>
 
 ```bash
-npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
+  npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
 ```
+</div>
 
- <h4>Yey! you are all set, start editing src/pages/index.js now.</h4>
-  </TabItem>
+Yey! you are all set, start editing src/pages/index.js now.
 
-  <TabItem value="Typescript">
+<h4 className="mt-8 font-mono">With Typescript</h4>
+<div style={{maxWidth:"750px"}}>
 
 ```bash
-npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
+  npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
 ```
+</div>
 
- <h4>Yey! you are all set, start editing src/pages/index.tsx now.</h4>
+Yey! you are all set, start editing src/pages/index.tsx now.
 
   </TabItem>
   </Tabs>
-
-  </TabItem>
-  </Tabs>
-
+</div>
 
   </TabItem>
 <TabItem value="existing">
@@ -107,17 +95,23 @@ npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/t
 
   <TabItem value="yarn">
 
+<div style={{maxWidth:"750px"}}>
+
 ```bash
 yarn add react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
+</div>
 
   </TabItem>
 
   <TabItem value="npm">
 
+<div style={{maxWidth:"750px"}}>
+
 ```bash
 npm install react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
+</div>
 
   </TabItem>
 
@@ -125,7 +119,7 @@ npm install react-native-web native-base react-native-svg styled-components styl
 
 We'll need 2 more additional steps.
 
-1. Install dependencies.
+1. Install dev dependencies.
 
 <Tabs
   defaultValue='yarn'

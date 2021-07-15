@@ -1,7 +1,7 @@
 module.exports = {
   themes: ['@docusaurus/theme-live-codeblock'],
   title: 'NativeBase',
-  tagline: 'A complete component library for React Native Ecosystem',
+  tagline: 'Mobile-first, accessible components for React Native & Web',
   url: 'https://docs.nativebase.io',
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
@@ -10,10 +10,6 @@ module.exports = {
       src: '/js/fix-location.js',
       defer: true,
     },
-    // {
-    //   src: '/js/add-metas.js',
-    //   defer: true,
-    // },
     {
       src: 'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
