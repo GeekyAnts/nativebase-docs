@@ -208,7 +208,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/geekyants/nativebase-docs/tree/main',
+          editUrl: 'https://github.com/Geekyants/nativebase-docs/tree/main',
           remarkPlugins: [
             require('./remark-snackplayer'),
             require('./nb-plugins/component-snackplayer'),
@@ -219,7 +219,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/geekyants/nativebase-docs/tree/main',
+          editUrl: 'https://github.com/Geekyants/nativebase-docs/tree/main',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css')],
