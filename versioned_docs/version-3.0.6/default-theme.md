@@ -209,4 +209,4 @@ export default {
 };
 ```
 
-Still confused? You can always explore [here](https://github.com/GeekyAnts/nativebase-v3/tree/development/src/theme/base).
+Still confused? You can always explore [here](https://github.com/GeekyAnts/nativebase/tree/development/src/theme/base).
