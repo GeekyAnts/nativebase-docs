@@ -17,5 +17,7 @@ title: Changelog
 - Add a prop to render FAB outside of portal #3829
 - Fix input padding(top/bottom) not working on android #3825
 - Fix custom fonts not working on android for some cases #3821
+- Fixed bold and italics issue in typography
+- Spinner visibility issue fixed
 
 For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.4).

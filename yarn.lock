@@ -8399,10 +8399,10 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.0.4.tgz#c61c0bb3b180cc3856da899692148a1a252899bd"
-  integrity sha512-w8qphjxvUBDmniqYtvtdV39iQwCP/qnJTA+klNYUqxOrxVAoYPNwOCN8upTkwSnEORkxwho9p4Dpm4o0ZrNoMA==
+native-base@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.npmjs.org/native-base/-/native-base-3.0.6.tgz#b8df193eba1e700389acb82caa418506522b5edf"
+  integrity sha512-BdDif2xArJfzmeDeI58RRW5SO6r38xBKnA8rRy9B2mzUdQfA6GRTsZ/n49GxaGziyHOQCKAPEAc3Eq6IMEJ+dA==
   dependencies:
     "@react-aria/visually-hidden" "^3.2.1"
     "@react-native-aria/button" "^0.2.4"
