@@ -3,7 +3,7 @@ id: modal
 title: Modal
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 A Modal is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is **inert**, meaning that users cannot interact with it.
 

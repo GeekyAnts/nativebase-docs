@@ -3,7 +3,7 @@ id: divider
 title: Divider
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 `Divider` is used to visually separate content in a list or group.
 

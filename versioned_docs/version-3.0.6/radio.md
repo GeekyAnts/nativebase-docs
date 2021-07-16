@@ -3,7 +3,7 @@ id: radio
 title: Radio
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 `Radio` is used when only one choice may be selected in a series of options.
 

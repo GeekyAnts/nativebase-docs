@@ -3,7 +3,7 @@ id: skeleton
 title: Skeleton
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 `Skeleton` is used to display the loading state of a component.
 

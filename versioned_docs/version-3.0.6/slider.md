@@ -3,7 +3,7 @@ id: slider
 title: Slider
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 The `Slider` is used to allow users to make selections from a range of values.
 
