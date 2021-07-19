@@ -118,7 +118,7 @@ export default function () {
 
 Description
 
-```SnackPlayer name=Form%20Example(Validate and Submit)
+```SnackPlayer name=Form%20Example(Validate%20and%20Submit)
 import React from 'react';
 import {
   VStack,
