@@ -125,7 +125,7 @@ export default function () {
 
 Create a button to validate and submit the form.
 
-```SnackPlayer name=Form%20Example(Validate and Submit)
+```SnackPlayer name=Form%20Example(Validate%20and%20Submit)
 import React from 'react';
 import {
   VStack,
