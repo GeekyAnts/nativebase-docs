@@ -3,7 +3,7 @@ id: input
 title: Input
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 The `Input` component is a component that is used to get user input in a text field.
 

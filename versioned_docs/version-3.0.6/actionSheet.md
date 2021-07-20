@@ -3,7 +3,7 @@ id: actionSheet
 title: ActionSheet
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 An Action Sheet is a dialog that displays a set of options. It appears on top of the app's content.
 
