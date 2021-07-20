@@ -31,6 +31,7 @@ export default function App() {
  return (
       <NativeBaseProvider>
       <Box
+        safeArea
         flex={1}
         p={2}
         w="90%"
@@ -140,6 +141,7 @@ export default function App() {
  return (
       <NativeBaseProvider>
       <Box
+        safeArea
         flex={1}
         p={2}
         w="90%"
