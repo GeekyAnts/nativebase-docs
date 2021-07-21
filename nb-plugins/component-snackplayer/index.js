@@ -52,7 +52,6 @@ const processNode = (node, parent) => {
             data-snack-preview="${preview}"
             data-snack-loading="${loading}"
             data-snack-dependencies="${dependencies}"
-            data-snack-sdkversion="40.0.0"
           ></div>
           `,
       });
