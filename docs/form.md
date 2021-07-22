@@ -125,7 +125,7 @@ export default function () {
 
 Create a button to validate and submit the form.
 
-```SnackPlayer name=Form%20Example(Validate and Submit)
+```SnackPlayer name=Form%20Example(Validate%20and%20Submit)
 import React from 'react';
 import {
   VStack,
@@ -196,4 +196,4 @@ export default function () {
 
 ## Community Integration
 
-NativeBase can be used with other popular Form libraries like [`Formik`](nativebase-formik-ui.md) and [`React Hook Forms`](reactHooksForm.md) as well. For more details checkout Community Integration section of the docs.
+NativeBase can be used with other popular Form libraries like [`Formik`](nativebase-formik-ui.md) and [`React Hook Forms`](reactHooksForms.md) as well. For more details checkout Community Integration section of the docs.
