@@ -92,6 +92,7 @@ export default function () {
               isChecked={item.isCompleted}
               onChange={() => handleStatusChange(itemI)}
               value={item.title}
+              accessibilityLabel={item.title}
             >
               <Text mx={2} strikeThrough={item.isCompleted}>
                 {item.title}
