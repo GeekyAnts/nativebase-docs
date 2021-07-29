@@ -70,7 +70,7 @@ module.exports = {
         'button',
         'pressable',
         // 'cascader',
-        'checkBox',
+        'Checkbox',
         // 'date-picker',
         'formControl',
         'iconButton',
