@@ -20,6 +20,9 @@ Flex components comes with some helpful shorthand props:
 
 - `flexDirection` is `direction`
 - `flexWrap` is `wrap`
+- `flexBasis` is `basis`
+- `flexGrow` is `grow`
+- `flexShrink` is `shrink`
 - `alignItems` is `align`
 - `justifyContent` is `justify`
 
