@@ -27,7 +27,7 @@ function ContainerComponent() {
           React Ecosystem
         </Heading>
       </Heading>
-      <Heading pt={4} fontWeight="md" size="sm">
+      <Heading pt={4} fontWeight="medium" size="sm">
         NativeBase is a simple, modular and accessible component library that gives you building blocks to build you React applications.
       </Heading>
     </Container>
