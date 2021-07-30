@@ -66,7 +66,7 @@ export default function () {
 
 In the above example, you'll get a **solid teal Button** in **light** mode whereas an **outline amber Button** in **dark** mode. You can get creative and make other properties respond to the color mode as well.
 
-## 3. By using \_ligth and \_dark props
+## 3. By using \_light and \_dark props
 
 In this approach we pass the required props inside \_light and \_dark based on the requirement.
 
