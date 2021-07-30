@@ -10,12 +10,12 @@ import { ComponentTheme } from '../src/components';
 ## Import
 
 - `Popover`: The wrapper that provides props, state, and context to its children.
-- `Popover.Arrow`: The popover arrow.
-- `Popover.Body`: The body of the popover.
-- `Popover.Content`: The popover itself.
-- `Popover.CloseButton`: A button to close the popover.
-- `Popover.Header`: The header of the popover.
 - `Popover.Trigger`: Used to wrap the reference (or trigger) element.
+- `Popover.Content`: The popover itself.
+- `Popover.Header`: The header of the popover.
+- `Popover.Body`: The body of the popover.
+- `Popover.Arrow`: The popover arrow.
+- `Popover.CloseButton`: A button to close the popover.
 
 ```jsx
 import { Popover } from 'native-base';
