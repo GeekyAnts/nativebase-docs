@@ -10,7 +10,6 @@ import { ComponentTheme } from '../src/components';
 ## Import
 
 - `Popover`: The wrapper that provides props, state, and context to its children.
-- `Popover.Trigger`: Used to wrap the reference (or trigger) element.
 - `Popover.Content`: The popover itself.
 - `Popover.Header`: The header of the popover.
 - `Popover.Body`: The body of the popover.
