@@ -45,7 +45,7 @@ function Component() {
       <Image
         resizeMode="cover"
         source={{
-          uri: "https://nativebase.io/img/icon.png",
+          uri: "https://alpha.nativebase.io/img/icon.png",
         }}
       />
     </AspectRatio>
