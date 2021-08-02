@@ -32,7 +32,7 @@ const processNode = (node, parent) => {
     try {
       const params = parseParams(node.meta);
       const simplifedMeta = simplifyMeta(node.meta);
-      const NBversion = '3.0.6';
+      const NBversion = '3.0.7';
       // Gather necessary Params
       let name = simplifedMeta.name
         ? decodeURIComponent(simplifedMeta.name)
@@ -51,7 +51,7 @@ const processNode = (node, parent) => {
       // Generate Node for SnackPlayer
       let dependencies = `react-is,expo-font,native-base@${NBversion},styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons,expo-linear-gradient`;
       dependencies = `${dependencies},${
-        simplifedMeta.dependencies ? simplifedMeta.dependencies : ''
+        simplifedMeta.dependencies ? simplifedMeta.dependencies : null
       }`;
 
       if (name.split(' ')[0] === 'Formik') {
