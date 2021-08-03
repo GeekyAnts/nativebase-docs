@@ -18,7 +18,7 @@ const processNode = (node, parent) => {
   return new Promise(async (resolve, reject) => {
     try {
       const params = parseParams(node.meta);
-      const NBversion = '3.0.4';
+      const NBversion = '3.0.7';
       // Gather necessary Params
       let name = params.name ? decodeURIComponent(params.name) : 'Example';
       const description = params.description
@@ -52,7 +52,6 @@ const processNode = (node, parent) => {
             data-snack-preview="${preview}"
             data-snack-loading="${loading}"
             data-snack-dependencies="${dependencies}"
-            data-snack-sdkversion="40.0.0"
           ></div>
           `,
       });
