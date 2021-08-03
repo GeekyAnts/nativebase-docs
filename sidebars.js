@@ -282,6 +282,10 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'more-props',
+    },
+    {
+      type: 'doc',
       id: 'install-expo',
     },
     {
