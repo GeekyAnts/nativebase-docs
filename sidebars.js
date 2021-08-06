@@ -132,7 +132,7 @@ module.exports = {
         'menu',
         'modal',
         //  'overlay'
-        'popOver',
+        'popover',
         'tooltip',
       ],
     },
