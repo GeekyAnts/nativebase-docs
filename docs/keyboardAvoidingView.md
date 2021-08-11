@@ -1,5 +1,5 @@
 ---
-id: keyboardAvoidingView
+id: keyboard-avoiding-view
 title: KeyboardAvoidingView
 ---
 

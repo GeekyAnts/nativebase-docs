@@ -1,5 +1,5 @@
 ---
-id: statusBar
+id: status-bar
 title: StatusBar
 ---
 

@@ -1,5 +1,5 @@
 ---
-id: buildingCard
+id: building-card
 title: Card
 ---
 

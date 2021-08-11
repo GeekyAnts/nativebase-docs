@@ -1,5 +1,5 @@
 ---
-id: buildingTabView
+id: building-tab-view
 title: Tab View
 ---
 

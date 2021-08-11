@@ -1,5 +1,5 @@
 ---
-id: buildingSearchBar
+id: building-search-bar
 title: SearchBar
 ---
 

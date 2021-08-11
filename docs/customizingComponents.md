@@ -1,6 +1,6 @@
 ---
-id: customizingComponents
-title: Customising Components
+id: customizing-components
+title: Customizing Components
 ---
 
 Theme customisation is at the heart of NativeBase. Using NativeBase's `extendTheme` function, we can customise components.

@@ -1,3 +1,8 @@
+---
+id: button
+title: Button
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
