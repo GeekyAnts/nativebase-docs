@@ -1,5 +1,5 @@
 ---
-id: sectionList
+id: section-list
 title: SectionList
 ---
 

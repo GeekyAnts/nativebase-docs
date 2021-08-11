@@ -1,5 +1,5 @@
 ---
-id: formControl
+id: form-control
 title: FormControl
 ---
 

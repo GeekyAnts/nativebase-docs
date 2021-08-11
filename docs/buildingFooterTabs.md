@@ -1,5 +1,5 @@
 ---
-id: buildingFooterTabs
+id: building-footer-tabs
 title: Footer
 ---
 

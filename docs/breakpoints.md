@@ -1,5 +1,5 @@
 ---
-id: breakpoint
+id: breakpoints
 title: Breakpoints
 ---
 

@@ -1,5 +1,5 @@
 ---
-id: darkMode
+id: dark-mode
 title: Making components dark mode compatible
 ---
 

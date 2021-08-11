@@ -1,5 +1,5 @@
 ---
-id: loginsignupforms
+id: login-signup-forms
 title: Login/Signup Forms
 ---
 
