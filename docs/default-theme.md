@@ -30,7 +30,7 @@ To manage Typography options, the theme object supports the following keys:
 ```jsx
 const typography = {
   letterSpacings: {
-    xxs: -1.5,
+    '2xs': -1.5,
     xs: -0.5,
     sm: 0,
     md: 0.1,
@@ -42,20 +42,16 @@ const typography = {
     '5xl': 1.5,
   },
   lineHeights: {
-    none: 1,
-    shorter: 1.25,
-    short: 1.375,
-    base: 1.5,
-    tall: 1.625,
-    taller: '2',
-    3: '12px',
-    4: '16px',
-    5: '20px',
-    6: '24px',
-    7: '28px',
-    8: '32px',
-    9: '36px',
-    10: '40px',
+    '2xs': 1,
+    xs: 1.125,
+    sm: 1.25,
+    md: 1.375,
+    lg: 1.5,
+    xl: 1.75,
+    '2xl': 2,
+    '3xl': 2.5,
+    '4xl': 3,
+    '5xl': 4,
   },
   fontWeights: {
     hairline: 100,
@@ -67,6 +63,7 @@ const typography = {
     bold: 700,
     extrabold: 800,
     black: 900,
+    extraBlack: 950,
   },
   fonts: {
     heading: '',
@@ -74,7 +71,7 @@ const typography = {
     mono: '',
   },
   fontSizes: {
-    xxs: 10,
+    '2xs': 10,
     xs: 12,
     sm: 14,
     md: 16,
@@ -99,6 +96,30 @@ const typography = {
 The `size` key allows you to customize the global spacing and sizing scale for your project. By default these spacing value can be referenced by the `padding`, `margin`, and `top`, `left`, `right`, `bottom` props.
 
 <SpaceBlocks/>
+
+## Opacity
+
+The `opacity` key allows you to define colors opacity using the Red-green-blue-alpha (RGBA) model. RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
+
+```jsx
+const opacity = {
+  0: 0,
+  5: 0.05,
+  10: 0.1,
+  20: 0.2,
+  25: 0.25,
+  30: 0.3,
+  40: 0.4,
+  50: 0.5,
+  60: 0.6,
+  70: 0.7,
+  75: 0.75,
+  80: 0.8,
+  90: 0.9,
+  95: 0.95,
+  100: 1,
+};
+```
 
 ## Shadows
 
@@ -209,4 +230,4 @@ export default {
 };
 ```
 
-Still confused? You can always explore [here](https://github.com/GeekyAnts/nativebase-v3/tree/development/src/theme/base).
+Still confused? You can always explore [here](https://github.com/GeekyAnts/NativeBase/tree/master/src/theme/base).
