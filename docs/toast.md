@@ -62,6 +62,14 @@ In some cases you might need to prevent duplicate of specific toasts. To achieve
 
 ```
 
+### Standalone Toast
+
+You can use standalone toast where you don't have access to `useToast` hook. e.g. in a different file, out of a React component.
+
+```ComponentSnackPlayer path=composites,Toast,StandaloneToast.tsx
+
+```
+
 ## Props
 
 Below props can be passed while calling toast.show.
