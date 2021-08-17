@@ -208,6 +208,10 @@ module.exports = {
       ],
     },
     {
+      type: 'doc',
+      id: 'testing',
+    },
+    {
       type: 'category',
       label: 'Examples',
       collapsed: false,
