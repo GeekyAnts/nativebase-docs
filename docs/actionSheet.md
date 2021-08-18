@@ -1,5 +1,5 @@
 ---
-id: actionSheet
+id: action-sheet
 title: ActionSheet
 ---
 
