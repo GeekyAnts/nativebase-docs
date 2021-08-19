@@ -1,5 +1,5 @@
 {
-  "version-3.1/componentsSidebar": [
+  "version-3.1.0/componentsSidebar": [
     {
       "collapsed": false,
       "type": "category",
@@ -7,15 +7,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/nativebase"
+          "id": "version-3.1.0/nativebase"
         },
         {
           "type": "doc",
-          "id": "version-3.1/installation"
+          "id": "version-3.1.0/installation"
         },
         {
           "type": "doc",
-          "id": "version-3.1/setup-provider"
+          "id": "version-3.1.0/setup-provider"
         }
       ]
     },
@@ -26,19 +26,19 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/utility-first"
+          "id": "version-3.1.0/utility-first"
         },
         {
           "type": "doc",
-          "id": "version-3.1/design-tokens"
+          "id": "version-3.1.0/design-tokens"
         },
         {
           "type": "doc",
-          "id": "version-3.1/interaction-styles"
+          "id": "version-3.1.0/interaction-styles"
         },
         {
           "type": "doc",
-          "id": "version-3.1/responsive-style"
+          "id": "version-3.1.0/responsive-style"
         }
       ]
     },
@@ -49,23 +49,23 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/utility-props"
+          "id": "version-3.1.0/utility-props"
         },
         {
           "type": "doc",
-          "id": "version-3.1/color-mode"
+          "id": "version-3.1.0/color-mode"
         },
         {
           "type": "doc",
-          "id": "version-3.1/nativebase-factory"
+          "id": "version-3.1.0/nativebase-factory"
         },
         {
           "type": "doc",
-          "id": "version-3.1/safe-area-view-props"
+          "id": "version-3.1.0/safe-area-view-props"
         },
         {
           "type": "doc",
-          "id": "version-3.1/accessibility"
+          "id": "version-3.1.0/accessibility"
         }
       ]
     },
@@ -76,31 +76,31 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/default-theme"
+          "id": "version-3.1.0/default-theme"
         },
         {
           "type": "doc",
-          "id": "version-3.1/customizing-theme"
+          "id": "version-3.1.0/customizing-theme"
         },
         {
           "type": "doc",
-          "id": "version-3.1/customizing-fonts"
+          "id": "version-3.1.0/customizing-fonts"
         },
         {
           "type": "doc",
-          "id": "version-3.1/customizing-components"
+          "id": "version-3.1.0/customizing-components"
         },
         {
           "type": "doc",
-          "id": "version-3.1/dark-mode"
+          "id": "version-3.1.0/dark-mode"
         },
         {
           "type": "doc",
-          "id": "version-3.1/breakpoints"
+          "id": "version-3.1.0/breakpoints"
         },
         {
           "type": "doc",
-          "id": "version-3.1/theme"
+          "id": "version-3.1.0/theme"
         }
       ]
     },
@@ -111,35 +111,35 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/box"
+          "id": "version-3.1.0/box"
         },
         {
           "type": "doc",
-          "id": "version-3.1/center"
+          "id": "version-3.1.0/center"
         },
         {
           "type": "doc",
-          "id": "version-3.1/container"
+          "id": "version-3.1.0/container"
         },
         {
           "type": "doc",
-          "id": "version-3.1/flex"
+          "id": "version-3.1.0/flex"
         },
         {
           "type": "doc",
-          "id": "version-3.1/hStack"
+          "id": "version-3.1.0/hStack"
         },
         {
           "type": "doc",
-          "id": "version-3.1/stack"
+          "id": "version-3.1.0/stack"
         },
         {
           "type": "doc",
-          "id": "version-3.1/VStack"
+          "id": "version-3.1.0/VStack"
         },
         {
           "type": "doc",
-          "id": "version-3.1/ZStack"
+          "id": "version-3.1.0/ZStack"
         }
       ]
     },
@@ -150,51 +150,51 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/button"
+          "id": "version-3.1.0/button"
         },
         {
           "type": "doc",
-          "id": "version-3.1/pressable"
+          "id": "version-3.1.0/pressable"
         },
         {
           "type": "doc",
-          "id": "version-3.1/checkbox"
+          "id": "version-3.1.0/checkbox"
         },
         {
           "type": "doc",
-          "id": "version-3.1/form-control"
+          "id": "version-3.1.0/form-control"
         },
         {
           "type": "doc",
-          "id": "version-3.1/icon-button"
+          "id": "version-3.1.0/icon-button"
         },
         {
           "type": "doc",
-          "id": "version-3.1/input"
+          "id": "version-3.1.0/input"
         },
         {
           "type": "doc",
-          "id": "version-3.1/link"
+          "id": "version-3.1.0/link"
         },
         {
           "type": "doc",
-          "id": "version-3.1/radio"
+          "id": "version-3.1.0/radio"
         },
         {
           "type": "doc",
-          "id": "version-3.1/select"
+          "id": "version-3.1.0/select"
         },
         {
           "type": "doc",
-          "id": "version-3.1/slider"
+          "id": "version-3.1.0/slider"
         },
         {
           "type": "doc",
-          "id": "version-3.1/switch"
+          "id": "version-3.1.0/switch"
         },
         {
           "type": "doc",
-          "id": "version-3.1/textarea"
+          "id": "version-3.1.0/textarea"
         }
       ]
     },
@@ -205,11 +205,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/badge"
+          "id": "version-3.1.0/badge"
         },
         {
           "type": "doc",
-          "id": "version-3.1/divider"
+          "id": "version-3.1.0/divider"
         }
       ]
     },
@@ -220,19 +220,19 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/alert"
+          "id": "version-3.1.0/alert"
         },
         {
           "type": "doc",
-          "id": "version-3.1/progress"
+          "id": "version-3.1.0/progress"
         },
         {
           "type": "doc",
-          "id": "version-3.1/spinner"
+          "id": "version-3.1.0/spinner"
         },
         {
           "type": "doc",
-          "id": "version-3.1/toast"
+          "id": "version-3.1.0/toast"
         }
       ]
     },
@@ -243,11 +243,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/text"
+          "id": "version-3.1.0/text"
         },
         {
           "type": "doc",
-          "id": "version-3.1/heading"
+          "id": "version-3.1.0/heading"
         }
       ]
     },
@@ -258,23 +258,23 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/alert-dialog"
+          "id": "version-3.1.0/alert-dialog"
         },
         {
           "type": "doc",
-          "id": "version-3.1/menu"
+          "id": "version-3.1.0/menu"
         },
         {
           "type": "doc",
-          "id": "version-3.1/modal"
+          "id": "version-3.1.0/modal"
         },
         {
           "type": "doc",
-          "id": "version-3.1/popover"
+          "id": "version-3.1.0/popover"
         },
         {
           "type": "doc",
-          "id": "version-3.1/tooltip"
+          "id": "version-3.1.0/tooltip"
         }
       ]
     },
@@ -285,7 +285,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/action-sheet"
+          "id": "version-3.1.0/action-sheet"
         }
       ]
     },
@@ -296,15 +296,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/avatar"
+          "id": "version-3.1.0/avatar"
         },
         {
           "type": "doc",
-          "id": "version-3.1/icon"
+          "id": "version-3.1.0/icon"
         },
         {
           "type": "doc",
-          "id": "version-3.1/image"
+          "id": "version-3.1.0/image"
         }
       ]
     },
@@ -315,15 +315,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/presence-transition"
+          "id": "version-3.1.0/presence-transition"
         },
         {
           "type": "doc",
-          "id": "version-3.1/slide"
+          "id": "version-3.1.0/slide"
         },
         {
           "type": "doc",
-          "id": "version-3.1/stagger"
+          "id": "version-3.1.0/stagger"
         }
       ]
     },
@@ -334,7 +334,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/FAB"
+          "id": "version-3.1.0/FAB"
         }
       ]
     },
@@ -345,27 +345,27 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/scrollview"
+          "id": "version-3.1.0/scrollview"
         },
         {
           "type": "doc",
-          "id": "version-3.1/view"
+          "id": "version-3.1.0/view"
         },
         {
           "type": "doc",
-          "id": "version-3.1/keyboard-avoiding-view"
+          "id": "version-3.1.0/keyboard-avoiding-view"
         },
         {
           "type": "doc",
-          "id": "version-3.1/status-bar"
+          "id": "version-3.1.0/status-bar"
         },
         {
           "type": "doc",
-          "id": "version-3.1/flat-list"
+          "id": "version-3.1.0/flat-list"
         },
         {
           "type": "doc",
-          "id": "version-3.1/section-list"
+          "id": "version-3.1.0/section-list"
         }
       ]
     },
@@ -376,49 +376,49 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/use-disclosure"
+          "id": "version-3.1.0/use-disclosure"
         },
         {
           "type": "doc",
-          "id": "version-3.1/use-breakPoint-value"
+          "id": "version-3.1.0/use-breakPoint-value"
         },
         {
           "type": "doc",
-          "id": "version-3.1/use-clipboard"
+          "id": "version-3.1.0/use-clipboard"
         },
         {
           "type": "doc",
-          "id": "version-3.1/use-media-query"
+          "id": "version-3.1.0/use-media-query"
         },
         {
           "type": "doc",
-          "id": "version-3.1/use-theme"
+          "id": "version-3.1.0/use-theme"
         },
         {
           "type": "doc",
-          "id": "version-3.1/use-token"
+          "id": "version-3.1.0/use-token"
         },
         {
           "type": "doc",
-          "id": "version-3.1/use-color-mode"
+          "id": "version-3.1.0/use-color-mode"
         },
         {
           "type": "doc",
-          "id": "version-3.1/use-color-mode-value"
+          "id": "version-3.1.0/use-color-mode-value"
         },
         {
           "type": "doc",
-          "id": "version-3.1/use-contrast-text"
+          "id": "version-3.1.0/use-contrast-text"
         },
         {
           "type": "doc",
-          "id": "version-3.1/use-accessible-colors"
+          "id": "version-3.1.0/use-accessible-colors"
         }
       ]
     },
     {
       "type": "doc",
-      "id": "version-3.1/testing"
+      "id": "version-3.1.0/testing"
     },
     {
       "collapsed": false,
@@ -427,11 +427,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/todo-example"
+          "id": "version-3.1.0/todo-example"
         },
         {
           "type": "doc",
-          "id": "version-3.1/kitchen-sink"
+          "id": "version-3.1.0/kitchen-sink"
         }
       ]
     },
@@ -442,11 +442,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/react-hook-forms"
+          "id": "version-3.1.0/react-hook-forms"
         },
         {
           "type": "doc",
-          "id": "version-3.1/nativebase-formik-ui"
+          "id": "version-3.1.0/nativebase-formik-ui"
         }
       ]
     },
@@ -462,23 +462,23 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-3.1/building-app-bar"
+              "id": "version-3.1.0/building-app-bar"
             },
             {
               "type": "doc",
-              "id": "version-3.1/building-card"
+              "id": "version-3.1.0/building-card"
             },
             {
               "type": "doc",
-              "id": "version-3.1/building-drawer-navigation"
+              "id": "version-3.1.0/building-drawer-navigation"
             },
             {
               "type": "doc",
-              "id": "version-3.1/building-tab-view"
+              "id": "version-3.1.0/building-tab-view"
             },
             {
               "type": "doc",
-              "id": "version-3.1/building-swipe-list"
+              "id": "version-3.1.0/building-swipe-list"
             }
           ]
         },
@@ -489,15 +489,15 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-3.1/form"
+              "id": "version-3.1.0/form"
             },
             {
               "type": "doc",
-              "id": "version-3.1/login-signup-forms"
+              "id": "version-3.1.0/login-signup-forms"
             },
             {
               "type": "doc",
-              "id": "version-3.1/building-search-bar"
+              "id": "version-3.1.0/building-search-bar"
             }
           ]
         },
@@ -508,11 +508,11 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-3.1/app-drawer"
+              "id": "version-3.1.0/app-drawer"
             },
             {
               "type": "doc",
-              "id": "version-3.1/building-footer-tabs"
+              "id": "version-3.1.0/building-footer-tabs"
             }
           ]
         }
@@ -525,7 +525,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/migration/Guide"
+          "id": "version-3.1.0/migration/Guide"
         },
         {
           "collapsed": true,
@@ -534,99 +534,99 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-3.1/migration/action-sheet"
+              "id": "version-3.1.0/migration/action-sheet"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/badge"
+              "id": "version-3.1.0/migration/badge"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/button"
+              "id": "version-3.1.0/migration/button"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/card"
+              "id": "version-3.1.0/migration/card"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/checkbox"
+              "id": "version-3.1.0/migration/checkbox"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/date-picker"
+              "id": "version-3.1.0/migration/date-picker"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/deck-swiper"
+              "id": "version-3.1.0/migration/deck-swiper"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/drawer"
+              "id": "version-3.1.0/migration/drawer"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/FABs"
+              "id": "version-3.1.0/migration/FABs"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/footer-tab"
+              "id": "version-3.1.0/migration/footer-tab"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/form"
+              "id": "version-3.1.0/migration/form"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/header"
+              "id": "version-3.1.0/migration/header"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/icon"
+              "id": "version-3.1.0/migration/icon"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/layout"
+              "id": "version-3.1.0/migration/layout"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/picker"
+              "id": "version-3.1.0/migration/picker"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/radio-button"
+              "id": "version-3.1.0/migration/radio-button"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/search-bar"
+              "id": "version-3.1.0/migration/search-bar"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/segment"
+              "id": "version-3.1.0/migration/segment"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/spinner"
+              "id": "version-3.1.0/migration/spinner"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/swipe-list"
+              "id": "version-3.1.0/migration/swipe-list"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/tabs"
+              "id": "version-3.1.0/migration/tabs"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/thumbnail"
+              "id": "version-3.1.0/migration/thumbnail"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/toast"
+              "id": "version-3.1.0/migration/toast"
             },
             {
               "type": "doc",
-              "id": "version-3.1/migration/typography"
+              "id": "version-3.1.0/migration/typography"
             }
           ]
         }
@@ -639,29 +639,29 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.1/changelog"
+          "id": "version-3.1.0/changelog"
         },
         {
           "type": "doc",
-          "id": "version-3.1/faq"
+          "id": "version-3.1.0/faq"
         }
       ]
     },
     {
       "type": "doc",
-      "id": "version-3.1/install-expo"
+      "id": "version-3.1.0/install-expo"
     },
     {
       "type": "doc",
-      "id": "version-3.1/install-rn"
+      "id": "version-3.1.0/install-rn"
     },
     {
       "type": "doc",
-      "id": "version-3.1/install-cra"
+      "id": "version-3.1.0/install-cra"
     },
     {
       "type": "doc",
-      "id": "version-3.1/install-next"
+      "id": "version-3.1.0/install-next"
     }
   ]
 }
