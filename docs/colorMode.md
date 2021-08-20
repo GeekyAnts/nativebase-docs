@@ -87,6 +87,83 @@ export default function () {
   );
 }
 ```
+## _light and _dark Pseudo props
+
+All components accepts _light and _dark props which applies the passed props on dark and light mode.
+
+```SnackPlayer name=PseudoProps%20Usage
+import React from 'react';
+import {
+  Heading,
+  useColorMode,
+  Button,
+  HStack,
+  Avatar,
+  Center,
+  useColorModeValue,
+  NativeBaseProvider
+} from 'native-base';
+
+function PseduoPropsUsage () {
+  const { toggleColorMode } = useColorMode();
+  return (
+    <>
+      <Heading>I'm a Heading</Heading>
+      <Button
+        _light={{colorScheme:'blue'}}
+        _dark={{colorScheme:'red'}}
+        onPress={() => {
+          toggleColorMode();
+        }}
+      >
+        Change mode
+      </Button>
+      <HStack space={2} mt={3}>
+        <Avatar
+          name="Ankur"
+          borderWidth={2}
+          source={{
+            uri:
+              'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
+          }}
+        />
+        <Avatar
+          name="Rohit"
+          borderWidth={2}
+          source={{
+            uri:
+              'https://pbs.twimg.com/profile_images/1352844693151731713/HKO7cnlW_400x400.jpg',
+          }}
+        />
+      </HStack>
+      </>
+  );
+}
+
+const LocalWrapper = ({ children }) => {
+  const bg = useColorModeValue('gray.200', 'gray.800')
+  return (
+    <Center
+      flex={1}
+      bg={bg}
+    >
+      {children}
+    </Center>
+  );
+};
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <LocalWrapper>
+        <PseduoPropsUsage />
+      </LocalWrapper>
+    </NativeBaseProvider>
+  );
+}
+
+```
+
 
 ## Default color mode
 
