@@ -472,6 +472,7 @@ html[data-theme='dark'] .navbar-small {
 .menu__link[href*='/utility-props']:after,
 .menu__link[href*='/utility-props-specificity']:after,
 .menu__link[href*='/color-mode']:after,
+.menu__link[href*='/psuedo-props']:after,
 .menu__link[href*='/strict-mode']:after,
 .menu__link[href*='/default-theme']:after {
   content: 'New';

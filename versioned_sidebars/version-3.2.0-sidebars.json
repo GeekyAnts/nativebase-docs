@@ -38,6 +38,10 @@
         },
         {
           "type": "doc",
+          "id": "version-3.2.0/psuedo-props"
+        },
+        {
+          "type": "doc",
           "id": "version-3.2.0/interaction-styles"
         },
         {
