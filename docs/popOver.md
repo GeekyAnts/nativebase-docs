@@ -1,5 +1,5 @@
 ---
-id: popOver
+id: popover
 title: Popover
 ---
 
