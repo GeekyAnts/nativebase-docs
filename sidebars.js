@@ -12,6 +12,7 @@ module.exports = {
       collapsed: false,
       items: [
         'utility-first',
+        'utility-props-specificity',
         'design-tokens',
         'interaction-styles',
         'responsive-style',

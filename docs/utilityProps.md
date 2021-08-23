@@ -110,6 +110,61 @@ export default function () {
 | bgColor        | background-color | colors    |
 | opacity        | opacity          | -         |
 
+<br></br>
+
+:::tip Note
+
+Above props can be written in the format: {color}:alpha-{opacityToken}, this gets converted into RGBA color format and the opacityToken is mapped to  [`Opacity`](default-theme#opacity)
+
+:::
+
+```SnackPlayer name=Alpha%20Opacity%20Usage
+
+import React from "react"
+import { HStack, Stack, Center, NativeBaseProvider } from "native-base"
+export function Example() {
+  return (
+    <Stack space={2} alignItems="center">
+      <HStack space={2} alignItems="center">
+        <Center
+          size={16}
+          bg="primary.400:alpha-50"
+          rounded="md"
+          _text={{
+            color: "white",
+          }}
+          shadow={3}
+        >
+          Box 1
+        </Center>
+        <Center
+          bg="primary.400"
+          size={16}
+          rounded="md"
+          _text={{
+            color: "white",
+          }}
+          shadow={3}
+        >
+          Box 2
+        </Center>
+      </HStack>
+    </Stack>
+  )
+}
+
+export default () => {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <Example />
+      </Center>
+    </NativeBaseProvider>
+  )
+}
+
+```
+
 ### Typography
 
 ```SnackPlayer name=Typography
