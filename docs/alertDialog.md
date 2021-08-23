@@ -1,5 +1,5 @@
 ---
-id: alertDialog
+id: alert-dialog
 title: AlertDialog
 ---
 
