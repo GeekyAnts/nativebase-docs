@@ -39,6 +39,7 @@
   --docsearch-searchbox-focus-background: #f9fafb;
   --ifm-navbar-background-color: #f9fafb;
   --ifm-code-background: transparent;
+  --updates-badge-color: #5c686b;
 }
 
 h1,
@@ -466,7 +467,56 @@ html[data-theme='dark'] .navbar-small {
   }
 }
 
-/* sidebar badge */
+/* sidebar badge New Pages*/
+
+.menu__link[href*='/utility-props']:after,
+.menu__link[href*='/utility-props-specificity']:after,
+.menu__link[href*='/color-mode']:after,
+.menu__link[href*='/strict-mode']:after,
+.menu__link[href*='/default-theme']:after {
+  content: 'New';
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  margin-right: -6px;
+  padding: 3px 6px;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 3px;
+  color: var(--ifm-color-primary);
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 10px;
+  height: 10px;
+  font-weight: 600;
+}
+
+/* sidebar badge Updated Pages*/
+
+.menu__link[href*='/button']:after,
+.menu__link[href*='/input']:after,
+.menu__link[href*='/image']:after,
+.menu__link[href*='/select']:after,
+.menu__link[href*='/slider']:after,
+.menu__link[href*='/switch']:after,
+.menu__link[href*='/pressable']:after,
+.menu__link[href*='/checkBox']:after {
+  content: 'Update';
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  margin-right: -6px;
+  padding: 3px 6px;
+  border: 1px solid var(--updates-badge-color);
+  border-radius: 3px;
+  color: var(--updates-badge-color);
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 10px;
+  height: 10px;
+  font-weight: 600;
+}
+
+/* sidebar badge ComingSoon Pages*/
 
 .menu__link[href*='/swipable-list']:after,
 .menu__link[href*='/date-picker']:after,
