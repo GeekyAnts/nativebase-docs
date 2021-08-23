@@ -42,16 +42,16 @@ const typography = {
     '5xl': 1.5,
   },
   lineHeights: {
-    '2xs': 1,
-    xs: 1.125,
-    sm: 1.25,
-    md: 1.375,
-    lg: 1.5,
-    xl: 1.75,
-    '2xl': 2,
-    '3xl': 2.5,
-    '4xl': 3,
-    '5xl': 4,
+    '2xs': 16,
+    xs: 18,
+    sm: 20,
+    md: 22,
+    lg: 24,
+    xl: 28,
+    '2xl': 32,
+    '3xl': 40,
+    '4xl': 48,
+    '5xl': 64,
   },
   fontWeights: {
     hairline: 100,
@@ -63,12 +63,12 @@ const typography = {
     bold: 700,
     extrabold: 800,
     black: 900,
-    extraBlack: 950,
+    extrablack: 950,
   },
   fonts: {
-    heading: '',
-    body: '',
-    mono: '',
+    heading: undefined,
+    body: undefined,
+    mono: undefined,
   },
   fontSizes: {
     '2xs': 10,
@@ -99,7 +99,7 @@ The `size` key allows you to customize the global spacing and sizing scale for
 
 ## Opacity
 
-The `opacity` key allows you to define colors opacity using the Red-green-blue-alpha (RGBA) model. RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
+The `opacity` key is mainly used to allow you to define colors opacity using the red-green-blue-alpha (RGBA) model. RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
 
 ```jsx
 const opacity = {
