@@ -470,6 +470,7 @@ html[data-theme='dark'] .navbar-small {
 /* sidebar badge New Pages*/
 
 .menu__link[href*='/utility-props']:after,
+.menu__link[href*='/utility-props-specificity']:after,
 .menu__link[href*='/color-mode']:after,
 .menu__link[href*='/strict-mode']:after,
 .menu__link[href*='/default-theme']:after {
