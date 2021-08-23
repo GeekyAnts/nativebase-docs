@@ -3,7 +3,7 @@ id: textarea
 title: TextArea
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 The `Textarea` component allows you to easily create multi-line text inputs.
 

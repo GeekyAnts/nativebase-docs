@@ -3,7 +3,7 @@ id: tooltip
 title: Tooltip
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 A tooltip is a brief, informative message that appears when a user interacts with an element. Tooltips are usually initiated in one of two ways: through a mouse-hover gesture or through a keyboard-hover gesture.
 
@@ -52,11 +52,12 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 ## Accessibility
 
 Adheres to the [Tooltip WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-1.1/#tooltip)
+
 ### Keyboard Interactions
 
-| Name                | Description |
-| --------------------|-------------|
-| Space   | If open, closes the tooltip without delay. |
-| Enter   | If open, closes the tooltip without delay. |
-| Tab     | Moves focus to the next focusable element. |
-| Esc     | If open, closes the tooltip without delay. | 
+| Name  | Description                                |
+| ----- | ------------------------------------------ |
+| Space | If open, closes the tooltip without delay. |
+| Enter | If open, closes the tooltip without delay. |
+| Tab   | Moves focus to the next focusable element. |
+| Esc   | If open, closes the tooltip without delay. |

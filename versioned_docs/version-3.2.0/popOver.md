@@ -3,7 +3,7 @@ id: popover
 title: Popover
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 `Popover` is a non-modal dialog that floats around a trigger. It's used to display contextual information to the user, and should be paired with a pressable trigger element.
 
@@ -85,10 +85,10 @@ Adheres to the [Dialog WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-
 
 ### Keyboard Interactions
 
-| Name                | Description |
-| --------------------|-------------|
-| Space   | Opens/closes the popover. |
-| Enter   | Opens/closes the popover. |
-| Tab     | Moves focus to the next focusable element. |
-| Shift + Tab | Moves focus to the previous focusable element. |
-| Esc     | Closes the popover and moves focus to Popover.Trigger. | 
+| Name        | Description                                            |
+| ----------- | ------------------------------------------------------ |
+| Space       | Opens/closes the popover.                              |
+| Enter       | Opens/closes the popover.                              |
+| Tab         | Moves focus to the next focusable element.             |
+| Shift + Tab | Moves focus to the previous focusable element.         |
+| Esc         | Closes the popover and moves focus to Popover.Trigger. |
