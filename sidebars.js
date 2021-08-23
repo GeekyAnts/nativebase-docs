@@ -12,6 +12,7 @@ module.exports = {
       collapsed: false,
       items: [
         'utility-first',
+        'utility-props-specificity',
         'design-tokens',
         'interaction-styles',
         'responsive-style',
@@ -26,6 +27,7 @@ module.exports = {
         'color-mode',
         'nativebase-factory',
         'safe-area-view-props',
+        'strict-mode',
         'accessibility',
       ],
     },
@@ -247,6 +249,7 @@ module.exports = {
       collapsed: false,
       items: [
         'migration/Guide',
+        'migration/v3.1.0-to-3.2.0',
         {
           'Components Migration': [
             // 'migration/Accordion',
