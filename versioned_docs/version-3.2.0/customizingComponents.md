@@ -53,14 +53,14 @@ As shown above, we can customize components by passing the **components** object
 - As the name suggests, it's used to define the base style of a component.
 - Base style can be a function or a plain object. Use function if you want to get access to defaultProps, current colorMode (light/dark) and theme object.
 
-Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3-pre-beta/src/theme/components/button.ts#L5)
+Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/master/src/theme/components/button.ts#L5)
 
 #### Default Props
 
 - Default props can be used to initialize props of a component.
 - For e.g. You have a Button component and it has 2 variants. i.e. outline, solid. You can use it like.
 
-Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3-pre-beta/src/theme/components/button.ts#L201)
+Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/master/src/theme/components/button.ts#L201)
 
 ```jsx
 <Button variant="ghost">
@@ -157,4 +157,4 @@ export default function () {
 
 <br />
 
-NativeBase ships with default styles for each components. [You can find it here](https://github.com/GeekyAnts/NativeBase/tree/v3-pre-beta/src/theme/components)
+NativeBase ships with default styles for each components. [You can find it here](https://github.com/GeekyAnts/NativeBase/tree/master/src/theme/components)
