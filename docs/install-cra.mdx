@@ -62,6 +62,7 @@ cd my-app
 ```bash
 yarn add react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
+
 </div>
   </TabItem>
 
@@ -85,7 +86,7 @@ Put the below code in your App.js
 import React from 'react';
 import { NativeBaseProvider, Box } from 'native-base';
 
-function App() {
+export default function App() {
   return (
     <NativeBaseProvider>
       <Box>Hello world</Box>
