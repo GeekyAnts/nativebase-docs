@@ -1,3 +1,8 @@
+---
+id: z-stack
+title: ZStack
+---
+
 `ZStack` aligns items absolutely in the z-axis.
 
 ## Examples
