@@ -69,7 +69,7 @@ export default function App() {
               Login
           </Button>
 
-<HStack justifyContent="center" alignItem='center'>
+<HStack justifyContent="center" alignItems='center'>
           <IconButton
             variant='unstyled'
             startIcon={
@@ -178,7 +178,7 @@ export default function App() {
               SignUp
           </Button>
 
-<HStack justifyContent="center" alignItem='center' >
+<HStack justifyContent="center" alignItems='center' >
           <IconButton
             variant='unstyled'
             startIcon={
