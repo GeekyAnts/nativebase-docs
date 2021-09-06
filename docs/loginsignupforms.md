@@ -69,37 +69,37 @@ export default function App() {
               Login
           </Button>
 
-<HStack justifyContent="center" alignItem='center'>
-          <IconButton
-            variant='unstyled'
-            startIcon={
-              <Icon
-                as={< MaterialCommunityIcons name="facebook" />}
-                color='muted.700'
-                size='sm'
-              />
-            }
-          />
-          <IconButton
-            variant='unstyled'
-            startIcon={
-              <Icon
-                as={< MaterialCommunityIcons name="google" />}
-                color='muted.700'
-                size="sm"
-              />
-            }
-          />
-          <IconButton
-            variant='unstyled'
-            startIcon={
-              <Icon
-                as={< MaterialCommunityIcons name="github" />}
-                color='muted.700'
-                size="sm"
-              />
-            }
-          />
+          <HStack justifyContent="center" alignItems='center'>
+            <IconButton
+              variant='unstyled'
+              startIcon={
+                <Icon
+                  as={< MaterialCommunityIcons name="facebook" />}
+                  color='muted.700'
+                  size='sm'
+                />
+              }
+            />
+            <IconButton
+              variant='unstyled'
+              startIcon={
+                <Icon
+                  as={< MaterialCommunityIcons name="google" />}
+                  color='muted.700'
+                  size="sm"
+                />
+              }
+            />
+            <IconButton
+              variant='unstyled'
+              startIcon={
+                <Icon
+                  as={< MaterialCommunityIcons name="github" />}
+                  color='muted.700'
+                  size="sm"
+                />
+              }
+            />
           </HStack>
           </VStack>
           <HStack justifyContent="center">
@@ -178,37 +178,37 @@ export default function App() {
               SignUp
           </Button>
 
-<HStack justifyContent="center" alignItem='center' >
-          <IconButton
-            variant='unstyled'
-            startIcon={
-              <Icon
-                as={< MaterialCommunityIcons name="facebook" />}
-                color='muted.700'
-                size='sm'
-              />
-            }
-          />
-          <IconButton
-            variant='unstyled'
-            startIcon={
-              <Icon
-                as={< MaterialCommunityIcons name="google" />}
-                color='muted.700'
-                size="sm"
-              />
-            }
-          />
-          <IconButton
-            variant='unstyled'
-            startIcon={
-              <Icon
-                as={< MaterialCommunityIcons name="github" />}
-                color='muted.700'
-                size="sm"
-              />
-            }
-          />
+          <HStack justifyContent="center" alignItems='center'>
+            <IconButton
+              variant='unstyled'
+              startIcon={
+                <Icon
+                  as={< MaterialCommunityIcons name="facebook" />}
+                  color='muted.700'
+                  size='sm'
+                />
+              }
+            />
+            <IconButton
+              variant='unstyled'
+              startIcon={
+                <Icon
+                  as={< MaterialCommunityIcons name="google" />}
+                  color='muted.700'
+                  size="sm"
+                />
+              }
+            />
+            <IconButton
+              variant='unstyled'
+              startIcon={
+                <Icon
+                  as={< MaterialCommunityIcons name="github" />}
+                  color='muted.700'
+                  size="sm"
+                />
+              }
+            />
           </HStack>
           </VStack>
         </VStack>
