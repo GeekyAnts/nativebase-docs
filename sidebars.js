@@ -176,6 +176,7 @@ module.exports = {
       items: [
         // 'appBar',
         'FAB',
+        'hidden',
       ],
     },
     {
