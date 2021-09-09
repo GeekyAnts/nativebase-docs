@@ -19,7 +19,7 @@ import { Hidden } from 'native-base';
 
 ```jsx
 <Hidden>
-  <Box bg="red.400" p={2}>
+  <Box bg="red.400" p="2">
     <Text>This text will be always hidden.</Text>
   </Box>
 </Hidden>
@@ -30,12 +30,12 @@ import { Hidden } from 'native-base';
 ```jsx
 <>
   <Hidden from="sm" till="lg">
-    <Box bg="red.400" p={2}>
+    <Box bg="red.400" p="2">
       <Text>This text will be hidden from sm to lg screens.</Text>
     </Box>
   </Hidden>
   <Hidden only={['sm', 'lg']}>
-    <Box bg="red.400" p={2}>
+    <Box bg="red.400" p="2">
       <Text>This text will be hidden on sm and lg screens only.</Text>
     </Box>
   </Hidden>
@@ -69,14 +69,14 @@ function ColorModeExample () {
       >
         Change mode
       </Button>
-      <VStack space={2} mt={3}>
+      <VStack space="2" mt="3">
         <Hidden colorMode="light">
-          <Box bg="yellow.400" p={2}>
+          <Box bg="yellow.400" p="2">
             <Text>This text will be hidden on light mode</Text>
           </Box>
         </Hidden>
         <Hidden colorMode="dark">
-          <Box bg="green.400" p={2}>
+          <Box bg="green.400" p="2">
             <Text>This text will be hidden on dark mode</Text>
           </Box>
         </Hidden>
@@ -89,7 +89,7 @@ const LocalWrapper = ({ children }) => {
   const bg = useColorModeValue('gray.200', 'gray.800')
   return (
     <Center
-      flex={1}
+      flex="1"
       bg={bg}
     >
       {children}
@@ -112,7 +112,7 @@ export default function () {
 
 ```jsx
 <Hidden platform={['android', 'web']}>
-  <Box bg="red.400" p={2}>
+  <Box bg="red.400" p="2">
     <Text>This text will be hidden on android and web.</Text>
   </Box>
 </Hidden>

@@ -27,7 +27,7 @@ function FactoryViewExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <FactoryViewExample />
       </Center>
     </NativeBaseProvider>
@@ -56,7 +56,7 @@ function FactoryViewExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <FactoryViewExample />
       </Center>
     </NativeBaseProvider>
@@ -87,7 +87,7 @@ function FactoryViewModeExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <FactoryViewModeExample />
       </Center>
     </NativeBaseProvider>
@@ -130,7 +130,7 @@ function FactoryViewRefExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <FactoryViewRefExample />
       </Center>
     </NativeBaseProvider>
