@@ -34,13 +34,13 @@ function AppDrawer(){
     "forum",
   ];
 
-  return <SimpleGrid columns={5} spacingY={4} spacingX={4}>
+  return <SimpleGrid columns="5" spacingY="4" spacingX="4">
       {icons.map((icon) => (
         <IconButton
           borderRadius="full"
           colorScheme="indigo"
           variant="solid"
-          p={4}
+          p="4"
           icon={<Icon name={icon} as={MaterialIcons} size='sm' />}
         />
       ))}

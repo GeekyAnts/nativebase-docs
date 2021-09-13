@@ -29,13 +29,13 @@ function UseContrastingTextHook () {
             key={`teal.${key}`}
             bg={`teal.${key}`}
             _text={{ color: colorContrast }}
-            mb={1}
+            mb="1"
           >
             NativeBase
           </Button>
         );
       })}
-      <Button mt={2} onPress={toggleAccessibleColors} bg={'indigo.600'}>
+      <Button mt="2" onPress={toggleAccessibleColors} bg='indigo.600'>
         Toggle Accessible Colors
       </Button>
     </>
@@ -45,7 +45,7 @@ function UseContrastingTextHook () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <UseContrastingTextHook />
       </Center>
     </NativeBaseProvider>

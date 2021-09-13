@@ -250,8 +250,8 @@ module.exports = {
       label: 'Migration',
       collapsed: false,
       items: [
-        'migration/Guide',
-        'migration/v3.1.0-to-3.2.0',
+        'migration/guide',
+        'migration/migration-guide',
         {
           'Components Migration': [
             // 'migration/Accordion',

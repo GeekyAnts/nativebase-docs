@@ -35,7 +35,7 @@ function OverlayComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <OverlayComponent />
       </Center>
     </NativeBaseProvider>
@@ -79,7 +79,7 @@ function OverlayComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <OverlayComponent />
       </Center>
     </NativeBaseProvider>
