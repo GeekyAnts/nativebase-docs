@@ -27,7 +27,7 @@ function UseBreakpointValueExample () {
     md: 'blue.200',
   });
   return (
-    <Box bg={color} w={'100px'}>
+    <Box bg={color} w='100px'>
       This is a box
     </Box>
   );
@@ -35,7 +35,7 @@ function UseBreakpointValueExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <UseBreakpointValueExample />
       </Center>
     </NativeBaseProvider>

@@ -27,8 +27,8 @@ export default function App() {
 
     return (
       <NativeBaseProvider >
-        <Box textAlign="center" bg= 'white' flex= {1} safeAreaTop>
-          <Heading my={6} textAlign="center" size="lg">Swipe list Example</Heading>
+        <Box textAlign="center" bg="white" flex= "1" safeAreaTop>
+          <Heading my="6" textAlign="center" size="lg">Swipe list Example</Heading>
             <Basic />
         </Box>
         </NativeBaseProvider>
@@ -68,9 +68,9 @@ function Basic() {
                 alignItems= 'center'
                 bg="white"
                 borderBottomColor= 'trueGray.200'
-                borderBottomWidth= {1}
+                borderBottomWidth= "1"
                 justifyContent= 'center'
-                height= {50}
+                height= "50"
                 underlayColor={'#AAA'}
                 _pressed={{
                   bg:'trueGray.200'
@@ -78,9 +78,9 @@ function Basic() {
                 py={8}
             >
 
-                  <HStack width="100%" px={4}>
-                    <HStack space={2} alignItems="center">
-                      <Avatar color="white" bg={"secondary.700"}>
+                  <HStack width="100%" px="4">
+                    <HStack space="2" alignItems="center">
+                      <Avatar color="white" bg="secondary.700">
                         {index}
                       </Avatar>
                       <Text>
@@ -94,11 +94,11 @@ function Basic() {
 
     const renderHiddenItem = (data, rowMap) => (
         <HStack
-        flex= {1}
-        pl={2}
+        flex= "1"
+        pl="2"
         >
             <Pressable
-             px={4}
+             px="4"
               ml='auto'
               cursor="pointer"
               bg="dark.500"
@@ -111,7 +111,7 @@ function Basic() {
                 <Icon as={<Ionicons name="close"  />} color='white'/>
             </Pressable>
             <Pressable
-              px={4}
+              px="4"
               cursor="pointer"
               bg="red.500"
               justifyContent="center"
@@ -127,7 +127,7 @@ function Basic() {
 
     return (
         <Box  bg= 'white' safeArea
-        flex= {1}>
+        flex= "1">
             <SwipeListView
                 data={listData}
                 renderItem={renderItem}
