@@ -42,7 +42,7 @@ function UsePopoverExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <UsePopoverExample />
       </Center>
     </NativeBaseProvider>

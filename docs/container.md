@@ -38,7 +38,7 @@ function ContainerComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <ContainerComponent />
       </Center>
     </NativeBaseProvider>

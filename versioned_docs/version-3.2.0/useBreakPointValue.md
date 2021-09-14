@@ -27,7 +27,7 @@ function UseBreakpointValueExample () {
     md: 'blue.200',
   });
   return (
-    <Box bg={color} w={'100px'}>
+    <Box bg={color} w='100px'>
       This is a box
     </Box>
   );

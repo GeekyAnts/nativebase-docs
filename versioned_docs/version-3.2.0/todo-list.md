@@ -57,22 +57,22 @@ export default function () {
   return (
     <NativeBaseProvider>
     <Center flex={1}>
-    <VStack space={4} flex={1} w="90%" mt={4}>
+    <VStack space="4" flex={1} w="90%" mt="4">
       <Heading color="emerald.400">Todo App</Heading>
       <Input
         variant="filled"
         
         InputRightElement={
           <IconButton
-            icon={<Icon as={FontAwesome5} name="plus" size={4} />}
+            icon={<Icon as={FontAwesome5} name="plus" size="4" />}
            colorScheme="emerald"
-            ml={1}
+            ml="1"
             onPress={() => {
               addItem(inputValue);
               setInputValue("");
             }}
 
-            mr={1}/>
+            mr="1"/>
 
         }
         onChangeText={(v) => setInputValue(v)}
@@ -93,13 +93,13 @@ export default function () {
               onChange={() => handleStatusChange(itemI)}
               value={item.title}
             >
-              <Text mx={2} strikeThrough={item.isCompleted}>
+              <Text mx="2" strikeThrough={item.isCompleted}>
                 {item.title}
               </Text>
             </Checkbox>
             <IconButton
               colorScheme="emerald"
-              icon={<Icon as={FontAwesome5} name="trash" size={5} />}
+              icon={<Icon as={FontAwesome5} name="trash" size="5" />}
               onPress={() => handleDelete(itemI)}
             />
           </HStack>

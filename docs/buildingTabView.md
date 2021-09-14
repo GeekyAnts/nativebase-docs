@@ -18,15 +18,15 @@ import {NativeBaseProvider,Box, Text} from 'native-base';
 import Constants from 'expo-constants';
 
 const FirstRoute = () => (
-  <Box flex="1" bg="pink.400" />
+  <Box flex={1} bg="pink.400" />
 );
 
 const SecondRoute = () => (
-  <Box flex="1" bg="violet.400"  />
+  <Box flex={1} bg="violet.400"  />
 );
 
 const ThirdRoute = () => (
-  <Box flex="1" bg="red.400"  />
+  <Box flex={1} bg="red.400"  />
 );
 
 const initialLayout = { width: Dimensions.get('window').width };
@@ -63,7 +63,7 @@ export default function TabViewExample() {
 
           return (
             <Box
-              flex="1"
+              flex={1}
               alignItems='center'
               p="2"
               cursor="pointer"

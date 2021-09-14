@@ -63,9 +63,9 @@ export default function TabViewExample() {
 
           return (
             <Box
-             flex = {1}
-              alignItems= 'center'
-              p= {2}
+              flex={1}
+              alignItems='center'
+              p="2"
               cursor="pointer"
              >
             <Pressable

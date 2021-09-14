@@ -41,7 +41,7 @@ export const Example = () => {
           end: [1, 0],
         },
       }}
-      p={12}
+      p="12"
       rounded="lg"
       _text={{
         fontSize: "md",
@@ -89,7 +89,7 @@ const Example = () => {
           end: [1, 0],
         },
       }}
-      p={12}
+      p="12"
       rounded="lg"
       _text={{ fontSize: 'md', fontWeight: 'bold', color: 'white' }}
     >

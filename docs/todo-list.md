@@ -56,8 +56,8 @@ export default function () {
   };
   return (
     <NativeBaseProvider>
-    <Center flex="1">
-    <VStack space="4" flex="1" w="90%" mt="4">
+    <Center flex={1}>
+    <VStack space="4" flex={1} w="90%" mt="4">
       <Heading color="emerald.400">Todo App</Heading>
       <Input
         variant="filled"

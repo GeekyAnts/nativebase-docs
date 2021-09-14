@@ -31,7 +31,7 @@ function UseColorMode() {
       <Text fontSize="lg" display="flex">
         The active color mode is <Text bold>{colorMode}</Text>
       </Text>
-      <Button m={2} onPress={toggleColorMode}>Toggle</Button>
+      <Button m="2" onPress={toggleColorMode}>Toggle</Button>
     </Center>
   );
 }

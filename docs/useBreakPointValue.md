@@ -35,7 +35,7 @@ function UseBreakpointValueExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <UseBreakpointValueExample />
       </Center>
     </NativeBaseProvider>

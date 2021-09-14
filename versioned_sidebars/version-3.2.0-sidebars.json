@@ -38,7 +38,7 @@
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/psuedo-props"
+          "id": "version-3.2.0/pseudo-props"
         },
         {
           "type": "doc",
@@ -139,7 +139,7 @@
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/hStack"
+          "id": "version-3.2.0/h-stack"
         },
         {
           "type": "doc",
@@ -147,11 +147,11 @@
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/VStack"
+          "id": "version-3.2.0/v-stack"
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/ZStack"
+          "id": "version-3.2.0/z-stack"
         }
       ]
     },
@@ -347,6 +347,10 @@
         {
           "type": "doc",
           "id": "version-3.2.0/FAB"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.0/hidden"
         }
       ]
     },
@@ -537,11 +541,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.2.0/migration/Guide"
+          "id": "version-3.2.0/migration/guide"
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/migration/v3.1.0-to-3.2.0"
+          "id": "version-3.2.0/migration/migration-guide"
         },
         {
           "collapsed": true,

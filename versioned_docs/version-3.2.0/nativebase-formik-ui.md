@@ -36,7 +36,7 @@ function FormikExample() {
   return (
  <Formik initialValues={{ firstName: '', lastName: '' }} onSubmit={onSubmit} validate={validate}>
       {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
-        <VStack width="80%" space={4}>
+        <VStack width="80%" space="4">
           <FormControl isRequired isInvalid={'firstName' in errors}>
             <FormControl.Label>First Name</FormControl.Label>
             {console.log("errors" , errors)}

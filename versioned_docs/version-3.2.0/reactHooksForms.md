@@ -24,7 +24,7 @@ function FormHookExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
+    <VStack width="80%" space="4">
       <FormControl isRequired isInvalid={'firstName' in errors}>
         <FormControl.Label>First Name</FormControl.Label>
         <Controller
@@ -123,7 +123,7 @@ function FormHookCheckboxExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
+    <VStack width="80%" space="4">
       <FormControl isRequired isInvalid={'hobbies' in errors}>
         <FormControl.Label>Hobbies</FormControl.Label>
         <Controller
@@ -140,21 +140,21 @@ function FormHookCheckboxExample() {
                 colorScheme="orange"
                 icon={<Icon name="bullseye" type="MaterialCommunityIcons" />}
               >
-                <Text mx={2}>Darts</Text>
+                <Text mx="2">Darts</Text>
               </Checkbox>
               <Checkbox
                 value="movie"
                 colorScheme="dark"
                 icon={<Icon name="bat" type="MaterialCommunityIcons" />}
               >
-                <Text mx={2}>Movie</Text>
+                <Text mx="2">Movie</Text>
               </Checkbox>
               <Checkbox
                 colorScheme="red"
                 value="camping"
                 icon={<Icon name="campfire" type="MaterialCommunityIcons" />}
               >
-                <Text mx={2}>Camping</Text>
+                <Text mx="2">Camping</Text>
               </Checkbox>
               <Checkbox
                 value="chess"
@@ -163,7 +163,7 @@ function FormHookCheckboxExample() {
                   <Icon name="chess-knight" type="MaterialCommunityIcons" />
                 }
               >
-                <Text mx={2}>Chess</Text>
+                <Text mx="2">Chess</Text>
               </Checkbox>
             </Checkbox.Group>
           )}
@@ -186,10 +186,10 @@ function FormHookCheckboxExample() {
               onChange={(val) => onChange(val)}
             >
               <Radio value="male" colorScheme="blue">
-                <Text mx={2}>Male</Text>
+                <Text mx="2">Male</Text>
               </Radio>
               <Radio value="female" colorScheme="pink">
-                <Text mx={2}>Female</Text>
+                <Text mx="2">Female</Text>
               </Radio>
             </Radio.Group>
           )}
@@ -235,7 +235,7 @@ function FormHookSelectExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
+    <VStack width="80%" space="4">
       <FormControl isRequired isInvalid={'language' in errors}>
         <FormControl.Label>Fav language:</FormControl.Label>
         <Controller
@@ -244,7 +244,7 @@ function FormHookSelectExample() {
             <Select
               placeholder="Pick language"
               selectedValue={value}
-              width={150}
+              width="150"
               onValueChange={(itemValue: string) => {
                 onChange(itemValue);
               }}
@@ -303,7 +303,7 @@ function FormHookSliderExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
+    <VStack width="80%" space="4">
       <FormControl isRequired isInvalid={'like' in errors}>
         <FormControl.Label>Amount you like NativeBase</FormControl.Label>
         <Controller
@@ -358,7 +358,7 @@ function FormHookTextareaExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
+    <VStack width="80%" space="4">
       <FormControl isRequired isInvalid={'thought' in errors}>
         <FormControl.Label>What do you think?</FormControl.Label>
         <Controller
@@ -412,7 +412,7 @@ function FormHookSwitchExample() {
     console.log('submiting with ', data);
   };
   return (
-    <VStack width="80%" space={4}>
+    <VStack width="80%" space="4">
       <FormControl isInvalid={'rememberMe' in errors}>
         <FormControl.Label>Remenber me:</FormControl.Label>
         <Controller

@@ -1,5 +1,5 @@
 ---
-id: VStack
+id: v-stack
 title: VStack / Column
 ---
 
