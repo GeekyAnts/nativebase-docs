@@ -15,7 +15,7 @@ module.exports = {
         'utility-props-specificity',
         'design-tokens',
         'pseudo-props',
-        'interaction-styles',
+        'pseudo-props-101',
         'responsive-style',
       ],
     },
