@@ -1,5 +1,5 @@
 ---
-id: pseudo-props
+id: pseudo-props-101
 title: Pseudo Props 101
 ---
 
@@ -77,7 +77,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>

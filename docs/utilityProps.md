@@ -34,7 +34,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -92,7 +92,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -156,7 +156,7 @@ export function Example() {
 export default () => {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Example />
       </Center>
     </NativeBaseProvider>
@@ -193,7 +193,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -247,7 +247,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -303,7 +303,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -352,7 +352,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -413,7 +413,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -458,7 +458,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -503,7 +503,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -546,7 +546,7 @@ function Example() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Example />
       </Center>
     </NativeBaseProvider>
@@ -589,7 +589,7 @@ function Example() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Example />
       </Center>
     </NativeBaseProvider>
@@ -636,7 +636,7 @@ function Example() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Example />
       </Center>
     </NativeBaseProvider>

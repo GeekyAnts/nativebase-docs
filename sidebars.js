@@ -15,7 +15,7 @@ module.exports = {
         'utility-props-specificity',
         'design-tokens',
         'pseudo-props',
-        'interaction-styles',
+        'pseudo-props-101',
         'responsive-style',
       ],
     },
@@ -250,8 +250,8 @@ module.exports = {
       label: 'Migration',
       collapsed: false,
       items: [
-        'migration/Guide',
-        'migration/v3.x.x-to-3.2.0',
+        'migration/migration-guide-three',
+        'migration/migration-guide-three-point-two',
         {
           'Components Migration': [
             // 'migration/Accordion',

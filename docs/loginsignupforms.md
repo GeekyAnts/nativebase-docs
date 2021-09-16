@@ -32,8 +32,8 @@ export default function App() {
       <NativeBaseProvider>
       <Box
         safeArea
-        flex={1}
-        p={2}
+        flex="1"
+        p="2"
         w="90%"
         mx='auto'
       >
@@ -44,14 +44,14 @@ export default function App() {
           Sign in to continue!
         </Heading>
 
-        <VStack space={2} mt={5}>
+        <VStack space="2" mt="5">
           <FormControl>
             <FormControl.Label _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
                 Email ID
             </FormControl.Label>
             <Input />
           </FormControl>
-          <FormControl mb={5}>
+          <FormControl mb="5">
             <FormControl.Label  _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
                 Password
             </FormControl.Label>
@@ -59,12 +59,12 @@ export default function App() {
             <Link
               _text={{ fontSize: 'xs', fontWeight: '700', color:'cyan.500' }}
               alignSelf="flex-end"
-              mt={1}
+              mt="1"
             >
               Forget Password?
             </Link>
           </FormControl>
-          <VStack  space={2}>
+          <VStack  space="2">
           <Button colorScheme="cyan" _text={{color: 'white' }}>
               Login
           </Button>
@@ -142,8 +142,8 @@ export default function App() {
       <NativeBaseProvider>
       <Box
         safeArea
-        flex={1}
-        p={2}
+        flex="1"
+        p="2"
         w="90%"
         mx='auto'
       >
@@ -154,7 +154,7 @@ export default function App() {
           Sign up to continue!
         </Heading>
 
-        <VStack space={2} mt={5}>
+        <VStack space="2" mt="5">
           <FormControl>
             <FormControl.Label _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
                 Email
@@ -173,7 +173,7 @@ export default function App() {
             </FormControl.Label>
             <Input type="password" />
           </FormControl>
-          <VStack  space={2}  mt={5}>
+          <VStack  space="2"  mt="5">
           <Button colorScheme="cyan" _text={{color: 'white' }}>
               SignUp
           </Button>
