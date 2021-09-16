@@ -221,12 +221,12 @@ module.exports = {
       collapsed: false,
       items: ['todo-example', 'kitchen-sink'],
     },
-    {
-      type: 'category',
-      label: 'Community Integration',
-      collapsed: false,
-      items: ['react-hook-forms', 'nativebase-formik-ui'],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Community Integration',
+    //   collapsed: false,
+    //   items: ['react-hook-forms', 'nativebase-formik-ui'],
+    // },
     {
       type: 'category',
       label: 'Recipes',
