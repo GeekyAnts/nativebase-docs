@@ -251,7 +251,7 @@ module.exports = {
       collapsed: false,
       items: [
         'migration/Guide',
-        'migration/v3.1.0-to-3.2.0',
+        'migration/v3.x.x-to-3.2.0',
         {
           'Components Migration': [
             // 'migration/Accordion',
