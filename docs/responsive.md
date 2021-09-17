@@ -3,7 +3,7 @@ id: responsive-style
 title: Responsive
 ---
 
-NativeBase V3 supports responsive styles out of the box. Instead of manually adding responsiveness to your apps, NativeBase V3 allows you provide object and array values to add responsive styles.
+NativeBase v3 supports responsive styles out of the box. Instead of manually adding responsiveness to your apps, NativeBase v3 allows you provide object and array values to add responsive styles.
 
 Responsive syntax relies on the breakpoints defined in the theme object.
 
