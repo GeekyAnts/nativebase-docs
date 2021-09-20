@@ -34,34 +34,47 @@ const templateGenerator = (componentDetails) => {
     for (let prop in propsObject) {
       const { name, description, type, parent, defaultValue } =
         propsObject[prop];
-      const MapValue =
-        internalPropsMap[type.name] ||
-        rnPropsMap[type.name] ||
-        StylingPropsMap[type.name];
-      let newType = type.name.replace(/\</g, '&lt;'); //for <
-      newType = newType.replace(/\>/g, '&gt;'); //for >
+      const markupWithTypeLinks = type.name
+        .split('|')
+        .map((e) => {
+          return e.trim();
+        })
+        .map((element) => {
+          const MapValue =
+            internalPropsMap[element] ||
+            rnPropsMap[element] ||
+            StylingPropsMap[element];
+          const htmlSanatizedElem = element
+            .replace(/\</g, '&lt;') //for <
+            .replace(/\>/g, '&gt;'); //for >
+          return `${
+            MapValue
+              ? `<a href="${MapValue.link}">${element}</a>`
+              : htmlSanatizedElem
+          }`;
+        })
+        .join(' | ');
 
       if (parent.name === `I${displayName}Props`) {
         propExists = true;
         temp =
           temp +
           `<tr>
-        <td>
-          ${name}
-        </td>
-        <td>
-          ${MapValue ? `<a href="${MapValue.link}">${type.name}</a>` : newType}
-        </td>
-        <td>
-          ${description || '-'}
-        </td>
-        <td>
-          ${defaultValue ? defaultValue.value : '-'}
-        </td>
-      </tr>`;
+          <td>
+            ${name}
+          </td>
+          <td>
+              ${markupWithTypeLinks}
+          </td>
+          <td>
+            ${description || '-'}
+          </td>
+          <td>
+            ${defaultValue ? defaultValue.value : '-'}
+          </td>
+        </tr>`;
       }
     }
-
     return temp;
   };
 
