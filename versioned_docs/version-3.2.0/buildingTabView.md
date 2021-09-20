@@ -12,22 +12,26 @@ Here is an example to show how easily and quickly we can use [react-native-tab-v
 ```SnackPlayer name=TabView dependencies=react-native-linear-gradient,react-native-tab-view,react-native-pager-view@5.0.12
 
 import * as React from 'react';
-import { View, StyleSheet, Dimensions, StatusBar,TouchableOpacity,Animated, Pressable} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Dimensions,
+  StatusBar,
+  TouchableOpacity,
+  Animated,
+  Pressable,
+} from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
-import {NativeBaseProvider,Box, Text} from 'native-base';
+import { NativeBaseProvider, Box, Text, Center } from 'native-base';
 import Constants from 'expo-constants';
 
-const FirstRoute = () => (
-  <Box flex={1} bg="pink.400" />
-);
+const FirstRoute = () => <Center flex="1">This is Tab 1</Center>;
 
-const SecondRoute = () => (
-  <Box flex={1} bg="violet.400"  />
-);
+const SecondRoute = () => <Center flex="1">This is Tab 2</Center>;
 
-const ThirdRoute = () => (
-  <Box flex={1} bg="red.400"  />
-);
+const ThirdRoute = () => <Center flex="1">This is Tab 3</Center>;
+
+const FourthRoute = () => <Center flex="1">This is Tab 4 </Center>;
 
 const initialLayout = { width: Dimensions.get('window').width };
 
@@ -35,18 +39,16 @@ const renderScene = SceneMap({
   first: FirstRoute,
   second: SecondRoute,
   third: ThirdRoute,
+  fourth: FourthRoute,
 });
 
 export default function TabViewExample() {
-
-
-
-
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'first', title: 'First' },
-    { key: 'second', title: 'Second' },
-    { key: 'third', title: 'Third' },
+    { key: 'first', title: 'Tab 1' },
+    { key: 'second', title: 'Tab 2' },
+    { key: 'third', title: 'Tab 3' },
+    { key: 'fourth', title: 'Tab 4' },
   ]);
 
   const renderTabBar = (props) => {
@@ -60,23 +62,25 @@ export default function TabViewExample() {
               inputIndex === i ? 1 : 0.5
             ),
           });
+          const color = index === i ? '#1f2937' : '#a1a1aa';
+          const borderColor = index === i ? 'cyan.500' : 'coolGray.200';
 
           return (
             <Box
-             flex = {1}
-              alignItems= 'center'
-              p= {2}
-              cursor="pointer"
-             >
-            <Pressable
-
-              onPress={() => {
-                console.log(i);
-                setIndex(i);}}>
-               <Animated.Text style={{ opacity }}>{route.title}</Animated.Text>
-            </Pressable>
+              borderBottomWidth="3"
+              borderColor={borderColor}
+              flex="1"
+              alignItems="center"
+              p="3"
+              cursor="pointer">
+              <Pressable
+                onPress={() => {
+                  console.log(i);
+                  setIndex(i);
+                }}>
+                <Animated.Text style={{ color }}>{route.title}</Animated.Text>
+              </Pressable>
             </Box>
-
           );
         })}
       </Box>
@@ -85,17 +89,18 @@ export default function TabViewExample() {
 
   return (
     <NativeBaseProvider>
-    <TabView
-      navigationState={{ index, routes }}
-      renderScene={renderScene}
-      renderTabBar={renderTabBar}
-      onIndexChange={setIndex}
-      initialLayout={initialLayout}
-      style={{marginTop: StatusBar.currentHeight}}
-    />
+      <TabView
+        navigationState={{ index, routes }}
+        renderScene={renderScene}
+        renderTabBar={renderTabBar}
+        onIndexChange={setIndex}
+        initialLayout={initialLayout}
+        style={{ marginTop: StatusBar.currentHeight }}
+      />
     </NativeBaseProvider>
   );
 }
+
 
 
 ```

@@ -20,7 +20,7 @@ import React from "react";
 import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
 function UseMediaQueryExample() {
-  const [isSmaller] = useMediaQuery({ maxHeight: 512 });
+  const [isSmaller] = useMediaQuery({ maxHeight: '512' });
   return (
     <Text>
       {isSmaller ? "Height smaller than 512" : "Height larger than 512"}
@@ -30,7 +30,7 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <UseMediaQueryExample />
       </Center>
     </NativeBaseProvider>
@@ -45,7 +45,7 @@ import React from "react";
 import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
 function UseMediaQueryExample() {
-  const [isLargerThan512] = useMediaQuery({ minWidth: 512 });
+  const [isLargerThan512] = useMediaQuery({ minWidth: '512' });
   return (
     <Text>
       {isLargerThan512 ? "Width larger than 512" : "Width smaller than 512"}
@@ -55,7 +55,7 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <UseMediaQueryExample />
       </Center>
     </NativeBaseProvider>
@@ -84,7 +84,7 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <UseMediaQueryExample />
       </Center>
     </NativeBaseProvider>

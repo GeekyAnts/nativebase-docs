@@ -15,41 +15,87 @@ And lastly a description.
 
 ```SnackPlayer name=Card
 import React from "react";
-import { VStack, HStack, Avatar, Image, Text, NativeBaseProvider,
-AspectRatio, Center, Box, Stack, Heading } from "native-base";
+import {
+  Box,
+  Heading,
+  Icon,
+  AspectRatio,
+  Image,
+  Text,
+  Center,
+  HStack,
+  Stack,
+  NativeBaseProvider
+} from 'native-base';
+import { MaterialIcons, Ionicons } from '@expo/vector-icons';
 
 function CardComponent(){
  return(
     <Box
-      bg="white"
-      shadow={2}
       rounded="lg"
-      maxWidth="90%"
+      overflow="hidden"
+      width="72"
+      shadow={1}
+      _light={{ backgroundColor: 'gray.50' }}
+      _dark={{ backgroundColor: 'gray.700' }}
     >
-      <Image source={{uri: "https://sample-example.nativebase.io/static/media/dawki-river.ebbf5434.png"}} alt="image base" resizeMode="cover" height={150} roundedTop="md" />
-      <Text bold position="absolute" color="white" top={0} m={[4, 4, 8]}>
-        NEWS
-      </Text>
-      <Stack space={4} p={[4, 4, 8]}>
-        <Text color="gray.400">June 22, 2021</Text>
-        <Heading size={["md", "lg", "md"]} noOfLines={2}>
-          The Stunning Dawki River in Meghalaya is So Clear That Boats Appear
-          Floating in Air
-        </Heading>
-        <Text lineHeight={[5, 5, 7]} noOfLines={[4, 4, 2]} color="gray.700">
-          With lush green meadows, rivers clear as crystal, pine-covered
-          hills, gorgeous waterfalls, lakes and majestic forests, the
-          mesmerizing. Meghalaya is truly a Nature lover’s paradise…
-        </Text>
-      </Stack>
+      <Box>
+        <AspectRatio ratio={16 / 9}>
+          <Image
+            source={{
+              uri:
+                'https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg',
+            }}
+            alt="image"
+          />
+        </AspectRatio>
+        <Center
+          bg="violet.500"
+          _text={{ color: 'white', fontWeight: '700', fontSize: 'xs' }}
+          position="absolute"
+          bottom={0}
+          px="3"
+          py="1.5"
+        >
+          PHOTOS
+        </Center>
       </Box>
+      <Stack p="4" space={3}>
+        <Stack space={2}>
+          <Heading size="md" ml="-1">
+            The Garden City
+          </Heading>
+          <Text
+            fontSize="xs"
+            _light={{ color: 'violet.500' }}
+            _dark={{ color: 'violet.300' }}
+            fontWeight="500"
+            ml="-0.5"
+            mt="-1"
+          >
+            The Silicon Valley of India.
+          </Text>
+        </Stack>
+        <Text fontWeight="400">
+          Bengaluru (also called Bangalore) is the center of India's high-tech
+          industry. The city is also known for its parks and nightlife.
+        </Text>
+        <HStack alignItems="center" space={4} justifyContent="space-between">
+          <HStack alignItems="center">
+            <Text color="gray.500" fontWeight="400">
+              6 mins ago
+            </Text>
+          </HStack>
+        </HStack>
+      </Stack>
+    </Box>
     );
 }
 
 export default function () {
   return (
   <NativeBaseProvider>
-    <Center flex={1}>
+    <Center flex="1" px="3">
       <CardComponent/>
     </Center>
   </NativeBaseProvider>

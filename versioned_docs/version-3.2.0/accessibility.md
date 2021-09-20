@@ -11,7 +11,7 @@ NativeBase uses [React Native ARIA](https://react-native-aria.geekyants.com/) to
 
 ## Accessible Labels
 
-When a view is marked as accessible, it is a good practice to set an `accessibilityLabel` on the view, so that people who use voice-over know what element they have selected. Voice-over will read this string when a user selects the associated element. NativeBase with the use of [React Native ARIA](https://www.notion.so/Accessibility-83852d7c4b094e69a3e4f1047994bd1c) does this for you out of the box.
+When a view is marked as accessible, it is a good practice to set an `accessibilityLabel` on the view, so that people who use voice-over know what element they have selected. Voice-over will read this string when a user selects the associated element. NativeBase with the use of [React Native ARIA](https://react-native-aria.geekyants.com/) does this for you out of the box.
 
 ## Keyboard Navigation
 

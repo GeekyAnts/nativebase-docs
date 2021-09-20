@@ -15,21 +15,28 @@ import { useToken } from 'native-base';
 
 ```SnackPlayer name=useToken%20Example
 import React from "react";
-import { Box, Text, useToken, NativeBaseProvider, Center } from "native-base";
+import { Box, Text, useToken, NativeBaseProvider, Center, HStack , VStack} from "native-base";
 
 function UseTokenHookExample() {
-  const [warning1, red2] = useToken(
+  const [colorPick1, colorPick2] = useToken(
     // the key within the theme, in this case `theme.colors`
     "colors",
     // the subkey(s), resolving to `theme.colors.warning.1`
-    ["emerald.200", "red.400"]
+    ["yellow.500", "cyan.500"]
     // a single fallback or fallback array matching the length of the previous arg
   );
 
   return (
-    <Box bg={warning1}>
-      <Text color={red2}>wonderful gradients</Text>
-    </Box>
+    <VStack space={5}>
+      <HStack space={2} alignItems="center">
+        <Box bg={colorPick1} p="3"></Box>
+        <Text>{colorPick1}</Text>
+      </HStack>
+      <HStack space={2} alignItems="center">
+        <Box bg={colorPick2} p="3"></Box>
+        <Text>{colorPick2}</Text>
+      </HStack>
+    </VStack>
   );
 }
 export default function () {

@@ -32,6 +32,8 @@ import { MaterialIcons, Ionicons } from '@expo/vector-icons';
 function CardComponent(){
  return(
     <Box
+      rounded="lg"
+      overflow="hidden"
       width="72"
       shadow={1}
       _light={{ backgroundColor: 'gray.50' }}
@@ -40,7 +42,6 @@ function CardComponent(){
       <Box>
         <AspectRatio ratio={16 / 9}>
           <Image
-            roundedTop="lg"
             source={{
               uri:
                 'https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg',
@@ -75,13 +76,13 @@ function CardComponent(){
             The Silicon Valley of India.
           </Text>
         </Stack>
-        <Text fontWeight="400" >
+        <Text fontWeight="400">
           Bengaluru (also called Bangalore) is the center of India's high-tech
           industry. The city is also known for its parks and nightlife.
         </Text>
         <HStack alignItems="center" space={4} justifyContent="space-between">
           <HStack alignItems="center">
-            <Text  color="gray.500" fontWeight="400" >
+            <Text color="gray.500" fontWeight="400">
               6 mins ago
             </Text>
           </HStack>
