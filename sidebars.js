@@ -4,7 +4,7 @@ module.exports = {
       type: 'category',
       label: 'Introduction',
       collapsed: false,
-      items: ['nativebase', 'installation', 'setup-provider'],
+      items: ['getting-started', 'installation', 'setup-provider'],
     },
     {
       type: 'category',
@@ -15,7 +15,7 @@ module.exports = {
         'utility-props-specificity',
         'design-tokens',
         'pseudo-props',
-        'interaction-styles',
+        'pseudo-props-101',
         'responsive-style',
       ],
     },
@@ -221,12 +221,12 @@ module.exports = {
       collapsed: false,
       items: ['todo-example', 'kitchen-sink'],
     },
-    {
-      type: 'category',
-      label: 'Community Integration',
-      collapsed: false,
-      items: ['react-hook-forms', 'nativebase-formik-ui'],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Community Integration',
+    //   collapsed: false,
+    //   items: ['react-hook-forms', 'nativebase-formik-ui'],
+    // },
     {
       type: 'category',
       label: 'Recipes',
@@ -250,8 +250,8 @@ module.exports = {
       label: 'Migration',
       collapsed: false,
       items: [
-        'migration/Guide',
-        'migration/v3.1.0-to-3.2.0',
+        'migration/migration-guide-three',
+        'migration/migration-guide-three-point-two',
         {
           'Components Migration': [
             // 'migration/Accordion',

@@ -56,7 +56,7 @@ function AlertDialogComponent() {
             <Button ref={cancelRef} onPress={onClose}>
               Cancel
             </Button>
-            <Button colorScheme="red" onPress={onClose} ml={3}>
+            <Button colorScheme="red" onPress={onClose} ml="3">
               Delete
             </Button>
           </AlertDialog.Footer>
@@ -71,7 +71,7 @@ function AlertDialogComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <AlertDialogComponent />
       </Center>
     </NativeBaseProvider>
@@ -122,7 +122,7 @@ function AlertDialogComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <AlertDialogComponent />
       </Center>
     </NativeBaseProvider>
