@@ -25,6 +25,7 @@ const yourCustomTheme = {
 </NativeBaseProvider>
 ```
 
+
 ## Handling breaking changes
 
 Below is a rough account of the breaking API changes as well as the minimal change to migrate

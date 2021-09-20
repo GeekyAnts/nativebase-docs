@@ -29,21 +29,21 @@ To manage Typography options, the theme object supports the following keys:
 
 ```jsx
 const typography = {
-    letterSpacings: {
-    'xs': '-0.05em',
-    'sm': '-0.025em',
-    'md': 0,
-    'lg': '0.025em',
-    'xl': '0.05em',
+  letterSpacings: {
+    xs: '-0.05em',
+    sm: '-0.025em',
+    md: 0,
+    lg: '0.025em',
+    xl: '0.05em',
     '2xl': '0.1em',
   },
   lineHeights: {
     '2xs': '1em',
-    'xs': '1.125em',
-    'sm': '1.25em',
-    'md': '1.375em',
-    'lg': '1.5em',
-    'xl': '1.75em',
+    xs: '1.125em',
+    sm: '1.25em',
+    md: '1.375em',
+    lg: '1.5em',
+    xl: '1.75em',
     '2xl': '2em',
     '3xl': '2.5em',
     '4xl': '3em',
@@ -68,11 +68,11 @@ const typography = {
   },
   fontSizes: {
     '2xs': 10,
-    'xs': 12,
-    'sm': 14,
-    'md': 16,
-    'lg': 18,
-    'xl': 20,
+    xs: 12,
+    sm: 14,
+    md: 16,
+    lg: 18,
+    xl: 20,
     '2xl': 24,
     '3xl': 30,
     '4xl': 36,
@@ -95,7 +95,7 @@ The `size` key allows you to customize the global spacing and sizing scale for
 
 ## Opacity
 
-The `opacity` key is mainly used to allow you to define colors opacity using the red-green-blue-alpha (RGBA) model. RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
+The `opacity` key is used in opacity style object and to define colors opacity using the red-green-blue-alpha (RGBA) model, RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
 
 ```jsx
 const opacity = {

@@ -7,7 +7,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.2.0/nativebase"
+          "id": "version-3.2.0/getting-started"
         },
         {
           "type": "doc",
@@ -38,11 +38,11 @@
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/psuedo-props"
+          "id": "version-3.2.0/pseudo-props"
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/interaction-styles"
+          "id": "version-3.2.0/pseudo-props-101"
         },
         {
           "type": "doc",
@@ -139,7 +139,7 @@
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/hStack"
+          "id": "version-3.2.0/h-stack"
         },
         {
           "type": "doc",
@@ -147,11 +147,11 @@
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/VStack"
+          "id": "version-3.2.0/v-stack"
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/ZStack"
+          "id": "version-3.2.0/z-stack"
         }
       ]
     },
@@ -347,6 +347,10 @@
         {
           "type": "doc",
           "id": "version-3.2.0/FAB"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.0/hidden"
         }
       ]
     },
@@ -450,21 +454,6 @@
     {
       "collapsed": false,
       "type": "category",
-      "label": "Community Integration",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3.2.0/react-hook-forms"
-        },
-        {
-          "type": "doc",
-          "id": "version-3.2.0/nativebase-formik-ui"
-        }
-      ]
-    },
-    {
-      "collapsed": false,
-      "type": "category",
       "label": "Recipes",
       "items": [
         {
@@ -537,11 +526,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.2.0/migration/Guide"
+          "id": "version-3.2.0/migration/migration-guide-three"
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/migration/v3.1.0-to-3.2.0"
+          "id": "version-3.2.0/migration/migration-guide-three-point-two"
         },
         {
           "collapsed": true,

@@ -1,5 +1,5 @@
 ---
-id: hStack
+id: h-stack
 title: HStack / Row
 ---
 

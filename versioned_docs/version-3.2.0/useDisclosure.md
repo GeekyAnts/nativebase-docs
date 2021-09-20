@@ -39,10 +39,10 @@ function UseDiscloseExample() {
             cupiditate expedita, ipsa corporis officia totam similique delectus!
             Debitis esse, ea blanditiis iste enim iure at odit fugiat autem.
             Accusamus?
-            <Input mt={4} placeholder="Lorem ipsum dolor sit" />
+            <Input mt="4" placeholder="Lorem ipsum dolor sit" />
           </Modal.Body>
           <Modal.Footer>
-            <Button colorScheme="blue" mr={1}>
+            <Button colorScheme="blue" mr="1">
               Save
             </Button>
             <Button onPress={onClose}>Close</Button>
@@ -56,7 +56,7 @@ function UseDiscloseExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <UseDiscloseExample />
       </Center>
     </NativeBaseProvider>
