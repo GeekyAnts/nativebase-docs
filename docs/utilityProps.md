@@ -16,7 +16,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox borderRadius='md' bg='primary.200' {...props} />
+  return <NBBox borderRadius='md' bg='primary.600' {...props} />
 }
 
 function Component() {
@@ -117,7 +117,7 @@ export default function () {
 
 :::tip Note
 
-Above props can be written in the format: {color}:alpha-{opacityToken}, this gets converted into RGBA color format and the opacityToken is mapped to [`Opacity`](default-theme#opacity)
+Above props can be written in the format: {color}:alpha.{opacityToken}, this gets converted into RGBA color format and the opacityToken is mapped to [`Opacity`](default-theme#opacity)
 
 :::
 
@@ -131,7 +131,7 @@ export function Example() {
       <HStack space={2} alignItems="center">
         <Center
           size={16}
-          bg="primary.400:alpha-50"
+          bg="primary.400:alpha.30"
           rounded="md"
           _text={{
             color: "white",
@@ -139,6 +139,17 @@ export function Example() {
           shadow={3}
         >
           Box 1
+        </Center>
+        <Center
+          size={16}
+          bg="primary.400:alpha.70"
+          rounded="md"
+          _text={{
+            color: "white",
+          }}
+          shadow={3}
+        >
+          Box 2
         </Center>
         <Center
           bg="primary.400"
@@ -149,7 +160,7 @@ export function Example() {
           }}
           shadow={3}
         >
-          Box 2
+          Box 3
         </Center>
       </HStack>
     </Stack>
@@ -226,7 +237,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox m={2} borderRadius='md' bg='primary.200' {...props} />
+  return <NBBox m={2} borderRadius='md' bg='primary.600' {...props} />
 }
 
 function Component() {
@@ -283,7 +294,7 @@ import React from 'react';
 import { Box as NBBox, Flex, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
+  return <NBBox p={5} m={2} borderRadius='md' bg='primary.600' {...props} />
 }
 
 function Component() {
