@@ -24,7 +24,19 @@ const yourCustomTheme = {
 >
 </NativeBaseProvider>
 ```
-### Note:
+
+## Handling breaking changes
+
+Below is a rough account of the breaking API changes as well as the minimal change to migrate
+
+
+### Alert:
+
+* Removed `Alert.Title`. Use `Text` component instead.
+* Removed `Alert.Description`. Use `Text` component instead.
+
+
+## Note:
 
 We have introduced [strict mode](../strict-mode.md) in `v3.2.0` which is `off` by default. If you don't want to have strict mode, step 1 is enough. If you want to comply with the strict mode, you also need to do these:
 
