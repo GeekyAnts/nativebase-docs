@@ -33,7 +33,7 @@ function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
 
   return (
-    <VStack width="90%" mx={3}>
+    <VStack width="90%" mx="3">
       <FormControl isRequired>
         <FormControl.Label _text={{bold: true}}>Name</FormControl.Label>
         <Input
@@ -51,7 +51,7 @@ function BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
+    <Center flex="1">
       <BuildingAFormExample />
       </Center>
     </NativeBaseProvider>
@@ -95,7 +95,7 @@ function  BuildingAFormExample() {
   };
 
   return (
-    <VStack width="90%" mx={3}>
+    <VStack width="90%" mx="3">
       <FormControl isRequired>
         <FormControl.Label _text={{bold: true}}>Name</FormControl.Label>
         <Input
@@ -113,7 +113,7 @@ function  BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
+    <Center flex="1">
       <BuildingAFormExample />
       </Center>
     </NativeBaseProvider>
@@ -161,7 +161,7 @@ function BuildingAFormExample() {
   };
 
   return (
-    <VStack width="90%" mx={3}>
+    <VStack width="90%" mx="3">
       <FormControl isRequired isInvalid={'name' in errors}>
         <FormControl.Label _text={{bold: true}}>Name</FormControl.Label>
         <Input
@@ -177,7 +177,7 @@ function BuildingAFormExample() {
         </FormControl.HelperText>
         }
       </FormControl>
-    <Button onPress={onSubmit} mt={5} colorScheme="cyan">
+    <Button onPress={onSubmit} mt="5" colorScheme="cyan">
       Submit
     </Button>
     </VStack>
@@ -186,7 +186,7 @@ function BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
+    <Center flex="1">
       <BuildingAFormExample />
       </Center>
     </NativeBaseProvider>
