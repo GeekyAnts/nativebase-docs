@@ -64,7 +64,7 @@ function UseClipboardExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <UseClipboardExample />
       </Center>
     </NativeBaseProvider>

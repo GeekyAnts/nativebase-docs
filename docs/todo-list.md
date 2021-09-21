@@ -58,13 +58,13 @@ export default function () {
   };
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <Box>
           <Heading mb="5">Wednesday</Heading>
           <VStack space={4}>
             <HStack space={2}>
               <Input
-                flex="1"
+                flex={1}
                 onChangeText={(v) => setInputValue(v)}
                 value={inputValue}
                 placeholder="Add Task"

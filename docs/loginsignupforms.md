@@ -29,7 +29,7 @@ import {
 export default function App() {
   return (
     <NativeBaseProvider>
-      <Box safeArea flex="1" p="2" py="8" w="90%" mx="auto">
+      <Box safeArea flex={1} p="2" py="8" w="90%" mx="auto">
         <Heading size="lg" fontWeight="600" color="coolGray.800">
           Welcome
         </Heading>
@@ -115,7 +115,7 @@ import {
 export default function App() {
   return (
     <NativeBaseProvider>
-      <Box safeArea flex="1" p="2" w="90%" mx="auto" py="8">
+      <Box safeArea flex={1} p="2" w="90%" mx="auto" py="8">
         <Heading size="lg" color="coolGray.800" fontWeight="600">
           Welcome
         </Heading>

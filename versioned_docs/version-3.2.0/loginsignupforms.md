@@ -32,7 +32,7 @@ export default function App() {
       <NativeBaseProvider>
       <Box
         safeArea
-        flex="1"
+        flex={1}
         p="2"
         w="90%"
         mx='auto'
@@ -142,7 +142,7 @@ export default function App() {
       <NativeBaseProvider>
       <Box
         safeArea
-        flex="1"
+        flex={1}
         p="2"
         w="90%"
         mx='auto'

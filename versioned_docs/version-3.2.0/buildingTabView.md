@@ -69,7 +69,7 @@ export default function TabViewExample() {
             <Box
               borderBottomWidth="3"
               borderColor={borderColor}
-              flex="1"
+              flex={1}
               alignItems="center"
               p="3"
               cursor="pointer">

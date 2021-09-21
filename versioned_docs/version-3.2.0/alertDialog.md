@@ -149,12 +149,12 @@ Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.
 
 ### Keyboard Interactions
 
-| Name                | Description |
-| --------------------|-------------|
-| Space   | Opens/closes the dialog. |
-| Enter   | Opens/closes the dialog. |
-| Tab     | Moves focus to the next focusable element. |
-| Shift + Tab | Moves focus to the previous focusable element. |
-| Esc     | Closes the dialog and moves focus to AlertDialog.Trigger. | 
+| Name        | Description                                               |
+| ----------- | --------------------------------------------------------- |
+| Space       | Opens/closes the dialog.                                  |
+| Enter       | Opens/closes the dialog.                                  |
+| Tab         | Moves focus to the next focusable element.                |
+| Shift + Tab | Moves focus to the previous focusable element.            |
+| Esc         | Closes the dialog and moves focus to AlertDialog.Trigger. |
 
 

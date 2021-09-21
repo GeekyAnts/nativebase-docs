@@ -96,6 +96,16 @@ const getVersion = (directory) => {
 
   return 'next';
 };
+const getNativeBaseVersion = () => {
+  // console.log('mamamam ', directory);
+
+  // if (directory.includes('versioned_docs')) {
+  //   return directory.split('versioned_docs/version-')[1];
+  // }
+
+  return '3.2.0';
+  // return 'next';
+};
 
 function getProjectPath(directory) {
   const rootPath = path.resolve(__dirname, '..', '..', 'versioned_repo');
@@ -108,5 +118,6 @@ module.exports = {
   getPropDetail,
   getProjectPath,
   getVersion,
+  getNativeBaseVersion,
 };
 // getSnackPlayer('primitives', 'Box', 'basic.tsx');

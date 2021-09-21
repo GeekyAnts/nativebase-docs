@@ -40,7 +40,7 @@ function BreakpointExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <BreakpointExample />
        </Center>
     </NativeBaseProvider>
@@ -69,7 +69,7 @@ function BreakpointExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <BreakpointExample />
       </Center>
     </NativeBaseProvider>
