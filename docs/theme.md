@@ -12,7 +12,7 @@ import React from 'react';
 import {
   NativeBaseProvider,
   useTheme,
-  SimpleGrid,
+  FlatList,
   Center,
   Box,
 } from 'native-base';
@@ -20,11 +20,13 @@ import {
 function ColorPalete() {
   const { colors } = useTheme();
   return (
-    <SimpleGrid columns={5}>
-      {Object.keys(colors['emerald']).map((colorKey) => (
-        <Box p={5} bg={`emerald.${colorKey}`} />
-      ))}
-    </SimpleGrid>
+    <Box>
+      <FlatList
+        numColumns={5}
+        data={Object.keys(colors['primary'])}
+        renderItem={({ item }) => <Box p={5} bg={`primary.${item}`} />}
+      />
+    </Box>
   );
 }
 
@@ -55,8 +57,9 @@ function Tokens() {
     'lightText',
   ]);
   return (
-    <Center bg="emerald.400" flexDirection="row" p={4} rounded={4}>
-      Contrast threshold is: <Text color={lightText} fontWeight="bold">
+    <Center bg="primary.600" flexDirection="row" p={4} rounded={4}>
+      Contrast threshold is:{' '}
+      <Text color={lightText} fontWeight="bold">
         {contrastThreshold}
       </Text>
     </Center>
@@ -67,12 +70,13 @@ function Tokens() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <Tokens />
       </Center>
     </NativeBaseProvider>
   );
 }
+
 
 ```
 
@@ -83,10 +87,16 @@ If you are defining the background yourself and pass a contrasting color to the 
 ```SnackPlayer name=useContrastText
 
 import React from 'react';
-import { Button, Stack, useContrastText, NativeBaseProvider, Center } from 'native-base';
-function UseContrastingTextHook () {
-  const bgDark = 'emerald.700';
-  const bgLight = 'emerald.200';
+import {
+  Button,
+  Stack,
+  useContrastText,
+  NativeBaseProvider,
+  Center,
+} from 'native-base';
+function UseContrastingTextHook() {
+  const bgDark = 'primary.700';
+  const bgLight = 'primary.200';
   const colorContrastDark = useContrastText(bgDark);
   const colorContrastLight = useContrastText(bgLight);
 
@@ -106,12 +116,13 @@ function UseContrastingTextHook () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <UseContrastingTextHook />
       </Center>
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ## useColorMode
@@ -122,7 +133,6 @@ If you want to define some conditionals based on current color mode or change th
 import React from 'react';
 import {
   NativeBaseProvider,
-  VStack,
   useColorMode,
   Text,
   Button,
@@ -132,23 +142,25 @@ import {
 function UseColorMode() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Center flex={1} bg={colorMode === 'dark' ? 'black' : 'white'}>
-      <Text fontSize="lg" display="flex">
-        The active color mode is <Text bold>{colorMode}</Text>
+    <Center flex={1} bg={colorMode === 'dark' ? 'coolGray.800' : 'warmGray.50'}>
+      <Text fontSize="lg" display="flex" mb="20">
+        The active color mode is{' '}
+        <Text bold fontSize="lg">
+          {colorMode}
+        </Text>
       </Text>
       <Button onPress={toggleColorMode}>Toggle</Button>
     </Center>
   );
 }
 
-// Example template which wraps component with NativeBaseProvider
-export default function () {
+export default Example = () => {
   return (
     <NativeBaseProvider>
       <UseColorMode />
     </NativeBaseProvider>
   );
-}
+};
 
 ```
 
@@ -168,24 +180,26 @@ import {
 } from 'native-base';
 
 function UseColorMode() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { toggleColorMode } = useColorMode();
   return (
-    <Center flex={1} bg={useColorModeValue('white', 'black')}>
-      <Text fontSize="lg" display="flex">
-        The active color mode is <Text bold>{useColorModeValue('Light', 'Dark')}</Text>
+    <Center flex={1} bg={useColorModeValue('warmGray.50', 'coolGray.800')}>
+      <Text fontSize="lg" display="flex" mb={20}>
+        The active color mode is{' '}
+        <Text bold fontSize="18px">
+          {useColorModeValue('Light', 'Dark')}
+        </Text>
       </Text>
       <Button onPress={toggleColorMode}>Toggle</Button>
     </Center>
   );
 }
 
-// Example template which wraps component with NativeBaseProvider
-export default function () {
+export default Example = () => {
   return (
     <NativeBaseProvider>
       <UseColorMode />
     </NativeBaseProvider>
   );
-}
+};
 
 ```
