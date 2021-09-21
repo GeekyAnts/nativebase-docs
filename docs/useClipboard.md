@@ -35,12 +35,12 @@ import {
 } from "native-base";
 
 function UseClipboardExample() {
-  const [copyText, setCopyText] = React.useState("Copy Me");
-  const [pasteText, setPasteText] = React.useState("");
-  const { value, onCopy, hasCopied } = useClipboard();
+ const [copyText, setCopyText] = React.useState('Hello');
+  const [pasteText, setPasteText] = React.useState('');
+  const { value, onCopy } = useClipboard();
   return (
-    <VStack space="2" mx="2">
-      <HStack space="3">
+    <VStack space={2}>
+      <HStack space={3}>
         <Input
           w="60%"
           placeholder="Copy From"
@@ -49,11 +49,10 @@ function UseClipboardExample() {
         />
         <Button onPress={() => onCopy(copyText)}>Copy</Button>
       </HStack>
-      <HStack space="3">
-        <Text>{hasCopied ? "Copied" : "Press here"}</Text>
+      <HStack space={3}>
         <Input
           w="60%"
-          placeholder="Paste To"
+          placeholder="Paste Here"
           onChangeText={(v) => setPasteText(v)}
           value={pasteText}
         />
