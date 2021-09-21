@@ -32,7 +32,7 @@ const processNode = (node, parent) => {
     try {
       const params = parseParams(node.meta);
       const simplifedMeta = simplifyMeta(node.meta);
-      const NBversion = '3.0.7';
+      const NBversion = '3.2.0';
       // Gather necessary Params
       let name = simplifedMeta.name
         ? decodeURIComponent(simplifedMeta.name)
