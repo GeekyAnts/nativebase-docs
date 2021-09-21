@@ -52,7 +52,7 @@ function FadeExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <FadeExample />
       </Center>
     </NativeBaseProvider>
@@ -84,7 +84,7 @@ function ScaleFadeExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <ScaleFadeExample />
       </Center>
     </NativeBaseProvider>
@@ -116,7 +116,7 @@ function SlideExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <SlideExample />
       </Center>
     </NativeBaseProvider>
@@ -164,7 +164,7 @@ function SlideExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <SlideExample />
       </Center>
     </NativeBaseProvider>
@@ -214,7 +214,7 @@ function SlideExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <SlideExample />
       </Center>
     </NativeBaseProvider>
@@ -246,7 +246,7 @@ function SlideFadeExample () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <SlideFadeExample />
       </Center>
     </NativeBaseProvider>

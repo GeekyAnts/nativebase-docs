@@ -71,7 +71,7 @@ function AlertDialogComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <AlertDialogComponent />
       </Center>
     </NativeBaseProvider>
@@ -122,7 +122,7 @@ function AlertDialogComponent() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <AlertDialogComponent />
       </Center>
     </NativeBaseProvider>

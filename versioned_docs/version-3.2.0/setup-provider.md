@@ -111,7 +111,7 @@ const config = {
 export default () => {
   return (
     <NativeBaseProvider config={config}>
-      <Center flex={1}>
+      <Center flex="1">
         <Example />
       </Center>
     </NativeBaseProvider>

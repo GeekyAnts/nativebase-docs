@@ -51,7 +51,7 @@ function BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
+    <Center flex="1">
       <BuildingAFormExample />
       </Center>
     </NativeBaseProvider>
@@ -113,7 +113,7 @@ function  BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
+    <Center flex="1">
       <BuildingAFormExample />
       </Center>
     </NativeBaseProvider>
@@ -186,7 +186,7 @@ function BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
+    <Center flex="1">
       <BuildingAFormExample />
       </Center>
     </NativeBaseProvider>

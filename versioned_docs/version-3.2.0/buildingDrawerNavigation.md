@@ -40,7 +40,7 @@ function Component(props) {
       <Pressable onPress={() => props.navigation.toggleDrawer()} position="absolute" ml="2" zIndex="1">
         <HamburgerIcon ml="2" size="sm"/>
       </Pressable>
-      <Center flex={1} >
+      <Center flex="1" >
         <Heading size="md">{props.route.name}</Heading>
       </Center>
     </HStack>
@@ -148,7 +148,7 @@ function CustomDrawerContent(props) {
 }
 function MyDrawer() {
   return (
-    <Box safeArea flex={1} >
+    <Box safeArea flex="1" >
     <Drawer.Navigator
       drawerContent={(props) => <CustomDrawerContent {...props} />}
     >

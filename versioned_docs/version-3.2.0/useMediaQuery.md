@@ -30,7 +30,7 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <UseMediaQueryExample />
       </Center>
     </NativeBaseProvider>
@@ -55,7 +55,7 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <UseMediaQueryExample />
       </Center>
     </NativeBaseProvider>
@@ -84,7 +84,7 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <UseMediaQueryExample />
       </Center>
     </NativeBaseProvider>

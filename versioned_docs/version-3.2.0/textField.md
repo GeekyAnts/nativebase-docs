@@ -30,7 +30,7 @@ function TextFieldComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <TextFieldComponent />
       </Center>
     </NativeBaseProvider>
@@ -63,7 +63,7 @@ function TextFieldComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <TextFieldComponent />
         </Center>
     </NativeBaseProvider>
@@ -110,7 +110,7 @@ function TextFieldComponent () {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <TextFieldComponent />
       </Center>
     </NativeBaseProvider>

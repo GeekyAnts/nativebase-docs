@@ -1,5 +1,5 @@
 ---
-id: pseudo-props
+id: pseudo-props-101
 title: Pseudo Props 101
 ---
 

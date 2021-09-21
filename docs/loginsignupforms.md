@@ -23,88 +23,63 @@ import {
   Icon,
   IconButton,
   HStack,
-  Divider
+  Divider,
 } from 'native-base';
 
 export default function App() {
-
- return (
-      <NativeBaseProvider>
-      <Box
-        safeArea
-        flex={1}
-        p="2"
-        w="90%"
-        mx='auto'
-      >
-        <Heading size="lg" color='primary.500'>
+  return (
+    <NativeBaseProvider>
+      <Box safeArea flex={1} p="2" py="8" w="90%" mx="auto">
+        <Heading size="lg" fontWeight="600" color="coolGray.800">
           Welcome
         </Heading>
-        <Heading color="muted.400" size="xs">
+        <Heading mt="1" color="coolGray.600" fontWeight="medium" size="xs">
           Sign in to continue!
         </Heading>
 
-        <VStack space="2" mt="5">
+        <VStack space={3} mt="5">
           <FormControl>
-            <FormControl.Label _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
-                Email ID
+            <FormControl.Label
+              _text={{
+                color: 'coolGray.800',
+                fontSize: 'xs',
+                fontWeight: 500,
+              }}>
+              Email ID
             </FormControl.Label>
             <Input />
           </FormControl>
-          <FormControl mb="5">
-            <FormControl.Label  _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
-                Password
+          <FormControl>
+            <FormControl.Label
+              _text={{
+                color: 'coolGray.800',
+                fontSize: 'xs',
+                fontWeight: 500,
+              }}>
+              Password
             </FormControl.Label>
             <Input type="password" />
             <Link
-              _text={{ fontSize: 'xs', fontWeight: '700', color:'cyan.500' }}
+              _text={{ fontSize: 'xs', fontWeight: '500', color: 'indigo.500' }}
               alignSelf="flex-end"
-              mt="1"
-            >
+              mt="1">
               Forget Password?
             </Link>
           </FormControl>
-          <VStack  space="2">
-          <Button colorScheme="cyan" _text={{color: 'white' }}>
-              Login
+          <Button mt="2" colorScheme="indigo" _text={{ color: 'white' }}>
+            Sign in
           </Button>
-
-          <HStack justifyContent="center" alignItems='center'>
-            <IconButton
-              variant='unstyled'
-              startIcon={
-                <Icon
-                  as={< MaterialCommunityIcons name="facebook" />}
-                  color='muted.700'
-                  size='sm'
-                />
-              }
-            />
-            <IconButton
-              variant='unstyled'
-              startIcon={
-                <Icon
-                  as={< MaterialCommunityIcons name="google" />}
-                  color='muted.700'
-                  size="sm"
-                />
-              }
-            />
-            <IconButton
-              variant='unstyled'
-              startIcon={
-                <Icon
-                  as={< MaterialCommunityIcons name="github" />}
-                  color='muted.700'
-                  size="sm"
-                />
-              }
-            />
-          </HStack>
-          </VStack>
-          <HStack justifyContent="center">
-            <Text fontSize='sm' color='muted.700' fontWeight={400}>I'm a new user. </Text>
-            <Link _text={{ color: 'cyan.500', bold: true, fontSize: 'sm' }} href="#">
+          <HStack mt="6" justifyContent="center">
+            <Text fontSize="sm" color="muted.700" fontWeight={400}>
+              I'm a new user.{' '}
+            </Text>
+            <Link
+              _text={{
+                color: 'indigo.500',
+                fontWeight: 'medium',
+                fontSize: 'sm',
+              }}
+              href="#">
               Sign Up
             </Link>
           </HStack>
@@ -113,6 +88,7 @@ export default function App() {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ### Signup Form
@@ -133,87 +109,49 @@ import {
   Icon,
   IconButton,
   HStack,
-  Divider
+  Divider,
 } from 'native-base';
 
 export default function App() {
-
- return (
-      <NativeBaseProvider>
-      <Box
-        safeArea
-        flex={1}
-        p="2"
-        w="90%"
-        mx='auto'
-      >
-        <Heading size="lg" color='primary.500'>
+  return (
+    <NativeBaseProvider>
+      <Box safeArea flex={1} p="2" w="90%" mx="auto" py="8">
+        <Heading size="lg" color="coolGray.800" fontWeight="600">
           Welcome
         </Heading>
-        <Heading color="muted.400" size="xs">
+        <Heading mt="1" color="coolGray.600" fontWeight="medium" size="xs">
           Sign up to continue!
         </Heading>
 
-        <VStack space="2" mt="5">
+        <VStack space={3} mt="5">
           <FormControl>
-            <FormControl.Label _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
-                Email
+            <FormControl.Label
+              _text={{ color: 'muted.700', fontSize: 'xs', fontWeight: 500 }}>
+              Email
             </FormControl.Label>
             <Input />
           </FormControl>
           <FormControl>
-            <FormControl.Label  _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
-                Password
+            <FormControl.Label
+              _text={{ color: 'muted.700', fontSize: 'xs', fontWeight: 500 }}>
+              Password
             </FormControl.Label>
             <Input type="password" />
           </FormControl>
           <FormControl>
-            <FormControl.Label  _text={{color: 'muted.700', fontSize: 'sm', fontWeight: 600}}>
-               Confirm Password
+            <FormControl.Label
+              _text={{ color: 'muted.700', fontSize: 'xs', fontWeight: 500 }}>
+              Confirm Password
             </FormControl.Label>
             <Input type="password" />
           </FormControl>
-          <VStack  space="2"  mt="5">
-          <Button colorScheme="cyan" _text={{color: 'white' }}>
-              SignUp
+          <Button mt="2" colorScheme="indigo" _text={{ color: 'white' }}>
+            Sign up
           </Button>
-
-          <HStack justifyContent="center" alignItems='center'>
-            <IconButton
-              variant='unstyled'
-              startIcon={
-                <Icon
-                  as={< MaterialCommunityIcons name="facebook" />}
-                  color='muted.700'
-                  size='sm'
-                />
-              }
-            />
-            <IconButton
-              variant='unstyled'
-              startIcon={
-                <Icon
-                  as={< MaterialCommunityIcons name="google" />}
-                  color='muted.700'
-                  size="sm"
-                />
-              }
-            />
-            <IconButton
-              variant='unstyled'
-              startIcon={
-                <Icon
-                  as={< MaterialCommunityIcons name="github" />}
-                  color='muted.700'
-                  size="sm"
-                />
-              }
-            />
-          </HStack>
-          </VStack>
         </VStack>
       </Box>
     </NativeBaseProvider>
   );
 }
+
 ```

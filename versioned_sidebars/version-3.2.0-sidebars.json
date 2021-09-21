@@ -7,7 +7,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.2.0/nativebase"
+          "id": "version-3.2.0/getting-started"
         },
         {
           "type": "doc",
@@ -42,7 +42,7 @@
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/interaction-styles"
+          "id": "version-3.2.0/pseudo-props-101"
         },
         {
           "type": "doc",
@@ -454,21 +454,6 @@
     {
       "collapsed": false,
       "type": "category",
-      "label": "Community Integration",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3.2.0/react-hook-forms"
-        },
-        {
-          "type": "doc",
-          "id": "version-3.2.0/nativebase-formik-ui"
-        }
-      ]
-    },
-    {
-      "collapsed": false,
-      "type": "category",
       "label": "Recipes",
       "items": [
         {
@@ -541,11 +526,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3.2.0/migration/guide"
+          "id": "version-3.2.0/migration/migration-guide-three"
         },
         {
           "type": "doc",
-          "id": "version-3.2.0/migration/migration-guide"
+          "id": "version-3.2.0/migration/migration-guide-three-point-two"
         },
         {
           "collapsed": true,

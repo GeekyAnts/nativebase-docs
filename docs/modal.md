@@ -70,7 +70,7 @@ You can pass `size` prop to NativeBase Modal , it can take `sm`, `md`, `lg`, `fu
 
 <br/>
 
-:::tip Tip
+:::tip Development Tip
 If you want a specifically aligned Modal, pass `justifyContent` and `alignItems` to Modal.
 :::
 
