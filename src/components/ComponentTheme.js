@@ -75,7 +75,7 @@ export function ComponentTheme({ name, componentName, fileName }) {
       </CodeBlock>
       <Link
         _text={{ textDecorationLine: 'none' }}
-        href={'customizingComponents'}
+        href={'customizing-components'}
       >
         <Text
           borderBottomWidth="2px"

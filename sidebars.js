@@ -4,7 +4,7 @@ module.exports = {
       type: 'category',
       label: 'Introduction',
       collapsed: false,
-      items: ['nativebase', 'installation', 'setup-provider'],
+      items: ['getting-started', 'installation', 'setup-provider'],
     },
     {
       type: 'category',
@@ -12,8 +12,10 @@ module.exports = {
       collapsed: false,
       items: [
         'utility-first',
+        'utility-props-specificity',
         'design-tokens',
-        'interaction-styles',
+        'pseudo-props',
+        'pseudo-props-101',
         'responsive-style',
       ],
     },
@@ -26,6 +28,7 @@ module.exports = {
         'color-mode',
         'nativebase-factory',
         'safe-area-view-props',
+        'strict-mode',
         'accessibility',
       ],
     },
@@ -53,13 +56,13 @@ module.exports = {
         'center',
         'container',
         'flex',
-        'hStack',
+        'h-stack',
         // 'simpleGrid',
         'stack',
         // 'view',
-        'VStack',
+        'v-stack',
         // 'wrap',
-        'ZStack',
+        'z-stack',
       ],
     },
     {
@@ -173,6 +176,7 @@ module.exports = {
       items: [
         // 'appBar',
         'FAB',
+        'hidden',
       ],
     },
     {
@@ -217,12 +221,12 @@ module.exports = {
       collapsed: false,
       items: ['todo-example', 'kitchen-sink'],
     },
-    {
-      type: 'category',
-      label: 'Community Integration',
-      collapsed: false,
-      items: ['react-hook-forms', 'nativebase-formik-ui'],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Community Integration',
+    //   collapsed: false,
+    //   items: ['react-hook-forms', 'nativebase-formik-ui'],
+    // },
     {
       type: 'category',
       label: 'Recipes',
@@ -246,7 +250,8 @@ module.exports = {
       label: 'Migration',
       collapsed: false,
       items: [
-        'migration/Guide',
+        'migration/migration-guide-three',
+        'migration/migration-guide-three-point-two',
         {
           'Components Migration': [
             // 'migration/Accordion',
