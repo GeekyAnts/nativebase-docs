@@ -35,7 +35,9 @@ Tooltip is a wrapper around [Box](box.md). So, it also accepts all the [Box](box
 
 ```
 
-:::tip Tip
+<br />
+
+:::tip Development Tip
 You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColor` and `borderWidth` to Tooltip.
 :::
 
@@ -52,6 +54,7 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 ## Accessibility
 
 Adheres to the [Tooltip WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-1.1/#tooltip)
+
 ### Keyboard Interactions
 
 | Name  | Description                                |
