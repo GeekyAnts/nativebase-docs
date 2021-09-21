@@ -17,13 +17,13 @@ import { ComponentTheme } from '../../src/components';
 
 ### Sizes
 
-```ComponentSnackPlayer path=composites,IconButton,Basic.tsx
+```ComponentSnackPlayer path=composites,IconButton,Sizes.tsx
 
 ```
 
 ### Variants
 
-```ComponentSnackPlayer path=composites,IconButton,Basic.tsx
+```ComponentSnackPlayer path=composites,IconButton,Variant.tsx
 
 ```
 

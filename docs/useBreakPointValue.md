@@ -26,6 +26,7 @@ import {
   Stack,
   NativeBaseProvider,
   Center,
+  ScrollView
 } from 'native-base';
 import { TextInput } from 'react-native';
 
@@ -39,7 +40,8 @@ export const UseBreakpointValueExample = () => {
     lg: 'row',
   });
   return (
-    <VStack space={10} alignItems="center" justifyContent="center">
+  <ScrollView showsVerticalScrollIndicator={false}>
+    <VStack  py="8" space={8} alignItems="center" justifyContent="center">
       <Heading>Why us?</Heading>
       <View style={{ flexDirection: flexDir }}>
         <VStack
@@ -113,6 +115,7 @@ export const UseBreakpointValueExample = () => {
         </VStack>
       </View>
     </VStack>
+    </ScrollView>
   );
 };
 
@@ -120,7 +123,7 @@ export const UseBreakpointValueExample = () => {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <UseBreakpointValueExample />
       </Center>
     </NativeBaseProvider>

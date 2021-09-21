@@ -89,7 +89,7 @@ const LocalWrapper = ({ children }) => {
   const bg = useColorModeValue('gray.200', 'gray.800')
   return (
     <Center
-      flex="1"
+      flex={1}
       bg={bg}
     >
       {children}

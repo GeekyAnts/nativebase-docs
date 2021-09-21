@@ -22,15 +22,15 @@ Using `_hover` pseudo prop, we can customize the style of Pressable component on
 <NativeBaseProvider>
   <Box flex={1} mb={16}>
     <Pressable
-      _hover={{ bg: 'primary.400' }}
-      bg="primary.500"
+      _hover={{ bg: 'primary.700' }}
+      bg="primary.600"
       py={2}
       px={3}
-      rounded="md"
+      rounded="sm"
       alignSelf="center"
     >
       <Text textTransform="uppercase" fontWeight="bold" color="white">
-        Hover over me
+        Hover
       </Text>
     </Pressable>
   </Box>
@@ -38,11 +38,11 @@ Using `_hover` pseudo prop, we can customize the style of Pressable component on
 
 ```jsx title="Hover example"
 <Pressable
-  _hover={{ bg: 'primary.400' }}
-  bg="primary.500"
+  _hover={{ bg: 'primary.700' }}
+  bg="primary.600"
   py={2}
   px={3}
-  rounded="md"
+  rounded="sm"
   alignSelf="center"
 >
   <Text textTransform="uppercase" fontWeight="bold" color="white">
@@ -58,15 +58,15 @@ Using `_pressed` pseudo prop, we can customize the style of Pressable component 
 <NativeBaseProvider>
   <Box flex={1} mb={16}>
     <Pressable
-      _pressed={{ bg: 'primary.700' }}
-      bg="primary.500"
+      _pressed={{ bg: 'primary.800' }}
+      bg="primary.600"
       py={2}
       px={3}
       alignSelf="center"
-      rounded="md"
+      rounded="sm"
     >
       <Text textTransform="uppercase" fontWeight="bold" color="white">
-        Press me
+        Pressed
       </Text>
     </Pressable>
   </Box>
@@ -74,15 +74,15 @@ Using `_pressed` pseudo prop, we can customize the style of Pressable component 
 
 ```jsx title="Pressed example"
 <Pressable
-  _pressed={{ bg: 'primary.700' }}
-  bg="primary.500"
+  _pressed={{ bg: 'primary.800' }}
+  bg="primary.600"
   py={2}
-  rounded="md"
+  rounded="sm"
   px={3}
   alignSelf="center"
 >
   <Text textTransform="uppercase" fontWeight="bold" color="white">
-    Hover over me
+    Pressed
   </Text>
 </Pressable>
 ```
@@ -94,15 +94,19 @@ Using `_focus` pseudo prop, we can customize the style of Pressable component on
 <NativeBaseProvider>
   <Box flex={1} mb={16}>
     <Pressable
-      _focus={{ bg: 'secondary.500' }}
-      bg="primary.500"
-      rounded="md"
+      _focus={{
+        bg: 'primary.700',
+        borderColor: 'primary.400',
+        borderWidth: '2px',
+      }}
+      bg="primary.600"
+      rounded="sm"
       py={2}
       px={3}
       alignSelf="center"
     >
       <Text textTransform="uppercase" fontWeight="bold" color="white">
-        Try focusing me
+        Focus
       </Text>
     </Pressable>
   </Box>
@@ -110,15 +114,15 @@ Using `_focus` pseudo prop, we can customize the style of Pressable component on
 
 ```jsx title="Focus example"
 <Pressable
-  _focus={{ bg: 'secondary.500' }}
-  bg="primary.500"
-  rounded="md"
+  _focus={{ bg: 'primary.700', borderColor: 'primary.400', borderWidth: '2px' }}
+  bg="primary.600"
+  rounded="sm"
   py={2}
   px={3}
   alignSelf="center"
 >
   <Text textTransform="uppercase" fontWeight="bold" color="white">
-    Hover over me
+    Focus
   </Text>
 </Pressable>
 ```
@@ -131,45 +135,45 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
   <HStack space={4} justifyContent="center" alignItems="center" mb={8}>
     <VStack alignItems="center" space={2}>
       <Box
-        _web={{ bg: 'cyan.500' }}
-        bg="cyan.500"
-        rounded="md"
+        _web={{ bg: 'cyan.600' }}
+        bg="cyan.600"
+        rounded="sm"
         py={2}
         px={3}
         alignSelf="center"
       >
         <Text textTransform="uppercase" fontWeight="bold" color="white">
-          Primary
+          Save
         </Text>
       </Box>
       <Text color="white">Web</Text>
     </VStack>
     <VStack alignItems="center" space={2}>
       <Box
-        _android={{ bg: 'fuchsia.500' }}
-        bg="fuchsia.500"
-        rounded="md"
+        _android={{ bg: 'yellow.400' }}
+        bg="yellow.400"
+        rounded="sm"
         py={2}
         px={3}
         alignSelf="center"
       >
-        <Text textTransform="uppercase" fontWeight="bold" color="white">
-          Primary
+        <Text textTransform="uppercase" fontWeight="bold">
+          Save
         </Text>
       </Box>
       <Text color="white">Android</Text>
     </VStack>
     <VStack alignItems="center" space={2}>
       <Box
-        _ios={{ bg: 'blue.500' }}
-        bg="blue.500"
-        rounded="md"
+        _ios={{ bg: 'violet.500' }}
+        bg="violet.500"
+        rounded="sm"
         py={2}
         px={3}
         alignSelf="center"
       >
         <Text textTransform="uppercase" fontWeight="bold" color="white">
-          Primary
+          Save
         </Text>
       </Box>
       <Text color="white">iOS</Text>
@@ -181,42 +185,42 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
 <HStack space={4} justifyContent="center" alignItems="center">
   <VStack alignItems="center" space={2}>
     <Box
-      _web={{ bg: 'cyan.500' }}
-      rounded="md"
+      _web={{ bg: 'cyan.600' }}
+      rounded="sm"
       py={2}
       px={3}
       alignSelf="center"
     >
       <Text textTransform="uppercase" fontWeight="bold" color="white">
-        Primary
+        Save
       </Text>
     </Box>
     <Text color="white">Web</Text>
   </VStack>
   <VStack alignItems="center" space={2}>
     <Box
-      _android={{ bg: 'fuchsia.500' }}
-      rounded="md"
+      _android={{ bg: 'yellow.400' }}
+      rounded="sm"
       py={2}
       px={3}
       alignSelf="center"
     >
-      <Text textTransform="uppercase" fontWeight="bold" color="white">
-        Primary
+      <Text textTransform="uppercase" fontWeight="bold">
+        Save
       </Text>
     </Box>
     <Text color="white">Android</Text>
   </VStack>
   <VStack alignItems="center" space={2}>
     <Box
-      _ios={{ bg: 'blue.500' }}
-      rounded="md"
+      _ios={{ bg: 'violet.500' }}
+      rounded="sm"
       py={2}
       px={3}
       alignSelf="center"
     >
       <Text textTransform="uppercase" fontWeight="bold" color="white">
-        Primary
+        Save
       </Text>
     </Box>
     <Text color="white">iOS</Text>

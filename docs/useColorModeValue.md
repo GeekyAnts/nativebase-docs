@@ -27,7 +27,7 @@ import {
 function UseColorMode() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Center flex="1" bg={useColorModeValue('white', 'black')}>
+    <Center flex={1} bg={useColorModeValue('white', 'black')}>
       <Text fontSize="lg" display="flex">
         The active color mode is
         <Text bold>{useColorModeValue('Light', 'Dark')}</Text>

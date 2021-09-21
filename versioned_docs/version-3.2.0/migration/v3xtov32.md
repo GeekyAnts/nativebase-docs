@@ -25,7 +25,6 @@ const yourCustomTheme = {
 </NativeBaseProvider>
 ```
 
-
 ## Handling breaking changes
 
 Below is a rough account of the breaking API changes as well as the minimal change to migrate
@@ -35,6 +34,10 @@ Below is a rough account of the breaking API changes as well as the minimal chan
 
 * Removed `Alert.Title`. Use `Text` component instead.
 * Removed `Alert.Description`. Use `Text` component instead.
+
+### Divider:
+
+* Removed `size`. Use `thickness` prop instead.
 
 
 ## Note:

@@ -18,7 +18,12 @@ const cloneRepos = () => {
     shellJS.exec('git clone ' + URL);
     shellJS.cd('NativeBase');
 
-    const a = shellJS.exec('git checkout ' + 'v' + v);
+    let a = shellJS.exec('git checkout ' + 'v' + v);
+
+    //TODO: 3.2.0-hack
+    if (v === '3.2.0') {
+      a = shellJS.exec('git checkout ' + 'master');
+    }
     if (a.code !== 0) {
       shellJS.exec('git checkout ' + FALLBACK_BRANCH);
       shellJS.exec('git pull');
