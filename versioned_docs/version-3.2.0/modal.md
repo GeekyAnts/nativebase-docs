@@ -30,6 +30,12 @@ import { Modal } from 'native-base';
 
 ```
 
+### Multiple Modals
+
+```ComponentSnackPlayer path=composites,Modal,MultipleModal.tsx
+
+```
+
 ### Modal Sizes
 
 You can pass `size` prop to NativeBase Modal , it can take `sm`, `md`, `lg`, `full` that maps to **60%**, **75%**, **90%**, **100%**, or a string or a numerical width of the Modal.
@@ -56,9 +62,15 @@ You can pass `size` prop to NativeBase Modal , it can take `sm`, `md`, `lg`, `fu
 
 ```
 
+### Custom Backdrop Modal
+
+```ComponentSnackPlayer path=composites,Modal,CustomBackdrop.tsx
+
+```
+
 <br/>
 
-:::tip Tip
+:::tip Development Tip
 If you want a specifically aligned Modal, pass `justifyContent` and `alignItems` to Modal.
 :::
 

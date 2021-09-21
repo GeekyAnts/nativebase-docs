@@ -100,7 +100,7 @@ export default function () {
   });
   return (
     <NativeBaseProvider theme={theme}>
-      <Center flex="1">
+      <Center flex={1}>
         <Text>NativeBase</Text>
       </Center>
     </NativeBaseProvider>
@@ -141,7 +141,7 @@ export default function () {
 
   return (
     <NativeBaseProvider theme={theme}>
-      <Center flex="1">
+      <Center flex={1}>
         <VStack space={2}>
           <Button colorScheme="emerald">Default Button</Button>
           <Button colorScheme="emerald" variant="rounded">

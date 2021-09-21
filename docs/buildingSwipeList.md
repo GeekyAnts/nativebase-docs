@@ -112,12 +112,9 @@ function Basic() {
     <Box>
       <Pressable onPress={() => console.log('You touched me')} bg="white">
         <Box
-          borderBottomWidth="1"
-          borderColor="coolGray.200"
           pl="4"
           pr="5"
           py="2"
-          _dark={{ borderColor: 'gray.600' }}
           >
           <HStack alignItems="center" space={3}>
             <Avatar size="48px" source={{ uri: item.avatarUrl }} />

@@ -42,7 +42,7 @@ function UseTokenHookExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1">
+      <Center flex={1}>
         <UseTokenHookExample />
       </Center>
     </NativeBaseProvider>

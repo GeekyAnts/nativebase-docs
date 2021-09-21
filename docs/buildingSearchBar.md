@@ -107,8 +107,8 @@ function SearchBar() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex="1" px="2">
-        <SearchBar />
+      <Center flex={1} px="2">
+        <SearchBar/>
       </Center>
     </NativeBaseProvider>
   );
