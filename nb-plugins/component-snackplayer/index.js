@@ -3,7 +3,11 @@ const visit = require('unist-util-visit-parents');
 const u = require('unist-builder');
 const dedent = require('dedent');
 const fromEntries = require('object.fromentries');
-const { getSnackPlayerCodeSnippet, getProjectPath } = require('../utils');
+const {
+  getSnackPlayerCodeSnippet,
+  getProjectPath,
+  getNativeBaseVersion,
+} = require('../utils');
 
 const parseParams = (paramString = '') => {
   const params = fromEntries(new URLSearchParams(paramString));
@@ -18,7 +22,7 @@ const processNode = (node, parent) => {
   return new Promise(async (resolve, reject) => {
     try {
       const params = parseParams(node.meta);
-      const NBversion = '3.2.0';
+      const NBversion = getNativeBaseVersion();
       // Gather necessary Params
       let name = params.name ? decodeURIComponent(params.name) : 'Example';
       const description = params.description
