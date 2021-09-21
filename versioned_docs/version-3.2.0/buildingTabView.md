@@ -25,13 +25,13 @@ import { TabView, SceneMap } from 'react-native-tab-view';
 import { NativeBaseProvider, Box, Text, Center } from 'native-base';
 import Constants from 'expo-constants';
 
-const FirstRoute = () => <Center flex="1">This is Tab 1</Center>;
+const FirstRoute = () => <Center flex={1}>This is Tab 1</Center>;
 
-const SecondRoute = () => <Center flex="1">This is Tab 2</Center>;
+const SecondRoute = () => <Center flex={1}>This is Tab 2</Center>;
 
-const ThirdRoute = () => <Center flex="1">This is Tab 3</Center>;
+const ThirdRoute = () => <Center flex={1}>This is Tab 3</Center>;
 
-const FourthRoute = () => <Center flex="1">This is Tab 4 </Center>;
+const FourthRoute = () => <Center flex={1}>This is Tab 4 </Center>;
 
 const initialLayout = { width: Dimensions.get('window').width };
 

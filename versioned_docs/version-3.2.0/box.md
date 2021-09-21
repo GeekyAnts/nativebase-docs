@@ -33,20 +33,21 @@ import { Box, Center, NativeBaseProvider } from "native-base"
 
 export const Example = () => {
   return (
-    <Box
+   <Box
       bg={{
         linearGradient: {
-          colors: ["lightBlue.300", "violet.800"],
+          colors: ['lightBlue.300', 'violet.800'],
           start: [0, 0],
           end: [1, 0],
         },
       }}
       p="12"
-      rounded="lg"
+      rounded="xl"
       _text={{
-        fontSize: "md",
-        fontWeight: "bold",
-        color: "white",
+        fontSize: 'md',
+        fontWeight: 'medium',
+        color: 'warmGray.50',
+        textAlign: 'center',
       }}
     >
       This is a Box with Linear Gradient
@@ -63,7 +64,7 @@ const config = {
 export default () => {
   return (
     <NativeBaseProvider config={config}>
-      <Center flex="1">
+      <Center flex={1} px="3">
         <Example />
       </Center>
     </NativeBaseProvider>

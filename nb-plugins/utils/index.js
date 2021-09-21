@@ -103,7 +103,7 @@ const getNativeBaseVersion = () => {
   //   return directory.split('versioned_docs/version-')[1];
   // }
 
-  return '3.2.0';
+  return '3.2.1-rc.0';
   // return 'next';
 };
 
