@@ -51,14 +51,6 @@ import { Link } from 'native-base';
 
 ```
 
-<!--
-Link implements **[Box](box.md)**, so all the Box Props can be passed to it.
-
-| Name       | Type     | Description                               | Default |
-| ---------- | -------- | ----------------------------------------- | ------- |
-| isExternal | boolean  | If true, the link will open in a browser. | -       |
-| onClick    | function | Function called when the link is clicked. | -       | --> |
-
 ## Styling
 
 <ComponentTheme name="link" />
