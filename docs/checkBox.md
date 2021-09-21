@@ -1,5 +1,5 @@
 ---
-id: checkBox
+id: checkbox
 title: CheckBox
 ---
 

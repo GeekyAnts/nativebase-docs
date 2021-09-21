@@ -1,6 +1,17 @@
 import React from 'react';
 import ColorComponent from './ColorComponent';
 const COLORS = {
+  primary: {},
+  secondary: {},
+  tertiary: {},
+  danger: {},
+  error: {},
+  success: {},
+  warning: {},
+  muted: {},
+  info: {},
+  light: {},
+
   singletons: {
     white: '#FFFFFF',
     black: '#000000',
@@ -102,6 +113,18 @@ const COLORS = {
     700: '#0369a1',
     800: '#075985',
     900: '#0c4a6e',
+  },
+  darkBlue: {
+    50: '#dbf4ff',
+    100: '#addbff',
+    200: '#7cc2ff',
+    300: '#4aa9ff',
+    400: '#1a91ff',
+    500: '#0077e6',
+    600: '#005db4',
+    700: '#004282',
+    800: '#002851',
+    900: '#000e21',
   },
   cyan: {
     50: '#ecfeff',
@@ -247,18 +270,6 @@ const COLORS = {
     800: '#27272a',
     900: '#18181b',
   },
-  dark: {
-    50: '#18181b',
-    100: '#27272a',
-    200: '#3f3f46',
-    300: '#52525b',
-    400: '#71717a',
-    500: '#a1a1aa',
-    600: '#d4d4d8',
-    700: '#e4e4e7',
-    800: '#f4f4f5',
-    900: '#fafafa',
-  },
   coolGray: {
     50: '#f9fafb',
     100: '#f3f4f6',
@@ -283,7 +294,29 @@ const COLORS = {
     800: '#1e293b',
     900: '#0f172a',
   },
+  dark: {
+    50: '#18181b',
+    100: '#27272a',
+    200: '#3f3f46',
+    300: '#52525b',
+    400: '#71717a',
+    500: '#a1a1aa',
+    600: '#d4d4d8',
+    700: '#e4e4e7',
+    800: '#f4f4f5',
+    900: '#fafafa',
+  },
 };
+COLORS.danger = COLORS.rose;
+COLORS.error = COLORS.red;
+COLORS.success = COLORS.green;
+COLORS.warning = COLORS.orange;
+COLORS.muted = COLORS.trueGray;
+COLORS.primary = COLORS.cyan;
+COLORS.secondary = COLORS.pink;
+COLORS.tertiary = COLORS.emerald;
+COLORS.info = COLORS.lightBlue;
+COLORS.light = COLORS.warmGray;
 const ColorsBlocks = ({}) => {
   return (
     <div>

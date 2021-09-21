@@ -18,7 +18,7 @@ const processNode = (node, parent) => {
   return new Promise(async (resolve, reject) => {
     try {
       const params = parseParams(node.meta);
-      const NBversion = '3.0.7';
+      const NBversion = '3.2.0-rc.0';
       // Gather necessary Params
       let name = params.name ? decodeURIComponent(params.name) : 'Example';
       const description = params.description

@@ -16,7 +16,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox borderRadius='md' bg='primary.200' {...props} />
+  return <NBBox borderRadius='md' bg='primary.600' {...props} />
 }
 
 function Component() {
@@ -34,7 +34,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -69,23 +69,25 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center, Text } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
-}
+  return <NBBox p={5} m={2} borderRadius="md" bg="primary.200" {...props} />;
+};
 
 function Component() {
   return (
     <>
-      { /* raw CSS color value */ }
-      <Box bg='#fdba74' />
-      { /* picks up a nested color value using dot notation */ }
-      { /* => `theme.colors.lightBlue[300]` */ }
-      <Box bgColor='lightBlue.200' py={3}
-      >
-        { /* using theme colors to set text color */ }
-        <Text color='red.500' fontWeight='bold'> I ❤️   NativeBase</Text>
+      {/* raw CSS color value */}
+      <Box bg="#10b981" />
+      {/* picks up a nested color value using dot notation */}
+      {/* => `theme.colors.lightBlue[300]` */}
+      <Box bgColor="cyan.100" py={3}>
+        {/* using theme colors to set text color */}
+        <Text color="cyan.500" fontWeight="bold">
+          {' '}
+          I love NativeBase
+        </Text>
       </Box>
-      { /* verbose prop */ }
-      <Box backgroundColor='indigo.300' />
+      {/* verbose prop */}
+      <Box backgroundColor="#eab308" />
     </>
   );
 }
@@ -99,6 +101,7 @@ export default function () {
   );
 }
 
+
 ```
 
 <br />
@@ -109,6 +112,74 @@ export default function () {
 | bg, background | background       | colors    |
 | bgColor        | background-color | colors    |
 | opacity        | opacity          | -         |
+
+<br></br>
+
+:::tip Note
+
+Above props can be written in the format: {color}:alpha.{opacityToken}, this gets converted into RGBA color format and the opacityToken is mapped to [`Opacity`](default-theme#opacity)
+
+:::
+
+<br />
+
+```SnackPlayer name=Alpha%20Opacity%20Usage
+
+import React from "react"
+import { HStack, Stack, Center, NativeBaseProvider } from "native-base"
+export function Example() {
+  return (
+    <Stack space={2} alignItems="center">
+      <HStack space={2} alignItems="center">
+        <Center
+          size={16}
+          bg="primary.400:alpha.30"
+          rounded="md"
+          _text={{
+            color: "white",
+          }}
+          shadow={3}
+        >
+          Box 1
+        </Center>
+        <Center
+          size={16}
+          bg="primary.400:alpha.70"
+          rounded="md"
+          _text={{
+            color: "white",
+          }}
+          shadow={3}
+        >
+          Box 2
+        </Center>
+        <Center
+          bg="primary.400"
+          size={16}
+          rounded="md"
+          _text={{
+            color: "white",
+          }}
+          shadow={3}
+        >
+          Box 3
+        </Center>
+      </HStack>
+    </Stack>
+  )
+}
+
+export default () => {
+  return (
+    <NativeBaseProvider>
+      <Center flex="1">
+        <Example />
+      </Center>
+    </NativeBaseProvider>
+  )
+}
+
+```
 
 ### Typography
 
@@ -123,22 +194,22 @@ const Text = (props) => {
 function Component() {
   return (
     <>
-      { /* font-size of `theme.fontSizes.md` */ }
-      <Text fontSize="md" >Sample Text </Text>
-      { /* font-size `32px` */ }
-      <Text fontSize={32} textDecoration='underline'>Sample Text </Text>
+      { /* font-size of `theme.fontSizes.2xl` */ }
+      <Text fontSize="2xl" fontWeight="bold" >Thank You </Text>
+      { /* text decoration `underline` */ }
+      <Text textDecoration='underline'>Merci Beaucoup</Text>
       { /* font-size `'2em'` */ }
-      { /* font-size of `theme.fontWeights.bold` */ }
-      <Text fontSize='2em' fontWeight='bold'>Sample Text </Text>
-      { /* text-align `left` on all viewports and `center` from the first breakpoint and up */ }
-      <Text textAlign={[ 'left', 'center' ]} >Sample Text </Text>
+      { /* font-weight of `theme.fontWeights.semibold i.e. 600` */ }
+      <Text fontWeight='semibold'>Danke sehr </Text>
+      { /* letter-spacing `0.1 em` */ }
+      <Text letterSpacing="2xl" >Arigatou </Text>
     </>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -168,7 +239,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox m={2} borderRadius='md' bg='primary.200' {...props} />
+  return <NBBox m={2} borderRadius='md' bg='primary.600' {...props} />
 }
 
 function Component() {
@@ -192,7 +263,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -225,7 +296,7 @@ import React from 'react';
 import { Box as NBBox, Flex, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
+  return <NBBox p={5} m={2} borderRadius='md' bg='primary.600' {...props} />
 }
 
 function Component() {
@@ -248,7 +319,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -282,15 +353,15 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
-}
+  return <NBBox p={5} m={2} borderRadius="md" bg="primary.200" {...props} />;
+};
 
 function Component() {
   return (
     <>
-      <Box border={1} />
-      <Box  borderWidth={2} borderColor='red.400' />
-      <Box border={2} borderBottomColor='red.500' borderTopWidth={7} />
+      <Box border={1} borderColor="cyan.500" />
+      <Box borderWidth={2} borderColor="cyan.500" />
+      <Box border={2} borderColor="cyan.500" borderTopWidth={7} />
     </>
   );
 }
@@ -303,6 +374,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 
 ```
 
@@ -338,7 +410,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} bg='primary.200' {...props} />
+  return <NBBox p={5} m={2} bg='primary.500' {...props} />
 }
 
 function Component() {
@@ -358,7 +430,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -388,22 +460,22 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
+  return <NBBox p={5} m={2} borderRadius='md' bg='primary.400' {...props} />
 }
 
 function Component() {
   return (
     <>
       <Box position='absolute' left={32} p={7} />
-      <Box bgColor='orange.300'  zIndex={2} position='relative' />
-      <Box backgroundColor='indigo.300' position='absolute' right={32} p={7} />
+      <Box bgColor='yellow.400'  zIndex={2} position='relative' />
+      <Box backgroundColor='emerald.400' position='absolute' right={32} p={7} />
     </>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -430,7 +502,7 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius='md' bg='primary.200' {...props} />
+  return <NBBox p={5} m={2} borderRadius='md' bg='primary.500' {...props} />
 }
 
 function Component() {
@@ -448,7 +520,7 @@ function Component() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Component />
       </Center>
     </NativeBaseProvider>
@@ -478,12 +550,13 @@ function Example() {
       <Button
         _text= {{
           // below props will will let you style the text of the button
-          color: 'secondary.400',
-          fontSize: 'xs',
-          fontWeight: 'bolder'
+          color: 'primary.100',
+          fontSize: 'md',
+          fontWeight: 'bold',
+          underline:true
         }}
       >
-        Sample Text
+        Save
       </Button>
   );
 }
@@ -491,7 +564,7 @@ function Example() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Example />
       </Center>
     </NativeBaseProvider>
@@ -518,15 +591,16 @@ import { Button, NativeBaseProvider, Center } from 'native-base';
 function Example() {
   return (
       <Button
+        colorScheme="yellow"
         _pressed={{
           // below props will only be applied on button is pressed
-          bg: 'primary.300',
+          bg: 'yellow.600',
           _text:{
-            color: 'secondary.400'
+            color: 'warmGray.50'
           }
         }}
       >
-        Sample Text
+        Save
       </Button>
   );
 }
@@ -534,7 +608,7 @@ function Example() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Example />
       </Center>
     </NativeBaseProvider>
@@ -563,25 +637,31 @@ import { Button, NativeBaseProvider, Center } from 'native-base';
 
 function Example() {
   return (
-      <Button
-        _web={{
-          // below props will only be applied on 'web' platform
-          bg: 'primary.300',
+    <Button
+      _web={{
+        // below props will only be applied on 'web' platform
+        bg: 'yellow.400',
+        _text: {
+          color: 'coolGray.800',
+          fontWeight: 'medium',
+        },
+        _pressed: {
+          // below props will only be applied on button is pressed
+          bg: 'yellow.600',
           _text: {
-            color: 'secondary.400',
-            fontWeight: 'bold'
-          }
-        }}
-      >
-        Sample Text
-      </Button>
+            color: 'warmGray.50',
+          },
+        },
+      }}>
+      Save
+    </Button>
   );
 }
 
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex="1">
         <Example />
       </Center>
     </NativeBaseProvider>
