@@ -121,6 +121,8 @@ Above props can be written in the format: {color}:alpha-{opacityToken}, this get
 
 :::
 
+<br />
+
 ```SnackPlayer name=Alpha%20Opacity%20Usage
 
 import React from "react"

@@ -21,6 +21,7 @@
   --ifm-color-primary-light: #cfe1e4;
   --ifm-color-primary-lighter: #a5f3fc;
   --ifm-color-primary-lightest: #cffafe;
+  --ifm-color-success: #8b5cf6;
   --ifm-code-font-size: 95%;
   --ifm-navbar-item-padding-horizontal: 20px;
   --ifm-navbar-padding-vertical: 12px;
@@ -736,4 +737,25 @@ a[href*='/install-cra'].menu__link {
 }
 a[href*='/install-next'].menu__link {
   display: none !important;
+}
+
+.alert {
+  padding-left: var(--ifm-alert-padding-vertical);
+  padding-right: var(--ifm-alert-padding-vertical);
+}
+
+.admonition {
+  color: white;
+}
+
+.admonition a {
+  text-decoration-color: white;
+}
+
+.admonition-icon {
+  display: none;
+}
+
+.admonition code {
+  color: white;
 }
