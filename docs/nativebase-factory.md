@@ -99,27 +99,35 @@ export default function () {
 
 ```SnackPlayer name=NativeBase%20Factory%20Using%20Ref
 import React from 'react';
-import { Factory, Button, Stack, NativeBaseProvider,Center } from 'native-base';
+import {
+  Factory,
+  Button,
+  Stack,
+  NativeBaseProvider,
+  Center,
+} from 'native-base';
 import { TextInput } from 'react-native';
 
-function FactoryViewRefExample () {
+function FactoryViewRefExample() {
   const NBInput = Factory(TextInput);
   const inputRef = React.useRef(null);
   return (
     <Stack space={4}>
       <NBInput
-        placeholder='Click on the button'
+        w="200"
+        placeholder="Name"
+        fontSize="12px"
         ref={inputRef}
-        p={2}
-        border={1}
-        borderColor='cyan.400'
-        borderRadius='md'/>
+        p="2"
+        borderWidth="1"
+        borderColor="muted.200"
+        borderRadius="md"
+        placeholderTextColor="muted.400"
+      />
       <Button
-        colorScheme='emerald'
         onPress={() => {
           inputRef?.current?.focus();
-        }}
-      >
+        }}>
         Set Focus
       </Button>
     </Stack>
@@ -136,6 +144,7 @@ export default function () {
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ## Params
