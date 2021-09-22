@@ -24,7 +24,7 @@ import { AlertDialog } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,AlertDialog,basic.tsx
+```ComponentSnackPlayer path=composites,AlertDialog,Basic.tsx
 
 ```
 
