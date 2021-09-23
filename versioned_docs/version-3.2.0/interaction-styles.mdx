@@ -20,12 +20,12 @@ NativeBase provides a declarative way to add interaction or platform specific pr
 Using `_hover` pseudo prop, we can customize the style of Pressable component on hover.
 
 <NativeBaseProvider>
-  <Box flex={1} mb={16}>
+  <Box flex={1} mb="16">
     <Pressable
       _hover={{ bg: 'primary.700' }}
       bg="primary.600"
-      py={2}
-      px={3}
+      py="2"
+      px="3"
       rounded="sm"
       alignSelf="center"
     >
@@ -40,8 +40,8 @@ Using `_hover` pseudo prop, we can customize the style of Pressable component on
 <Pressable
   _hover={{ bg: 'primary.700' }}
   bg="primary.600"
-  py={2}
-  px={3}
+  py="2"
+  px="3"
   rounded="sm"
   alignSelf="center"
 >
@@ -56,12 +56,12 @@ Using `_hover` pseudo prop, we can customize the style of Pressable component on
 Using `_pressed` pseudo prop, we can customize the style of Pressable component on pressed.
 
 <NativeBaseProvider>
-  <Box flex={1} mb={16}>
+  <Box flex={1} mb="16">
     <Pressable
       _pressed={{ bg: 'primary.800' }}
       bg="primary.600"
-      py={2}
-      px={3}
+      py="2"
+      px="3"
       alignSelf="center"
       rounded="sm"
     >
@@ -76,9 +76,9 @@ Using `_pressed` pseudo prop, we can customize the style of Pressable component 
 <Pressable
   _pressed={{ bg: 'primary.800' }}
   bg="primary.600"
-  py={2}
+  py="2"
   rounded="sm"
-  px={3}
+  px="3"
   alignSelf="center"
 >
   <Text textTransform="uppercase" fontWeight="bold" color="white">
@@ -92,7 +92,7 @@ Using `_pressed` pseudo prop, we can customize the style of Pressable component 
 Using `_focus` pseudo prop, we can customize the style of Pressable component on focus.
 
 <NativeBaseProvider>
-  <Box flex={1} mb={16}>
+  <Box flex={1} mb="16">
     <Pressable
       _focus={{
         bg: 'primary.700',
@@ -101,8 +101,8 @@ Using `_focus` pseudo prop, we can customize the style of Pressable component on
       }}
       bg="primary.600"
       rounded="sm"
-      py={2}
-      px={3}
+      py="2"
+      px="3"
       alignSelf="center"
     >
       <Text textTransform="uppercase" fontWeight="bold" color="white">
@@ -117,8 +117,8 @@ Using `_focus` pseudo prop, we can customize the style of Pressable component on
   _focus={{ bg: 'primary.700', borderColor: 'primary.400', borderWidth: '2px' }}
   bg="primary.600"
   rounded="sm"
-  py={2}
-  px={3}
+  py="2"
+  px="3"
   alignSelf="center"
 >
   <Text textTransform="uppercase" fontWeight="bold" color="white">
@@ -132,14 +132,14 @@ Using `_focus` pseudo prop, we can customize the style of Pressable component on
 Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or behaviour of NativeBase components across platforms.
 
 <NativeBaseProvider>
-  <HStack space={4} justifyContent="center" alignItems="center" mb={8}>
-    <VStack alignItems="center" space={2}>
+  <HStack space="4" justifyContent="center" alignItems="center" mb="8">
+    <VStack alignItems="center" space="2">
       <Box
         _web={{ bg: 'cyan.600' }}
         bg="cyan.600"
         rounded="sm"
-        py={2}
-        px={3}
+        py="2"
+        px="3"
         alignSelf="center"
       >
         <Text textTransform="uppercase" fontWeight="bold" color="white">
@@ -148,13 +148,13 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
       </Box>
       <Text color="white">Web</Text>
     </VStack>
-    <VStack alignItems="center" space={2}>
+    <VStack alignItems="center" space="2">
       <Box
         _android={{ bg: 'yellow.400' }}
         bg="yellow.400"
         rounded="sm"
-        py={2}
-        px={3}
+        py="2"
+        px="3"
         alignSelf="center"
       >
         <Text textTransform="uppercase" fontWeight="bold">
@@ -163,13 +163,13 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
       </Box>
       <Text color="white">Android</Text>
     </VStack>
-    <VStack alignItems="center" space={2}>
+    <VStack alignItems="center" space="2">
       <Box
         _ios={{ bg: 'violet.500' }}
         bg="violet.500"
         rounded="sm"
-        py={2}
-        px={3}
+        py="2"
+        px="3"
         alignSelf="center"
       >
         <Text textTransform="uppercase" fontWeight="bold" color="white">
@@ -183,12 +183,12 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
 
 ```jsx title="Platform specific example"
 <HStack space={4} justifyContent="center" alignItems="center">
-  <VStack alignItems="center" space={2}>
+  <VStack alignItems="center" space="2">
     <Box
       _web={{ bg: 'cyan.600' }}
       rounded="sm"
-      py={2}
-      px={3}
+      py="2"
+      px="3"
       alignSelf="center"
     >
       <Text textTransform="uppercase" fontWeight="bold" color="white">
@@ -197,12 +197,12 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
     </Box>
     <Text color="white">Web</Text>
   </VStack>
-  <VStack alignItems="center" space={2}>
+  <VStack alignItems="center" space="2">
     <Box
       _android={{ bg: 'yellow.400' }}
       rounded="sm"
-      py={2}
-      px={3}
+      py="2"
+      px="3"
       alignSelf="center"
     >
       <Text textTransform="uppercase" fontWeight="bold">
@@ -211,12 +211,12 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
     </Box>
     <Text color="white">Android</Text>
   </VStack>
-  <VStack alignItems="center" space={2}>
+  <VStack alignItems="center" space="2">
     <Box
       _ios={{ bg: 'violet.500' }}
       rounded="sm"
-      py={2}
-      px={3}
+      py="2"
+      px="3"
       alignSelf="center"
     >
       <Text textTransform="uppercase" fontWeight="bold" color="white">
