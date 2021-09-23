@@ -84,7 +84,7 @@ export default function App() {
           >
             <Center>
               <Icon
-                mb={1}
+                mb="1"
                 as={
                   <MaterialCommunityIcons
                     name={selected === 2 ? 'cart' : 'cart-outline'}
@@ -93,7 +93,7 @@ export default function App() {
                 color="white"
                 size="sm"
               />
-              <Text color="white" fontSize={12}>
+              <Text color="white" font="12">
                 Cart
               </Text>
             </Center>
@@ -107,7 +107,7 @@ export default function App() {
           >
             <Center>
               <Icon
-                mb={1}
+                mb="1"
                 as={
                   <MaterialCommunityIcons
                     name={selected === 3 ? 'account' : 'account-outline'}
