@@ -19,7 +19,7 @@ import { View } from 'react-native';
 function FactoryViewExample () {
   const FactoryView = Factory(View);
   return (
-      <FactoryView bg="emerald.400" borderRadius={4} size={16} />
+      <FactoryView bg="emerald.400" borderRadius="4" size="16" />
   );
 }
 
@@ -49,7 +49,7 @@ function FactoryViewExample () {
       borderRadius: 'md',
     },
   });
-  return <FactoryView size={16} />;
+  return <FactoryView size="16" />;
 }
 
 // Example template which wraps component with NativeBaseProvider
@@ -80,7 +80,7 @@ function FactoryViewModeExample () {
       };
     },
   });
-  return <FactoryView size={16}/>;
+  return <FactoryView size="16"/>;
 }
 
 // Example template which wraps component with NativeBaseProvider
@@ -112,7 +112,7 @@ function FactoryViewRefExample() {
   const NBInput = Factory(TextInput);
   const inputRef = React.useRef(null);
   return (
-    <Stack space={4}>
+    <Stack space="4">
       <NBInput
         w="200"
         placeholder="Name"

@@ -55,7 +55,7 @@ export const spacing = {
 We can use the above tokens in our code instead of using absolute values.
 
 ```jsx title="using the above tokens in Box component"
-<Box mt={4} bg="primary.500"></Box>
+<Box mt="4" bg="primary.500"></Box>
 ```
 
 The above Box will be translated to
