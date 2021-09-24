@@ -55,11 +55,11 @@ export default function () {
   const uri = 'https://facebook.github.io/react-native/docs/assets/favicon.png';
 
   return (
-    <VStack space={2} alignItems="center">
+    <VStack space="2" alignItems="center">
       <Text>Square Thumbnail</Text>
-      <Image size={12} source={{ uri: uri }} alt="react-native" />
-      <Image size={16} source={{ uri: uri }} alt="react-native" />
-      <Image size={20} source={{ uri: uri }} alt="react-native" />
+      <Image size="12" source={{ uri: uri }} alt="react-native" />
+      <Image size="16" source={{ uri: uri }} alt="react-native" />
+      <Image size="20" source={{ uri: uri }} alt="react-native" />
       <Text>Circular Thumbnail</Text>
       <Avatar size="xs" source={{ uri: uri }} />
       <Avatar size="md" source={{ uri: uri }} />

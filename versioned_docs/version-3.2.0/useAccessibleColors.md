@@ -26,7 +26,7 @@ const ButtonTemplate = ({ shade }: any) => {
       key={`yellow.${shade}`}
       bg={`yellow.${shade}`}
       _text={{ color: colorContrast }}
-      mb={1}
+      mb="1"
     >
       Save Changes
     </Button>

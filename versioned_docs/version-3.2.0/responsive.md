@@ -102,7 +102,7 @@ function Example() {
       rounded="lg"
       overflow="hidden"
       width={['72', '72', '4/6']}
-      shadow={1}
+      shadow="1"
       _light={{ backgroundColor: 'coolGray.50' }}
       _dark={{ backgroundColor: 'gray.700' }}>
       <Box>
@@ -119,14 +119,14 @@ function Example() {
           bg="violet.500"
           _text={{ color: 'white', fontWeight: '700', fontSize: 'xs' }}
           position="absolute"
-          bottom={0}
+          bottom="0"
           px="3"
           py="1.5">
           PHOTOS
         </Center>
       </Box>
       <Stack p="4" space={[3, 3, 1.5]}>
-        <Stack space={2}>
+        <Stack space="2">
           <Heading size="md" ml="-1">
             The Garden City
           </Heading>
@@ -143,7 +143,7 @@ function Example() {
           Bengaluru (also called Bangalore) is the center of India's high-tech
           industry. The city is also known for its parks and nightlife.
         </Text>
-        <HStack alignItems="center" space={4} justifyContent="space-between">
+        <HStack alignItems="center" space="4" justifyContent="space-between">
           <HStack alignItems="center">
             <Text
               color="coolGray.600"
