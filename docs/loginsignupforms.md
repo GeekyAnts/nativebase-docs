@@ -63,7 +63,7 @@ export default function App() {
               _text={{ fontSize: 'xs', fontWeight: '500', color: 'indigo.500' }}
               alignSelf="flex-end"
               mt="1">
-              Forget Password?
+              Forgot Password?
             </Link>
           </FormControl>
           <Button mt="2" colorScheme="indigo" _text={{ color: 'white' }}>
