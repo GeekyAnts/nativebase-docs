@@ -17,7 +17,7 @@ import { useMediaQuery } from 'native-base';
 
 ```SnackPlayer name=useMediaQuery%20Usage(max-height)
 import React from "react";
-import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
+import { Text, useMediaQuery, NativeBaseProvider, Box, HStack, AspectRatio, Stack, Heading, Image, Center } from "native-base";
 
 function UseMediaQueryExample() {
   const [isSmallScreen] = useMediaQuery({ minHeight: 280, maxHeight: 480 });
@@ -27,7 +27,6 @@ function UseMediaQueryExample() {
         <Box
           rounded="lg"
           overflow="hidden"
-          width="72"
           borderWidth="1"
           shadow={1}
           _light={{ backgroundColor: 'gray.50', borderColor: 'coolGray.200' }}
@@ -142,7 +141,7 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex={1} px="3">
         <UseMediaQueryExample />
       </Center>
     </NativeBaseProvider>
@@ -154,7 +153,7 @@ export default function () {
 
 ```SnackPlayer name=useMediaQuery%20Usage(min-width)
 import React from "react";
-import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
+import { Text, useMediaQuery, NativeBaseProvider, Box, HStack, Stack, AspectRatio, Heading, Image, Center } from "native-base";
 
 function UseMediaQueryExample() {
   const [isSmallScreen] = useMediaQuery({ minWidth: 280 });
@@ -164,7 +163,6 @@ function UseMediaQueryExample() {
         <Box
           rounded="lg"
           overflow="hidden"
-          width="72"
           borderColor="coolGray.200"
           borderWidth="1"
           _dark={{ borderColor: 'coolGray.600', backgroundColor: 'gray.700' }}
@@ -280,7 +278,7 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex={1} px="3">
         <UseMediaQueryExample />
       </Center>
     </NativeBaseProvider>
@@ -292,25 +290,23 @@ export default function () {
 
 ```SnackPlayer name=useMediaQuery%20Usage(orientation)
 import React from "react";
-import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
+import { Text, useMediaQuery, NativeBaseProvider, Box, HStack, Stack, AspectRatio, Heading, Image, Center } from "native-base";
 
 function UseMediaQueryExample() {
  const [isLandScape, isPortrait] = useMediaQuery([
     { orientation: 'landscape' },
     { orientation: 'portrait' },
   ]);
-  return (
+  return  (
     <Box>
       {isPortrait ? (
         <Box
           rounded="lg"
           overflow="hidden"
-          width="72"
           shadow={1}
           borderWidth="1"
           _light={{ backgroundColor: 'gray.50', borderColor: 'coolGray.200' }}
-          _dark={{ borderColor: 'coolGray.600', backgroundColor: 'gray.700' }}
-        >
+          _dark={{ borderColor: 'coolGray.600', backgroundColor: 'gray.700' }}>
           <Box>
             <AspectRatio ratio={16 / 9}>
               <Image
@@ -327,8 +323,7 @@ function UseMediaQueryExample() {
               position="absolute"
               bottom={0}
               px="3"
-              py="1.5"
-            >
+              py="1.5">
               PHOTOS
             </Center>
           </Box>
@@ -343,8 +338,7 @@ function UseMediaQueryExample() {
                 _dark={{ color: 'violet.300' }}
                 fontWeight="500"
                 ml="-0.5"
-                mt="-1"
-              >
+                mt="-1">
                 The Silicon Valley of India.
               </Text>
             </Stack>
@@ -356,8 +350,7 @@ function UseMediaQueryExample() {
             <HStack
               alignItems="center"
               space={4}
-              justifyContent="space-between"
-            >
+              justifyContent="space-between">
               <HStack alignItems="center">
                 <Text color="gray.500" fontWeight="400">
                   6 mins ago
@@ -375,8 +368,7 @@ function UseMediaQueryExample() {
           overflow="hidden"
           shadow={1}
           _light={{ backgroundColor: 'gray.50' }}
-          _dark={{ backgroundColor: 'gray.700' }}
-        >
+          _dark={{ backgroundColor: 'gray.700' }}>
           <Stack p="2" pt="3" flex="2" space={1}>
             <Stack space={2}>
               <Heading size="md" ml="-1">
@@ -388,8 +380,7 @@ function UseMediaQueryExample() {
                 _dark={{ color: 'violet.300' }}
                 fontWeight="500"
                 ml="-0.5"
-                mt="-1"
-              >
+                mt="-1">
                 The Silicon Valley of India.
               </Text>
             </Stack>
@@ -401,15 +392,13 @@ function UseMediaQueryExample() {
             <HStack
               alignItems="center"
               space={4}
-              justifyContent="space-between"
-            >
+              justifyContent="space-between">
               <HStack alignItems="center">
                 <Text
                   _dark={{ color: 'warmGray.200' }}
                   fontSize="xs"
                   color="gray.500"
-                  fontWeight="400"
-                >
+                  fontWeight="400">
                   6 mins ago
                 </Text>
               </HStack>
@@ -425,7 +414,7 @@ function UseMediaQueryExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1}>
+      <Center flex={1} px="3">
         <UseMediaQueryExample />
       </Center>
     </NativeBaseProvider>
