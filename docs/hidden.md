@@ -120,6 +120,6 @@ export default function () {
 
 ## Props
 
-```ComponentPropTable path=composites,Fab,Fab.tsx
+```ComponentPropTable path=primitives,Hidden,index.tsx
 
 ```

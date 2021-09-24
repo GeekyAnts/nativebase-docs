@@ -34,7 +34,6 @@ function CardComponent(){
     <Box
       rounded="lg"
       overflow="hidden"
-      width="72"
       shadow={1}
       _light={{ backgroundColor: 'gray.50' }}
       _dark={{ backgroundColor: 'gray.700' }}

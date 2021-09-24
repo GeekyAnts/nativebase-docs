@@ -36,13 +36,12 @@ function UseDiscloseExample() {
           </Modal.Header>
           <Modal.Body>
            This will remove all data relating to Alex. This action cannot be reversed. Deleted data can not be recovered.
-            <Input mt="4" placeholder="Lorem ipsum dolor sit" />
           </Modal.Body>
           <Modal.Footer>
-            <Button colorScheme="blue" mr="1">
-              Save
+           <Button variant="unstyled" mr="1">
+              Cancel
             </Button>
-            <Button onPress={onClose}>Close</Button>
+            <Button colorScheme="error" onPress={onClose}>Delete</Button>
           </Modal.Footer>
         </Modal.Content>
       </Modal>
