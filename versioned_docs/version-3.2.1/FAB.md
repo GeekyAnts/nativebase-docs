@@ -3,7 +3,7 @@ id: FAB
 title: FAB
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 A floating action button is a circular icon button that hovers over content to promote a primary action in the application.
 

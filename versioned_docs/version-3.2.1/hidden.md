@@ -3,7 +3,7 @@ id: hidden
 title: Hidden
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 Hidden is used to toggle the visibility value of child components responsively, based on the colorMode or based on the platform. It doesn't mount the child components in the restricted values of props.
 

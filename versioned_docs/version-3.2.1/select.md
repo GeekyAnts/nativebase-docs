@@ -3,7 +3,7 @@ id: select
 title: Select
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 import { AndroidBadge } from "/src/components/index";
 
