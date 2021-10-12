@@ -35,7 +35,7 @@
     "clsx": "^1.1.1",
     "dedent": "^0.7.0",
     "docusaurus-tailwindcss-loader": "file:plugins/docusaurus-tailwindcss-loader",
-    "native-base": "3.2.0",
+    "native-base": "3.2.1",
     "object.fromentries": "^2.0.3",
     "patch-package": "^6.4.7",
     "postcss": "^7.0.34",
