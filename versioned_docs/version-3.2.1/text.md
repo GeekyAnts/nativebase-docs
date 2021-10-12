@@ -3,7 +3,7 @@ id: text
 title: Text
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 `Text` is used to render text and paragraphs within an interface.
 

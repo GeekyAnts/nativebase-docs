@@ -3,7 +3,7 @@ id: link
 title: Link
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 `Links` are accessible elements used primarily for navigation. This component is styled to resemble a hyperlink.
 

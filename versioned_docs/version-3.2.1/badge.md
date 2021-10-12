@@ -3,7 +3,7 @@ id: badge
 title: Badge
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from '../../src/components';
 
 `Badges` are used to highlight an item's status for quick recognition.
 
