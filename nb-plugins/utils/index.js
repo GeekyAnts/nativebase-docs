@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const docgen = require('react-docgen-typescript');
 const shell = require('shelljs');
+const packageJSON = require('../../package.json');
 
 const {
   transformStorybookToDocExample,
@@ -102,7 +103,7 @@ const getNativeBaseVersion = () => {
   //   return directory.split('versioned_docs/version-')[1];
   // }
 
-  return '3.2.1-rc.0';
+  return packageJSON.dependencies['native-base'];
   // return 'next';
 };
 

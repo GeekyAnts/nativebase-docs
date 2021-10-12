@@ -55,7 +55,7 @@ const templateGenerator = (componentDetails) => {
         })
         .join(' | ');
 
-      if (parent.name === `I${displayName}Props`) {
+      if (parent && parent.name === `I${displayName}Props`) {
         propExists = true;
         temp =
           temp +
@@ -124,13 +124,17 @@ const implementSection = (componentDetails, showStylingProps) => {
   let implementsArray = new Set();
   for (let prop in props) {
     const { name, description, type, parent, defaultValue } = props[prop];
+    let propName = name;
+    if (parent) {
+      propName = parent.name;
+    }
     const MapValue = showStylingProps
-      ? internalPropsMap[parent.name] ||
-        rnPropsMap[parent.name] ||
-        StylingPropsMap[parent.name]
-      : internalPropsMap[parent.name];
+      ? internalPropsMap[propName] ||
+        rnPropsMap[propName] ||
+        StylingPropsMap[propName]
+      : internalPropsMap[propName];
 
-    if (MapValue && parent.name !== `I${displayName}Props`) {
+    if (MapValue && propName !== `I${displayName}Props`) {
       implementsArray.add(
         MapValue.link.startsWith('http')
           ? `<a href="${MapValue.link}"><code>${MapValue.name}</code></a>`
