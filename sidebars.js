@@ -44,6 +44,7 @@ module.exports = {
         'dark-mode',
         'breakpoints',
         'theme',
+        'typescript',
       ],
     },
     {
