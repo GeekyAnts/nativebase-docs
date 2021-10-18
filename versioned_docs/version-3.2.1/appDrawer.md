@@ -41,17 +41,17 @@ function AppDrawer() {
   ];
 
   return (
-   <FlatList numColumns={4} m={"-4px"} spacingY={8} spacingX={4}
+   <FlatList numColumns={4} m={"-8px"}
       data={icons}
       renderItem={({item}) => {
         return (
           <IconButton
-            m={'4px'}
+            m={'8px'}
             borderRadius="full"
             bg={item.bg}
             variant="solid"
             p="3"
-            item={
+            icon={
               <Icon color="white" name={item.name} as={MaterialIcons} size="sm" />
             }
           />
