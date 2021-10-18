@@ -382,7 +382,6 @@ export default function () {
 
 | Prop              | CSS Eququivalent    | Theme Field  |
 | ----------------- | ------------------- | ------------ |
-| border            | border              | borders      |
 | borderWidth       | border-width        | borderWidths |
 | borderStyle       | border-style        | borderStyles |
 | borderColor       | border-color        | colors       |
