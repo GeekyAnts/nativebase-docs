@@ -1,7 +1,7 @@
 import React from 'react';
 import FontSizeComponent from './FontSizeComponent';
 const FONT_SIZES = {
-  xxs: 10,
+  '2xs': 10,
   xs: 12,
   sm: 14,
   md: 16,
