@@ -9,7 +9,8 @@ Common pattern in navigation is to use drawer from left (sometimes right) side f
 
 Here is an example to show how easily and quickly we can use React Native's [DrawerNavigation](https://reactnavigation.org/docs/drawer-based-navigation/) in NB.
 
-```SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/stack@5.1.0,@react-navigation/drawer,@react-navigation/native@5.0.8,react-native-vector-icons,react-native-gesture-handler@1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@3.0.0,react-native-reanimated@2.1.0
+```SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/drawer,@react-navigation/native@6.0.6,react-native-vector-icons,react-native-gesture-handler@~1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@~3.4.0,react-native-reanimated@~2.2.0
+
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import {
@@ -31,19 +32,14 @@ import {
   Center,
   HStack,
   Divider,
-  Icon
+  Icon,
 } from 'native-base';
 const Drawer = createDrawerNavigator();
 function Component(props) {
   return (
-    <HStack alignItems="center" mt="6">
-      <Pressable onPress={() => props.navigation.toggleDrawer()} position="absolute" ml="2" zIndex="1">
-        <HamburgerIcon ml="2" size="sm"/>
-      </Pressable>
-      <Center flex={1} >
-        <Heading size="md">{props.route.name}</Heading>
-      </Center>
-    </HStack>
+      <Center>
+       <Text mt="12" fontSize="18">This is {props.route.name} page.</Text>
+     </Center>
   );
 }
 
