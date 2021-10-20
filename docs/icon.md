@@ -39,6 +39,12 @@ We provides a set of commonly used interface icons. So you can directly use them
 
 ```
 
+<!-- ### Integration with Third Party Icons
+
+```ComponentSnackPlayer path=primitives,Icon,ThirdPartyIcons.tsx
+
+``` -->
+
 ## Props
 
 ### Icon

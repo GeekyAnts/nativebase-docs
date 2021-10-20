@@ -101,7 +101,7 @@ function App() {
 
   return (
     <NativeBaseProvider theme={theme}>
-      <Box bg="primary.500" p={4} />
+      <Box bg="primary.500" p="4" />
     </NativeBaseProvider>
   );
 }

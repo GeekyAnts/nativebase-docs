@@ -22,9 +22,9 @@ function ColorPalete() {
   return (
     <Box>
       <FlatList
-        numColumns={5}
+        numColumns="5"
         data={Object.keys(colors['primary'])}
-        renderItem={({ item }) => <Box p={5} bg={`primary.${item}`} />}
+        renderItem={({ item }) => <Box p="5" bg={`primary.${item}`} />}
       />
     </Box>
   );
@@ -34,7 +34,7 @@ function ColorPalete() {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Center flex={1} p={3}>
+      <Center flex={1} p="3">
         <ColorPalete />
       </Center>
     </NativeBaseProvider>
@@ -57,7 +57,7 @@ function Tokens() {
     'lightText',
   ]);
   return (
-    <Center bg="primary.600" flexDirection="row" p={4} rounded={4}>
+    <Center bg="primary.600" flexDirection="row" p="4" rounded="4">
       Contrast threshold is:{' '}
       <Text color={lightText} fontWeight="bold">
         {contrastThreshold}
@@ -101,7 +101,7 @@ function UseContrastingTextHook() {
   const colorContrastLight = useContrastText(bgLight);
 
   return (
-    <Stack space={4}>
+    <Stack space="4">
       <Button bg={bgDark} _text={{ color: colorContrastDark }}>
         NativeBase
       </Button>
@@ -183,7 +183,7 @@ function UseColorMode() {
   const { toggleColorMode } = useColorMode();
   return (
     <Center flex={1} bg={useColorModeValue('warmGray.50', 'coolGray.800')}>
-      <Text fontSize="lg" display="flex" mb={20}>
+      <Text fontSize="lg" display="flex" mb="20">
         The active color mode is{' '}
         <Text bold fontSize="18px">
           {useColorModeValue('Light', 'Dark')}
