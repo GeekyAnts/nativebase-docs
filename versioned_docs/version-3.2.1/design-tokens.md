@@ -66,4 +66,4 @@ The above Box will be translated to
 
 With NativeBase, you can create your own design system. NativeBase follows [styled-system's specification](https://styled-system.com/theme-specification/) to construct design system.
 
-Checkout the **[default NativeBase theme](default-theme)** and how to customize it **[here](customizingTheme)**.
+Checkout the **[default NativeBase theme](default-theme)** and how to customize it **[here](customizing-theme)**.
