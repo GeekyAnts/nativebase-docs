@@ -9,7 +9,7 @@ Creating an app drawer like layout is very common and with NativeBase's SimpleGr
 import React from 'react';
 import {
   IconButton,
-  SimpleGrid,
+  FlatList,
   Icon,
   NativeBaseProvider,
   Box,
@@ -41,19 +41,22 @@ function AppDrawer() {
   ];
 
   return (
-    <SimpleGrid columns={4} spacingY={8} spacingX={4}>
-      {icons.map((icon) => (
-        <IconButton
-          borderRadius="full"
-          bg={icon.bg}
-          variant="solid"
-          p="3"
-          icon={
-            <Icon color="white" name={icon.name} as={MaterialIcons} size="sm" />
-          }
-        />
-      ))}
-    </SimpleGrid>
+   <FlatList numColumns={4} m={"-8px"}
+      data={icons}
+      renderItem={({item}) => {
+        return (
+          <IconButton
+            m={'8px'}
+            borderRadius="full"
+            bg={item.bg}
+            variant="solid"
+            p="3"
+            icon={
+              <Icon color="white" name={item.name} as={MaterialIcons} size="sm" />
+            }
+          />
+        )
+    }} />
   );
 }
 
