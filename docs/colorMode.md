@@ -99,6 +99,44 @@ export default function () {
 
 ```
 
+<br />
+
+:::caution
+Incorrect usage of useColorMode. The below code will not return the actual color mode values.
+
+```jsx
+export default function () {
+  const { colorMode, toggleColorMode } = useColorMode();
+  return (
+    <NativeBaseProvider>
+      <Box bg={colorMode === 'dark' ? 'black' : 'white'} />
+    </NativeBaseProvider>
+  );
+}
+```
+
+:::
+
+:::tip
+Correct usage of useColorMode. Since colorMode uses context from NativeBaseProvider, we need to make sure to put it in a component that is a child of NativeBaseProvider.
+
+```jsx
+function ColorMode() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  return <Box bg={colorMode === 'dark' ? 'black' : 'white'} />;
+}
+
+export default function () {
+  return (
+    <NativeBaseProvider>
+      <ColorMode />
+    </NativeBaseProvider>
+  );
+}
+```
+
+:::
+
 ## Default color mode
 
 You can set default color mode. By default, the color mode will be `light`. To support this, extend the default theme with a `config`
