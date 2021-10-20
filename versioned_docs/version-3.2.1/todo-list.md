@@ -33,7 +33,7 @@ export default function () {
   const [list, setList] = React.useState(instState);
   const [inputValue, setInputValue] = React.useState('');
   const addItem = (title: string) => {
-    setList([
+   if(title) setList([
       ...list,
       {
         title: title,
