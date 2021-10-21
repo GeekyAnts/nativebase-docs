@@ -34,27 +34,38 @@ const templateGenerator = (componentDetails) => {
     for (let prop in propsObject) {
       const { name, description, type, parent, defaultValue } =
         propsObject[prop];
-      const markupWithTypeLinks = type.name
-        .split('|')
-        .map((e) => {
-          return e.trim();
-        })
-        .map((element) => {
-          const MapValue =
-            internalPropsMap[element] ||
-            rnPropsMap[element] ||
-            StylingPropsMap[element];
-          const htmlSanatizedElem = element
-            .replace(/\</g, '&lt;') //for <
-            .replace(/\>/g, '&gt;'); //for >
-          return `${
-            MapValue
-              ? `<a href="${MapValue.link}">${element}</a>`
-              : htmlSanatizedElem
-          }`;
-        })
-        .join(' | ');
+      let markupWithTypeLinks;
+      if (type.name.includes('ILinearGradientProps')) {
+        markupWithTypeLinks = `${
+          `ResponsiveValue&lt;` +
+          `<a href="${StylingPropsMap['backgroundColor'].link}">ColorProps </a>` +
+          `\|` +
+          `<a href="${internalPropsMap['ILinearGradientProps'].link}"> ILinearGradientProps</a>` +
+          `>`
+        }`;
+      } else {
+        markupWithTypeLinks = type.name
+          .split('|')
+          .map((e) => {
+            return e.trim();
+          })
+          .map((element) => {
+            const MapValue =
+              internalPropsMap[element] ||
+              rnPropsMap[element] ||
+              StylingPropsMap[element];
 
+            const htmlSanatizedElem = element
+              .replace(/\</g, '&lt;') //for <
+              .replace(/\>/g, '&gt;'); //for >
+            return `${
+              MapValue
+                ? `<a href="${MapValue.link}">${element}</a>`
+                : htmlSanatizedElem
+            }`;
+          })
+          .join(' | ');
+      }
       if (parent && parent.name === `I${displayName}Props`) {
         propExists = true;
         temp =
@@ -75,6 +86,7 @@ const templateGenerator = (componentDetails) => {
         </tr>`;
       }
     }
+
     return temp;
   };
 
