@@ -35,4 +35,4 @@ Slide component provides a declarative API to add sliding transitions.
 | --------- | -------------------------------- | ------------------------------------------------------ | -------- |
 | in        | boolean                          | Show the component; triggers the enter or exit states. | -        |
 | duration  | number                           | Duration of animation in mili second.                  | 500      |
-| placement | `top` ,`bottom`, `left`, `right` | The direction to slide drawer from.                    | `bottom` |
+| placement | `top` ,`bottom` | The direction to slide drawer from.                    | `bottom` |
