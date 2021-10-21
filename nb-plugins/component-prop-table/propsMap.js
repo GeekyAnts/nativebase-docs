@@ -42,7 +42,7 @@ const internalProps = {
   IActionsheetContentProps: {
     doc: 'actionsheet.md',
     name: 'Actionsheet.Content',
-    link: 'actionsheet#actionsheetcontent',
+    link: 'action-sheet#actionsheetcontent',
   },
   SwitchProps: {
     doc: '',
@@ -52,7 +52,7 @@ const internalProps = {
   IFormControlProps: {
     doc: 'formControl.md',
     name: 'FormControl',
-    link: 'formControl#formcontrol',
+    link: 'form-control#formcontrol',
   },
   IInputProps: {
     doc: 'input.md',
@@ -61,105 +61,106 @@ const internalProps = {
   },
 };
 // RN props
-const viewProps = {
-  ViewStyle: {
-    doc: '',
-    name: 'ViewStyle',
-    link: 'https://reactnative.dev/docs/view-style-props',
-  },
-  ViewProps: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  ImageProps: {
-    doc: '',
-    name: 'Image',
-    link: 'https://reactnative.dev/docs/image',
-  },
-  ViewPropsAndroid: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  ViewPropsIOS: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  TVViewPropsIOS: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  GestureResponderHandlers: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  Touchable: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  AccessibilityProps: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  AccessibilityPropsAndroid: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  AccessibilityPropsIOS: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  RefAttributes: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-  Attributes: {
-    doc: '',
-    name: 'View',
-    link: 'https://reactnative.dev/docs/view',
-  },
-};
-const textProps = {
-  TextProps: {
-    doc: '',
-    name: 'TextProp',
-    link: 'https://reactnative.dev/docs/text',
-  },
-  TextPropsIOS: {
-    doc: '',
-    name: 'TextProp',
-    link: 'https://reactnative.dev/docs/text',
-  },
-  TextPropsAndroid: {
-    doc: '',
-    name: 'TextProp',
-    link: 'https://reactnative.dev/docs/text',
-  },
-  AccessibilityProps: {
-    doc: '',
-    name: 'TextProp',
-    link: 'https://reactnative.dev/docs/text',
-  },
-  AccessibilityPropsAndroid: {
-    doc: '',
-    name: 'TextProp',
-    link: 'https://reactnative.dev/docs/text',
-  },
-  AccessibilityPropsIOS: {
-    doc: '',
-    name: 'TextProp',
-    link: 'https://reactnative.dev/docs/text',
-  },
-};
+// const viewProps = {
+//   ViewStyle: {
+//     doc: '',
+//     name: 'ViewStyle',
+//     link: 'https://reactnative.dev/docs/view-style-props',
+//   },
+//   ViewProps: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   ImageProps: {
+//     doc: '',
+//     name: 'Image',
+//     link: 'https://reactnative.dev/docs/image',
+//   },
+//   ViewPropsAndroid: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   ViewPropsIOS: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   TVViewPropsIOS: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   GestureResponderHandlers: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   Touchable: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   AccessibilityProps: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   AccessibilityPropsAndroid: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   AccessibilityPropsIOS: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   RefAttributes: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+//   Attributes: {
+//     doc: '',
+//     name: 'View',
+//     link: 'https://reactnative.dev/docs/view',
+//   },
+// };
+// const textProps = {
+//   TextProps: {
+//     doc: '',
+//     name: 'TextProp',
+//     link: 'https://reactnative.dev/docs/text',
+//   },
+//   TextPropsIOS: {
+//     doc: '',
+//     name: 'TextProp',
+//     link: 'https://reactnative.dev/docs/text',
+//   },
+//   TextPropsAndroid: {
+//     doc: '',
+//     name: 'TextProp',
+//     link: 'https://reactnative.dev/docs/text',
+//   },
+//   AccessibilityProps: {
+//     doc: '',
+//     name: 'TextProp',
+//     link: 'https://reactnative.dev/docs/text',
+//   },
+//   AccessibilityPropsAndroid: {
+//     doc: '',
+//     name: 'TextProp',
+//     link: 'https://reactnative.dev/docs/text',
+//   },
+//   AccessibilityPropsIOS: {
+//     doc: '',
+//     name: 'TextProp',
+//     link: 'https://reactnative.dev/docs/text',
+//   },
+// };
+
 const rnProps = {
   ViewStyle: {
     doc: '',
