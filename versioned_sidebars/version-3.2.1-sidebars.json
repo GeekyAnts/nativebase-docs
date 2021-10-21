@@ -458,6 +458,17 @@
     {
       "collapsed": false,
       "type": "category",
+      "label": "Community Integration",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.1/react-hook-forms"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
       "label": "Recipes",
       "items": [
         {
