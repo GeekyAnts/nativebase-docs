@@ -196,4 +196,4 @@ export default function () {
 
 ## Community Integration
 
-NativeBase can be used with other popular Form libraries like [`Formik`](nativebase-formik-ui.md) and [`React Hook Forms`](reactHooksForms.md) as well. For more details checkout Community Integration section of the docs.
+NativeBase can be used with other popular Form libraries like [`Formik`](nativebase-formik-ui.md) and [`React Hook Forms`](react-hook-forms.md) as well. For more details checkout Community Integration section of the docs.
