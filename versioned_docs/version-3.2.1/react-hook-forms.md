@@ -19,7 +19,7 @@ import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 function FormHookExample() {
-  const { control, handleSubmit, errors } = useForm();
+  const { control, handleSubmit, formState: { errors }} = useForm();
   const onSubmit = (data) => {
     console.log('submiting with ', data);
   };
@@ -29,7 +29,7 @@ function FormHookExample() {
         <FormControl.Label>First Name</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, onBlur, value }) => (
+          render={({ field: { onChange, onBlur, value }}) => (
             <Input
               onBlur={onBlur}
               placeholder="John"
@@ -49,7 +49,7 @@ function FormHookExample() {
         <FormControl.Label>Last Name</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, onBlur, value }) => (
+          render={({ field: { onChange, onBlur, value }}) => (
             <Input
               onBlur={onBlur}
               placeholder="Doe"
@@ -68,7 +68,7 @@ function FormHookExample() {
         <FormControl.Label>Age</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, onBlur, value }) => (
+          render={({ field: { onChange, onBlur, value }}) => (
             <Input
               onBlur={onBlur}
               placeholder="24"
@@ -118,7 +118,7 @@ import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 function FormHookCheckboxExample() {
-  const { control, handleSubmit, errors } = useForm();
+  const { control, handleSubmit, formState: { errors }} = useForm();
   const onSubmit = (data) => {
     console.log('submiting with ', data);
   };
@@ -128,7 +128,7 @@ function FormHookCheckboxExample() {
         <FormControl.Label>Hobbies</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange }) => (
+          render={({ field: { onChange }}) => (
             <Checkbox.Group
               onChange={(values) => {
                 onChange(values);
@@ -179,7 +179,7 @@ function FormHookCheckboxExample() {
         <FormControl.Label>Gender</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange }) => (
+          render={({ field: { onChange }}) => (
             <Radio.Group
               name="gender"
               flexDirection="row"
@@ -230,7 +230,7 @@ import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 function FormHookSelectExample() {
-  const { control, handleSubmit, errors } = useForm();
+  const { control, handleSubmit, formState: { errors }} = useForm();
   const onSubmit = (data) => {
     console.log('submiting with ', data);
   };
@@ -240,7 +240,7 @@ function FormHookSelectExample() {
         <FormControl.Label>Fav language:</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <Select
               placeholder="Pick language"
               selectedValue={value}
@@ -298,7 +298,7 @@ import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 function FormHookSliderExample() {
-  const { control, handleSubmit, errors } = useForm();
+  const { control, handleSubmit, formState: { errors }} = useForm();
   const onSubmit = (data) => {
     console.log('submiting with ', data);
   };
@@ -308,7 +308,7 @@ function FormHookSliderExample() {
         <FormControl.Label>Amount you like NativeBase</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <Slider onChange={(val) => onChange(val)} defaultValue={value}>
               <Slider.Track>
                 <Slider.FilledTrack />
@@ -353,7 +353,7 @@ import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 function FormHookTextareaExample() {
-  const { control, handleSubmit, errors } = useForm();
+  const { control, handleSubmit, formState: { errors }} = useForm();
   const onSubmit = (data) => {
     console.log('submiting with ', data);
   };
@@ -363,7 +363,7 @@ function FormHookTextareaExample() {
         <FormControl.Label>What do you think?</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <TextArea
               placeholder="TextArea"
               onChangeText={(val) => onChange(val)}
@@ -407,7 +407,7 @@ import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 function FormHookSwitchExample() {
-  const { control, handleSubmit, errors } = useForm();
+  const { control, handleSubmit, formState: { errors }} = useForm();
   const onSubmit = (data) => {
     console.log('submiting with ', data);
   };
@@ -417,7 +417,7 @@ function FormHookSwitchExample() {
         <FormControl.Label>Remenber me:</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <Switch
               onToggle={(val: boolean) => onChange(val)}
               isChecked={value}
