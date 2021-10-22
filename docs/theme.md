@@ -95,7 +95,7 @@ import {
   Center,
 } from 'native-base';
 function UseContrastingTextHook() {
-  const bgDark = 'primary.700';
+  const bgDark = 'primary.600';
   const bgLight = 'primary.200';
   const colorContrastDark = useContrastText(bgDark);
   const colorContrastLight = useContrastText(bgLight);

@@ -129,38 +129,37 @@ import React from "react"
 import { HStack, Stack, Center, NativeBaseProvider } from "native-base"
 export function Example() {
   return (
-    <Stack space="2" alignItems="center">
-      <HStack space="2" alignItems="center">
+    <Stack space={2} alignItems="center">
+      <HStack space={2} alignItems="center">
         <Center
-          size="16"
+          size={16}
           bg="primary.400:alpha.30"
           rounded="md"
           _text={{
             color: "white",
           }}
-          shadow="3"
+
         >
           Box 1
         </Center>
         <Center
-          size="16"
+          size={16}
           bg="primary.400:alpha.70"
           rounded="md"
           _text={{
             color: "white",
           }}
-          shadow="3"
         >
           Box 2
         </Center>
         <Center
           bg="primary.400"
-          size="16"
+          size={16}
           rounded="md"
           _text={{
             color: "white",
           }}
-          shadow="3"
+          shadow={1}
         >
           Box 3
         </Center>
@@ -200,7 +199,7 @@ function Component() {
       <Text textDecoration='underline'>Merci Beaucoup</Text>
       { /* font-size `'2em'` */ }
       { /* font-weight of `theme.fontWeights.semibold i.e. 600` */ }
-      <Text fontWeight='semibold'>Danke sehr </Text>
+      <Text fontWeight='bold'>Danke sehr </Text>
       { /* letter-spacing `0.1 em` */ }
       <Text letterSpacing="2xl" >Arigatou </Text>
     </>
@@ -353,15 +352,15 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p="5" m="2" borderRadius="md" bg="primary.200" {...props} />;
+  return <NBBox p={5} m={2} borderRadius="md" bg="primary.200" {...props} />;
 };
 
 function Component() {
   return (
     <>
-      <Box border="1" borderColor="cyan.500" />
-      <Box borderWidth="2" borderColor="cyan.500" />
-      <Box border="2" borderColor="cyan.500" borderTopWidth="7" />
+      <Box borderWidth={1} borderColor="cyan.500" />
+      <Box borderWidth={2} borderColor="cyan.500" />
+      <Box borderColor="cyan.500" borderTopWidth={7} />
     </>
   );
 }
@@ -374,7 +373,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 
 ```
 
@@ -459,16 +457,16 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p="5" m="2" borderRadius="md" bg="primary.400" {...props} />
-}
+  return <NBBox p={5} borderRadius="md" bg="primary.400" {...props} />;
+};
 
 function Component() {
   return (
-    <>
-      <Box position="absolute" left="32" p="7" />
-      <Box bgColor="yellow.400"  zIndex="2" position="relative" />
-      <Box backgroundColor="emerald.400" position="absolute" right="32" p="7" />
-    </>
+    <NBBox justifyContent="center" alignItems="center" flexDirection="row">
+      <Box position="relative" p={7} />
+      <Box bg="yellow.400" zIndex={2} position="absolute" />
+      <Box bg="emerald.400" position="relative" p={7} />
+    </NBBox>
   );
 }
 export default function () {
@@ -480,7 +478,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
