@@ -129,10 +129,10 @@ import React from "react"
 import { HStack, Stack, Center, NativeBaseProvider } from "native-base"
 export function Example() {
   return (
-    <Stack space={2} alignItems="center">
-      <HStack space={2} alignItems="center">
+    <Stack space="2" alignItems="center">
+      <HStack space="2" alignItems="center">
         <Center
-          size={16}
+          size="16"
           bg="primary.400:alpha.30"
           rounded="md"
           _text={{
@@ -143,7 +143,7 @@ export function Example() {
           Box 1
         </Center>
         <Center
-          size={16}
+          size="16"
           bg="primary.400:alpha.70"
           rounded="md"
           _text={{
@@ -154,12 +154,12 @@ export function Example() {
         </Center>
         <Center
           bg="primary.400"
-          size={16}
+          size="16"
           rounded="md"
           _text={{
             color: "white",
           }}
-          shadow={1}
+          shadow="1"
         >
           Box 3
         </Center>
@@ -352,15 +352,15 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} m={2} borderRadius="md" bg="primary.200" {...props} />;
+  return <NBBox p="5" m="2" borderRadius="md" bg="primary.200" {...props} />;
 };
 
 function Component() {
   return (
     <>
-      <Box borderWidth={1} borderColor="cyan.500" />
-      <Box borderWidth={2} borderColor="cyan.500" />
-      <Box borderColor="cyan.500" borderTopWidth={7} />
+      <Box borderWidth="1" borderColor="cyan.500" />
+      <Box borderWidth="2" borderColor="cyan.500" />
+      <Box borderColor="cyan.500" borderTopWidth="7" />
     </>
   );
 }
@@ -457,15 +457,15 @@ import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
 const Box = (props) => {
-  return <NBBox p={5} borderRadius="md" bg="primary.400" {...props} />;
+  return <NBBox p="5" borderRadius="md" bg="primary.400" {...props} />;
 };
 
 function Component() {
   return (
     <NBBox justifyContent="center" alignItems="center" flexDirection="row">
-      <Box position="relative" p={7} />
+      <Box position="relative" p="7" />
       <Box bg="yellow.400" zIndex={2} position="absolute" />
-      <Box bg="emerald.400" position="relative" p={7} />
+      <Box bg="emerald.400" position="relative" p="7" />
     </NBBox>
   );
 }
