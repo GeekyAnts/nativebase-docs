@@ -70,8 +70,7 @@ import { Slider } from 'native-base';
 
 ## Styling
 
-<ComponentTheme name="Slider" />
-
+<ComponentTheme name="Slider" fileName="slider" />
 
 ## Accessibility
 
@@ -79,13 +78,9 @@ Adheres to the [Slider WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-
 
 ### Keyboard Interactions
 
-| Name              | Description |
-| ------------------|-------------|
-| ArrowRight        | Increments/decrements by the step value depending on orientation.|
-| ArrowLeft         | Increments/decrements by the step value depending on orientation.
-| ArrowUp           | Increases the value by the step amount.
-| ArrowDown         | Decreases the value by the step amount.
-
-
-
-
+| Name       | Description                                                       |
+| ---------- | ----------------------------------------------------------------- |
+| ArrowRight | Increments/decrements by the step value depending on orientation. |
+| ArrowLeft  | Increments/decrements by the step value depending on orientation. |
+| ArrowUp    | Increases the value by the step amount.                           |
+| ArrowDown  | Decreases the value by the step amount.                           |

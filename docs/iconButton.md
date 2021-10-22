@@ -35,7 +35,7 @@ import { ComponentTheme } from '../src/components';
 
 ## Styling
 
-<ComponentTheme name="iconButton" />
+<ComponentTheme   name="iconButton" fileName="icon-button" />
 
 ## Accessibility
 

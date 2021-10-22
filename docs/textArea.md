@@ -35,4 +35,4 @@ The `Textarea` component allows you to easily create multi-line text inputs.
 
 ## Styling
 
-<ComponentTheme name="textArea" />
+<ComponentTheme name="textArea"  fileName="textarea" />
