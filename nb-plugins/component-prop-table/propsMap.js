@@ -561,7 +561,7 @@ const platformProps = {
   PlatformProps: {
     doc: 'utilityProps.md',
     name: 'PlatformProps',
-    link: 'utility-props#color-and-background-color',
+    link: 'utility-props#platform-props',
   },
 };
 
