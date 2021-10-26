@@ -17,42 +17,7 @@ Calling toggleColorMode anywhere in your app tree toggles the color mode.
 
 `useColorModeValue` is a React hook used to change any value or style based on the color mode. It takes 2 arguments: the value in light mode, and the value in dark mode.
 
-```SnackPlayer name=ColorMode%20Usage
-import React from 'react';
-import {
-  Heading,
-  useColorMode,
-  Button,
-  HStack,
-  Avatar,
-  Center,
-  useColorModeValue,
-  Text,
-  NativeBaseProvider,
-} from 'native-base';
-
-function ColorModeExample() {
-  const { colorMode, toggleColorMode } = useColorMode();
-  return (
-    <Center flex={1} bg={useColorModeValue('warmGray.50', 'coolGray.800')}>
-      <Text fontSize="lg" display="flex" mb="20">
-        The active color mode is{' '}
-        <Text bold fontSize="18px">
-          {useColorModeValue('Light', 'Dark')}
-        </Text>
-      </Text>
-      <Button onPress={toggleColorMode}>Toggle</Button>
-    </Center>
-  );
-}
-
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <ColorModeExample />
-    </NativeBaseProvider>
-  );
-}
+```ComponentSnackPlayer path=hooks,useColorModeValue,Basic.tsx
 
 ```
 

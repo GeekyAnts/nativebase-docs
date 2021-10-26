@@ -7,7 +7,7 @@ The most fundamental component for building a UI.
 
 ## Example
 
-```ComponentSnackPlayer path=basic,View,Basic.tsx
+```ComponentSnackPlayer path=components,basic,View,Basic.tsx
 
 ```
 

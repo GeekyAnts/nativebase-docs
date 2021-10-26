@@ -12,7 +12,7 @@ const prettier = require('prettier');
 const repoPath = path.resolve(__dirname, '..', '..', 'NativeBase');
 
 const storybookExamplePath = (repoPath) =>
-  path.resolve(repoPath, 'example', 'storybook', 'stories', 'components');
+  path.resolve(repoPath, 'example', 'storybook', 'stories');
 const componentsRootPath = (repoPath) =>
   path.resolve(repoPath, 'src', 'components');
 
