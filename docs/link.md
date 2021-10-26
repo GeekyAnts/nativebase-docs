@@ -17,31 +17,31 @@ import { Link } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Link,Basic.tsx
+```ComponentSnackPlayer path=components,primitives,Link,Basic.tsx
 
 ```
 
 ### External Link
 
-```ComponentSnackPlayer path=primitives,Link,ExternalLink.tsx
+```ComponentSnackPlayer path=components,primitives,Link,ExternalLink.tsx
 
 ```
 
 ### Link with Underline
 
-```ComponentSnackPlayer path=primitives,Link,UnderlineLink.tsx
+```ComponentSnackPlayer path=components,primitives,Link,UnderlineLink.tsx
 
 ```
 
 ### Link custom onPress
 
-```ComponentSnackPlayer path=primitives,Link,CustomOnPress.tsx
+```ComponentSnackPlayer path=components,primitives,Link,CustomOnPress.tsx
 
 ```
 
 ### Link around containers
 
-```ComponentSnackPlayer path=primitives,Link,CompositeLink.tsx
+```ComponentSnackPlayer path=components,primitives,Link,CompositeLink.tsx
 
 ```
 

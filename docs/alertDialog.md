@@ -24,7 +24,7 @@ import { AlertDialog } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,AlertDialog,Basic.tsx
+```ComponentSnackPlayer path=components,composites,AlertDialog,Basic.tsx
 
 ```
 
@@ -40,7 +40,6 @@ AlertDialog and its components compose the **[Modal](modal.md)** component, so a
 | ------------------- | --------- | -------------------------------------------------------------- | ------- |
 | leastDestructiveRef | React.Ref | The least destructive action to get focus when dialog is open. | -       |
 
-
 ## Accessibility
 
 Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#alertdialog)
@@ -54,5 +53,3 @@ Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.
 | Tab         | Moves focus to the next focusable element.                |
 | Shift + Tab | Moves focus to the previous focusable element.            |
 | Esc         | Closes the dialog and moves focus to AlertDialog.Trigger. |
-
-

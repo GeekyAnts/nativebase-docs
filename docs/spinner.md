@@ -7,19 +7,19 @@ title: Spinner
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Spinner,usage.tsx
+```ComponentSnackPlayer path=components,primitives,Spinner,usage.tsx
 
 ```
 
 ### Colors
 
-```ComponentSnackPlayer path=primitives,Spinner,color.tsx
+```ComponentSnackPlayer path=components,primitives,Spinner,color.tsx
 
 ```
 
 ### Sizes
 
-```ComponentSnackPlayer path=primitives,Spinner,size.tsx
+```ComponentSnackPlayer path=components,primitives,Spinner,size.tsx
 
 ```
 

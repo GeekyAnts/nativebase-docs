@@ -11,19 +11,19 @@ import { ComponentTheme } from '../src/components';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,IconButton,Basic.tsx
+```ComponentSnackPlayer path=components,composites,IconButton,Basic.tsx
 
 ```
 
 ### Sizes
 
-```ComponentSnackPlayer path=composites,IconButton,Sizes.tsx
+```ComponentSnackPlayer path=components,composites,IconButton,Sizes.tsx
 
 ```
 
 ### Variants
 
-```ComponentSnackPlayer path=composites,IconButton,Variant.tsx
+```ComponentSnackPlayer path=components,composites,IconButton,Variant.tsx
 
 ```
 

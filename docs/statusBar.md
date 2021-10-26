@@ -7,7 +7,7 @@ Component to control the app status bar.
 
 ## Example
 
-```ComponentSnackPlayer path=basic,StatusBar,Basic.tsx
+```ComponentSnackPlayer path=components,basic,StatusBar,Basic.tsx
 
 ```
 

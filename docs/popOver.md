@@ -25,19 +25,19 @@ import { Popover } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Popover,Basic.tsx
+```ComponentSnackPlayer path=components,composites,Popover,Basic.tsx
 
 ```
 
 ### initialFocusRef
 
-```ComponentSnackPlayer path=composites,Popover,RefEg.tsx
+```ComponentSnackPlayer path=components,composites,Popover,RefEg.tsx
 
 ```
 
 ### Positions
 
-```ComponentSnackPlayer path=composites,Popover,PopoverPositions.tsx
+```ComponentSnackPlayer path=components,composites,Popover,PopoverPositions.tsx
 
 ```
 

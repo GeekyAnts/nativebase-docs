@@ -14,31 +14,31 @@ Generic Image components from [React Native](https://reactnative.dev).
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Image,Basic.tsx
+```ComponentSnackPlayer path=components,primitives,Image,Basic.tsx
 
 ```
 
 ### Sizes
 
-```ComponentSnackPlayer path=primitives,Image,Sizes.tsx
+```ComponentSnackPlayer path=components,primitives,Image,Sizes.tsx
 
 ```
 
 ### Border Radius
 
-```ComponentSnackPlayer path=primitives,Image,BorderRadius.tsx
+```ComponentSnackPlayer path=components,primitives,Image,BorderRadius.tsx
 
 ```
 
 ### Fallback
 
-```ComponentSnackPlayer path=primitives,Image,FallbackSupport.tsx
+```ComponentSnackPlayer path=components,primitives,Image,FallbackSupport.tsx
 
 ```
 
 ### Basic (With Ref)
 
-```ComponentSnackPlayer path=primitives,Image,WithRef.tsx
+```ComponentSnackPlayer path=components,primitives,Image,WithRef.tsx
 
 ```
 

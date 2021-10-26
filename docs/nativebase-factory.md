@@ -11,139 +11,25 @@ import { Factory } from 'native-base';
 
 ## Usage
 
-```SnackPlayer name=NativeBase%20Factory%20Usage
-import React from 'react';
-import { Factory, NativeBaseProvider, Center } from 'native-base';
-import { View } from 'react-native';
+```ComponentSnackPlayer path=components,composites,factory,usage.tsx
 
-function FactoryViewExample () {
-  const FactoryView = Factory(View);
-  return (
-      <FactoryView bg="emerald.400" borderRadius="4" size="16" />
-  );
-}
-
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <FactoryViewExample />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ## Defining component theme
 
-```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
-import React from 'react';
-import { Factory, NativeBaseProvider, Center } from 'native-base';
-import { View } from 'react-native';
+```ComponentSnackPlayer path=components,composites,factory,theme.tsx
 
-function FactoryViewExample () {
-  const FactoryView = Factory(View, {
-    baseStyle: {
-      bg: 'cyan.300',
-      borderRadius: 'md',
-    },
-  });
-  return <FactoryView size="16" />;
-}
-
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <FactoryViewExample />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ## Using mode in component theme
 
-```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
-import React from 'react';
-import { Factory, themeTools, NativeBaseProvider, Center } from 'native-base';
-import { View } from 'react-native';
+```ComponentSnackPlayer path=components,composites,factory,modes.tsx
 
-function FactoryViewModeExample () {
-  const FactoryView = Factory(View, {
-    baseStyle: (props) => {
-      return {
-        bg: themeTools.mode('rose.500', 'cyan.300')(props),
-        borderRadius: 'md',
-      };
-    },
-  });
-  return <FactoryView size="16"/>;
-}
-
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <FactoryViewModeExample />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ## Using ref
 
-```SnackPlayer name=NativeBase%20Factory%20Using%20Ref
-import React from 'react';
-import {
-  Factory,
-  Button,
-  Stack,
-  NativeBaseProvider,
-  Center,
-} from 'native-base';
-import { TextInput } from 'react-native';
-
-function FactoryViewRefExample() {
-  const NBInput = Factory(TextInput);
-  const inputRef = React.useRef(null);
-  return (
-    <Stack space="4">
-      <NBInput
-        w="200"
-        placeholder="Name"
-        fontSize="12px"
-        ref={inputRef}
-        p="2"
-        borderWidth="1"
-        borderColor="muted.200"
-        borderRadius="md"
-        placeholderTextColor="muted.400"
-      />
-      <Button
-        onPress={() => {
-          inputRef?.current?.focus();
-        }}>
-        Set Focus
-      </Button>
-    </Stack>
-  );
-}
-
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <FactoryViewRefExample />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
+```ComponentSnackPlayer path=components,composites,factory,ref.tsx
 
 ```
 

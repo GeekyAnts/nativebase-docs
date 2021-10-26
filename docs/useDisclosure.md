@@ -13,51 +13,8 @@ import { useDisclose } from 'native-base';
 
 ## Example
 
-```SnackPlayer name=useDisclose%20Usage
-import React from "react";
-import {
-  Modal,
-  Button,
-  Center,
-  Input,
-  useDisclose,
-  NativeBaseProvider,
-} from "native-base";
+```ComponentSnackPlayer path=hooks,useDisclose,Usage.tsx
 
-function UseDiscloseExample() {
-  const { isOpen, onOpen, onClose } = useDisclose();
-  return (
-    <>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <Modal.Content>
-          <Modal.CloseButton />
-          <Modal.Header fontSize="4xl" fontWeight="bold">
-            Delete Customer
-          </Modal.Header>
-          <Modal.Body>
-           This will remove all data relating to Alex. This action cannot be reversed. Deleted data can not be recovered.
-          </Modal.Body>
-          <Modal.Footer>
-           <Button variant="unstyled" mr="1">
-              Cancel
-            </Button>
-            <Button colorScheme="error" onPress={onClose}>Delete</Button>
-          </Modal.Footer>
-        </Modal.Content>
-      </Modal>
-      <Button onPress={onOpen}>Open Modal</Button>
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1} px="3">
-        <UseDiscloseExample />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ## Return value

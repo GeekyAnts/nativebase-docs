@@ -7,7 +7,7 @@ A performant interface for rendering sectioned lists.
 
 ## Example
 
-```ComponentSnackPlayer path=basic,SectionList,Basic.tsx
+```ComponentSnackPlayer path=components,basic,SectionList,Basic.tsx
 
 ```
 

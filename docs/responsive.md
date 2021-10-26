@@ -30,7 +30,7 @@ import React from 'react';
 import { NativeBaseProvider, Center } from 'native-base';
 function BreakpointExample () {
   return (
-    <Center bg="emerald.400" _text={{color: "white"}}rounded="xl" w={[24, 48, 72]} h={24}>
+    <Center bg="emerald.400" _text={{color: "white"}} rounded="xl" w={[24, 48, 72]} h={24}>
       This is a box
     </Center>
   );
