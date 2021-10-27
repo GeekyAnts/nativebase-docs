@@ -9,7 +9,7 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Box,basic.tsx
+```ComponentSnackPlayer path=components,primitives,Box,basic.tsx
 
 ```
 
@@ -17,7 +17,7 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 ### Composition
 
-```ComponentSnackPlayer path=primitives,Box,composition.tsx
+```ComponentSnackPlayer path=components,primitives,Box,composition.tsx
 
 ```
 
@@ -118,7 +118,7 @@ export default () => {
 
 ### Basic (With Ref)
 
-```ComponentSnackPlayer path=primitives,Box,WithRef.tsx
+```ComponentSnackPlayer path=components,primitives,Box,WithRef.tsx
 
 ```
 

@@ -13,50 +13,8 @@ import { useAccessibleColors } from 'native-base';
 
 ## Example
 
-```SnackPlayer name=useAccessibleColors
+```ComponentSnackPlayer path=hooks,useAccessibleColors,Basic.tsx
 
-import React from 'react';
-import { Button, useContrastText, useTheme, NativeBaseProvider, Center, useAccessibleColors } from 'native-base';
-
-const ButtonTemplate = ({ shade }: any) => {
-  const colorContrast = useContrastText(`yellow.${shade}`);
-  return (
-    <Button
-      colorScheme="yellow"
-      key={`yellow.${shade}`}
-      bg={`yellow.${shade}`}
-      _text={{ color: colorContrast }}
-      mb="1"
-    >
-      Save Changes
-    </Button>
-  );
-};
-
-function UseContrastingTextHook () {
-  let [, , toggleAccessibleColors] = useAccessibleColors();
-  const { colors } = useTheme();
-  return (
-    <>
-      {Object.keys(colors.yellow).map((key, index) => {
-        if (index > 2 && index < 9) return <ButtonTemplate shade={key} />;
-      })}
-      <Button mt="10" onPress={toggleAccessibleColors} colorScheme="primary">
-        Toggle Accessible Colors
-      </Button>
-    </>
-  );
-}
-
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <UseContrastingTextHook />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ## Return value

@@ -9,7 +9,7 @@ title: ZStack
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,ZStack,example.tsx
+```ComponentSnackPlayer path=components,primitives,ZStack,example.tsx
 
 ```
 
@@ -17,7 +17,7 @@ title: ZStack
 
 You can pass `alignItems="center"` `justifyContent="center"` to vertically and horizontally center the children.
 
-```ComponentSnackPlayer path=primitives,ZStack,CenterStack.tsx
+```ComponentSnackPlayer path=components,primitives,ZStack,CenterStack.tsx
 
 ```
 

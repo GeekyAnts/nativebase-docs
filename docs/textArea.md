@@ -11,19 +11,19 @@ The `Textarea` component allows you to easily create multi-line text inputs.
 
 ### Usage
 
-```ComponentSnackPlayer path=primitives,TextArea,basic.tsx
+```ComponentSnackPlayer path=components,primitives,TextArea,basic.tsx
 
 ```
 
 ### Invalid and Disabled TextArea
 
-```ComponentSnackPlayer path=primitives,TextArea,invalid.tsx
+```ComponentSnackPlayer path=components,primitives,TextArea,invalid.tsx
 
 ```
 
 ### Value Controlled TextArea
 
-```ComponentSnackPlayer path=primitives,TextArea,value.tsx
+```ComponentSnackPlayer path=components,primitives,TextArea,value.tsx
 
 ```
 
@@ -35,4 +35,4 @@ The `Textarea` component allows you to easily create multi-line text inputs.
 
 ## Styling
 
-<ComponentTheme name="textArea" />
+<ComponentTheme name="textArea"  fileName="textarea" />

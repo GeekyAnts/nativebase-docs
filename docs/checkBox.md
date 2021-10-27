@@ -11,67 +11,67 @@ The `Checkbox` component is used in forms when a user needs to select multiple v
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Checkbox,basic.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,basic.tsx
 
 ```
 
 ### Controlled
 
-```ComponentSnackPlayer path=primitives,Checkbox,controlledCheckbox.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,controlledCheckbox.tsx
 
 ```
 
 ### Uncontrolled
 
-```ComponentSnackPlayer path=primitives,Checkbox,uncontrolledCheckbox.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,uncontrolledCheckbox.tsx
 
 ```
 
 ### Disabled
 
-```ComponentSnackPlayer path=primitives,Checkbox,disabled.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,disabled.tsx
 
 ```
 
 ### Invalid
 
-```ComponentSnackPlayer path=primitives,Checkbox,invalid.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,invalid.tsx
 
 ```
 
 ### Custom Color
 
-```ComponentSnackPlayer path=primitives,Checkbox,customColor.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,customColor.tsx
 
 ```
 
 ### Custom Icon
 
-```ComponentSnackPlayer path=primitives,Checkbox,customIcon.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,customIcon.tsx
 
 ```
 
 ### Size
 
-```ComponentSnackPlayer path=primitives,Checkbox,size.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,size.tsx
 
 ```
 
 ### Checkbox Group
 
-```ComponentSnackPlayer path=primitives,Checkbox,checkboxGroup.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,checkboxGroup.tsx
 
 ```
 
 ### Form Controlled
 
-```ComponentSnackPlayer path=primitives,Checkbox,FormControlled.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,FormControlled.tsx
 
 ```
 
 ### Basic (With Ref)
 
-```ComponentSnackPlayer path=primitives,Checkbox,withRef.tsx
+```ComponentSnackPlayer path=components,primitives,Checkbox,withRef.tsx
 
 ```
 

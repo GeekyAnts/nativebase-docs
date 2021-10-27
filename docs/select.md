@@ -19,13 +19,13 @@ import { Select } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Select,Basic.tsx
+```ComponentSnackPlayer path=components,primitives,Select,Basic.tsx
 
 ```
 
 ### FormControlled
 
-```ComponentSnackPlayer path=primitives,Select,FormControlled.tsx
+```ComponentSnackPlayer path=components,primitives,Select,FormControlled.tsx
 
 ```
 

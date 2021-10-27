@@ -11,55 +11,55 @@ import { ComponentTheme } from '../src/components';
 
 ### Controlled
 
-```ComponentSnackPlayer path=primitives,Radio,controlledRadio.tsx
+```ComponentSnackPlayer path=components,primitives,Radio,controlledRadio.tsx
 
 ```
 
 ### Uncontrolled
 
-```ComponentSnackPlayer path=primitives,Radio,uncontrolledRadio.tsx
+```ComponentSnackPlayer path=components,primitives,Radio,uncontrolledRadio.tsx
 
 ```
 
 ### Disabled
 
-```ComponentSnackPlayer path=primitives,Radio,disabled.tsx
+```ComponentSnackPlayer path=components,primitives,Radio,disabled.tsx
 
 ```
 
 ### Invalid
 
-```ComponentSnackPlayer path=primitives,Radio,invalid.tsx
+```ComponentSnackPlayer path=components,primitives,Radio,invalid.tsx
 
 ```
 
 ### Size
 
-```ComponentSnackPlayer path=primitives,Radio,size.tsx
+```ComponentSnackPlayer path=components,primitives,Radio,size.tsx
 
 ```
 
 ### Custom Color
 
-```ComponentSnackPlayer path=primitives,Radio,customColor.tsx
+```ComponentSnackPlayer path=components,primitives,Radio,customColor.tsx
 
 ```
 
 ### Custom Icon
 
-```ComponentSnackPlayer path=primitives,Radio,customIcon.tsx
+```ComponentSnackPlayer path=components,primitives,Radio,customIcon.tsx
 
 ```
 
 ### Form Controlled
 
-```ComponentSnackPlayer path=primitives,Radio,formControlled.tsx
+```ComponentSnackPlayer path=components,primitives,Radio,formControlled.tsx
 
 ```
 
 ### Basic (With Ref)
 
-```ComponentSnackPlayer path=primitives,Radio,withRef.tsx
+```ComponentSnackPlayer path=components,primitives,Radio,withRef.tsx
 
 ```
 

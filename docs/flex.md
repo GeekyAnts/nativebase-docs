@@ -27,7 +27,7 @@ While you can pass the verbose props, using the shorthand can save you some time
 
 ## Example
 
-```ComponentSnackPlayer path=primitives,Flex,basic.tsx
+```ComponentSnackPlayer path=components,primitives,Flex,basic.tsx
 
 ```
 
@@ -35,7 +35,7 @@ While you can pass the verbose props, using the shorthand can save you some time
 
 You can pass Spacer to add Space between Flex items.
 
-```ComponentSnackPlayer path=primitives,Flex,spacer.tsx
+```ComponentSnackPlayer path=components,primitives,Flex,spacer.tsx
 
 ```
 
