@@ -220,7 +220,11 @@ const rnProps = {
 // Styling props
 const borderProps = {
   ITextProps: { doc: 'text.md', name: 'Text', link: 'text#props' },
-
+  borderRadius: {
+    doc: 'utilityProps.md',
+    name: 'BorderProps',
+    link: 'utility-props#borders',
+  },
   //Border Props
   BorderProps: {
     doc: 'utilityProps.md',
@@ -269,6 +273,16 @@ const borderProps = {
   },
 };
 const colorProps = {
+  color: {
+    doc: 'utilityProps.md',
+    name: 'ColorProps',
+    link: 'utility-props#color-and-background-color',
+  },
+  backgroundColor: {
+    doc: 'utilityProps.md',
+    name: 'ColorProps',
+    link: 'utility-props#color-and-background-color',
+  },
   ColorProps: {
     doc: 'utilityProps.md',
     name: 'ColorProps',
@@ -291,6 +305,11 @@ const colorProps = {
   },
 };
 const flexProps = {
+  flex: {
+    doc: 'utilityProps.md',
+    name: 'FlexProps',
+    link: 'utility-props#flexbox',
+  },
   FlexboxProps: {
     doc: 'utilityProps.md',
     name: 'FlexProps',
@@ -303,6 +322,11 @@ const flexProps = {
   },
 };
 const layoutProps = {
+  width: {
+    doc: 'utilityProps.md',
+    name: 'LayoutProps',
+    link: 'utility-props#layout-width-and-height',
+  },
   LayoutProps: {
     doc: 'utilityProps.md',
     name: 'LayoutProps',
@@ -360,6 +384,11 @@ const layoutProps = {
   },
 };
 const positionProps = {
+  position: {
+    doc: 'utilityProps.md',
+    name: 'PositionProps',
+    link: 'utility-props#position',
+  },
   PositionProps: {
     doc: 'utilityProps.md',
     name: 'PositionProps',
@@ -424,6 +453,11 @@ const spaceProps = {
   },
 };
 const typographyProps = {
+  fontSize: {
+    doc: 'utilityProps.md',
+    name: 'TypographyProps',
+    link: 'utility-props#typography',
+  },
   TypographyProps: {
     doc: 'utilityProps.md',
     name: 'TypographyProps',
@@ -466,6 +500,11 @@ const typographyProps = {
   },
 };
 const backgroundProps = {
+  bg: {
+    doc: '',
+    name: 'BackgroundProps',
+    link: 'utility-props#background',
+  },
   BackgroundProps: {
     doc: '',
     name: 'BackgroundProps',
@@ -499,6 +538,11 @@ const safeAreaProps = {
   },
 };
 const shadowProps = {
+  shadow: {
+    doc: '',
+    name: 'ShadowProps',
+    link: 'utility-props#shadow',
+  },
   ShadowProps: {
     doc: '',
     name: 'ShadowProps',
@@ -524,6 +568,11 @@ module.exports = {
   internalPropsMap: internalProps,
   rnPropsMap: rnProps,
   StylingPropsMap: {
+    StyledProps: {
+      doc: 'utilityProps.md',
+      name: 'LayoutProps',
+      link: 'utility-props#layout-width-and-height',
+    },
     ...borderProps,
     ...colorProps,
     ...typographyProps,

@@ -79,17 +79,15 @@ function Navbar() {
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: !isNavbarVisible,
       })}
-      // style={{ paddingLeft: '2rem' }}
+    // style={{ paddingLeft: '2rem' }}
     >
       <div
-        className={`navbar__inner bg-transparent backdrop-blur-sm  ${
-          isLandingPage ? 'lg:px-4' : ''
-        }`}
+        className={`navbar__inner bg-transparent backdrop-blur-sm  ${isLandingPage ? 'lg:px-4' : ''
+          }`}
       >
         <div
-          className={`flex px-4 navbar-small bg-blueGray-50 justify-around mx-auto md:px-6 lg:px-2 w-full  ${
-            isLandingPage ? 'max-w-6xl' : ''
-          }`}
+          className={`flex px-4 navbar-small bg-blueGray-50 justify-around mx-auto md:px-6 lg:px-2 w-full  ${isLandingPage ? 'max-w-6xl' : ''
+            }`}
         >
           <div className="navbar__items ">
             {items != null && items.length !== 0 && (
@@ -116,19 +114,16 @@ function Navbar() {
                 return (
                   <div
                     key={i}
-                    className={`hidden xl:block text-base ${nativeBaseV2Color}`}
+                    className={`ml-2 hidden xl:block text-base ${nativeBaseV2Color}`}
                   >
-                    Looking for{' '}
                     <a
-                      href="https://v2.nativebase.io/"
+                      href="https://startup.nativebase.io/?utm_source=DocsHeader&utm_medium=ad-banner&utm_campaign=NativeBase_3_Docs"
                       target="_blank"
-                      className={`leading-5 text-cyan-${
-                        isDarkTheme ? '600' : '700'
-                      } font-medium`}
+                      className={`leading-5 text-cyan-${isDarkTheme ? '600' : '700'
+                        } font-medium`}
                     >
-                      v2.0
+                      Announcing NativeBase Startup+ bundle{'  '}🎉
                     </a>
-                    <span>?</span>
                   </div>
                 );
               else return <NavbarItem {...item} key={i} />;
@@ -157,13 +152,11 @@ function Navbar() {
                     <a
                       href={item.to}
                       key={i}
-                      className={`${
-                        !isDarkTheme
-                          ? 'text-gray-500 hover:bg-gray-100'
-                          : 'text-white hover:bg-gray-600'
-                      } px-0 border border-solid ${
-                        !isDarkTheme ? 'border-gray-200' : 'border-gray-600'
-                      }  font-semibold py-1 px-5 rounded no-underline hidden md:inline-block`}
+                      className={`${!isDarkTheme
+                        ? 'text-gray-500 hover:bg-gray-100'
+                        : 'text-white hover:bg-gray-600'
+                        } px-0 border border-solid ${!isDarkTheme ? 'border-gray-200' : 'border-gray-600'
+                        }  font-semibold py-1 px-5 rounded no-underline hidden md:inline-block`}
                     >
                       Docs
                     </a>
@@ -173,14 +166,12 @@ function Navbar() {
                     <a
                       href={item.to}
                       key={i}
-                      className={`border-0 ${
-                        !isDarkTheme
-                          ? 'text-gray-500 hover:bg-gray-100'
-                          : 'text-white hover:bg-gray-600'
-                      }
-                       px-0 border border-solid ${
-                         !isDarkTheme ? 'border-gray-200' : 'border-gray-600'
-                       }  font-semibold py-1 rounded no-underline hidden md:inline-block px-2 ml-4`}
+                      className={`border-0 ${!isDarkTheme
+                        ? 'text-gray-500 hover:bg-gray-100'
+                        : 'text-white hover:bg-gray-600'
+                        }
+                       px-0 border border-solid ${!isDarkTheme ? 'border-gray-200' : 'border-gray-600'
+                        }  font-semibold py-1 rounded no-underline hidden md:inline-block px-2 ml-4`}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
