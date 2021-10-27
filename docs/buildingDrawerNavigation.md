@@ -9,7 +9,7 @@ Common pattern in navigation is to use drawer from left (sometimes right) side f
 
 Here is an example to show how easily and quickly we can use React Native's [DrawerNavigation](https://reactnavigation.org/docs/drawer-based-navigation/) in NB.
 
-```SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/stack@6.0.2,@react-navigation/drawer@6.1.3,@react-navigation/native@6.0.2,react-native-vector-icons,react-native-gesture-handler@~1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@~3.4.0,react-native-reanimated@~2.2.0
+```SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/drawer,@react-navigation/native@6.0.6,react-native-vector-icons,react-native-gesture-handler@~1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@~3.4.0,react-native-reanimated@~2.2.0
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import {
@@ -34,12 +34,9 @@ import {
 const Drawer = createDrawerNavigator();
 function Component(props) {
   return (
-    <Center flex={1}>
-      <Heading size="md">{props.route.name} Screen</Heading>
-      <Button colorScheme="indigo" mt="4" onPress={() => props.navigation.toggleDrawer()}>
-        Open Drawer
-      </Button>
-    </Center>
+      <Center>
+       <Text mt="12" fontSize="18">This is {props.route.name} page.</Text>
+     </Center>
   );
 }
 
