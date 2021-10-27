@@ -10,12 +10,13 @@ export default function TileLink({
   imgStyle,
   titleClassName = 'text-white',
   descriptionClassName = 'text-gray-100',
+  wide = false
 }) {
   return (
     <Link
       to={url}
       className={
-        'relative overflow-hidden no-underline col col--5 rounded-md pt-6 px-4 shadow-2xl mx-2 mb-2 ' +
+        'relative overflow-hidden no-underline col rounded-md pt-6 px-4 shadow-2xl mx-2 mb-2 ' +
         className
       }
     >

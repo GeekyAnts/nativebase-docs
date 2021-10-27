@@ -1,6 +1,6 @@
 ---
 id: pseudo-props-101
-title: Pseudo Props 101
+title: Pseudo Props Advanced
 ---
 
 Before getting into details of all the common Pseudo Props NativeBase has to offer let's check some key points that these pseudo props follow.

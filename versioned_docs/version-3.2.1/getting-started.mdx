@@ -4,7 +4,7 @@ title: Getting Started
 slug: /
 ---
 
-import { KitchenSinkIframe, TileLink, NBHistory } from '../../src/components';
+import { KitchenSinkIframe, TileLink, NBHistory, NativeStartupBanner } from '../../src/components';
 import TOCInline from '@theme/TOCInline';
 
 <div className='tailwind'>
@@ -12,7 +12,7 @@ import TOCInline from '@theme/TOCInline';
     <div className="col col--9 mb-12 p-0">
       <p className='text-md'>
         NativeBase is a component library that enables devs to build universal
-        design systems. It is built on top of React Native, allowing you to
+        apps. It is built on top of React Native, allowing you to
         develop apps for Android, iOS and the Web.
       </p>
       <div className='mt-8 pl-2 -ml-1'>
@@ -43,6 +43,9 @@ import TOCInline from '@theme/TOCInline';
             description='Popular Recipes for Apps'
             className='bg-indigo-600'
           />
+        </div>
+        <div className='row m-0 -ml-3'>
+           <NativeStartupBanner />
         </div>
       </div>
     </div>
