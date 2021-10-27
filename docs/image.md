@@ -47,3 +47,29 @@ Generic Image components from [React Native](https://reactnative.dev).
 ```ComponentPropTable path=primitives,Image,index.tsx  showStylingProps=true
 
 ```
+
+## Note
+
+### With Next's require statement
+
+When using require statement from next for image keep this in mind.
+
+```jsx
+
+  const img = require('/public/me.jpg');
+
+  // DO ✔
+  <Image
+    source={{ uri: img.default.src }}
+    width={500}
+    height={500}
+  />
+  // DON'T ✘
+  <Image
+    source={img}
+    width={500}
+    height={500}
+  />
+
+
+```
