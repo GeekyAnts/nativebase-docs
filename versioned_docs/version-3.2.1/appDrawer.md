@@ -3,7 +3,7 @@ id: app-drawer
 title: App drawer
 ---
 
-Creating an app drawer like layout is very common and with NativeBase's SimpleGrid make this extremely simple while still keeping it extremely customisable. Here is an example to illustrate it.
+Creating an app drawer like layout is very common using FlatList. Here is an example to illustrate it.
 
 ```SnackPlayer name=AppDrawer
 import React from 'react';
