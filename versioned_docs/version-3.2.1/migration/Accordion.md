@@ -60,25 +60,25 @@ export default function () {
   return (
     <Accordion index={[0]}>
       <Accordion.Item>
-        <Accordion.Button>
+        <Accordion.Summary>
           First Element
           <Accordion.Icon />
-        </Accordion.Button>
-        <Accordion.Panel>Lorem ipsum dolor sit amet</Accordion.Panel>
+        </Accordion.Summary>
+        <Accordion.Details>Lorem ipsum dolor sit amet</Accordion.Details>
       </Accordion.Item>
       <Accordion.Item>
-        <Accordion.Button>
+        <Accordion.Summary>
           Second Element
           <Accordion.Icon />
-        </Accordion.Button>
-        <Accordion.Panel>Lorem ipsum dolor sit amet</Accordion.Panel>
+        </Accordion.Summary>
+        <Accordion.Details>Lorem ipsum dolor sit amet</Accordion.Details>
       </Accordion.Item>
       <Accordion.Item>
-        <Accordion.Button>
+        <Accordion.Summary>
           Third Element
           <Accordion.Icon />
-        </Accordion.Button>
-        <Accordion.Panel>Lorem ipsum dolor sit amet</Accordion.Panel>
+        </Accordion.Summary>
+        <Accordion.Details>Lorem ipsum dolor sit amet</Accordion.Details>
       </Accordion.Item>
     </Accordion>
   );
