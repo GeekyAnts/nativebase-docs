@@ -9,7 +9,7 @@ Common pattern in navigation is to use drawer from left (sometimes right) side f
 
 Here is an example to show how easily and quickly we can use React Native's [DrawerNavigation](https://reactnavigation.org/docs/drawer-based-navigation/) in NB.
 
-```SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/drawer,@react-navigation/native@6.0.6,react-native-vector-icons,react-native-gesture-handler@~1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@~3.4.0,react-native-reanimated@~2.2.0
+```SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/drawer,@react-navigation/native@6.0.6,react-native-vector-icons,react-native-gesture-handler@~1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@~3.8.0,react-native-reanimated@~2.2.0
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import {
