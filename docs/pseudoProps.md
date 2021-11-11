@@ -41,26 +41,22 @@ The above thing translates to a Text(not Button) when hovered changes its color 
 
 Now all the pseudo props follow a specific order that defines which pseudo prop can override the other pseudo prop. You can find the precedence values associated with each pseudo prop. Higher number means higher precedence.
 
-```jsx
-_disabled(100);
-
-_pressed(70);
-_hover(60);
-_focus(50);
-_focusVisible(55);
-
-_active(30);
-_checked(30);
-_readOnly(40);
-_invalid(40);
-
-_web(10);
-_android(10);
-_ios(10);
-
-_light(10);
-_dark(10);
-```
+| Pseudo Props   | Precedence Value |
+| -------------- | ---------------- |
+| \_disabled     | 100              |
+| \_pressed      | 70               |
+| \_hover        | 60               |
+| \_focus        | 50               |
+| \_focusVisible | 55               |
+| \_active       | 30               |
+| \_checked      | 30               |
+| \_readOnly     | 40               |
+| \_invalid      | 40               |
+| \_web          | 10               |
+| \_android      | 10               |
+| \_ios          | 10               |
+| \_light        | 10               |
+| \_dark         | 10               |
 
 ```SnackPlayer name=Pseudo%20Props%20Precedence
 import React from 'react';
