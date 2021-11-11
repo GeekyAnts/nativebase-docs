@@ -1,0 +1,680 @@
+{
+  "version-3.2.2/componentsSidebar": [
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Introduction",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/getting-started"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/setup-provider"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Core concepts",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/utility-first"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/utility-props-specificity"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/design-tokens"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/pseudo-props"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/pseudo-props-101"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/responsive-style"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Features",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/utility-props"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/color-mode"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/nativebase-factory"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/safe-area-view-props"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/strict-mode"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/accessibility"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Theme",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/default-theme"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/customizing-theme"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/customizing-fonts"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/customizing-components"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/dark-mode"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/breakpoints"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/theme"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/typescript"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Layout",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/box"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/center"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/container"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/flex"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/h-stack"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/stack"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/v-stack"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/z-stack"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Forms",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/button"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/pressable"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/checkbox"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/form-control"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/icon-button"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/input"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/link"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/radio"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/select"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/slider"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/switch"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/textarea"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Data Display",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/badge"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/divider"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Feedback",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/alert"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/progress"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/spinner"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/toast"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Typography",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/text"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/heading"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Overlay",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/alert-dialog"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/menu"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/modal"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/popover"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/tooltip"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Disclosure",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/action-sheet"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Media and Icons",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/avatar"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/image"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Transition",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/presence-transition"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/slide"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/stagger"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Others",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/FAB"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/hidden"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "ReactNative Components",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/scrollview"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/view"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/keyboard-avoiding-view"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/status-bar"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/flat-list"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/section-list"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Hooks",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-disclosure"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-breakPoint-value"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-clipboard"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-media-query"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-theme"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-token"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-color-mode"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-color-mode-value"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-contrast-text"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/use-accessible-colors"
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "version-3.2.2/testing"
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Examples",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/todo-example"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/kitchen-sink"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Recipes",
+      "items": [
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Designs",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.2.2/building-app-bar"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/building-card"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/building-drawer-navigation"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/building-tab-view"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/building-swipe-list"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Forms",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.2.2/form"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/login-signup-forms"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/building-search-bar"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Layout",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.2.2/app-drawer"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/building-footer-tabs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Migration",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/migration/migration-guide-three"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/migration/migration-guide-three-point-two"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Components Migration",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/action-sheet"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/badge"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/button"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/card"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/checkbox"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/date-picker"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/deck-swiper"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/drawer"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/FABs"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/footer-tab"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/form"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/header"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/icon"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/layout"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/picker"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/radio-button"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/search-bar"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/segment"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/spinner"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/swipe-list"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/tabs"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/thumbnail"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/toast"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.2.2/migration/typography"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "More",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.2.2/changelog"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.2.2/faq"
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "version-3.2.2/more-props"
+    },
+    {
+      "type": "doc",
+      "id": "version-3.2.2/install-expo"
+    },
+    {
+      "type": "doc",
+      "id": "version-3.2.2/install-rn"
+    },
+    {
+      "type": "doc",
+      "id": "version-3.2.2/install-cra"
+    },
+    {
+      "type": "doc",
+      "id": "version-3.2.2/install-next"
+    }
+  ]
+}
