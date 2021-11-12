@@ -17,13 +17,13 @@ import { Tooltip } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Tooltip,Basic.tsx
+```ComponentSnackPlayer path=components,composites,Tooltip,Basic.tsx
 
 ```
 
 ### Positions
 
-```ComponentSnackPlayer path=composites,Tooltip,TooltipPositions.tsx
+```ComponentSnackPlayer path=components,composites,Tooltip,TooltipPositions.tsx
 
 ```
 
@@ -31,7 +31,7 @@ import { Tooltip } from 'native-base';
 
 Tooltip is a wrapper around [Box](box.md). So, it also accepts all the [Box](box.md#props) props.
 
-```ComponentSnackPlayer path=composites,Tooltip,CustomTooltip.tsx
+```ComponentSnackPlayer path=components,composites,Tooltip,CustomTooltip.tsx
 
 ```
 

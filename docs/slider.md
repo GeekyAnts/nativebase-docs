@@ -22,37 +22,37 @@ import { Slider } from 'native-base';
 
 ## Examples
 
-```ComponentSnackPlayer path=primitives,Slider,usage.tsx
+```ComponentSnackPlayer path=components,primitives,Slider,usage.tsx
 
 ```
 
 ### Color
 
-```ComponentSnackPlayer path=primitives,Slider,color.tsx
+```ComponentSnackPlayer path=components,primitives,Slider,color.tsx
 
 ```
 
 ### Value
 
-```ComponentSnackPlayer path=primitives,Slider,Value.tsx
+```ComponentSnackPlayer path=components,primitives,Slider,Value.tsx
 
 ```
 
 ### Size
 
-```ComponentSnackPlayer path=primitives,Slider,Size.tsx
+```ComponentSnackPlayer path=components,primitives,Slider,Size.tsx
 
 ```
 
 ### Customised
 
-```ComponentSnackPlayer path=primitives,Slider,Customized.tsx
+```ComponentSnackPlayer path=components,primitives,Slider,Customized.tsx
 
 ```
 
 ### Form Controlled
 
-```ComponentSnackPlayer path=primitives,Slider,FormControlled.tsx
+```ComponentSnackPlayer path=components,primitives,Slider,FormControlled.tsx
 
 ```
 
@@ -70,8 +70,7 @@ import { Slider } from 'native-base';
 
 ## Styling
 
-<ComponentTheme name="Slider" />
-
+<ComponentTheme name="Slider" fileName="slider" />
 
 ## Accessibility
 
@@ -79,13 +78,9 @@ Adheres to the [Slider WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-
 
 ### Keyboard Interactions
 
-| Name              | Description |
-| ------------------|-------------|
-| ArrowRight        | Increments/decrements by the step value depending on orientation.|
-| ArrowLeft         | Increments/decrements by the step value depending on orientation.
-| ArrowUp           | Increases the value by the step amount.
-| ArrowDown         | Decreases the value by the step amount.
-
-
-
-
+| Name       | Description                                                       |
+| ---------- | ----------------------------------------------------------------- |
+| ArrowRight | Increments/decrements by the step value depending on orientation. |
+| ArrowLeft  | Increments/decrements by the step value depending on orientation. |
+| ArrowUp    | Increases the value by the step amount.                           |
+| ArrowDown  | Decreases the value by the step amount.                           |

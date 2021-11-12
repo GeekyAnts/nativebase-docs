@@ -44,68 +44,8 @@ import { Hidden } from 'native-base';
 
 ### Hidden according to colorMode
 
-```SnackPlayer name=ColorMode%20Usage
-import React from 'react';
-import {
-  useColorMode,
-  Button,
-  VStack,
-  Center,
-  Box,Text,
-  Hidden,
-  useColorModeValue,
-  NativeBaseProvider
-} from 'native-base';
+```ComponentSnackPlayer path=components,primitives,Hidden,hiddenOnColorModes.tsx
 
-function ColorModeExample () {
-  const { colorMode, toggleColorMode } = useColorMode();
-  return (
-    <>
-      <Button
-        colorScheme={colorMode === 'light' ? 'blue' : 'red'}
-        onPress={() => {
-          toggleColorMode();
-        }}
-      >
-        Change mode
-      </Button>
-      <VStack space="2" mt="3">
-        <Hidden colorMode="light">
-          <Box bg="yellow.400" p="2">
-            <Text>This text will be hidden on light mode</Text>
-          </Box>
-        </Hidden>
-        <Hidden colorMode="dark">
-          <Box bg="green.400" p="2">
-            <Text>This text will be hidden on dark mode</Text>
-          </Box>
-        </Hidden>
-      </VStack>
-    </>
-  );
-}
-
-const LocalWrapper = ({ children }) => {
-  const bg = useColorModeValue('gray.200', 'gray.800')
-  return (
-    <Center
-      flex={1}
-      bg={bg}
-    >
-      {children}
-    </Center>
-  );
-};
-
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <LocalWrapper>
-        <ColorModeExample />
-      </LocalWrapper>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ## Hidden according to platform
@@ -120,6 +60,6 @@ export default function () {
 
 ## Props
 
-```ComponentPropTable path=composites,Fab,Fab.tsx
+```ComponentPropTable path=primitives,Hidden,index.tsx
 
 ```

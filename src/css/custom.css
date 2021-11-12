@@ -476,7 +476,8 @@ html[data-theme='dark'] .navbar-small {
 .menu__link[href*='/pseudo-props']:after,
 .menu__link[href*='/migration/v3.1.0-to-3.2.0']:after,
 .menu__link[href*='/strict-mode']:after,
-.menu__link[href*='/default-theme']:after {
+.menu__link[href*='/default-theme']:after,
+.menu__link[href*='/hidden']:after {
   content: 'New';
   display: inline-block;
   position: relative;

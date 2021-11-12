@@ -11,14 +11,38 @@ const prettier = require('prettier');
 
 const repoPath = path.resolve(__dirname, '..', '..', 'NativeBase');
 
-const storybookExamplePath = (repoPath) =>
-  path.resolve(repoPath, 'example', 'storybook', 'stories', 'components');
+function getRepoVersion(directory) {
+  if (directory.includes('versioned_repo')) {
+    return directory.split('versioned_repo/')[1].split('/')[0];
+  }
+
+  return 'next';
+}
+const storybookExamplePath = (repoPath) => {
+  return path.resolve(repoPath, 'example', 'storybook', 'stories');
+};
 const componentsRootPath = (repoPath) =>
   path.resolve(repoPath, 'src', 'components');
 
+const olderVersionSupport = [
+  '3.2.1',
+  '3.1.0',
+  '3.0.7',
+  '3.0.6',
+  '3.0.3',
+  '3.0.0',
+  '3.0.0-next.40',
+  '3.0.0-next.38',
+  '3.0.0-next.37',
+  '3.0.0-next.36',
+];
 const getSnackPlayerCodeSnippet = (repoPath, ...examplePath) => {
   // console.log('snippet args received', args);
-  const filePath = path.resolve(storybookExamplePath(repoPath), ...examplePath);
+  const filePath = path.resolve(
+    storybookExamplePath(repoPath),
+    olderVersionSupport.includes(getRepoVersion(repoPath)) ? 'components' : '', // add components older version docs.
+    ...examplePath
+  );
   const fileContent = fs.readFileSync(filePath, { encoding: 'utf-8' });
   try {
     let transformedFile = transformStorybookToDocExample(

@@ -3,72 +3,30 @@ id: aspectRatio
 title: AspectRatio
 ---
 
-## Implements
+Aspect ratio controls the size of the undefined dimension of a node or child component. You can refer [mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio) for more details.
 
-- [`Box`](box.md)
+## Import
+
+```jsx
+import { AspectRatio } from 'native-base';
+```
 
 ## Example
 
 ### Basic
 
-```SnackPlayer name=AspectRatio%20Example
-import React from "react";
-import { AspectRatio, Box, NativeBaseProvider, Center } from "native-base";
-function Component() {
-  return (
-    <AspectRatio height={32} ratio={4/3}>
-      <Box bg="emerald.400" rounded="lg"/>
-    </AspectRatio>
-  );
-}
+```ComponentSnackPlayer path=components,composites,AspectRatio,Basic.tsx
 
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <Component />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ### Embed Image
 
-```SnackPlayer name=AspectRatio%20ExampleEmbedImage
-import React from "react";
-import { AspectRatio, Image, NativeBaseProvider, Center } from "native-base";
-function Component() {
-  return (
-    <AspectRatio ratio={0.87} height={200}>
-      <Image
-        resizeMode="cover"
-        source={{
-          uri: "https://alpha.nativebase.io/img/icon.png",
-        }}
-      />
-    </AspectRatio>
-  );
-}
-
-// Example template which wraps component with NativeBaseProvider
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <Component />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
+```ComponentSnackPlayer path=components,composites,AspectRatio,EmbedImage.tsx
 
 ```
 
 ## Props
 
-`AspectRatio` implements **[Box](box.md)**, so all the Box props can be passed to it.
+```ComponentPropTable path=composites,AspectRatio,index.tsx
 
-| Name  | Type   | Description                                    | Default |
-| ----- | ------ | ---------------------------------------------- | ------- |
-| ratio | number | The aspect ratio(width/height) of the content. | `4/3`   |
+```

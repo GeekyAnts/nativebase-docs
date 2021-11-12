@@ -25,25 +25,25 @@ import { Menu } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Menu,Basic.tsx
+```ComponentSnackPlayer path=components,composites,Menu,Basic.tsx
 
 ```
 
 ### Group
 
-```ComponentSnackPlayer path=composites,Menu,Group.tsx
+```ComponentSnackPlayer path=components,composites,Menu,Group.tsx
 
 ```
 
 ### MenuOptionGroups
 
-```ComponentSnackPlayer path=composites,Menu,MenuOptionsGroup.tsx
+```ComponentSnackPlayer path=components,composites,Menu,MenuOptionsGroup.tsx
 
 ```
 
 ### Menu Placement
 
-```ComponentSnackPlayer path=composites,Menu,MenuPositions.tsx
+```ComponentSnackPlayer path=components,composites,Menu,MenuPositions.tsx
 
 ```
 
@@ -88,7 +88,6 @@ Extends `MenuItem`.
 ## Styling
 
 <ComponentTheme name="menu" />
-
 
 ## Accessibility
 

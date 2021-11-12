@@ -65,7 +65,7 @@ export default function () {
       <Icon
         as={Ionicons}
         name={Platform.OS ? 'ios-menu' : 'md-menu'}
-        size={20}
+        size="20"
         color="red"
       />
       <Icon as={FontAwesome} name="home" />
