@@ -3,7 +3,7 @@ id: default-theme
 title: Default Theme
 ---
 
-import { ColorsBlock, FontBlocks, SpaceBlocks } from "/src/components/index";
+import { ColorsBlock, FontBlocks, SpaceBlocks } from "../../src/components/index";
 
 The theme object is where you define your application's color palette, type scale, font stacks, breakpoints, border radius values, and more.
 
@@ -31,11 +31,11 @@ To manage Typography options, the theme object supports the following keys:
 const typography = {
   letterSpacings: {
     '2xs': -1.5,
-    'xs': -0.5,
-    'sm': 0,
-    'md': 0.1,
-    'lg': 0.15,
-    'xl': 0.25,
+    xs: -0.5,
+    sm: 0,
+    md: 0.1,
+    lg: 0.15,
+    xl: 0.25,
     '2xl': 0.4,
     '3xl': 0.5,
     '4xl': 1.25,
@@ -43,11 +43,11 @@ const typography = {
   },
   lineHeights: {
     '2xs': 16,
-    'xs': 18,
-    'sm': 20,
-    'md': 22,
-    'lg': 24,
-    'xl': 28,
+    xs: 18,
+    sm: 20,
+    md: 22,
+    lg: 24,
+    xl: 28,
     '2xl': 32,
     '3xl': 40,
     '4xl': 48,
@@ -72,11 +72,11 @@ const typography = {
   },
   fontSizes: {
     '2xs': 10,
-    'xs': 12,
-    'sm': 14,
-    'md': 16,
-    'lg': 18,
-    'xl': 20,
+    xs: 12,
+    sm: 14,
+    md: 16,
+    lg: 18,
+    xl: 20,
     '2xl': 24,
     '3xl': 30,
     '4xl': 36,
