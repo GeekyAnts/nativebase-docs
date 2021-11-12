@@ -3,7 +3,7 @@ id: default-theme
 title: Default Theme
 ---
 
-import { ColorsBlock, FontBlocks, SpaceBlocks } from "/src/components/index";
+import { ColorsBlock, FontBlocks, SpaceBlocks } from "../../src/components/index";
 
 The theme object is where you define your application's color palette, type scale, font stacks, breakpoints, border radius values, and more.
 

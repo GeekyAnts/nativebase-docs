@@ -3,7 +3,7 @@ id: select
 title: Select
 ---
 
-import { AndroidBadge } from "/src/components/index";
+import { AndroidBadge } from "../../src/components/index";
 
 Select creates a dropdown list of items with the selected item in closed view. You can use native as well as styled one. The native one will have a different look and feel on each platform(Android, iOS and Web). The behaviour and look of styled variant will be same across all platforms.
 

@@ -3,7 +3,7 @@ id: select
 title: Select
 ---
 
-import { AndroidBadge } from "/src/components/index";
+import { AndroidBadge } from "../../src/components/index";
 
 Select creates a dropdown list of items with the selected item in closed view.
 
