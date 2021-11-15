@@ -115,7 +115,7 @@ module.exports = {
         'alert',
         // 'circularProgress',
         'progress',
-        // 'skeleton',
+        'skeleton',
         // 'snackBar',
         'spinner',
         'toast',
