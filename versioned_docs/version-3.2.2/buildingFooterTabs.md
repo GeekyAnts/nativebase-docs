@@ -93,7 +93,7 @@ export default function App() {
                 color="white"
                 size="sm"
               />
-              <Text color="white" font="12">
+              <Text color="white" fontSize="12">
                 Cart
               </Text>
             </Center>
