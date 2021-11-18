@@ -32,7 +32,7 @@ module.exports = {
         content:
           'NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive.',
       },
-      { name: 'twitter:site', content: '@NativeBaseIO' },
+      { name: 'twitter:site', content: '@nativebase' },
       {
         property: 'og:title',
         content:
@@ -155,7 +155,7 @@ module.exports = {
           items: [
             {
               label: 'Twitter',
-              href: 'https://twitter.com/nativebaseio',
+              href: 'https://twitter.com/nativebase',
             },
             {
               label: 'Stack Overflow',
