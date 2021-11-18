@@ -4,7 +4,7 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 const communities = [
   {
     name: 'Twitter',
-    url: 'https://twitter.com/nativebaseio',
+    url: 'https://twitter.com/nativebase',
   },
   {
     name: 'StackOverflow',
@@ -55,16 +55,14 @@ export default function Footer() {
   return (
     <div className="tailwind">
       <div
-        className={`w-full py-8 mt-10 ${
-          isDarkTheme ? 'bg-coolGray-800' : 'bg-coolGray-100'
-        } `}
+        className={`w-full py-8 mt-10 ${isDarkTheme ? 'bg-coolGray-800' : 'bg-coolGray-100'
+          } `}
       >
         <div className="flex flex-col justify-between w-full px-6 mx-auto text-gray-500 max-w-7xl lg:px-4 md:flex-row gap-y-10">
           <div className="">
             <div
-              className={`font-semibold  ${
-                isDarkTheme ? 'text-gray-100' : 'text-gray-900'
-              }`}
+              className={`font-semibold  ${isDarkTheme ? 'text-gray-100' : 'text-gray-900'
+                }`}
             >
               Docs
             </div>
@@ -73,9 +71,8 @@ export default function Footer() {
                 return (
                   <div className="text-gray-500 hover:underline" key={idx}>
                     <a
-                      className={` ${linkHoverColor} ${
-                        isDarkTheme ? 'text-gray-200' : 'text-gray-500'
-                      }`}
+                      className={` ${linkHoverColor} ${isDarkTheme ? 'text-gray-200' : 'text-gray-500'
+                        }`}
                       rel="noreferrer"
                       href={items.url}
                     >
@@ -88,9 +85,8 @@ export default function Footer() {
           </div>
           <div>
             <div
-              className={`font-semibold  ${
-                isDarkTheme ? 'text-gray-100' : 'text-gray-900'
-              }`}
+              className={`font-semibold  ${isDarkTheme ? 'text-gray-100' : 'text-gray-900'
+                }`}
             >
               Community
             </div>
@@ -99,9 +95,8 @@ export default function Footer() {
                 return (
                   <div className="hover:underline " key={idx}>
                     <a
-                      className={` ${linkHoverColor} ${
-                        isDarkTheme ? 'text-gray-200' : 'text-gray-500'
-                      }`}
+                      className={` ${linkHoverColor} ${isDarkTheme ? 'text-gray-200' : 'text-gray-500'
+                        }`}
                       rel="noreferrer"
                       target="_blank"
                       href={items.url}
@@ -115,9 +110,8 @@ export default function Footer() {
           </div>
           <div className="">
             <div
-              className={`font-semibold  ${
-                isDarkTheme ? 'text-gray-100' : 'text-gray-900'
-              }`}
+              className={`font-semibold  ${isDarkTheme ? 'text-gray-100' : 'text-gray-900'
+                }`}
             >
               More
             </div>
@@ -126,9 +120,8 @@ export default function Footer() {
                 return (
                   <div className="hover:underline" key={idx}>
                     <a
-                      className={` ${linkHoverColor} ${
-                        isDarkTheme ? 'text-gray-200' : 'text-gray-500'
-                      } `}
+                      className={` ${linkHoverColor} ${isDarkTheme ? 'text-gray-200' : 'text-gray-500'
+                        } `}
                       rel="noreferrer"
                       target="_blank"
                       href={items.url}
@@ -143,9 +136,8 @@ export default function Footer() {
           <div className="flex flex-col space-y-5 text-gray-500 list-none">
             <div className="hover:underline">
               <a
-                className={` ${linkHoverColor} ${
-                  isDarkTheme ? 'text-gray-200' : 'text-gray-500'
-                }`}
+                className={` ${linkHoverColor} ${isDarkTheme ? 'text-gray-200' : 'text-gray-500'
+                  }`}
                 href="https://geekyants.com/?utm_source=RnD&utm_medium=Landing_Page&utm_campaign=NativeBase_3"
                 target="_blank"
                 rel="noreferrer"
@@ -161,9 +153,8 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/nativebase/about/?viewAsMember=true"
               >
                 <svg
-                  className={`w-6 h-6 ${
-                    isDarkTheme ? 'text-gray-200' : 'text-gray-500 '
-                  }  fill-current`}
+                  className={`w-6 h-6 ${isDarkTheme ? 'text-gray-200' : 'text-gray-500 '
+                    }  fill-current`}
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fab"
@@ -185,9 +176,8 @@ export default function Footer() {
                 href="https://www.instagram.com/nativebaseio/?hl=en"
               >
                 <svg
-                  className={`w-6 h-6 ${
-                    isDarkTheme ? 'text-gray-200' : 'text-gray-500 '
-                  }  fill-current`}
+                  className={`w-6 h-6 ${isDarkTheme ? 'text-gray-200' : 'text-gray-500 '
+                    }  fill-current`}
                   xmlns="http://www.w3.org/2000/svg"
                   data-name="Layer 1"
                   viewBox="0 0 24 24"
@@ -201,9 +191,8 @@ export default function Footer() {
                 href="https://www.youtube.com/channel/UCoL_iTwpY07vDs91974z3xA/about"
               >
                 <svg
-                  className={`w-6 h-6 ${
-                    isDarkTheme ? 'text-gray-200' : 'text-gray-500 '
-                  }  fill-current`}
+                  className={`w-6 h-6 ${isDarkTheme ? 'text-gray-200' : 'text-gray-500 '
+                    }  fill-current`}
                   version="1.0"
                   xmlns="http://www.w3.org/2000/svg"
                   width="512.000000pt"
@@ -233,9 +222,8 @@ export default function Footer() {
               </a>
             </div>
             <div
-              className={`text-sm ${
-                isDarkTheme ? 'text-gray-200' : 'text-gray-500 '
-              }`}
+              className={`text-sm ${isDarkTheme ? 'text-gray-200' : 'text-gray-500 '
+                }`}
             >
               Copyright © 2021 NativeBase
             </div>
