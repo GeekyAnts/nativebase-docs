@@ -1,144 +1,34 @@
-# [nativebase.io](https://nativebase.io/)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This repo contains the website configuration and documentation for [NativeBase website](https://nativebase.io/).
+## Getting Started
 
-## Contents
+First, run the development server:
 
-- [Getting started](#-getting-started)
-- [Overview](#-overview)
-- [Website configuration](#-website-configuration)
-- [Contributing](#-contributing)
-
-## 🔎 Getting started
-
-### Prerequisites
-
-1.  [Git](https://git-scm.com/downloads).
-1.  [Node](https://nodejs.org/en/download/) _(version 12 or greater)_.
-1.  [Yarn](https://yarnpkg.com/lang/en/docs/install/) _(version 1.5 or greater)_.
-1.  A fork of the repo _(for any contributions)_.
-1.  A clone of the `website` repo.
-
-### Installation
-
-1.  `yarn` to install the website's workspace dependencies.
-1.  `cd remark-snackplayer` to go into the snackplayer plugin.
-1.  `yarn` to install the snackplayer plugin's dependencies.
-1.  `cd ..` to go back to website root directory.
-
-### Running locally
-
-1.  `yarn start` to start the development server _(powered by [Docusaurus 2](https://v2.docusaurus.io))_.
-1.  `open http://localhost:3000/` to open the site in your preferred browser.
-
-## 📖 Overview
-
-If you would like to **_contribute an edit or addition to the docs,_** then all our content is generated from markdown files you can find in the `docs` directory.
-
-**_To edit the internals of how the site is built,_** you may want to get familiarized with how the site is built. The NativeBase website is a static site generated using [Docusaurus 2](https://v2.docusaurus.io). Visit the Docusaurus website to learn more about all the available configuration options.
-
-### Directory Structure
-
-The following is a high-level overview of relevant files and folders.
-
-```
-website/
-├── blog/
-│   ├── ...
-├── docs/
-│   ├── migration/
-│       ├── Accordion.md
-│       ├── ...
-│   ├── FAB.md
-│   ├── ...
-├── plugins/
-│   ├── docusaurus-tailwindcss-loader/
-├── remark-snackplayer/
-│   └── en/
-├── src/
-│   ├── components/
-│   │   ├── AndroidBadge/
-│   │   └── ...
-│   ├── css/
-│   │   ├── custom.css
-│   ├── img/
-│   │   ├── Discord.js
-│   │   └── ...
-│   ├── pages/
-│   │   ├── index.js
-│   │   └── styles.module.css
-│   ├── theme/
-│   │   ├── Navbar.js
-│   │   └── styles.module.css
-├── static/
-│   ├── img/
-├── versioned_docs/
-│   ├── version-3.0.0-next.13/
-│   └── ...
-├── versioned_sidebars/
-│   ├── version-3.0.0-next.13-sidebars.json
-│   └── ...
-├── babel.config.js
-├── docusaurus.config.js
-├── package.json
-├── sidebars.json
-├── snackPlayerInitializer.js
-├── tailwind.config.js
-└── versions.json
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-### Documentation sources
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-As mentioned above, the `docs` folder contains the markdown source files for all of the docs pages in the NativeBase website. In most cases, you will want to edit the files within this directory. If you're adding a new doc or you need to alter the order the docs appear in the sidebar, take a look at the `sidebars.json` file in the `website` directory. The sidebars file contains a list of document ids that should match those defined in the header metadata (aka frontmatter) of the docs markdown files.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-### Versioned documentation
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The NativeBase website is versioned to allow users to go back and see the API reference docs for any given native-base version. A new version of the website is generally generated whenever there is a new native-base release. When this happens, any changes made to the `docs` and `sidebars.json` files will be copied over to the corresponding location within `versioned_docs` and `versioned_sidebars`.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-> **_Note:_** Do not edit the auto-generated files within `versioned_docs` or `versioned_sidebars` unless you are sure it is necessary. Edits made to older versions will not be propagated to newer versions of the documentation.
+## Learn More
 
-Docusaurus keeps track of the list of versions for the site in the `versions.json` file. The ordering of the versions in this file should be in reverse chronological order.
+To learn more about Next.js, take a look at the following resources:
 
-## ⚙️ Website configuration
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-The main config file for the website can be found at `docusaurus.config.js`. This file tells [Docusaurus how to build the website](https://v2.docusaurus.io/docs/configuration). Edits to this file are rarely necessary.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-The `src/components` subdirectory contains JavaScript and React components that are used in different parts of the website.
+## Deploy on Vercel
 
-The `src/pages` subdirectory contains the React components that make up the non-documentation pages of the site, such as the landing page..
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-The `src/theme` subdirectory contains the swizzled React components from the Docusaurus theme.
-
-## 🤲 Contributing
-
-### Create a branch
-
-1.  `git checkout master` in your local repository.
-1.  `git pull origin master` to ensure you have the latest main code.
-1.  `git checkout -b the-name-of-my-branch` to create a branch.
-    > replace `the-name-of-my-branch` with a suitable name, such as `update-animations-page`
-
-### Make the changes
-
-1.  Follow the "[Running locally](#running-locally)" instructions.
-1.  Save the files and check in the browser.
-1.  Some changes may require a server restart to generate new files. (Pages in `docs` always do!)
-1.  Edits to pages in `docs` will only be visible in the latest version of the documentation, called "Next", located under the `docs/next` path.
-
-Visit **http://localhost:3000/docs/next/YOUR-DOCS-PAGE** to see your work..
-
-### Test the change
-
-If possible, test any visual changes in all latest versions of the following browsers:
-
-- Chrome and Firefox on the desktop.
-- Chrome and Safari on mobile.
-
-### Push it
-
-1.  `git add -A && git commit -m "My message"` to stage and commit your changes.
-    > replace `My message` with a commit message, such as `Fixed typo in Accordion Example`
-2.  `git push my-fork-name the-name-of-my-branch`
-3.  Go to the [nativebase/website repo](https://github.com/nativebase/website) and you should see recently pushed branch.
-4.  Follow GitHub's instructions and create a Pull Request to merge your branch in `master`.
-5.  Describe briefly your changes (in case of visual changes, please include screenshots).
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

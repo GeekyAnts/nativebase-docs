@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   NativeBaseProvider,
   Box,
@@ -7,7 +7,7 @@ import {
   Text,
   Pressable,
   Image,
-} from 'native-base';
+} from "native-base";
 
 export function UtilityFirstExample() {
   return (
@@ -28,7 +28,7 @@ export function UtilityFirstExample() {
                 Today @ 9PM
               </Text>
               <Text color="white" fontSize="lg">
-                Let's talk about avatar!
+                Let&apos;s talk about avatar!
               </Text>
             </VStack>
             <Pressable
@@ -40,7 +40,7 @@ export function UtilityFirstExample() {
             >
               <Text
                 textTransform="uppercase"
-                fontSize={'sm'}
+                fontSize={"sm"}
                 fontWeight="bold"
                 color="white"
               >
@@ -50,7 +50,7 @@ export function UtilityFirstExample() {
           </Box>
           <Image
             source={{
-              uri: 'https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg',
+              uri: "https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg",
             }}
             alt="Aang flying and surrounded by clouds"
             height={100}
