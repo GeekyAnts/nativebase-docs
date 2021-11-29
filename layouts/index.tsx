@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import styles from "./layout.module.css";
 import { MDXRemote } from "next-mdx-remote";
 import Link from "next/link";
@@ -14,27 +14,13 @@ import MainContent from "../src/new-components/MainContent";
 function Layout({
   children: content,
   version: currentVersion,
+  sidebar,
   versionList,
 }: any) {
+  // console.log("Sidebar", sidebar);
+
   const { activeVersion, setActiveVersion } = useContext(AppContext);
-  const Router = useRouter();
-  const updateActiveVersion = (version: string, versions: string[]) => {
-    const currentPathArray = window?.location.href.split("/");
-    let pathArray: string[] = [];
-    currentPathArray.map((val, ind) => {
-      ind < 3 ? null : pathArray.push(val);
-    });
-    let path = "";
-    if (versions.includes(pathArray[0])) {
-      pathArray[0] = version;
-    } else {
-      pathArray = [version, ...pathArray];
-    }
-    pathArray.map((val) => {
-      path += "/" + val;
-    });
-    router.push(path);
-  };
+  const router = useRouter();
 
   const sidebarArray = [
     {
@@ -220,6 +206,25 @@ function Layout({
       ],
     },
   ];
+  useEffect(() => {
+    const currentPathArray = window?.location.href.split("/");
+    // console.log(currentPathArray);
+
+    let pathArray: string[] = [];
+    currentPathArray.map((val, ind) => {
+      ind < 3 ? null : pathArray.push(val);
+    });
+    // console.log(pathArray);
+
+    let actVersion = currentVersion;
+    if ([...versionList, "next"].includes(pathArray[0])) {
+      actVersion = pathArray[0];
+    } else {
+      actVersion = "";
+    }
+    // console.log("actVersion", actVersion);
+    setActiveVersion(actVersion);
+  }, []);
 
   return (
     <>
@@ -227,9 +232,9 @@ function Layout({
         <title>Layouts Example</title>
       </Head>
       <Box h="100vh">
-        <Navbar />
+        <Navbar versionList={versionList} />
         <HStack flex="1">
-          <Sidebar sidebar={sidebarArray} />
+          <Sidebar sidebar={sidebar} versionList={versionList} />
           <MainContent content={content} />
         </HStack>
       </Box>

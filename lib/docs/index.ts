@@ -3,19 +3,22 @@ import path from "path";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 import DirectoryTree from "directory-tree";
-import { useRouter, Router } from "next/router";
 let filePaths: string[] = [];
+import versions from "../../versions.json";
+const baseDirPath = process.cwd();
+
 export const getFilePaths = (
   tree: DirectoryTree.DirectoryTree
   // index: number = 0,
 ): string[] | undefined => {
   if (!tree.children) {
-    let path = tree.path.split("pages/docs/")[1];
-    if (path.substring(0, 4) === "next") {
-      path = path.split("next/")[1];
+    let path = tree.path.split("/docs/")[1];
+    let slugPath = "";
+    if (path.split("/")[0] === versions[0]) {
+      slugPath = path.split(`${versions[0]}/`)[1];
     }
     if (path.match(/\.mdx?$/)) {
-      filePaths = [...filePaths, path];
+      filePaths = [...filePaths, path, slugPath];
     }
   }
   if (tree.children) {
@@ -33,11 +36,9 @@ export const getFileExtenstion = async (slug: string) => {
   for (let i = 0; i < slugPathArray.length - 1; i++) {
     slugPath = slugPath + slugPathArray[i] + "/";
   }
-  const files = fs.readdirSync(
-    __dirname.slice(0, -18) + "pages/docs/" + slugPath
-  );
-  console.log("files", files);
-  console.log("filename", filename);
+  const files = fs.readdirSync(baseDirPath + "/docs/" + slugPath);
+  // console.log("files", files);
+  // console.log("filename", filename);
   for (let i = 0; i < files.length; i++) {
     if (files[i].split(".")[0] === filename) {
       return files[i].split(".")[1];
@@ -50,9 +51,13 @@ export const getDocBySlug = async (filename: string) => {
   const extenstion: string = await getFileExtenstion(filename);
 
   return fs.readFileSync(
-    __dirname.slice(0, -18) + "pages/docs/" + filename + "." + extenstion,
+    baseDirPath + "/docs/" + filename + "." + extenstion,
     "utf-8"
   );
 };
 
-
+export const getSidebarJson = async (version: string) => {
+  return JSON.parse(
+    fs.readFileSync(baseDirPath + `/docs/${version}/sidebar.json`).toString()
+  );
+};
