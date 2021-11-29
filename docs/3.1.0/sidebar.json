@@ -1,0 +1,33 @@
+{
+  "sidebar": [
+    {
+      "type": "heading",
+      "title": "Introduction 3.1.0",
+      "pages": [
+        {
+          "id": "test",
+          "title": "Test",
+          "status":"new"
+        },
+        {
+          "id": "test1",
+          "title": "Test1"
+        },
+        {
+          "id": "test2",
+          "title": "Test2"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Test Section",
+      "pages": [
+        {
+          "id": "test3",
+          "title": "Test3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,82 +1,243 @@
 import Head from "next/head";
-import { useState, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import styles from "./layout.module.css";
 import { MDXRemote } from "next-mdx-remote";
 import Link from "next/link";
-import { Box, Menu, Pressable } from "native-base";
+import { Box, HStack, Menu, Pressable, ScrollView } from "native-base";
 import router, { Router, useRouter } from "next/router";
 import path from "path";
+import Sidebar from "../src/new-components/Sidebar";
+import Navbar from "../src/new-components/Navbar";
 import { AppContext } from "../src/AppContext";
+import MainContent from "../src/new-components/MainContent";
 
 function Layout({
   children: content,
   version: currentVersion,
+  sidebar,
   versionList,
 }: any) {
+  // console.log("Sidebar", sidebar);
+
   const { activeVersion, setActiveVersion } = useContext(AppContext);
-  const Router = useRouter();
-  const updateActiveVersion = (version: string, versions: string[]) => {
+  const router = useRouter();
+
+  const sidebarArray = [
+    {
+      type: "heading",
+      title: "Overview",
+      pages: [
+        {
+          type: "page",
+          id: "test",
+          title: "Introduction",
+          path: "/3.2.2/test",
+          status: "deprecated",
+        },
+        {
+          type: "page",
+          id: "test1",
+          title: "Getting Started",
+          path: "/3.2.2/test1",
+          status: "coming soon",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Styling",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Animation",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Accessibility",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Server Side Rendering",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Releases",
+          path: "/3.2.2/test2",
+        },
+      ],
+    },
+    {
+      type: "heading",
+      title: "Components",
+      pages: [
+        {
+          type: "page",
+          id: "test",
+          title: "Accordion",
+          path: "/3.2.2/test",
+        },
+        {
+          type: "page",
+          id: "test1",
+          title: "Alert Dialog",
+          path: "/3.2.2/test1",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Aspect Ratio",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test",
+          title: "Avatar",
+          path: "/3.2.2/test",
+        },
+        {
+          type: "page",
+          id: "test1",
+          title: "Carousel",
+          path: "/3.2.2/test1",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Checkbox",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test",
+          title: "Collapsible",
+          path: "/3.2.2/test",
+        },
+        {
+          type: "page",
+          id: "test1",
+          title: "Context menu",
+          path: "/3.2.2/test1",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Dialog",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test",
+          title: "DropdownMenu",
+          path: "/3.2.2/test",
+        },
+        {
+          type: "page",
+          id: "test1",
+          title: "Hover card",
+          path: "/3.2.2/test1",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Hover menu",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test1",
+          title: "Label",
+          path: "/3.2.2/test1",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Menu bar",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test",
+          title: "Popover",
+          path: "/3.2.2/test",
+        },
+        {
+          type: "page",
+          id: "test1",
+          title: "Progress",
+          path: "/3.2.2/test1",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Radiogroup",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Select Area",
+          path: "/3.2.2/test2",
+        },
+        {
+          type: "page",
+          id: "test",
+          title: "Select",
+          path: "/3.2.2/test",
+        },
+        {
+          type: "page",
+          id: "test1",
+          title: "Separator",
+          path: "/3.2.2/test1",
+        },
+        {
+          type: "page",
+          id: "test2",
+          title: "Slider",
+          path: "/3.2.2/test2",
+        },
+      ],
+    },
+  ];
+  useEffect(() => {
     const currentPathArray = window?.location.href.split("/");
+    // console.log(currentPathArray);
+
     let pathArray: string[] = [];
     currentPathArray.map((val, ind) => {
       ind < 3 ? null : pathArray.push(val);
     });
-    let path = "";
-    if (versions.includes(pathArray[0])) {
-      pathArray[0] = version;
+    // console.log(pathArray);
+
+    let actVersion = currentVersion;
+    if ([...versionList, "next"].includes(pathArray[0])) {
+      actVersion = pathArray[0];
     } else {
-      pathArray = [version, ...pathArray];
+      actVersion = "";
     }
-    pathArray.map((val) => {
-      path += "/" + val;
-    });
-    router.push(path);
-  };
+    // console.log("actVersion", actVersion);
+    setActiveVersion(actVersion);
+  }, []);
+
   return (
     <>
       <Head>
         <title>Layouts Example</title>
       </Head>
-      <Link href="/box">Box</Link>
-      <Link href="/button">Button</Link>
-      <Link href={`/${currentVersion}/box`}>Migration Button</Link>
-      <Box>Hello world</Box>
-      <Box  alignItems="flex-start">
-      <Menu
-        trigger={(triggerProps) => {
-          return (
-            <Pressable accessibilityLabel="More options menu" {...triggerProps} w="40">
-              <Box>{activeVersion}</Box>
-            </Pressable>
-          );
-        }}
-      >
-        <Menu.Item
-          // @ts-ignore
-          onPress={() => {
-            setActiveVersion("next");
-            updateActiveVersion("next", versionList);
-          }}
-          bg={"next" === activeVersion ? "coolGray.200" : "coolGray.50"}
-        >
-          next
-        </Menu.Item>
-        {versionList.map((version: string) => {
-          return (
-            <Menu.Item
-              // @ts-ignore
-              onPress={() => {
-                setActiveVersion(version);
-                updateActiveVersion(version, versionList);
-              }}
-              bg={version === activeVersion ? "coolGray.200" : "coolGray.50"}
-            >
-              {version}
-            </Menu.Item>
-          );
-        })}
-      </Menu></Box>
-      <MDXRemote {...content} />
+      <Box h="100vh">
+        <Navbar versionList={versionList} />
+        <HStack flex="1">
+          <Sidebar sidebar={sidebar} versionList={versionList} />
+          <MainContent content={content} />
+        </HStack>
+      </Box>
     </>
   );
 }

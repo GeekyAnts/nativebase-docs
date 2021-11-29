@@ -1,5 +1,5 @@
 import {createContext} from 'react';
 export const AppContext = createContext({
-    activeVersion:"",
+    activeVersion:"next",
     setActiveVersion:(version:string)=>{},
 });

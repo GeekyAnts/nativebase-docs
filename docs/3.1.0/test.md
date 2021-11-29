@@ -1,8 +1,9 @@
 ---
-id: accessibility
-title: Accessibility
+id: test
+title: Test
 ---
-# Accessibility v 3.2.2
+
+# Accessibility v next
 
 NativeBase comes with the latest accessibility standards out of the box including aria and role attributes, focus management, and keyboard navigation.
 

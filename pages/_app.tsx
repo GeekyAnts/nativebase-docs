@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <AppContext.Provider
       value={{ activeVersion, setActiveVersion: updateActiveVersion }}
     >
-      <NativeBaseProvider>
+      <NativeBaseProvider isSSR>
         <Component {...pageProps} />
       </NativeBaseProvider>
     </AppContext.Provider>
