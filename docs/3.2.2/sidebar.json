@@ -7,7 +7,7 @@
         {
           "id": "test",
           "title": "Test",
-          "status":"new"
+          "status": "new"
         },
         {
           "id": "test1",
@@ -16,6 +16,16 @@
         {
           "id": "test2",
           "title": "Test2"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "New Test",
+      "pages": [
+        {
+          "id": "new-test",
+          "title": "New-Test "
         }
       ]
     },

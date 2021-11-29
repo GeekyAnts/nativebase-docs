@@ -15,7 +15,6 @@ import Toc from "./Toc";
 
 export default function MainContent(props: any) {
   const { content } = props;
-  console.log(content, "content");
   const tocArray = [
     {
       id: "1",
