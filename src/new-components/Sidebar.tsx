@@ -66,7 +66,7 @@ const SidebarItem = (props: any) => {
               </Text>
               {item?.status && (
                 <Badge
-                  rounded="xl"
+                  rounded="full"
                   _text={{
                     textTransform: "capitalize",
                     fontWeight: "light",

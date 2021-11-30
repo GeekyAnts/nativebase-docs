@@ -11,6 +11,7 @@ import {
   ChevronDownIcon,
   Pressable,
   useColorMode,
+  HamburgerIcon,
 } from "native-base";
 import NativebaseLogo from "./NativebaseLogo";
 import { isLatestVersion, isLatestVersionSlug } from "../utils";
@@ -18,6 +19,8 @@ import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { useRouter } from "next/router";
 import versions from "../../versions.json";
+import { NavigationContainer } from "@react-navigation/native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 
 export default function Navbar(props: any) {
   const { activeVersion, setActiveVersion } = useContext(AppContext);
@@ -53,6 +56,7 @@ export default function Navbar(props: any) {
       justifyContent="space-between"
     >
       <HStack space="4" alignItems="center">
+        {/* <IconButton icon={<HamburgerIcon />} /> */}
         <NativebaseLogo />
         <Menu
           offset={-15}

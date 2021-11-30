@@ -68,14 +68,15 @@ function Layout({
         <Navbar />
         <HStack flex="1">
           {/* leftsidebar only show on big devices */}
-          <Hidden till="lg">
+          <Box display={{ base: "none", lg: "flex" }}>
             <Sidebar sidebar={sidebar} />
-          </Hidden>
-          <>
-            <MainContent content={content} />
-            {/* fab se actionsheet khul k daalskte h sidebar */}
+          </Box>
+
+          <MainContent content={content} />
+          {/* fab se actionsheet khul k daalskte h sidebar */}
+          <Box display={{ base: "flex", lg: "none" }}>
             <MobileSidebar sidebar={sidebar} />
-          </>
+          </Box>
         </HStack>
       </Box>
     </>
