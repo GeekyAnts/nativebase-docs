@@ -7,6 +7,18 @@ let filePaths: string[] = [];
 import versions from "../../versions.json";
 const baseDirPath = process.cwd();
 
+export const getTOC = (file: string) => {
+  const fileLines = file.split("\n");
+  for(let i =0;i<fileLines.length;i++){
+    if(fileLines[i]){
+      console.log("helo");
+      
+    }
+  }
+  console.log(fileLines);
+  return { toc: "asb" };
+};
+
 export const getFilePaths = (
   tree: DirectoryTree.DirectoryTree
   // index: number = 0,

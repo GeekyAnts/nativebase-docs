@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Box, HStack, Menu, Pressable, ScrollView, Text } from "native-base";
+import React from 'react'
 
 export default function NativebaseLogo(props: any) {
   const { sidebar } = props;

@@ -2,10 +2,11 @@ import Layout from "../layouts";
 import path from "path";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
-import { getDocBySlug, getFilePaths, getSidebarJson } from "../lib/docs";
+import { getDocBySlug, getFilePaths, getSidebarJson,getTOC } from "../lib/docs";
 import DirectoryTree from "directory-tree";
 import versions from "../versions.json";
 import { config } from "../docs.config";
+import React from 'react'
 
 export default function Doc({
   meta,
@@ -92,7 +93,8 @@ export async function getStaticProps({ params }: any) {
   // console.log("frontmatter", frontMatter);
 
   const mdxSource = await serialize(content);
-
+  const toc = getTOC(markdownWithMeta);
+  
   return {
     props: {
       frontMatter,

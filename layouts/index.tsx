@@ -10,6 +10,7 @@ import Sidebar from "../src/new-components/Sidebar";
 import Navbar from "../src/new-components/Navbar";
 import { AppContext } from "../src/AppContext";
 import MainContent from "../src/new-components/MainContent";
+import React from 'react'
 
 function Layout({
   children: content,

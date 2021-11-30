@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# expo
+/.expo
+
 # production
 /build
 

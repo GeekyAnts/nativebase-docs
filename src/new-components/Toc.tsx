@@ -12,6 +12,7 @@ import {
   Heading,
 } from "native-base";
 import { MDXRemote } from "next-mdx-remote";
+import React from 'react'
 
 import NativebaseLogo from "./NativebaseLogo";
 
