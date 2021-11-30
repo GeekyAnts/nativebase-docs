@@ -11,26 +11,22 @@ import {
   Badge,
 } from "native-base";
 import { useRouter } from "next/router";
-import React from 'react'
+import React from "react";
 import { isLatestVersionSlug } from "../utils";
 export default function Sidebar(props: any) {
-  const { sidebar, versionList } = props;
+  const { sidebar } = props;
 
   return (
     <ScrollView flexShrink="0">
       <Box py="5" w="64" borderRightWidth="1" borderColor="gray.100">
-        <SidebarItem
-          sidebarItems={sidebar}
-          level={0}
-          versionList={versionList}
-        />
+        <SidebarItem sidebarItems={sidebar} level={0} />
       </Box>
     </ScrollView>
   );
 }
 
 const SidebarItem = (props: any) => {
-  const { sidebarItems, level, versionList } = props;
+  const { sidebarItems, level } = props;
   const router = useRouter();
   const { activeVersion, setActiveVersion } = useContext(AppContext);
 
@@ -47,9 +43,7 @@ const SidebarItem = (props: any) => {
             onPress={() => {
               changeRoute(
                 `${
-                  isLatestVersionSlug(activeVersion, versionList)
-                    ? ""
-                    : activeVersion + "/"
+                  isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
                 }${item.id}`
               );
             }}
@@ -59,7 +53,7 @@ const SidebarItem = (props: any) => {
             px="6"
             py="2"
           >
-            <HStack space="3">
+            <HStack space="3" alignItems="center">
               <Text
                 color={
                   item?.status === "coming soon"

@@ -10,27 +10,57 @@ import {
   ScrollView,
   Text,
   Badge,
+  Hidden,
+  Actionsheet,
+  Fab,
+  HamburgerIcon,
+  IconButton,
+  CloseIcon,
+  useDisclose,
 } from "native-base";
 import { useRouter } from "next/router";
 import { isLatestVersionSlug } from "../utils";
-export default function Sidebar(props: any) {
-  const { sidebar, versionList } = props;
+export default function MobileSidebar(props: any) {
+  const { sidebar } = props;
+  const { isOpen, onOpen, onClose } = useDisclose();
 
   return (
-    <ScrollView flexShrink="0">
-      <Box py="5" w="64" borderRightWidth="1" borderColor="gray.100">
-        <SidebarItem
-          sidebarItems={sidebar}
-          level={0}
-          versionList={versionList}
+    <Hidden from="lg">
+      <>
+        <Fab
+          borderRadius="full"
+          placement="bottom-right"
+          icon={<HamburgerIcon size="5" />}
+          p="2"
+          rounded="md"
+          px="4"
+          bottom="8"
+          right="8"
+          // @ts-ignore
+          onPress={onOpen}
         />
-      </Box>
-    </ScrollView>
+        <Actionsheet isOpen={isOpen} onClose={onClose}>
+          <Actionsheet.Content roundedTop="0" overflow="auto">
+            <SidebarItem sidebarItems={sidebar} level={0} />
+          </Actionsheet.Content>
+          <IconButton
+            variant="solid"
+            position="absolute"
+            bottom="8"
+            px="4"
+            right="8"
+            // @ts-ignore
+            onPress={onClose}
+            icon={<CloseIcon size="xs" />}
+          />
+        </Actionsheet>
+      </>
+    </Hidden>
   );
 }
 
 const SidebarItem = (props: any) => {
-  const { sidebarItems, level, versionList } = props;
+  const { sidebarItems, level } = props;
   const router = useRouter();
   const { activeVersion, setActiveVersion } = useContext(AppContext);
 
@@ -40,16 +70,14 @@ const SidebarItem = (props: any) => {
 
   return sidebarItems.map((item: any, index: any) => {
     return (
-      <Box key={index}>
+      <Box key={index} w="100%">
         {item.pages === undefined ? (
           <Pressable
             // @ts-ignore
             onPress={() => {
               changeRoute(
                 `${
-                  isLatestVersionSlug(activeVersion, versionList)
-                    ? ""
-                    : activeVersion + "/"
+                  isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
                 }${item.id}`
               );
             }}
@@ -59,7 +87,11 @@ const SidebarItem = (props: any) => {
             px="6"
             py="2"
           >
-            <HStack space="3">
+            <HStack
+              space="3"
+              justifyContent="space-between"
+              alignItems="center"
+            >
               <Text
                 color={
                   item?.status === "coming soon"

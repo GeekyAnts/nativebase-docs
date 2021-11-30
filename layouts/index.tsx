@@ -25,7 +25,8 @@ import Sidebar from "../src/new-components/Sidebar";
 import Navbar from "../src/new-components/Navbar";
 import { AppContext } from "../src/AppContext";
 import MainContent from "../src/new-components/MainContent";
-import React from 'react'
+import React from "react";
+import MobileSidebar from "../src/new-components/MobileSidebar";
 
 function Layout({
   children: content,
@@ -64,63 +65,16 @@ function Layout({
         <title>Layouts Example</title>
       </Head>
       <Box h="100vh">
-        <Navbar versionList={versionList} />
+        <Navbar />
         <HStack flex="1">
           {/* leftsidebar only show on big devices */}
           <Hidden till="lg">
-            <Sidebar sidebar={sidebar} versionList={versionList} />
+            <Sidebar sidebar={sidebar} />
           </Hidden>
           <>
             <MainContent content={content} />
-
             {/* fab se actionsheet khul k daalskte h sidebar */}
-            <Hidden from="lg">
-              <>
-                <Fab
-                  borderRadius="full"
-                  placement="bottom-right"
-                  icon={<HamburgerIcon />}
-                  // label="Quick Start"
-                  // @ts-ignore
-                  onPress={onOpen}
-                />
-                <Actionsheet isOpen={isOpen} onClose={onClose}>
-                  <Actionsheet.Content roundedTop="0" overflow="auto">
-                    <Actionsheet.Item>Delete</Actionsheet.Item>
-                    <Actionsheet.Item>Share</Actionsheet.Item>
-                    <Actionsheet.Item>Play</Actionsheet.Item>
-                    <Actionsheet.Item>Favourite</Actionsheet.Item>
-                    <Actionsheet.Item>Cancel</Actionsheet.Item>
-                    <Actionsheet.Item>Delete</Actionsheet.Item>
-                    <Actionsheet.Item>Share</Actionsheet.Item>
-                    <Actionsheet.Item>Play</Actionsheet.Item>
-                    <Actionsheet.Item>Favourite</Actionsheet.Item>
-                    <Actionsheet.Item>Cancel</Actionsheet.Item>
-                    <Actionsheet.Item>Delete</Actionsheet.Item>
-                    <Actionsheet.Item>Share</Actionsheet.Item>
-                    <Actionsheet.Item>Play</Actionsheet.Item>
-                    <Actionsheet.Item>Favourite</Actionsheet.Item>
-                    <Actionsheet.Item>Cancel</Actionsheet.Item>
-                    <Actionsheet.Item>Delete</Actionsheet.Item>
-                    <Actionsheet.Item>Share</Actionsheet.Item>
-                    <Actionsheet.Item>Play</Actionsheet.Item>
-                    <Actionsheet.Item>Favourite</Actionsheet.Item>
-                    <Actionsheet.Item>Cancel</Actionsheet.Item>
-                  </Actionsheet.Content>
-                  <IconButton
-                    variant="solid"
-                    position="absolute"
-                    bottom="10"
-                    size="lg"
-                    px="4"
-                    right="10"
-                    // @ts-ignore
-                    onPress={onClose}
-                    icon={<CloseIcon size="xs" />}
-                  />
-                </Actionsheet>
-              </>
-            </Hidden>
+            <MobileSidebar sidebar={sidebar} />
           </>
         </HStack>
       </Box>
