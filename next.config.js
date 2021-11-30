@@ -6,6 +6,7 @@ const withMDX = require("@next/mdx")({
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
+const { withExpo } = require("@expo/next-adapter");
 
 const withPlugins = require("next-compose-plugins");
 const withTM = require("next-transpile-modules")([
@@ -28,43 +29,46 @@ const withTM = require("next-transpile-modules")([
   "@react-stately/radio",
 ]);
 
-module.exports = withPlugins([[withTM], [withMDX]], {
-  distDir: "build",
-  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...(config.resolve.alias || {}),
-      // Transform all direct `react-native` imports to `react-native-web`
-      "react-native$": "react-native-web",
-    };
-    config.resolve.extensions = [
-      ".web.js",
-      ".web.ts",
-      ".web.tsx",
-      ...config.resolve.extensions,
-    ];
-    return config;
-  },
-  async redirects() {
-    return [
-      {
-        source: "/discord",
-        destination: "https://discord.com/invite/TSgCw2UPmb",
-        permanent: true,
-      },
-    ];
-  },
-  images: {
-    domains: [
-      "media-exp1.licdn.com",
-      "mir-s3-cdn-cf.behance.net",
-      "avatars.githubusercontent.com",
-      "images.opencollective.com",
-      "pbs.twimg.com",
-      "docs.nativebase.io",
-    ],
-  },
-  env: {
-    startupUrl: process.env.STARTUP_URL,
-  },
-});
+module.exports = withPlugins(
+  [[withTM], [withMDX], [withExpo, { projectRoot: __dirname }]],
+  {
+    distDir: "build",
+    pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+    webpack: (config) => {
+      config.resolve.alias = {
+        ...(config.resolve.alias || {}),
+        // Transform all direct `react-native` imports to `react-native-web`
+        "react-native$": "react-native-web",
+      };
+      config.resolve.extensions = [
+        ".web.js",
+        ".web.ts",
+        ".web.tsx",
+        ...config.resolve.extensions,
+      ];
+      return config;
+    },
+    async redirects() {
+      return [
+        {
+          source: "/discord",
+          destination: "https://discord.com/invite/TSgCw2UPmb",
+          permanent: true,
+        },
+      ];
+    },
+    images: {
+      domains: [
+        "media-exp1.licdn.com",
+        "mir-s3-cdn-cf.behance.net",
+        "avatars.githubusercontent.com",
+        "images.opencollective.com",
+        "pbs.twimg.com",
+        "docs.nativebase.io",
+      ],
+    },
+    env: {
+      startupUrl: process.env.STARTUP_URL,
+    },
+  }
+);

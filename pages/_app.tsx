@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { NativeBaseProvider } from "native-base";
 import { AppContext } from "../src/AppContext";
 import { useState } from "react";
+import React from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [activeVersion, setActiveVersion] = useState("/");

@@ -20,6 +20,7 @@ import { isLatestVersion, isLatestVersionSlug } from "../utils";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { useRouter } from "next/router";
+import React from "react";
 
 export default function Navbar(props: any) {
   const { activeVersion, setActiveVersion } = useContext(AppContext);

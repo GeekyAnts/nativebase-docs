@@ -11,6 +11,7 @@ import {
   Badge,
 } from "native-base";
 import { useRouter } from "next/router";
+import React from 'react'
 import { isLatestVersionSlug } from "../utils";
 export default function Sidebar(props: any) {
   const { sidebar, versionList } = props;
