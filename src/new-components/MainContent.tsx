@@ -8,6 +8,9 @@ import {
   SunIcon,
   Box,
   ScrollView,
+  Hidden,
+  Fab,
+  InfoIcon,
 } from "native-base";
 import { MDXRemote } from "next-mdx-remote";
 import NativebaseLogo from "./NativebaseLogo";

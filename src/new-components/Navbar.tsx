@@ -6,10 +6,14 @@ import {
   IconButton,
   SunIcon,
   Menu,
-  Pressable,
   Box,
+  Divider,
   Text,
   ChevronDownIcon,
+  HamburgerIcon,
+  Center,
+  Pressable,
+  VStack,
 } from "native-base";
 import NativebaseLogo from "./NativebaseLogo";
 import { isLatestVersion, isLatestVersionSlug } from "../utils";
