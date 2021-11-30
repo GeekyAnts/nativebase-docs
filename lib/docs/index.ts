@@ -7,16 +7,32 @@ let filePaths: string[] = [];
 import versions from "../../versions.json";
 const baseDirPath = process.cwd();
 
-export const getTOC = (file: string) => {
-  const fileLines = file.split("\n");
-  for(let i =0;i<fileLines.length;i++){
-    if(fileLines[i]){
-      console.log("helo");
-      
-    }
-  }
-  console.log(fileLines);
-  return { toc: "asb" };
+const getHeadingLevel = (line: string) => {
+  return {
+    level: line.split("#").filter((val) => val === "").length,
+    id: line
+      .split("#")
+      .filter((val) => val !== "")[0]
+      .trim()
+      .replace(/ /g, "_")
+      .toLowerCase(),
+    title: line
+      .split("#")
+      .filter((val) => val !== "")[0]
+      .trim(),
+  };
+};
+
+export const getTOCArray = (file: string) => {
+  const fileLines = file
+    .split("\n")
+    .filter((line: string) => (line.substring(0, 1) === "#" ? true : false));
+  let toc = {};
+  const headingLevelMap = fileLines.map((line: string) =>
+    getHeadingLevel(line)
+  );
+  // console.log(headingLevelMap);
+  return headingLevelMap;
 };
 
 export const getFilePaths = (
