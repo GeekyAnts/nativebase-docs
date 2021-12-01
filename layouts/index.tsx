@@ -25,6 +25,8 @@ import router, { Router, useRouter } from "next/router";
 import path from "path";
 import Sidebar from "../src/new-components/Sidebar";
 import Navbar from "../src/new-components/Navbar";
+import MobileNavbar from "../src/new-components/MobileNavbar";
+
 import { AppContext } from "../src/AppContext";
 import MainContent from "../src/new-components/MainContent";
 import MobileSidebar from "../src/new-components/MobileSidebar";
@@ -72,18 +74,13 @@ function Layout({
         <title>Layouts Example</title>
       </Head>
       <Box h="100vh">
-        <Navbar />
-
-        <IconButton
-          icon={<HamburgerIcon size="7" />}
-          // @ts-ignore
-          onPress={() => setSlideOpen(!isSlideOpen)}
-          accessibilityLabel="Mobile Menu"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-          mr="2"
-          // display={{ base: "flex", lg: "none" }}
-        />
+        <Box display={{ base: "none", lg: "flex" }}>
+          <Navbar />
+        </Box>
+        <Box display={{ base: "flex", lg: "none" }}>
+          <MobileNavbar />
+        </Box>
+       
 
         <HStack flex="1">
           {/* leftsidebar only show on big devices */}
