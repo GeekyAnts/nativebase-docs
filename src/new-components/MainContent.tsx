@@ -17,47 +17,33 @@ import NativebaseLogo from "./NativebaseLogo";
 import Toc from "./Toc";
 
 export default function MainContent(props: any) {
-  const { content } = props;
-  const tocArray = [
-    {
-      id: "1",
-      title: "Installation",
-    },
-    {
-      id: "2",
-      title: "Anatomy",
-    },
-    {
-      id: "3",
-      title: "API Reference",
-      topics: [
-        { id: "5", title: "Root" },
-        { id: "6", title: "Image" },
-        { id: "7", title: "Fallback" },
-      ],
-    },
-    {
-      id: "4",
-      title: "Examples",
-      topics: [{ id: "2", title: "Clickable Avatar with tooltip" }],
-    },
-  ];
-  // const anchors = React.Children.toArray(children)
-  //   .filter(
-  //     (child) =>
-  //       child.props?.mdxType && ["h2", "h3"].includes(child.props.mdxType)
-  //   )
-  //   .map((child) => {
-  //     const idText = getHeadingIds(child.props.children);
-  //     return {
-  //       url: "#" + idText,
-  //       depth:
-  //         (child.props?.mdxType &&
-  //           parseInt(child.props.mdxType.replace("h", ""), 0)) ??
-  //         0,
-  //       text: child.props.children,
-  //     };
-  //   });
+  const { content, tocArray } = props;
+
+  // const tocArray = [
+  //   {
+  //     id: "1",
+  //     title: "Installation",
+  //   },
+  //   {
+  //     id: "2",
+  //     title: "Anatomy",
+  //   },
+  //   {
+  //     id: "3",
+  //     title: "API Reference",
+  //     topics: [
+  //       { id: "5", title: "Root" },
+  //       { id: "6", title: "Image" },
+  //       { id: "7", title: "Fallback" },
+  //     ],
+  //   },
+  //   {
+  //     id: "4",
+  //     title: "Examples",
+  //     topics: [{ id: "2", title: "Clickable Avatar with tooltip" }],
+  //   },
+  // ];
+
   return (
     <>
       <ScrollView flexGrow="0">

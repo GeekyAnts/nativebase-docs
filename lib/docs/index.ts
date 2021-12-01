@@ -17,7 +17,7 @@ export const getTOC = (file: string) => {
 
 const getHeadingLevel = (line: string) => {
   return {
-    level: line.split("#").filter((val) => val === "").length,
+    level: line.split("#").filter((val) => val === "").length - 1,
     id: line
       .split("#")
       .filter((val) => val !== "")[0]
