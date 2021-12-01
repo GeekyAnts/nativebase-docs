@@ -31,11 +31,11 @@ import MobileSidebar from "../src/new-components/MobileSidebar";
 function Layout({
   children: content,
   version: currentVersion,
+  tocArray,
   sidebar,
   versionList,
 }: any) {
   // console.log("Sidebar", sidebar);
-
   const { activeVersion, setActiveVersion } = useContext(AppContext);
   const router = useRouter();
 
@@ -72,7 +72,7 @@ function Layout({
             <Sidebar sidebar={sidebar} />
           </Box>
 
-          <MainContent content={content} />
+          <MainContent content={content} tocArray={tocArray} />
           {/* fab se actionsheet khul k daalskte h sidebar */}
           <Box display={{ base: "flex", lg: "none" }}>
             <MobileSidebar sidebar={sidebar} />
