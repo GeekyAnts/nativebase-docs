@@ -1,20 +1,7 @@
 import { extendTheme } from "native-base";
+import colors from "native-base/src/theme/base/colors";
 export const theme = extendTheme({
   colors: {
-    // Add new color
-    primary: {
-      50: "#E3F2F9",
-      100: "#C5E4F3",
-      200: "#A2D4EC",
-      300: "#7AC1E4",
-      400: "#47A9DA",
-      500: "#0088CC",
-      600: "#007AB8",
-      700: "#006BA1",
-      800: "#005885",
-      900: "#003F5E",
-    },
-
     backgroundLight: "#fff",
     backgroundDark: "#151719",
 
@@ -26,34 +13,41 @@ export const theme = extendTheme({
     sidebarItemDark: "#ecedee",
     sidebarItemLight: "#11181c",
 
-    activeSidebarItemBackgroundLight: "",
-    activeSidebarItemBackgroundDark: "",
-    activeSidebarItemHoverBackgroundLight: "",
-    activeSidebarItemHoverBackgroundDark: "",
+    activeSidebarItemBackgroundLight: colors.cyan[100],
+    activeSidebarItemBackgroundDark: colors.cyan[700],
+    activeSidebarItemHoverBackgroundLight: colors.cyan[100],
+    activeSidebarItemHoverBackgroundDark: colors.cyan[700],
 
-    sidebarDeprecatedBadgeBackgroundLight: "#fffbd1",
-    sidebarDeprecatedBadgeBackgroundDark: "#2c2100",
-    sidebarDeprecatedBadgeColorLight: "#946800",
-    sidebarDeprecatedBadgeColorDark: "#f0c000",
+    inactiveSidebarItemHoverBackgroundLight: colors.cyan[50],
+    inactiveSidebarItemHoverBackgroundDark: colors.cyan[800],
 
-    sidebarComingSoonBadgeBackgroundLight: "#f1f3f5",
-    sidebarComingSoonBadgeBackgroundDark: "#202425",
-    sidebarComingSoonBadgeColorLight: "#687076",
-    sidebarComingSoonBadgeColorDark: "#9ba1a6",
+    sidebarDeprecatedBadgeBackgroundLight: colors.emerald[100],
+    sidebarDeprecatedBadgeBackgroundDark: colors.emerald[900],
+    sidebarDeprecatedBadgeColorLight: colors.emerald[900],
+    sidebarDeprecatedBadgeColorDark: colors.emerald[100],
 
-    sidebarUpdatedBadgeBackgroundLight: "",
-    sidebarUpdatedBadgeBackgroundDark: "",
-    sidebarUpdatedBadgeColorLight: "",
-    sidebarUpdatedBadgeColorDark: "",
+    sidebarComingSoonBadgeBackgroundLight: colors.lightBlue[100],
+    sidebarComingSoonBadgeBackgroundDark: colors.lightBlue[900],
+    sidebarComingSoonBadgeColorLight: colors.lightBlue[900],
+    sidebarComingSoonBadgeColorDark: colors.lightBlue[100],
 
-    sidebarNewBadgeBackgroundLight: "",
-    sidebarNewBadgeBackgroundDark: "",
-    sidebarNewBadgeColorLight: "",
-    sidebarNewBadgeColorDark: "",
+    sidebarUpdatedBadgeBackgroundLight: colors.indigo[100],
+    sidebarUpdatedBadgeBackgroundDark: colors.indigo[900],
+    sidebarUpdatedBadgeColorLight: colors.indigo[900],
+    sidebarUpdatedBadgeColorDark: colors.indigo[100],
 
+    sidebarNewBadgeBackgroundLight: colors.violet[100],
+    sidebarNewBadgeBackgroundDark: colors.violet[900],
+    sidebarNewBadgeColorLight: colors.violet[900],
+    sidebarNewBadgeColorDark: colors.violet[100],
+
+    inactiveLinkTextColorLight: "",
+    inactiveLinkTextColorDark: "",
     inactiveHoverBorderBottomLinkColorDark: "#26292b",
     inactiveHoverBorderBottomLinkColorLight: "#eceef0",
 
+    activeLinkTextColorLight: "",
+    activeLinkTextColorDark: "",
     activeBorderBottomLinkColorLight: "#eceef0",
     activeBorderBottomLinkColorDark: "#eceef0",
     activeHoverBorderBottomLinkColorDark: "#26292b",
@@ -67,6 +61,6 @@ export const theme = extendTheme({
   },
   config: {
     // Changing initialColorMode to 'dark'
-    initialColorMode: "dark",
+    initialColorMode: "light",
   },
 });
