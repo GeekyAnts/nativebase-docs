@@ -34,6 +34,7 @@ function Layout({
   tocArray,
   sidebar,
   versionList,
+  frontMatter,
 }: any) {
   // console.log("Sidebar", sidebar);
   const { activeVersion, setActiveVersion } = useContext(AppContext);
@@ -62,7 +63,11 @@ function Layout({
   return (
     <>
       <Head>
-        <title>Layouts Example</title>
+        <title>{`${
+          frontMatter && frontMatter.title
+            ? frontMatter.title + " | NativeBase"
+            : "NativeBase"
+        }`}</title>
       </Head>
       <Box h="100vh">
         <Navbar />

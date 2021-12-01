@@ -1,0 +1,103 @@
+---
+id: install-expo
+title: Install in Expo project
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { TileLink } from '../../src/components';
+
+Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
+
+### Create a new expo project
+
+```bash
+npm install --global expo-cli
+expo init my-project
+cd my-project/
+```
+
+[Refer this link](https://docs.expo.io/) for additional information on Expo and setting up an Expo starter app.
+
+### Install dependencies
+
+  <Tabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+  <TabItem value="yarn">
+
+```bash
+yarn add native-base styled-components styled-system
+```
+
+  </TabItem>
+
+  <TabItem value="npm">
+
+```bash
+npm install native-base styled-components styled-system
+```
+
+  </TabItem>
+
+  </Tabs>
+
+```bash
+expo install react-native-svg
+```
+
+```bash
+expo install react-native-safe-area-context
+```
+
+### Run the Hello world example
+
+Put the below code in your App.js
+
+```jsx
+import React from 'react';
+import { NativeBaseProvider, Box } from 'native-base';
+
+function App() {
+  return (
+    <NativeBaseProvider>
+      <Box>Hello world</Box>
+    </NativeBaseProvider>
+  );
+}
+```
+
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/minion.gif" alt="minions clapping" />
+</div>
+
+<div className="tailwind">
+  <div className="mt-4 mb-8">
+    <div className="row pl-0 ml-0">
+      <TileLink
+        title="Customize NativeBaseProvider"
+        url="setup-provider"
+        description="NativeBaseProvider provides theme throughout your application"
+        className="bg-blueGray-600 mt-2"
+      />
+      <TileLink
+        title="Theme"
+        url="default-theme"
+        description="Read more about the default NativeBase theme and how to override it"
+        className="bg-blueGray-600  mt-2"
+      />
+    </div>
+    <div className="row mt-2 pl-0 ml-0">
+      <TileLink
+        title="Utility props"
+        url="utility-props"
+        description="Shorthands of commonly used styling props which maps with the provided theme"
+        className="bg-blueGray-600"
+      />
+    </div>
+  </div>
+</div>

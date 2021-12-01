@@ -4,6 +4,6 @@ interface configType {
 }
 
 export const config: configType = {
-  indexSlugFileName: "test", // please remember this file should be present in all you versions
+  indexSlugFileName: "getting-started", // please remember this file should be present in all you versions
   docsEntryPoint: "docs",
 };
