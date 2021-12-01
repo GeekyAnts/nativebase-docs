@@ -30,7 +30,12 @@ const withTM = require("next-transpile-modules")([
 ]);
 
 module.exports = withPlugins(
-  [[withTM], [withMDX], [withExpo, { projectRoot: __dirname }]],
+  [
+    [withBundleAnalyzer],
+    [withTM],
+    [withMDX],
+    [withExpo, { projectRoot: __dirname }],
+  ],
   {
     distDir: "build",
     pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],

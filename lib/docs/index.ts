@@ -15,6 +15,34 @@ export const getTOC = (file: string) => {
   return { toc: "asb" };
 };
 
+const getHeadingLevel = (line: string) => {
+  return {
+    level: line.split("#").filter((val) => val === "").length,
+    id: line
+      .split("#")
+      .filter((val) => val !== "")[0]
+      .trim()
+      .replace(/ /g, "_")
+      .toLowerCase(),
+    title: line
+      .split("#")
+      .filter((val) => val !== "")[0]
+      .trim(),
+  };
+};
+
+export const getTOCArray = (file: string) => {
+  const fileLines = file
+    .split("\n")
+    .filter((line: string) => (line.substring(0, 1) === "#" ? true : false));
+  let toc = {};
+  const headingLevelMap = fileLines.map((line: string) =>
+    getHeadingLevel(line)
+  );
+  // console.log(headingLevelMap);
+  return headingLevelMap;
+};
+
 export const getFilePaths = (
   tree: DirectoryTree.DirectoryTree
   // index: number = 0,
