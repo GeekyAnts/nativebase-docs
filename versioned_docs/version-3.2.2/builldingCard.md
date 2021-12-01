@@ -3,7 +3,7 @@ id: building-card
 title: Card
 ---
 
-A card is a flexible and extensible content container. It comes in caries shapes and sizes and here we'll make few of them.
+A card is a flexible and extensible content container. It comes in various shapes and sizes and here we'll make few of them.
 
 ## Most Commonly used design
 
