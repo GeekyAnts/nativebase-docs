@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import {
   HStack,
@@ -6,23 +7,25 @@ import {
   IconButton,
   SunIcon,
   Menu,
-  Pressable,
-  Box,
   Text,
   ChevronDownIcon,
+  Pressable,
+  useColorMode,
+  HamburgerIcon,
 } from "native-base";
 import NativebaseLogo from "./NativebaseLogo";
 import { isLatestVersion, isLatestVersionSlug } from "../utils";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { useRouter } from "next/router";
-import React from "react";
+import versions from "../../versions.json";
+import { NavigationContainer } from "@react-navigation/native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 
 export default function Navbar(props: any) {
   const { activeVersion, setActiveVersion } = useContext(AppContext);
-  const { versionList } = props;
   const router = useRouter();
-
+  const { colorMode, toggleColorMode } = useColorMode();
   const updateActiveVersion = (version: string, versions: string[]) => {
     const currentPathArray = window?.location.href.split("/");
     let pathArray: string[] = [];
@@ -53,6 +56,7 @@ export default function Navbar(props: any) {
       justifyContent="space-between"
     >
       <HStack space="4" alignItems="center">
+        {/* <IconButton icon={<HamburgerIcon />} /> */}
         <NativebaseLogo />
         <Menu
           offset={-15}
@@ -66,8 +70,8 @@ export default function Navbar(props: any) {
               >
                 <HStack alignItems="center">
                   <Text color="cyan.500">
-                    {isLatestVersionSlug(activeVersion, versionList)
-                      ? versionList[0]
+                    {isLatestVersionSlug(activeVersion)
+                      ? versions[0]
                       : activeVersion}
                   </Text>
                   <ChevronDownIcon size="sm" color="cyan.500" />
@@ -80,24 +84,22 @@ export default function Navbar(props: any) {
             // @ts-ignore
             onPress={() => {
               setActiveVersion("next");
-              updateActiveVersion("next", versionList);
+              updateActiveVersion("next", versions);
             }}
             bg={"next" === activeVersion ? "coolGray.200" : "coolGray.50"}
           >
             next
           </Menu.Item>
-          {versionList.map((version: string, index: any) => {
+          {versions.map((version: string, index: any) => {
             return (
               <Menu.Item
                 key={index}
                 // @ts-ignore
                 onPress={() => {
-                  setActiveVersion(
-                    isLatestVersion(version, versionList) ? "" : version
-                  );
+                  setActiveVersion(isLatestVersion(version) ? "" : version);
                   updateActiveVersion(
-                    isLatestVersion(version, versionList) ? "" : version,
-                    versionList
+                    isLatestVersion(version) ? "" : version,
+                    versions
                   );
                 }}
                 bg={version === activeVersion ? "coolGray.200" : "coolGray.50"}
@@ -165,8 +167,11 @@ export default function Navbar(props: any) {
           </Button>
         </Link>
         <IconButton
+          // @ts-ignore
+          onPress={toggleColorMode}
+          colorScheme="gray"
           _icon={{ size: "5", color: "coolGray.500" }}
-          icon={<AddIcon />}
+          icon={<SunIcon />}
         />
       </HStack>
     </HStack>

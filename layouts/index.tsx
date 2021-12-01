@@ -1,16 +1,32 @@
 import Head from "next/head";
 import { useState, useEffect, useContext } from "react";
-import styles from "./layout.module.css";
-import { MDXRemote } from "next-mdx-remote";
-import Link from "next/link";
-import { Box, HStack, Menu, Pressable, ScrollView } from "native-base";
+import {
+  Box,
+  HStack,
+  Menu,
+  Pressable,
+  ScrollView,
+  Hidden,
+  useDisclose,
+  Fab,
+  Icon,
+  InfoIcon,
+  SunIcon,
+  Actionsheet,
+  Text,
+  Button,
+  IconButton,
+  CloseIcon,
+  HamburgerIcon,
+} from "native-base";
 import router, { Router, useRouter } from "next/router";
 import path from "path";
 import Sidebar from "../src/new-components/Sidebar";
 import Navbar from "../src/new-components/Navbar";
 import { AppContext } from "../src/AppContext";
 import MainContent from "../src/new-components/MainContent";
-import React from 'react'
+import React from "react";
+import MobileSidebar from "../src/new-components/MobileSidebar";
 
 function Layout({
   children: content,
@@ -23,190 +39,6 @@ function Layout({
   const { activeVersion, setActiveVersion } = useContext(AppContext);
   const router = useRouter();
 
-  const sidebarArray = [
-    {
-      type: "heading",
-      title: "Overview",
-      pages: [
-        {
-          type: "page",
-          id: "test",
-          title: "Introduction",
-          path: "/3.2.2/test",
-          status: "deprecated",
-        },
-        {
-          type: "page",
-          id: "test1",
-          title: "Getting Started",
-          path: "/3.2.2/test1",
-          status: "coming soon",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Styling",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Animation",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Accessibility",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Server Side Rendering",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Releases",
-          path: "/3.2.2/test2",
-        },
-      ],
-    },
-    {
-      type: "heading",
-      title: "Components",
-      pages: [
-        {
-          type: "page",
-          id: "test",
-          title: "Accordion",
-          path: "/3.2.2/test",
-        },
-        {
-          type: "page",
-          id: "test1",
-          title: "Alert Dialog",
-          path: "/3.2.2/test1",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Aspect Ratio",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test",
-          title: "Avatar",
-          path: "/3.2.2/test",
-        },
-        {
-          type: "page",
-          id: "test1",
-          title: "Carousel",
-          path: "/3.2.2/test1",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Checkbox",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test",
-          title: "Collapsible",
-          path: "/3.2.2/test",
-        },
-        {
-          type: "page",
-          id: "test1",
-          title: "Context menu",
-          path: "/3.2.2/test1",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Dialog",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test",
-          title: "DropdownMenu",
-          path: "/3.2.2/test",
-        },
-        {
-          type: "page",
-          id: "test1",
-          title: "Hover card",
-          path: "/3.2.2/test1",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Hover menu",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test1",
-          title: "Label",
-          path: "/3.2.2/test1",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Menu bar",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test",
-          title: "Popover",
-          path: "/3.2.2/test",
-        },
-        {
-          type: "page",
-          id: "test1",
-          title: "Progress",
-          path: "/3.2.2/test1",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Radiogroup",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Select Area",
-          path: "/3.2.2/test2",
-        },
-        {
-          type: "page",
-          id: "test",
-          title: "Select",
-          path: "/3.2.2/test",
-        },
-        {
-          type: "page",
-          id: "test1",
-          title: "Separator",
-          path: "/3.2.2/test1",
-        },
-        {
-          type: "page",
-          id: "test2",
-          title: "Slider",
-          path: "/3.2.2/test2",
-        },
-      ],
-    },
-  ];
   useEffect(() => {
     const currentPathArray = window?.location.href.split("/");
     // console.log(currentPathArray);
@@ -226,17 +58,25 @@ function Layout({
     // console.log("actVersion", actVersion);
     setActiveVersion(actVersion);
   }, []);
-
+  const { isOpen, onOpen, onClose } = useDisclose();
   return (
     <>
       <Head>
         <title>Layouts Example</title>
       </Head>
       <Box h="100vh">
-        <Navbar versionList={versionList} />
+        <Navbar />
         <HStack flex="1">
-          <Sidebar sidebar={sidebar} versionList={versionList} />
+          {/* leftsidebar only show on big devices */}
+          <Box display={{ base: "none", lg: "flex" }}>
+            <Sidebar sidebar={sidebar} />
+          </Box>
+
           <MainContent content={content} />
+          {/* fab se actionsheet khul k daalskte h sidebar */}
+          <Box display={{ base: "flex", lg: "none" }}>
+            <MobileSidebar sidebar={sidebar} />
+          </Box>
         </HStack>
       </Box>
     </>

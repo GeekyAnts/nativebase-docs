@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
@@ -9,19 +10,52 @@ import {
   ScrollView,
   Text,
   Badge,
+  Hidden,
+  Actionsheet,
+  Fab,
+  HamburgerIcon,
+  IconButton,
+  CloseIcon,
+  useDisclose,
 } from "native-base";
 import { useRouter } from "next/router";
-import React from "react";
 import { isLatestVersionSlug } from "../utils";
-export default function Sidebar(props: any) {
+export default function MobileSidebar(props: any) {
   const { sidebar } = props;
+  const { isOpen, onOpen, onClose } = useDisclose();
 
   return (
-    <ScrollView flexShrink="0">
-      <Box py="5" w="64" borderRightWidth="1" borderColor="gray.100">
-        <SidebarItem sidebarItems={sidebar} level={0} />
-      </Box>
-    </ScrollView>
+    <Hidden from="lg">
+      <>
+        <Fab
+          borderRadius="full"
+          placement="bottom-right"
+          icon={<HamburgerIcon size="5" />}
+          p="2"
+          rounded="md"
+          px="4"
+          bottom="8"
+          right="8"
+          // @ts-ignore
+          onPress={onOpen}
+        />
+        <Actionsheet isOpen={isOpen} onClose={onClose}>
+          <Actionsheet.Content roundedTop="0" overflow="auto">
+            <SidebarItem sidebarItems={sidebar} level={0} />
+          </Actionsheet.Content>
+          <IconButton
+            variant="solid"
+            position="absolute"
+            bottom="8"
+            px="4"
+            right="8"
+            // @ts-ignore
+            onPress={onClose}
+            icon={<CloseIcon size="xs" />}
+          />
+        </Actionsheet>
+      </>
+    </Hidden>
   );
 }
 
@@ -36,7 +70,7 @@ const SidebarItem = (props: any) => {
 
   return sidebarItems.map((item: any, index: any) => {
     return (
-      <Box key={index}>
+      <Box key={index} w="100%">
         {item.pages === undefined ? (
           <Pressable
             // @ts-ignore
@@ -53,7 +87,11 @@ const SidebarItem = (props: any) => {
             px="6"
             py="2"
           >
-            <HStack space="3" alignItems="center">
+            <HStack
+              space="3"
+              justifyContent="space-between"
+              alignItems="center"
+            >
               <Text
                 color={
                   item?.status === "coming soon"
@@ -66,7 +104,7 @@ const SidebarItem = (props: any) => {
               </Text>
               {item?.status && (
                 <Badge
-                  rounded="full"
+                  rounded="xl"
                   _text={{
                     textTransform: "capitalize",
                     fontWeight: "light",

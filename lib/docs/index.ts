@@ -1,11 +1,19 @@
 import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { serialize } from "next-mdx-remote/serialize";
 import DirectoryTree from "directory-tree";
 let filePaths: string[] = [];
 import versions from "../../versions.json";
 const baseDirPath = process.cwd();
+
+export const getTOC = (file: string) => {
+  const fileLines = file.split("\n");
+  for (let i = 0; i < fileLines.length; i++) {
+    if (fileLines[i]) {
+      console.log("helo");
+    }
+  }
+  console.log(fileLines);
+  return { toc: "asb" };
+};
 
 const getHeadingLevel = (line: string) => {
   return {

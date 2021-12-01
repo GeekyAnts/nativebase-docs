@@ -1,14 +1,15 @@
-export function isLatestVersionSlug(version: string, versionList: string[]) {
+import versions from "../../versions.json";
+export function isLatestVersionSlug(version: string) {
   // if slug has no version or next version in params. eg: localhost/box or localhost/migration/button
-  if (!versionList?.includes(version) && version !== "next") {
+  if (!versions?.includes(version) && version !== "next") {
     return true;
   }
   return false;
 }
 
-export function isLatestVersion(version: string, versionList: string[]) {
+export function isLatestVersion(version: string) {
   // if slug has no version or next version in params. eg: localhost/box or localhost/migration/button
-  if (versionList[0] === version) {
+  if (versions[0] === version) {
     return true;
   }
   return false;
