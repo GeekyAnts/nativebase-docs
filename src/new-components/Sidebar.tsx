@@ -17,7 +17,7 @@ export default function Sidebar(props: any) {
   const { sidebar } = props;
 
   return (
-    <ScrollView flexShrink="0">
+    <ScrollView>
       <Box py="5" w="64" borderRightWidth="1" borderColor="gray.100">
         <SidebarItem sidebarItems={sidebar} level={0} />
       </Box>
