@@ -14,6 +14,7 @@ declare module "native-base" {
 function MyApp({ Component, pageProps }: AppProps) {
   const [activeVersion, setActiveVersion] = useState("/");
   const [activeSidebarItem, setActiveSidebarItem] = useState("");
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   const updateActiveVersion = (version: string) => setActiveVersion(version);
   return (
@@ -23,6 +24,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         setActiveVersion: updateActiveVersion,
         activeSidebarItem,
         setActiveSidebarItem,
+        setIsNavbarOpen,
+        isNavbarOpen,
       }}
     >
       <NativeBaseProvider isSSR theme={theme}>
