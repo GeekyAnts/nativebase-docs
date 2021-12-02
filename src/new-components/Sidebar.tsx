@@ -1,15 +1,7 @@
 import Link from "next/link";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
-import {
-  Box,
-  HStack,
-  Menu,
-  Pressable,
-  ScrollView,
-  Text,
-  Badge,
-} from "native-base";
+import { Box, HStack, Pressable, ScrollView, Text, Badge } from "native-base";
 import { useRouter } from "next/router";
 import React from "react";
 import { isLatestVersionSlug } from "../utils";
@@ -28,8 +20,8 @@ export default function Sidebar(props: any) {
 const SidebarItem = (props: any) => {
   const { sidebarItems, level } = props;
   const router = useRouter();
-  const { activeVersion, setActiveVersion } = useContext(AppContext);
-
+  const { activeVersion, activeSidebarItem, setActiveSidebarItem } =
+    useContext(AppContext);
   function changeRoute(path: string) {
     router.push(path);
   }
@@ -46,10 +38,12 @@ const SidebarItem = (props: any) => {
                   isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
                 }${item.id}`
               );
+              setActiveSidebarItem(item.id);
             }}
             _hover={{
               bg: item?.status === "coming soon" ? "" : "primary.100",
             }}
+            bg={item.id === activeSidebarItem ? "cyan.100" : undefined}
             px="6"
             py="2"
           >

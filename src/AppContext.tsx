@@ -1,5 +1,7 @@
-import {createContext} from 'react';
+import { createContext } from "react";
 export const AppContext = createContext({
-    activeVersion:"next",
-    setActiveVersion:(version:string)=>{},
+  activeSidebarItem: "getting-started",
+  activeVersion: "next",
+  setActiveVersion: (version: string) => {},
+  setActiveSidebarItem: (sidebarItem: string) => {},
 });

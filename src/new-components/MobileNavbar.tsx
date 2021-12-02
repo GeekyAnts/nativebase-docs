@@ -2,56 +2,22 @@ import React, { useState, useEffect, useContext } from "react";
 import Link from "next/link";
 import {
   HStack,
-  Button,
-  AddIcon,
   IconButton,
-  Menu,
   Text,
-  View,
-  ChevronDownIcon,
   Pressable,
-  useColorMode,
-  useDisclose,
-  Fab,
-  Icon,
   VStack,
   Box,
-  SunIcon,
-  CloseIcon,
   HamburgerIcon,
   Slide,
 } from "native-base";
 import NativebaseLogo from "./NativebaseLogo";
-import { isLatestVersion, isLatestVersionSlug } from "../utils";
-import { AppContext } from "../AppContext";
 import { useRouter } from "next/router";
-import versions from "../../versions.json";
 
 export default function MobileNavbar(props: any) {
-  const { activeVersion, setActiveVersion } = useContext(AppContext);
   const [isSlideOpen, setSlideOpen] = useState(false);
   const [isCollapsible, setIsCollapsible] = useState(false);
   const router = useRouter();
-  const { colorMode, toggleColorMode } = useColorMode();
-  const updateActiveVersion = (version: string, versions: string[]) => {
-    const currentPathArray = window?.location.href.split("/");
-    let pathArray: string[] = [];
-    currentPathArray.map((val, ind) => {
-      ind < 3 ? null : pathArray.push(val);
-    });
-    let path = "";
 
-    if ([...versions, "next"].includes(pathArray[0])) {
-      pathArray[0] = version;
-    } else {
-      pathArray = [version, ...pathArray];
-    }
-
-    pathArray.map((val) => {
-      path += "/" + val;
-    });
-    router.push(path);
-  };
   useEffect(() => {
     window.document.body.addEventListener("click", () => {
       setSlideOpen(false);
@@ -74,22 +40,14 @@ export default function MobileNavbar(props: any) {
         placement="left"
         flex="1"
         height="100%"
-        zIndex="2"
         duration={100}
       >
         <Box
-          zIndex="1"
+          flexDirection="column"
           w="300px"
           height="100vh"
-          bg={"black"}
+          bg={"gray.100"}
           overflow="scroll"
-          _web={{
-            // @ts-ignore
-            style: {
-              transitionProperty: "all",
-              transitionTimingFunction: "cubic-bezier(.4,0,.2,1)",
-            },
-          }}
         >
           <VStack px={{ base: "2", sm: "3" }} pt="2" pb="3" space="2">
             <HStack
@@ -99,12 +57,9 @@ export default function MobileNavbar(props: any) {
               borderBottomWidth="1"
               borderBottomColor="gray.200"
               alignItems="center"
-            >
-              gekko
-            </HStack>
+            ></HStack>
             <Box pt="3">
               <Pressable
-                // className="flex justify-between px-3 py-1  rounded-md cursor-pointer text-gray-500 dark:text-gray-400"
                 rounded="md"
                 // @ts-ignore
                 onPress={() => {

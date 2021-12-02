@@ -13,10 +13,17 @@ declare module "native-base" {
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [activeVersion, setActiveVersion] = useState("/");
+  const [activeSidebarItem, setActiveSidebarItem] = useState("");
+
   const updateActiveVersion = (version: string) => setActiveVersion(version);
   return (
     <AppContext.Provider
-      value={{ activeVersion, setActiveVersion: updateActiveVersion }}
+      value={{
+        activeVersion,
+        setActiveVersion: updateActiveVersion,
+        activeSidebarItem,
+        setActiveSidebarItem,
+      }}
     >
       <NativeBaseProvider isSSR theme={theme}>
         <Component {...pageProps} />
