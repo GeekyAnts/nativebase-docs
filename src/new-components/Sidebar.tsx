@@ -10,7 +10,16 @@ export default function Sidebar(props: any) {
 
   return (
     <ScrollView>
-      <Box py="5" w="64" borderRightWidth="1" borderColor="gray.100">
+      <Box
+        py="5"
+        w="64"
+        borderRightWidth="1"
+        _light={{
+          borderColor: "borderColorLight",
+          bg: "sidebarBackgroundLight",
+        }}
+        _dark={{ borderColor: "borderColorDark", bg: "sidebarBackgroundDark" }}
+      >
         <SidebarItem sidebarItems={sidebar} level={0} />
       </Box>
     </ScrollView>
@@ -41,7 +50,24 @@ const SidebarItem = (props: any) => {
               setActiveSidebarItem(item.id);
             }}
             _hover={{
-              bg: item?.status === "coming soon" ? "" : "primary.100",
+              _dark: {
+                bg: "activeSidebarItemHoverBackgroundDark",
+              },
+              _light: {
+                bg: "activeSidebarItemHoverBackgroundLight",
+              },
+            }}
+            _light={{
+              bg:
+                item.id === activeSidebarItem
+                  ? "activeSidebarItemBackgroundLight"
+                  : "transparent",
+            }}
+            _dark={{
+              bg:
+                item.id === activeSidebarItem
+                  ? "activeSidebarItemBackgroundDark"
+                  : "transparent",
             }}
             bg={item.id === activeSidebarItem ? "cyan.100" : undefined}
             px="6"
@@ -49,12 +75,9 @@ const SidebarItem = (props: any) => {
           >
             <HStack space="3" alignItems="center">
               <Text
-                color={
-                  item?.status === "coming soon"
-                    ? "coolGray.400"
-                    : "coolGray.700"
-                }
                 fontSize="13px"
+                _dark={{ color: "sidebarItemTextDark" }}
+                _light={{ color: "sidebarItemTextLight" }}
               >
                 {item.title}
               </Text>
@@ -64,16 +87,9 @@ const SidebarItem = (props: any) => {
                   _text={{
                     textTransform: "capitalize",
                     fontWeight: "light",
-                    color:
-                      item.status === "deprecated"
-                        ? "yellow.700"
-                        : "coolGray.700",
                   }}
                   px="1"
                   py="0.5"
-                  bg={
-                    item.status === "deprecated" ? "yellow.100" : "coolGray.100"
-                  }
                 >
                   {item.status}
                 </Badge>

@@ -55,7 +55,8 @@ export default function MobileNavbar(props: any) {
               px="3"
               py="2"
               borderBottomWidth="1"
-              borderBottomColor="gray.200"
+              _light={{ borderBottomColor: "borderColorLight" }}
+              _dark={{ borderBottomColor: "borderColorDark" }}
               alignItems="center"
             ></HStack>
             <Box pt="3">
