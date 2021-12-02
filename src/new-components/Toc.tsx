@@ -16,25 +16,30 @@ export default function Toc(props: any) {
 const TocItem = (props: any) => {
   const { tocArrayItems } = props;
   return tocArrayItems.map((item: any, index: any) => {
+    if (item.level === 0) {
+      return null;
+    }
     return (
-      <Pressable key={index} my="1" pl={item.level * 20 + "px"}>
-        {({ isHovered }) => {
-          return (
-            <Box
-              _text={{
-                flex: 1,
-                flexWrap: "wrap",
-                fontWeight: "light",
-                fontSize: "13px",
-                color: "gray.500",
-                textDecorationLine: isHovered ? "underline" : "none",
-              }}
-            >
-              {item.title}
-            </Box>
-          );
-        }}
-      </Pressable>
+      <Link href={"#" + item.id} key={index} passHref>
+        <Pressable my="1" pl={item.level - 1 * 20 + "px"}>
+          {({ isHovered }) => {
+            return (
+              <Box
+                _text={{
+                  flex: 1,
+                  flexWrap: "wrap",
+                  fontWeight: "light",
+                  fontSize: "13px",
+                  color: "gray.500",
+                  textDecorationLine: isHovered ? "underline" : "none",
+                }}
+              >
+                {item.title}
+              </Box>
+            );
+          }}
+        </Pressable>
+      </Link>
     );
   });
 };
