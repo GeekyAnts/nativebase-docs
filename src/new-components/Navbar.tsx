@@ -48,7 +48,8 @@ export default function Navbar(props: any) {
     <HStack
       w="100%"
       borderBottomWidth="1"
-      borderColor="gray.100"
+      _light={{ borderColor: "borderColorLight" }}
+      _dark={{ borderColor: "borderColorDark" }}
       px="6"
       h="16"
       justifyContent="space-between"
@@ -116,10 +117,19 @@ export default function Navbar(props: any) {
               fontWeight: "normal",
             }}
             _hover={{
-              // @ts-ignore
-              _text: {
-                borderBottomWidth: "1px",
-                borderBottomColor: "coolGray.200",
+              _light: {
+                // @ts-ignore
+                _text: {
+                  borderBottomWidth: "1px",
+                  borderBottomColor: "inactiveHoverBorderBottomLinkColorLight",
+                },
+              },
+              _dark: {
+                // @ts-ignore
+                _text: {
+                  borderBottomWidth: "1px",
+                  borderBottomColor: "inactiveHoverBorderBottomLinkColorDark",
+                },
               },
             }}
           >
@@ -134,10 +144,19 @@ export default function Navbar(props: any) {
               fontWeight: "normal",
             }}
             _hover={{
-              // @ts-ignore
-              _text: {
-                borderBottomWidth: "1px",
-                borderBottomColor: "coolGray.200",
+              _light: {
+                // @ts-ignore
+                _text: {
+                  borderBottomWidth: "1px",
+                  borderBottomColor: "inactiveHoverBorderBottomLinkColorLight",
+                },
+              },
+              _dark: {
+                // @ts-ignore
+                _text: {
+                  borderBottomWidth: "1px",
+                  borderBottomColor: "inactiveHoverBorderBottomLinkColorDark",
+                },
               },
             }}
           >
@@ -152,10 +171,19 @@ export default function Navbar(props: any) {
               fontWeight: "normal",
             }}
             _hover={{
-              // @ts-ignore
-              _text: {
-                borderBottomWidth: "1px",
-                borderBottomColor: "coolGray.200",
+              _light: {
+                // @ts-ignore
+                _text: {
+                  borderBottomWidth: "1px",
+                  borderBottomColor: "inactiveHoverBorderBottomLinkColorLight",
+                },
+              },
+              _dark: {
+                // @ts-ignore
+                _text: {
+                  borderBottomWidth: "1px",
+                  borderBottomColor: "inactiveHoverBorderBottomLinkColorDark",
+                },
               },
             }}
             rightIcon={<AddIcon size="3" />}

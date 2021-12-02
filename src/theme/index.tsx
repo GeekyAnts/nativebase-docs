@@ -10,8 +10,8 @@ export const theme = extendTheme({
 
     sidebarBackgroundLight: "#fff",
     sidebarBackgroundDark: "#151718",
-    sidebarItemDark: "#ecedee",
-    sidebarItemLight: "#11181c",
+    sidebarItemTextDark: "#ecedee",
+    sidebarItemTextLight: "#11181c",
 
     activeSidebarItemBackgroundLight: colors.cyan[100],
     activeSidebarItemBackgroundDark: colors.cyan[700],
@@ -41,23 +41,17 @@ export const theme = extendTheme({
     sidebarNewBadgeColorLight: colors.violet[900],
     sidebarNewBadgeColorDark: colors.violet[100],
 
-    inactiveLinkTextColorLight: "",
-    inactiveLinkTextColorDark: "",
+    inactiveLinkTextColorLight: "#687076",
+    inactiveLinkTextColorDark: "#9ba1a6",
     inactiveHoverBorderBottomLinkColorDark: "#26292b",
     inactiveHoverBorderBottomLinkColorLight: "#eceef0",
 
-    activeLinkTextColorLight: "",
-    activeLinkTextColorDark: "",
+    activeLinkTextColorLight: "#11181c",
+    activeLinkTextColorDark: "#ecedee",
     activeBorderBottomLinkColorLight: "#eceef0",
     activeBorderBottomLinkColorDark: "#eceef0",
     activeHoverBorderBottomLinkColorDark: "#26292b",
     activeHoverBorderBottomLinkColorLight: "#eceef0",
-
-    activeLinkColorDark: "",
-    activeLinkColorLight: "",
-
-    inactiveLinkColorDark: "",
-    inactiveLinkColorLight: "",
   },
   config: {
     // Changing initialColorMode to 'dark'
