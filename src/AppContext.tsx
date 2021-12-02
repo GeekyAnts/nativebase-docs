@@ -4,4 +4,6 @@ export const AppContext = createContext({
   activeVersion: "next",
   setActiveVersion: (version: string) => {},
   setActiveSidebarItem: (sidebarItem: string) => {},
+  isNavbarOpen: false,
+  setIsNavbarOpen: (isNavbarOpen: boolean) => {},
 });
