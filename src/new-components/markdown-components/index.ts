@@ -1,0 +1,12 @@
+export { Img } from "./Img";
+export { Span } from "./Span";
+export { PText } from "./PText";
+export { Li } from "./Li";
+export { Heading1 } from "./Heading1";
+export { Heading2 } from "./Heading2";
+export { Heading3 } from "./Heading3";
+export { Heading4 } from "./Heading4";
+export { Heading5 } from "./Heading5";
+export { Anchor } from "./Anchor";
+export { Code } from "./Code";
+export { CodeBlock } from "./CodeBlock";
