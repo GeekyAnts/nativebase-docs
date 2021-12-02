@@ -1,0 +1,225 @@
+---
+id: interaction-styles
+title: Pseudo props
+---
+
+import {
+  Box,
+  NativeBaseProvider,
+  HStack,
+  VStack,
+  Text,
+  Pressable,
+  Image,
+} from 'native-base';
+
+NativeBase provides a declarative way to add interaction or platform specific props.
+
+## Hover
+
+Using `_hover` pseudo prop, we can customize the style of Pressable component on hover.
+
+<NativeBaseProvider>
+  <Box flex={1} mb={16}>
+    <Pressable
+      _hover={{ bg: 'primary.400' }}
+      bg="primary.500"
+      py={2}
+      px={3}
+      rounded="md"
+      alignSelf="center"
+    >
+      <Text textTransform="uppercase" fontWeight="bold" color="white">
+        Hover over me
+      </Text>
+    </Pressable>
+  </Box>
+</NativeBaseProvider>
+
+```jsx title="Hover example"
+<Pressable
+  _hover={{ bg: 'primary.400' }}
+  bg="primary.500"
+  py={2}
+  px={3}
+  rounded="md"
+  alignSelf="center"
+>
+  <Text textTransform="uppercase" fontWeight="bold" color="white">
+    Hover me
+  </Text>
+</Pressable>
+```
+
+## Pressed
+
+Using `_pressed` pseudo prop, we can customize the style of Pressable component on pressed.
+
+<NativeBaseProvider>
+  <Box flex={1} mb={16}>
+    <Pressable
+      _pressed={{ bg: 'primary.700' }}
+      bg="primary.500"
+      py={2}
+      px={3}
+      alignSelf="center"
+      rounded="md"
+    >
+      <Text textTransform="uppercase" fontWeight="bold" color="white">
+        Press me
+      </Text>
+    </Pressable>
+  </Box>
+</NativeBaseProvider>
+
+```jsx title="Pressed example"
+<Pressable
+  _pressed={{ bg: 'primary.700' }}
+  bg="primary.500"
+  py={2}
+  rounded="md"
+  px={3}
+  alignSelf="center"
+>
+  <Text textTransform="uppercase" fontWeight="bold" color="white">
+    Hover over me
+  </Text>
+</Pressable>
+```
+
+## Focus
+
+Using `_focus` pseudo prop, we can customize the style of Pressable component on focus.
+
+<NativeBaseProvider>
+  <Box flex={1} mb={16}>
+    <Pressable
+      _focus={{ bg: 'secondary.500' }}
+      bg="primary.500"
+      rounded="md"
+      py={2}
+      px={3}
+      alignSelf="center"
+    >
+      <Text textTransform="uppercase" fontWeight="bold" color="white">
+        Try focusing me
+      </Text>
+    </Pressable>
+  </Box>
+</NativeBaseProvider>
+
+```jsx title="Focus example"
+<Pressable
+  _focus={{ bg: 'secondary.500' }}
+  bg="primary.500"
+  rounded="md"
+  py={2}
+  px={3}
+  alignSelf="center"
+>
+  <Text textTransform="uppercase" fontWeight="bold" color="white">
+    Hover over me
+  </Text>
+</Pressable>
+```
+
+## Platform specific styling
+
+Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or behaviour of NativeBase components across platforms.
+
+<NativeBaseProvider>
+  <HStack space={4} justifyContent="center" alignItems="center" mb={8}>
+    <VStack alignItems="center" space={2}>
+      <Box
+        _web={{ bg: 'cyan.500' }}
+        bg="cyan.500"
+        rounded="md"
+        py={2}
+        px={3}
+        alignSelf="center"
+      >
+        <Text textTransform="uppercase" fontWeight="bold" color="white">
+          Primary
+        </Text>
+      </Box>
+      <Text color="white">Web</Text>
+    </VStack>
+    <VStack alignItems="center" space={2}>
+      <Box
+        _android={{ bg: 'fuchsia.500' }}
+        bg="fuchsia.500"
+        rounded="md"
+        py={2}
+        px={3}
+        alignSelf="center"
+      >
+        <Text textTransform="uppercase" fontWeight="bold" color="white">
+          Primary
+        </Text>
+      </Box>
+      <Text color="white">Android</Text>
+    </VStack>
+    <VStack alignItems="center" space={2}>
+      <Box
+        _ios={{ bg: 'blue.500' }}
+        bg="blue.500"
+        rounded="md"
+        py={2}
+        px={3}
+        alignSelf="center"
+      >
+        <Text textTransform="uppercase" fontWeight="bold" color="white">
+          Primary
+        </Text>
+      </Box>
+      <Text color="white">iOS</Text>
+    </VStack>
+  </HStack>
+</NativeBaseProvider>
+
+```jsx title="Platform specific example"
+<HStack space={4} justifyContent="center" alignItems="center">
+  <VStack alignItems="center" space={2}>
+    <Box
+      _web={{ bg: 'cyan.500' }}
+      rounded="md"
+      py={2}
+      px={3}
+      alignSelf="center"
+    >
+      <Text textTransform="uppercase" fontWeight="bold" color="white">
+        Primary
+      </Text>
+    </Box>
+    <Text color="white">Web</Text>
+  </VStack>
+  <VStack alignItems="center" space={2}>
+    <Box
+      _android={{ bg: 'fuchsia.500' }}
+      rounded="md"
+      py={2}
+      px={3}
+      alignSelf="center"
+    >
+      <Text textTransform="uppercase" fontWeight="bold" color="white">
+        Primary
+      </Text>
+    </Box>
+    <Text color="white">Android</Text>
+  </VStack>
+  <VStack alignItems="center" space={2}>
+    <Box
+      _ios={{ bg: 'blue.500' }}
+      rounded="md"
+      py={2}
+      px={3}
+      alignSelf="center"
+    >
+      <Text textTransform="uppercase" fontWeight="bold" color="white">
+        Primary
+      </Text>
+    </Box>
+    <Text color="white">iOS</Text>
+  </VStack>
+</HStack>
+```
