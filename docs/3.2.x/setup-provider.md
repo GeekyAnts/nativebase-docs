@@ -24,7 +24,7 @@ export default function App() {
 }
 ```
 
-## **Add custom theme (Optional)**
+## Add custom theme (Optional)
 
 If you need to customize the default theme to match your design requirements, you can extend the `theme` from `native-base`.
 

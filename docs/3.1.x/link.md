@@ -7,7 +7,7 @@ import { ComponentTheme } from '../../src/components';
 
 `Links` are accessible elements used primarily for navigation. This component is styled to resemble a hyperlink.
 
-## **Import**
+## Import
 
 ```jsx
 import { Link } from 'native-base';

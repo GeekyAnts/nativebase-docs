@@ -7,7 +7,7 @@ import { ComponentTheme } from '../../src/components';
 
 `Divider` is used to visually separate content in a list or group.
 
-## **Import**
+## Import
 
 ```jsx
 import { Divider } from 'native-base';

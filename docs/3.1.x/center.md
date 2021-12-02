@@ -5,7 +5,7 @@ title: Center
 
 `Center` is a layout component that centers its child within itself.
 
-## **Import**
+## Import
 
 ```jsx
 import { Center, Square, Circle } from 'native-base';
