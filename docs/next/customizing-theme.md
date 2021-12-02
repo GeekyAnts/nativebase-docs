@@ -1,6 +1,6 @@
 ---
-id: customizingTheme
-title: Customising Theme
+id: customizing-theme
+title: Customizing Theme
 ---
 
 import { NativeBaseProvider, Box } from 'native-base';
@@ -101,7 +101,7 @@ function App() {
 
   return (
     <NativeBaseProvider theme={theme}>
-      <Box bg="primary.500" p={4} />
+      <Box bg="primary.500" p="4" />
     </NativeBaseProvider>
   );
 }

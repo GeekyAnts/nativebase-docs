@@ -1,5 +1,5 @@
 ---
-id: buildingAppBar
+id: building-app-bar
 title: AppBar
 ---
 

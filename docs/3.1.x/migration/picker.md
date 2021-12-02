@@ -1,3 +1,8 @@
+---
+id: picker
+title: Picker
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

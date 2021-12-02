@@ -1,3 +1,8 @@
+---
+id: radio-button
+title: Radio Button
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -75,10 +80,10 @@ export default function () {
         setValue(nextValue);
       }}
     >
-      <Radio value="one" my={1}>
+      <Radio value="one" my="1">
         One
       </Radio>
-      <Radio value="two" my={1}>
+      <Radio value="two" my="1">
         Two
       </Radio>
     </Radio.Group>

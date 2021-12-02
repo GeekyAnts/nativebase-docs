@@ -1,3 +1,8 @@
+---
+id: icon
+title: Icon
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

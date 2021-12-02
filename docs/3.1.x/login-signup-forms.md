@@ -1,5 +1,5 @@
 ---
-id: loginsignupforms
+id: login-signup-forms
 title: Login/Signup Forms
 ---
 
@@ -69,7 +69,7 @@ export default function App() {
               Login
           </Button>
 
-<HStack justifyContent="center" alignItems='center'>
+<HStack justifyContent="center" alignItem='center'>
           <IconButton
             variant='unstyled'
             startIcon={
@@ -178,7 +178,7 @@ export default function App() {
               SignUp
           </Button>
 
-<HStack justifyContent="center" alignItems='center' >
+<HStack justifyContent="center" alignItem='center' >
           <IconButton
             variant='unstyled'
             startIcon={

@@ -90,11 +90,13 @@ function Layout({
             : "NativeBase"
         }`}</title>
       </Head>
+
       <Box
         h="100vh"
         _light={{ bg: "backgroundLight" }}
         _dark={{ bg: "backgroundDark" }}
       >
+ 
         <Box display={{ base: "flex", lg: "none" }} zIndex="1">
           <MobileNavbar />
         </Box>

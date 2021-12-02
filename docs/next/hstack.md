@@ -1,5 +1,5 @@
 ---
-id: hStack
+id: h-stack
 title: HStack / Row
 ---
 
@@ -13,7 +13,7 @@ import { HStack } from 'native-base';
 
 ## Examples
 
-```ComponentSnackPlayer path=primitives,HStack,basic.tsx
+```ComponentSnackPlayer path=components,primitives,HStack,basic.tsx
 
 ```
 

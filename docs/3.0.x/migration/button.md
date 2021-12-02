@@ -32,7 +32,7 @@ values={[
 ]}>
 <TabItem value="v2">
 
-![Button/Screenshot_2021-01-22_at_12.29.32_PM.png](Button/Screenshot_2021-01-22_at_12.29.32_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_12.29.32_PM.png](/img/Button/Screenshot_2021-01-22_at_12.29.32_PM.png)
 
 ```tsx
 <Button success>
@@ -43,7 +43,7 @@ values={[
 </TabItem>
 <TabItem value="v3">
 
-![Button/Screenshot_2021-01-22_at_12.53.09_PM.png](Button/Screenshot_2021-01-22_at_12.53.09_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_12.53.09_PM.png](/img/Button/Screenshot_2021-01-22_at_12.53.09_PM.png)
 
 ```tsx
 <Button colorScheme="success">Success</Button>
@@ -64,7 +64,7 @@ values={[
 ]}>
 <TabItem value="v2">
 
-![Button/Screenshot_2021-01-22_at_2.37.09_PM.png](Button/Screenshot_2021-01-22_at_2.37.09_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_2.37.09_PM.png](/img/Button/Screenshot_2021-01-22_at_2.37.09_PM.png)
 
 ```tsx
 <Button small primary>
@@ -75,7 +75,7 @@ values={[
 </TabItem>
 <TabItem value="v3">
 
-![Button/Screenshot_2021-01-22_at_2.38.52_PM.png](Button/Screenshot_2021-01-22_at_2.38.52_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_2.38.52_PM.png](/img/Button/Screenshot_2021-01-22_at_2.38.52_PM.png)
 
 ```tsx
 <Button size="sm" colorScheme="default">
@@ -98,7 +98,7 @@ values={[
 ]}>
 <TabItem value="v2">
 
-![Button/Screenshot_2021-01-22_at_1.16.25_PM.png](Button/Screenshot_2021-01-22_at_1.16.25_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_1.16.25_PM.png](/img/Button/Screenshot_2021-01-22_at_1.16.25_PM.png)
 
 ```tsx
 <Button bordered success>
@@ -106,7 +106,7 @@ values={[
 </Button>
 ```
 
-![Button/Screenshot_2021-01-22_at_1.23.42_PM.png](Button/Screenshot_2021-01-22_at_1.23.42_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_1.23.42_PM.png](/img/Button/Screenshot_2021-01-22_at_1.23.42_PM.png)
 
 ```tsx
 <Button transparent success>
@@ -114,7 +114,7 @@ values={[
 </Button>
 ```
 
-![Button/Screenshot_2021-01-22_at_1.17.11_PM.png](Button/Screenshot_2021-01-22_at_1.17.11_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_1.17.11_PM.png](/img/Button/Screenshot_2021-01-22_at_1.17.11_PM.png)
 
 ```tsx
 <Button rounded success>
@@ -125,7 +125,7 @@ values={[
 </TabItem>
 <TabItem value="v3">
 
-![Button/Screenshot_2021-01-22_at_1.15.34_PM.png](Button/Screenshot_2021-01-22_at_1.15.34_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_1.15.34_PM.png](/img/Button/Screenshot_2021-01-22_at_1.15.34_PM.png)
 
 ```tsx
 <Button variant="outline" colorScheme="success">
@@ -133,7 +133,7 @@ values={[
 </Button>
 ```
 
-![Button/Screenshot_2021-01-22_at_1.22.36_PM.png](Button/Screenshot_2021-01-22_at_1.22.36_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_1.22.36_PM.png](/img/Button/Screenshot_2021-01-22_at_1.22.36_PM.png)
 
 ```tsx
 <Button variant="ghost" colorScheme="success">
@@ -141,7 +141,7 @@ values={[
 </Button>
 ```
 
-![Button/Screenshot_2021-01-22_at_1.20.36_PM.png](Button/Screenshot_2021-01-22_at_1.20.36_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_1.20.36_PM.png](/img/Button/Screenshot_2021-01-22_at_1.20.36_PM.png)
 
 ```tsx
 <Button borderRadius="pill" colorScheme="success">
@@ -164,7 +164,7 @@ values={[
 ]}>
 <TabItem value="v2">
 
-![Button/Screenshot_2021-01-22_at_1.32.47_PM.png](Button/Screenshot_2021-01-22_at_1.32.47_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_1.32.47_PM.png](/img/Button/Screenshot_2021-01-22_at_1.32.47_PM.png)
 
 ```tsx
 <Button iconLeft dark>
@@ -176,7 +176,7 @@ values={[
 </TabItem>
 <TabItem value="v3">
 
-![Button/Screenshot_2021-01-22_at_1.38.15_PM.png](Button/Screenshot_2021-01-22_at_1.38.15_PM.png)
+![/img/Button/Screenshot_2021-01-22_at_1.38.15_PM.png](/img/Button/Screenshot_2021-01-22_at_1.38.15_PM.png)
 
 ```tsx
 <Button

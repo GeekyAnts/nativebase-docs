@@ -140,6 +140,60 @@
     },
     {
       "type": "heading",
+      "title": "Forms",
+      "pages": [
+        {
+          "id": "button",
+          "title": "Button"
+        },
+        {
+          "id": "pressable",
+          "title": "Pressable"
+        },
+        {
+          "id": "checkbox",
+          "title": "Checkbox"
+        },
+        {
+          "id": "form-control",
+          "title": "FormControl"
+        },
+        {
+          "id": "icon-button",
+          "title": "IconButton"
+        },
+        {
+          "id": "input",
+          "title": "Input"
+        },
+        {
+          "id": "link",
+          "title": "Link"
+        },
+        {
+          "id": "radio",
+          "title": "Radio"
+        },
+        {
+          "id": "select",
+          "title": "Select"
+        },
+        {
+          "id": "slider",
+          "title": "Slider"
+        },
+        {
+          "id": "switch",
+          "title": "Switch"
+        },
+        {
+          "id": "textarea",
+          "title": "TextArea"
+        }
+      ]
+    },
+    {
+      "type": "heading",
       "title": "Data Display",
       "pages": [
         {
@@ -171,6 +225,46 @@
         {
           "id": "toast",
           "title": "Toast"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Typography",
+      "pages": [
+        {
+          "id": "text",
+          "title": "Text"
+        },
+        {
+          "id": "heading",
+          "title": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Typography",
+      "pages": [
+        {
+          "id": "alert-dialog",
+          "title": "AlertDialog"
+        },
+        {
+          "id": "menu",
+          "title": "Menu"
+        },
+        {
+          "id": "modal",
+          "title": "Modal"
+        },
+        {
+          "id": "popover",
+          "title": "Popover"
+        },
+        {
+          "id": "tooltip",
+          "title": "Tooltip"
         }
       ]
     },
@@ -522,6 +616,7 @@
           "id": "changelog",
           "title": "Utility Props"
         },
+        { "id": "testing", "title": "Testing" },
         {
           "id": "faq",
           "title": "FAQ's"

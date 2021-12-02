@@ -1,5 +1,5 @@
 ---
-id: flatList
+id: flat-list
 title: FlatList
 ---
 
@@ -7,7 +7,7 @@ A component for rendering performant scrollable lists.
 
 ## Example
 
-```ComponentSnackPlayer path=basic,FlatList,Basic.tsx
+```ComponentSnackPlayer path=components,basic,FlatList,Basic.tsx
 
 ```
 

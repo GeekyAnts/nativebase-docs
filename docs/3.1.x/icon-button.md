@@ -1,5 +1,5 @@
 ---
-id: iconButton
+id: icon-button
 title: IconButton
 ---
 

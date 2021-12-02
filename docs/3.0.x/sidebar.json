@@ -140,6 +140,60 @@
     },
     {
       "type": "heading",
+      "title": "Forms",
+      "pages": [
+        {
+          "id": "button",
+          "title": "Button"
+        },
+        {
+          "id": "pressable",
+          "title": "Pressable"
+        },
+        {
+          "id": "checkbox",
+          "title": "Checkbox"
+        },
+        {
+          "id": "form-control",
+          "title": "FormControl"
+        },
+        {
+          "id": "icon-button",
+          "title": "IconButton"
+        },
+        {
+          "id": "input",
+          "title": "Input"
+        },
+        {
+          "id": "link",
+          "title": "Link"
+        },
+        {
+          "id": "radio",
+          "title": "Radio"
+        },
+        {
+          "id": "select",
+          "title": "Select"
+        },
+        {
+          "id": "slider",
+          "title": "Slider"
+        },
+        {
+          "id": "switch",
+          "title": "Switch"
+        },
+        {
+          "id": "textarea",
+          "title": "TextArea"
+        }
+      ]
+    },
+    {
+      "type": "heading",
       "title": "Data Display",
       "pages": [
         {

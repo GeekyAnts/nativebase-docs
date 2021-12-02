@@ -1,5 +1,5 @@
 ---
-id: appDrawer
+id: app-drawer
 title: App drawer
 ---
 

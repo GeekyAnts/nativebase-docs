@@ -13,37 +13,7 @@ import { useColorMode } from 'native-base';
 
 ## Example
 
-```SnackPlayer name=useColorMode
-import React from 'react';
-import {
-  NativeBaseProvider,
-  VStack,
-  useColorMode,
-  Text,
-  Button,
-  Center,
-} from 'native-base';
-
-function UseColorMode() {
-  const { colorMode, toggleColorMode } = useColorMode();
-  return (
-    <Center flex={1} bg={colorMode === 'dark' ? 'black' : 'white'}>
-      <Text fontSize="lg" display="flex">
-        The active color mode is <Text bold>{colorMode}</Text>
-      </Text>
-      <Button m={2} onPress={toggleColorMode}>Toggle</Button>
-    </Center>
-  );
-}
-
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <UseColorMode />
-    </NativeBaseProvider>
-  );
-}
-
+```ComponentSnackPlayer path=hooks,useColorMode,Basic.tsx
 
 ```
 

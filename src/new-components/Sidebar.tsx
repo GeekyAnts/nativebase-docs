@@ -69,6 +69,7 @@ const SidebarItem = (props: any) => {
                   ? "activeSidebarItemBackgroundDark"
                   : "transparent",
             }}
+            bg={item.id === activeSidebarItem ? "cyan.100" : undefined}
             px="6"
             py="2"
           >

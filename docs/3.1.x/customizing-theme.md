@@ -1,6 +1,6 @@
 ---
-id: customizingTheme
-title: Customising Theme
+id: customizing-theme
+title: Customizing Theme
 ---
 
 import { NativeBaseProvider, Box } from 'native-base';

@@ -3,7 +3,7 @@ id: default-theme
 title: Default Theme
 ---
 
-import { ColorsBlock, FontBlocks, SpaceBlocks } from "../../src/components/index";
+import { ColorsBlock, FontBlocks, SpaceBlocks } from "../../src/components";
 
 The theme object is where you define your application's color palette, type scale, font stacks, breakpoints, border radius values, and more.
 
@@ -12,6 +12,8 @@ Theming in NativeBase is based on the **[Styled System Theme Specification](htt
 ## Colors
 
 You can add a `theme.colors` object to provide colors for your project. By default these colors can be referenced by the `color`, `borderColor`, `backgroundColor`, etc.. props.
+You can also add `.alpha:{number}` to add levels of opacity to a colour. The number can also be added in the theme file.
+Ex: `red.300:alpha.30`, You can read more about this in [`opacity section`](default-theme#opacity)
 
 We recommend adding a palette that ranges from `50` to `900`. Tools like **[Smart Swatch](https://smart-swatch.netlify.app/)**, **[Palx](https://palx.jxnblk.com/)** are available to generate these palettes.
 
@@ -30,32 +32,24 @@ To manage Typography options, the theme object supports the following keys:
 ```jsx
 const typography = {
   letterSpacings: {
-    xxs: -1.5,
-    xs: -0.5,
-    sm: 0,
-    md: 0.1,
-    lg: 0.15,
-    xl: 0.25,
-    '2xl': 0.4,
-    '3xl': 0.5,
-    '4xl': 1.25,
-    '5xl': 1.5,
+    xs: '-0.05em',
+    sm: '-0.025em',
+    md: 0,
+    lg: '0.025em',
+    xl: '0.05em',
+    '2xl': '0.1em',
   },
   lineHeights: {
-    none: 1,
-    shorter: 1.25,
-    short: 1.375,
-    base: 1.5,
-    tall: 1.625,
-    taller: '2',
-    3: '12px',
-    4: '16px',
-    5: '20px',
-    6: '24px',
-    7: '28px',
-    8: '32px',
-    9: '36px',
-    10: '40px',
+    '2xs': '1em',
+    xs: '1.125em',
+    sm: '1.25em',
+    md: '1.375em',
+    lg: '1.5em',
+    xl: '1.75em',
+    '2xl': '2em',
+    '3xl': '2.5em',
+    '4xl': '3em',
+    '5xl': '4em',
   },
   fontWeights: {
     hairline: 100,
@@ -67,14 +61,15 @@ const typography = {
     bold: 700,
     extrabold: 800,
     black: 900,
+    extrablack: 950,
   },
   fonts: {
-    heading: '',
-    body: '',
-    mono: '',
+    heading: undefined,
+    body: undefined,
+    mono: undefined,
   },
   fontSizes: {
-    xxs: 10,
+    '2xs': 10,
     xs: 12,
     sm: 14,
     md: 16,
@@ -99,6 +94,30 @@ const typography = {
 The `size` key allows you to customize the global spacing and sizing scale for your project. By default these spacing value can be referenced by the `padding`, `margin`, and `top`, `left`, `right`, `bottom` props.
 
 <SpaceBlocks/>
+
+## Opacity
+
+The `opacity` key is used in opacity style object and to define colors opacity using the red-green-blue-alpha (RGBA) model, RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
+
+```jsx
+const opacity = {
+  0: 0,
+  5: 0.05,
+  10: 0.1,
+  20: 0.2,
+  25: 0.25,
+  30: 0.3,
+  40: 0.4,
+  50: 0.5,
+  60: 0.6,
+  70: 0.7,
+  75: 0.75,
+  80: 0.8,
+  90: 0.9,
+  95: 0.95,
+  100: 1,
+};
+```
 
 ## Shadows
 
@@ -209,4 +228,4 @@ export default {
 };
 ```
 
-Still confused? You can always explore [here](https://github.com/GeekyAnts/nativebase-v3/tree/development/src/theme/base).
+Still confused? You can always explore [here](https://github.com/GeekyAnts/NativeBase/tree/master/src/theme/base).

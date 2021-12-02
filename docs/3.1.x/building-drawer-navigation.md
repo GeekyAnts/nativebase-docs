@@ -1,5 +1,5 @@
 ---
-id: buildingDrawerNavigation
+id: building-drawer-navigation
 title: Drawer Navigation
 ---
 

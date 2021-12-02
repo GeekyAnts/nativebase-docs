@@ -1,9 +1,9 @@
 ---
-id: formControl
+id: form-control
 title: FormControl
 ---
 
-import { ComponentTheme } from '../../src/components';
+import { ComponentTheme } from '../src/components';
 
 `FormControl` provides context such as `isInvalid`, `isDisabled`, and `isRequired` to form elements.
 
@@ -11,13 +11,13 @@ import { ComponentTheme } from '../../src/components';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,FormControl,Usage.tsx
+```ComponentSnackPlayer path=components,composites,FormControl,Usage.tsx
 
 ```
 
 ### Custom Style
 
-```ComponentSnackPlayer path=composites,FormControl,CustomStyle.tsx
+```ComponentSnackPlayer path=components,composites,FormControl,CustomStyle.tsx
 
 ```
 

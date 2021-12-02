@@ -1,5 +1,5 @@
 ---
-id: VStack
+id: v-stack
 title: VStack / Column
 ---
 
@@ -13,7 +13,7 @@ import { VStack } from 'native-base';
 
 ## Usage
 
-```ComponentSnackPlayer path=primitives,VStack,basic.tsx
+```ComponentSnackPlayer path=components,primitives,VStack,basic.tsx
 
 ```
 

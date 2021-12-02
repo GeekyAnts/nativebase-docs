@@ -11,19 +11,19 @@ Slide component provides a declarative API to add sliding transitions.
 
 ### Slide
 
-```ComponentSnackPlayer path=composites,Transitions,Slide.tsx
+```ComponentSnackPlayer path=components,composites,Transitions,Slide.tsx
 
 ```
 
 ### Slide wrapped inside parent
 
-```ComponentSnackPlayer path=composites,Transitions,SlideWrapped.tsx
+```ComponentSnackPlayer path=components,composites,Transitions,SlideWrapped.tsx
 
 ```
 
 ### Slide Composition
 
-```ComponentSnackPlayer path=composites,Transitions,SlideComposition.tsx
+```ComponentSnackPlayer path=components,composites,Transitions,SlideComposition.tsx
 
 ```
 

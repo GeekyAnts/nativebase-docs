@@ -1,27 +1,29 @@
-import React from 'react';
-import Link from '@docusaurus/Link';
+import React from "react";
+import Link from "next/link";
 
 export default function TileLink({
   title,
   description,
-  className = '',
+  className = "",
   url,
   imgSrc,
   imgStyle,
-  titleClassName = 'text-white',
-  descriptionClassName = 'text-gray-100',
-  wide = false
+  titleClassName = "text-white",
+  descriptionClassName = "text-gray-100",
+  wide = false,
 }) {
   return (
     <Link
-      to={url}
+      passHref
+      href={url}
       className={
-        'relative overflow-hidden no-underline col rounded-md pt-6 px-4 shadow-2xl mx-2 mb-2 ' +
+        "relative overflow-hidden no-underline col rounded-md pt-6 px-4 shadow-2xl mx-2 mb-2 " +
         className
       }
     >
-      <div className={'font-bold text-md mb-2 ' + titleClassName}>{title}</div>
-      <p className={' text-sm leading-5 ' + descriptionClassName}>
+      <>
+      <div className={"font-bold text-md mb-2 " + titleClassName}>{title}</div>
+      <p className={" text-sm leading-5 " + descriptionClassName}>
         {description}
       </p>
       <div
@@ -30,6 +32,7 @@ export default function TileLink({
       >
         {imgSrc && <img src={imgSrc}></img>}
       </div>
+      </>
     </Link>
   );
 }

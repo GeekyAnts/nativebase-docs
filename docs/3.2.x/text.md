@@ -11,25 +11,25 @@ import { ComponentTheme } from '../../src/components';
 
 ### ChangingFontSize
 
-```ComponentSnackPlayer path=primitives,Text,ChangingFontSize.tsx
+```ComponentSnackPlayer path=components,primitives,Text,ChangingFontSize.tsx
 
 ```
 
 ### Truncated
 
-```ComponentSnackPlayer path=primitives,Text,Truncated.tsx
+```ComponentSnackPlayer path=components,primitives,Text,Truncated.tsx
 
 ```
 
 ### Nested
 
-```ComponentSnackPlayer path=primitives,Text,Nested.tsx
+```ComponentSnackPlayer path=components,primitives,Text,Nested.tsx
 
 ```
 
 ### Overridden
 
-```ComponentSnackPlayer path=primitives,Text,Overriden.tsx
+```ComponentSnackPlayer path=components,primitives,Text,Overriden.tsx
 
 ```
 

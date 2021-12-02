@@ -3,7 +3,7 @@ id: link
 title: Link
 ---
 
-import { ComponentTheme } from '../../src/components';
+import { ComponentTheme } from '../src/components';
 
 `Links` are accessible elements used primarily for navigation. This component is styled to resemble a hyperlink.
 
@@ -17,31 +17,31 @@ import { Link } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Link,Basic.tsx
+```ComponentSnackPlayer path=components,primitives,Link,Basic.tsx
 
 ```
 
 ### External Link
 
-```ComponentSnackPlayer path=primitives,Link,ExternalLink.tsx
+```ComponentSnackPlayer path=components,primitives,Link,ExternalLink.tsx
 
 ```
 
 ### Link with Underline
 
-```ComponentSnackPlayer path=primitives,Link,UnderlineLink.tsx
+```ComponentSnackPlayer path=components,primitives,Link,UnderlineLink.tsx
 
 ```
 
 ### Link custom onPress
 
-```ComponentSnackPlayer path=primitives,Link,CustomOnPress.tsx
+```ComponentSnackPlayer path=components,primitives,Link,CustomOnPress.tsx
 
 ```
 
 ### Link around containers
 
-```ComponentSnackPlayer path=primitives,Link,CompositeLink.tsx
+```ComponentSnackPlayer path=components,primitives,Link,CompositeLink.tsx
 
 ```
 
@@ -50,14 +50,6 @@ import { Link } from 'native-base';
 ```ComponentPropTable path=primitives,Link,index.tsx
 
 ```
-
-<!--
-Link implements **[Box](box.md)**, so all the Box Props can be passed to it.
-
-| Name       | Type     | Description                               | Default |
-| ---------- | -------- | ----------------------------------------- | ------- |
-| isExternal | boolean  | If true, the link will open in a browser. | -       |
-| onClick    | function | Function called when the link is clicked. | -       | -->
 
 ## Styling
 

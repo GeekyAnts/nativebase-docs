@@ -1,3 +1,8 @@
+---
+id: badge
+title: Badge
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
