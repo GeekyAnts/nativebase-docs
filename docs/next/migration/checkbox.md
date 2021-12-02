@@ -27,7 +27,7 @@ values={[
 ]}>
 <TabItem value="v2">
 
-![Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png](Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png)
+![/img/Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png](/img/Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png)
 
 ```tsx
 <CheckBox checked={true} color="green"/>
@@ -39,7 +39,7 @@ values={[
 </TabItem>
 <TabItem value="v3">
 
-![Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png](Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png)
+![/img/Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png](/img/Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png)
 
 ```tsx
 <Checkbox isChecked colorScheme="green" />

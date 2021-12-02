@@ -1,0 +1,22 @@
+ <svg
+      className="expandSvg h-10 w-10 flex-no-shrink fill-current"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 39 31"
+    >
+      <g id="Group_580" data-name="Group 580" transform="translate(-865 -553)">
+        <path
+          id="Rectangle_245"
+          data-name="Rectangle 245"
+          d="M0,0H23.5A15.5,15.5,0,0,1,39,15.5v0A15.5,15.5,0,0,1,23.5,31H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"
+          transform="translate(865 553)"
+          fill="#10b981"
+        />
+        <path
+          id="Icon_awesome-arrows-alt-h"
+          data-name="Icon awesome-arrows-alt-h"
+          d="M14.65,11.19v1.785H5.2V11.19a.93.93,0,0,0-1.588-.658L.272,13.868a.93.93,0,0,0,0,1.316L3.608,18.52A.93.93,0,0,0,5.2,17.862V16.077H14.65v1.785a.93.93,0,0,0,1.588.658l3.336-3.336a.93.93,0,0,0,0-1.316l-3.336-3.336a.93.93,0,0,0-1.588.658Z"
+          transform="translate(874.577 553.974)"
+          fill="#fff"
+        />
+      </g>
+    </svg>

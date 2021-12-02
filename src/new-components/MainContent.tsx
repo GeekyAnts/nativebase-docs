@@ -11,6 +11,13 @@ export default function MainContent(props: any) {
   const components = {
     ...docComponents,
     h2: Heading1,
+    img: ({ src, alt }: any) => {
+      return (
+        <p>
+          <img alt={alt} src={src} />
+        </p>
+      );
+    },
   };
 
   return (
