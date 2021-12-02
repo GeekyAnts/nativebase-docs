@@ -17,25 +17,25 @@ import { Badge } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Badge,usage.tsx
+```ComponentSnackPlayer path=components,composites,Badge,usage.tsx
 
 ```
 
 ### Color Scheme
 
-```ComponentSnackPlayer path=composites,Badge,color.tsx
+```ComponentSnackPlayer path=components,composites,Badge,color.tsx
 
 ```
 
 ### Variants
 
-```ComponentSnackPlayer path=composites,Badge,variants.tsx
+```ComponentSnackPlayer path=components,composites,Badge,variants.tsx
 
 ```
 
 ### Composition
 
-```ComponentSnackPlayer path=composites,Badge,composition.tsx
+```ComponentSnackPlayer path=components,composites,Badge,composition.tsx
 
 ```
 

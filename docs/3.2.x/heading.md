@@ -17,31 +17,31 @@ import { Heading } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Heading,Basic.tsx
+```ComponentSnackPlayer path=components,primitives,Heading,Basic.tsx
 
 ```
 
 ### Sizes
 
-```ComponentSnackPlayer path=primitives,Heading,Sizes.tsx
+```ComponentSnackPlayer path=components,primitives,Heading,Sizes.tsx
 
 ```
 
 ### Truncate
 
-```ComponentSnackPlayer path=primitives,Heading,Truncate.tsx
+```ComponentSnackPlayer path=components,primitives,Heading,Truncate.tsx
 
 ```
 
 ### Override
 
-```ComponentSnackPlayer path=primitives,Heading,OverridenStyle.tsx
+```ComponentSnackPlayer path=components,primitives,Heading,OverridenStyle.tsx
 
 ```
 
 ### Composition
 
-```ComponentSnackPlayer path=primitives,Heading,Composition.tsx
+```ComponentSnackPlayer path=components,primitives,Heading,Composition.tsx
 
 ```
 

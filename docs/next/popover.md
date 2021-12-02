@@ -1,9 +1,9 @@
 ---
-id: popOver
+id: popover
 title: Popover
 ---
 
-import { ComponentTheme } from '../../src/components';
+import { ComponentTheme } from '../src/components';
 
 `Popover` is a non-modal dialog that floats around a trigger. It's used to display contextual information to the user, and should be paired with a pressable trigger element.
 
@@ -25,23 +25,25 @@ import { Popover } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Popover,Basic.tsx
+```ComponentSnackPlayer path=components,composites,Popover,Basic.tsx
 
 ```
 
 ### initialFocusRef
 
-```ComponentSnackPlayer path=composites,Popover,RefEg.tsx
+```ComponentSnackPlayer path=components,composites,Popover,RefEg.tsx
 
 ```
 
 ### Positions
 
-```ComponentSnackPlayer path=composites,Popover,PopoverPositions.tsx
+```ComponentSnackPlayer path=components,composites,Popover,PopoverPositions.tsx
 
 ```
 
-:::tip Tip
+<br/>
+
+:::tip Development Tip
 You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColor` and `borderWidth` to Popover.Content.
 :::
 

@@ -7,7 +7,7 @@ title: Stack
 
 ## Example
 
-```ComponentSnackPlayer path=primitives,Stack,basic.tsx
+```ComponentSnackPlayer path=components,primitives,Stack,basic.tsx
 
 ```
 

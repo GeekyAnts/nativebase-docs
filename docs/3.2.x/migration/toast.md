@@ -1,3 +1,8 @@
+---
+id: toast
+title: Toast
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

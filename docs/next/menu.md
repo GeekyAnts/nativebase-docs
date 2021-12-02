@@ -3,7 +3,7 @@ id: menu
 title: Menu
 ---
 
-import { ComponentTheme } from '../../src/components';
+import { ComponentTheme } from '../src/components';
 
 A dropdown menu for the common dropdown menu button design pattern.
 
@@ -25,25 +25,25 @@ import { Menu } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Menu,Basic.tsx
+```ComponentSnackPlayer path=components,composites,Menu,Basic.tsx
 
 ```
 
 ### Group
 
-```ComponentSnackPlayer path=composites,Menu,Group.tsx
+```ComponentSnackPlayer path=components,composites,Menu,Group.tsx
 
 ```
 
 ### MenuOptionGroups
 
-```ComponentSnackPlayer path=composites,Menu,MenuOptionsGroup.tsx
+```ComponentSnackPlayer path=components,composites,Menu,MenuOptionsGroup.tsx
 
 ```
 
 ### Menu Placement
 
-```ComponentSnackPlayer path=composites,Menu,MenuPositions.tsx
+```ComponentSnackPlayer path=components,composites,Menu,MenuPositions.tsx
 
 ```
 

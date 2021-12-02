@@ -15,81 +15,20 @@ import { useMediaQuery } from 'native-base';
 
 ### max-height
 
-```SnackPlayer name=useMediaQuery%20Usage(max-height)
-import React from "react";
-import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
+```ComponentSnackPlayer path=hooks,useMediaQuery,max-height.tsx
 
-function UseMediaQueryExample() {
-  const [isSmaller] = useMediaQuery({ maxHeight: 512 });
-  return (
-    <Text>
-      {isSmaller ? "Height smaller than 512" : "Height larger than 512"}
-    </Text>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <UseMediaQueryExample />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ### min-width
 
-```SnackPlayer name=useMediaQuery%20Usage(min-width)
-import React from "react";
-import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
+```ComponentSnackPlayer path=hooks,useMediaQuery,min-width.tsx
 
-function UseMediaQueryExample() {
-  const [isLargerThan512] = useMediaQuery({ minWidth: 512 });
-  return (
-    <Text>
-      {isLargerThan512 ? "Width larger than 512" : "Width smaller than 512"}
-    </Text>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <UseMediaQueryExample />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ### orientation
 
-```SnackPlayer name=useMediaQuery%20Usage(orientation)
-import React from "react";
-import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
+```ComponentSnackPlayer path=hooks,useMediaQuery,orientation.tsx
 
-function UseMediaQueryExample() {
-  const [isLandScape, isPortrait] = useMediaQuery([
-    { orientation: "landscape" },
-    { orientation: "portrait" },
-  ]);
-  return (
-    <>
-      <Text>{`Landscape Mode: ${isLandScape}`}</Text>
-      <Text>{`Portrait Mode: ${isPortrait}`}</Text>
-    </>
-  );
-}
-export default function () {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <UseMediaQueryExample />
-      </Center>
-    </NativeBaseProvider>
-  );
-}
 ```
 
 ## Return value

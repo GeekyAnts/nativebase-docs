@@ -1,5 +1,5 @@
 ---
-id: buildingSwipeList
+id: building-swipe-list
 title: Swipe List
 ---
 

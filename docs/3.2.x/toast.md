@@ -19,13 +19,13 @@ import { useToast } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Toast,Basic.tsx
+```ComponentSnackPlayer path=components,composites,Toast,Basic.tsx
 
 ```
 
 ### Position
 
-```ComponentSnackPlayer path=composites,Toast,ToastPositions.tsx
+```ComponentSnackPlayer path=components,composites,Toast,ToastPositions.tsx
 
 ```
 
@@ -33,7 +33,7 @@ import { useToast } from 'native-base';
 
 Display a custom component instead of the default Toast UI.
 
-```ComponentSnackPlayer path=composites,Toast,CustomComponent.tsx
+```ComponentSnackPlayer path=components,composites,Toast,CustomComponent.tsx
 
 ```
 
@@ -41,7 +41,7 @@ Display a custom component instead of the default Toast UI.
 
 Toasts can be closed imperatively, individually (via the close instance method) or all together (via the closeAll instance method).
 
-```ComponentSnackPlayer path=composites,Toast,CloseToast.tsx
+```ComponentSnackPlayer path=components,composites,Toast,CloseToast.tsx
 
 ```
 
@@ -50,7 +50,7 @@ Toasts can be closed imperatively, individually (via the close instance method) 
 You can use status to change the color of your toasts.
 `Toast` uses the same variants as the [Alert](alert.md) component.
 
-```ComponentSnackPlayer path=composites,Toast,ToastStatus.tsx
+```ComponentSnackPlayer path=components,composites,Toast,ToastStatus.tsx
 
 ```
 
@@ -58,7 +58,15 @@ You can use status to change the color of your toasts.
 
 In some cases you might need to prevent duplicate of specific toasts. To achieve you need to pass an id and use the toast.isActive method to determine when to call toast.show(...).
 
-```ComponentSnackPlayer path=composites,Toast,PreventDuplicate.tsx
+```ComponentSnackPlayer path=components,composites,Toast,PreventDuplicate.tsx
+
+```
+
+### Standalone Toast
+
+You can use standalone toast where you don't have access to `useToast` hook. e.g. in a different file, out of a React component.
+
+```ComponentSnackPlayer path=components,composites,Toast,StandaloneToast.tsx
 
 ```
 

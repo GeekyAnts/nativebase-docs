@@ -7,19 +7,19 @@ PresenceTransition provides a declarative API to add entry and exit transitions.
 
 ### Fade
 
-```ComponentSnackPlayer path=composites,Transitions,Fade.tsx
+```ComponentSnackPlayer path=components,composites,Transitions,Fade.tsx
 
 ```
 
 ### ScaleFade
 
-```ComponentSnackPlayer path=composites,Transitions,ScaleFade.tsx
+```ComponentSnackPlayer path=components,composites,Transitions,ScaleFade.tsx
 
 ```
 
 ## Props
 
-```ComponentPropTable path=composites,Transitions,PresenceTransition.tsx  showStylingProps=true
+```ComponentPropTable path=components,composites,Transitions,PresenceTransition.tsx  showStylingProps=true
 
 ```
 

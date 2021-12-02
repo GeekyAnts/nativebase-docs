@@ -17,7 +17,15 @@ Calling toggleColorMode anywhere in your app tree toggles the color mode.
 
 `useColorModeValue` is a React hook used to change any value or style based on the color mode. It takes 2 arguments: the value in light mode, and the value in dark mode.
 
-```SnackPlayer name=ColorMode%20Usage
+```ComponentSnackPlayer path=hooks,useColorModeValue,Basic.tsx
+
+```
+
+## \_light and \_dark Pseudo props
+
+All components accepts \_light and \_dark props which applies the passed props on dark and light mode.
+
+```SnackPlayer name=PseudoProps%20Usage
 import React from 'react';
 import {
   Heading,
@@ -27,65 +35,33 @@ import {
   Avatar,
   Center,
   useColorModeValue,
-  NativeBaseProvider
+  Text,
+  NativeBaseProvider,
 } from 'native-base';
 
-function ColorModeExample () {
+function PseudoPropsUsage() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <>
-      <Heading>I'm a Heading</Heading>
-      <Button
-        colorScheme={colorMode === 'light' ? 'blue' : 'red'}
-        onPress={() => {
-          toggleColorMode();
-        }}
-      >
-        Change mode
-      </Button>
-      <HStack space={2} mt={3}>
-        <Avatar
-          name="Ankur"
-          borderWidth={2}
-          source={{
-            uri:
-              'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
-          }}
-        />
-        <Avatar
-          name="Rohit"
-          borderWidth={2}
-          source={{
-            uri:
-              'https://pbs.twimg.com/profile_images/1352844693151731713/HKO7cnlW_400x400.jpg',
-          }}
-        />
-      </HStack>
-      </>
-  );
-}
-
-const LocalWrapper = ({ children }) => {
-  const bg = useColorModeValue('gray.200', 'gray.800')
-  return (
-    <Center
-      flex={1}
-      bg={bg}
-    >
-      {children}
+    <Center flex={1} _dark={{bg:'coolGray.800'}} _light={{bg:'warmGray.50'}}>
+      <Text fontSize="lg" display="flex" mb="20">
+        The active color mode is{' '}
+        <Text bold fontSize="lg">
+          {colorMode}
+        </Text>
+      </Text>
+      <Button onPress={toggleColorMode}>Toggle</Button>
     </Center>
   );
-};
+}
 
 export default function () {
   return (
     <NativeBaseProvider>
-      <LocalWrapper>
-        <ColorModeExample />
-      </LocalWrapper>
+        <PseudoPropsUsage />
     </NativeBaseProvider>
   );
 }
+
 ```
 
 ## Default color mode

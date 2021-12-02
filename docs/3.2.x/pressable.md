@@ -11,7 +11,7 @@ Pressable is a lower level primitive if you need more flexibility than a button 
 
 Pressable accepts most of the utility style system props.
 
-```ComponentSnackPlayer path=primitives,Pressable,Basic.tsx
+```ComponentSnackPlayer path=components,primitives,Pressable,Basic.tsx
 
 ```
 
@@ -19,7 +19,7 @@ Pressable accepts most of the utility style system props.
 
 Pressable accepts a render prop children, which receives isHovered, isFocused and isPressed props.
 
-```ComponentSnackPlayer path=primitives,Pressable,Events.tsx
+```ComponentSnackPlayer path=components,primitives,Pressable,Events.tsx
 
 ```
 

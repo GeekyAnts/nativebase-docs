@@ -1,3 +1,8 @@
+---
+id: button
+title: Button
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -7,7 +12,7 @@ Migrating [`Button`](button.mdx) to v3 will provide a lot more **design**, **siz
 
 Migrating Button components can broadly described in these points:
 
-- No need to wrap you text inside `Text` component anymore.
+- No need to wrap your text inside `Text` component anymore.
 - `isDisabled` prop can be used to disable the button.
 - Icons in Button:
   `leftIcon` and `rightIcon` are the new alternative to iconLeft and iconRight respectively and they accept **tsx.Element**.

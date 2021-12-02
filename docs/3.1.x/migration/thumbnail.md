@@ -1,3 +1,8 @@
+---
+id: thumbnail
+title: Thumbnail
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

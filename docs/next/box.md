@@ -9,7 +9,7 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Box,basic.tsx
+```ComponentSnackPlayer path=components,primitives,Box,basic.tsx
 
 ```
 
@@ -17,7 +17,7 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 ### Composition
 
-```ComponentSnackPlayer path=primitives,Box,composition.tsx
+```ComponentSnackPlayer path=components,primitives,Box,composition.tsx
 
 ```
 
@@ -33,20 +33,21 @@ import { Box, Center, NativeBaseProvider } from "native-base"
 
 export const Example = () => {
   return (
-    <Box
+   <Box
       bg={{
         linearGradient: {
-          colors: ["lightBlue.300", "violet.800"],
+          colors: ['lightBlue.300', 'violet.800'],
           start: [0, 0],
           end: [1, 0],
         },
       }}
-      p={12}
-      rounded="lg"
+      p="12"
+      rounded="xl"
       _text={{
-        fontSize: "md",
-        fontWeight: "bold",
-        color: "white",
+        fontSize: 'md',
+        fontWeight: 'medium',
+        color: 'warmGray.50',
+        textAlign: 'center',
       }}
     >
       This is a Box with Linear Gradient
@@ -63,7 +64,7 @@ const config = {
 export default () => {
   return (
     <NativeBaseProvider config={config}>
-      <Center flex={1}>
+      <Center flex={1} px="3">
         <Example />
       </Center>
     </NativeBaseProvider>
@@ -89,7 +90,7 @@ const Example = () => {
           end: [1, 0],
         },
       }}
-      p={12}
+      p="12"
       rounded="lg"
       _text={{ fontSize: 'md', fontWeight: 'bold', color: 'white' }}
     >
@@ -117,7 +118,7 @@ export default () => {
 
 ### Basic (With Ref)
 
-```ComponentSnackPlayer path=primitives,Box,WithRef.tsx
+```ComponentSnackPlayer path=components,primitives,Box,WithRef.tsx
 
 ```
 

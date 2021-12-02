@@ -1,9 +1,9 @@
 ---
-id: actionSheet
+id: action-sheet
 title: ActionSheet
 ---
 
-import { ComponentTheme } from '../../src/components';
+import { ComponentTheme } from '../src/components';
 
 An Action Sheet is a dialog that displays a set of options. It appears on top of the app's content.
 
@@ -23,25 +23,25 @@ import { Actionsheet } from 'native-base';
 
 ### Usage
 
-```ComponentSnackPlayer path=composites,Actionsheet,Usage.tsx
+```ComponentSnackPlayer path=components,composites,Actionsheet,Usage.tsx
 
 ```
 
 ### Composition
 
-```ComponentSnackPlayer path=composites,Actionsheet,Composition.tsx
+```ComponentSnackPlayer path=components,composites,Actionsheet,Composition.tsx
 
 ```
 
 ### DisableOverlay
 
-```ComponentSnackPlayer path=composites,Actionsheet,DisableOverlay.tsx
+```ComponentSnackPlayer path=components,composites,Actionsheet,DisableOverlay.tsx
 
 ```
 
 ### Icons
 
-```ComponentSnackPlayer path=composites,Actionsheet,Icon.tsx
+```ComponentSnackPlayer path=components,composites,Actionsheet,Icon.tsx
 
 ```
 

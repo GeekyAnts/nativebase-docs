@@ -1,5 +1,5 @@
 ---
-id: flatList
+id: flat-list
 title: FlatList
 ---
 

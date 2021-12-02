@@ -21,7 +21,7 @@ import { Center, Square, Circle } from 'native-base';
 
 Put any child element inside it, give it any width or/and height. It'll ensure the child is centered.
 
-```ComponentSnackPlayer path=composites,Center,Basic.tsx
+```ComponentSnackPlayer path=components,composites,Center,Basic.tsx
 
 ```
 
@@ -29,7 +29,7 @@ Put any child element inside it, give it any width or/and height. It'll ensure t
 
 Center can be used to nicely position icons in the center and add frames around them.
 
-```ComponentSnackPlayer path=composites,Center,WithIcons.tsx
+```ComponentSnackPlayer path=components,composites,Center,WithIcons.tsx
 
 ```
 
@@ -37,7 +37,7 @@ Center can be used to nicely position icons in the center and add frames around 
 
 Square and Circle automatically centers their children.
 
-```ComponentSnackPlayer path=composites,Center,SquareCircle.tsx
+```ComponentSnackPlayer path=components,composites,Center,SquareCircle.tsx
 
 ```
 

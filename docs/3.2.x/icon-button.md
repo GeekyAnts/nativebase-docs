@@ -1,5 +1,5 @@
 ---
-id: iconButton
+id: icon-button
 title: IconButton
 ---
 
@@ -11,19 +11,19 @@ import { ComponentTheme } from '../../src/components';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,IconButton,Basic.tsx
+```ComponentSnackPlayer path=components,composites,IconButton,Basic.tsx
 
 ```
 
 ### Sizes
 
-```ComponentSnackPlayer path=composites,IconButton,Basic.tsx
+```ComponentSnackPlayer path=components,composites,IconButton,Sizes.tsx
 
 ```
 
 ### Variants
 
-```ComponentSnackPlayer path=composites,IconButton,Basic.tsx
+```ComponentSnackPlayer path=components,composites,IconButton,Variant.tsx
 
 ```
 
@@ -35,7 +35,7 @@ import { ComponentTheme } from '../../src/components';
 
 ## Styling
 
-<ComponentTheme name="iconButton" />
+<ComponentTheme   name="iconButton" fileName="icon-button" />
 
 ## Accessibility
 

@@ -1,3 +1,8 @@
+---
+id: action-sheet
+title: ActionSheet
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

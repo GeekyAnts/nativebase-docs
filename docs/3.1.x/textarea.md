@@ -1,5 +1,5 @@
 ---
-id: textArea
+id: textarea
 title: TextArea
 ---
 

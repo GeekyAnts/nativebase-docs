@@ -23,31 +23,31 @@ import { Avatar } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Avatar,usage.tsx
+```ComponentSnackPlayer path=components,composites,Avatar,usage.tsx
 
 ```
 
 ### Sizes
 
-```ComponentSnackPlayer path=composites,Avatar,size.tsx
+```ComponentSnackPlayer path=components,composites,Avatar,size.tsx
 
 ```
 
 ### Fallbacks
 
-```ComponentSnackPlayer path=composites,Avatar,Fallback.tsx
+```ComponentSnackPlayer path=components,composites,Avatar,Fallback.tsx
 
 ```
 
 ### Avatar Badge
 
-```ComponentSnackPlayer path=composites,Avatar,AvatarBadge.tsx
+```ComponentSnackPlayer path=components,composites,Avatar,AvatarBadge.tsx
 
 ```
 
 ### Avatar Group
 
-```ComponentSnackPlayer path=composites,Avatar,AvatarGroup.tsx
+```ComponentSnackPlayer path=components,composites,Avatar,AvatarGroup.tsx
 
 ```
 

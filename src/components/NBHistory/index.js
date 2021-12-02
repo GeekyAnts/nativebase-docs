@@ -1,8 +1,7 @@
 import React from "react";
-import useThemeContext from "@theme/hooks/useThemeContext";
 
 export default function NBHistory() {
-  const { isDarkTheme } = useThemeContext();
+  const isDarkTheme = false;
   const textClassName = isDarkTheme ? "" : "text-white";
   const lineColor = isDarkTheme ? "border-blueGray-100" : "border-blueGray-200";
   const bgColor = isDarkTheme ? "bg-blueGray-600" : "bg-blueGray-500";
@@ -66,8 +65,8 @@ export default function NBHistory() {
             We wanted to make NativeBase the go-to component library for anyone
             building with React Native and Web (in alpha). This version is
             accessible, highly customizable and consistent across android, iOS &
-            web. That&apos;s not all though, read on for the full benefits of using
-            v3.
+            web. That&apos;s not all though, read on for the full benefits of
+            using v3.
           </span>
         </div>
       </div>

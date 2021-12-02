@@ -1,6 +1,6 @@
 ---
-id: customizingFonts
-title: Customising Fonts
+id: customizing-fonts
+title: Customizing Fonts
 ---
 
 Follow 3 simple steps to add a custom font family.

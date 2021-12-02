@@ -55,7 +55,7 @@ export const spacing = {
 We can use the above tokens in our code instead of using absolute values.
 
 ```jsx title="using the above tokens in Box component"
-<Box mt={4} bg="primary.500"></Box>
+<Box mt="4" bg="primary.500"></Box>
 ```
 
 The above Box will be translated to
@@ -66,4 +66,4 @@ The above Box will be translated to
 
 With NativeBase, you can create your own design system. NativeBase follows [styled-system's specification](https://styled-system.com/theme-specification/) to construct design system.
 
-Checkout the **[default NativeBase theme](default-theme)** and how to customize it **[here](customizingTheme)**.
+Checkout the **[default NativeBase theme](default-theme)** and how to customize it **[here](customizingTheme.md)**.

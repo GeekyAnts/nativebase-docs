@@ -1,5 +1,5 @@
 ---
-id: alertDialog
+id: alert-dialog
 title: AlertDialog
 ---
 
@@ -142,16 +142,19 @@ AlertDialog and its components compose the **[Modal](modal.md)** component, so a
 | ------------------- | --------- | -------------------------------------------------------------- | ------- |
 | leastDestructiveRef | React.Ref | The least destructive action to get focus when dialog is open. | -       |
 
+
 ## Accessibility
 
 Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#alertdialog)
 
 ### Keyboard Interactions
 
-| Name        | Description                                               |
-| ----------- | --------------------------------------------------------- |
-| Space       | Opens/closes the dialog.                                  |
-| Enter       | Opens/closes the dialog.                                  |
-| Tab         | Moves focus to the next focusable element.                |
-| Shift + Tab | Moves focus to the previous focusable element.            |
-| Esc         | Closes the dialog and moves focus to AlertDialog.Trigger. |
+| Name                | Description |
+| --------------------|-------------|
+| Space   | Opens/closes the dialog. |
+| Enter   | Opens/closes the dialog. |
+| Tab     | Moves focus to the next focusable element. |
+| Shift + Tab | Moves focus to the previous focusable element. |
+| Esc     | Closes the dialog and moves focus to AlertDialog.Trigger. | 
+
+

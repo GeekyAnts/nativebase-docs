@@ -27,12 +27,20 @@
           "title": "Utility First"
         },
         {
+          "id": "utility-props-specificity",
+          "title": "Utility Props Specificity"
+        },
+        {
           "id": "design-tokens",
           "title": "Design Tokens"
         },
         {
           "id": "pseudo-props",
-          "title": "Pseudo Props"
+          "title": "Pseudo Props: Overview"
+        },
+        {
+          "id": "pseudo-props-101",
+          "title": "Pseudo Props: Dos & Don'ts"
         },
         {
           "id": "responsive",
@@ -59,6 +67,10 @@
         {
           "id": "safe-area-view-props",
           "title": "SafeAreaView Props"
+        },
+        {
+          "id": "strict-mode",
+          "title": "Strict Mode"
         },
         {
           "id": "accessibility",
@@ -97,6 +109,10 @@
         {
           "id": "theme",
           "title": "Using Theme"
+        },
+        {
+          "id": "typescript",
+          "title": "Typescript"
         }
       ]
     },
@@ -140,6 +156,60 @@
     },
     {
       "type": "heading",
+      "title": "Forms",
+      "pages": [
+        {
+          "id": "button",
+          "title": "Button"
+        },
+        {
+          "id": "pressable",
+          "title": "Pressable"
+        },
+        {
+          "id": "checkbox",
+          "title": "Checkbox"
+        },
+        {
+          "id": "form-control",
+          "title": "FormControl"
+        },
+        {
+          "id": "icon-button",
+          "title": "IconButton"
+        },
+        {
+          "id": "input",
+          "title": "Input"
+        },
+        {
+          "id": "link",
+          "title": "Link"
+        },
+        {
+          "id": "radio",
+          "title": "Radio"
+        },
+        {
+          "id": "select",
+          "title": "Select"
+        },
+        {
+          "id": "slider",
+          "title": "Slider"
+        },
+        {
+          "id": "switch",
+          "title": "Switch"
+        },
+        {
+          "id": "textarea",
+          "title": "TextArea"
+        }
+      ]
+    },
+    {
+      "type": "heading",
       "title": "Data Display",
       "pages": [
         {
@@ -165,12 +235,57 @@
           "title": "Progress"
         },
         {
+          "id": "skeleton",
+          "title": "Skeleton",
+          "status":"new"
+        },
+        {
           "id": "spinner",
           "title": "Spinner"
         },
         {
           "id": "toast",
           "title": "Toast"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Typography",
+      "pages": [
+        {
+          "id": "text",
+          "title": "Text"
+        },
+        {
+          "id": "heading",
+          "title": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Overlay",
+      "pages": [
+        {
+          "id": "alert-dialog",
+          "title": "AlertDialog"
+        },
+        {
+          "id": "menu",
+          "title": "Menu"
+        },
+        {
+          "id": "modal",
+          "title": "Modal"
+        },
+        {
+          "id": "popover",
+          "title": "Popover"
+        },
+        {
+          "id": "tooltip",
+          "title": "Tooltip"
         }
       ]
     },
@@ -198,7 +313,8 @@
         },
         {
           "id": "image",
-          "title": "Image"
+          "title": "Image",
+          "status":"update"
         }
       ]
     },
@@ -227,6 +343,10 @@
         {
           "id": "fab",
           "title": "Fab"
+        },
+        {
+          "id": "hidden",
+          "title": "Hidden"
         }
       ]
     },
@@ -406,8 +526,12 @@
       "title": "Migration",
       "pages": [
         {
-          "id": "guide",
-          "title": "Guide to v3"
+          "id": "v3",
+          "title": "Upgrading to v3"
+        },
+        {
+          "id": "v3xtov32",
+          "title": "Upgrading to 3.2.0 from 3.x"
         },
         {
           "type": "heading",
@@ -522,11 +646,16 @@
           "id": "changelog",
           "title": "Utility Props"
         },
+        { "id": "testing", "title": "Testing" },
         {
           "id": "faq",
           "title": "FAQ's"
         }
       ]
+    },
+    {
+      "id": "more-props",
+      "title": "More Props"
     }
   ]
 }

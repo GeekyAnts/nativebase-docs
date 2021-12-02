@@ -3,7 +3,7 @@ id: alert
 title: Alert
 ---
 
-import { ComponentTheme } from '../../src/components';
+import { ComponentTheme } from '../src/components';
 
 `Alerts` are used to communicate a state that affects a system, feature or page.
 
@@ -13,8 +13,8 @@ NativeBase exports 5 Alert related components:
 
 - `Alert`: The wrapper for alert components.
 - `Alert.Icon`: The visual icon for the alert that changes based on the `status` prop.
-- `Alert.Title`: The title of the alert to be announced by screen readers.
-- `Alert.Description`: The description of the alert to be announced by screen readers.
+  <!-- - `Alert.Title`: The title of the alert to be announced by screen readers. -->
+  <!-- - `Alert.Description`: The description of the alert to be announced by screen readers. -->
 
 ```jsx
 import { Alert } from 'native-base';
@@ -24,31 +24,31 @@ import { Alert } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Alert,usage.tsx
+```ComponentSnackPlayer path=components,composites,Alert,usage.tsx
 
 ```
 
 ### Status
 
-```ComponentSnackPlayer path=composites,Alert,status.tsx
+```ComponentSnackPlayer path=components,composites,Alert,status.tsx
 
 ```
 
 ### Variant
 
-```ComponentSnackPlayer path=composites,Alert,variant.tsx
+```ComponentSnackPlayer path=components,composites,Alert,variant.tsx
 
 ```
 
 ### Composition
 
-```ComponentSnackPlayer path=composites,Alert,composition.tsx
+```ComponentSnackPlayer path=components,composites,Alert,composition.tsx
 
 ```
 
 ### Action
 
-```ComponentSnackPlayer path=composites,Alert,action.tsx
+```ComponentSnackPlayer path=components,composites,Alert,action.tsx
 
 ```
 

@@ -1,19 +1,20 @@
-import React from 'react';
-import TileLink from '../TileLink';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import React from "react";
+import TileLink from "../TileLink";
+import {Box,Heading} from 'native-base';
 
 export default function InstallationTiles() {
-  const { isDarkTheme } = useThemeContext();
-  const bgColor = isDarkTheme ? 'bg-blueGray-700' : 'bg-gray-600';
+  const isDarkTheme = false;
+  const bgColor = isDarkTheme ? "bg-blueGray-700" : "bg-gray-600";
 
   return (
-    <>
+    <Box bg="red.400">
+      <Heading>Rendering from React Component using NativeBase</Heading>
       <div className="row -m-2">
         <TileLink
           title="Install in Expo project"
           url="install-expo"
           description="Follow this guide to install NativeBase in your existing or new Expo project"
-          className={'mt-2 ' + bgColor}
+          className={"mt-2 " + bgColor}
           imgSrc="/img/expo.svg"
           imgStyle={{
             top: 50,
@@ -27,7 +28,7 @@ export default function InstallationTiles() {
           title="Install in React Native project"
           url="install-rn"
           description="Follow this guide to install NativeBase in your existing or new React Native project"
-          className={'mt-2 ' + bgColor}
+          className={"mt-2 " + bgColor}
           imgSrc="/img/react-native.svg"
           imgStyle={{
             bottom: -50,
@@ -43,7 +44,7 @@ export default function InstallationTiles() {
           title="Install in Next.js project"
           url="install-next"
           description="Follow this guide to install NativeBase in your existing or new Next.js project"
-          className={'mt-2 ' + bgColor}
+          className={"mt-2 " + bgColor}
           imgSrc="/img/next.svg"
           imgStyle={{
             bottom: -180,
@@ -57,7 +58,7 @@ export default function InstallationTiles() {
           title="Install in Create React App project"
           url="install-cra"
           description="Follow this guide to install NativeBase in your existing or new React project"
-          className={'mt-2 ' + bgColor}
+          className={"mt-2 " + bgColor}
           imgSrc="/img/cra.svg"
           imgStyle={{
             bottom: -62,
@@ -68,6 +69,6 @@ export default function InstallationTiles() {
           }}
         />
       </div>
-    </>
+    </Box>
   );
 }

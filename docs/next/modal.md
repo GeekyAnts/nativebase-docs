@@ -3,7 +3,7 @@ id: modal
 title: Modal
 ---
 
-import { ComponentTheme } from '../../src/components';
+import { ComponentTheme } from '../src/components';
 
 A Modal is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is **inert**, meaning that users cannot interact with it.
 
@@ -26,7 +26,13 @@ import { Modal } from 'native-base';
 
 ### Basic
 
-```ComponentSnackPlayer path=composites,Modal,Basic.tsx
+```ComponentSnackPlayer path=components,composites,Modal,Basic.tsx
+
+```
+
+### Multiple Modals
+
+```ComponentSnackPlayer path=components,composites,Modal,MultipleModal.tsx
 
 ```
 
@@ -34,31 +40,37 @@ import { Modal } from 'native-base';
 
 You can pass `size` prop to NativeBase Modal , it can take `sm`, `md`, `lg`, `full` that maps to **60%**, **75%**, **90%**, **100%**, or a string or a numerical width of the Modal.
 
-```ComponentSnackPlayer path=composites,Modal,Size.tsx
+```ComponentSnackPlayer path=components,composites,Modal,Size.tsx
 
 ```
 
 ### intialFocusRef and finalFocusRef Example
 
-```ComponentSnackPlayer path=composites,Modal,ModalRefEg.tsx
+```ComponentSnackPlayer path=components,composites,Modal,ModalRefEg.tsx
 
 ```
 
 ### Modal with avoidKeyboard
 
-```ComponentSnackPlayer path=composites,Modal,ModalWithAvoidKeyboard.tsx
+```ComponentSnackPlayer path=components,composites,Modal,ModalWithAvoidKeyboard.tsx
 
 ```
 
 ### Modal Placement
 
-```ComponentSnackPlayer path=composites,Modal,ModalPlacement.tsx
+```ComponentSnackPlayer path=components,composites,Modal,ModalPlacement.tsx
+
+```
+
+### Custom Backdrop Modal
+
+```ComponentSnackPlayer path=components,composites,Modal,CustomBackdrop.tsx
 
 ```
 
 <br/>
 
-:::tip Tip
+:::tip Development Tip
 If you want a specifically aligned Modal, pass `justifyContent` and `alignItems` to Modal.
 :::
 

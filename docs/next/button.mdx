@@ -3,60 +3,66 @@ id: button
 title: Button
 ---
 
-import { ComponentTheme } from '../../src/components';
+import { ComponentTheme } from '../src/components';
 
 The `Button` component is used to trigger an action or event.
 
 ## Import
 
 ```jsx
-import { Button, ButtonGroup } from 'native-base';
+import { Button } from 'native-base';
 ```
 
 - **Button** : The button component with support for custom icons, spinners, etc.
-- **ButtonGroup** : Used to group buttons whose actions are related, with an option to flush them together.
+- **Button.Group** : Used to group buttons whose actions are related, with an option to flush them together.
 
 ## Examples
 
 ### Basic
 
-```ComponentSnackPlayer path=primitives,Button,basic.tsx
+```ComponentSnackPlayer path=components,primitives,Button,basic.tsx
 
 ```
 
 ### Sizes
 
-```ComponentSnackPlayer path=primitives,Button,sizes.tsx
+```ComponentSnackPlayer path=components,primitives,Button,sizes.tsx
 
 ```
 
 ### Variants
 
-```ComponentSnackPlayer path=primitives,Button,variants.tsx
+```ComponentSnackPlayer path=components,primitives,Button,variants.tsx
 
 ```
 
 ### Loading
 
-```ComponentSnackPlayer path=primitives,Button,loading.tsx
+```ComponentSnackPlayer path=components,primitives,Button,loading.tsx
 
 ```
 
 ### Icons
 
-```ComponentSnackPlayer path=primitives,Button,icons.tsx
+```ComponentSnackPlayer path=components,primitives,Button,icons.tsx
 
 ```
 
 ### ButtonGroup
 
-```ComponentSnackPlayer path=primitives,Button,ButtonGroup.tsx
+When you use the ButtonGroup component, it allows you to:
+
+- Set some common properties such as size & colorSchemes of all buttons within it.
+- Add spacing between the buttons.
+- Flush the buttons together by removing the border radius of the its children as needed.
+
+```ComponentSnackPlayer path=components,primitives,ButtonGroup,basic.tsx
 
 ```
 
 ### Basic (With Ref)
 
-```ComponentSnackPlayer path=primitives,Button,WithRef.tsx
+```ComponentSnackPlayer path=components,primitives,Button,WithRef.tsx
 
 ```
 

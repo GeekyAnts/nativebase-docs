@@ -1,8 +1,7 @@
-import React from 'react';
-import { Box, Heading, Link, Text, VStack } from 'native-base';
-import CodeBlock from '@theme/CodeBlock';
-import { REPO_BRANCH, REPO_LINK } from '../../constants';
-const url = REPO_LINK + '/tree/' + REPO_BRANCH;
+import React from "react";
+import { Box, Heading, Link, Text, VStack } from "native-base";
+import { config } from "../../docs.config";
+const url = config.REPO_LINK + "/tree/" + config.REPO_BRANCH;
 
 const extendComponentInstruction = (name) => {
   return `
@@ -36,23 +35,23 @@ export function ComponentTheme({ name, componentName, fileName }) {
     <VStack
       space={4}
       style={{
-        '--ifm-link-hover-decoration': 'none',
+        "--ifm-link-hover-decoration": "none",
       }}
     >
       <Box rounded="md">
         <Text>
-          NativeBase ships with a default theme for each component.{' '}
+          NativeBase ships with a default theme for each component.{" "}
           <Link
-            _text={{ textDecorationLine: 'none' }}
-            href={url + '/' + 'src/theme/components/' + fileName + '.ts'}
+            _text={{ textDecorationLine: "none" }}
+            href={url + "/" + "src/theme/components/" + fileName + ".ts"}
             isExternal
           >
             <Text
               borderBottomWidth="2px"
               _hover={{
-                bg: 'secondary.200',
-                color: 'black',
-                borderColor: 'gray.900',
+                bg: "secondary.200",
+                color: "black",
+                borderColor: "gray.900",
               }}
               borderStyle="dashed"
               rounded="md"
@@ -68,21 +67,21 @@ export function ComponentTheme({ name, componentName, fileName }) {
         We can easily extend the {name} component theme using extendTheme
         function as shown below.
       </Heading>
-      <CodeBlock className="language-jsx">
+      {/* <CodeBlock className="language-jsx">
         {extendComponentInstruction(
           componentName ?? name[0].toUpperCase() + name.slice(1, name.length)
         )}
-      </CodeBlock>
+      </CodeBlock> */}
       <Link
-        _text={{ textDecorationLine: 'none' }}
-        href={'customizing-components'}
+        _text={{ textDecorationLine: "none" }}
+        href={"customizing-components"}
       >
         <Text
           borderBottomWidth="2px"
           _hover={{
-            bg: 'secondary.200',
-            color: 'black',
-            borderColor: 'gray.900',
+            bg: "secondary.200",
+            color: "black",
+            borderColor: "gray.900",
           }}
           borderStyle="dashed"
           py={1}

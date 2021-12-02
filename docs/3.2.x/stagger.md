@@ -7,7 +7,7 @@ Stagger component provides a declarative API to add Staggered Transitions.
 
 ## Example
 
-```ComponentSnackPlayer path=composites,Transitions,Stagger.tsx
+```ComponentSnackPlayer path=components,composites,Transitions,Stagger.tsx
 
 ```
 

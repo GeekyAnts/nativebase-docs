@@ -1,3 +1,8 @@
+---
+id: spinner
+title: Spinner
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -35,7 +40,7 @@ values={[
 <Spinner color="danger.400" />
 <Spinner size="sm" />
 <Spinner color="blue.500" size="lg" />
-<Spinner color="yellow.500" size={50} />
+<Spinner color="yellow.500" size="50" />
 ```
 
 </TabItem>

@@ -27,12 +27,23 @@
           "title": "Utility First"
         },
         {
+          "id": "utility-props-specificity",
+          "title": "Utility Props Specificity",
+          "status":"new"
+        },
+        {
           "id": "design-tokens",
           "title": "Design Tokens"
         },
         {
           "id": "pseudo-props",
-          "title": "Pseudo Props"
+          "title": "Pseudo Props: Overview",
+          "status":"new"
+        },
+        {
+          "id": "pseudo-props-101",
+          "title": "Pseudo Props: Dos & Don'ts",
+          "status":"new"
         },
         {
           "id": "responsive",
@@ -46,11 +57,13 @@
       "pages": [
         {
           "id": "utility-props",
-          "title": "Utility Props"
+          "title": "Utility Props",
+          "status":"new"
         },
         {
           "id": "color-mode",
-          "title": "Color mode (Dark Mode)"
+          "title": "Color mode (Dark Mode)",
+          "status":"new"
         },
         {
           "id": "nativebase-factory",
@@ -59,6 +72,11 @@
         {
           "id": "safe-area-view-props",
           "title": "SafeAreaView Props"
+        },
+        {
+          "id": "strict-mode",
+          "title": "Strict Mode",
+          "status":"new"
         },
         {
           "id": "accessibility",
@@ -72,7 +90,8 @@
       "pages": [
         {
           "id": "default-theme",
-          "title": "Default Theme"
+          "title": "Default Theme",
+          "status":"new"
         },
         {
           "id": "customizing-theme",
@@ -97,6 +116,10 @@
         {
           "id": "theme",
           "title": "Using Theme"
+        },
+        {
+          "id": "typescript",
+          "title": "Typescript"
         }
       ]
     },
@@ -140,6 +163,66 @@
     },
     {
       "type": "heading",
+      "title": "Forms",
+      "pages": [
+        {
+          "id": "button",
+          "title": "Button",
+          "status":"update"
+        },
+        {
+          "id": "pressable",
+          "title": "Pressable",
+          "status":"update"
+        },
+        {
+          "id": "checkbox",
+          "title": "Checkbox"
+        },
+        {
+          "id": "form-control",
+          "title": "FormControl"
+        },
+        {
+          "id": "icon-button",
+          "title": "IconButton"
+        },
+        {
+          "id": "input",
+          "title": "Input",
+          "status":"update"
+        },
+        {
+          "id": "link",
+          "title": "Link"
+        },
+        {
+          "id": "radio",
+          "title": "Radio"
+        },
+        {
+          "id": "select",
+          "title": "Select",
+          "status":"update"
+        },
+        {
+          "id": "slider",
+          "title": "Slider",
+          "status":"update"
+        },
+        {
+          "id": "switch",
+          "title": "Switch",
+          "status":"update"
+        },
+        {
+          "id": "textarea",
+          "title": "TextArea"
+        }
+      ]
+    },
+    {
+      "type": "heading",
       "title": "Data Display",
       "pages": [
         {
@@ -176,6 +259,46 @@
     },
     {
       "type": "heading",
+      "title": "Typography",
+      "pages": [
+        {
+          "id": "text",
+          "title": "Text"
+        },
+        {
+          "id": "heading",
+          "title": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Overlay",
+      "pages": [
+        {
+          "id": "alert-dialog",
+          "title": "AlertDialog"
+        },
+        {
+          "id": "menu",
+          "title": "Menu"
+        },
+        {
+          "id": "modal",
+          "title": "Modal"
+        },
+        {
+          "id": "popover",
+          "title": "Popover"
+        },
+        {
+          "id": "tooltip",
+          "title": "Tooltip"
+        }
+      ]
+    },
+    {
+      "type": "heading",
       "title": "Disclosure",
       "pages": [
         {
@@ -198,7 +321,8 @@
         },
         {
           "id": "image",
-          "title": "Image"
+          "title": "Image",
+          "status":"update"
         }
       ]
     },
@@ -227,6 +351,11 @@
         {
           "id": "fab",
           "title": "Fab"
+        },
+        {
+          "id": "hidden",
+          "title": "Hidden",
+          "status":"new"
         }
       ]
     },
@@ -406,8 +535,12 @@
       "title": "Migration",
       "pages": [
         {
-          "id": "guide",
-          "title": "Guide to v3"
+          "id": "v3",
+          "title": "Upgrading to v3"
+        },
+        {
+          "id": "v3xtov32",
+          "title": "Upgrading to 3.2.0 from 3.x"
         },
         {
           "type": "heading",
@@ -522,11 +655,16 @@
           "id": "changelog",
           "title": "Utility Props"
         },
+        { "id": "testing", "title": "Testing" },
         {
           "id": "faq",
           "title": "FAQ's"
         }
       ]
+    },
+    {
+      "id": "more-props",
+      "title": "More Props"
     }
   ]
 }

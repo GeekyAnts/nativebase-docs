@@ -1,6 +1,6 @@
 ---
-id: customizingComponents
-title: Customising Components
+id: customizing-components
+title: Customizing Components
 ---
 
 Theme customisation is at the heart of NativeBase. Using NativeBase's `extendTheme` function, we can customise components.
@@ -53,14 +53,14 @@ As shown above, we can customize components by passing the **components** object
 - As the name suggests, it's used to define the base style of a component.
 - Base style can be a function or a plain object. Use function if you want to get access to defaultProps, current colorMode (light/dark) and theme object.
 
-Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3-pre-beta/src/theme/components/button.ts#L5)
+Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3.1.0/src/theme/components/button.ts#L5).
 
 #### Default Props
 
 - Default props can be used to initialize props of a component.
 - For e.g. You have a Button component and it has 2 variants. i.e. outline, solid. You can use it like.
 
-Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3-pre-beta/src/theme/components/button.ts#L201)
+Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3.1.0/src/theme/components/button.ts#L201).
 
 ```jsx
 <Button variant="ghost">
@@ -113,48 +113,10 @@ export default function () {
 
 You can also add the variants to the components and use it across project.
 
-```SnackPlayer name=Customizing%20Variants
-import React from 'react';
-import {
-  NativeBaseProvider,
-  Button,
-  extendTheme,
-  Center,
-  VStack,
-} from 'native-base';
-
-export default function () {
-  const theme = extendTheme({
-    components: {
-      Button: {
-        variants: {
-          rounded: ({ colorScheme }: any) => {
-            return {
-              bg: `${colorScheme}.500`,
-              rounded: 'full',
-            };
-          },
-        },
-      },
-    },
-  });
-
-  return (
-    <NativeBaseProvider theme={theme}>
-      <Center flex={1}>
-        <VStack space={2}>
-          <Button colorScheme="emerald">Default Button</Button>
-          <Button colorScheme="emerald" variant="rounded">
-            Rounded Button
-          </Button>
-        </VStack>
-      </Center>
-    </NativeBaseProvider>
-  );
-}
+```ComponentSnackPlayer path=theme,Custom,CustomizingVariant.tsx
 
 ```
 
 <br />
 
-NativeBase ships with default styles for each components. [You can find it here](https://github.com/GeekyAnts/NativeBase/tree/v3-pre-beta/src/theme/components)
+NativeBase ships with default styles for each components. [You can find it here](https://github.com/GeekyAnts/NativeBase/tree/v3.1.0/src/theme/components).

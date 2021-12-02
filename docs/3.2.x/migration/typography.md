@@ -1,3 +1,8 @@
+---
+id: typography
+title: Typography
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

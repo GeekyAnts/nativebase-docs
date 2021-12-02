@@ -1,3 +1,8 @@
+---
+id: card
+title: Card
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
