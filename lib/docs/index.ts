@@ -22,7 +22,7 @@ const getHeadingLevel = (line: string) => {
       .split("#")
       .filter((val) => val !== "")[0]
       .trim()
-      .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '')
+      .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "")
       .replace(/ /g, "-")
       .toLowerCase(),
     title: line
@@ -97,4 +97,29 @@ export const getSidebarJson = async (version: string) => {
   return JSON.parse(
     fs.readFileSync(baseDirPath + `/docs/${version}/sidebar.json`).toString()
   );
+};
+const iterateSidebar = (item: any, pages: any[]) => {
+  if (item === undefined) {
+    return -1;
+  }
+  if (item.id) {
+    pages.push(item);
+  } else if (item.pages) {
+    for (let i = 0; i < item.pages.length; i++) {
+      iterateSidebar(item.pages[i], pages);
+    }
+  }
+  return 1;
+};
+export const getPages = (sidebar: any, filename: string) => {
+  let pages: any[] = [];
+  for (let i = 0; i < sidebar.sidebar.length; i++) {
+    iterateSidebar(sidebar.sidebar[i], pages);
+  }
+  const fileIndex = pages.findIndex((item) => item.id === filename);
+  return {
+    currentPage: pages[fileIndex],
+    nextPage: fileIndex !== pages.length - 1 ? pages[fileIndex + 1] : null,
+    previousPage: fileIndex !== 0 ? pages[fileIndex - 1] : null,
+  };
 };

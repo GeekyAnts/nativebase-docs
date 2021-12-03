@@ -1,6 +1,6 @@
-import React from "react";
-import { Box, ScrollView } from "native-base";
-
+import React, { useContext } from "react";
+import { Box, Heading, ScrollView, Button } from "native-base";
+import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote";
 import Toc from "./Toc";
 import {
@@ -17,12 +17,12 @@ import {
   Code,
   CodeBlock,
 } from "./markdown-components";
-
+import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
-
+import { isLatestVersionSlug } from "../utils";
 export default function MainContent(props: any) {
-  const { content, tocArray } = props;
-
+  const { content, tocArray, pages, frontMatter } = props;
+  const { activeVersion } = useContext(AppContext);
   const components = {
     h1: Heading1,
     h2: Heading2,
@@ -42,7 +42,34 @@ export default function MainContent(props: any) {
     <>
       <ScrollView>
         <Box px={{ base: "6", xl: "16" }} py="10">
+          <Heading>
+            {frontMatter && frontMatter.title
+              ? frontMatter.title
+              : pages.currentPage.title}
+          </Heading>
           <MDXRemote {...content} components={components} />
+          {pages.previousPage && (
+            <Link
+              href={`${
+                isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
+              }${pages.previousPage.id}`}
+            >
+              <Box p="4" mb="2" bg="cyan.200">
+                {"< " + pages.previousPage.title}
+              </Box>
+            </Link>
+          )}
+          {pages.nextPage && (
+            <Link
+              href={`${
+                isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
+              }${pages.nextPage.id}`}
+            >
+              <Box p="4" bg="cyan.200">
+                {pages.nextPage.title + "  >"}
+              </Box>
+            </Link>
+          )}
         </Box>
       </ScrollView>
       <Box display={{ base: "none", lg: "flex" }}>
