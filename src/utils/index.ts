@@ -16,5 +16,8 @@ export function isLatestVersion(version: string) {
 }
 
 export const getHeadingIds = (comp: any) => {
-  return comp.replace(/ /g, "-").toLowerCase();
+  return comp
+    .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "")
+    .replace(/ /g, "-")
+    .toLowerCase();
 };

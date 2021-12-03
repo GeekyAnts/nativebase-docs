@@ -4,9 +4,7 @@ title: Kitchen Sink
 ---
 
 import { KitchenSinkIframe, TileLink, NBHistory } from '../../src/components';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import ExpoIcon from '@site/static/img/expo-icon.svg';
-import useThemeContext from '@theme/hooks/useThemeContext';
+
 
 <div className="tailwind">
   <div className="m-0">
@@ -20,7 +18,7 @@ import useThemeContext from '@theme/hooks/useThemeContext';
           <div>
             Scan with the
             <span>
-              <ExpoIcon className="inline-flex h-5 w-5 mx-2 -mb-1" />
+              <img src="/img/expo-icon.svg" />
             </span>
             Expo app on your Android device to see the special dish we cooked
             for you!
@@ -28,7 +26,7 @@ import useThemeContext from '@theme/hooks/useThemeContext';
           <div>
             <a
               className={`flex items-center justify-center w-full px-5 py-3 mt-6 bg-transparent font-medium no-underline rounded md:flex-none md:w-48 ${
-                useThemeContext().isDarkTheme ? 'bg-indigo-500' : 'bg-gray-900'
+                true ? 'bg-indigo-500' : 'bg-gray-900'
               }`}
               href="https://github.com/nativebase/kitchen-sink"
             >
@@ -53,7 +51,7 @@ import useThemeContext from '@theme/hooks/useThemeContext';
             <img
               width={130}
               height={130}
-              src={useBaseUrl('/img/kitchensink-qr.png')}
+              src={'/img/kitchensink-qr.png'}
             />
           </div>
         </div>

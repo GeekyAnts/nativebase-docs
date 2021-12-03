@@ -37,14 +37,7 @@ If you are updating from 3.1.x to 3.2.x in a Next.js project, you might need to 
 - Now need to include only react-native-web and native-base in transplie-modules
 - No need of webpack config just add withFonts(from next-fonts) and withExpo(from @expo/next-adapter)
 
-<Tabs
-defaultValue='old'
-values={[
-{ label: '3.1.x', value: 'old' },
-{ label: '3.2.x', value: 'new' }
-]}>
 
-<TabItem value="old">
 
 ```jsx {5-22,27-40}
 const withFonts = require('next-fonts');
@@ -91,9 +84,6 @@ module.exports = withPlugins(
 );
 ```
 
-</TabItem>
-<TabItem value="new">
-
 ```jsx {1,5,9,15,17}
 const { withExpo } = require('@expo/next-adapter');
 const withFonts = require('next-fonts');
@@ -115,21 +105,12 @@ module.exports = withPlugins(
 );
 ```
 
-</TabItem>
-</Tabs>
+
 
 ### Updating babel.config.js/ts
 
 - Add `presets: ["@expo/next-adapter/babel"]` and `plugins: [["@babel/plugin-proposal-class-properties"]]`
 
-<Tabs
-defaultValue='old'
-values={[
-{ label: '3.1.x', value: 'old' },
-{ label: '3.2.x', value: 'new' }
-]}>
-
-<TabItem value="old">
 
 ```jsx {3,2}
 module.exports = {
@@ -138,8 +119,7 @@ module.exports = {
 };
 ```
 
-</TabItem>
-<TabItem value="new">
+
 
 ```jsx {2,3}
 module.exports = {
@@ -148,21 +128,12 @@ module.exports = {
 };
 ```
 
-</TabItem>
-</Tabs>
 
-### Updating \_document.js/ts
+
+### Updating _document.js/ts
 
 - No need to import .ttf font files of Icons and add them into document style.
 
-<Tabs
-defaultValue='old'
-values={[
-{ label: '3.1.x', value: 'old' },
-{ label: '3.2.x', value: 'new' }
-]}>
-
-<TabItem value="old">
 
 ```jsx {2-20,30}
 import Document, { Html, Head, Main, NextScript } from 'next/document';
@@ -207,8 +178,6 @@ class MyDocument extends Document {
 export default MyDocument;
 ```
 
-</TabItem>
-<TabItem value="new">
 
 ```jsx
 import React from 'react';
@@ -236,9 +205,6 @@ CustomDocument.getInitialProps = getInitialProps;
 
 export default CustomDocument;
 ```
-
-</TabItem>
-</Tabs>
 
 ## Handling breaking changes
 

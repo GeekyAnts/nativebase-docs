@@ -22,6 +22,7 @@ const getHeadingLevel = (line: string) => {
       .split("#")
       .filter((val) => val !== "")[0]
       .trim()
+      .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '')
       .replace(/ /g, "-")
       .toLowerCase(),
     title: line
