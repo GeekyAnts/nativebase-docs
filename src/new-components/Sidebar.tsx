@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../AppContext";
 import { Box, HStack, Pressable, ScrollView, Text, Badge } from "native-base";
 import { useRouter } from "next/router";
@@ -31,6 +31,7 @@ const SidebarItem = (props: any) => {
   const router = useRouter();
   const { activeVersion, activeSidebarItem, setActiveSidebarItem } =
     useContext(AppContext);
+
   function changeRoute(path: string) {
     router.push(path);
   }
