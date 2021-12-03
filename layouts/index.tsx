@@ -1,28 +1,6 @@
 import Head from "next/head";
-import React, { useState, useEffect, useContext } from "react";
-import {
-  Box,
-  HStack,
-  Menu,
-  Pressable,
-  ScrollView,
-  Hidden,
-  useDisclose,
-  Fab,
-  Icon,
-  InfoIcon,
-  VStack,
-  SunIcon,
-  Actionsheet,
-  Text,
-  Button,
-  IconButton,
-  CloseIcon,
-  HamburgerIcon,
-  Slide,
-  useColorModeValue,
-} from "native-base";
-import router, { Router, useRouter } from "next/router";
+import React, { useEffect, useContext } from "react";
+import { Box, HStack, useColorModeValue } from "native-base";
 import path from "path";
 import Sidebar from "../src/new-components/Sidebar";
 import Navbar from "../src/new-components/Navbar";
@@ -40,20 +18,16 @@ function Layout({
   versionList,
   frontMatter,
 }: any) {
-  // console.log("Sidebar", sidebar);
   const { isNavbarOpen, setActiveVersion, setActiveSidebarItem } =
     useContext(AppContext);
 
   useEffect(() => {
     const currentPathArray = window?.location.href.split("/");
 
-    // console.log(currentPathArray);
-
     let pathArray: string[] = [];
     currentPathArray.map((val, ind) => {
       ind < 3 ? null : pathArray.push(val);
     });
-    // console.log(pathArray);
 
     let actVersion = currentVersion;
     if ([...versionList, "next"].includes(pathArray[0])) {
@@ -61,14 +35,9 @@ function Layout({
     } else {
       actVersion = "";
     }
-    // console.log("actVersion", actVersion);
     setActiveVersion(actVersion);
 
     if (pathArray[0] === actVersion) {
-      console.log(
-        path.join(...pathArray.splice(0, 1)).split("#")[0],
-        "buffalo"
-      );
       setActiveSidebarItem(path.join(...pathArray.splice(0, 1)).split("#")[0]);
     } else {
       setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
@@ -92,6 +61,7 @@ function Layout({
           _light={{ bg: "backgroundLight" }}
           _dark={{ bg: "backgroundDark" }}
         >
+          {/* implement this using usebreakpoint value hook */}
           <Box display={{ base: "flex", lg: "none" }} zIndex="1">
             <MobileNavbar />
           </Box>
@@ -99,7 +69,15 @@ function Layout({
             <Navbar />
           </Box>
 
-          <HStack flex="1" bg={isNavbarOpen ? "gray.800:alpha.60" : ""}>
+          <HStack
+            flex="1"
+            _light={{
+              bg: { base: isNavbarOpen ? "black:alpha.30" : "", lg: "" },
+            }}
+            _dark={{
+              bg: { base: isNavbarOpen ? "black:alpha.70" : "", lg: "" },
+            }}
+          >
             {/* leftsidebar only show on big devices */}
             <Box display={{ base: "none", lg: "flex" }}>
               <Sidebar sidebar={sidebar} />

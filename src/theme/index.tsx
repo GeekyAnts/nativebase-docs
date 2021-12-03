@@ -5,6 +5,9 @@ export const theme = extendTheme({
     backgroundLight: "#fff",
     backgroundDark: "#151719",
 
+    primaryTextDark: colors.cyan[200],
+    primaryTextLight: colors.cyan[700],
+
     borderColorDark: "#313538",
     borderColorLight: "#dfe3e6",
 
