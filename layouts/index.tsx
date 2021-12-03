@@ -20,6 +20,7 @@ import {
   CloseIcon,
   HamburgerIcon,
   Slide,
+  useColorModeValue,
 } from "native-base";
 import router, { Router, useRouter } from "next/router";
 import path from "path";
@@ -40,17 +41,10 @@ function Layout({
   frontMatter,
 }: any) {
   // console.log("Sidebar", sidebar);
-  const { activeVersion, setActiveVersion } = useContext(AppContext);
-  const router = useRouter();
-  const [isSlideOpen, setSlideOpen] = useState(false);
-  const [isCollapsible, setIsCollapsible] = useState(false);
-  const { activeSidebarItem, setActiveSidebarItem } = useContext(AppContext);
+  const { isNavbarOpen, setActiveVersion, setActiveSidebarItem } =
+    useContext(AppContext);
 
   useEffect(() => {
-    window.document.body.addEventListener("click", () => {
-      setSlideOpen(false);
-    });
-
     const currentPathArray = window?.location.href.split("/");
 
     // console.log(currentPathArray);
@@ -90,34 +84,36 @@ function Layout({
             : "NativeBase"
         }`}</title>
       </Head>
-
-      <Box
-        h="100vh"
-        _light={{ bg: "backgroundLight" }}
-        _dark={{ bg: "backgroundDark" }}
+      <div
+        id={useColorModeValue("nativebase-body-light", "nativebase-body-dark")}
       >
- 
-        <Box display={{ base: "flex", lg: "none" }} zIndex="1">
-          <MobileNavbar />
-        </Box>
-        <Box display={{ base: "none", lg: "flex" }}>
-          <Navbar />
-        </Box>
-
-        <HStack flex="1">
-          {/* leftsidebar only show on big devices */}
+        <Box
+          h="100vh"
+          _light={{ bg: "backgroundLight" }}
+          _dark={{ bg: "backgroundDark" }}
+        >
+          <Box display={{ base: "flex", lg: "none" }} zIndex="1">
+            <MobileNavbar />
+          </Box>
           <Box display={{ base: "none", lg: "flex" }}>
-            <Sidebar sidebar={sidebar} />
+            <Navbar />
           </Box>
 
-          <MainContent content={content} tocArray={tocArray} />
+          <HStack flex="1" bg={isNavbarOpen ? "gray.800:alpha.60" : ""}>
+            {/* leftsidebar only show on big devices */}
+            <Box display={{ base: "none", lg: "flex" }}>
+              <Sidebar sidebar={sidebar} />
+            </Box>
 
-          {/* fab se actionsheet khul k daalskte h sidebar */}
-          <Box display={{ base: "flex", lg: "none" }}>
-            <MobileSidebar sidebar={sidebar} />
-          </Box>
-        </HStack>
-      </Box>
+            <MainContent content={content} tocArray={tocArray} />
+
+            {/* fab se actionsheet khul k daalskte h sidebar */}
+            <Box display={{ base: "flex", lg: "none" }}>
+              <MobileSidebar sidebar={sidebar} />
+            </Box>
+          </HStack>
+        </Box>
+      </div>
     </>
   );
 }
