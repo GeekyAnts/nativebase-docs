@@ -3,9 +3,7 @@ id: install-rn
 title: Install in React Native project
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import { TileLink } from '../../src/components';
+import { TileLink } from "../../src/components";
 
 ### Create a new project
 
@@ -16,30 +14,13 @@ cd AwesomeNativeBase
 
 ### Install dependencies
 
-<Tabs
-defaultValue='yarn'
-values={[
-{ label: 'yarn', value: 'yarn' },
-{ label: 'npm', value: 'npm' }
-]}>
-
-<TabItem value="yarn">
-
 ```bash
 yarn add native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
 
-</TabItem>
-
-<TabItem value="npm">
-
 ```bash
 npm install native-base react-native-svg styled-components styled-system react-native-safe-area-context
 ```
-
-</TabItem>
-
-</Tabs>
 
 ### Run pod install
 
@@ -53,8 +34,8 @@ pod install
 Put the below code in your App.js
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, Box } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
 
 function App() {
   return (
@@ -65,7 +46,7 @@ function App() {
 }
 ```
 
-<div style={{ textAlign: 'center' }}>
+<div style={{ textAlign: "center" }}>
   <img src="/img/minion.gif" />
 </div>
 

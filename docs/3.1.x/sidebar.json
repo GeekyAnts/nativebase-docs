@@ -500,7 +500,7 @@
       "title": "Migration",
       "pages": [
         {
-          "id": "guide",
+          "id": "migration/guide",
           "title": "Guide to v3"
         },
         {

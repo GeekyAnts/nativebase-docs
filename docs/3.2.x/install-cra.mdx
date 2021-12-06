@@ -3,18 +3,7 @@ id: install-cra
 title: Install in Create React App project
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import { TileLink, RNWebNote } from '../../src/components';
-
-  <Tabs
-  defaultValue='template'
-  values={[
-  { label: 'New Project', value: 'template' },
-  { label: 'Existing Project', value: 'cli' }
-  ]}>
-
-  <TabItem value="template">
+import { TileLink, RNWebNote } from "../../src/components";
 
 The easiest way to get started with NativeBase in create react app is using NativeBase template.
 
@@ -34,10 +23,6 @@ cd my-app/
 yarn start
 ```
 
-  </TabItem>
-
-  <TabItem value="cli">
-
 Create a new CRA project If not exist
 
 ```bash
@@ -49,14 +34,6 @@ cd my-app
 
 ### Install dependencies
 
-  <Tabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
-
-  <TabItem value="yarn">
 <div style={{maxWidth:"750px"}}>
 
 ```bash
@@ -64,9 +41,7 @@ yarn add react-native-web native-base react-native-svg react-native-safe-area-co
 ```
 
 </div>
-  </TabItem>
 
-  <TabItem value="npm">
 <div style={{maxWidth:"750px"}}>
 
 ```bash
@@ -74,17 +49,14 @@ npm install react-native-web native-base react-native-svg react-native-safe-area
 ```
 
 </div>
-  </TabItem>
-
-  </Tabs>
 
 ### Run the Hello world example
 
 Put the below code in your App.js
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, Box } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
 
 export default function App() {
   return (
@@ -95,11 +67,7 @@ export default function App() {
 }
 ```
 
-  </TabItem>
-
-  </Tabs>
-
-<div style={{ textAlign: 'center' }}>
+<div style={{ textAlign: "center" }}>
   <img src="/img/minion.gif" />
 </div>
 

@@ -3,9 +3,7 @@ id: install-expo
 title: Install in Expo project
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import { TileLink } from '../../src/components';
+import { TileLink } from "../../src/components";
 
 Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
 
@@ -21,30 +19,13 @@ cd my-project/
 
 ### Install dependencies
 
-  <Tabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
-
-  <TabItem value="yarn">
-
 ```bash
 yarn add native-base styled-components styled-system
 ```
 
-  </TabItem>
-
-  <TabItem value="npm">
-
 ```bash
 npm install native-base styled-components styled-system
 ```
-
-  </TabItem>
-
-  </Tabs>
 
 ```bash
 expo install react-native-svg
@@ -59,8 +40,8 @@ expo install react-native-safe-area-context
 Put the below code in your App.js
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, Box } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
 
 function App() {
   return (
@@ -71,7 +52,7 @@ function App() {
 }
 ```
 
-<div style={{ textAlign: 'center' }}>
+<div style={{ textAlign: "center" }}>
   <img src="/img/minion.gif" alt="minions clapping" />
 </div>
 
