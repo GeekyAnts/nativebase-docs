@@ -83,14 +83,27 @@ export const getFileExtenstion = async (slug: string) => {
   }
   return "file_not_found";
 };
-
+export const parseCodeBlock = (fileData: any) => {
+  const tempArray = fileData.split("ComponentSnackPlayer");
+  const paths = tempArray.filter(
+    (line: string) => line.substring(0, 5) == " path"
+  );
+  let codeBlockPaths = [];
+  for (let i = 0; i < paths.length; i++) {
+    codeBlockPaths.push(paths[i].split("\n")[0].slice(6).split(","));
+  }
+};
 export const getDocBySlug = async (filename: string) => {
   const extenstion: string = await getFileExtenstion(filename);
 
-  return fs.readFileSync(
+  let fileData = fs.readFileSync(
     baseDirPath + "/docs/" + filename + "." + extenstion,
     "utf-8"
   );
+
+  parseCodeBlock(fileData);
+
+  return fileData;
 };
 
 export const getSidebarJson = async (version: string) => {
