@@ -79,7 +79,6 @@ export default function Navbar(props: any) {
           }}
         >
           <Menu.Item
-            // @ts-ignore
             onPress={() => {
               setActiveVersion("next");
               updateActiveVersion("next", versions);
@@ -92,7 +91,6 @@ export default function Navbar(props: any) {
             return (
               <Menu.Item
                 key={index}
-                // @ts-ignore
                 onPress={() => {
                   setActiveVersion(isLatestVersion(version) ? "" : version);
                   updateActiveVersion(
@@ -192,7 +190,6 @@ export default function Navbar(props: any) {
           </Button>
         </Link>
         <IconButton
-          // @ts-ignore
           onPress={toggleColorMode}
           colorScheme="gray"
           _icon={{ size: "5", color: "coolGray.500" }}

@@ -49,7 +49,6 @@ export default function MobileNavbar(props: any) {
       >
         <IconButton
           icon={<HamburgerIcon size="7" />}
-          // @ts-ignore
           onPress={() => setIsNavbarOpen(!isNavbarOpen)}
           accessibilityLabel="Mobile Menu"
           aria-controls="mobile-menu"
@@ -110,7 +109,6 @@ const NavbarInSliderPanel = () => {
     >
       <NativebaseLogo />
       <IconButton
-        // @ts-ignore
         onPress={toggleColorMode}
         colorScheme="gray"
         _icon={{ size: "5", color: "coolGray.500" }}
@@ -148,7 +146,6 @@ const Versions = () => {
   return (
     <Box pt="3">
       <Pressable
-        // @ts-ignore
         onPress={handleToggle}
         _hover={{
           _dark: {
@@ -235,9 +232,9 @@ const Versions = () => {
           {versions.map((version: string, index: any) => {
             return (
               <Pressable
-                // @ts-ignore
                 accessibilityLabel={version}
-                isUnderlined={false}
+                // @ts-ignore
+                // isUnderlined={false}
                 onPress={() => {
                   setActiveVersion(isLatestVersion(version) ? "" : version);
                   updateActiveVersion(

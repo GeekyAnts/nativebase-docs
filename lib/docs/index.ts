@@ -66,7 +66,7 @@ export const getFilePaths = (
   return filePaths;
 };
 
-export const getFileExtenstion = async (slug: string) => {
+export const getFileExtension = async (slug: string) => {
   const slugPathArray = slug.split("/");
   let filename = slugPathArray[slugPathArray.length - 1];
   let slugPath = "";
@@ -83,25 +83,36 @@ export const getFileExtenstion = async (slug: string) => {
   }
   return "file_not_found";
 };
+
 export const parseCodeBlock = (fileData: any) => {
-  const tempArray = fileData.split("ComponentSnackPlayer");
-  const paths = tempArray.filter(
-    (line: string) => line.substring(0, 5) == " path"
-  );
-  let codeBlockPaths = [];
-  for (let i = 0; i < paths.length; i++) {
-    codeBlockPaths.push(paths[i].split("\n")[0].slice(6).split(","));
+  const tempArray = fileData.split("ComponentSnackPlayer ");
+
+  for (let i = 0; i < tempArray.length; i++) {
+    if (tempArray[i].substring(0, 4) == "path") {
+      let code = getCodeFromStorybook(
+        tempArray[i].split("\n")[0].slice(6).split(",")
+      );
+      let temp1 = tempArray[i].split("```");
+      temp1[0] = code;
+      tempArray[i] = temp1.join("");
+    }
   }
+  return tempArray.join("");
 };
+
+const getCodeFromStorybook = (path: string[]) => {
+  return "```jsx isLive=true  ```";
+};
+
 export const getDocBySlug = async (filename: string) => {
-  const extenstion: string = await getFileExtenstion(filename);
+  const ext: string = await getFileExtension(filename);
 
   let fileData = fs.readFileSync(
-    baseDirPath + "/docs/" + filename + "." + extenstion,
+    baseDirPath + "/docs/" + filename + "." + ext,
     "utf-8"
   );
 
-  parseCodeBlock(fileData);
+  fileData = parseCodeBlock(fileData);
 
   return fileData;
 };
