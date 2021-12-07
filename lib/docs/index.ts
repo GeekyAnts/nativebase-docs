@@ -140,7 +140,6 @@ const getCodeFromStorybook = (pathArray: string[], version: string) => {
   });
   const output = generate(ast);
 
-  console.log("AST", output.code);
   const result = prettier.format(output.code, {
     semi: false,
     parser: "babel",
