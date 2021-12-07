@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# versioning and repo
+/versioned_repo
+
 # dependencies
 /node_modules
 /.pnp

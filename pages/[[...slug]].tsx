@@ -11,7 +11,7 @@ import {
 } from "../lib/docs";
 import DirectoryTree from "directory-tree";
 import versions from "../versions.json";
-import { config } from "../docs.config";
+import config from "../docs.config";
 import React from "react";
 
 export default function Doc({
@@ -101,7 +101,7 @@ export async function getStaticProps({ params }: any) {
   filenameWithOutVersionArray.splice(0,1); // removed the version
 
   const pages = getPages(sidebar,path.join(...filenameWithOutVersionArray));
-  
+
   const mdxSource = await serialize(content);
   const toc = getTOCArray(markdownWithMeta);
 

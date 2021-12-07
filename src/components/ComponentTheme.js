@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Heading, Link, Text, VStack } from "native-base";
-import { config } from "../../docs.config";
+import config from "../../docs.config";
 const url = config.REPO_LINK + "/tree/" + config.REPO_BRANCH;
 
 const extendComponentInstruction = (name) => {
