@@ -3,6 +3,11 @@ import DirectoryTree from "directory-tree";
 let filePaths: string[] = [];
 import versions from "../../versions.json";
 const baseDirPath = process.cwd();
+import path from "path";
+const { parse } = require("@babel/parser");
+const traverse = require("@babel/traverse").default;
+const generate = require("@babel/generator").default;
+const prettier = require("prettier");
 
 export const getTOC = (file: string) => {
   const fileLines = file.split("\n");
@@ -84,13 +89,14 @@ export const getFileExtension = async (slug: string) => {
   return "file_not_found";
 };
 
-export const parseCodeBlock = (fileData: any) => {
-  const tempArray = fileData.split("ComponentSnackPlayer ");
+export const parseCodeBlock = (fileData: any, version: string) => {
+  const tempArray = fileData.split("```ComponentSnackPlayer ");
 
   for (let i = 0; i < tempArray.length; i++) {
     if (tempArray[i].substring(0, 4) == "path") {
       let code = getCodeFromStorybook(
-        tempArray[i].split("\n")[0].slice(6).split(",")
+        tempArray[i].split("\n")[0].slice(5).split(","),
+        version
       );
       let temp1 = tempArray[i].split("```");
       temp1[0] = code;
@@ -100,11 +106,50 @@ export const parseCodeBlock = (fileData: any) => {
   return tempArray.join("");
 };
 
-const getCodeFromStorybook = (path: string[]) => {
-  return "```jsx isLive=true  ```";
+const getCodeFromStorybook = (pathArray: string[], version: string) => {
+  // console.log(version);
+
+  const code = fs.readFileSync(
+    baseDirPath +
+      "/versioned_repo/" +
+      version +
+      "/NativeBase/example/storybook/stories/" +
+      path.join(...pathArray),
+    "utf-8"
+  );
+  const ast = parse(code, {
+    sourceType: "module",
+    plugins: ["jsx", "typescript"],
+  });
+  traverse(ast, {
+    enter(path: any) {
+      if (path.node.type === "ImportDeclaration") {
+        path.remove();
+      }
+      if (path.node?.type === "ExportNamedDeclaration") {
+        // console.log(path.node.declaration.declarations);
+        const childDec = path.node.declaration;
+        path.replaceWith(childDec);
+        // console.log(path.node);
+      }
+      // if(path.node?.type ==="FunctionDeclaration"){
+      //   console.log(path.node);
+      // }
+      // console.log(path.node);
+    },
+  });
+  const output = generate(ast);
+
+  console.log("AST", output.code);
+  const result = prettier.format(output.code, {
+    semi: false,
+    parser: "babel",
+  });
+
+  return "```jsx isLive=true \n" + result + "\n```";
 };
 
-export const getDocBySlug = async (filename: string) => {
+export const getDocBySlug = async (filename: string, version: string) => {
   const ext: string = await getFileExtension(filename);
 
   let fileData = fs.readFileSync(
@@ -112,7 +157,7 @@ export const getDocBySlug = async (filename: string) => {
     "utf-8"
   );
 
-  fileData = parseCodeBlock(fileData);
+  fileData = parseCodeBlock(fileData, version);
 
   return fileData;
 };

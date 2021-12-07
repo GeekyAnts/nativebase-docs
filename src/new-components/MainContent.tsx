@@ -34,7 +34,7 @@ export default function MainContent(props: any) {
     li: Li,
     img: Img,
     a: Anchor,
-    pre: CodeBlock,
+    code: CodeBlock,
     ...docComponents,
   };
 
