@@ -230,6 +230,47 @@
     },
     {
       "type": "heading",
+      "title": "Typography",
+      "pages": [
+        {
+          "id": "text",
+          "title": "Text"
+        },
+        {
+          "id": "heading",
+          "title": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Overlay",
+      "pages": [
+        {
+          "id": "alert-dialog",
+          "title": "Alert Dialog"
+        },
+        {
+          "id": "menu",
+          "title": "Menu"
+        },
+        {
+          "id": "modal",
+          "title": "Modal"
+        },
+        {
+          "id": "popover",
+          "title": "Popover"
+        },
+        {
+          "id": "tooltip",
+          "title": "Tooltip"
+        }
+      ]
+    },
+
+    {
+      "type": "heading",
       "title": "Disclosure",
       "pages": [
         {
@@ -460,7 +501,7 @@
       "title": "Migration",
       "pages": [
         {
-          "id": "guide",
+          "id": "migration/guide",
           "title": "Guide to v3"
         },
         {

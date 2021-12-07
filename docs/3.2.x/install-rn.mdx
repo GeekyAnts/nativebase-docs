@@ -3,18 +3,7 @@ id: install-rn
 title: Install in React Native project
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import { TileLink } from '../../src/components';
-
-<Tabs
-  defaultValue='new'
-  values={[
-  { label: 'New Project', value: 'new' },
-  { label: 'Existing Project', value: 'existing' }
-  ]}>
-
-<TabItem value="new">
+import { TileLink } from "../../src/components";
 
 ### Create a new project using ReactNative CLI with NativeBase template
 
@@ -40,10 +29,6 @@ npx react-native init MyApp --template react-native-template-native-base-typescr
 
 Yey! you are all set, start editing App.js/App.tsx now.
 
-</TabItem>
-
-<TabItem value="existing">
-
 ### Create a new project if not exist
 
 ```bash
@@ -53,30 +38,13 @@ cd AwesomeNativeBase
 
 ### Install dependencies
 
-<Tabs
-defaultValue='yarn'
-values={[
-{ label: 'yarn', value: 'yarn' },
-{ label: 'npm', value: 'npm' }
-]}>
-
-<TabItem value="yarn">
-
 ```bash
 yarn add native-base react-native-svg react-native-safe-area-context
 ```
 
-</TabItem>
-
-<TabItem value="npm">
-
 ```bash
 npm install native-base react-native-svg react-native-safe-area-context
 ```
-
-</TabItem>
-
-</Tabs>
 
 ### Run pod install
 
@@ -90,8 +58,8 @@ pod install
 Put the below code in your App.js
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, Box } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
 
 export default function App() {
   return (
@@ -102,11 +70,7 @@ export default function App() {
 }
 ```
 
-</TabItem>
-
-</Tabs>
-
-<div style={{ textAlign: 'center' }}>
+<div style={{ textAlign: "center" }}>
   <img src="/img/minion.gif" />
 </div>
 

@@ -1,5 +1,5 @@
 ---
-id: Guide
+id: guide
 title: Guide to v3
 ---
 

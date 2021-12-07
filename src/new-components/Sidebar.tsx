@@ -41,7 +41,6 @@ const SidebarItem = (props: any) => {
       <Box key={index}>
         {item.pages === undefined ? (
           <Pressable
-            // @ts-ignore
             onPress={() => {
               changeRoute(
                 `${

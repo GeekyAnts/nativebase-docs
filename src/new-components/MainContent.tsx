@@ -50,6 +50,7 @@ export default function MainContent(props: any) {
           <MDXRemote {...content} components={components} />
           {pages.previousPage && (
             <Link
+              passHref
               href={`${
                 isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
               }${pages.previousPage.id}`}
@@ -61,6 +62,7 @@ export default function MainContent(props: any) {
           )}
           {pages.nextPage && (
             <Link
+              passHref
               href={`${
                 isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
               }${pages.nextPage.id}`}

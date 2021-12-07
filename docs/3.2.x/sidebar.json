@@ -29,7 +29,7 @@
         {
           "id": "utility-props-specificity",
           "title": "Utility Props Specificity",
-          "status":"new"
+          "status": "new"
         },
         {
           "id": "design-tokens",
@@ -38,12 +38,12 @@
         {
           "id": "pseudo-props",
           "title": "Pseudo Props: Overview",
-          "status":"new"
+          "status": "new"
         },
         {
           "id": "pseudo-props-101",
           "title": "Pseudo Props: Dos & Don'ts",
-          "status":"new"
+          "status": "new"
         },
         {
           "id": "responsive",
@@ -58,12 +58,12 @@
         {
           "id": "utility-props",
           "title": "Utility Props",
-          "status":"new"
+          "status": "new"
         },
         {
           "id": "color-mode",
           "title": "Color mode (Dark Mode)",
-          "status":"new"
+          "status": "new"
         },
         {
           "id": "nativebase-factory",
@@ -76,7 +76,7 @@
         {
           "id": "strict-mode",
           "title": "Strict Mode",
-          "status":"new"
+          "status": "new"
         },
         {
           "id": "accessibility",
@@ -91,7 +91,7 @@
         {
           "id": "default-theme",
           "title": "Default Theme",
-          "status":"new"
+          "status": "new"
         },
         {
           "id": "customizing-theme",
@@ -168,12 +168,12 @@
         {
           "id": "button",
           "title": "Button",
-          "status":"update"
+          "status": "update"
         },
         {
           "id": "pressable",
           "title": "Pressable",
-          "status":"update"
+          "status": "update"
         },
         {
           "id": "checkbox",
@@ -190,7 +190,7 @@
         {
           "id": "input",
           "title": "Input",
-          "status":"update"
+          "status": "update"
         },
         {
           "id": "link",
@@ -203,17 +203,17 @@
         {
           "id": "select",
           "title": "Select",
-          "status":"update"
+          "status": "update"
         },
         {
           "id": "slider",
           "title": "Slider",
-          "status":"update"
+          "status": "update"
         },
         {
           "id": "switch",
           "title": "Switch",
-          "status":"update"
+          "status": "update"
         },
         {
           "id": "textarea",
@@ -322,7 +322,7 @@
         {
           "id": "image",
           "title": "Image",
-          "status":"update"
+          "status": "update"
         }
       ]
     },
@@ -355,7 +355,7 @@
         {
           "id": "hidden",
           "title": "Hidden",
-          "status":"new"
+          "status": "new"
         }
       ]
     },
@@ -535,11 +535,11 @@
       "title": "Migration",
       "pages": [
         {
-          "id": "v3",
+          "id": "migration/v3",
           "title": "Upgrading to v3"
         },
         {
-          "id": "v3xtov32",
+          "id": "migration/v3xtov32",
           "title": "Upgrading to 3.2.0 from 3.x"
         },
         {

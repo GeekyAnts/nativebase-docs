@@ -237,7 +237,7 @@
         {
           "id": "skeleton",
           "title": "Skeleton",
-          "status":"new"
+          "status": "new"
         },
         {
           "id": "spinner",
@@ -314,7 +314,7 @@
         {
           "id": "image",
           "title": "Image",
-          "status":"update"
+          "status": "update"
         }
       ]
     },
@@ -526,11 +526,11 @@
       "title": "Migration",
       "pages": [
         {
-          "id": "v3",
+          "id": "migration/v3",
           "title": "Upgrading to v3"
         },
         {
-          "id": "v3xtov32",
+          "id": "migration/v3xtov32",
           "title": "Upgrading to 3.2.0 from 3.x"
         },
         {

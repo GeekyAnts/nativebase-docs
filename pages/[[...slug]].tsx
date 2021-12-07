@@ -7,7 +7,7 @@ import {
   getFilePaths,
   getSidebarJson,
   getTOCArray,
-  getPages
+  getPages,
 } from "../lib/docs";
 import DirectoryTree from "directory-tree";
 import versions from "../versions.json";
@@ -97,10 +97,10 @@ export async function getStaticProps({ params }: any) {
   const markdownWithMeta = await getDocBySlug(filename);
   const { data: frontMatter, content } = matter(markdownWithMeta);
   // console.log("frontmatter", frontMatter);
-  const filenameWithOutVersionArray = filename.split('/');
-  filenameWithOutVersionArray.splice(0,1); // removed the version
+  const filenameWithOutVersionArray = filename.split("/");
+  filenameWithOutVersionArray.splice(0, 1); // removed the version
 
-  const pages = getPages(sidebar,path.join(...filenameWithOutVersionArray));
+  const pages = getPages(sidebar, path.join(...filenameWithOutVersionArray));
 
   const mdxSource = await serialize(content);
   const toc = getTOCArray(markdownWithMeta);

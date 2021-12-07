@@ -36,7 +36,6 @@ export default function MobileSidebar(props: any) {
           px="4"
           bottom="8"
           right="8"
-          // @ts-ignore
           onPress={onOpen}
         />
         <Actionsheet isOpen={isOpen} onClose={onClose}>
@@ -49,7 +48,6 @@ export default function MobileSidebar(props: any) {
             bottom="8"
             px="4"
             right="8"
-            // @ts-ignore
             onPress={onClose}
             icon={<CloseIcon size="xs" />}
           />
@@ -73,7 +71,6 @@ const SidebarItem = (props: any) => {
       <Box key={index} w="100%">
         {item.pages === undefined ? (
           <Pressable
-            // @ts-ignore
             onPress={() => {
               changeRoute(
                 `${
