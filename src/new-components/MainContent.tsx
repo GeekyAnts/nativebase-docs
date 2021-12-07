@@ -1,5 +1,13 @@
 import React, { useContext } from "react";
-import { Box, Heading, ScrollView, Button } from "native-base";
+import {
+  Box,
+  Heading,
+  ScrollView,
+  Button,
+  HStack,
+  Text,
+  VStack,
+} from "native-base";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote";
 import Toc from "./Toc";
@@ -48,30 +56,56 @@ export default function MainContent(props: any) {
               : pages.currentPage.title}
           </Heading>
           <MDXRemote {...content} components={components} />
-          {pages.previousPage && (
-            <Link
-              passHref
-              href={`${
-                isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
-              }${pages.previousPage.id}`}
-            >
-              <Box p="4" mb="2" bg="cyan.200">
-                {"< " + pages.previousPage.title}
-              </Box>
-            </Link>
-          )}
-          {pages.nextPage && (
-            <Link
-              passHref
-              href={`${
-                isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
-              }${pages.nextPage.id}`}
-            >
-              <Box p="4" bg="cyan.200">
-                {pages.nextPage.title + "  >"}
-              </Box>
-            </Link>
-          )}
+          <HStack justifyContent="space-between" my="12">
+            {pages.previousPage && (
+              <Link
+                passHref
+                href={`${
+                  isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
+                }${pages.previousPage.id}`}
+              >
+                <VStack mr="auto">
+                  <Text
+                    _light={{ color: "pageNavigationHeadingLight" }}
+                    _dark={{ color: "pageNavigationHeadingDark" }}
+                  >
+                    Previous
+                  </Text>
+                  <Text
+                    fontSize="lg"
+                    _light={{ color: "pageNavigationMainTitleLight" }}
+                    _dark={{ color: "pageNavigationMainTitleDark" }}
+                  >
+                    {pages.previousPage.title}
+                  </Text>
+                </VStack>
+              </Link>
+            )}
+            {pages.nextPage && (
+              <Link
+                passHref
+                href={`${
+                  isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
+                }${pages.nextPage.id}`}
+              >
+                <VStack ml="auto">
+                  <Text
+                    _light={{ color: "pageNavigationHeadingLight" }}
+                    _dark={{ color: "pageNavigationHeadingDark" }}
+                  >
+                    Next
+                  </Text>
+                  <Text
+                    fontSize="lg"
+                    _light={{ color: "pageNavigationMainTitleLight" }}
+                    _dark={{ color: "pageNavigationMainTitleDark" }}
+                  >
+                    {pages.nextPage.title}
+                  </Text>
+                </VStack>
+              </Link>
+            )}
+          </HStack>
         </Box>
       </ScrollView>
       <Box display={{ base: "none", lg: "flex" }}>

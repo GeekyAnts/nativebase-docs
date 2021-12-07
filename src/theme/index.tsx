@@ -55,6 +55,11 @@ export const theme = extendTheme({
     activeBorderBottomLinkColorDark: "#eceef0",
     activeHoverBorderBottomLinkColorDark: "#26292b",
     activeHoverBorderBottomLinkColorLight: "#eceef0",
+
+    pageNavigationHeadingLight: "#687076",
+    pageNavigationHeadingDark: "#9ba1a6",
+    pageNavigationMainTitleLight: "#006adc",
+    pageNavigationMainTitleDark: "#52a9ff",
   },
   config: {
     // Changing initialColorMode to 'dark'

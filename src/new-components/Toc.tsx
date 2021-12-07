@@ -1,15 +1,17 @@
 import Link from "next/link";
-import { Button, Box, Heading, Text, Pressable } from "native-base";
+import { Button, Box, Heading, Text, Pressable, ScrollView } from "native-base";
 import React from "react";
 export default function Toc(props: any) {
   const { tocArray } = props;
   return (
-    <Box w="64" py="16" px="8">
-      <Heading fontSize="xl" fontWeight="medium" mb="4">
-        Quick Nav
-      </Heading>
-      <TocItem tocArrayItems={tocArray} />
-    </Box>
+    <ScrollView>
+      <Box w="64" py="16" px="8">
+        <Heading fontSize="xl" fontWeight="medium" mb="4">
+          Quick Nav
+        </Heading>
+        <TocItem tocArrayItems={tocArray} />
+      </Box>
+    </ScrollView>
   );
 }
 
