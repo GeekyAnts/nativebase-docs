@@ -25,24 +25,30 @@ All style props that arrays as values for responsive styles.
 
 For Example to make a `Box` width or w responsive using the array syntax, here's what you need to do:
 
-```SnackPlayer name=Responsive%20Usage
-import React from 'react';
-import { NativeBaseProvider, Center } from 'native-base';
-function BreakpointExample () {
+```jsx isLive
+import React from "react";
+import { NativeBaseProvider, Center } from "native-base";
+function BreakpointExample() {
   return (
-    <Center bg="emerald.400" _text={{color: "white"}} rounded="xl" w={[24, 48, 72]} h={24}>
+    <Center
+      bg="emerald.400"
+      _text={{ color: "white" }}
+      rounded="xl"
+      w={[24, 48, 72]}
+      h={24}
+    >
       This is a box
     </Center>
   );
-};
+}
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
         <BreakpointExample />
-       </Center>
+      </Center>
     </NativeBaseProvider>
   );
 }
@@ -54,19 +60,19 @@ You can also define responsive values with breakpoint aliases in an object. Any 
 
 For Example to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
 
-```SnackPlayer name=Responsive%20ObjectSyntax
-import React from 'react';
-import { Text, NativeBaseProvider, Center } from 'native-base';
-function BreakpointExample () {
+```jsx isLive
+import React from "react";
+import { Text, NativeBaseProvider, Center } from "native-base";
+function BreakpointExample() {
   return (
-    <Text fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}>
+    <Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
       This is responsive text
     </Text>
   );
-};
+}
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -81,8 +87,8 @@ export default function () {
 
 Here's a simple example of a component that uses a stacked layout on small screens, and a side-by-side layout on larger screens.
 
-```SnackPlayer name=Responsive%20Demo
-import React from 'react';
+```jsx isLive
+import React from "react";
 import {
   useToken,
   NativeBaseProvider,
@@ -93,35 +99,36 @@ import {
   Image,
   Stack,
   Heading,
-} from 'native-base';
+} from "native-base";
 
 function Example() {
   return (
     <Stack
-      direction={['column', 'column', 'row']}
+      direction={["column", "column", "row"]}
       rounded="lg"
       overflow="hidden"
-      width={['72', '72', '4/6']}
+      width={["72", "72", "4/6"]}
       shadow="1"
-      _light={{ backgroundColor: 'coolGray.50' }}
-      _dark={{ backgroundColor: 'gray.700' }}>
+      _light={{ backgroundColor: "coolGray.50" }}
+      _dark={{ backgroundColor: "gray.700" }}
+    >
       <Box>
         <Image
-          w={['100%', '100%', '40']}
+          w={["100%", "100%", "40"]}
           h="40"
           source={{
-            uri:
-              'https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg',
+            uri: "https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg",
           }}
           alt="image"
         />
         <Center
           bg="violet.500"
-          _text={{ color: 'white', fontWeight: '700', fontSize: 'xs' }}
+          _text={{ color: "white", fontWeight: "700", fontSize: "xs" }}
           position="absolute"
           bottom="0"
           px="3"
-          py="1.5">
+          py="1.5"
+        >
           PHOTOS
         </Center>
       </Box>
@@ -135,7 +142,8 @@ function Example() {
             color="violet.500"
             fontWeight="500"
             ml="-0.5"
-            mt="-1">
+            mt="-1"
+          >
             The Silicon Valley of India.
           </Text>
         </Stack>
@@ -147,8 +155,9 @@ function Example() {
           <HStack alignItems="center">
             <Text
               color="coolGray.600"
-              _dark={{ color: 'warmGray.200' }}
-              fontWeight="400">
+              _dark={{ color: "warmGray.200" }}
+              fontWeight="400"
+            >
               6 mins ago
             </Text>
           </HStack>
@@ -159,7 +168,7 @@ function Example() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -168,6 +177,4 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
-
 ```

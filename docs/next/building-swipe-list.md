@@ -9,10 +9,9 @@ SwipeListView is a vertical ListView with rows that swipe open and closed. Handl
 
 Here is an example to show how easily and quickly we can use [react-native-swipe-list](https://www.npmjs.com/package/react-native-swipe-list-view) in NativeBase.
 
-```SnackPlayer name=SwipeList dependencies=react-native-swipe-list-view
-
-import React, { useState } from 'react';
-import { Dimensions, TouchableOpacity, View } from 'react-native';
+```jsx isLive=true
+import React, { useState } from "react";
+import { Dimensions, TouchableOpacity, View } from "react-native";
 
 import {
   NativeBaseProvider,
@@ -26,12 +25,12 @@ import {
   Avatar,
   VStack,
   Spacer,
-} from 'native-base';
-import { SwipeListView } from 'react-native-swipe-list-view';
-import { MaterialIcons, Ionicons, Entypo } from '@expo/vector-icons';
+} from "native-base";
+import { SwipeListView } from "react-native-swipe-list-view";
+import { MaterialIcons, Ionicons, Entypo } from "@expo/vector-icons";
 
-export default function App() {
-  const [mode, setMode] = useState('Basic');
+export function Example() {
+  const [mode, setMode] = useState("Basic");
 
   return (
     <NativeBaseProvider>
@@ -48,43 +47,43 @@ export default function App() {
 function Basic() {
   const data = [
     {
-      id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-      fullName: 'Afreen Khan',
-      timeStamp: '12:47 PM',
-      recentText: 'Good Day!',
+      id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+      fullName: "Afreen Khan",
+      timeStamp: "12:47 PM",
+      recentText: "Good Day!",
       avatarUrl:
-        'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     },
     {
-      id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-      fullName: 'Sujita Mathur',
-      timeStamp: '11:11 PM',
-      recentText: 'Cheer up, there!',
+      id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+      fullName: "Sujita Mathur",
+      timeStamp: "11:11 PM",
+      recentText: "Cheer up, there!",
       avatarUrl:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyEaZqT3fHeNrPGcnjLLX1v_W4mvBlgpwxnA&usqp=CAU',
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyEaZqT3fHeNrPGcnjLLX1v_W4mvBlgpwxnA&usqp=CAU",
     },
     {
-      id: '58694a0f-3da1-471f-bd96-145571e29d72',
-      fullName: 'Anci Barroco',
-      timeStamp: '6:22 PM',
-      recentText: 'Good Day!',
-      avatarUrl: 'https://miro.medium.com/max/1400/0*0fClPmIScV5pTLoE.jpg',
+      id: "58694a0f-3da1-471f-bd96-145571e29d72",
+      fullName: "Anci Barroco",
+      timeStamp: "6:22 PM",
+      recentText: "Good Day!",
+      avatarUrl: "https://miro.medium.com/max/1400/0*0fClPmIScV5pTLoE.jpg",
     },
     {
-      id: '68694a0f-3da1-431f-bd56-142371e29d72',
-      fullName: 'Aniket Kumar',
-      timeStamp: '8:56 PM',
-      recentText: 'All the best',
+      id: "68694a0f-3da1-431f-bd56-142371e29d72",
+      fullName: "Aniket Kumar",
+      timeStamp: "8:56 PM",
+      recentText: "All the best",
       avatarUrl:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr01zI37DYuR8bMV5exWQBSw28C1v_71CAh8d7GP1mplcmTgQA6Q66Oo--QedAN1B4E1k&usqp=CAU',
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr01zI37DYuR8bMV5exWQBSw28C1v_71CAh8d7GP1mplcmTgQA6Q66Oo--QedAN1B4E1k&usqp=CAU",
     },
     {
-      id: '28694a0f-3da1-471f-bd96-142456e29d72',
-      fullName: 'Kiara',
-      timeStamp: '12:47 PM',
-      recentText: 'I will call today.',
+      id: "28694a0f-3da1-471f-bd96-142456e29d72",
+      fullName: "Kiara",
+      timeStamp: "12:47 PM",
+      recentText: "I will call today.",
       avatarUrl:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU',
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU",
     },
   ];
 
@@ -105,27 +104,30 @@ function Basic() {
   };
 
   const onRowDidOpen = (rowKey) => {
-    console.log('This row opened', rowKey);
+    console.log("This row opened", rowKey);
   };
 
   const renderItem = ({ item, index }) => (
     <Box>
-      <Pressable onPress={() => console.log('You touched me')} bg="white">
-        <Box
-          pl="4"
-          pr="5"
-          py="2"
-          >
+      <Pressable onPress={() => console.log("You touched me")} bg="white">
+        <Box pl="4" pr="5" py="2">
           <HStack alignItems="center" space={3}>
             <Avatar size="48px" source={{ uri: item.avatarUrl }} />
             <VStack>
-              <Text color="coolGray.800"  _dark={{ color: 'warmGray.50' }}  bold>
+              <Text color="coolGray.800" _dark={{ color: "warmGray.50" }} bold>
                 {item.fullName}
               </Text>
-              <Text color="coolGray.600" _dark={{ color: 'warmGray.200' }}>{item.recentText}</Text>
+              <Text color="coolGray.600" _dark={{ color: "warmGray.200" }}>
+                {item.recentText}
+              </Text>
             </VStack>
             <Spacer />
-            <Text fontSize="xs" color="coolGray.800"  _dark={{ color: 'warmGray.50' }} alignSelf="flex-start">
+            <Text
+              fontSize="xs"
+              color="coolGray.800"
+              _dark={{ color: "warmGray.50" }}
+              alignSelf="flex-start"
+            >
               {item.timeStamp}
             </Text>
           </HStack>
@@ -145,7 +147,8 @@ function Basic() {
         onPress={() => closeRow(rowMap, data.item.key)}
         _pressed={{
           opacity: 0.5,
-        }}>
+        }}
+      >
         <VStack alignItems="center" space={2}>
           <Icon
             as={<Entypo name="dots-three-horizontal" />}
@@ -165,7 +168,8 @@ function Basic() {
         onPress={() => deleteRow(rowMap, data.item.key)}
         _pressed={{
           opacity: 0.5,
-        }}>
+        }}
+      >
         <VStack alignItems="center" space={2}>
           <Icon as={<MaterialIcons name="delete" />} color="white" size="xs" />
           <Text color="white" fontSize="xs" fontWeight="medium">
@@ -183,7 +187,7 @@ function Basic() {
         renderItem={renderItem}
         renderHiddenItem={renderHiddenItem}
         rightOpenValue={-130}
-        previewRowKey={'0'}
+        previewRowKey={"0"}
         previewOpenValue={-40}
         previewOpenDelay={3000}
         onRowDidOpen={onRowDidOpen}
@@ -191,5 +195,4 @@ function Basic() {
     </Box>
   );
 }
-
 ```

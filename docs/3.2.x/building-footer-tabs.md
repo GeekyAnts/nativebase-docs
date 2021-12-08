@@ -7,9 +7,8 @@ With NativeBase v3 we have removed FooterTab components because as it's very sim
 
 ## Example
 
-```SnackPlayer name=Footer dependencies=react-native-linear-gradient
-
-import React from 'react';
+```jsx isLive
+import React from "react";
 import {
   NativeBaseProvider,
   Box,
@@ -24,10 +23,10 @@ import {
   HStack,
   Center,
   Pressable,
-} from 'native-base';
-import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
+} from "native-base";
+import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
 
-export default function App() {
+export function Example() {
   const [selected, setSelected] = React.useState(1);
   return (
     <NativeBaseProvider>
@@ -39,13 +38,14 @@ export default function App() {
             opacity={selected === 0 ? 1 : 0.5}
             py="3"
             flex={1}
-            onPress={() => setSelected(0)}>
+            onPress={() => setSelected(0)}
+          >
             <Center>
               <Icon
                 mb="1"
                 as={
                   <MaterialCommunityIcons
-                    name={selected === 0 ? 'home' : 'home-outline'}
+                    name={selected === 0 ? "home" : "home-outline"}
                   />
                 }
                 color="white"
@@ -87,7 +87,7 @@ export default function App() {
                 mb="1"
                 as={
                   <MaterialCommunityIcons
-                    name={selected === 2 ? 'cart' : 'cart-outline'}
+                    name={selected === 2 ? "cart" : "cart-outline"}
                   />
                 }
                 color="white"
@@ -110,7 +110,7 @@ export default function App() {
                 mb="1"
                 as={
                   <MaterialCommunityIcons
-                    name={selected === 3 ? 'account' : 'account-outline'}
+                    name={selected === 3 ? "account" : "account-outline"}
                   />
                 }
                 color="white"
@@ -126,6 +126,4 @@ export default function App() {
     </NativeBaseProvider>
   );
 }
-
-
 ```

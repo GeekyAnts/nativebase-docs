@@ -21,12 +21,12 @@ Calling toggleColorMode anywhere in your app tree toggles the color mode.
 
 ```
 
-## _light and _dark Pseudo props
+## \_light and \_dark Pseudo props
 
 All components accepts \_light and \_dark props which applies the passed props on dark and light mode.
 
-```SnackPlayer name=PseudoProps%20Usage
-import React from 'react';
+```jsx isLive
+import React from "react";
 import {
   Heading,
   useColorMode,
@@ -37,14 +37,18 @@ import {
   useColorModeValue,
   Text,
   NativeBaseProvider,
-} from 'native-base';
+} from "native-base";
 
 function PseudoPropsUsage() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Center flex={1} _dark={{bg:'coolGray.800'}} _light={{bg:'warmGray.50'}}>
+    <Center
+      flex={1}
+      _dark={{ bg: "coolGray.800" }}
+      _light={{ bg: "warmGray.50" }}
+    >
       <Text fontSize="lg" display="flex" mb="20">
-        The active color mode is{' '}
+        The active color mode is{" "}
         <Text bold fontSize="lg">
           {colorMode}
         </Text>
@@ -54,14 +58,13 @@ function PseudoPropsUsage() {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
-        <PseudoPropsUsage />
+      <PseudoPropsUsage />
     </NativeBaseProvider>
   );
 }
-
 ```
 
 ## Default color mode
@@ -69,12 +72,12 @@ export default function () {
 You can set default color mode. By default, the color mode will be `light`. To support this, extend the default theme with a `config`
 
 ```jsx
-import { NativeBaseProvider, extendTheme, Text } from 'native-base';
+import { NativeBaseProvider, extendTheme, Text } from "native-base";
 
 // Define the config
 const config = {
   useSystemColorMode: false,
-  initialColorMode: 'dark',
+  initialColorMode: "dark",
 };
 
 // extend the theme
@@ -94,24 +97,24 @@ function App() {
 You can persist the color mode in you app by defining you color mode manager of type `StorageManager` and passing it to the NativeBaseProvider. This will retain the color mode even when the app is refreshed.
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, StorageManager, ColorMode } from 'native-base';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React from "react";
+import { NativeBaseProvider, StorageManager, ColorMode } from "native-base";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // Define the colorModeManager,
 // here we are using react-native-async-storage (https://react-native-async-storage.github.io/async-storage/)
 const colorModeManager: StorageManager = {
   get: async () => {
     try {
-      let val = await AsyncStorage.getItem('@color-mode');
-      return val === 'dark' ? 'dark' : 'light';
+      let val = await AsyncStorage.getItem("@color-mode");
+      return val === "dark" ? "dark" : "light";
     } catch (e) {
-      return 'light';
+      return "light";
     }
   },
   set: async (value: ColorMode) => {
     try {
-      await AsyncStorage.setItem('@color-mode', value);
+      await AsyncStorage.setItem("@color-mode", value);
     } catch (e) {
       console.log(e);
     }
