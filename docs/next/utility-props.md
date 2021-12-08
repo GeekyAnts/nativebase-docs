@@ -31,7 +31,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -90,7 +90,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -163,7 +163,7 @@ export function Example() {
   );
 }
 
-export default () => {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -171,7 +171,7 @@ export default () => {
       </Center>
     </NativeBaseProvider>
   );
-};
+}
 ```
 
 ### Typography
@@ -201,7 +201,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -254,7 +254,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -309,7 +309,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -357,7 +357,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -416,7 +416,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -460,7 +460,7 @@ function Component() {
     </NBBox>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -504,7 +504,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -547,7 +547,7 @@ function Example() {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -590,7 +590,7 @@ function Example() {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -643,7 +643,7 @@ function Example() {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

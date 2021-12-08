@@ -70,7 +70,7 @@ function Component() {
     </Button>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

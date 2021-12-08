@@ -31,7 +31,7 @@ function ColorPalete() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1} p="3">
@@ -66,7 +66,7 @@ function Tokens() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -109,7 +109,7 @@ function UseContrastingTextHook() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

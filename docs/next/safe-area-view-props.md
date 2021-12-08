@@ -36,7 +36,7 @@ function MyComponent() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <MyComponent />
@@ -60,7 +60,7 @@ function MyComponent() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <MyComponent />
@@ -87,7 +87,7 @@ function MyComponent() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <MyComponent />

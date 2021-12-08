@@ -47,7 +47,7 @@ function UseTokenHookExample() {
     </VStack>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

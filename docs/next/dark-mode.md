@@ -15,10 +15,10 @@ In this approach we use NativeBase's `extendTheme` function to customise the com
 Note: Changes on the theme will be reflected on the entire application.
 
 ```tsx
-import React from 'react';
-import { NativeBaseProvider, themeTools } from 'native-base';
-import { extendTheme } from 'native-base';
-import { Content } from './Content';
+import React from "react";
+import { NativeBaseProvider, themeTools } from "native-base";
+import { extendTheme } from "native-base";
+import { Content } from "./Content";
 
 export default function () {
   const theme = extendTheme({
@@ -26,7 +26,7 @@ export default function () {
       Heading: {
         baseStyle: (props: any) => {
           return {
-            color: themeTools.mode('red.300', 'blue.300')(props),
+            color: themeTools.mode("red.300", "blue.300")(props),
           };
         },
       },
@@ -49,12 +49,12 @@ In this approach we use NativeBase's `useColorModeValue` function and update spe
 Note: Changes on the theme will be reflected on the entire application.
 
 ```tsx
-import React from 'react';
-import { useColorModeValue, Button } from 'native-base';
+import React from "react";
+import { useColorModeValue, Button } from "native-base";
 
 export default function () {
-  const colorScheme = useColorModeValue('teal', 'amber');
-  const variant = useColorModeValue('solid', 'outline');
+  const colorScheme = useColorModeValue("teal", "amber");
+  const variant = useColorModeValue("solid", "outline");
 
   return (
     <Button colorScheme={colorScheme} variant={variant}>
@@ -66,19 +66,19 @@ export default function () {
 
 In the above example, you'll get a **solid teal Button** in **light** mode whereas an **outline amber Button** in **dark** mode. You can get creative and make other properties respond to the color mode as well.
 
-## 3. By using _light and _dark props
+## 3. By using \_light and \_dark props
 
 In this approach we pass the required props inside \_light and \_dark based on the requirement.
 
 ```tsx
-import React from 'react';
-import { Button } from 'native-base';
+import React from "react";
+import { Button } from "native-base";
 
 export default function () {
   return (
     <Button
-      _light={{ bg: 'teal', _text: { color: 'white' } }}
-      _dark={{ bg: 'amber' }}
+      _light={{ bg: "teal", _text: { color: "white" } }}
+      _dark={{ bg: "amber" }}
     >
       Sample
     </Button>
