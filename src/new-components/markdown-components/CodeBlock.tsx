@@ -3,6 +3,26 @@ import * as RN from "react-native";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/vsDark";
 import * as NBComponents from "native-base";
+// import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+// import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+// import AntDesign from "react-native-vector-icons/AntDesign";
+// import Entypo from "react-native-vector-icons/Entypo";
+// import EvilIcons from "react-native-vector-icons/EvilIcons";
+// import Feather from "react-native-vector-icons/Feather";
+// import FontAwesome from "react-native-vector-icons/FontAwesome";
+// import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
+// import Foundation from "react-native-vector-icons/Foundation";
+// import Fontisto from "react-native-vector-icons/Fontisto";
+// import Octicons from "react-native-vector-icons/Octicons";
+// import Ionicons from "react-native-vector-icons/Ionicons";
+// import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
+// import Zocial from "react-native-vector-icons/Zocial";
+import * as expoVectorIcons from "@expo/vector-icons";
+const { parse } = require("@babel/parser");
+const traverse = require("@babel/traverse").default;
+const prettier = require("prettier");
+const generate = require("@babel/generator").default;
+// const reactNativeLinearGradient = require('react-native-linear-gradient');
 
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 
@@ -14,16 +34,71 @@ export const CodeBlock = ({ children, isLive }: any) => {
       </NBComponents.Center>
     );
   };
-  const scope = { ...NBComponents, Wrapper, ...React }; // add custom deps as and when required. more info here -> https://github.com/FormidableLabs/react-live#liveprovider-
+  function getParsedCode(code: any) {
+    const ast = parse(code, {
+      sourceType: "module",
+      plugins: ["jsx", "typescript"],
+    });
+    traverse(ast, {
+      enter(path: any) {
+        if (path.node.type === "ImportDeclaration") {
+          path.remove();
+        }
+        if (path.node?.type === "ExportNamedDeclaration") {
+          // console.log(path.node.declaration.declarations);
+          const childDec = path.node.declaration;
+          path.replaceWith(childDec);
+          // console.log(path.node);
+        }
+        // if(path.node?.type ==="FunctionDeclaration"){
+        //   console.log(path.node);
+        // }
+        // console.log(path.node);
+      },
+    });
+    const output = generate(ast);
+
+    // const result = prettier.format(output.code, {
+    //   semi: false,
+    //   parser: "babel",
+    // });
+    return output.code
+  }
+  // const IconLib = {
+  //   MaterialCommunityIcons,
+  //   MaterialIcons,
+  //   AntDesign,
+  //   Entypo,
+  //   EvilIcons,
+  //   Feather,
+  //   FontAwesome,
+  //   FontAwesome5,
+  //   Foundation,
+  //   Fontisto,
+  //   Octicons,
+  //   Ionicons,
+  //   SimpleLineIcons,
+  //   Zocial,
+  // };
+  const scope = {
+    ...NBComponents,
+    Wrapper,
+    ...React,
+    // ...IconLib,
+    ...expoVectorIcons,
+    // reactNativeLinearGradient,
+  }; // add custom deps as and when required. more info here -> https://github.com/FormidableLabs/react-live#liveprovider-
 
   // @ts-ignore
   delete scope.default;
+  console.log(getParsedCode(children));
+  
   return (
     <>
       {isLive ? (
         <LiveProvider
           scope={scope}
-          code={children}
+          code={getParsedCode(children)}
           transformCode={(a) => {
             return `
           function App() {

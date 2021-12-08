@@ -76,11 +76,13 @@ export default () => {
 
 If you're not using Expo, you can install [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient) and configure in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
 
-```jsx
+```jsx isLive=true
 import React from 'react';
 import { Box, NativeBaseProvider } from 'native-base';
+// const reactNativeLinearGradient = require('react-native-linear-gradient');
 
-const Example = () => {
+
+const App = () => {
   return (
     <Box
       bg={{
@@ -99,16 +101,16 @@ const Example = () => {
   );
 };
 
-const config = {
-  dependencies: {
-    'linear-gradient': require('react-native-linear-gradient').default,
-  },
-};
+// const config = {
+//   dependencies: {
+//     'linear-gradient': reactNativeLinearGradient,
+//   },
+// };
 
-export default () => {
+export const Example () => {
   return (
-    <NativeBaseProvider config={config}>
-      <Example />
+    <NativeBaseProvider >
+      <App />
     </NativeBaseProvider>
   );
 };

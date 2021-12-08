@@ -91,7 +91,8 @@ export const getFileExtension = async (slug: string) => {
 
 export const parseCodeBlock = (fileData: any, version: string) => {
   const tempArray = fileData.split("```ComponentSnackPlayer ");
-
+  // console.log(tempArray);
+  
   for (let i = 0; i < tempArray.length; i++) {
     if (tempArray[i].substring(0, 4) == "path") {
       let code = getCodeFromStorybook(
@@ -99,8 +100,9 @@ export const parseCodeBlock = (fileData: any, version: string) => {
         version
       );
       let temp1 = tempArray[i].split("```");
+      // console.log(temp1);
       temp1[0] = code;
-      tempArray[i] = temp1.join("");
+      tempArray[i] = temp1.join("```");
     }
   }
   return tempArray.join("");
@@ -117,35 +119,35 @@ const getCodeFromStorybook = (pathArray: string[], version: string) => {
       path.join(...pathArray),
     "utf-8"
   );
-  const ast = parse(code, {
-    sourceType: "module",
-    plugins: ["jsx", "typescript"],
-  });
-  traverse(ast, {
-    enter(path: any) {
-      if (path.node.type === "ImportDeclaration") {
-        path.remove();
-      }
-      if (path.node?.type === "ExportNamedDeclaration") {
-        // console.log(path.node.declaration.declarations);
-        const childDec = path.node.declaration;
-        path.replaceWith(childDec);
-        // console.log(path.node);
-      }
-      // if(path.node?.type ==="FunctionDeclaration"){
-      //   console.log(path.node);
-      // }
-      // console.log(path.node);
-    },
-  });
-  const output = generate(ast);
+  // const ast = parse(code, {
+  //   sourceType: "module",
+  //   plugins: ["jsx", "typescript"],
+  // });
+  // traverse(ast, {
+  //   enter(path: any) {
+  //     if (path.node.type === "ImportDeclaration") {
+  //       path.remove();
+  //     }
+  //     if (path.node?.type === "ExportNamedDeclaration") {
+  //       // console.log(path.node.declaration.declarations);
+  //       const childDec = path.node.declaration;
+  //       path.replaceWith(childDec);
+  //       // console.log(path.node);
+  //     }
+  //     // if(path.node?.type ==="FunctionDeclaration"){
+  //     //   console.log(path.node);
+  //     // }
+  //     // console.log(path.node);
+  //   },
+  // });
+  // const output = generate(ast);
 
-  const result = prettier.format(output.code, {
-    semi: false,
-    parser: "babel",
-  });
+  // const result = prettier.format(output.code, {
+  //   semi: false,
+  //   parser: "babel",
+  // });
 
-  return "```jsx isLive=true \n" + result + "\n```";
+  return "```jsx isLive=true \n" + code + "\n```";
 };
 
 export const getDocBySlug = async (filename: string, version: string) => {
@@ -157,7 +159,8 @@ export const getDocBySlug = async (filename: string, version: string) => {
   );
 
   fileData = parseCodeBlock(fileData, version);
-
+    console.log(fileData);
+    
   return fileData;
 };
 
