@@ -11,22 +11,22 @@ The following table shows a list of every style prop and the properties within e
 
 ### Margin and padding
 
-```SnackPlayer name=Margin%20and%20padding
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
 
 const Box = (props) => {
-  return <NBBox borderRadius='md' bg='primary.600' {...props} />
-}
+  return <NBBox borderRadius="md" bg="primary.600" {...props} />;
+};
 
 function Component() {
   return (
     <>
-      { /* m="2" refers to the value of `theme.space[2]` */ }
+      {/* m="2" refers to the value of `theme.space[2]` */}
       <Box m="2" p="5" />
-      { /* You can also use custom values */ }
+      {/* You can also use custom values */}
       <Box mx="auto" px="20" py="5" />
-      { /* sets margin `8px` on all viewports and `16px` from the first breakpoint and up */ }
+      {/* sets margin `8px` on all viewports and `16px` from the first breakpoint and up */}
       <Box m={[2, 3]} pt="10" pr="10" />
     </>
   );
@@ -40,7 +40,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
@@ -64,9 +63,9 @@ export default function () {
 
 ### Color and background color
 
-```SnackPlayer name=Color%20and%20background%20COolor
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center, Text } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Box as NBBox, NativeBaseProvider, Center, Text } from "native-base";
 
 const Box = (props) => {
   return <NBBox p="5" m="2" borderRadius="md" bg="primary.200" {...props} />;
@@ -82,7 +81,7 @@ function Component() {
       <Box bgColor="cyan.100" py="3">
         {/* using theme colors to set text color */}
         <Text color="cyan.500" fontWeight="bold">
-          {' '}
+          {" "}
           I love NativeBase
         </Text>
       </Box>
@@ -100,8 +99,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
-
 ```
 
 <br />
@@ -123,10 +120,9 @@ Above props can be written in the format: {color}:alpha.{opacityToken}, this get
 
 <br />
 
-```SnackPlayer name=Alpha%20Opacity%20Usage
-
-import React from "react"
-import { HStack, Stack, Center, NativeBaseProvider } from "native-base"
+```jsx isLive=true
+import React from "react";
+import { HStack, Stack, Center, NativeBaseProvider } from "native-base";
 export function Example() {
   return (
     <Stack space="2" alignItems="center">
@@ -138,7 +134,6 @@ export function Example() {
           _text={{
             color: "white",
           }}
-
         >
           Box 1
         </Center>
@@ -165,7 +160,7 @@ export function Example() {
         </Center>
       </HStack>
     </Stack>
-  )
+  );
 }
 
 export default () => {
@@ -175,33 +170,34 @@ export default () => {
         <Example />
       </Center>
     </NativeBaseProvider>
-  )
-}
-
+  );
+};
 ```
 
 ### Typography
 
-```SnackPlayer name=Typography
-import React from 'react';
-import { Text as NBText, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Text as NBText, NativeBaseProvider, Center } from "native-base";
 
 const Text = (props) => {
-  return <NBText m="2" {...props} />
-}
+  return <NBText m="2" {...props} />;
+};
 
 function Component() {
   return (
     <>
-      { /* font-size of `theme.fontSizes.2xl` */ }
-      <Text fontSize="2xl" fontWeight="bold" >Thank You </Text>
-      { /* text decoration `underline` */ }
-      <Text textDecoration='underline'>Merci Beaucoup</Text>
-      { /* font-size `'2em'` */ }
-      { /* font-weight of `theme.fontWeights.semibold i.e. 600` */ }
-      <Text fontWeight='bold'>Danke sehr </Text>
-      { /* letter-spacing `0.1 em` */ }
-      <Text letterSpacing="2xl" >Arigatou </Text>
+      {/* font-size of `theme.fontSizes.2xl` */}
+      <Text fontSize="2xl" fontWeight="bold">
+        Thank You{" "}
+      </Text>
+      {/* text decoration `underline` */}
+      <Text textDecoration="underline">Merci Beaucoup</Text>
+      {/* font-size `'2em'` */}
+      {/* font-weight of `theme.fontWeights.semibold i.e. 600` */}
+      <Text fontWeight="bold">Danke sehr </Text>
+      {/* letter-spacing `0.1 em` */}
+      <Text letterSpacing="2xl">Arigatou </Text>
     </>
   );
 }
@@ -214,7 +210,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
@@ -233,28 +228,28 @@ export default function () {
 
 ### Layout, width and height
 
-```SnackPlayer name=Layout,%20width%20and%20height
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
 
 const Box = (props) => {
-  return <NBBox m="2" borderRadius="md" bg="primary.600" {...props} />
-}
+  return <NBBox m="2" borderRadius="md" bg="primary.600" {...props} />;
+};
 
 function Component() {
   return (
     <>
-      { /* verbose */ }
+      {/* verbose */}
       <Box width="100%" height="8" />
-      { /* shorthand */ }
+      {/* shorthand */}
       <Box w="100%" h="32px" />
-      { /* use boxSizing */ }
+      {/* use boxSizing */}
       <Box boxSize="12" />
-      { /* width `50%` */ }
-      <Box w='50%' h="8" />
-      { /* width `256px` h="8" */ }
+      {/* width `50%` */}
+      <Box w="50%" h="8" />
+      {/* width `256px` h="8" */}
       <Box w="256" />
-      { /* width `"40px"` */ }
+      {/* width `"40px"` */}
       <Box w="40px" h="8" />
     </>
   );
@@ -268,7 +263,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
@@ -290,24 +284,24 @@ export default function () {
 
 ### Flexbox
 
-```SnackPlayer name=Flexbox
-import React from 'react';
-import { Box as NBBox, Flex, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Box as NBBox, Flex, NativeBaseProvider, Center } from "native-base";
 
 const Box = (props) => {
-  return <NBBox p="5" m="2" borderRadius="md" bg="primary.600" {...props} />
-}
+  return <NBBox p="5" m="2" borderRadius="md" bg="primary.600" {...props} />;
+};
 
 function Component() {
   return (
     <>
-      { /* verbose */ }
+      {/* verbose */}
       <NBBox display="flex" flexDirection="row" justifyContent="space-between">
         <Box />
         <Box />
         <Box />
       </NBBox>
-      { /* shorthand using the `Flex` component */ }
+      {/* shorthand using the `Flex` component */}
       <Flex align="center" justify="center">
         <Box />
         <Box />
@@ -324,7 +318,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
@@ -347,9 +340,9 @@ export default function () {
 
 ### Borders
 
-```SnackPlayer name=Borders
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
 
 const Box = (props) => {
   return <NBBox p="5" m="2" borderRadius="md" bg="primary.200" {...props} />;
@@ -373,7 +366,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
@@ -402,24 +394,24 @@ export default function () {
 
 ### Borders Radius
 
-```SnackPlayer name=Borders%20Radius
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
 
 const Box = (props) => {
-  return <NBBox p="5" m="2" bg="primary.500" {...props} />
-}
+  return <NBBox p="5" m="2" bg="primary.500" {...props} />;
+};
 
 function Component() {
   return (
     <>
-      { /* picks up a nested radius value using dot notation */ }
-      { /* => `theme.radius.md` */ }
+      {/* picks up a nested radius value using dot notation */}
+      {/* => `theme.radius.md` */}
       <Box borderRadius="md" />
       <Box borderRadius="full" />
-      { /* partial border radius */ }
+      {/* partial border radius */}
       <Box borderLeftRadius="10" />
-      { /* absolute value prop */ }
+      {/* absolute value prop */}
       <Box borderRadius="8" />
     </>
   );
@@ -433,7 +425,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
@@ -452,9 +443,9 @@ export default function () {
 
 ### Position
 
-```SnackPlayer name=Position
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
 
 const Box = (props) => {
   return <NBBox p="5" borderRadius="md" bg="primary.400" {...props} />;
@@ -493,18 +484,18 @@ export default function () {
 
 ### Shadow
 
-```SnackPlayer name=Shadow
-import React from 'react';
-import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
 
 const Box = (props) => {
-  return <NBBox p="5" m="2" borderRadius="md" bg="primary.500" {...props} />
-}
+  return <NBBox p="5" m="2" borderRadius="md" bg="primary.500" {...props} />;
+};
 
 function Component() {
   return (
     <>
-      { /* => `theme.shadows.md` */ }
+      {/* => `theme.shadows.md` */}
       <Box shadow="1" />
       <Box shadow="3" />
       <Box shadow="5" />
@@ -522,7 +513,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
@@ -537,23 +527,23 @@ export default function () {
 
 Provides a way to pass props to child components inside Composite componets.
 
-```SnackPlayer name=Internal
-import React from 'react';
-import { Button, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Button, NativeBaseProvider, Center } from "native-base";
 
 function Example() {
   return (
-      <Button
-        _text= {{
-          // below props will will let you style the text of the button
-          color: 'primary.100',
-          fontSize: 'md',
-          fontWeight: 'bold',
-          underline:true
-        }}
-      >
-        Save
-      </Button>
+    <Button
+      _text={{
+        // below props will will let you style the text of the button
+        color: "primary.100",
+        fontSize: "md",
+        fontWeight: "bold",
+        underline: true,
+      }}
+    >
+      Save
+    </Button>
   );
 }
 
@@ -566,7 +556,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
@@ -580,24 +569,24 @@ export default function () {
 
 Provides a way to pass props on certain interaction.
 
-```SnackPlayer name=Internal
-import React from 'react';
-import { Button, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Button, NativeBaseProvider, Center } from "native-base";
 
 function Example() {
   return (
-      <Button
-        colorScheme="yellow"
-        _pressed={{
-          // below props will only be applied on button is pressed
-          bg: 'yellow.600',
-          _text:{
-            color: 'warmGray.50'
-          }
-        }}
-      >
-        Save
-      </Button>
+    <Button
+      colorScheme="yellow"
+      _pressed={{
+        // below props will only be applied on button is pressed
+        bg: "yellow.600",
+        _text: {
+          color: "warmGray.50",
+        },
+      }}
+    >
+      Save
+    </Button>
   );
 }
 
@@ -610,7 +599,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />
@@ -627,28 +615,29 @@ export default function () {
 
 Provides a way to pass props bassed on Platform (_android, ios or web_).
 
-```SnackPlayer name=Internal
-import React from 'react';
-import { Button, NativeBaseProvider, Center } from 'native-base';
+```jsx isLive=true
+import React from "react";
+import { Button, NativeBaseProvider, Center } from "native-base";
 
 function Example() {
   return (
     <Button
       _web={{
         // below props will only be applied on 'web' platform
-        bg: 'yellow.400',
+        bg: "yellow.400",
         _text: {
-          color: 'coolGray.800',
-          fontWeight: 'medium',
+          color: "coolGray.800",
+          fontWeight: "medium",
         },
         _pressed: {
           // below props will only be applied on button is pressed
-          bg: 'yellow.600',
+          bg: "yellow.600",
           _text: {
-            color: 'warmGray.50',
+            color: "warmGray.50",
           },
         },
-      }}>
+      }}
+    >
       Save
     </Button>
   );
@@ -663,7 +652,6 @@ export default function () {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />

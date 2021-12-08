@@ -8,14 +8,22 @@ title: useToken
 ## Import
 
 ```jsx
-import { useToken } from 'native-base';
+import { useToken } from "native-base";
 ```
 
 ## Example
 
-```SnackPlayer name=useToken%20Example
+```jsx isLive=true
 import React from "react";
-import { Box, Text, useToken, NativeBaseProvider, Center, HStack , VStack} from "native-base";
+import {
+  Box,
+  Text,
+  useToken,
+  NativeBaseProvider,
+  Center,
+  HStack,
+  VStack,
+} from "native-base";
 
 function UseTokenHookExample() {
   const [colorPick1, colorPick2] = useToken(

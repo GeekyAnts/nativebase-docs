@@ -19,14 +19,14 @@ In this example, learn how to add validation to a form that has a single text fi
 
 Create an Input wrapped in FormControl.
 
-```SnackPlayer name=Form%20Example
+```jsx isLive=true
 import React from "react";
 import {
   VStack,
   FormControl,
   Input,
   NativeBaseProvider,
-  Center
+  Center,
 } from "native-base";
 
 function BuildingAFormExample() {
@@ -35,15 +35,17 @@ function BuildingAFormExample() {
   return (
     <VStack width="90%" mx="3">
       <FormControl isRequired>
-        <FormControl.Label _text={{bold: true}}>Name</FormControl.Label>
+        <FormControl.Label _text={{ bold: true }}>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormControl.HelperText _text={{fontSize: 'xs'}}>
+        <FormControl.HelperText _text={{ fontSize: "xs" }}>
           Name should contain atleast 3 character.
         </FormControl.HelperText>
-        <FormControl.ErrorMessage _text={{fontSize: 'xs'}}>Error Name</FormControl.ErrorMessage>
+        <FormControl.ErrorMessage _text={{ fontSize: "xs" }}>
+          Error Name
+        </FormControl.ErrorMessage>
       </FormControl>
     </VStack>
   );
@@ -51,8 +53,8 @@ function BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
-      <BuildingAFormExample />
+      <Center flex={1}>
+        <BuildingAFormExample />
       </Center>
     </NativeBaseProvider>
   );
@@ -63,31 +65,30 @@ export default function () {
 
 Add validation logic.
 
-```SnackPlayer name=Form%20Example(Validation)
-import React from 'react';
+```jsx isLive=true
+import React from "react";
 import {
   VStack,
   FormControl,
   Input,
   NativeBaseProvider,
-  Center
-} from 'native-base';
+  Center,
+} from "native-base";
 
-
-function  BuildingAFormExample() {
+function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
   const [errors, setErrors] = React.useState({});
   const validate = () => {
     if (formData.name === undefined) {
       setErrors({
         ...errors,
-        name: 'Name is required',
+        name: "Name is required",
       });
       return false;
     } else if (formData.name.length < 3) {
       setErrors({
         ...errors,
-        name: 'Name is too short',
+        name: "Name is too short",
       });
       return false;
     }
@@ -97,15 +98,17 @@ function  BuildingAFormExample() {
   return (
     <VStack width="90%" mx="3">
       <FormControl isRequired>
-        <FormControl.Label _text={{bold: true}}>Name</FormControl.Label>
+        <FormControl.Label _text={{ bold: true }}>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormControl.HelperText _text={{fontSize: 'xs'}}>
+        <FormControl.HelperText _text={{ fontSize: "xs" }}>
           Name should contain atleast 3 character.
         </FormControl.HelperText>
-        <FormControl.ErrorMessage _text={{fontSize: 'xs'}}>Error Name</FormControl.ErrorMessage>
+        <FormControl.ErrorMessage _text={{ fontSize: "xs" }}>
+          Error Name
+        </FormControl.ErrorMessage>
       </FormControl>
     </VStack>
   );
@@ -113,8 +116,8 @@ function  BuildingAFormExample() {
 export default function () {
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
-      <BuildingAFormExample />
+      <Center flex={1}>
+        <BuildingAFormExample />
       </Center>
     </NativeBaseProvider>
   );
@@ -125,16 +128,16 @@ export default function () {
 
 Create a button to validate and submit the form.
 
-```SnackPlayer name=Form%20Example(Validate%20and%20Submit)
-import React from 'react';
+```jsx isLive=true
+import React from "react";
 import {
   VStack,
   Button,
   FormControl,
   Input,
   NativeBaseProvider,
-  Center
-} from 'native-base';
+  Center,
+} from "native-base";
 
 function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
@@ -143,13 +146,13 @@ function BuildingAFormExample() {
     if (formData.name === undefined) {
       setErrors({
         ...errors,
-        name: 'Name is required',
+        name: "Name is required",
       });
       return false;
     } else if (formData.name.length < 3) {
       setErrors({
         ...errors,
-        name: 'Name is too short',
+        name: "Name is too short",
       });
       return false;
     }
@@ -157,37 +160,40 @@ function BuildingAFormExample() {
   };
 
   const onSubmit = () => {
-    validate() ? console.log('Submitted') : console.log('Validation Failed');
+    validate() ? console.log("Submitted") : console.log("Validation Failed");
   };
 
   return (
     <VStack width="90%" mx="3">
-      <FormControl isRequired isInvalid={'name' in errors}>
-        <FormControl.Label _text={{bold: true}}>Name</FormControl.Label>
+      <FormControl isRequired isInvalid={"name" in errors}>
+        <FormControl.Label _text={{ bold: true }}>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        {'name' in errors ?
-        <FormControl.ErrorMessage _text={{fontSize: 'xs', color: 'error.500', fontWeight: 500}}>Error</FormControl.ErrorMessage>
-:
-
-        <FormControl.HelperText _text={{fontSize: 'xs'}}>
-          Name should contain atleast 3 character.
-        </FormControl.HelperText>
-        }
+        {"name" in errors ? (
+          <FormControl.ErrorMessage
+            _text={{ fontSize: "xs", color: "error.500", fontWeight: 500 }}
+          >
+            Error
+          </FormControl.ErrorMessage>
+        ) : (
+          <FormControl.HelperText _text={{ fontSize: "xs" }}>
+            Name should contain atleast 3 character.
+          </FormControl.HelperText>
+        )}
       </FormControl>
-    <Button onPress={onSubmit} mt="5" colorScheme="cyan">
-      Submit
-    </Button>
+      <Button onPress={onSubmit} mt="5" colorScheme="cyan">
+        Submit
+      </Button>
     </VStack>
   );
 }
 export default function () {
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
-      <BuildingAFormExample />
+      <Center flex={1}>
+        <BuildingAFormExample />
       </Center>
     </NativeBaseProvider>
   );
