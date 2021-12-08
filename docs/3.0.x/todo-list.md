@@ -5,7 +5,7 @@ title: Todo-List
 
 A simple To Do App made using NativeBase 3.0.
 
-```SnackPlayer name=TodoList%20Examples
+```jsx isLive=true
 import React from "react";
 import {
   Input,
@@ -22,7 +22,7 @@ import {
 } from "native-base";
 import { FontAwesome5 } from '@expo/vector-icons';
 
-export default function () {
+export function Example() {
   const instState = [
     { title: "code", isCompleted: true },
     { title: "sleep", isCompleted: false },

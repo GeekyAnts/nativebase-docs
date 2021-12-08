@@ -15,7 +15,7 @@ To include content, wrap it in the Container component.
 
 ## Example
 
-```SnackPlayer name=Container%20Example
+```jsx isLive=true
 import React from 'react';
 import { Container, Text, Heading, NativeBaseProvider, Center } from 'native-base';
 function ContainerComponent() {

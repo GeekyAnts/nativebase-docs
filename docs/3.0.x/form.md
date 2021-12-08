@@ -19,7 +19,7 @@ In this example, learn how to add validation to a form that has a single text fi
 
 Create an Input wrapped in FormControl.
 
-```SnackPlayer name=Form%20Example
+```jsx isLive=true
 import React from "react";
 import {
   VStack,
@@ -63,7 +63,7 @@ export default function () {
 
 Add validation logic.
 
-```SnackPlayer name=Form%20Example(Validation)
+```jsx isLive=true
 import React from 'react';
 import {
   VStack,
@@ -125,7 +125,7 @@ export default function () {
 
 Create a button to validate and submit the form.
 
-```SnackPlayer name=Form%20Example(Validate%20and%20Submit)
+```jsx isLive=true
 import React from 'react';
 import {
   VStack,

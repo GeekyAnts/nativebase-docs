@@ -7,7 +7,7 @@ NativeBase provides [Form components](button.md) which can be easily integrated 
 
 Let's take an example using [FormControl](formControl.md) and [Input](input.md) components
 
-```SnackPlayer name=Formik-example dependencies=formik@2.2.9
+```jsx isLive=true
 import {
   VStack,
   Input,

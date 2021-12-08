@@ -11,7 +11,7 @@ import { Factory } from 'native-base';
 
 ## Usage
 
-```SnackPlayer name=NativeBase%20Factory%20Usage
+```jsx isLive=true
 import React from 'react';
 import { Factory, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
@@ -24,7 +24,7 @@ function FactoryViewExample () {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -37,7 +37,7 @@ export default function () {
 
 ## Defining component theme
 
-```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
+```jsx isLive=true
 import React from 'react';
 import { Factory, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
@@ -53,7 +53,7 @@ function FactoryViewExample () {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -66,7 +66,7 @@ export default function () {
 
 ## Using mode in component theme
 
-```SnackPlayer name=NativeBase%20Factory%20Component%20Theme
+```jsx isLive=true
 import React from 'react';
 import { Factory, themeTools, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
@@ -84,7 +84,7 @@ function FactoryViewModeExample () {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -97,7 +97,7 @@ export default function () {
 
 ## Using ref
 
-```SnackPlayer name=NativeBase%20Factory%20Using%20Ref
+```jsx isLive=true
 import React from 'react';
 import { Factory, Button, Stack, NativeBaseProvider,Center } from 'native-base';
 import { TextInput } from 'react-native';
@@ -127,7 +127,7 @@ function FactoryViewRefExample () {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

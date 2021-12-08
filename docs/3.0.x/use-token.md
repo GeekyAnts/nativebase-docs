@@ -13,7 +13,7 @@ import { useToken } from 'native-base';
 
 ## Example
 
-```SnackPlayer name=useToken%20Example
+```jsx isLive=true
 import React from "react";
 import { Box, Text, useToken, NativeBaseProvider, Center } from "native-base";
 
@@ -32,7 +32,7 @@ function UseTokenHookExample() {
     </Box>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

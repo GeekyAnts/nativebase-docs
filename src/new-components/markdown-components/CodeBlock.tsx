@@ -21,14 +21,15 @@ import * as expoVectorIcons from "@expo/vector-icons";
 const { parse } = require("@babel/parser");
 const traverse = require("@babel/traverse").default;
 const generate = require("@babel/generator").default;
+import { Formik } from "formik";
 // import { NavigationContainer } from "@react-navigation/native";
 // import {
 //   createDrawerNavigator,
 //   DrawerContentScrollView,
 // } from "@react-navigation/drawer";
 import dynamic from "next/dynamic";
-import { SwipeListView } from 'react-native-swipe-list-view';
-import { TabView, SceneMap } from 'react-native-tab-view';
+import { SwipeListView } from "react-native-swipe-list-view";
+import { TabView, SceneMap } from "react-native-tab-view";
 
 // @ts-ignore
 const { NavigationContainer } = dynamic(
@@ -37,9 +38,9 @@ const { NavigationContainer } = dynamic(
   {
     ssr: false,
   }
-  );
-  // @ts-ignore
-  const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
+);
+// @ts-ignore
+const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
   // @ts-ignore
   () => import("react-navigation"),
   {
@@ -114,7 +115,9 @@ export const CodeBlock = ({ children, isLive }: any) => {
     createDrawerNavigator,
     DrawerContentScrollView,
     SwipeListView,
-    TabView, SceneMap,
+    TabView,
+    SceneMap,
+    Formik,
     // LinearGradient,
   }; // add custom deps as and when required. more info here -> https://github.com/FormidableLabs/react-live#liveprovider-
 

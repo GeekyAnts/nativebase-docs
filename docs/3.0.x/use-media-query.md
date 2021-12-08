@@ -15,7 +15,7 @@ import { useMediaQuery } from 'native-base';
 
 ### max-height
 
-```SnackPlayer name=useMediaQuery%20Usage(max-height)
+```jsx isLive=true
 import React from "react";
 import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
@@ -27,7 +27,7 @@ function UseMediaQueryExample() {
     </Text>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -40,7 +40,7 @@ export default function () {
 
 ### min-width
 
-```SnackPlayer name=useMediaQuery%20Usage(min-width)
+```jsx isLive=true
 import React from "react";
 import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
@@ -52,7 +52,7 @@ function UseMediaQueryExample() {
     </Text>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -65,7 +65,7 @@ export default function () {
 
 ### orientation
 
-```SnackPlayer name=useMediaQuery%20Usage(orientation)
+```jsx isLive=true
 import React from "react";
 import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
@@ -81,7 +81,7 @@ function UseMediaQueryExample() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

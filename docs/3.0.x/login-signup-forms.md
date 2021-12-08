@@ -7,7 +7,7 @@ title: Login/Signup Forms
 
 ### Login Form
 
-```SnackPlayer name=login dependencies=react-native-linear-gradient
+```jsx isLive=true
 import * as React from 'react';
 import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 import {
@@ -117,7 +117,7 @@ export default function App() {
 
 ### Signup Form
 
-```SnackPlayer name=Signup dependencies=react-native-linear-gradient
+```jsx isLive=true
 import * as React from 'react';
 import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 import {

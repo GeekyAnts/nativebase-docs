@@ -27,7 +27,7 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can install [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) and configure it in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
 
-```SnackPlayer name=LinearGradient
+```jsx isLive=true
 import React from "react"
 import { Box, Center, NativeBaseProvider } from "native-base"
 

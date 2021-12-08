@@ -25,25 +25,29 @@ All style props that arrays as values for responsive styles.
 
 For Example to make a `Box` width or w responsive using the array syntax, here's what you need to do:
 
-```SnackPlayer name=Responsive%20Usage
-import React from 'react';
-import { NativeBaseProvider, Center } from 'native-base';
-function BreakpointExample () {
+```jsx isLive=true
+import React from "react";
+import { NativeBaseProvider, Center } from "native-base";
+function BreakpointExample() {
   return (
-    <Center bg="emerald.400" _text={{color: "white"}}rounded="xl" w={[24, 48, 72]} h={24}>
+    <Center
+      bg="emerald.400"
+      _text={{ color: "white" }}
+      rounded="xl"
+      w={[24, 48, 72]}
+      h={24}
+    >
       This is a box
     </Center>
   );
-};
+}
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <BreakpointExample />
-       </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <BreakpointExample />
+    </Center>
   );
 }
 ```
@@ -54,25 +58,23 @@ You can also define responsive values with breakpoint aliases in an object. Any 
 
 For Example to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
 
-```SnackPlayer name=Responsive%20ObjectSyntax
-import React from 'react';
-import { Text, NativeBaseProvider, Center } from 'native-base';
-function BreakpointExample () {
+```jsx isLive=true
+import React from "react";
+import { Text, NativeBaseProvider, Center } from "native-base";
+function BreakpointExample() {
   return (
-    <Text fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}>
+    <Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
       This is responsive text
     </Text>
   );
-};
+}
 
 // Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <BreakpointExample />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <BreakpointExample />
+    </Center>
   );
 }
 ```
@@ -81,7 +83,7 @@ export default function () {
 
 Here's a simple example of a component that uses a stacked layout on small screens, and a side-by-side layout on larger screens.
 
-```SnackPlayer name=Responsive%20Demo
+```jsx isLive=true
 import React from 'react';
 import { NativeBaseProvider, Center, Box, Text, Image, Heading, Stack } from 'native-base';
 function BreakpointExample () {
@@ -125,11 +127,9 @@ function BreakpointExample () {
 // Example template which wraps component with NativeBaseProvider
 export default function () {
   return (
-    <NativeBaseProvider>
       <Center flex={1}>
         <BreakpointExample />
       </Center>
-    </NativeBaseProvider>
   );
 }
 ```
