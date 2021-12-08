@@ -71,8 +71,8 @@ In the above example, the following changes have been made:
 
 ### Using the new tokens in components
 
-```jsx live
-function App() {
+```jsx isLive=true
+function Example() {
   const theme = extendTheme({
     colors: {
       // Add new color

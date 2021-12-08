@@ -72,7 +72,7 @@ const LocalWrapper = ({ children }) => {
   );
 };
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <LocalWrapper>

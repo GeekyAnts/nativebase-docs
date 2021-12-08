@@ -70,7 +70,7 @@ function BreakpointExample() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <Center flex={1}>
       <BreakpointExample />
@@ -125,7 +125,7 @@ function BreakpointExample () {
 };
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
       <Center flex={1}>
         <BreakpointExample />

@@ -73,7 +73,7 @@ function FormikExample() {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <FormikExample />
