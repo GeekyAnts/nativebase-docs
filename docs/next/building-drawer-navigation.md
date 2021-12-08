@@ -9,14 +9,14 @@ Common pattern in navigation is to use drawer from left (sometimes right) side f
 
 Here is an example to show how easily and quickly we can use React Native's [DrawerNavigation](https://reactnavigation.org/docs/drawer-based-navigation/) in NB.
 
-```SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/drawer,@react-navigation/native@6.0.6,react-native-vector-icons,react-native-gesture-handler@~1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@~3.8.0,react-native-reanimated@~2.2.0
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+```jsx isLive=true
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
-} from '@react-navigation/drawer';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+} from "@react-navigation/drawer";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import {
   NativeBaseProvider,
   Button,
@@ -30,30 +30,32 @@ import {
   HStack,
   Divider,
   Icon,
-} from 'native-base';
+} from "native-base";
 const Drawer = createDrawerNavigator();
 function Component(props) {
   return (
-      <Center>
-       <Text mt="12" fontSize="18">This is {props.route.name} page.</Text>
-     </Center>
+    <Center>
+      <Text mt="12" fontSize="18">
+        This is {props.route.name} page.
+      </Text>
+    </Center>
   );
 }
 
 const getIcon = (screenName) => {
   switch (screenName) {
-    case 'Inbox':
-      return 'email';
-    case 'Outbox':
-      return 'send';
-    case 'Favorites':
-      return 'heart';
-    case 'Archive':
-      return 'archive';
-    case 'Trash':
-      return 'trash-can';
-    case 'Spam':
-      return 'alert-circle';
+    case "Inbox":
+      return "email";
+    case "Outbox":
+      return "send";
+    case "Favorites":
+      return "heart";
+    case "Archive":
+      return "archive";
+    case "Trash":
+      return "trash-can";
+    case "Spam":
+      return "alert-circle";
     default:
       return undefined;
   }
@@ -80,16 +82,17 @@ function CustomDrawerContent(props) {
                 rounded="md"
                 bg={
                   index === props.state.index
-                    ? 'rgba(6, 182, 212, 0.1)'
-                    : 'transparent'
+                    ? "rgba(6, 182, 212, 0.1)"
+                    : "transparent"
                 }
                 onPress={(event) => {
                   props.navigation.navigate(name);
-                }}>
+                }}
+              >
                 <HStack space="7" alignItems="center">
                   <Icon
                     color={
-                      index === props.state.index ? 'primary.500' : 'gray.500'
+                      index === props.state.index ? "primary.500" : "gray.500"
                     }
                     size="5"
                     as={<MaterialCommunityIcons name={getIcon(name)} />}
@@ -97,8 +100,9 @@ function CustomDrawerContent(props) {
                   <Text
                     fontWeight="500"
                     color={
-                      index === props.state.index ? 'primary.500' : 'gray.700'
-                    }>
+                      index === props.state.index ? "primary.500" : "gray.700"
+                    }
+                  >
                     {name}
                   </Text>
                 </HStack>
@@ -157,7 +161,8 @@ function MyDrawer() {
   return (
     <Box safeArea flex={1}>
       <Drawer.Navigator
-        drawerContent={(props) => <CustomDrawerContent {...props} />}>
+        drawerContent={(props) => <CustomDrawerContent {...props} />}
+      >
         <Drawer.Screen name="Inbox" component={Component} />
         <Drawer.Screen name="Outbox" component={Component} />
         <Drawer.Screen name="Favorites" component={Component} />
@@ -168,7 +173,7 @@ function MyDrawer() {
     </Box>
   );
 }
-export default function App() {
+export function Example() {
   return (
     <NavigationContainer>
       <NativeBaseProvider>

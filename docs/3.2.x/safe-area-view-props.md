@@ -23,20 +23,20 @@ SafeAreaView props can only be applied on [Box](box.md) as of now. To make you A
 
 ### Flexible SafeArea
 
-```SnackPlayer name=SafeAreaView%20Boolean
-import React from 'react';
-import { NativeBaseProvider, Box, Text } from 'native-base';
+```jsx isLive
+import React from "react";
+import { NativeBaseProvider, Box, Text } from "native-base";
 function MyComponent() {
   return (
     // This would look different on devices with different insets
-    <Box bg='teal.400' rounded='xl' size="24" safeArea>
+    <Box bg="teal.400" rounded="xl" size="24" safeArea>
       <Text>NativeBase</Text>
     </Box>
   );
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <MyComponent />
@@ -47,9 +47,9 @@ export default function () {
 
 ### Fixed SafeArea
 
-```SnackPlayer name=SafeAreaView%20Boolean
-import React from 'react';
-import { NativeBaseProvider, Box, Text } from 'native-base';
+```jsx isLive
+import React from "react";
+import { NativeBaseProvider, Box, Text } from "native-base";
 function MyComponent() {
   return (
     // This would look same on all devices
@@ -60,40 +60,38 @@ function MyComponent() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <MyComponent />
     </NativeBaseProvider>
   );
 }
-
 ```
 
 ### Using Hook
 
 If you want to add the SafeAreaView props to other components, you can use the hook. Since, `SafeAreaView` props add relevant padding to the components, you will need to pass the padding manually that you are applying to the component for it to return the SafeArea adjusted padding.
 
-```SnackPlayer name=SafeAreaView%20Boolean
-import React from 'react';
-import { NativeBaseProvider, Box, Text, useSafeArea } from 'native-base';
+```jsx isLive
+import React from "react";
+import { NativeBaseProvider, Box, Text, useSafeArea } from "native-base";
 function MyComponent() {
   const safeAreaProps = useSafeArea({ safeAreaTop: true, pt: 2 });
   return (
     // This would look same on all devices
-    <Box bg='teal.400' rounded='xl' size="24" {...safeAreaProps}>
+    <Box bg="teal.400" rounded="xl" size="24" {...safeAreaProps}>
       <Text>NativeBase</Text>
     </Box>
   );
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <MyComponent />
     </NativeBaseProvider>
   );
 }
-
 ```
