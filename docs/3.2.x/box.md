@@ -27,7 +27,7 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can install [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) and configure it in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
 
-```SnackPlayer name=LinearGradient
+```SnackPlayer name=LinearGradient isLive=true
 import React from "react"
 import { Box, Center, NativeBaseProvider } from "native-base"
 
@@ -76,13 +76,11 @@ export default () => {
 
 If you're not using Expo, you can install [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient) and configure in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
 
-```jsx isLive=true
+```jsx 
 import React from 'react';
 import { Box, NativeBaseProvider } from 'native-base';
-// const reactNativeLinearGradient = require('react-native-linear-gradient');
 
-
-const App = () => {
+const Example = () => {
   return (
     <Box
       bg={{
@@ -101,16 +99,16 @@ const App = () => {
   );
 };
 
-// const config = {
-//   dependencies: {
-//     'linear-gradient': reactNativeLinearGradient,
-//   },
-// };
+const config = {
+  dependencies: {
+    'linear-gradient': require('react-native-linear-gradient').default,
+  },
+};
 
-export const Example () => {
+export default () => {
   return (
-    <NativeBaseProvider >
-      <App />
+    <NativeBaseProvider config={config}>
+      <Example />
     </NativeBaseProvider>
   );
 };

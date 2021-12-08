@@ -142,12 +142,12 @@ const getCodeFromStorybook = (pathArray: string[], version: string) => {
   // });
   // const output = generate(ast);
 
-  // const result = prettier.format(output.code, {
-  //   semi: false,
-  //   parser: "babel",
-  // });
+  const result = prettier.format(code, {
+    semi: false,
+    parser: "babel",
+  });
 
-  return "```jsx isLive=true \n" + code + "\n```";
+  return "```jsx isLive=true \n" + result + "\n```";
 };
 
 export const getDocBySlug = async (filename: string, version: string) => {

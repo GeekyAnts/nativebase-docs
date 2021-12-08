@@ -20,9 +20,36 @@ import * as NBComponents from "native-base";
 import * as expoVectorIcons from "@expo/vector-icons";
 const { parse } = require("@babel/parser");
 const traverse = require("@babel/traverse").default;
-const prettier = require("prettier");
 const generate = require("@babel/generator").default;
-// const reactNativeLinearGradient = require('react-native-linear-gradient');
+// import { NavigationContainer } from "@react-navigation/native";
+// import {
+//   createDrawerNavigator,
+//   DrawerContentScrollView,
+// } from "@react-navigation/drawer";
+import dynamic from "next/dynamic";
+import { SwipeListView } from 'react-native-swipe-list-view';
+import { TabView, SceneMap } from 'react-native-tab-view';
+
+// @ts-ignore
+const { NavigationContainer } = dynamic(
+  // @ts-ignore
+  () => import("@react-navigation/native"),
+  {
+    ssr: false,
+  }
+  );
+  // @ts-ignore
+  const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
+  // @ts-ignore
+  () => import("react-navigation"),
+  {
+    ssr: false,
+  }
+);
+// SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/stack@5.1.0,@react-navigation/drawer,@react-navigation/native@5.0.8,react-native-vector-icons,react-native-gesture-handler@1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@3.0.0,react-native-reanimated@2.1.0
+// const LinearGradient = require("react-native-linear-gradient").default;
+// import LinearGradient from 'react-native-linear-gradient';
+// const LinearGradient = require('expo-linear-gradient').LinearGradient;
 
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 
@@ -58,11 +85,7 @@ export const CodeBlock = ({ children, isLive }: any) => {
     });
     const output = generate(ast);
 
-    // const result = prettier.format(output.code, {
-    //   semi: false,
-    //   parser: "babel",
-    // });
-    return output.code
+    return output.code;
   }
   // const IconLib = {
   //   MaterialCommunityIcons,
@@ -81,18 +104,24 @@ export const CodeBlock = ({ children, isLive }: any) => {
   //   Zocial,
   // };
   const scope = {
+    ...RN,
     ...NBComponents,
     Wrapper,
     ...React,
     // ...IconLib,
     ...expoVectorIcons,
-    // reactNativeLinearGradient,
+    NavigationContainer,
+    createDrawerNavigator,
+    DrawerContentScrollView,
+    SwipeListView,
+    TabView, SceneMap,
+    // LinearGradient,
   }; // add custom deps as and when required. more info here -> https://github.com/FormidableLabs/react-live#liveprovider-
 
   // @ts-ignore
   delete scope.default;
   console.log(getParsedCode(children));
-  
+
   return (
     <>
       {isLive ? (

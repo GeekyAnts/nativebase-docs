@@ -24,7 +24,7 @@ import { AlertDialog } from 'native-base';
 
 ### Basic
 
-```SnackPlayer name=AlertDialog%20Basic
+```jsx isLive=true
 import React from "react";
 import {
   AlertDialog,
@@ -68,7 +68,7 @@ function AlertDialogComponent() {
     </Center>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -81,7 +81,7 @@ export default function () {
 
 ### Transition
 
-```SnackPlayer name=AlertDialog%20Transition
+```jsx isLive=true
 import React from "react";
 import { AlertDialog, Button, Center, NativeBaseProvider } from "native-base";
 
@@ -119,7 +119,7 @@ function AlertDialogComponent() {
     </Center>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

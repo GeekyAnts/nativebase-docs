@@ -9,7 +9,7 @@ SwipeListView is a vertical ListView with rows that swipe open and closed. Handl
 
 Here is an example to show how easily and quickly we can use [react-native-swipe-list](https://www.npmjs.com/package/react-native-swipe-list-view) in NativeBase.
 
-```SnackPlayer name=SwipeList dependencies=react-native-swipe-list-view
+```jsx isLive=true
 
 import React, { useState } from 'react';
 import {
@@ -22,7 +22,7 @@ import {NativeBaseProvider,Box, Text,Pressable,Heading,IconButton,Icon, HStack, 
 import { SwipeListView } from 'react-native-swipe-list-view';
 import { MaterialIcons,Ionicons } from '@expo/vector-icons';
 
-export default function App() {
+export function Example() {
     const [mode, setMode] = useState('Basic');
 
     return (
