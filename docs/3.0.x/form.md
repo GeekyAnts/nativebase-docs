@@ -48,7 +48,7 @@ function BuildingAFormExample() {
     </VStack>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
     <Center flex={1}>
@@ -110,7 +110,7 @@ function  BuildingAFormExample() {
     </VStack>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
     <Center flex={1}>
@@ -183,7 +183,7 @@ function BuildingAFormExample() {
     </VStack>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
     <Center flex={1}>

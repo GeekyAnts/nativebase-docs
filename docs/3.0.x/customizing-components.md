@@ -81,7 +81,7 @@ You can specify the base style of the component and use it across project.
 import React from 'react';
 import { Text, NativeBaseProvider, Center, extendTheme } from 'native-base';
 
-export default function () {
+export function Example() {
   const theme = extendTheme({
     components: {
       Text: {
@@ -123,7 +123,7 @@ import {
   VStack,
 } from 'native-base';
 
-export default function () {
+export function Example() {
   const theme = extendTheme({
     components: {
       Button: {

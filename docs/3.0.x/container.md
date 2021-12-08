@@ -35,7 +35,7 @@ function ContainerComponent() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
