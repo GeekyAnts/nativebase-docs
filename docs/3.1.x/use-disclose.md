@@ -13,7 +13,7 @@ import { useDisclose } from 'native-base';
 
 ## Example
 
-```SnackPlayer name=useDisclose%20Usage
+```jsx isLive=true
 import React from "react";
 import {
   Modal,
@@ -53,7 +53,7 @@ function UseDiscloseExample() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

@@ -15,7 +15,7 @@ To include content, wrap it in the Container component.
 
 ## Example
 
-```SnackPlayer name=Container%20Example
+```jsx isLive=true
 import React from 'react';
 import { Container, Text, Heading, NativeBaseProvider, Center } from 'native-base';
 function ContainerComponent() {
@@ -35,7 +35,7 @@ function ContainerComponent() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

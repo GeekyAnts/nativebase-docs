@@ -21,7 +21,7 @@ import { useClipboard } from 'native-base';
 
 ## Usage
 
-```SnackPlayer name=useClipboard%20Usage
+```jsx isLive=true
 import React from "react";
 import {
   Button,
@@ -62,7 +62,7 @@ function UseClipboardExample() {
     </VStack>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

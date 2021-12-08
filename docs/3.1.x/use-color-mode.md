@@ -13,7 +13,7 @@ import { useColorMode } from 'native-base';
 
 ## Example
 
-```SnackPlayer name=useColorMode
+```jsx isLive=true
 import React from 'react';
 import {
   NativeBaseProvider,
@@ -36,7 +36,7 @@ function UseColorMode() {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <UseColorMode />

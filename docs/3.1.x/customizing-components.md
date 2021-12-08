@@ -77,11 +77,11 @@ When variant in defaultProps is `solid` the above button will use solid variant.
 
 You can specify the base style of the component and use it across project.
 
-```SnackPlayer name=Customizing%20BaseStyle
+```jsx isLive=true
 import React from 'react';
 import { Text, NativeBaseProvider, Center, extendTheme } from 'native-base';
 
-export default function () {
+export function Example() {
   const theme = extendTheme({
     components: {
       Text: {
@@ -113,7 +113,7 @@ export default function () {
 
 You can also add the variants to the components and use it across project.
 
-```SnackPlayer name=Customizing%20Variants
+```jsx isLive=true
 import React from 'react';
 import {
   NativeBaseProvider,
@@ -123,7 +123,7 @@ import {
   VStack,
 } from 'native-base';
 
-export default function () {
+export function Example() {
   const theme = extendTheme({
     components: {
       Button: {

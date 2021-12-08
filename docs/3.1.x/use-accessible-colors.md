@@ -13,7 +13,7 @@ import { useAccessibleColors } from 'native-base';
 
 ## Example
 
-```SnackPlayer name=useAccessibleColors
+```jsx isLive=true
 
 import React from 'react';
 import { Button, useContrastText, useTheme, NativeBaseProvider, Center, useAccessibleColors } from 'native-base';
@@ -42,7 +42,7 @@ function UseContrastingTextHook () {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

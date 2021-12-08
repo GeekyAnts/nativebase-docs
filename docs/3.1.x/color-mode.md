@@ -17,7 +17,7 @@ Calling toggleColorMode anywhere in your app tree toggles the color mode.
 
 `useColorModeValue` is a React hook used to change any value or style based on the color mode. It takes 2 arguments: the value in light mode, and the value in dark mode.
 
-```SnackPlayer name=ColorMode%20Usage
+```jsx isLive=true
 import React from 'react';
 import {
   Heading,
@@ -77,7 +77,7 @@ const LocalWrapper = ({ children }) => {
   );
 };
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <LocalWrapper>

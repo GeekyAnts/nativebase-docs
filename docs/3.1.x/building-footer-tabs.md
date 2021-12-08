@@ -7,7 +7,7 @@ With NativeBase v3 we have removed FooterTab components because as it's very sim
 
 ## Example
 
-```SnackPlayer name=Footer dependencies=react-native-linear-gradient
+```jsx isLive=true
 import React from 'react';
 
 import {
@@ -27,7 +27,7 @@ import {
 } from 'native-base';
 import { MaterialCommunityIcons , MaterialIcons} from '@expo/vector-icons';
 
-export default function App() {
+export function Example() {
   const [selected, setSelected] = React.useState(1);
   return (
     <NativeBaseProvider>

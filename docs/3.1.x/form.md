@@ -19,7 +19,7 @@ In this example, learn how to add validation to a form that has a single text fi
 
 Create an Input wrapped in FormControl.
 
-```SnackPlayer name=Form%20Example
+```jsx isLive=true
 import React from "react";
 import {
   VStack,
@@ -48,7 +48,7 @@ function BuildingAFormExample() {
     </VStack>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
     <Center flex={1}>
@@ -63,7 +63,7 @@ export default function () {
 
 Add validation logic.
 
-```SnackPlayer name=Form%20Example(Validation)
+```jsx isLive=true
 import React from 'react';
 import {
   VStack,
@@ -110,7 +110,7 @@ function  BuildingAFormExample() {
     </VStack>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
     <Center flex={1}>
@@ -125,7 +125,7 @@ export default function () {
 
 Create a button to validate and submit the form.
 
-```SnackPlayer name=Form%20Example(Validate%20and%20Submit)
+```jsx isLive=true
 import React from 'react';
 import {
   VStack,
@@ -183,7 +183,7 @@ function BuildingAFormExample() {
     </VStack>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
     <Center flex={1}>

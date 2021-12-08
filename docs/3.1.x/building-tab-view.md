@@ -9,8 +9,7 @@ A cross-platform Tab View component for React Native
 
 Here is an example to show how easily and quickly we can use [react-native-tab-view](https://www.npmjs.com/package/react-native-tab-view) in NB.
 
-```SnackPlayer name=TabView dependencies=react-native-linear-gradient,react-native-tab-view,react-native-pager-view@5.0.12
-
+```jsx isLive=true
 import * as React from 'react';
 import { View, StyleSheet, Dimensions, StatusBar,TouchableOpacity,Animated, Pressable} from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
@@ -37,11 +36,7 @@ const renderScene = SceneMap({
   third: ThirdRoute,
 });
 
-export default function TabViewExample() {
-
-
-
-
+export function Example() {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { key: 'first', title: 'First' },

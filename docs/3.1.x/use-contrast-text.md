@@ -15,7 +15,7 @@ import { useContrastText } from 'native-base';
 
 ### Basic
 
-```SnackPlayer name=useContrastText
+```jsx isLive=true
 
 import React from 'react';
 import { Button, useContrastText, NativeBaseProvider, Center } from 'native-base';
@@ -37,7 +37,7 @@ function UseContrastingTextHook () {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -52,7 +52,7 @@ export default function () {
 
 By default, NativeBase provides contrasting color based on its theme. You can also choose to get color with better [color and contrast accessibility](https://web.dev/color-and-contrast-accessibility/) with the help of [`useAccessibleColors`](useAccessibleColors.md) hook.
 
-```SnackPlayer name=usingAccessibleColors
+```jsx isLive=true
 
 import React from 'react';
 import { Button, useContrastText, useTheme, NativeBaseProvider, Center, useAccessibleColors } from 'native-base';
@@ -81,7 +81,7 @@ function UseContrastingTextHook () {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

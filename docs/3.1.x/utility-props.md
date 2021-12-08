@@ -11,7 +11,7 @@ The following table shows a list of every style prop and the properties within e
 
 ### Margin and padding
 
-```SnackPlayer name=Margin%20and%20padding
+```jsx isLive=true
 import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
@@ -31,7 +31,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -64,7 +64,7 @@ export default function () {
 
 ### Color and background color
 
-```SnackPlayer name=Color%20and%20background%20COolor
+```jsx isLive=true
 import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center, Text } from 'native-base';
 
@@ -89,7 +89,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -112,7 +112,7 @@ export default function () {
 
 ### Typography
 
-```SnackPlayer name=Typography
+```jsx isLive=true
 import React from 'react';
 import { Text as NBText, NativeBaseProvider, Center } from 'native-base';
 
@@ -135,7 +135,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -163,7 +163,7 @@ export default function () {
 
 ### Layout, width and height
 
-```SnackPlayer name=Layout,%20width%20and%20height
+```jsx isLive=true
 import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
@@ -189,7 +189,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -220,7 +220,7 @@ export default function () {
 
 ### Flexbox
 
-```SnackPlayer name=Flexbox
+```jsx isLive=true
 import React from 'react';
 import { Box as NBBox, Flex, NativeBaseProvider, Center } from 'native-base';
 
@@ -245,7 +245,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -277,7 +277,7 @@ export default function () {
 
 ### Borders
 
-```SnackPlayer name=Borders
+```jsx isLive=true
 import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
@@ -294,7 +294,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -333,7 +333,7 @@ export default function () {
 
 ### Borders Radius
 
-```SnackPlayer name=Borders%20Radius
+```jsx isLive=true
 import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
@@ -355,7 +355,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -383,7 +383,7 @@ export default function () {
 
 ### Position
 
-```SnackPlayer name=Position
+```jsx isLive=true
 import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
@@ -400,7 +400,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -425,7 +425,7 @@ export default function () {
 
 ### Shadow
 
-```SnackPlayer name=Shadow
+```jsx isLive=true
 import React from 'react';
 import { Box as NBBox, NativeBaseProvider, Center } from 'native-base';
 
@@ -445,7 +445,7 @@ function Component() {
     </>
   );
 }
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -469,7 +469,7 @@ export default function () {
 
 Provides a way to pass props to child components inside Composite componets.
 
-```SnackPlayer name=Internal
+```jsx isLive=true
 import React from 'react';
 import { Button, NativeBaseProvider, Center } from 'native-base';
 
@@ -488,7 +488,7 @@ function Example() {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -511,7 +511,7 @@ export default function () {
 
 Provides a way to pass props on certain interaction.
 
-```SnackPlayer name=Internal
+```jsx isLive=true
 import React from 'react';
 import { Button, NativeBaseProvider, Center } from 'native-base';
 
@@ -531,7 +531,7 @@ function Example() {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -557,7 +557,7 @@ export default function () {
 
 Provides a way to pass props bassed on Platform (_android, ios or web_).
 
-```SnackPlayer name=Internal
+```jsx isLive=true
 import React from 'react';
 import { Button, NativeBaseProvider, Center } from 'native-base';
 
@@ -578,7 +578,7 @@ function Example() {
   );
 }
 
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

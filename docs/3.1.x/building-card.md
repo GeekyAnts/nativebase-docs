@@ -13,7 +13,7 @@ Followed by the image which flows till the very edge.
 
 And lastly a description.
 
-```SnackPlayer name=Card
+```jsx isLive=true
 import React from "react";
 import { VStack, HStack, Avatar, Image, Text, NativeBaseProvider,
 AspectRatio, Center, Box, Stack, Heading } from "native-base";
@@ -46,7 +46,7 @@ function CardComponent(){
     );
 }
 
-export default function () {
+export function Example() {
   return (
   <NativeBaseProvider>
     <Center flex={1}>

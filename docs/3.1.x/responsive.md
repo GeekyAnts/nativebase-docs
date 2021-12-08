@@ -25,7 +25,7 @@ All style props that arrays as values for responsive styles.
 
 For Example to make a `Box` width or w responsive using the array syntax, here's what you need to do:
 
-```SnackPlayer name=Responsive%20Usage
+```jsx isLive=true
 import React from 'react';
 import { NativeBaseProvider, Center } from 'native-base';
 function BreakpointExample () {
@@ -37,7 +37,7 @@ function BreakpointExample () {
 };
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -54,7 +54,7 @@ You can also define responsive values with breakpoint aliases in an object. Any 
 
 For Example to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
 
-```SnackPlayer name=Responsive%20ObjectSyntax
+```jsx isLive=true
 import React from 'react';
 import { Text, NativeBaseProvider, Center } from 'native-base';
 function BreakpointExample () {
@@ -66,7 +66,7 @@ function BreakpointExample () {
 };
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -81,7 +81,7 @@ export default function () {
 
 Here's a simple example of a component that uses a stacked layout on small screens, and a side-by-side layout on larger screens.
 
-```SnackPlayer name=Responsive%20Demo
+```jsx isLive=true
 import React from 'react';
 import { NativeBaseProvider, Center, Box, Text, Image, Heading, Stack } from 'native-base';
 function BreakpointExample () {
@@ -123,7 +123,7 @@ function BreakpointExample () {
 };
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

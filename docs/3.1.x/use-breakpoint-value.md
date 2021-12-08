@@ -17,7 +17,7 @@ The `useBreakpointValue` hook returns the value for the current breakpoint.
 
 ## Usage
 
-```SnackPlayer name=useBreakpoint%20Usage
+```jsx isLive=true
 import React from 'react';
 import { Box, useBreakpointValue, NativeBaseProvider, Center } from 'native-base';
 function UseBreakpointValueExample () {
@@ -32,7 +32,7 @@ function UseBreakpointValueExample () {
     </Box>
   );
 };
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>

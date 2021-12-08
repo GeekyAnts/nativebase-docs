@@ -7,7 +7,7 @@ NativeBase provides multiple tools to use the central theme defined in the app. 
 
 ## useTheme
 
-```SnackPlayer name=useTheme%20Demo
+```jsx isLive=true
 import React from 'react';
 import {
   NativeBaseProvider,
@@ -29,7 +29,7 @@ function ColorPalete() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1} p={3}>
@@ -45,7 +45,7 @@ export default function () {
 
 You can also get specific values from the theme with [`useToken`](/useToken.md) hook.
 
-```SnackPlayer name=useToken%20Demo
+```jsx isLive=true
 import React from 'react';
 import { useToken, NativeBaseProvider, Center, Text } from 'native-base';
 
@@ -64,7 +64,7 @@ function Tokens() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -80,7 +80,7 @@ export default function () {
 
 If you are defining the background yourself and pass a contrasting color to the text then you can use [`useContrastText`](use-contrast-text).
 
-```SnackPlayer name=useContrastText
+```jsx isLive=true
 
 import React from 'react';
 import { Button, Stack, useContrastText, NativeBaseProvider, Center } from 'native-base';
@@ -103,7 +103,7 @@ function UseContrastingTextHook () {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
@@ -118,7 +118,7 @@ export default function () {
 
 If you want to define some conditionals based on current color mode or change the color mode then you can try [useColorMode](useColorMode.md).
 
-```SnackPlayer name=useColorMode
+```jsx isLive=true
 import React from 'react';
 import {
   NativeBaseProvider,
@@ -142,7 +142,7 @@ function UseColorMode() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <UseColorMode />
@@ -156,7 +156,7 @@ export default function () {
 
 If you do not want to add conditionals for color mode everywhere and keep the code clean, then you can use [useColorModeValue](useColorModeValue.md) hook. It takes two parameters, light mode value as the first and dark mode value as second.
 
-```SnackPlayer name=useColorModeValue
+```jsx isLive=true
 import React from 'react';
 import {
   NativeBaseProvider,
@@ -180,7 +180,7 @@ function UseColorMode() {
 }
 
 // Example template which wraps component with NativeBaseProvider
-export default function () {
+export function Example() {
   return (
     <NativeBaseProvider>
       <UseColorMode />
