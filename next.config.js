@@ -62,11 +62,11 @@ module.exports = withPlugins(
           destination: "https://discord.com/invite/TSgCw2UPmb",
           permanent: true,
         },
-        {
-          source: "/",
-          destination: "/getting-started",
-          permanent: true,
-        },
+        // {
+        //   source: "/",
+        //   destination: "/getting-started",
+        //   permanent: true,
+        // },
       ];
     },
     images: {

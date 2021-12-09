@@ -13,21 +13,21 @@ The following table shows a list of every style prop and the properties within e
 
 ```jsx isLive=true
 import React from "react";
-import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
-const Box = (props) => {
-  return <NBBox borderRadius="md" bg="primary.600" {...props} />;
+const NBBox = (props) => {
+  return <Box borderRadius="md" bg="primary.600" {...props} />;
 };
 
 function Component() {
   return (
     <>
       {/* m="2" refers to the value of `theme.space[2]` */}
-      <Box m="2" p="5" />
+      <NBBox m="2" p="5" />
       {/* You can also use custom values */}
-      <Box mx="auto" px="20" py="5" />
+      <NBBox mx="auto" px="20" py="5" />
       {/* sets margin `8px` on all viewports and `16px` from the first breakpoint and up */}
-      <Box m={[2, 3]} pt="10" pr="10" />
+      <NBBox m={[2, 3]} pt="10" pr="10" />
     </>
   );
 }
@@ -65,28 +65,28 @@ export function Example() {
 
 ```jsx isLive=true
 import React from "react";
-import { Box as NBBox, NativeBaseProvider, Center, Text } from "native-base";
+import { Box, NativeBaseProvider, Center, Text } from "native-base";
 
-const Box = (props) => {
-  return <NBBox p="5" m="2" borderRadius="md" bg="primary.200" {...props} />;
-};
+function NBBox(props) {
+  return <Box p="5" m="2" borderRadius="md" bg="primary.200" {...props} />;
+}
 
 function Component() {
   return (
     <>
       {/* raw CSS color value */}
-      <Box bg="#10b981" />
+      <NBBox bg="#10b981" />
       {/* picks up a nested color value using dot notation */}
       {/* => `theme.colors.lightBlue[300]` */}
-      <Box bgColor="cyan.100" py="3">
+      <NBBox bgColor="cyan.100" py="3">
         {/* using theme colors to set text color */}
         <Text color="cyan.500" fontWeight="bold">
           {" "}
           I love NativeBase
         </Text>
-      </Box>
+      </NBBox>
       {/* verbose prop */}
-      <Box backgroundColor="#eab308" />
+      <NBBox backgroundColor="#eab308" />
     </>
   );
 }
@@ -123,7 +123,7 @@ Above props can be written in the format: {color}:alpha.{opacityToken}, this get
 ```jsx isLive=true
 import React from "react";
 import { HStack, Stack, Center, NativeBaseProvider } from "native-base";
-export function Example() {
+function App() {
   return (
     <Stack space="2" alignItems="center">
       <HStack space="2" alignItems="center">
@@ -167,7 +167,7 @@ export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );
@@ -178,26 +178,26 @@ export function Example() {
 
 ```jsx isLive=true
 import React from "react";
-import { Text as NBText, NativeBaseProvider, Center } from "native-base";
+import { Text, NativeBaseProvider, Center } from "native-base";
 
-const Text = (props) => {
-  return <NBText m="2" {...props} />;
+const NBText = (props) => {
+  return <Text m="2" {...props} />;
 };
 
 function Component() {
   return (
     <>
       {/* font-size of `theme.fontSizes.2xl` */}
-      <Text fontSize="2xl" fontWeight="bold">
+      <NBText fontSize="2xl" fontWeight="bold">
         Thank You{" "}
-      </Text>
+      </NBText>
       {/* text decoration `underline` */}
-      <Text textDecoration="underline">Merci Beaucoup</Text>
+      <NBText textDecoration="underline">Merci Beaucoup</NBText>
       {/* font-size `'2em'` */}
       {/* font-weight of `theme.fontWeights.semibold i.e. 600` */}
-      <Text fontWeight="bold">Danke sehr </Text>
+      <NBText fontWeight="bold">Danke sehr </NBText>
       {/* letter-spacing `0.1 em` */}
-      <Text letterSpacing="2xl">Arigatou </Text>
+      <NBText letterSpacing="2xl">Arigatou </NBText>
     </>
   );
 }
@@ -230,27 +230,27 @@ export function Example() {
 
 ```jsx isLive=true
 import React from "react";
-import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
-const Box = (props) => {
-  return <NBBox m="2" borderRadius="md" bg="primary.600" {...props} />;
+const NBBox = (props) => {
+  return <Box m="2" borderRadius="md" bg="primary.600" {...props} />;
 };
 
 function Component() {
   return (
     <>
       {/* verbose */}
-      <Box width="100%" height="8" />
+      <NBBox width="100%" height="8" />
       {/* shorthand */}
-      <Box w="100%" h="32px" />
+      <NBBox w="100%" h="32px" />
       {/* use boxSizing */}
-      <Box boxSize="12" />
+      <NBBox boxSize="12" />
       {/* width `50%` */}
-      <Box w="50%" h="8" />
+      <NBBox w="50%" h="8" />
       {/* width `256px` h="8" */}
-      <Box w="256" />
+      <NBBox w="256" />
       {/* width `"40px"` */}
-      <Box w="40px" h="8" />
+      <NBBox w="40px" h="8" />
     </>
   );
 }
@@ -286,25 +286,25 @@ export function Example() {
 
 ```jsx isLive=true
 import React from "react";
-import { Box as NBBox, Flex, NativeBaseProvider, Center } from "native-base";
+import { Box, Flex, NativeBaseProvider, Center } from "native-base";
 
-const Box = (props) => {
-  return <NBBox p="5" m="2" borderRadius="md" bg="primary.600" {...props} />;
+const NBBox = (props) => {
+  return <Box p="5" m="2" borderRadius="md" bg="primary.600" {...props} />;
 };
 
 function Component() {
   return (
     <>
       {/* verbose */}
-      <NBBox display="flex" flexDirection="row" justifyContent="space-between">
-        <Box />
-        <Box />
-        <Box />
-      </NBBox>
+      <Box display="flex" flexDirection="row" justifyContent="space-between">
+        <NBBox />
+        <NBBox />
+        <NBBox />
+      </Box>
       {/* shorthand using the `Flex` component */}
       <Flex align="center" justify="center">
-        <Box />
-        <Box />
+        <NBBox />
+        <NBBox />
       </Flex>
     </>
   );
@@ -342,18 +342,18 @@ export function Example() {
 
 ```jsx isLive=true
 import React from "react";
-import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
-const Box = (props) => {
-  return <NBBox p="5" m="2" borderRadius="md" bg="primary.200" {...props} />;
+const NBBox = (props) => {
+  return <Box p="5" m="2" borderRadius="md" bg="primary.200" {...props} />;
 };
 
 function Component() {
   return (
     <>
-      <Box borderWidth="1" borderColor="cyan.500" />
-      <Box borderWidth="2" borderColor="cyan.500" />
-      <Box borderColor="cyan.500" borderTopWidth="7" />
+      <NBBox borderWidth="1" borderColor="cyan.500" />
+      <NBBox borderWidth="2" borderColor="cyan.500" />
+      <NBBox borderColor="cyan.500" borderTopWidth="7" />
     </>
   );
 }
@@ -396,10 +396,10 @@ export function Example() {
 
 ```jsx isLive=true
 import React from "react";
-import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
-const Box = (props) => {
-  return <NBBox p="5" m="2" bg="primary.500" {...props} />;
+const NBBox = (props) => {
+  return <Box p="5" m="2" bg="primary.500" {...props} />;
 };
 
 function Component() {
@@ -407,12 +407,12 @@ function Component() {
     <>
       {/* picks up a nested radius value using dot notation */}
       {/* => `theme.radius.md` */}
-      <Box borderRadius="md" />
-      <Box borderRadius="full" />
+      <NBBox borderRadius="md" />
+      <NBBox borderRadius="full" />
       {/* partial border radius */}
-      <Box borderLeftRadius="10" />
+      <NBBox borderLeftRadius="10" />
       {/* absolute value prop */}
-      <Box borderRadius="8" />
+      <NBBox borderRadius="8" />
     </>
   );
 }
@@ -445,19 +445,19 @@ export function Example() {
 
 ```jsx isLive=true
 import React from "react";
-import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
-const Box = (props) => {
-  return <NBBox p="5" borderRadius="md" bg="primary.400" {...props} />;
+const NBBox = (props) => {
+  return <Box p="5" borderRadius="md" bg="primary.400" {...props} />;
 };
 
 function Component() {
   return (
-    <NBBox justifyContent="center" alignItems="center" flexDirection="row">
-      <Box position="relative" p="7" />
-      <Box bg="yellow.400" zIndex={2} position="absolute" />
-      <Box bg="emerald.400" position="relative" p="7" />
-    </NBBox>
+    <Box justifyContent="center" alignItems="center" flexDirection="row">
+      <NBBox position="relative" p="7" />
+      <NBBox bg="yellow.400" zIndex={2} position="absolute" />
+      <NBBox bg="emerald.400" position="relative" p="7" />
+    </Box>
   );
 }
 export function Example() {
@@ -486,21 +486,21 @@ export function Example() {
 
 ```jsx isLive=true
 import React from "react";
-import { Box as NBBox, NativeBaseProvider, Center } from "native-base";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
-const Box = (props) => {
-  return <NBBox p="5" m="2" borderRadius="md" bg="primary.500" {...props} />;
+const NBBox = (props) => {
+  return <Box p="5" m="2" borderRadius="md" bg="primary.500" {...props} />;
 };
 
 function Component() {
   return (
     <>
       {/* => `theme.shadows.md` */}
-      <Box shadow="1" />
-      <Box shadow="3" />
-      <Box shadow="5" />
-      <Box shadow="7" />
-      <Box shadow="9" />
+      <NBBox shadow="1" />
+      <NBBox shadow="3" />
+      <NBBox shadow="5" />
+      <NBBox shadow="7" />
+      <NBBox shadow="9" />
     </>
   );
 }
@@ -531,7 +531,7 @@ Provides a way to pass props to child components inside Composite componets.
 import React from "react";
 import { Button, NativeBaseProvider, Center } from "native-base";
 
-function Example() {
+function App() {
   return (
     <Button
       _text={{
@@ -551,7 +551,7 @@ export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );
@@ -573,7 +573,7 @@ Provides a way to pass props on certain interaction.
 import React from "react";
 import { Button, NativeBaseProvider, Center } from "native-base";
 
-function Example() {
+function App() {
   return (
     <Button
       colorScheme="yellow"
@@ -594,7 +594,7 @@ export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );
@@ -619,7 +619,7 @@ Provides a way to pass props bassed on Platform (_android, ios or web_).
 import React from "react";
 import { Button, NativeBaseProvider, Center } from "native-base";
 
-function Example() {
+function App() {
   return (
     <Button
       _web={{
@@ -647,7 +647,7 @@ export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );

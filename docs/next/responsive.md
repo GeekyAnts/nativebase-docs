@@ -101,7 +101,7 @@ import {
   Heading,
 } from "native-base";
 
-function Example() {
+function App() {
   return (
     <Stack
       direction={["column", "column", "row"]}
@@ -172,7 +172,7 @@ export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );
