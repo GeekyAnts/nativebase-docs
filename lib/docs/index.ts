@@ -224,7 +224,7 @@ const templateGenerator = (componentDetails: any) => {
             ${name}
           </td>
           <td>
-              ${markupWithTypeLinks}
+              ${markupWithTypeLinks.replace(/[{]/g, "&#123;").replace(/[}]/g, "&#125;")}
           </td>
           <td>
             ${description || "-"}
@@ -277,7 +277,7 @@ const getPropTableFile = (pathArray: string[], version: string) => {
     );
   // console.log(filePath, "filepath");
   const code = docgen.parse(filePath);
-  // console.log(code, "in code");
+  // console.log(code[0].props.children, "in code");
   return propTable(code, showStylingProps);
   // console.log(propTable(code, showStylingProps), "****hello******");
   // console.log(version);
