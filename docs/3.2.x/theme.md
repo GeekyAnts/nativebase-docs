@@ -188,7 +188,7 @@ function UseColorMode() {
   );
 }
 
-eexport function Example() {
+export function Example() {
   return (
     <NativeBaseProvider>
       <UseColorMode />

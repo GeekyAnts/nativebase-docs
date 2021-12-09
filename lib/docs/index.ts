@@ -110,7 +110,8 @@ export const parsePropTable = (fileData: any, version: string) => {
         tempArray[i]
           .split("\n")[0]
           .slice(5)
-          .split(" showStylingProps")[0].trim()
+          .split(" showStylingProps")[0]
+          .trim()
           .split(","),
         version
       );
@@ -330,6 +331,7 @@ const getCodeFromStorybook = (pathArray: string[], version: string) => {
       "/versioned_repo/" +
       version +
       "/NativeBase/example/storybook/stories/" +
+      (["3.1.x", "3.0.x"].includes(version) ? "components/" : "") +
       path.join(...pathArray),
     "utf-8"
   );
