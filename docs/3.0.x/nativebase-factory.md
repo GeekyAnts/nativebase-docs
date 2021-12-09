@@ -6,21 +6,19 @@ title: NativeBase Factory
 NativeBase factory is a function that converts non-nativebase components to nativebase enabled components so you can pass style props to them.
 
 ```jsx
-import { Factory } from 'native-base';
+import { Factory } from "native-base";
 ```
 
 ## Usage
 
 ```jsx isLive=true
-import React from 'react';
-import { Factory, NativeBaseProvider, Center } from 'native-base';
-import { View } from 'react-native';
+import React from "react";
+import { Factory, NativeBaseProvider, Center } from "native-base";
+import { View } from "react-native";
 
-function FactoryViewExample () {
+function FactoryViewExample() {
   const FactoryView = Factory(View);
-  return (
-      <FactoryView bg="emerald.400" borderRadius={4} size={16} />
-  );
+  return <FactoryView bg="emerald.400" borderRadius={4} size={16} />;
 }
 
 // Example template which wraps component with NativeBaseProvider
@@ -38,15 +36,15 @@ export function Example() {
 ## Defining component theme
 
 ```jsx isLive=true
-import React from 'react';
-import { Factory, NativeBaseProvider, Center } from 'native-base';
-import { View } from 'react-native';
+import React from "react";
+import { Factory, NativeBaseProvider, Center } from "native-base";
+import { View } from "react-native";
 
-function FactoryViewExample () {
+function FactoryViewExample() {
   const FactoryView = Factory(View, {
     baseStyle: {
-      bg: 'cyan.300',
-      borderRadius: 'md',
+      bg: "cyan.300",
+      borderRadius: "md",
     },
   });
   return <FactoryView size={16} />;
@@ -67,20 +65,20 @@ export function Example() {
 ## Using mode in component theme
 
 ```jsx isLive=true
-import React from 'react';
-import { Factory, themeTools, NativeBaseProvider, Center } from 'native-base';
-import { View } from 'react-native';
+import React from "react";
+import { Factory, themeTools, NativeBaseProvider, Center } from "native-base";
+import { View } from "react-native";
 
-function FactoryViewModeExample () {
+function FactoryViewModeExample() {
   const FactoryView = Factory(View, {
     baseStyle: (props) => {
       return {
-        bg: themeTools.mode('rose.500', 'cyan.300')(props),
-        borderRadius: 'md',
+        bg: themeTools.mode("rose.500", "cyan.300")(props),
+        borderRadius: "md",
       };
     },
   });
-  return <FactoryView size={16}/>;
+  return <FactoryView size={16} />;
 }
 
 // Example template which wraps component with NativeBaseProvider
@@ -98,26 +96,33 @@ export function Example() {
 ## Using ref
 
 ```jsx isLive=true
-import React from 'react';
-import { Factory, Button, Stack, NativeBaseProvider,Center } from 'native-base';
-import { TextInput } from 'react-native';
+import React from "react";
+import {
+  Factory,
+  Button,
+  Stack,
+  NativeBaseProvider,
+  Center,
+} from "native-base";
+import { TextInput } from "react-native";
 
-function FactoryViewRefExample () {
+function FactoryViewRefExample() {
   const NBInput = Factory(TextInput);
   const inputRef = React.useRef(null);
   return (
     <Stack space={4}>
       <NBInput
-        placeholder='Click on the button'
+        placeholder="Click on the button"
         ref={inputRef}
         p={2}
         border={1}
-        borderColor='cyan.400'
-        borderRadius='md'/>
+        borderColor="cyan.400"
+        borderRadius="md"
+      />
       <Button
-        colorScheme='emerald'
+        colorScheme="emerald"
         onPress={() => {
-          inputRef?.current?.focus();
+          inputRef.current.focus();
         }}
       >
         Set Focus
