@@ -124,7 +124,7 @@ function Component() {
   return (
     <>
       {/* font-size of `theme.fontSizes.md` */}
-      <NBText fontSize="md">Sample Text </Text>
+      <NBText fontSize="md">Sample Text </NBText>
       {/* font-size `32px` */}
       <NBText fontSize={32} textDecoration="underline">
         Sample Text{" "}
@@ -135,7 +135,7 @@ function Component() {
         Sample Text{" "}
       </NBText>
       {/* text-align `left` on all viewports and `center` from the first breakpoint and up */}
-      <NBText textAlign={["left", "center"]}>Sample Text </Text>
+      <NBText textAlign={["left", "center"]}>Sample Text </NBText>
     </>
   );
 }
@@ -475,7 +475,7 @@ Provides a way to pass props to child components inside Composite componets.
 import React from "react";
 import { Button, NativeBaseProvider, Center } from "native-base";
 
-function Example() {
+function App() {
   return (
     <Button
       _text={{
@@ -494,7 +494,7 @@ export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );
@@ -516,7 +516,7 @@ Provides a way to pass props on certain interaction.
 import React from "react";
 import { Button, NativeBaseProvider, Center } from "native-base";
 
-function Example() {
+function App() {
   return (
     <Button
       _pressed={{
@@ -536,7 +536,7 @@ export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );
@@ -561,7 +561,7 @@ Provides a way to pass props bassed on Platform (_android, ios or web_).
 import React from "react";
 import { Button, NativeBaseProvider, Center } from "native-base";
 
-function Example() {
+function App() {
   return (
     <Button
       _web={{
@@ -582,7 +582,7 @@ export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );
