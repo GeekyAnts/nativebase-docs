@@ -110,15 +110,13 @@ export const parsePropTable = (fileData: any, version: string) => {
         tempArray[i]
           .split("\n")[0]
           .slice(5)
-          .split(" showStylingProps")[0]
+          .split(" showStylingProps")[0].trim()
           .split(","),
         version
       );
       // console.log(tempArray[i]);
-
       let position = tempArray[i].search("```");
       let res = code + tempArray[i].substring(position + 3);
-      // temp1[0] = code;
       tempArray[i] = res;
     }
   }
@@ -276,9 +274,9 @@ const getPropTableFile = (pathArray: string[], version: string) => {
       "components",
       ...pathArray
     );
-  console.log(filePath, "filepath");
+  // console.log(filePath, "filepath");
   const code = docgen.parse(filePath);
-  console.log(code, "in code");
+  // console.log(code, "in code");
   return propTable(code, showStylingProps);
   // console.log(propTable(code, showStylingProps), "****hello******");
   // console.log(version);

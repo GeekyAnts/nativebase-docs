@@ -16,5 +16,5 @@
     "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "docs.config.js", "build-init.js"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules","versioned_repo"]
 }

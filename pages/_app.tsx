@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         isNavbarOpen,
       }}
     >
+      {/* @ts-ignore */}
       <NativeBaseProvider isSSR theme={theme}>
         <Component {...pageProps} />
       </NativeBaseProvider>
