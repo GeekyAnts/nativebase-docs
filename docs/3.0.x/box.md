@@ -31,7 +31,7 @@ If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can 
 import React from "react";
 import { Box, Center, NativeBaseProvider } from "native-base";
 
-export const Example = () => {
+export const App = () => {
   return (
     <Box
       bg={{
@@ -54,17 +54,18 @@ export const Example = () => {
   );
 };
 
-const config = {
-  dependencies: {
-    "linear-gradient": require("expo-linear-gradient").LinearGradient,
-  },
-};
+// const config = {
+//   dependencies: {
+//     "linear-gradient": require("expo-linear-gradient").LinearGradient,
+//   },
+// };
 
 export function Example() {
   return (
-    <NativeBaseProvider config={config}>
+    // <NativeBaseProvider config={config}>
+    <NativeBaseProvider >
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );
