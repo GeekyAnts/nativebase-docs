@@ -123,7 +123,7 @@ export const CodeBlock = ({ children, isLive }: any) => {
 
   // @ts-ignore
   delete scope.default;
-  console.log(getParsedCode(children));
+  // console.log(getParsedCode(children));
 
   return (
     <>

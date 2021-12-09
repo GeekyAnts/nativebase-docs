@@ -8,17 +8,9 @@ const { parse } = require("@babel/parser");
 const traverse = require("@babel/traverse").default;
 const generate = require("@babel/generator").default;
 const prettier = require("prettier");
-
-export const getTOC = (file: string) => {
-  const fileLines = file.split("\n");
-  for (let i = 0; i < fileLines.length; i++) {
-    if (fileLines[i]) {
-      console.log("helo");
-    }
-  }
-  console.log(fileLines);
-  return { toc: "asb" };
-};
+const docgen = require("react-docgen-typescript");
+const { internalPropsMap, rnPropsMap, StylingPropsMap } = require("./propsMap");
+import { useColorModeValue, useColorMode, ColorMode } from "native-base";
 
 const getHeadingLevel = (line: string) => {
   return {
@@ -92,7 +84,7 @@ export const getFileExtension = async (slug: string) => {
 export const parseCodeBlock = (fileData: any, version: string) => {
   const tempArray = fileData.split("```ComponentSnackPlayer ");
   // console.log(tempArray);
-  
+
   for (let i = 0; i < tempArray.length; i++) {
     if (tempArray[i].substring(0, 4) == "path") {
       let code = getCodeFromStorybook(
@@ -106,6 +98,227 @@ export const parseCodeBlock = (fileData: any, version: string) => {
     }
   }
   return tempArray.join("");
+};
+export const parsePropTable = (fileData: any, version: string) => {
+  const tempArray = fileData.split("```ComponentPropTable ");
+  // console.log(tempArray);
+
+  for (let i = 0; i < tempArray.length; i++) {
+    if (tempArray[i].substring(0, 4) == "path") {
+      let code = getPropTableFile(
+        tempArray[i]
+          .split("\n")[0]
+          .slice(5)
+          .split(" showStylingProps")[0]
+          .split(","),
+        version
+      );
+      let temp1 = tempArray[i].split("```");
+      // console.log(temp1);
+      temp1[0] = code;
+      tempArray[i] = temp1.join("");
+    }
+  }
+  return tempArray.join("");
+};
+
+const propTable = (typesArray: any, showStylingProps: boolean) => {
+  // console.log(typesArray, "typess");
+  return typesArray.map((component: any) => {
+    return `${templateGenerator(component)} ${implementSection(
+      component,
+      showStylingProps
+    )}`;
+  });
+};
+
+const implementsTemplateGenerator = (set: any) => {
+  let temp = "";
+  const arr = [...set];
+  [...arr].map((item, i) => {
+    temp = temp + item + (i === arr.length - 1 ? "" : ", ");
+  });
+  return temp;
+};
+const implementSection = (componentDetails: any, showStylingProps: any) => {
+  const { displayName, props } = componentDetails;
+  let implementsArray = new Set();
+  for (let prop in props) {
+    const { name, description, type, parent, defaultValue } = props[prop];
+    let propName = name;
+    if (parent) {
+      propName = parent.name;
+    }
+    const MapValue = showStylingProps
+      ? internalPropsMap[propName] ||
+        rnPropsMap[propName] ||
+        StylingPropsMap[propName]
+      : internalPropsMap[propName];
+
+    if (MapValue && propName !== `I${displayName}Props`) {
+      implementsArray.add(
+        MapValue.link.startsWith("http")
+          ? `<a href="${MapValue.link}"><code>${MapValue.name}</code></a>`
+          : `<a href="${MapValue.link}">${MapValue.name}</a>`
+      );
+    }
+  }
+
+  const implementsTemplate = implementsTemplateGenerator(implementsArray);
+  if (implementsTemplate) {
+    return `<p>${componentDetails.displayName} implements ${implementsTemplate}</p>`;
+  }
+
+  return ``;
+};
+
+const templateGenerator = (componentDetails: any) => {
+  const { displayName, props } = componentDetails;
+  let propExists = false;
+
+  const template = (propsObject: any) => {
+    let temp = "";
+    for (let prop in propsObject) {
+      const { name, description, type, parent, defaultValue } =
+        propsObject[prop];
+      let markupWithTypeLinks;
+      if (type.name.includes("ILinearGradientProps")) {
+        markupWithTypeLinks = `${
+          `ResponsiveValue&lt;` +
+          `<a href="${StylingPropsMap["backgroundColor"].link}">ColorProps </a>` +
+          `\|` +
+          `<a href="${internalPropsMap["ILinearGradientProps"].link}"> ILinearGradientProps</a>` +
+          `>`
+        }`;
+      } else {
+        markupWithTypeLinks = type.name
+          .split("|")
+          .map((e: any) => {
+            return e.trim();
+          })
+          .map((element: any) => {
+            const MapValue =
+              internalPropsMap[element] ||
+              rnPropsMap[element] ||
+              StylingPropsMap[element];
+
+            const htmlSanatizedElem = element
+              .replace(/\</g, "&lt;") //for <
+              .replace(/\>/g, "&gt;"); //for >
+            return `${
+              MapValue
+                ? `<a href="${MapValue.link}">${element}</a>`
+                : htmlSanatizedElem
+            }`;
+          })
+          .join(" | ");
+      }
+      if (parent && parent.name === `I${displayName}Props`) {
+        propExists = true;
+        temp =
+          temp +
+          `<tr>
+          <td>
+            ${name}
+          </td>
+          <td>
+              ${markupWithTypeLinks}
+          </td>
+          <td>
+            ${description || "-"}
+          </td>
+          <td>
+            ${defaultValue ? defaultValue.value : "-"}
+          </td>
+        </tr>`;
+      }
+    }
+
+    return temp;
+  };
+
+  const templateString = template(props);
+  return propExists
+    ? `
+  <table border="1" style={{color:"gray"}}>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Type
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Default
+      </th>
+    </tr>
+    ${templateString}
+  </table>
+  `
+    : "";
+};
+
+const getPropTableFile = (pathArray: string[], version: string) => {
+  const showStylingProps = true;
+  const filePath =
+    baseDirPath +
+    path.resolve(
+      "/versioned_repo/",
+      version,
+      "NativeBase",
+      "src",
+      "components",
+      ...pathArray
+    );
+  // console.log(filePath, "filepath");
+  const code = docgen.parse(filePath);
+  // console.log(code, "in code");
+  return propTable(code, showStylingProps);
+  // console.log(propTable(code, showStylingProps), "****hello******");
+  // console.log(version);
+
+  // const code = fs.readFileSync(
+  //   baseDirPath +
+  //     "/versioned_repo/" +
+  //     version +
+  //     "/NativeBase/example/storybook/stories/" +
+  //     path.join(...pathArray),
+  //   "utf-8"
+  // );
+  // const ast = parse(code, {
+  //   sourceType: "module",
+  //   plugins: ["jsx", "typescript"],
+  // });
+  // traverse(ast, {
+  //   enter(path: any) {
+  //     if (path.node.type === "ImportDeclaration") {
+  //       path.remove();
+  //     }
+  //     if (path.node?.type === "ExportNamedDeclaration") {
+  //       // console.log(path.node.declaration.declarations);
+  //       const childDec = path.node.declaration;
+  //       path.replaceWith(childDec);
+  //       // console.log(path.node);
+  //     }
+  //     // if(path.node?.type ==="FunctionDeclaration"){
+  //     //   console.log(path.node);
+  //     // }
+  //     // console.log(path.node);
+  //   },
+  // });
+  // const output = generate(ast);
+
+  // const result = prettier.format(code, {
+  //   semi: false,
+  //   parser: "babel",
+  // });
+
+  // return "```jsx isLive=true \n" + result + "\n```";
+
+  // return "ye pagal h";
 };
 
 const getCodeFromStorybook = (pathArray: string[], version: string) => {
@@ -159,8 +372,8 @@ export const getDocBySlug = async (filename: string, version: string) => {
   );
 
   fileData = parseCodeBlock(fileData, version);
-    console.log(fileData);
-    
+  fileData = parsePropTable(fileData, version);
+
   return fileData;
 };
 
