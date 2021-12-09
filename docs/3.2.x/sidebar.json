@@ -13,6 +13,27 @@
           "title": "Installation"
         },
         {
+          "id": "install-rn",
+          "title": "Install RN",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "install-cra",
+          "title": "Install CRA",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "install-expo",
+          "title": "Installation",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "install-next",
+          "title": "Installation",
+          "notVisibleInSidebar": true
+        },
+
+        {
           "id": "setup-provider",
           "title": "Setup NativeBase Provider"
         }

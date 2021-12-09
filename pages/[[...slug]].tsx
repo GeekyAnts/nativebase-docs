@@ -94,8 +94,8 @@ export async function getStaticProps({ params }: any) {
   // console.log("currentVersion", currentVersion);
   let sidebar = await getSidebarJson(currentVersion);
   // console.log("sidebar", sidebar.sidebar);
-  const markdownWithMeta = await getDocBySlug(filename,currentVersion);
-  
+  const markdownWithMeta = await getDocBySlug(filename, currentVersion);
+
   const { data: frontMatter, content } = matter(markdownWithMeta);
   // console.log("frontmatter", frontMatter);
   const filenameWithOutVersionArray = filename.split("/");

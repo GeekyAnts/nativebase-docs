@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "native-base";
 
 export default function TileLink({
   title,
@@ -22,16 +23,18 @@ export default function TileLink({
       }
     >
       <>
-      <div className={"font-bold text-md mb-2 " + titleClassName}>{title}</div>
-      <p className={" text-sm leading-5 " + descriptionClassName}>
-        {description}
-      </p>
-      <div
-        className="absolute h-20 w-20"
-        style={imgStyle ? imgStyle : { right: -20, top: -10 }}
-      >
-        {imgSrc && <img src={imgSrc}></img>}
-      </div>
+        <div className={"font-bold text-md mb-2 " + titleClassName}>
+          {title}
+        </div>
+        <p className={" text-sm leading-5 " + descriptionClassName}>
+          {description}
+        </p>
+        <div
+          className="absolute h-20 w-20"
+          style={imgStyle ? imgStyle : { right: -20, top: -10 }}
+        >
+          {imgSrc && <img src={imgSrc}></img>}
+        </div>
       </>
     </Link>
   );

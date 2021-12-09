@@ -20,11 +20,8 @@ function Layout({
   pages,
 }: any) {
   // console.log("Sidebar", sidebar);
-  const {
-    isNavbarOpen,
-    setActiveVersion,
-    setActiveSidebarItem,
-  } = useContext(AppContext);
+  const { isNavbarOpen, setActiveVersion, setActiveSidebarItem } =
+    useContext(AppContext);
 
   useEffect(() => {
     const currentPathArray = window?.location.href.split("/");
@@ -54,7 +51,7 @@ function Layout({
         <title>{`${
           frontMatter && frontMatter.title
             ? frontMatter.title + " | NativeBase"
-            : pages.currentPage.title + " | NativeBase"
+            : pages?.currentPage?.title + " | NativeBase"
         }`}</title>
       </Head>
       <div
@@ -87,7 +84,12 @@ function Layout({
               <Sidebar sidebar={sidebar} />
             </Box>
 
-            <MainContent pages={pages} frontMatter={frontMatter} content={content} tocArray={tocArray} />
+            <MainContent
+              pages={pages}
+              frontMatter={frontMatter}
+              content={content}
+              tocArray={tocArray}
+            />
 
             {/* fab se actionsheet khul k daalskte h sidebar */}
             <Box display={{ base: "flex", lg: "none" }}>

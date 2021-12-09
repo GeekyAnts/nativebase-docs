@@ -67,6 +67,7 @@ const SidebarItem = (props: any) => {
   }
 
   return sidebarItems.map((item: any, index: any) => {
+    if (item?.notVisibleInSidebar === true) return null;
     return (
       <Box key={index} w="100%">
         {item.pages === undefined ? (
