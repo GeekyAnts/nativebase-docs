@@ -57,7 +57,6 @@ When using require statement from next for image keep this in mind.
 ```jsx
 
   const img = require('/public/me.jpg');
-
   // DO ✔
   <Image
     source={{ uri: img.default.src }}
@@ -70,6 +69,5 @@ When using require statement from next for image keep this in mind.
     width={500}
     height={500}
   />
-
 
 ```

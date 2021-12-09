@@ -30,7 +30,7 @@ export function Example() {
   ];
   const [list, setList] = React.useState(instState);
   const [inputValue, setInputValue] = React.useState("");
-  const addItem = (title: string) => {
+  const addItem = (title) => {
     setList([
       ...list,
       {
@@ -39,11 +39,11 @@ export function Example() {
       },
     ]);
   };
-  const handleDelete = (index: number) => {
+  const handleDelete = (index) => {
     const temp = list.filter((_, itemI) => itemI !== index);
     setList(temp);
   };
-  const handleStatusChange = (index: number) => {
+  const handleStatusChange = (index) => {
     const temp = list.map((item, itemI) =>
       itemI !== index
         ? item

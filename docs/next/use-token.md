@@ -48,12 +48,8 @@ function UseTokenHookExample() {
   );
 }
 export function Example() {
-  return (
-    <NativeBaseProvider>
-      <Center flex={1}>
+  return (<Center flex={1}>
         <UseTokenHookExample />
-      </Center>
-    </NativeBaseProvider>
-  );
+      </Center>);
 }
 ```

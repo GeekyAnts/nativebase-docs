@@ -8,7 +8,7 @@ title: useToken
 ## Import
 
 ```jsx
-import { useToken } from 'native-base';
+import { useToken } from "native-base";
 ```
 
 ## Example
@@ -34,11 +34,9 @@ function UseTokenHookExample() {
 }
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <UseTokenHookExample />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <UseTokenHookExample />
+    </Center>
   );
 }
 ```
