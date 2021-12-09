@@ -18,6 +18,7 @@ import * as NBComponents from "native-base";
 // import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 // import Zocial from "react-native-vector-icons/Zocial";
 import * as expoVectorIcons from "@expo/vector-icons";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 const { parse } = require("@babel/parser");
 const traverse = require("@babel/traverse").default;
 const generate = require("@babel/generator").default;
@@ -30,6 +31,7 @@ import { Formik } from "formik";
 import dynamic from "next/dynamic";
 import { SwipeListView } from "react-native-swipe-list-view";
 import { TabView, SceneMap } from "react-native-tab-view";
+import { G, Circle, Path } from "react-native-svg";
 
 // @ts-ignore
 const { NavigationContainer } = dynamic(
@@ -114,10 +116,14 @@ export const CodeBlock = ({ children, isLive }: any) => {
     NavigationContainer,
     createDrawerNavigator,
     DrawerContentScrollView,
+    KeyboardAwareScrollView,
     SwipeListView,
     TabView,
     SceneMap,
     Formik,
+    G,
+    Path,
+    Circle,
     // LinearGradient,
   }; // add custom deps as and when required. more info here -> https://github.com/FormidableLabs/react-live#liveprovider-
 
