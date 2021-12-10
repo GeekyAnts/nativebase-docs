@@ -472,20 +472,6 @@
     },
     {
       "type": "heading",
-      "title": "Community Integration",
-      "pages": [
-        {
-          "id": "react-hooks-forms",
-          "title": "React Hook Forms"
-        },
-        {
-          "id": "formik",
-          "title": "Formik"
-        }
-      ]
-    },
-    {
-      "type": "heading",
       "title": "Recipes",
       "pages": [
         {

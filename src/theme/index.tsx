@@ -3,7 +3,7 @@ import colors from "native-base/src/theme/base/colors";
 export const theme = extendTheme({
   colors: {
     backgroundLight: "#fff",
-    backgroundDark: "#151719",
+    backgroundDark: colors.blueGray[900],
 
     primaryTextDark: colors.cyan[200],
     primaryTextLight: colors.cyan[700],
@@ -12,37 +12,19 @@ export const theme = extendTheme({
     borderColorLight: "#dfe3e6",
 
     sidebarBackgroundLight: "#fff",
-    sidebarBackgroundDark: "#151718",
-    sidebarItemTextDark: "#ecedee",
+    sidebarBackgroundDark: colors.blueGray[900],
+    sidebarItemHeadingTextDark: colors.coolGray[50],
+    sidebarItemHeadingTextLight: colors.coolGray[800],
+    sidebarItemTextDark: colors.coolGray[200],
     sidebarItemTextLight: "#11181c",
 
     activeSidebarItemBackgroundLight: colors.cyan[100],
     activeSidebarItemBackgroundDark: colors.cyan[700],
     activeSidebarItemHoverBackgroundLight: colors.cyan[100],
-    activeSidebarItemHoverBackgroundDark: colors.cyan[700],
+    activeSidebarItemHoverBackgroundDark: colors.cyan[600],
 
-    inactiveSidebarItemHoverBackgroundLight: colors.cyan[50],
-    inactiveSidebarItemHoverBackgroundDark: colors.cyan[800],
-
-    sidebarDeprecatedBadgeBackgroundLight: colors.emerald[100],
-    sidebarDeprecatedBadgeBackgroundDark: colors.emerald[900],
-    sidebarDeprecatedBadgeColorLight: colors.emerald[900],
-    sidebarDeprecatedBadgeColorDark: colors.emerald[100],
-
-    sidebarComingSoonBadgeBackgroundLight: colors.lightBlue[100],
-    sidebarComingSoonBadgeBackgroundDark: colors.lightBlue[900],
-    sidebarComingSoonBadgeColorLight: colors.lightBlue[900],
-    sidebarComingSoonBadgeColorDark: colors.lightBlue[100],
-
-    sidebarUpdatedBadgeBackgroundLight: colors.indigo[100],
-    sidebarUpdatedBadgeBackgroundDark: colors.indigo[900],
-    sidebarUpdatedBadgeColorLight: colors.indigo[900],
-    sidebarUpdatedBadgeColorDark: colors.indigo[100],
-
-    sidebarNewBadgeBackgroundLight: colors.violet[100],
-    sidebarNewBadgeBackgroundDark: colors.violet[900],
-    sidebarNewBadgeColorLight: colors.violet[900],
-    sidebarNewBadgeColorDark: colors.violet[100],
+    inactiveSidebarItemHoverBackgroundLight: colors.blueGray[100],
+    inactiveSidebarItemHoverBackgroundDark: colors.blueGray[800],
 
     inactiveLinkTextColorLight: "#687076",
     inactiveLinkTextColorDark: "#9ba1a6",

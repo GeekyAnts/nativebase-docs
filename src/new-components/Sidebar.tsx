@@ -1,10 +1,19 @@
-import Link from "next/link";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../AppContext";
-import { Box, HStack, Pressable, ScrollView, Text, Badge } from "native-base";
+import {
+  Box,
+  HStack,
+  Pressable,
+  ScrollView,
+  Text,
+  Collapse,
+} from "native-base";
 import { useRouter } from "next/router";
 import React from "react";
 import { isLatestVersionSlug } from "../utils";
+import { SidebarBadge } from "./SidebarBadge";
+import { CollapsibleSidebarItem } from "./CollapsibleSidebarItem";
+
 export default function Sidebar(props: any) {
   const { sidebar } = props;
 
@@ -14,6 +23,7 @@ export default function Sidebar(props: any) {
         py="5"
         w="64"
         borderRightWidth="1"
+        flex="1"
         _light={{
           borderColor: "borderColorLight",
           bg: "sidebarBackgroundLight",
@@ -39,7 +49,7 @@ const SidebarItem = (props: any) => {
   return sidebarItems.map((item: any, index: any) => {
     if (item?.notVisibleInSidebar === true) return null;
     return (
-      <Box key={index}>
+      <Box key={index} pl={level * 10 + "px"}>
         {item.pages === undefined ? (
           <Pressable
             onPress={() => {
@@ -52,10 +62,16 @@ const SidebarItem = (props: any) => {
             }}
             _hover={{
               _dark: {
-                bg: "activeSidebarItemHoverBackgroundDark",
+                bg:
+                  item.id === activeSidebarItem
+                    ? "activeSidebarItemHoverBackgroundDark"
+                    : "inactiveSidebarItemHoverBackgroundDark",
               },
               _light: {
-                bg: "activeSidebarItemHoverBackgroundLight",
+                bg:
+                  item.id === activeSidebarItem
+                    ? "activeSidebarItemHoverBackgroundLight"
+                    : "inactiveSidebarItemHoverBackgroundLight",
               },
             }}
             _light={{
@@ -76,34 +92,20 @@ const SidebarItem = (props: any) => {
           >
             <HStack space="3" alignItems="center">
               <Text
-                fontSize="13px"
+                fontWeight="300"
+                fontSize="sm"
                 _dark={{ color: "sidebarItemTextDark" }}
                 _light={{ color: "sidebarItemTextLight" }}
               >
                 {item.title}
               </Text>
-              {item?.status && (
-                <Badge
-                  rounded="full"
-                  _text={{
-                    textTransform: "capitalize",
-                    fontWeight: "light",
-                  }}
-                  px="1"
-                  py="0.5"
-                >
-                  {item.status}
-                </Badge>
-              )}
+              {item?.status && <SidebarBadge status={item.status} />}
             </HStack>
           </Pressable>
         ) : (
-          <Box mb="5">
-            <Box px="6" py="2" _text={{ fontWeight: "medium" }}>
-              {item.title}
-            </Box>
+          <CollapsibleSidebarItem title={item.title}>
             <SidebarItem sidebarItems={item.pages} level={level + 1} />
-          </Box>
+          </CollapsibleSidebarItem>
         )}
       </Box>
     );
