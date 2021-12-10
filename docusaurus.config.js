@@ -61,8 +61,8 @@ module.exports = {
     },
     algolia: {
       contextualSearch: true,
-      apiKey: 'f422b0f98d066dbd23597e0bbd370ce2',
-      indexName: 'nativebase-v3',
+      apiKey: '412c1183909b15d3314d018b0b2330ff',
+      appId: 'QT6M4WLEXP',
     },
     navbar: {
       title: 'NativeBase',
