@@ -37,7 +37,6 @@ export const getTOCArray = (file: string) => {
   const headingLevelMap = fileLines.map((line: string) =>
     getHeadingLevel(line)
   );
-  // console.log(headingLevelMap);
   return headingLevelMap;
 };
 
@@ -224,7 +223,9 @@ const templateGenerator = (componentDetails: any) => {
             ${name}
           </td>
           <td>
-              ${markupWithTypeLinks.replace(/[{]/g, "&#123;").replace(/[}]/g, "&#125;")}
+              ${markupWithTypeLinks
+                .replace(/[{]/g, "&#123;")
+                .replace(/[}]/g, "&#125;")}
           </td>
           <td>
             ${description || "-"}

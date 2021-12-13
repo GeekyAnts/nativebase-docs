@@ -23,7 +23,7 @@ const TocItem = (props: any) => {
     }
     return (
       <Link href={"#" + item.id} key={index} passHref>
-        <Pressable my="1" pl={item.level - 1 * 20 + "px"}>
+        <Pressable my="1" pl={(item.level - 1) * 12 + "px"}>
           {({ isHovered }) => {
             return (
               <Box
