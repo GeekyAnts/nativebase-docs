@@ -9,6 +9,7 @@ import MobileNavbar from "../src/new-components/MobileNavbar";
 import { AppContext } from "../src/AppContext";
 import MainContent from "../src/new-components/MainContent";
 import MobileSidebar from "../src/new-components/MobileSidebar";
+import Footer from "../src/new-components/Footer";
 
 function Layout({
   children: content,
@@ -97,6 +98,7 @@ function Layout({
             </Box>
           </HStack>
         </Box>
+        <Footer />
       </div>
     </>
   );
