@@ -6,7 +6,8 @@
       "pages": [
         {
           "id": "getting-started",
-          "title": "Getting Started"
+          "title": "Getting Started",
+          "showToc": false
         },
         {
           "id": "installation",

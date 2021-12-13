@@ -1,6 +1,6 @@
 import React from "react";
-// import Link from "next/link";
-import { Link } from "native-base";
+import Link from "next/link";
+import { Box, Text, Image } from "native-base";
 
 export default function TileLink({
   title,
@@ -12,30 +12,36 @@ export default function TileLink({
   titleClassName = "text-white",
   descriptionClassName = "text-gray-100",
   wide = false,
-}) {
+  ...props
+}: any) {
   return (
     <Link
       passHref
       href={url}
-      className={
-        "relative overflow-hidden no-underline col rounded-md pt-6 px-4 shadow-2xl mx-2 mb-2 " +
-        className
-      }
     >
-      <>
-        <div className={"font-bold text-md mb-2 " + titleClassName}>
+      <Box
+      flex="1"
+        position="relative"
+        overflow="hidden"
+        py="6"
+        px="4"
+        shadow="6"
+        rounded="md"
+        {...props}
+      >
+        <Text bold mb="2" fontSize="md">
           {title}
-        </div>
-        <p className={" text-sm leading-5 " + descriptionClassName}>
+        </Text>
+        <Text fontSize="sm" lineHeight="sm">
           {description}
-        </p>
+        </Text>
         <div
           className="absolute h-20 w-20"
           style={imgStyle ? imgStyle : { right: -20, top: -10 }}
         >
           {imgSrc && <img src={imgSrc}></img>}
         </div>
-      </>
+      </Box>
     </Link>
   );
 }

@@ -101,7 +101,7 @@ export async function getStaticProps({ params }: any) {
   const filenameWithOutVersionArray = filename.split("/");
   filenameWithOutVersionArray.splice(0, 1); // removed the version
 
-  const pages = getPages(sidebar, path.join(...filenameWithOutVersionArray));
+  const {showToc,...pages} = getPages(sidebar, path.join(...filenameWithOutVersionArray));
 
   const mdxSource = await serialize(content);
   const toc = getTOCArray(markdownWithMeta);
@@ -114,6 +114,7 @@ export async function getStaticProps({ params }: any) {
       sidebar: sidebar.sidebar,
       tocArray: toc,
       pages,
+      showToc,
     },
   };
 }

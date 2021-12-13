@@ -3,18 +3,9 @@ id: install-cra
 title: Install in Create React App project
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 import { TileLink } from '../../src/components';
 
-  <Tabs
-  defaultValue='template'
-  values={[
-  { label: 'New Project', value: 'template' },
-  { label: 'Existing Project', value: 'cli' }
-  ]}>
 
-  <TabItem value="template">
 
 The easiest way to get started with NativeBase in create react app is using NativeBase template.
 
@@ -34,10 +25,6 @@ cd my-app/
 yarn start
 ```
 
-  </TabItem>
-
-  <TabItem value="cli">
-
 Create a new CRA project If not exist
 
 ```bash
@@ -49,14 +36,6 @@ cd my-app
 
 ### Install dependencies
 
-  <Tabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
-
-  <TabItem value="yarn">
 <div style={{maxWidth:"750px"}}>
 
 ```bash
@@ -64,9 +43,7 @@ yarn add react-native-web native-base react-native-svg styled-components styled-
 ```
 
 </div>
-  </TabItem>
 
-  <TabItem value="npm">
 <div style={{maxWidth:"750px"}}>
 
 ```bash
@@ -74,9 +51,6 @@ npm install react-native-web native-base react-native-svg styled-components styl
 ```
 
 </div>
-  </TabItem>
-
-  </Tabs>
 
 ### Run the Hello world example
 
@@ -94,10 +68,6 @@ function App() {
   );
 }
 ```
-
-  </TabItem>
-
-  </Tabs>
 
 <div style={{ textAlign: 'center' }}>
   <img src="/img/minion.gif" />

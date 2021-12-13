@@ -9,6 +9,7 @@ import {
   VStack,
 } from "native-base";
 import Link from "next/link";
+import * as NBComponents from 'native-base';
 import { MDXRemote } from "next-mdx-remote";
 import Toc from "./Toc";
 import {
@@ -29,6 +30,7 @@ import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
 import { isLatestVersionSlug } from "../utils";
 export default function MainContent(props: any) {
+  const {Tabs,...RemNBComponents} = NBComponents;
   const { content, tocArray, pages, frontMatter } = props;
   const { activeVersion } = useContext(AppContext);
   const components = {
@@ -44,6 +46,7 @@ export default function MainContent(props: any) {
     a: Anchor,
     code: CodeBlock,
     ...docComponents,
+    ...RemNBComponents,
   };
 
   return (
@@ -108,9 +111,9 @@ export default function MainContent(props: any) {
           </HStack>
         </Box>
       </ScrollView>
-      <Box display={{ base: "none", lg: "flex" }}>
+      {props.showToc && <Box display={{ base: "none", lg: "flex" }}>
         <Toc tocArray={tocArray} />
-      </Box>
+      </Box>}
     </>
   );
 }
