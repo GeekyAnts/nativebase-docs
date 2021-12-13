@@ -1,7 +1,8 @@
-import React from 'react';
-import SpaceComponent from './SpaceComponent';
+import React from "react";
+import { Box, HStack, Heading, Divider } from "native-base";
+import SpaceComponent from "./SpaceComponent";
 const SPACING = {
-  px: '1px',
+  px: "1px",
   0: 0,
   0.5: 2,
   1: 4,
@@ -29,50 +30,50 @@ const SPACING = {
   72: 288,
   80: 320,
   96: 384,
-  '1/2': '50%',
-  '1/3': '33.333%',
-  '2/3': '66.666%',
-  '1/4': '25%',
-  '2/4': '50%',
-  '3/4': '75%',
-  '1/5': '20%',
-  '2/5': '40%',
-  '3/5': '60%',
-  '4/5': '80%',
-  '1/6': '16.666%',
-  '2/6': '33.333%',
-  '3/6': '50%',
-  '4/6': '66.666%',
-  '5/6': '83.333%',
-  full: '100%',
+  "1/2": "50%",
+  "1/3": "33.333%",
+  "2/3": "66.666%",
+  "1/4": "25%",
+  "2/4": "50%",
+  "3/4": "75%",
+  "1/5": "20%",
+  "2/5": "40%",
+  "3/5": "60%",
+  "4/5": "80%",
+  "1/6": "16.666%",
+  "2/6": "33.333%",
+  "3/6": "50%",
+  "4/6": "66.666%",
+  "5/6": "83.333%",
+  full: "100%",
 };
 
 const SpaceBlocks = ({}) => {
   return (
-    <table
-      style={{
-        borderRadius: 4,
-        padding: 16,
-        borderWidth: 0,
-      }}
-    >
-      <thead>
-        <tr style={{ borderWidth: 0 }}>
-          <th style={{ borderWidth: 0 }}> Value </th>
-          <th style={{ borderWidth: 0 }}> Pixels </th>
-          <th style={{ borderWidth: 0 }}>Representation</th>
-        </tr>
-      </thead>
-      <tbody>
-        {Object.keys(SPACING).map((key, index) => (
+    <Box>
+      <HStack space="4" px="3">
+        <Heading fontSize="md" fontWeight="md" w="20">
+          Value
+        </Heading>
+        <Heading fontSize="md" fontWeight="md" w="20">
+          Pixels
+        </Heading>
+        <Heading fontSize="md" fontWeight="md">
+          Representation
+        </Heading>
+      </HStack>
+      <Divider my="4" />
+      {Object.keys(SPACING).map((key, index) => (
+        <>
           <SpaceComponent
             name={key}
             value={SPACING[key]}
             key={`space-component-${key}-${index}`}
           />
-        ))}
-      </tbody>
-    </table>
+          <Divider my="3" />
+        </>
+      ))}
+    </Box>
   );
 };
 

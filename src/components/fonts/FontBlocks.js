@@ -1,32 +1,26 @@
-import React from 'react';
-import FontSizeComponent from './FontSizeComponent';
+import React from "react";
+import FontSizeComponent from "./FontSizeComponent";
+import { Box } from "native-base";
 const FONT_SIZES = {
-  '2xs': 10,
+  "2xs": 10,
   xs: 12,
   sm: 14,
   md: 16,
   lg: 18,
   xl: 20,
-  '2xl': 24,
-  '3xl': 30,
-  '4xl': 36,
-  '5xl': 48,
-  '6xl': 60,
-  '7xl': 72,
-  '8xl': 96,
-  '9xl': 128,
+  "2xl": 24,
+  "3xl": 30,
+  "4xl": 36,
+  "5xl": 48,
+  "6xl": 60,
+  "7xl": 72,
+  "8xl": 96,
+  "9xl": 128,
 };
 
 const FontBlocks = ({}) => {
   return (
-    <dl
-      style={{
-        backgroundColor: '#292d3e',
-        borderRadius: 4,
-        padding: 16,
-        color: 'white',
-      }}
-    >
+    <Box bg="#292d3e" borderRadius="md" p="4">
       {Object.keys(FONT_SIZES).map((key, index) => (
         <FontSizeComponent
           name={key}
@@ -34,7 +28,7 @@ const FontBlocks = ({}) => {
           key={`space-component-${key}-${index}`}
         />
       ))}
-    </dl>
+    </Box>
   );
 };
 

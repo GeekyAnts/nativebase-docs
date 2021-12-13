@@ -1,43 +1,37 @@
-import React from 'react';
+import React from "react";
+import { Heading, Text, Box, HStack, VStack } from "native-base";
 
 const ColorComponent = ({ name, variants }) => {
   return (
-    <div>
-      <h3 style={{ marginTop: '3rem' }}>{name}</h3>
-      <div
-        style={{
-          display: 'grid',
-          gridGap: '1rem',
-          gridTemplateColumns: 'repeat( auto-fit, minmax(200px, 1fr) )',
-          marginTop: '1rem',
-        }}
-      >
+    <Box>
+      <Heading mt="10" fontSize="xl">
+        {name}
+      </Heading>
+      <Box mt="4" flexWrap="wrap" flexDir="row" justifyContent="space-between">
         {Object.keys(variants).map((variant, key) => {
           return (
-            <div
-              style={{ display: 'flex', flexDirection: 'row' }}
+            <Box
+              w="200px"
               key={`color-component-${variant}-${key}`}
+              mr="4"
+              mb="4"
             >
-              <div
-                style={{
-                  width: '3rem',
-                  height: '3rem',
-                  backgroundColor: variants[variant],
-                  borderRadius: '0.375rem',
-                  marginRight: '0.5rem',
-                }}
-              />
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <div style={{ fontWeight: 'bold' }}>
-                  {`${name !== 'singletons' ? name + '.' : ''}${variant}`}
-                </div>
-                <div>{variants[variant]}</div>
-              </div>
-            </div>
+              <HStack>
+                <Box bg={variants[variant]} rounded="lg" mr="3" w="12" h="12" />
+                <VStack>
+                  <Box _text={{ fontWeight: "semibold", fontSize: "md" }}>
+                    {`${name !== "singletons" ? name + "." : ""}${variant}`}
+                  </Box>
+                  <Text fontSize="md" fontWeight="light">
+                    {variants[variant]}
+                  </Text>
+                </VStack>
+              </HStack>
+            </Box>
           );
         })}
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 export default ColorComponent;
