@@ -1,22 +1,14 @@
-import { useState, useRef, Children, useEffect } from "react";
-import {
-  Box,
-  Pressable,
-  Collapse,
-  HStack,
-  AddIcon,
-  MinusIcon,
-  Text,
-} from "native-base";
+import { useState, useRef, useEffect } from "react";
+import { Box, Pressable, Collapse, HStack, AddIcon } from "native-base";
 import React from "react";
 import { Animated } from "react-native";
 
 export const CollapsibleSidebarItem = (props: any) => {
-  const { children, title } = props;
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const { children, title, level, collapsed } = props;
+  const [isCollapsed, setIsCollapsed] = useState(collapsed);
 
   return (
-    <Box mb={isCollapsed ? "0" : "9"}>
+    <Box mb={!isCollapsed && level == 0 ? "9" : "0"}>
       <Pressable
         onPress={() => {
           setIsCollapsed(!isCollapsed);
@@ -29,6 +21,8 @@ export const CollapsibleSidebarItem = (props: any) => {
           py="2"
         >
           <Box
+            pl={level * 10 + "px"}
+            flexShrink="1"
             _text={{
               fontWeight: "medium",
               fontSize: "md",
