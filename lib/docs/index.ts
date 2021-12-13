@@ -407,6 +407,7 @@ export const getPages = (sidebar: any, filename: string) => {
   }
   const fileIndex = pages.findIndex((item) => item.id === filename);
   return {
+    showToc: pages[fileIndex].showToc === false ? false : true,
     currentPage: pages[fileIndex],
     nextPage: fileIndex !== pages.length - 1 ? pages[fileIndex + 1] : null,
     previousPage: fileIndex !== 0 ? pages[fileIndex - 1] : null,

@@ -111,9 +111,9 @@ export default function MainContent(props: any) {
           </HStack>
         </Box>
       </ScrollView>
-      {/* <Box display={{ base: "none", lg: "flex" }}>
+      {props.showToc && <Box display={{ base: "none", lg: "flex" }}>
         <Toc tocArray={tocArray} />
-      </Box> */}
+      </Box>}
     </>
   );
 }

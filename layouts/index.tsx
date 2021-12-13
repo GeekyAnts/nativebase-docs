@@ -19,6 +19,7 @@ function Layout({
   versionList,
   frontMatter,
   pages,
+  showToc,
 }: any) {
   // console.log("Sidebar", sidebar);
   const { isNavbarOpen, setActiveVersion, setActiveSidebarItem } =
@@ -90,6 +91,7 @@ function Layout({
               frontMatter={frontMatter}
               content={content}
               tocArray={tocArray}
+              showToc={showToc}
             />
 
             {/* fab se actionsheet khul k daalskte h sidebar */}

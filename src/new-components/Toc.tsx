@@ -6,9 +6,11 @@ export default function Toc(props: any) {
   return (
     <ScrollView>
       <Box w="64" py="16" px="8">
-        <Heading fontSize="xl" fontWeight="medium" mb="4">
-          Quick Nav
-        </Heading>
+        {tocArray.length !== 0 && (
+          <Heading fontSize="xl" fontWeight="medium" mb="4">
+            Quick Nav
+          </Heading>
+        )}
         <TocItem tocArrayItems={tocArray} />
       </Box>
     </ScrollView>
