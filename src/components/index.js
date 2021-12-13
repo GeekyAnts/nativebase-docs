@@ -8,7 +8,7 @@ export { default as IosBadge } from './IosBadge';
 export { default as AndroidBadge } from './AndroidBadge';
 export { default as WebBadge } from './WebBadge';
 export { default as KitchenSinkIframe } from './KitchenSinkIframe/index.tsx';
-export { default as TileLink } from './TileLink';
+export { default as TileLink } from './TileLink/index.tsx';
 export { default as NativeStartupBanner } from './NativeStartupBanner';
 export { default as NBHistory } from './NBHistory';
 export { default as InstallationTiles } from './InstallationTiles';

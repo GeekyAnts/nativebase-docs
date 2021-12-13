@@ -9,6 +9,7 @@ import {
   VStack,
 } from "native-base";
 import Link from "next/link";
+import * as NBComponents from 'native-base';
 import { MDXRemote } from "next-mdx-remote";
 import Toc from "./Toc";
 import {
@@ -44,6 +45,7 @@ export default function MainContent(props: any) {
     a: Anchor,
     code: CodeBlock,
     ...docComponents,
+    ...NBComponents,
   };
 
   return (
@@ -108,9 +110,9 @@ export default function MainContent(props: any) {
           </HStack>
         </Box>
       </ScrollView>
-      <Box display={{ base: "none", lg: "flex" }}>
+      {/* <Box display={{ base: "none", lg: "flex" }}>
         <Toc tocArray={tocArray} />
-      </Box>
+      </Box> */}
     </>
   );
 }
