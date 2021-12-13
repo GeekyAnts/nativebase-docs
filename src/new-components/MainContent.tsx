@@ -30,6 +30,7 @@ import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
 import { isLatestVersionSlug } from "../utils";
 export default function MainContent(props: any) {
+  const {Tabs,...RemNBComponents} = NBComponents;
   const { content, tocArray, pages, frontMatter } = props;
   const { activeVersion } = useContext(AppContext);
   const components = {
@@ -45,7 +46,7 @@ export default function MainContent(props: any) {
     a: Anchor,
     code: CodeBlock,
     ...docComponents,
-    ...NBComponents,
+    ...RemNBComponents,
   };
 
   return (
