@@ -523,7 +523,7 @@
         {
           "type": "heading",
           "title": "Layout",
-          "isCollapsed": true,
+          "isCollapsed": false,
           "pages": [
             {
               "id": "building-app-drawer",

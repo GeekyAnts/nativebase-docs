@@ -1,13 +1,6 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../AppContext";
-import {
-  Box,
-  HStack,
-  Pressable,
-  ScrollView,
-  Text,
-  Collapse,
-} from "native-base";
+import { Box, HStack, Pressable, ScrollView, Text } from "native-base";
 import { useRouter } from "next/router";
 import React from "react";
 import { isLatestVersionSlug } from "../utils";
@@ -16,7 +9,6 @@ import { CollapsibleSidebarItem } from "./CollapsibleSidebarItem";
 
 export default function Sidebar(props: any) {
   const { sidebar } = props;
-
   return (
     <ScrollView>
       <Box
@@ -49,7 +41,7 @@ const SidebarItem = (props: any) => {
   return sidebarItems.map((item: any, index: any) => {
     if (item?.notVisibleInSidebar === true) return null;
     return (
-      <Box key={index} pl={level * 10 + "px"}>
+      <Box key={index}>
         {item.pages === undefined ? (
           <Pressable
             onPress={() => {
@@ -90,7 +82,7 @@ const SidebarItem = (props: any) => {
             px="6"
             py="2"
           >
-            <HStack space="3" alignItems="center">
+            <HStack space="3" alignItems="center" pl={level * 10 + "px"}>
               <Text
                 fontWeight="300"
                 fontSize="sm"
@@ -103,7 +95,11 @@ const SidebarItem = (props: any) => {
             </HStack>
           </Pressable>
         ) : (
-          <CollapsibleSidebarItem title={item.title}>
+          <CollapsibleSidebarItem
+            title={item.title}
+            level={level}
+            collapsed={item.isCollapsed || false}
+          >
             <SidebarItem sidebarItems={item.pages} level={level + 1} />
           </CollapsibleSidebarItem>
         )}
