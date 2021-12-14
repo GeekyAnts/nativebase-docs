@@ -60,47 +60,53 @@ function Layout({
         id={useColorModeValue("nativebase-body-light", "nativebase-body-dark")}
       >
         <Box
-          h="100vh"
+          position="relative"
           _light={{ bg: "backgroundLight" }}
           _dark={{ bg: "backgroundDark" }}
         >
           {/* implement this using usebreakpoint value hook */}
-          <Box display={{ base: "flex", lg: "none" }} zIndex="1">
+          {/* <Box display={{ base: "flex", lg: "none" }} zIndex="1">
             <MobileNavbar />
-          </Box>
-          <Box display={{ base: "none", lg: "flex" }}>
+          </Box> */}
+          <Box
+            display={{ base: "none", lg: "flex" }}
+            w="100%"
+            position="sticky"
+          >
             <Navbar />
           </Box>
+          <Box h="100vh">
+            <HStack
+              // mt={{ base: "0", lg: "16" }}
+              flex="1"
+              _light={{
+                bg: { base: isNavbarOpen ? "black:alpha.30" : "", lg: "" },
+              }}
+              _dark={{
+                bg: { base: isNavbarOpen ? "black:alpha.70" : "", lg: "" },
+              }}
+            >
+              {/* leftsidebar only show on big devices */}
+              <Box display={{ base: "none", lg: "flex" }}>
+                <Sidebar sidebar={sidebar} />
+              </Box>
 
-          <HStack
-            flex="1"
-            _light={{
-              bg: { base: isNavbarOpen ? "black:alpha.30" : "", lg: "" },
-            }}
-            _dark={{
-              bg: { base: isNavbarOpen ? "black:alpha.70" : "", lg: "" },
-            }}
-          >
-            {/* leftsidebar only show on big devices */}
-            <Box display={{ base: "none", lg: "flex" }}>
-              <Sidebar sidebar={sidebar} />
-            </Box>
+              <MainContent
+                pages={pages}
+                frontMatter={frontMatter}
+                content={content}
+                tocArray={tocArray}
+                showToc={showToc}
+              />
 
-            <MainContent
-              pages={pages}
-              frontMatter={frontMatter}
-              content={content}
-              tocArray={tocArray}
-              showToc={showToc}
-            />
-
-            {/* fab se actionsheet khul k daalskte h sidebar */}
-            <Box display={{ base: "flex", lg: "none" }}>
-              <MobileSidebar sidebar={sidebar} />
-            </Box>
-          </HStack>
+              {/* fab se actionsheet khul k daalskte h sidebar */}
+              <Box display={{ base: "flex", lg: "none" }}>
+                <MobileSidebar sidebar={sidebar} />
+              </Box>
+            </HStack>
+          </Box>
+          <Footer />
         </Box>
-        <Footer />
       </div>
     </>
   );
