@@ -3,32 +3,7 @@ import { Box, Heading, Link, Text, VStack } from "native-base";
 import config from "../../docs.config";
 const url = config.REPO_LINK + "/tree/" + config.REPO_BRANCH;
 
-const extendComponentInstruction = (name) => {
-  return `
-import { extendTheme, NativeBaseProvider } from "native-base";
-
-const theme = extendTheme({
-    components: {
-        ${name}: {
-            baseStyle: {},
-            defaultProps: {},
-            variants: {},
-            sizes: {},
-        }
-    } 
-});
-
-function MyApp() {
-    return (
-        <NativeBaseProvider theme={theme}>
-            {/* Rest of the app goes here */}
-        </NativeBaseProvider>
-    )
-}
-`;
-};
-
-export function ComponentTheme({ name, componentName, fileName }) {
+export function ComponentTheme({ name, fileName }) {
   fileName = fileName ?? name;
 
   return (
@@ -67,11 +42,7 @@ export function ComponentTheme({ name, componentName, fileName }) {
         We can easily extend the {name} component theme using extendTheme
         function as shown below.
       </Heading>
-      {/* <CodeBlock className="language-jsx">
-        {extendComponentInstruction(
-          componentName ?? name[0].toUpperCase() + name.slice(1, name.length)
-        )}
-      </CodeBlock> */}
+
       <Link
         _text={{ textDecorationLine: "none" }}
         href={"customizing-components"}

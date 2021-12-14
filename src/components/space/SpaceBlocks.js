@@ -52,7 +52,7 @@ const SpaceBlocks = ({}) => {
   return (
     <Box>
       <HStack space="4" px="3">
-        <Heading fontSize="md" fontWeight="md" w="20">
+        <Heading fontSize="md" fontWeight="md" w="10">
           Value
         </Heading>
         <Heading fontSize="md" fontWeight="md" w="20">

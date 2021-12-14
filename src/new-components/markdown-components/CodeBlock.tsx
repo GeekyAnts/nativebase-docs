@@ -32,6 +32,7 @@ import dynamic from "next/dynamic";
 import { SwipeListView } from "react-native-swipe-list-view";
 import { TabView, SceneMap } from "react-native-tab-view";
 import { G, Circle, Path } from "react-native-svg";
+import nightOwl from "prism-react-renderer/themes/nightOwl";
 
 // @ts-ignore
 const { NavigationContainer } = dynamic(
@@ -151,36 +152,27 @@ export const CodeBlock = ({ children, isLive }: any) => {
           <LivePreview />
         </LiveProvider>
       ) : (
-        <NBComponents.Box bg="blueGray.700">{children}</NBComponents.Box>
-        // <Highlight
-        //   {...defaultProps}
-        //   code={children.props.children}
-        //   language="javascript"
-        //   theme={theme}
-        // >
-        //   {({ className, style, tokens, getLineProps, getTokenProps }: any) => (
-        //     <pre
-        //       className={`overflow-x-auto leading-7 ${className}`}
-        //       style={{ ...style, padding: "20px" }}
-        //     >
-        //       {tokens.map((line: any, i: any) => (
-        //         <NBComponents.Box
-        //           key={i}
-        //           {...getLineProps({ line, key: i })}
-        //           flexDir="row"
-        //         >
-        //           {line.map((token: any, key: any) => {
-        //             return (
-        //               <NBComponents.Text key={key}>
-        //                 {token.content}
-        //               </NBComponents.Text>
-        //             );
-        //           })}
-        //         </NBComponents.Box>
-        //       ))}
-        //     </pre>
-        //   )}
-        // </Highlight>
+        <Highlight
+          {...defaultProps}
+          code={children}
+          language="tsx"
+          theme={nightOwl}
+        >
+          {({ className, style, tokens, getLineProps, getTokenProps }) => (
+            <pre
+              className={className}
+              style={{ ...style, borderRadius: "8px", padding: "16px" }}
+            >
+              {tokens.map((line, i) => (
+                <div {...getLineProps({ line, key: i })} key={i}>
+                  {line.map((token, key) => (
+                    <span {...getTokenProps({ token, key })} key={key} />
+                  ))}
+                </div>
+              ))}
+            </pre>
+          )}
+        </Highlight>
       )}
     </>
   );
