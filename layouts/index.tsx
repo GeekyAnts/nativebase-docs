@@ -60,7 +60,7 @@ function Layout({
         id={useColorModeValue("nativebase-body-light", "nativebase-body-dark")}
       >
         <Box
-          position="relative"
+          // position="relative"
           _light={{ bg: "backgroundLight" }}
           _dark={{ bg: "backgroundDark" }}
         >
@@ -72,6 +72,10 @@ function Layout({
             display={{ base: "none", lg: "flex" }}
             w="100%"
             position="sticky"
+            top="0"
+            zIndex={99}
+            _light={{ bg: "backgroundLight" }}
+            _dark={{ bg: "backgroundDark" }}
           >
             <Navbar />
           </Box>
