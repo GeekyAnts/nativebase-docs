@@ -3,13 +3,13 @@ import {
   Box,
   Heading,
   ScrollView,
-  Button,
   HStack,
   Text,
   VStack,
+  Pressable,
 } from "native-base";
 import Link from "next/link";
-import * as NBComponents from 'native-base';
+import * as NBComponents from "native-base";
 import { MDXRemote } from "next-mdx-remote";
 import Toc from "./Toc";
 import {
@@ -30,9 +30,9 @@ import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
 import { isLatestVersionSlug } from "../utils";
 export default function MainContent(props: any) {
-  const {Tabs,...RemNBComponents} = NBComponents;
+  const { Tabs, ...RemNBComponents } = NBComponents;
   const { content, tocArray, pages, frontMatter } = props;
-  const { activeVersion } = useContext(AppContext);
+  const { activeVersion, setActiveSidebarItem } = useContext(AppContext);
   const components = {
     h1: Heading1,
     h2: Heading2,
@@ -48,7 +48,6 @@ export default function MainContent(props: any) {
     ...docComponents,
     ...RemNBComponents,
   };
-
   return (
     <>
       <ScrollView>
@@ -61,59 +60,75 @@ export default function MainContent(props: any) {
           <MDXRemote {...content} components={components} />
           <HStack justifyContent="space-between" my="12">
             {pages.previousPage && (
-              <Link
-                passHref
-                href={`${
-                  isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
-                }${pages.previousPage.id}`}
+              <Pressable
+                mr="auto"
+                onPress={() => setActiveSidebarItem(pages.previousPage.id)}
               >
-                <VStack mr="auto">
-                  <Text
-                    _light={{ color: "pageNavigationHeadingLight" }}
-                    _dark={{ color: "pageNavigationHeadingDark" }}
-                  >
-                    Previous
-                  </Text>
-                  <Text
-                    fontSize="lg"
-                    _light={{ color: "pageNavigationMainTitleLight" }}
-                    _dark={{ color: "pageNavigationMainTitleDark" }}
-                  >
-                    {pages.previousPage.title}
-                  </Text>
-                </VStack>
-              </Link>
+                <Link
+                  passHref
+                  href={`${
+                    isLatestVersionSlug(activeVersion)
+                      ? ""
+                      : activeVersion + "/"
+                  }${pages.previousPage.id}`}
+                >
+                  <VStack>
+                    <Text
+                      _light={{ color: "pageNavigationHeadingLight" }}
+                      _dark={{ color: "pageNavigationHeadingDark" }}
+                    >
+                      Previous
+                    </Text>
+                    <Text
+                      fontSize="lg"
+                      _light={{ color: "pageNavigationMainTitleLight" }}
+                      _dark={{ color: "pageNavigationMainTitleDark" }}
+                    >
+                      {pages.previousPage.title}
+                    </Text>
+                  </VStack>
+                </Link>
+              </Pressable>
             )}
             {pages.nextPage && (
-              <Link
-                passHref
-                href={`${
-                  isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
-                }${pages.nextPage.id}`}
+              <Pressable
+                ml="auto"
+                onPress={() => setActiveSidebarItem(pages.nextPage.id)}
               >
-                <VStack ml="auto">
-                  <Text
-                    _light={{ color: "pageNavigationHeadingLight" }}
-                    _dark={{ color: "pageNavigationHeadingDark" }}
-                  >
-                    Next
-                  </Text>
-                  <Text
-                    fontSize="lg"
-                    _light={{ color: "pageNavigationMainTitleLight" }}
-                    _dark={{ color: "pageNavigationMainTitleDark" }}
-                  >
-                    {pages.nextPage.title}
-                  </Text>
-                </VStack>
-              </Link>
+                <Link
+                  passHref
+                  href={`${
+                    isLatestVersionSlug(activeVersion)
+                      ? ""
+                      : activeVersion + "/"
+                  }${pages.nextPage.id}`}
+                >
+                  <VStack>
+                    <Text
+                      _light={{ color: "pageNavigationHeadingLight" }}
+                      _dark={{ color: "pageNavigationHeadingDark" }}
+                    >
+                      Next
+                    </Text>
+                    <Text
+                      fontSize="lg"
+                      _light={{ color: "pageNavigationMainTitleLight" }}
+                      _dark={{ color: "pageNavigationMainTitleDark" }}
+                    >
+                      {pages.nextPage.title}
+                    </Text>
+                  </VStack>
+                </Link>
+              </Pressable>
             )}
           </HStack>
         </Box>
       </ScrollView>
-      {props.showToc && <Box display={{ base: "none", lg: "flex" }}>
-        <Toc tocArray={tocArray} />
-      </Box>}
+      {props.showToc && (
+        <Box display={{ base: "none", lg: "flex" }}>
+          <Toc tocArray={tocArray} />
+        </Box>
+      )}
     </>
   );
 }
