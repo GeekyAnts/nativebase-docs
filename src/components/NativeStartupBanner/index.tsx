@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Text } from "native-base";
 
 export default function NativeStartupBanner() {
   return (
@@ -119,13 +120,13 @@ export default function NativeStartupBanner() {
           </clipPath>
         </defs>
       </svg>
-      <div className={"font-bold text-md text-white"}>
+      <Text fontWeight="bold" fontSize="md" color="white">
         Looking for more than components?
-      </div>
-      <p className={" text-sm leading-5 text-gray-100 mb-1 mt-1"}>
+      </Text>
+      <Text fontSize="sm" letterSpacing="lg" color="gray.100" mb="1">
         Native Startup+ is a bundle of ready-to-use screens for web and mobile
         apps crafted by the creators of NativeBase.
-      </p>
+      </Text>
     </Link>
   );
 }

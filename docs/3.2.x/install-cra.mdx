@@ -34,21 +34,21 @@ cd my-app
 
 ### Install dependencies
 
-<div style={{maxWidth:"750px"}}>
+<Box maxWidth="750px">
 
 ```bash
 yarn add react-native-web native-base react-native-svg react-native-safe-area-context
 ```
 
-</div>
+</Box>
 
-<div style={{maxWidth:"750px"}}>
+<Box maxWidth="750px">
 
 ```bash
 npm install react-native-web native-base react-native-svg react-native-safe-area-context
 ```
 
-</div>
+</Box>
 
 ### Run the Hello world example
 
@@ -67,13 +67,13 @@ export default function App() {
 }
 ```
 
-<div style={{ textAlign: "center" }}>
-  <img src="/img/minion.gif" />
-</div>
+<Center>
+  <Image source={{ uri: "/img/minion.gif" }} />
+</Center>
 
-<div className="tailwind">
-  <div className="mt-4 mb-8">
-    <div className="row pl-0 ml-0">
+<Box>
+  <Box mt="4" mb="8">
+    <HStack pl="0" ml="0">
       <TileLink
         title="Customize NativeBaseProvider"
         url="setup-provider"
@@ -86,16 +86,16 @@ export default function App() {
         description="Read more about the default NativeBase theme and how to override it"
         className="bg-blueGray-600  mt-2"
       />
-    </div>
-    <div className="row mt-2 pl-0 ml-0">
+    </HStack>
+    <Box mt="2" pl="0" ml="0">
       <TileLink
         title="Utility props"
         url="utility-props"
         description="Shorthands of commonly used styling props which maps with the provided theme"
         className="bg-blueGray-600"
       />
-    </div>
-  </div>
-</div>
+    </Box>
+  </Box>
+</Box>
 
 <RNWebNote />

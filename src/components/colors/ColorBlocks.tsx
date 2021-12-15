@@ -1,3 +1,4 @@
+import { Box } from "native-base";
 import React from "react";
 import ColorComponent from "./ColorComponent";
 const COLORS: any = {
@@ -319,7 +320,7 @@ COLORS.info = COLORS.lightBlue;
 COLORS.light = COLORS.warmGray;
 const ColorBlocks = ({}) => {
   return (
-    <div>
+    <Box>
       {Object.keys(COLORS).map((key, index) => (
         <ColorComponent
           variants={COLORS[key]}
@@ -327,7 +328,7 @@ const ColorBlocks = ({}) => {
           key={`space-block-${key}-${index}`}
         />
       ))}
-    </div>
+    </Box>
   );
 };
 

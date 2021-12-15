@@ -31,7 +31,7 @@ import { Formik } from "formik";
 import dynamic from "next/dynamic";
 import { SwipeListView } from "react-native-swipe-list-view";
 import { TabView, SceneMap } from "react-native-tab-view";
-import { G, Circle, Path } from "react-native-svg";
+import { G, Circle as CircleSvg, Path } from "react-native-svg";
 import nightOwl from "prism-react-renderer/themes/nightOwl";
 
 // @ts-ignore
@@ -124,7 +124,7 @@ export const CodeBlock = ({ children, isLive }: any) => {
     Formik,
     G,
     Path,
-    Circle,
+    CircleSvg,
     // LinearGradient,
   }; // add custom deps as and when required. more info here -> https://github.com/FormidableLabs/react-live#liveprovider-
 
