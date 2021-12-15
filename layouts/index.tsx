@@ -22,8 +22,12 @@ function Layout({
   showToc,
 }: any) {
   // console.log("Sidebar", sidebar);
-  const { isNavbarOpen, setActiveVersion, setActiveSidebarItem } =
-    useContext(AppContext);
+  const {
+    isNavbarOpen,
+    activeSidebarItem,
+    setActiveVersion,
+    setActiveSidebarItem,
+  } = useContext(AppContext);
 
   useEffect(() => {
     const currentPathArray = window?.location.href.split("/");
@@ -40,9 +44,10 @@ function Layout({
       actVersion = "";
     }
     setActiveVersion(actVersion);
-
+    
     if (pathArray[0] === actVersion) {
-      setActiveSidebarItem(path.join(...pathArray.splice(0, 1)).split("#")[0]);
+      pathArray.splice(0, 1);
+      setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
     } else {
       setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
     }

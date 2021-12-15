@@ -6,6 +6,7 @@ import React from "react";
 import { isLatestVersionSlug } from "../utils";
 import { SidebarBadge } from "./SidebarBadge";
 import { CollapsibleSidebarItem } from "./CollapsibleSidebarItem";
+import Link from "next/link";
 
 export default function Sidebar(props: any) {
   const { sidebar } = props;
@@ -34,10 +35,6 @@ const SidebarItem = (props: any) => {
   const { activeVersion, activeSidebarItem, setActiveSidebarItem } =
     useContext(AppContext);
 
-  function changeRoute(path: string) {
-    router.push(path);
-  }
-
   return sidebarItems.map((item: any, index: any) => {
     if (item?.notVisibleInSidebar === true) return null;
     return (
@@ -45,11 +42,6 @@ const SidebarItem = (props: any) => {
         {item.pages === undefined ? (
           <Pressable
             onPress={() => {
-              changeRoute(
-                `${
-                  isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
-                }${item.id}`
-              );
               setActiveSidebarItem(item.id);
             }}
             _hover={{
@@ -82,17 +74,24 @@ const SidebarItem = (props: any) => {
             px="6"
             py="2"
           >
-            <HStack space="3" alignItems="center" pl={level * 10 + "px"}>
-              <Text
-                fontWeight="300"
-                fontSize="sm"
-                _dark={{ color: "sidebarItemTextDark" }}
-                _light={{ color: "sidebarItemTextLight" }}
-              >
-                {item.title}
-              </Text>
-              {item?.status && <SidebarBadge status={item.status} />}
-            </HStack>
+            <Link
+              passHref
+              href={`${
+                isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
+              }${item.id}`}
+            >
+              <HStack space="3" alignItems="center" pl={level * 10 + "px"}>
+                <Text
+                  fontWeight="300"
+                  fontSize="sm"
+                  _dark={{ color: "sidebarItemTextDark" }}
+                  _light={{ color: "sidebarItemTextLight" }}
+                >
+                  {item.title}
+                </Text>
+                {item?.status && <SidebarBadge status={item.status} />}
+              </HStack>
+            </Link>
           </Pressable>
         ) : (
           <CollapsibleSidebarItem
