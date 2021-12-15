@@ -3,7 +3,7 @@ id: install-expo
 title: Install in Expo project
 ---
 
-import { TileLink } from '../../src/components';
+import { TileLink } from "../../src/components";
 
 Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
 
@@ -19,17 +19,13 @@ cd my-project/
 
 ### Install dependencies
 
- 
 ```bash
 yarn add native-base styled-components styled-system
 ```
 
-
 ```bash
 npm install native-base styled-components styled-system
 ```
-
-
 
 ```bash
 expo install react-native-svg
@@ -44,8 +40,8 @@ expo install react-native-safe-area-context
 Put the below code in your App.js
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, Box } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
 
 function App() {
   return (
@@ -56,13 +52,14 @@ function App() {
 }
 ```
 
-<div style={{ textAlign: 'center' }}>
-  <img src="/img/minion.gif" alt="minions clapping" />
-</div>
+<Center>
+ <Image
+  source={{ uri:/img/minion.gif"}} alt="minions clapping" />
+</Center>
 
-<div className="tailwind">
-  <div className="mt-4 mb-8">
-    <div className="row pl-0 ml-0">
+<Box>
+  <Box mt="4" mb="8">
+    <HStack pl="0" ml="0">
       <TileLink
         title="Customize NativeBaseProvider"
         url="setup-provider"
@@ -75,14 +72,14 @@ function App() {
         description="Read more about the default NativeBase theme and how to override it"
         className="bg-blueGray-600  mt-2"
       />
-    </div>
-    <div className="row mt-2 pl-0 ml-0">
+    </HStack>
+    <Box mt="2" pl="0" ml="0">
       <TileLink
         title="Utility props"
         url="utility-props"
         description="Shorthands of commonly used styling props which maps with the provided theme"
         className="bg-blueGray-600"
       />
-    </div>
-  </div>
-</div>
+    </Box>
+  </Box>
+</Box>

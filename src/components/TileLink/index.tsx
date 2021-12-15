@@ -37,7 +37,13 @@ export default function TileLink({
         </Text>
         {imgSrc && (
           <Box {..._Image}>
-            <Image height="100%" width="100%" layout="fill" src={imgSrc} />
+            <Image
+              height="100%"
+              width="100%"
+              layout="fill"
+              src={imgSrc}
+              alt="image"
+            />
           </Box>
         )}
       </Box>

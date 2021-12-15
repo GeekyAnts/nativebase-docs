@@ -3,9 +3,9 @@ id: install-rn
 title: Install in React Native project
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import { TileLink } from '../src/components';
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import { TileLink } from "../src/components";
 
 <Tabs
   defaultValue='new'
@@ -21,22 +21,22 @@ import { TileLink } from '../src/components';
 [Refer this link](https://github.com/react-native-community/cli#about) to get infomation about the React Native CLI.
 
 <h4 style={{marginTop:"40px"}} className="mt-8 font-mono">Plain Javascript</h4>
-<div style={{maxWidth:"750px"}}>
+<Box maxWidth="750px">
 
 ```bash
 npx react-native init MyApp --template react-native-template-native-base
 ```
 
-</div>
+</Box>
 
 <h4 className="mt-8 font-mono">With Typescript</h4>
-<div style={{maxWidth:"750px"}}>
+<Box maxWidth="750px">
 
 ```bash
 npx react-native init MyApp --template react-native-template-native-base-typescript
 ```
 
-</div>
+</Box>
 
 Yey! you are all set, start editing App.js/App.tsx now.
 
@@ -90,8 +90,8 @@ pod install
 Put the below code in your App.js
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, Box } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
 
 export default function App() {
   return (
@@ -106,13 +106,13 @@ export default function App() {
 
 </Tabs>
 
-<div style={{ textAlign: 'center' }}>
-  <img src="/img/minion.gif" />
-</div>
+<Center>
+  <Image source={{ uri: "/img/minion.gif" }} />
+</Center>
 
-<div className="tailwind">
-  <div className="mt-4 mb-8">
-    <div className="row pl-0 ml-0">
+<Box>
+  <Box mt="4" mb="8">
+    <HStack pl="0" ml="0">
       <TileLink
         title="Customize NativeBaseProvider"
         url="setup-provider"
@@ -125,14 +125,14 @@ export default function App() {
         description="Read more about the default NativeBase theme and how to override it"
         className="bg-blueGray-600  mt-2"
       />
-    </div>
-    <div className="row mt-2 pl-0 ml-0">
+    </HStack>
+    <Box mt="2" pl="0" ml="0">
       <TileLink
         title="Utility props"
         url="utility-props"
         description="Shorthands of commonly used styling props which maps with the provided theme"
         className="bg-blueGray-600"
       />
-    </div>
-  </div>
-</div>
+    </Box>
+  </Box>
+</Box>

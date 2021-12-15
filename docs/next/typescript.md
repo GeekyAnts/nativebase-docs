@@ -37,4 +37,4 @@ declare module 'native-base' {
 
 ## Result
 
-<img src="/img/ts-gif.gif" alt="Typescript intellisense with custom theme tokens"/>
+<Image source={{ uri:"/img/ts-gif.gif"}} alt="Typescript intellisense with custom theme tokens"/>
