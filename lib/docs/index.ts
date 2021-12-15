@@ -406,10 +406,25 @@ export const getPages = (sidebar: any, filename: string) => {
     iterateSidebar(sidebar.sidebar[i], pages);
   }
   const fileIndex = pages.findIndex((item) => item.id === filename);
+  let nextPage = fileIndex !== pages.length - 1 ? pages[fileIndex + 1] : null;
+  let previousPage = fileIndex !== 0 ? pages[fileIndex - 1] : null;
+  let nextPageIndex = fileIndex + 1;
+  let previousPageIndex = fileIndex - 1;
+
+  while (nextPage?.notVisibleInSidebar) {
+    nextPage = nextPage !== null ? pages[nextPageIndex] : null;
+    nextPageIndex++;
+  }
+
+  while (previousPage?.notVisibleInSidebar) {
+    previousPage = previousPage !== null ? pages[previousPageIndex] : null;
+    previousPageIndex--;
+  }
+
   return {
     showToc: pages[fileIndex].showToc === false ? false : true,
     currentPage: pages[fileIndex],
-    nextPage: fileIndex !== pages.length - 1 ? pages[fileIndex + 1] : null,
-    previousPage: fileIndex !== 0 ? pages[fileIndex - 1] : null,
+    nextPage,
+    previousPage,
   };
 };
