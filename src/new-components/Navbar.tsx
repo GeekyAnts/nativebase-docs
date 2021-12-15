@@ -13,6 +13,9 @@ import {
   Pressable,
   useColorMode,
   HamburgerIcon,
+  Link as NBLink,
+  Icon,
+  Box,
 } from "native-base";
 import NativebaseLogo from "./NativebaseLogo";
 import { isLatestVersion, isLatestVersionSlug } from "../utils";
@@ -20,6 +23,10 @@ import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { useRouter } from "next/router";
 import versions from "../../versions.json";
+import { FontAwesome } from "@expo/vector-icons";
+import Discord from "./Discord";
+import GitHub from "./Github";
+import GeekyantsLogo from "./GeekyantsLogo";
 
 export default function Navbar(props: any) {
   const { activeVersion, setActiveVersion } = useContext(AppContext);
@@ -46,6 +53,7 @@ export default function Navbar(props: any) {
   };
   return (
     <HStack
+      // position="absolute"
       w="100%"
       borderBottomWidth="1"
       _light={{ borderColor: "borderColorLight" }}
@@ -105,14 +113,38 @@ export default function Navbar(props: any) {
             );
           })}
         </Menu>
+        <NBLink
+          href="https://startup.nativebase.io/?utm_source=DocsHeader&utm_medium=ad-banner&utm_campaign=NativeBase_3_Docs"
+          isExternal
+          _text={{
+            textDecorationLine: "none",
+            color: "primary.500",
+            fontSize: "md",
+          }}
+          _hover={{ _text: { textDecorationLine: "underline" } }}
+        >
+          Announcing NativeBase Startup+ bundle 🎉
+        </NBLink>
       </HStack>
       <HStack space="2" alignItems="center">
-        <Link href="#" passHref>
+        <Box px="2">
+          <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
+            <GitHub />
+          </NBLink>
+        </Box>
+        <Box px="2">
+          <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
+            <Discord />
+          </NBLink>
+        </Box>
+
+        <Link href="/" passHref>
           <Button
             variant="unstyled"
             _text={{
               color: "coolGray.400",
               fontWeight: "normal",
+              fontSize: "sm",
             }}
             _hover={{
               _light: {
@@ -134,12 +166,16 @@ export default function Navbar(props: any) {
             Documentation
           </Button>
         </Link>
-        <Link href="#" passHref>
+        <NBLink
+          href="https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase"
+          isExternal
+        >
           <Button
             variant="unstyled"
             _text={{
               color: "coolGray.400",
               fontWeight: "normal",
+              fontSize: "sm",
             }}
             _hover={{
               _light: {
@@ -157,38 +193,11 @@ export default function Navbar(props: any) {
                 },
               },
             }}
+            leftIcon={<GeekyantsLogo size="sm" />}
           >
-            Case Studies
+            Hire us
           </Button>
-        </Link>
-        <Link href="#" passHref>
-          <Button
-            variant="unstyled"
-            _text={{
-              color: "coolGray.400",
-              fontWeight: "normal",
-            }}
-            _hover={{
-              _light: {
-                // @ts-ignore
-                _text: {
-                  borderBottomWidth: "1px",
-                  borderBottomColor: "inactiveHoverBorderBottomLinkColorLight",
-                },
-              },
-              _dark: {
-                // @ts-ignore
-                _text: {
-                  borderBottomWidth: "1px",
-                  borderBottomColor: "inactiveHoverBorderBottomLinkColorDark",
-                },
-              },
-            }}
-            rightIcon={<AddIcon size="3" />}
-          >
-            Resources
-          </Button>
-        </Link>
+        </NBLink>
         <IconButton
           onPress={toggleColorMode}
           colorScheme="gray"
