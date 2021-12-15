@@ -3,15 +3,15 @@ import { Box, Heading, Link, Text, VStack } from "native-base";
 import config from "../../docs.config";
 const url = config.REPO_LINK + "/tree/" + config.REPO_BRANCH;
 
-export function ComponentTheme({ name, fileName }) {
+export function ComponentTheme({ name, fileName }:any) {
   fileName = fileName ?? name;
 
   return (
     <VStack
       space={4}
-      style={{
-        "--ifm-link-hover-decoration": "none",
-      }}
+      // style={{
+      //   "--ifm-link-hover-decoration": "none",
+      // }}
     >
       <Box rounded="md">
         <Text>
@@ -23,6 +23,7 @@ export function ComponentTheme({ name, fileName }) {
           >
             <Text
               borderBottomWidth="2px"
+              // @ts-ignore
               _hover={{
                 bg: "secondary.200",
                 color: "black",
@@ -49,6 +50,7 @@ export function ComponentTheme({ name, fileName }) {
       >
         <Text
           borderBottomWidth="2px"
+          // @ts-ignore
           _hover={{
             bg: "secondary.200",
             color: "black",

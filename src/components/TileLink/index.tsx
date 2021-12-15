@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Box, Text, Image } from "native-base";
+import NextImage from "next/image";
+import { Box, Text, Factory } from "native-base";
 
 export default function TileLink({
   title,
@@ -12,15 +13,14 @@ export default function TileLink({
   titleClassName = "text-white",
   descriptionClassName = "text-gray-100",
   wide = false,
+  _Image,
   ...props
 }: any) {
+  const Image = Factory(NextImage);
   return (
-    <Link
-      passHref
-      href={url}
-    >
+    <Link passHref href={url}>
       <Box
-      flex="1"
+        flex="1"
         position="relative"
         overflow="hidden"
         py="6"
@@ -35,12 +35,11 @@ export default function TileLink({
         <Text fontSize="sm" lineHeight="sm">
           {description}
         </Text>
-        <div
-          className="absolute h-20 w-20"
-          style={imgStyle ? imgStyle : { right: -20, top: -10 }}
-        >
-          {imgSrc && <img src={imgSrc}></img>}
-        </div>
+        {imgSrc && (
+          <Box {..._Image}>
+            <Image height="100%" width="100%" layout="fill" src={imgSrc} />
+          </Box>
+        )}
       </Box>
     </Link>
   );

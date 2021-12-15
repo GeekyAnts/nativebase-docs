@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "docs.config.js", "build-init.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "docs.config.js", "build-init.js", "lib/docs/propsMap.js"],
   "exclude": ["node_modules","versioned_repo"]
 }

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export function Icon(props) {
+export function Icon(props:any) {
   return (
     <svg width={1024} height={1024} viewBox="0 0 1024 1024" {...props}>
       <g data-name="Group 314" transform="translate(-3688 -2675)">

@@ -1,7 +1,7 @@
 import React from "react";
 import FontSizeComponent from "./FontSizeComponent";
 import { Box } from "native-base";
-const FONT_SIZES = {
+const FONT_SIZES: any = {
   "2xs": 10,
   xs: 12,
   sm: 14,

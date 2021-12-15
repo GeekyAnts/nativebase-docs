@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, HStack, Text } from "native-base";
 
-const FontSizeComponent = ({ name, value }) => {
+const FontSizeComponent = ({ name, value }: any) => {
   return (
     <HStack alignItems="flex-start" py="3">
       <Text flexShrink="0" w="12" color="white">

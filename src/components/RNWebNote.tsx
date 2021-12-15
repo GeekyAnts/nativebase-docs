@@ -16,6 +16,7 @@ export const RNWebNote = () => {
             color="white"
             textDecorationLine="underline"
             borderColor="white"
+            // @ts-ignore
             href="https://necolas.github.io/react-native-web/docs/setup/#root-element"
             hrefAttrs={{ target: '_blank' }}
             fontSize="md"

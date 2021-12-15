@@ -1,7 +1,7 @@
-import { HStack, Text, Box, ScrollView } from "native-base";
+import { HStack, Text, Box } from "native-base";
 import React from "react";
 
-const SpaceComponent = ({ name, value }) => {
+const SpaceComponent = ({ name, value }: any) => {
   return (
     <HStack space="4" px="3">
       <Text minW="10" fontSize="md">

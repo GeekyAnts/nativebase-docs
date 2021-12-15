@@ -1,6 +1,6 @@
 import React from "react";
 import ColorComponent from "./ColorComponent";
-const COLORS = {
+const COLORS: any = {
   primary: {},
   secondary: {},
   tertiary: {},

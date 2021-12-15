@@ -8,9 +8,9 @@ export default function NativeStartupBanner() {
       href={
         "https://startup.nativebase.io/?utm_source=GettingStartedDocs&utm_medium=ad-banner&utm_campaign=NativeBase_3_Docs"
       }
-      className={
-        "relative overflow-hidden no-underline col rounded-md pt-6 pb-6 px-4 shadow-2xl mx-2 mb-2 bg-blueGray-700 mt-2"
-      }
+      // className={
+      //   "relative overflow-hidden no-underline col rounded-md pt-6 pb-6 px-4 shadow-2xl mx-2 mb-2 bg-blueGray-700 mt-2"
+      // }
     >
       <svg
         width="236"

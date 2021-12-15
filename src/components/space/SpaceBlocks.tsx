@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, HStack, Heading, Divider } from "native-base";
 import SpaceComponent from "./SpaceComponent";
-const SPACING = {
+const SPACING: any = {
   px: "1px",
   0: 0,
   0.5: 2,

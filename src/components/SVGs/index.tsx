@@ -311,6 +311,7 @@ export const SVGs = {
     <svg
       id="logo"
       xmlns="http://www.w3.org/2000/svg"
+      // @ts-ignore
       xlink="http://www.w3.org/1999/xlink"
       width="60"
       height="60"
