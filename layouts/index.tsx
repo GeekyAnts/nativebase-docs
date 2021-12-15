@@ -60,26 +60,25 @@ function Layout({
         id={useColorModeValue("nativebase-body-light", "nativebase-body-dark")}
       >
         <Box
+          h="100vh"
           // position="relative"
           _light={{ bg: "backgroundLight" }}
           _dark={{ bg: "backgroundDark" }}
         >
           {/* implement this using usebreakpoint value hook */}
-          {/* <Box display={{ base: "flex", lg: "none" }} zIndex="1">
-            <MobileNavbar />
-          </Box> */}
-          <Box
-            display={{ base: "none", lg: "flex" }}
-            w="100%"
-            position="sticky"
-            top="0"
-            zIndex={99}
-            _light={{ bg: "backgroundLight" }}
-            _dark={{ bg: "backgroundDark" }}
-          >
-            <Navbar />
-          </Box>
+
           <Box h="100vh">
+            <Box
+              display={{ base: "none", lg: "flex" }}
+              w="100%"
+              position="sticky"
+              top="0"
+              zIndex={99}
+              _light={{ bg: "backgroundLight" }}
+              _dark={{ bg: "backgroundDark" }}
+            >
+              <Navbar />
+            </Box>
             <HStack
               // mt={{ base: "0", lg: "16" }}
               flex="1"
@@ -102,14 +101,24 @@ function Layout({
                 tocArray={tocArray}
                 showToc={showToc}
               />
-
-              {/* fab se actionsheet khul k daalskte h sidebar */}
-              <Box display={{ base: "flex", lg: "none" }}>
-                <MobileSidebar sidebar={sidebar} />
-              </Box>
             </HStack>
           </Box>
-          <Footer />
+          <Box
+            display={{ base: "flex", lg: "none" }}
+            position="absolute"
+            top="0"
+            zIndex="1"
+            w="100%"
+            _light={{ bg: "backgroundLight" }}
+            _dark={{ bg: "backgroundDark" }}
+          >
+            <MobileNavbar />
+          </Box>
+          {/* fab se actionsheet khul k daalskte h sidebar */}
+          <Box display={{ base: "flex", lg: "none" }}>
+            <MobileSidebar sidebar={sidebar} />
+          </Box>
+          {/* <Footer /> */}
         </Box>
       </div>
     </>
