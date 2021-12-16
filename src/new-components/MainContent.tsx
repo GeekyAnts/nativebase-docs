@@ -25,6 +25,11 @@ import {
   Img,
   Code,
   CodeBlock,
+  TableBox,
+  TableHead,
+  TableHeadData,
+  TableData,
+  TableRow,
 } from "./markdown-components";
 import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
@@ -45,6 +50,11 @@ export default function MainContent(props: any) {
     img: Img,
     a: Anchor,
     code: CodeBlock,
+    table: TableBox,
+    thead: TableHead,
+    th: TableHeadData,
+    tr: TableRow,
+    td: TableData,
     ...docComponents,
     ...RemNBComponents,
   };
