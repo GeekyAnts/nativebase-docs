@@ -3,6 +3,16 @@ import * as RN from "react-native";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/vsDark";
 import * as NBComponents from "native-base";
+import {
+  Box,
+  ScrollView,
+  IconButton,
+  useClipboard,
+  AddIcon,
+  MinusIcon,
+  SunIcon,
+  ArrowBackIcon,
+} from "native-base";
 // import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 // import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 // import AntDesign from "react-native-vector-icons/AntDesign";
@@ -131,13 +141,14 @@ export const CodeBlock = ({ children, isLive }: any) => {
   // @ts-ignore
   delete scope.default;
   // console.log(getParsedCode(children));
-
+  const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
+  const { onCopy } = useClipboard();
   return (
     <>
       {isLive ? (
         <LiveProvider
           scope={scope}
-          code={getParsedCode(children)}
+          code={parsedCode}
           transformCode={(a) => {
             return `
           function App() {
@@ -146,10 +157,47 @@ export const CodeBlock = ({ children, isLive }: any) => {
           }
           `;
           }}
+          theme={nightOwl}
         >
-          <LiveEditor />
-          <LiveError />
-          <LivePreview />
+          <Box
+            p="4"
+            mb="4"
+            borderWidth="1"
+            rounded="lg"
+            _dark={{ borderColor: "blueGray.700" }}
+            _light={{ borderColor: "blueGray.300" }}
+          >
+            <LiveError />
+            <LivePreview />
+          </Box>
+          <Box
+            px="4"
+            pb="4"
+            mb="4"
+            borderWidth="1"
+            rounded="lg"
+            _dark={{ borderColor: "blueGray.700" }}
+            _light={{ borderColor: "blueGray.300" }}
+            bg="codeBlockBackgroundColor"
+          >
+            <Box flexDir="row" w="100%" justifyContent="flex-end">
+              <IconButton icon={<AddIcon size="xs" />} />
+              <IconButton icon={<MinusIcon size="xs" />} />
+              <IconButton
+                onPress={() => setParsedCode(getParsedCode(children))}
+                icon={<ArrowBackIcon size="xs" />}
+              />
+              <IconButton
+                onPress={() => {
+                  onCopy(parsedCode);
+                }}
+                icon={<SunIcon size="xs" />}
+              />
+            </Box>
+            <ScrollView maxH="300px">
+              <LiveEditor onChange={(code) => setParsedCode(code)} />
+            </ScrollView>
+          </Box>
         </LiveProvider>
       ) : (
         <Highlight

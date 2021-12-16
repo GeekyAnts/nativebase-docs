@@ -63,8 +63,8 @@ Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3
 Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3-pre-beta/src/theme/components/button.ts#L201)
 
 ```jsx
-<Button variant="ghost">
-<Button variant="outline">
+<Button variant="ghost"/>
+<Button variant="outline"/>
 
 
 // What variant should it pick if it's not passed?

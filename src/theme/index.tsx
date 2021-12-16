@@ -42,6 +42,8 @@ export const theme = extendTheme({
     pageNavigationHeadingDark: "#9ba1a6",
     pageNavigationMainTitleLight: "#006adc",
     pageNavigationMainTitleDark: "#52a9ff",
+
+    codeBlockBackgroundColor:"#011627",
   },
   config: {
     // Changing initialColorMode to 'dark'
