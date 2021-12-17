@@ -3,6 +3,7 @@ import * as RN from "react-native";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/vsDark";
 import * as NBComponents from "native-base";
+import versions from "../../../versions.json";
 // import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 // import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 // import AntDesign from "react-native-vector-icons/AntDesign";
@@ -40,6 +41,7 @@ import {
   useClipboard,
   Icon,
   Tooltip,
+  Link,
 } from "native-base";
 
 // @ts-ignore
@@ -64,8 +66,11 @@ const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
 // const LinearGradient = require('expo-linear-gradient').LinearGradient;
 
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import { AppContext } from "../../AppContext";
+import config from "../../../docs.config";
 
 export const CodeBlock = ({ children, isLive }: any) => {
+  const { activeVersion } = React.useContext(AppContext);
   const Wrapper = (props: any) => {
     return (
       <NBComponents.Center flex={1} px="3">
@@ -153,6 +158,108 @@ export const CodeBlock = ({ children, isLive }: any) => {
       setCopied(false);
     }, 2000);
   }
+  const expoDendencies = `react-is,expo-font,native-base@${
+    config.versionMap[activeVersion] === undefined
+      ? config.versionMap[versions[0]]
+      : config.versionMap[activeVersion]
+  },styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons,expo-linear-gradient,formik,yup`;
+  const codeSandBoxDependencies = {
+    "react-is": "*",
+    "expo-font": "~10.0.3",
+    "native-base": `${
+      config.versionMap[activeVersion] === undefined
+        ? config.versionMap[versions[0]]
+        : config.versionMap[activeVersion]
+    }`,
+    "styled-system": "*",
+    "expo-constants": "~12.1.3",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-svg": "12.1.1",
+    "styled-components": "*",
+    "@expo/vector-icons": "^12.0.0",
+    "expo-linear-gradient": "~10.0.3",
+  };
+  const endingTemplate = `
+export default () => {
+    return (
+      <NativeBaseProvider>
+        <Center flex={1} px="3">
+            <Example />
+        </Center>
+      </NativeBaseProvider>
+    );
+};
+`;
+  const getImportSpecifier = (name: any) => {
+    return {
+      type: "ImportSpecifier",
+      imported: {
+        type: "Identifier",
+        loc: {
+          identifierName: name,
+        },
+        name: name,
+      },
+      local: {
+        type: "Identifier",
+        loc: {
+          identifierName: name,
+        },
+        name: name,
+      },
+    };
+  };
+  function addExportsToCode(code: string) {
+    const ast = parse(code, {
+      sourceType: "module",
+      plugins: ["jsx", "typescript"],
+    });
+    traverse(ast, {
+      ImportDeclaration({ node }: any) {
+        let isCenterImported = false;
+        let isProviderImported = false;
+        if (node.source.value === "native-base") {
+          node.specifiers.forEach((s: any) => {
+            if (s.imported.name === "Center") {
+              isCenterImported = true;
+            } else if (s.imported.name === "NativeBaseProvider") {
+              isProviderImported = true;
+            }
+          });
+          if (!isCenterImported) {
+            node.specifiers.push(getImportSpecifier("Center"));
+          }
+          if (!isProviderImported) {
+            node.specifiers.push(getImportSpecifier("NativeBaseProvider"));
+          }
+        }
+      },
+      enter(path: any) {
+        if (path.node?.type === "ExportNamedDeclaration") {
+          // console.log(path.node.declaration.declarations);
+          const childDec = path.node.declaration;
+          path.replaceWith(childDec);
+          // console.log(path.node);
+        }
+      },
+    });
+    const output = generate(ast);
+    const finalTemplate = output.code + "\n" + endingTemplate;
+    return finalTemplate;
+  }
+  const files = {
+    // Inlined code
+    "App.tsx": {
+      type: "CODE",
+      contents: addExportsToCode(children),
+    },
+  };
+  function getExpoSnackURL() {
+    const url = `https://snack.expo.dev?files=${encodeURIComponent(
+      JSON.stringify(files)
+    )}&dependencies=${encodeURIComponent(expoDendencies)}`;
+    return url;
+  }
   return (
     <>
       {isLive ? (
@@ -195,15 +302,17 @@ export const CodeBlock = ({ children, isLive }: any) => {
           >
             <Box flexDir="row" w="100%" justifyContent="flex-end">
               <Tooltip label="Open Expo Snack">
-                <IconButton
-                  icon={
-                    <Icon
-                      as={expoVectorIcons?.AntDesign}
-                      name="CodeSandbox"
-                      size="xs"
-                    />
-                  }
-                />
+                <Link isExternal href={getExpoSnackURL()}>
+                  <IconButton
+                    icon={
+                      <Icon
+                        as={expoVectorIcons?.AntDesign}
+                        name="CodeSandbox"
+                        size="xs"
+                      />
+                    }
+                  />
+                </Link>
               </Tooltip>
               <Tooltip label="Open code in CodeSandBox">
                 <IconButton
