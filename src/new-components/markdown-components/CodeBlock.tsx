@@ -38,10 +38,8 @@ import {
   ScrollView,
   IconButton,
   useClipboard,
-  AddIcon,
-  MinusIcon,
-  SunIcon,
-  ArrowBackIcon,
+  Icon,
+  Tooltip,
 } from "native-base";
 
 // @ts-ignore
@@ -97,7 +95,7 @@ export const CodeBlock = ({ children, isLive }: any) => {
         // console.log(path.node);
       },
     });
-    
+
     const output = generate(ast);
     return output.code;
   }
@@ -144,8 +142,17 @@ export const CodeBlock = ({ children, isLive }: any) => {
 
   // const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
   const [parsedCode, setParsedCode] = React.useState(children);
+  const [copied, setCopied] = React.useState(false);
 
   const { onCopy } = useClipboard();
+  function handleCopy() {
+    onCopy(parsedCode);
+    setCopied(true);
+    // set copied to false after 2 second
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  }
   return (
     <>
       {isLive ? (
@@ -187,18 +194,44 @@ export const CodeBlock = ({ children, isLive }: any) => {
             bg="codeBlockBackgroundColor"
           >
             <Box flexDir="row" w="100%" justifyContent="flex-end">
-              <IconButton icon={<AddIcon size="xs" />} />
-              <IconButton icon={<MinusIcon size="xs" />} />
-              <IconButton
+              <Tooltip label="Open Expo Snack">
+                <IconButton
+                  icon={
+                    <Icon
+                      as={expoVectorIcons?.AntDesign}
+                      name="CodeSandbox"
+                      size="xs"
+                    />
+                  }
+                />
+              </Tooltip>
+              <Tooltip label="Open code in CodeSandBox">
+                <IconButton
+                  icon={
+                    <Icon
+                      as={expoVectorIcons?.AntDesign}
+                      name="CodeSandbox"
+                      size="xs"
+                    />
+                  }
+                />
+              </Tooltip>
+              {/* <IconButton
                 onPress={() => setParsedCode(getParsedCode(children))}
                 icon={<ArrowBackIcon size="xs" />}
-              />
-              <IconButton
-                onPress={() => {
-                  onCopy(parsedCode);
-                }}
-                icon={<SunIcon size="xs" />}
-              />
+              /> */}
+              <Tooltip label={copied ? "copied" : "copy"}>
+                <IconButton
+                  onPress={handleCopy}
+                  icon={
+                    <Icon
+                      as={expoVectorIcons?.Ionicons}
+                      name={copied ? "copy" : "copy-outline"}
+                      size="xs"
+                    />
+                  }
+                />
+              </Tooltip>
             </Box>
             <ScrollView maxH="300px">
               <LiveEditor onChange={(code) => setParsedCode(code)} />
