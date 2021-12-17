@@ -1,45 +1,78 @@
 import { useState, useRef, useEffect } from "react";
-import { Box, Pressable, Collapse, HStack, AddIcon } from "native-base";
+import { Box, Pressable, Collapse, HStack, AddIcon, Icon } from "native-base";
 import React from "react";
 import { Animated } from "react-native";
+import { AntDesign } from "@expo/vector-icons";
 
 export const CollapsibleSidebarItem = (props: any) => {
   const { children, title, level, collapsed } = props;
   const [isCollapsed, setIsCollapsed] = useState(collapsed);
-
-  return (
-    <Box mb={!isCollapsed && level == 0 ? "9" : "0"}>
-      <Pressable
-        onPress={() => {
-          setIsCollapsed(!isCollapsed);
-        }}
-      >
+  const isHeadingCollapsible = false;
+  if (isHeadingCollapsible || level > 0)
+    return (
+      <Box>
+        <Pressable
+          onPress={() => {
+            setIsCollapsed(!isCollapsed);
+          }}
+        >
+          <HStack
+            justifyContent="space-between"
+            alignItems="center"
+            pl="8"
+            px="4"
+            py="2.5"
+          >
+            <Box
+              flexShrink="1"
+              _text={{
+                fontWeight: "300",
+                fontSize: "sm",
+                _dark: { color: "sidebarItemHeadingTextDark" },
+                _light: { color: "sidebarItemHeadingTextLight" },
+              }}
+            >
+              {title}
+            </Box>
+            <RotatingView isCollapsed={isCollapsed}>
+              <Icon
+                as={AntDesign}
+                name="caretdown"
+                size="2"
+                color="coolGray.400"
+              />
+            </RotatingView>
+          </HStack>
+        </Pressable>
+        <Collapse isOpen={!isCollapsed}>{children}</Collapse>
+      </Box>
+    );
+  else
+    return (
+      <Box mb="9">
         <HStack
           justifyContent="space-between"
           alignItems="center"
-          px="6"
-          py="2"
+          pl="8"
+          px="4"
+          py="2.5"
         >
           <Box
-            pl={level * 10 + "px"}
             flexShrink="1"
             _text={{
-              fontWeight: "medium",
-              fontSize: "md",
+              textTransform: "uppercase",
+              fontWeight: "600",
+              fontSize: "sm",
               _dark: { color: "sidebarItemHeadingTextDark" },
               _light: { color: "sidebarItemHeadingTextLight" },
             }}
           >
             {title}
           </Box>
-          <RotatingView isCollapsed={isCollapsed}>
-            <AddIcon size="3" />
-          </RotatingView>
         </HStack>
-      </Pressable>
-      <Collapse isOpen={!isCollapsed}>{children}</Collapse>
-    </Box>
-  );
+        {children}
+      </Box>
+    );
 };
 const RotatingView = (props: any) => {
   const { isCollapsed, children } = props;
@@ -76,7 +109,7 @@ const RotatingView = (props: any) => {
             {
               rotate: rotateAnim.interpolate({
                 inputRange: [0, 1],
-                outputRange: ["0deg", "45deg"],
+                outputRange: ["0deg", "180deg"],
               }),
             },
           ],
