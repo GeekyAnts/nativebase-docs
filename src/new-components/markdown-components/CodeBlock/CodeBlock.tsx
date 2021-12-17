@@ -224,8 +224,9 @@ export const CodeBlock = ({ children, isLive }: any) => {
     return finalTemplate;
   }
 
-  const expoCode = addExportsToCode(children, endingExpoTemplate);
-  const codeSandboxCode = addExportsToCode(children, endingCodeSandboxTemplate);
+  const expoCode = isLive && addExportsToCode(children, endingExpoTemplate);
+  const codeSandboxCode =
+    isLive && addExportsToCode(children, endingCodeSandboxTemplate);
   return (
     <>
       {isLive ? (
