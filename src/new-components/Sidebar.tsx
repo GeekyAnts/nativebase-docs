@@ -31,7 +31,6 @@ export default function Sidebar(props: any) {
 
 const SidebarItem = (props: any) => {
   const { sidebarItems, level } = props;
-  const router = useRouter();
   const { activeVersion, activeSidebarItem, setActiveSidebarItem } =
     useContext(AppContext);
 
@@ -71,8 +70,6 @@ const SidebarItem = (props: any) => {
                   : "transparent",
             }}
             bg={item.id === activeSidebarItem ? "cyan.100" : undefined}
-            px="6"
-            py="2"
           >
             <Link
               passHref
@@ -80,17 +77,19 @@ const SidebarItem = (props: any) => {
                 isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
               }${item.id}`}
             >
-              <HStack space="3" alignItems="center" pl={level * 10 + "px"}>
-                <Text
-                  fontWeight="300"
-                  fontSize="sm"
-                  _dark={{ color: "sidebarItemTextDark" }}
-                  _light={{ color: "sidebarItemTextLight" }}
-                >
-                  {item.title}
-                </Text>
-                {item?.status && <SidebarBadge status={item.status} />}
-              </HStack>
+              <Box px="6" py="2">
+                <HStack space="3" alignItems="center" pl={level * 10 + "px"}>
+                  <Text
+                    fontWeight="300"
+                    fontSize="sm"
+                    _dark={{ color: "sidebarItemTextDark" }}
+                    _light={{ color: "sidebarItemTextLight" }}
+                  >
+                    {item.title}
+                  </Text>
+                  {item?.status && <SidebarBadge status={item.status} />}
+                </HStack>
+              </Box>
             </Link>
           </Pressable>
         ) : (

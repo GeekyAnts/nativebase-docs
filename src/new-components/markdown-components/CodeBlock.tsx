@@ -33,6 +33,16 @@ import { SwipeListView } from "react-native-swipe-list-view";
 import { TabView, SceneMap } from "react-native-tab-view";
 import { G, Circle as CircleSvg, Path } from "react-native-svg";
 import nightOwl from "prism-react-renderer/themes/nightOwl";
+import {
+  Box,
+  ScrollView,
+  IconButton,
+  useClipboard,
+  AddIcon,
+  MinusIcon,
+  SunIcon,
+  ArrowBackIcon,
+} from "native-base";
 
 // @ts-ignore
 const { NavigationContainer } = dynamic(
@@ -132,12 +142,17 @@ export const CodeBlock = ({ children, isLive }: any) => {
   delete scope.default;
   // console.log(getParsedCode(children));
 
+  // const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
+  const [parsedCode, setParsedCode] = React.useState(children);
+
+  const { onCopy } = useClipboard();
   return (
     <>
       {isLive ? (
         <LiveProvider
           scope={scope}
-          code={getParsedCode(children)}
+          // code={getParsedCode(children)}
+          code={parsedCode}
           transformCode={(a) => {
             return `
           function App() {
@@ -147,9 +162,48 @@ export const CodeBlock = ({ children, isLive }: any) => {
           `;
           }}
         >
-          <LiveEditor />
+          {/* <LiveEditor />
           <LiveError />
-          <LivePreview />
+          <LivePreview /> */}
+          <Box
+            p="4"
+            mb="4"
+            borderWidth="1"
+            rounded="lg"
+            _dark={{ borderColor: "blueGray.700" }}
+            _light={{ borderColor: "blueGray.300" }}
+          >
+            <LiveError />
+            <LivePreview />
+          </Box>
+          <Box
+            px="4"
+            pb="4"
+            mb="4"
+            borderWidth="1"
+            rounded="lg"
+            _dark={{ borderColor: "blueGray.700" }}
+            _light={{ borderColor: "blueGray.300" }}
+            bg="codeBlockBackgroundColor"
+          >
+            <Box flexDir="row" w="100%" justifyContent="flex-end">
+              <IconButton icon={<AddIcon size="xs" />} />
+              <IconButton icon={<MinusIcon size="xs" />} />
+              <IconButton
+                onPress={() => setParsedCode(getParsedCode(children))}
+                icon={<ArrowBackIcon size="xs" />}
+              />
+              <IconButton
+                onPress={() => {
+                  onCopy(parsedCode);
+                }}
+                icon={<SunIcon size="xs" />}
+              />
+            </Box>
+            <ScrollView maxH="300px">
+              <LiveEditor onChange={(code) => setParsedCode(code)} />
+            </ScrollView>
+          </Box>
         </LiveProvider>
       ) : (
         <Highlight
