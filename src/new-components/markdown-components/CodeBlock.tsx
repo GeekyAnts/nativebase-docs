@@ -3,16 +3,6 @@ import * as RN from "react-native";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/vsDark";
 import * as NBComponents from "native-base";
-import {
-  Box,
-  ScrollView,
-  IconButton,
-  useClipboard,
-  AddIcon,
-  MinusIcon,
-  SunIcon,
-  ArrowBackIcon,
-} from "native-base";
 // import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 // import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 // import AntDesign from "react-native-vector-icons/AntDesign";
@@ -43,6 +33,16 @@ import { SwipeListView } from "react-native-swipe-list-view";
 import { TabView, SceneMap } from "react-native-tab-view";
 import { G, Circle as CircleSvg, Path } from "react-native-svg";
 import nightOwl from "prism-react-renderer/themes/nightOwl";
+import {
+  Box,
+  ScrollView,
+  IconButton,
+  useClipboard,
+  AddIcon,
+  MinusIcon,
+  SunIcon,
+  ArrowBackIcon,
+} from "native-base";
 
 // @ts-ignore
 const { NavigationContainer } = dynamic(
@@ -141,13 +141,17 @@ export const CodeBlock = ({ children, isLive }: any) => {
   // @ts-ignore
   delete scope.default;
   // console.log(getParsedCode(children));
-  const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
+
+  // const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
+  const [parsedCode, setParsedCode] = React.useState(children);
+
   const { onCopy } = useClipboard();
   return (
     <>
       {isLive ? (
         <LiveProvider
           scope={scope}
+          // code={getParsedCode(children)}
           code={parsedCode}
           transformCode={(a) => {
             return `
@@ -159,6 +163,9 @@ export const CodeBlock = ({ children, isLive }: any) => {
           }}
           theme={nightOwl}
         >
+          {/* <LiveEditor />
+          <LiveError />
+          <LivePreview /> */}
           <Box
             p="4"
             mb="4"
