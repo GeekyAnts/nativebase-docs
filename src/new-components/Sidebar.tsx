@@ -1,7 +1,6 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { Box, HStack, Pressable, ScrollView, Text } from "native-base";
-import { useRouter } from "next/router";
 import React from "react";
 import { isLatestVersionSlug } from "../utils";
 import { SidebarBadge } from "./SidebarBadge";
@@ -77,8 +76,12 @@ const SidebarItem = (props: any) => {
                 isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
               }${item.id}`}
             >
-              <Box px="6" py="2">
-                <HStack space="3" alignItems="center" pl={level * 10 + "px"}>
+              <Box pl="8" px="4" py="2">
+                <HStack
+                  space="3"
+                  alignItems="center"
+                  pl={level > 1 ? level + 14 + "px" : "0px"}
+                >
                   <Text
                     fontWeight="300"
                     fontSize="sm"
