@@ -72,7 +72,7 @@ In the above example, the following changes have been made:
 ### Using the new tokens in components
 
 ```jsx isLive
-function Example() {
+export function Example() {
   const theme = extendTheme({
     colors: {
       // Add new color

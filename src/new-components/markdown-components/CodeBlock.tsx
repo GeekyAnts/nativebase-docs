@@ -97,8 +97,8 @@ export const CodeBlock = ({ children, isLive }: any) => {
         // console.log(path.node);
       },
     });
+    
     const output = generate(ast);
-
     return output.code;
   }
   // const IconLib = {
@@ -151,8 +151,7 @@ export const CodeBlock = ({ children, isLive }: any) => {
       {isLive ? (
         <LiveProvider
           scope={scope}
-          // code={getParsedCode(children)}
-          code={parsedCode}
+          code={getParsedCode(children)}
           transformCode={(a) => {
             return `
           function App() {
