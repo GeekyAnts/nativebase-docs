@@ -1,9 +1,15 @@
 import React from "react";
 import * as RN from "react-native";
 import Highlight, { defaultProps } from "prism-react-renderer";
+import { getParameters } from "codesandbox/lib/api/define";
 import theme from "prism-react-renderer/themes/vsDark";
 import * as NBComponents from "native-base";
-import versions from "../../../versions.json";
+import versions from "../../../../versions.json";
+import { endingExpoTemplate, getExpoSnackURL } from "./expoController";
+import {
+  endingCodeSandboxTemplate,
+  getCodeSandBoxURL,
+} from "./codeSandBoxController";
 // import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 // import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 // import AntDesign from "react-native-vector-icons/AntDesign";
@@ -64,10 +70,10 @@ const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
 // const LinearGradient = require("react-native-linear-gradient").default;
 // import LinearGradient from 'react-native-linear-gradient';
 // const LinearGradient = require('expo-linear-gradient').LinearGradient;
-
+// addExportsToCode(children, endingCodeSandboxTemplate)
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
-import { AppContext } from "../../AppContext";
-import config from "../../../docs.config";
+import { AppContext } from "../../../AppContext";
+import config from "../../../../docs.config";
 
 export const CodeBlock = ({ children, isLive }: any) => {
   const { activeVersion } = React.useContext(AppContext);
@@ -150,6 +156,7 @@ export const CodeBlock = ({ children, isLive }: any) => {
   const [copied, setCopied] = React.useState(false);
 
   const { onCopy } = useClipboard();
+
   function handleCopy() {
     onCopy(parsedCode);
     setCopied(true);
@@ -158,38 +165,7 @@ export const CodeBlock = ({ children, isLive }: any) => {
       setCopied(false);
     }, 2000);
   }
-  const expoDendencies = `react-is,expo-font,native-base@${
-    config.versionMap[activeVersion] === undefined
-      ? config.versionMap[versions[0]]
-      : config.versionMap[activeVersion]
-  },styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons,expo-linear-gradient,formik,yup`;
-  const codeSandBoxDependencies = {
-    "react-is": "*",
-    "expo-font": "~10.0.3",
-    "native-base": `${
-      config.versionMap[activeVersion] === undefined
-        ? config.versionMap[versions[0]]
-        : config.versionMap[activeVersion]
-    }`,
-    "styled-system": "*",
-    "expo-constants": "~12.1.3",
-    "react-native-safe-area-context": "3.3.2",
-    "react-native-svg": "12.1.1",
-    "styled-components": "*",
-    "@expo/vector-icons": "^12.0.0",
-    "expo-linear-gradient": "~10.0.3",
-  };
-  const endingTemplate = `
-export default () => {
-    return (
-      <NativeBaseProvider>
-        <Center flex={1} px="3">
-            <Example />
-        </Center>
-      </NativeBaseProvider>
-    );
-};
-`;
+
   const getImportSpecifier = (name: any) => {
     return {
       type: "ImportSpecifier",
@@ -209,7 +185,7 @@ export default () => {
       },
     };
   };
-  function addExportsToCode(code: string) {
+  function addExportsToCode(code: string, endingTemplate: string) {
     const ast = parse(code, {
       sourceType: "module",
       plugins: ["jsx", "typescript"],
@@ -247,19 +223,9 @@ export default () => {
     const finalTemplate = output.code + "\n" + endingTemplate;
     return finalTemplate;
   }
-  const files = {
-    // Inlined code
-    "App.tsx": {
-      type: "CODE",
-      contents: addExportsToCode(children),
-    },
-  };
-  function getExpoSnackURL() {
-    const url = `https://snack.expo.dev?files=${encodeURIComponent(
-      JSON.stringify(files)
-    )}&dependencies=${encodeURIComponent(expoDendencies)}`;
-    return url;
-  }
+
+  const expoCode = addExportsToCode(children, endingExpoTemplate);
+  const codeSandboxCode = addExportsToCode(children, endingCodeSandboxTemplate);
   return (
     <>
       {isLive ? (
@@ -302,7 +268,10 @@ export default () => {
           >
             <Box flexDir="row" w="100%" justifyContent="flex-end">
               <Tooltip label="Open Expo Snack">
-                <Link isExternal href={getExpoSnackURL()}>
+                <Link
+                  isExternal
+                  href={getExpoSnackURL(expoCode, activeVersion)}
+                >
                   <IconButton
                     icon={
                       <Icon
@@ -315,15 +284,20 @@ export default () => {
                 </Link>
               </Tooltip>
               <Tooltip label="Open code in CodeSandBox">
-                <IconButton
-                  icon={
-                    <Icon
-                      as={expoVectorIcons?.AntDesign}
-                      name="CodeSandbox"
-                      size="xs"
-                    />
-                  }
-                />
+                <Link
+                  isExternal
+                  href={getCodeSandBoxURL(codeSandboxCode, activeVersion)}
+                >
+                  <IconButton
+                    icon={
+                      <Icon
+                        as={expoVectorIcons?.AntDesign}
+                        name="CodeSandbox"
+                        size="xs"
+                      />
+                    }
+                  />
+                </Link>
               </Tooltip>
               {/* <IconButton
                 onPress={() => setParsedCode(getParsedCode(children))}

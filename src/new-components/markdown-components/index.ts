@@ -9,7 +9,7 @@ export { Heading4 } from "./Heading4";
 export { Heading5 } from "./Heading5";
 export { Anchor } from "./Anchor";
 export { Code } from "./Code";
-export { CodeBlock } from "./CodeBlock";
+export { CodeBlock } from "./CodeBlock/CodeBlock";
 export { TableBox } from "./TableBox";
 export { TableHeadData } from "./TableHeadData";
 export { TableHead } from "./TableHead";
