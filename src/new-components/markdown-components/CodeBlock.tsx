@@ -161,6 +161,7 @@ export const CodeBlock = ({ children, isLive }: any) => {
           }
           `;
           }}
+          theme={nightOwl}
         >
           {/* <LiveEditor />
           <LiveError />
