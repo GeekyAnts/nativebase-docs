@@ -2,10 +2,10 @@ import React from "react";
 import * as RN from "react-native";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import { getParameters } from "codesandbox/lib/api/define";
-import theme from "prism-react-renderer/themes/vsDark";
 import * as NBComponents from "native-base";
 import versions from "../../../../versions.json";
 import { endingExpoTemplate, getExpoSnackURL } from "./expoController";
+import { ExpoIcon, CodePlaygroundIcon } from "../../../icons";
 import {
   endingCodeSandboxTemplate,
   getCodeSandBoxURL,
@@ -39,7 +39,13 @@ import dynamic from "next/dynamic";
 import { SwipeListView } from "react-native-swipe-list-view";
 import { TabView, SceneMap } from "react-native-tab-view";
 import { G, Circle as CircleSvg, Path } from "react-native-svg";
+
+// ----------------------------------------------- Themes --------------------------------------------------
+
 import nightOwl from "prism-react-renderer/themes/nightOwl";
+import paleNight from "prism-react-renderer/themes/palenight";
+
+// ----------------------------------------------- Components --------------------------------------------------
 import {
   Box,
   ScrollView,
@@ -48,6 +54,10 @@ import {
   Icon,
   Tooltip,
   Link,
+  HStack,
+  Divider,
+  Spacer,
+  Text,
 } from "native-base";
 
 // @ts-ignore
@@ -73,7 +83,6 @@ const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
 // addExportsToCode(children, endingCodeSandboxTemplate)
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { AppContext } from "../../../AppContext";
-import config from "../../../../docs.config";
 
 export const CodeBlock = ({ children, isLive }: any) => {
   const { activeVersion } = React.useContext(AppContext);
@@ -151,8 +160,10 @@ export const CodeBlock = ({ children, isLive }: any) => {
   delete scope.default;
   // console.log(getParsedCode(children));
 
-  // const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
-  const [parsedCode, setParsedCode] = React.useState(children);
+  const [parsedCode, setParsedCode] = React.useState(
+    isLive ? getParsedCode(children) : children
+  );
+  // const [parsedCode, setParsedCode] = React.useState(children);
   const [copied, setCopied] = React.useState(false);
 
   const { onCopy } = useClipboard();
@@ -232,7 +243,7 @@ export const CodeBlock = ({ children, isLive }: any) => {
       {isLive ? (
         <LiveProvider
           scope={scope}
-          code={getParsedCode(children)}
+          code={parsedCode}
           transformCode={(a) => {
             return `
           function App() {
@@ -241,7 +252,8 @@ export const CodeBlock = ({ children, isLive }: any) => {
           }
           `;
           }}
-          theme={nightOwl}
+          // theme={nightOwl}
+          theme={paleNight}
         >
           {/* <LiveEditor />
           <LiveError />
@@ -249,77 +261,115 @@ export const CodeBlock = ({ children, isLive }: any) => {
           <Box
             p="4"
             mb="4"
-            borderWidth="1"
+            // borderWidth="0"
             rounded="lg"
-            _dark={{ borderColor: "blueGray.700" }}
-            _light={{ borderColor: "blueGray.300" }}
+            // _dark={{ borderColor: "blueGray.800" }}
+            // _light={{ borderColor: "blueGray.300" }}
+            bg="blueGray.800:alpha.40"
           >
             <LiveError />
             <LivePreview />
           </Box>
           <Box
-            px="4"
-            pb="4"
+            // px="4"
+            overflow="hidden"
+            // pb="4"
             mb="4"
             borderWidth="1"
             rounded="lg"
-            _dark={{ borderColor: "blueGray.700" }}
+            _dark={{ borderColor: "blueGray.800" }}
             _light={{ borderColor: "blueGray.300" }}
-            bg="codeBlockBackgroundColor"
           >
-            <Box flexDir="row" w="100%" justifyContent="flex-end">
-              <Tooltip label="Open Expo Snack">
-                <Link
-                  isExternal
-                  href={getExpoSnackURL(expoCode, activeVersion)}
+            <HStack
+              bg="blueGray.800:alpha.40"
+              w="100%"
+              alignItems="center"
+              pl="4"
+              pr="5"
+            >
+              <CodePlaygroundIcon />
+              <Text>Playground</Text>
+              <Spacer />
+              <HStack
+                flexDir="row"
+                justifyContent="flex-end"
+                alignItems="center"
+                divider={<Divider bg="trueGray.300:alpha.10" thickness="2" />}
+                h="9"
+                py="1.5"
+                space="4"
+              >
+                <Tooltip
+                  bg="coolGray.800"
+                  _text={{ color: "coolGray.400" }}
+                  hasArrow
+                  label="Open Expo Snack"
                 >
-                  <IconButton
-                    icon={
-                      <Icon
-                        as={expoVectorIcons?.AntDesign}
-                        name="CodeSandbox"
-                        size="xs"
-                      />
-                    }
-                  />
-                </Link>
-              </Tooltip>
-              <Tooltip label="Open code in CodeSandBox">
-                <Link
-                  isExternal
-                  href={getCodeSandBoxURL(codeSandboxCode, activeVersion)}
-                >
-                  <IconButton
-                    icon={
-                      <Icon
-                        as={expoVectorIcons?.AntDesign}
-                        name="CodeSandbox"
-                        size="xs"
-                      />
-                    }
-                  />
-                </Link>
-              </Tooltip>
-              {/* <IconButton
-                onPress={() => setParsedCode(getParsedCode(children))}
-                icon={<ArrowBackIcon size="xs" />}
-              /> */}
-              <Tooltip label={copied ? "copied" : "copy"}>
-                <IconButton
-                  onPress={handleCopy}
-                  icon={
-                    <Icon
-                      as={expoVectorIcons?.Ionicons}
-                      name={copied ? "copy" : "copy-outline"}
-                      size="xs"
+                  <Link
+                    isExternal
+                    href={getExpoSnackURL(expoCode, activeVersion)}
+                  >
+                    <IconButton
+                      _hover={{ bg: "coolGray.800" }}
+                      p="1"
+                      icon={<ExpoIcon size="xs" opacity="70" />}
                     />
-                  }
+                  </Link>
+                </Tooltip>
+                <Tooltip
+                  bg="coolGray.800"
+                  _text={{ color: "coolGray.400" }}
+                  hasArrow
+                  label="Open code in CodeSandBox"
+                >
+                  <Link
+                    isExternal
+                    href={getCodeSandBoxURL(codeSandboxCode, activeVersion)}
+                  >
+                    <IconButton
+                      _hover={{ bg: "coolGray.800" }}
+                      p="1"
+                      icon={
+                        <Icon
+                          color="muted.50:alpha.70"
+                          as={expoVectorIcons?.AntDesign}
+                          name="CodeSandbox"
+                          size="xs"
+                        />
+                      }
+                    />
+                  </Link>
+                </Tooltip>
+                <Tooltip
+                  bg="coolGray.800"
+                  _text={{ color: "coolGray.400" }}
+                  hasArrow
+                  label={copied ? "copied" : "copy"}
+                >
+                  <IconButton
+                    _hover={{ bg: "coolGray.800" }}
+                    p="1"
+                    onPress={handleCopy}
+                    icon={
+                      <Icon
+                        color="muted.50:alpha.70"
+                        as={expoVectorIcons?.Ionicons}
+                        name={copied ? "copy" : "copy-outline"}
+                        size="xs"
+                      />
+                    }
+                  />
+                </Tooltip>
+              </HStack>
+            </HStack>
+            <Box p="4" pt="0" bg="codeBlockBackgroundColor">
+              <ScrollView maxH="300px">
+                <LiveEditor
+                  style={{ backgroundColor: "transparent" }}
+                  onChange={(code) => setParsedCode(code)}
                 />
-              </Tooltip>
+              </ScrollView>
             </Box>
-            <ScrollView maxH="300px">
-              <LiveEditor onChange={(code) => setParsedCode(code)} />
-            </ScrollView>
           </Box>
         </LiveProvider>
       ) : (

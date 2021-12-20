@@ -11,6 +11,8 @@ export const theme = extendTheme({
     borderColorDark: "#313538",
     borderColorLight: "#dfe3e6",
 
+// -------------------------------------------------- SideBar -------------------------------------------
+
     sidebarBackgroundLight: "#fff",
     sidebarBackgroundDark: colors.blueGray[900],
     sidebarItemHeadingTextDark: colors.coolGray[50],
@@ -26,6 +28,8 @@ export const theme = extendTheme({
     inactiveSidebarItemHoverBackgroundLight: colors.blueGray[100],
     inactiveSidebarItemHoverBackgroundDark: colors.blueGray[800],
 
+// -------------------------------------------------- Link -------------------------------------------
+
     inactiveLinkTextColorLight: "#687076",
     inactiveLinkTextColorDark: "#9ba1a6",
     inactiveHoverBorderBottomLinkColorDark: "#26292b",
@@ -38,12 +42,16 @@ export const theme = extendTheme({
     activeHoverBorderBottomLinkColorDark: "#26292b",
     activeHoverBorderBottomLinkColorLight: "#eceef0",
 
+// -------------------------------------------------- Page Navs -------------------------------------------
+
     pageNavigationHeadingLight: "#687076",
     pageNavigationHeadingDark: "#9ba1a6",
     pageNavigationMainTitleLight: "#006adc",
     pageNavigationMainTitleDark: "#52a9ff",
 
-    codeBlockBackgroundColor: "#011627",
+// -------------------------------------------------- CodeBlock -------------------------------------------
+
+    codeBlockBackgroundColor: "rgba(24, 24, 27,0.2)",
   },
   config: {
     // Changing initialColorMode to 'dark'
