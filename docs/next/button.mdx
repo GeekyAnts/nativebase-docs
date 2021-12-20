@@ -3,14 +3,27 @@ id: button
 title: Button
 ---
 
-import { ComponentTheme } from '../src/components';
+import { ComponentTheme } from "../src/components";
+
+```jsx isShowcase
+import React from "react";
+import { Button } from "native-base";
+
+export const Example = () => {
+  return (
+    <>
+      <Button onPress={() => console.log("hello world")}>Primary</Button>
+    </>
+  );
+};
+```
 
 The `Button` component is used to trigger an action or event.
 
 ## Import
 
 ```jsx
-import { Button } from 'native-base';
+import { Button } from "native-base";
 ```
 
 - **Button** : The button component with support for custom icons, spinners, etc.

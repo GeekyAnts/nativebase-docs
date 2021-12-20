@@ -25,15 +25,18 @@ import {
   Img,
   Code,
   CodeBlock,
+  Playground,
   TableBox,
   TableHead,
   TableHeadData,
   TableData,
   TableRow,
+  Showcase,
 } from "./markdown-components";
 import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
 import { isLatestVersionSlug } from "../utils";
+
 export default function MainContent(props: any) {
   const { Tabs, ...RemNBComponents } = NBComponents;
   const { content, tocArray, pages, frontMatter } = props;
@@ -49,7 +52,11 @@ export default function MainContent(props: any) {
     li: Li,
     img: Img,
     a: Anchor,
-    code: CodeBlock,
+    code: ({ children, ...props }: any) => {
+      if (props?.isLive) return <Playground>{children}</Playground>;
+      else if (props?.isShowcase) return <Showcase>{children}</Showcase>;
+      else return <CodeBlock>{children}</CodeBlock>;
+    },
     table: TableBox,
     thead: TableHead,
     th: TableHeadData,
