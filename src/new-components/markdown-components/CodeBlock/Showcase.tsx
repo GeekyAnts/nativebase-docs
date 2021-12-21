@@ -114,7 +114,7 @@ const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
 // addExportsToCode(children, endingCodeSandboxTemplate)
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { AppContext } from "../../../AppContext";
-import { GradientChangeIcon } from "../../../icons/GradientChangeicon";
+import { GradientChangeIcon } from "../../../icons/GradientChangeIcon";
 
 interface IShowcaseProps {
   children: string;
