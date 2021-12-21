@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as RN from "react-native";
 import * as NBComponents from "native-base";
 import { endingExpoTemplate, getExpoSnackURL } from "./expoController";
@@ -55,6 +55,9 @@ import {
   Divider,
   Spacer,
   Text,
+  Button,
+  Collapse,
+  Center,
 } from "native-base";
 // ----------------------------------------------- Gradients --------------------------------------------------
 
@@ -77,7 +80,7 @@ function generateRandomGradient() {
 }
 function pickGradient(gradient?: string): string {
   if (gradient) {
-    console.log("here"); 
+    console.log("here");
     if (gradient.length > 1) {
       return gradient;
     } else {
@@ -111,6 +114,7 @@ const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
 // addExportsToCode(children, endingCodeSandboxTemplate)
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { AppContext } from "../../../AppContext";
+import { GradientChangeIcon } from "../../../icons/GradientChangeicon";
 
 interface IShowcaseProps {
   children: string;
@@ -272,7 +276,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
   React.useEffect(() => {
     setGradientString(pickGradient(gradient));
   }, []);
-  
+  const [showCode, setShowCode] = useState(false);
   return (
     <LiveProvider
       scope={scope}
@@ -291,7 +295,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
       {/* <LiveEditor />
           <LiveError />
           <LivePreview /> */}
-      <NBComponents.Center
+      <Center
         h="48"
         p="4"
         mb="4"
@@ -309,109 +313,152 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
         style={{
           // @ts-ignore
           backgroundImage: "linear-gradient(135deg," + gradientString + ")",
+          transition: "background-image 1s",
         }}
       >
+        {/* <IconButton
+          p="2"
+          variant="unstyled"
+          onPress={() => {
+            setGradientString(pickGradient());
+          }}
+          _hover={{ _icon: { opacity: "100" } }}
+          _icon={{ opacity: "60", color: "white" }}
+          icon={<GradientChangeIcon size="xs" />}
+          position="absolute"
+          top="2"
+          right="2"
+        /> */}
+        <Button
+          p="2"
+          opacity="60"
+          _hover={{ opacity: "100" }}
+          size="sm"
+          variant="unstyled"
+          onPress={() => {
+            setShowCode(!showCode);
+          }}
+          leftIcon={
+            <Icon
+              as={expoVectorIcons.MaterialCommunityIcons}
+              name={showCode ? "eye-off" : "eye"}
+              size="xs"
+              opacity="60"
+            />
+          }
+          position="absolute"
+          bottom="2"
+          right="2"
+        >
+          {showCode ? "Hide Code" : "Show Code"}
+        </Button>
+
         <LiveError />
         <LivePreview />
-      </NBComponents.Center>
-      <Box
-        // px="4"
-        overflow="hidden"
-        // pb="4"
-        mb="4"
-        borderWidth="1"
-        rounded="lg"
-        _dark={{ borderColor: "blueGray.800" }}
-        _light={{ borderColor: "blueGray.300" }}
-      >
-        <HStack
-          bg="blueGray.800:alpha.40"
-          w="100%"
-          alignItems="center"
-          pl="4"
-          pr="5"
+      </Center>
+      <Collapse isOpen={showCode}>
+        <Box
+          // px="4"
+          overflow="hidden"
+          // pb="4"
+          mb="4"
+          borderWidth="1"
+          rounded="lg"
+          _dark={{ borderColor: "blueGray.800" }}
+          _light={{ borderColor: "blueGray.300" }}
         >
-          <CodePlaygroundIcon />
-          <Text>Playground</Text>
-          <Spacer />
           <HStack
-            flexDir="row"
-            justifyContent="flex-end"
+            bg="blueGray.800:alpha.40"
+            w="100%"
             alignItems="center"
-            divider={<Divider bg="trueGray.300:alpha.10" thickness="2" />}
-            h="9"
-            py="1.5"
-            space="4"
+            pl="4"
+            pr="5"
           >
-            <Tooltip
-              bg="coolGray.800"
-              _text={{ color: "coolGray.400" }}
-              hasArrow
-              label="Open Expo Snack"
+            <CodePlaygroundIcon />
+            <Text>Playground</Text>
+            <Spacer />
+            <HStack
+              flexDir="row"
+              justifyContent="flex-end"
+              alignItems="center"
+              divider={<Divider bg="trueGray.300:alpha.10" thickness="2" />}
+              h="9"
+              py="1.5"
+              space="4"
             >
-              <Link isExternal href={getExpoSnackURL(expoCode, activeVersion)}>
-                <IconButton
-                  _hover={{ bg: "coolGray.800" }}
-                  p="1"
-                  icon={<ExpoIcon size="xs" opacity="70" />}
-                />
-              </Link>
-            </Tooltip>
-            <Tooltip
-              bg="coolGray.800"
-              _text={{ color: "coolGray.400" }}
-              hasArrow
-              label="Open code in CodeSandBox"
-            >
-              <Link
-                isExternal
-                href={getCodeSandBoxURL(codeSandboxCode, activeVersion)}
+              <Tooltip
+                bg="coolGray.800"
+                _text={{ color: "coolGray.400" }}
+                hasArrow
+                label="Open Expo Snack"
+              >
+                <Link
+                  isExternal
+                  href={getExpoSnackURL(expoCode, activeVersion)}
+                >
+                  <IconButton
+                    _hover={{ bg: "coolGray.800" }}
+                    p="1"
+                    icon={<ExpoIcon size="xs" opacity="70" />}
+                  />
+                </Link>
+              </Tooltip>
+              <Tooltip
+                bg="coolGray.800"
+                _text={{ color: "coolGray.400" }}
+                hasArrow
+                label="Open code in CodeSandBox"
+              >
+                <Link
+                  isExternal
+                  href={getCodeSandBoxURL(codeSandboxCode, activeVersion)}
+                >
+                  <IconButton
+                    _hover={{ bg: "coolGray.800" }}
+                    p="1"
+                    icon={
+                      <Icon
+                        color="muted.50:alpha.70"
+                        as={expoVectorIcons?.AntDesign}
+                        name="CodeSandbox"
+                        size="xs"
+                      />
+                    }
+                  />
+                </Link>
+              </Tooltip>
+              <Tooltip
+                bg="coolGray.800"
+                _text={{ color: "coolGray.400" }}
+                hasArrow
+                label={copied ? "copied" : "copy"}
               >
                 <IconButton
                   _hover={{ bg: "coolGray.800" }}
                   p="1"
+                  onPress={handleCopy}
                   icon={
                     <Icon
                       color="muted.50:alpha.70"
-                      as={expoVectorIcons?.AntDesign}
-                      name="CodeSandbox"
+                      as={expoVectorIcons?.Ionicons}
+                      name={copied ? "copy" : "copy-outline"}
                       size="xs"
                     />
                   }
                 />
-              </Link>
-            </Tooltip>
-            <Tooltip
-              bg="coolGray.800"
-              _text={{ color: "coolGray.400" }}
-              hasArrow
-              label={copied ? "copied" : "copy"}
-            >
-              <IconButton
-                _hover={{ bg: "coolGray.800" }}
-                p="1"
-                onPress={handleCopy}
-                icon={
-                  <Icon
-                    color="muted.50:alpha.70"
-                    as={expoVectorIcons?.Ionicons}
-                    name={copied ? "copy" : "copy-outline"}
-                    size="xs"
-                  />
-                }
-              />
-            </Tooltip>
+              </Tooltip>
+            </HStack>
           </HStack>
-        </HStack>
-        <Box p="4" pt="0" bg="codeBlockBackgroundColor">
-          <ScrollView maxH="300px">
-            <LiveEditor
-              style={{ backgroundColor: "transparent" }}
-              onChange={(code) => setParsedCode(code)}
-            />
-          </ScrollView>
+          <Box p="4" pt="0" bg="codeBlockBackgroundColor">
+            <ScrollView maxH="300px">
+              <LiveEditor
+                style={{ backgroundColor: "transparent" }}
+                onChange={(code) => setParsedCode(code)}
+              />
+            </ScrollView>
+          </Box>
         </Box>
-      </Box>
+      </Collapse>
     </LiveProvider>
   );
 };
