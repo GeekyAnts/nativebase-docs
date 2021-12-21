@@ -58,6 +58,7 @@ import {
   Button,
   Collapse,
   Center,
+  Pressable,
 } from "native-base";
 // ----------------------------------------------- Gradients --------------------------------------------------
 
@@ -277,6 +278,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
     setGradientString(pickGradient(gradient));
   }, []);
   const [showCode, setShowCode] = useState(false);
+  const [showMagicWand, setShowMagicWand] = useState(false);
   return (
     <LiveProvider
       scope={scope}
@@ -295,7 +297,21 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
       {/* <LiveEditor />
           <LiveError />
           <LivePreview /> */}
+      {/* <Pressable
+        onHoverIn={() => {
+          setShowMagicWand(true);
+        }}
+        onHoverOut={() => {
+          setShowMagicWand(false);
+        }}
+      > */}
       <Center
+        onMouseEnter={() => {
+          setShowMagicWand(true);
+        }}
+        onMouseLeave={() => {
+          setShowMagicWand(false);
+        }}
         h="48"
         p="4"
         mb="4"
@@ -310,29 +326,36 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
         //     end: [1, 0],
         //   },
         // }}
+
         style={{
           // @ts-ignore
           backgroundImage: "linear-gradient(135deg," + gradientString + ")",
           transition: "background-image 1s",
         }}
       >
-        {/* <IconButton
-          p="2"
-          variant="unstyled"
-          onPress={() => {
-            setGradientString(pickGradient());
-          }}
-          _hover={{ _icon: { opacity: "100" } }}
-          _icon={{ opacity: "60", color: "white" }}
-          icon={<GradientChangeIcon size="xs" />}
-          position="absolute"
-          top="2"
-          right="2"
-        /> */}
+        {showMagicWand && (
+          <IconButton
+            p="2"
+            variant="unstyled"
+            onPress={() => {
+              setGradientString(pickGradient());
+            }}
+            _hover={{ _icon: { opacity: "100" } }}
+            _icon={{ opacity: "60", color: "white" }}
+            icon={<GradientChangeIcon size="xs" />}
+            position="absolute"
+            top="2"
+            right="2"
+          />
+        )}
         <Button
-          p="2"
+          p="1.5"
           opacity="60"
-          _hover={{ opacity: "100" }}
+          _hover={{
+            opacity: "100",
+            bg: "warmGray.800:alpha.30",
+          }}
+          _text={{ color: "coolGray.100" }}
           size="sm"
           variant="unstyled"
           onPress={() => {
@@ -356,6 +379,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
         <LiveError />
         <LivePreview />
       </Center>
+      {/* </Pressable> */}
       <Collapse isOpen={showCode}>
         <Box
           // px="4"
