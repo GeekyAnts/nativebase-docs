@@ -59,20 +59,16 @@ import {
   Collapse,
   Center,
   Pressable,
+  Input,
 } from "native-base";
 // ----------------------------------------------- Gradients --------------------------------------------------
 
 const gradients = [
   ["#D946EF", "#024FC7"],
   ["#F87171", "#3730A3"],
-  ["#BEF264", "#075985"],
-  ["#FACC15", "#EC4899", "#FB7185"],
-  ["#10B981", "#6D28D9"],
   ["#38BDF8", "#1D4ED8", "#4C1D95"],
   ["#FB923C", "#C026D3"],
   ["#5EEAD4", "#0284C7", "#5B21B6"],
-  ["#F43F5E", "#4F46E5", "#5B21B6"],
-  ["#D946EF", "#0284C7", "#EC4899"],
 ];
 
 function generateRandomGradient() {
@@ -277,8 +273,13 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
   React.useEffect(() => {
     setGradientString(pickGradient(gradient));
   }, []);
+
   const [showCode, setShowCode] = useState(false);
   const [showMagicWand, setShowMagicWand] = useState(false);
+  const [gradientIndex, setGradientIndex] = useState("0");
+  React.useEffect(() => {
+    setGradientString(pickGradient(gradientIndex));
+  }, [gradientIndex]);
   return (
     <LiveProvider
       scope={scope}
@@ -348,6 +349,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
             right="2"
           />
         )}
+
         <Button
           p="1.5"
           opacity="60"
@@ -379,6 +381,12 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
         <LiveError />
         <LivePreview />
       </Center>
+      {/* <Input
+        value={gradientIndex}
+        onChange={(e: any) => {
+          setGradientIndex(e.target.value);
+        }}
+      /> */}
       {/* </Pressable> */}
       <Collapse isOpen={showCode}>
         <Box
