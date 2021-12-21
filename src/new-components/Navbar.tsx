@@ -65,6 +65,10 @@ export default function Navbar(props: any) {
       <HStack space="4" alignItems="center">
         <NativebaseLogo />
         <Menu
+          //@ts-ignore
+          _dark={{ bg: "blueGray.900" }}
+          //@ts-ignore
+          _light={{ bg: "blueGray.100" }}
           offset={-15}
           w="32"
           trigger={(triggerProps) => {
@@ -91,7 +95,12 @@ export default function Navbar(props: any) {
               setActiveVersion("next");
               updateActiveVersion("next", versions);
             }}
-            bg={"next" === activeVersion ? "coolGray.200" : "coolGray.50"}
+            _light={{
+              bg: "next" === activeVersion ? "coolGray.200" : "coolGray.50",
+            }}
+            _dark={{
+              bg: "next" === activeVersion ? "coolGray.800" : "coolGray.800",
+            }}
           >
             next
           </Menu.Item>
@@ -106,7 +115,14 @@ export default function Navbar(props: any) {
                     versions
                   );
                 }}
-                bg={version === activeVersion ? "coolGray.200" : "coolGray.50"}
+                _light={{
+                  bg:
+                    version === activeVersion ? "coolGray.200" : "coolGray.50",
+                }}
+                _dark={{
+                  bg:
+                    version === activeVersion ? "coolGray.800" : "coolGray.800",
+                }}
               >
                 {version}
               </Menu.Item>
