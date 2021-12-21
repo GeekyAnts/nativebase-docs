@@ -65,10 +65,12 @@ export default function Navbar(props: any) {
       <HStack space="4" alignItems="center">
         <NativebaseLogo />
         <Menu
+          //@ts-ignore
+          _dark={{ bg: "blueGray.900" }}
+          //@ts-ignore
+          _light={{ bg: "blueGray.100" }}
           offset={-15}
           w="32"
-          _dark={{ bg: "blueGray.900" }}
-          _light={{ bg: "blueGray.100" }}
           trigger={(triggerProps) => {
             return (
               <Pressable
