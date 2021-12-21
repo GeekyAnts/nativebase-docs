@@ -5,16 +5,13 @@ title: Button
 
 import { ComponentTheme } from "../src/components";
 
-```jsx isShowcase
+```jsx isShowcase gradient=0
 import React from "react";
 import { Button } from "native-base";
 
 export const Example = () => {
-  return (
-    <>
-      <Button onPress={() => console.log("hello world")}>Primary</Button>
-    </>
-  );
+  const [showModal, setShowModal] = useState(false);
+  return <Button shadow={2} onPress={() => console.log("hello world")}>Button</Button>;
 };
 ```
 

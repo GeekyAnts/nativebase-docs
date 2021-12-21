@@ -53,8 +53,8 @@ export default function MainContent(props: any) {
     img: Img,
     a: Anchor,
     code: ({ children, ...props }: any) => {
-      if (props?.isLive) return <Playground>{children}</Playground>;
-      else if (props?.isShowcase) return <Showcase>{children}</Showcase>;
+      if (props?.isLive) return <Playground {...props}>{children}</Playground>;
+      else if (props?.isShowcase) return <Showcase {...props}>{children}</Showcase>;
       else return <CodeBlock>{children}</CodeBlock>;
     },
     table: TableBox,

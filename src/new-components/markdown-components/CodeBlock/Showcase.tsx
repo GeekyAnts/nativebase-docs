@@ -56,6 +56,37 @@ import {
   Spacer,
   Text,
 } from "native-base";
+// ----------------------------------------------- Gradients --------------------------------------------------
+
+const gradients = [
+  ["#D946EF", "#024FC7"],
+  ["#F87171", "#3730A3"],
+  ["#BEF264", "#075985"],
+  ["#FACC15", "#EC4899", "#FB7185"],
+  ["#10B981", "#6D28D9"],
+  ["#38BDF8", "#1D4ED8", "#4C1D95"],
+  ["#FB923C", "#C026D3"],
+  ["#5EEAD4", "#0284C7", "#5B21B6"],
+  ["#F43F5E", "#4F46E5", "#5B21B6"],
+  ["#D946EF", "#0284C7", "#EC4899"],
+];
+
+function generateRandomGradient() {
+  const index = Math.floor(Math.random() * gradients.length);
+  return gradients[index];
+}
+function pickGradient(gradient?: string): string {
+  if (gradient) {
+    console.log("here"); 
+    if (gradient.length > 1) {
+      return gradient;
+    } else {
+      return gradients[parseInt(gradient)].join(",");
+    }
+  } else {
+    return generateRandomGradient().join(",");
+  }
+}
 
 // @ts-ignore
 const { NavigationContainer } = dynamic(
@@ -81,7 +112,12 @@ const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { AppContext } from "../../../AppContext";
 
-export const Showcase = ({ children, props }: any) => {
+interface IShowcaseProps {
+  children: string;
+  gradient?: string;
+}
+
+export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
   const { activeVersion } = React.useContext(AppContext);
   const Wrapper = (props: any) => {
     return (
@@ -232,7 +268,11 @@ export const Showcase = ({ children, props }: any) => {
 
   const expoCode = addExportsToCode(children, endingExpoTemplate);
   const codeSandboxCode = addExportsToCode(children, endingCodeSandboxTemplate);
-
+  const [gradientString, setGradientString] = React.useState("");
+  React.useEffect(() => {
+    setGradientString(pickGradient(gradient));
+  }, []);
+  
   return (
     <LiveProvider
       scope={scope}
@@ -252,19 +292,23 @@ export const Showcase = ({ children, props }: any) => {
           <LiveError />
           <LivePreview /> */}
       <NBComponents.Center
-        h="40"
+        h="48"
         p="4"
         mb="4"
         // borderWidth="0"
         rounded="lg"
         // _dark={{ borderColor: "blueGray.800" }}
         // _light={{ borderColor: "blueGray.300" }}
-        bg={{
-          linearGradient: {
-            colors: ["lightBlue.300", "violet.800"],
-            start: [0, 0],
-            end: [1, 0],
-          },
+        // bg={{
+        //   linearGradient: {
+        //     colors: ["lightBlue.300", "violet.800"],
+        //     start: [0, 0],
+        //     end: [1, 0],
+        //   },
+        // }}
+        style={{
+          // @ts-ignore
+          backgroundImage: "linear-gradient(135deg," + gradientString + ")",
         }}
       >
         <LiveError />

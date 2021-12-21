@@ -44,7 +44,7 @@ function Layout({
       actVersion = "";
     }
     setActiveVersion(actVersion);
-    
+
     if (pathArray[0] === actVersion) {
       pathArray.splice(0, 1);
       setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
@@ -61,14 +61,21 @@ function Layout({
             : pages?.currentPage?.title + " | NativeBase"
         }`}</title>
       </Head>
-      <div
-        id={useColorModeValue("nativebase-body-light", "nativebase-body-dark")}
+      <Box
+        w="100%"
+        h="100%"
+        _light={{ bg: "backgroundLight" }}
+        _dark={{ bg: "backgroundDark" }}
+        alignItems="center"
+        nativeID={useColorModeValue(
+          "nativebase-body-light",
+          "nativebase-body-dark"
+        )}
       >
         <Box
-          h="100vh"
+          h="100%"
+          maxW="1440px"
           // position="relative"
-          _light={{ bg: "backgroundLight" }}
-          _dark={{ bg: "backgroundDark" }}
         >
           {/* implement this using usebreakpoint value hook */}
 
@@ -125,7 +132,7 @@ function Layout({
           </Box>
           {/* <Footer /> */}
         </Box>
-      </div>
+      </Box>
     </>
   );
 }
