@@ -355,7 +355,11 @@ export const Playground = ({ children, props }: any) => {
         <Box p="4" pt="0" bg="codeBlockBackgroundColor">
           <ScrollView maxH="300px">
             <LiveEditor
-              style={{ backgroundColor: "transparent" }}
+              style={{
+                backgroundColor: "transparent",
+                boxShadow: "none",
+                borderWidth: "0",
+              }}
               onChange={(code) => setParsedCode(code)}
             />
           </ScrollView>
