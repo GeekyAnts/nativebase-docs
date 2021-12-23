@@ -5,6 +5,29 @@ title: Box
 
 This is a generic component for low level layout needs. It is similar to a [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) in HTML.
 
+```jsx isShowcase
+import React from "react";
+import { Box } from "native-base";
+export const Example = () => {
+  return (
+    <>
+      <Box
+        bg="primary.500"
+        _text={{
+          fontSize: "md",
+          fontWeight: "medium",
+          color: "warmGray.50",
+          letterSpacing: "lg",
+        }}
+        shadow={2}
+      >
+        This is a Box
+      </Box>
+    </>
+  );
+};
+```
+
 ## Example
 
 ### Basic
@@ -64,9 +87,9 @@ export const App = () => {
 export function Example() {
   return (
     // <NativeBaseProvider config={config}>
-      <Center flex={1} px="3">
-        <App />
-      </Center>
+    <Center flex={1} px="3">
+      <App />
+    </Center>
     // </NativeBaseProvider>
   );
 }
