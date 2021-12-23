@@ -22,6 +22,7 @@ export function Example() {
     <Box flex="1" safeAreaTop>
       <ScrollView
         _contentContainerStyle={{
+          h: "40",
           px: "20px",
           mb: "4",
           minW: "72",
