@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import { DocSearch } from "@docsearch/react";
+import '@docsearch/css';
 import {
   HStack,
   Button,
@@ -143,6 +145,11 @@ export default function Navbar(props: any) {
         </NBLink>
       </HStack>
       <HStack space="2" alignItems="center">
+        <DocSearch
+          appId="QT6M4WLEXP"
+          indexName="nativebase-v3"
+          apiKey="3030e522f40cbea2b0386cdca3d88503"
+        />
         <Box px="2">
           <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
             <GitHub />
