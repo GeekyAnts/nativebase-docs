@@ -3,14 +3,11 @@ id: utility-first
 title: Utility First
 ---
 
-import { UtilityFirstExample } from "../../src/components";
 import { KitchenSinkIframe, TileLink, NBHistory } from "../../src/components";
 
 React Native has a great StyleSheet API which is optimal for component-based systems. NativeBase leverages it and adds a layer of utility props and constraint based designed tokens on top of it.
 
 To understand utility props, let's take an example.
-
-<UtilityFirstExample />
 
 <br />
 
@@ -20,11 +17,11 @@ Let's try the traditional way of building the above card in React Native.
 
 <Box maxWidth="100%" width="800px">
 
-```jsx
+```jsx isLive
 import * as React from "react";
 import { Text, View, StyleSheet, Image, Pressable } from "react-native";
 
-export default function App() {
+function Example() {
   return (
     <View style={styles.container}>
       <View style={styles.topContainer}>
@@ -82,9 +79,9 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: "#22d3ee",
     alignSelf: "flex-start",
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 3,
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 2,
   },
   buttonText: {
     fontWeight: "bold",
@@ -97,8 +94,6 @@ const styles = StyleSheet.create({
 
 </Box>
 
-<UtilityFirstExample />
-
 <br />
 
 ## With NativeBase
@@ -109,7 +104,7 @@ With NativeBase, you can apply styles directly in the layout using shorthands.
 
 <Box maxWidth="100%" width="800px">
 
-```jsx
+```jsx isLive
 import * as React from "react";
 import {
   NativeBaseProvider,
@@ -121,7 +116,7 @@ import {
   Image,
 } from "native-base";
 
-export function UtilityFirstExample() {
+export function Example() {
   return (
     <NativeBaseProvider>
       <Box
@@ -129,7 +124,6 @@ export function UtilityFirstExample() {
         py={4}
         px={3}
         rounded="md"
-        alignSelf="center"
         width={375}
         maxWidth="100%"
       >
@@ -139,15 +133,15 @@ export function UtilityFirstExample() {
               <Text fontSize="sm" color="white">
                 Today @ 9PM
               </Text>
-              <Text color="white" fontSize="lg">
+              <Text color="white" fontSize="xl">
                 Let's talk about avatar!
               </Text>
             </VStack>
             <Pressable
-              rounded="sm"
+              rounded="xs"
               bg="primary.400"
               alignSelf="flex-start"
-              py={2}
+              py={1}
               px={3}
             >
               <Text
@@ -206,7 +200,6 @@ Once you had a cup of tea, let's proceed to the next section!
       title="Design tokens"
       url="design-tokens"
       description="Refer design token guide to understand how utility props map to your theme values"
-      className="bg-gray-600"
     />
   </Box>
   <Center>

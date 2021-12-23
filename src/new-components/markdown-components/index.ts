@@ -3,6 +3,7 @@ export { Img } from "./Img";
 export { Span } from "./Span";
 export { PText } from "./PText";
 export { Li } from "./Li";
+export { Ul } from "./Ul";
 export { Heading1 } from "./Heading1";
 export { Heading2 } from "./Heading2";
 export { Heading3 } from "./Heading3";
