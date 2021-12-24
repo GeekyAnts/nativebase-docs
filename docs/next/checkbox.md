@@ -7,6 +7,20 @@ import { ComponentTheme } from '../src/components';
 
 The `Checkbox` component is used in forms when a user needs to select multiple values from several options.
 
+```jsx isShowcase
+import React from 'react';
+import { HStack, Checkbox } from 'native-base';
+
+export const Example = () => {
+  return (
+    <HStack space={6}>
+       <Checkbox shadow={2} value="test" accessibilityLabel="This is a dummy checkbox" />
+      <Checkbox shadow={2} value="test" accessibilityLabel="This is a dummy checkbox" defaultIsChecked />
+    </HStack>
+  );
+};
+```
+
 ## Examples
 
 ### Basic
