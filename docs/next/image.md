@@ -5,6 +5,23 @@ title: Image
 
 Generic Image components from [React Native](https://reactnative.dev).
 
+```jsx isShowcase
+import React from 'react';
+import { Image } from 'native-base';
+export function Example() {
+  return (
+    <Image
+      shadow={2}
+      source={{
+        uri: 'https://wallpaperaccess.com/full/317501.jpg',
+      }}
+      alt="Alternate Text"
+      size="xl"
+    />
+  );
+}
+```
+
 ## Implements
 
 - [`Image`](https://reactnative.dev/docs/image) from [React Native](https://reactnative.dev).
