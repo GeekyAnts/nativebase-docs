@@ -34,6 +34,7 @@ import {
   TableRow,
   Showcase,
   BlockQuote,
+  InlineCode,
 } from "./markdown-components";
 import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
@@ -97,12 +98,13 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     th: TableHeadData,
     tr: TableRow,
     td: TableData,
+    inlineCode: InlineCode,
     ...docComponents,
     ...RemNBComponents,
   };
   return (
     <Box px={{ base: "6", xl: "16" }} py="10">
-      <Heading>
+      <Heading _dark={{ color: "coolGray.50" }}>
         {frontMatter && frontMatter.title
           ? frontMatter.title
           : pages.currentPage.title}

@@ -19,3 +19,4 @@ export { TableData } from "./TableData";
 export { TableRow } from "./TableRow";
 export { Showcase } from "./CodeBlock/Showcase";
 export { BlockQuote } from "./BlockQuote";
+export { InlineCode } from "./InlineCode";

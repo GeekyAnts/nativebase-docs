@@ -166,7 +166,7 @@ const implementSection = (componentDetails: any, showStylingProps: any) => {
     if (MapValue && propName !== `I${displayName}Props`) {
       implementsArray.add(
         MapValue.link.startsWith("http")
-          ? `<a href="${MapValue.link}"><code>${MapValue.name}</code></a>`
+          ? `<a href="${MapValue.link}"><inlineCode>${MapValue.name}</inlineCode></a>`
           : `<a href="${MapValue.link}">${MapValue.name}</a>`
       );
     }

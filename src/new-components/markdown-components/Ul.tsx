@@ -1,5 +1,9 @@
 import React from "react";
-import { Box, Text, useColorModeValue } from "native-base";
+import { VStack } from "native-base";
 export const Ul = ({ children }: any) => {
-  return <Box>{children}</Box>;
+  return (
+    <VStack space="4" my="2">
+      {children}
+    </VStack>
+  );
 };

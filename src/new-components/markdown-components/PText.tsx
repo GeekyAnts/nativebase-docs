@@ -3,7 +3,7 @@ import { Text, useColorModeValue } from "native-base";
 export const PText = ({ children }: any) => {
   return (
     <Text
-      color={useColorModeValue("gray.700", "gray.300")}
+      color={useColorModeValue("coolGray.700", "coolGray.400")}
       mb="7"
       // for p tag
       fontSize="md"
