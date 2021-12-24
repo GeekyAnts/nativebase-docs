@@ -5,6 +5,52 @@ title: PresenceTransition
 
 PresenceTransition provides a declarative API to add entry and exit transitions.
 
+```jsx isShowcase
+import React from "react"
+import {
+  Button,
+  Center,
+  PresenceTransition,
+  NativeBaseProvider,
+} from "native-base"
+export const Example = () => {
+  const [isOpen, setIsOpen] = React.useState(false)
+  return (
+    <>
+      <Button shadow={2} onPress={() => setIsOpen(!isOpen)}>
+        {isOpen ? "Hide" : "Show"}
+      </Button>
+      <PresenceTransition
+        visible={isOpen}
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+          transition: {
+            duration: 250,
+          },
+        }}
+      >
+        <Center
+          mt="7"
+          bg="teal.500"
+          rounded="md"
+          w="200"
+          h="100"
+          _text={{
+            color: "white",
+          }}
+          shadow={2}
+        >
+          Fade
+        </Center>
+      </PresenceTransition>
+    </>
+  )
+}
+```
+
 ### Fade
 
 ```ComponentSnackPlayer path=components,composites,Transitions,Fade.tsx
