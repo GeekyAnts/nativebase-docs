@@ -7,6 +7,14 @@ import { ComponentTheme } from '../src/components';
 
 `Badges` are used to highlight an item's status for quick recognition.
 
+```jsx isShowcase
+import React from "react"
+import { Badge, Center, NativeBaseProvider } from "native-base"
+export function Example() {
+  return <Badge shadow={2}>NEW FEATURE</Badge>
+}
+```
+
 ## Import
 
 ```jsx

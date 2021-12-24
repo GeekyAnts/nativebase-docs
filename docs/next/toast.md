@@ -9,6 +9,28 @@ import { ComponentTheme } from '../src/components';
 
 Toasts can be configured to appear at either the top or the bottom of an application window, and it is possible to have more than one toast onscreen at a time.
 
+```jsx isShowcase
+import React from 'react';
+import { Button, useToast } from 'native-base';
+
+export const Example = () => {
+  const toast = useToast();
+
+  return (
+    <Button
+      shadow={2}
+      onPress={() =>
+        toast.show({
+          description: 'Hello world',
+        })
+      }
+    >
+      Bottom
+    </Button>
+  );
+};
+```
+
 ## Import
 
 ```jsx

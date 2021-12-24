@@ -7,6 +7,15 @@ import { ComponentTheme } from '../src/components';
 
 Headings are used for rendering headlines. `Heading` composes [`Text`](text.md) so you can use all the style props.
 
+```jsx isShowcase
+import React from 'react';
+import { Heading } from 'native-base';
+
+export function Example() {
+  return <Heading>I'm a Heading</Heading>;
+}
+```
+
 ## Import
 
 ```jsx
