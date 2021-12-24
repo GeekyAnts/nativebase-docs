@@ -17,6 +17,7 @@ export const Tabs = ({ children, values, defaultValue }: any) => {
         {values.map((value: any, index: any) => {
           return (
             <Pressable
+              key={"Tab-" + index}
               _hover={{ bg: "coolGray.700:alpha.40" }}
               onPress={() => onPressHandler(index)}
               justifyContent={"center"}
