@@ -7,6 +7,15 @@ import { ComponentTheme } from '../src/components';
 
 `Text` is used to render text and paragraphs within an interface.
 
+```jsx isShowcase
+import React from 'react';
+import { Text } from 'native-base';
+
+export const Example = () => {
+  return <Text>This is Text.</Text>;
+};
+```
+
 ## Examples
 
 ### ChangingFontSize
