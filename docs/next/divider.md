@@ -7,6 +7,25 @@ import { ComponentTheme } from '../src/components';
 
 `Divider` is used to visually separate content in a list or group.
 
+```jsx isShowcase
+import React from 'react';
+import { Divider, Heading, Box } from 'native-base';
+
+export const Example = () => {
+  return (
+    <Box w="140">
+      <Heading mx="3" d="flex" alignItems="center" flexDirection="row">
+        Chrome
+      </Heading>
+      <Divider shadow={2} my="2" />
+      <Heading mx="3" d="flex" alignItems="center" flexDirection="row">
+        Firefox
+      </Heading>
+    </Box>
+  );
+};
+```
+
 ## Import
 
 ```jsx
