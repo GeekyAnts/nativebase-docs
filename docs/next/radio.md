@@ -7,6 +7,31 @@ import { ComponentTheme } from '../src/components';
 
 `Radio` is used when only one choice may be selected in a series of options.
 
+```jsx isShowcase
+import React from "react"
+import { Radio, Center, NativeBaseProvider } from "native-base"
+export const Example = () => {
+  const [value, setValue] = React.useState("one")
+  return (
+    <Radio.Group
+      name="myRadioGroup"
+      accessibilityLabel="favorite number"
+      value={value}
+      onChange={(nextValue) => {
+        setValue(nextValue)
+      }}
+    >
+      <Radio shadow={2} value="one" my={1}>
+        One
+      </Radio>
+      <Radio shadow={2} value="two" my={1}>
+        Two
+      </Radio>
+    </Radio.Group>
+  )
+}
+```
+
 ## Examples
 
 ### Controlled

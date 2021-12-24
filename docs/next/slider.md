@@ -7,6 +7,29 @@ import { ComponentTheme } from '../src/components';
 
 The `Slider` is used to allow users to make selections from a range of values.
 
+```jsx isShowcase
+import React from "react"
+import { Slider, Box, Center, NativeBaseProvider } from "native-base"
+export const Example = () => {
+  return (
+    <Box mx="5" width="100">
+      <Slider
+        defaultValue={70}
+        minValue={0}
+        maxValue={100}
+        accessibilityLabel="hello world"
+        step={10}
+      >
+        <Slider.Track shadow={2}>
+          <Slider.FilledTrack />
+        </Slider.Track>
+        <Slider.Thumb />
+      </Slider>
+    </Box>
+  )
+}
+```
+
 ## Import
 
 NativeBase exports 4 slider-related components:

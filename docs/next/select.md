@@ -9,6 +9,40 @@ import { AndroidBadge } from "../src/components/index";
 
 Select creates a dropdown list of items with the selected item in closed view.
 
+```jsx isShowcase
+import React from 'react';
+import { Select, VStack, CheckIcon } from 'native-base';
+
+export const Example = () => {
+  let [service, setService] = React.useState('');
+
+  return (
+    <VStack alignItems="center" space={4}>
+      <Select
+        shadow={2}
+        selectedValue={service}
+        minWidth="200"
+        accessibilityLabel="Choose Service"
+        placeholder="Choose Service"
+        _selectedItem={{
+          bg: 'teal.600',
+          endIcon: <CheckIcon size="5" />,
+        }}
+        bg="coolGray.200"
+        mt={1}
+        onValueChange={(itemValue) => setService(itemValue)}
+      >
+        <Select.Item shadow={2} label="UX Research" value="ux" />
+        <Select.Item shadow={2} label="Web Development" value="web" />
+        <Select.Item shadow={2} label="Cross Platform Development" value="cross" />
+        <Select.Item shadow={2} label="UI Designing" value="ui" />
+        <Select.Item shadow={2} label="Backend Development" value="backend" />
+      </Select>
+    </VStack>
+  );
+};
+```
+
 ## Import
 
 ```jsx

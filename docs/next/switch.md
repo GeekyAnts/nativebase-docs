@@ -5,6 +5,20 @@ title: Switch
 
 The `Switch` component is an alternative to the Checkbox component. You can switch between enabled or disabled states.
 
+```jsx isShowcase
+import React from 'react';
+import { Switch, HStack, Text } from 'native-base';
+
+export const Example = () => {
+  return (
+    <HStack alignItems="center" space={4}>
+      <Text>Bluetooth</Text>
+      <Switch size="sm" />
+    </HStack>
+  );
+};
+```
+
 ## Examples
 
 ### Basic
