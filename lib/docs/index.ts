@@ -10,7 +10,6 @@ const generate = require("@babel/generator").default;
 const prettier = require("prettier");
 const docgen = require("react-docgen-typescript");
 const { internalPropsMap, rnPropsMap, StylingPropsMap } = require("./propsMap");
-import { useColorModeValue, useColorMode, ColorMode } from "native-base";
 
 const getHeadingLevel = (line: string) => {
   return {
@@ -29,7 +28,12 @@ const getHeadingLevel = (line: string) => {
   };
 };
 
+const removeCommentsFromMarkdownFile = (file: string) => {
+  return file.replace(/<!--[\s\S]*?-->/g, "");
+};
+
 export const getTOCArray = (file: string) => {
+  file = removeCommentsFromMarkdownFile(file);
   const fileLines = file
     .split("\n")
     .filter((line: string) => (line.substring(0, 1) === "#" ? true : false));
