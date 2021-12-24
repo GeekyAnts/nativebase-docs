@@ -5,10 +5,28 @@ title: Center
 
 `Center` is a layout component that centers its child within itself.
 
+```jsx isShowcase
+import React from "react";
+import { Center } from "native-base";
+export function Example() {
+  return (
+    <Center
+      bg="primary.400"
+      _text={{ color: "white", fontWeight: "bold" }}
+      height="32"
+      width="40"
+      shadow={2}
+    >
+      This is the Center
+    </Center>
+  );
+}
+```
+
 ## Import
 
 ```jsx
-import { Center, Square, Circle } from 'native-base';
+import { Center, Square, Circle } from "native-base";
 ```
 
 - **Center:** Centers its child, pass `width` and `height`

@@ -30,7 +30,12 @@ const getHeadingLevel = (line: string) => {
   };
 };
 
+const removeCommentsFromMarkdownFile = (file: string) => {
+  return file.replace(/<!--[\s\S]*?-->/g, "");
+};
+
 export const getTOCArray = (file: string) => {
+  file = removeCommentsFromMarkdownFile(file);
   const fileLines = file
     .split("\n")
     .filter((line: string) => (line.substring(0, 1) === "#" ? true : false));
