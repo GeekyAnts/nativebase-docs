@@ -33,6 +33,7 @@ import {
   TableData,
   TableRow,
   Showcase,
+  BlockQuote,
 } from "./markdown-components";
 import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
@@ -82,6 +83,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     span: Span,
     ul: Ul,
     li: Li,
+    blockQuote: BlockQuote,
     img: Img,
     a: Anchor,
     code: ({ children, ...props }: any) => {
