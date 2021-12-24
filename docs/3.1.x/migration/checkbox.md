@@ -3,8 +3,8 @@ id: checkbox
 title: Checkbox
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 Migrating [`Checkbox`](checkBox.md) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
 

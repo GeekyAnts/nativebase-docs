@@ -3,8 +3,8 @@ id: icon
 title: Icon
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 Migrating [`Icon`](icon.md) to v3 will provide a lot more **customisation** option. You can also create custom icons using SVG.
 

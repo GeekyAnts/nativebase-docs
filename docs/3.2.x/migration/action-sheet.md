@@ -3,8 +3,8 @@ id: action-sheet
 title: ActionSheet
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 We have sliced [`Actionsheet`](actionSheet.md) into multiple smaller component which not only provides more control over the the code but also makes it more readable.
 

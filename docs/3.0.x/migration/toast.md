@@ -1,5 +1,5 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 In v3, [`Toast`](toast.md) can be created using **useToast** hook
 

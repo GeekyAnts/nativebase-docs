@@ -1,5 +1,5 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 Migrating [`Button`](button.mdx) to v3 will provide a lot more **design**, **size**, **color** and **customisation** options.
 

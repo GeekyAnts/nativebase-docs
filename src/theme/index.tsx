@@ -11,7 +11,7 @@ export const theme = extendTheme({
     borderColorDark: "#313538",
     borderColorLight: "#dfe3e6",
 
-// -------------------------------------------------- SideBar -------------------------------------------
+    // -------------------------------------------------- SideBar -------------------------------------------
 
     sidebarBackgroundLight: "#fff",
     sidebarBackgroundDark: colors.blueGray[900],
@@ -28,7 +28,7 @@ export const theme = extendTheme({
     inactiveSidebarItemHoverBackgroundLight: colors.blueGray[100],
     inactiveSidebarItemHoverBackgroundDark: colors.blueGray[800],
 
-// -------------------------------------------------- Link -------------------------------------------
+    // -------------------------------------------------- Link -------------------------------------------
 
     inactiveLinkTextColorLight: "#687076",
     inactiveLinkTextColorDark: "#9ba1a6",
@@ -42,14 +42,19 @@ export const theme = extendTheme({
     activeHoverBorderBottomLinkColorDark: "#26292b",
     activeHoverBorderBottomLinkColorLight: "#eceef0",
 
-// -------------------------------------------------- Page Navs -------------------------------------------
+    // -------------------------------------------------- Page Navs -------------------------------------------
 
     pageNavigationHeadingLight: "#687076",
     pageNavigationHeadingDark: "#9ba1a6",
     pageNavigationMainTitleLight: "#006adc",
     pageNavigationMainTitleDark: "#52a9ff",
 
-// -------------------------------------------------- CodeBlock -------------------------------------------
+    // -------------------------------------------------- Tabs -------------------------------------------
+
+    SelectedTabTextColor: "#52a9ff",
+    SelectedTabBorderColor: "#52a9ff",
+
+    // -------------------------------------------------- CodeBlock -------------------------------------------
 
     codeBlockBackgroundColor: "rgba(24, 24, 27,0.2)",
   },

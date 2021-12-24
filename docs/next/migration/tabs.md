@@ -3,8 +3,8 @@ id: tabs
 title: Tabs
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 API for Tabs is in progress, in the meantine you can check this [recipe](buildingTabView.md) for building Tabs.
 

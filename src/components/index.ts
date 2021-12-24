@@ -12,3 +12,4 @@ export { default as InstallationTiles } from "./InstallationTiles";
 export { UtilityFirstExample } from "./UtilityFirstExample";
 export { ComponentTheme } from "./ComponentTheme";
 export { RNWebNote } from "./RNWebNote";
+export * from './Tabs';

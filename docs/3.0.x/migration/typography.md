@@ -1,5 +1,5 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 **H1**, **H2** and **H3** all have been replaced with [`Heading`](heading.md) component.
 

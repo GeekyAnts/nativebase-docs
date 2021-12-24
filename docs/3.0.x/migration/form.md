@@ -1,5 +1,5 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 With NativeBase v3 we have replaced Form with [`FormControl`](formControl.md) and sliced into [`FormControl.Label`](formControl.md#formcontrollabel), [`FormControl.HelperText`](formControl.md#formcontrolhelpertext) and [`FormControl.ErrorMessage`](formControl#formcontrolerrormessage).
 

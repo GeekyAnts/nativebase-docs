@@ -1,5 +1,5 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 With v3 we have replaced the **Thumbnail** with [`Image`](image.md). And we also provide [`Avatar`](avatar.md) as well.
 

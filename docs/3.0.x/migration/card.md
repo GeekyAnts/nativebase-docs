@@ -1,5 +1,5 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 With NativeBase v3 we have removed Card components because as it's very simple to create various card layout using primitive components.
 
