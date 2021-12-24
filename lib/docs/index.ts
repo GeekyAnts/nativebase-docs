@@ -11,6 +11,7 @@ const prettier = require("prettier");
 const docgen = require("react-docgen-typescript");
 const { internalPropsMap, rnPropsMap, StylingPropsMap } = require("./propsMap");
 import { useColorModeValue, useColorMode, ColorMode } from "native-base";
+const babel = require("@babel/core");
 
 const getHeadingLevel = (line: string) => {
   return {
@@ -29,7 +30,12 @@ const getHeadingLevel = (line: string) => {
   };
 };
 
+const removeCommentsFromMarkdownFile = (file: string) => {
+  return file.replace(/<!--[\s\S]*?-->/g, "");
+};
+
 export const getTOCArray = (file: string) => {
+  file = removeCommentsFromMarkdownFile(file);
   const fileLines = file
     .split("\n")
     .filter((line: string) => (line.substring(0, 1) === "#" ? true : false));
@@ -359,7 +365,12 @@ const getCodeFromStorybook = (pathArray: string[], version: string) => {
   // });
   // const output = generate(ast);
 
-  const result = prettier.format(code, {
+  let finalCode = babel.transformSync(code, {
+    plugins: [
+      [require.resolve("@babel/plugin-transform-typescript"), { isTSX: true }],
+    ],
+  }).code;
+  const result = prettier.format(finalCode, {
     semi: false,
     parser: "babel",
   });

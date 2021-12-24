@@ -69,6 +69,9 @@ const gradients = [
   ["#38BDF8", "#1D4ED8", "#4C1D95"],
   ["#FB923C", "#C026D3"],
   ["#5EEAD4", "#0284C7", "#5B21B6"],
+  ["#8B5CF6", "#A21CAF"],
+  ["#9333EA", "#4338CA"],
+  ["#9333EA", "#EA580C"],
 ];
 
 function generateRandomGradient() {

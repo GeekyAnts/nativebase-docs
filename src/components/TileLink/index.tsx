@@ -27,6 +27,7 @@ export default function TileLink({
         px="4"
         shadow="6"
         rounded="md"
+        bg="gray.600"
         {...props}
       >
         <Text bold mb="2" fontSize="md">
