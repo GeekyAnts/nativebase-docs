@@ -7,6 +7,19 @@ import { ComponentTheme } from '../src/components';
 
 A tooltip is a brief, informative message that appears when a user interacts with an element. Tooltips are usually initiated in one of two ways: through a mouse-hover gesture or through a keyboard-hover gesture.
 
+```jsx isShowcase
+import React from 'react';
+import { Tooltip, Button } from 'native-base';
+
+export function Example() {
+  return (
+    <Tooltip label="Hey, I'm here!" openDelay={500}>
+      <Button shadow={2}>More</Button>
+    </Tooltip>
+  );
+}
+```
+
 ## Import
 
 ```jsx

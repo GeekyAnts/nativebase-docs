@@ -3,6 +3,27 @@ id: spinner
 title: Spinner
 ---
 
+```jsx isShowcase
+import React from "react"
+import {
+  Spinner,
+  HStack,
+  Heading,
+  Center,
+  NativeBaseProvider,
+} from "native-base"
+export const Example = () => {
+  return (
+    <HStack space={2} alignItems="center">
+      <Spinner shadow={2} accessibilityLabel="Loading posts" />
+      <Heading color="primary.500" fontSize="md">
+        Loading
+      </Heading>
+    </HStack>
+  )
+}
+```
+
 ## Examples
 
 ### Basic
