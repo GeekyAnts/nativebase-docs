@@ -15,7 +15,7 @@ export default function Toc(props: any) {
   const { tocArray } = props;
   return (
     <ScrollView>
-      <Box w="64" py="16" px="4">
+      <Box py="16" px="4">
         {tocArray.length !== 0 && (
           <Heading
             ml="-1"
@@ -35,7 +35,7 @@ export default function Toc(props: any) {
             borderStyle={"dashed"}
             rounded={1}
           />
-          <Box>
+          <Box w="100%">
             <TocItems tocArrayItems={tocArray} />
           </Box>
         </HStack>
@@ -120,7 +120,7 @@ const TocItem = ({
         }
         size="3"
       />
-      <Box ml="7">
+      <Box mx="7">
         <Link href={"#" + item.id} passHref>
           <Pressable my="1.5">
             {({ isHovered }) => {
@@ -148,7 +148,7 @@ const TocItem = ({
       </Box>
     </Box>
   ) : (
-    <Box ml="2.5" mb={isHeadingID ? "14px" : "0"}>
+    <Box mx="2.5" mb={isHeadingID ? "14px" : "0"}>
       <Link href={"#" + item.id} passHref>
         <Pressable my="1.5">
           {({ isHovered }) => {

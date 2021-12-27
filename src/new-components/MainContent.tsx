@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   Box,
   Heading,
@@ -47,9 +47,17 @@ export default function MainContent(props: any) {
   return (
     <>
       <ScrollContext.Provider value={{ timestamp, setTimestamp }}>
-        <SubMainContent props={props} />
+        <Box flex="1">
+          <SubMainContent props={props} />
+        </Box>
         {props.showToc && (
-          <Box display={{ base: "none", lg: "flex" }}>
+          <Box
+            display={{ base: "none", lg: "flex" }}
+            position="sticky"
+            top="16"
+            h="100vh"
+            w="64"
+          >
             <Toc tocArray={tocArray} />
           </Box>
         )}
@@ -62,11 +70,13 @@ const SubMainContent = ({ props }: any) => {
   function handleScroll(e: any) {
     setTimestamp(e.timeStamp);
   }
-  return (
-    <ScrollView scrollEventThrottle={16} onScroll={handleScroll}>
-      <SubMainContent2 props={props} />
-    </ScrollView>
-  );
+  useEffect(() => {
+    document.getElementsByTagName("body")[0].onscroll = (e) => {
+      handleScroll(e);
+    };
+  }, []);
+
+  return <SubMainContent2 props={props} />;
 };
 
 // eslint-disable-next-line react/display-name
@@ -104,12 +114,15 @@ const SubMainContent2 = React.memo(({ props }: any) => {
   };
   return (
     <Box px={{ base: "6", xl: "16" }} py="10">
-      <Heading _dark={{ color: "coolGray.50" }}>
-        {frontMatter && frontMatter.title
-          ? frontMatter.title
-          : pages.currentPage.title}
-      </Heading>
-      <MDXRemote {...content} components={components} />
+      <Box alignSelf="center" maxW="800">
+        <Heading _dark={{ color: "coolGray.50" }}>
+          {frontMatter && frontMatter.title
+            ? frontMatter.title
+            : pages.currentPage.title}
+        </Heading>
+
+        <MDXRemote {...content} components={components} />
+      </Box>
       <HStack justifyContent="space-between" my="12">
         {pages.previousPage && (
           <Pressable
