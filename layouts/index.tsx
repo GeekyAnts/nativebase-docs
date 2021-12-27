@@ -1,6 +1,12 @@
 import Head from "next/head";
 import React, { useEffect, useContext } from "react";
-import { Box, HStack, ScrollView, useColorModeValue } from "native-base";
+import {
+  Box,
+  HStack,
+  ScrollView,
+  useColorModeValue,
+  useToken,
+} from "native-base";
 import path from "path";
 import Sidebar from "../src/new-components/Sidebar";
 import Navbar from "../src/new-components/Navbar";
@@ -28,6 +34,11 @@ function Layout({
     setActiveVersion,
     setActiveSidebarItem,
   } = useContext(AppContext);
+  
+  const bgColor = useColorModeValue(
+    useToken("colors", "backgroundLight"),
+    useToken("colors", "backgroundDark")
+  );
 
   useEffect(() => {
     const currentPathArray = window?.location.href.split("/");
@@ -51,6 +62,8 @@ function Layout({
     } else {
       setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
     }
+    document.getElementsByTagName("body")[0].scrollTop = 0;
+    document.getElementsByTagName("body")[0].style.backgroundColor = bgColor;
   }, []);
   return (
     <>

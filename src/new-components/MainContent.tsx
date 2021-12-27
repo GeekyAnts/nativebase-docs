@@ -47,7 +47,14 @@ export default function MainContent(props: any) {
   return (
     <>
       <ScrollContext.Provider value={{ timestamp, setTimestamp }}>
-        <Box flex="1">
+        <Box
+          flex="1"
+          borderLeftWidth="1"
+          _light={{
+            borderColor: "borderColorLight",
+          }}
+          _dark={{ borderColor: "borderColorDark" }}
+        >
           <SubMainContent props={props} />
         </Box>
         {props.showToc && (

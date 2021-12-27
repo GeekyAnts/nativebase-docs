@@ -10,11 +10,12 @@ import Link from "next/link";
 export default function Sidebar(props: any) {
   const { sidebar } = props;
   return (
-    <ScrollView>
+    // @ts-ignore
+    <ScrollView overflowY="overlay">
       <Box
         py="5"
         w="64"
-        borderRightWidth="1"
+        // borderRightWidth="1"
         flex="1"
         _light={{
           borderColor: "borderColorLight",

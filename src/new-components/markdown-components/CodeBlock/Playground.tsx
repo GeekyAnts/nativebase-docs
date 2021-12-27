@@ -353,7 +353,7 @@ export const Playground = ({ children, props }: any) => {
           </HStack>
         </HStack>
         <Box p="4" pt="0" bg="codeBlockBackgroundColor">
-          <ScrollView maxH="300px">
+          <ScrollView showsVerticalScrollIndicator={false} maxH="300px">
             <LiveEditor
               style={{
                 backgroundColor: "transparent",

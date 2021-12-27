@@ -37,7 +37,7 @@ a {
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   height: 8px;
 }
 
@@ -51,4 +51,7 @@ a {
   background-color: #a1a2a9;
   border-radius: 20px;
   border: 3px solid transparent;
+}
+.npm__react-simple-code-editor__textarea{
+  outline: none;
 }
