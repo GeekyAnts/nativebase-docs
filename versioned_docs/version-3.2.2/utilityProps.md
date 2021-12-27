@@ -106,7 +106,7 @@ export default function () {
 
 <br />
 
-| Prop           | CSS Eqquivalent  | Theme Key |
+| Prop           | CSS Equivalent   | Theme Key |
 | -------------- | ---------------- | --------- |
 | color          | color            | colors    |
 | bg, background | background       | colors    |
@@ -219,7 +219,7 @@ export default function () {
 
 <br />
 
-| Prop           | CSS Eqquivalent | Theme Key      |
+| Prop           | CSS Equivalent  | Theme Key      |
 | -------------- | --------------- | -------------- |
 | fontFamily     | font-family     | fonts          |
 | fontSize       | font-size       | fontSizes      |
@@ -273,20 +273,20 @@ export default function () {
 
 <br />
 
-| Prop            | CSS Eqquivalent | Theme Key |
-| --------------- | --------------- | --------- |
-| w, width        | width           | sizes     |
-| h, height       | height          | sizes     |
-| minW, minWidth  | min-width       | sizes     |
-| maxW, maxWidth  | max-width       | sizes     |
-| minH, minHeight | min-height      | sizes     |
-| maxH, maxHeight | max-height      | sizes     |
-| d, display      | display         | -         |
-| boxSize         | width, height   | sizes     |
-| verticalAlign   | vertical-align  | -         |
-| overflow        | overflow        | -         |
-| overflowX       | overflowX       | -         |
-| overflowY       | overflowY       | -         |
+| Prop            | CSS Equivalent | Theme Key |
+| --------------- | -------------- | --------- |
+| w, width        | width          | sizes     |
+| h, height       | height         | sizes     |
+| minW, minWidth  | min-width      | sizes     |
+| maxW, maxWidth  | max-width      | sizes     |
+| minH, minHeight | min-height     | sizes     |
+| maxH, maxHeight | max-height     | sizes     |
+| d, display      | display        | -         |
+| boxSize         | width, height  | sizes     |
+| verticalAlign   | vertical-align | -         |
+| overflow        | overflow       | -         |
+| overflowX       | overflowX      | -         |
+| overflowY       | overflowY      | -         |
 
 ### Flexbox
 
@@ -329,7 +329,7 @@ export default function () {
 
 <br />
 
-| Prop                                | CSS Eqquivalent | Theme Key |
+| Prop                                | CSS Equivalent  | Theme Key |
 | ----------------------------------- | --------------- | --------- |
 | alignItems, \*align                 | align-items     | -         |
 | alignContent                        | align-content   | -         |
@@ -378,7 +378,7 @@ export default function () {
 
 <br />
 
-| Prop              | CSS Eququivalent    | Theme Field  |
+| Prop              | CSS Equivalent      | Theme Field  |
 | ----------------- | ------------------- | ------------ |
 | borderWidth       | border-width        | borderWidths |
 | borderStyle       | border-style        | borderStyles |
@@ -438,17 +438,17 @@ export default function () {
 
 <br />
 
-| Prop                    | CSS Eququivalent                                       | Theme Field |
-| ----------------------- | ------------------------------------------------------ | ----------- |
-| borderRadius            | border-radius                                          | radii       |
-| borderTopLeftRadius     | border-top-left-radius                                 | radii       |
-| borderTopRightRadius    | border-top-right-radius                                | radii       |
-| borderBottomRightRadius | border-bottom-right-radius                             | radii       |
-| borderBottomLeftRadius  | border-bottom-left-radius                              | radii       |
-| borderTopRadius         | border-top-left-radius & border-top-right-radius       | radii       |
-| borderRightRadius       | border-top-right-radius & border-bottom-right-radius   | radii       |
-| borderBottomRadius      | border-bottom-left-radius & border-bottom-right-radius | radii       |
-| borderLeftRadius        | border-top-left-radius & border-bottom-left-radius     | radii       |
+| Prop                                        | CSS Equivalent                                         | Theme Field |
+| ------------------------------------------- | ------------------------------------------------------ | ----------- |
+| borderRadius, rounded                       | border-radius                                          | radii       |
+| borderTopLeftRadius, roundedTopLeft         | border-top-left-radius                                 | radii       |
+| borderTopRightRadius, roundedTopRight       | border-top-right-radius                                | radii       |
+| borderBottomRightRadius, roundedBottomRight | border-bottom-right-radius                             | radii       |
+| borderBottomLeftRadius, roundedBottomLeft   | border-bottom-left-radius                              | radii       |
+| borderTopRadius, roundedTop                 | border-top-left-radius & border-top-right-radius       | radii       |
+| borderRightRadius, roundedRight             | border-top-right-radius & border-bottom-right-radius   | radii       |
+| borderBottomRadius, roundedBottom           | border-bottom-left-radius & border-bottom-right-radius | radii       |
+| borderLeftRadius, roundedLeft               | border-top-left-radius & border-bottom-left-radius     | radii       |
 
 ### Position
 
@@ -535,7 +535,7 @@ export default function () {
 
 ### Internal Props
 
-Provides a way to pass props to child components inside Composite componets.
+Provides a way to pass props to child components inside Composite components.
 
 ```SnackPlayer name=Internal
 import React from 'react';
@@ -625,7 +625,7 @@ export default function () {
 
 ### Platform Props
 
-Provides a way to pass props bassed on Platform (_android, ios or web_).
+Provides a way to pass props based on Platform (_android, ios or web_).
 
 ```SnackPlayer name=Internal
 import React from 'react';
