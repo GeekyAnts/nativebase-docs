@@ -5,13 +5,13 @@
 
 ## Code Comparison
 
-<Tabs
+<DocTabs
 defaultValue="v2"
 values={[
 {label: 'v2', value: 'v2'},
 {label: 'v3', value: 'v3'},
 ]}>
-<TabItem value="v2">
+<DocTabItem value="v2">
 
 ```tsx
 <H1>Header One</H1>
@@ -20,8 +20,8 @@ values={[
 <Text>Default</Text>
 ```
 
-</TabItem>
-<TabItem value="v3">
+</DocTabItem>
+<DocTabItem value="v3">
 
 ```tsx
 <Heading size='xl'>Header One</Heading>
@@ -30,5 +30,5 @@ values={[
 <Text>Default</Text>
 ```
 
-</TabItem>
-</Tabs>
+</DocTabItem>
+</DocTabs>

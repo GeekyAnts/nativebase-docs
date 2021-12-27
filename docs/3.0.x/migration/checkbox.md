@@ -14,13 +14,13 @@ Migrating Checkbox components can broadly described in these points:
 
 ## Code Comparison
 
-<Tabs
+<DocTabs
 defaultValue="v2"
 values={[
 {label: 'v2', value: 'v2'},
 {label: 'v3', value: 'v3'},
 ]}>
-<TabItem value="v2">
+<DocTabItem value="v2">
 
 ![/img/Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png](/img/Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png)
 
@@ -31,8 +31,8 @@ values={[
 </Body>
 ```
 
-</TabItem>
-<TabItem value="v3">
+</DocTabItem>
+<DocTabItem value="v3">
 
 ![/img/Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png](/img/Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png)
 
@@ -45,5 +45,5 @@ values={[
 </Checkbox>
 ```
 
-</TabItem>
-</Tabs>
+</DocTabItem>
+</DocTabs>
