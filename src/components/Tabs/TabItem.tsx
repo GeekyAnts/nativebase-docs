@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Box, Pressable, Text } from "native-base";
-import { TabContext } from "./TabContext";
+import { DocTabContext } from "./TabContext";
 
-export const TabItem = (props: any) => {
+export const DocTabItem = (props: any) => {
   const { children, value } = props;
   //   @ts-ignore
   const { selected } = useContext(TabContext);
