@@ -15,7 +15,6 @@ export default function Sidebar(props: any) {
       <Box
         py="5"
         w="64"
-        // borderRightWidth="1"
         flex="1"
         _light={{
           borderColor: "borderColorLight",
