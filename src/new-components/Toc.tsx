@@ -120,7 +120,7 @@ const TocItem = ({
         }
         size="3"
       />
-      <Box mx="7">
+      <Box pl="7" pr="2.5" w="100%">
         <Link href={"#" + item.id} passHref>
           <Pressable my="1.5">
             {({ isHovered }) => {

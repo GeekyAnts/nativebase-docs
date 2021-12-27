@@ -3,7 +3,7 @@ import { Box, Heading, Link, Text, VStack } from "native-base";
 import config from "../../docs.config";
 const url = config.REPO_LINK + "/tree/" + config.REPO_BRANCH;
 
-export function ComponentTheme({ name, fileName }:any) {
+export function ComponentTheme({ name, fileName }: any) {
   fileName = fileName ?? name;
 
   return (
@@ -13,7 +13,7 @@ export function ComponentTheme({ name, fileName }:any) {
       //   "--ifm-link-hover-decoration": "none",
       // }}
     >
-      <Box rounded="md">
+      <Box rounded="1">
         <Text>
           NativeBase ships with a default theme for each component.{" "}
           <Link
@@ -30,7 +30,7 @@ export function ComponentTheme({ name, fileName }:any) {
                 borderColor: "gray.900",
               }}
               borderStyle="dashed"
-              rounded="md"
+              rounded="1"
               p={1}
               borderColor="secondary.300"
             >

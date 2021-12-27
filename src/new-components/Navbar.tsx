@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { DocSearch } from "@docsearch/react";
-import '@docsearch/css';
+import "@docsearch/css";
 import {
   HStack,
   Button,
