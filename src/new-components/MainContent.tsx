@@ -88,7 +88,6 @@ const SubMainContent = ({ props }: any) => {
 
 // eslint-disable-next-line react/display-name
 const SubMainContent2 = React.memo(({ props }: any) => {
-  const { Tabs, ...RemNBComponents } = NBComponents;
   const { content, pages, frontMatter } = props;
   const { activeVersion, setActiveSidebarItem } = useContext(AppContext);
   const components = {
@@ -117,7 +116,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     td: TableData,
     inlineCode: InlineCode,
     ...docComponents,
-    ...RemNBComponents,
+    ...NBComponents,
   };
   return (
     <Box px={{ base: "6", xl: "16" }} py="10">
