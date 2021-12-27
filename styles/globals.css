@@ -31,4 +31,24 @@ a {
 
 * {
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #a1a2a9 transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #a1a2a9;
+  border-radius: 20px;
+  border: 3px solid transparent;
 }
