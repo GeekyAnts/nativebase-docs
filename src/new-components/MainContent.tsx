@@ -122,7 +122,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
   return (
     <Box px={{ base: "6", xl: "16" }} py="10">
       <Box alignSelf="center" maxW="800">
-        <Heading _dark={{ color: "coolGray.50" }}>
+        <Heading mb="10" _dark={{ color: "coolGray.50" }}>
           {frontMatter && frontMatter.title
             ? frontMatter.title
             : pages.currentPage.title}

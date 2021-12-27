@@ -34,7 +34,7 @@ function Layout({
     setActiveVersion,
     setActiveSidebarItem,
   } = useContext(AppContext);
-  
+
   const bgColor = useColorModeValue(
     useToken("colors", "backgroundLight"),
     useToken("colors", "backgroundDark")
@@ -63,8 +63,11 @@ function Layout({
       setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
     }
     document.getElementsByTagName("body")[0].scrollTop = 0;
-    document.getElementsByTagName("body")[0].style.backgroundColor = bgColor;
   }, []);
+  
+  useEffect(() => {
+    document.getElementsByTagName("body")[0].style.backgroundColor = bgColor;
+  }, [bgColor]);
   return (
     <>
       <Head>
