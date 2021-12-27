@@ -1,5 +1,5 @@
 import { createContext } from "react";
-export const TabContext = createContext({
+export const DocTabContext = createContext({
   selectedId: "",
   setSelectedId: () => {},
 });

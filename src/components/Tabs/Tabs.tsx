@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Pressable, Text } from "native-base";
-import { TabContext } from "./TabContext";
+import { DocTabContext } from "./TabContext";
 
-export const Tabs = ({ children, values, defaultValue }: any) => {
+export const DocTabs = ({ children, values, defaultValue }: any) => {
   const [selected, setSelected] = React.useState("");
   const onPressHandler = (index: any) => {
     setSelected(values[index].value);
@@ -12,7 +12,7 @@ export const Tabs = ({ children, values, defaultValue }: any) => {
   }, []);
   return (
     // @ts-ignore
-    <TabContext.Provider value={{ selected, setSelected }}>
+    <DocTabContext.Provider value={{ selected, setSelected }}>
       <Box flexDir="row">
         {values.map((value: any, index: any) => {
           return (
@@ -46,6 +46,6 @@ export const Tabs = ({ children, values, defaultValue }: any) => {
         })}
       </Box>
       {children}
-    </TabContext.Provider>
+    </DocTabContext.Provider>
   );
 };

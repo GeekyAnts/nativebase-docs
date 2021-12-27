@@ -56,7 +56,7 @@ export const theme = extendTheme({
 
     // -------------------------------------------------- CodeBlock -------------------------------------------
 
-    codeBlockBackgroundColor: "rgba(24, 24, 27,0.2)",
+    codeBlockBackgroundColor: "#171E2E",
   },
   config: {
     // Changing initialColorMode to 'dark'

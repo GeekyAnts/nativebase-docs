@@ -94,7 +94,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     span: Span,
     ul: Ul,
     li: Li,
-    blockQuote: BlockQuote,
+    blockquote: BlockQuote,
     img: Img,
     a: Anchor,
     code: ({ children, ...props }: any) => {
