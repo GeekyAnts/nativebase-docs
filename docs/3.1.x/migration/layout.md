@@ -16,13 +16,13 @@ With NativeBase v3 we have removed List components because as it's very simple t
 
 ### Code Comparison
 
-<Tabs
+<DocTabs
 defaultValue="v2"
 values={[
 {label: 'v2', value: 'v2'},
 {label: 'v3', value: 'v3'},
 ]}>
-<TabItem value="v2">
+<DocTabItem value="v2">
 
 ```tsx
 <List>
@@ -53,8 +53,8 @@ values={[
 </List>
 ```
 
-</TabItem>
-<TabItem value="v3">
+</DocTabItem>
+<DocTabItem value="v3">
 
 ```tsx
 <VStack space={3} divider={<Divider />} w="90%">
@@ -73,5 +73,5 @@ values={[
 </VStack>
 ```
 
-</TabItem>
-</Tabs>
+</DocTabItem>
+</DocTabs>

@@ -24,13 +24,13 @@ Migrating Button components can broadly described in these points:
 
 Besides option like **light**, **info**, **success**, **warning**, **danger** and **dark**. Now you can also provide colors like **red**, **blue**, **cyan**, **teal** and a lot more.
 
-<Tabs
+<DocTabs
 defaultValue="v2"
 values={[
 {label: 'v2', value: 'v2'},
 {label: 'v3', value: 'v3'},
 ]}>
-<TabItem value="v2">
+<DocTabItem value="v2">
 
 ![/img/Button/Screenshot_2021-01-22_at_12.29.32_PM.png](/img/Button/Screenshot_2021-01-22_at_12.29.32_PM.png)
 
@@ -40,8 +40,8 @@ values={[
 </Button>
 ```
 
-</TabItem>
-<TabItem value="v3">
+</DocTabItem>
+<DocTabItem value="v3">
 
 ![/img/Button/Screenshot_2021-01-22_at_12.53.09_PM.png](/img/Button/Screenshot_2021-01-22_at_12.53.09_PM.png)
 
@@ -49,20 +49,20 @@ values={[
 <Button colorScheme="success">Success</Button>
 ```
 
-</TabItem>
-</Tabs>
+</DocTabItem>
+</DocTabs>
 
 ### Sizes of the Button:
 
 Besides option like **light**, **info**, **success**, **warning**, **danger** and **dark**. Now you can also provide colors like **red**, **blue**, **cyan**, **teal** and a lot more.
 
-<Tabs
+<DocTabs
 defaultValue="v2"
 values={[
 {label: 'v2', value: 'v2'},
 {label: 'v3', value: 'v3'},
 ]}>
-<TabItem value="v2">
+<DocTabItem value="v2">
 
 ![/img/Button/Screenshot_2021-01-22_at_2.37.09_PM.png](/img/Button/Screenshot_2021-01-22_at_2.37.09_PM.png)
 
@@ -72,8 +72,8 @@ values={[
 </Button>
 ```
 
-</TabItem>
-<TabItem value="v3">
+</DocTabItem>
+<DocTabItem value="v3">
 
 ![/img/Button/Screenshot_2021-01-22_at_2.38.52_PM.png](/img/Button/Screenshot_2021-01-22_at_2.38.52_PM.png)
 
@@ -83,20 +83,20 @@ values={[
 </Button>
 ```
 
-</TabItem>
-</Tabs>
+</DocTabItem>
+</DocTabs>
 
 ### Designing the Button
 
 With v3 you can combine variants and style props to create various designs.
 
-<Tabs
+<DocTabs
 defaultValue="v2"
 values={[
 {label: 'v2', value: 'v2'},
 {label: 'v3', value: 'v3'},
 ]}>
-<TabItem value="v2">
+<DocTabItem value="v2">
 
 ![/img/Button/Screenshot_2021-01-22_at_1.16.25_PM.png](/img/Button/Screenshot_2021-01-22_at_1.16.25_PM.png)
 
@@ -122,8 +122,8 @@ values={[
 </Button>
 ```
 
-</TabItem>
-<TabItem value="v3">
+</DocTabItem>
+<DocTabItem value="v3">
 
 ![/img/Button/Screenshot_2021-01-22_at_1.15.34_PM.png](/img/Button/Screenshot_2021-01-22_at_1.15.34_PM.png)
 
@@ -149,20 +149,20 @@ values={[
 </Button>
 ```
 
-</TabItem>
-</Tabs>
+</DocTabItem>
+</DocTabs>
 
 ### Icon Button
 
 With v3 iconLeft and iconRight can now accepts tsx.Element as child and render the element at the appropriate place.
 
-<Tabs
+<DocTabs
 defaultValue="v2"
 values={[
 {label: 'v2', value: 'v2'},
 {label: 'v3', value: 'v3'},
 ]}>
-<TabItem value="v2">
+<DocTabItem value="v2">
 
 ![/img/Button/Screenshot_2021-01-22_at_1.32.47_PM.png](/img/Button/Screenshot_2021-01-22_at_1.32.47_PM.png)
 
@@ -173,8 +173,8 @@ values={[
 </Button>
 ```
 
-</TabItem>
-<TabItem value="v3">
+</DocTabItem>
+<DocTabItem value="v3">
 
 ![/img/Button/Screenshot_2021-01-22_at_1.38.15_PM.png](/img/Button/Screenshot_2021-01-22_at_1.38.15_PM.png)
 
@@ -187,5 +187,5 @@ values={[
 </Button>
 ```
 
-</TabItem>
-</Tabs>
+</DocTabItem>
+</DocTabs>
