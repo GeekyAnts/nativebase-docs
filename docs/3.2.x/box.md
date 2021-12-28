@@ -30,6 +30,7 @@ If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can 
 ```jsx isLive
 import React from "react";
 import { Box, Center, NativeBaseProvider } from "native-base";
+const LinearGradient = require("expo-linear-gradient").LinearGradient;
 
 const App = () => {
   return (
@@ -57,7 +58,7 @@ const App = () => {
 
 const config = {
   dependencies: {
-    "linear-gradient": require("expo-linear-gradient").LinearGradient,
+    "linear-gradient": LinearGradient,
   },
 };
 

@@ -334,7 +334,7 @@ const getPropTableFile = (pathArray: string[], version: string) => {
 const getCodeFromStorybook = (pathArray: string[], version: string) => {
   // console.log(version);
 
-  const code = fs.readFileSync(
+  let code = fs.readFileSync(
     baseDirPath +
       "/versioned_repo/" +
       version +
@@ -366,7 +366,9 @@ const getCodeFromStorybook = (pathArray: string[], version: string) => {
   // });
   // const output = generate(ast);
   // console.log(code);
+  code = code.replaceAll("?.", ".");
   let finalCode = babel.transformSync(code, {
+    configFile: false,
     plugins: [[babelPlugin, { isTSX: true }]],
   }).code;
 

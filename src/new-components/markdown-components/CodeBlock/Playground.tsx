@@ -76,7 +76,7 @@ const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
 // SnackPlayer name=Drawer-Navigation dependencies=@react-navigation/stack@5.1.0,@react-navigation/drawer,@react-navigation/native@5.0.8,react-native-vector-icons,react-native-gesture-handler@1.10.2,react-native-linear-gradient,@react-native-community/masked-view@0.1.10,react-native-screens@3.0.0,react-native-reanimated@2.1.0
 // const LinearGradient = require("react-native-linear-gradient").default;
 // import LinearGradient from 'react-native-linear-gradient';
-// const LinearGradient = require('expo-linear-gradient').LinearGradient;
+const LinearGradient = require("expo-linear-gradient").LinearGradient;
 // addExportsToCode(children, endingCodeSandboxTemplate)
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { AppContext } from "../../../AppContext";
@@ -105,6 +105,13 @@ export const Playground = ({ children, props }: any) => {
           const childDec = path.node.declaration;
           path.replaceWith(childDec);
           // console.log(path.node);
+        }
+        if (
+          path.node?.type === "VariableDeclaration" &&
+          path.node?.declarations[0]?.init?.type === "MemberExpression" &&
+          path.node?.declarations[0]?.init?.object.callee.name === "require"
+        ) {
+          path.remove();
         }
         // if(path.node?.type ==="FunctionDeclaration"){
         //   console.log(path.node);
@@ -150,7 +157,7 @@ export const Playground = ({ children, props }: any) => {
     G,
     Path,
     CircleSvg,
-    // LinearGradient,
+    LinearGradient,
   }; // add custom deps as and when required. more info here -> https://github.com/FormidableLabs/react-live#liveprovider-
 
   // @ts-ignore

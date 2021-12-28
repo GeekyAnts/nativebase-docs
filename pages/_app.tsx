@@ -11,6 +11,11 @@ declare module "native-base" {
   interface ICustomTheme extends MyThemeType {}
 }
 
+const config = {
+  dependencies: {
+    "linear-gradient": require("expo-linear-gradient").LinearGradient,
+  },
+};
 function MyApp({ Component, pageProps }: AppProps) {
   const [activeVersion, setActiveVersion] = useState("/");
   const [activeSidebarItem, setActiveSidebarItem] = useState("");
@@ -29,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       }}
     >
       {/* @ts-ignore */}
-      <NativeBaseProvider isSSR theme={theme}>
+      <NativeBaseProvider isSSR theme={theme} config={config}>
         <Component {...pageProps} />
       </NativeBaseProvider>
     </AppContext.Provider>

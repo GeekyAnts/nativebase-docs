@@ -31,6 +31,7 @@ If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can 
 import React from "react";
 import { Box, Center, NativeBaseProvider } from "native-base";
 
+const LinearGradient = require("expo-linear-gradient").LinearGradient;
 export const App = () => {
   return (
     <Box
@@ -54,16 +55,15 @@ export const App = () => {
   );
 };
 
-// const config = {
-//   dependencies: {
-//     "linear-gradient": require("expo-linear-gradient").LinearGradient,
-//   },
-// };
+const config = {
+  dependencies: {
+    "linear-gradient": LinearGradient,
+  },
+};
 
 export function Example() {
   return (
-    // <NativeBaseProvider config={config}>
-    <NativeBaseProvider >
+    <NativeBaseProvider config={config}>
       <Center flex={1}>
         <App />
       </Center>
@@ -79,6 +79,8 @@ If you're not using Expo, you can install [react-native-linear-gradient](https:/
 ```jsx
 import React from "react";
 import { Box, NativeBaseProvider } from "native-base";
+
+const LinearGradient = require("expo-linear-gradient").LinearGradient;
 
 const Example = () => {
   return (

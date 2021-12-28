@@ -54,11 +54,12 @@
     "react-navigation": "^4.4.4"
   },
   "devDependencies": {
-    "@expo/next-adapter": "^3.1.7",
+    "@expo/next-adapter": "3.1.12",
     "@next/bundle-analyzer": "^12.0.4",
     "@types/mdx-js__react": "^1.5.5",
     "@types/node": "16.11.7",
     "@types/react": "17.0.35",
+    "babel-preset-expo": "^8.5.1",
     "directory-tree": "^3.0.1",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
