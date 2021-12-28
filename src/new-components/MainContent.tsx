@@ -35,6 +35,7 @@ import {
   Showcase,
   BlockQuote,
   InlineCode,
+  Admonition,
 } from "./markdown-components";
 import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
@@ -97,6 +98,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     h4: Heading4,
     h5: Heading5,
     p: PText,
+    admonition: Admonition,
     span: Span,
     ul: Ul,
     li: Li,

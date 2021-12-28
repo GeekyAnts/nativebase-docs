@@ -87,6 +87,30 @@ export const getFileExtension = async (slug: string) => {
   return "file_not_found";
 };
 
+const getAdmonitionTag = (str: string) => {
+  let status = str.substring(0, str.indexOf(" "));
+  let title = str.split("\n")[0].substring(str.indexOf(" ") + 1);
+  let children = str.split(":::")[0].substring(str.indexOf("\n") + 1);
+  return `<admonition status="${status}" title="${title}">\n${children}</admonition>${str
+    .split(":::")
+    .slice(1)
+    .join("")}`;
+};
+
+export const parseAdmonitions = (fileData: any, version: string) => {
+  let tempArray = fileData.split(/(\:::)(?!\n| )/g);
+  let result = [];
+  for (let i = 0; i < tempArray.length; i++) {
+    if (tempArray[i] === ":::") {
+      result.push(getAdmonitionTag(tempArray[i + 1]));
+      i = i + 1;
+    } else {
+      result.push(tempArray[i]);
+    }
+  }
+  return result.join("");
+};
+
 export const parseCodeBlock = (fileData: any, version: string) => {
   const tempArray = fileData.split("```ComponentSnackPlayer ");
   // console.log(tempArray);
@@ -390,6 +414,7 @@ export const getDocBySlug = async (filename: string, version: string) => {
 
   fileData = parseCodeBlock(fileData, version);
   fileData = parsePropTable(fileData, version);
+  fileData = parseAdmonitions(fileData, version);
   // console.log(fileData);
 
   return fileData;
