@@ -12,13 +12,13 @@ Here an example to show the code comparison.
 
 ## Code Comparison
 
-<Tabs
+<DocTabs
 defaultValue="v2"
 values={[
 {label: 'v2', value: 'v2'},
 {label: 'v3', value: 'v3'},
 ]}>
-<TabItem value="v2">
+<DocTabItem value="v2">
 
 ```tsx
 import React, { Component } from 'react';
@@ -42,8 +42,8 @@ export default class FormExample extends Component {
 // need to re-write
 ```
 
-</TabItem>
-<TabItem value="v3">
+</DocTabItem>
+<DocTabItem value="v3">
 
 ```tsx
 import React from 'react';
@@ -68,5 +68,5 @@ export const FormExample = () => {
 // v3 version
 ```
 
-</TabItem>
-</Tabs>
+</DocTabItem>
+</DocTabs>
