@@ -63,7 +63,7 @@ import {
 } from "native-base";
 // ----------------------------------------------- Gradients --------------------------------------------------
 
-const gradients = [
+const darkModeGradients = [
   ["#D946EF", "#024FC7"],
   ["#F87171", "#3730A3"],
   ["#38BDF8", "#1D4ED8", "#4C1D95"],
@@ -74,20 +74,47 @@ const gradients = [
   ["#9333EA", "#EA580C"],
 ];
 
-function generateRandomGradient() {
-  const index = Math.floor(Math.random() * gradients.length);
-  return gradients[index];
+const lightModeGradients = [
+  ["#FBCFE8", "#818CF8"],
+  ["#FDA4AF", "#3730A3"],
+  ["#BAE6FD", "#60A5FA"],
+  ["#FDBA74", "#E879F9"],
+  ["#5EEAD4", "#5B21B6"],
+  ["#FEF3C7", "#67E8F9"],
+];
+
+function generateRandomDarkModeGradient() {
+  const index = Math.floor(Math.random() * darkModeGradients.length);
+  return darkModeGradients[index];
 }
-function pickGradient(gradient?: string): string {
+function pickDarkModeGradient(gradient?: string): string[] {
   if (gradient) {
-    console.log("here");
+    // TODO: fix
     if (gradient.length > 1) {
+      //@ts-ignore
       return gradient;
     } else {
-      return gradients[parseInt(gradient)].join(",");
+      return darkModeGradients[parseInt(gradient)];
     }
   } else {
-    return generateRandomGradient().join(",");
+    return generateRandomDarkModeGradient();
+  }
+}
+function generateRandomLightModeGradient() {
+  const index = Math.floor(Math.random() * lightModeGradients.length);
+  return lightModeGradients[index];
+}
+function pickLightModeGradient(gradient?: string): string[] {
+  if (gradient) {
+    // TODO: fix
+    if (gradient.length > 1) {
+      //@ts-ignore
+      return gradient;
+    } else {
+      return lightModeGradients[parseInt(gradient)];
+    }
+  } else {
+    return generateRandomLightModeGradient();
   }
 }
 
@@ -272,17 +299,26 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
 
   const expoCode = addExportsToCode(children, endingExpoTemplate);
   const codeSandboxCode = addExportsToCode(children, endingCodeSandboxTemplate);
-  const [gradientString, setGradientString] = React.useState("");
+  const [darkModeGradientArray, setDarkModeGradientArray] = React.useState([
+    "",
+  ]);
+  const [lightModeGradientArray, setLightModeGradientArray] = React.useState([
+    "",
+  ]);
   React.useEffect(() => {
-    setGradientString(pickGradient(gradient));
+    setDarkModeGradientArray(pickDarkModeGradient(gradient));
+    setLightModeGradientArray(pickLightModeGradient(gradient));
   }, []);
 
   const [showCode, setShowCode] = useState(false);
   const [showMagicWand, setShowMagicWand] = useState(false);
   const [gradientIndex, setGradientIndex] = useState("0");
   React.useEffect(() => {
-    setGradientString(pickGradient(gradientIndex));
+    setDarkModeGradientArray(pickDarkModeGradient(gradientIndex));
+    setLightModeGradientArray(pickLightModeGradient(gradientIndex));
   }, [gradientIndex]);
+  console.log(lightModeGradientArray, darkModeGradientArray);
+
   return (
     <LiveProvider
       scope={scope}
@@ -323,17 +359,40 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
         rounded="lg"
         // _dark={{ borderColor: "blueGray.800" }}
         // _light={{ borderColor: "blueGray.300" }}
-        // bg={{
-        //   linearGradient: {
-        //     colors: ["lightBlue.300", "violet.800"],
-        //     start: [0, 0],
-        //     end: [1, 0],
+        _light={{
+          bg: {
+            linearGradient: {
+              colors: lightModeGradientArray,
+              start: [0, 0],
+              end: [1, 0],
+            },
+          },
+        }}
+        _dark={{
+          bg: {
+            linearGradient: {
+              colors: darkModeGradientArray,
+              start: [0, 0],
+              end: [1, 0],
+            },
+          },
+        }}
+        // _light={{
+        //   style: {
+        //     // @ts-ignore
+        //     backgroundImage:
+        //       "linear-gradient(135deg," + lightModeGradientArray + ")",
         //   },
         // }}
-
+        // _dark={{
+        //   style: {
+        //     // @ts-ignore
+        //     backgroundImage:
+        //       "linear-gradient(135deg," + darkModeGradientArray + ")",
+        //   },
+        // }}
         style={{
           // @ts-ignore
-          backgroundImage: "linear-gradient(135deg," + gradientString + ")",
           transition: "background-image 1s",
         }}
       >
@@ -341,8 +400,15 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
           <IconButton
             p="2"
             variant="unstyled"
-            onPress={() => {
-              setGradientString(pickGradient());
+            _dark={{
+              onPress: () => {
+                setDarkModeGradientArray(pickDarkModeGradient());
+              },
+            }}
+            _light={{
+              onPress: () => {
+                setLightModeGradientArray(pickLightModeGradient());
+              },
             }}
             _hover={{ _icon: { opacity: "100" } }}
             _icon={{ opacity: "60", color: "white" }}
