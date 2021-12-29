@@ -133,10 +133,10 @@ export const parsePropTable = (fileData: any, version: string) => {
 const propTable = (typesArray: any, showStylingProps: boolean) => {
   // console.log(typesArray, "typess");
   return typesArray.map((component: any) => {
-    return `${templateGenerator(component)} ${implementSection(
+    return ` ${implementSection(
       component,
       showStylingProps
-    )}`;
+    )} ${templateGenerator(component)}`;
   });
 };
 
@@ -250,7 +250,7 @@ const templateGenerator = (componentDetails: any) => {
   const templateString = template(props);
   return propExists
     ? `
-  <table border="1" style={{color:"gray"}}>
+  <table border="1" style={{color:"gray"}} isPropTable="true">
     <tr>
       <th>
         Name
