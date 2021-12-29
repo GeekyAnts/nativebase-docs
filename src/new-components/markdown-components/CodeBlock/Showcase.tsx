@@ -317,7 +317,6 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
     setDarkModeGradientArray(pickDarkModeGradient(gradientIndex));
     setLightModeGradientArray(pickLightModeGradient(gradientIndex));
   }, [gradientIndex]);
-  console.log(lightModeGradientArray, darkModeGradientArray);
 
   return (
     <LiveProvider
