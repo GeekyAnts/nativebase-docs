@@ -37,7 +37,14 @@ values={[
 ]}>
 <DocTabItem value="v2">
 
-![/img/Button/Screenshot_2021-01-22_at_12.29.32_PM.png](/img/Button/Screenshot_2021-01-22_at_12.29.32_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_12.29.32_PM.png',
+  }}
+  width={200}
+  height={100}
+/>
 
 ```tsx
 <Button success>
@@ -48,7 +55,14 @@ values={[
 </DocTabItem>
 <DocTabItem value="v3">
 
-![/img/Button/Screenshot_2021-01-22_at_12.53.09_PM.png](/img/Button/Screenshot_2021-01-22_at_12.53.09_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_12.53.09_PM.png',
+  }}
+  width={200}
+  height={100}
+/>
 
 ```tsx
 <Button colorScheme="success">Success</Button>
@@ -69,7 +83,14 @@ values={[
 ]}>
 <DocTabItem value="v2">
 
-![/img/Button/Screenshot_2021-01-22_at_2.37.09_PM.png](/img/Button/Screenshot_2021-01-22_at_2.37.09_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_2.37.09_PM.png',
+  }}
+  width={300}
+  height={100}
+/>
 
 ```tsx
 <Button small primary>
@@ -80,7 +101,14 @@ values={[
 </DocTabItem>
 <DocTabItem value="v3">
 
-![/img/Button/Screenshot_2021-01-22_at_2.38.52_PM.png](/img/Button/Screenshot_2021-01-22_at_2.38.52_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_2.38.52_PM.png',
+  }}
+  width={300}
+  height={100}
+/>
 
 ```tsx
 <Button size="sm" colorScheme="default">
@@ -103,7 +131,15 @@ values={[
 ]}>
 <DocTabItem value="v2">
 
-![/img/Button/Screenshot_2021-01-22_at_1.16.25_PM.png](/img/Button/Screenshot_2021-01-22_at_1.16.25_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_1.16.25_PM.png',
+  }}
+  width={200}
+  height={100}
+/>
+
 
 ```tsx
 <Button bordered success>
@@ -111,7 +147,14 @@ values={[
 </Button>
 ```
 
-![/img/Button/Screenshot_2021-01-22_at_1.23.42_PM.png](/img/Button/Screenshot_2021-01-22_at_1.23.42_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_1.23.42_PM.png',
+  }}
+  width={200}
+  height={100}
+/>
 
 ```tsx
 <Button transparent success>
@@ -119,7 +162,14 @@ values={[
 </Button>
 ```
 
-![/img/Button/Screenshot_2021-01-22_at_1.17.11_PM.png](/img/Button/Screenshot_2021-01-22_at_1.17.11_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_1.17.11_PM.png',
+  }}
+  width={200}
+  height={100}
+/>
 
 ```tsx
 <Button rounded success>
@@ -130,7 +180,15 @@ values={[
 </DocTabItem>
 <DocTabItem value="v3">
 
-![/img/Button/Screenshot_2021-01-22_at_1.15.34_PM.png](/img/Button/Screenshot_2021-01-22_at_1.15.34_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_1.15.34_PM.png',
+  }}
+  width={260}
+  height={100}
+/>
+
 
 ```tsx
 <Button variant="outline" colorScheme="success">
@@ -138,7 +196,14 @@ values={[
 </Button>
 ```
 
-![/img/Button/Screenshot_2021-01-22_at_1.22.36_PM.png](/img/Button/Screenshot_2021-01-22_at_1.22.36_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_1.22.36_PM.png',
+  }}
+  width={200}
+  height={100}
+/>
 
 ```tsx
 <Button variant="ghost" colorScheme="success">
@@ -146,7 +211,14 @@ values={[
 </Button>
 ```
 
-![/img/Button/Screenshot_2021-01-22_at_1.20.36_PM.png](/img/Button/Screenshot_2021-01-22_at_1.20.36_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_1.20.36_PM.png',
+  }}
+  width={260}
+  height={100}
+/>
 
 ```tsx
 <Button borderRadius="pill" colorScheme="success">
@@ -169,7 +241,14 @@ values={[
 ]}>
 <DocTabItem value="v2">
 
-![/img/Button/Screenshot_2021-01-22_at_1.32.47_PM.png](/img/Button/Screenshot_2021-01-22_at_1.32.47_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_1.32.47_PM.png',
+  }}
+  width={240}
+  height={100}
+/>
 
 ```tsx
 <Button iconLeft dark>
@@ -181,7 +260,14 @@ values={[
 </DocTabItem>
 <DocTabItem value="v3">
 
-![/img/Button/Screenshot_2021-01-22_at_1.38.15_PM.png](/img/Button/Screenshot_2021-01-22_at_1.38.15_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Button/Screenshot_2021-01-22_at_1.38.15_PM.png',
+  }}
+  width={270}
+  height={100}
+/>
 
 ```tsx
 <Button
