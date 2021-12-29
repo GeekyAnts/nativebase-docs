@@ -50,8 +50,10 @@ Tooltip is a wrapper around [Box](box.md). So, it also accepts all the [Box](box
 
 <br />
 
-:::tip Development Tip
+:::tip
+
 You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColor` and `borderWidth` to Tooltip.
+
 :::
 
 ## Props

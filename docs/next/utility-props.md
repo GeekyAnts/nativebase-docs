@@ -112,9 +112,9 @@ export function Example() {
 
 <br></br>
 
-:::tip Note
+:::note
 
-Above props can be written in the format: {color}:alpha.{opacityToken}, this gets converted into RGBA color format and the opacityToken is mapped to [`Opacity`](default-theme#opacity)
+Above props can be written in the format: [`color`]:alpha.[`opacityToken`], this gets converted into RGBA color format and the opacityToken is mapped to [`Opacity`](default-theme#opacity)
 
 :::
 
