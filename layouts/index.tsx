@@ -64,7 +64,7 @@ function Layout({
     }
     document.getElementsByTagName("body")[0].scrollTop = 0;
   }, []);
-  
+
   useEffect(() => {
     document.getElementsByTagName("body")[0].style.backgroundColor = bgColor;
   }, [bgColor]);
@@ -101,7 +101,7 @@ function Layout({
             <Navbar />
           </Box>
           <HStack>
-            <Box position="sticky" top="16" h="100vh">
+            <Box position="sticky" top="16" h="calc(100vh - 64px)">
               <Sidebar sidebar={sidebar} />
             </Box>
             <MainContent
