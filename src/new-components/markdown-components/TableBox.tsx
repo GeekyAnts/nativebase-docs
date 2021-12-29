@@ -28,7 +28,7 @@ export const TableBox = ({ isPropTable, children }: any) => {
                 variant="subtle"
                 alignSelf="flex-start"
                 mt="6"
-                _text={{ fontSize: "sm" }}
+                _text={{ fontSize: "md" }}
                 py="0"
               >
                 {data.Name}
@@ -41,19 +41,27 @@ export const TableBox = ({ isPropTable, children }: any) => {
                 rounded="1"
               />
               <VStack space="3" mb="4" mt="2">
-                {data.Description !== "-" && <Text>{data.Description}</Text>}
+                {data.Description !== "-" && (
+                  <Text fontSize="md" color="coolGray.300">
+                    {data.Description}
+                  </Text>
+                )}
                 <Li>
-                  <Text color="warmGray.300" fontWeight="light">
+                  <Text fontWeight="light" fontSize="md" color="coolGray.300">
                     Type:{" "}
                   </Text>
-                  <Text>{data.Type}</Text>
+                  <Text fontSize="md" color="coolGray.50">
+                    {data.Type}
+                  </Text>
                 </Li>
                 {data.Default !== "-" && (
                   <Li>
-                    <Text color="warmGray.300" fontWeight="light">
+                    <Text color="coolGray.300" fontWeight="light" fontSize="md">
                       Default:{" "}
                     </Text>
-                    <Text>{data.Default}</Text>
+                    <Text fontSize="md" color="coolGray.50">
+                      {data.Default}
+                    </Text>
                   </Li>
                 )}
               </VStack>
