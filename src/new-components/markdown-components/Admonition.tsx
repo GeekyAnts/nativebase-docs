@@ -16,10 +16,10 @@ const TipAdmonition = ({ children, title }: any) => {
       borderLeftColor="emerald.700"
       bg="black:alpha.10"
     >
-      <Text fontSize="lg" mb="3" color="coolGray.50" fontWeight="medium">
-        Tip: {title}
+      <Text fontSize="lg" mb={title?"3":"0"} color="coolGray.50" fontWeight="medium">
+        Tip: {title ? title : <Text fontSize="md" fontWeight="light" color="coolGray.300">{children}</Text>}
       </Text>
-      <Text fontSize="md">{children}</Text>
+      {title && <Text fontSize="md">{children}</Text>}
     </Box>
   );
 };
@@ -36,10 +36,10 @@ const NoteAdmonition = ({ children, title }: any) => {
       borderLeftColor="indigo.700"
       bg="black:alpha.10"
     >
-      <Text fontSize="lg" mb="3" color="coolGray.50" fontWeight="medium">
-        Note: {title}
+      <Text fontSize="lg" mb={title?"3":"0"} color="coolGray.50" fontWeight="medium">
+        Note: {title ? title : <Text fontSize="md" fontWeight="light" color="coolGray.300">{children}</Text>}
       </Text>
-      <Text fontSize="md">{children}</Text>
+      {title && <Text fontSize="md">{children}</Text>}
     </Box>
   );
 };
@@ -56,10 +56,10 @@ const InfoAdmonition = ({ children, title }: any) => {
       borderLeftColor="info.700"
       bg="black:alpha.10"
     >
-      <Text fontSize="lg" mb="3" color="coolGray.50" fontWeight="medium">
-        Info: {title}
+      <Text fontSize="lg" mb={title?"3":"0"} color="coolGray.50" fontWeight="medium">
+        Info: {title ? title : <Text fontSize="md" fontWeight="light" color="coolGray.300">{children}</Text>}
       </Text>
-      <Text fontSize="md">{children}</Text>
+      {title && <Text fontSize="md">{children}</Text>}
     </Box>
   );
 };

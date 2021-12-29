@@ -88,7 +88,7 @@ export const getFileExtension = async (slug: string) => {
 };
 
 const getAdmonitionTag = (str: string) => {
-  let status = str.substring(0, str.indexOf(" "));
+  let status = str.split("\n")[0].substring(0, str.indexOf(" "));
   let title = str.split("\n")[0].substring(str.indexOf(" ") + 1);
   let children = str.split(":::")[0].substring(str.indexOf("\n") + 1);
   return `<admonition status="${status}" title="${title}">\n${children}</admonition>${str

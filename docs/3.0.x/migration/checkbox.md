@@ -22,7 +22,14 @@ values={[
 ]}>
 <DocTabItem value="v2">
 
-![/img/Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png](/img/Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png',
+  }}
+  width={500}
+  height={100}
+/>
 
 ```tsx
 <CheckBox checked={true} color="green"/>
@@ -34,7 +41,14 @@ values={[
 </DocTabItem>
 <DocTabItem value="v3">
 
-![/img/Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png](/img/Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png)
+<Image
+  source={{
+    uri:
+      '/img/Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png',
+  }}
+  width={500}
+  height={100}
+/>
 
 ```tsx
 <Checkbox isChecked colorScheme="green" />

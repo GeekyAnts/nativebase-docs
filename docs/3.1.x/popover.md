@@ -41,8 +41,10 @@ import { Popover } from 'native-base';
 
 ```
 
-:::tip Tip
+:::tip
+
 You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColor` and `borderWidth` to Popover.Content.
+
 :::
 
 ## Props
