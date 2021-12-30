@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { NativeBaseProvider } from "native-base";
+import { NativeBaseProvider } from "../nb";
 import { AppContext } from "../src/AppContext";
 import { useState } from "react";
 import React from "react";
