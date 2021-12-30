@@ -42,7 +42,7 @@ import { G, Circle as CircleSvg, Path } from "react-native-svg";
 
 // ----------------------------------------------- Themes --------------------------------------------------
 
-import nightOwl from "prism-react-renderer/themes/nightOwl";
+// import nightOwl from "prism-react-renderer/themes/nightOwl";
 import paleNight from "prism-react-renderer/themes/palenight";
 
 // ----------------------------------------------- Components --------------------------------------------------
@@ -179,12 +179,12 @@ export const CodeBlock = ({ children, props }: any) => {
       {...defaultProps}
       code={children}
       language="tsx"
-      theme={nightOwl}
+      theme={paleNight}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
           className={className}
-          style={{ ...style, borderRadius: "8px", padding: "16px",margin:"0px" }}
+          style={{ ...style, borderRadius: "8px", padding: "16px",margin:"0px",fontStyle:"italic" }}
         >
           {tokens.map((line, i) => (
             <div {...getLineProps({ line, key: i })} key={i}>
