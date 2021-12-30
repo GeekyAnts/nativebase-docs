@@ -6,7 +6,7 @@ import {
   ScrollView,
   useColorModeValue,
   useToken,
-} from "native-base";
+} from "../nb";
 import path from "path";
 import Sidebar from "../src/new-components/Sidebar";
 import Navbar from "../src/new-components/Navbar";
