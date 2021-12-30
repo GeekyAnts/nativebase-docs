@@ -49,6 +49,7 @@ export default function MainContent(props: any) {
     <>
       <ScrollContext.Provider value={{ timestamp, setTimestamp }}>
         <Box
+          h="calc(100% - 64px)"
           flex="1"
           borderLeftWidth="1"
           _light={{
@@ -131,7 +132,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
         </Heading>
 
         <MDXRemote {...content} components={components} />
-
+        <Box w="100%" />
         <HStack justifyContent="space-between" my="12">
           {pages.previousPage && (
             <Pressable

@@ -20,9 +20,9 @@ export const TableBox = ({ isPropTable, children }: any) => {
 
     return (
       <Box mb="8">
-        {tableJson.map((data: any) => {
+        {tableJson.map((data: any, index: any) => {
           return (
-            <>
+            <Box key={index}>
               <Badge
                 colorScheme="cyan"
                 bg="primary.900"
@@ -67,7 +67,7 @@ export const TableBox = ({ isPropTable, children }: any) => {
                   </Li>
                 )}
               </VStack>
-            </>
+            </Box>
           );
         })}
       </Box>
