@@ -1,59 +1,59 @@
-import get from 'lodash.get';
-import merge from 'lodash.merge';
-import { Platform } from 'react-native';
-import { useNativeBase } from '../useNativeBase';
-import { useColorMode } from '../../core/color-mode';
-import { omitUndefined, extractInObject } from '../../theme/tools';
-import { useContrastText } from '../useContrastText';
-import { useBreakpointResolvedProps } from '../useBreakpointResolvedProps';
-import { propsFlattener, compareSpecificity } from './propsFlattener';
-import { useResponsiveSSRProps } from '../useResponsiveSSRProps';
+import get from "lodash.get";
+import merge from "lodash.merge";
+import { Platform } from "react-native";
+import { useNativeBase } from "../useNativeBase";
+import { useColorMode } from "../../core/color-mode";
+import { omitUndefined, extractInObject } from "../../theme/tools";
+import { useContrastText } from "../useContrastText";
+import { useBreakpointResolvedProps } from "../useBreakpointResolvedProps";
+import { propsFlattener, compareSpecificity } from "./propsFlattener";
+import { useResponsiveSSRProps } from "../useResponsiveSSRProps";
 
 const SPREAD_PROP_SPECIFICITY_ORDER = [
-  'p',
-  'padding',
-  'px',
-  'py',
-  'pt',
-  'pb',
-  'pl',
-  'pr',
-  'paddingTop',
-  'paddingBottom',
-  'paddingLeft',
-  'paddingRight',
-  'm',
-  'margin',
-  'mx',
-  'my',
-  'mt',
-  'mb',
-  'ml',
-  'mr',
-  'marginTop',
-  'marginBottom',
-  'marginLeft',
-  'marginRight',
+  "p",
+  "padding",
+  "px",
+  "py",
+  "pt",
+  "pb",
+  "pl",
+  "pr",
+  "paddingTop",
+  "paddingBottom",
+  "paddingLeft",
+  "paddingRight",
+  "m",
+  "margin",
+  "mx",
+  "my",
+  "mt",
+  "mb",
+  "ml",
+  "mr",
+  "marginTop",
+  "marginBottom",
+  "marginLeft",
+  "marginRight",
 ];
 
 const FINAL_SPREAD_PROPS = [
-  'paddingTop',
-  'paddingBottom',
-  'paddingLeft',
-  'paddingRight',
-  'marginTop',
-  'marginBottom',
-  'marginLeft',
-  'marginRight',
+  "paddingTop",
+  "paddingBottom",
+  "paddingLeft",
+  "paddingRight",
+  "marginTop",
+  "marginBottom",
+  "marginLeft",
+  "marginRight",
 ];
 
 const MARGIN_MAP: any = {
-  mx: ['marginRight', 'marginLeft'],
-  my: ['marginTop', 'marginBottom'],
-  mt: ['marginTop'],
-  mb: ['marginBottom'],
-  mr: ['marginRight'],
-  ml: ['marginLeft'],
+  mx: ["marginRight", "marginLeft"],
+  my: ["marginTop", "marginBottom"],
+  mt: ["marginTop"],
+  mb: ["marginBottom"],
+  mr: ["marginRight"],
+  ml: ["marginLeft"],
 };
 
 MARGIN_MAP.margin = [...MARGIN_MAP.mx, ...MARGIN_MAP.my];
@@ -64,12 +64,12 @@ MARGIN_MAP.marginLeft = MARGIN_MAP.ml;
 MARGIN_MAP.marginRight = MARGIN_MAP.mr;
 
 const PADDING_MAP: any = {
-  px: ['paddingRight', 'paddingLeft'],
-  py: ['paddingTop', 'paddingBottom'],
-  pt: ['paddingTop'],
-  pb: ['paddingBottom'],
-  pr: ['paddingRight'],
-  pl: ['paddingLeft'],
+  px: ["paddingRight", "paddingLeft"],
+  py: ["paddingTop", "paddingBottom"],
+  pt: ["paddingTop"],
+  pb: ["paddingBottom"],
+  pr: ["paddingRight"],
+  pl: ["paddingLeft"],
 };
 
 PADDING_MAP.padding = [...PADDING_MAP.px, ...PADDING_MAP.py];
@@ -144,14 +144,14 @@ export const usePropsResolutionWithComponentTheme = (
 
   const [ignoredProps, cleanIncomingProps] = extractInObject(
     modifiedPropsForSSR,
-    ['children', 'onPress', 'icon', 'onOpen', 'onClose'].concat(
+    ["children", "onPress", "icon", "onOpen", "onClose"].concat(
       config?.ignoreProps || []
     )
   );
   const resolveResponsively = [
-    'colorScheme',
-    'size',
-    'variant',
+    "colorScheme",
+    "size",
+    "variant",
     ...(config?.resolveResponsively || []),
   ];
 
@@ -159,10 +159,10 @@ export const usePropsResolutionWithComponentTheme = (
   const colorModeProps = useColorMode();
 
   // STEP 1: combine default props and incoming props
-
+  console.log(componentTheme);
   const incomingWithDefaultProps = merge(
     {},
-    componentTheme.defaultProps || {},
+    componentTheme?.defaultProps || {},
     cleanIncomingProps
   );
   // STEP 2: flatten them
@@ -199,11 +199,11 @@ export const usePropsResolutionWithComponentTheme = (
   let componentBaseStyle = {},
     flattenBaseStyle,
     baseSpecificityMap;
-  if (componentTheme.baseStyle) {
+  if (componentTheme?.baseStyle) {
     componentBaseStyle =
-      typeof componentTheme.baseStyle !== 'function'
-        ? componentTheme.baseStyle
-        : componentTheme.baseStyle({
+      typeof componentTheme?.baseStyle !== "function"
+        ? componentTheme?.baseStyle
+        : componentTheme?.baseStyle({
             theme,
             ...flattenProps,
             ...colorModeProps,
@@ -230,11 +230,11 @@ export const usePropsResolutionWithComponentTheme = (
     flattenVariantStyle,
     variantSpecificityMap;
   // Extracting props from variant
-  if (variant && componentTheme.variants && componentTheme.variants[variant]) {
+  if (variant && componentTheme?.variants && componentTheme?.variants[variant]) {
     componentVariantProps =
-      typeof componentTheme.variants[variant] !== 'function'
-        ? componentTheme.variants[variant]
-        : componentTheme.variants[variant]({
+      typeof componentTheme?.variants[variant] !== "function"
+        ? componentTheme?.variants[variant]
+        : componentTheme?.variants[variant]({
             theme,
             ...flattenProps,
             ...colorModeProps,
@@ -266,20 +266,20 @@ export const usePropsResolutionWithComponentTheme = (
     flattenSizeStyle,
     sizeSpecificityMap;
   // Extracting props from size
-  if (size && componentTheme.sizes && componentTheme.sizes[size]) {
+  if (size && componentTheme?.sizes && componentTheme?.sizes[size]) {
     // Type - sizes: {lg: 1}. Refer icon theme
     if (
-      typeof componentTheme.sizes[size] === 'string' ||
-      typeof componentTheme.sizes[size] === 'number'
+      typeof componentTheme?.sizes[size] === "string" ||
+      typeof componentTheme?.sizes[size] === "number"
     ) {
-      flattenProps.size = componentTheme.sizes[size];
+      flattenProps.size = componentTheme?.sizes[size];
       //@ts-ignore
       // componentSizeProps.size = componentTheme.sizes[size];
     }
     // Type - sizes: (props) => ({lg: {px: 1}}). Refer heading theme
-    else if (typeof componentTheme.sizes[size] === 'function') {
+    else if (typeof componentTheme?.sizes[size] === "function") {
       flattenProps.size = undefined;
-      componentSizeProps = componentTheme.sizes[size]({
+      componentSizeProps = componentTheme?.sizes[size]({
         theme,
         ...flattenProps,
         ...colorModeProps,
@@ -288,7 +288,7 @@ export const usePropsResolutionWithComponentTheme = (
     // Type - sizes: {lg: {px: 1}}. Refer button theme
     else {
       flattenProps.size = undefined;
-      componentSizeProps = componentTheme.sizes[size];
+      componentSizeProps = componentTheme?.sizes[size];
     }
 
     [flattenSizeStyle, sizeSpecificityMap] = propsFlattener(
@@ -338,20 +338,20 @@ export const usePropsResolutionWithComponentTheme = (
     flattenProps.bgColor?.linearGradient ||
     flattenProps.backgroundColor?.linearGradient
   ) {
-    let bgProp = 'bg';
+    let bgProp = "bg";
     if (flattenProps.background?.linearGradient) {
-      bgProp = 'background';
+      bgProp = "background";
     } else if (flattenProps.bgColor?.linearGradient) {
-      bgProp = 'bgColor';
+      bgProp = "bgColor";
     } else if (flattenProps.backgroundColor?.linearGradient) {
-      bgProp = 'backgroundColor';
+      bgProp = "backgroundColor";
     }
     flattenProps[bgProp].linearGradient.colors = flattenProps[
       bgProp
     ].linearGradient.colors.map((color: string) => {
       return get(theme.colors, color, color);
     });
-    ignore = ['bg', 'background', 'backgroundColor', 'bgColor'];
+    ignore = ["bg", "background", "backgroundColor", "bgColor"];
   }
   // // NOTE: seprating bg props when linearGardiant is available
   const [gradientProps] = extractInObject(flattenProps, ignore);

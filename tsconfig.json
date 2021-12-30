@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": ".",
+    "paths": { "native-base": ["./nb/index"] },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -15,6 +17,13 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "docs.config.js", "build-init.js", "lib/docs/propsMap.js"],
-  "exclude": ["node_modules","versioned_repo"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "docs.config.js",
+    "build-init.js",
+    "lib/docs/propsMap.js"
+  ],
+  "exclude": ["node_modules", "versioned_repo"]
 }
