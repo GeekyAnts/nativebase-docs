@@ -26,8 +26,8 @@ import { AppContext } from "../AppContext";
 import { useRouter } from "next/router";
 import versions from "../../versions.json";
 import { FontAwesome } from "@expo/vector-icons";
-import Discord from "./Discord";
-import GitHub from "./Github";
+import Discord from "../icons/DiscordIcon";
+import GitHub from "../icons/GithubIcon";
 import GeekyantsLogo from "./GeekyantsLogo";
 
 export default function Navbar(props: any) {

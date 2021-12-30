@@ -27,6 +27,9 @@ import {
   MaterialCommunityIcons,
   MaterialIcons,
 } from "@expo/vector-icons";
+import GitHub from "../src/icons/GithubIcon";
+import FigmaIcon from "../src/icons/FigmaIcon";
+import Discord from "../src/icons/DiscordIcon";
 
 function Layout({
   children: content,
@@ -168,7 +171,7 @@ function Layout({
           position="fixed"
           bottom="8"
           right="6"
-          display={{ base: "flex", lg: "none" }}
+          // display={{ base: "flex", lg: "none" }}
         >
           <Stagger
             visible={isOpen}
@@ -205,86 +208,56 @@ function Layout({
           >
             <IconButton
               mb="4"
-              variant="solid"
-              bg="indigo.500"
-              colorScheme="indigo"
+              boxSize="10"
+              justifyContent="center"
+              alignItems="center"
+              variant="unstyled"
+              bg="coolGray.800"
               borderRadius="full"
-              icon={
-                <Icon
-                  as={MaterialIcons}
-                  size="6"
-                  name="location-pin"
-                  _dark={{
-                    color: "warmGray.50",
-                  }}
-                  color="warmGray.50"
-                />
-              }
+              icon={<GitHub fill="white" size="8" />}
             />
             <IconButton
               mb="4"
-              variant="solid"
-              bg="yellow.400"
-              colorScheme="yellow"
+              boxSize="10"
+              justifyContent="center"
+              alignItems="center"
+              variant="unstyled"
+              bg="coolGray.800"
               borderRadius="full"
-              icon={
-                <Icon
-                  as={MaterialCommunityIcons}
-                  _dark={{
-                    color: "warmGray.50",
-                  }}
-                  size="6"
-                  name="microphone"
-                  color="warmGray.50"
-                />
-              }
+              icon={<Discord fill="#5865F2" size="6" />}
             />
             <IconButton
               mb="4"
-              variant="solid"
-              bg="teal.400"
-              colorScheme="teal"
+              boxSize="10"
+              justifyContent="center"
+              alignItems="center"
+              variant="unstyled"
+              bg="coolGray.800"
               borderRadius="full"
-              icon={
-                <Icon
-                  as={MaterialCommunityIcons}
-                  _dark={{
-                    color: "warmGray.50",
-                  }}
-                  size="6"
-                  name="video"
-                  color="warmGray.50"
-                />
-              }
+              _icon={{ color: "#1DA1F2" }}
+              icon={<Icon as={AntDesign} size="6" name="twitter" />}
             />
+
             <IconButton
               mb="4"
-              variant="solid"
-              bg="red.500"
-              colorScheme="red"
+              boxSize="10"
+              justifyContent="center"
+              alignItems="center"
+              variant="unstyled"
+              bg="coolGray.800"
               borderRadius="full"
-              icon={
-                <Icon
-                  as={MaterialIcons}
-                  size="6"
-                  name="photo-library"
-                  _dark={{
-                    color: "warmGray.50",
-                  }}
-                  color="warmGray.50"
-                />
-              }
+              icon={<FigmaIcon size="6" />}
             />
           </Stagger>
           <IconButton
+            boxSize="12"
+            variant="unstyled"
+            justifyContent="center"
+            alignItems="center"
             rounded="full"
-            bg="white"
-            display={{ base: "flex", lg: "none" }}
+            bg="coolGray.50"
             onPress={onToggle}
-            size="sm"
-            icon={
-              <Icon color="black" as={<AntDesign name="plus" />} boxSize="5" />
-            }
+            icon={<Icon color="black" as={MaterialIcons} name="more-vert" />}
           />
         </Box>
       </Box>
