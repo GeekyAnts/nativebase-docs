@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Box, HStack, Menu, Pressable, ScrollView, Text } from "native-base";
-import React from 'react'
+import React from "react";
 
 export default function NativebaseLogo(props: any) {
   const { sidebar } = props;
@@ -9,7 +9,7 @@ export default function NativebaseLogo(props: any) {
   return (
     <HStack alignItems="center">
       <Image
-        alt="Mountains"
+        alt="Nativebase logo"
         src="https://docs.nativebase.io/img/nativebaselogo.svg"
         layout="fixed"
         width="38"

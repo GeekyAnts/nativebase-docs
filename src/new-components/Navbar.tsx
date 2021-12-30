@@ -132,6 +132,7 @@ export default function Navbar(props: any) {
           })}
         </Menu>
         <NBLink
+          display={{ base: "none", xl: "flex" }}
           href="https://startup.nativebase.io/?utm_source=DocsHeader&utm_medium=ad-banner&utm_campaign=NativeBase_3_Docs"
           isExternal
           _text={{

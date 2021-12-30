@@ -8,13 +8,14 @@ import { CollapsibleSidebarItem } from "./CollapsibleSidebarItem";
 import Link from "next/link";
 
 export default function Sidebar(props: any) {
-  const { sidebar } = props;
+  const { sidebar, isMobile } = props;
   return (
     // @ts-ignore
     <ScrollView overflowY="overlay">
       <Box
         py="5"
-        w="64"
+        bg="blue.200"
+        w={isMobile ? "100%" : "64"}
         flex="1"
         _light={{
           borderColor: "borderColorLight",
@@ -36,7 +37,7 @@ const SidebarItem = (props: any) => {
   return sidebarItems.map((item: any, index: any) => {
     if (item?.notVisibleInSidebar === true) return null;
     return (
-      <Box key={index}>
+      <Box key={index} w="100%">
         {item.pages === undefined ? (
           <Pressable
             onPress={() => {
