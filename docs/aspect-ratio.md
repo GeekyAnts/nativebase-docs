@@ -1,5 +1,5 @@
 ---
-id: aspectRatio
+id: aspect-ratio
 title: AspectRatio
 ---
 
