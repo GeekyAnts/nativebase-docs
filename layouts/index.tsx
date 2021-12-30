@@ -96,7 +96,9 @@ function Layout({
             top="0"
             zIndex={99}
             _light={{ bg: "backgroundLight" }}
-            _dark={{ bg: "backgroundDark" }}
+            _dark={{ bg: "backgroundDark:alpha.50" }}
+            // @ts-ignore
+            style={{backdropFilter:"blur(10px)"}}
           >
             <Navbar />
           </Box>

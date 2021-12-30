@@ -119,11 +119,12 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     inlineCode: InlineCode,
     ...docComponents,
     ...NBComponents,
+    ListItem: Li,
   };
   return (
     <Box px={{ base: "6", xl: "16" }} py="10">
       <Box alignSelf="center" maxW={props.showToc ? "800" : "1056"}>
-        <Heading _dark={{ color: "coolGray.50" }}>
+        <Heading mb="8" size="xl" _dark={{ color: "coolGray.50" }}>
           {frontMatter && frontMatter.title
             ? frontMatter.title
             : pages.currentPage.title}

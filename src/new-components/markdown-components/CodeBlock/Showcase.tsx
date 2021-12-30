@@ -461,7 +461,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
           // px="4"
           overflow="hidden"
           // pb="4"
-          mb="4"
+          // mb="4"
           borderWidth="1"
           rounded="lg"
           _dark={{ borderColor: "blueGray.800" }}

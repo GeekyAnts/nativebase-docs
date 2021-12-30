@@ -184,7 +184,7 @@ export const CodeBlock = ({ children, props }: any) => {
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
           className={className}
-          style={{ ...style, borderRadius: "8px", padding: "16px" }}
+          style={{ ...style, borderRadius: "8px", padding: "16px",margin:"0px" }}
         >
           {tokens.map((line, i) => (
             <div {...getLineProps({ line, key: i })} key={i}>

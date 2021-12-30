@@ -6,7 +6,7 @@ import { Fontisto } from "@expo/vector-icons";
 export const Heading2 = ({ children }: any) => {
   const idText = getHeadingIds(children);
   return (
-    <Pressable>
+    <Pressable mt="7" mb="4" _web={{ cursor: "default" }}>
       {({ isHovered }) => {
         return (
           <HStack alignItems="center" space="2">

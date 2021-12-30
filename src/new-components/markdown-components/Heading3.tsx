@@ -6,12 +6,13 @@ import { Fontisto } from "@expo/vector-icons";
 export const Heading3 = ({ children }: any) => {
   const idText = getHeadingIds(children);
   return (
-    <Pressable>
+    <Pressable my="2" _web={{ cursor: "default" }}>
       {({ isHovered }) => {
         return (
           <HStack alignItems="center" space="2">
             <Heading
               fontSize="xl"
+              fontWeight="normal"
               _light={{ color: "gray.700" }}
               _dark={{ color: "gray.300" }}
               // @ts-ignore

@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Heading, Link, Text, VStack } from "native-base";
 import config from "../../docs.config";
+import { Admonition, Anchor } from "../new-components/markdown-components";
 const url = config.REPO_LINK + "/tree/" + config.REPO_BRANCH;
 
 export function ComponentTheme({ name, fileName }: any) {
@@ -14,56 +15,35 @@ export function ComponentTheme({ name, fileName }: any) {
       // }}
     >
       <Box rounded="1">
-        <Text>
-          NativeBase ships with a default theme for each component.{" "}
-          <Link
-            _text={{ textDecorationLine: "none" }}
-            href={url + "/" + "src/theme/components/" + fileName + ".ts"}
-            isExternal
-          >
-            <Text
-              borderBottomWidth="2px"
-              // @ts-ignore
-              _hover={{
-                bg: "secondary.200",
-                color: "black",
-                borderColor: "gray.900",
-              }}
-              borderStyle="dashed"
-              rounded="1"
-              p={1}
-              borderColor="secondary.300"
-            >
-              Checkout the default theme of {name}
-            </Text>
-          </Link>
+        <Text color="coolGray.300" fontWeight="normal" fontSize="md">
+          NativeBase ships with a default theme for each component. Checkout the
+          default theme of {name}
+          <Anchor href={url + "/" + "src/theme/components/" + fileName + ".ts"} isExternal >
+            {" "}
+            here
+          </Anchor>
+          .
         </Text>
       </Box>
-      <Heading size="sm">
-        We can easily extend the {name} component theme using extendTheme
-        function as shown below.
-      </Heading>
-
-      <Link
-        _text={{ textDecorationLine: "none" }}
-        href={"customizing-components"}
-      >
-        <Text
-          borderBottomWidth="2px"
-          // @ts-ignore
-          _hover={{
-            bg: "secondary.200",
-            color: "black",
-            borderColor: "gray.900",
-          }}
-          borderStyle="dashed"
-          py={1}
-          borderColor="secondary.300"
-          fontWeight="bold"
-        >
-          Read more about extending component theme here.
+      <Admonition status="info">
+        <Text size="md">
+          We can easily extend the {name} component theme using extendTheme
+          function as described in the documentation{" "}
         </Text>
-      </Link>
+        <Anchor href={"customizing-components"}>
+          {/* <Text
+            // @ts-ignore
+            _hover={{
+              bg: "secondary.200",
+              color: "black",
+              borderColor: "gray.900",
+            }}
+          > */}
+          here
+          {/* </Text> */}
+        </Anchor>
+        .
+      </Admonition>
     </VStack>
   );
 }

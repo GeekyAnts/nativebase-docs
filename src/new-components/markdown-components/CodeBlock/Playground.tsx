@@ -274,7 +274,7 @@ export const Playground = ({ children, props }: any) => {
         // px="4"
         overflow="hidden"
         // pb="4"
-        mb="4"
+        // mb="4"
         borderWidth="1"
         rounded="lg"
         _dark={{ borderColor: "blueGray.800" }}
@@ -286,6 +286,8 @@ export const Playground = ({ children, props }: any) => {
           alignItems="center"
           pl="4"
           pr="5"
+          borderBottomWidth="1"
+          borderColor="coolGray.800"
         >
           <CodePlaygroundIcon />
           <Text>Playground</Text>

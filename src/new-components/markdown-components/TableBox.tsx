@@ -19,25 +19,27 @@ export const TableBox = ({ isPropTable, children }: any) => {
     }
 
     return (
-      <Box>
+      <Box mb="8">
         {tableJson.map((data: any) => {
           return (
             <>
               <Badge
                 colorScheme="cyan"
+                bg="primary.900"
                 variant="subtle"
                 alignSelf="flex-start"
                 mt="6"
-                _text={{ fontSize: "md" }}
+                mb="2"
+                _text={{ fontSize: "md", color: "primary.400" }}
                 py="0"
               >
                 {data.Name}
               </Badge>
               <Box
                 my="2"
-                borderBottomWidth="2"
-                borderColor="#374151"
-                borderStyle="dashed"
+                borderBottomWidth="1"
+                borderColor="coolGray.500:alpha.30"
+                // borderStyle="dashed"
                 rounded="1"
               />
               <VStack space="3" mb="4" mt="2">

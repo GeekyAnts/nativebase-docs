@@ -3,93 +3,72 @@ id: getting-started
 title: Getting Started
 ---
 
-import { KitchenSinkIframe, TileLink, NBHistory } from "../../src/components";
-import TOCInline from "@theme/TOCInline";
-
 <Box>
-  <Box className="row m-0">
-    <Stack direction={{lg:"row"}} space="16" justifyContent="space-between">
-      <VStack flex="1" space="4">
-        <Text fontSize="md" mb="4">
-        NativeBase is a component library that enables devs to build universal design systems. It is built on top of React Native, allowing you to develop apps for Android, iOS and the Web.
-        </Text>
-        <Stack direction={{lg:"row"}} space="4" >
-          <TileLink
-            title="Installation Guide"
-            url="installation"
-            description="Setup NativeBase in your project"
-            bg="cyan.600"
-          />
-          <TileLink
-            title="Playground"
-            url="https://snack.expo.io/@nishanbende/example"
-            description="Try NativeBase on Snack by Expo"
-            bg="teal.600"
-          />
-        </Stack>
-        <Stack direction={{lg:"row"}} space="4" >
-          <TileLink
-            title="Theming"
-            url="default-theme"
-            description="Create your own Design System"
-            bg="pink.600"
-          />
-          <TileLink
-            title="Recipes"
-            url="loginsignupforms"
-            description="Popular Recipes for Apps"
-            bg="indigo.600"
-          />
-        </Stack>
-      </VStack>
-      <KitchenSinkIframe />
-      </Stack>
-  </Box>
-  <Heading fontSize="4xl" mb="12" >A Brief History of NativeBase</Heading>
-  <Box mt="4" ml="4">
-    <NBHistory />
-  </Box>
-<Heading fontSize="4xl" mt="12" >What's New with NativeBase v3?</Heading>
+  <GettingStartedHero/>
+
+## What's New with NativeBase v3?
+
+<Box maxW="650">
 
 We had clear goals in mind while building version 3. Take a look at some of the new features we added:
 
-<Box>
-  <Heading fontSize="xl" mb="6">
-    Multiplatform
-  </Heading>
-  <Text fontSize="md">
-    NativeBase supports multiple platforms; android, iOS and web. You can also
-    customise properties using platform-specific props.
-  </Text>
+<Box mb="4">
+<ListItem>
+
+<Text lineHeight="xl">
+<Text bold color="coolGray.50">
+  Multiplatform
+</Text>
+  {" "}
+  : NativeBase supports multiple platforms; android, iOS and web. You can also customise
+  properties using platform-specific props.
+</Text>
+
+</ListItem>
+</Box>
+<Box mb="4">
+<ListItem>
+
+<Text lineHeight="xl">
+<Text bold color="coolGray.50">
+  Inherently Beautiful
+</Text>
+  {" "}
+  : NativeBase ships with a default theme that provides beautiful components, out
+  of the box.
+</Text>
+
+</ListItem>
+</Box>
+<Box mb="4">
+<ListItem>
+
+<Text lineHeight="xl">
+<Text bold color="coolGray.50">
+  Accessible
+</Text>
+  {" "}
+  : This version has out of the box accessibility including focus management, keyboard
+  navigation and more.
+</Text>
+
+</ListItem>
+</Box>
+<Box mb="4">
+<ListItem>
+
+<Text lineHeight="xl">
+<Text bold color="coolGray.50">
+  Customisable
+</Text>
+  {" "}
+  : The default theme can be extended as you desire. You can also customise specific
+  components for your app needs.
+</Text>
+
+</ListItem>
 </Box>
 
-<Box mt="8">
-  <Heading fontSize="xl" mb="6">
-    Inherently Beautiful
-  </Heading>
-  <Text fontSize="md">
-    NativeBase ships with a default theme that provides beautiful components,
-    out of the box.
-  </Text>
-</Box>
-
-<Box mt="8">
-  <Heading fontSize="xl" mb="6">
-    Accessible
-  </Heading>
-  <Text fontSize="md">
-    This version has out of the box accessibility including focus management,
-    keyboard navigation and more.
-  </Text>
-</Box>
-
-<Box mt="8">
-  <Heading fontSize="xl" mb="6">Customisable
-
-</Heading>
-  <Text fontSize="md">
-The default theme can be extended as you desire. You can also customise specific components for your app needs.
-  </Text>
 </Box>
 
 </Box>
