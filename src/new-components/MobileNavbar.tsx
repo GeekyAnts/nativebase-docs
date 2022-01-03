@@ -1,36 +1,19 @@
-import React, { useState, useEffect, useContext } from "react";
-import Link from "next/link";
+import React from "react";
 import {
   HStack,
   IconButton,
-  Text,
-  Pressable,
-  VStack,
-  Box,
   HamburgerIcon,
-  Slide,
-  useColorModeValue,
   SunIcon,
   useColorMode,
-  Collapse,
+  ArrowBackIcon,
 } from "native-base";
-import { Link as NBLink } from "native-base";
 import NativebaseLogo from "./NativebaseLogo";
-import { useRouter } from "next/router";
-import { AppContext } from "../AppContext";
-import versions from "../../versions.json";
-import { isLatestVersion, isLatestVersionSlug } from "../utils";
 import { DocSearch } from "@docsearch/react";
 import "@docsearch/css";
 
 export default function MobileNavbar(props: any) {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpenSidebar, setIsOpenSidebar } = props;
-  // useEffect(() => {
-  //   window.document.body.addEventListener("click", () => {
-  //     setIsNavbarOpen(false);
-  //   });
-  // });
   return (
     <HStack
       px="6"
@@ -38,10 +21,21 @@ export default function MobileNavbar(props: any) {
       justifyContent="space-between"
       h="16"
       alignItems="center"
+      borderBottomWidth="1"
+      _light={{ borderColor: "borderColorLight" }}
+      _dark={{ borderColor: "borderColorDark" }}
     >
       <HStack alignItems="center" space="4">
         <IconButton
-          icon={<HamburgerIcon />}
+          pl="0"
+          variant="unstyled"
+          icon={
+            isOpenSidebar ? (
+              <ArrowBackIcon size="md" />
+            ) : (
+              <HamburgerIcon size="md" />
+            )
+          }
           onPress={() => {
             setIsOpenSidebar(!isOpenSidebar);
           }}

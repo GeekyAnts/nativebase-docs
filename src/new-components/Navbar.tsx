@@ -152,12 +152,12 @@ export default function Navbar(props: any) {
           apiKey="3030e522f40cbea2b0386cdca3d88503"
         />
         <Box px="2">
-          <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
+          <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
             <GitHub />
           </NBLink>
         </Box>
         <Box px="2">
-          <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
+          <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
             <Discord />
           </NBLink>
         </Box>

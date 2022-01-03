@@ -2,11 +2,9 @@ import Head from "next/head";
 import React, { useEffect, useContext, useState } from "react";
 import {
   Box,
-  Fab,
   HStack,
   Icon,
   IconButton,
-  ScrollView,
   Stagger,
   useBreakpointValue,
   useColorModeValue,
@@ -20,16 +18,12 @@ import MobileNavbar from "../src/new-components/MobileNavbar";
 
 import { AppContext } from "../src/AppContext";
 import MainContent from "../src/new-components/MainContent";
-import MobileSidebar from "../src/new-components/MobileSidebar";
-import Footer from "../src/new-components/Footer";
-import {
-  AntDesign,
-  MaterialCommunityIcons,
-  MaterialIcons,
-} from "@expo/vector-icons";
+import { AntDesign, MaterialIcons } from "@expo/vector-icons";
 import GitHub from "../src/icons/GithubIcon";
 import FigmaIcon from "../src/icons/FigmaIcon";
 import Discord from "../src/icons/DiscordIcon";
+import { Link as NBLink } from "native-base";
+import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSidebarVersionDropdown";
 
 function Layout({
   children: content,
@@ -86,7 +80,7 @@ function Layout({
     base: false,
     lg: true,
   });
-  const { isOpen, onToggle } = useDisclose();
+  const { isOpen, onClose, onToggle } = useDisclose();
   useEffect(() => {
     if (isLargeScreen) {
       setIsOpenSidebar(false);
@@ -162,6 +156,7 @@ function Layout({
           ) : (
             <>
               <Box h="100%" w="100%" display={{ base: "flex", lg: "none" }}>
+                <MobileSidebarVersionDropdown />
                 <Sidebar sidebar={sidebar} isMobile />
               </Box>
             </>
@@ -170,8 +165,8 @@ function Layout({
         <Box
           position="fixed"
           bottom="8"
-          right="6"
-          // display={{ base: "flex", lg: "none" }}
+          display={{ base: "flex", lg: "none" }}
+          right="30px"
         >
           <Stagger
             visible={isOpen}
@@ -206,50 +201,66 @@ function Layout({
               },
             }}
           >
-            <IconButton
-              mb="4"
-              boxSize="10"
-              justifyContent="center"
-              alignItems="center"
-              variant="unstyled"
-              bg="coolGray.800"
-              borderRadius="full"
-              icon={<GitHub fill="white" size="8" />}
-            />
-            <IconButton
-              mb="4"
-              boxSize="10"
-              justifyContent="center"
-              alignItems="center"
-              variant="unstyled"
-              bg="coolGray.800"
-              borderRadius="full"
-              icon={<Discord fill="#5865F2" size="6" />}
-            />
-            <IconButton
-              mb="4"
-              boxSize="10"
-              justifyContent="center"
-              alignItems="center"
-              variant="unstyled"
-              bg="coolGray.800"
-              borderRadius="full"
-              _icon={{ color: "#1DA1F2" }}
-              icon={<Icon as={AntDesign} size="6" name="twitter" />}
-            />
+            <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
+              <IconButton
+                mb="4"
+                boxSize="10"
+                justifyContent="center"
+                alignItems="center"
+                variant="unstyled"
+                bg="coolGray.800"
+                borderRadius="full"
+                onPress={onClose}
+                icon={<GitHub fill="white" size="8" />}
+              />
+            </NBLink>
+            <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
+              <IconButton
+                mb="4"
+                boxSize="10"
+                justifyContent="center"
+                alignItems="center"
+                variant="unstyled"
+                bg="coolGray.800"
+                borderRadius="full"
+                onPress={onClose}
+                icon={<Discord fill="#5865F2" size="6" />}
+              />
+            </NBLink>
+            <NBLink href="https://twitter.com/nativebase" isExternal>
+              <IconButton
+                mb="4"
+                boxSize="10"
+                justifyContent="center"
+                alignItems="center"
+                variant="unstyled"
+                bg="coolGray.800"
+                borderRadius="full"
+                _icon={{ color: "#1DA1F2" }}
+                onPress={onClose}
+                icon={<Icon as={AntDesign} size="6" name="twitter" />}
+              />
+            </NBLink>
 
-            <IconButton
-              mb="4"
-              boxSize="10"
-              justifyContent="center"
-              alignItems="center"
-              variant="unstyled"
-              bg="coolGray.800"
-              borderRadius="full"
-              icon={<FigmaIcon size="6" />}
-            />
+            <NBLink
+              href="figma.com/@nativebase?utm_source=HomePage&utm_medium=header&utm_campaign=NativeBase_figma"
+              isExternal
+            >
+              <IconButton
+                mb="4"
+                boxSize="10"
+                justifyContent="center"
+                alignItems="center"
+                variant="unstyled"
+                bg="coolGray.800"
+                borderRadius="full"
+                onPress={onClose}
+                icon={<FigmaIcon size="6" />}
+              />
+            </NBLink>
           </Stagger>
           <IconButton
+            right="4px"
             boxSize="12"
             variant="unstyled"
             justifyContent="center"
@@ -257,7 +268,13 @@ function Layout({
             rounded="full"
             bg="coolGray.50"
             onPress={onToggle}
-            icon={<Icon color="black" as={MaterialIcons} name="more-vert" />}
+            icon={
+              <Icon
+                color="black"
+                as={MaterialIcons}
+                name={isOpen ? "close" : "more-vert"}
+              />
+            }
           />
         </Box>
       </Box>
