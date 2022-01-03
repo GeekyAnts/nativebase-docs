@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Box, ChevronRightIcon, HStack, Icon, Text } from "native-base";
+import { Box, useColorModeValue, HStack, Icon, Text } from "native-base";
 import { AntDesign, MaterialIcons } from "@expo/vector-icons";
 import { AdmonitionContext } from "./Admonition";
 
@@ -8,25 +8,28 @@ export const Li = ({ children }: any) => {
   const bgColor = (admonitionStatus: any) => {
     switch (admonitionStatus) {
       case "info":
-        return "info.900:alpha.50";
+        return useColorModeValue("info.500:alpha.50", "info.900:alpha.50");
       case "note":
-        return "indigo.900:alpha.50";
+        return useColorModeValue("indigo.500:alpha.50", "indigo.900:alpha.50");
       case "tip":
-        return "emerald.900:alpha.50";
+        return useColorModeValue("emerald.500:alpha.50", "emerald.900:alpha.50");
       default:
-        return "cyan.900:alpha.50";
+        return useColorModeValue(
+          "primary.500:alpha.50",
+          "primary.900:alpha.50"
+        );
     }
   };
   const iconColor = (admonitionStatus: any) => {
     switch (admonitionStatus) {
       case "info":
-        return "info.500";
+        return useColorModeValue("info.900", "info.500");
       case "note":
-        return "indigo.500";
+        return useColorModeValue("indigo.900", "indigo.500");
       case "tip":
-        return "emerald.400";
+        return useColorModeValue("emerald.900", "emerald.400");
       default:
-        return "cyan.500";
+        return useColorModeValue("primary.900", "primary.500");
     }
   };
   const getIcon = (admonitionStatus: any) => {
@@ -39,7 +42,13 @@ export const Li = ({ children }: any) => {
           p="2"
           mt="1"
         >
-          <Icon as={AntDesign} name="caretright" size="2" color="cyan.500" />
+          <Icon
+            as={AntDesign}
+            name="caretright"
+            size="2"
+            _light={{ color: "primary.900" }}
+            _dark={{ color: "primary.500" }}
+          />
         </Box>
       );
     } else {
@@ -64,7 +73,13 @@ export const Li = ({ children }: any) => {
   return (
     <HStack space="3" alignItems="center">
       {getIcon(admonitionStatus)}
-      <Text fontSize="md" color="coolGray.300">{children}</Text>
+      <Text
+        fontSize="md"
+        _light={{ color: "coolGray.700" }}
+        _dark={{ color: "coolGray.300" }}
+      >
+        {children}
+      </Text>
     </HStack>
   );
 };

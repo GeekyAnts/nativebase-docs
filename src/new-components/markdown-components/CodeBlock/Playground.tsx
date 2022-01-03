@@ -39,8 +39,9 @@ import { G, Circle as CircleSvg, Path } from "react-native-svg";
 
 // ----------------------------------------------- Themes --------------------------------------------------
 
-import nightOwl from "prism-react-renderer/themes/nightOwl";
+// import nightOwl from "prism-react-renderer/themes/nightOwl";
 import paleNight from "prism-react-renderer/themes/palenight";
+import github from "prism-react-renderer/themes/github";
 
 // ----------------------------------------------- Components --------------------------------------------------
 import {
@@ -55,6 +56,7 @@ import {
   Divider,
   Spacer,
   Text,
+  useColorModeValue,
 } from "native-base";
 
 // @ts-ignore
@@ -253,7 +255,7 @@ export const Playground = ({ children, props }: any) => {
           `;
       }}
       // theme={nightOwl}
-      theme={paleNight}
+      theme={useColorModeValue(github, paleNight)}
     >
       {/* <LiveEditor />
           <LiveError />
@@ -263,8 +265,11 @@ export const Playground = ({ children, props }: any) => {
         mb="4"
         // borderWidth="0"
         rounded="lg"
-        // _dark={{ borderColor: "blueGray.800" }}
-        // _light={{ borderColor: "blueGray.300" }}
+        _dark={{
+          borderColor: "blueGray.800:alpha.40",
+          bg: "blueGray.800:alpha.40",
+        }}
+        _light={{ borderColor: "blueGray.300", bg: "coolGray.50" }}
         bg="blueGray.800:alpha.40"
       >
         <LiveError />
@@ -281,13 +286,13 @@ export const Playground = ({ children, props }: any) => {
         _light={{ borderColor: "blueGray.300" }}
       >
         <HStack
-          bg="blueGray.800:alpha.40"
+          _light={{ bg: "coolGray.200", borderColor: "coolGray.300" }}
+          _dark={{ bg: "blueGray.800:alpha.40", borderColor: "coolGray.800" }}
           w="100%"
           alignItems="center"
           pl="4"
           pr="5"
           borderBottomWidth="1"
-          borderColor="coolGray.800"
         >
           <CodePlaygroundIcon />
           <Text>Playground</Text>
@@ -309,7 +314,10 @@ export const Playground = ({ children, props }: any) => {
             >
               <Link isExternal href={getExpoSnackURL(expoCode, activeVersion)}>
                 <IconButton
-                  _hover={{ bg: "coolGray.800" }}
+                  _hover={{
+                    _light: { bg: "coolGray.100" },
+                    _dark: { bg: "coolGray.800" },
+                  }}
                   p="1"
                   icon={<ExpoIcon size="xs" opacity="70" />}
                 />
@@ -326,11 +334,15 @@ export const Playground = ({ children, props }: any) => {
                 href={getCodeSandBoxURL(codeSandboxCode, activeVersion)}
               >
                 <IconButton
-                  _hover={{ bg: "coolGray.800" }}
+                  _hover={{
+                    _light: { bg: "coolGray.100" },
+                    _dark: { bg: "coolGray.800" },
+                  }}
                   p="1"
                   icon={
                     <Icon
-                      color="muted.50:alpha.70"
+                      _light={{ color: "muted.800:alpha.70" }}
+                      _dark={{ color: "muted.50:alpha.70" }}
                       as={expoVectorIcons?.AntDesign}
                       name="CodeSandbox"
                       size="xs"
@@ -346,12 +358,16 @@ export const Playground = ({ children, props }: any) => {
               label={copied ? "copied" : "copy"}
             >
               <IconButton
-                _hover={{ bg: "coolGray.800" }}
+                _hover={{
+                  _light: { bg: "coolGray.100" },
+                  _dark: { bg: "coolGray.800" },
+                }}
                 p="1"
                 onPress={handleCopy}
                 icon={
                   <Icon
-                    color="muted.50:alpha.70"
+                    _light={{ color: "muted.800:alpha.70" }}
+                    _dark={{ color: "muted.50:alpha.70" }}
                     as={expoVectorIcons?.Ionicons}
                     name={copied ? "copy" : "copy-outline"}
                     size="xs"
@@ -361,13 +377,19 @@ export const Playground = ({ children, props }: any) => {
             </Tooltip>
           </HStack>
         </HStack>
-        <Box p="4" pt="0" bg="codeBlockBackgroundColor">
+        <Box
+          p="4"
+          pt="0"
+          _light={{ bg: "coolGray.50" }}
+          _dark={{ bg: "codeBlockBackgroundColor" }}
+        >
           <ScrollView showsVerticalScrollIndicator={false} maxH="300px">
             <LiveEditor
               style={{
                 backgroundColor: "transparent",
                 boxShadow: "none",
                 borderWidth: "0",
+                opacity: useColorModeValue("0.8", "1"),
               }}
               onChange={(code) => setParsedCode(code)}
             />
