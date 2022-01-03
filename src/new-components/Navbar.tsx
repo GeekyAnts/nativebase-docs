@@ -26,8 +26,8 @@ import { AppContext } from "../AppContext";
 import { useRouter } from "next/router";
 import versions from "../../versions.json";
 import { FontAwesome } from "@expo/vector-icons";
-import Discord from "./Discord";
-import GitHub from "./Github";
+import Discord from "../icons/DiscordIcon";
+import GitHub from "../icons/GithubIcon";
 import GeekyantsLogo from "./GeekyantsLogo";
 
 export default function Navbar(props: any) {
@@ -132,6 +132,7 @@ export default function Navbar(props: any) {
           })}
         </Menu>
         <NBLink
+          display={{ base: "none", xl: "flex" }}
           href="https://startup.nativebase.io/?utm_source=DocsHeader&utm_medium=ad-banner&utm_campaign=NativeBase_3_Docs"
           isExternal
           _text={{
@@ -151,12 +152,12 @@ export default function Navbar(props: any) {
           apiKey="3030e522f40cbea2b0386cdca3d88503"
         />
         <Box px="2">
-          <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
+          <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
             <GitHub />
           </NBLink>
         </Box>
         <Box px="2">
-          <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
+          <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
             <Discord />
           </NBLink>
         </Box>

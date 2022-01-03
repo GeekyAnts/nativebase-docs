@@ -14,7 +14,7 @@ import React, { useEffect, useState, useContext } from "react";
 export default function Toc(props: any) {
   const { tocArray } = props;
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <Box py="16" px="4">
         {tocArray.length !== 0 && (
           <Heading

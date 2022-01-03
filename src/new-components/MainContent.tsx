@@ -61,7 +61,7 @@ export default function MainContent(props: any) {
         </Box>
         {props.showToc && (
           <Box
-            display={{ base: "none", lg: "flex" }}
+            display={{ base: "none", xl: "flex" }}
             position="sticky"
             top="16"
             h="100vh"
@@ -124,7 +124,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
   };
   return (
     <Box px={{ base: "6", xl: "16" }} py="10">
-      <Box alignSelf="center" maxW={props.showToc ? "800" : "1056"}>
+      <Box alignSelf="center" maxW={props.showToc ? "800" : "1056"} w="100%">
         <Heading mb="8" size="xl" _dark={{ color: "coolGray.50" }}>
           {frontMatter && frontMatter.title
             ? frontMatter.title

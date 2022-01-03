@@ -8,8 +8,8 @@ import { ComponentTheme } from '../src/components';
 The `Slider` is used to allow users to make selections from a range of values.
 
 ```jsx isShowcase
-import React from "react"
-import { Slider, Box, Center, NativeBaseProvider } from "native-base"
+import React from "react";
+import { Slider, Box, Center, NativeBaseProvider } from "native-base";
 export const Example = () => {
   return (
     <Box mx="5" width="100">
@@ -23,11 +23,11 @@ export const Example = () => {
         <Slider.Track shadow={2}>
           <Slider.FilledTrack />
         </Slider.Track>
-        <Slider.Thumb />
+        <Slider.Thumb shadow={3} />
       </Slider>
     </Box>
-  )
-}
+  );
+};
 ```
 
 ## Import
@@ -40,7 +40,7 @@ NativeBase exports 4 slider-related components:
 - `Slider.Thumb`: The handle that's used to change the slider value.
 
 ```jsx
-import { Slider } from 'native-base';
+import { Slider } from "native-base";
 ```
 
 ## Examples

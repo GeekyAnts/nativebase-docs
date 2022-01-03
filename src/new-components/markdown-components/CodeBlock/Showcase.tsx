@@ -351,8 +351,9 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
         onMouseLeave={() => {
           setShowMagicWand(false);
         }}
-        h="48"
-        p="4"
+        minH="48"
+        px="4"
+        py="10"
         mb="4"
         // borderWidth="0"
         rounded="lg"

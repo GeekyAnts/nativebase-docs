@@ -17,7 +17,7 @@ export function Example() {
       width="40"
       shadow={2}
     >
-      This is the Center
+      Center
     </Center>
   );
 }

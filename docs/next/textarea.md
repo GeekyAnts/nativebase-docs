@@ -8,8 +8,8 @@ import { ComponentTheme } from '../src/components';
 The `Textarea` component allows you to easily create multi-line text inputs.
 
 ```jsx isShowcase
-import React from 'react';
-import { TextArea } from 'native-base';
+import React from "react";
+import { TextArea } from "native-base";
 
 export const Example = () => {
   return (
@@ -17,8 +17,9 @@ export const Example = () => {
       shadow={2}
       h={20}
       placeholder="Text Area Placeholder"
-      w="150%"
-      bg="coolGray.200"
+      w="200"
+      _dark={{ bg: "coolGray.800" }}
+      _hover={{ bg: "coolGray.200" }}
     />
   );
 };

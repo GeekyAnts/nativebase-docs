@@ -8,9 +8,9 @@ import { ComponentTheme } from '../src/components';
 `IconButton` composes the `Button` component. It is generally used to make an Icon pressable.
 
 ```jsx isShowcase
-import React from 'react';
-import { IconButton, Icon } from 'native-base';
-import { Entypo } from '@expo/vector-icons';
+import React from "react";
+import { IconButton, Icon } from "native-base";
+import { Entypo } from "@expo/vector-icons";
 
 export const Example = () => {
   return (
@@ -18,26 +18,26 @@ export const Example = () => {
       icon={<Icon as={Entypo} name="emoji-happy" />}
       borderRadius="full"
       _icon={{
-        color: 'orange.500',
-        size: 'md',
+        color: "coolGray.50",
+        size: "md",
       }}
       _hover={{
-        bg: 'orange.600:alpha.20',
+        bg: "coolGray.800:alpha.20",
       }}
       _pressed={{
-        bg: 'orange.600:alpha.20',
+        bg: "coolGray.800:alpha.20",
         _icon: {
-          name: 'emoji-flirt',
+          name: "emoji-flirt",
         },
         _ios: {
           _icon: {
-            size: '2xl',
+            size: "2xl",
           },
         },
       }}
       _ios={{
         _icon: {
-          size: '2xl',
+          size: "2xl",
         },
       }}
     />

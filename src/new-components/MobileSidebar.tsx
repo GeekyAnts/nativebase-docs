@@ -23,38 +23,7 @@ import { isLatestVersionSlug } from "../utils";
 export default function MobileSidebar(props: any) {
   const { sidebar } = props;
   const { isOpen, onOpen, onClose } = useDisclose();
-
-  return (
-    <Hidden from="lg">
-      <>
-        <Fab
-          borderRadius="full"
-          placement="bottom-right"
-          icon={<HamburgerIcon size="5" />}
-          p="2"
-          rounded="md"
-          px="4"
-          bottom="8"
-          right="8"
-          onPress={onOpen}
-        />
-        <Actionsheet isOpen={isOpen} onClose={onClose}>
-          <Actionsheet.Content roundedTop="0" overflow="auto">
-            <SidebarItem sidebarItems={sidebar} level={0} />
-          </Actionsheet.Content>
-          <IconButton
-            variant="solid"
-            position="absolute"
-            bottom="8"
-            px="4"
-            right="8"
-            onPress={onClose}
-            icon={<CloseIcon size="xs" />}
-          />
-        </Actionsheet>
-      </>
-    </Hidden>
-  );
+  return <SidebarItem sidebarItems={sidebar} level={0} />;
 }
 
 const SidebarItem = (props: any) => {
