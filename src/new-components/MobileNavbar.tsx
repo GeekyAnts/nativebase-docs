@@ -31,9 +31,9 @@ export default function MobileNavbar(props: any) {
           variant="unstyled"
           icon={
             isOpenSidebar ? (
-              <ArrowBackIcon size="md" />
+              <ArrowBackIcon size="7" />
             ) : (
-              <HamburgerIcon size="md" />
+              <HamburgerIcon size="7" />
             )
           }
           onPress={() => {

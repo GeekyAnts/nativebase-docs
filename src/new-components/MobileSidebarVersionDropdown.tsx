@@ -71,9 +71,12 @@ export const MobileSidebarVersionDropdown = (props: any) => {
             setActiveVersion("next");
             updateActiveVersion("next", versions);
           }}
-          bg={"next" === activeVersion ? "coolGray.800" : "transparent"}
         >
-          <Text pl="8" pr="4">
+          <Text
+            pl="8"
+            pr="4"
+            color={"next" === activeVersion ? "cyan.500" : "warmGray.50"}
+          >
             next
           </Text>
         </Pressable>
@@ -89,9 +92,12 @@ export const MobileSidebarVersionDropdown = (props: any) => {
                   versions
                 );
               }}
-              bg={version === activeVersion ? "coolGray.800" : "transparent"}
             >
-              <Text pl="8" pr="4">
+              <Text
+                pl="8"
+                pr="4"
+                color={version === activeVersion ? "cyan.500" : "warmGray.50"}
+              >
                 {version}
               </Text>
             </Pressable>

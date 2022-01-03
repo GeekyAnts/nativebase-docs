@@ -12,6 +12,7 @@ export const Example = () => {
   return (
     <>
       <Box
+        p="2"
         bg="primary.500"
         _text={{
           fontSize: "md",

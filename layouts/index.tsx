@@ -270,6 +270,7 @@ function Layout({
             onPress={onToggle}
             icon={
               <Icon
+                size="7"
                 color="black"
                 as={MaterialIcons}
                 name={isOpen ? "close" : "more-vert"}

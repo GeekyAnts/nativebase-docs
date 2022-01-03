@@ -7,16 +7,33 @@ import { ComponentTheme } from '../src/components';
 
 `FormControl` provides context such as `isInvalid`, `isDisabled`, and `isRequired` to form elements.
 
-```jsx isShowcase
-import React from 'react';
-import { FormControl, Input, Stack, WarningOutlineIcon, Box, Center, NativeBaseProvider } from 'native-base';
+```jsx isShowcase gradient="3"
+import React from "react";
+import {
+  FormControl,
+  Input,
+  Stack,
+  WarningOutlineIcon,
+  Box,
+  Center,
+  NativeBaseProvider,
+} from "native-base";
 
 const Example = () => {
-  return <Box w="100%">
+  return (
+    <Box w="100%">
       <FormControl isRequired>
         <Stack mx="4">
           <FormControl.Label>Password</FormControl.Label>
-          <Input _hover={{bg:"coolGray.200"}} shadow={2} type="password" defaultValue="12345" placeholder="password" />
+          <Input
+            _light={{ bg: "coolGray.100" }}
+            _dark={{ bg: "coolGray.800" }}
+            _hover={{ bg: "coolGray.200" }}
+            shadow={2}
+            type="password"
+            defaultValue="12345"
+            placeholder="password"
+          />
           <FormControl.HelperText>
             Must be atleast 6 characters.
           </FormControl.HelperText>
@@ -25,7 +42,8 @@ const Example = () => {
           </FormControl.ErrorMessage>
         </Stack>
       </FormControl>
-    </Box>;
+    </Box>
+  );
 };
 ```
 

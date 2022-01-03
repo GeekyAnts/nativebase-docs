@@ -5,12 +5,19 @@ title: Input
 
 import { ComponentTheme } from '../src/components';
 
-```jsx isShowcase 
+```jsx isShowcase
 import React from "react";
 import { Input } from "native-base";
 
 export const Example = () => {
-  return (<Input shadow={2} bg="coolGray.800" placeholder="Enter your name" />);
+  return (
+    <Input
+      shadow={2}
+      _light={{ bg: "coolGray.100" }}
+      _dark={{ bg: "coolGray.800" }}
+      placeholder="Enter your name"
+    />
+  );
 };
 ```
 

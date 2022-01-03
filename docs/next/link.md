@@ -8,12 +8,12 @@ import { ComponentTheme } from '../src/components';
 `Links` are accessible elements used primarily for navigation. This component is styled to resemble a hyperlink.
 
 ```jsx isShowcase
-import React from 'react';
-import { Link } from 'native-base';
+import React from "react";
+import { Link } from "native-base";
 
 export const Example = () => {
   return (
-    <Link mt={4} href="https://nativebase.io">
+    <Link mt={4} href="https://docs.nativebase.io" isExternal>
       Click here to open documentation.
     </Link>
   );
@@ -23,7 +23,7 @@ export const Example = () => {
 ## Import
 
 ```jsx
-import { Link } from 'native-base';
+import { Link } from "native-base";
 ```
 
 ## Examples
