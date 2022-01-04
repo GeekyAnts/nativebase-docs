@@ -7,6 +7,7 @@ By default, most of NativeBase's components are dark mode compatible. In some sc
 
 1. By updating component's theme
 2. By using useColorModeValue
+3. By using _light and _dark props
 
 ## 1. By updating component's theme
 
