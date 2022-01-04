@@ -8,7 +8,7 @@ import { theme } from "../src/theme";
 
 type MyThemeType = typeof theme;
 declare module "native-base" {
-  interface ICustomTheme extends MyThemeType {}
+  interface ICustomTheme extends MyThemeType { }
 }
 
 const config = {
@@ -22,6 +22,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   const updateActiveVersion = (version: string) => setActiveVersion(version);
+
+  console.log("Madhav");
   return (
     <AppContext.Provider
       value={{
