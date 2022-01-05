@@ -17,6 +17,7 @@ import versions from "../../versions.json";
 import { isLatestVersion, isLatestVersionSlug } from "../utils";
 
 export const MobileSidebarVersionDropdown = (props: any) => {
+  const { setIsOpenSidebar } = props;
   const [isCollapsed, setIsCollapsed] = useState(true);
   const { activeVersion, setActiveVersion } = useContext(AppContext);
   const router = useRouter();
@@ -70,6 +71,7 @@ export const MobileSidebarVersionDropdown = (props: any) => {
           onPress={() => {
             setActiveVersion("next");
             updateActiveVersion("next", versions);
+            setIsOpenSidebar(false);
           }}
         >
           <Text
@@ -91,12 +93,20 @@ export const MobileSidebarVersionDropdown = (props: any) => {
                   isLatestVersion(version) ? "" : version,
                   versions
                 );
+                setIsOpenSidebar(false);
               }}
             >
               <Text
                 pl="8"
                 pr="4"
-                color={version === activeVersion ? "cyan.500" : "warmGray.50"}
+                color={
+                  version ===
+                  (isLatestVersionSlug(activeVersion)
+                    ? versions[0]
+                    : activeVersion)
+                    ? "cyan.500"
+                    : "warmGray.50"
+                }
               >
                 {version}
               </Text>

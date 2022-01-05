@@ -5,7 +5,8 @@ import { Animated } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 export const CollapsibleSidebarItem = (props: any) => {
-  const { children, title, level, collapsed } = props;
+  const { children, title, level, collapsed, isMobile, setIsOpenSidebar } =
+    props;
   const [isCollapsed, setIsCollapsed] = useState(collapsed);
   const isHeadingCollapsible = false;
   if (isHeadingCollapsible || level > 0)
@@ -14,6 +15,9 @@ export const CollapsibleSidebarItem = (props: any) => {
         <Pressable
           onPress={() => {
             setIsCollapsed(!isCollapsed);
+            if (isMobile) {
+              setIsOpenSidebar(false);
+            }
           }}
         >
           <HStack

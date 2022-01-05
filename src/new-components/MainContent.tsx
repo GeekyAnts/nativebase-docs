@@ -80,7 +80,8 @@ const SubMainContent = ({ props }: any) => {
     setTimestamp(e.timeStamp);
   }
   useEffect(() => {
-    document.getElementsByTagName("body")[0].onscroll = (e) => {
+    // @ts-ignore
+    document.getElementById("scrollview-id").onscroll = (e) => {
       handleScroll(e);
     };
   }, []);
