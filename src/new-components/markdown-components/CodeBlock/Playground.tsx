@@ -269,7 +269,11 @@ export const Playground = ({ children, props }: any) => {
           borderColor: "blueGray.800:alpha.40",
           bg: "blueGray.800:alpha.40",
         }}
-        _light={{ borderColor: "blueGray.300", bg: "coolGray.50" }}
+        _light={{
+          borderWidth: 1,
+          borderColor: "coolGray.300",
+          bg: "coolGray.50",
+        }}
         bg="blueGray.800:alpha.40"
       >
         <LiveError />
@@ -283,10 +287,10 @@ export const Playground = ({ children, props }: any) => {
         borderWidth="1"
         rounded="lg"
         _dark={{ borderColor: "blueGray.800" }}
-        _light={{ borderColor: "blueGray.300" }}
+        _light={{ borderColor: "coolGray.200" }}
       >
         <HStack
-          _light={{ bg: "coolGray.200", borderColor: "coolGray.300" }}
+          _light={{ bg: "coolGray.200", borderColor: "coolGray.200" }}
           _dark={{ bg: "blueGray.800:alpha.40", borderColor: "coolGray.800" }}
           w="100%"
           alignItems="center"
@@ -301,7 +305,13 @@ export const Playground = ({ children, props }: any) => {
             flexDir="row"
             justifyContent="flex-end"
             alignItems="center"
-            divider={<Divider bg="trueGray.300:alpha.10" thickness="2" />}
+            divider={
+              <Divider
+                _dark={{ bg: "trueGray.300:alpha.10" }}
+                _light={{ bg: "coolGray.700:alpha.10" }}
+                thickness="2"
+              />
+            }
             h="9"
             py="1.5"
             space="4"

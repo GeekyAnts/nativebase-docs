@@ -34,6 +34,12 @@ export default function Toc(props: any) {
             borderColor={"coolGray.700"}
             borderStyle={"dashed"}
             rounded={1}
+            _light={{
+              borderColor: "tocLeftLightBorder",
+            }}
+            _dark={{
+              borderColor: "tocLeftDarkBorder",
+            }}
           />
           <Box w="100%">
             <TocItems tocArrayItems={tocArray} />
@@ -113,11 +119,18 @@ const TocItem = ({
     <Box flexDir="row" alignItems="center" mb={isHeadingID ? "14px" : "0"}>
       <Circle
         ml={-31}
-        bg={
-          getHeadingId(elementInViewPort) === item.id
-            ? "coolGray.400"
-            : "coolGray.700"
-        }
+        _light={{
+          bg:
+            getHeadingId(elementInViewPort) === item.id
+              ? "tocLeftLightBorderActiveBall"
+              : "tocLeftLightBorderBall",
+        }}
+        _dark={{
+          bg:
+            getHeadingId(elementInViewPort) === item.id
+              ? "tocLeftDarkBorderActiveBall"
+              : "tocLeftDarkBorderBall",
+        }}
         size="3"
       />
       <Box pl="7" pr="2.5" w="100%">
@@ -132,10 +145,18 @@ const TocItem = ({
                     flexWrap: "wrap",
                     fontWeight: "semibold",
                     fontSize: "13px",
-                    color:
-                      getHeadingId(elementInViewPort) === item.id
-                        ? "coolGray.50"
-                        : "coolGray.500",
+                    _light: {
+                      color:
+                        getHeadingId(elementInViewPort) === item.id
+                          ? "tocActiveTextLightColor"
+                          : "tocTextLightColor",
+                    },
+                    _dark: {
+                      color:
+                        getHeadingId(elementInViewPort) === item.id
+                          ? "tocActiveTextDarkColor"
+                          : "tocTextDarkColor",
+                    },
                     textDecorationLine: isHovered ? "underline" : "none",
                   }}
                 >
@@ -159,10 +180,18 @@ const TocItem = ({
                   flexWrap: "wrap",
                   fontWeight: "regular",
                   fontSize: "13px",
-                  color:
-                    elementInViewPort === item.id
-                      ? "coolGray.50"
-                      : "coolGray.500",
+                  _light: {
+                    color:
+                      elementInViewPort === item.id
+                        ? "tocActiveTextLightColor"
+                        : "tocTextLightColor",
+                  },
+                  _dark: {
+                    color:
+                      elementInViewPort === item.id
+                        ? "tocActiveTextDarkColor"
+                        : "tocTextDarkColor",
+                  },
                   textDecorationLine: isHovered ? "underline" : "none",
                 }}
               >

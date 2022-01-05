@@ -14,7 +14,6 @@ export default function Sidebar(props: any) {
     <ScrollView overflowY="overlay">
       <Box
         py="5"
-        bg="blue.200"
         w={isMobile ? "100%" : "64"}
         flex="1"
         _light={{

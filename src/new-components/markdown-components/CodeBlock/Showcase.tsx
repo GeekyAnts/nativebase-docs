@@ -39,7 +39,7 @@ import { G, Circle as CircleSvg, Path } from "react-native-svg";
 
 // ----------------------------------------------- Themes --------------------------------------------------
 
-import nightOwl from "prism-react-renderer/themes/nightOwl";
+import github from "prism-react-renderer/themes/github";
 import paleNight from "prism-react-renderer/themes/palenight";
 
 // ----------------------------------------------- Components --------------------------------------------------
@@ -60,6 +60,7 @@ import {
   Center,
   Pressable,
   Input,
+  useColorModeValue,
 } from "native-base";
 // ----------------------------------------------- Gradients --------------------------------------------------
 
@@ -331,7 +332,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
           `;
       }}
       // theme={nightOwl}
-      theme={paleNight}
+      theme={useColorModeValue(github, paleNight)}
     >
       {/* <LiveEditor />
           <LiveError />
@@ -466,14 +467,16 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
           borderWidth="1"
           rounded="lg"
           _dark={{ borderColor: "blueGray.800" }}
-          _light={{ borderColor: "blueGray.300" }}
+          _light={{ borderColor: "coolGray.200" }}
         >
           <HStack
-            bg="blueGray.800:alpha.40"
+            _light={{ bg: "coolGray.200", borderColor: "coolGray.200" }}
+            _dark={{ bg: "blueGray.800:alpha.40", borderColor: "coolGray.800" }}
             w="100%"
             alignItems="center"
             pl="4"
             pr="5"
+            borderBottomWidth="1"
           >
             <CodePlaygroundIcon />
             <Text>Playground</Text>
@@ -482,7 +485,13 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
               flexDir="row"
               justifyContent="flex-end"
               alignItems="center"
-              divider={<Divider bg="trueGray.300:alpha.10" thickness="2" />}
+              divider={
+                <Divider
+                  _dark={{ bg: "trueGray.300:alpha.10" }}
+                  _light={{ bg: "coolGray.700:alpha.10" }}
+                  thickness="2"
+                />
+              }
               h="9"
               py="1.5"
               space="4"
@@ -498,7 +507,10 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
                   href={getExpoSnackURL(expoCode, activeVersion)}
                 >
                   <IconButton
-                    _hover={{ bg: "coolGray.800" }}
+                    _hover={{
+                      _light: { bg: "coolGray.100" },
+                      _dark: { bg: "coolGray.800" },
+                    }}
                     p="1"
                     icon={<ExpoIcon size="xs" opacity="70" />}
                   />
@@ -515,11 +527,15 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
                   href={getCodeSandBoxURL(codeSandboxCode, activeVersion)}
                 >
                   <IconButton
-                    _hover={{ bg: "coolGray.800" }}
+                    _hover={{
+                      _light: { bg: "coolGray.100" },
+                      _dark: { bg: "coolGray.800" },
+                    }}
                     p="1"
                     icon={
                       <Icon
-                        color="muted.50:alpha.70"
+                        _light={{ color: "muted.800:alpha.70" }}
+                        _dark={{ color: "muted.50:alpha.70" }}
                         as={expoVectorIcons?.AntDesign}
                         name="CodeSandbox"
                         size="xs"
@@ -535,12 +551,16 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
                 label={copied ? "copied" : "copy"}
               >
                 <IconButton
-                  _hover={{ bg: "coolGray.800" }}
+                  _hover={{
+                    _light: { bg: "coolGray.100" },
+                    _dark: { bg: "coolGray.800" },
+                  }}
                   p="1"
                   onPress={handleCopy}
                   icon={
                     <Icon
-                      color="muted.50:alpha.70"
+                      _light={{ color: "muted.800:alpha.70" }}
+                      _dark={{ color: "muted.50:alpha.70" }}
                       as={expoVectorIcons?.Ionicons}
                       name={copied ? "copy" : "copy-outline"}
                       size="xs"
@@ -550,10 +570,20 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
               </Tooltip>
             </HStack>
           </HStack>
-          <Box p="4" pt="0" bg="codeBlockBackgroundColor">
-            <ScrollView maxH="300px">
+          <Box
+            p="4"
+            pt="0"
+            _light={{ bg: "coolGray.50" }}
+            _dark={{ bg: "codeBlockBackgroundColor" }}
+          >
+            <ScrollView showsVerticalScrollIndicator={false} maxH="300px">
               <LiveEditor
-                style={{ backgroundColor: "transparent" }}
+                style={{
+                  backgroundColor: "transparent",
+                  boxShadow: "none",
+                  borderWidth: "0",
+                  opacity: useColorModeValue("0.8", "1"),
+                }}
                 onChange={(code) => setParsedCode(code)}
               />
             </ScrollView>
