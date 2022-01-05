@@ -1,14 +1,10 @@
 import Head from "next/head";
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext } from "react";
 import {
   Box,
   HStack,
-  Icon,
-  IconButton,
-  Stagger,
   useBreakpointValue,
   useColorModeValue,
-  useDisclose,
   useToken,
 } from "native-base";
 import path from "path";
@@ -18,12 +14,9 @@ import MobileNavbar from "../src/new-components/MobileNavbar";
 
 import { AppContext } from "../src/AppContext";
 import MainContent from "../src/new-components/MainContent";
-import { AntDesign, MaterialIcons } from "@expo/vector-icons";
-import GitHub from "../src/icons/GithubIcon";
-import FigmaIcon from "../src/icons/FigmaIcon";
-import Discord from "../src/icons/DiscordIcon";
-import { Link as NBLink } from "native-base";
+
 import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSidebarVersionDropdown";
+import { SocialMediaStagger } from "../src/new-components/SocialMediaStagger";
 
 function Layout({
   children: content,
@@ -80,7 +73,6 @@ function Layout({
     base: false,
     lg: true,
   });
-  const { isOpen, onClose, onToggle } = useDisclose();
   useEffect(() => {
     if (isLargeScreen) {
       setIsOpenSidebar(false);
@@ -156,128 +148,19 @@ function Layout({
           ) : (
             <>
               <Box h="100%" w="100%" display={{ base: "flex", lg: "none" }}>
-                <MobileSidebarVersionDropdown />
-                <Sidebar sidebar={sidebar} isMobile />
+                <MobileSidebarVersionDropdown
+                  setIsOpenSidebar={setIsOpenSidebar}
+                />
+                <Sidebar
+                  sidebar={sidebar}
+                  isMobile
+                  setIsOpenSidebar={setIsOpenSidebar}
+                />
               </Box>
             </>
           )}
         </Box>
-        <Box
-          position="fixed"
-          bottom="8"
-          display={{ base: "flex", lg: "none" }}
-          right="30px"
-        >
-          <Stagger
-            visible={isOpen}
-            initial={{
-              opacity: 0,
-              scale: 0,
-              translateY: 34,
-            }}
-            animate={{
-              translateY: 0,
-              scale: 1,
-              opacity: 1,
-              transition: {
-                type: "spring",
-                mass: 0.8,
-                stagger: {
-                  offset: 30,
-                  reverse: true,
-                },
-              },
-            }}
-            exit={{
-              translateY: 34,
-              scale: 0.5,
-              opacity: 0,
-              transition: {
-                duration: 10,
-                stagger: {
-                  offset: 30,
-                  reverse: true,
-                },
-              },
-            }}
-          >
-            <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
-              <IconButton
-                mb="4"
-                boxSize="10"
-                justifyContent="center"
-                alignItems="center"
-                variant="unstyled"
-                bg="coolGray.800"
-                borderRadius="full"
-                onPress={onClose}
-                icon={<GitHub fill="white" size="8" />}
-              />
-            </NBLink>
-            <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
-              <IconButton
-                mb="4"
-                boxSize="10"
-                justifyContent="center"
-                alignItems="center"
-                variant="unstyled"
-                bg="coolGray.800"
-                borderRadius="full"
-                onPress={onClose}
-                icon={<Discord fill="#5865F2" size="6" />}
-              />
-            </NBLink>
-            <NBLink href="https://twitter.com/nativebase" isExternal>
-              <IconButton
-                mb="4"
-                boxSize="10"
-                justifyContent="center"
-                alignItems="center"
-                variant="unstyled"
-                bg="coolGray.800"
-                borderRadius="full"
-                _icon={{ color: "#1DA1F2" }}
-                onPress={onClose}
-                icon={<Icon as={AntDesign} size="6" name="twitter" />}
-              />
-            </NBLink>
-
-            <NBLink
-              href="figma.com/@nativebase?utm_source=HomePage&utm_medium=header&utm_campaign=NativeBase_figma"
-              isExternal
-            >
-              <IconButton
-                mb="4"
-                boxSize="10"
-                justifyContent="center"
-                alignItems="center"
-                variant="unstyled"
-                bg="coolGray.800"
-                borderRadius="full"
-                onPress={onClose}
-                icon={<FigmaIcon size="6" />}
-              />
-            </NBLink>
-          </Stagger>
-          <IconButton
-            right="4px"
-            boxSize="12"
-            variant="unstyled"
-            justifyContent="center"
-            alignItems="center"
-            rounded="full"
-            bg="coolGray.50"
-            onPress={onToggle}
-            icon={
-              <Icon
-                size="7"
-                color="black"
-                as={MaterialIcons}
-                name={isOpen ? "close" : "more-vert"}
-              />
-            }
-          />
-        </Box>
+        <SocialMediaStagger />
       </Box>
     </>
   );

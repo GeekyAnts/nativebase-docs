@@ -8,13 +8,12 @@ import { CollapsibleSidebarItem } from "./CollapsibleSidebarItem";
 import Link from "next/link";
 
 export default function Sidebar(props: any) {
-  const { sidebar, isMobile } = props;
+  const { sidebar, isMobile, setIsOpenSidebar } = props;
   return (
     // @ts-ignore
     <ScrollView overflowY="overlay">
       <Box
         py="5"
-        bg="blue.200"
         w={isMobile ? "100%" : "64"}
         flex="1"
         _light={{
@@ -23,14 +22,19 @@ export default function Sidebar(props: any) {
         }}
         _dark={{ borderColor: "borderColorDark", bg: "sidebarBackgroundDark" }}
       >
-        <SidebarItem sidebarItems={sidebar} level={0} />
+        <SidebarItem
+          sidebarItems={sidebar}
+          level={0}
+          isMobile={isMobile}
+          setIsOpenSidebar={setIsOpenSidebar}
+        />
       </Box>
     </ScrollView>
   );
 }
 
 const SidebarItem = (props: any) => {
-  const { sidebarItems, level } = props;
+  const { sidebarItems, level, isMobile, setIsOpenSidebar } = props;
   const { activeVersion, activeSidebarItem, setActiveSidebarItem } =
     useContext(AppContext);
 
@@ -42,6 +46,9 @@ const SidebarItem = (props: any) => {
           <Pressable
             onPress={() => {
               setActiveSidebarItem(item.id);
+              if (isMobile) {
+                setIsOpenSidebar(false);
+              }
             }}
             _hover={{
               _dark: {
@@ -98,11 +105,18 @@ const SidebarItem = (props: any) => {
           </Pressable>
         ) : (
           <CollapsibleSidebarItem
+            isMobile={isMobile}
             title={item.title}
             level={level}
             collapsed={item.isCollapsed || false}
+            setIsOpenSidebar={setIsOpenSidebar}
           >
-            <SidebarItem sidebarItems={item.pages} level={level + 1} />
+            <SidebarItem
+              sidebarItems={item.pages}
+              level={level + 1}
+              setIsOpenSidebar={setIsOpenSidebar}
+              isMobile={isMobile}
+            />
           </CollapsibleSidebarItem>
         )}
       </Box>
