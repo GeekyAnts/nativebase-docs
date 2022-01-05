@@ -3,6 +3,7 @@ import React, { useEffect, useContext } from "react";
 import {
   Box,
   HStack,
+  ScrollView,
   useBreakpointValue,
   useColorModeValue,
   useToken,
@@ -90,7 +91,7 @@ function Layout({
 
       <Box
         w="100%"
-        h="100%"
+        h="100vh"
         _light={{ bg: "backgroundLight" }}
         _dark={{ bg: "backgroundDark" }}
         alignItems="center"
@@ -99,68 +100,70 @@ function Layout({
           "nativebase-body-dark"
         )}
       >
-        <Box h="100%" w="100%">
-          <Box
-            display={{ base: "none", lg: "flex" }}
-            w="100%"
-            position="sticky"
-            top="0"
-            zIndex={99}
-            _light={{ bg: "backgroundLight" }}
-            _dark={{ bg: "backgroundDark:alpha.50" }}
-            // @ts-ignore
-            style={{ backdropFilter: "blur(10px)" }}
-          >
-            <Navbar />
-          </Box>
-          <Box
-            display={{ base: "flex", lg: "none" }}
-            position="sticky"
-            top="0"
-            zIndex={99}
-            _light={{ bg: "backgroundLight" }}
-            _dark={{ bg: "backgroundDark" }}
-            w="100%"
-          >
-            <MobileNavbar
-              isOpenSidebar={isOpenSidebar}
-              setIsOpenSidebar={setIsOpenSidebar}
-            />
-          </Box>
-          {!isOpenSidebar ? (
-            <HStack>
-              <Box
-                position="sticky"
-                top="16"
-                h="calc(100vh - 64px)"
-                display={{ base: "none", lg: "flex" }}
-              >
-                <Sidebar sidebar={sidebar} />
-              </Box>
-              <MainContent
-                pages={pages}
-                frontMatter={frontMatter}
-                content={content}
-                tocArray={tocArray}
-                showToc={showToc}
+        <ScrollView nativeID="scrollview-id">
+          <Box h="100%" w="100%">
+            <Box
+              display={{ base: "none", lg: "flex" }}
+              w="100%"
+              position="sticky"
+              top="0"
+              zIndex={99}
+              _light={{ bg: "backgroundLight" }}
+              _dark={{ bg: "backgroundDark:alpha.50" }}
+              // @ts-ignore
+              style={{ backdropFilter: "blur(10px)" }}
+            >
+              <Navbar />
+            </Box>
+            <Box
+              display={{ base: "flex", lg: "none" }}
+              position="sticky"
+              top="0"
+              zIndex={99}
+              _light={{ bg: "backgroundLight" }}
+              _dark={{ bg: "backgroundDark" }}
+              w="100%"
+            >
+              <MobileNavbar
+                isOpenSidebar={isOpenSidebar}
+                setIsOpenSidebar={setIsOpenSidebar}
               />
-            </HStack>
-          ) : (
-            <>
-              <Box h="100%" w="100%" display={{ base: "flex", lg: "none" }}>
-                <MobileSidebarVersionDropdown
-                  setIsOpenSidebar={setIsOpenSidebar}
+            </Box>
+            {!isOpenSidebar ? (
+              <HStack>
+                <Box
+                  position="sticky"
+                  top="16"
+                  h="calc(100vh - 64px)"
+                  display={{ base: "none", lg: "flex" }}
+                >
+                  <Sidebar sidebar={sidebar} />
+                </Box>
+                <MainContent
+                  pages={pages}
+                  frontMatter={frontMatter}
+                  content={content}
+                  tocArray={tocArray}
+                  showToc={showToc}
                 />
-                <Sidebar
-                  sidebar={sidebar}
-                  isMobile
-                  setIsOpenSidebar={setIsOpenSidebar}
-                />
-              </Box>
-            </>
-          )}
-        </Box>
-        <SocialMediaStagger />
+              </HStack>
+            ) : (
+              <>
+                <Box h="100%" w="100%" display={{ base: "flex", lg: "none" }}>
+                  <MobileSidebarVersionDropdown
+                    setIsOpenSidebar={setIsOpenSidebar}
+                  />
+                  <Sidebar
+                    sidebar={sidebar}
+                    isMobile
+                    setIsOpenSidebar={setIsOpenSidebar}
+                  />
+                </Box>
+              </>
+            )}
+          </Box>
+          <SocialMediaStagger />
+        </ScrollView>
       </Box>
     </>
   );
