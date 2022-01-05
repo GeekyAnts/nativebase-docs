@@ -7,7 +7,12 @@ export const Anchor = (props: any) => {
         return (
           <Link
             _text={{
-              color: "cyan.500",
+              _light: {
+                color: "cyan.600",
+              },
+              _dark: {
+                color: "cyan.500",
+              },
               textDecorationLine: isHovered ? "underline" : "none",
             }}
             href={props.href}

@@ -11,9 +11,26 @@ export const theme = extendTheme({
     borderColorDark: "#313538",
     borderColorLight: "#dfe3e6",
 
+    // -------------------------------------------------- TOC -------------------------------------------
+
+    tocActiveTextLightColor: colors.coolGray[900],
+    tocActiveTextDarkColor: colors.coolGray[50],
+
+    tocTextLightColor: colors.coolGray[400],
+    tocTextDarkColor: colors.coolGray[500],
+
+    tocLeftDarkBorder: colors.coolGray[700],
+    tocLeftLightBorder: colors.coolGray[300],
+
+    tocLeftDarkBorderBall: colors.coolGray[800],
+    tocLeftLightBorderBall: colors.coolGray[300],
+
+    tocLeftDarkBorderActiveBall: colors.coolGray[400],
+    tocLeftLightBorderActiveBall: colors.coolGray[600],
+
     // -------------------------------------------------- SideBar -------------------------------------------
 
-    sidebarBackgroundLight: "#fff",
+    sidebarBackgroundLight: colors.coolGray[100],
     sidebarBackgroundDark: colors.blueGray[900],
     sidebarItemHeadingTextDark: colors.coolGray[50],
     sidebarItemHeadingTextLight: colors.coolGray[800],

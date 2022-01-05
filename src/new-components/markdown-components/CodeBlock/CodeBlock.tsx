@@ -42,7 +42,7 @@ import { G, Circle as CircleSvg, Path } from "react-native-svg";
 
 // ----------------------------------------------- Themes --------------------------------------------------
 
-// import nightOwl from "prism-react-renderer/themes/nightOwl";
+import github from "prism-react-renderer/themes/github";
 import paleNight from "prism-react-renderer/themes/palenight";
 
 // ----------------------------------------------- Components --------------------------------------------------
@@ -51,6 +51,7 @@ import {
   useClipboard,
   Icon,
   Button,
+  useColorModeValue,
 } from "native-base";
 
 // @ts-ignore
@@ -168,21 +169,24 @@ export const CodeBlock = ({ children, props }: any) => {
   }
 
   const [hovered, setHovered] = React.useState(false);
-
+  const bgColor = useColorModeValue("#f9fafb", "#171E2E");
+  const borderColor = useColorModeValue("#e5e7eb", "#1e293b");
   return (
     <Highlight
       {...defaultProps}
       code={children}
       language="tsx"
-      theme={paleNight}
+      theme={useColorModeValue(github, paleNight)}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <Box position="relative">
           <Button
-          size="sm"
-          opacity={60}
+            size="sm"
+            opacity={60}
             position={"absolute"}
             variant="unstyled"
+            _light={{ bg: "coolGray.300" }}
+            _dark={{ bg: "coolGray.800" }}
             bg="coolGray.800"
             _hover={{ bg: "coolGray.600" }}
             top={3}
@@ -192,7 +196,6 @@ export const CodeBlock = ({ children, props }: any) => {
             onPress={handleCopy}
             rightIcon={
               <Icon
-                color="muted.50:alpha.70"
                 as={expoVectorIcons?.Ionicons}
                 name={copied ? "copy" : "copy-outline"}
                 size="4"
@@ -208,10 +211,12 @@ export const CodeBlock = ({ children, props }: any) => {
               ...style,
               borderRadius: "8px",
               padding: "16px",
-              paddingBottom:"0px",
+              paddingBottom: "0px",
               margin: "0px",
               overflow: "scroll",
-              backgroundColor: "#171E2E",
+              backgroundColor: bgColor,
+              borderWidth: "1",
+              borderColor: borderColor,
             }}
           >
             {tokens.map((line, i) => (

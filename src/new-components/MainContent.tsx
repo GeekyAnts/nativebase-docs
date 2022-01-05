@@ -51,11 +51,6 @@ export default function MainContent(props: any) {
         <Box
           h="calc(100% - 64px)"
           flex="1"
-          borderLeftWidth="1"
-          _light={{
-            borderColor: "borderColorLight",
-          }}
-          _dark={{ borderColor: "borderColorDark" }}
         >
           <SubMainContent props={props} />
         </Box>

@@ -105,12 +105,12 @@ const InfoAdmonition = ({ children, title }: any) => {
       _light={{
         bg: "info.50",
         borderColor: "info.600",
-        borderLeftColor: "indigo.600",
+        borderLeftColor: "info.600",
       }}
       _dark={{
         bg: "black:alpha.10",
         borderColor: "info.700:alpha.30",
-        borderLeftColor: "indigo.700",
+        borderLeftColor: "info.700",
       }}
     >
       <Text
