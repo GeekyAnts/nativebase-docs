@@ -16,8 +16,9 @@ import {
   useColorMode,
   HamburgerIcon,
   Link as NBLink,
-  Icon,
+  MoonIcon,
   Box,
+  useColorModeValue,
 } from "native-base";
 import NativebaseLogo from "./NativebaseLogo";
 import { isLatestVersion, isLatestVersionSlug } from "../utils";
@@ -28,6 +29,7 @@ import versions from "../../versions.json";
 import { FontAwesome } from "@expo/vector-icons";
 import Discord from "../icons/DiscordIcon";
 import GitHub from "../icons/GithubIcon";
+import FigmaIcon from "../icons/FigmaIcon";
 import GeekyantsLogo from "./GeekyantsLogo";
 
 export default function Navbar(props: any) {
@@ -145,24 +147,42 @@ export default function Navbar(props: any) {
           Announcing NativeBase Startup+ bundle 🎉
         </NBLink>
       </HStack>
-      <HStack space="2" alignItems="center">
+      <HStack space="7" alignItems="center">
         <DocSearch
           appId="QT6M4WLEXP"
           indexName="nativebase-v3"
           apiKey="3030e522f40cbea2b0386cdca3d88503"
         />
-        <Box px="2">
-          <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
-            <GitHub />
-          </NBLink>
-        </Box>
-        <Box px="2">
-          <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
-            <Discord />
-          </NBLink>
-        </Box>
-
-        <Link href="/" passHref>
+        <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
+          <FigmaIcon size="6" />
+        </NBLink>
+        <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
+          <GitHub
+            size="7"
+            fill={useColorModeValue("coolGray.700", "gray.100")}
+          />
+        </NBLink>
+        <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
+          <Discord
+            size="7"
+            fill={useColorModeValue("coolGray.700", "gray.100")}
+          />
+        </NBLink>
+        {/* <NBLink onPress={toggleColorMode}>
+          {useColorModeValue(<MoonIcon />, <SunIcon />)}
+        </NBLink> */}
+        <IconButton
+          p="0"
+          onPress={toggleColorMode}
+          variant="unstyled"
+          _icon={{
+            size: "7",
+            _light: { color: "coolGray.600" },
+            _dark: { color: "coolGray.300" },
+          }}
+          icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+        />
+        {/* <Link href="/" passHref>
           <Button
             variant="unstyled"
             _text={{
@@ -189,32 +209,30 @@ export default function Navbar(props: any) {
           >
             Documentation
           </Button>
-        </Link>
+        </Link> */}
         <NBLink
           href="https://geekyants.com/hire?utm_source=nativebase&utm_medium=header&utm_campaign=nativebase"
           isExternal
         >
           <Button
-            variant="unstyled"
-            _text={{
-              color: "coolGray.400",
-              fontWeight: "normal",
-              fontSize: "sm",
+            colorScheme="coolGray"
+            variant="outline"
+            px="2.5"
+            py="1.5"
+            _light={{
+              borderColor: "coolGray.300",
+            }}
+            _dark={{
+              borderColor: "coolGray.600",
             }}
             _hover={{
               _light: {
-                // @ts-ignore
-                _text: {
-                  borderBottomWidth: "1px",
-                  borderBottomColor: "inactiveHoverBorderBottomLinkColorLight",
-                },
+                borderColor: "coolGray.300",
+                bg: "coolGray.300:alpha.50",
               },
               _dark: {
-                // @ts-ignore
-                _text: {
-                  borderBottomWidth: "1px",
-                  borderBottomColor: "inactiveHoverBorderBottomLinkColorDark",
-                },
+                borderColor: "coolGray.600",
+                bg: "coolGray.700:alpha.50",
               },
             }}
             leftIcon={<GeekyantsLogo size="sm" />}
@@ -222,12 +240,6 @@ export default function Navbar(props: any) {
             Hire us
           </Button>
         </NBLink>
-        <IconButton
-          onPress={toggleColorMode}
-          colorScheme="gray"
-          _icon={{ size: "5", color: "coolGray.500" }}
-          icon={<SunIcon />}
-        />
       </HStack>
     </HStack>
   );

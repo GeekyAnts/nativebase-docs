@@ -89,7 +89,7 @@ function generateRandomDarkModeGradient() {
   return darkModeGradients[index];
 }
 function pickDarkModeGradient(gradient?: string): string[] {
-  if (gradient) {
+  if (gradient && gradient != "random") {
     // TODO: fix
     if (gradient.length > 1) {
       //@ts-ignore
@@ -106,7 +106,7 @@ function generateRandomLightModeGradient() {
   return lightModeGradients[index];
 }
 function pickLightModeGradient(gradient?: string): string[] {
-  if (gradient) {
+  if (gradient && gradient != "random") {
     // TODO: fix
     if (gradient.length > 1) {
       //@ts-ignore
@@ -313,7 +313,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
 
   const [showCode, setShowCode] = useState(false);
   const [showMagicWand, setShowMagicWand] = useState(false);
-  const [gradientIndex, setGradientIndex] = useState("0");
+  const [gradientIndex, setGradientIndex] = useState("random");
   React.useEffect(() => {
     setDarkModeGradientArray(pickDarkModeGradient(gradientIndex));
     setLightModeGradientArray(pickLightModeGradient(gradientIndex));
