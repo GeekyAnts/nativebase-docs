@@ -6,10 +6,11 @@ import {
   SunIcon,
   useColorMode,
   ArrowBackIcon,
+  Button,
 } from "native-base";
 import NativebaseLogo from "./NativebaseLogo";
-import { DocSearch } from "@docsearch/react";
 import "@docsearch/css";
+import AlgoliaSearchButtonMobile from "./AlgoliaSearchButtonMobile";
 
 export default function MobileNavbar(props: any) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -43,15 +44,19 @@ export default function MobileNavbar(props: any) {
         <NativebaseLogo />
       </HStack>
       <HStack alignItems="center" space="4">
-        <DocSearch
-          appId="QT6M4WLEXP"
-          indexName="nativebase-v3"
-          apiKey="3030e522f40cbea2b0386cdca3d88503"
-        />
+        <AlgoliaSearchButtonMobile />
         <IconButton
           onPress={toggleColorMode}
           colorScheme="gray"
-          _icon={{ size: "5", color: "coolGray.500" }}
+          _icon={{ size: "5" }}
+          _light={{
+            // @ts-ignore
+            _icon: { color: "coolGray.500" },
+          }}
+          _dark={{
+            // @ts-ignore
+            _icon: { color: "coolGray.400" },
+          }}
           icon={<SunIcon />}
         />
       </HStack>

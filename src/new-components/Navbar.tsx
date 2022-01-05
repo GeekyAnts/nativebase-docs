@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import { DocSearch } from "@docsearch/react";
 import "@docsearch/css";
@@ -18,6 +18,7 @@ import {
   Link as NBLink,
   Icon,
   Box,
+  useColorModeValue,
 } from "native-base";
 import NativebaseLogo from "./NativebaseLogo";
 import { isLatestVersion, isLatestVersionSlug } from "../utils";
@@ -29,11 +30,24 @@ import { FontAwesome } from "@expo/vector-icons";
 import Discord from "../icons/DiscordIcon";
 import GitHub from "../icons/GithubIcon";
 import GeekyantsLogo from "./GeekyantsLogo";
+import AlgoliaSearchButton from "./AlgoliaSearchButton";
 
 export default function Navbar(props: any) {
   const { activeVersion, setActiveVersion } = useContext(AppContext);
+  const ref = useRef(null);
   const router = useRouter();
   const { colorMode, toggleColorMode } = useColorMode();
+  useEffect(() => {
+    if (colorMode === "light")
+      document
+        .getElementsByTagName("html")[0]
+        .setAttribute("data-theme", "light");
+    else
+      document
+        .getElementsByTagName("html")[0]
+        .setAttribute("data-theme", "dark");
+  }, [colorMode]);
+
   const updateActiveVersion = (version: string, versions: string[]) => {
     const currentPathArray = window?.location.href.split("/");
     let pathArray: string[] = [];
@@ -53,6 +67,7 @@ export default function Navbar(props: any) {
     });
     router.push(path);
   };
+
   return (
     <HStack
       // position="absolute"
@@ -145,12 +160,18 @@ export default function Navbar(props: any) {
           Announcing NativeBase Startup+ bundle 🎉
         </NBLink>
       </HStack>
-      <HStack space="2" alignItems="center">
+      <HStack
+        space="2"
+        alignItems="center"
+        nativeID={useColorModeValue("right-navbar-light", "right-navbar-dark")}
+      >
+        <AlgoliaSearchButton />
         <DocSearch
           appId="QT6M4WLEXP"
           indexName="nativebase-v3"
           apiKey="3030e522f40cbea2b0386cdca3d88503"
         />
+
         <Box px="2">
           <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
             <GitHub />
