@@ -161,13 +161,13 @@ export default function Navbar(props: any) {
           Announcing NativeBase Startup+ bundle 🎉
         </NBLink>
       </HStack>
+      <DocSearch
+        appId="QT6M4WLEXP"
+        indexName="nativebase-v3"
+        apiKey="3030e522f40cbea2b0386cdca3d88503"
+      />
       <HStack space="7" alignItems="center">
         <AlgoliaSearchButton />
-        <DocSearch
-          appId="QT6M4WLEXP"
-          indexName="nativebase-v3"
-          apiKey="3030e522f40cbea2b0386cdca3d88503"
-        />
         <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
           <FigmaIcon size="6" />
         </NBLink>
