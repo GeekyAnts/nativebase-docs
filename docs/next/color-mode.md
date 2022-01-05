@@ -58,7 +58,7 @@ function PseudoPropsUsage() {
   );
 }
 
-export default function () {
+export const Example = () => {
   return (
     <NativeBaseProvider>
       <PseudoPropsUsage />

@@ -15,10 +15,18 @@ export function ComponentTheme({ name, fileName }: any) {
       // }}
     >
       <Box rounded="1">
-        <Text color="coolGray.300" fontWeight="normal" fontSize="md">
+        <Text
+          _light={{ color: "coolGray.500" }}
+          _dark={{ color: "coolGray.300" }}
+          fontWeight="normal"
+          fontSize="md"
+        >
           NativeBase ships with a default theme for each component. Checkout the
           default theme of {name}
-          <Anchor href={url + "/" + "src/theme/components/" + fileName + ".ts"} isExternal >
+          <Anchor
+            href={url + "/" + "src/theme/components/" + fileName + ".ts"}
+            isExternal
+          >
             {" "}
             here
           </Anchor>

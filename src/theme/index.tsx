@@ -2,7 +2,7 @@ import { extendTheme } from "native-base";
 import colors from "native-base/src/theme/base/colors";
 export const theme = extendTheme({
   colors: {
-    backgroundLight: "#fff",
+    backgroundLight: colors.coolGray[100],
     backgroundDark: colors.blueGray[900],
 
     primaryTextDark: colors.cyan[200],
@@ -57,6 +57,10 @@ export const theme = extendTheme({
     // -------------------------------------------------- CodeBlock -------------------------------------------
 
     codeBlockBackgroundColor: "#171E2E",
+
+    // -------------------------------------------------- Admonitions -------------------------------------------
+    tipBackgroundColorDark: colors.coolGray[300],
+    tipBackgroundColorLight: colors.coolGray[900],
   },
   config: {
     // Changing initialColorMode to 'dark'

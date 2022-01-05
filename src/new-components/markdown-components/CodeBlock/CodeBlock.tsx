@@ -42,22 +42,15 @@ import { G, Circle as CircleSvg, Path } from "react-native-svg";
 
 // ----------------------------------------------- Themes --------------------------------------------------
 
-import nightOwl from "prism-react-renderer/themes/nightOwl";
+// import nightOwl from "prism-react-renderer/themes/nightOwl";
 import paleNight from "prism-react-renderer/themes/palenight";
 
 // ----------------------------------------------- Components --------------------------------------------------
 import {
   Box,
-  ScrollView,
-  IconButton,
   useClipboard,
   Icon,
-  Tooltip,
-  Link,
-  HStack,
-  Divider,
-  Spacer,
-  Text,
+  Button,
 } from "native-base";
 
 // @ts-ignore
@@ -174,32 +167,62 @@ export const CodeBlock = ({ children, props }: any) => {
     }, 2000);
   }
 
+  const [hovered, setHovered] = React.useState(false);
+
   return (
     <Highlight
       {...defaultProps}
       code={children}
       language="tsx"
-      theme={nightOwl}
+      theme={paleNight}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <pre
-          className={className}
-          style={{
-            ...style,
-            borderRadius: "8px",
-            padding: "16px",
-            margin: "0px",
-            overflowX: "auto",
-          }}
-        >
-          {tokens.map((line, i) => (
-            <div {...getLineProps({ line, key: i })} key={i}>
-              {line.map((token, key) => (
-                <span {...getTokenProps({ token, key })} key={key} />
-              ))}
-            </div>
-          ))}
-        </pre>
+        <Box position="relative">
+          <Button
+          size="sm"
+          opacity={60}
+            position={"absolute"}
+            variant="unstyled"
+            bg="coolGray.800"
+            _hover={{ bg: "coolGray.600" }}
+            top={3}
+            right={4}
+            px="2"
+            p="1"
+            onPress={handleCopy}
+            rightIcon={
+              <Icon
+                color="muted.50:alpha.70"
+                as={expoVectorIcons?.Ionicons}
+                name={copied ? "copy" : "copy-outline"}
+                size="4"
+              />
+            }
+          >
+            {!copied ? "Copy" : "Copied"}
+          </Button>
+
+          <pre
+            className={className}
+            style={{
+              ...style,
+              borderRadius: "8px",
+              padding: "16px",
+              paddingBottom:"0px",
+              margin: "0px",
+              overflow: "scroll",
+              backgroundColor: "#171E2E",
+            }}
+          >
+            {tokens.map((line, i) => (
+              <div {...getLineProps({ line, key: i })} key={i}>
+                {line.map((token, key) => (
+                  <span {...getTokenProps({ token, key })} key={key} />
+                ))}
+              </div>
+            ))}
+          </pre>
+        </Box>
       )}
     </Highlight>
   );
