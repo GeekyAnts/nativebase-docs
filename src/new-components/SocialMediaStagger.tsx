@@ -22,6 +22,7 @@ export const SocialMediaStagger = (props: any) => {
       display={{ base: "flex", lg: "none" }}
       right="30px"
       ml="auto"
+      mt="-220"
     >
       <Stagger
         visible={isOpen}
