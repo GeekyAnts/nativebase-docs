@@ -174,12 +174,12 @@ export const CodeBlock = ({ children, props }: any) => {
   return (
     <Highlight
       {...defaultProps}
-      code={children}
+      code={children.trim("\n")}
       language="tsx"
       theme={useColorModeValue(github, paleNight)}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Box position="relative">
+        <Box w="100%" position="relative">
           <Button
             size="sm"
             opacity={60}
@@ -211,7 +211,7 @@ export const CodeBlock = ({ children, props }: any) => {
               ...style,
               borderRadius: "8px",
               padding: "16px",
-              paddingBottom: "0px",
+              paddingBottom: "8px",
               margin: "0px",
               overflow: "scroll",
               backgroundColor: bgColor,

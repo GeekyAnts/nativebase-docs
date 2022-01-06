@@ -141,11 +141,9 @@ function Component() {
 }
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <Component />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <Component />
+    </Center>
   );
 }
 ```
