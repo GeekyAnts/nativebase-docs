@@ -2,8 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 export default function NativebaseIconLogo(props: any) {
-  const { sidebar } = props;
-
   return (
     <Image
       alt="Nativebase logo"
@@ -12,6 +10,7 @@ export default function NativebaseIconLogo(props: any) {
       width="38"
       height="42"
       quality={100}
+      {...props}
     />
   );
 }

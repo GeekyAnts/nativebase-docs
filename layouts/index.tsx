@@ -4,6 +4,7 @@ import {
   Box,
   HStack,
   ScrollView,
+  Text,
   useBreakpointValue,
   useColorModeValue,
   useToken,
@@ -18,6 +19,7 @@ import MainContent from "../src/new-components/MainContent";
 
 import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSidebarVersionDropdown";
 import { SocialMediaStagger } from "../src/new-components/SocialMediaStagger";
+import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
 
 function Layout({
   children: content,
@@ -166,6 +168,33 @@ function Layout({
           </Box>
           <SocialMediaStagger />
         </ScrollView>
+        <Box
+          position="fixed"
+          bottom="8"
+          right={{ base: "auto", lg: "30px" }}
+          left={{ base: "30px", lg: "auto" }}
+          mr="auto"
+          _light={{ bg: "coolGray.50" }}
+          _dark={{ bg: "coolGray.800" }}
+          h="36px"
+          w="185"
+          rounded="4"
+          overflow="hidden"
+        >
+          <Box position="absolute" left="-90px" top="-85px">
+            <NativebaseIconLogo width="125" height="130" />
+          </Box>
+
+          <Text
+            pl="6"
+            _light={{ color: "black" }}
+            _dark={{ color: "coolGray.50" }}
+            m="auto"
+            fontSize="sm"
+          >
+            MadeWithNativeBase
+          </Text>
+        </Box>
       </Box>
     </>
   );

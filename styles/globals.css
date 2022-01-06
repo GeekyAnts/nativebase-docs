@@ -65,7 +65,7 @@ html[data-theme="dark"] {
   --docsearch-primary-color: #0e7490;
   --docsearch-text-color: rgb(245, 246, 247);
   --docsearch-container-background: rgba(9, 10, 17, 0.8);
-  --docsearch-modal-background: rgb(21, 23, 42);
+  --docsearch-modal-background: #111827 !important;
   --docsearch-modal-shadow: inset 1px 1px 0 0 rgb(44, 46, 64),
     0 3px 8px 0 rgb(0, 3, 9);
   --docsearch-searchbox-background: rgb(9, 10, 17);
@@ -85,6 +85,7 @@ html[data-theme="dark"] {
     0 -4px 8px 0 rgba(0, 0, 0, 0.2);
   --docsearch-logo-color: rgb(255, 255, 255);
   --docsearch-muted-color: rgb(127, 132, 151);
+  --docsearch-footer-background: #1f2937 !important;
 }
 
 html[data-theme="light"] {
