@@ -48,10 +48,7 @@ export default function MainContent(props: any) {
   return (
     <>
       <ScrollContext.Provider value={{ timestamp, setTimestamp }}>
-        <Box
-          h="calc(100% - 64px)"
-          flex="1"
-        >
+        <Box h="calc(100% - 64px)" flex="1">
           <SubMainContent props={props} />
         </Box>
         {props.showToc && (

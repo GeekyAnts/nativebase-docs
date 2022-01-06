@@ -17,10 +17,11 @@ export const SocialMediaStagger = (props: any) => {
 
   return (
     <Box
-      position="fixed"
+      position="sticky"
       bottom="8"
       display={{ base: "flex", lg: "none" }}
       right="30px"
+      ml="auto"
     >
       <Stagger
         visible={isOpen}

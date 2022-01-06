@@ -64,12 +64,17 @@ function Layout({
     } else {
       setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
     }
-    document.getElementsByTagName("body")[0].scrollTop = 0;
   }, []);
+
+  useEffect(() => {
+    // @ts-ignore
+    document.getElementById("scrollview-id").scrollTop = 0;
+  }, [content]);
 
   useEffect(() => {
     document.getElementsByTagName("body")[0].style.backgroundColor = bgColor;
   }, [bgColor]);
+
   const isLargeScreen = useBreakpointValue({
     base: false,
     lg: true,
