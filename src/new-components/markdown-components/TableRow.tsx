@@ -4,7 +4,13 @@ import { getHeadingIds } from "../../utils";
 
 export const TableRow = ({ children }: any) => {
   return (
-    <HStack borderBottomWidth="1" borderColor="gray.700" w="100%" py="3">
+    <HStack
+      borderBottomWidth="1"
+      _dark={{ borderColor: "borderColorDark" }}
+      _light={{ borderColor: "borderColorLight" }}
+      w="100%"
+      py="3"
+    >
       {children}
     </HStack>
   );

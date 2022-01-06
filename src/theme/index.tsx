@@ -8,7 +8,7 @@ export const theme = extendTheme({
     primaryTextDark: colors.cyan[200],
     primaryTextLight: colors.cyan[700],
 
-    borderColorDark: "#313538",
+    borderColorDark: colors.coolGray[800],
     borderColorLight: "#dfe3e6",
 
     // -------------------------------------------------- TOC -------------------------------------------
