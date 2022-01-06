@@ -16,7 +16,7 @@ export default function Sidebar(props: any) {
         py="5"
         w={isMobile ? "100%" : "64"}
         flex="1"
-        borderRightWidth="1"
+        borderRightWidth={isMobile ? "0" : "1"}
         _light={{
           borderColor: "borderColorLight",
           bg: "sidebarBackgroundLight",
