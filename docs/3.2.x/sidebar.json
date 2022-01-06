@@ -11,7 +11,8 @@
         },
         {
           "id": "installation",
-          "title": "Installation"
+          "title": "Installation",
+          "showToc": false
         },
         {
           "id": "install-rn",

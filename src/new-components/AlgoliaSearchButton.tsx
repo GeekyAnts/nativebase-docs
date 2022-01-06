@@ -18,7 +18,7 @@ export default function AlgoliaSearchButton(props: any) {
     >
       {({ isHovered, isFocused }: any) => {
         return (
-          <HStack justifyContent="space-between" minW="120">
+          <HStack justifyContent="space-between" minW="120" alignItems="center">
             <HStack alignItems="center" space="1">
               <SearchIcon
                 size="4"
