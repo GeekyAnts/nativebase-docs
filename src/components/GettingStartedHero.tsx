@@ -15,7 +15,12 @@ export function GettingStartedHero() {
       >
         <Box flex="1">
           <VStack space="4">
-            <Text color="coolGray.400" fontSize="md" mb="4">
+            <Text
+              _dark={{ color: "coolGray.400" }}
+              _light={{ color: "coolGray.600" }}
+              fontSize="md"
+              mb="4"
+            >
               NativeBase is a component library that enables devs to build
               universal design systems. It is built on top of React Native,
               allowing you to develop apps for Android, iOS and the Web.
@@ -49,7 +54,7 @@ export function GettingStartedHero() {
               />
             </Stack>
           </VStack>
-          <Box mt="4" >
+          <Box mt="4">
             <Heading2>A Brief History of NativeBase</Heading2>
             <NBHistory />
           </Box>

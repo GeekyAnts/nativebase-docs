@@ -1,13 +1,12 @@
 import React from "react";
-import { Text, useColorModeValue } from "native-base";
+import { Text } from "native-base";
 export const PText = ({ children }: any) => {
   return (
     <Text
-      color={useColorModeValue("coolGray.700", "coolGray.400")}
+      _dark={{ color: "coolGray.400" }}
+      _light={{ color: "coolGray.700" }}
       mb="7"
-      // for p tag
       fontSize="md"
-      lineHeight="30"
     >
       {children}
     </Text>

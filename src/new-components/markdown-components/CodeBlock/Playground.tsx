@@ -271,7 +271,7 @@ export const Playground = ({ children, props }: any) => {
         }}
         _light={{
           borderWidth: 1,
-          borderColor: "coolGray.300",
+          borderColor: "coolGray.200",
           bg: "coolGray.50",
         }}
         bg="blueGray.800:alpha.40"

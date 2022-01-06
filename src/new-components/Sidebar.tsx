@@ -61,14 +61,14 @@ const SidebarItem = (props: any) => {
               _light: {
                 bg:
                   item.id === activeSidebarItem
-                    ? "activeSidebarItemHoverBackgroundLight"
+                    ? "activeSidebarItemHoverBackgroundLight:alpha.80"
                     : "inactiveSidebarItemHoverBackgroundLight",
               },
             }}
             _light={{
               bg:
                 item.id === activeSidebarItem
-                  ? "activeSidebarItemBackgroundLight"
+                  ? "activeSidebarItemBackgroundLight:alpha.60"
                   : "transparent",
             }}
             _dark={{

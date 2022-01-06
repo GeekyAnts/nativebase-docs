@@ -33,16 +33,16 @@ export const theme = extendTheme({
     sidebarBackgroundLight: colors.coolGray[100],
     sidebarBackgroundDark: colors.blueGray[900],
     sidebarItemHeadingTextDark: colors.coolGray[50],
-    sidebarItemHeadingTextLight: colors.coolGray[800],
+    sidebarItemHeadingTextLight: colors.blueGray[900],
     sidebarItemTextDark: colors.coolGray[200],
     sidebarItemTextLight: "#11181c",
 
-    activeSidebarItemBackgroundLight: colors.cyan[100],
+    activeSidebarItemBackgroundLight: colors.cyan[200],
     activeSidebarItemBackgroundDark: colors.cyan[700],
-    activeSidebarItemHoverBackgroundLight: colors.cyan[100],
+    activeSidebarItemHoverBackgroundLight: colors.cyan[200],
     activeSidebarItemHoverBackgroundDark: colors.cyan[600],
 
-    inactiveSidebarItemHoverBackgroundLight: colors.blueGray[100],
+    inactiveSidebarItemHoverBackgroundLight: colors.blueGray[200],
     inactiveSidebarItemHoverBackgroundDark: colors.blueGray[800],
 
     // -------------------------------------------------- Link -------------------------------------------
@@ -81,6 +81,6 @@ export const theme = extendTheme({
   },
   config: {
     // Changing initialColorMode to 'dark'
-    initialColorMode: "dark",
+    initialColorMode: "light",
   },
 });
