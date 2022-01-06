@@ -6,22 +6,21 @@ import {
   useToken,
 } from "native-base";
 import React from "react";
-import { Rect, Pattern, Use, Image, Circle, Path } from "react-native-svg";
+import { Path } from "react-native-svg";
 
 export const CodePlaygroundIcon = (props: IIconProps) => {
   const NewIcon = createIcon({
-    viewBox: "0 0 36 36",
-    // d: ['M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0','150'],
+    viewBox: "0 0 29 29",
     path: [
       <Path
-        d="M24 13.2012L22.3033 14.8979L25.4061 18.0011L22.3022 21.1043L23.9989 22.8009L28.8002 18.0011L24 13.2012ZM12.0001 22.8009L13.6971 21.1043L10.5939 18.0011L13.6982 14.8979L12.0012 13.2012L7.2002 18.0011L12.0001 22.8009Z"
+        d="M22.3334 8.23489L20.1183 10.45L24.1692 14.5014L20.1169 18.5528L22.332 20.7679L28.6004 14.5014L22.3334 8.23489ZM6.6669 20.7679L8.88248 18.5528L4.83108 14.5014L8.88389 10.45L6.66831 8.23489L0.400391 14.5014L6.6669 20.7679Z"
         fill={useColorModeValue(
           useToken("colors", "warmGray.800"),
           useToken("colors", "warmGray.50")
         )}
       />,
       <Path
-        d="M14.0303 28.1791L19.6506 7.2019L21.969 7.8229L16.3483 28.8001L14.0303 28.1791Z"
+        d="M9.31641 27.7893L16.654 0.402344L19.6808 1.21309L12.3427 28.6L9.31641 27.7893Z"
         fill={useColorModeValue(
           useToken("colors", "lime.400"),
           useToken("colors", "lime.300")
@@ -30,22 +29,4 @@ export const CodePlaygroundIcon = (props: IIconProps) => {
     ],
   });
   return <NewIcon {...props} />;
-  //   return (
-  //     <svg
-  //       width="36"
-  //       height="36"
-  //       viewBox="0 0 36 36"
-  //       fill="none"
-  //       xmlns="http://www.w3.org/2000/svg"
-  //     >
-  //       <path
-  //         d="M24 13.2012L22.3033 14.8979L25.4061 18.0011L22.3022 21.1043L23.9989 22.8009L28.8002 18.0011L24 13.2012ZM12.0001 22.8009L13.6971 21.1043L10.5939 18.0011L13.6982 14.8979L12.0012 13.2012L7.2002 18.0011L12.0001 22.8009Z"
-  //         fill="#FAFAF9"
-  //       />
-  //       <path
-  //         d="M14.0303 28.1791L19.6506 7.2019L21.969 7.8229L16.3483 28.8001L14.0303 28.1791Z"
-  //         fill="#BEF264"
-  //       />
-  //     </svg>
-  //   );
 };

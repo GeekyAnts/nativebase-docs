@@ -166,20 +166,20 @@ export default function Navbar(props: any) {
         indexName="nativebase-v3"
         apiKey="3030e522f40cbea2b0386cdca3d88503"
       />
-      <HStack space="7" alignItems="center">
+      <HStack space="6" alignItems="center">
         <AlgoliaSearchButton />
         <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
           <FigmaIcon size="6" />
         </NBLink>
         <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
           <GitHub
-            size="7"
+            size="6"
             fill={useColorModeValue("coolGray.700", "gray.100")}
           />
         </NBLink>
         <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
           <Discord
-            size="7"
+            size="6"
             fill={useColorModeValue("coolGray.700", "gray.100")}
           />
         </NBLink>
@@ -191,7 +191,7 @@ export default function Navbar(props: any) {
           onPress={toggleColorMode}
           variant="unstyled"
           _icon={{
-            size: "7",
+            size: "6",
             _light: { color: "coolGray.600" },
             _dark: { color: "coolGray.300" },
           }}

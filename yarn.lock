@@ -9144,10 +9144,10 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base@3.3.0-rc.8:
-  version "3.3.0-rc.8"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.3.0-rc.8.tgz#51dad51925351ecb3b567adeabe5d1d397a70269"
-  integrity sha512-67hJCy5h6eMlRRFhviYG7jnq9doaN9UyESiw2wcGiAOmmBHfPCAHF2yCI/5MaQuUXkmvj9MIjgPWWSKCSfCgPg==
+native-base@3.3.1-alpha.1:
+  version "3.3.1-alpha.1"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.3.1-alpha.1.tgz#b1631e1ea0a565508156ec72db3bc8d8a9133d20"
+  integrity sha512-fqirW+Lmvf+Uyg4S08YzETD9nwrycXGRxoGtaO3KwPkhCF/DyDvzggM70roW6IgRsYtl/1GT1XVVlEPNwzT5TA==
   dependencies:
     "@react-aria/focus" "^3.2.3"
     "@react-aria/utils" "^3.6.0"
@@ -9183,6 +9183,8 @@ native-base@3.3.0-rc.8:
     lodash.omitby "^4.6.0"
     lodash.pick "^4.4.0"
     patch-package "^6.4.7"
+    react-native-keyboard-aware-scroll-view "^0.9.5"
+    stable-hash "^0.0.2"
     tinycolor2 "^1.4.2"
 
 natural-compare@^1.4.0:
@@ -11975,6 +11977,11 @@ ssri@^8.0.1:
   integrity sha512-97qShzy1AiyxvPNIkLWoGua7xoQzzPjQ0HAH4B0rWKo7SZ6USuPcrUiAFrws0UH8RrbWmgq3LMTObhPIHbbBeQ==
   dependencies:
     minipass "^3.1.1"
+
+stable-hash@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/stable-hash/-/stable-hash-0.0.2.tgz#a909deaa5b9d430b100ca0a10132a533f2665e94"
+  integrity sha512-tPwQ3c1rLIwbJpq59duoznegEbmgfV630C2n4R4G96LKBFljgK8j+O9AxjqB6cAzu4gE7s4pByrLWtZel8E+Mg==
 
 stable@^0.1.8:
   version "0.1.8"

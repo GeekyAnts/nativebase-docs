@@ -1,5 +1,19 @@
 import React from "react";
-import { Box, Heading, Link, Text, VStack, Stack } from "native-base";
+import {
+  Box,
+  Heading,
+  Link,
+  Text,
+  VStack,
+  Stack,
+  useColorModeValue,
+} from "native-base";
+import {
+  CodePlaygroundIcon,
+  BookMarkIcon,
+  ColorPaletteIcon,
+  CookerIcon,
+} from "../icons";
 import config from "../../docs.config";
 import { TileLink, KitchenSinkIframe, NBHistory } from "../components";
 import { Heading2 } from "../new-components/markdown-components";
@@ -30,13 +44,25 @@ export function GettingStartedHero() {
                 title="Installation Guide"
                 url="installation"
                 description="Setup NativeBase in your project"
-                bg="cyan.600"
+                _description={{
+                  _dark: { color: "coolGray.400" },
+                  _light: { color: "coolGray.600" },
+                }}
+                _titleIcon={{ size: 5 }}
+                TitleIcon={BookMarkIcon}
+                bg={useColorModeValue("cyan.600", "coolGray.800")}
               />
               <TileLink
                 title="Playground"
                 url="https://snack.expo.io/@nishanbende/example"
                 description="Try NativeBase on Snack by Expo"
-                bg="teal.600"
+                _description={{
+                  _dark: { color: "coolGray.400" },
+                  _light: { color: "coolGray.600" },
+                }}
+                TitleIcon={CodePlaygroundIcon}
+                _titleIcon={{ size: 6 }}
+                bg={useColorModeValue("teal.600", "coolGray.800")}
               />
             </Stack>
             <Stack direction={{ lg: "row" }} space="4">
@@ -44,13 +70,25 @@ export function GettingStartedHero() {
                 title="Theming"
                 url="default-theme"
                 description="Create your own Design System"
-                bg="pink.600"
+                _description={{
+                  _dark: { color: "coolGray.400" },
+                  _light: { color: "coolGray.600" },
+                }}
+                _titleIcon={{ size: 6 }}
+                TitleIcon={ColorPaletteIcon}
+                bg={useColorModeValue("pink.600", "coolGray.800")}
               />
               <TileLink
                 title="Recipes"
                 url="loginsignupforms"
                 description="Popular Recipes for Apps"
-                bg="indigo.600"
+                _description={{
+                  _dark: { color: "coolGray.400" },
+                  _light: { color: "coolGray.600" },
+                }}
+                _titleIcon={{ size: 6 }}
+                TitleIcon={CookerIcon}
+                bg={useColorModeValue("indigo.600", "coolGray.800")}
               />
             </Stack>
           </VStack>

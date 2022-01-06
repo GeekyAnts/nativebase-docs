@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import NextImage from "next/image";
-import { Box, Text, Factory } from "native-base";
+import { Box, Text, Factory, HStack } from "native-base";
 
 export default function TileLink({
   title,
@@ -14,6 +14,10 @@ export default function TileLink({
   descriptionClassName = "text-gray-100",
   wide = false,
   _Image,
+  _description,
+  TitleIcon,
+  _titleIcon,
+  _title,
   ...props
 }: any) {
   const Image = Factory(NextImage);
@@ -30,10 +34,13 @@ export default function TileLink({
         bg="gray.600"
         {...props}
       >
-        <Text bold mb="2" fontSize="md">
-          {title}
-        </Text>
-        <Text fontSize="sm" lineHeight="sm">
+        <HStack space={TitleIcon ? "1" : "0"}>
+          {TitleIcon && <TitleIcon {..._titleIcon} />}
+          <Text bold mb="2" fontSize="md" {..._title}>
+            {title}
+          </Text>
+        </HStack>
+        <Text fontSize="sm" lineHeight="sm" {..._description}>
           {description}
         </Text>
         {imgSrc && (
