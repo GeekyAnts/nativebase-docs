@@ -6,7 +6,9 @@ export const Heading4 = ({ children }: any) => {
   const idText = getHeadingIds(children);
   return (
     <Heading
-      fontSize="lg"
+      my="2"
+      fontSize="md"
+      // fontWeight="normal"
       color={useColorModeValue("gray.700", "gray.300")}
       // @ts-ignore
       nativeID={idText}

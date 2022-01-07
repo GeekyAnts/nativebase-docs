@@ -29,9 +29,10 @@ export default function TileLink({
         overflow="hidden"
         py="6"
         px="4"
-        shadow="6"
+        shadow="2"
         rounded="md"
-        bg="gray.600"
+        _dark={{ bg: "blueGray.800" }}
+        _light={{ bg: "coolGray.200" }}
         {...props}
       >
         <HStack space={TitleIcon ? "1" : "0"}>

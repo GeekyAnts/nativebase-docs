@@ -1,6 +1,6 @@
 import React from "react";
 import FontSizeComponent from "./FontSizeComponent";
-import { Box } from "native-base";
+import { Box, useColorModeValue } from "native-base";
 const FONT_SIZES: any = {
   "2xs": 10,
   xs: 12,
@@ -20,7 +20,7 @@ const FONT_SIZES: any = {
 
 const FontBlocks = ({}) => {
   return (
-    <Box bg="#292d3e" borderRadius="md" p="4">
+    <Box bg={useColorModeValue("#f9fafb", "#171E2E")} borderRadius="md" p="4">
       {Object.keys(FONT_SIZES).map((key, index) => (
         <FontSizeComponent
           name={key}

@@ -77,10 +77,8 @@ const darkModeGradients = [
 
 const lightModeGradients = [
   ["#FBCFE8", "#818CF8"],
-  ["#FDA4AF", "#3730A3"],
   ["#BAE6FD", "#60A5FA"],
   ["#FDBA74", "#E879F9"],
-  ["#5EEAD4", "#5B21B6"],
   ["#FEF3C7", "#67E8F9"],
 ];
 
@@ -427,7 +425,8 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
             opacity: "100",
             bg: "warmGray.800:alpha.30",
           }}
-          _text={{ color: "coolGray.100" }}
+          _dark={{ _text: { color: "coolGray.100" } }}
+          _light={{ _text: { color: "coolGray.800" } }}
           size="sm"
           variant="unstyled"
           onPress={() => {
