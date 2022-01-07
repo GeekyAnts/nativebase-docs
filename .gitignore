@@ -20,6 +20,9 @@
 
 # production
 /build
+/www
+/old_build
+
 
 # misc
 .DS_Store
