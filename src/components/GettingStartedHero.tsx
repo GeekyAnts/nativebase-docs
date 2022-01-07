@@ -50,7 +50,7 @@ export function GettingStartedHero() {
                 }}
                 _titleIcon={{ size: 5 }}
                 TitleIcon={BookMarkIcon}
-                bg={useColorModeValue("cyan.600", "coolGray.800")}
+                bg={useColorModeValue("coolGray.200", "coolGray.800")}
               />
               <TileLink
                 title="Playground"
@@ -62,7 +62,7 @@ export function GettingStartedHero() {
                 }}
                 TitleIcon={CodePlaygroundIcon}
                 _titleIcon={{ size: 6 }}
-                bg={useColorModeValue("teal.600", "coolGray.800")}
+                bg={useColorModeValue("coolGray.200", "coolGray.800")}
               />
             </Stack>
             <Stack direction={{ lg: "row" }} space="4">
@@ -76,7 +76,7 @@ export function GettingStartedHero() {
                 }}
                 _titleIcon={{ size: 6 }}
                 TitleIcon={ColorPaletteIcon}
-                bg={useColorModeValue("pink.600", "coolGray.800")}
+                bg={useColorModeValue("coolGray.200", "coolGray.800")}
               />
               <TileLink
                 title="Recipes"
@@ -88,7 +88,7 @@ export function GettingStartedHero() {
                 }}
                 _titleIcon={{ size: 6 }}
                 TitleIcon={CookerIcon}
-                bg={useColorModeValue("indigo.600", "coolGray.800")}
+                bg={useColorModeValue("coolGray.200", "coolGray.800")}
               />
             </Stack>
           </VStack>

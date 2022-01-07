@@ -331,20 +331,8 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
           }
           `;
       }}
-      // theme={nightOwl}
       theme={useColorModeValue(github, paleNight)}
     >
-      {/* <LiveEditor />
-          <LiveError />
-          <LivePreview /> */}
-      {/* <Pressable
-        onHoverIn={() => {
-          setShowMagicWand(true);
-        }}
-        onHoverOut={() => {
-          setShowMagicWand(false);
-        }}
-      > */}
       <Center
         onMouseEnter={() => {
           setShowMagicWand(true);
@@ -474,11 +462,11 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
             _dark={{ bg: "blueGray.800:alpha.40", borderColor: "coolGray.800" }}
             w="100%"
             alignItems="center"
-            pl="4"
+            pl="5"
             pr="5"
             borderBottomWidth="1"
           >
-            <CodePlaygroundIcon />
+            <CodePlaygroundIcon size="6" mr="2" />
             <Text>Playground</Text>
             <Spacer />
             <HStack
@@ -494,7 +482,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
               }
               h="9"
               py="1.5"
-              space="4"
+              space="3"
             >
               <Tooltip
                 bg="coolGray.800"
