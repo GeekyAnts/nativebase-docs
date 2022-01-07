@@ -190,9 +190,6 @@ export default function Navbar(props: any) {
               fill={useColorModeValue("coolGray.700", "gray.100")}
             />
           </NBLink>
-          {/* <NBLink onPress={toggleColorMode}>
-          {useColorModeValue(<MoonIcon />, <SunIcon />)}
-        </NBLink> */}
           <IconButton
             p="0"
             onPress={() => {

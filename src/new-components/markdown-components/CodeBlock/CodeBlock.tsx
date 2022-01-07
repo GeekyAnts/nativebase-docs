@@ -193,6 +193,12 @@ export const CodeBlock = ({ children, props }: any) => {
             right={4}
             px="2"
             p="1"
+            _text={{
+              fontSize: "sm",
+              // hack for now
+              fontFamily:
+                "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+            }}
             onPress={handleCopy}
             rightIcon={
               <Icon

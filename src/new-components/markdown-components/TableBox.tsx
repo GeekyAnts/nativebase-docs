@@ -103,7 +103,11 @@ export const TableBox = ({ isPropTable, children }: any) => {
     );
   } else {
     return (
-      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        mb="6"
+      >
         <Box w="800px">{children}</Box>
       </ScrollView>
     );

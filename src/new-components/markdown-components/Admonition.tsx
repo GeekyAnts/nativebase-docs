@@ -9,7 +9,7 @@ const TipAdmonition = ({ children, title }: any) => {
       mb="8"
       px="8"
       rounded="8"
-      py="6"
+      py="5"
       borderWidth="1"
       borderLeftWidth="12"
       _light={{
