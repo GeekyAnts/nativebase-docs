@@ -1,4 +1,4 @@
----
+[na---
 id: form
 title: Form with Validation
 ---
@@ -169,7 +169,7 @@ function BuildingAFormExample() {
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
         {'name' in errors ?
-        <FormControl.ErrorMessage _text={{fontSize: 'xs', color: 'error.500', fontWeight: 500}}>Error</FormControl.ErrorMessage>
+        <FormControl.ErrorMessage _text={{fontSize: 'xs', color: 'error.500', fontWeight: 500}}>{errors['name']}</FormControl.ErrorMessage>
 :
 
         <FormControl.HelperText _text={{fontSize: 'xs'}}>
