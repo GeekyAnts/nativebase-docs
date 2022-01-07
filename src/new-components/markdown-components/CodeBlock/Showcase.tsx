@@ -77,10 +77,8 @@ const darkModeGradients = [
 
 const lightModeGradients = [
   ["#FBCFE8", "#818CF8"],
-  ["#FDA4AF", "#3730A3"],
   ["#BAE6FD", "#60A5FA"],
   ["#FDBA74", "#E879F9"],
-  ["#5EEAD4", "#5B21B6"],
   ["#FEF3C7", "#67E8F9"],
 ];
 
@@ -331,20 +329,8 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
           }
           `;
       }}
-      // theme={nightOwl}
       theme={useColorModeValue(github, paleNight)}
     >
-      {/* <LiveEditor />
-          <LiveError />
-          <LivePreview /> */}
-      {/* <Pressable
-        onHoverIn={() => {
-          setShowMagicWand(true);
-        }}
-        onHoverOut={() => {
-          setShowMagicWand(false);
-        }}
-      > */}
       <Center
         onMouseEnter={() => {
           setShowMagicWand(true);
@@ -427,7 +413,8 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
             opacity: "100",
             bg: "warmGray.800:alpha.30",
           }}
-          _text={{ color: "coolGray.100" }}
+          _dark={{ _text: { color: "coolGray.100" } }}
+          _light={{ _text: { color: "coolGray.800" } }}
           size="sm"
           variant="unstyled"
           onPress={() => {
@@ -474,11 +461,11 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
             _dark={{ bg: "blueGray.800:alpha.40", borderColor: "coolGray.800" }}
             w="100%"
             alignItems="center"
-            pl="4"
+            pl="5"
             pr="5"
             borderBottomWidth="1"
           >
-            <CodePlaygroundIcon />
+            <CodePlaygroundIcon size="6" mr="2" />
             <Text>Playground</Text>
             <Spacer />
             <HStack
@@ -494,7 +481,7 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
               }
               h="9"
               py="1.5"
-              space="4"
+              space="3"
             >
               <Tooltip
                 bg="coolGray.800"

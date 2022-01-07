@@ -62,7 +62,11 @@ const SpaceBlocks = ({}) => {
           Representation
         </Heading>
       </HStack>
-      <Divider my="4" />
+      <Divider
+        my="4"
+        _dark={{ bg: "borderColorDark" }}
+        _light={{ bg: "borderColorLight" }}
+      />
       {Object.keys(SPACING).map((key, index) => (
         <>
           <SpaceComponent
@@ -70,7 +74,11 @@ const SpaceBlocks = ({}) => {
             value={SPACING[key]}
             key={`space-component-${key}-${index}`}
           />
-          <Divider my="3" />
+          <Divider
+            my="3"
+            _dark={{ bg: "borderColorDark" }}
+            _light={{ bg: "borderColorLight" }}
+          />
         </>
       ))}
     </Box>

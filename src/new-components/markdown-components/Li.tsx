@@ -5,38 +5,36 @@ import { AdmonitionContext } from "./Admonition";
 
 export const Li = ({ children }: any) => {
   const { admonitionStatus } = useContext(AdmonitionContext);
-  const bgColor = (admonitionStatus: any) => {
+  const isLightMode = useColorModeValue(true, false);
+  const bgColor = (admonitionStatus: any, isLightMode: boolean) => {
     switch (admonitionStatus) {
       case "info":
-        return useColorModeValue("info.500:alpha.50", "info.900:alpha.50");
+        return isLightMode ? "info.500:alpha.50" : "info.900:alpha.50";
       case "note":
-        return useColorModeValue("indigo.500:alpha.50", "indigo.900:alpha.50");
+        return isLightMode ? "indigo.500:alpha.50" : "indigo.900:alpha.50";
       case "tip":
-        return useColorModeValue("emerald.500:alpha.50", "emerald.900:alpha.50");
+        return isLightMode ? "emerald.500:alpha.50" : "emerald.900:alpha.50";
       default:
-        return useColorModeValue(
-          "primary.500:alpha.50",
-          "primary.900:alpha.50"
-        );
+        return isLightMode ? "primary.500:alpha.50" : "primary.900:alpha.50";
     }
   };
-  const iconColor = (admonitionStatus: any) => {
+  const iconColor = (admonitionStatus: any, isLightMode: boolean) => {
     switch (admonitionStatus) {
       case "info":
-        return useColorModeValue("info.900", "info.500");
+        return isLightMode ? "info.900" : "info.500";
       case "note":
-        return useColorModeValue("indigo.900", "indigo.500");
+        return isLightMode ? "indigo.900" : "indigo.500";
       case "tip":
-        return useColorModeValue("emerald.900", "emerald.400");
+        return isLightMode ? "emerald.900" : "emerald.400";
       default:
-        return useColorModeValue("primary.900", "primary.500");
+        return isLightMode ? "primary.900" : "primary.500";
     }
   };
-  const getIcon = (admonitionStatus: any) => {
+  const getIcon = (admonitionStatus: any, isLightMode: boolean) => {
     if (admonitionStatus === "") {
       return (
         <Box
-          bg={bgColor(admonitionStatus)}
+          bg={bgColor(admonitionStatus, isLightMode)}
           rounded="full"
           alignSelf="flex-start"
           p="2"
@@ -54,7 +52,7 @@ export const Li = ({ children }: any) => {
     } else {
       return (
         <Box
-          bg={bgColor(admonitionStatus)}
+          bg={bgColor(admonitionStatus, isLightMode)}
           rounded="full"
           alignSelf="flex-start"
           p="1"
@@ -64,7 +62,7 @@ export const Li = ({ children }: any) => {
             as={MaterialIcons}
             name="check"
             size="4"
-            color={iconColor(admonitionStatus)}
+            color={iconColor(admonitionStatus, isLightMode)}
           />
         </Box>
       );
@@ -72,7 +70,7 @@ export const Li = ({ children }: any) => {
   };
   return (
     <HStack space="3" alignItems="center">
-      {getIcon(admonitionStatus)}
+      {getIcon(admonitionStatus, isLightMode)}
       <Text
         fontSize="md"
         _light={{ color: "coolGray.700" }}

@@ -111,7 +111,8 @@
         },
         {
           "id": "customizing-theme",
-          "title": "Customizing Theme"
+          "title": "Customizing Theme",
+          "showToc": false
         },
         {
           "id": "customizing-fonts",

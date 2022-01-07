@@ -1,97 +1,152 @@
-import { Box, Heading, Text, HStack } from "native-base";
+import { Box, Heading, Text, HStack, Stack, VStack } from "native-base";
+import { Li } from "../../new-components/markdown-components/Li";
 import React from "react";
-
+import { PinDropIcon } from "../../icons";
 export default function NBHistory() {
   return (
-    <Box
-      my="6"
-      w={{ base: "90%", lg: "100%" }}
-      borderLeftWidth="4"
-      _dark={{ borderColor: "blueGray.100:alpha.70" }}
-      _light={{ borderColor: "blueGray.200" }}
-    >
-      <HStack alignItems="center">
-        <Box w="5" h="5" bg="gray.500" rounded="full" ml="-3" flexShrink="0" />
-        <Box pl="8" w="100%" pr="2">
+    <Box mt="10">
+      <Box
+        w="100%"
+        borderTopWidth={2}
+        _dark={{ borderColor: "coolGray.700" }}
+        _light={{ borderColor: "coolGray.300" }}
+        borderStyle="dashed"
+        rounded="1"
+      />
+      <Stack
+        direction={{ base: "column", md: "row" }}
+        justifyContent={"space-around"}
+      >
+        <Stack
+          space={2}
+          direction={{ base: "row", md: "column" }}
+          alignItems={"center"}
+        >
           <Box
-            py="5"
-            px="6"
-            _dark={{ bg: "blueGray.600:alpha.40" }}
-            _light={{ bg: "blueGray.500" }}
-            shadow="7"
-            rounded="md"
-            maxW="100%"
-            w="100%"
+            h="5"
+            w="1"
+            _dark={{ bg: "coolGray.700" }}
+            _light={{ bg: "coolGray.300" }}
+            mt="-2.5"
+            mb="2"
+          />
+          <Text
+            _dark={{ color: "coolGray.300" }}
+            _light={{ color: "coolGray.600" }}
           >
-            <Heading fontSize="lg" mb="2">
-              NativeBase v1.x
-            </Heading>
-            <Text fontSize="md" lineHeight="xl">
-              NativeBase started out as an open source framework that enabled
-              developers to build high-quality mobile apps using React Native.
-              The first version included UITabBar on iOS and Drawer on Android.
-              NativeBase v1 was very well-received by the dev community.
-            </Text>
-          </Box>
-        </Box>
-      </HStack>
-
-      <HStack alignItems="center" mt="8">
-        <Box w="5" h="5" bg="gray.500" rounded="full" flexShrink="0" ml="-3" />
-        <Box pl="8" w="100%" pr="2">
+            NativeBase v1.x
+          </Text>
+          <Text
+            _dark={{ color: "coolGray.300" }}
+            _light={{ color: "coolGray.600" }}
+          >
+            (2016)
+          </Text>
+        </Stack>
+        <Stack
+          space={2}
+          direction={{ base: "row", md: "column" }}
+          alignItems={"center"}
+        >
           <Box
-            // ml="8"
-            py="5"
-            px="6"
-            shadow="7"
-            rounded="md"
-            _dark={{ bg: "blueGray.600:alpha.40" }}
-            _light={{ bg: "blueGray.500" }}
-            maxW="100%"
-            // maxW="100%"
-            w="100%"
+            h="5"
+            w="1"
+            _dark={{ bg: "coolGray.700" }}
+            _light={{ bg: "coolGray.300" }}
+            mt="-2.5"
+            mb="2"
+          />
+          <Text
+            _dark={{ color: "coolGray.300" }}
+            _light={{ color: "coolGray.600" }}
           >
-            <Heading fontSize="lg" mb="2">
-              NativeBase v2.x
-            </Heading>
-            <Text fontSize="md" lineHeight="xl">
-              The second version was released with new components, preset
-              themes, unified icons & more. The main focus of v2 was to make
-              components easy to theme with very few modifications. From v2.4.1
-              onwards, NativeBase also included support for the web.
-            </Text>
-          </Box>
-        </Box>
-      </HStack>
-
-      <HStack alignItems="center" mt="8">
-        <Box w="5" h="5" bg="gray.500" rounded="full" flexShrink="0" ml="-3" />
-        <Box pl="8" w="100%" pr="2">
-          <Box
-            _dark={{ bg: "cyan.700:alpha.7  0" }}
-            _light={{ bg: "cyan.500" }}
-            rounded="md"
-            shadow="7"
-            // ml="8"
-            py="5"
-            px="6"
-            maxW="100%"
-            // maxW="100%"
-            w="100%"
+            NativeBase v2.x
+          </Text>
+          <Text
+            _dark={{ color: "coolGray.300" }}
+            _light={{ color: "coolGray.600" }}
           >
-            <Heading fontSize="lg" mb="2">
-              NativeBase v3.x
-            </Heading>
-            <Text fontSize="md" lineHeight="xl">
-              We wanted to make NativeBase the go-to component library for
-              anyone building with React Native and Web (in alpha). This version
-              is accessible, highly customizable and consistent across android,
-              iOS & web. That&apos;s not all though, read on for the full
-              benefits of using v3.
+            (2017)
+          </Text>
+        </Stack>
+        <Stack
+          space={2}
+          direction={{ base: "row", md: "column" }}
+          alignItems={"center"}
+          pt="2px"
+        >
+          <PinDropIcon size="6" mt="-6" mb="5" />
+          <Text
+            _dark={{ color: "coolGray.50" }}
+            _light={{ color: "coolGray.800", fontWeight: "medium" }}
+          >
+            NativeBase v3.x
+          </Text>
+          <Text
+            _dark={{ color: "coolGray.50" }}
+            _light={{ color: "coolGray.800", fontWeight: "medium" }}
+          >
+            (2020)
+          </Text>
+        </Stack>
+      </Stack>
+      <VStack mt="10" space="6">
+        <Li>
+          <Text
+            _dark={{ color: "coolGray.400" }}
+            _light={{ color: "coolGray.600" }}
+            lineHeight="xl"
+          >
+            <Text
+              _dark={{ color: "coolGray.300" }}
+              _light={{ color: "coolGray.800", fontWeight: "medium" }}
+            >
+              NativeBase v1.x :{" "}
             </Text>
-          </Box>
-        </Box>
-      </HStack>
+            NativeBase started out as an open source framework that enabled
+            developers to build high-quality mobile apps using React Native. The
+            first version included UITabBar on iOS and Drawer on Android.
+            NativeBase v1 was very well-received by the dev community.
+          </Text>
+        </Li>
+        <Li>
+          <Text
+            _dark={{ color: "coolGray.400" }}
+            _light={{ color: "coolGray.600" }}
+            lineHeight="xl"
+          >
+            <Text
+              _dark={{ color: "coolGray.300" }}
+              _light={{ color: "coolGray.800", fontWeight: "medium" }}
+            >
+              NativeBase v2.x :{" "}
+            </Text>
+            The second version was released with new components, preset themes,
+            unified icons & more. The main focus of v2 was to make components
+            easy to theme with very few modifications. From v2.4.1 onwards,
+            NativeBase also included support for the web.
+          </Text>
+        </Li>
+        <Li>
+          <Text
+            _dark={{ color: "coolGray.400" }}
+            _light={{ color: "coolGray.600" }}
+            lineHeight="xl"
+          >
+            <Text
+              _dark={{ color: "coolGray.300" }}
+              _light={{ color: "coolGray.800", fontWeight: "medium" }}
+            >
+              NativeBase v3.x :{" "}
+            </Text>
+            We wanted to make NativeBase the go-to component library for anyone
+            building with React Native and Web (in alpha). This version is
+            accessible, highly customizable and consistent across android, iOS &
+            web. That&apos;s not all though, read on for the full benefits of
+            using v3.
+          </Text>
+        </Li>
+      </VStack>
     </Box>
   );
 }
