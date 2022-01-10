@@ -5,10 +5,11 @@ import { AppContext } from "../src/AppContext";
 import { useEffect, useState } from "react";
 import React from "react";
 import { theme } from "../src/theme";
+import Head from 'next/head'
 
 type MyThemeType = typeof theme;
 declare module "native-base" {
-  interface ICustomTheme extends MyThemeType {}
+  interface ICustomTheme extends MyThemeType { }
 }
 
 const config = {
@@ -27,21 +28,26 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   const updateActiveVersion = (version: string) => setActiveVersion(version);
   return (
-    <AppContext.Provider
-      value={{
-        activeVersion,
-        setActiveVersion: updateActiveVersion,
-        activeSidebarItem,
-        setActiveSidebarItem,
-        setIsNavbarOpen,
-        isNavbarOpen,
-      }}
-    >
-      {/* @ts-ignore */}
-      <NativeBaseProvider isSSR theme={theme} config={config}>
-        <Component {...pageProps} />
-      </NativeBaseProvider>
-    </AppContext.Provider>
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <AppContext.Provider
+        value={{
+          activeVersion,
+          setActiveVersion: updateActiveVersion,
+          activeSidebarItem,
+          setActiveSidebarItem,
+          setIsNavbarOpen,
+          isNavbarOpen,
+        }}
+      >
+        {/* @ts-ignore */}
+        <NativeBaseProvider isSSR theme={theme} config={config}>
+          <Component {...pageProps} />
+        </NativeBaseProvider>
+      </AppContext.Provider>
+    </>
   );
 }
 
