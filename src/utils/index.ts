@@ -15,9 +15,6 @@ export function isLatestVersion(version: string) {
   return false;
 }
 
-export const getHeadingIds = (comp: any) => {
-  return comp
-    .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "")
-    .replace(/ /g, "-")
-    .toLowerCase();
+export const getHeadingMeta = (comp: any) => {
+  return [comp.split(" id=")[0], comp.split("id=")[1]];
 };
