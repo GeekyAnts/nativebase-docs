@@ -1,9 +1,7 @@
 import Link from "next/link";
 import {
-  Button,
   Box,
   Heading,
-  Text,
   Pressable,
   ScrollView,
   HStack,
@@ -52,8 +50,12 @@ export default function Toc(props: any) {
 
 const TocItems = (props: any) => {
   const { tocArrayItems } = props;
-  const [elementInViewPort, setElementInViewPort] = useState("");
-  const [headingInViewPort, setHeadingInViewPort] = useState("");
+  const [elementInViewPort, setElementInViewPort] = useState(
+    tocArrayItems[0].id
+  );
+  useEffect(() => {
+    setElementInViewPort(tocArrayItems[0].id);
+  }, [tocArrayItems]);
   return tocArrayItems.map((item: any, index: any, tocArrayItems: any) => {
     if (item.level === 0) {
       return null;
@@ -66,8 +68,6 @@ const TocItems = (props: any) => {
         tocArrayItems={tocArrayItems}
         elementInViewPort={elementInViewPort}
         setElementInViewPort={setElementInViewPort}
-        headingInViewPort={headingInViewPort}
-        setHeadingInViewPort={setHeadingInViewPort}
       />
     );
   });
@@ -108,6 +108,7 @@ const TocItem = ({
     }
     return headingId;
   };
+
   useEffect(() => {
     const elem = document.getElementById(item.id);
     if (checkInViewPort(elem)) {
