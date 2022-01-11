@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const withFonts = require("next-fonts");
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
@@ -71,16 +70,30 @@ module.exports = withPlugins(
     },
     images: {
       domains: [
+        "docs.nativebase.io",
         "media-exp1.licdn.com",
         "mir-s3-cdn-cf.behance.net",
         "avatars.githubusercontent.com",
         "images.opencollective.com",
         "pbs.twimg.com",
-        "docs.nativebase.io",
       ],
     },
     env: {
       startupUrl: process.env.STARTUP_URL,
+    },
+    webpack: (config) => {
+      config.resolve.alias = {
+        ...(config.resolve.alias || {}),
+        // Transform all direct `react-native` imports to `react-native-web`
+        "react-native$": "react-native-web",
+      };
+      config.resolve.extensions = [
+        ".web.js",
+        ".web.ts",
+        ".web.tsx",
+        ...config.resolve.extensions,
+      ];
+      return config;
     },
   }
 );
