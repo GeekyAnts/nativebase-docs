@@ -52,7 +52,7 @@ module.exports = {
       label: 'Layout',
       collapsed: false,
       items: [
-        // 'aspectRatio',
+        'aspectRatio',
         'box',
         'center',
         'container',
