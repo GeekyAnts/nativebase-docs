@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, Box, useColorModeValue } from "native-base";
-import { getHeadingIds } from "../../utils";
 
 export const TableHeadData = ({ children }: any) => {
   return (
