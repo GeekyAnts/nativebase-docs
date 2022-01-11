@@ -503,7 +503,8 @@ html[data-theme='dark'] .navbar-small {
 .menu__link[href*='/slider']:after,
 .menu__link[href*='/switch']:after,
 .menu__link[href*='/pressable']:after,
-.menu__link[href*='/checkBox']:after {
+.menu__link[href*='/checkBox']:after,
+.menu__link[href*='/skeleton']:after {
   content: 'Update';
   display: inline-block;
   position: relative;
