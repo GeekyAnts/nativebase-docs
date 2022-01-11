@@ -51,10 +51,10 @@ export default function Toc(props: any) {
 const TocItems = (props: any) => {
   const { tocArrayItems } = props;
   const [elementInViewPort, setElementInViewPort] = useState(
-    tocArrayItems[0].id
+    tocArrayItems.length > 0 ? tocArrayItems[0].id : ""
   );
   useEffect(() => {
-    setElementInViewPort(tocArrayItems[0].id);
+    setElementInViewPort(tocArrayItems.length > 0 ? tocArrayItems[0].id : "");
   }, [tocArrayItems]);
   return tocArrayItems.map((item: any, index: any, tocArrayItems: any) => {
     if (item.level === 0) {
