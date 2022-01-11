@@ -1,96 +1,100 @@
-import { Box, Heading, Text, HStack, Stack, VStack } from "native-base";
+import { Box, Heading, Text, HStack, Stack, VStack, Hidden } from "native-base";
 import { Li } from "../../new-components/markdown-components/Li";
 import React from "react";
 import { PinDropIcon } from "../../icons";
 export default function NBHistory() {
   return (
     <Box mt="10">
-      <Box
-        w="100%"
-        borderTopWidth={2}
-        _dark={{ borderColor: "coolGray.700" }}
-        _light={{ borderColor: "coolGray.300" }}
-        borderStyle="dashed"
-        rounded="1"
-      />
-      <Stack
-        direction={{ base: "column", md: "row" }}
-        justifyContent={"space-around"}
-      >
-        <Stack
-          space={2}
-          direction={{ base: "row", md: "column" }}
-          alignItems={"center"}
-        >
+      <Hidden till="md">
+        <>
           <Box
-            h="5"
-            w="1"
-            _dark={{ bg: "coolGray.700" }}
-            _light={{ bg: "coolGray.300" }}
-            mt="-2.5"
-            mb="2"
+            w="100%"
+            borderTopWidth={2}
+            _dark={{ borderColor: "coolGray.700" }}
+            _light={{ borderColor: "coolGray.300" }}
+            borderStyle="dashed"
+            rounded="1"
           />
-          <Text
-            _dark={{ color: "coolGray.300" }}
-            _light={{ color: "coolGray.600" }}
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            justifyContent={"space-around"}
           >
-            NativeBase v1.x
-          </Text>
-          <Text
-            _dark={{ color: "coolGray.300" }}
-            _light={{ color: "coolGray.600" }}
-          >
-            (2016)
-          </Text>
-        </Stack>
-        <Stack
-          space={2}
-          direction={{ base: "row", md: "column" }}
-          alignItems={"center"}
-        >
-          <Box
-            h="5"
-            w="1"
-            _dark={{ bg: "coolGray.700" }}
-            _light={{ bg: "coolGray.300" }}
-            mt="-2.5"
-            mb="2"
-          />
-          <Text
-            _dark={{ color: "coolGray.300" }}
-            _light={{ color: "coolGray.600" }}
-          >
-            NativeBase v2.x
-          </Text>
-          <Text
-            _dark={{ color: "coolGray.300" }}
-            _light={{ color: "coolGray.600" }}
-          >
-            (2017)
-          </Text>
-        </Stack>
-        <Stack
-          space={2}
-          direction={{ base: "row", md: "column" }}
-          alignItems={"center"}
-          pt="2px"
-        >
-          <PinDropIcon size="6" mt="-6" mb="5" />
-          <Text
-            _dark={{ color: "coolGray.50" }}
-            _light={{ color: "coolGray.800", fontWeight: "medium" }}
-          >
-            NativeBase v3.x
-          </Text>
-          <Text
-            _dark={{ color: "coolGray.50" }}
-            _light={{ color: "coolGray.800", fontWeight: "medium" }}
-          >
-            (2020)
-          </Text>
-        </Stack>
-      </Stack>
-      <VStack mt="10" space="6">
+            <Stack
+              space={2}
+              direction={{ base: "row", md: "column" }}
+              alignItems={"center"}
+            >
+              <Box
+                h="5"
+                w="1"
+                _dark={{ bg: "coolGray.700" }}
+                _light={{ bg: "coolGray.300" }}
+                mt="-2.5"
+                mb="2"
+              />
+              <Text
+                _dark={{ color: "coolGray.300" }}
+                _light={{ color: "coolGray.600" }}
+              >
+                NativeBase v1.x
+              </Text>
+              <Text
+                _dark={{ color: "coolGray.300" }}
+                _light={{ color: "coolGray.600" }}
+              >
+                (2016)
+              </Text>
+            </Stack>
+            <Stack
+              space={2}
+              direction={{ base: "row", md: "column" }}
+              alignItems={"center"}
+            >
+              <Box
+                h="5"
+                w="1"
+                _dark={{ bg: "coolGray.700" }}
+                _light={{ bg: "coolGray.300" }}
+                mt="-2.5"
+                mb="2"
+              />
+              <Text
+                _dark={{ color: "coolGray.300" }}
+                _light={{ color: "coolGray.600" }}
+              >
+                NativeBase v2.x
+              </Text>
+              <Text
+                _dark={{ color: "coolGray.300" }}
+                _light={{ color: "coolGray.600" }}
+              >
+                (2017)
+              </Text>
+            </Stack>
+            <Stack
+              space={2}
+              direction={{ base: "row", md: "column" }}
+              alignItems={"center"}
+              pt="2px"
+            >
+              <PinDropIcon size="6" mt="-6" mb="5" />
+              <Text
+                _dark={{ color: "coolGray.50" }}
+                _light={{ color: "coolGray.800", fontWeight: "medium" }}
+              >
+                NativeBase v3.x
+              </Text>
+              <Text
+                _dark={{ color: "coolGray.50" }}
+                _light={{ color: "coolGray.800", fontWeight: "medium" }}
+              >
+                (2020)
+              </Text>
+            </Stack>
+          </Stack>
+        </>
+      </Hidden>
+      <VStack mt={["0","0","10"]} space="6">
         <Li>
           <Text
             _dark={{ color: "coolGray.400" }}

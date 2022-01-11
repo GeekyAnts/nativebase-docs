@@ -1,14 +1,10 @@
 import React from "react";
 import { Heading, useColorModeValue } from "native-base";
-import { getHeadingIds } from "../../utils";
-
+import { getHeadingMeta } from "../../utils";
 
 export const Heading1 = ({ children }: any) => {
-  const idText = getHeadingIds(children);
+  const [content, id] = getHeadingMeta(children);
   return (
-    <Heading
-      fontSize="3xl"
-      color={useColorModeValue("gray.700", "gray.300")} />
-    )
+    <Heading fontSize="3xl" color={useColorModeValue("gray.700", "gray.300")} />
+  );
 };
-

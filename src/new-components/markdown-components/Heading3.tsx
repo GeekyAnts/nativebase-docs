@@ -1,10 +1,10 @@
 import React from "react";
 import { Heading, HStack, Icon, Link, Pressable } from "native-base";
-import { getHeadingIds } from "../../utils";
+import { getHeadingMeta } from "../../utils";
 import { Fontisto } from "@expo/vector-icons";
 
 export const Heading3 = ({ children }: any) => {
-  const idText = getHeadingIds(children);
+  const [content, id] = getHeadingMeta(children);
   return (
     <Pressable my="2" _web={{ cursor: "default" }}>
       {({ isHovered }) => {
@@ -16,12 +16,12 @@ export const Heading3 = ({ children }: any) => {
               _light={{ color: "gray.700" }}
               _dark={{ color: "gray.300" }}
               // @ts-ignore
-              nativeID={idText}
+              nativeID={id}
             >
-              {children}
+              {content}
             </Heading>
             {isHovered && (
-              <Link href={"#" + idText}>
+              <Link href={"#" + id}>
                 <Icon
                   as={Fontisto}
                   name="link"

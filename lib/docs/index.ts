@@ -35,16 +35,46 @@ const removeCommentsFromMarkdownFile = (file: string) => {
   return file.replace(/<!--[\s\S]*?-->/g, "");
 };
 
+const checkHeading = (headingLevelMap: any) => {
+  let headingIndexMap = [];
+  let headingMap = [];
+  let result = [];
+  for (let i = 0; i < headingLevelMap.length; i++) {
+    let headingMapIndex = headingMap.findIndex(
+      (id) => id === headingLevelMap[i].id
+    );
+    if (headingMapIndex !== -1) {
+      headingIndexMap[headingMapIndex] += 1;
+      result.push({
+        level: headingLevelMap[i].level,
+        title: headingLevelMap[i].title,
+        id: `${headingLevelMap[i].id}-${headingIndexMap[headingMapIndex]}`,
+      });
+    } else {
+      headingMap.push(headingLevelMap[i].id);
+      headingIndexMap.push(0);
+      result.push({
+        level: headingLevelMap[i].level,
+        title: headingLevelMap[i].title,
+        id: headingLevelMap[i].id,
+      });
+    }
+  }
+  return result;
+};
+
 export const getTOCArray = (file: string) => {
   file = removeCommentsFromMarkdownFile(file);
   const fileLines = file
     .split("\n")
-    .filter((line: string) => (line.substring(0, 1) === "#" ? true : false));
+    .filter((line: string) => (line.substring(0, 1) === "#" ? true : false))
+    .map((line: any) => line.split(" id")[0].trim());
+
   let toc = {};
-  const headingLevelMap = fileLines.map((line: string) =>
-    getHeadingLevel(line)
-  );
-  return headingLevelMap;
+  const headingLevelMap = fileLines.map((line: string) => {
+    return getHeadingLevel(line);
+  });
+  return checkHeading(headingLevelMap);
 };
 
 export const getFilePaths = (
@@ -109,6 +139,45 @@ export const parseAdmonitions = (fileData: any, version: string) => {
     }
   }
   return result.join("");
+};
+export const parseHeadings = (fileData: any, version: string) => {
+  const headings = fileData
+    .split("\n")
+    .filter((line: string) => line.substring(0, 1) === "#");
+
+  let result: any = [];
+  let key = -1;
+  let headingIndexMap = [];
+  let headingMap = [];
+  for (let i = 0; i < headings.length; i++) {
+    const headingId = headings[i]
+      .split("#")
+      .filter((val: any) => val !== "")[0]
+      .trim()
+      .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "")
+      .replace(/ /g, "-")
+      .toLowerCase();
+    let headingMapIndex = headingMap.findIndex((id) => id === headingId);
+    if (headingMapIndex !== -1) {
+      headingIndexMap[headingMapIndex] += 1;
+      result.push(`${headingId}-${headingIndexMap[headingMapIndex]}`);
+    } else {
+      headingMap.push(headingId);
+      headingIndexMap.push(0);
+      result.push(headingId);
+    }
+  }
+
+  const fileLines = fileData.split("\n").map((line: string) => {
+    if (line.substring(0, 1) === "#") {
+      key++;
+      return line + " id=" + result[key];
+    } else {
+      return line;
+    }
+  });
+
+  return fileLines.join("\n");
 };
 
 export const parseCodeBlock = (fileData: any, version: string) => {
@@ -415,6 +484,7 @@ export const getDocBySlug = async (filename: string, version: string) => {
   fileData = parseCodeBlock(fileData, version);
   fileData = parsePropTable(fileData, version);
   fileData = parseAdmonitions(fileData, version);
+  fileData = parseHeadings(fileData, version);
   // console.log(fileData);
 
   return fileData;
