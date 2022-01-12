@@ -526,6 +526,10 @@
             {
               "id": "building-footer-tabs",
               "title": "Footer"
+            },
+            {
+              "id": "aspect-ratio",
+              "title": "Aspect Ratio"
             }
           ]
         }
