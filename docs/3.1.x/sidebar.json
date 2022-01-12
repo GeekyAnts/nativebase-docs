@@ -392,7 +392,7 @@
         },
         {
           "id": "use-clipboard",
-          "title": "use"
+          "title": "useClipboard"
         },
         {
           "id": "use-media-query",

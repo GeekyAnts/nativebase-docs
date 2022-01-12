@@ -32,18 +32,25 @@ import { MaterialIcons, Ionicons, Entypo } from "@expo/vector-icons";
 function Example() {
   const [mode, setMode] = useState("Basic");
   return (
-    <Center>
+    <Center h="290px">
       <Box
-        _dark={{ bg: "coolGray.800" }}
-        _light={{ bg: "white" }}
+        _dark={{
+          bg: "coolGray.800",
+        }}
+        _light={{
+          bg: "white",
+        }}
         flex="1"
         safeAreaTop
-        maxW="300px"
+        maxW="400px"
+        w="100%"
       >
         <Heading p="4" pb="3" size="lg">
           Inbox
         </Heading>
-        <Basic />
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <Basic />
+        </ScrollView>
       </Box>
     </Center>
   );
@@ -115,8 +122,12 @@ function Basic() {
     <Box>
       <Pressable
         onPress={() => console.log("You touched me")}
-        _dark={{ bg: "coolGray.800" }}
-        _light={{ bg: "white" }}
+        _dark={{
+          bg: "coolGray.800",
+        }}
+        _light={{
+          bg: "white",
+        }}
       >
         <Box pl="4" pr="5" py="2">
           <HStack alignItems="center" space={3}>
