@@ -71,7 +71,7 @@ function AppDrawer() {
 export function Example() {
   return (
     <NativeBaseProvider>
-      <Box alignItems="center" pt="8" flex={1}>
+      <Box alignItems="center" flex={1}>
         <AppDrawer />
       </Box>
     </NativeBaseProvider>

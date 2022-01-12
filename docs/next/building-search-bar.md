@@ -33,54 +33,46 @@ import { FontAwesome5 } from "@expo/vector-icons";
 function SearchBar() {
   return (
     <VStack
+      my="4"
       space={5}
-      width="100%"
+      w="100%"
+      maxW="300px"
       divider={
         <Box px="2">
           <Divider />
         </Box>
       }
     >
-      <VStack width="100%" space={5} alignItems="center">
+      <VStack w="100%" space={5} alignSelf="center">
         <Heading fontSize="lg">Cupertino</Heading>
         <Input
           placeholder="Search"
           variant="filled"
           width="100%"
-          bg="gray.100"
           borderRadius="10"
           py="1"
           px="2"
-          placeholderTextColor="gray.500"
-          _hover={{ bg: "gray.200", borderWidth: 0 }}
           borderWidth="0"
-          _web={{
-            _focus: { style: { boxShadow: "none" } },
-          }}
           InputLeftElement={
             <Icon
               ml="2"
-              size="5"
-              color="gray.500"
+              size="4"
+              color="gray.400"
               as={<Ionicons name="ios-search" />}
             />
           }
         />
       </VStack>
 
-      <VStack width="100%" space={5} alignItems="center">
+      <VStack w="100%" space={5} alignSelf="center">
         <Heading fontSize="lg">Material</Heading>
         <Input
           placeholder="Search People & Places"
-          bg="#fff"
           width="100%"
           borderRadius="4"
           py="3"
           px="1"
           fontSize="14"
-          _web={{
-            _focus: { borderColor: "muted.300", style: { boxShadow: "none" } },
-          }}
           InputLeftElement={
             <Icon
               m="2"
@@ -107,11 +99,9 @@ function SearchBar() {
 
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1} px="2">
-        <SearchBar />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1} px="2">
+      <SearchBar />
+    </Center>
   );
 }
 ```
