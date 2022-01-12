@@ -5,6 +5,15 @@ title: Install in React Native project
 
 import { TileLink } from "../../src/components";
 
+<DocTabs
+  defaultValue='new'
+  values={[
+  { label: 'New Project', value: 'new' },
+  { label: 'Existing Project', value: 'existing' }
+  ]}>
+
+<DocTabItem value="new">
+
 ### Create a new project using ReactNative CLI with NativeBase template
 
 [Refer this link](https://github.com/react-native-community/cli#about) to get infomation about the React Native CLI.
@@ -29,6 +38,10 @@ npx react-native init MyApp --template react-native-template-native-base-typescr
 
 Yey! you are all set, start editing App.js/App.tsx now.
 
+</DocTabItem>
+
+<DocTabItem value="existing">
+
 ### Create a new project if not exist
 
 ```bash
@@ -38,13 +51,30 @@ cd AwesomeNativeBase
 
 ### Install dependencies
 
+<DocTabs
+defaultValue='yarn'
+values={[
+{ label: 'yarn', value: 'yarn' },
+{ label: 'npm', value: 'npm' }
+]}>
+
+<DocTabItem value="yarn">
+
 ```bash
 yarn add native-base react-native-svg react-native-safe-area-context
 ```
 
+</DocTabItem>
+
+<DocTabItem value="npm">
+
 ```bash
 npm install native-base react-native-svg react-native-safe-area-context
 ```
+
+</DocTabItem>
+
+</DocTabs>
 
 ### Run pod install
 
@@ -69,6 +99,10 @@ export default function App() {
   );
 }
 ```
+
+</DocTabItem>
+
+</DocTabs>
 
 <Center>
   <Image source={{ uri: "/img/minion.gif" }} />
