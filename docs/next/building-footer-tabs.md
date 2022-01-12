@@ -30,7 +30,14 @@ export function Example() {
   const [selected, setSelected] = React.useState(1);
   return (
     <NativeBaseProvider>
-      <Box flex={1} bg="white" safeAreaTop>
+      <Box
+        flex={1}
+        bg="white"
+        safeAreaTop
+        width="100%"
+        maxW="300px"
+        alignSelf="center"
+      >
         <Center flex={1}></Center>
         <HStack bg="indigo.600" alignItems="center" safeAreaBottom shadow={6}>
           <Pressable
@@ -93,7 +100,7 @@ export function Example() {
                 color="white"
                 size="sm"
               />
-              <Text color="white" font="12">
+              <Text color="white" fontSize="12">
                 Cart
               </Text>
             </Center>

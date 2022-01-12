@@ -33,7 +33,7 @@ function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
 
   return (
-    <VStack width="90%" mx="3">
+    <VStack width="90%" mx="3" maxW="300px">
       <FormControl isRequired>
         <FormControl.Label _text={{ bold: true }}>Name</FormControl.Label>
         <Input
@@ -52,11 +52,9 @@ function BuildingAFormExample() {
 }
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <BuildingAFormExample />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <BuildingAFormExample />
+    </Center>
   );
 }
 ```
@@ -96,7 +94,7 @@ function BuildingAFormExample() {
   };
 
   return (
-    <VStack width="90%" mx="3">
+    <VStack width="90%" mx="3" maxW="300px">
       <FormControl isRequired>
         <FormControl.Label _text={{ bold: true }}>Name</FormControl.Label>
         <Input
@@ -115,11 +113,9 @@ function BuildingAFormExample() {
 }
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <BuildingAFormExample />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <BuildingAFormExample />
+    </Center>
   );
 }
 ```
@@ -164,7 +160,7 @@ function BuildingAFormExample() {
   };
 
   return (
-    <VStack width="90%" mx="3">
+    <VStack width="90%" mx="3" maxW="300px">
       <FormControl isRequired isInvalid={"name" in errors}>
         <FormControl.Label _text={{ bold: true }}>Name</FormControl.Label>
         <Input
@@ -172,13 +168,9 @@ function BuildingAFormExample() {
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
         {"name" in errors ? (
-          <FormControl.ErrorMessage
-            _text={{ fontSize: "xs", color: "error.500", fontWeight: 500 }}
-          >
-            Error
-          </FormControl.ErrorMessage>
+          <FormControl.ErrorMessage>Error</FormControl.ErrorMessage>
         ) : (
-          <FormControl.HelperText _text={{ fontSize: "xs" }}>
+          <FormControl.HelperText>
             Name should contain atleast 3 character.
           </FormControl.HelperText>
         )}
@@ -191,11 +183,9 @@ function BuildingAFormExample() {
 }
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <BuildingAFormExample />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <BuildingAFormExample />
+    </Center>
   );
 }
 ```
