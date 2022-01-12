@@ -95,7 +95,7 @@ function Layout({
 
       <Box
         w="100%"
-        h="100vh"
+        h={{ base: "100%", md: "100vh" }}
         _light={{ bg: "backgroundLight" }}
         _dark={{ bg: "backgroundDark" }}
         alignItems="center"
