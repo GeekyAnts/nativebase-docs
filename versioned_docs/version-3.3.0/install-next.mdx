@@ -134,7 +134,7 @@ We'll need 2 more additional steps.
   <TabItem value="yarn">
 
 ```bash
-  yarn add next-compose-plugins next-transpile-modules @expo/next-adapter next-fonts -D
+  yarn add next-compose-plugins next-transpile-modules @expo/next-adapter -D
 ```
 
   </TabItem>
@@ -153,24 +153,49 @@ We'll need 2 more additional steps.
 
 ```js
 const { withExpo } = require('@expo/next-adapter');
-const withFonts = require('next-fonts');
 const withPlugins = require('next-compose-plugins');
 const withTM = require('next-transpile-modules')([
-  'react-native-web',
-  'react-native-svg',
   'native-base',
+  'react-native-svg',
+  'react-native-safe-area-context',
+  '@react-aria/visually-hidden',
+  '@react-native-aria/button',
+  '@react-native-aria/checkbox',
+  '@react-native-aria/combobox',
+  '@react-native-aria/focus',
+  '@react-native-aria/interactions',
+  '@react-native-aria/listbox',
+  '@react-native-aria/overlays',
+  '@react-native-aria/radio',
+  '@react-native-aria/slider',
+  '@react-native-aria/tabs',
+  '@react-native-aria/utils',
+  '@react-stately/combobox',
+  '@react-stately/radio',
 ]);
-
-const nextConfig = {};
 
 module.exports = withPlugins(
   [
     withTM,
-    [withFonts, { projectRoot: __dirname }],
     [withExpo, { projectRoot: __dirname }],
     // your plugins go here.
   ],
-  nextConfig
+  {
+    webpack: (config) => {
+      config.resolve.alias = {
+        ...(config.resolve.alias || {}),
+        // Transform all direct `react-native` imports to `react-native-web`
+        'react-native$': 'react-native-web',
+      };
+      config.resolve.extensions = [
+        '.web.js',
+        '.web.ts',
+        '.web.tsx',
+        ...config.resolve.extensions,
+      ];
+      return config;
+    },
+  }
 );
 ```
 

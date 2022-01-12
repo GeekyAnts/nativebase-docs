@@ -48,10 +48,10 @@ Now all the pseudo props follow a specific order that defines which pseudo prop 
 | \_hover        | 60               |
 | \_focus        | 50               |
 | \_focusVisible | 55               |
-| \_readOnly     | 40               |
-| \_invalid      | 40               |
 | \_active       | 30               |
 | \_checked      | 30               |
+| \_readOnly     | 40               |
+| \_invalid      | 40               |
 | \_web          | 10               |
 | \_android      | 10               |
 | \_ios          | 10               |
