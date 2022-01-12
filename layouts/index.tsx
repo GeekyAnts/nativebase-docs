@@ -91,11 +91,39 @@ function Layout({
             ? frontMatter.title + " | NativeBase"
             : pages?.currentPage?.title + " | NativeBase"
         }`}</title>
-      </Head>
+        <meta
+          name="keywords"
+          content="Universal Components for React and React Native"
+        />
+        {/* og meta links */}
+        <meta
+          property="og:title"
+          content="Universal Components for React and React Native"
+        />
+        <meta
+          property="og:description"
+          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+        />
+        <meta property="og:url" content="https://docs.nativebase.io" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:site_name" content="NativeBase" />
+        <meta
+          name="twitter:image:alt"
+          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+        />
+        <meta property="og:image" content="/img/nativebase.png" />
+        <meta name="twitter:image" content="/img/nativebase.png"></meta>
+        <meta name="twitter:site" content="@nativebase" />
 
+        <meta
+          name="description"
+          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+        />
+        <link rel="icon" href="/img/nativebaselogo.svg" />
+      </Head>
       <Box
         w="100%"
-        h="100vh"
+        h={{ base: "100%", md: "100vh" }}
         _light={{ bg: "backgroundLight" }}
         _dark={{ bg: "backgroundDark" }}
         alignItems="center"
