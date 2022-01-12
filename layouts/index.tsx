@@ -83,23 +83,23 @@ function Layout({
       setIsOpenSidebar(false);
     }
   }, [isLargeScreen]);
+  const title = `${
+    frontMatter && frontMatter.title
+      ? frontMatter.title +
+        " | NativeBase | Universal Components for React and React Native"
+      : pages?.currentPage?.title +
+        " | NativeBase | Universal Components for React and React Native"
+  }`;
   return (
     <>
       <Head>
-        <title>{`${
-          frontMatter && frontMatter.title
-            ? frontMatter.title + " | NativeBase"
-            : pages?.currentPage?.title + " | NativeBase"
-        }`}</title>
+        <title>{title}</title>
         <meta
           name="keywords"
           content="Universal Components for React and React Native"
         />
         {/* og meta links */}
-        <meta
-          property="og:title"
-          content="Universal Components for React and React Native"
-        />
+        <meta property="og:title" content={title} />
         <meta
           property="og:description"
           content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
