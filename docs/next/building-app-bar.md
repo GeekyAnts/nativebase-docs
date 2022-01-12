@@ -37,9 +37,9 @@ function AppBar() {
         justifyContent="space-between"
         alignItems="center"
         w="100%"
-        maxW="300px"
+        maxW="350"
       >
-        <HStack space="4" alignItems="center">
+        <HStack alignItems="center">
           <IconButton
             icon={
               <Icon size="sm" as={MaterialIcons} name="menu" color="white" />
@@ -49,7 +49,7 @@ function AppBar() {
             Home
           </Text>
         </HStack>
-        <HStack space="2">
+        <HStack>
           <IconButton
             icon={
               <Icon

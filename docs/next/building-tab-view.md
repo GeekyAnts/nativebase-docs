@@ -79,9 +79,12 @@ export function Example() {
           });
           const color =
             index === i
-              ? useColorModeValue("#000", "#fff")
+              ? useColorModeValue("#000", "#e5e5e5")
               : useColorModeValue("#1f2937", "#a1a1aa");
-          const borderColor = index === i ? "cyan.500" : "coolGray.200";
+          const borderColor =
+            index === i
+              ? "cyan.500"
+              : useColorModeValue("coolGray.200", "gray.400");
 
           return (
             <Box
