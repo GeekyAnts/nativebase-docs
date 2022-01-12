@@ -663,7 +663,7 @@
       "pages": [
         {
           "id": "changelog",
-          "title": "Utility Props"
+          "title": "Changelog"
         },
         { "id": "testing", "title": "Testing" },
         {
