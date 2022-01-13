@@ -10,14 +10,14 @@ You can use icons in multiple ways in NativeBase:
 - Use a third-party icon library ( such as [@expo/vector-icons](https://github.com/expo/vector-icons) ), with `as` prop.
 
 ```jsx isShowcase
-import React from 'react';
-import { CheckIcon, HStack, Text } from 'native-base';
+import React from "react";
+import { CheckIcon, HStack, Text } from "native-base";
 
 export const Example = () => {
   return (
     <HStack space={2}>
       <CheckIcon size="5" mt="0.5" color="emerald.500" />
-      <Text color="emerald.500" fontSize="md">
+      <Text color="coolGray.100" fontSize="md">
         Order Placed Successfully
       </Text>
     </HStack>

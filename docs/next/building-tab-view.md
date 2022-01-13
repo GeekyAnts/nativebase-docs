@@ -24,13 +24,29 @@ import { TabView, SceneMap } from "react-native-tab-view";
 import { NativeBaseProvider, Box, Text, Center } from "native-base";
 import Constants from "expo-constants";
 
-const FirstRoute = () => <Center flex={1}>This is Tab 1</Center>;
+const FirstRoute = () => (
+  <Center flex={1} my="4">
+    This is Tab 1
+  </Center>
+);
 
-const SecondRoute = () => <Center flex={1}>This is Tab 2</Center>;
+const SecondRoute = () => (
+  <Center flex={1} my="4">
+    This is Tab 2
+  </Center>
+);
 
-const ThirdRoute = () => <Center flex={1}>This is Tab 3</Center>;
+const ThirdRoute = () => (
+  <Center flex={1} my="4">
+    This is Tab 3
+  </Center>
+);
 
-const FourthRoute = () => <Center flex={1}>This is Tab 4 </Center>;
+const FourthRoute = () => (
+  <Center flex={1} my="4">
+    This is Tab 4{" "}
+  </Center>
+);
 
 const initialLayout = { width: Dimensions.get("window").width };
 
@@ -61,8 +77,14 @@ export function Example() {
               inputIndex === i ? 1 : 0.5
             ),
           });
-          const color = index === i ? "#1f2937" : "#a1a1aa";
-          const borderColor = index === i ? "cyan.500" : "coolGray.200";
+          const color =
+            index === i
+              ? useColorModeValue("#000", "#e5e5e5")
+              : useColorModeValue("#1f2937", "#a1a1aa");
+          const borderColor =
+            index === i
+              ? "cyan.500"
+              : useColorModeValue("coolGray.200", "gray.400");
 
           return (
             <Box
@@ -89,16 +111,14 @@ export function Example() {
   };
 
   return (
-    <NativeBaseProvider>
-      <TabView
-        navigationState={{ index, routes }}
-        renderScene={renderScene}
-        renderTabBar={renderTabBar}
-        onIndexChange={setIndex}
-        initialLayout={initialLayout}
-        style={{ marginTop: StatusBar.currentHeight }}
-      />
-    </NativeBaseProvider>
+    <TabView
+      navigationState={{ index, routes }}
+      renderScene={renderScene}
+      renderTabBar={renderTabBar}
+      onIndexChange={setIndex}
+      initialLayout={initialLayout}
+      style={{ marginTop: StatusBar.currentHeight }}
+    />
   );
 }
 ```

@@ -7,6 +7,11 @@ Provides a view that moves out of the way of virtual keyboard automatically. It 
 
 ## Example
 
+:::note
+
+Please see the example in your mobile to observe the effect.
+:::
+
 ```ComponentSnackPlayer path=components,basic,KeyboardAvoidingView,Basic.tsx
 
 ```

@@ -29,18 +29,30 @@ import {
 import { SwipeListView } from "react-native-swipe-list-view";
 import { MaterialIcons, Ionicons, Entypo } from "@expo/vector-icons";
 
-export function Example() {
+function Example() {
   const [mode, setMode] = useState("Basic");
-
   return (
-    <NativeBaseProvider>
-      <Box bg="white" flex="1" safeAreaTop>
+    <Center h="290px">
+      <Box
+        _dark={{
+          bg: "coolGray.800",
+        }}
+        _light={{
+          bg: "white",
+        }}
+        flex="1"
+        safeAreaTop
+        maxW="400px"
+        w="100%"
+      >
         <Heading p="4" pb="3" size="lg">
           Inbox
         </Heading>
-        <Basic />
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <Basic />
+        </ScrollView>
       </Box>
-    </NativeBaseProvider>
+    </Center>
   );
 }
 
@@ -86,7 +98,6 @@ function Basic() {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU",
     },
   ];
-
   const [listData, setListData] = useState(data);
 
   const closeRow = (rowMap, rowKey) => {
@@ -109,15 +120,39 @@ function Basic() {
 
   const renderItem = ({ item, index }) => (
     <Box>
-      <Pressable onPress={() => console.log("You touched me")} bg="white">
+      <Pressable
+        onPress={() => console.log("You touched me")}
+        _dark={{
+          bg: "coolGray.800",
+        }}
+        _light={{
+          bg: "white",
+        }}
+      >
         <Box pl="4" pr="5" py="2">
           <HStack alignItems="center" space={3}>
-            <Avatar size="48px" source={{ uri: item.avatarUrl }} />
+            <Avatar
+              size="48px"
+              source={{
+                uri: item.avatarUrl,
+              }}
+            />
             <VStack>
-              <Text color="coolGray.800" _dark={{ color: "warmGray.50" }} bold>
+              <Text
+                color="coolGray.800"
+                _dark={{
+                  color: "warmGray.50",
+                }}
+                bold
+              >
                 {item.fullName}
               </Text>
-              <Text color="coolGray.600" _dark={{ color: "warmGray.200" }}>
+              <Text
+                color="coolGray.600"
+                _dark={{
+                  color: "warmGray.200",
+                }}
+              >
                 {item.recentText}
               </Text>
             </VStack>
@@ -125,7 +160,9 @@ function Basic() {
             <Text
               fontSize="xs"
               color="coolGray.800"
-              _dark={{ color: "warmGray.50" }}
+              _dark={{
+                color: "warmGray.50",
+              }}
               alignSelf="flex-start"
             >
               {item.timeStamp}

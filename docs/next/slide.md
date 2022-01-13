@@ -6,7 +6,7 @@ title: Slide
 Slide component provides a declarative API to add sliding transitions.
 
 ```jsx isShowcase
-import React from "react"
+import React from "react";
 import {
   Slide,
   Button,
@@ -16,81 +16,31 @@ import {
   Divider,
   Center,
   NativeBaseProvider,
-} from "native-base"
+} from "native-base";
 export const Example = () => {
-  const [isOpenBottom, setIsOpenBottom] = React.useState(false)
-  const [isOpenTop, setIsOpenTop] = React.useState(false)
-  const str1 = `${isOpenTop ? "Hide" : "Show"}`
-  const str2 = `${isOpenBottom ? "Hide" : "Show"}`
+  const [isOpenTop, setIsOpenTop] = React.useState(false);
+  const str = `${isOpenTop ? "Hide" : "Check Internet Connection"}`;
   return (
-    <>
-      <Slide in={isOpenBottom} placement="bottom">
-        <Alert justifyContent="center" mx="4" mt="auto" mb="4" status="success">
-          <Alert.Icon />
-          <Alert.Description
-            _text={{
-              _light: {
-                color: "success.600",
-              },
-              _dark: {
-                color: "success.100",
-              },
-              fontWeight: "medium",
-            }}
-          >
-            Order placed successfully!
-          </Alert.Description>
-        </Alert>
-      </Slide>
+    <Box h="32" w="300">
       <Slide in={isOpenTop} placement="top">
-        <Alert justifyContent="center" mx="4" mt="4" status="error">
+        <Alert justifyContent="center" status="error">
           <Alert.Icon />
-          <Alert.Description
-            _text={{
-              _light: {
-                color: "error.600",
-              },
-              _dark: {
-                color: "error.100",
-              },
-              fontWeight: "medium",
-            }}
-          >
+          <Text color="error.600" fontWeight="medium">
             No Internet Connection
-          </Alert.Description>
+          </Text>
         </Alert>
       </Slide>
-
-      <VStack
-        space={2.5}
-        w={{
-          base: "50%",
-          md: "25%",
-        }}
-        alignItems="center"
+      <Button
+        mt="auto"
+        onPress={() => setIsOpenTop(!isOpenTop)}
+        variant="unstyled"
+        bg="coolGray.700:alpha.30"
       >
-        <Center w="100%">
-          <Heading textAlign="center" size="md" mb={4}>
-            Top
-          </Heading>
-          <Button shadow={2} w="100" onPress={() => setIsOpenTop(!isOpenTop)} mb={5}>
-            {str1}
-          </Button>
-          <Divider />
-        </Center>
-        <Center w="100%">
-          <Heading textAlign="center" size="md" mb={4}>
-            Bottom
-          </Heading>
-          <Button shadow={2} w="100" onPress={() => setIsOpenBottom(!isOpenBottom)}>
-            {str2}
-            {/* Click Me to {isOpenBottom ? "hide" : "show"} Bottom Slider */}
-          </Button>
-        </Center>
-      </VStack>
-    </>
-  )
-}
+        {str}
+      </Button>
+    </Box>
+  );
+};
 ```
 
 ## Import

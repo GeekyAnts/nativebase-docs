@@ -35,8 +35,13 @@ import { Formik } from "formik";
 import dynamic from "next/dynamic";
 import { SwipeListView } from "react-native-swipe-list-view";
 import { TabView, SceneMap } from "react-native-tab-view";
-import { G, Circle as CircleSvg, Path } from "react-native-svg";
-
+// import { G, Circle as CircleSvg, Path, ...reactNativeSvgComponents } from "react-native-svg";
+import * as reactNativeSvgComponents from "react-native-svg";
+const {
+  Circle: CircleSvg,
+  Text: TextSvg,
+  ...remReactNativeSvgComponents
+} = reactNativeSvgComponents;
 // ----------------------------------------------- Themes --------------------------------------------------
 
 // import nightOwl from "prism-react-renderer/themes/nightOwl";
@@ -156,9 +161,9 @@ export const Playground = ({ children, props }: any) => {
     TabView,
     SceneMap,
     Formik,
-    G,
-    Path,
+    ...remReactNativeSvgComponents,
     CircleSvg,
+    TextSvg,
     LinearGradient,
   }; // add custom deps as and when required. more info here -> https://github.com/FormidableLabs/react-live#liveprovider-
 
@@ -241,7 +246,6 @@ export const Playground = ({ children, props }: any) => {
 
   const expoCode = addExportsToCode(children, endingExpoTemplate);
   const codeSandboxCode = addExportsToCode(children, endingCodeSandboxTemplate);
-
   return (
     <LiveProvider
       scope={scope}

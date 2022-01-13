@@ -28,36 +28,33 @@ import { MaterialIcons } from "@expo/vector-icons";
 function AppBar() {
   return (
     <>
-      <StatusBar backgroundColor="#3700B3" barStyle="light-content" />
-
-      <Box safeAreaTop backgroundColor="#6200ee" />
-
+      <StatusBar bg="#3700B3" barStyle="light-content" />
+      <Box safeAreaTop bg="#6200ee" />
       <HStack
         bg="#6200ee"
         px="1"
         py="3"
         justifyContent="space-between"
         alignItems="center"
+        w="100%"
+        maxW="350"
       >
-        <HStack space="4" alignItems="center">
+        <HStack alignItems="center">
           <IconButton
             icon={
-              <Icon
-                size="sm"
-                as={<MaterialIcons name="menu" />}
-                color="white"
-              />
+              <Icon size="sm" as={MaterialIcons} name="menu" color="white" />
             }
           />
           <Text color="white" fontSize="20" fontWeight="bold">
             Home
           </Text>
         </HStack>
-        <HStack space="2">
+        <HStack>
           <IconButton
             icon={
               <Icon
-                as={<MaterialIcons name="favorite" />}
+                as={MaterialIcons}
+                name="favorite"
                 size="sm"
                 color="white"
               />
@@ -65,17 +62,14 @@ function AppBar() {
           />
           <IconButton
             icon={
-              <Icon
-                as={<MaterialIcons name="search" />}
-                color="white"
-                size="sm"
-              />
+              <Icon as={MaterialIcons} name="search" size="sm" color="white" />
             }
           />
           <IconButton
             icon={
               <Icon
-                as={<MaterialIcons name="more-vert" />}
+                as={MaterialIcons}
+                name="more-vert"
                 size="sm"
                 color="white"
               />
@@ -87,11 +81,11 @@ function AppBar() {
   );
 }
 
-export function Example() {
+function Example() {
   return (
-    <NativeBaseProvider>
+    <Center>
       <AppBar />
-    </NativeBaseProvider>
+    </Center>
   );
 }
 ```
