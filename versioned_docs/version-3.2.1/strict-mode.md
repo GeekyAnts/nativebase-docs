@@ -17,7 +17,7 @@ Strict Mode is a config that you pass into NativeBase config. It takes 3 values 
 
 ## How to change the mode?
 
-To change the `strictMode` create a `config object` like below and choose you `strictMode` value from `error`,`warn` and `off` which ever suits your use-case :
+To change the `strictMode` create a `config object` like below and choose your `strictMode` value from `error`,`warn` and `off` which ever suits your use-case :
 
 ```jsx
 import { INativebaseConfig, NativeBaseProvider } from 'native-base';
