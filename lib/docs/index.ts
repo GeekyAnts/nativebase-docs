@@ -1,6 +1,6 @@
 import fs from "fs";
 import DirectoryTree from "directory-tree";
-let filePaths: string[] = [];
+let filePaths: string[] = [""];
 import versions from "../../versions.json";
 const baseDirPath = process.cwd();
 import path from "path";
@@ -88,7 +88,10 @@ export const getFilePaths = (
       slugPath = path.split(`${versions[0]}/`)[1];
     }
     if (path.match(/\.mdx?$/)) {
-      filePaths = [...filePaths, path, slugPath];
+      filePaths = [...filePaths, path];
+      if (slugPath != "") {
+        filePaths = [...filePaths, slugPath];
+      }
     }
   }
   if (tree.children) {

@@ -7,6 +7,7 @@
 // }
 
 module.exports = {
+  DOCS_URL: "beta-docs.nativebase.io",
   indexSlugFileName: "getting-started", // please remember this file should be present in all you versions
   docsEntryPoint: "docs",
   REPO_BRANCH: "feat/nextjs-docs-examples",

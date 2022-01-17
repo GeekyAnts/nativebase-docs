@@ -1,15 +1,8 @@
 import React from "react";
 import * as RN from "react-native";
 import Highlight, { defaultProps } from "prism-react-renderer";
-import { getParameters } from "codesandbox/lib/api/define";
 import * as NBComponents from "native-base";
-import versions from "../../../../versions.json";
-import { endingExpoTemplate, getExpoSnackURL } from "./expoController";
-import { ExpoIcon, CodePlaygroundIcon } from "../../../icons";
-import {
-  endingCodeSandboxTemplate,
-  getCodeSandBoxURL,
-} from "./codeSandBoxController";
+
 // import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 // import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 // import AntDesign from "react-native-vector-icons/AntDesign";
@@ -75,7 +68,6 @@ const { createDrawerNavigator, DrawerContentScrollView } = dynamic(
 // import LinearGradient from 'react-native-linear-gradient';
 // const LinearGradient = require('expo-linear-gradient').LinearGradient;
 // addExportsToCode(children, endingCodeSandboxTemplate)
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { AppContext } from "../../../AppContext";
 
 export const CodeBlock = ({ children, props }: any) => {

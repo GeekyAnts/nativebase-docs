@@ -147,7 +147,10 @@ interface IShowcaseProps {
   gradient?: string;
 }
 
-export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
+export const Showcase = (
+  { children, gradient }: IShowcaseProps,
+  props: any
+) => {
   const { activeVersion } = React.useContext(AppContext);
   const Wrapper = (props: any) => {
     return (
@@ -296,8 +299,14 @@ export const Showcase = ({ children, gradient, ...props }: IShowcaseProps) => {
     return finalTemplate;
   }
 
-  const expoCode = addExportsToCode(children, endingExpoTemplate);
-  const codeSandboxCode = addExportsToCode(children, endingCodeSandboxTemplate);
+  const expoCode = addExportsToCode(
+    children,
+    endingExpoTemplate(props?.isNativebaseExample)
+  );
+  const codeSandboxCode = addExportsToCode(
+    children,
+    endingCodeSandboxTemplate(props?.isNativebaseExample)
+  );
   const [darkModeGradientArray, setDarkModeGradientArray] = React.useState([
     "",
   ]);
