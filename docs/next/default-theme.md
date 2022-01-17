@@ -99,6 +99,8 @@ The `size` key allows you to customize the global spacing and sizing scale for
 
 The `opacity` key is used in opacity style object and to define colors opacity using the red-green-blue-alpha (RGBA) model, RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
 
+<OpacityBlock />
+
 ```jsx
 const opacity = {
   0: 0,
@@ -122,6 +124,8 @@ const opacity = {
 ## Shadows
 
 The `shadow` key allows you to customize the global box shadow for your project.
+
+<ShadowBlock />
 
 ```jsx
 export default {

@@ -14,3 +14,5 @@ export { ComponentTheme } from "./ComponentTheme";
 export { RNWebNote } from "./RNWebNote";
 export * from "./GettingStartedHero";
 export * from "./Tabs";
+export {default as ShadowBlock} from "./ShadowBlock/ShadowBlock";
+export {default as OpacityBlock} from "./OpacityBlock/OpacityBlock";
