@@ -184,7 +184,7 @@ export default function Navbar(props: any) {
               fill={useColorModeValue("coolGray.700", "gray.100")}
             />
           </NBLink>
-          <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
+          <NBLink href="/discord" isExternal>
             <Discord
               size="6"
               fill={useColorModeValue("coolGray.700", "gray.100")}

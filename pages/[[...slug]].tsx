@@ -66,7 +66,6 @@ export async function getStaticProps({ params }: any) {
   let indexSlugVersion = "";
   // if route is versioned index slug like: docs.nativebase.io/3.2.1 or docs.nativebase.io/next
 
-  console.log(params && params.sitemap, "siiie");
   if (
     params &&
     params.slug &&
