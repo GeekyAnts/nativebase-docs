@@ -1,7 +1,12 @@
 import React from "react";
 import * as RN from "react-native";
 import * as NBComponents from "native-base";
-import { endingExpoTemplate, getExpoSnackURL } from "./expoController";
+import {
+  endingExpoTemplate,
+  getDependencies,
+  getFiles,
+  SNACK_URL,
+} from "./expoController";
 import { ExpoIcon, CodePlaygroundIcon } from "../../../icons";
 import {
   endingCodeSandboxTemplate,
@@ -246,6 +251,11 @@ export const Playground = ({ children, props }: any) => {
 
   const expoCode = addExportsToCode(children, endingExpoTemplate);
   const codeSandboxCode = addExportsToCode(children, endingCodeSandboxTemplate);
+
+  function submitExpoForm() {
+    // @ts-ignore
+    document.getElementById("expo-form")?.submit();
+  }
   return (
     <LiveProvider
       scope={scope}
@@ -320,14 +330,34 @@ export const Playground = ({ children, props }: any) => {
             py="1.5"
             space="3"
           >
-            <Tooltip
-              bg="coolGray.800"
-              _text={{ color: "coolGray.400" }}
-              hasArrow
-              label="Open Expo Snack"
+            <form
+              action={SNACK_URL}
+              method="POST"
+              target="_blank"
+              id="expo-form"
             >
-              <Link isExternal href={getExpoSnackURL(expoCode, activeVersion)}>
+              <input
+                type="hidden"
+                name="dependencies"
+                value={getDependencies(activeVersion)}
+              />
+
+              <input
+                type="hidden"
+                name="files"
+                value={JSON.stringify(getFiles(expoCode))}
+              />
+
+              <Tooltip
+                bg="coolGray.800"
+                _text={{ color: "coolGray.400" }}
+                hasArrow
+                label="Open Expo Snack"
+              >
                 <IconButton
+                  onPress={() => {
+                    submitExpoForm();
+                  }}
                   _hover={{
                     _light: { bg: "coolGray.100" },
                     _dark: { bg: "coolGray.800" },
@@ -335,8 +365,8 @@ export const Playground = ({ children, props }: any) => {
                   p="1"
                   icon={<ExpoIcon size="xs" opacity="70" />}
                 />
-              </Link>
-            </Tooltip>
+              </Tooltip>
+            </form>
             <Tooltip
               bg="coolGray.800"
               _text={{ color: "coolGray.400" }}

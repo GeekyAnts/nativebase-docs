@@ -13,7 +13,6 @@ export const endingExpoTemplate = `
     };
     `;
 export function getExpoSnackURL(code: string, version: string) {
-  
   const files = {
     // Inlined code
     "App.tsx": {
@@ -31,3 +30,25 @@ export function getExpoSnackURL(code: string, version: string) {
   )}&dependencies=${encodeURIComponent(expoDendencies)}`;
   return url;
 }
+
+export function getFiles(code: string) {
+  const files = {
+    // Inlined code
+    "App.tsx": {
+      type: "CODE",
+      contents: code,
+    },
+  };
+
+  return files;
+}
+
+export function getDependencies(version: string) {
+  const expoDendencies = `react-is,expo-font,native-base@${
+    config.versionMap[version] === undefined
+      ? config.versionMap[versions[0]]
+      : config.versionMap[version]
+  },styled-system,expo-constants,react-native-web,react-native-safe-area-context,react-native-svg,styled-components,@expo/vector-icons,expo-linear-gradient,formik,yup`;
+  return expoDendencies;
+}
+export const SNACK_URL = "https://snack.expo.dev/";
