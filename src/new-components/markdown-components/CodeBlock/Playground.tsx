@@ -93,7 +93,7 @@ const LinearGradient = require("expo-linear-gradient").LinearGradient;
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { AppContext } from "../../../AppContext";
 
-export const Playground = ({ children, props }: any) => {
+export const Playground = ({ children, ...props }: any) => {
   const { activeVersion } = React.useContext(AppContext);
   const Wrapper = (props: any) => {
     return (
@@ -249,8 +249,14 @@ export const Playground = ({ children, props }: any) => {
     return finalTemplate;
   }
 
-  const expoCode = addExportsToCode(children, endingExpoTemplate);
-  const codeSandboxCode = addExportsToCode(children, endingCodeSandboxTemplate);
+  const expoCode = addExportsToCode(
+    children,
+    endingExpoTemplate(props?.isNativebaseExample)
+  );
+  const codeSandboxCode = addExportsToCode(
+    children,
+    endingCodeSandboxTemplate(props?.isNativebaseExample)
+  );
 
   function submitExpoForm() {
     // @ts-ignore

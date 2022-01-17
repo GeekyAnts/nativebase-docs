@@ -29,7 +29,16 @@ export const cbxHtmlFile = `
 </html>
   `;
 
-export const endingCodeSandboxTemplate = `
+export const endingCodeSandboxTemplate = (isNativebaseExample?: string) => {
+  return isNativebaseExample && isNativebaseExample === "false"
+    ? `
+  export default () => {
+      return (
+              <Example />
+      );
+  };
+  `
+    : `
   export default () => {
       return (
         <NativeBaseProvider>
@@ -40,6 +49,7 @@ export const endingCodeSandboxTemplate = `
       );
   };
   `;
+};
 
 export function getCodeSandBoxURL(code: string, version: string) {
   const codeSandBoxDependencies = {
@@ -58,6 +68,7 @@ export function getCodeSandBoxURL(code: string, version: string) {
           : config.versionMap[version]
       }`,
       "styled-system": "*",
+      "expo-asset": "8.4.6",
       "expo-constants": "~12.1.3",
       "react-native-safe-area-context": "3.3.2",
       "react-dom": "17.0.2",
@@ -131,5 +142,3 @@ export function getCodeSandBoxURL(code: string, version: string) {
   const url = `https://codesandbox.io/api/v1/sandboxes/define?parameters=${parameters}`;
   return url;
 }
-
-

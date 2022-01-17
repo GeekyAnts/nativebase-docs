@@ -1,7 +1,16 @@
 import versions from "../../../../versions.json";
 import config from "../../../../docs.config";
 
-export const endingExpoTemplate = `
+export const endingExpoTemplate = (isNativebaseExample?: string) => {
+  return isNativebaseExample && isNativebaseExample === "false"
+    ? `
+  export default () => {
+      return (
+              <Example />
+      );
+  };
+  `
+    : `
     export default () => {
         return (
           <NativeBaseProvider>
@@ -12,6 +21,7 @@ export const endingExpoTemplate = `
         );
     };
     `;
+};
 export function getExpoSnackURL(code: string, version: string) {
   const files = {
     // Inlined code
