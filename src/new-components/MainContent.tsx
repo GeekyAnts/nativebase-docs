@@ -129,6 +129,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
         <HStack justifyContent="space-between" my="12">
           {pages.previousPage && (
             <Pressable
+              maxW="40"
               mr="auto"
               onPress={() => setActiveSidebarItem(pages.previousPage.id)}
             >
@@ -158,6 +159,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
           )}
           {pages.nextPage && (
             <Pressable
+              maxW="40"
               ml="auto"
               onPress={() => setActiveSidebarItem(pages.nextPage.id)}
             >
