@@ -21,13 +21,9 @@ const OpacityBlock = () => {
     100: 1,
   };
   const tempOpc = Object.entries(opacity);
-  console.log("tempOpc", tempOpc);
 
   return (
     <HStack flexWrap="wrap" space="7">
-      {/* {opacity.map((val, ind) => (
-        <OpacityComponent value={val} key={ind} />
-      ))} */}
       {tempOpc.map((val:any, ind) => (
         <OpacityComponent token={val[0]} opacity={val[1]} key={ind} />
       ))}

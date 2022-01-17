@@ -2,6 +2,7 @@
   "name": "nativebase-docs",
   "private": true,
   "scripts": {
+    "create-version": "node ./lib/scripts/build-version.js",
     "dev": "node ./build-init.js && next dev",
     "build": "node ./build-init.js && next build",
     "start": "next start",
