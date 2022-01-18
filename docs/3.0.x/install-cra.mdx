@@ -5,6 +5,15 @@ title: Install in Create React App project
 
 import { TileLink } from "../../src/components";
 
+  <DocTabs
+  defaultValue='template'
+  values={[
+  { label: 'New Project', value: 'template' },
+  { label: 'Existing Project', value: 'cli' }
+  ]}>
+
+  <DocTabItem value="template">
+
 The easiest way to get started with NativeBase in create react app is using NativeBase template.
 
 ### JavaScript
@@ -23,6 +32,10 @@ cd my-app/
 yarn start
 ```
 
+  </DocTabItem>
+
+  <DocTabItem value="cli">
+
 Create a new CRA project If not exist
 
 ```bash
@@ -34,6 +47,15 @@ cd my-app
 
 ### Install dependencies
 
+  <DocTabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+  <DocTabItem value="yarn">
+
 <Box maxWidth="750px">
 
 ```bash
@@ -41,7 +63,9 @@ yarn add react-native-web native-base react-native-svg styled-components styled-
 ```
 
 </Box>
+  </DocTabItem>
 
+  <DocTabItem value="npm">
 <Box maxWidth="750px">
 
 ```bash
@@ -49,6 +73,9 @@ npm install react-native-web native-base react-native-svg styled-components styl
 ```
 
 </Box>
+  </DocTabItem>
+
+  </DocTabs>
 
 ### Run the Hello world example
 
@@ -67,6 +94,10 @@ function App() {
 }
 ```
 
+  </DocTabItem>
+
+  </DocTabs>
+  
 <Center>
   <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
 </Center>
