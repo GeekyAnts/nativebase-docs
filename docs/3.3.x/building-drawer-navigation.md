@@ -9,7 +9,7 @@ Common pattern in navigation is to use drawer from left (sometimes right) side f
 
 Here is an example to show how easily and quickly we can use React Native's [DrawerNavigation](https://reactnavigation.org/docs/drawer-based-navigation/) in NB.
 
-```jsx isLive=true
+```jsx isSnackPlayer name=BuildingDrawerNavigation
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import {
@@ -173,7 +173,7 @@ function MyDrawer() {
     </Box>
   );
 }
-export function Example() {
+export default function Example() {
   return (
     <NavigationContainer>
       <NativeBaseProvider>
