@@ -644,6 +644,12 @@
         {
           "id": "faq",
           "title": "FAQ's"
+        },
+        {
+          "id": "blocked-components",
+          "title": "Blocked Components",
+          "showToc": false,
+          "notVisibleInSidebar": true
         }
       ]
     }

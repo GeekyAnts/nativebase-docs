@@ -1,8 +1,8 @@
 module.exports = {
-  DOCS_URL: "beta-docs.nativebase.io",
+  DOCS_URL: "https://beta-docs.nativebase.io",
   indexSlugFileName: "getting-started",
   docsEntryPoint: "docs",
-  REPO_BRANCH: "feat/nextjs-docs-examples",
+  REPO_BRANCH: "master",
   REPO_LINK: "https://github.com/GeekyAnts/NativeBase",
   versionMap: {
     "3.0.x": "3.0.7",

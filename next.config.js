@@ -6,7 +6,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
 const { withExpo } = require("@expo/next-adapter");
-
+const redirectsJSON = require("./redirects.json");
 const withPlugins = require("next-compose-plugins");
 const withTM = require("next-transpile-modules")([
   "native-base",
@@ -61,11 +61,7 @@ module.exports = withPlugins(
           destination: "https://discord.com/invite/TSgCw2UPmb",
           permanent: true,
         },
-        // {
-        //   source: "/",
-        //   destination: "/getting-started",
-        //   permanent: true,
-        // },
+        ...redirectsJSON,
       ];
     },
     images: {
