@@ -41,6 +41,7 @@ import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
 import { isLatestVersionSlug } from "../utils";
 import { ScrollContext } from "./ScrollContext";
+import { SnackPlayer } from "./markdown-components/CodeBlock/SnackPlayer";
 
 export default function MainContent(props: any) {
   const { tocArray } = props;
@@ -101,6 +102,8 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     a: Anchor,
     code: ({ children, ...props }: any) => {
       if (props?.isLive) return <Playground {...props}>{children}</Playground>;
+      else if (props?.isSnackPlayer)
+        return <SnackPlayer {...props}>{children}</SnackPlayer>;
       else if (props?.isShowcase)
         return <Showcase {...props}>{children}</Showcase>;
       else return <CodeBlock>{children}</CodeBlock>;

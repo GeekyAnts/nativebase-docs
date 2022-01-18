@@ -444,7 +444,9 @@ export const Showcase = (
           {showCode ? "Hide Code" : "Show Code"}
         </Button>
 
-        <LiveError />
+        <Box w="100%" overflow="auto">
+          <LiveError />
+        </Box>
         <LivePreview />
       </Center>
       {/* <Input
@@ -490,7 +492,7 @@ export const Showcase = (
               }
               h="9"
               py="1.5"
-              space="3"
+              space="1.5"
             >
               <Tooltip
                 bg="coolGray.800"

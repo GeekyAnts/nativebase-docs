@@ -296,7 +296,9 @@ export const Playground = ({ children, ...props }: any) => {
         }}
         bg="blueGray.800:alpha.40"
       >
-        <LiveError />
+        <Box w="100%" overflow="auto">
+          <LiveError />
+        </Box>
         <LivePreview />
       </Box>
       <Box
@@ -334,7 +336,7 @@ export const Playground = ({ children, ...props }: any) => {
             }
             h="9"
             py="1.5"
-            space="3"
+            space="1.5"
           >
             <form
               action={SNACK_URL}

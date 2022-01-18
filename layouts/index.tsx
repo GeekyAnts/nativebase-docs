@@ -122,6 +122,7 @@ function Layout({
         />
         <link rel="icon" href="/img/nativebaselogo.svg" />
       </Head>
+      <Script async src="https://snack.expo.dev/embed.js"></Script>
       <Script src="/js/gtag.js"></Script>
       {/* <Script src="/js/switchTheme.js"></Script> */}
       <Script

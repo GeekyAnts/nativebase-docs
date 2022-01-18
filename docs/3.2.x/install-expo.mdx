@@ -7,6 +7,14 @@ import { TileLink } from "../../src/components";
 
 Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
 
+<DocTabs
+  defaultValue='new'
+  values={[
+  { label: 'New Project', value: 'new' },
+  { label: 'Existing Project', value: 'existing' }
+  ]}>
+ <DocTabItem value="new">
+
 ### Create a new project using Expo CLI with NativeBase template
 
 <h4 style={{marginTop:"40px"}} className="mt-10 font-mono">Plain Javascript</h4>
@@ -29,6 +37,10 @@ expo init my-app --template expo-template-native-base-typescript
 
 Yey! you are all set, start editing App.js/App.tsx now.
 
+</DocTabItem>
+
+<DocTabItem value="existing">
+
 ### Create a new expo project if not exist
 
 ```bash
@@ -41,13 +53,30 @@ cd my-project/
 
 ### Install dependencies
 
+<DocTabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+  <DocTabItem value="yarn">
+
 ```bash
 yarn add native-base
 ```
 
+  </DocTabItem>
+
+  <DocTabItem value="npm">
+
 ```bash
 npm install native-base
 ```
+
+</DocTabItem>
+
+  </DocTabs>
 
 ```bash
 expo install react-native-svg
@@ -73,6 +102,9 @@ export default function App() {
   );
 }
 ```
+
+</DocTabItem>
+</DocTabs>
 
 <Center>
   <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
