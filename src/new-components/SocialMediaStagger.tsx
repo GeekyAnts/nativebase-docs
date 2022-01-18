@@ -70,7 +70,7 @@ export const SocialMediaStagger = (props: any) => {
             icon={<GitHub fill="white" size="8" />}
           />
         </NBLink>
-        <NBLink href="https://discord.com/invite/TSgCw2UPmb" isExternal>
+        <NBLink href="/discord" isExternal>
           <IconButton
             mb="4"
             boxSize="10"

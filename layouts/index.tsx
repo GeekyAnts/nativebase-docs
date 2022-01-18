@@ -20,6 +20,7 @@ import MainContent from "../src/new-components/MainContent";
 import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSidebarVersionDropdown";
 import { SocialMediaStagger } from "../src/new-components/SocialMediaStagger";
 import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
+import Script from "next/script";
 
 function Layout({
   children: content,
@@ -121,6 +122,13 @@ function Layout({
         />
         <link rel="icon" href="/img/nativebaselogo.svg" />
       </Head>
+      <Script async src="https://snack.expo.dev/embed.js"></Script>
+      <Script src="/js/gtag.js"></Script>
+      {/* <Script src="/js/switchTheme.js"></Script> */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-ZTSFCSJK8X"
+      ></Script>
       <Box
         w="100%"
         h={{ base: "100%", md: "100vh" }}

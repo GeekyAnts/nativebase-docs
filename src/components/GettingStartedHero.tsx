@@ -80,7 +80,7 @@ export function GettingStartedHero() {
               />
               <TileLink
                 title="Recipes"
-                url="loginsignupforms"
+                url="login-signup-forms"
                 description="Popular Recipes for Apps"
                 _description={{
                   _dark: { color: "coolGray.400" },
