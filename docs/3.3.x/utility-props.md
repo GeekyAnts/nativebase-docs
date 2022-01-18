@@ -103,7 +103,7 @@ export function Example() {
 
 <br />
 
-| Prop           | CSS Eqquivalent  | Theme Key |
+| Prop           | CSS Equivalent   | Theme Key |
 | -------------- | ---------------- | --------- |
 | color          | color            | colors    |
 | bg, background | background       | colors    |
@@ -212,7 +212,7 @@ export function Example() {
 
 <br />
 
-| Prop           | CSS Eqquivalent | Theme Key      |
+| Prop           | CSS Equivalent  | Theme Key      |
 | -------------- | --------------- | -------------- |
 | fontFamily     | font-family     | fonts          |
 | fontSize       | font-size       | fontSizes      |
@@ -265,7 +265,7 @@ export function Example() {
 
 <br />
 
-| Prop            | CSS Eqquivalent | Theme Key |
+| Prop            | CSS Equivalent  | Theme Key |
 | --------------- | --------------- | --------- |
 | w, width        | width           | sizes     |
 | h, height       | height          | sizes     |
@@ -320,7 +320,7 @@ export function Example() {
 
 <br />
 
-| Prop                                | CSS Eqquivalent | Theme Key |
+| Prop                                | CSS Equivalent  | Theme Key |
 | ----------------------------------- | --------------- | --------- |
 | alignItems, \*align                 | align-items     | -         |
 | alignContent                        | align-content   | -         |
@@ -368,7 +368,7 @@ export function Example() {
 
 <br />
 
-| Prop              | CSS Eququivalent    | Theme Field  |
+| Prop              | CSS Equivalent      | Theme Field  |
 | ----------------- | ------------------- | ------------ |
 | borderWidth       | border-width        | borderWidths |
 | borderStyle       | border-style        | borderStyles |
@@ -427,17 +427,17 @@ export function Example() {
 
 <br />
 
-| Prop                    | CSS Eququivalent                                       | Theme Field |
-| ----------------------- | ------------------------------------------------------ | ----------- |
-| borderRadius            | border-radius                                          | radii       |
-| borderTopLeftRadius     | border-top-left-radius                                 | radii       |
-| borderTopRightRadius    | border-top-right-radius                                | radii       |
-| borderBottomRightRadius | border-bottom-right-radius                             | radii       |
-| borderBottomLeftRadius  | border-bottom-left-radius                              | radii       |
-| borderTopRadius         | border-top-left-radius & border-top-right-radius       | radii       |
-| borderRightRadius       | border-top-right-radius & border-bottom-right-radius   | radii       |
-| borderBottomRadius      | border-bottom-left-radius & border-bottom-right-radius | radii       |
-| borderLeftRadius        | border-top-left-radius & border-bottom-left-radius     | radii       |
+| Prop                                        | CSS Equivalent                                         | Theme Field |
+| ------------------------------------------- | ------------------------------------------------------ | ----------- |
+| borderRadius, rounded                       | border-radius                                          | radii       |
+| borderTopLeftRadius, roundedTopLeft         | border-top-left-radius                                 | radii       |
+| borderTopRightRadius, roundedTopRight       | border-top-right-radius                                | radii       |
+| borderBottomRightRadius, roundedBottomRight | border-bottom-right-radius                             | radii       |
+| borderBottomLeftRadius, roundedBottomLeft   | border-bottom-left-radius                              | radii       |
+| borderTopRadius, roundedTop                 | border-top-left-radius & border-top-right-radius       | radii       |
+| borderRightRadius, roundedRight             | border-top-right-radius & border-bottom-right-radius   | radii       |
+| borderBottomRadius, roundedBottom           | border-bottom-left-radius & border-bottom-right-radius | radii       |
+| borderLeftRadius, roundedLeft               | border-top-left-radius & border-bottom-left-radius     | radii       |
 
 ### Position
 
@@ -523,7 +523,7 @@ export function Example() {
 
 ### Internal Props
 
-Provides a way to pass props to child components inside Composite componets.
+Provides a way to pass props to child components inside Composite components.
 
 ```jsx isLive=true
 import React from "react";
@@ -611,7 +611,7 @@ export function Example() {
 
 ### Platform Props
 
-Provides a way to pass props bassed on Platform (_android, ios or web_).
+Provides a way to pass props based on Platform (_android, ios or web_).
 
 ```jsx isLive=true
 import React from "react";
