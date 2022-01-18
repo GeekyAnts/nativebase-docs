@@ -19,13 +19,28 @@ cd my-project/
 
 ### Install dependencies
 
+<DocTabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+  <DocTabItem value="yarn">
+
 ```bash
 yarn add native-base styled-components styled-system
 ```
 
+  </DocTabItem>
+  <DocTabItem value="npm">
+
 ```bash
 npm install native-base styled-components styled-system
 ```
+
+</DocTabItem>
+  </DocTabs>
 
 ```bash
 expo install react-native-svg
