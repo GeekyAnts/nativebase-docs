@@ -5830,7 +5830,7 @@
   },
   {
     "source": "/3.2.1/h-stack",
-    "destination": "/3.2.x/h-stack",
+    "destination": "/3.2.x/hstack",
     "permanent": true
   },
   {
@@ -6264,13 +6264,13 @@
   },
   {
     "source": "/3.2.1/v-stack",
-    "destination": "/3.2.x/v-stack",
+    "destination": "/3.2.x/vstack",
     "permanent": true
   },
   { "source": "/3.2.1/view", "destination": "/3.2.x/view", "permanent": true },
   {
     "source": "/3.2.1/z-stack",
-    "destination": "/3.2.x/z-stack",
+    "destination": "/3.2.x/zstack",
     "permanent": true
   },
   { "source": "/3.2.2/", "destination": "/3.2.x/", "permanent": true },
@@ -6431,7 +6431,7 @@
   },
   {
     "source": "/3.2.2/h-stack",
-    "destination": "/3.2.x/h-stack",
+    "destination": "/3.2.x/hstack",
     "permanent": true
   },
   {
@@ -6865,13 +6865,13 @@
   },
   {
     "source": "/3.2.2/v-stack",
-    "destination": "/3.2.x/v-stack",
+    "destination": "/3.2.x/vstack",
     "permanent": true
   },
   { "source": "/3.2.2/view", "destination": "/3.2.x/view", "permanent": true },
   {
     "source": "/3.2.2/z-stack",
-    "destination": "/3.2.x/z-stack",
+    "destination": "/3.2.x/zstack",
     "permanent": true
   }
 ]

@@ -638,18 +638,18 @@
       "title": "More",
       "pages": [
         {
+          "id": "blocked-components",
+          "title": "Blocked Components",
+          "showToc": false,
+          "notVisibleInSidebar": true
+        },
+        {
           "id": "changelog",
           "title": "Changelog"
         },
         {
           "id": "faq",
           "title": "FAQ's"
-        },
-        {
-          "id": "blocked-components",
-          "title": "Blocked Components",
-          "showToc": false,
-          "notVisibleInSidebar": true
         }
       ]
     }
