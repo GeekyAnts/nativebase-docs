@@ -10,7 +10,7 @@ By default, most of NativeBase's components are dark mode compatible. In some sc
 
 ## 1. By updating component's theme
 
-In this approach we use NativeBase's `extendTheme` function to customise the components and the use themeTools to make the component dark mode compatible.
+In this approach we use NativeBase's `extendTheme` function to customise the components and then use themeTools to make the component dark mode compatible.
 
 Note: Changes on the theme will be reflected on the entire application.
 
@@ -40,7 +40,7 @@ export default function () {
 }
 ```
 
-In the above example, the Heading component's color property will now respond to change in color, namely in light mode it will be red (red.300) colored and in dark mode it will blue (blue.300) colored.
+In the above example, the Heading component's color property will now respond to change in color, namely in light mode it will be red (red.300) colored and in dark mode it will be blue (blue.300) colored.
 
 ## 2. By using useColorModeValue
 
