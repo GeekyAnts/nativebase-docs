@@ -7,9 +7,9 @@ Before getting into details of all the common Pseudo Props NativeBase has to off
 
 ## Nesting pseudo props:
 
-In versions before 3.2.0 there was a set order in which pseudo props can be nested, but it had a some learning curve so we have simplified it. Pseudo props can now be nested in any combination with one small thing to keep in mind.
+In versions before 3.2.0 there was a set order in which pseudo props can be nested, but it had some learning curve so we have simplified it. Pseudo props can now be nested in any combination with one small thing to keep in mind.
 
-Example: So assume you want to change the text color of a button on its hover state.
+Example: Let us assume you want to change the text color of a button on its hover state.
 
 ### Do's
 
