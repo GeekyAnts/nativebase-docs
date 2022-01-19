@@ -132,62 +132,84 @@ const SubMainContent2 = React.memo(({ props }: any) => {
         <HStack justifyContent="space-between" my="12">
           {pages.previousPage && (
             <Pressable
-              maxW="40"
+              w={["40","40","80"]}
+              rounded="7"
+              borderWidth={1}
+              _light={{ borderColor: "coolGray.200" }}
+              _dark={{ borderColor: "coolGray.700" }}
+              px="6"
+              py="2"
+              maxW="64"
               mr="auto"
               onPress={() => setActiveSidebarItem(pages.previousPage.id)}
             >
-              <Link
-                passHref
-                href={`${
-                  isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
-                }${pages.previousPage.id}`}
-              >
-                <VStack>
-                  <Text
-                    _light={{ color: "pageNavigationHeadingLight" }}
-                    _dark={{ color: "pageNavigationHeadingDark" }}
-                  >
-                    Previous
-                  </Text>
-                  <Text
-                    fontSize="lg"
-                    _light={{ color: "pageNavigationMainTitleLight" }}
-                    _dark={{ color: "pageNavigationMainTitleDark" }}
-                  >
-                    {pages.previousPage.title}
-                  </Text>
-                </VStack>
-              </Link>
+              <Box my="auto">
+                <Link
+                  passHref
+                  href={`${
+                    isLatestVersionSlug(activeVersion)
+                      ? ""
+                      : activeVersion + "/"
+                  }${pages.previousPage.id}`}
+                >
+                  <VStack>
+                    <Text
+                      _light={{ color: "pageNavigationHeadingLight" }}
+                      _dark={{ color: "pageNavigationHeadingDark" }}
+                    >
+                      Previous
+                    </Text>
+                    <Text
+                      fontSize="lg"
+                      _light={{ color: "pageNavigationMainTitleLight" }}
+                      _dark={{ color: "pageNavigationMainTitleDark" }}
+                    >
+                      {pages.previousPage.title}
+                    </Text>
+                  </VStack>
+                </Link>
+              </Box>
             </Pressable>
           )}
           {pages.nextPage && (
             <Pressable
-              maxW="40"
+              w={["40","40","80"]}
+              rounded="7"
+              borderWidth={1}
+              _light={{ borderColor: "coolGray.200" }}
+              _dark={{ borderColor: "coolGray.700" }}
+              px="6"
+              py="2"
+              maxW="64"
               ml="auto"
               onPress={() => setActiveSidebarItem(pages.nextPage.id)}
             >
-              <Link
-                passHref
-                href={`${
-                  isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
-                }${pages.nextPage.id}`}
-              >
-                <VStack>
-                  <Text
-                    _light={{ color: "pageNavigationHeadingLight" }}
-                    _dark={{ color: "pageNavigationHeadingDark" }}
-                  >
-                    Next
-                  </Text>
-                  <Text
-                    fontSize="lg"
-                    _light={{ color: "pageNavigationMainTitleLight" }}
-                    _dark={{ color: "pageNavigationMainTitleDark" }}
-                  >
-                    {pages.nextPage.title}
-                  </Text>
-                </VStack>
-              </Link>
+              <Box my="auto">
+                <Link
+                  passHref
+                  href={`${
+                    isLatestVersionSlug(activeVersion)
+                      ? ""
+                      : activeVersion + "/"
+                  }${pages.nextPage.id}`}
+                >
+                  <VStack>
+                    <Text
+                      _light={{ color: "pageNavigationHeadingLight" }}
+                      _dark={{ color: "pageNavigationHeadingDark" }}
+                    >
+                      Next
+                    </Text>
+                    <Text
+                      fontSize="lg"
+                      _light={{ color: "pageNavigationMainTitleLight" }}
+                      _dark={{ color: "pageNavigationMainTitleDark" }}
+                    >
+                      {pages.nextPage.title}
+                    </Text>
+                  </VStack>
+                </Link>
+              </Box>
             </Pressable>
           )}
         </HStack>
