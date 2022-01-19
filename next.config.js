@@ -61,6 +61,11 @@ module.exports = withPlugins(
           destination: "https://discord.com/invite/TSgCw2UPmb",
           permanent: true,
         },
+        {
+          source: "/blogs",
+          destination: "https://nativebase.io/blogs",
+          permanent: true,
+        },
         ...redirectsJSON,
       ];
     },
