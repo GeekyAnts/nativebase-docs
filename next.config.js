@@ -79,7 +79,7 @@ module.exports = withPlugins(
       ],
     },
     env: {
-      startupUrl: process.env.STARTUP_URL,
+      environment: process.env.ENVIRONMENT,
     },
     webpack: (config) => {
       config.resolve.alias = {
