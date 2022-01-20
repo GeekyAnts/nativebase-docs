@@ -35,19 +35,19 @@ import { Fab } from "native-base";
 
 ### Basic
 
-```ComponentSnackPlayer path=components,composites,Fab,Basic.tsx
+```ComponentSnackPlayer path=components,composites,Fab,DocsBasic.tsx
 
 ```
 
 ### Placement
 
-```ComponentSnackPlayer path=components,composites,Fab,Placement.tsx
+```ComponentSnackPlayer path=components,composites,Fab,DocsPlacement.tsx
 
 ```
 
 ### Custom Position
 
-```ComponentSnackPlayer path=components,composites,Fab,CustomPosition.tsx
+```ComponentSnackPlayer path=components,composites,Fab,DocsCustomPosition.tsx
 
 ```
 
