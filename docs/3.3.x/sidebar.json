@@ -666,8 +666,8 @@
           "title": "FAQ's"
         },
         {
-          "id": "blocked-components",
-          "title": "Blocked Components",
+          "id": "state-of-components",
+          "title": "State of the Components",
           "showToc": false,
           "notVisibleInSidebar": true
         }
