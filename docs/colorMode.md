@@ -81,7 +81,7 @@ const config = {
 const customTheme = extendTheme({ config });
 function App() {
   return (
-    // pass itto NativeBaseProvider
+    // Pass it to NativeBaseProvider
     <NativeBaseProvider theme={customTheme}>
       // Your component
     </NativeBaseProvider>
