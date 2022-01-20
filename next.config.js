@@ -38,7 +38,6 @@ module.exports = withPlugins(
     [withExpo, { projectRoot: __dirname }],
   ],
   {
-    distDir: "build",
     pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
     // webpack: (config) => {
     //   config.resolve.alias = {

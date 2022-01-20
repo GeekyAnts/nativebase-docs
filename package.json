@@ -6,7 +6,6 @@
     "dev": "node ./build-init.js && next dev",
     "build": "node ./build-init.js && next build",
     "start": "next start",
-    "start:production": "sh update.sh && next start ./www",
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true next build",
     "postinstall": "patch-package"
