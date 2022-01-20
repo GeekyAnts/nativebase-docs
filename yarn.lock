@@ -9144,10 +9144,10 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.3.1.tgz#603fb1e3e08fc936b3648795067151871edac708"
-  integrity sha512-TCh6Uwy2FSJDlHTu3n59Oa0ZDq8sRKnAAdv/lYMkyfEgrByBfvMKI80wEfFWMQOyCQ1QGPUdyC1YWoHEEHX/zA==
+native-base@3.3.3-rc.6:
+  version "3.3.3-rc.6"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.3.3-rc.6.tgz#f49d71de72a028cdff24f41a0c39e94eb2d9ec12"
+  integrity sha512-ArSdNA5uEo4DcWp8eqCeH4l4Qk/tONrc+CUAbMfe2oq6C9yy38ZWBCL1ndGB6C7thO+UpVH9UpNqsoBsQxSpyw==
   dependencies:
     "@react-aria/focus" "^3.2.3"
     "@react-aria/utils" "^3.6.0"
