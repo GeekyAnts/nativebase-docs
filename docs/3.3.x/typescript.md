@@ -3,6 +3,9 @@ id: typescript
 title: Typescript
 ---
 
+import Image from "next/Image";
+import { AspectRatio } from "native-base";
+
 To enable typescript for custom theme tokens or variants, we'll follow two simple steps.
 
 Below, in the [extendTheme](http://localhost:3002/customizing-theme) function, we're adding a space token and a custom variant for the Button.
@@ -37,4 +40,10 @@ declare module 'native-base' {
 
 ## Result
 
-<Image source={{ uri:"/img/ts-gif.gif"}} alt="Typescript intellisense with custom theme tokens"/>
+<AspectRatio ratio={3 / 1} w="100%" maxW="600">
+<Image
+    source="/img/ts-gif.gif"
+    alt="Typescript intellisense with custom theme tokens"
+    layout="fill"
+  />
+</AspectRatio>

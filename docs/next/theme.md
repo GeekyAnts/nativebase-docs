@@ -122,7 +122,7 @@ export function Example() {
 
 ## useColorMode
 
-If you want to define some conditionals based on current color mode or change the color mode then you can try [useColorMode](useColorMode.md).
+If you want to define some conditionals based on current color mode or change the color mode then you can try [useColorMode](use-color-mode).
 
 ```jsx isLive=true
 import React from "react";
@@ -149,18 +149,20 @@ function UseColorMode() {
   );
 }
 
-export default Example = () => {
+export function Example() {
   return (
     <NativeBaseProvider>
-      <UseColorMode />
+      <Center flex={1}>
+        <UseColorMode />
+      </Center>
     </NativeBaseProvider>
   );
-};
+}
 ```
 
 ## useColorModeValue
 
-If you do not want to add conditionals for color mode everywhere and keep the code clean, then you can use [useColorModeValue](useColorModeValue.md) hook. It takes two parameters, light mode value as the first and dark mode value as second.
+If you do not want to add conditionals for color mode everywhere and keep the code clean, then you can use [useColorModeValue](use-color-mode-value) hook. It takes two parameters, light mode value as the first and dark mode value as second.
 
 ```jsx isLive=true
 import React from "react";
@@ -188,11 +190,13 @@ function UseColorMode() {
   );
 }
 
-export default Example = () => {
+export function Example() {
   return (
     <NativeBaseProvider>
-      <UseColorMode />
+      <Center flex={1}>
+        <UseColorMode />
+      </Center>
     </NativeBaseProvider>
   );
-};
+}
 ```
