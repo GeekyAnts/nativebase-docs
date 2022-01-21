@@ -45,11 +45,9 @@ function BreakpointExample() {
 // Example template which wraps component with NativeBaseProvider
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <BreakpointExample />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <BreakpointExample />
+    </Center>
   );
 }
 ```
@@ -74,11 +72,9 @@ function BreakpointExample() {
 // Example template which wraps component with NativeBaseProvider
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <BreakpointExample />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <BreakpointExample />
+    </Center>
   );
 }
 ```
@@ -115,7 +111,7 @@ function App() {
       <Box>
         <Image
           w={["100%", "100%", "40"]}
-          h="40"
+          h="100%"
           source={{
             uri: "https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg",
           }}
@@ -132,7 +128,7 @@ function App() {
           PHOTOS
         </Center>
       </Box>
-      <Stack p="4" space={[3, 3, 1.5]}>
+      <Stack flex="1" p="4" space={[3, 3, 1.5]}>
         <Stack space="2">
           <Heading size="md" ml="-1">
             The Garden City

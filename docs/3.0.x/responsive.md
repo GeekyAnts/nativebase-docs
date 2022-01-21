@@ -27,7 +27,7 @@ For Example to make a `Box` width or w responsive using the array syntax, here's
 
 ```jsx isLive=true
 import React from "react";
-import { NativeBaseProvider, Center } from "native-base";
+import { Center } from "native-base";
 function BreakpointExample() {
   return (
     <Center

@@ -62,7 +62,7 @@ For Example to make a `Text` fontSize responsive using the object syntax, here's
 
 ```jsx isLive=true
 import React from "react";
-import { Text, NativeBaseProvider, Center } from "native-base";
+import { Text, Center } from "native-base";
 function BreakpointExample() {
   return (
     <Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
@@ -74,11 +74,9 @@ function BreakpointExample() {
 // Example template which wraps component with NativeBaseProvider
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <BreakpointExample />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <BreakpointExample />
+    </Center>
   );
 }
 ```
@@ -115,7 +113,7 @@ function App() {
       <Box>
         <Image
           w={["100%", "100%", "40"]}
-          h="40"
+          h="100%"
           source={{
             uri: "https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg",
           }}
@@ -132,7 +130,7 @@ function App() {
           PHOTOS
         </Center>
       </Box>
-      <Stack p="4" space={[3, 3, 1.5]}>
+      <Stack flex="1" p="4" space={[3, 3, 1.5]}>
         <Stack space="2">
           <Heading size="md" ml="-1">
             The Garden City
@@ -170,11 +168,9 @@ function App() {
 // Example template which wraps component with NativeBaseProvider
 export function Example() {
   return (
-    <NativeBaseProvider>
-      <Center flex={1}>
-        <App />
-      </Center>
-    </NativeBaseProvider>
+    <Center flex={1}>
+      <App />
+    </Center>
   );
 }
 ```

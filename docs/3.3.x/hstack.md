@@ -11,11 +11,18 @@ import { HStack, Stack, Center, Heading } from "native-base";
 
 export function Example() {
   return (
-    <Stack shadow={2} space={3} alignItems="center">
+    <Stack space={3} alignItems="center">
       <HStack space={3} alignItems="center">
-        <Center h="40" w="20" bg="primary.500" rounded="md" shadow={3} />
-        <Center h="40" w="20" bg="secondary.500" rounded="md" shadow={3} />
-        <Center h="40" w="20" bg="emerald.500" rounded="md" shadow={3} />
+        <Center h="40" w="20" bg="primary.200" rounded="md" shadow={3} />
+        <Center h="40" w="20" bg="primary.300" rounded="md" shadow={3} />
+        <Center
+          h="40"
+          w="20"
+          _dark={{ bg: "primary.500" }}
+          _light={{ bg: "primary.400" }}
+          rounded="md"
+          shadow={3}
+        />
       </HStack>
     </Stack>
   );
