@@ -149,13 +149,15 @@ function UseColorMode() {
   );
 }
 
-export default Example = () => {
+export function Example() {
   return (
     <NativeBaseProvider>
-      <UseColorMode />
+      <Center flex={1}>
+        <UseColorMode />
+      </Center>
     </NativeBaseProvider>
   );
-};
+}
 ```
 
 ## useColorModeValue
@@ -188,11 +190,13 @@ function UseColorMode() {
   );
 }
 
-export default Example = () => {
+export function Example() {
   return (
     <NativeBaseProvider>
-      <UseColorMode />
+      <Center flex={1}>
+        <UseColorMode />
+      </Center>
     </NativeBaseProvider>
   );
-};
+}
 ```
