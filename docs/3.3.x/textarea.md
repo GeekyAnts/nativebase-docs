@@ -18,6 +18,7 @@ export const Example = () => {
       h={20}
       placeholder="Text Area Placeholder"
       w="200"
+      _light={{ placeholderTextColor: "trueGray.700" }}
       _dark={{ bg: "coolGray.800" }}
       _hover={{ bg: "coolGray.200" }}
     />
