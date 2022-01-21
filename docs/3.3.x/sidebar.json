@@ -136,7 +136,8 @@
         },
         {
           "id": "typescript",
-          "title": "Typescript"
+          "title": "Typescript",
+          "showToc": false
         }
       ]
     },
