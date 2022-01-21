@@ -107,12 +107,14 @@ export default function App() {
 </DocTabs>
 
 <Center>
-  <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
+  <AspectRatio ratio={2.21} w="100%" maxW="500">
+    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
+  </AspectRatio>
 </Center>
 
 <Box>
   <Box mt="4" mb="8">
-    <HStack pl="0" ml="0">
+    <HStack pl="0" ml="0" space="4">
       <TileLink
         title="Customize NativeBaseProvider"
         url="setup-provider"
