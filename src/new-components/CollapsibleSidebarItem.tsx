@@ -15,9 +15,6 @@ export const CollapsibleSidebarItem = (props: any) => {
         <Pressable
           onPress={() => {
             setIsCollapsed(!isCollapsed);
-            // if (isMobile) {
-            //   setIsOpenSidebar(false);
-            // }
           }}
         >
           <HStack

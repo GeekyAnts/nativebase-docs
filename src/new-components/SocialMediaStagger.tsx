@@ -99,7 +99,7 @@ export const SocialMediaStagger = (props: any) => {
         </NBLink>
 
         <NBLink
-          href="figma.com/@nativebase?utm_source=HomePage&utm_medium=header&utm_campaign=NativeBase_figma"
+          href="https://www.figma.com/@nativebase?utm_source=HomePage&utm_medium=header&utm_campaign=NativeBase_figma"
           isExternal
         >
           <IconButton

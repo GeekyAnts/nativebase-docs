@@ -3,7 +3,7 @@ id: install-cra
 title: Install in Create React App project
 ---
 
-import { TileLink, RNWebNote,TabItem } from "../src/components";
+import { TileLink, RNWebNote, TabItem } from "../src/components";
 
   <DocTabs
   defaultValue='template'
@@ -98,7 +98,9 @@ export default function App() {
   </DocTabs>
 
 <Center>
-  <Image source={{ uri: "/img/minion.gif" }} />
+  <AspectRatio ratio={2.21} w="100%" maxW="500">
+    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
+  </AspectRatio>
 </Center>
 
 <Box>
