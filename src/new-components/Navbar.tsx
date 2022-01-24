@@ -175,7 +175,10 @@ export default function Navbar(props: any) {
         />
         <HStack space="6" alignItems="center">
           <AlgoliaSearchButton />
-          <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
+          <NBLink
+            href="https://www.figma.com/@nativebase?utm_source=HomePage&utm_medium=header&utm_campaign=NativeBase_figma"
+            isExternal
+          >
             <FigmaIcon size="6" />
           </NBLink>
           <NBLink href="https://github.com/GeekyAnts/nativebase" isExternal>
