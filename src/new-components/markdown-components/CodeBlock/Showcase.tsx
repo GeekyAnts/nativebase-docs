@@ -332,7 +332,7 @@ export const Showcase = (
                   />
                 </Link>
               </Tooltip>
-              <Tooltip
+              {/* <Tooltip
                 bg="coolGray.800"
                 _text={{ color: "coolGray.400" }}
                 hasArrow
@@ -359,7 +359,7 @@ export const Showcase = (
                     }
                   />
                 </Link>
-              </Tooltip>
+              </Tooltip> */}
               <Tooltip
                 bg="coolGray.800"
                 _text={{ color: "coolGray.400" }}

@@ -186,7 +186,8 @@ export const Playground = ({ children, ...props }: any) => {
                 />
               </Tooltip>
             </form>
-            <Tooltip
+            {/* Remove this comment after Icon issue is fixed */}
+            {/* <Tooltip
               bg="coolGray.800"
               _text={{ color: "coolGray.400" }}
               hasArrow
@@ -213,7 +214,7 @@ export const Playground = ({ children, ...props }: any) => {
                   }
                 />
               </Link>
-            </Tooltip>
+            </Tooltip> */}
             <Tooltip
               bg="coolGray.800"
               _text={{ color: "coolGray.400" }}
