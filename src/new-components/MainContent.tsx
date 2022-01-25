@@ -132,7 +132,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
         <HStack justifyContent="space-between" my="12">
           {pages.previousPage && (
             <Pressable
-              w={["40","40","80"]}
+              w={["40", "40", "80"]}
               rounded="7"
               borderWidth={1}
               _light={{ borderColor: "coolGray.200" }}
@@ -173,7 +173,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
           )}
           {pages.nextPage && (
             <Pressable
-              w={["40","40","80"]}
+              w={["40", "40", "80"]}
               rounded="7"
               borderWidth={1}
               _light={{ borderColor: "coolGray.200" }}
