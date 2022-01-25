@@ -1,5 +1,5 @@
 module.exports = {
-  DOCS_URL: 'https://beta-docs.nativebase.io',
+  DOCS_URL: 'https://docs.nativebase.io',
   indexSlugFileName: 'getting-started',
   docsEntryPoint: 'docs',
   REPO_BRANCH: 'master',
