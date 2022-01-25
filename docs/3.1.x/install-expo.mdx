@@ -1,0 +1,101 @@
+---
+id: install-expo
+title: Install in Expo project
+---
+
+import { TileLink } from "../../src/components";
+
+Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
+
+### Create a new expo project
+
+```bash
+npm install --global expo-cli
+expo init my-project
+cd my-project/
+```
+
+[Refer this link](https://docs.expo.io/) for additional information on Expo and setting up an Expo starter app.
+
+### Install dependencies
+
+<DocTabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+  <DocTabItem value="yarn">
+
+```bash
+yarn add native-base styled-components styled-system
+```
+
+  </DocTabItem>
+  <DocTabItem value="npm">
+
+```bash
+npm install native-base styled-components styled-system
+```
+
+</DocTabItem>
+  </DocTabs>
+
+```bash
+expo install react-native-svg
+```
+
+```bash
+expo install react-native-safe-area-context
+```
+
+### Run the Hello world example
+
+Put the below code in your App.js
+
+```jsx
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
+
+function App() {
+  return (
+    <NativeBaseProvider>
+      <Box>Hello world</Box>
+    </NativeBaseProvider>
+  );
+}
+```
+
+<Center>
+  <AspectRatio ratio={2.21} w="100%" maxW="500">
+    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
+  </AspectRatio>
+</Center>
+
+<Box>
+  <Box mt="4" mb="8">
+    <HStack pl="0" ml="0">
+      <TileLink
+        title="Customize NativeBaseProvider"
+        url="setup-provider"
+        description="NativeBaseProvider provides theme throughout your application"
+        className="bg-blueGray-600 mt-2"
+      />
+      <TileLink
+        title="Theme"
+        url="default-theme"
+        description="Read more about the default NativeBase theme and how to override it"
+        className="bg-blueGray-600  mt-2"
+      />
+    </HStack>
+    <Box mt="4" pl="0" ml="0">
+      <TileLink
+        title="Utility props"
+        url="utility-props"
+        description="Shorthands of commonly used styling props which maps with the provided theme"
+        className="bg-blueGray-600"
+      />
+    </Box>
+  </Box>
+</Box>

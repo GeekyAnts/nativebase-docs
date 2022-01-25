@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-live/src/components/Editor/index.js b/node_modules/react-live/src/components/Editor/index.js
+index 4ebe2a1..555012c 100644
+--- a/node_modules/react-live/src/components/Editor/index.js
++++ b/node_modules/react-live/src/components/Editor/index.js
+@@ -10,7 +10,7 @@ const CodeEditor = props => {
+   });
+ 
+   useEffect(() => {
+-    if (state.prevCodeProp && props.code !== state.prevCodeProp) {
++    if (props.code !== state.prevCodeProp) {
+       setState({ code: props.code, prevCodeProp: props.code });
+     }
+   }, [props.code]);
