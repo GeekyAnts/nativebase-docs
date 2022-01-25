@@ -14,10 +14,7 @@ import { Box, Progress, Heading, Center } from 'native-base';
 export const Example = () => {
   return (
     <Box w="100%">
-      <Center mb="10">
-        <Heading size="md"> Simple Progress Bar</Heading>
-      </Center>
-      <Progress shadow={2} value={45} mx="4" />
+      <Progress w="300" shadow={2} value={45} mx="4" />
     </Box>
   );
 };

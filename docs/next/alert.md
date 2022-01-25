@@ -8,7 +8,7 @@ import { ComponentTheme } from '../src/components';
 `Alerts` are used to communicate a state that affects a system, feature or page.
 
 ```jsx isShowcase
-import React from 'react';
+import React from "react";
 import {
   Alert,
   VStack,
@@ -17,11 +17,11 @@ import {
   CloseIcon,
   Box,
   Heading,
-} from 'native-base';
+} from "native-base";
 
 export const Example = () => {
   return (
-    <Alert shadow={2} w="100%" colorScheme="info">
+    <Alert shadow={2} maxW="400" w="100%" colorScheme="info">
       <VStack space={1} flexShrink={1} w="100%">
         <HStack
           flexShrink={1}
@@ -40,7 +40,7 @@ export const Example = () => {
             icon={<CloseIcon size="3" color="coolGray.600" />}
           />
         </HStack>
-        <Box pl="6" _text={{ color: 'coolGray.600' }}>
+        <Box pl="6" _text={{ color: "coolGray.600" }}>
           We are happy to announce that we are going live on July 28th. Get
           ready!
         </Box>
@@ -60,7 +60,7 @@ NativeBase exports 5 Alert related components:
   <!-- - `Alert.Description`: The description of the alert to be announced by screen readers. -->
 
 ```jsx
-import { Alert } from 'native-base';
+import { Alert } from "native-base";
 ```
 
 ## Examples
