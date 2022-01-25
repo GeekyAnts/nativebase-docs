@@ -11,11 +11,20 @@ import { ZStack, Box } from "native-base";
 
 export const Example = () => {
   return (
-    <ZStack shadow={2} alignItems="center" justifyContent="center">
-      <Box bg="primary.500" size="40" rounded="lg" />
-      <Box bg="secondary.500" size="32" rounded="lg" shadow={8} />
-      <Box bg="emerald.500" size="24" rounded="lg" shadow={8} />
-    </ZStack>
+    <Box mt="-20">
+      <ZStack mt="3" ml={-50}>
+        <Box bg="primary.700" size="20" rounded="lg" shadow={3} />
+        <Box bg="primary.500" mt="5" ml="5" size="20" rounded="lg" shadow={5} />
+        <Box
+          bg="primary.300"
+          mt="10"
+          ml="10"
+          size="20"
+          rounded="lg"
+          shadow={7}
+        />
+      </ZStack>
+    </Box>
   );
 };
 ```

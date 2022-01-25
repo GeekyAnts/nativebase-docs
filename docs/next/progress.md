@@ -8,16 +8,13 @@ import { ComponentTheme } from '../src/components';
 `Progress` is used to display the progress status for a task that takes a long time or consists of several steps.
 
 ```jsx isShowcase
-import React from 'react';
-import { Box, Progress, Heading, Center } from 'native-base';
+import React from "react";
+import { Box, Progress, Heading, Center } from "native-base";
 
 export const Example = () => {
   return (
     <Box w="100%">
-      <Center mb="10">
-        <Heading size="md"> Simple Progress Bar</Heading>
-      </Center>
-      <Progress shadow={2} value={45} mx="4" />
+      <Progress w="300" shadow={2} value={45} mx="4" />
     </Box>
   );
 };
@@ -26,7 +23,7 @@ export const Example = () => {
 ## Import
 
 ```jsx
-import { Progress } from 'native-base';
+import { Progress } from "native-base";
 ```
 
 ## Examples
