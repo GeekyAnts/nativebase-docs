@@ -75,6 +75,7 @@ export const Li = ({ children }: any) => {
         fontSize="md"
         _light={{ color: "coolGray.700" }}
         _dark={{ color: "coolGray.300" }}
+        width={{ base: "90%", md: "100%" }}
       >
         {children}
       </Text>
