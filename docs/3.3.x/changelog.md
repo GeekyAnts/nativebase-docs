@@ -7,6 +7,31 @@ title: Changelog
 
 TypeScript enhancement for custom theme tokens and variants [#4173](https://github.com/GeekyAnts/NativeBase/pull/4173)
 
+## V3.3.4
+
+### Fixes
+
+- Infinite loop in Image component [5887efc](https://github.com/GeekyAnts/NativeBase/commit/5887efc3dd119c41fbec9afea001fefe94c0eb1e)
+- Implemented RN static functions (prefetch, getSize, queryCache) for Image component [9f42780](https://github.com/GeekyAnts/NativeBase/commit/9f4278059cd6f31c4fb1826ff77ebd34fce6c510)
+- Nested Heading component fontFamily issue [6bc5a5f](https://github.com/GeekyAnts/NativeBase/commit/6bc5a5f70fa89981ec0733c5dcb87de4478f3f07)
+- Toast component overlap issue [dff4a89](https://github.com/GeekyAnts/NativeBase/commit/dff4a89329f73ae0d18bd8810f713825f5a34251)
+
+## V3.3.3
+
+### Fixes
+
+- `next build` crash fixes [16153bc](https://github.com/GeekyAnts/NativeBase/commit/16153bc77e086b3da51d052cf105702896d2b620)
+- MenuItem hover issue fixes [df492d4](https://github.com/GeekyAnts/NativeBase/commit/df492d49a79cd18081a7d4b457746e8e9c16095d)
+- Input component render on firebox issue [75aedc7](https://github.com/GeekyAnts/NativeBase/commit/75aedc7cb8257a63ad5c2cd39c10293c1d5c4cea)
+
+## V3.3.2
+
+### Fixes
+
+- Custom theme type fixes [a4274d5](https://github.com/GeekyAnts/NativeBase/commit/a4274d568823e8fa110d8deaae24b4ed6dff58a7)
+- Input underlined prop issue [fce40f5](https://github.com/GeekyAnts/NativeBase/commit/fce40f567a4ca820a45f353ba405425303a0bf7d)
+- Image hook fixes [d6959de](https://github.com/GeekyAnts/NativeBase/commit/d6959de0dd7dee936c9b9da4f1f106a0b82fed03)
+
 ## V3.3.1
 
 ## Fixes
