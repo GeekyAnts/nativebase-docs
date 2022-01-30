@@ -2,9 +2,6 @@ const withFonts = require("next-fonts");
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
 });
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
 const { withExpo } = require("@expo/next-adapter");
 const redirectsJSON = require("./redirects.json");
 const withPlugins = require("next-compose-plugins");
@@ -31,7 +28,6 @@ const withTM = require("next-transpile-modules")([
 
 module.exports = withPlugins(
   [
-    [withBundleAnalyzer],
     [withTM],
     [withFonts],
     [withMDX],
