@@ -1,7 +1,4 @@
-
-
-
-In v3, [`Toast`](toast.md) can be created using **useToast** hook
+In v3, [`Toast`](/toast) can be created using **useToast** hook
 
 ## Overview
 

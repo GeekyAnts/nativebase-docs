@@ -75,7 +75,7 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 
 ### Popover.CloseButton 
 
-`Popover.CloseButton` composes the [`Button`](button.md) component.
+`Popover.CloseButton` composes the [`Button`](button) component.
 
 ## Styling
 

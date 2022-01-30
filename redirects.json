@@ -131,7 +131,11 @@
     "destination": "/3.0.x/blocked-components",
     "permanent": true
   },
-  { "source": "/3.0.0/code", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/code",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.0/collapse",
     "destination": "/3.0.x/blocked-components",
@@ -257,14 +261,22 @@
     "destination": "/3.0.x/interaction-styles",
     "permanent": true
   },
-  { "source": "/3.0.0/Kbd", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/Kbd",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.0/keyboardAvoidingView",
     "destination": "/3.0.x/keyboard-avoiding-view",
     "permanent": true
   },
   { "source": "/3.0.0/link", "destination": "/3.0.x/link", "permanent": true },
-  { "source": "/3.0.0/list", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.0/loginsignupforms",
     "destination": "/3.0.x/login-signup-forms",
@@ -541,7 +553,11 @@
     "destination": "/3.0.x/stagger",
     "permanent": true
   },
-  { "source": "/3.0.0/stat", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/stat",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.0/statusBar",
     "destination": "/3.0.x/statusBar",
@@ -557,8 +573,16 @@
     "destination": "/3.0.x/switch",
     "permanent": true
   },
-  { "source": "/3.0.0/tabs", "destination": "/3.0.x/blocked-components", "permanent": true },
-  { "source": "/3.0.0/tag", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/tabs",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/tag",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   { "source": "/3.0.0/text", "destination": "/3.0.x/text", "permanent": true },
   {
     "source": "/3.0.0/textArea",
@@ -671,7 +695,11 @@
     "destination": "/3.0.x/vstack",
     "permanent": true
   },
-  { "source": "/3.0.0/wrap", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/wrap",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.0/ZStack",
     "destination": "/3.0.x/zstack",
@@ -3239,7 +3267,11 @@
     "destination": "/3.0.x/blocked-components",
     "permanent": true
   },
-  { "source": "/3.0.3/code", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/code",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.3/collapse",
     "destination": "/3.0.x/blocked-components",
@@ -3365,7 +3397,11 @@
     "destination": "/3.0.x/interaction-styles",
     "permanent": true
   },
-  { "source": "/3.0.3/Kbd", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/Kbd",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.3/keyboardAvoidingView",
     "destination": "/3.0.x/keyboard-avoiding-view",
@@ -3377,7 +3413,11 @@
     "permanent": true
   },
   { "source": "/3.0.3/link", "destination": "/3.0.x/link", "permanent": true },
-  { "source": "/3.0.3/list", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.3/loginsignupforms",
     "destination": "/3.0.x/login-signup-forms",
@@ -3654,7 +3694,11 @@
     "destination": "/3.0.x/stagger",
     "permanent": true
   },
-  { "source": "/3.0.3/stat", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/stat",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.3/statusBar",
     "destination": "/3.0.x/statusBar",
@@ -3670,8 +3714,16 @@
     "destination": "/3.0.x/switch",
     "permanent": true
   },
-  { "source": "/3.0.3/tabs", "destination": "/3.0.x/blocked-components", "permanent": true },
-  { "source": "/3.0.3/tag", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/tabs",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/tag",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   { "source": "/3.0.3/text", "destination": "/3.0.x/text", "permanent": true },
   {
     "source": "/3.0.3/textArea",
@@ -3784,7 +3836,11 @@
     "destination": "/3.0.x/vstack",
     "permanent": true
   },
-  { "source": "/3.0.3/wrap", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/wrap",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.3/ZStack",
     "destination": "/3.0.x/zstack",
@@ -3922,7 +3978,11 @@
     "destination": "/3.0.x/blocked-components",
     "permanent": true
   },
-  { "source": "/3.0.6/code", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/code",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.6/collapse",
     "destination": "/3.0.x/blocked-components",
@@ -4048,7 +4108,11 @@
     "destination": "/3.0.x/interaction-styles",
     "permanent": true
   },
-  { "source": "/3.0.6/Kbd", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/Kbd",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.6/keyboardAvoidingView",
     "destination": "/3.0.x/keyboard-avoiding-view",
@@ -4060,7 +4124,11 @@
     "permanent": true
   },
   { "source": "/3.0.6/link", "destination": "/3.0.x/link", "permanent": true },
-  { "source": "/3.0.6/list", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.6/loginsignupforms",
     "destination": "/3.0.x/login-signup-forms",
@@ -4337,7 +4405,11 @@
     "destination": "/3.0.x/stagger",
     "permanent": true
   },
-  { "source": "/3.0.6/stat", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/stat",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.6/statusBar",
     "destination": "/3.0.x/statusBar",
@@ -4353,8 +4425,16 @@
     "destination": "/3.0.x/switch",
     "permanent": true
   },
-  { "source": "/3.0.6/tabs", "destination": "/3.0.x/blocked-components", "permanent": true },
-  { "source": "/3.0.6/tag", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/tabs",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/tag",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   { "source": "/3.0.6/text", "destination": "/3.0.x/text", "permanent": true },
   {
     "source": "/3.0.6/textArea",
@@ -4467,7 +4547,11 @@
     "destination": "/3.0.x/vstack",
     "permanent": true
   },
-  { "source": "/3.0.6/wrap", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/wrap",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.6/ZStack",
     "destination": "/3.0.x/zstack",
@@ -4696,7 +4780,11 @@
     "permanent": true
   },
   { "source": "/3.0.7/link", "destination": "/3.0.x/link", "permanent": true },
-  { "source": "/3.0.7/list", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.7/list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.0.7/loginsignupforms",
     "destination": "/3.0.x/login-signup-forms",
@@ -5293,7 +5381,11 @@
     "permanent": true
   },
   { "source": "/3.1.0/link", "destination": "/3.1.x/link", "permanent": true },
-  { "source": "/3.1.0/list", "destination": "/3.1.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.1.0/list",
+    "destination": "/3.1.x/blocked-components",
+    "permanent": true
+  },
   {
     "source": "/3.1.0/login-signup-forms",
     "destination": "/3.1.x/login-signup-forms",
@@ -6869,6 +6961,171 @@
     "permanent": true
   },
   { "source": "/3.2.2/view", "destination": "/3.2.x/view", "permanent": true },
+  {
+    "source": "/3.2.2/z-stack",
+    "destination": "/3.2.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/v-stack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/v-stack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/v-stack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/v-stack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/v-stack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/v-stack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/v-stack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/v-stack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/v-stack",
+    "destination": "/3.1.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/v-stack",
+    "destination": "/3.2.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/v-stack",
+    "destination": "/3.2.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/h-stack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/h-stack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/h-stack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/h-stack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/h-stack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/h-stack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/h-stack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/h-stack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/h-stack",
+    "destination": "/3.1.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/h-stack",
+    "destination": "/3.2.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/h-stack",
+    "destination": "/3.2.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/z-stack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/z-stack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/z-stack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/z-stack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/z-stack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/z-stack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/z-stack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/z-stack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/z-stack",
+    "destination": "/3.1.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/z-stack",
+    "destination": "/3.2.x/zstack",
+    "permanent": true
+  },
   {
     "source": "/3.2.2/z-stack",
     "destination": "/3.2.x/zstack",

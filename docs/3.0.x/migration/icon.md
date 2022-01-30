@@ -1,7 +1,4 @@
-
-
-
-Migrating [`Icon`](icon.md) to v3 will provide a lot more **customisation** option. You can also create custom icons using SVG.
+Migrating [`Icon`](/icon) to v3 will provide a lot more **customisation** option. You can also create custom icons using SVG.
 
 ## Overview
 

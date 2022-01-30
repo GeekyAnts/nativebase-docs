@@ -3,10 +3,7 @@ id: thumbnail
 title: Thumbnail
 ---
 
-
-
-
-With v3 we have replaced the **Thumbnail** with [`Image`](image.md). And we also provide [`Avatar`](avatar.md) as well.
+With v3 we have replaced the **Thumbnail** with [`Image`](/image). And we also provide [`Avatar`](/avatar) as well.
 
 ## Code Comparison
 
