@@ -87,7 +87,7 @@ Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geek
 ### Children components
 
 - `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the [`Box`](box.md) component.
-- `Modal.CloseButton` composes the [`Button`](button.md).
+- `Modal.CloseButton` composes the [`Button`](button).
 
 ## Styling
 

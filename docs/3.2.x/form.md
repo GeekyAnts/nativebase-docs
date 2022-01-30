@@ -20,14 +20,14 @@ In this example, learn how to add validation to a form that has a single text fi
 Create an Input wrapped in FormControl.
 
 ```jsx isLive
-import React from "react";
+import React from 'react';
 import {
   VStack,
   FormControl,
   Input,
   NativeBaseProvider,
   Center,
-} from "native-base";
+} from 'native-base';
 
 function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
@@ -40,10 +40,10 @@ function BuildingAFormExample() {
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormControl.HelperText _text={{ fontSize: "xs" }}>
+        <FormControl.HelperText _text={{ fontSize: 'xs' }}>
           Name should contain atleast 3 character.
         </FormControl.HelperText>
-        <FormControl.ErrorMessage _text={{ fontSize: "xs" }}>
+        <FormControl.ErrorMessage _text={{ fontSize: 'xs' }}>
           Error Name
         </FormControl.ErrorMessage>
       </FormControl>
@@ -66,14 +66,14 @@ export function Example() {
 Add validation logic.
 
 ```jsx isLive
-import React from "react";
+import React from 'react';
 import {
   VStack,
   FormControl,
   Input,
   NativeBaseProvider,
   Center,
-} from "native-base";
+} from 'native-base';
 
 function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
@@ -82,13 +82,13 @@ function BuildingAFormExample() {
     if (formData.name === undefined) {
       setErrors({
         ...errors,
-        name: "Name is required",
+        name: 'Name is required',
       });
       return false;
     } else if (formData.name.length < 3) {
       setErrors({
         ...errors,
-        name: "Name is too short",
+        name: 'Name is too short',
       });
       return false;
     }
@@ -103,10 +103,10 @@ function BuildingAFormExample() {
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormControl.HelperText _text={{ fontSize: "xs" }}>
+        <FormControl.HelperText _text={{ fontSize: 'xs' }}>
           Name should contain atleast 3 character.
         </FormControl.HelperText>
-        <FormControl.ErrorMessage _text={{ fontSize: "xs" }}>
+        <FormControl.ErrorMessage _text={{ fontSize: 'xs' }}>
           Error Name
         </FormControl.ErrorMessage>
       </FormControl>
@@ -129,7 +129,7 @@ export function Example() {
 Create a button to validate and submit the form.
 
 ```jsx isLive
-import React from "react";
+import React from 'react';
 import {
   VStack,
   Button,
@@ -137,7 +137,7 @@ import {
   Input,
   NativeBaseProvider,
   Center,
-} from "native-base";
+} from 'native-base';
 
 function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
@@ -146,13 +146,13 @@ function BuildingAFormExample() {
     if (formData.name === undefined) {
       setErrors({
         ...errors,
-        name: "Name is required",
+        name: 'Name is required',
       });
       return false;
     } else if (formData.name.length < 3) {
       setErrors({
         ...errors,
-        name: "Name is too short",
+        name: 'Name is too short',
       });
       return false;
     }
@@ -160,25 +160,25 @@ function BuildingAFormExample() {
   };
 
   const onSubmit = () => {
-    validate() ? console.log("Submitted") : console.log("Validation Failed");
+    validate() ? console.log('Submitted') : console.log('Validation Failed');
   };
 
   return (
     <VStack width="90%" mx="3">
-      <FormControl isRequired isInvalid={"name" in errors}>
+      <FormControl isRequired isInvalid={'name' in errors}>
         <FormControl.Label _text={{ bold: true }}>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        {"name" in errors ? (
+        {'name' in errors ? (
           <FormControl.ErrorMessage
-            _text={{ fontSize: "xs", color: "error.500", fontWeight: 500 }}
+            _text={{ fontSize: 'xs', color: 'error.500', fontWeight: 500 }}
           >
             Error
           </FormControl.ErrorMessage>
         ) : (
-          <FormControl.HelperText _text={{ fontSize: "xs" }}>
+          <FormControl.HelperText _text={{ fontSize: 'xs' }}>
             Name should contain atleast 3 character.
           </FormControl.HelperText>
         )}
@@ -202,4 +202,4 @@ export function Example() {
 
 ## Community Integration
 
-NativeBase can be used with other popular Form libraries like [`Formik`](nativebase-formik-ui.md) and [`React Hook Forms`](reactHooksForms.md) as well. For more details checkout Community Integration section of the docs.
+NativeBase can be used with other popular Form libraries like [`Formik`](/formik) and [`React Hook Forms`](react-hooks-forms) as well. For more details checkout Community Integration section of the docs.

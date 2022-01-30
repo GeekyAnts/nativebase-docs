@@ -3,10 +3,7 @@ id: button
 title: Button
 ---
 
-
-
-
-Migrating [`Button`](button.mdx) to v3 will provide a lot more **design**, **size**, **color** and **customisation** options.
+Migrating [`Button`](/button) to v3 will provide a lot more **design**, **size**, **color** and **customisation** options.
 
 ## Overview
 
@@ -38,12 +35,12 @@ values={[
 <DocTabItem value="v2">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_12.29.32_PM.png',
   }}
-  width={200}
-  height={100}
+width={200}
+height={100}
 />
 
 ```tsx
@@ -56,12 +53,12 @@ values={[
 <DocTabItem value="v3">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_12.53.09_PM.png',
   }}
-  width={200}
-  height={100}
+width={200}
+height={100}
 />
 
 ```tsx
@@ -84,12 +81,12 @@ values={[
 <DocTabItem value="v2">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_2.37.09_PM.png',
   }}
-  width={300}
-  height={100}
+width={300}
+height={100}
 />
 
 ```tsx
@@ -102,12 +99,12 @@ values={[
 <DocTabItem value="v3">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_2.38.52_PM.png',
   }}
-  width={300}
-  height={100}
+width={300}
+height={100}
 />
 
 ```tsx
@@ -132,12 +129,12 @@ values={[
 <DocTabItem value="v2">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_1.16.25_PM.png',
   }}
-  width={200}
-  height={100}
+width={200}
+height={100}
 />
 
 ```tsx
@@ -147,12 +144,12 @@ values={[
 ```
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_1.23.42_PM.png',
   }}
-  width={200}
-  height={100}
+width={200}
+height={100}
 />
 
 ```tsx
@@ -161,14 +158,13 @@ values={[
 </Button>
 ```
 
-
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_1.17.11_PM.png',
   }}
-  width={200}
-  height={100}
+width={200}
+height={100}
 />
 
 ```tsx
@@ -181,12 +177,12 @@ values={[
 <DocTabItem value="v3">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_1.15.34_PM.png',
   }}
-  width={260}
-  height={100}
+width={260}
+height={100}
 />
 
 ```tsx
@@ -194,13 +190,14 @@ values={[
   Success
 </Button>
 ```
+
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_1.22.36_PM.png',
   }}
-  width={200}
-  height={100}
+width={200}
+height={100}
 />
 
 ```tsx
@@ -208,13 +205,14 @@ values={[
   Success
 </Button>
 ```
+
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_1.20.36_PM.png',
   }}
-  width={260}
-  height={100}
+width={260}
+height={100}
 />
 
 ```tsx
@@ -239,12 +237,12 @@ values={[
 <DocTabItem value="v2">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_1.32.47_PM.png',
   }}
-  width={240}
-  height={100}
+width={240}
+height={100}
 />
 
 ```tsx
@@ -258,12 +256,12 @@ values={[
 <DocTabItem value="v3">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Button/Screenshot_2021-01-22_at_1.38.15_PM.png',
   }}
-  width={270}
-  height={100}
+width={270}
+height={100}
 />
 
 ```tsx

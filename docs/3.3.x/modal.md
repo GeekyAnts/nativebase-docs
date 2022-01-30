@@ -17,7 +17,9 @@ export const Example = () => {
 
   return (
     <>
-      <Button shadow={2} onPress={() => setShowModal(true)}>Button</Button>
+      <Button shadow={2} onPress={() => setShowModal(true)}>
+        Button
+      </Button>
       <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
         <Modal.Content maxWidth="400px">
           <Modal.CloseButton />
@@ -150,8 +152,8 @@ Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geek
 
 ### Children components
 
-- `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the [`Box`](box.md) component.
-- `Modal.CloseButton` composes the [`Button`](button.md).
+- `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the [`Box`](box) component.
+- `Modal.CloseButton` composes the [`Button`](button).
 
 ## Styling
 

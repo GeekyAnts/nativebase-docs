@@ -1,7 +1,4 @@
-
-
-
-Migrating [`FAB`](FAB.md) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
+Migrating [`FAB`](/fab) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
 
 ## Overview
 
