@@ -17,7 +17,7 @@ import { ComponentTheme } from '../../src/components';
 - `AlertDialog.CloseButton`: The button that closes the dialog.
 
 ```jsx
-import { AlertDialog } from "native-base";
+import { AlertDialog } from 'native-base';
 ```
 
 ## Examples

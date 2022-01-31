@@ -8,13 +8,13 @@ title: useAccessibleColors
 ## Import
 
 ```jsx
-import { useAccessibleColors } from "native-base";
+import { useAccessibleColors } from 'native-base';
 ```
 
 ## Example
 
 ```jsx isLive=true
-import React from "react";
+import React from 'react';
 import {
   Button,
   useContrastText,
@@ -22,7 +22,7 @@ import {
   NativeBaseProvider,
   Center,
   useAccessibleColors,
-} from "native-base";
+} from 'native-base';
 function UseContrastingTextHook() {
   let [, , toggleAccessibleColors] = useAccessibleColors();
   const { colors } = useTheme();
@@ -41,7 +41,7 @@ function UseContrastingTextHook() {
           </Button>
         );
       })}
-      <Button mt={2} onPress={toggleAccessibleColors} bg={"indigo.600"}>
+      <Button mt={2} onPress={toggleAccessibleColors} bg={'indigo.600'}>
         Toggle Accessible Colors
       </Button>
     </>

@@ -19,7 +19,7 @@ export const Example = () => {
     <Center>
       <Button
         shadow={2}
-        colorScheme="danger"
+        colorScheme='danger'
         onPress={() => setIsOpen(!isOpen)}
       >
         Delete Customer
@@ -39,14 +39,14 @@ export const Example = () => {
           <AlertDialog.Footer>
             <Button.Group space={2}>
               <Button
-                variant="unstyled"
-                colorScheme="coolGray"
+                variant='unstyled'
+                colorScheme='coolGray'
                 onPress={onClose}
                 ref={cancelRef}
               >
                 Cancel
               </Button>
-              <Button colorScheme="danger" onPress={onClose}>
+              <Button colorScheme='danger' onPress={onClose}>
                 Delete
               </Button>
             </Button.Group>

@@ -10,7 +10,7 @@ Headings are used for rendering headlines. `Heading` composes [`Text`](/text)�
 ## Import
 
 ```jsx
-import { Heading } from "native-base";
+import { Heading } from 'native-base';
 ```
 
 ## Example
