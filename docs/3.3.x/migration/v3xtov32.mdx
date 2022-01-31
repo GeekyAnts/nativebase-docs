@@ -16,7 +16,7 @@ import {
   NativeBaseProvider,
   extendTheme,
   v3CompatibleTheme,
-} from 'native-base';
+} from "native-base";
 
 // ...
 const yourCustomTheme = {
@@ -38,28 +38,28 @@ If you are updating from 3.1.x to 3.2.x in a Next.js project, you might need to 
 - No need of webpack config just add withFonts(from next-fonts) and withExpo(from @expo/next-adapter)
 
 ```jsx {5-22,27-40}
-const withFonts = require('next-fonts');
-const withPlugins = require('next-compose-plugins');
-const withTM = require('next-transpile-modules')([
-  'native-base',
-  'react-native-svg',
-  'styled-components',
-  'react-native-safe-area-context',
-  '@react-aria/visually-hidden',
-  '@react-native-aria/button',
-  '@react-native-aria/checkbox',
-  '@react-native-aria/combobox',
-  '@react-native-aria/focus',
-  '@react-native-aria/interactions',
-  '@react-native-aria/listbox',
-  '@react-native-aria/overlays',
-  '@react-native-aria/radio',
-  '@react-native-aria/slider',
-  '@react-native-aria/tabs',
-  '@react-native-aria/utils',
-  '@react-stately/combobox',
-  '@react-stately/radio',
-  'react-native-vector-icons',
+const withFonts = require("next-fonts");
+const withPlugins = require("next-compose-plugins");
+const withTM = require("next-transpile-modules")([
+  "native-base",
+  "react-native-svg",
+  "styled-components",
+  "react-native-safe-area-context",
+  "@react-aria/visually-hidden",
+  "@react-native-aria/button",
+  "@react-native-aria/checkbox",
+  "@react-native-aria/combobox",
+  "@react-native-aria/focus",
+  "@react-native-aria/interactions",
+  "@react-native-aria/listbox",
+  "@react-native-aria/overlays",
+  "@react-native-aria/radio",
+  "@react-native-aria/slider",
+  "@react-native-aria/tabs",
+  "@react-native-aria/utils",
+  "@react-stately/combobox",
+  "@react-stately/radio",
+  "react-native-vector-icons",
 ]);
 module.exports = withPlugins(
   [withTM, [withFonts, { projectRoot: __dirname }]],
@@ -68,12 +68,12 @@ module.exports = withPlugins(
       config.resolve.alias = {
         ...(config.resolve.alias || {}),
         // Transform all direct `react-native` imports to `react-native-web`
-        'react-native$': 'react-native-web',
+        "react-native$": "react-native-web",
       };
       config.resolve.extensions = [
-        '.web.js',
-        '.web.ts',
-        '.web.tsx',
+        ".web.js",
+        ".web.ts",
+        ".web.tsx",
         ...config.resolve.extensions,
       ];
       return config;
@@ -83,12 +83,12 @@ module.exports = withPlugins(
 ```
 
 ```jsx {1,5,9,15,17}
-const { withExpo } = require('@expo/next-adapter');
-const withFonts = require('next-fonts');
-const withPlugins = require('next-compose-plugins');
-const withTM = require('next-transpile-modules')([
-  'react-native-web',
-  'native-base',
+const { withExpo } = require("@expo/next-adapter");
+const withFonts = require("next-fonts");
+const withPlugins = require("next-compose-plugins");
+const withTM = require("next-transpile-modules")([
+  "react-native-web",
+  "native-base",
 ]);
 
 const nextConfig = {};
@@ -109,28 +109,28 @@ module.exports = withPlugins(
 
 ```jsx {3,2}
 module.exports = {
-  presets: ['next/babel'],
-  plugins: [['react-native-web', { commonjs: true }]],
+  presets: ["next/babel"],
+  plugins: [["react-native-web", { commonjs: true }]],
 };
 ```
 
 ```jsx {2,3}
 module.exports = {
-  presets: ['@expo/next-adapter/babel'],
-  plugins: [['@babel/plugin-proposal-class-properties']],
+  presets: ["@expo/next-adapter/babel"],
+  plugins: [["@babel/plugin-proposal-class-properties"]],
 };
 ```
 
-### Updating _document.js/ts
+### Updating \_document.js/ts
 
 - No need to import .ttf font files of Icons and add them into document style.
 
 ```jsx {2-20,30}
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import Ionicons from 'react-native-vector-icons/Fonts/Ionicons.ttf';
-import MaterialIcons from 'react-native-vector-icons/Fonts/MaterialIcons.ttf';
-import AntDesign from 'react-native-vector-icons/Fonts/AntDesign.ttf';
-import MaterialCommunityIcons from 'react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf';
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import Ionicons from "react-native-vector-icons/Fonts/Ionicons.ttf";
+import MaterialIcons from "react-native-vector-icons/Fonts/MaterialIcons.ttf";
+import AntDesign from "react-native-vector-icons/Fonts/AntDesign.ttf";
+import MaterialCommunityIcons from "react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf";
 // Generate required css
 const iconFontStyles = `@font-face {
   src: url(${Ionicons});
@@ -169,18 +169,18 @@ export default MyDocument;
 ```
 
 ```jsx
-import React from 'react';
-import { getInitialProps } from '@expo/next-adapter/document';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import React from "react";
+import { getInitialProps } from "@expo/next-adapter/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class CustomDocument extends Document {
   render() {
     return (
-      <Html style={{ height: '100%' }}>
+      <Html style={{ height: "100%" }}>
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         </Head>
-        <body style={{ height: '100%', overflow: 'hidden' }}>
+        <body style={{ height: "100%", overflow: "hidden" }}>
           <Main />
           <NextScript />
         </body>
@@ -210,7 +210,7 @@ Below is a rough account of the breaking API changes as well as the minimal chan
 
 ## Strict Mode:
 
-We have introduced [strict mode](../strict-mode.md) in `v3.2.0` which is `off` by default. If you don't want to have strict mode, step 1 is enough. If you want to comply with the strict mode, you also need to do these:
+We have introduced [strict mode](../strict-mode) in `v3.2.0` which is `off` by default. If you don't want to have strict mode, step 1 is enough. If you want to comply with the strict mode, you also need to do these:
 
 1.  All utility props which take theme tokens as values, now take only string values as a valid type
 
@@ -227,7 +227,7 @@ This means that if you pass a number value which is supposed to be a theme token
 <Box p="4" mx="8" /> ✅
 ```
 
-2.  Remove all non token values given to utility props which accept theme tokens. For example, `p="11"` is not supported with the [default theme](../default-theme.md). Pick up another value from default theme tokens or [define a new one yourself](../customizing-theme).
+2.  Remove all non token values given to utility props which accept theme tokens. For example, `p="11"` is not supported with the [default theme](../default-theme). Pick up another value from default theme tokens or [define a new one yourself](../customizing-theme).
 3.  If you are using [Icon](../icon.md) with `as` prop, verify this
 
 ```jsx

@@ -5,7 +5,7 @@ title: AlertDialog
 
 import { ComponentTheme } from '../../src/components';
 
-`AlertDialog` component is used to interrupt the user with a mandatory confirmation or action. AlertDialog composes [`Modal`](modal.md) so you can use all its props.
+`AlertDialog` component is used to interrupt the user with a mandatory confirmation or action. AlertDialog composes [`Modal`](/modal) so you can use all its props.
 
 ## Import
 
@@ -17,7 +17,7 @@ import { ComponentTheme } from '../../src/components';
 - `AlertDialog.CloseButton`: The button that closes the dialog.
 
 ```jsx
-import { AlertDialog } from 'native-base';
+import { AlertDialog } from "native-base";
 ```
 
 ## Examples
@@ -26,12 +26,7 @@ import { AlertDialog } from 'native-base';
 
 ```jsx isLive=true
 import React from "react";
-import {
-  AlertDialog,
-  Button,
-  Center,
-  NativeBaseProvider,
-} from "native-base";
+import { AlertDialog, Button, Center, NativeBaseProvider } from "native-base";
 
 function AlertDialogComponent() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -136,12 +131,11 @@ export function Example() {
 
 ## Props
 
-AlertDialog and its components compose the **[Modal](modal.md)** component, so all the [`Modal props`](modal.md#props) can be passed to it. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of `Modal`.
+AlertDialog and its components compose the **[Modal](/modal)** component, so all the [`Modal props`](/modal#props) can be passed to it. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of `Modal`.
 
 | Name                | Type      | Description                                                    | Default |
 | ------------------- | --------- | -------------------------------------------------------------- | ------- |
 | leastDestructiveRef | React.Ref | The least destructive action to get focus when dialog is open. | -       |
-
 
 ## Accessibility
 
@@ -149,12 +143,10 @@ Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.
 
 ### Keyboard Interactions
 
-| Name                | Description |
-| --------------------|-------------|
-| Space   | Opens/closes the dialog. |
-| Enter   | Opens/closes the dialog. |
-| Tab     | Moves focus to the next focusable element. |
-| Shift + Tab | Moves focus to the previous focusable element. |
-| Esc     | Closes the dialog and moves focus to AlertDialog.Trigger. | 
-
-
+| Name        | Description                                               |
+| ----------- | --------------------------------------------------------- |
+| Space       | Opens/closes the dialog.                                  |
+| Enter       | Opens/closes the dialog.                                  |
+| Tab         | Moves focus to the next focusable element.                |
+| Shift + Tab | Moves focus to the previous focusable element.            |
+| Esc         | Closes the dialog and moves focus to AlertDialog.Trigger. |
