@@ -3,7 +3,7 @@ id: theme
 title: Using Theme
 ---
 
-NativeBase provides multiple tools to use the central theme defined in the app. First tool is [`useTheme`](/useTheme.md), which you can use to access the values from the current theme.
+NativeBase provides multiple tools to use the central theme defined in the app. First tool is [`useTheme`](/use-theme), which you can use to access the values from the current theme.
 
 ## useTheme
 
@@ -38,12 +38,11 @@ export function Example() {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 ## useToken
 
-You can also get specific values from the theme with [`useToken`](/useToken.md) hook.
+You can also get specific values from the theme with [`useToken`](/use-token) hook.
 
 ```jsx isLive=true
 import React from 'react';
@@ -56,7 +55,8 @@ function Tokens() {
   ]);
   return (
     <Center bg="emerald.400" flexDirection="row" p={4} rounded={4}>
-      Contrast threshold is: <Text color={lightText} fontWeight="bold">
+      Contrast threshold is:{' '}
+      <Text color={lightText} fontWeight="bold">
         {contrastThreshold}
       </Text>
     </Center>
@@ -73,7 +73,6 @@ export function Example() {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 ## useContrastText
@@ -81,10 +80,15 @@ export function Example() {
 If you are defining the background yourself and pass a contrasting color to the text then you can use [`useContrastText`](use-contrast-text).
 
 ```jsx isLive=true
-
 import React from 'react';
-import { Button, Stack, useContrastText, NativeBaseProvider, Center } from 'native-base';
-function UseContrastingTextHook () {
+import {
+  Button,
+  Stack,
+  useContrastText,
+  NativeBaseProvider,
+  Center,
+} from 'native-base';
+function UseContrastingTextHook() {
   const bgDark = 'emerald.700';
   const bgLight = 'emerald.200';
   const colorContrastDark = useContrastText(bgDark);
@@ -149,7 +153,6 @@ export function Example() {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 ## useColorModeValue
@@ -172,7 +175,8 @@ function UseColorMode() {
   return (
     <Center flex={1} bg={useColorModeValue('white', 'black')}>
       <Text fontSize="lg" display="flex">
-        The active color mode is <Text bold>{useColorModeValue('Light', 'Dark')}</Text>
+        The active color mode is{' '}
+        <Text bold>{useColorModeValue('Light', 'Dark')}</Text>
       </Text>
       <Button onPress={toggleColorMode}>Toggle</Button>
     </Center>
@@ -187,5 +191,4 @@ export function Example() {
     </NativeBaseProvider>
   );
 }
-
 ```

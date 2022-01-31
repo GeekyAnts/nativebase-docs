@@ -3,10 +3,7 @@ id: badge
 title: Badge
 ---
 
-
-
-
-Migrating [`Badge`](badge.md) to v3 will provide a lot more **design**, **size, variant**, **color** and **customisation** options.
+Migrating [`Badge`](/badge) to v3 will provide a lot more **design**, **size, variant**, **color** and **customisation** options.
 
 ## Overview
 

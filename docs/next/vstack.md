@@ -1,13 +1,13 @@
 ---
-id: v-stack
+id: vstack
 title: VStack / Column
 ---
 
 `VStack` aligns items vertically.`Column` is also an alias for `VStack`.
 
 ```jsx isShowcase
-import React from "react";
-import { VStack, Center, Heading } from "native-base";
+import React from 'react';
+import { VStack, Center, Heading } from 'native-base';
 
 export function Example() {
   return (
@@ -18,10 +18,10 @@ export function Example() {
         w="64"
         h="10"
         _dark={{
-          bg: "indigo.500",
+          bg: 'indigo.500',
         }}
         _light={{
-          bg: "indigo.400",
+          bg: 'indigo.400',
         }}
         rounded="md"
         shadow={3}
@@ -34,7 +34,7 @@ export function Example() {
 ## Import
 
 ```jsx
-import { VStack } from "native-base";
+import { VStack } from 'native-base';
 ```
 
 ## Usage

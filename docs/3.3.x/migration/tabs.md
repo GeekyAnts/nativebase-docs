@@ -3,10 +3,7 @@ id: tabs
 title: Tabs
 ---
 
-
-
-
-API for Tabs is in progress, in the meantine you can check this [recipe](buildingTabView.md) for building Tabs.
+API for Tabs is in progress, in the meantine you can check this [recipe](/building-tab-view) for building Tabs.
 
 <!-- Migrating to v3 will provide a lot more **design**, **size, variation**, **color** and **customisation** option.
 

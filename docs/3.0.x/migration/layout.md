@@ -1,9 +1,6 @@
-
-
-
 ## Grid
 
-You can easily design layouts with [Row](hStack.md) or [Column](VStack.md) components.
+You can easily design layouts with [Row](/hstack) or [Column](/vstack) components.
 
 ## List
 

@@ -3,10 +3,7 @@ id: radio-button
 title: Radio Button
 ---
 
-
-
-
-Migrating [`Radio`](radio.md) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
+Migrating [`Radio`](/radio) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
 
 ## Overview
 

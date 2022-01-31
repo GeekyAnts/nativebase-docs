@@ -55,27 +55,27 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 
 ### Popover.Arrow
 
-`Popover.Arrow` composes the [`Box`](box.md) component.
+`Popover.Arrow` composes the [`Box`](box) component.
 
 ### Popover.Content
 
-`Popover.Content` composes the [`Box`](box.md) component.
+`Popover.Content` composes the [`Box`](box) component.
 
 ### Popover.Header
 
-`Popover.Header` composes the [`Box`](box.md) component.
+`Popover.Header` composes the [`Box`](box) component.
 
 ### Popover.Footer
 
-`Popover.Footer` composes the [`Box`](box.md) component.
+`Popover.Footer` composes the [`Box`](box) component.
 
 ### Popover.Body
 
-`Popover.Body` composes the [`Box`](box.md) component.
+`Popover.Body` composes the [`Box`](box) component.
 
 ### Popover.CloseButton 
 
-`Popover.CloseButton` composes the [`Button`](button.md) component.
+`Popover.CloseButton` composes the [`Button`](button) component.
 
 ## Styling
 
@@ -87,10 +87,10 @@ Adheres to the [Dialog WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-
 
 ### Keyboard Interactions
 
-| Name                | Description |
-| --------------------|-------------|
-| Space   | Opens/closes the popover. |
-| Enter   | Opens/closes the popover. |
-| Tab     | Moves focus to the next focusable element. |
-| Shift + Tab | Moves focus to the previous focusable element. |
-| Esc     | Closes the popover and moves focus to Popover.Trigger. | 
+| Name        | Description                                            |
+| ----------- | ------------------------------------------------------ |
+| Space       | Opens/closes the popover.                              |
+| Enter       | Opens/closes the popover.                              |
+| Tab         | Moves focus to the next focusable element.             |
+| Shift + Tab | Moves focus to the previous focusable element.         |
+| Esc         | Closes the popover and moves focus to Popover.Trigger. |

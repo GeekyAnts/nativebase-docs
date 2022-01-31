@@ -1,7 +1,4 @@
-
-
-
-With NativeBase v3 we have replaced Form with [`FormControl`](formControl.md) and sliced into [`FormControl.Label`](formControl.md#formcontrollabel), [`FormControl.HelperText`](formControl.md#formcontrolhelpertext) and [`FormControl.ErrorMessage`](formControl#formcontrolerrormessage).
+With NativeBase v3 we have replaced Form with [`FormControl`](/form-control) and sliced into [`FormControl.Label`](/form-control#formcontrollabel), [`FormControl.HelperText`](/form-control#formcontrolhelpertext) and [`FormControl.ErrorMessage`](/form-control#formcontrolerrormessage).
 
 Here an example to show the code comparison.
 

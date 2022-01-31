@@ -96,27 +96,27 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 
 ### Popover.Arrow
 
-`Popover.Arrow` composes the [`Box`](box.md) component.
+`Popover.Arrow` composes the [`Box`](box) component.
 
 ### Popover.Content
 
-`Popover.Content` composes the [`Box`](box.md) component.
+`Popover.Content` composes the [`Box`](box) component.
 
 ### Popover.Header
 
-`Popover.Header` composes the [`Box`](box.md) component.
+`Popover.Header` composes the [`Box`](box) component.
 
 ### Popover.Footer
 
-`Popover.Footer` composes the [`Box`](box.md) component.
+`Popover.Footer` composes the [`Box`](box) component.
 
 ### Popover.Body
 
-`Popover.Body` composes the [`Box`](box.md) component.
+`Popover.Body` composes the [`Box`](box) component.
 
 ### Popover.CloseButton 
 
-`Popover.CloseButton` composes the [`Button`](button.md) component.
+`Popover.CloseButton` composes the [`Button`](button) component.
 
 ## Styling
 
