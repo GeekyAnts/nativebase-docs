@@ -121,7 +121,7 @@ module.exports = {
 };
 ```
 
-### Updating _document.js/ts
+### Updating \_document.js/ts
 
 - No need to import .ttf font files of Icons and add them into document style.
 
@@ -178,7 +178,7 @@ class CustomDocument extends Document {
     return (
       <Html style={{ height: '100%' }}>
         <Head>
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         </Head>
         <body style={{ height: '100%', overflow: 'hidden' }}>
           <Main />
@@ -210,7 +210,7 @@ Below is a rough account of the breaking API changes as well as the minimal chan
 
 ## Strict Mode:
 
-We have introduced [strict mode](../strict-mode.md) in `v3.2.0` which is `off` by default. If you don't want to have strict mode, step 1 is enough. If you want to comply with the strict mode, you also need to do these:
+We have introduced [strict mode](../strict-mode) in `v3.2.0` which is `off` by default. If you don't want to have strict mode, step 1 is enough. If you want to comply with the strict mode, you also need to do these:
 
 1.  All utility props which take theme tokens as values, now take only string values as a valid type
 
@@ -227,7 +227,7 @@ This means that if you pass a number value which is supposed to be a theme token
 <Box p="4" mx="8" /> ✅
 ```
 
-2.  Remove all non token values given to utility props which accept theme tokens. For example, `p="11"` is not supported with the [default theme](../default-theme.md). Pick up another value from default theme tokens or [define a new one yourself](../customizing-theme).
+2.  Remove all non token values given to utility props which accept theme tokens. For example, `p="11"` is not supported with the [default theme](../default-theme). Pick up another value from default theme tokens or [define a new one yourself](../customizing-theme).
 3.  If you are using [Icon](../icon.md) with `as` prop, verify this
 
 ```jsx
