@@ -7130,5 +7130,3537 @@
     "source": "/3.2.2/z-stack",
     "destination": "/3.2.x/zstack",
     "permanent": true
+  },
+
+  {
+    "source": "/3.0.x/accessibility.md",
+    "destination": "/3.0.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/action-sheet.md",
+    "destination": "/3.0.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/alert-dialog.md",
+    "destination": "/3.0.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/alert.md",
+    "destination": "/3.0.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/avatar.md",
+    "destination": "/3.0.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/badge.md",
+    "destination": "/3.0.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.0.x/box.md", "destination": "/3.0.x/box", "permanent": true },
+  {
+    "source": "/3.0.x/breakpoints.md",
+    "destination": "/3.0.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/building-app-bar.md",
+    "destination": "/3.0.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/building-app-drawer.md",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/building-card.md",
+    "destination": "/3.0.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/building-drawer-navigation.md",
+    "destination": "/3.0.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/building-footer-tabs.md",
+    "destination": "/3.0.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/building-search-bar.md",
+    "destination": "/3.0.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/building-swipe-list.md",
+    "destination": "/3.0.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/building-tab-view.md",
+    "destination": "/3.0.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/button.mdx",
+    "destination": "/3.0.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/center.md",
+    "destination": "/3.0.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/changelog.md",
+    "destination": "/3.0.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/checkbox.md",
+    "destination": "/3.0.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/color-mode.md",
+    "destination": "/3.0.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/container.md",
+    "destination": "/3.0.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/customizing-components.md",
+    "destination": "/3.0.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/customizing-fonts.md",
+    "destination": "/3.0.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/customizing-theme.md",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/dark-mode.md",
+    "destination": "/3.0.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/default-theme.md",
+    "destination": "/3.0.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/design-tokens.md",
+    "destination": "/3.0.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/divider.md",
+    "destination": "/3.0.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.0.x/fab.md", "destination": "/3.0.x/fab", "permanent": true },
+  { "source": "/3.0.x/faq.md", "destination": "/3.0.x/faq", "permanent": true },
+  {
+    "source": "/3.0.x/flat-list.md",
+    "destination": "/3.0.x/flat-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/flex.md",
+    "destination": "/3.0.x/flex",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/form-control.md",
+    "destination": "/3.0.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/form.md",
+    "destination": "/3.0.x/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/formik.md",
+    "destination": "/3.0.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/getting-started.mdx",
+    "destination": "/3.0.x/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/heading.md",
+    "destination": "/3.0.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/hstack.md",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/icon-button.md",
+    "destination": "/3.0.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/icon.md",
+    "destination": "/3.0.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/image.md",
+    "destination": "/3.0.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/input.md",
+    "destination": "/3.0.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/install-cra.mdx",
+    "destination": "/3.0.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/install-expo.mdx",
+    "destination": "/3.0.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/install-next.mdx",
+    "destination": "/3.0.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/install-rn.mdx",
+    "destination": "/3.0.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/installation.mdx",
+    "destination": "/3.0.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/keyboard-avoiding-view.md",
+    "destination": "/3.0.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/kitchen-sink.mdx",
+    "destination": "/3.0.x/kitchen-sink",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/link.md",
+    "destination": "/3.0.x/link",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/login-signup-forms.md",
+    "destination": "/3.0.x/login-signup-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/menu.md",
+    "destination": "/3.0.x/menu",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/action-sheet.md",
+    "destination": "/3.0.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/badge.md",
+    "destination": "/3.0.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/button.md",
+    "destination": "/3.0.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/card.md",
+    "destination": "/3.0.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/checkbox.md",
+    "destination": "/3.0.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/date-picker.md",
+    "destination": "/3.0.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/deck-swiper.md",
+    "destination": "/3.0.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/drawer.md",
+    "destination": "/3.0.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/fab.md",
+    "destination": "/3.0.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/footer-tab.md",
+    "destination": "/3.0.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/form.md",
+    "destination": "/3.0.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/guide.md",
+    "destination": "/3.0.x/migration/guide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/header.md",
+    "destination": "/3.0.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/icon.md",
+    "destination": "/3.0.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/layout.md",
+    "destination": "/3.0.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/picker.md",
+    "destination": "/3.0.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/radio-button.md",
+    "destination": "/3.0.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/search-bar.md",
+    "destination": "/3.0.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/segment.md",
+    "destination": "/3.0.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/spinner.md",
+    "destination": "/3.0.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/swipe-list.md",
+    "destination": "/3.0.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/tabs.md",
+    "destination": "/3.0.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/thumbnail.md",
+    "destination": "/3.0.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/toast.md",
+    "destination": "/3.0.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/migration/typography.md",
+    "destination": "/3.0.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/modal.md",
+    "destination": "/3.0.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/nativebase-factory.md",
+    "destination": "/3.0.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/popover.md",
+    "destination": "/3.0.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/presence-transition.md",
+    "destination": "/3.0.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/pressable.md",
+    "destination": "/3.0.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/progress.md",
+    "destination": "/3.0.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/pseudo-props.mdx",
+    "destination": "/3.0.x/pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/radio.md",
+    "destination": "/3.0.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/react-hooks-forms.md",
+    "destination": "/3.0.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/responsive.md",
+    "destination": "/3.0.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/safe-area-view-props.md",
+    "destination": "/3.0.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/scrollview.md",
+    "destination": "/3.0.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/section-list.md",
+    "destination": "/3.0.x/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/select.md",
+    "destination": "/3.0.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/setup-provider.md",
+    "destination": "/3.0.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/slide.md",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/slider.md",
+    "destination": "/3.0.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/spinner.md",
+    "destination": "/3.0.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/stack.md",
+    "destination": "/3.0.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/stagger.md",
+    "destination": "/3.0.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/state-of-components.md",
+    "destination": "/3.0.x/state-of-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/status-bar.md",
+    "destination": "/3.0.x/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/switch.md",
+    "destination": "/3.0.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/text.md",
+    "destination": "/3.0.x/text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/textarea.md",
+    "destination": "/3.0.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/theme.md",
+    "destination": "/3.0.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/toast.md",
+    "destination": "/3.0.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/todo-list.md",
+    "destination": "/3.0.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/tooltip.md",
+    "destination": "/3.0.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-accessible-colors.md",
+    "destination": "/3.0.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-breakpoint-value.md",
+    "destination": "/3.0.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-clipboard.md",
+    "destination": "/3.0.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-color-mode-value.md",
+    "destination": "/3.0.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-color-mode.md",
+    "destination": "/3.0.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-contrast-text.md",
+    "destination": "/3.0.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-disclose.md",
+    "destination": "/3.0.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-media-query.md",
+    "destination": "/3.0.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-theme.md",
+    "destination": "/3.0.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/use-token.md",
+    "destination": "/3.0.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/utility-first.mdx",
+    "destination": "/3.0.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/utility-props.md",
+    "destination": "/3.0.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/view.md",
+    "destination": "/3.0.x/view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/vstack.md",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.x/zstack.md",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/accessibility.md",
+    "destination": "/3.1.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/action-sheet.md",
+    "destination": "/3.1.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/alert-dialog.md",
+    "destination": "/3.1.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/alert.md",
+    "destination": "/3.1.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/avatar.md",
+    "destination": "/3.1.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/badge.md",
+    "destination": "/3.1.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.1.x/box.md", "destination": "/3.1.x/box", "permanent": true },
+  {
+    "source": "/3.1.x/breakpoints.md",
+    "destination": "/3.1.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/building-app-bar.md",
+    "destination": "/3.1.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/building-app-drawer.md",
+    "destination": "/3.1.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/building-card.md",
+    "destination": "/3.1.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/building-drawer-navigation.md",
+    "destination": "/3.1.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/building-footer-tabs.md",
+    "destination": "/3.1.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/building-search-bar.md",
+    "destination": "/3.1.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/building-swipe-list.md",
+    "destination": "/3.1.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/building-tab-view.md",
+    "destination": "/3.1.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/button.mdx",
+    "destination": "/3.1.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/center.md",
+    "destination": "/3.1.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/changelog.md",
+    "destination": "/3.1.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/checkbox.md",
+    "destination": "/3.1.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/color-mode.md",
+    "destination": "/3.1.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/container.md",
+    "destination": "/3.1.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/customizing-components.md",
+    "destination": "/3.1.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/customizing-fonts.md",
+    "destination": "/3.1.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/customizing-theme.md",
+    "destination": "/3.1.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/dark-mode.md",
+    "destination": "/3.1.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/default-theme.md",
+    "destination": "/3.1.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/design-tokens.md",
+    "destination": "/3.1.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/divider.md",
+    "destination": "/3.1.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.1.x/fab.md", "destination": "/3.1.x/fab", "permanent": true },
+  { "source": "/3.1.x/faq.md", "destination": "/3.1.x/faq", "permanent": true },
+  {
+    "source": "/3.1.x/flat-list.md",
+    "destination": "/3.1.x/flat-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/flex.md",
+    "destination": "/3.1.x/flex",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/form-control.md",
+    "destination": "/3.1.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/form.md",
+    "destination": "/3.1.x/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/formik.md",
+    "destination": "/3.1.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/getting-started.mdx",
+    "destination": "/3.1.x/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/heading.md",
+    "destination": "/3.1.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/hstack.md",
+    "destination": "/3.1.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/icon-button.md",
+    "destination": "/3.1.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/icon.md",
+    "destination": "/3.1.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/image.md",
+    "destination": "/3.1.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/input.md",
+    "destination": "/3.1.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/install-cra.mdx",
+    "destination": "/3.1.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/install-expo.mdx",
+    "destination": "/3.1.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/install-next.mdx",
+    "destination": "/3.1.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/install-rn.mdx",
+    "destination": "/3.1.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/installation.mdx",
+    "destination": "/3.1.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/keyboard-avoiding-view.md",
+    "destination": "/3.1.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/kitchen-sink.mdx",
+    "destination": "/3.1.x/kitchen-sink",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/link.md",
+    "destination": "/3.1.x/link",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/login-signup-forms.md",
+    "destination": "/3.1.x/login-signup-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/menu.md",
+    "destination": "/3.1.x/menu",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/action-sheet.md",
+    "destination": "/3.1.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/badge.md",
+    "destination": "/3.1.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/button.md",
+    "destination": "/3.1.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/card.md",
+    "destination": "/3.1.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/checkbox.md",
+    "destination": "/3.1.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/date-picker.md",
+    "destination": "/3.1.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/deck-swiper.md",
+    "destination": "/3.1.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/drawer.md",
+    "destination": "/3.1.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/fab.md",
+    "destination": "/3.1.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/footer-tab.md",
+    "destination": "/3.1.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/form.md",
+    "destination": "/3.1.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/guide.md",
+    "destination": "/3.1.x/migration/guide",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/header.md",
+    "destination": "/3.1.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/icon.md",
+    "destination": "/3.1.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/layout.md",
+    "destination": "/3.1.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/picker.md",
+    "destination": "/3.1.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/radio-button.md",
+    "destination": "/3.1.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/search-bar.md",
+    "destination": "/3.1.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/segment.md",
+    "destination": "/3.1.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/spinner.md",
+    "destination": "/3.1.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/swipe-list.md",
+    "destination": "/3.1.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/tabs.md",
+    "destination": "/3.1.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/thumbnail.md",
+    "destination": "/3.1.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/toast.md",
+    "destination": "/3.1.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/typography.md",
+    "destination": "/3.1.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/modal.md",
+    "destination": "/3.1.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/nativebase-factory.md",
+    "destination": "/3.1.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/popover.md",
+    "destination": "/3.1.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/presence-transition.md",
+    "destination": "/3.1.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/pressable.md",
+    "destination": "/3.1.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/progress.md",
+    "destination": "/3.1.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/pseudo-props.mdx",
+    "destination": "/3.1.x/pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/radio.md",
+    "destination": "/3.1.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/react-hooks-forms.md",
+    "destination": "/3.1.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/responsive.md",
+    "destination": "/3.1.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/safe-area-view-props.md",
+    "destination": "/3.1.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/scrollview.md",
+    "destination": "/3.1.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/section-list.md",
+    "destination": "/3.1.x/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/select.md",
+    "destination": "/3.1.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/setup-provider.md",
+    "destination": "/3.1.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/slide.md",
+    "destination": "/3.1.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/slider.md",
+    "destination": "/3.1.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/spinner.md",
+    "destination": "/3.1.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/stack.md",
+    "destination": "/3.1.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/stagger.md",
+    "destination": "/3.1.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/state-of-components.md",
+    "destination": "/3.1.x/state-of-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/status-bar.md",
+    "destination": "/3.1.x/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/switch.md",
+    "destination": "/3.1.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/testing.md",
+    "destination": "/3.1.x/testing",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/text.md",
+    "destination": "/3.1.x/text",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/textarea.md",
+    "destination": "/3.1.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/theme.md",
+    "destination": "/3.1.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/toast.md",
+    "destination": "/3.1.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/todo-list.md",
+    "destination": "/3.1.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/tooltip.md",
+    "destination": "/3.1.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-accessible-colors.md",
+    "destination": "/3.1.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-breakpoint-value.md",
+    "destination": "/3.1.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-clipboard.md",
+    "destination": "/3.1.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-color-mode-value.md",
+    "destination": "/3.1.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-color-mode.md",
+    "destination": "/3.1.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-contrast-text.md",
+    "destination": "/3.1.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-disclose.md",
+    "destination": "/3.1.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-media-query.md",
+    "destination": "/3.1.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-theme.md",
+    "destination": "/3.1.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/use-token.md",
+    "destination": "/3.1.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/utility-first.mdx",
+    "destination": "/3.1.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/utility-props.md",
+    "destination": "/3.1.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/view.md",
+    "destination": "/3.1.x/view",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/vstack.md",
+    "destination": "/3.1.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/zstack.md",
+    "destination": "/3.1.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/accessibility.md",
+    "destination": "/3.2.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/action-sheet.md",
+    "destination": "/3.2.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/alert-dialog.md",
+    "destination": "/3.2.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/alert.md",
+    "destination": "/3.2.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/avatar.md",
+    "destination": "/3.2.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/badge.md",
+    "destination": "/3.2.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.2.x/box.md", "destination": "/3.2.x/box", "permanent": true },
+  {
+    "source": "/3.2.x/breakpoints.md",
+    "destination": "/3.2.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/building-app-bar.md",
+    "destination": "/3.2.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/building-app-drawer.md",
+    "destination": "/3.2.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/building-card.md",
+    "destination": "/3.2.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/building-drawer-navigation.md",
+    "destination": "/3.2.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/building-footer-tabs.md",
+    "destination": "/3.2.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/building-search-bar.md",
+    "destination": "/3.2.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/building-swipe-list.md",
+    "destination": "/3.2.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/building-tab-view.md",
+    "destination": "/3.2.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/button.mdx",
+    "destination": "/3.2.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/center.md",
+    "destination": "/3.2.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/changelog.md",
+    "destination": "/3.2.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/checkbox.md",
+    "destination": "/3.2.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/color-mode.md",
+    "destination": "/3.2.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/container.md",
+    "destination": "/3.2.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/customizing-components.md",
+    "destination": "/3.2.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/customizing-fonts.md",
+    "destination": "/3.2.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/customizing-theme.md",
+    "destination": "/3.2.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/dark-mode.md",
+    "destination": "/3.2.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/default-theme.md",
+    "destination": "/3.2.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/design-tokens.md",
+    "destination": "/3.2.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/divider.md",
+    "destination": "/3.2.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.2.x/fab.md", "destination": "/3.2.x/fab", "permanent": true },
+  { "source": "/3.2.x/faq.md", "destination": "/3.2.x/faq", "permanent": true },
+  {
+    "source": "/3.2.x/flat-list.md",
+    "destination": "/3.2.x/flat-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/flex.md",
+    "destination": "/3.2.x/flex",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/form-control.md",
+    "destination": "/3.2.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/form.md",
+    "destination": "/3.2.x/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/getting-started.mdx",
+    "destination": "/3.2.x/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/heading.md",
+    "destination": "/3.2.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/hidden.md",
+    "destination": "/3.2.x/hidden",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/hstack.md",
+    "destination": "/3.2.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/icon-button.md",
+    "destination": "/3.2.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/icon.md",
+    "destination": "/3.2.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/image.md",
+    "destination": "/3.2.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/input.md",
+    "destination": "/3.2.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/install-cra.mdx",
+    "destination": "/3.2.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/install-expo.mdx",
+    "destination": "/3.2.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/install-next.mdx",
+    "destination": "/3.2.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/install-rn.mdx",
+    "destination": "/3.2.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/installation.mdx",
+    "destination": "/3.2.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/keyboard-avoiding-view.md",
+    "destination": "/3.2.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/kitchen-sink.mdx",
+    "destination": "/3.2.x/kitchen-sink",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/link.md",
+    "destination": "/3.2.x/link",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/login-signup-forms.md",
+    "destination": "/3.2.x/login-signup-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/menu.md",
+    "destination": "/3.2.x/menu",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/action-sheet.md",
+    "destination": "/3.2.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/badge.md",
+    "destination": "/3.2.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/button.md",
+    "destination": "/3.2.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/card.md",
+    "destination": "/3.2.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/checkbox.md",
+    "destination": "/3.2.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/date-picker.md",
+    "destination": "/3.2.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/deck-swiper.md",
+    "destination": "/3.2.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/drawer.md",
+    "destination": "/3.2.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/fab.md",
+    "destination": "/3.2.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/footer-tab.md",
+    "destination": "/3.2.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/form.md",
+    "destination": "/3.2.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/header.md",
+    "destination": "/3.2.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/icon.md",
+    "destination": "/3.2.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/layout.md",
+    "destination": "/3.2.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/picker.md",
+    "destination": "/3.2.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/radio-button.md",
+    "destination": "/3.2.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/search-bar.md",
+    "destination": "/3.2.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/segment.md",
+    "destination": "/3.2.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/spinner.md",
+    "destination": "/3.2.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/swipe-list.md",
+    "destination": "/3.2.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/tabs.md",
+    "destination": "/3.2.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/thumbnail.md",
+    "destination": "/3.2.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/toast.md",
+    "destination": "/3.2.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/typography.md",
+    "destination": "/3.2.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/v3.md",
+    "destination": "/3.2.x/migration/v3",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/v3xtov32.mdx",
+    "destination": "/3.2.x/migration/v3xtov32",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/modal.md",
+    "destination": "/3.2.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/more-props.md",
+    "destination": "/3.2.x/more-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/nativebase-factory.md",
+    "destination": "/3.2.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/popover.md",
+    "destination": "/3.2.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/presence-transition.md",
+    "destination": "/3.2.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/pressable.md",
+    "destination": "/3.2.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/progress.md",
+    "destination": "/3.2.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/pseudo-props-101.md",
+    "destination": "/3.2.x/pseudo-props-101",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/pseudo-props.mdx",
+    "destination": "/3.2.x/pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/radio.md",
+    "destination": "/3.2.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/responsive.md",
+    "destination": "/3.2.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/safe-area-view-props.md",
+    "destination": "/3.2.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/scrollview.md",
+    "destination": "/3.2.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/section-list.md",
+    "destination": "/3.2.x/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/select.md",
+    "destination": "/3.2.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/setup-provider.md",
+    "destination": "/3.2.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/slide.md",
+    "destination": "/3.2.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/slider.md",
+    "destination": "/3.2.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/spinner.md",
+    "destination": "/3.2.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/stack.md",
+    "destination": "/3.2.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/stagger.md",
+    "destination": "/3.2.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/state-of-components.md",
+    "destination": "/3.2.x/state-of-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/status-bar.md",
+    "destination": "/3.2.x/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/strict-mode.md",
+    "destination": "/3.2.x/strict-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/switch.md",
+    "destination": "/3.2.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/testing.md",
+    "destination": "/3.2.x/testing",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/text.md",
+    "destination": "/3.2.x/text",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/textarea.md",
+    "destination": "/3.2.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/theme.md",
+    "destination": "/3.2.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/toast.md",
+    "destination": "/3.2.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/todo-list.md",
+    "destination": "/3.2.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/tooltip.md",
+    "destination": "/3.2.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/typescript.mdx",
+    "destination": "/3.2.x/typescript",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-accessible-colors.md",
+    "destination": "/3.2.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-breakpoint-value.md",
+    "destination": "/3.2.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-clipboard.md",
+    "destination": "/3.2.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-color-mode-value.md",
+    "destination": "/3.2.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-color-mode.md",
+    "destination": "/3.2.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-contrast-text.md",
+    "destination": "/3.2.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-disclose.md",
+    "destination": "/3.2.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-media-query.md",
+    "destination": "/3.2.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-theme.md",
+    "destination": "/3.2.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/use-token.md",
+    "destination": "/3.2.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/utility-first.mdx",
+    "destination": "/3.2.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/utility-props-specificity.md",
+    "destination": "/3.2.x/utility-props-specificity",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/utility-props.md",
+    "destination": "/3.2.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/view.md",
+    "destination": "/3.2.x/view",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/vstack.md",
+    "destination": "/3.2.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/zstack.md",
+    "destination": "/3.2.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/accessibility.md",
+    "destination": "/3.3.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/accessibility.md",
+    "destination": "/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/action-sheet.md",
+    "destination": "/3.3.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/action-sheet.md",
+    "destination": "/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/alert-dialog.md",
+    "destination": "/3.3.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/alert-dialog.md",
+    "destination": "/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/alert.md",
+    "destination": "/3.3.x/alert",
+    "permanent": true
+  },
+  { "source": "/alert.md", "destination": "/alert", "permanent": true },
+  {
+    "source": "/3.3.x/aspect-ratio.md",
+    "destination": "/3.3.x/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/aspect-ratio.md",
+    "destination": "/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/avatar.md",
+    "destination": "/3.3.x/avatar",
+    "permanent": true
+  },
+  { "source": "/avatar.md", "destination": "/avatar", "permanent": true },
+  {
+    "source": "/3.3.x/badge.md",
+    "destination": "/3.3.x/badge",
+    "permanent": true
+  },
+  { "source": "/badge.md", "destination": "/badge", "permanent": true },
+  { "source": "/3.3.x/box.md", "destination": "/3.3.x/box", "permanent": true },
+  { "source": "/box.md", "destination": "/box", "permanent": true },
+  {
+    "source": "/3.3.x/breakpoints.md",
+    "destination": "/3.3.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/breakpoints.md",
+    "destination": "/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/building-app-bar.md",
+    "destination": "/3.3.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/building-app-bar.md",
+    "destination": "/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/building-app-drawer.md",
+    "destination": "/3.3.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/building-app-drawer.md",
+    "destination": "/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/building-card.md",
+    "destination": "/3.3.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/building-card.md",
+    "destination": "/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/building-drawer-navigation.md",
+    "destination": "/3.3.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/building-drawer-navigation.md",
+    "destination": "/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/building-footer-tabs.md",
+    "destination": "/3.3.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/building-footer-tabs.md",
+    "destination": "/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/building-search-bar.md",
+    "destination": "/3.3.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/building-search-bar.md",
+    "destination": "/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/building-swipe-list.md",
+    "destination": "/3.3.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/building-swipe-list.md",
+    "destination": "/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/building-tab-view.md",
+    "destination": "/3.3.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/building-tab-view.md",
+    "destination": "/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/button.mdx",
+    "destination": "/3.3.x/button",
+    "permanent": true
+  },
+  { "source": "/button.mdx", "destination": "/button", "permanent": true },
+  {
+    "source": "/3.3.x/center.md",
+    "destination": "/3.3.x/center",
+    "permanent": true
+  },
+  { "source": "/center.md", "destination": "/center", "permanent": true },
+  {
+    "source": "/3.3.x/changelog.md",
+    "destination": "/3.3.x/changelog",
+    "permanent": true
+  },
+  { "source": "/changelog.md", "destination": "/changelog", "permanent": true },
+  {
+    "source": "/3.3.x/checkbox.md",
+    "destination": "/3.3.x/checkbox",
+    "permanent": true
+  },
+  { "source": "/checkbox.md", "destination": "/checkbox", "permanent": true },
+  {
+    "source": "/3.3.x/color-mode.md",
+    "destination": "/3.3.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/color-mode.md",
+    "destination": "/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/container.md",
+    "destination": "/3.3.x/container",
+    "permanent": true
+  },
+  { "source": "/container.md", "destination": "/container", "permanent": true },
+  {
+    "source": "/3.3.x/customizing-components.md",
+    "destination": "/3.3.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/customizing-components.md",
+    "destination": "/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/customizing-fonts.md",
+    "destination": "/3.3.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/customizing-fonts.md",
+    "destination": "/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/customizing-theme.md",
+    "destination": "/3.3.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/customizing-theme.md",
+    "destination": "/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/dark-mode.md",
+    "destination": "/3.3.x/dark-mode",
+    "permanent": true
+  },
+  { "source": "/dark-mode.md", "destination": "/dark-mode", "permanent": true },
+  {
+    "source": "/3.3.x/default-theme.md",
+    "destination": "/3.3.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/default-theme.md",
+    "destination": "/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/design-tokens.md",
+    "destination": "/3.3.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/design-tokens.md",
+    "destination": "/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/divider.md",
+    "destination": "/3.3.x/divider",
+    "permanent": true
+  },
+  { "source": "/divider.md", "destination": "/divider", "permanent": true },
+  { "source": "/3.3.x/fab.md", "destination": "/3.3.x/fab", "permanent": true },
+  { "source": "/fab.md", "destination": "/fab", "permanent": true },
+  { "source": "/3.3.x/faq.md", "destination": "/3.3.x/faq", "permanent": true },
+  { "source": "/faq.md", "destination": "/faq", "permanent": true },
+  {
+    "source": "/3.3.x/flat-list.md",
+    "destination": "/3.3.x/flat-list",
+    "permanent": true
+  },
+  { "source": "/flat-list.md", "destination": "/flat-list", "permanent": true },
+  {
+    "source": "/3.3.x/flex.md",
+    "destination": "/3.3.x/flex",
+    "permanent": true
+  },
+  { "source": "/flex.md", "destination": "/flex", "permanent": true },
+  {
+    "source": "/3.3.x/form-control.md",
+    "destination": "/3.3.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/form-control.md",
+    "destination": "/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/form.md",
+    "destination": "/3.3.x/form",
+    "permanent": true
+  },
+  { "source": "/form.md", "destination": "/form", "permanent": true },
+  {
+    "source": "/3.3.x/getting-started.mdx",
+    "destination": "/3.3.x/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/getting-started.mdx",
+    "destination": "/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/heading.md",
+    "destination": "/3.3.x/heading",
+    "permanent": true
+  },
+  { "source": "/heading.md", "destination": "/heading", "permanent": true },
+  {
+    "source": "/3.3.x/hidden.md",
+    "destination": "/3.3.x/hidden",
+    "permanent": true
+  },
+  { "source": "/hidden.md", "destination": "/hidden", "permanent": true },
+  {
+    "source": "/3.3.x/hstack.md",
+    "destination": "/3.3.x/hstack",
+    "permanent": true
+  },
+  { "source": "/hstack.md", "destination": "/hstack", "permanent": true },
+  {
+    "source": "/3.3.x/icon-button.md",
+    "destination": "/3.3.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/icon-button.md",
+    "destination": "/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/icon.md",
+    "destination": "/3.3.x/icon",
+    "permanent": true
+  },
+  { "source": "/icon.md", "destination": "/icon", "permanent": true },
+  {
+    "source": "/3.3.x/image.md",
+    "destination": "/3.3.x/image",
+    "permanent": true
+  },
+  { "source": "/image.md", "destination": "/image", "permanent": true },
+  {
+    "source": "/3.3.x/input.md",
+    "destination": "/3.3.x/input",
+    "permanent": true
+  },
+  { "source": "/input.md", "destination": "/input", "permanent": true },
+  {
+    "source": "/3.3.x/install-cra.mdx",
+    "destination": "/3.3.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/install-cra.mdx",
+    "destination": "/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/install-expo.mdx",
+    "destination": "/3.3.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/install-expo.mdx",
+    "destination": "/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/install-next.mdx",
+    "destination": "/3.3.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/install-next.mdx",
+    "destination": "/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/install-rn.mdx",
+    "destination": "/3.3.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/install-rn.mdx",
+    "destination": "/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/installation.mdx",
+    "destination": "/3.3.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/installation.mdx",
+    "destination": "/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/keyboard-avoiding-view.md",
+    "destination": "/3.3.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/keyboard-avoiding-view.md",
+    "destination": "/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/kitchen-sink.mdx",
+    "destination": "/3.3.x/kitchen-sink",
+    "permanent": true
+  },
+  {
+    "source": "/kitchen-sink.mdx",
+    "destination": "/kitchen-sink",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/link.md",
+    "destination": "/3.3.x/link",
+    "permanent": true
+  },
+  { "source": "/link.md", "destination": "/link", "permanent": true },
+  {
+    "source": "/3.3.x/login-signup-forms.md",
+    "destination": "/3.3.x/login-signup-forms",
+    "permanent": true
+  },
+  {
+    "source": "/login-signup-forms.md",
+    "destination": "/login-signup-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/menu.md",
+    "destination": "/3.3.x/menu",
+    "permanent": true
+  },
+  { "source": "/menu.md", "destination": "/menu", "permanent": true },
+  {
+    "source": "/3.3.x/migration/action-sheet.md",
+    "destination": "/3.3.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/migration/action-sheet.md",
+    "destination": "/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/badge.md",
+    "destination": "/3.3.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/migration/badge.md",
+    "destination": "/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/button.md",
+    "destination": "/3.3.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/migration/button.md",
+    "destination": "/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/card.md",
+    "destination": "/3.3.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/migration/card.md",
+    "destination": "/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/checkbox.md",
+    "destination": "/3.3.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/migration/checkbox.md",
+    "destination": "/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/date-picker.md",
+    "destination": "/3.3.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/migration/date-picker.md",
+    "destination": "/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/deck-swiper.md",
+    "destination": "/3.3.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/migration/deck-swiper.md",
+    "destination": "/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/drawer.md",
+    "destination": "/3.3.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/migration/drawer.md",
+    "destination": "/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/fab.md",
+    "destination": "/3.3.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/migration/fab.md",
+    "destination": "/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/footer-tab.md",
+    "destination": "/3.3.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/migration/footer-tab.md",
+    "destination": "/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/form.md",
+    "destination": "/3.3.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/migration/form.md",
+    "destination": "/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/header.md",
+    "destination": "/3.3.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/migration/header.md",
+    "destination": "/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/icon.md",
+    "destination": "/3.3.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/migration/icon.md",
+    "destination": "/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/layout.md",
+    "destination": "/3.3.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/migration/layout.md",
+    "destination": "/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/picker.md",
+    "destination": "/3.3.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/migration/picker.md",
+    "destination": "/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/radio-button.md",
+    "destination": "/3.3.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/migration/radio-button.md",
+    "destination": "/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/search-bar.md",
+    "destination": "/3.3.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/migration/search-bar.md",
+    "destination": "/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/segment.md",
+    "destination": "/3.3.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/migration/segment.md",
+    "destination": "/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/spinner.md",
+    "destination": "/3.3.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/migration/spinner.md",
+    "destination": "/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/swipe-list.md",
+    "destination": "/3.3.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/migration/swipe-list.md",
+    "destination": "/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/tabs.md",
+    "destination": "/3.3.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/migration/tabs.md",
+    "destination": "/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/thumbnail.md",
+    "destination": "/3.3.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/migration/thumbnail.md",
+    "destination": "/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/toast.md",
+    "destination": "/3.3.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/migration/toast.md",
+    "destination": "/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/typography.md",
+    "destination": "/3.3.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/migration/typography.md",
+    "destination": "/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/v3.md",
+    "destination": "/3.3.x/migration/v3",
+    "permanent": true
+  },
+  {
+    "source": "/migration/v3.md",
+    "destination": "/migration/v3",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/v3xtov32.mdx",
+    "destination": "/3.3.x/migration/v3xtov32",
+    "permanent": true
+  },
+  {
+    "source": "/migration/v3xtov32.mdx",
+    "destination": "/migration/v3xtov32",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/modal.md",
+    "destination": "/3.3.x/modal",
+    "permanent": true
+  },
+  { "source": "/modal.md", "destination": "/modal", "permanent": true },
+  {
+    "source": "/3.3.x/more-props.md",
+    "destination": "/3.3.x/more-props",
+    "permanent": true
+  },
+  {
+    "source": "/more-props.md",
+    "destination": "/more-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/nativebase-factory.md",
+    "destination": "/3.3.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/nativebase-factory.md",
+    "destination": "/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/popover.md",
+    "destination": "/3.3.x/popover",
+    "permanent": true
+  },
+  { "source": "/popover.md", "destination": "/popover", "permanent": true },
+  {
+    "source": "/3.3.x/presence-transition.md",
+    "destination": "/3.3.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/presence-transition.md",
+    "destination": "/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/pressable.md",
+    "destination": "/3.3.x/pressable",
+    "permanent": true
+  },
+  { "source": "/pressable.md", "destination": "/pressable", "permanent": true },
+  {
+    "source": "/3.3.x/progress.md",
+    "destination": "/3.3.x/progress",
+    "permanent": true
+  },
+  { "source": "/progress.md", "destination": "/progress", "permanent": true },
+  {
+    "source": "/3.3.x/pseudo-props-101.md",
+    "destination": "/3.3.x/pseudo-props-101",
+    "permanent": true
+  },
+  {
+    "source": "/pseudo-props-101.md",
+    "destination": "/pseudo-props-101",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/pseudo-props.mdx",
+    "destination": "/3.3.x/pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/pseudo-props.mdx",
+    "destination": "/pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/radio.md",
+    "destination": "/3.3.x/radio",
+    "permanent": true
+  },
+  { "source": "/radio.md", "destination": "/radio", "permanent": true },
+  {
+    "source": "/3.3.x/responsive.md",
+    "destination": "/3.3.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/responsive.md",
+    "destination": "/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/safe-area-view-props.md",
+    "destination": "/3.3.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/safe-area-view-props.md",
+    "destination": "/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/scrollview.md",
+    "destination": "/3.3.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/scrollview.md",
+    "destination": "/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/section-list.md",
+    "destination": "/3.3.x/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/section-list.md",
+    "destination": "/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/select.md",
+    "destination": "/3.3.x/select",
+    "permanent": true
+  },
+  { "source": "/select.md", "destination": "/select", "permanent": true },
+  {
+    "source": "/3.3.x/setup-provider.md",
+    "destination": "/3.3.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/setup-provider.md",
+    "destination": "/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/skeleton.md",
+    "destination": "/3.3.x/skeleton",
+    "permanent": true
+  },
+  { "source": "/skeleton.md", "destination": "/skeleton", "permanent": true },
+  {
+    "source": "/3.3.x/slide.md",
+    "destination": "/3.3.x/slide",
+    "permanent": true
+  },
+  { "source": "/slide.md", "destination": "/slide", "permanent": true },
+  {
+    "source": "/3.3.x/slider.md",
+    "destination": "/3.3.x/slider",
+    "permanent": true
+  },
+  { "source": "/slider.md", "destination": "/slider", "permanent": true },
+  {
+    "source": "/3.3.x/spinner.md",
+    "destination": "/3.3.x/spinner",
+    "permanent": true
+  },
+  { "source": "/spinner.md", "destination": "/spinner", "permanent": true },
+  {
+    "source": "/3.3.x/stack.md",
+    "destination": "/3.3.x/stack",
+    "permanent": true
+  },
+  { "source": "/stack.md", "destination": "/stack", "permanent": true },
+  {
+    "source": "/3.3.x/stagger.md",
+    "destination": "/3.3.x/stagger",
+    "permanent": true
+  },
+  { "source": "/stagger.md", "destination": "/stagger", "permanent": true },
+  {
+    "source": "/3.3.x/state-of-components.md",
+    "destination": "/3.3.x/state-of-components",
+    "permanent": true
+  },
+  {
+    "source": "/state-of-components.md",
+    "destination": "/state-of-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/status-bar.md",
+    "destination": "/3.3.x/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/status-bar.md",
+    "destination": "/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/strict-mode.md",
+    "destination": "/3.3.x/strict-mode",
+    "permanent": true
+  },
+  {
+    "source": "/strict-mode.md",
+    "destination": "/strict-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/switch.md",
+    "destination": "/3.3.x/switch",
+    "permanent": true
+  },
+  { "source": "/switch.md", "destination": "/switch", "permanent": true },
+  {
+    "source": "/3.3.x/testing.md",
+    "destination": "/3.3.x/testing",
+    "permanent": true
+  },
+  { "source": "/testing.md", "destination": "/testing", "permanent": true },
+  {
+    "source": "/3.3.x/text.md",
+    "destination": "/3.3.x/text",
+    "permanent": true
+  },
+  { "source": "/text.md", "destination": "/text", "permanent": true },
+  {
+    "source": "/3.3.x/textarea.md",
+    "destination": "/3.3.x/textarea",
+    "permanent": true
+  },
+  { "source": "/textarea.md", "destination": "/textarea", "permanent": true },
+  {
+    "source": "/3.3.x/theme.md",
+    "destination": "/3.3.x/theme",
+    "permanent": true
+  },
+  { "source": "/theme.md", "destination": "/theme", "permanent": true },
+  {
+    "source": "/3.3.x/toast.md",
+    "destination": "/3.3.x/toast",
+    "permanent": true
+  },
+  { "source": "/toast.md", "destination": "/toast", "permanent": true },
+  {
+    "source": "/3.3.x/todo-list.md",
+    "destination": "/3.3.x/todo-list",
+    "permanent": true
+  },
+  { "source": "/todo-list.md", "destination": "/todo-list", "permanent": true },
+  {
+    "source": "/3.3.x/tooltip.md",
+    "destination": "/3.3.x/tooltip",
+    "permanent": true
+  },
+  { "source": "/tooltip.md", "destination": "/tooltip", "permanent": true },
+  {
+    "source": "/3.3.x/typescript.md",
+    "destination": "/3.3.x/typescript",
+    "permanent": true
+  },
+  {
+    "source": "/typescript.md",
+    "destination": "/typescript",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/use-accessible-colors.md",
+    "destination": "/3.3.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/use-accessible-colors.md",
+    "destination": "/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/use-breakpoint-value.md",
+    "destination": "/3.3.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/use-breakpoint-value.md",
+    "destination": "/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/use-clipboard.md",
+    "destination": "/3.3.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/use-clipboard.md",
+    "destination": "/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/use-color-mode-value.md",
+    "destination": "/3.3.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/use-color-mode-value.md",
+    "destination": "/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/use-color-mode.md",
+    "destination": "/3.3.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/use-color-mode.md",
+    "destination": "/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/use-contrast-text.md",
+    "destination": "/3.3.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/use-contrast-text.md",
+    "destination": "/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/use-disclose.md",
+    "destination": "/3.3.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/use-disclose.md",
+    "destination": "/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/use-media-query.md",
+    "destination": "/3.3.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/use-media-query.md",
+    "destination": "/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/use-theme.md",
+    "destination": "/3.3.x/use-theme",
+    "permanent": true
+  },
+  { "source": "/use-theme.md", "destination": "/use-theme", "permanent": true },
+  {
+    "source": "/3.3.x/use-token.md",
+    "destination": "/3.3.x/use-token",
+    "permanent": true
+  },
+  { "source": "/use-token.md", "destination": "/use-token", "permanent": true },
+  {
+    "source": "/3.3.x/utility-first.mdx",
+    "destination": "/3.3.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/utility-first.mdx",
+    "destination": "/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/utility-props-specificity.md",
+    "destination": "/3.3.x/utility-props-specificity",
+    "permanent": true
+  },
+  {
+    "source": "/utility-props-specificity.md",
+    "destination": "/utility-props-specificity",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/utility-props.md",
+    "destination": "/3.3.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/utility-props.md",
+    "destination": "/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/view.md",
+    "destination": "/3.3.x/view",
+    "permanent": true
+  },
+  { "source": "/view.md", "destination": "/view", "permanent": true },
+  {
+    "source": "/3.3.x/vstack.md",
+    "destination": "/3.3.x/vstack",
+    "permanent": true
+  },
+  { "source": "/vstack.md", "destination": "/vstack", "permanent": true },
+  {
+    "source": "/3.3.x/zstack.md",
+    "destination": "/3.3.x/zstack",
+    "permanent": true
+  },
+  { "source": "/zstack.md", "destination": "/zstack", "permanent": true },
+  {
+    "source": "/next/accessibility.md",
+    "destination": "/next/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/next/action-sheet.md",
+    "destination": "/next/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/next/alert-dialog.md",
+    "destination": "/next/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/next/alert.md",
+    "destination": "/next/alert",
+    "permanent": true
+  },
+  {
+    "source": "/next/aspect-ratio.md",
+    "destination": "/next/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/next/avatar.md",
+    "destination": "/next/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/next/badge.md",
+    "destination": "/next/badge",
+    "permanent": true
+  },
+  { "source": "/next/box.md", "destination": "/next/box", "permanent": true },
+  {
+    "source": "/next/breakpoints.md",
+    "destination": "/next/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/next/building-app-bar.md",
+    "destination": "/next/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/next/building-app-drawer.md",
+    "destination": "/next/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/next/building-card.md",
+    "destination": "/next/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/next/building-drawer-navigation.md",
+    "destination": "/next/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/next/building-footer-tabs.md",
+    "destination": "/next/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/next/building-search-bar.md",
+    "destination": "/next/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/next/building-swipe-list.md",
+    "destination": "/next/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/next/building-tab-view.md",
+    "destination": "/next/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/next/button.mdx",
+    "destination": "/next/button",
+    "permanent": true
+  },
+  {
+    "source": "/next/center.md",
+    "destination": "/next/center",
+    "permanent": true
+  },
+  {
+    "source": "/next/changelog.md",
+    "destination": "/next/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/next/checkbox.md",
+    "destination": "/next/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/next/color-mode.md",
+    "destination": "/next/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/next/container.md",
+    "destination": "/next/container",
+    "permanent": true
+  },
+  {
+    "source": "/next/customizing-components.md",
+    "destination": "/next/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/next/customizing-fonts.md",
+    "destination": "/next/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/next/customizing-theme.md",
+    "destination": "/next/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/next/dark-mode.md",
+    "destination": "/next/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/next/default-theme.md",
+    "destination": "/next/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/next/design-tokens.md",
+    "destination": "/next/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/next/divider.md",
+    "destination": "/next/divider",
+    "permanent": true
+  },
+  { "source": "/next/fab.md", "destination": "/next/fab", "permanent": true },
+  { "source": "/next/faq.md", "destination": "/next/faq", "permanent": true },
+  {
+    "source": "/next/flat-list.md",
+    "destination": "/next/flat-list",
+    "permanent": true
+  },
+  { "source": "/next/flex.md", "destination": "/next/flex", "permanent": true },
+  {
+    "source": "/next/form-control.md",
+    "destination": "/next/form-control",
+    "permanent": true
+  },
+  { "source": "/next/form.md", "destination": "/next/form", "permanent": true },
+  {
+    "source": "/next/getting-started.mdx",
+    "destination": "/next/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/next/heading.md",
+    "destination": "/next/heading",
+    "permanent": true
+  },
+  {
+    "source": "/next/hidden.md",
+    "destination": "/next/hidden",
+    "permanent": true
+  },
+  {
+    "source": "/next/hstack.md",
+    "destination": "/next/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/next/icon-button.md",
+    "destination": "/next/icon-button",
+    "permanent": true
+  },
+  { "source": "/next/icon.md", "destination": "/next/icon", "permanent": true },
+  {
+    "source": "/next/image.md",
+    "destination": "/next/image",
+    "permanent": true
+  },
+  {
+    "source": "/next/input.md",
+    "destination": "/next/input",
+    "permanent": true
+  },
+  {
+    "source": "/next/install-cra.mdx",
+    "destination": "/next/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/next/install-expo.mdx",
+    "destination": "/next/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/next/install-next.mdx",
+    "destination": "/next/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/next/install-rn.mdx",
+    "destination": "/next/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/next/installation.mdx",
+    "destination": "/next/installation",
+    "permanent": true
+  },
+  {
+    "source": "/next/keyboard-avoiding-view.md",
+    "destination": "/next/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/next/kitchen-sink.mdx",
+    "destination": "/next/kitchen-sink",
+    "permanent": true
+  },
+  { "source": "/next/link.md", "destination": "/next/link", "permanent": true },
+  {
+    "source": "/next/login-signup-forms.md",
+    "destination": "/next/login-signup-forms",
+    "permanent": true
+  },
+  { "source": "/next/menu.md", "destination": "/next/menu", "permanent": true },
+  {
+    "source": "/next/migration/action-sheet.md",
+    "destination": "/next/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/badge.md",
+    "destination": "/next/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/button.md",
+    "destination": "/next/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/card.md",
+    "destination": "/next/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/checkbox.md",
+    "destination": "/next/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/date-picker.md",
+    "destination": "/next/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/deck-swiper.md",
+    "destination": "/next/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/drawer.md",
+    "destination": "/next/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/fab.md",
+    "destination": "/next/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/footer-tab.md",
+    "destination": "/next/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/form.md",
+    "destination": "/next/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/header.md",
+    "destination": "/next/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/icon.md",
+    "destination": "/next/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/layout.md",
+    "destination": "/next/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/picker.md",
+    "destination": "/next/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/radio-button.md",
+    "destination": "/next/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/search-bar.md",
+    "destination": "/next/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/segment.md",
+    "destination": "/next/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/spinner.md",
+    "destination": "/next/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/swipe-list.md",
+    "destination": "/next/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/tabs.md",
+    "destination": "/next/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/thumbnail.md",
+    "destination": "/next/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/toast.md",
+    "destination": "/next/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/typography.md",
+    "destination": "/next/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/v3.md",
+    "destination": "/next/migration/v3",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/v3xtov32.mdx",
+    "destination": "/next/migration/v3xtov32",
+    "permanent": true
+  },
+  {
+    "source": "/next/modal.md",
+    "destination": "/next/modal",
+    "permanent": true
+  },
+  {
+    "source": "/next/more-props.md",
+    "destination": "/next/more-props",
+    "permanent": true
+  },
+  {
+    "source": "/next/nativebase-factory.md",
+    "destination": "/next/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/next/popover.md",
+    "destination": "/next/popover",
+    "permanent": true
+  },
+  {
+    "source": "/next/presence-transition.md",
+    "destination": "/next/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/next/pressable.md",
+    "destination": "/next/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/next/progress.md",
+    "destination": "/next/progress",
+    "permanent": true
+  },
+  {
+    "source": "/next/pseudo-props-101.md",
+    "destination": "/next/pseudo-props-101",
+    "permanent": true
+  },
+  {
+    "source": "/next/pseudo-props.mdx",
+    "destination": "/next/pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/next/radio.md",
+    "destination": "/next/radio",
+    "permanent": true
+  },
+  {
+    "source": "/next/responsive.md",
+    "destination": "/next/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/next/safe-area-view-props.md",
+    "destination": "/next/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/next/scrollview.md",
+    "destination": "/next/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/next/section-list.md",
+    "destination": "/next/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/next/select.md",
+    "destination": "/next/select",
+    "permanent": true
+  },
+  {
+    "source": "/next/setup-provider.md",
+    "destination": "/next/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/next/skeleton.md",
+    "destination": "/next/skeleton",
+    "permanent": true
+  },
+  {
+    "source": "/next/slide.md",
+    "destination": "/next/slide",
+    "permanent": true
+  },
+  {
+    "source": "/next/slider.md",
+    "destination": "/next/slider",
+    "permanent": true
+  },
+  {
+    "source": "/next/spinner.md",
+    "destination": "/next/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/next/stack.md",
+    "destination": "/next/stack",
+    "permanent": true
+  },
+  {
+    "source": "/next/stagger.md",
+    "destination": "/next/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/next/state-of-components.md",
+    "destination": "/next/state-of-components",
+    "permanent": true
+  },
+  {
+    "source": "/next/status-bar.md",
+    "destination": "/next/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/next/strict-mode.md",
+    "destination": "/next/strict-mode",
+    "permanent": true
+  },
+  {
+    "source": "/next/switch.md",
+    "destination": "/next/switch",
+    "permanent": true
+  },
+  {
+    "source": "/next/testing.md",
+    "destination": "/next/testing",
+    "permanent": true
+  },
+  { "source": "/next/text.md", "destination": "/next/text", "permanent": true },
+  {
+    "source": "/next/textarea.md",
+    "destination": "/next/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/next/theme.md",
+    "destination": "/next/theme",
+    "permanent": true
+  },
+  {
+    "source": "/next/toast.md",
+    "destination": "/next/toast",
+    "permanent": true
+  },
+  {
+    "source": "/next/todo-list.md",
+    "destination": "/next/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/next/tooltip.md",
+    "destination": "/next/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/next/typescript.mdx",
+    "destination": "/next/typescript",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-accessible-colors.md",
+    "destination": "/next/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-breakpoint-value.md",
+    "destination": "/next/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-clipboard.md",
+    "destination": "/next/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-color-mode-value.md",
+    "destination": "/next/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-color-mode.md",
+    "destination": "/next/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-contrast-text.md",
+    "destination": "/next/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-disclose.md",
+    "destination": "/next/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-media-query.md",
+    "destination": "/next/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-theme.md",
+    "destination": "/next/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/next/use-token.md",
+    "destination": "/next/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/next/utility-first.mdx",
+    "destination": "/next/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/next/utility-props-specificity.md",
+    "destination": "/next/utility-props-specificity",
+    "permanent": true
+  },
+  {
+    "source": "/next/utility-props.md",
+    "destination": "/next/utility-props",
+    "permanent": true
+  },
+  { "source": "/next/view.md", "destination": "/next/view", "permanent": true },
+  {
+    "source": "/next/vstack.md",
+    "destination": "/next/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/next/zstack.md",
+    "destination": "/next/zstack",
+    "permanent": true
   }
 ]
