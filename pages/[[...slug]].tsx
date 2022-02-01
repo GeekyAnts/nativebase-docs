@@ -144,18 +144,12 @@ export async function getStaticPaths() {
   let paths: any = [];
   filePaths?.map((filename) => {
     let slug = filename.split('.md')[0].split('/');
-    let slugWithFileExt = filename.split('/');
     // console.log(slug.split("/"));
     // console.log(slugWithFileExt);
 
     paths.push({
       params: {
         slug: slug,
-      },
-    });
-    paths.push({
-      params: {
-        slug: slugWithFileExt,
       },
     });
   });
