@@ -91,10 +91,15 @@ function Layout({
       : pages?.currentPage?.title +
         " | NativeBase | Universal Components for React and React Native"
   }`;
+  
+  let href="https://docs.nativebase.io/" + pages.currentPage.id;
   return (
     <>
       <Head>
         <title>{title}</title>
+        {currentVersion !== '3.3.x' ? 
+         (<link rel="canonical" href={href}/>): ("")  
+        }
         <meta
           name="keywords"
           content="Universal Components for React and React Native"
