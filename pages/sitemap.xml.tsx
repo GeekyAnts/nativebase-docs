@@ -18,7 +18,7 @@ export const getServerSideProps = async ({ res }: any) => {
            .map((url) => {
              return `
              <url>
-               <loc>${docsConfig.DOCS_URL}/${url}</loc>
+               <loc>${docsConfig.DOCS_URL}/${url.split(".md")[0]}</loc>
                <lastmod>${new Date().toISOString()}</lastmod>
                <changefreq>weekly</changefreq>
                <priority>1.0</priority>
