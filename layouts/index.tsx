@@ -131,6 +131,8 @@ function Layout({
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-ZTSFCSJK8X"
       ></Script>
+      {/* will replace it when nativebase has semantic tagging */}
+      <h1 style={{ display: 'none'}}>{title}</h1>
       <Box
         w="100%"
         h={{ base: "100%", md: "100vh" }}
