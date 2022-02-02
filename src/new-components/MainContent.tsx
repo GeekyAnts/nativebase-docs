@@ -123,7 +123,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
       <Box alignSelf="center" maxW={props.showToc ? "800" : "1056"} w="100%">
         {/*  */}
         <VStack>
-          {!isLatestVersionSlug(activeVersion) && <Badge flexDir="row" alignSelf='flex-start'>version: {activeVersion}</Badge>}
+          {!isLatestVersionSlug(activeVersion) && <Badge rounded="4" flexDir="row" alignSelf='flex-start'>version: {activeVersion}</Badge>}
           <Heading mb="6" size="xl" _dark={{ color: "coolGray.50" }}>
             {frontMatter && frontMatter.title
               ? frontMatter.title
