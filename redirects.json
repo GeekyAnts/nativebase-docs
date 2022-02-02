@@ -345,7 +345,7 @@
   },
   {
     "source": "/3.0.0/migration/Guide",
-    "destination": "/3.0.x/migration/guide",
+    "destination": "/3.0.x/migration/v3",
     "permanent": true
   },
   {
@@ -3486,7 +3486,7 @@
   },
   {
     "source": "/3.0.3/migration/Guide",
-    "destination": "/3.0.x/migration/guide",
+    "destination": "/3.0.x/migration/v3",
     "permanent": true
   },
   {
@@ -4197,7 +4197,7 @@
   },
   {
     "source": "/3.0.6/migration/Guide",
-    "destination": "/3.0.x/migration/guide",
+    "destination": "/3.0.x/migration/v3",
     "permanent": true
   },
   {
@@ -4853,7 +4853,7 @@
   },
   {
     "source": "/3.0.7/migration/Guide",
-    "destination": "/3.0.x/migration/guide",
+    "destination": "/3.0.x/migration/v3",
     "permanent": true
   },
   {
@@ -5454,7 +5454,7 @@
   },
   {
     "source": "/3.1.0/migration/Guide",
-    "destination": "/3.1.x/migration/guide",
+    "destination": "/3.1.x/migration/v3",
     "permanent": true
   },
   {
@@ -7442,7 +7442,7 @@
   },
   {
     "source": "/3.0.x/migration/guide.md",
-    "destination": "/3.0.x/migration/guide",
+    "destination": "/3.0.x/migration/v3",
     "permanent": true
   },
   {
@@ -8040,7 +8040,7 @@
   },
   {
     "source": "/3.1.x/migration/guide.md",
-    "destination": "/3.1.x/migration/guide",
+    "destination": "/3.1.x/migration/v3",
     "permanent": true
   },
   {
@@ -11082,7 +11082,7 @@
   },
   {
     "source": "/3.0.x/migration/migration/guide",
-    "destination": "/3.0.x/migration/guide",
+    "destination": "/3.0.x/migration/v3",
     "permanent": true
   },
   {
@@ -12974,7 +12974,7 @@
   },
   {
     "source": "/3.1.x/migration/migration/guide",
-    "destination": "/3.1.x/migration/guide",
+    "destination": "/3.1.x/migration/v3",
     "permanent": true
   },
   {
@@ -13998,92 +13998,5 @@
     "source": "/3.3.x/migration/text",
     "destination": "/3.3.x/text",
     "permanent": true
-  },
-  { "source": "/formik", "destination": "/formik", "permanent": true },
-  {
-    "source": "/3.0.x/more-props",
-    "destination": "/3.0.x/more-props",
-    "permanent": true
-  },
-  {
-    "source": "/next/react-hooks-forms",
-    "destination": "/next/react-hooks-forms",
-    "permanent": true
-  },
-  {
-    "source": "/3.1.x/useColorMode.md",
-    "destination": "/3.1.x/useColorMode.md",
-    "permanent": true
-  },
-  {
-    "source": "/3.3.x/h-stack",
-    "destination": "/3.3.x/h-stack",
-    "permanent": true
-  },
-  {
-    "source": "/3.2.x/react-hooks-forms",
-    "destination": "/3.2.x/react-hooks-forms",
-    "permanent": true
-  },
-  {
-    "source": "/3.2.x/h-stack",
-    "destination": "/3.2.x/h-stack",
-    "permanent": true
-  },
-  {
-    "source": "/3.3.x/react-hooks-forms",
-    "destination": "/3.3.x/react-hooks-forms",
-    "permanent": true
-  },
-  {
-    "source": "/3.1.x/more-props",
-    "destination": "/3.1.x/more-props",
-    "permanent": true
-  },
-  {
-    "source": "/3.1.x/customizingTheme",
-    "destination": "/3.1.x/customizingTheme",
-    "permanent": true
-  },
-  {
-    "source": "/next/h-stack",
-    "destination": "/next/h-stack",
-    "permanent": true
-  },
-  {
-    "source": "/3.2.x/useColorMode.md",
-    "destination": "/3.2.x/useColorMode.md",
-    "permanent": true
-  },
-  {
-    "source": "/3.0.x/useColorModeValue.md",
-    "destination": "/3.0.x/useColorModeValue.md",
-    "permanent": true
-  },
-  {
-    "source": "/3.0.x/useColorMode.md",
-    "destination": "/3.0.x/useColorMode.md",
-    "permanent": true
-  },
-  { "source": "/h-stack", "destination": "/h-stack", "permanent": true },
-  {
-    "source": "/react-hooks-forms",
-    "destination": "/react-hooks-forms",
-    "permanent": true
-  },
-  {
-    "source": "/3.1.x/useColorModeValue.md",
-    "destination": "/3.1.x/useColorModeValue.md",
-    "permanent": true
-  },
-  {
-    "source": "/3.0.x/customizingTheme",
-    "destination": "/3.0.x/customizingTheme",
-    "permanent": true
-  },
-  {
-    "source": "/3.2.x/useColorModeValue.md",
-    "destination": "/3.2.x/useColorModeValue.md",
-    "permanent": true
-  }
+  }  
 ]
