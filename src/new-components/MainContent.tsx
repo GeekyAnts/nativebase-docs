@@ -2,11 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import {
   Box,
   Heading,
-  ScrollView,
   HStack,
   Text,
   VStack,
   Pressable,
+  Badge,
 } from "native-base";
 import Link from "next/link";
 import * as NBComponents from "native-base";
@@ -121,11 +121,15 @@ const SubMainContent2 = React.memo(({ props }: any) => {
   return (
     <Box px={{ base: "6", xl: "16" }} py="10">
       <Box alignSelf="center" maxW={props.showToc ? "800" : "1056"} w="100%">
-        <Heading mb="6" size="xl" _dark={{ color: "coolGray.50" }}>
-          {frontMatter && frontMatter.title
-            ? frontMatter.title
-            : pages.currentPage.title}
-        </Heading>
+        {/*  */}
+        <VStack>
+          {!isLatestVersionSlug(activeVersion) && <Badge flexDir="row" alignSelf='flex-start'>version: {activeVersion}</Badge>}
+          <Heading mb="6" size="xl" _dark={{ color: "coolGray.50" }}>
+            {frontMatter && frontMatter.title
+              ? frontMatter.title
+              : pages.currentPage.title}
+          </Heading>
+        </VStack>
 
         <MDXRemote {...content} components={components} />
         <Box w="100%" />

@@ -21,6 +21,7 @@ import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSideba
 import { SocialMediaStagger } from "../src/new-components/SocialMediaStagger";
 import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
 import Script from "next/script";
+import { isLatestVersionSlug } from "../src/utils";
 
 function Layout({
   children: content,
@@ -38,6 +39,7 @@ function Layout({
     activeSidebarItem,
     setActiveVersion,
     setActiveSidebarItem,
+    activeVersion,
   } = useContext(AppContext);
 
   const bgColor = useColorModeValue(
@@ -86,17 +88,20 @@ function Layout({
   }, [isLargeScreen]);
   const title = `${
     frontMatter && frontMatter.title
-      ? frontMatter.title +
-        " | NativeBase | Universal Components for React and React Native"
-      : pages?.currentPage?.title +
-        " | NativeBase | Universal Components for React and React Native"
+      ? frontMatter.title + (!isLatestVersionSlug(activeVersion) ?
+        ` | ${activeVersion}`: "") +
+          " | NativeBase | Universal Components for React and React Native"
+      : pages?.currentPage?.title + 
+      (!isLatestVersionSlug(activeVersion) ?
+        ` | ${activeVersion}`: "") +
+          " | NativeBase | Universal Components for React and React Native"
   }`;
-  
-  let href="https://docs.nativebase.io/" + pages.currentPage.id;
+
+  let href = "https://docs.nativebase.io/" + pages.currentPage.id;
   return (
     <>
       <Head>
-        <title>{title}</title>        
+        <title>{title}</title>
         <meta
           name="keywords"
           content="Universal Components for React and React Native"
@@ -105,7 +110,7 @@ function Layout({
         <meta property="og:title" content={title} />
         <meta
           property="og:description"
-          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+          content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <meta property="og:url" content="https://docs.nativebase.io" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -131,6 +136,8 @@ function Layout({
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-ZTSFCSJK8X"
       ></Script>
+      {/* will replace it when nativebase has semantic tagging */}
+      <h1 style={{ display: "none" }}>{title}</h1>
       <Box
         w="100%"
         h={{ base: "100%", md: "100vh" }}
