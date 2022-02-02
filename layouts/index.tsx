@@ -96,10 +96,7 @@ function Layout({
   return (
     <>
       <Head>
-        <title>{title}</title>
-        {currentVersion !== '3.3.x' ? 
-         (<link rel="canonical" href={href}/>): ("")  
-        }
+        <title>{title}</title>        
         <meta
           name="keywords"
           content="Universal Components for React and React Native"
