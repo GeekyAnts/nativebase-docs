@@ -11167,7 +11167,7 @@
     "permanent": true
   },
   {
-    "source": "3.1.x/migration/migration/v3",
+    "source": "/3.1.x/migration/migration/v3",
     "destination": "/migration/v3",
     "permanent": true
   },
