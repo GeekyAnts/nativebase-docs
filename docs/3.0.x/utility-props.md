@@ -580,7 +580,7 @@ export function Example() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-        <Example />
+        <App />
       </Center>
     </NativeBaseProvider>
   );
