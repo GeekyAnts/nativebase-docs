@@ -11168,7 +11168,7 @@
   },
   {
     "source": "/3.1.x/migration/migration/v3",
-    "destination": "/migration/v3",
+    "destination": "/3.1.x/migration/v3",
     "permanent": true
   },
   {
@@ -14030,13 +14030,17 @@
     "permanent": true
   },
   {
-    "source": "/next/h-stack",
-    "destination": "/next/hstack",
+    "source": "/3.3.x/h-stack",
+    "destination": "/3.3.x/hstack",
     "permanent": true
   },
   {
-    "source": "/3.3.x/h-stack",
-    "destination": "/3.3.x/hstack",
+    "source": "/h-stack",
+    "destination": "/hstack",
+    "permanent": true
+  },{
+    "source": "/next/h-stack",
+    "destination": "/next/hstack",
     "permanent": true
   },
   {
