@@ -1,5 +1,6 @@
 module.exports = {
   DOCS_URL: 'https://docs.nativebase.io',
+  parentUrl: 'https://nativebase.io/',
   indexSlugFileName: 'getting-started',
   docsEntryPoint: 'docs',
   REPO_BRANCH: 'master',

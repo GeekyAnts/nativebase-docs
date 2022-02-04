@@ -76,7 +76,6 @@ module.exports = withPlugins(
     },
     env: {
       environment: process.env.ENVIRONMENT,
-      parentUrl: 'https://nativebase.io/'
     },
     webpack: (config) => {
       config.resolve.alias = {
