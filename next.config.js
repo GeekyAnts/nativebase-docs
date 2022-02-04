@@ -91,5 +91,9 @@ module.exports = withPlugins(
       ];
       return config;
     },
+    i18n: {
+      locales: ["en"],
+      defaultLocale: "en",
+    },
   }
 );

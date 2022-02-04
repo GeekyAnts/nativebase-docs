@@ -34,6 +34,7 @@ import GitHub from "../icons/GithubIcon";
 import FigmaIcon from "../icons/FigmaIcon";
 import GeekyantsLogo from "./GeekyantsLogo";
 import AlgoliaSearchButton from "./AlgoliaSearchButton";
+import { parentUrl } from "../../docs.config";
 
 export default function Navbar(props: any) {
   const { activeVersion, setActiveVersion } = useContext(AppContext);
@@ -84,7 +85,9 @@ export default function Navbar(props: any) {
         justifyContent="space-between"
       >
         <HStack space="4" alignItems="center">
+          <a href={parentUrl}>
           <NativebaseLogo />
+          </a>
           <Menu
             //@ts-ignore
             _dark={{ bg: "blueGray.900" }}

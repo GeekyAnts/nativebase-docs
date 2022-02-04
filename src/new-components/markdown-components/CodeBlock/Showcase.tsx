@@ -263,7 +263,7 @@ export const Showcase = (
         </Button>
 
         <Box w="100%" overflow="auto">
-          <LiveError />
+          <LiveError style={{ color: useColorModeValue('black','white')}}/>
         </Box>
         <LivePreview />
       </Center>
