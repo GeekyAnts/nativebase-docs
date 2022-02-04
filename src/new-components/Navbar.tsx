@@ -84,7 +84,9 @@ export default function Navbar(props: any) {
         justifyContent="space-between"
       >
         <HStack space="4" alignItems="center">
+          <a href={process.env.parentUrl}>
           <NativebaseLogo />
+          </a>
           <Menu
             //@ts-ignore
             _dark={{ bg: "blueGray.900" }}

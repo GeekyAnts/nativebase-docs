@@ -108,7 +108,7 @@ export const Playground = ({ children, ...props }: any) => {
         bg="blueGray.800:alpha.40"
       >
         <Box w="100%" overflow="auto">
-          <LiveError />
+          <LiveError style={{ color: useColorModeValue('black','white')}}/>
         </Box>
         <LivePreview />
       </Box>
