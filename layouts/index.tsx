@@ -132,10 +132,15 @@ function Layout({
       <Script async src="https://snack.expo.dev/embed.js"></Script>
       <Script src="/js/gtag.js"></Script>
       {/* <Script src="/js/switchTheme.js"></Script> */}
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-ZTSFCSJK8X"
-      ></Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DBP9QMTGR1"></Script>
+      <Script id="gTagScript">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-DBP9QMTGR1');
+        `}
+      </Script>
       {/* will replace it when nativebase has semantic tagging */}
       <h1 style={{ display: "none" }}>{title}</h1>
       <Box

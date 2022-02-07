@@ -14139,8 +14139,23 @@
     "permanent":true
   },
   {
-    "source":"/3.0.x/customizingTheme ",
+    "source":"/3.0.x/customizingTheme",
     "destination":"/3.0.x/customizing-theme",
     "permanent":true
-  }
+  },
+  {
+    "source":"/3.0.x/next-adapter",
+    "destination":"/3.0.x",
+    "permanent":true
+  },
+  {
+    "source":"/3.1.x/next-adapter",
+    "destination":"/3.1.x",
+    "permanent":true
+  },
+  {
+    "source":"/3.2.x/next-adapter",
+    "destination":"/3.2.x",
+    "permanent":true
+  } 
 ]
