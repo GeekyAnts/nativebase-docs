@@ -201,6 +201,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
                     <Text
                       _light={{ color: "pageNavigationHeadingLight" }}
                       _dark={{ color: "pageNavigationHeadingDark" }}
+                      textAlign='right'
                     >
                       Next
                     </Text>
@@ -208,6 +209,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
                       fontSize="lg"
                       _light={{ color: "pageNavigationMainTitleLight" }}
                       _dark={{ color: "pageNavigationMainTitleDark" }}
+                      textAlign='right'
                     >
                       {pages.nextPage.title}
                     </Text>
