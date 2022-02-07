@@ -97,11 +97,23 @@ function Layout({
           " | NativeBase | Universal Components for React and React Native"
   }`;
 
+  const pageTitle = `${
+    frontMatter && frontMatter.title
+      ? frontMatter.title  +
+          " | NativeBase "
+      : pages?.currentPage?.title + 
+          " | NativeBase "
+  }`;
+
+  console.log(frontMatter? frontMatter.title : pages?.currentPage?.title, "12121212")
+
+
+
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{pageTitle}</title>
         <meta
           name="keywords"
           content="Universal Components for React and React Native"
@@ -117,7 +129,7 @@ function Layout({
         <meta property="og:site_name" content="NativeBase" />
         <meta
           name="twitter:image:alt"
-          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+          content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <meta property="og:image" content="/img/nativebase-og.png" />
         <meta name="twitter:image" content="/img/nativebase-og.png"></meta>
@@ -125,7 +137,7 @@ function Layout({
 
         <meta
           name="description"
-          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+          content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <link rel="icon" href="/img/nativebaselogo.svg" />
       </Head>
