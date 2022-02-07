@@ -14139,7 +14139,7 @@
     "permanent":true
   },
   {
-    "source":"/3.0.x/customizingTheme ",
+    "source":"/3.0.x/customizingTheme",
     "destination":"/3.0.x/customizing-theme",
     "permanent":true
   }

@@ -34,7 +34,11 @@
           "title": "Installation",
           "notVisibleInSidebar": true
         },
-
+        {          
+          "id": "next-adapter",
+          "title": "Next Adapter for nativebase",
+          "notVisibleInSidebar": true
+        },
         {
           "id": "setup-provider",
           "title": "Setup NativeBase Provider"
