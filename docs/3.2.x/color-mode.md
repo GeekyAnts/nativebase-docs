@@ -96,6 +96,8 @@ function App() {
 
 You can persist the color mode in you app by defining you color mode manager of type `StorageManager` and passing it to the NativeBaseProvider. This will retain the color mode even when the app is refreshed.
 
+- For Native 
+
 ```jsx
 import React from "react";
 import { NativeBaseProvider, StorageManager, ColorMode } from "native-base";
@@ -124,7 +126,33 @@ export default function () {
   return (
     // pass it to NativeBaseProvider
     <NativeBaseProvider colorModeManager={colorModeManager}>
-      // Your components
+      //  Your components
+    </NativeBaseProvider>
+  );
+}
+```
+
+- For web
+
+```jsx
+import React from "react";
+import { ColorMode, NativeBaseProvider, StorageManager } from "native-base";
+const colorModeManager: StorageManager = {
+  get: async () => {
+    let val = localStorage.getItem("@color-mode");
+    return val === "dark" ? "dark" : "light";
+  },
+  set: async (value: ColorMode) => {
+    let strValue = value ? value.toString() : "";
+    localStorage.setItem("@color-mode", strValue);
+  }
+};
+
+export default function () {
+  return (
+    // pass it to NativeBaseProvider
+    <NativeBaseProvider colorModeManager={colorModeManager}>
+      //  Your components
     </NativeBaseProvider>
   );
 }
