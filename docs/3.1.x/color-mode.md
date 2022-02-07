@@ -117,25 +117,27 @@ function App() {
 
 You can persist the color mode in you app by defining you color mode manager of type `StorageManager` and passing it to the NativeBaseProvider. This will retain the color mode even when the app is refreshed.
 
+- For Native 
+
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, StorageManager, ColorMode } from 'native-base';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React from "react";
+import { NativeBaseProvider, StorageManager, ColorMode } from "native-base";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // Define the colorModeManager,
 // here we are using react-native-async-storage (https://react-native-async-storage.github.io/async-storage/)
 const colorModeManager: StorageManager = {
   get: async () => {
     try {
-      let val = await AsyncStorage.getItem('@color-mode');
-      return val === 'dark' ? 'dark' : 'light';
+      let val = await AsyncStorage.getItem("@color-mode");
+      return val === "dark" ? "dark" : "light";
     } catch (e) {
-      return 'light';
+      return "light";
     }
   },
   set: async (value: ColorMode) => {
     try {
-      await AsyncStorage.setItem('@color-mode', value);
+      await AsyncStorage.setItem("@color-mode", value);
     } catch (e) {
       console.log(e);
     }
@@ -145,7 +147,33 @@ export default function () {
   return (
     // pass it to NativeBaseProvider
     <NativeBaseProvider colorModeManager={colorModeManager}>
-      // Your components
+      //  Your components
+    </NativeBaseProvider>
+  );
+}
+```
+
+- For web
+
+```jsx
+import React from "react";
+import { ColorMode, NativeBaseProvider, StorageManager } from "native-base";
+const colorModeManager: StorageManager = {
+  get: async () => {
+    let val = localStorage.getItem("@color-mode");
+    return val === "dark" ? "dark" : "light";
+  },
+  set: async (value: ColorMode) => {
+    let strValue = value ? value.toString() : "";
+    localStorage.setItem("@color-mode", strValue);
+  }
+};
+
+export default function () {
+  return (
+    // pass it to NativeBaseProvider
+    <NativeBaseProvider colorModeManager={colorModeManager}>
+      //  Your components
     </NativeBaseProvider>
   );
 }
