@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import LiveCodeEditorScope from "./LiveCodeEditorScope";
 import { getParsedCode, addExportsToCode } from "./utils";
 import {
@@ -48,6 +48,7 @@ export const Playground = ({ children, ...props }: any) => {
   const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
   // const [parsedCode, setParsedCode] = React.useState(children);
   const [copied, setCopied] = React.useState(false);
+  const formRef = useRef(null)
 
   const { onCopy } = useClipboard();
 
@@ -71,7 +72,7 @@ export const Playground = ({ children, ...props }: any) => {
 
   function submitExpoForm() {
     // @ts-ignore
-    document.getElementById("expo-form")?.submit();
+    formRef.current?.submit();
   }
   return (
     <LiveProvider
@@ -153,7 +154,7 @@ export const Playground = ({ children, ...props }: any) => {
               action={SNACK_URL}
               method="POST"
               target="_blank"
-              id="expo-form"
+              ref={formRef}
             >
               <input
                 type="hidden"
