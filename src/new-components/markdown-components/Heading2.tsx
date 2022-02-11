@@ -11,6 +11,7 @@ export const Heading2 = ({ children }: any) => {
       {({ isHovered }) => {
         return (
           <HStack alignItems="center" space="2">
+            <Heading display="none" nativeID="DocSearch-h2" >{content}</Heading>
             <Heading
               fontSize="2xl"
               _dark={{ color: "gray.300" }}
