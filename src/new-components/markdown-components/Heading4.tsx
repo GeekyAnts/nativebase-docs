@@ -5,14 +5,17 @@ import { getHeadingMeta } from "../../utils";
 export const Heading4 = ({ children }: any) => {
   const [content, id] = getHeadingMeta(children);
   return (
-    <Heading
-      my="2"
-      fontSize="md"
-      color={useColorModeValue("gray.700", "gray.300")}
-      // @ts-ignore
-      nativeID={id}
-    >
-      {content}
-    </Heading>
+    <>
+      <Heading display="none" nativeID="DocSearch-h4" >{content}</Heading>
+      <Heading
+        my="2"
+        fontSize="md"
+        color={useColorModeValue("gray.700", "gray.300")}
+        // @ts-ignore
+        nativeID={id}
+      >
+        {content}
+      </Heading>
+    </>
   );
 };
