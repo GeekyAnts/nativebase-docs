@@ -124,7 +124,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
         {/*  */}
         <VStack>
           {!isLatestVersionSlug(activeVersion) && <Badge rounded="4" flexDir="row" alignSelf='flex-start'>version: {activeVersion}</Badge>}
-          <Heading mb="6" size="xl" _dark={{ color: "coolGray.50" }}>
+          <Heading nativeID="DocSearch-h1" mb="6" size="xl" _dark={{ color: "coolGray.50" }}>
             {frontMatter && frontMatter.title
               ? frontMatter.title
               : pages.currentPage.title}
