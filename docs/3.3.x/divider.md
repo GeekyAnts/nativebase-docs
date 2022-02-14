@@ -5,7 +5,7 @@ title: Divider
 
 import { ComponentTheme } from '../src/components';
 
-`Divider` is used to visually separate content in a list or group.
+`Divider` can visually separate content in a given list or group.
 
 ```jsx isShowcase
 import React from "react";
