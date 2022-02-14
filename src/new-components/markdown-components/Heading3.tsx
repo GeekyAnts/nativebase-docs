@@ -10,14 +10,13 @@ export const Heading3 = ({ children }: any) => {
       {({ isHovered }) => {
         return (
           <HStack alignItems="center" space="2">
-            <Heading display="none" nativeID="DocSearch-h3" >{content}</Heading>
             <Heading
               fontSize="xl"
               fontWeight="normal"
               _light={{ color: "gray.700" }}
               _dark={{ color: "gray.300" }}
               // @ts-ignore
-              nativeID={id}
+              nativeID={"h3-" + id}
             >
               {content}
             </Heading>
