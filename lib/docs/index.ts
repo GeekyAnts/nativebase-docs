@@ -56,7 +56,7 @@ const checkHeading = (headingLevelMap: any) => {
       result.push({
         level: headingLevelMap[i].level,
         title: headingLevelMap[i].title,
-        id: headingLevelMap[i].id,
+        id: "h"+(headingLevelMap[i].level+1)+"-"+headingLevelMap[i].id,
       });
     }
   }

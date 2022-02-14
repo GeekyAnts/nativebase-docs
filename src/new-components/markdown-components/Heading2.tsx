@@ -21,7 +21,7 @@ export const Heading2 = ({ children }: any) => {
               {content}
             </Heading>
             {isHovered && (
-              <Link href={"#" + id}>
+              <Link href={"#" + "h2-" + id}>
                 <Icon as={Fontisto} name="link" color="coolGray.500" size="4" />
               </Link>
             )}
