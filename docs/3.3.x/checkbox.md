@@ -5,7 +5,7 @@ title: CheckBox
 
 import { ComponentTheme } from '../src/components';
 
-The `Checkbox` component is used in forms when a user needs to select multiple values from several options.
+The `Checkbox` component allows a user to select multiple values from various options in a form.
 
 ```jsx isShowcase
 import React from "react";

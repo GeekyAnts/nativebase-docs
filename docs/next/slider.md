@@ -5,7 +5,7 @@ title: Slider
 
 import { ComponentTheme } from '../src/components';
 
-The `Slider` is used to allow users to make selections from a range of values.
+The `Slider` allows users to select options from a given range of values.
 
 ```jsx isShowcase
 import React from "react";
