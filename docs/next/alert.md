@@ -5,7 +5,7 @@ title: Alert
 
 import { ComponentTheme } from '../src/components';
 
-`Alerts` are used to communicate a state that affects a system, feature or page.
+`Alerts` convey a state that can influences a system, feature or page.
 
 ```jsx isShowcase
 import React from "react";

@@ -5,7 +5,7 @@ title: Skeleton
 
 import { ComponentTheme } from '../src/components';
 
-`Skeleton` is used to display the loading state of a component.
+`Skeleton` showcases the loading state of a component.
 
 ```jsx isShowcase
 import React from "react";

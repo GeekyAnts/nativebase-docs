@@ -5,7 +5,7 @@ title: Progress
 
 import { ComponentTheme } from '../src/components';
 
-`Progress` is used to display the progress status for a task that takes a long time or consists of several steps.
+`Progress` helps show the progress status for a time-consuming task that consists of several steps.
 
 ```jsx isShowcase
 import React from "react";
