@@ -3,7 +3,7 @@ id: icon
 title: Icon
 ---
 
-You can use icons in multiple ways in NativeBase:
+NativeBase allows you to use icons in multiples ways. They are listed below:
 
 - Create icon by creating an SVG Icon
 - Create icon using createIcon function and use it as a component

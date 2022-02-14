@@ -3,7 +3,7 @@ id: center
 title: Center
 ---
 
-`Center` is a layout component that centers its child within itself.
+`Center` aligns its contents to the center within itself. It is a layout component.
 
 ```jsx isShowcase
 import React from "react";

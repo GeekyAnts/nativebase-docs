@@ -5,7 +5,7 @@ title: TextArea
 
 import { ComponentTheme } from '../src/components';
 
-The `Textarea` component allows you to easily create multi-line text inputs.
+The `Textarea` component helps create multi-line text inputs.
 
 ```jsx isShowcase
 import React from "react";

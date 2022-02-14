@@ -3,7 +3,7 @@ id: vstack
 title: VStack / Column
 ---
 
-`VStack` aligns items vertically.`Column` is also an alias for `VStack`.
+`VStack` aligns items vertically. `Column` is also an alias for `VStack`.
 
 ## Import
 

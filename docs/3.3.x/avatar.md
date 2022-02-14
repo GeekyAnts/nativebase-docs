@@ -5,7 +5,7 @@ title: Avatar
 
 import { ComponentTheme } from '../src/components';
 
-`Avatar` component is used to represent a user and it can display a profile picture, initials or a fallback icon.
+The `Avatar` component can display profile pictures, initials, or a fallback icon to represent a user.
 
 ```jsx isShowcase
 import React from "react";
