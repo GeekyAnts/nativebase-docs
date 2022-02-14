@@ -5,7 +5,7 @@ title: Modal
 
 import { ComponentTheme } from '../src/components';
 
-A Modal is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is **inert**, meaning that users cannot interact with it.
+A `Modal` is an overlay on the primary window or another dialog window. Content behind the modal dialog remains **inert** and users cannot interact with it.
 
 ```jsx isShowcase
 import React from 'react';
