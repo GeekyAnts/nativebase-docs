@@ -3,7 +3,7 @@ id: image
 title: Image
 ---
 
-Generic Image components from [React Native](https://reactnative.dev).
+The `Image` component allows one to display images.
 
 ```jsx isShowcase
 import React from 'react';
