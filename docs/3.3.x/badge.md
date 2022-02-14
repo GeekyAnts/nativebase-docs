@@ -5,7 +5,7 @@ title: Badge
 
 import { ComponentTheme } from '../src/components';
 
-`Badges` are used to highlight an item's status for quick recognition.
+`Badges` allows the highlight of an item’s status. This provides quick recognition.
 
 ```jsx isShowcase
 import React from "react"

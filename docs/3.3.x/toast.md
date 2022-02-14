@@ -5,9 +5,9 @@ title: Toast
 
 import { ComponentTheme } from '../src/components';
 
-`Toast` is used to show alerts on top of an overlay. `Toast` will close itself when the close button is clicked, or after a timeout — the default is 5 seconds. The toast component is used to give feeback to users after an action has taken place.
+`Toast` display alerts on top of an overlay. The `Toast` terminates itself when the close button is clicked or after a preset timeout — the default is 5 seconds. The component also allows users to give feedback when an action is completed.
 
-Toasts can be configured to appear at either the top or the bottom of an application window, and it is possible to have more than one toast onscreen at a time.
+Toasts can also be configured to pop up at different areas of the application window—top or bottom. More than one instance of toast can be present onscreen at one time.
 
 ```jsx isShowcase
 import React from 'react';

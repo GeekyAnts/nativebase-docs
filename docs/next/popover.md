@@ -5,7 +5,7 @@ title: Popover
 
 import { ComponentTheme } from '../src/components';
 
-`Popover` is a non-modal dialog that floats around a trigger. It's used to display contextual information to the user, and should be paired with a pressable trigger element.
+`Popover` floats around a trigger. It is a non-modal dialog and used to provide contextual information to the user. It should be paired with a pressable trigger element.
 
 ```jsx isShowcase
 import React from 'react';

@@ -3,7 +3,7 @@ id: stagger
 title: Stagger
 ---
 
-Stagger component provides a declarative API to add Staggered Transitions.
+`Stagger` component provides a declarative API to add staggered transitions.
 
 ```jsx isShowcase
 import React from "react"

@@ -5,7 +5,7 @@ title: Radio
 
 import { ComponentTheme } from '../src/components';
 
-`Radio` is used when only one choice may be selected in a series of options.
+`Radio` limits the selection from a series of option to only one.
 
 ```jsx isShowcase
 import React from "react";

@@ -5,7 +5,7 @@ title: Text
 
 import { ComponentTheme } from '../src/components';
 
-`Text` is used to render text and paragraphs within an interface.
+`Text` allows the rendering of text and paragraphs within an interface.
 
 ```jsx isShowcase
 import React from 'react';

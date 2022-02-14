@@ -5,7 +5,7 @@ title: FormControl
 
 import { ComponentTheme } from '../src/components';
 
-`FormControl` provides context such as `isInvalid`, `isDisabled`, and `isRequired` to form elements.
+`FormControl` is used to form elements by providing context such as `isInvalid`, `isDisabled`, and `isRequired`.
 
 ```jsx isShowcase gradient="3"
 import React from "react";

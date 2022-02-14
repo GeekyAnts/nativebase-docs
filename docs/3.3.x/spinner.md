@@ -3,6 +3,8 @@ id: spinner
 title: Spinner
 ---
 
+Spinners gives visual cues to actions that are processing or awaiting a course change or results.
+
 ```jsx isShowcase
 import React from "react";
 import {

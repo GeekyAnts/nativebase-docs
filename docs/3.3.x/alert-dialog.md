@@ -5,7 +5,7 @@ title: AlertDialog
 
 import { ComponentTheme } from '../src/components';
 
-`AlertDialog` component is used to interrupt the user with a mandatory confirmation or action. AlertDialog composes [`Modal`](/modal) so you can use all its props.
+`AlertDialog` is used when a user needs to be interrupted with a mandatory confirmation or call-to-action. AlertDialog composes [`Modal`](/modal) so you can use all its props.
 
 ```jsx isShowcase
 import React from 'react';

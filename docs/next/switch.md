@@ -3,7 +3,7 @@ id: switch
 title: Switch
 ---
 
-The `Switch` component is an alternative to the Checkbox component. You can switch between enabled or disabled states.
+The `Switch` provides an alternative to the Checkbox component. It also allows a user to switch between enabled or disabled states.
 
 ```jsx isShowcase
 import React from "react";
