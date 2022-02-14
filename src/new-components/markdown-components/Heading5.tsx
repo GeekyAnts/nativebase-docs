@@ -6,12 +6,11 @@ export const Heading5 = ({ children }: any) => {
   const [content, id] = getHeadingMeta(children);
   return (
     <>
-      <Heading display="none" nativeID="DocSearch-h5" >{content}</Heading>
       <Heading
         fontSize="md"
         color={useColorModeValue("gray.700", "gray.300")}
         // @ts-ignore
-        nativeID={id}
+        nativeID={"h5" + id}
       >
         {content}
       </Heading>
