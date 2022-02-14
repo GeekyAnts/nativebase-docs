@@ -3,7 +3,7 @@ id: flex
 title: Flex
 ---
 
-`Flex` is a [`Box`](box.md) with `display: flex` and comes with helpful style shorthand.
+`Flex` provides helpful style shorthand and is a [`Box`](box.md) with `display: flex`.
 
 ## Import
 

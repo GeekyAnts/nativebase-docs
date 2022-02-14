@@ -1,4 +1,4 @@
-`ZStack` aligns items absolutely in the z-axis.
+`ZStack` aligns items to the z-axis.
 
 ## Examples
 

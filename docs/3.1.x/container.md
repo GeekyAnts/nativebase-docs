@@ -3,7 +3,7 @@ id: container
 title: Container
 ---
 
-The `Container` is used to constrain a content's width to the current breakpoint, while keeping it fluid.
+The `Container` restricts a content's width according to current breakpoint, while keeping the size fluid.
 
 ## Implements
 
