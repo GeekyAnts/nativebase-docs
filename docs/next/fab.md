@@ -5,7 +5,7 @@ title: FAB
 
 import { ComponentTheme } from '../src/components';
 
-A floating action button is a circular icon button that hovers over content to promote a primary action in the application.
+A floating action button (FAB) is a circular icon button that hovers over content to execute a primary action in the application.
 
 ```jsx isShowcase
 import { Fab, Icon, Box, Center, NativeBaseProvider } from "native-base";
