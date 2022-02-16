@@ -14,11 +14,12 @@ title: NativeBase Icons
 
 `yarn add @native-base/icons`
 
+
 ### Next Js:
 
 - Add Fonts:
-    - To add all the fonts, write this piece of code in `_document.js`
-     <br/>
+1. To add all the fonts, write this piece of code in `_document.js`
+    <br/>
     
     ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
@@ -47,11 +48,11 @@ title: NativeBase Icons
     
     export default Document;
     ```
-    
-    - To add particular fonts: (For example, if you need to add AntDesignFonts and MaterialIconsFonts, write this piece of code in `_document.js`)
-     <br/>
-     
-    ```jsx
+
+2. To add particular fonts: (For example, if you need to add AntDesignFonts and MaterialIconsFonts, write this piece of code in `_document.js`)
+<br/>
+
+ ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
     import AntDesignFontFaceCSS from "@native-base/icons/FontsCSS/AntDesignFontFaceCSS";
     import MaterialIconsFontFaceCSS from "@native-base/icons/FontsCSS/MaterialIconsFontFaceCSS";
@@ -77,44 +78,50 @@ title: NativeBase Icons
     export default Document;
     ```
 
-- Update `next.config.js` with this code (if you are using [@native-base/next adapter](https://github.com/GeekyAnts/native-base-next-adapter)):
+3. Update `next.config.js` with this code if you are using [`@native-base/next adapter`](https://github.com/GeekyAnts/native-base-next-adapter)):
 
     ```jsx
-    const { withNativebase } = require("@native-base/next-adapter");
-    const path = require("path");
+        const { withNativebase } = require("@native-base/next-adapter");
+        const path = require("path");
 
-    module.exports = withNativebase({
-      dependencies: ["@native-base/icons"],
-      nextConfig: {
-        webpack: (config, options) => {
-          config.module.rules.push({
-            test: /\.ttf$/,
-            loader: "url-loader", // or directly file-loader
-            include: path.resolve(__dirname, "node_modules/@native-base/icons"),
-          });
-          config.resolve.alias = {
-            ...(config.resolve.alias || {}),
-            "react-native$": "react-native-web",
-          };
-          config.resolve.extensions = [
-            ".web.js",
-            ".web.ts",
-            ".web.tsx",
-            ...config.resolve.extensions,
-          ];
-          return config;
-        },
-      },
-    });
+        module.exports = withNativebase({
+          dependencies: ["@native-base/icons"],
+          nextConfig: {
+            webpack: (config, options) => {
+              config.module.rules.push({
+                test: /\.ttf$/,
+                loader: "url-loader", // or directly file-loader
+                include: path.resolve(__dirname, "node_modules/@native-base/icons"),
+              });
+              config.resolve.alias = {
+                ...(config.resolve.alias || {}),
+                "react-native$": "react-native-web",
+              };
+              config.resolve.extensions = [
+                ".web.js",
+                ".web.ts",
+                ".web.tsx",
+                ...config.resolve.extensions,
+              ];
+              return config;
+            },
+          },
+        });
     ```
+
+
+
+
 
 ### Create React App:
 
 - Add Fonts:
-    - To add all the fonts, write this piece of code in `index.jsx/index.tsx`:
-     <br/>
-     
-    ```jsx
+<br/>
+
+1. To add all the fonts, write this piece of code in `index.jsx/index.tsx`:
+  <br/>
+
+   ```jsx
     import fontsCSS from "@native-base/icons/FontsCSS";
 
     const style = document.createElement("style");
@@ -123,11 +130,11 @@ title: NativeBase Icons
     document.head.appendChild(style); 
     ```
      <br/>
-     
-    - To add a particular font
-     <br/>
-     
-    ```jsx
+
+2. To add a particular font
+  <br/>
+
+ ```jsx
     import AntDesignFontFaceCSS from "@native-base/icons/FontsCSS/AntDesignFontFaceCSS";
     import MaterialIconsFontFaceCSS from "@native-base/icons/FontsCSS/MaterialIconsFontFaceCSS";
     
@@ -142,41 +149,35 @@ title: NativeBase Icons
     }
     document.head.appendChild(style); 
     ```
-    
 
-### Expo:
 
-- Add this configuration to `.babel.config.js` file in root directory:
- <br/>
- 
-```jsx
-module.exports = function (api) {
-  api.cache(true);
-  return {
-    presets: ["babel-preset-expo"],
-    plugins: [
-      [
-        "module-resolver",
-        {
-          alias: {
-            "@native-base/icons": "@native-base/icons/lib",
+### Expo
+
+- Add this configuration to .babel.config.js file in root directory:
+
+  ```jsx
+  module.exports = function (api) {
+    api.cache(true);
+    return {
+      presets: ["babel-preset-expo"],
+      plugins: [
+        [
+          "module-resolver",
+          {
+            alias: {
+              "@native-base/icons": "@native-base/icons/lib",
+            },
           },
-        },
+        ],
       ],
-    ],
+    };
   };
-};
-```
+  ```
 
-## Usage:
-
-Now, let’s render an icon:
+## Usage
 
 ```jsx
 import { Entypo } from "@native-base/icons";
 
 return <Icon as={Entypo} name="user"></Icon>;
 ```
-
-
-
