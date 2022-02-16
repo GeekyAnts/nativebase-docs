@@ -341,6 +341,10 @@
           "title": "Icon"
         },
         {
+          "id": "nb-icons",
+          "title": "Nativebase Icon"
+        },
+        {
           "id": "image",
           "title": "Image",
           "status": "update"
