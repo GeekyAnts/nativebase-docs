@@ -88,21 +88,18 @@ function Layout({
   }, [isLargeScreen]);
   const title = `${
     frontMatter && frontMatter.title
-      ? frontMatter.title + (!isLatestVersionSlug(activeVersion) ?
-        ` | ${activeVersion}`: "") +
-          " | NativeBase | Universal Components for React and React Native"
-      : pages?.currentPage?.title + 
-      (!isLatestVersionSlug(activeVersion) ?
-        ` | ${activeVersion}`: "") +
-          " | NativeBase | Universal Components for React and React Native"
+      ? frontMatter.title +
+        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
+        " | NativeBase | Universal Components for React and React Native"
+      : pages?.currentPage?.title +
+        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
+        " | NativeBase | Universal Components for React and React Native"
   }`;
 
   const pageTitle = `${
     frontMatter && frontMatter.title
-      ? frontMatter.title  +
-          " | NativeBase "
-      : pages?.currentPage?.title + 
-          " | NativeBase "
+      ? frontMatter.title + " | NativeBase "
+      : pages?.currentPage?.title + " | NativeBase "
   }`;
 
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
@@ -128,7 +125,10 @@ function Layout({
           content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <meta property="og:image" content="/img/nativebase-og.png" />
-        <meta name="twitter:image" content="/img/nativebase-og.png"></meta>
+        <meta
+          name="twitter:image"
+          content="https://docs.nativebase.io/img/nativebase-og.png"
+        ></meta>
         <meta name="twitter:site" content="@nativebase" />
 
         <meta
@@ -140,7 +140,10 @@ function Layout({
       <Script async src="https://snack.expo.dev/embed.js"></Script>
       <Script src="/js/gtag.js"></Script>
       {/* <Script src="/js/switchTheme.js"></Script> */}
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DBP9QMTGR1"></Script>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-DBP9QMTGR1"
+      ></Script>
       <Script id="gTagScript">
         {`
           window.dataLayer = window.dataLayer || [];
