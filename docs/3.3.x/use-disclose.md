@@ -3,12 +3,12 @@ id: use-disclosure
 title: useDisclose
 ---
 
-`useDisclose` is a custom hook used to help handle common `open`, `close`, or `toggle` scenarios. It can be used to control feedback component such as **Modal**, **AlertDialog**, **Drawer**, etc.
+`useDisclose` handles common open, close, or toggle scenarios and can control feedback component such as **Modal**, **AlertDialog**, **Drawer**, etc.
 
 ## Import
 
 ```jsx
-import { useDisclose } from 'native-base';
+import { useDisclose } from "native-base";
 ```
 
 ## Example

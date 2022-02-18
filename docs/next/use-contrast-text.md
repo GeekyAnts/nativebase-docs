@@ -3,12 +3,12 @@ id: use-contrast-text
 title: useContrastText
 ---
 
-`useContrastText` is a custom hook used to get a contrasting color (either `lightText` or `darkText`) to the color passed as a parameter.
+`useContrastText` is a custom hook that provides color contrast (either `lightText` or `darkText`) to the color being used as a parameter.
 
 ## Import
 
 ```jsx
-import { useContrastText } from 'native-base';
+import { useContrastText } from "native-base";
 ```
 
 ## Examples

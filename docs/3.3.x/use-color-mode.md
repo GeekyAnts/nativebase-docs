@@ -3,12 +3,12 @@ id: use-color-mode
 title: useColorMode
 ---
 
-`useColorMode` is a custom hook used to get and set the color mode.
+`useColorMode` is a custom hook that can set the color mode or retrieve it.
 
 ## Import
 
 ```jsx
-import { useColorMode } from 'native-base';
+import { useColorMode } from "native-base";
 ```
 
 ## Example
