@@ -3,7 +3,7 @@ id: use-clipboard
 title: useClipboard
 ---
 
-`useClipboard` is a custom hook that handles copying content to clipboard.
+`useClipboard` controls and regulates the copying of content to the clipboard.
 
 ## Return Value
 
@@ -16,7 +16,7 @@ The `useClipboard` hook returns an object with the following fields:
 ## Import
 
 ```jsx
-import { useClipboard } from 'native-base';
+import { useClipboard } from "native-base";
 ```
 
 ## Usage
