@@ -3,7 +3,7 @@ id: use-token
 title: useToken
 ---
 
-`useToken` is a custom hook used to resolve design tokens from the theme.
+`useToken` resolves design tokens from the theme.
 
 ## Import
 
@@ -48,8 +48,10 @@ function UseTokenHookExample() {
   );
 }
 export function Example() {
-  return (<Center flex={1}>
-        <UseTokenHookExample />
-      </Center>);
+  return (
+    <Center flex={1}>
+      <UseTokenHookExample />
+    </Center>
+  );
 }
 ```
