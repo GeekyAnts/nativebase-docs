@@ -31,7 +31,7 @@ If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can 
 import React from "react";
 import { Box, Center, NativeBaseProvider } from "native-base";
 
-const LinearGradient = require("expo-linear-gradient").LinearGradient;
+const LinearGradient = require("react-native-linear-gradient").default;
 export const App = () => {
   return (
     <Box
@@ -80,7 +80,7 @@ If you're not using Expo, you can install [react-native-linear-gradient](https:/
 import React from "react";
 import { Box, NativeBaseProvider } from "native-base";
 
-const LinearGradient = require("expo-linear-gradient").LinearGradient;
+const LinearGradient = require("react-native-linear-gradient").default;
 
 const Example = () => {
   return (

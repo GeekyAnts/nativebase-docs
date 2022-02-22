@@ -1,7 +1,7 @@
 import React from "react";
 import * as RN from "react-native";
 import * as NBComponents from "native-base";
-import * as expoVectorIcons from "@expo/vector-icons";
+import * as expoVectorIcons from "@native-base/icons";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { Formik } from "formik";
 import { SwipeListView } from "react-native-swipe-list-view";
@@ -13,7 +13,7 @@ const {
   Image: ImageSvg,
   ...remReactNativeSvgComponents
 } = reactNativeSvgComponents;
-const LinearGradient = require("expo-linear-gradient").LinearGradient;
+const LinearGradient = require("react-native-linear-gradient").default;
 const Wrapper = (props: any) => {
   return (
     <NBComponents.Center flex={1} px="3">

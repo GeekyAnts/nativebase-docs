@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Box, Pressable, Collapse, HStack, AddIcon, Icon } from "native-base";
 import React from "react";
 import { Animated } from "react-native";
-import { AntDesign } from "@expo/vector-icons";
+import { AntDesign } from "@native-base/icons";
 
 export const CollapsibleSidebarItem = (props: any) => {
   const { children, title, level, collapsed, isMobile, setIsOpenSidebar } =

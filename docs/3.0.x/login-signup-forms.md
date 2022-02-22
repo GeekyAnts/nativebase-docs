@@ -9,7 +9,7 @@ title: Login/Signup Forms
 
 ```jsx isLive=true
 import * as React from "react";
-import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
+import { MaterialCommunityIcons, Ionicons } from "@native-base/icons";
 import {
   NativeBaseProvider,
   Box,
@@ -121,7 +121,7 @@ export function Example() {
 
 ```jsx isLive=true
 import * as React from "react";
-import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
+import { MaterialCommunityIcons, Ionicons } from "@native-base/icons";
 import {
   NativeBaseProvider,
   Box,

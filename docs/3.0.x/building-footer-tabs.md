@@ -8,7 +8,7 @@ With NativeBase v3 we have removed FooterTab components because as it's very sim
 ## Example
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 
 import {
   NativeBaseProvider,
@@ -24,8 +24,8 @@ import {
   HStack,
   Center,
   Pressable,
-} from 'native-base';
-import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
+} from "native-base";
+import { MaterialCommunityIcons, MaterialIcons } from "@native-base/icons";
 
 export function Example() {
   const [selected, setSelected] = React.useState(1);

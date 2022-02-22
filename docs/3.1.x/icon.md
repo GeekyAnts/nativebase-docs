@@ -7,7 +7,7 @@ You can use icons in multiple ways in NativeBase:
 
 - Create icon by creating an SVG Icon
 - Create icon using createIcon function and use it as a component
-- Use a third-party icon library ( such as [@expo/vector-icons](https://github.com/expo/vector-icons) ), with `as` prop.
+- Use a third-party icon library ( such as [@native-base/icons](https://github.com/expo/vector-icons) ), with `as` prop.
 
 ## Examples
 

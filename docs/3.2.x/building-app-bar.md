@@ -23,7 +23,7 @@ import {
   Box,
   StatusBar,
 } from "native-base";
-import { MaterialIcons } from "@expo/vector-icons";
+import { MaterialIcons } from "@native-base/icons";
 
 function AppBar() {
   return (

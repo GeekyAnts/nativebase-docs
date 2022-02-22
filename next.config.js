@@ -1,54 +1,23 @@
-const withFonts = require("next-fonts");
+const { withNativebase } = require("@native-base/next-adapter");
+const path = require("path");
+
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
 });
-const { withExpo } = require("@expo/next-adapter");
 const redirectsJSON = require("./redirects.json");
-const withPlugins = require("next-compose-plugins");
-const withTM = require("next-transpile-modules")([
-  "native-base",
-  "react-native-web",
-  "react-native-svg",
-  // "react-native-safe-area-context",
-  // "@react-aria/visually-hidden",
-  // "@react-native-aria/button",
-  // "@react-native-aria/checkbox",
-  // "@react-native-aria/combobox",
-  // "@react-native-aria/focus",
-  // "@react-native-aria/interactions",
-  // "@react-native-aria/listbox",
-  // "@react-native-aria/overlays",
-  // "@react-native-aria/radio",
-  // "@react-native-aria/slider",
-  // "@react-native-aria/tabs",
-  // "@react-native-aria/utils",
-  // "@react-stately/combobox",
-  // "@react-stately/radio",
-]);
 
-module.exports = withPlugins(
-  [
-    [withTM],
-    [withFonts],
-    [withMDX],
-    [withExpo, { projectRoot: __dirname }],
+module.exports = withNativebase({
+  dependencies: [
+    "@native-base/icons",
+    "react-native-web-linear-gradient",
+    "react-native-web",
+    "react-native-svg",
+    // "react-native-keyboard-aware-scroll-view",
   ],
-  {
+  plugins: [withMDX],
+
+  nextConfig: {
     pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-    // webpack: (config) => {
-    //   config.resolve.alias = {
-    //     ...(config.resolve.alias || {}),
-    //     // Transform all direct `react-native` imports to `react-native-web`
-    //     "react-native$": "react-native-web",
-    //   };
-    //   config.resolve.extensions = [
-    //     ".web.js",
-    //     ".web.ts",
-    //     ".web.tsx",
-    //     ...config.resolve.extensions,
-    //   ];
-    //   return config;
-    // },
     async redirects() {
       return [
         {
@@ -74,14 +43,34 @@ module.exports = withPlugins(
         "pbs.twimg.com",
       ],
     },
-    env: {
-      environment: process.env.ENVIRONMENT,
-    },
-    webpack: (config) => {
+    // env: {
+    //   environment: process.env.ENVIRONMENT,
+    // },
+    webpack: (config, options) => {
+      config.module.rules.push({
+        test: /\.ttf$/,
+        loader: "url-loader", // or directly file-loader
+        include: path.resolve(__dirname, "node_modules/@native-base/icons"),
+      });
+      // config.module.rules.push({
+      //   test: /\.ts|tsx|jsx|js$/,
+      //   loader: "babel-loader", // or directly file-loader
+      //   include: path.resolve(
+      //     __dirname,
+      //     "node_modules/react-native-keyboard-aware-scroll-view"
+      //   ),
+      //   options: {
+      //     presets: [
+      //       "@babel/preset-env",
+      //       "@babel/preset-react",
+      //       "@babel/preset-typescript",
+      //     ],
+      //   },
+      // });
       config.resolve.alias = {
         ...(config.resolve.alias || {}),
-        // Transform all direct `react-native` imports to `react-native-web`
         "react-native$": "react-native-web",
+        "react-native-linear-gradient": "react-native-web-linear-gradient",
       };
       config.resolve.extensions = [
         ".web.js",
@@ -95,5 +84,7 @@ module.exports = withPlugins(
       locales: ["en"],
       defaultLocale: "en",
     },
-  }
-);
+  },
+});
+
+//

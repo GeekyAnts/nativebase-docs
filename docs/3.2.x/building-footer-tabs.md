@@ -24,7 +24,7 @@ import {
   Center,
   Pressable,
 } from "native-base";
-import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
+import { MaterialCommunityIcons, MaterialIcons } from "@native-base/icons";
 
 export function Example() {
   const [selected, setSelected] = React.useState(1);

@@ -27,7 +27,7 @@ import {
   Spacer,
 } from "native-base";
 import { SwipeListView } from "react-native-swipe-list-view";
-import { MaterialIcons, Ionicons, Entypo } from "@expo/vector-icons";
+import { MaterialIcons, Ionicons, Entypo } from "@native-base/icons";
 
 function Example() {
   const [mode, setMode] = useState("Basic");
