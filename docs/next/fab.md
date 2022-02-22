@@ -10,7 +10,7 @@ A floating action button (FAB) is a circular icon button that hovers over conten
 ```jsx isShowcase
 import { Fab, Icon, Box, Center, NativeBaseProvider } from "native-base";
 import React from "react";
-import { AntDesign } from "@expo/vector-icons";
+import { AntDesign } from "@native-base/icons";
 export const Example = () => {
   return (
     <Box height="200" w="400" shadow="2" rounded="lg" bg="white:alpha.20">

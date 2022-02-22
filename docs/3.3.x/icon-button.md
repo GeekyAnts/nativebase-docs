@@ -10,7 +10,7 @@ import { ComponentTheme } from '../src/components';
 ```jsx isShowcase
 import React from "react";
 import { IconButton, Icon } from "native-base";
-import { Entypo } from "@expo/vector-icons";
+import { Entypo } from "@native-base/icons";
 
 export const Example = () => {
   return (

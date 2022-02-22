@@ -1,39 +1,25 @@
-import { Children } from "react";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import { default as NativebaseDocument } from "@native-base/next-adapter/document";
+import fontsCSS from "@native-base/icons/FontsCSS";
 import { AppRegistry } from "react-native";
-import config from "../app.json";
-// Force Next-generated DOM elements to fill their parent's height
-const normalizeNextElements = `
-  #__next {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-`;
+import { Main } from "next/document";
+import * as React from "react";
 
-export default class MyDocument extends Document {
-  static async getInitialProps({ renderPage }) {
-    AppRegistry.registerComponent(config.name, () => Main);
-    const { getStyleElement } = AppRegistry.getApplication(config.name);
-    const page = await renderPage();
-    const styles = [
-      // eslint-disable-next-line react/jsx-key
-      <style dangerouslySetInnerHTML={{ __html: normalizeNextElements }} />,
-      getStyleElement(),
-    ];
-    return { ...page, styles: Children.toArray(styles) };
-  }
-
-  render() {
-    return (
-      <Html style={{ height: "100%" }}>
-        <Head />
-        <body style={{ height: "100%", overflow: "hidden" }}>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
+class Document extends NativebaseDocument {
+  //
 }
-// export { default } from "@expo/next-adapter/document";
+
+async function getInitialProps({ renderPage }) {
+  AppRegistry.registerComponent("Main", () => Main);
+  const { getStyleElement } = AppRegistry.getApplication("Main");
+  const page = await renderPage();
+  const styles = [
+    // eslint-disable-next-line react/jsx-key
+    <style dangerouslySetInnerHTML={{ __html: fontsCSS }} />,
+    getStyleElement(),
+  ];
+  return { ...page, styles: React.Children.toArray(styles) };
+}
+
+Document.getInitialProps = getInitialProps;
+
+export default Document;

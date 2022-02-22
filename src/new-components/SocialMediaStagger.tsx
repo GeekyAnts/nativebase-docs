@@ -9,7 +9,7 @@ import {
 } from "native-base";
 import GitHub from "../icons/GithubIcon";
 import Discord from "../icons/DiscordIcon";
-import { AntDesign, MaterialIcons } from "@expo/vector-icons";
+import { AntDesign, MaterialIcons } from "@native-base/icons";
 import FigmaIcon from "../icons/FigmaIcon";
 
 export const SocialMediaStagger = (props: any) => {

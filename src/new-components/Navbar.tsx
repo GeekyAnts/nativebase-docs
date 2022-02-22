@@ -28,7 +28,7 @@ import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { useRouter } from "next/router";
 import versions from "../../versions.json";
-import { FontAwesome } from "@expo/vector-icons";
+import { FontAwesome } from "@native-base/icons";
 import Discord from "../icons/DiscordIcon";
 import GitHub from "../icons/GithubIcon";
 import FigmaIcon from "../icons/FigmaIcon";
@@ -86,7 +86,7 @@ export default function Navbar(props: any) {
       >
         <HStack space="4" alignItems="center">
           <a href={parentUrl}>
-          <NativebaseLogo />
+            <NativebaseLogo />
           </a>
           <Menu
             //@ts-ignore

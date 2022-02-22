@@ -54,7 +54,7 @@ If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can 
 ```jsx isLive=true
 import React from "react";
 import { Box, Center, NativeBaseProvider } from "native-base";
-const LinearGradient = require("expo-linear-gradient").LinearGradient;
+const LinearGradient = require("react-native-linear-gradient").default;
 export const App = () => {
   return (
     <Box

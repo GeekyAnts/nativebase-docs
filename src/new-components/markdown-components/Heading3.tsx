@@ -1,7 +1,7 @@
 import React from "react";
 import { Heading, HStack, Icon, Link, Pressable } from "native-base";
 import { getHeadingMeta } from "../../utils";
-import { Fontisto } from "@expo/vector-icons";
+import { Fontisto } from "@native-base/icons";
 
 export const Heading3 = ({ children }: any) => {
   const [content, id] = getHeadingMeta(children);

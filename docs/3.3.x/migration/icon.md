@@ -11,7 +11,7 @@ Migrating Icon components can broadly described in these points:
 
 - **ios**, **android** and **type** props have been deprecated.
 - default Icon type i.e **Ionicons** has been removed, now v3 does not uses any.
-- v3 uses a third-party icon library ( such as @expo/vector-icons ), with **as** prop.
+- v3 uses a third-party icon library ( such as @native-base/icons ), with **as** prop.
 - custom colors and size can be added using **color** and **size** props.
 
 ## Code Comparison
@@ -25,8 +25,8 @@ values={[
 <DocTabItem value="v2">
 
 ```tsx
-import React, { Component } from 'react';
-import { Icon } from 'native-base';
+import React, { Component } from "react";
+import { Icon } from "native-base";
 
 export default class IconExample extends Component {
   render() {
@@ -36,7 +36,7 @@ export default class IconExample extends Component {
         <Icon
           ios="ios-menu"
           android="md-menu"
-          style={{ fontSize: 20, color: 'red' }}
+          style={{ fontSize: 20, color: "red" }}
         />
         <Icon type="FontAwesome" name="home" />
       </>
@@ -50,10 +50,10 @@ export default class IconExample extends Component {
 <DocTabItem value="v3">
 
 ```tsx
-import React from 'react';
-import { Platform } from 'react-native';
-import { Icon } from 'native-base';
-import { Ionicons, FontAwesome } from '@expo/vector-icons';
+import React from "react";
+import { Platform } from "react-native";
+import { Icon } from "native-base";
+import { Ionicons, FontAwesome } from "@native-base/icons";
 
 export default function () {
   return (
@@ -61,7 +61,7 @@ export default function () {
       <Icon as={Ionicons} name="home" />
       <Icon
         as={Ionicons}
-        name={Platform.OS ? 'ios-menu' : 'md-menu'}
+        name={Platform.OS ? "ios-menu" : "md-menu"}
         size="20"
         color="red"
       />

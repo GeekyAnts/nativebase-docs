@@ -27,8 +27,8 @@ import {
   Divider,
   Heading,
 } from "native-base";
-import { Ionicons, MaterialIcons } from "@expo/vector-icons";
-import { FontAwesome5 } from "@expo/vector-icons";
+import { Ionicons, MaterialIcons } from "@native-base/icons";
+import { FontAwesome5 } from "@native-base/icons";
 
 function SearchBar() {
   return (

@@ -10,8 +10,8 @@ SwipeListView is a vertical ListView with rows that swipe open and closed. Handl
 Here is an example to show how easily and quickly we can use [react-native-swipe-list](https://www.npmjs.com/package/react-native-swipe-list-view) in NativeBase.
 
 ```jsx isLive=true
-import React, { useState } from 'react';
-import { Dimensions, TouchableOpacity, View } from 'react-native';
+import React, { useState } from "react";
+import { Dimensions, TouchableOpacity, View } from "react-native";
 
 import {
   NativeBaseProvider,
@@ -23,12 +23,12 @@ import {
   Icon,
   HStack,
   Avatar,
-} from 'native-base';
-import { SwipeListView } from 'react-native-swipe-list-view';
-import { MaterialIcons, Ionicons } from '@expo/vector-icons';
+} from "native-base";
+import { SwipeListView } from "react-native-swipe-list-view";
+import { MaterialIcons, Ionicons } from "@native-base/icons";
 
 export function Example() {
-  const [mode, setMode] = useState('Basic');
+  const [mode, setMode] = useState("Basic");
 
   return (
     <NativeBaseProvider>
@@ -45,7 +45,7 @@ export function Example() {
 function Basic() {
   const [listData, setListData] = useState(
     Array(20)
-      .fill('')
+      .fill("")
       .map((_, i) => ({ key: `${i}`, text: `item #${i}` }))
   );
 
@@ -64,28 +64,28 @@ function Basic() {
   };
 
   const onRowDidOpen = (rowKey) => {
-    console.log('This row opened', rowKey);
+    console.log("This row opened", rowKey);
   };
 
   const renderItem = ({ item, index }) => (
     <Box>
       <Pressable
-        onPress={() => console.log('You touched me')}
+        onPress={() => console.log("You touched me")}
         alignItems="center"
         bg="white"
         borderBottomColor="trueGray.200"
         borderBottomWidth={1}
         justifyContent="center"
         height={50}
-        underlayColor={'#AAA'}
+        underlayColor={"#AAA"}
         _pressed={{
-          bg: 'trueGray.200',
+          bg: "trueGray.200",
         }}
         py={8}
       >
         <HStack width="100%" px={4}>
           <HStack space={2} alignItems="center">
-            <Avatar color="white" bg={'secondary.700'}>
+            <Avatar color="white" bg={"secondary.700"}>
               {index}
             </Avatar>
             <Text>{item.text}</Text>
@@ -132,7 +132,7 @@ function Basic() {
         renderItem={renderItem}
         renderHiddenItem={renderHiddenItem}
         rightOpenValue={-130}
-        previewRowKey={'0'}
+        previewRowKey={"0"}
         previewOpenValue={-40}
         previewOpenDelay={3000}
         onRowDidOpen={onRowDidOpen}

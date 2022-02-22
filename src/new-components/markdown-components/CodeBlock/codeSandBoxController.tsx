@@ -74,7 +74,7 @@ export function getCodeSandBoxURL(code: string, version: string) {
       "react-dom": "17.0.2",
       "react-native-svg": "12.1.1",
       "styled-components": "*",
-      "@expo/vector-icons": "^12.0.0",
+      "@native-base/icons": "^12.0.0",
       "expo-linear-gradient": "~10.0.3",
       "react-native-web": "0.17.5",
     },

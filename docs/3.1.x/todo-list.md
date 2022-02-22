@@ -18,9 +18,9 @@ import {
   Heading,
   Icon,
   Center,
-  NativeBaseProvider
+  NativeBaseProvider,
 } from "native-base";
-import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome5 } from "@native-base/icons";
 
 export function Example() {
   const instState = [
@@ -56,58 +56,56 @@ export function Example() {
   };
   return (
     <NativeBaseProvider>
-    <Center flex={1}>
-    <VStack space={4} flex={1} w="90%" mt={4}>
-      <Heading color="emerald.400">Todo App</Heading>
-      <Input
-        variant="filled"
-        
-        InputRightElement={
-          <IconButton
-            icon={<Icon as={FontAwesome5} name="plus" size={4} />}
-           colorScheme="emerald"
-            ml={1}
-            onPress={() => {
-              addItem(inputValue);
-              setInputValue("");
-            }}
-
-            mr={1}/>
-
-        }
-        onChangeText={(v) => setInputValue(v)}
-        value={inputValue}
-        placeholder="Add Item"
-      />
-      <VStack>
-        {list.map((item, itemI) => (
-          <HStack
-            w="100%"
-            justifyContent="space-between"
-            alignItems="center"
-            key={item.title + itemI.toString()}
-          >
-            <Checkbox
-              colorScheme="emerald"
-              isChecked={item.isCompleted}
-              onChange={() => handleStatusChange(itemI)}
-              value={item.title}
-            >
-              <Text mx={2} strikeThrough={item.isCompleted}>
-                {item.title}
-              </Text>
-            </Checkbox>
-            <IconButton
-              colorScheme="emerald"
-              icon={<Icon as={FontAwesome5} name="trash" size={5} />}
-              onPress={() => handleDelete(itemI)}
-            />
-          </HStack>
-        ))}
-      </VStack>
-    </VStack>
-    </Center>
-   </NativeBaseProvider>
+      <Center flex={1}>
+        <VStack space={4} flex={1} w="90%" mt={4}>
+          <Heading color="emerald.400">Todo App</Heading>
+          <Input
+            variant="filled"
+            InputRightElement={
+              <IconButton
+                icon={<Icon as={FontAwesome5} name="plus" size={4} />}
+                colorScheme="emerald"
+                ml={1}
+                onPress={() => {
+                  addItem(inputValue);
+                  setInputValue("");
+                }}
+                mr={1}
+              />
+            }
+            onChangeText={(v) => setInputValue(v)}
+            value={inputValue}
+            placeholder="Add Item"
+          />
+          <VStack>
+            {list.map((item, itemI) => (
+              <HStack
+                w="100%"
+                justifyContent="space-between"
+                alignItems="center"
+                key={item.title + itemI.toString()}
+              >
+                <Checkbox
+                  colorScheme="emerald"
+                  isChecked={item.isCompleted}
+                  onChange={() => handleStatusChange(itemI)}
+                  value={item.title}
+                >
+                  <Text mx={2} strikeThrough={item.isCompleted}>
+                    {item.title}
+                  </Text>
+                </Checkbox>
+                <IconButton
+                  colorScheme="emerald"
+                  icon={<Icon as={FontAwesome5} name="trash" size={5} />}
+                  onPress={() => handleDelete(itemI)}
+                />
+              </HStack>
+            ))}
+          </VStack>
+        </VStack>
+      </Center>
+    </NativeBaseProvider>
   );
 }
 ```

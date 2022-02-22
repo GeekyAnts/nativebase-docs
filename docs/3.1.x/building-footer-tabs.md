@@ -8,7 +8,7 @@ With NativeBase v3 we have removed FooterTab components because as it's very sim
 ## Example
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 
 import {
   NativeBaseProvider,
@@ -24,16 +24,15 @@ import {
   HStack,
   Center,
   Pressable,
-} from 'native-base';
-import { MaterialCommunityIcons , MaterialIcons} from '@expo/vector-icons';
+} from "native-base";
+import { MaterialCommunityIcons, MaterialIcons } from "@native-base/icons";
 
 export function Example() {
   const [selected, setSelected] = React.useState(1);
   return (
     <NativeBaseProvider>
-       <Box flex={1} bg="white" safeAreaTop>
-        <Center flex={1}>
-        </Center>
+      <Box flex={1} bg="white" safeAreaTop>
+        <Center flex={1}></Center>
         <HStack bg="primary.500" alignItems="center" safeAreaBottom shadow={6}>
           <Pressable
             cursor="pointer"
@@ -50,7 +49,9 @@ export function Example() {
                 size="xs"
               />
 
-              <Text color="white" fontSize={14}>Favorites</Text>
+              <Text color="white" fontSize={14}>
+                Favorites
+              </Text>
             </Center>
           </Pressable>
           <Pressable
@@ -68,7 +69,9 @@ export function Example() {
                 size="xs"
               />
 
-              <Text color="white" fontSize={14}>Music</Text>
+              <Text color="white" fontSize={14}>
+                Music
+              </Text>
             </Center>
           </Pressable>
           <Pressable
@@ -86,7 +89,9 @@ export function Example() {
                 size="xs"
               />
 
-              <Text color="white" fontSize={14}>Places</Text>
+              <Text color="white" fontSize={14}>
+                Places
+              </Text>
             </Center>
           </Pressable>
           <Pressable
@@ -103,7 +108,9 @@ export function Example() {
                 color="white"
                 size="xs"
               />
-              <Text color="white" fontSize={14}>News</Text>
+              <Text color="white" fontSize={14}>
+                News
+              </Text>
             </Center>
           </Pressable>
         </HStack>
@@ -111,5 +118,4 @@ export function Example() {
     </NativeBaseProvider>
   );
 }
-
 ```
