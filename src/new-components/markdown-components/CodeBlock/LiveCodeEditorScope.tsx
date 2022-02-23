@@ -2,7 +2,6 @@ import React from "react";
 import * as RN from "react-native";
 import * as NBComponents from "native-base";
 import * as expoVectorIcons from "@native-base/icons";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { Formik } from "formik";
 import { SwipeListView } from "react-native-swipe-list-view";
 import { TabView, SceneMap } from "react-native-tab-view";
@@ -29,7 +28,6 @@ const LiveCodeEditorScope = {
   ...React,
   // ...IconLib,
   ...expoVectorIcons,
-  KeyboardAwareScrollView,
   SwipeListView,
   TabView,
   SceneMap,

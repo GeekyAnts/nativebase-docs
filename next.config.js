@@ -12,7 +12,6 @@ module.exports = withNativebase({
     "react-native-web-linear-gradient",
     "react-native-web",
     "react-native-svg",
-    // "react-native-keyboard-aware-scroll-view",
   ],
   plugins: [withMDX],
 
@@ -43,30 +42,12 @@ module.exports = withNativebase({
         "pbs.twimg.com",
       ],
     },
-    // env: {
-    //   environment: process.env.ENVIRONMENT,
-    // },
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.ttf$/,
         loader: "url-loader", // or directly file-loader
         include: path.resolve(__dirname, "node_modules/@native-base/icons"),
       });
-      // config.module.rules.push({
-      //   test: /\.ts|tsx|jsx|js$/,
-      //   loader: "babel-loader", // or directly file-loader
-      //   include: path.resolve(
-      //     __dirname,
-      //     "node_modules/react-native-keyboard-aware-scroll-view"
-      //   ),
-      //   options: {
-      //     presets: [
-      //       "@babel/preset-env",
-      //       "@babel/preset-react",
-      //       "@babel/preset-typescript",
-      //     ],
-      //   },
-      // });
       config.resolve.alias = {
         ...(config.resolve.alias || {}),
         "react-native$": "react-native-web",
@@ -86,5 +67,3 @@ module.exports = withNativebase({
     },
   },
 });
-
-//
