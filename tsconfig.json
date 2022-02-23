@@ -21,8 +21,7 @@
     "**/*.tsx",
     "docs.config.js",
     "build-init.js",
-    "lib/docs/propsMap.js",
-    "node_modules/react-native-keyboard-aware-scroll-view"
+    "lib/docs/propsMap.js"
   ],
   "exclude": ["node_modules", "versioned_repo"]
 }
