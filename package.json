@@ -57,7 +57,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
-    "@native-base/next-adapter": "^1.1.7",
+    "@native-base/next-adapter": "1.1.9",
     "@next/bundle-analyzer": "^12.0.4",
     "@types/mdx-js__react": "^1.5.5",
     "@types/node": "16.11.7",
