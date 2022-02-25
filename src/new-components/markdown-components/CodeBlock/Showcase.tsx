@@ -7,7 +7,7 @@ import {
   endingCodeSandboxTemplate,
   getCodeSandBoxURL,
 } from "./codeSandBoxController";
-import * as expoVectorIcons from "@expo/vector-icons";
+import * as expoVectorIcons from "@native-base/icons";
 
 // ----------------------------------------------- Themes --------------------------------------------------
 
@@ -263,7 +263,7 @@ export const Showcase = (
         </Button>
 
         <Box w="100%" overflow="auto">
-          <LiveError style={{ color: useColorModeValue('black','white')}}/>
+          <LiveError style={{ color: useColorModeValue("black", "white") }} />
         </Box>
         <LivePreview />
       </Center>
