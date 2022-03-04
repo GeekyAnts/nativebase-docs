@@ -3,6 +3,7 @@ import React, { useEffect, useContext } from "react";
 import {
   Box,
   HStack,
+  Link,
   ScrollView,
   Text,
   useBreakpointValue,
@@ -246,15 +247,24 @@ function Layout({
             <NativebaseIconLogo width="125" height="130" />
           </Box>
 
-          <Text
+          <Link
             pl="6"
-            _light={{ color: "black" }}
-            _dark={{ color: "coolGray.50" }}
+            _text={{
+              _light: {
+                color: "black",
+              },
+              _dark: {
+                color: "coolGray.50",
+              },
+              fontSize: "sm",
+            }}
             m="auto"
-            fontSize="sm"
+            isUnderlined={false}
+            href="https://madewithnativebase.com/"
+            isExternal
           >
             MadeWithNativeBase
-          </Text>
+          </Link>
         </Box>
       </Box>
     </>
