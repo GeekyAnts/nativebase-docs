@@ -3,6 +3,7 @@ import React, { useEffect, useContext } from "react";
 import {
   Box,
   HStack,
+  Link,
   ScrollView,
   Text,
   useBreakpointValue,
@@ -229,7 +230,9 @@ function Layout({
           </Box>
           <SocialMediaStagger />
         </ScrollView>
-        <Box
+        <Link
+          href="https://madewithnativebase.com/"
+          isExternal
           position="fixed"
           bottom="8"
           right={{ base: "auto", lg: "30px" }}
@@ -255,7 +258,7 @@ function Layout({
           >
             MadeWithNativeBase
           </Text>
-        </Box>
+        </Link>
       </Box>
     </>
   );
