@@ -13,8 +13,7 @@ declare module "native-base" {
 
 const config = {
   dependencies: {
-    "linear-gradient": require("react-native-web-linear-gradient")
-      .LinearGradient,
+    "linear-gradient": require("react-native-web-linear-gradient").default,
   },
 };
 function MyApp({ Component, pageProps }: AppProps) {
