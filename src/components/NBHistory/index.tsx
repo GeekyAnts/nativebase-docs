@@ -88,13 +88,13 @@ export default function NBHistory() {
                 _dark={{ color: "coolGray.50" }}
                 _light={{ color: "coolGray.800", fontWeight: "medium" }}
               >
-                (2020)
+                (2021)
               </Text>
             </Stack>
           </Stack>
         </>
       </Hidden>
-      <VStack mt={["0","0","10"]} space="6">
+      <VStack mt={["0", "0", "10"]} space="6">
         <Li>
           <Text
             _dark={{ color: "coolGray.400" }}
