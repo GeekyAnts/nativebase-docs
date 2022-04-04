@@ -34,7 +34,7 @@
           "title": "Installation",
           "notVisibleInSidebar": true
         },
-        {          
+        {
           "id": "next-adapter",
           "title": "Next Adapter for nativebase",
           "notVisibleInSidebar": true
@@ -343,7 +343,7 @@
         {
           "id": "icon",
           "title": "Icon"
-        },        
+        },
         {
           "id": "image",
           "title": "Image",
@@ -673,6 +673,10 @@
         {
           "id": "faq",
           "title": "FAQ's"
+        },
+        {
+          "id": "contribution",
+          "title": "Contribution"
         },
         {
           "id": "state-of-components",

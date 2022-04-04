@@ -671,6 +671,10 @@
           "title": "FAQ's"
         },
         {
+          "id": "contribution",
+          "title": "Contribution"
+        },
+        {
           "id": "state-of-components",
           "title": "State of the Components",
           "showToc": false,
