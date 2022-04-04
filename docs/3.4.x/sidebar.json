@@ -34,7 +34,7 @@
           "title": "Installation",
           "notVisibleInSidebar": true
         },
-        {          
+        {
           "id": "next-adapter",
           "title": "Next Adapter for nativebase",
           "notVisibleInSidebar": true
@@ -343,7 +343,7 @@
         {
           "id": "icon",
           "title": "Icon"
-        },        
+        },
         {
           "id": "image",
           "title": "Image",
@@ -555,6 +555,10 @@
         {
           "id": "migration/v3xtov32",
           "title": "Upgrading to 3.2.0 from 3.x"
+        },
+        {
+          "id": "migration/v33xtov34x",
+          "title": "Upgrading to 3.4.0 from 3.3.x"
         },
         {
           "type": "heading",
