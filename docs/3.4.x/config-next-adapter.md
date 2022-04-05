@@ -3,7 +3,7 @@ id: config-next-adapter
 title: Configuration of NativeBase next-adapter
 ---
 
-config parameter is an object with 3 keys
+## config parameter is an object with 3 keys
 
 - ** `Dependencies` ** : List of dependencies which are transpiled using [next-transpile-modules](https://github.com/martpie/next-transpile-modules) .
 
@@ -56,9 +56,9 @@ module.exports = withNativebase({
 });
 ```
 
-- phase
+## Phase
 
-  If the plugin should only be applied in specific phases, you can specify them here. You can use all phases [next.js provides](https://github.com/zeit/next.js/blob/canary/packages/next/next-server/lib/constants.ts#L1-L4).
+If the plugin should only be applied in specific phases, you can specify them here. You can use all phases [next.js provides](https://github.com/zeit/next.js/blob/canary/packages/next/next-server/lib/constants.ts#L1-L4).
 
 ```jsx
 const { withNativebase } = require('@native-base/next-adapter');
