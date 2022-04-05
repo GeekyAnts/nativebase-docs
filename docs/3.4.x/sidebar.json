@@ -34,9 +34,19 @@
           "title": "Installation",
           "notVisibleInSidebar": true
         },
-        {          
+        {
           "id": "next-adapter",
-          "title": "Next Adapter for nativebase",
+          "title": "Next Adapter for native-base",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "config-next-adapter",
+          "title": "Config NativeBase next-adapter",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "next-adapter-icons",
+          "title": "NativeBase next-adapter integration with Icons",
           "notVisibleInSidebar": true
         },
         {
@@ -343,7 +353,7 @@
         {
           "id": "icon",
           "title": "Icon"
-        },        
+        },
         {
           "id": "image",
           "title": "Image",
