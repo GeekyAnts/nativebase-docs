@@ -34,7 +34,7 @@
           "title": "Installation",
           "notVisibleInSidebar": true
         },
-        {          
+        {
           "id": "next-adapter",
           "title": "Next Adapter for nativebase",
           "notVisibleInSidebar": true
@@ -72,6 +72,10 @@
         {
           "id": "pseudo-props-101",
           "title": "Pseudo Props: Dos & Don'ts"
+        },
+        {
+          "id": "internal-pseudo-props",
+          "title": "Internal Pseudo Props"
         },
         {
           "id": "responsive",
@@ -343,7 +347,7 @@
         {
           "id": "icon",
           "title": "Icon"
-        },        
+        },
         {
           "id": "image",
           "title": "Image",
