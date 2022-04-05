@@ -49,6 +49,8 @@ The core team is monitoring for pull requests. We will review your pull request 
 - If you've fixed a bug, please provide a link to the issue so other people can follow up.
 - If you've added a new feature, please give a brief explanation what the feature is and why it's needed.
 
+<br />
+
 ### Development Workflow
 
 After cloning NativeBase, you can start working on your PRs by running the following commands:
