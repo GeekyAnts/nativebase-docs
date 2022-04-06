@@ -95,6 +95,16 @@
     },
     {
       "type": "heading",
+      "title": "Resources",
+      "pages": [
+        {
+          "id": "contribution",
+          "title": "Contribution"
+        }
+      ]
+    },
+    {
+      "type": "heading",
       "title": "Features",
       "pages": [
         {
