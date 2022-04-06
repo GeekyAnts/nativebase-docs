@@ -230,7 +230,9 @@ function Layout({
           </Box>
           <SocialMediaStagger />
         </ScrollView>
-        <Box
+        <Link
+          href="https://madewithnativebase.com/"
+          isExternal
           position="fixed"
           bottom="8"
           right={{ base: "auto", lg: "30px" }}
@@ -247,25 +249,16 @@ function Layout({
             <NativebaseIconLogo width="125" height="130" />
           </Box>
 
-          <Link
+          <Text
             pl="6"
-            _text={{
-              _light: {
-                color: "black",
-              },
-              _dark: {
-                color: "coolGray.50",
-              },
-              fontSize: "sm",
-            }}
+            _light={{ color: "black" }}
+            _dark={{ color: "coolGray.50" }}
             m="auto"
-            isUnderlined={false}
-            href="https://madewithnativebase.com/"
-            isExternal
+            fontSize="sm"
           >
             MadeWithNativeBase
-          </Link>
-        </Box>
+          </Text>
+        </Link>
       </Box>
     </>
   );
