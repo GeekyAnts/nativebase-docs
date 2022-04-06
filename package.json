@@ -70,5 +70,12 @@
     "postinstall-postinstall": "^2.1.0",
     "shelljs": "^0.8.4",
     "typescript": "4.5.2"
+  },
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
   }
 }

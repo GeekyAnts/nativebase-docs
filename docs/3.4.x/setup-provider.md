@@ -119,10 +119,30 @@ export default () => {
 };
 ```
 
+## Add isSSR (Optional)
+
+If you are using NativeBase for a server side rendering app, you can use isSSR prop to determine whether to render the theme or not.
+
+```jsx
+import React from 'react';
+import { NativeBaseProvider } from 'native-base';
+
+export default () => {
+  return (
+    <NativeBaseProvider isSSR>
+      <Center flex={1}>
+        <Example />
+      </Center>
+    </NativeBaseProvider>
+  );
+};
+```
+
 ## NativeBaseProvider Props
 
 | Name                 | Type                                | Description                                                                                                                                | Default                  |
 | -------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
+| isSSR                | Boolean                             | Tells the provider if your app is Server Side Rendered or not?                                                                             | -                        |
 | initialWindowMetrics | Object                              | Mock data for frame and insets. [Refer this](https://github.com/th3rdwave/react-native-safe-area-context#testing) for further information. | -                        |
 | colorModeManager     | { get : Function , set : Function } | Manage Color mode in your app                                                                                                              | -                        |
 | theme                | Object                              | use custom theme in your app                                                                                                               | NativeBase Default Theme |
