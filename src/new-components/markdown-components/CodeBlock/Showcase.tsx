@@ -7,7 +7,7 @@ import {
   endingCodeSandboxTemplate,
   getCodeSandBoxURL,
 } from "./codeSandBoxController";
-import * as expoVectorIcons from "@expo/vector-icons";
+import * as expoVectorIcons from "@native-base/icons";
 
 // ----------------------------------------------- Themes --------------------------------------------------
 
@@ -173,38 +173,38 @@ export const Showcase = (
         rounded="lg"
         // _dark={{ borderColor: "blueGray.800" }}
         // _light={{ borderColor: "blueGray.300" }}
-        _light={{
-          bg: {
-            linearGradient: {
-              colors: lightModeGradientArray,
-              start: [0, 0],
-              end: [1, 0],
-            },
-          },
-        }}
-        _dark={{
-          bg: {
-            linearGradient: {
-              colors: darkModeGradientArray,
-              start: [0, 0],
-              end: [1, 0],
-            },
-          },
-        }}
         // _light={{
-        //   style: {
-        //     // @ts-ignore
-        //     backgroundImage:
-        //       "linear-gradient(135deg," + lightModeGradientArray + ")",
+        //   bg: {
+        //     linearGradient: {
+        //       colors: lightModeGradientArray,
+        //       start: [0, 0],
+        //       end: [1, 0],
+        //     },
         //   },
         // }}
         // _dark={{
-        //   style: {
-        //     // @ts-ignore
-        //     backgroundImage:
-        //       "linear-gradient(135deg," + darkModeGradientArray + ")",
+        //   bg: {
+        //     linearGradient: {
+        //       colors: darkModeGradientArray,
+        //       start: [0, 0],
+        //       end: [1, 0],
+        //     },
         //   },
         // }}
+        _light={{
+          style: {
+            // @ts-ignore
+            backgroundImage:
+              "linear-gradient(135deg," + lightModeGradientArray + ")",
+          },
+        }}
+        _dark={{
+          style: {
+            // @ts-ignore
+            backgroundImage:
+              "linear-gradient(135deg," + darkModeGradientArray + ")",
+          },
+        }}
         style={{
           // @ts-ignore
           transition: "background-image 1s",
@@ -263,7 +263,7 @@ export const Showcase = (
         </Button>
 
         <Box w="100%" overflow="auto">
-          <LiveError style={{ color: useColorModeValue('black','white')}}/>
+          <LiveError style={{ color: useColorModeValue("black", "white") }} />
         </Box>
         <LivePreview />
       </Center>
