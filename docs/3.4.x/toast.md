@@ -3,8 +3,6 @@ id: toast
 title: Toast
 ---
 
-import { ComponentTheme } from '../src/components';
-
 `Toast` display alerts on top of an overlay. The `Toast` terminates itself when the close button is clicked or after a preset timeout — the default is 5 seconds. The component also allows users to give feedback when an action is completed.
 
 Toasts can also be configured to pop up at different areas of the application window—top or bottom. More than one instance of toast can be present onscreen at one time.
@@ -67,12 +65,11 @@ Toasts can be closed imperatively, individually (via the close instance method) 
 
 ```
 
-### Status
+### Status & Variant Recipes
 
-You can use status to change the color of your toasts.
-`Toast` uses the same variants as the [Alert](alert.md) component.
+You create custom Toasts that responds to different status and variants, similarly like the `Alert` component. Below is a recipe that you can try out.
 
-```ComponentSnackPlayer path=components,composites,Toast,ToastStatus.tsx
+```ComponentSnackPlayer path=components,composites,Toast,VariantRecipies.tsx
 
 ```
 
