@@ -84,6 +84,10 @@
           "title": "Pseudo Props: Dos & Don'ts"
         },
         {
+          "id": "internal-pseudo-props",
+          "title": "Internal Pseudo Props"
+        },
+        {
           "id": "responsive",
           "title": "Responsive"
         }
