@@ -67,12 +67,11 @@ Toasts can be closed imperatively, individually (via the close instance method) 
 
 ```
 
-### Status
+### Status & Variant Recipes
 
-You can use status to change the color of your toasts.
-`Toast` uses the same variants as the [Alert](alert.md) component.
+You create custom Toasts that responds to different status and variants, similarly like the `Alert` component. Below is a recipe that you can try out.
 
-```ComponentSnackPlayer path=components,composites,Toast,ToastStatus.tsx
+```ComponentSnackPlayer path=components,composites,Toast,VariantRecipies.tsx
 
 ```
 
