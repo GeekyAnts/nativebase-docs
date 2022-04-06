@@ -36,7 +36,17 @@
         },
         {
           "id": "next-adapter",
-          "title": "Next Adapter for nativebase",
+          "title": "Next Adapter for native-base",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "config-next-adapter",
+          "title": "Config NativeBase next-adapter",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "next-adapter-icons",
+          "title": "NativeBase next-adapter integration with Icons",
           "notVisibleInSidebar": true
         },
         {
@@ -53,6 +63,10 @@
       "type": "heading",
       "title": "Resources",
       "pages": [
+        {
+          "id": "contribution",
+          "title": "Contribution"
+        },
         {
           "id": "solito",
           "title": "Creating a Universal App with NativeBase and Solito"
@@ -93,16 +107,7 @@
         }
       ]
     },
-    {
-      "type": "heading",
-      "title": "Resources",
-      "pages": [
-        {
-          "id": "contribution",
-          "title": "Contribution"
-        }
-      ]
-    },
+
     {
       "type": "heading",
       "title": "Features",
@@ -579,6 +584,10 @@
         {
           "id": "migration/v3xtov32",
           "title": "Upgrading to 3.2.0 from 3.x"
+        },
+        {
+          "id": "migration/v33xtov34x",
+          "title": "Upgrading to 3.4.0 from 3.3.x"
         },
         {
           "type": "heading",

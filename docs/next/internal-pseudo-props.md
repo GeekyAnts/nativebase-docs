@@ -15,9 +15,9 @@ Let’s take an example of `Actionsheet` component,
 source={{
     uri: "https://user-images.githubusercontent.com/44310861/161695222-50c1b265-a799-4242-8a14-018be2c32210.png",
   }}
-alt="actionsheet pseudo props"
 width="100%"
 height={300}
+alt="actionsheet pseudo props"
 />
 
 - \_dragIndicator - Using `_dragIndicator` internal pseudo prop, we can customize the style of Actionsheet indicator.
