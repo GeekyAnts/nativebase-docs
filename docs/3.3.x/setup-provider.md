@@ -56,7 +56,7 @@ function App() {
 
 If you want to do something with the color modes in your app, you can use colorModeManager Prop of NativeBaseProvider to achieve it.
 
-In the below example we will show how to store the active ColorMode in a async storage, so it can be consistent all around our app.
+In the below example we will show how to store the active ColorMode in an async storage, so it can be consistent all around your app.
 
 ```tsx
 import React from 'react';
