@@ -3,7 +3,7 @@ id: contribution
 title: Contributing to NativeBase
 ---
 
-Thanks for being interested in contributing! We're so glad you want to help! The following is a set of guidelines for contributing to NativeBase. Please spend several minutes reading these guidelines before you create an issue or pull request.
+_Thanks for showing an interest in contributing to NativeBase. We are excited about our collaboration. The following is a set of guidelines that will make the journey memorable. Please spend several minutes reading these guidelines before you create an issue or pull request._
 
 ### Code of Conduct
 
