@@ -9,7 +9,7 @@ NativeBase uses some internal pseudo props to get more customizable components.
 
 Let’s take an example of `Actionsheet` component,
 
-- _Actionsheet has the following internal pseudo props: `_dragIndicator` , `_dragIndicatorWrapper` and `_dragIndicatorWrapperOffSet`_
+- Actionsheet has the following internal pseudo props: `_dragIndicator` , `_dragIndicatorWrapper` and `_dragIndicatorWrapperOffSet`
 
 <Image
 source={{
