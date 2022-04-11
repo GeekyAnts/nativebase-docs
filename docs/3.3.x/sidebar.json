@@ -34,7 +34,7 @@
           "title": "Installation",
           "notVisibleInSidebar": true
         },
-        {          
+        {
           "id": "next-adapter",
           "title": "Next Adapter for nativebase",
           "notVisibleInSidebar": true
@@ -46,6 +46,16 @@
         {
           "id": "nb-icons",
           "title": "Nativebase Icons"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Resources",
+      "pages": [
+        {
+          "id": "contribution",
+          "title": "Contribution"
         }
       ]
     },
@@ -343,7 +353,7 @@
         {
           "id": "icon",
           "title": "Icon"
-        },        
+        },
         {
           "id": "image",
           "title": "Image",

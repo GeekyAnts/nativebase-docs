@@ -1,0 +1,144 @@
+---
+id: next-adapter
+title: Next.js project with NativeBase next-adapter
+---
+
+[Next.js](https://nextjs.org/) is a React framework that provides simple page-based routing as well as server-side rendering. To use Next.js with NativeBase for web we recommend that you use a library called [@native-base/next-adapter](https://github.com/GeekyAnts/native-base-next-adapter) to handle the configuration and integration of the tools.
+
+## Built With
+
+[Next.js](https://nextjs.org/), [React](https://reactjs.org/), [react-dom](https://reactjs.org/docs/react-dom.html), [Typescript](https://www.typescriptlang.org/), [react-native-web](https://necolas.github.io/react-native-web/docs/)
+
+## Installation guide
+
+- Install dependencies
+
+<DocTabs
+  defaultValue='yarn'
+  values={[
+    { label: 'yarn', value: 'yarn' },
+    { label: 'npx', value: 'npx' },
+  ]}
+>
+  <DocTabItem value='yarn'>
+
+```bash
+yarn add react-native-web native-base react-native-svg react-native-safe-area-context react-native
+```
+
+  </DocTabItem>
+  <DocTabItem value='npx'>
+
+```bash
+npm install react-native-web native-base react-native-svg react-native-safe-area-context react-native
+```
+
+  </DocTabItem>
+</DocTabs>
+
+- Install dev dependencies.
+
+<DocTabs
+  defaultValue='yarn'
+  values={[
+    { label: 'yarn', value: 'yarn' },
+    { label: 'npx', value: 'npx' },
+  ]}
+>
+  <DocTabItem value='yarn'>
+
+```bash
+yarn add @native-base/next-adapter next-compose-plugins next-transpile-modules next-fonts -D
+```
+
+  </DocTabItem>
+  <DocTabItem value='npx'>
+
+```bash
+npm install @native-base/next-adapter next-compose-plugins next-transpile-modules next-fonts --save-dev
+```
+
+  </DocTabItem>
+</DocTabs>
+
+- Re-export the custom `Document` component in the **`pages/_document.js`** file of your Next.js project.
+
+  - This will ensure `react-native-web` styling works.
+  - Wraps all the css in style tag on server side (thus preventing css flicker issue)
+  - Or you can create the file using following command
+
+```bash
+ mkdir pages; touch pages/_document.js
+```
+
+- Update your ** `pages/_document.js` ** with the below content.
+
+```jsx
+export { default } from '@native-base/next-adapter/document';
+```
+
+- Update `next.config.json` with below code
+
+```jsx
+const { withNativebase } = require('@native-base/next-adapter');
+
+module.exports = withNativebase({
+  dependencies: [
+    // your plugins go here.
+  ],
+});
+```
+
+<Box mt="4" mb="8">
+  <TileLink
+    title="Config NativeBase next-adapter"
+    url="config-next-adapter"
+    description="How to config your NativeBase next-adapter with plugins, dependencies, nextConfig"
+    className="bg-blueGray-600 mt-2"
+  />
+</Box>
+
+### Run the Hello world example
+
+- Replace the code below in your ** `pages/_app.js` **
+
+```jsx
+import '../styles/globals.css';
+import { NativeBaseProvider } from 'native-base';
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <NativeBaseProvider>
+      <Component {...pageProps} />
+    </NativeBaseProvider>
+  );
+}
+
+export default MyApp;
+```
+
+- and put this in your ** `pages/index.js` **
+
+```jsx
+import React from 'react';
+import { Box } from 'native-base';
+
+export default function App() {
+  return <Box>Hello world</Box>;
+}
+```
+
+<Center>
+  <AspectRatio ratio={2.21} w="100%" maxW="500">
+    <Image source={{ uri: '/img/minion.gif' }} alt="minions clapping" />
+  </AspectRatio>
+</Center>
+
+<Box mt="4" mb="8">
+  <TileLink
+    title="NativeBase next-adapter intergration with Icons"
+    url="next-adapter-icons"
+    description="Steps to integrate icons in Nextjs with native-base"
+    className="bg-blueGray-600  mt-2"
+  />
+</Box>
