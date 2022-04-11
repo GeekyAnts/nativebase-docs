@@ -9,7 +9,7 @@ To do that we had to make some changes to our theme in `v3.3.0`. These are break
 
 ## Changelog
 
-Below is the rough overview of changelog
+The following is the overview of the changelog
 
 ### Foundation
 
@@ -30,7 +30,7 @@ Below is the rough overview of changelog
 - Added `Shadow` for few components mentioned below:
 - `Alert Dialog`, `Popover`, `Menu`, `Tooltip`, `Slider` -->
 
-Added some design changes like color change, shadow, padding and opacity according to new design, in almost all the components.
+Added the following design changes to all components: color change, shadow, padding, and opacity changes. All changes are according to the new formats.
 
 #### Icon:
 
@@ -52,15 +52,15 @@ Added some design changes like color change, shadow, padding and opacity accordi
 
 ## Theme Decoupling
 
-- In 3.4 we have completely decoupled the theme, all the internal design props are now transfered to theme.
-- This will allow you to use multiple theme files in your project, and you can toggle between them very efficiently without breaking a thing.
+- In 3.4 we have completely decoupled the theme. All the internal design props are now transferred to the theme.
+- This will allow you to use multiple theme files in your project and toggle between them efficiently.
 
 ## Extend previous version's theme for backward compatibility
 
 You need to add `v33xTheme` to your `NativeBaseProvider` which preserves all the old design that was changed or removed in v3.4.0.
 
 ```jsx
-import { NativeBaseProvider, extendTheme, v33xTheme } from "native-base";
+import { NativeBaseProvider, extendTheme, v33xTheme } from 'native-base';
 
 // ...
 const yourCustomTheme = {
