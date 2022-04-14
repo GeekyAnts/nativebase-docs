@@ -3,7 +3,7 @@ id: nb-icons
 title: NativeBase Icons
 ---
 
-`NativeBase Icons` was designed to make integration of icons in nativebase projects easier. It is a unified library which export icons and fonts for all the native and web platforms.
+`NativeBase Icons` was designed to make the integration of icons in NativeBase projects easier. It is a unified library that can export icons and fonts for all native and web platforms.
 
 ## Built With
 - react-native-vector-icons
@@ -83,7 +83,6 @@ title: NativeBase Icons
     ```jsx
         const { withNativebase } = require("@native-base/next-adapter");
         const path = require("path");
-
         module.exports = withNativebase({
           dependencies: ["@native-base/icons"],
           nextConfig: {
@@ -123,7 +122,6 @@ title: NativeBase Icons
 
    ```jsx
     import fontsCSS from "@native-base/icons/FontsCSS";
-
     const style = document.createElement("style");
     style.type = "text/css";
     style.appendChild(document.createTextNode(fontsCSS));
@@ -178,6 +176,5 @@ title: NativeBase Icons
 
 ```jsx
 import { Entypo } from "@native-base/icons";
-
 return <Icon as={Entypo} name="user"></Icon>;
 ```
