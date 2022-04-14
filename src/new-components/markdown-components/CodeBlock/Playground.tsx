@@ -14,8 +14,9 @@ import {
   endingCodeSandboxTemplate,
   getCodeSandBoxURL,
 } from "./codeSandBoxController";
+//@ts-ignore
 
-import * as expoVectorIcons from "@expo/vector-icons";
+import * as expoVectorIcons from "react-native-vector-icons";
 
 // ----------------------------------------------- Themes --------------------------------------------------
 
@@ -48,7 +49,7 @@ export const Playground = ({ children, ...props }: any) => {
   const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
   // const [parsedCode, setParsedCode] = React.useState(children);
   const [copied, setCopied] = React.useState(false);
-  const formRef = useRef(null)
+  const formRef = useRef(null);
 
   const { onCopy } = useClipboard();
 
@@ -109,7 +110,7 @@ export const Playground = ({ children, ...props }: any) => {
         bg="blueGray.800:alpha.40"
       >
         <Box w="100%" overflow="auto">
-          <LiveError style={{ color: useColorModeValue('black','white')}}/>
+          <LiveError style={{ color: useColorModeValue("black", "white") }} />
         </Box>
         <LivePreview />
       </Box>

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Box, useColorModeValue, HStack, Icon, Text } from "native-base";
-import { AntDesign, MaterialIcons } from "@expo/vector-icons";
+import { AntDesign } from "@native-base/icons";
+import { MaterialIcons } from "@native-base/icons";
 import { AdmonitionContext } from "./Admonition";
 
 export const Li = ({ children }: any) => {
