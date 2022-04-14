@@ -2126,14 +2126,14 @@
     "@react-types/listbox" "^3.1.1"
     "@react-types/shared" "^3.4.0"
 
-"@react-native-aria/overlays@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@react-native-aria/overlays/-/overlays-0.3.2.tgz#fe3fb983b197738237493c3e5af6b30f6da6be9d"
-  integrity sha512-sc2attCn+stKugBF8ZBz+EIdGoEHU/+NbJc5agS6lZWeemXL5LcgomNf6Tn7RUlpLfWOTEGBQOAiOZxjZnIQmQ==
+"@react-native-aria/overlays@0.3.3-rc.0":
+  version "0.3.3-rc.0"
+  resolved "https://registry.yarnpkg.com/@react-native-aria/overlays/-/overlays-0.3.3-rc.0.tgz#9041ddd6f151e6edb50c971d29920c458aa41459"
+  integrity sha512-RgaIYIHMltt0RdMrVwfXLAVxc22TIUY1Yx07HbQRMdt4LcSmU8pyp5CEtJ/MQCXceuqocnXfsUxyHOSnfhmfpA==
   dependencies:
     "@react-aria/interactions" "^3.3.2"
     "@react-aria/overlays" "^3.7.0"
-    "@react-native-aria/utils" "^0.2.6"
+    "@react-native-aria/utils" "^0.2.8"
     "@react-stately/overlays" "^3.1.1"
     "@react-types/overlays" "^3.4.0"
     dom-helpers "^5.0.0"
@@ -9144,10 +9144,10 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base@3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.3.3.tgz#b75c7ac6b4af97fd9820c4074c3b820a9215588b"
-  integrity sha512-UayjmZQmv5qj/4S5CcdO3rDTrG7ZNmb7mXrp/lMQT6ZKW/0AJJhqALz3r9XqkYMrBQzO8dejBkEhFU+cvusBgA==
+native-base@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.4.1.tgz#cf465eaa22692ba94d04857d1fa4d135d108b569"
+  integrity sha512-nREAuWWfuVh9/BtHE3PHSS8YTnNhYCFEpqqfURRP5R7iArO0ZBeNVH7fmWVcn0H7Qe+7K2sjZQKuQjxDHPvLDA==
   dependencies:
     "@react-aria/focus" "^3.2.3"
     "@react-aria/utils" "^3.6.0"
@@ -9158,7 +9158,7 @@ native-base@3.3.3:
     "@react-native-aria/focus" "^0.2.4"
     "@react-native-aria/interactions" "^0.2.2"
     "@react-native-aria/listbox" "^0.2.4-alpha.3"
-    "@react-native-aria/overlays" "^0.3.2"
+    "@react-native-aria/overlays" "0.3.3-rc.0"
     "@react-native-aria/radio" "^0.2.4"
     "@react-native-aria/slider" "^0.2.5-alpha.1"
     "@react-native-aria/tabs" "^0.2.7"
@@ -9182,7 +9182,6 @@ native-base@3.3.3:
     lodash.omit "^4.5.0"
     lodash.omitby "^4.6.0"
     lodash.pick "^4.4.0"
-    patch-package "^6.4.7"
     react-native-keyboard-aware-scroll-view "^0.9.5"
     stable-hash "^0.0.2"
     tinycolor2 "^1.4.2"
