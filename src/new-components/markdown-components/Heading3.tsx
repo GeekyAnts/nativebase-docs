@@ -1,26 +1,27 @@
-import React from "react";
-import { Heading, HStack, Icon, Link, Pressable } from "native-base";
-import { getHeadingMeta } from "../../utils";
-import { Fontisto } from "@native-base/icons";
+import React from 'react';
+import { Heading, HStack, Icon, Link, Pressable } from 'native-base';
+import { getHeadingMeta } from '../../utils';
+import { Fontisto } from '@native-base/icons';
 export const Heading3 = ({ children }: any) => {
   const [content, id] = getHeadingMeta(children);
   return (
-    <Pressable my="2" _web={{ cursor: "default" }}>
+    // @ts-ignore
+    <Pressable my="2" _web={{ cursor: 'default' }}>
       {({ isHovered }) => {
         return (
           <HStack alignItems="center" space="2">
             <Heading
               fontSize="xl"
               fontWeight="normal"
-              _light={{ color: "gray.700" }}
-              _dark={{ color: "gray.300" }}
+              _light={{ color: 'gray.700' }}
+              _dark={{ color: 'gray.300' }}
               // @ts-ignore
-              nativeID={"h3-" + id}
+              nativeID={'h3-' + id}
             >
               {content}
             </Heading>
             {isHovered && (
-              <Link href={"#" + "h3-" + id}>
+              <Link href={'#' + 'h3-' + id}>
                 <Icon
                   as={Fontisto}
                   name="link"
