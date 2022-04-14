@@ -409,6 +409,10 @@
         {
           "id": "hidden",
           "title": "Hidden"
+        },
+        {
+          "id": "aspect-ratio",
+          "title": "Aspect Ratio"
         }
       ]
     },
@@ -564,10 +568,6 @@
             {
               "id": "building-footer-tabs",
               "title": "Footer"
-            },
-            {
-              "id": "aspect-ratio",
-              "title": "Aspect Ratio"
             }
           ]
         }
