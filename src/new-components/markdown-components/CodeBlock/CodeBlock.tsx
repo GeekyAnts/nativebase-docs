@@ -1,6 +1,6 @@
 import React from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
-import * as expoVectorIcons from "@expo/vector-icons";
+import * as expoVectorIcons from "@native-base/icons";
 
 // ----------------------------------------------- Themes --------------------------------------------------
 
@@ -30,7 +30,7 @@ export const CodeBlock = ({ children, props }: any) => {
       setCopied(false);
     }, 2000);
   }
-  
+
   const bgColor = useColorModeValue("#f9fafb", "#171E2E");
   const borderColor = useColorModeValue("#e5e7eb", "#1e293b");
   return (

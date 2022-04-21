@@ -5,7 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   position: relative;
-  background-color: #0f172a;
+  /* background-color: #0f172a; */
 }
 #nativebase-body-light ::-moz-selection {
   /* Code for Firefox */

@@ -13,7 +13,7 @@ declare module "native-base" {
 
 const config = {
   dependencies: {
-    "linear-gradient": require("expo-linear-gradient").LinearGradient,
+    "linear-gradient": require("react-native-web-linear-gradient").default,
   },
 };
 function MyApp({ Component, pageProps }: AppProps) {
@@ -22,26 +22,31 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   useEffect(() => {
-    document.getElementsByTagName("html")[0].setAttribute("data-theme", "dark");
+    document
+      .getElementsByTagName("html")[0]
+      .setAttribute("data-theme", "light");
   }, []);
 
   const updateActiveVersion = (version: string) => setActiveVersion(version);
+  // return <div>fcvgbhnjk</div>;
   return (
-    <AppContext.Provider
-      value={{
-        activeVersion,
-        setActiveVersion: updateActiveVersion,
-        activeSidebarItem,
-        setActiveSidebarItem,
-        setIsNavbarOpen,
-        isNavbarOpen,
-      }}
-    >
-      {/* @ts-ignore */}
-      <NativeBaseProvider isSSR theme={theme} config={config}>
-        <Component {...pageProps} />
-      </NativeBaseProvider>
-    </AppContext.Provider>
+    <>
+      <AppContext.Provider
+        value={{
+          activeVersion,
+          setActiveVersion: updateActiveVersion,
+          activeSidebarItem,
+          setActiveSidebarItem,
+          setIsNavbarOpen,
+          isNavbarOpen,
+        }}
+      >
+        {/* @ts-ignore */}
+        <NativeBaseProvider isSSR theme={theme} config={config}>
+          <Component {...pageProps} />
+        </NativeBaseProvider>
+      </AppContext.Provider>
+    </>
   );
 }
 

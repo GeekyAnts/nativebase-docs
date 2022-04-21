@@ -1,7 +1,7 @@
 import React from "react";
 import { HStack, Icon, Box, Stack, VStack, Link } from "native-base";
 import NextLink from "next/link";
-import { FontAwesome } from "@expo/vector-icons";
+import { FontAwesome } from "@native-base/icons";
 import { footer } from "../../docs.config";
 
 export default function Footer(props: any) {
