@@ -21,7 +21,7 @@ export const Example = () => {
   const [isOpenTop, setIsOpenTop] = React.useState(false);
   const str = `${isOpenTop ? "Hide" : "Check Internet Connection"}`;
   return (
-    <Box h="32" w="300">
+    <Box h="32" w="300" justifyContent="center">
       <Slide in={isOpenTop} placement="top">
         <Alert justifyContent="center" status="error">
           <Alert.Icon />
@@ -31,7 +31,6 @@ export const Example = () => {
         </Alert>
       </Slide>
       <Button
-        mt="auto"
         onPress={() => setIsOpenTop(!isOpenTop)}
         variant="unstyled"
         bg="coolGray.700:alpha.30"
