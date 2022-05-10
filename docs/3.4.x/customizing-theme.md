@@ -72,6 +72,9 @@ In the above example, the following changes have been made:
 ### Using the new tokens in components
 
 ```jsx isLive
+import React from 'react';
+import {NativeBaseProvider, extendTheme, Box, Center} from "native-base";
+
 export function Example() {
   const theme = extendTheme({
     colors: {
