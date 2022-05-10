@@ -13,7 +13,7 @@ import React from "react";
 import { AntDesign } from "@expo/vector-icons";
 export const Example = () => {
   return (
-    <Box height="200" w="400" shadow="2" rounded="lg" bg="white:alpha.20">
+    <Box height="200" w={[200, 300, 400]} shadow="2" rounded="lg" bg="white:alpha.20">
       <Fab
         renderInPortal={false}
         shadow={2}
