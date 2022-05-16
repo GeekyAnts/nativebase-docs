@@ -1,0 +1,6877 @@
+[
+  { "source": "/3.0.0/", "destination": "/3.0.x/", "permanent": true },
+  {
+    "source": "/3.0.0/accessibility",
+    "destination": "/3.0.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/accordion",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/actionSheet",
+    "destination": "/3.0.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/alert",
+    "destination": "/3.0.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/alertDialog",
+    "destination": "/3.0.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/appBar",
+    "destination": "/3.0.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/appDrawer",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/aspectRatio",
+    "destination": "/3.0.x/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/avatar",
+    "destination": "/3.0.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/badge",
+    "destination": "/3.0.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.0.0/box", "destination": "/3.0.x/box", "permanent": true },
+  {
+    "source": "/3.0.0/breadcrumb",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/breakpoint",
+    "destination": "/3.0.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/buildingAppBar",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/buildingCard",
+    "destination": "/3.0.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/buildingDrawerNavigation",
+    "destination": "/3.0.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/buildingFooterTabs",
+    "destination": "/3.0.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/buildingSearchBar",
+    "destination": "/3.0.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/buildingSwipeList",
+    "destination": "/3.0.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/buildingTabView",
+    "destination": "/3.0.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/button",
+    "destination": "/3.0.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/cascader",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/center",
+    "destination": "/3.0.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/changelog",
+    "destination": "/3.0.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/checkBox",
+    "destination": "/3.0.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/circularProgress",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/closeButton",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  { "source": "/3.0.0/code", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/collapse",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/color-mode",
+    "destination": "/3.0.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/container",
+    "destination": "/3.0.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/customizingComponents",
+    "destination": "/3.0.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/customizingFonts",
+    "destination": "/3.0.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/customizingTheme",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/darkMode",
+    "destination": "/3.0.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/date-picker",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/default-theme",
+    "destination": "/3.0.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/design-tokens",
+    "destination": "/3.0.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/divider",
+    "destination": "/3.0.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.0.0/FAB", "destination": "/3.0.x/fab", "permanent": true },
+  { "source": "/3.0.0/faq", "destination": "/3.0.x/faq", "permanent": true },
+  {
+    "source": "/3.0.0/flatList",
+    "destination": "/3.0.x/flatList",
+    "permanent": true
+  },
+  { "source": "/3.0.0/flex", "destination": "/3.0.x/flex", "permanent": true },
+  { "source": "/3.0.0/form", "destination": "/3.0.x/form", "permanent": true },
+  {
+    "source": "/3.0.0/formControl",
+    "destination": "/3.0.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/heading",
+    "destination": "/3.0.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/hStack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  { "source": "/3.0.0/icon", "destination": "/3.0.x/icon", "permanent": true },
+  {
+    "source": "/3.0.0/iconButton",
+    "destination": "/3.0.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/image",
+    "destination": "/3.0.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/input",
+    "destination": "/3.0.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/install-cra",
+    "destination": "/3.0.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/install-expo",
+    "destination": "/3.0.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/install-next",
+    "destination": "/3.0.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/install-rn",
+    "destination": "/3.0.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/installation",
+    "destination": "/3.0.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/interaction-styles",
+    "destination": "/3.0.x/interaction-styles",
+    "permanent": true
+  },
+  { "source": "/3.0.0/Kbd", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/keyboardAvoidingView",
+    "destination": "/3.0.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  { "source": "/3.0.0/link", "destination": "/3.0.x/link", "permanent": true },
+  { "source": "/3.0.0/list", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/loginsignupforms",
+    "destination": "/3.0.x/login-signup-forms",
+    "permanent": true
+  },
+  { "source": "/3.0.0/menu", "destination": "/3.0.x/menu", "permanent": true },
+  {
+    "source": "/3.0.0/migration/Accordion",
+    "destination": "/3.0.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Actionsheet",
+    "destination": "/3.0.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Badge",
+    "destination": "/3.0.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Button",
+    "destination": "/3.0.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Card",
+    "destination": "/3.0.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Checkbox",
+    "destination": "/3.0.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/DatePicker",
+    "destination": "/3.0.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/DeckSwiper",
+    "destination": "/3.0.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Drawer",
+    "destination": "/3.0.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/FABs",
+    "destination": "/3.0.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/FooterTab",
+    "destination": "/3.0.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Form",
+    "destination": "/3.0.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Guide",
+    "destination": "/3.0.x/migration/guide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Header",
+    "destination": "/3.0.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Icon",
+    "destination": "/3.0.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Layout",
+    "destination": "/3.0.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/List",
+    "destination": "/3.0.x/migration/list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Picker",
+    "destination": "/3.0.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Radio%20Button",
+    "destination": "/3.0.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Searchbar",
+    "destination": "/3.0.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Segment",
+    "destination": "/3.0.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Spinner",
+    "destination": "/3.0.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/SwipeList",
+    "destination": "/3.0.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Tabs",
+    "destination": "/3.0.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Thumbnail",
+    "destination": "/3.0.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Toast",
+    "destination": "/3.0.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/migration/Typography",
+    "destination": "/3.0.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/modal",
+    "destination": "/3.0.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/nativebase-factory",
+    "destination": "/3.0.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/nativebase-formik-ui",
+    "destination": "/3.0.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/numberInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/overlay",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/pagination",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/pinInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/popOver",
+    "destination": "/3.0.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/presence-transition",
+    "destination": "/3.0.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/pressable",
+    "destination": "/3.0.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/progress",
+    "destination": "/3.0.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/radio",
+    "destination": "/3.0.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/react-hook-forms",
+    "destination": "/3.0.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/responsive-style",
+    "destination": "/3.0.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/safe-area-view-props",
+    "destination": "/3.0.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/scrollview",
+    "destination": "/3.0.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/sectionList",
+    "destination": "/3.0.x/sectionList",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/select",
+    "destination": "/3.0.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/setup-provider",
+    "destination": "/3.0.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/simpleGrid",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/skeleton",
+    "destination": "/3.0.x/skeleton",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/slide",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/slider",
+    "destination": "/3.0.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/snackBar",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/spinner",
+    "destination": "/3.0.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/stack",
+    "destination": "/3.0.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/stagger",
+    "destination": "/3.0.x/stagger",
+    "permanent": true
+  },
+  { "source": "/3.0.0/stat", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/statusBar",
+    "destination": "/3.0.x/statusBar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/swipable-list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/switch",
+    "destination": "/3.0.x/switch",
+    "permanent": true
+  },
+  { "source": "/3.0.0/tabs", "destination": "/3.0.x/blocked-components", "permanent": true },
+  { "source": "/3.0.0/tag", "destination": "/3.0.x/blocked-components", "permanent": true },
+  { "source": "/3.0.0/text", "destination": "/3.0.x/text", "permanent": true },
+  {
+    "source": "/3.0.0/textArea",
+    "destination": "/3.0.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/textField",
+    "destination": "/3.0.x/textField",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/theme",
+    "destination": "/3.0.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/toast",
+    "destination": "/3.0.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/todo-example",
+    "destination": "/3.0.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/tooltip",
+    "destination": "/3.0.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/transition",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/typeAhead",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-accessible-colors",
+    "destination": "/3.0.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-breakPoint-value",
+    "destination": "/3.0.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-clipboard",
+    "destination": "/3.0.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-color-mode",
+    "destination": "/3.0.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-color-mode-value",
+    "destination": "/3.0.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-contrast-text",
+    "destination": "/3.0.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-disclosure",
+    "destination": "/3.0.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-media-query",
+    "destination": "/3.0.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-popOver",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-theme",
+    "destination": "/3.0.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/use-token",
+    "destination": "/3.0.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/utility-first",
+    "destination": "/3.0.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0/utility-props",
+    "destination": "/3.0.x/utility-props",
+    "permanent": true
+  },
+  { "source": "/3.0.0/view", "destination": "/3.0.x/view", "permanent": true },
+  {
+    "source": "/3.0.0/VStack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  { "source": "/3.0.0/wrap", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.0/ZStack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/accessibility",
+    "destination": "/3.0.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/accordion",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/actionSheet",
+    "destination": "/3.0.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/alert",
+    "destination": "/3.0.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/alertDialog",
+    "destination": "/3.0.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/appBar",
+    "destination": "/3.0.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/appDrawer",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/aspectRatio",
+    "destination": "/3.0.x/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/avatar",
+    "destination": "/3.0.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/badge",
+    "destination": "/3.0.x/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/box",
+    "destination": "/3.0.x/box",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/breadcrumb",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/breakpoint",
+    "destination": "/3.0.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/buildingCard",
+    "destination": "/3.0.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/buildingSearchBar",
+    "destination": "/3.0.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/button",
+    "destination": "/3.0.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/cascader",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/center",
+    "destination": "/3.0.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/changelog",
+    "destination": "/3.0.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/checkBox",
+    "destination": "/3.0.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/circularProgress",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/closeButton",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/code",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/collapse",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/color-mode",
+    "destination": "/3.0.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/container",
+    "destination": "/3.0.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/customizingComponents",
+    "destination": "/3.0.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/customizingTheme",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/darkMode",
+    "destination": "/3.0.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/date-picker",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/default-theme",
+    "destination": "/3.0.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/divider",
+    "destination": "/3.0.x/divider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/FAB",
+    "destination": "/3.0.x/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/faq",
+    "destination": "/3.0.x/faq",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/flex",
+    "destination": "/3.0.x/flex",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/form",
+    "destination": "/3.0.x/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/formControl",
+    "destination": "/3.0.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/heading",
+    "destination": "/3.0.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/hStack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/icon",
+    "destination": "/3.0.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/iconButton",
+    "destination": "/3.0.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/image",
+    "destination": "/3.0.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/input",
+    "destination": "/3.0.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/installation",
+    "destination": "/3.0.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/Kbd",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/link",
+    "destination": "/3.0.x/link",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/menu",
+    "destination": "/3.0.x/menu",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Accordion",
+    "destination": "/3.0.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Actionsheet",
+    "destination": "/3.0.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Badge",
+    "destination": "/3.0.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Button",
+    "destination": "/3.0.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Card",
+    "destination": "/3.0.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Checkbox",
+    "destination": "/3.0.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/FABs",
+    "destination": "/3.0.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Footer%20Tab",
+    "destination": "/3.0.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Header",
+    "destination": "/3.0.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Icon",
+    "destination": "/3.0.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Layout",
+    "destination": "/3.0.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Picker",
+    "destination": "/3.0.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Radio%20Button",
+    "destination": "/3.0.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Searchbar",
+    "destination": "/3.0.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Spinner",
+    "destination": "/3.0.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Tabs",
+    "destination": "/3.0.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Thumbnail",
+    "destination": "/3.0.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Toast",
+    "destination": "/3.0.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/migration/Typography",
+    "destination": "/3.0.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/modal",
+    "destination": "/3.0.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/nativebase",
+    "destination": "/3.0.x/",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/nativebase-factory",
+    "destination": "/3.0.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/nativebase-formik-ui",
+    "destination": "/3.0.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/numberInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/overlay",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/pagination",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/pinInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/popOver",
+    "destination": "/3.0.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/progress",
+    "destination": "/3.0.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/radio",
+    "destination": "/3.0.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/react-hook-forms",
+    "destination": "/3.0.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/responsive-style",
+    "destination": "/3.0.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/safe-area-view-props",
+    "destination": "/3.0.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/select",
+    "destination": "/3.0.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/setup-provider",
+    "destination": "/3.0.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/simpleGrid",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/skeleton",
+    "destination": "/3.0.x/skeleton",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/slider",
+    "destination": "/3.0.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/snackBar",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/spinner",
+    "destination": "/3.0.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/stack",
+    "destination": "/3.0.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/stat",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/swipable-list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/switch",
+    "destination": "/3.0.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/tabs",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/tag",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/text",
+    "destination": "/3.0.x/text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/textArea",
+    "destination": "/3.0.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/theme",
+    "destination": "/3.0.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/toast",
+    "destination": "/3.0.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/todo-example",
+    "destination": "/3.0.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/transition",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/typeAhead",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-accessible-colors",
+    "destination": "/3.0.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-breakPoint-value",
+    "destination": "/3.0.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-clipboard",
+    "destination": "/3.0.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-color-mode",
+    "destination": "/3.0.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-color-mode-value",
+    "destination": "/3.0.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-contrast-text",
+    "destination": "/3.0.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-disclosure",
+    "destination": "/3.0.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-media-query",
+    "destination": "/3.0.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-popOver",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-theme",
+    "destination": "/3.0.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/use-token",
+    "destination": "/3.0.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/view",
+    "destination": "/3.0.x/view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/VStack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/wrap",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.36/ZStack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/",
+    "destination": "/3.0.x/",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/accessibility",
+    "destination": "/3.0.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/accordion",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/actionSheet",
+    "destination": "/3.0.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/alert",
+    "destination": "/3.0.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/alertDialog",
+    "destination": "/3.0.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/appBar",
+    "destination": "/3.0.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/appDrawer",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/aspectRatio",
+    "destination": "/3.0.x/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/avatar",
+    "destination": "/3.0.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/badge",
+    "destination": "/3.0.x/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/box",
+    "destination": "/3.0.x/box",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/breadcrumb",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/breakpoint",
+    "destination": "/3.0.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/buildingAppBar",
+    "destination": "/3.0.x/buildingAppBar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/buildingCard",
+    "destination": "/3.0.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/buildingSearchBar",
+    "destination": "/3.0.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/button",
+    "destination": "/3.0.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/cascader",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/center",
+    "destination": "/3.0.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/changelog",
+    "destination": "/3.0.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/checkBox",
+    "destination": "/3.0.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/circularProgress",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/closeButton",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/code",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/collapse",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/color-mode",
+    "destination": "/3.0.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/container",
+    "destination": "/3.0.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/customizingComponents",
+    "destination": "/3.0.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/customizingTheme",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/darkMode",
+    "destination": "/3.0.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/date-picker",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/default-theme",
+    "destination": "/3.0.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/divider",
+    "destination": "/3.0.x/divider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/FAB",
+    "destination": "/3.0.x/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/faq",
+    "destination": "/3.0.x/faq",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/flex",
+    "destination": "/3.0.x/flex",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/form",
+    "destination": "/3.0.x/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/formControl",
+    "destination": "/3.0.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/heading",
+    "destination": "/3.0.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/hStack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/icon",
+    "destination": "/3.0.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/iconButton",
+    "destination": "/3.0.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/image",
+    "destination": "/3.0.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/input",
+    "destination": "/3.0.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/installation",
+    "destination": "/3.0.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/Kbd",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/link",
+    "destination": "/3.0.x/link",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/menu",
+    "destination": "/3.0.x/menu",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Accordion",
+    "destination": "/3.0.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Actionsheet",
+    "destination": "/3.0.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Badge",
+    "destination": "/3.0.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Button",
+    "destination": "/3.0.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Card",
+    "destination": "/3.0.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Checkbox",
+    "destination": "/3.0.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/FABs",
+    "destination": "/3.0.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Footer%20Tab",
+    "destination": "/3.0.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Header",
+    "destination": "/3.0.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Icon",
+    "destination": "/3.0.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Layout",
+    "destination": "/3.0.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Picker",
+    "destination": "/3.0.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Radio%20Button",
+    "destination": "/3.0.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Searchbar",
+    "destination": "/3.0.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Spinner",
+    "destination": "/3.0.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Tabs",
+    "destination": "/3.0.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Thumbnail",
+    "destination": "/3.0.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Toast",
+    "destination": "/3.0.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/migration/Typography",
+    "destination": "/3.0.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/modal",
+    "destination": "/3.0.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/nativebase-factory",
+    "destination": "/3.0.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/nativebase-formik-ui",
+    "destination": "/3.0.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/numberInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/overlay",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/pagination",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/pinInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/popOver",
+    "destination": "/3.0.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/progress",
+    "destination": "/3.0.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/radio",
+    "destination": "/3.0.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/react-hook-forms",
+    "destination": "/3.0.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/responsive-style",
+    "destination": "/3.0.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/safe-area-view-props",
+    "destination": "/3.0.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/select",
+    "destination": "/3.0.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/setup-provider",
+    "destination": "/3.0.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/simpleGrid",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/skeleton",
+    "destination": "/3.0.x/skeleton",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/slider",
+    "destination": "/3.0.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/snackBar",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/spinner",
+    "destination": "/3.0.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/stack",
+    "destination": "/3.0.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/stat",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/swipable-list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/switch",
+    "destination": "/3.0.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/tabs",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/tag",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/text",
+    "destination": "/3.0.x/text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/textArea",
+    "destination": "/3.0.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/textField",
+    "destination": "/3.0.x/textField",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/theme",
+    "destination": "/3.0.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/toast",
+    "destination": "/3.0.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/todo-example",
+    "destination": "/3.0.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/tooltip",
+    "destination": "/3.0.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/transition",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/typeAhead",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-accessible-colors",
+    "destination": "/3.0.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-breakPoint-value",
+    "destination": "/3.0.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-clipboard",
+    "destination": "/3.0.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-color-mode",
+    "destination": "/3.0.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-color-mode-value",
+    "destination": "/3.0.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-contrast-text",
+    "destination": "/3.0.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-disclosure",
+    "destination": "/3.0.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-media-query",
+    "destination": "/3.0.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-popOver",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-theme",
+    "destination": "/3.0.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/use-token",
+    "destination": "/3.0.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/utility-props",
+    "destination": "/3.0.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/view",
+    "destination": "/3.0.x/view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/VStack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/wrap",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.37/ZStack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/",
+    "destination": "/3.0.x/",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/accessibility",
+    "destination": "/3.0.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/accordion",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/actionSheet",
+    "destination": "/3.0.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/alert",
+    "destination": "/3.0.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/alertDialog",
+    "destination": "/3.0.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/appBar",
+    "destination": "/3.0.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/appDrawer",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/aspectRatio",
+    "destination": "/3.0.x/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/avatar",
+    "destination": "/3.0.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/badge",
+    "destination": "/3.0.x/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/box",
+    "destination": "/3.0.x/box",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/breadcrumb",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/breakpoint",
+    "destination": "/3.0.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/buildingAppBar",
+    "destination": "/3.0.x/buildingAppBar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/buildingCard",
+    "destination": "/3.0.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/buildingSearchBar",
+    "destination": "/3.0.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/button",
+    "destination": "/3.0.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/cascader",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/center",
+    "destination": "/3.0.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/changelog",
+    "destination": "/3.0.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/checkBox",
+    "destination": "/3.0.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/circularProgress",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/closeButton",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/code",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/collapse",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/color-mode",
+    "destination": "/3.0.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/container",
+    "destination": "/3.0.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/customizingComponents",
+    "destination": "/3.0.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/customizingFonts",
+    "destination": "/3.0.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/customizingTheme",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/darkMode",
+    "destination": "/3.0.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/date-picker",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/default-theme",
+    "destination": "/3.0.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/divider",
+    "destination": "/3.0.x/divider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/FAB",
+    "destination": "/3.0.x/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/faq",
+    "destination": "/3.0.x/faq",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/flex",
+    "destination": "/3.0.x/flex",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/form",
+    "destination": "/3.0.x/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/formControl",
+    "destination": "/3.0.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/heading",
+    "destination": "/3.0.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/hStack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/icon",
+    "destination": "/3.0.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/iconButton",
+    "destination": "/3.0.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/image",
+    "destination": "/3.0.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/input",
+    "destination": "/3.0.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/installation",
+    "destination": "/3.0.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/Kbd",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/link",
+    "destination": "/3.0.x/link",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/menu",
+    "destination": "/3.0.x/menu",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Accordion",
+    "destination": "/3.0.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Actionsheet",
+    "destination": "/3.0.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Badge",
+    "destination": "/3.0.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Button",
+    "destination": "/3.0.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Card",
+    "destination": "/3.0.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Checkbox",
+    "destination": "/3.0.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/FABs",
+    "destination": "/3.0.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Footer%20Tab",
+    "destination": "/3.0.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Header",
+    "destination": "/3.0.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Icon",
+    "destination": "/3.0.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Layout",
+    "destination": "/3.0.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Picker",
+    "destination": "/3.0.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Radio%20Button",
+    "destination": "/3.0.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Searchbar",
+    "destination": "/3.0.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Spinner",
+    "destination": "/3.0.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Tabs",
+    "destination": "/3.0.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Thumbnail",
+    "destination": "/3.0.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Toast",
+    "destination": "/3.0.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/migration/Typography",
+    "destination": "/3.0.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/modal",
+    "destination": "/3.0.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/nativebase-factory",
+    "destination": "/3.0.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/nativebase-formik-ui",
+    "destination": "/3.0.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/numberInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/overlay",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/pagination",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/pinInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/popOver",
+    "destination": "/3.0.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/presence-transition",
+    "destination": "/3.0.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/pressable",
+    "destination": "/3.0.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/progress",
+    "destination": "/3.0.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/radio",
+    "destination": "/3.0.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/react-hook-forms",
+    "destination": "/3.0.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/responsive-style",
+    "destination": "/3.0.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/safe-area-view-props",
+    "destination": "/3.0.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/select",
+    "destination": "/3.0.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/setup-provider",
+    "destination": "/3.0.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/simpleGrid",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/skeleton",
+    "destination": "/3.0.x/skeleton",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/slide",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/slider",
+    "destination": "/3.0.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/snackBar",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/spinner",
+    "destination": "/3.0.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/stack",
+    "destination": "/3.0.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/stagger",
+    "destination": "/3.0.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/stat",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/swipable-list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/switch",
+    "destination": "/3.0.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/tabs",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/tag",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/text",
+    "destination": "/3.0.x/text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/textArea",
+    "destination": "/3.0.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/textField",
+    "destination": "/3.0.x/textField",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/theme",
+    "destination": "/3.0.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/toast",
+    "destination": "/3.0.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/todo-example",
+    "destination": "/3.0.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/tooltip",
+    "destination": "/3.0.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/transition",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/typeAhead",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-accessible-colors",
+    "destination": "/3.0.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-breakPoint-value",
+    "destination": "/3.0.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-clipboard",
+    "destination": "/3.0.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-color-mode",
+    "destination": "/3.0.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-color-mode-value",
+    "destination": "/3.0.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-contrast-text",
+    "destination": "/3.0.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-disclosure",
+    "destination": "/3.0.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-media-query",
+    "destination": "/3.0.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-popOver",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-theme",
+    "destination": "/3.0.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/use-token",
+    "destination": "/3.0.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/utility-props",
+    "destination": "/3.0.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/view",
+    "destination": "/3.0.x/view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/VStack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/wrap",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.38/ZStack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/",
+    "destination": "/3.0.x/",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/accessibility",
+    "destination": "/3.0.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/accordion",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/actionSheet",
+    "destination": "/3.0.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/alert",
+    "destination": "/3.0.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/alertDialog",
+    "destination": "/3.0.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/appBar",
+    "destination": "/3.0.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/appDrawer",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/aspectRatio",
+    "destination": "/3.0.x/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/avatar",
+    "destination": "/3.0.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/badge",
+    "destination": "/3.0.x/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/box",
+    "destination": "/3.0.x/box",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/breadcrumb",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/breakpoint",
+    "destination": "/3.0.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/buildingAppBar",
+    "destination": "/3.0.x/buildingAppBar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/buildingCard",
+    "destination": "/3.0.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/buildingSearchBar",
+    "destination": "/3.0.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/button",
+    "destination": "/3.0.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/cascader",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/center",
+    "destination": "/3.0.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/changelog",
+    "destination": "/3.0.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/checkBox",
+    "destination": "/3.0.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/circularProgress",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/closeButton",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/code",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/collapse",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/color-mode",
+    "destination": "/3.0.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/container",
+    "destination": "/3.0.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/customizingComponents",
+    "destination": "/3.0.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/customizingFonts",
+    "destination": "/3.0.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/customizingTheme",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/darkMode",
+    "destination": "/3.0.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/date-picker",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/default-theme",
+    "destination": "/3.0.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/divider",
+    "destination": "/3.0.x/divider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/FAB",
+    "destination": "/3.0.x/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/faq",
+    "destination": "/3.0.x/faq",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/flex",
+    "destination": "/3.0.x/flex",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/form",
+    "destination": "/3.0.x/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/formControl",
+    "destination": "/3.0.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/heading",
+    "destination": "/3.0.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/hStack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/icon",
+    "destination": "/3.0.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/iconButton",
+    "destination": "/3.0.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/image",
+    "destination": "/3.0.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/input",
+    "destination": "/3.0.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/installation",
+    "destination": "/3.0.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/Kbd",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/link",
+    "destination": "/3.0.x/link",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/menu",
+    "destination": "/3.0.x/menu",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Accordion",
+    "destination": "/3.0.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Actionsheet",
+    "destination": "/3.0.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Badge",
+    "destination": "/3.0.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Button",
+    "destination": "/3.0.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Card",
+    "destination": "/3.0.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Checkbox",
+    "destination": "/3.0.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/FABs",
+    "destination": "/3.0.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Footer%20Tab",
+    "destination": "/3.0.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Header",
+    "destination": "/3.0.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Icon",
+    "destination": "/3.0.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Layout",
+    "destination": "/3.0.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Picker",
+    "destination": "/3.0.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Radio%20Button",
+    "destination": "/3.0.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Searchbar",
+    "destination": "/3.0.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Spinner",
+    "destination": "/3.0.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Tabs",
+    "destination": "/3.0.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Thumbnail",
+    "destination": "/3.0.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Toast",
+    "destination": "/3.0.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/migration/Typography",
+    "destination": "/3.0.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/modal",
+    "destination": "/3.0.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/nativebase-factory",
+    "destination": "/3.0.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/nativebase-formik-ui",
+    "destination": "/3.0.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/numberInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/overlay",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/pagination",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/pinInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/popOver",
+    "destination": "/3.0.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/presence-transition",
+    "destination": "/3.0.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/pressable",
+    "destination": "/3.0.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/progress",
+    "destination": "/3.0.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/radio",
+    "destination": "/3.0.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/react-hook-forms",
+    "destination": "/3.0.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/responsive-style",
+    "destination": "/3.0.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/safe-area-view-props",
+    "destination": "/3.0.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/select",
+    "destination": "/3.0.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/setup-provider",
+    "destination": "/3.0.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/simpleGrid",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/skeleton",
+    "destination": "/3.0.x/skeleton",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/slide",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/slider",
+    "destination": "/3.0.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/snackBar",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/spinner",
+    "destination": "/3.0.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/stack",
+    "destination": "/3.0.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/stagger",
+    "destination": "/3.0.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/stat",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/swipable-list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/switch",
+    "destination": "/3.0.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/tabs",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/tag",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/text",
+    "destination": "/3.0.x/text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/textArea",
+    "destination": "/3.0.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/textField",
+    "destination": "/3.0.x/textField",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/theme",
+    "destination": "/3.0.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/toast",
+    "destination": "/3.0.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/todo-example",
+    "destination": "/3.0.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/tooltip",
+    "destination": "/3.0.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/transition",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/typeAhead",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-accessible-colors",
+    "destination": "/3.0.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-breakPoint-value",
+    "destination": "/3.0.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-clipboard",
+    "destination": "/3.0.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-color-mode",
+    "destination": "/3.0.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-color-mode-value",
+    "destination": "/3.0.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-contrast-text",
+    "destination": "/3.0.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-disclosure",
+    "destination": "/3.0.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-media-query",
+    "destination": "/3.0.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-popOver",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-theme",
+    "destination": "/3.0.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/use-token",
+    "destination": "/3.0.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/utility-props",
+    "destination": "/3.0.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/view",
+    "destination": "/3.0.x/view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/VStack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/wrap",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.0-next.40/ZStack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  { "source": "/3.0.3/", "destination": "/3.0.x/", "permanent": true },
+  {
+    "source": "/3.0.3/accessibility",
+    "destination": "/3.0.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/accordion",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/actionSheet",
+    "destination": "/3.0.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/alert",
+    "destination": "/3.0.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/alertDialog",
+    "destination": "/3.0.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/appBar",
+    "destination": "/3.0.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/appDrawer",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/aspectRatio",
+    "destination": "/3.0.x/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/avatar",
+    "destination": "/3.0.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/badge",
+    "destination": "/3.0.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.0.3/box", "destination": "/3.0.x/box", "permanent": true },
+  {
+    "source": "/3.0.3/breadcrumb",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/breakpoint",
+    "destination": "/3.0.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/buildingAppBar",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/buildingCard",
+    "destination": "/3.0.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/buildingDrawerNavigation",
+    "destination": "/3.0.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/buildingFooterTabs",
+    "destination": "/3.0.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/buildingSearchBar",
+    "destination": "/3.0.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/buildingSwipeList",
+    "destination": "/3.0.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/buildingTabView",
+    "destination": "/3.0.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/button",
+    "destination": "/3.0.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/cascader",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/center",
+    "destination": "/3.0.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/changelog",
+    "destination": "/3.0.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/checkBox",
+    "destination": "/3.0.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/circularProgress",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/closeButton",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  { "source": "/3.0.3/code", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/collapse",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/color-mode",
+    "destination": "/3.0.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/container",
+    "destination": "/3.0.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/customizingComponents",
+    "destination": "/3.0.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/customizingFonts",
+    "destination": "/3.0.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/customizingTheme",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/darkMode",
+    "destination": "/3.0.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/date-picker",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/default-theme",
+    "destination": "/3.0.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/design-tokens",
+    "destination": "/3.0.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/divider",
+    "destination": "/3.0.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.0.3/FAB", "destination": "/3.0.x/fab", "permanent": true },
+  { "source": "/3.0.3/faq", "destination": "/3.0.x/faq", "permanent": true },
+  {
+    "source": "/3.0.3/flatList",
+    "destination": "/3.0.x/flatList",
+    "permanent": true
+  },
+  { "source": "/3.0.3/flex", "destination": "/3.0.x/flex", "permanent": true },
+  { "source": "/3.0.3/form", "destination": "/3.0.x/form", "permanent": true },
+  {
+    "source": "/3.0.3/formControl",
+    "destination": "/3.0.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/heading",
+    "destination": "/3.0.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/hStack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  { "source": "/3.0.3/icon", "destination": "/3.0.x/icon", "permanent": true },
+  {
+    "source": "/3.0.3/iconButton",
+    "destination": "/3.0.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/image",
+    "destination": "/3.0.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/input",
+    "destination": "/3.0.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/install-cra",
+    "destination": "/3.0.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/install-expo",
+    "destination": "/3.0.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/install-next",
+    "destination": "/3.0.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/install-rn",
+    "destination": "/3.0.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/installation",
+    "destination": "/3.0.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/interaction-styles",
+    "destination": "/3.0.x/interaction-styles",
+    "permanent": true
+  },
+  { "source": "/3.0.3/Kbd", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/keyboardAvoidingView",
+    "destination": "/3.0.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/kitchen-sink",
+    "destination": "/3.0.x/kitchen-sink",
+    "permanent": true
+  },
+  { "source": "/3.0.3/link", "destination": "/3.0.x/link", "permanent": true },
+  { "source": "/3.0.3/list", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/loginsignupforms",
+    "destination": "/3.0.x/login-signup-forms",
+    "permanent": true
+  },
+  { "source": "/3.0.3/menu", "destination": "/3.0.x/menu", "permanent": true },
+  {
+    "source": "/3.0.3/migration/Accordion",
+    "destination": "/3.0.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Actionsheet",
+    "destination": "/3.0.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Badge",
+    "destination": "/3.0.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Button",
+    "destination": "/3.0.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Card",
+    "destination": "/3.0.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Checkbox",
+    "destination": "/3.0.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/DatePicker",
+    "destination": "/3.0.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/DeckSwiper",
+    "destination": "/3.0.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Drawer",
+    "destination": "/3.0.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/FABs",
+    "destination": "/3.0.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/FooterTab",
+    "destination": "/3.0.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Form",
+    "destination": "/3.0.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Guide",
+    "destination": "/3.0.x/migration/guide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Header",
+    "destination": "/3.0.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Icon",
+    "destination": "/3.0.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Layout",
+    "destination": "/3.0.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/List",
+    "destination": "/3.0.x/migration/list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Picker",
+    "destination": "/3.0.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Radio%20Button",
+    "destination": "/3.0.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Searchbar",
+    "destination": "/3.0.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Segment",
+    "destination": "/3.0.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Spinner",
+    "destination": "/3.0.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/SwipeList",
+    "destination": "/3.0.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Tabs",
+    "destination": "/3.0.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Thumbnail",
+    "destination": "/3.0.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Toast",
+    "destination": "/3.0.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/migration/Typography",
+    "destination": "/3.0.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/modal",
+    "destination": "/3.0.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/nativebase-factory",
+    "destination": "/3.0.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/nativebase-formik-ui",
+    "destination": "/3.0.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/numberInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/overlay",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/pagination",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/pinInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/popOver",
+    "destination": "/3.0.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/presence-transition",
+    "destination": "/3.0.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/pressable",
+    "destination": "/3.0.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/progress",
+    "destination": "/3.0.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/radio",
+    "destination": "/3.0.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/react-hook-forms",
+    "destination": "/3.0.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/responsive-style",
+    "destination": "/3.0.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/safe-area-view-props",
+    "destination": "/3.0.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/scrollview",
+    "destination": "/3.0.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/sectionList",
+    "destination": "/3.0.x/sectionList",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/select",
+    "destination": "/3.0.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/setup-provider",
+    "destination": "/3.0.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/simpleGrid",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/skeleton",
+    "destination": "/3.0.x/skeleton",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/slide",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/slider",
+    "destination": "/3.0.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/snackBar",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/spinner",
+    "destination": "/3.0.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/stack",
+    "destination": "/3.0.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/stagger",
+    "destination": "/3.0.x/stagger",
+    "permanent": true
+  },
+  { "source": "/3.0.3/stat", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/statusBar",
+    "destination": "/3.0.x/statusBar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/swipable-list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/switch",
+    "destination": "/3.0.x/switch",
+    "permanent": true
+  },
+  { "source": "/3.0.3/tabs", "destination": "/3.0.x/blocked-components", "permanent": true },
+  { "source": "/3.0.3/tag", "destination": "/3.0.x/blocked-components", "permanent": true },
+  { "source": "/3.0.3/text", "destination": "/3.0.x/text", "permanent": true },
+  {
+    "source": "/3.0.3/textArea",
+    "destination": "/3.0.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/textField",
+    "destination": "/3.0.x/textField",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/theme",
+    "destination": "/3.0.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/toast",
+    "destination": "/3.0.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/todo-example",
+    "destination": "/3.0.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/tooltip",
+    "destination": "/3.0.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/transition",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/typeAhead",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-accessible-colors",
+    "destination": "/3.0.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-breakPoint-value",
+    "destination": "/3.0.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-clipboard",
+    "destination": "/3.0.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-color-mode",
+    "destination": "/3.0.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-color-mode-value",
+    "destination": "/3.0.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-contrast-text",
+    "destination": "/3.0.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-disclosure",
+    "destination": "/3.0.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-media-query",
+    "destination": "/3.0.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-popOver",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-theme",
+    "destination": "/3.0.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/use-token",
+    "destination": "/3.0.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/utility-first",
+    "destination": "/3.0.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.3/utility-props",
+    "destination": "/3.0.x/utility-props",
+    "permanent": true
+  },
+  { "source": "/3.0.3/view", "destination": "/3.0.x/view", "permanent": true },
+  {
+    "source": "/3.0.3/VStack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  { "source": "/3.0.3/wrap", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.3/ZStack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  { "source": "/3.0.6/", "destination": "/3.0.x/", "permanent": true },
+  {
+    "source": "/3.0.6/accessibility",
+    "destination": "/3.0.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/accordion",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/actionSheet",
+    "destination": "/3.0.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/alert",
+    "destination": "/3.0.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/alertDialog",
+    "destination": "/3.0.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/appBar",
+    "destination": "/3.0.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/appDrawer",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/aspectRatio",
+    "destination": "/3.0.x/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/avatar",
+    "destination": "/3.0.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/badge",
+    "destination": "/3.0.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.0.6/box", "destination": "/3.0.x/box", "permanent": true },
+  {
+    "source": "/3.0.6/breadcrumb",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/breakpoint",
+    "destination": "/3.0.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/buildingAppBar",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/buildingCard",
+    "destination": "/3.0.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/buildingDrawerNavigation",
+    "destination": "/3.0.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/buildingFooterTabs",
+    "destination": "/3.0.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/buildingSearchBar",
+    "destination": "/3.0.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/buildingSwipeList",
+    "destination": "/3.0.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/buildingTabView",
+    "destination": "/3.0.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/button",
+    "destination": "/3.0.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/cascader",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/center",
+    "destination": "/3.0.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/changelog",
+    "destination": "/3.0.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/checkBox",
+    "destination": "/3.0.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/circularProgress",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/closeButton",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  { "source": "/3.0.6/code", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/collapse",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/color-mode",
+    "destination": "/3.0.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/container",
+    "destination": "/3.0.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/customizingComponents",
+    "destination": "/3.0.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/customizingFonts",
+    "destination": "/3.0.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/customizingTheme",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/darkMode",
+    "destination": "/3.0.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/date-picker",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/default-theme",
+    "destination": "/3.0.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/design-tokens",
+    "destination": "/3.0.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/divider",
+    "destination": "/3.0.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.0.6/FAB", "destination": "/3.0.x/fab", "permanent": true },
+  { "source": "/3.0.6/faq", "destination": "/3.0.x/faq", "permanent": true },
+  {
+    "source": "/3.0.6/flatList",
+    "destination": "/3.0.x/flatList",
+    "permanent": true
+  },
+  { "source": "/3.0.6/flex", "destination": "/3.0.x/flex", "permanent": true },
+  { "source": "/3.0.6/form", "destination": "/3.0.x/form", "permanent": true },
+  {
+    "source": "/3.0.6/formControl",
+    "destination": "/3.0.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/heading",
+    "destination": "/3.0.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/hStack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  { "source": "/3.0.6/icon", "destination": "/3.0.x/icon", "permanent": true },
+  {
+    "source": "/3.0.6/iconButton",
+    "destination": "/3.0.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/image",
+    "destination": "/3.0.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/input",
+    "destination": "/3.0.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/install-cra",
+    "destination": "/3.0.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/install-expo",
+    "destination": "/3.0.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/install-next",
+    "destination": "/3.0.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/install-rn",
+    "destination": "/3.0.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/installation",
+    "destination": "/3.0.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/interaction-styles",
+    "destination": "/3.0.x/interaction-styles",
+    "permanent": true
+  },
+  { "source": "/3.0.6/Kbd", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/keyboardAvoidingView",
+    "destination": "/3.0.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/kitchen-sink",
+    "destination": "/3.0.x/kitchen-sink",
+    "permanent": true
+  },
+  { "source": "/3.0.6/link", "destination": "/3.0.x/link", "permanent": true },
+  { "source": "/3.0.6/list", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/loginsignupforms",
+    "destination": "/3.0.x/login-signup-forms",
+    "permanent": true
+  },
+  { "source": "/3.0.6/menu", "destination": "/3.0.x/menu", "permanent": true },
+  {
+    "source": "/3.0.6/migration/Accordion",
+    "destination": "/3.0.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Actionsheet",
+    "destination": "/3.0.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Badge",
+    "destination": "/3.0.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Button",
+    "destination": "/3.0.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Card",
+    "destination": "/3.0.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Checkbox",
+    "destination": "/3.0.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/DatePicker",
+    "destination": "/3.0.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/DeckSwiper",
+    "destination": "/3.0.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Drawer",
+    "destination": "/3.0.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/FABs",
+    "destination": "/3.0.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/FooterTab",
+    "destination": "/3.0.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Form",
+    "destination": "/3.0.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Guide",
+    "destination": "/3.0.x/migration/guide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Header",
+    "destination": "/3.0.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Icon",
+    "destination": "/3.0.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Layout",
+    "destination": "/3.0.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/List",
+    "destination": "/3.0.x/migration/list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Picker",
+    "destination": "/3.0.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Radio%20Button",
+    "destination": "/3.0.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Searchbar",
+    "destination": "/3.0.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Segment",
+    "destination": "/3.0.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Spinner",
+    "destination": "/3.0.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/SwipeList",
+    "destination": "/3.0.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Tabs",
+    "destination": "/3.0.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Thumbnail",
+    "destination": "/3.0.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Toast",
+    "destination": "/3.0.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/migration/Typography",
+    "destination": "/3.0.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/modal",
+    "destination": "/3.0.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/nativebase-factory",
+    "destination": "/3.0.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/nativebase-formik-ui",
+    "destination": "/3.0.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/numberInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/overlay",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/pagination",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/pinInput",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/popOver",
+    "destination": "/3.0.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/presence-transition",
+    "destination": "/3.0.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/pressable",
+    "destination": "/3.0.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/progress",
+    "destination": "/3.0.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/radio",
+    "destination": "/3.0.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/react-hook-forms",
+    "destination": "/3.0.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/responsive-style",
+    "destination": "/3.0.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/safe-area-view-props",
+    "destination": "/3.0.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/scrollview",
+    "destination": "/3.0.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/sectionList",
+    "destination": "/3.0.x/sectionList",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/select",
+    "destination": "/3.0.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/setup-provider",
+    "destination": "/3.0.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/simpleGrid",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/skeleton",
+    "destination": "/3.0.x/skeleton",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/slide",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/slider",
+    "destination": "/3.0.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/snackBar",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/spinner",
+    "destination": "/3.0.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/stack",
+    "destination": "/3.0.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/stagger",
+    "destination": "/3.0.x/stagger",
+    "permanent": true
+  },
+  { "source": "/3.0.6/stat", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/statusBar",
+    "destination": "/3.0.x/statusBar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/swipable-list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/switch",
+    "destination": "/3.0.x/switch",
+    "permanent": true
+  },
+  { "source": "/3.0.6/tabs", "destination": "/3.0.x/blocked-components", "permanent": true },
+  { "source": "/3.0.6/tag", "destination": "/3.0.x/blocked-components", "permanent": true },
+  { "source": "/3.0.6/text", "destination": "/3.0.x/text", "permanent": true },
+  {
+    "source": "/3.0.6/textArea",
+    "destination": "/3.0.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/textField",
+    "destination": "/3.0.x/textField",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/theme",
+    "destination": "/3.0.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/toast",
+    "destination": "/3.0.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/todo-example",
+    "destination": "/3.0.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/tooltip",
+    "destination": "/3.0.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/transition",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/typeAhead",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-accessible-colors",
+    "destination": "/3.0.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-breakPoint-value",
+    "destination": "/3.0.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-clipboard",
+    "destination": "/3.0.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-color-mode",
+    "destination": "/3.0.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-color-mode-value",
+    "destination": "/3.0.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-contrast-text",
+    "destination": "/3.0.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-disclosure",
+    "destination": "/3.0.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-media-query",
+    "destination": "/3.0.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-popOver",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-theme",
+    "destination": "/3.0.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/use-token",
+    "destination": "/3.0.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/utility-first",
+    "destination": "/3.0.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.6/utility-props",
+    "destination": "/3.0.x/utility-props",
+    "permanent": true
+  },
+  { "source": "/3.0.6/view", "destination": "/3.0.x/view", "permanent": true },
+  {
+    "source": "/3.0.6/VStack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  { "source": "/3.0.6/wrap", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.6/ZStack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  { "source": "/3.0.7/", "destination": "/3.0.x/", "permanent": true },
+  {
+    "source": "/3.0.7/accessibility",
+    "destination": "/3.0.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/actionSheet",
+    "destination": "/3.0.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/alert",
+    "destination": "/3.0.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/alertDialog",
+    "destination": "/3.0.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/appDrawer",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/avatar",
+    "destination": "/3.0.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/badge",
+    "destination": "/3.0.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.0.7/box", "destination": "/3.0.x/box", "permanent": true },
+  {
+    "source": "/3.0.7/breakpoint",
+    "destination": "/3.0.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/buildingAppBar",
+    "destination": "/3.0.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/buildingCard",
+    "destination": "/3.0.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/buildingDrawerNavigation",
+    "destination": "/3.0.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/buildingFooterTabs",
+    "destination": "/3.0.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/buildingSearchBar",
+    "destination": "/3.0.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/buildingSwipeList",
+    "destination": "/3.0.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/buildingTabView",
+    "destination": "/3.0.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/button",
+    "destination": "/3.0.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/center",
+    "destination": "/3.0.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/changelog",
+    "destination": "/3.0.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/checkBox",
+    "destination": "/3.0.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/color-mode",
+    "destination": "/3.0.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/container",
+    "destination": "/3.0.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/customizingComponents",
+    "destination": "/3.0.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/customizingFonts",
+    "destination": "/3.0.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/customizingTheme",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/darkMode",
+    "destination": "/3.0.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/default-theme",
+    "destination": "/3.0.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/design-tokens",
+    "destination": "/3.0.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/divider",
+    "destination": "/3.0.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.0.7/FAB", "destination": "/3.0.x/fab", "permanent": true },
+  { "source": "/3.0.7/faq", "destination": "/3.0.x/faq", "permanent": true },
+  {
+    "source": "/3.0.7/flatList",
+    "destination": "/3.0.x/flatList",
+    "permanent": true
+  },
+  { "source": "/3.0.7/flex", "destination": "/3.0.x/flex", "permanent": true },
+  { "source": "/3.0.7/form", "destination": "/3.0.x/form", "permanent": true },
+  {
+    "source": "/3.0.7/formControl",
+    "destination": "/3.0.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/heading",
+    "destination": "/3.0.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/hStack",
+    "destination": "/3.0.x/hstack",
+    "permanent": true
+  },
+  { "source": "/3.0.7/icon", "destination": "/3.0.x/icon", "permanent": true },
+  {
+    "source": "/3.0.7/iconButton",
+    "destination": "/3.0.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/image",
+    "destination": "/3.0.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/input",
+    "destination": "/3.0.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/install-cra",
+    "destination": "/3.0.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/install-expo",
+    "destination": "/3.0.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/install-next",
+    "destination": "/3.0.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/install-rn",
+    "destination": "/3.0.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/installation",
+    "destination": "/3.0.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/interaction-styles",
+    "destination": "/3.0.x/interaction-styles",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/keyboardAvoidingView",
+    "destination": "/3.0.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/kitchen-sink",
+    "destination": "/3.0.x/kitchen-sink",
+    "permanent": true
+  },
+  { "source": "/3.0.7/link", "destination": "/3.0.x/link", "permanent": true },
+  { "source": "/3.0.7/list", "destination": "/3.0.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.0.7/loginsignupforms",
+    "destination": "/3.0.x/login-signup-forms",
+    "permanent": true
+  },
+  { "source": "/3.0.7/menu", "destination": "/3.0.x/menu", "permanent": true },
+  {
+    "source": "/3.0.7/migration/Accordion",
+    "destination": "/3.0.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Actionsheet",
+    "destination": "/3.0.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Badge",
+    "destination": "/3.0.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Button",
+    "destination": "/3.0.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Card",
+    "destination": "/3.0.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Checkbox",
+    "destination": "/3.0.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/DatePicker",
+    "destination": "/3.0.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/DeckSwiper",
+    "destination": "/3.0.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Drawer",
+    "destination": "/3.0.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/FABs",
+    "destination": "/3.0.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/FooterTab",
+    "destination": "/3.0.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Form",
+    "destination": "/3.0.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Guide",
+    "destination": "/3.0.x/migration/guide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Header",
+    "destination": "/3.0.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Icon",
+    "destination": "/3.0.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Layout",
+    "destination": "/3.0.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/List",
+    "destination": "/3.0.x/migration/list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Picker",
+    "destination": "/3.0.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Radio%20Button",
+    "destination": "/3.0.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Searchbar",
+    "destination": "/3.0.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Segment",
+    "destination": "/3.0.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Spinner",
+    "destination": "/3.0.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/SwipeList",
+    "destination": "/3.0.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Tabs",
+    "destination": "/3.0.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Thumbnail",
+    "destination": "/3.0.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Toast",
+    "destination": "/3.0.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/migration/Typography",
+    "destination": "/3.0.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/modal",
+    "destination": "/3.0.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/nativebase-factory",
+    "destination": "/3.0.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/nativebase-formik-ui",
+    "destination": "/3.0.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/overlay",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/popOver",
+    "destination": "/3.0.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/presence-transition",
+    "destination": "/3.0.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/pressable",
+    "destination": "/3.0.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/progress",
+    "destination": "/3.0.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/radio",
+    "destination": "/3.0.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/react-hook-forms",
+    "destination": "/3.0.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/responsive-style",
+    "destination": "/3.0.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/safe-area-view-props",
+    "destination": "/3.0.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/scrollview",
+    "destination": "/3.0.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/sectionList",
+    "destination": "/3.0.x/sectionList",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/select",
+    "destination": "/3.0.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/setup-provider",
+    "destination": "/3.0.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/slide",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/slider",
+    "destination": "/3.0.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/spinner",
+    "destination": "/3.0.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/stack",
+    "destination": "/3.0.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/stagger",
+    "destination": "/3.0.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/statusBar",
+    "destination": "/3.0.x/statusBar",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/swipable-list",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/switch",
+    "destination": "/3.0.x/switch",
+    "permanent": true
+  },
+  { "source": "/3.0.7/text", "destination": "/3.0.x/text", "permanent": true },
+  {
+    "source": "/3.0.7/textArea",
+    "destination": "/3.0.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/textField",
+    "destination": "/3.0.x/textField",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/theme",
+    "destination": "/3.0.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/toast",
+    "destination": "/3.0.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/todo-example",
+    "destination": "/3.0.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/tooltip",
+    "destination": "/3.0.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/transition",
+    "destination": "/3.0.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-accessible-colors",
+    "destination": "/3.0.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-breakPoint-value",
+    "destination": "/3.0.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-clipboard",
+    "destination": "/3.0.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-color-mode",
+    "destination": "/3.0.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-color-mode-value",
+    "destination": "/3.0.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-contrast-text",
+    "destination": "/3.0.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-disclosure",
+    "destination": "/3.0.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-media-query",
+    "destination": "/3.0.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-popOver",
+    "destination": "/3.0.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-theme",
+    "destination": "/3.0.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/use-token",
+    "destination": "/3.0.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/utility-first",
+    "destination": "/3.0.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/utility-props",
+    "destination": "/3.0.x/utility-props",
+    "permanent": true
+  },
+  { "source": "/3.0.7/view", "destination": "/3.0.x/view", "permanent": true },
+  {
+    "source": "/3.0.7/VStack",
+    "destination": "/3.0.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.0.7/ZStack",
+    "destination": "/3.0.x/zstack",
+    "permanent": true
+  },
+  { "source": "/3.1.0/", "destination": "/3.1.x/", "permanent": true },
+  {
+    "source": "/3.1.0/accessibility",
+    "destination": "/3.1.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/action-sheet",
+    "destination": "/3.1.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/alert",
+    "destination": "/3.1.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/alert-dialog",
+    "destination": "/3.1.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/app-drawer",
+    "destination": "/3.1.x/app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/avatar",
+    "destination": "/3.1.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/badge",
+    "destination": "/3.1.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.1.0/box", "destination": "/3.1.x/box", "permanent": true },
+  {
+    "source": "/3.1.0/breakpoints",
+    "destination": "/3.1.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/building-app-bar",
+    "destination": "/3.1.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/building-card",
+    "destination": "/3.1.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/building-drawer-navigation",
+    "destination": "/3.1.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/building-footer-tabs",
+    "destination": "/3.1.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/building-search-bar",
+    "destination": "/3.1.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/building-swipe-list",
+    "destination": "/3.1.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/building-tab-view",
+    "destination": "/3.1.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/button",
+    "destination": "/3.1.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/center",
+    "destination": "/3.1.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/changelog",
+    "destination": "/3.1.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/checkbox",
+    "destination": "/3.1.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/color-mode",
+    "destination": "/3.1.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/container",
+    "destination": "/3.1.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/customizing-components",
+    "destination": "/3.1.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/customizing-fonts",
+    "destination": "/3.1.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/customizing-theme",
+    "destination": "/3.1.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/dark-mode",
+    "destination": "/3.1.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/default-theme",
+    "destination": "/3.1.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/design-tokens",
+    "destination": "/3.1.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/divider",
+    "destination": "/3.1.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.1.0/FAB", "destination": "/3.1.x/fab", "permanent": true },
+  { "source": "/3.1.0/faq", "destination": "/3.1.x/faq", "permanent": true },
+  {
+    "source": "/3.1.0/flat-list",
+    "destination": "/3.1.x/flat-list",
+    "permanent": true
+  },
+  { "source": "/3.1.0/flex", "destination": "/3.1.x/flex", "permanent": true },
+  { "source": "/3.1.0/form", "destination": "/3.1.x/form", "permanent": true },
+  {
+    "source": "/3.1.0/form-control",
+    "destination": "/3.1.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/heading",
+    "destination": "/3.1.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/hStack",
+    "destination": "/3.1.x/hstack",
+    "permanent": true
+  },
+  { "source": "/3.1.0/icon", "destination": "/3.1.x/icon", "permanent": true },
+  {
+    "source": "/3.1.0/icon-button",
+    "destination": "/3.1.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/image",
+    "destination": "/3.1.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/input",
+    "destination": "/3.1.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/install-cra",
+    "destination": "/3.1.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/install-expo",
+    "destination": "/3.1.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/install-next",
+    "destination": "/3.1.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/install-rn",
+    "destination": "/3.1.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/installation",
+    "destination": "/3.1.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/interaction-styles",
+    "destination": "/3.1.x/interaction-styles",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/keyboard-avoiding-view",
+    "destination": "/3.1.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/kitchen-sink",
+    "destination": "/3.1.x/kitchen-sink",
+    "permanent": true
+  },
+  { "source": "/3.1.0/link", "destination": "/3.1.x/link", "permanent": true },
+  { "source": "/3.1.0/list", "destination": "/3.1.x/blocked-components", "permanent": true },
+  {
+    "source": "/3.1.0/login-signup-forms",
+    "destination": "/3.1.x/login-signup-forms",
+    "permanent": true
+  },
+  { "source": "/3.1.0/menu", "destination": "/3.1.x/menu", "permanent": true },
+  {
+    "source": "/3.1.0/migration/Accordion",
+    "destination": "/3.1.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/action-sheet",
+    "destination": "/3.1.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/badge",
+    "destination": "/3.1.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/button",
+    "destination": "/3.1.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/card",
+    "destination": "/3.1.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/checkbox",
+    "destination": "/3.1.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/date-picker",
+    "destination": "/3.1.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/deck-swiper",
+    "destination": "/3.1.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/drawer",
+    "destination": "/3.1.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/FABs",
+    "destination": "/3.1.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/footer-tab",
+    "destination": "/3.1.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/form",
+    "destination": "/3.1.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/Guide",
+    "destination": "/3.1.x/migration/guide",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/header",
+    "destination": "/3.1.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/icon",
+    "destination": "/3.1.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/layout",
+    "destination": "/3.1.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/List",
+    "destination": "/3.1.x/migration/list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/picker",
+    "destination": "/3.1.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/radio-button",
+    "destination": "/3.1.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/search-bar",
+    "destination": "/3.1.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/segment",
+    "destination": "/3.1.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/spinner",
+    "destination": "/3.1.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/swipe-list",
+    "destination": "/3.1.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/tabs",
+    "destination": "/3.1.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/thumbnail",
+    "destination": "/3.1.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/toast",
+    "destination": "/3.1.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/migration/typography",
+    "destination": "/3.1.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/modal",
+    "destination": "/3.1.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/nativebase-factory",
+    "destination": "/3.1.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/nativebase-formik-ui",
+    "destination": "/3.1.x/formik",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/overlay",
+    "destination": "/3.1.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/popover",
+    "destination": "/3.1.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/presence-transition",
+    "destination": "/3.1.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/pressable",
+    "destination": "/3.1.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/progress",
+    "destination": "/3.1.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/radio",
+    "destination": "/3.1.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/react-hook-forms",
+    "destination": "/3.1.x/react-hooks-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/responsive-style",
+    "destination": "/3.1.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/safe-area-view-props",
+    "destination": "/3.1.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/scrollview",
+    "destination": "/3.1.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/section-list",
+    "destination": "/3.1.x/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/select",
+    "destination": "/3.1.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/setup-provider",
+    "destination": "/3.1.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/slide",
+    "destination": "/3.1.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/slider",
+    "destination": "/3.1.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/spinner",
+    "destination": "/3.1.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/stack",
+    "destination": "/3.1.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/stagger",
+    "destination": "/3.1.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/status-bar",
+    "destination": "/3.1.x/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/swipable-list",
+    "destination": "/3.1.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/switch",
+    "destination": "/3.1.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/testing",
+    "destination": "/3.1.x/testing",
+    "permanent": true
+  },
+  { "source": "/3.1.0/text", "destination": "/3.1.x/text", "permanent": true },
+  {
+    "source": "/3.1.0/textarea",
+    "destination": "/3.1.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/textField",
+    "destination": "/3.1.x/textField",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/theme",
+    "destination": "/3.1.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/toast",
+    "destination": "/3.1.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/todo-example",
+    "destination": "/3.1.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/tooltip",
+    "destination": "/3.1.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/transition",
+    "destination": "/3.1.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-accessible-colors",
+    "destination": "/3.1.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-breakPoint-value",
+    "destination": "/3.1.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-clipboard",
+    "destination": "/3.1.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-color-mode",
+    "destination": "/3.1.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-color-mode-value",
+    "destination": "/3.1.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-contrast-text",
+    "destination": "/3.1.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-disclosure",
+    "destination": "/3.1.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-media-query",
+    "destination": "/3.1.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-popOver",
+    "destination": "/3.1.x/blocked-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-theme",
+    "destination": "/3.1.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/use-token",
+    "destination": "/3.1.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/utility-first",
+    "destination": "/3.1.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/utility-props",
+    "destination": "/3.1.x/utility-props",
+    "permanent": true
+  },
+  { "source": "/3.1.0/view", "destination": "/3.1.x/view", "permanent": true },
+  {
+    "source": "/3.1.0/VStack",
+    "destination": "/3.1.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.0/ZStack",
+    "destination": "/3.1.x/zstack",
+    "permanent": true
+  },
+  { "source": "/3.2.1/", "destination": "/3.2.x/", "permanent": true },
+  {
+    "source": "/3.2.1/accessibility",
+    "destination": "/3.2.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/action-sheet",
+    "destination": "/3.2.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/alert",
+    "destination": "/3.2.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/alert-dialog",
+    "destination": "/3.2.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/app-drawer",
+    "destination": "/3.2.x/app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/avatar",
+    "destination": "/3.2.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/badge",
+    "destination": "/3.2.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.2.1/box", "destination": "/3.2.x/box", "permanent": true },
+  {
+    "source": "/3.2.1/breakpoints",
+    "destination": "/3.2.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/building-app-bar",
+    "destination": "/3.2.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/building-card",
+    "destination": "/3.2.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/building-drawer-navigation",
+    "destination": "/3.2.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/building-footer-tabs",
+    "destination": "/3.2.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/building-search-bar",
+    "destination": "/3.2.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/building-swipe-list",
+    "destination": "/3.2.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/building-tab-view",
+    "destination": "/3.2.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/button",
+    "destination": "/3.2.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/center",
+    "destination": "/3.2.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/changelog",
+    "destination": "/3.2.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/checkbox",
+    "destination": "/3.2.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/color-mode",
+    "destination": "/3.2.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/container",
+    "destination": "/3.2.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/customizing-components",
+    "destination": "/3.2.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/customizing-fonts",
+    "destination": "/3.2.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/customizing-theme",
+    "destination": "/3.2.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/dark-mode",
+    "destination": "/3.2.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/default-theme",
+    "destination": "/3.2.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/design-tokens",
+    "destination": "/3.2.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/divider",
+    "destination": "/3.2.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.2.1/FAB", "destination": "/3.2.x/fab", "permanent": true },
+  { "source": "/3.2.1/faq", "destination": "/3.2.x/faq", "permanent": true },
+  {
+    "source": "/3.2.1/flat-list",
+    "destination": "/3.2.x/flat-list",
+    "permanent": true
+  },
+  { "source": "/3.2.1/flex", "destination": "/3.2.x/flex", "permanent": true },
+  { "source": "/3.2.1/form", "destination": "/3.2.x/form", "permanent": true },
+  {
+    "source": "/3.2.1/form-control",
+    "destination": "/3.2.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/h-stack",
+    "destination": "/3.2.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/heading",
+    "destination": "/3.2.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/hidden",
+    "destination": "/3.2.x/hidden",
+    "permanent": true
+  },
+  { "source": "/3.2.1/icon", "destination": "/3.2.x/icon", "permanent": true },
+  {
+    "source": "/3.2.1/icon-button",
+    "destination": "/3.2.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/image",
+    "destination": "/3.2.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/input",
+    "destination": "/3.2.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/install-cra",
+    "destination": "/3.2.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/install-expo",
+    "destination": "/3.2.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/install-next",
+    "destination": "/3.2.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/install-rn",
+    "destination": "/3.2.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/installation",
+    "destination": "/3.2.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/keyboard-avoiding-view",
+    "destination": "/3.2.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/kitchen-sink",
+    "destination": "/3.2.x/kitchen-sink",
+    "permanent": true
+  },
+  { "source": "/3.2.1/link", "destination": "/3.2.x/link", "permanent": true },
+  {
+    "source": "/3.2.1/login-signup-forms",
+    "destination": "/3.2.x/login-signup-forms",
+    "permanent": true
+  },
+  { "source": "/3.2.1/menu", "destination": "/3.2.x/menu", "permanent": true },
+  {
+    "source": "/3.2.1/migration/Accordion",
+    "destination": "/3.2.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/action-sheet",
+    "destination": "/3.2.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/badge",
+    "destination": "/3.2.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/button",
+    "destination": "/3.2.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/card",
+    "destination": "/3.2.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/checkbox",
+    "destination": "/3.2.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/date-picker",
+    "destination": "/3.2.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/deck-swiper",
+    "destination": "/3.2.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/drawer",
+    "destination": "/3.2.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/FABs",
+    "destination": "/3.2.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/footer-tab",
+    "destination": "/3.2.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/form",
+    "destination": "/3.2.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/header",
+    "destination": "/3.2.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/icon",
+    "destination": "/3.2.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/layout",
+    "destination": "/3.2.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/List",
+    "destination": "/3.2.x/migration/list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/migration-guide-three",
+    "destination": "/3.2.x/migration/v3",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/migration-guide-three-point-two",
+    "destination": "/3.2.x/migration/v3xtov32",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/picker",
+    "destination": "/3.2.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/radio-button",
+    "destination": "/3.2.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/search-bar",
+    "destination": "/3.2.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/segment",
+    "destination": "/3.2.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/spinner",
+    "destination": "/3.2.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/swipe-list",
+    "destination": "/3.2.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/tabs",
+    "destination": "/3.2.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/thumbnail",
+    "destination": "/3.2.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/toast",
+    "destination": "/3.2.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/migration/typography",
+    "destination": "/3.2.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/modal",
+    "destination": "/3.2.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/more-props",
+    "destination": "/3.2.x/more-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/nativebase-factory",
+    "destination": "/3.2.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/popover",
+    "destination": "/3.2.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/presence-transition",
+    "destination": "/3.2.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/pressable",
+    "destination": "/3.2.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/progress",
+    "destination": "/3.2.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/pseudo-props",
+    "destination": "/3.2.x/pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/pseudo-props-101",
+    "destination": "/3.2.x/pseudo-props-101",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/radio",
+    "destination": "/3.2.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/responsive-style",
+    "destination": "/3.2.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/safe-area-view-props",
+    "destination": "/3.2.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/scrollview",
+    "destination": "/3.2.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/section-list",
+    "destination": "/3.2.x/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/select",
+    "destination": "/3.2.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/setup-provider",
+    "destination": "/3.2.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/slide",
+    "destination": "/3.2.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/slider",
+    "destination": "/3.2.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/spinner",
+    "destination": "/3.2.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/stack",
+    "destination": "/3.2.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/stagger",
+    "destination": "/3.2.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/status-bar",
+    "destination": "/3.2.x/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/strict-mode",
+    "destination": "/3.2.x/strict-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/switch",
+    "destination": "/3.2.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/testing",
+    "destination": "/3.2.x/testing",
+    "permanent": true
+  },
+  { "source": "/3.2.1/text", "destination": "/3.2.x/text", "permanent": true },
+  {
+    "source": "/3.2.1/textarea",
+    "destination": "/3.2.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/theme",
+    "destination": "/3.2.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/toast",
+    "destination": "/3.2.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/todo-example",
+    "destination": "/3.2.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/tooltip",
+    "destination": "/3.2.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/typescript",
+    "destination": "/3.2.x/typescript",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-accessible-colors",
+    "destination": "/3.2.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-breakPoint-value",
+    "destination": "/3.2.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-clipboard",
+    "destination": "/3.2.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-color-mode",
+    "destination": "/3.2.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-color-mode-value",
+    "destination": "/3.2.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-contrast-text",
+    "destination": "/3.2.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-disclosure",
+    "destination": "/3.2.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-media-query",
+    "destination": "/3.2.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-theme",
+    "destination": "/3.2.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/use-token",
+    "destination": "/3.2.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/utility-first",
+    "destination": "/3.2.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/utility-props",
+    "destination": "/3.2.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/utility-props-specificity",
+    "destination": "/3.2.x/utility-props-specificity",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.1/v-stack",
+    "destination": "/3.2.x/vstack",
+    "permanent": true
+  },
+  { "source": "/3.2.1/view", "destination": "/3.2.x/view", "permanent": true },
+  {
+    "source": "/3.2.1/z-stack",
+    "destination": "/3.2.x/zstack",
+    "permanent": true
+  },
+  { "source": "/3.2.2/", "destination": "/3.2.x/", "permanent": true },
+  {
+    "source": "/3.2.2/accessibility",
+    "destination": "/3.2.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/action-sheet",
+    "destination": "/3.2.x/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/alert",
+    "destination": "/3.2.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/alert-dialog",
+    "destination": "/3.2.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/app-drawer",
+    "destination": "/3.2.x/app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/avatar",
+    "destination": "/3.2.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/badge",
+    "destination": "/3.2.x/badge",
+    "permanent": true
+  },
+  { "source": "/3.2.2/box", "destination": "/3.2.x/box", "permanent": true },
+  {
+    "source": "/3.2.2/breakpoints",
+    "destination": "/3.2.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/building-app-bar",
+    "destination": "/3.2.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/building-card",
+    "destination": "/3.2.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/building-drawer-navigation",
+    "destination": "/3.2.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/building-footer-tabs",
+    "destination": "/3.2.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/building-search-bar",
+    "destination": "/3.2.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/building-swipe-list",
+    "destination": "/3.2.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/building-tab-view",
+    "destination": "/3.2.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/button",
+    "destination": "/3.2.x/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/center",
+    "destination": "/3.2.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/changelog",
+    "destination": "/3.2.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/checkbox",
+    "destination": "/3.2.x/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/color-mode",
+    "destination": "/3.2.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/container",
+    "destination": "/3.2.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/customizing-components",
+    "destination": "/3.2.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/customizing-fonts",
+    "destination": "/3.2.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/customizing-theme",
+    "destination": "/3.2.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/dark-mode",
+    "destination": "/3.2.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/default-theme",
+    "destination": "/3.2.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/design-tokens",
+    "destination": "/3.2.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/divider",
+    "destination": "/3.2.x/divider",
+    "permanent": true
+  },
+  { "source": "/3.2.2/FAB", "destination": "/3.2.x/fab", "permanent": true },
+  { "source": "/3.2.2/faq", "destination": "/3.2.x/faq", "permanent": true },
+  {
+    "source": "/3.2.2/flat-list",
+    "destination": "/3.2.x/flat-list",
+    "permanent": true
+  },
+  { "source": "/3.2.2/flex", "destination": "/3.2.x/flex", "permanent": true },
+  { "source": "/3.2.2/form", "destination": "/3.2.x/form", "permanent": true },
+  {
+    "source": "/3.2.2/form-control",
+    "destination": "/3.2.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/h-stack",
+    "destination": "/3.2.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/heading",
+    "destination": "/3.2.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/hidden",
+    "destination": "/3.2.x/hidden",
+    "permanent": true
+  },
+  { "source": "/3.2.2/icon", "destination": "/3.2.x/icon", "permanent": true },
+  {
+    "source": "/3.2.2/icon-button",
+    "destination": "/3.2.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/image",
+    "destination": "/3.2.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/input",
+    "destination": "/3.2.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/install-cra",
+    "destination": "/3.2.x/install-cra",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/install-expo",
+    "destination": "/3.2.x/install-expo",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/install-next",
+    "destination": "/3.2.x/install-next",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/install-rn",
+    "destination": "/3.2.x/install-rn",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/installation",
+    "destination": "/3.2.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/keyboard-avoiding-view",
+    "destination": "/3.2.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/kitchen-sink",
+    "destination": "/3.2.x/kitchen-sink",
+    "permanent": true
+  },
+  { "source": "/3.2.2/link", "destination": "/3.2.x/link", "permanent": true },
+  {
+    "source": "/3.2.2/login-signup-forms",
+    "destination": "/3.2.x/login-signup-forms",
+    "permanent": true
+  },
+  { "source": "/3.2.2/menu", "destination": "/3.2.x/menu", "permanent": true },
+  {
+    "source": "/3.2.2/migration/Accordion",
+    "destination": "/3.2.x/migration/accordion",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/action-sheet",
+    "destination": "/3.2.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/badge",
+    "destination": "/3.2.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/button",
+    "destination": "/3.2.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/card",
+    "destination": "/3.2.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/checkbox",
+    "destination": "/3.2.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/date-picker",
+    "destination": "/3.2.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/deck-swiper",
+    "destination": "/3.2.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/drawer",
+    "destination": "/3.2.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/FABs",
+    "destination": "/3.2.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/footer-tab",
+    "destination": "/3.2.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/form",
+    "destination": "/3.2.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/header",
+    "destination": "/3.2.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/icon",
+    "destination": "/3.2.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/layout",
+    "destination": "/3.2.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/List",
+    "destination": "/3.2.x/migration/list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/migration-guide-three",
+    "destination": "/3.2.x/migration/v3",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/migration-guide-three-point-two",
+    "destination": "/3.2.x/migration/v3xtov32",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/picker",
+    "destination": "/3.2.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/radio-button",
+    "destination": "/3.2.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/search-bar",
+    "destination": "/3.2.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/segment",
+    "destination": "/3.2.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/spinner",
+    "destination": "/3.2.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/swipe-list",
+    "destination": "/3.2.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/tabs",
+    "destination": "/3.2.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/thumbnail",
+    "destination": "/3.2.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/toast",
+    "destination": "/3.2.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/migration/typography",
+    "destination": "/3.2.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/modal",
+    "destination": "/3.2.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/more-props",
+    "destination": "/3.2.x/more-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/nativebase-factory",
+    "destination": "/3.2.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/popover",
+    "destination": "/3.2.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/presence-transition",
+    "destination": "/3.2.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/pressable",
+    "destination": "/3.2.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/progress",
+    "destination": "/3.2.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/pseudo-props",
+    "destination": "/3.2.x/pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/pseudo-props-101",
+    "destination": "/3.2.x/pseudo-props-101",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/radio",
+    "destination": "/3.2.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/responsive-style",
+    "destination": "/3.2.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/safe-area-view-props",
+    "destination": "/3.2.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/scrollview",
+    "destination": "/3.2.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/section-list",
+    "destination": "/3.2.x/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/select",
+    "destination": "/3.2.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/setup-provider",
+    "destination": "/3.2.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/slide",
+    "destination": "/3.2.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/slider",
+    "destination": "/3.2.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/spinner",
+    "destination": "/3.2.x/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/stack",
+    "destination": "/3.2.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/stagger",
+    "destination": "/3.2.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/status-bar",
+    "destination": "/3.2.x/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/strict-mode",
+    "destination": "/3.2.x/strict-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/switch",
+    "destination": "/3.2.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/testing",
+    "destination": "/3.2.x/testing",
+    "permanent": true
+  },
+  { "source": "/3.2.2/text", "destination": "/3.2.x/text", "permanent": true },
+  {
+    "source": "/3.2.2/textarea",
+    "destination": "/3.2.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/theme",
+    "destination": "/3.2.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/toast",
+    "destination": "/3.2.x/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/todo-example",
+    "destination": "/3.2.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/tooltip",
+    "destination": "/3.2.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/typescript",
+    "destination": "/3.2.x/typescript",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-accessible-colors",
+    "destination": "/3.2.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-breakPoint-value",
+    "destination": "/3.2.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-clipboard",
+    "destination": "/3.2.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-color-mode",
+    "destination": "/3.2.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-color-mode-value",
+    "destination": "/3.2.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-contrast-text",
+    "destination": "/3.2.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-disclosure",
+    "destination": "/3.2.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-media-query",
+    "destination": "/3.2.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-theme",
+    "destination": "/3.2.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/use-token",
+    "destination": "/3.2.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/utility-first",
+    "destination": "/3.2.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/utility-props",
+    "destination": "/3.2.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/utility-props-specificity",
+    "destination": "/3.2.x/utility-props-specificity",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.2/v-stack",
+    "destination": "/3.2.x/vstack",
+    "permanent": true
+  },
+  { "source": "/3.2.2/view", "destination": "/3.2.x/view", "permanent": true },
+  {
+    "source": "/3.2.2/z-stack",
+    "destination": "/3.2.x/zstack",
+    "permanent": true
+  }
+]

@@ -1,82 +1,237 @@
 import Head from "next/head";
-import { useState, useContext } from "react";
-import styles from "./layout.module.css";
-import { MDXRemote } from "next-mdx-remote";
-import Link from "next/link";
-import { Box, Menu, Pressable } from "native-base";
-import router, { Router, useRouter } from "next/router";
+import React, { useEffect, useContext } from "react";
+import {
+  Box,
+  HStack,
+  ScrollView,
+  Text,
+  useBreakpointValue,
+  useColorModeValue,
+  useToken,
+} from "native-base";
 import path from "path";
+import Sidebar from "../src/new-components/Sidebar";
+import Navbar from "../src/new-components/Navbar";
+import MobileNavbar from "../src/new-components/MobileNavbar";
+
 import { AppContext } from "../src/AppContext";
+import MainContent from "../src/new-components/MainContent";
+
+import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSidebarVersionDropdown";
+import { SocialMediaStagger } from "../src/new-components/SocialMediaStagger";
+import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
+import Script from "next/script";
 
 function Layout({
   children: content,
   version: currentVersion,
+  tocArray,
+  sidebar,
   versionList,
+  frontMatter,
+  pages,
+  showToc,
 }: any) {
-  const { activeVersion, setActiveVersion } = useContext(AppContext);
-  const Router = useRouter();
-  const updateActiveVersion = (version: string, versions: string[]) => {
+  // console.log("Sidebar", sidebar);
+  const {
+    isNavbarOpen,
+    activeSidebarItem,
+    setActiveVersion,
+    setActiveSidebarItem,
+  } = useContext(AppContext);
+
+  const bgColor = useColorModeValue(
+    useToken("colors", "backgroundLight"),
+    useToken("colors", "backgroundDark")
+  );
+  const [isOpenSidebar, setIsOpenSidebar] = React.useState(false);
+  useEffect(() => {
     const currentPathArray = window?.location.href.split("/");
+
     let pathArray: string[] = [];
     currentPathArray.map((val, ind) => {
       ind < 3 ? null : pathArray.push(val);
     });
-    let path = "";
-    if (versions.includes(pathArray[0])) {
-      pathArray[0] = version;
+
+    let actVersion = currentVersion;
+    if ([...versionList, "next"].includes(pathArray[0])) {
+      actVersion = pathArray[0];
     } else {
-      pathArray = [version, ...pathArray];
+      actVersion = "";
     }
-    pathArray.map((val) => {
-      path += "/" + val;
-    });
-    router.push(path);
-  };
+    setActiveVersion(actVersion);
+
+    if (pathArray[0] === actVersion) {
+      pathArray.splice(0, 1);
+      setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
+    } else {
+      setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
+    }
+    // @ts-ignore
+    document.getElementById("scrollview-id").scrollTop = 0;
+  }, [content]);
+
+  useEffect(() => {
+    document.getElementsByTagName("body")[0].style.backgroundColor = bgColor;
+  }, [bgColor]);
+
+  const isLargeScreen = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+  useEffect(() => {
+    if (isLargeScreen) {
+      setIsOpenSidebar(false);
+    }
+  }, [isLargeScreen]);
+  const title = `${
+    frontMatter && frontMatter.title
+      ? frontMatter.title +
+        " | NativeBase | Universal Components for React and React Native"
+      : pages?.currentPage?.title +
+        " | NativeBase | Universal Components for React and React Native"
+  }`;
   return (
     <>
       <Head>
-        <title>Layouts Example</title>
+        <title>{title}</title>
+        <meta
+          name="keywords"
+          content="Universal Components for React and React Native"
+        />
+        {/* og meta links */}
+        <meta property="og:title" content={title} />
+        <meta
+          property="og:description"
+          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+        />
+        <meta property="og:url" content="https://docs.nativebase.io" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:site_name" content="NativeBase" />
+        <meta
+          name="twitter:image:alt"
+          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+        />
+        <meta property="og:image" content="/img/nativebase-og.png" />
+        <meta name="twitter:image" content="/img/nativebase-og.png"></meta>
+        <meta name="twitter:site" content="@nativebase" />
+
+        <meta
+          name="description"
+          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+        />
+        <link rel="icon" href="/img/nativebaselogo.svg" />
       </Head>
-      <Link href="/box">Box</Link>
-      <Link href="/button">Button</Link>
-      <Link href={`/${currentVersion}/box`}>Migration Button</Link>
-      <Box>Hello world</Box>
-      <Box  alignItems="flex-start">
-      <Menu
-        trigger={(triggerProps) => {
-          return (
-            <Pressable accessibilityLabel="More options menu" {...triggerProps} w="40">
-              <Box>{activeVersion}</Box>
-            </Pressable>
-          );
-        }}
+      <Script async src="https://snack.expo.dev/embed.js"></Script>
+      <Script src="/js/gtag.js"></Script>
+      {/* <Script src="/js/switchTheme.js"></Script> */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-ZTSFCSJK8X"
+      ></Script>
+      <Box
+        w="100%"
+        h={{ base: "100%", md: "100vh" }}
+        _light={{ bg: "backgroundLight" }}
+        _dark={{ bg: "backgroundDark" }}
+        alignItems="center"
+        nativeID={useColorModeValue(
+          "nativebase-body-light",
+          "nativebase-body-dark"
+        )}
       >
-        <Menu.Item
-          // @ts-ignore
-          onPress={() => {
-            setActiveVersion("next");
-            updateActiveVersion("next", versionList);
-          }}
-          bg={"next" === activeVersion ? "coolGray.200" : "coolGray.50"}
-        >
-          next
-        </Menu.Item>
-        {versionList.map((version: string) => {
-          return (
-            <Menu.Item
+        <ScrollView w="100%" nativeID="scrollview-id">
+          <Box h="100%" w="100%">
+            <Box
+              display={{ base: "none", lg: "flex" }}
+              w="100%"
+              position="sticky"
+              top="0"
+              zIndex={99}
+              _light={{ bg: "backgroundLight" }}
+              _dark={{ bg: "backgroundDark:alpha.50" }}
               // @ts-ignore
-              onPress={() => {
-                setActiveVersion(version);
-                updateActiveVersion(version, versionList);
-              }}
-              bg={version === activeVersion ? "coolGray.200" : "coolGray.50"}
+              style={{ backdropFilter: "blur(10px)" }}
             >
-              {version}
-            </Menu.Item>
-          );
-        })}
-      </Menu></Box>
-      <MDXRemote {...content} />
+              <Navbar />
+            </Box>
+            <Box
+              display={{ base: "flex", lg: "none" }}
+              position="sticky"
+              top="0"
+              zIndex={99}
+              _light={{ bg: "backgroundLight" }}
+              _dark={{ bg: "backgroundDark" }}
+              w="100%"
+            >
+              <MobileNavbar
+                isOpenSidebar={isOpenSidebar}
+                setIsOpenSidebar={setIsOpenSidebar}
+              />
+            </Box>
+            {!isOpenSidebar ? (
+              <HStack>
+                <Box
+                  position="sticky"
+                  top="16"
+                  h="calc(100vh - 64px)"
+                  display={{ base: "none", lg: "flex" }}
+                >
+                  <Sidebar sidebar={sidebar} />
+                </Box>
+                <MainContent
+                  pages={pages}
+                  frontMatter={frontMatter}
+                  content={content}
+                  tocArray={tocArray}
+                  showToc={showToc}
+                />
+              </HStack>
+            ) : (
+              <>
+                <Box h="100%" w="100%" display={{ base: "flex", lg: "none" }}>
+                  <MobileSidebarVersionDropdown
+                    setIsOpenSidebar={setIsOpenSidebar}
+                  />
+                  <Sidebar
+                    sidebar={sidebar}
+                    isMobile
+                    setIsOpenSidebar={setIsOpenSidebar}
+                  />
+                </Box>
+              </>
+            )}
+          </Box>
+          <SocialMediaStagger />
+        </ScrollView>
+        <Box
+          position="fixed"
+          bottom="8"
+          right={{ base: "auto", lg: "30px" }}
+          left={{ base: "30px", lg: "auto" }}
+          mr="auto"
+          _light={{ bg: "coolGray.50" }}
+          _dark={{ bg: "coolGray.800" }}
+          h="36px"
+          w="185"
+          rounded="4"
+          overflow="hidden"
+        >
+          <Box position="absolute" left="-90px" top="-85px">
+            <NativebaseIconLogo width="125" height="130" />
+          </Box>
+
+          <Text
+            pl="6"
+            _light={{ color: "black" }}
+            _dark={{ color: "coolGray.50" }}
+            m="auto"
+            fontSize="sm"
+          >
+            MadeWithNativeBase
+          </Text>
+        </Box>
+      </Box>
     </>
   );
 }

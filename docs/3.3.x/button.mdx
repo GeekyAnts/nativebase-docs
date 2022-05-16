@@ -1,0 +1,103 @@
+---
+id: button
+title: Button
+---
+
+import { ComponentTheme } from "../src/components";
+
+The `Button` component is used to trigger an action or event.
+
+```jsx isShowcase gradient=0
+import React from "react";
+import { Button } from "native-base";
+
+export const Example = () => {
+  return (
+    <Button shadow={2} onPress={() => console.log("hello world")}>
+      Click me
+    </Button>
+  );
+};
+```
+
+## Import
+
+```jsx
+import { Button } from "native-base";
+```
+
+- **Button** : The button component with support for custom icons, spinners, etc.
+- **Button.Group** : Used to group buttons whose actions are related, with an option to flush them together.
+
+## Examples
+
+### Basic
+
+```ComponentSnackPlayer path=components,primitives,Button,basic.tsx
+
+```
+
+### Sizes
+
+```ComponentSnackPlayer path=components,primitives,Button,sizes.tsx
+
+```
+
+### Variants
+
+```ComponentSnackPlayer path=components,primitives,Button,variants.tsx
+
+```
+
+### Loading
+
+```ComponentSnackPlayer path=components,primitives,Button,loading.tsx
+
+```
+
+### Icons
+
+```ComponentSnackPlayer path=components,primitives,Button,icons.tsx
+
+```
+
+### ButtonGroup
+
+When you use the ButtonGroup component, it allows you to:
+
+- Set some common properties such as size & colorSchemes of all buttons within it.
+- Add spacing between the buttons.
+- Flush the buttons together by removing the border radius of the its children as needed.
+
+```ComponentSnackPlayer path=components,primitives,ButtonGroup,basic.tsx
+
+```
+
+### Basic (With Ref)
+
+```ComponentSnackPlayer path=components,primitives,Button,WithRef.tsx
+
+```
+
+## Props
+
+### Button
+
+```ComponentPropTable path=primitives,Button,Button.tsx
+
+```
+
+### ButtonGroup
+
+```ComponentPropTable path=primitives,Button,ButtonGroup.tsx
+
+```
+
+## Styling
+
+<ComponentTheme name="button" />
+
+## Accessibility
+
+- Button has `role` set to [button](https://www.w3.org/TR/wai-aria-practices-1.2/#button).
+- When Button has focus, Space or Enter activates it.
