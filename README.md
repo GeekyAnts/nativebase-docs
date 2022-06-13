@@ -12,6 +12,6 @@ To get started with contributing to NativeBase Docs, please follow the below ste
 - Make your changes in the next folder.
 - Commit your changes.
 - Just to be sure test your changes by running `yarn build` and then `yarn start`.
-- When you are done, push your changes to the `master` branch.
+- When you are done, push your changes to the `main` branch.
 - Create a pull request.
 - The NativeBase team will review your pull request and if it is accepted, it will be published to the docs website.
