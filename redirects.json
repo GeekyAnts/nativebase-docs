@@ -14043,7 +14043,8 @@
     "source": "/h-stack",
     "destination": "/hstack",
     "permanent": true
-  },{
+  },
+  {
     "source": "/next/h-stack",
     "destination": "/next/hstack",
     "permanent": true
@@ -14054,93 +14055,103 @@
     "permanent": true
   },
   {
-    "source":"/3.0.x/useColorModeValue.md",
-    "destination":"/3.0.x/use-color-mode-value",
+    "source": "/3.0.x/useColorModeValue.md",
+    "destination": "/3.0.x/use-color-mode-value",
     "permanent": true
   },
   {
-    "source":"/3.1.x/useColorModeValue.md",
-    "destination":"/3.1.x/use-color-mode-value",
+    "source": "/3.1.x/useColorModeValue.md",
+    "destination": "/3.1.x/use-color-mode-value",
     "permanent": true
   },
   {
-    "source":"/3.2.x/useColorModeValue.md",
-    "destination":"/3.2.x/use-color-mode-value",
+    "source": "/3.2.x/useColorModeValue.md",
+    "destination": "/3.2.x/use-color-mode-value",
     "permanent": true
   },
   {
-    "source":"/next/useColorModeValue.md",
-    "destination":"/next/use-color-mode-value",
+    "source": "/next/useColorModeValue.md",
+    "destination": "/next/use-color-mode-value",
     "permanent": true
   },
   {
-    "source":"/3.1.x/useColorModeValue.md",
-    "destination":"/3.1.x/use-color-mode-value",
+    "source": "/3.1.x/useColorModeValue.md",
+    "destination": "/3.1.x/use-color-mode-value",
     "permanent": true
   },
   {
-    "source":"/3.0.x/more-props",
-    "destination":"/3.0.x",
-    "permanent":true
+    "source": "/3.0.x/more-props",
+    "destination": "/3.0.x",
+    "permanent": true
   },
   {
-    "source":"/3.1.x/more-props",
-    "destination":"/3.1.x",
-    "permanent":true
+    "source": "/3.1.x/more-props",
+    "destination": "/3.1.x",
+    "permanent": true
   },
   {
-    "source":"/3.2.x/formik",
-    "destination":"/3.2.x",
-    "permanent":true
+    "source": "/3.2.x/formik",
+    "destination": "/3.2.x",
+    "permanent": true
   },
   {
-    "source":"/3.3.x/formik",
-    "destination":"/3.3.x",
-    "permanent":true
+    "source": "/3.3.x/formik",
+    "destination": "/3.3.x",
+    "permanent": true
   },
   {
-    "source":"/formik",
-    "destination":"/",
-    "permanent":true
+    "source": "/formik",
+    "destination": "/",
+    "permanent": true
   },
   {
-    "source":"/next/formik",
-    "destination":"/next",
-    "permanent":true
+    "source": "/next/formik",
+    "destination": "/next",
+    "permanent": true
   },
   {
-    "source":"/3.2.x/react-hooks-forms",
-    "destination":"/3.2.x",
-    "permanent":true
+    "source": "/3.2.x/react-hooks-forms",
+    "destination": "/3.2.x",
+    "permanent": true
   },
   {
-    "source":"/3.3.x/react-hooks-forms",
-    "destination":"/3.3.x",
-    "permanent":true
+    "source": "/3.3.x/react-hooks-forms",
+    "destination": "/3.3.x",
+    "permanent": true
   },
   {
-    "source":"/react-hooks-forms",
-    "destination":"/",
-    "permanent":true
+    "source": "/react-hooks-forms",
+    "destination": "/",
+    "permanent": true
   },
   {
-    "source":"/next/react-hooks-forms",
-    "destination":"/next",
-    "permanent":true
+    "source": "/next/react-hooks-forms",
+    "destination": "/next",
+    "permanent": true
   },
   {
-    "source":"/3.0.x/more-props",
-    "destination":"/3.0.x",
-    "permanent":true
+    "source": "/3.0.x/more-props",
+    "destination": "/3.0.x",
+    "permanent": true
   },
   {
-    "source":"/3.1.x/more-props",
-    "destination":"/3.1.x",
-    "permanent":true
+    "source": "/3.1.x/more-props",
+    "destination": "/3.1.x",
+    "permanent": true
   },
   {
-    "source":"/3.0.x/customizingTheme",
-    "destination":"/3.0.x/customizing-theme",
-    "permanent":true
+    "source": "/3.0.x/customizingTheme",
+    "destination": "/3.0.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/z-stack",
+    "destination": "/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/transition",
+    "destination": "/presence-transition",
+    "permanent": true
   }
 ]

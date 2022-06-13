@@ -2126,14 +2126,14 @@
     "@react-types/listbox" "^3.1.1"
     "@react-types/shared" "^3.4.0"
 
-"@react-native-aria/overlays@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@react-native-aria/overlays/-/overlays-0.3.2.tgz#fe3fb983b197738237493c3e5af6b30f6da6be9d"
-  integrity sha512-sc2attCn+stKugBF8ZBz+EIdGoEHU/+NbJc5agS6lZWeemXL5LcgomNf6Tn7RUlpLfWOTEGBQOAiOZxjZnIQmQ==
+"@react-native-aria/overlays@0.3.3-rc.0":
+  version "0.3.3-rc.0"
+  resolved "https://registry.yarnpkg.com/@react-native-aria/overlays/-/overlays-0.3.3-rc.0.tgz#9041ddd6f151e6edb50c971d29920c458aa41459"
+  integrity sha512-RgaIYIHMltt0RdMrVwfXLAVxc22TIUY1Yx07HbQRMdt4LcSmU8pyp5CEtJ/MQCXceuqocnXfsUxyHOSnfhmfpA==
   dependencies:
     "@react-aria/interactions" "^3.3.2"
     "@react-aria/overlays" "^3.7.0"
-    "@react-native-aria/utils" "^0.2.6"
+    "@react-native-aria/utils" "^0.2.8"
     "@react-stately/overlays" "^3.1.1"
     "@react-types/overlays" "^3.4.0"
     dom-helpers "^5.0.0"
@@ -2422,7 +2422,7 @@
     color "^3.1.2"
     react-native-iphone-x-helper "^1.2.1"
 
-"@react-stately/checkbox@^3.0.1", "@react-stately/checkbox@^3.0.3":
+"@react-stately/checkbox@3.0.3", "@react-stately/checkbox@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@react-stately/checkbox/-/checkbox-3.0.3.tgz#18ee6bd3b544334b6f853bb5c5f7017ac3bb9c37"
   integrity sha512-amT889DTLdbjAVjZ9j9TytN73PszynGIspKi1QSUCvXeA2OVyCwShxhV0Pn7yYX8cMinvGXrjhWdhn0nhYeMdg==
@@ -5998,17 +5998,15 @@ expo-font@^10.0.3:
   dependencies:
     fontfaceobserver "^2.1.0"
 
-expo-linear-gradient@^10.0.3:
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/expo-linear-gradient/-/expo-linear-gradient-10.0.3.tgz#06ad72e164f5bf36c4afcfc8ccd31138a3a78d6e"
-  integrity sha512-zKkBhHvTvDywpb0y5BJDHTbxX5/2C60qW/M8uyZXKIZcTUwY7j/9Kcx0YzoNNglq7p6aQ/DWO7sM8LHr93985Q==
-  dependencies:
-    expo-modules-core "~0.4.4"
+expo-linear-gradient@^11.3.0:
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/expo-linear-gradient/-/expo-linear-gradient-11.3.0.tgz#855f470c9684f5b979c3c1be0ed1fe1943d57158"
+  integrity sha512-gm0cULqE5cTP39HZHi+eCGgQ2qMcwym92DwSzRpA5nA4Ah5oKksV+PwD7zzo6YJt3X3lgqrTYEqts9VQISCTgw==
 
-expo-modules-core@~0.4.4:
-  version "0.4.9"
-  resolved "https://registry.yarnpkg.com/expo-modules-core/-/expo-modules-core-0.4.9.tgz#e808ca8a70c4ac0da2cfc7040e48a4c67aeee5b3"
-  integrity sha512-yuwYoEQMZNSysufsYgJVmncpeGopNi8Q3y5Q7MM05PT90Sc5CGqbYwJMYomF7MprTZAxCvayoRBCKgOlzutWog==
+expo-modules-core@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/expo-modules-core/-/expo-modules-core-0.9.1.tgz#7c68c1d7abe4277a7b7b2a9a3a107a35e8ad93e9"
+  integrity sha512-B46RolbTz4HPt2tQMHxqBQpQzQbFVyKO8FCFuiJYU3wbWIjmj9wTyT+NPBQiz7C/C5+L/QuFadO8OjB28UG4Dg==
   dependencies:
     compare-versions "^3.4.0"
     invariant "^2.2.4"
@@ -9144,10 +9142,10 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base@3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.3.3.tgz#b75c7ac6b4af97fd9820c4074c3b820a9215588b"
-  integrity sha512-UayjmZQmv5qj/4S5CcdO3rDTrG7ZNmb7mXrp/lMQT6ZKW/0AJJhqALz3r9XqkYMrBQzO8dejBkEhFU+cvusBgA==
+native-base@^3.4.6:
+  version "3.4.6"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.4.6.tgz#ff0a5541c125165feb22ab9d31564a92be9cccd4"
+  integrity sha512-N/ggIruzkYXisD1qi7UL/3IaTrcLxOntl3/uDFKJMSXXxIGfdmIe6C92o6gETxy/+L+bXBHn9uAaZ/dE63YgZA==
   dependencies:
     "@react-aria/focus" "^3.2.3"
     "@react-aria/utils" "^3.6.0"
@@ -9158,12 +9156,12 @@ native-base@3.3.3:
     "@react-native-aria/focus" "^0.2.4"
     "@react-native-aria/interactions" "^0.2.2"
     "@react-native-aria/listbox" "^0.2.4-alpha.3"
-    "@react-native-aria/overlays" "^0.3.2"
+    "@react-native-aria/overlays" "0.3.3-rc.0"
     "@react-native-aria/radio" "^0.2.4"
     "@react-native-aria/slider" "^0.2.5-alpha.1"
     "@react-native-aria/tabs" "^0.2.7"
     "@react-native-aria/utils" "^0.2.8"
-    "@react-stately/checkbox" "^3.0.1"
+    "@react-stately/checkbox" "3.0.3"
     "@react-stately/collections" "^3.3.0"
     "@react-stately/combobox" "^3.0.0-alpha.1"
     "@react-stately/radio" "^3.2.1"
@@ -9182,7 +9180,6 @@ native-base@3.3.3:
     lodash.omit "^4.5.0"
     lodash.omitby "^4.6.0"
     lodash.pick "^4.4.0"
-    patch-package "^6.4.7"
     react-native-keyboard-aware-scroll-view "^0.9.5"
     stable-hash "^0.0.2"
     tinycolor2 "^1.4.2"

@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, HStack, Text } from "native-base";
+import React from 'react';
+import { Box, HStack, Text } from 'native-base';
 
 const FontSizeComponent = ({ name, value }: any) => {
   return (
@@ -8,8 +8,9 @@ const FontSizeComponent = ({ name, value }: any) => {
         {name}
       </Text>
       <Text
+        isTruncated
         fontSize={value}
-        textOverflow="ellipsis"
+        // @ts-ignore
         whiteSpace="nowrap"
         overflow="hidden"
         ml="5"

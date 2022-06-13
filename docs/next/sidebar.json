@@ -69,7 +69,8 @@
         },
         {
           "id": "solito",
-          "title": "Creating a Universal App with NativeBase and Solito"
+          "title": "Creating a Universal App with NativeBase and Solito",
+          "status": "new"
         }
       ]
     },
@@ -99,7 +100,8 @@
         },
         {
           "id": "internal-pseudo-props",
-          "title": "Internal Pseudo Props"
+          "title": "Internal Pseudo Props",
+          "status": "new"
         },
         {
           "id": "responsive",
@@ -107,7 +109,6 @@
         }
       ]
     },
-
     {
       "type": "heading",
       "title": "Features",
@@ -182,6 +183,10 @@
       "type": "heading",
       "title": "Layout",
       "pages": [
+        {
+          "id": "aspect-ratio",
+          "title": "Aspect Ratio"
+        },
         {
           "id": "box",
           "title": "Box"
@@ -298,8 +303,7 @@
         },
         {
           "id": "skeleton",
-          "title": "Skeleton",
-          "status": "new"
+          "title": "Skeleton"
         },
         {
           "id": "spinner",
@@ -307,7 +311,8 @@
         },
         {
           "id": "toast",
-          "title": "Toast"
+          "title": "Toast",
+          "status": "update"
         }
       ]
     },
@@ -375,8 +380,7 @@
         },
         {
           "id": "image",
-          "title": "Image",
-          "status": "update"
+          "title": "Image"
         }
       ]
     },
@@ -564,10 +568,6 @@
             {
               "id": "building-footer-tabs",
               "title": "Footer"
-            },
-            {
-              "id": "aspect-ratio",
-              "title": "Aspect Ratio"
             }
           ]
         }
