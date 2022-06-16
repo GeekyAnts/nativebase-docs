@@ -5,7 +5,7 @@ title: Alert
 
 import { ComponentTheme } from '../src/components';
 
-`Alerts` convey a state that can influences a system, feature or page.
+`Alerts` convey a state that can influence a system, feature, or page.
 
 ```jsx isShowcase
 import React from "react";

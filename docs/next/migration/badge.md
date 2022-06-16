@@ -9,7 +9,7 @@ Migrating [`Badge`](/badge) to v3 will provide a lot more **design**, **size, va
 
 Migrating Badge components can be broadly described in these points:
 
-- No need to wrap you text inside text component anymore.
+- No need to wrap your text inside text component anymore.
 - In v3 the color is controlled by `colorScheme` prop. And it accepts all the color available in the theme.
 
 ## Code Comparison

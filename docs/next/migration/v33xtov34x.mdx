@@ -1,0 +1,73 @@
+---
+id: migration-guide-three-point-four
+title: Upgrading to 3.4.0 from 3.3.x
+---
+
+<!-- As we continue to improve NativeBase v3 we got a lot of feature requests and we also revamped our theme to make it more consistent, easy to understand, optimized and promote good practices while writing code.
+
+To do that we had to make some changes to our theme in `v3.3.0`. These are breaking changes if you are using some of the tokens in your project. To make it easy for you to upgrade, we are providing changelog: -->
+
+## Changelog
+
+The following is the overview of the changelog
+
+### Foundation
+
+- Added new color tokens for `text`.
+- All colors checked with WCAG 3.0’s APCA accessibility.
+- Updated derived colors for `danger`, `error`, `success`, and `tertiary`.
+- Added letter spacing in headings.
+
+### Components
+
+<!-- #### Color Changes:
+
+- Updated color changes as per new design in the components mentioned below:
+- `Alert`, `Progress`, `Spinner`, `Alert Dialog`, `Popover`, `Menu`, `Tooltip`, `Slider`, `Radio`, `Checkbox`, `Link`, `Actionsheet`, `Fab`, `Badge`, `Button`, `Icon Button`,
+
+#### Shadow:
+
+- Added `Shadow` for few components mentioned below:
+- `Alert Dialog`, `Popover`, `Menu`, `Tooltip`, `Slider` -->
+
+Added the following design changes to all components: color change, shadow, padding, and opacity changes. All changes are according to the new formats.
+
+#### Icon:
+
+- Removed `xxs` from sizes. Use `2xs` size instead.
+
+#### Checkbox & Radio:
+
+- Removed `interactionBox` scaling animation design for hover state.
+
+#### Badge
+
+- Added new warning variant.
+- Added a variant with icon.
+
+## Pseudo Props for Color Modes
+
+- Updated theme using `_light` and `_dark` props for light mode and dark mode respectively.
+- Internal props will still have higher specifity, as it will override platform props as well as color mode props.
+
+## Theme Decoupling
+
+- In 3.4 we have completely decoupled the theme. All the internal design props are now transferred to the theme.
+- This will allow you to use multiple theme files in your project and toggle between them efficiently.
+
+## Extend previous version's theme for backward compatibility
+
+You need to add `v33xTheme` to your `NativeBaseProvider` which preserves all the old design that was changed or removed in v3.4.0.
+
+```jsx
+import { NativeBaseProvider, extendTheme, v33xTheme } from 'native-base';
+
+// ...
+const yourCustomTheme = {
+  // ...
+};
+
+<NativeBaseProvider
+  theme={extendTheme(v33xTheme, yourCustomTheme)}
+></NativeBaseProvider>;
+```
