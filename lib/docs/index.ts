@@ -1,38 +1,38 @@
-import fs from "fs";
-import DirectoryTree from "directory-tree";
-let filePaths: string[] = [""];
-import versions from "../../versions.json";
+import fs from 'fs';
+import DirectoryTree from 'directory-tree';
+let filePaths: string[] = [''];
+import versions from '../../versions.json';
 const baseDirPath = process.cwd();
-import path from "path";
-const { parse } = require("@babel/parser");
-const traverse = require("@babel/traverse").default;
-const generate = require("@babel/generator").default;
-const prettier = require("prettier");
-const docgen = require("react-docgen-typescript");
-const { internalPropsMap, rnPropsMap, StylingPropsMap } = require("./propsMap");
-import { useColorModeValue, useColorMode, ColorMode } from "native-base";
-const babel = require("@babel/core");
-const babelPlugin = require("@babel/plugin-transform-typescript");
+import path from 'path';
+const { parse } = require('@babel/parser');
+const traverse = require('@babel/traverse').default;
+const generate = require('@babel/generator').default;
+const prettier = require('prettier');
+const docgen = require('react-docgen-typescript');
+const { internalPropsMap, rnPropsMap, StylingPropsMap } = require('./propsMap');
+import { useColorModeValue, useColorMode, ColorMode } from 'native-base';
+const babel = require('@babel/core');
+const babelPlugin = require('@babel/plugin-transform-typescript');
 
 const getHeadingLevel = (line: string) => {
   return {
-    level: line.split("#").filter((val) => val === "").length - 1,
+    level: line.split('#').filter((val) => val === '').length - 1,
     id: line
-      .split("#")
-      .filter((val) => val !== "")[0]
+      .split('#')
+      .filter((val) => val !== '')[0]
       .trim()
-      .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "")
-      .replace(/ /g, "-")
+      .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '')
+      .replace(/ /g, '-')
       .toLowerCase(),
     title: line
-      .split("#")
-      .filter((val) => val !== "")[0]
+      .split('#')
+      .filter((val) => val !== '')[0]
       .trim(),
   };
 };
 
 const removeCommentsFromMarkdownFile = (file: string) => {
-  return file.replace(/<!--[\s\S]*?-->/g, "");
+  return file.replace(/<!--[\s\S]*?-->/g, '');
 };
 
 const checkHeading = (headingLevelMap: any) => {
@@ -56,7 +56,7 @@ const checkHeading = (headingLevelMap: any) => {
       result.push({
         level: headingLevelMap[i].level,
         title: headingLevelMap[i].title,
-        id: "h"+(headingLevelMap[i].level+1)+"-"+headingLevelMap[i].id,
+        id: 'h' + (headingLevelMap[i].level + 1) + '-' + headingLevelMap[i].id,
       });
     }
   }
@@ -66,9 +66,9 @@ const checkHeading = (headingLevelMap: any) => {
 export const getTOCArray = (file: string) => {
   file = removeCommentsFromMarkdownFile(file);
   const fileLines = file
-    .split("\n")
-    .filter((line: string) => (line.substring(0, 1) === "#" ? true : false))
-    .map((line: any) => line.split(" id")[0].trim());
+    .split('\n')
+    .filter((line: string) => (line.substring(0, 1) === '#' ? true : false))
+    .map((line: any) => line.split(' id')[0].trim());
 
   let toc = {};
   const headingLevelMap = fileLines.map((line: string) => {
@@ -82,14 +82,14 @@ export const getFilePaths = (
   // index: number = 0,
 ): string[] | undefined => {
   if (!tree.children) {
-    let path = tree.path.split("/docs/")[1];
-    let slugPath = "";
-    if (path.split("/")[0] === versions[0]) {
+    let path = tree.path.split('/docs/')[1];
+    let slugPath = '';
+    if (path.split('/')[0] === versions[0]) {
       slugPath = path.split(`${versions[0]}/`)[1];
     }
     if (path.match(/\.mdx?$/)) {
       filePaths = [...filePaths, path];
-      if (slugPath != "") {
+      if (slugPath != '') {
         filePaths = [...filePaths, slugPath];
       }
     }
@@ -103,50 +103,50 @@ export const getFilePaths = (
 };
 
 export const getFileExtension = async (slug: string) => {
-  const slugPathArray = slug.split("/");
+  const slugPathArray = slug.split('/');
   let filename = slugPathArray[slugPathArray.length - 1];
-  let slugPath = "";
+  let slugPath = '';
   for (let i = 0; i < slugPathArray.length - 1; i++) {
-    slugPath = slugPath + slugPathArray[i] + "/";
+    slugPath = slugPath + slugPathArray[i] + '/';
   }
-  const files = fs.readdirSync(baseDirPath + "/docs/" + slugPath);
+  const files = fs.readdirSync(baseDirPath + '/docs/' + slugPath);
   // console.log("files", files);
   // console.log("filename", filename);
   for (let i = 0; i < files.length; i++) {
-    if (files[i].split(".")[0] === filename) {
-      return files[i].split(".")[1];
+    if (files[i].split('.')[0] === filename) {
+      return files[i].split('.')[1];
     }
   }
-  return "file_not_found";
+  return 'file_not_found';
 };
 
 const getAdmonitionTag = (str: string) => {
-  let status = str.split("\n")[0].substring(0, str.indexOf(" "));
-  let title = str.split("\n")[0].substring(str.indexOf(" ") + 1);
-  let children = str.split(":::")[0].substring(str.indexOf("\n") + 1);
+  let status = str.split('\n')[0].substring(0, str.indexOf(' '));
+  let title = str.split('\n')[0].substring(str.indexOf(' ') + 1);
+  let children = str.split(':::')[0].substring(str.indexOf('\n') + 1);
   return `<admonition status="${status}" title="${title}">\n${children}</admonition>${str
-    .split(":::")
+    .split(':::')
     .slice(1)
-    .join("")}`;
+    .join('')}`;
 };
 
 export const parseAdmonitions = (fileData: any, version: string) => {
   let tempArray = fileData.split(/(\:::)(?!\n| )/g);
   let result = [];
   for (let i = 0; i < tempArray.length; i++) {
-    if (tempArray[i] === ":::") {
+    if (tempArray[i] === ':::') {
       result.push(getAdmonitionTag(tempArray[i + 1]));
       i = i + 1;
     } else {
       result.push(tempArray[i]);
     }
   }
-  return result.join("");
+  return result.join('');
 };
 export const parseHeadings = (fileData: any, version: string) => {
   const headings = fileData
-    .split("\n")
-    .filter((line: string) => line.substring(0, 1) === "#");
+    .split('\n')
+    .filter((line: string) => line.substring(0, 1) === '#');
 
   let result: any = [];
   let key = -1;
@@ -154,11 +154,11 @@ export const parseHeadings = (fileData: any, version: string) => {
   let headingMap = [];
   for (let i = 0; i < headings.length; i++) {
     const headingId = headings[i]
-      .split("#")
-      .filter((val: any) => val !== "")[0]
+      .split('#')
+      .filter((val: any) => val !== '')[0]
       .trim()
-      .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "")
-      .replace(/ /g, "-")
+      .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '')
+      .replace(/ /g, '-')
       .toLowerCase();
     let headingMapIndex = headingMap.findIndex((id) => id === headingId);
     if (headingMapIndex !== -1) {
@@ -171,59 +171,60 @@ export const parseHeadings = (fileData: any, version: string) => {
     }
   }
 
-  const fileLines = fileData.split("\n").map((line: string) => {
-    if (line.substring(0, 1) === "#") {
+  const fileLines = fileData.split('\n').map((line: string) => {
+    if (line.substring(0, 1) === '#') {
       key++;
-      return line + " id=" + result[key];
+      return line + ' id=' + result[key];
     } else {
       return line;
     }
   });
 
-  return fileLines.join("\n");
+  return fileLines.join('\n');
 };
 
 export const parseCodeBlock = (fileData: any, version: string) => {
-  const tempArray = fileData.split("```ComponentSnackPlayer ");
+  const tempArray = fileData.split('```ComponentSnackPlayer ');
   // console.log(tempArray);
 
   for (let i = 0; i < tempArray.length; i++) {
-    if (tempArray[i].substring(0, 4) == "path") {
+    if (tempArray[i].substring(0, 4) == 'path') {
       let code = getCodeFromStorybook(
-        tempArray[i].split("\n")[0].slice(5).split(","),
+        tempArray[i].split('\n')[0].slice(5).split(','),
         version
       );
       // console.log(tempArray[i]);
-      let temp1 = tempArray[i].split("```");
+      let temp1 = tempArray[i].split('```');
       // console.log(temp1);
       temp1[0] = code;
-      tempArray[i] = temp1.join("```");
+      tempArray[i] = temp1.join('```');
     }
   }
-  return tempArray.join("");
+  return tempArray.join('');
 };
 export const parsePropTable = (fileData: any, version: string) => {
-  const tempArray = fileData.split("```ComponentPropTable ");
+  const tempArray = fileData.split('```ComponentPropTable ');
   // console.log(tempArray);
 
   for (let i = 0; i < tempArray.length; i++) {
-    if (tempArray[i].substring(0, 4) == "path") {
+    if (tempArray[i].substring(0, 4) == 'path') {
       let code = getPropTableFile(
         tempArray[i]
-          .split("\n")[0]
+          .split('\n')[0]
           .slice(5)
-          .split(" showStylingProps")[0]
+          .split(' showStylingProps')[0]
           .trim()
-          .split(","),
+          .split(','),
         version
       );
-      // console.log(tempArray[i]);
-      let position = tempArray[i].search("```");
+
+      let position = tempArray[i].search('```');
       let res = code + tempArray[i].substring(position + 3);
       tempArray[i] = res;
     }
   }
-  return tempArray.join("");
+
+  return tempArray.join('');
 };
 
 const propTable = (typesArray: any, showStylingProps: boolean) => {
@@ -237,10 +238,10 @@ const propTable = (typesArray: any, showStylingProps: boolean) => {
 };
 
 const implementsTemplateGenerator = (set: any) => {
-  let temp = "";
+  let temp = '';
   const arr = [...set];
   [...arr].map((item, i) => {
-    temp = temp + item + (i === arr.length - 1 ? "" : ", ");
+    temp = temp + item + (i === arr.length - 1 ? '' : ', ');
   });
   return temp;
 };
@@ -261,7 +262,7 @@ const implementSection = (componentDetails: any, showStylingProps: any) => {
 
     if (MapValue && propName !== `I${displayName}Props`) {
       implementsArray.add(
-        MapValue.link.startsWith("http")
+        MapValue.link.startsWith('http')
           ? `<a href="${MapValue.link}"><inlineCode>${MapValue.name}</inlineCode></a>`
           : `<a href="${MapValue.link}">${MapValue.name}</a>`
       );
@@ -281,22 +282,22 @@ const templateGenerator = (componentDetails: any) => {
   let propExists = false;
 
   const template = (propsObject: any) => {
-    let temp = "";
+    let temp = '';
     for (let prop in propsObject) {
       const { name, description, type, parent, defaultValue } =
         propsObject[prop];
       let markupWithTypeLinks;
-      if (type.name.includes("ILinearGradientProps")) {
+      if (type.name.includes('ILinearGradientProps')) {
         markupWithTypeLinks = `${
           `ResponsiveValue&lt;` +
-          `<a href="${StylingPropsMap["backgroundColor"].link}">ColorProps </a>` +
+          `<a href="${StylingPropsMap['backgroundColor'].link}">ColorProps </a>` +
           `\|` +
-          `<a href="${internalPropsMap["ILinearGradientProps"].link}"> ILinearGradientProps</a>` +
+          `<a href="${internalPropsMap['ILinearGradientProps'].link}"> ILinearGradientProps</a>` +
           `>`
         }`;
       } else {
         markupWithTypeLinks = type.name
-          .split("|")
+          .split('|')
           .map((e: any) => {
             return e.trim();
           })
@@ -307,17 +308,22 @@ const templateGenerator = (componentDetails: any) => {
               StylingPropsMap[element];
 
             const htmlSanatizedElem = element
-              .replace(/\</g, "&lt;") //for <
-              .replace(/\>/g, "&gt;"); //for >
+              .replace(/\</g, '&lt;') //for <
+              .replace(/\>/g, '&gt;'); //for >
             return `${
               MapValue
                 ? `<a href="${MapValue.link}">${element}</a>`
                 : htmlSanatizedElem
             }`;
           })
-          .join(" | ");
+          .join(' | ');
       }
-      if (parent && parent.name === `I${displayName}Props`) {
+      // console.log(displayName, 'in code');
+      if (
+        parent &&
+        (parent.name === `Interface${displayName}Props` ||
+          parent.name === `I${displayName}Props`)
+      ) {
         propExists = true;
         temp =
           temp +
@@ -327,14 +333,14 @@ const templateGenerator = (componentDetails: any) => {
           </td>
           <td>
               ${markupWithTypeLinks
-                .replace(/[{]/g, "&#123;")
-                .replace(/[}]/g, "&#125;")}
+                .replace(/[{]/g, '&#123;')
+                .replace(/[}]/g, '&#125;')}
           </td>
           <td>
-            ${description || "-"}
+            ${description || '-'}
           </td>
           <td>
-            ${defaultValue ? defaultValue.value : "-"}
+            ${defaultValue ? defaultValue.value : '-'}
           </td>
         </tr>`;
       }
@@ -344,6 +350,7 @@ const templateGenerator = (componentDetails: any) => {
   };
 
   const templateString = template(props);
+
   return propExists
     ? `
   <table border="1" style={{color:"gray"}} isPropTable="true">
@@ -364,7 +371,7 @@ const templateGenerator = (componentDetails: any) => {
     ${templateString}
   </table>
   `
-    : "";
+    : '';
 };
 
 const getPropTableFile = (pathArray: string[], version: string) => {
@@ -372,17 +379,17 @@ const getPropTableFile = (pathArray: string[], version: string) => {
   const filePath =
     baseDirPath +
     path.resolve(
-      "/versioned_repo/",
+      '/versioned_repo/',
       version,
-      "NativeBase",
-      "src",
-      "components",
+      'NativeBase',
+      'src',
+      'components',
       ...pathArray
     );
   // console.log(filePath, "filepath");
   const code = docgen.parse(filePath);
-  // console.log(code[0].props.children, "in code");
   return propTable(code, showStylingProps);
+
   // console.log(propTable(code, showStylingProps), "****hello******");
   // console.log(version);
 
@@ -432,12 +439,12 @@ const getCodeFromStorybook = (pathArray: string[], version: string) => {
 
   let code: string = fs.readFileSync(
     baseDirPath +
-      "/versioned_repo/" +
+      '/versioned_repo/' +
       version +
-      "/NativeBase/example/storybook/stories/" +
-      (["3.1.x", "3.0.x"].includes(version) ? "components/" : "") +
+      '/NativeBase/example/storybook/stories/' +
+      (['3.1.x', '3.0.x'].includes(version) ? 'components/' : '') +
       path.join(...pathArray),
-    "utf-8"
+    'utf-8'
   );
   // const ast = parse(code, {
   //   sourceType: "module",
@@ -462,7 +469,7 @@ const getCodeFromStorybook = (pathArray: string[], version: string) => {
   // });
   // const output = generate(ast);
   // console.log(code);
-  code = code.replace(/\?\./g, ".");
+  code = code.replace(/\?\./g, '.');
   let finalCode = babel.transformSync(code, {
     configFile: false,
     plugins: [[babelPlugin, { isTSX: true }]],
@@ -470,26 +477,24 @@ const getCodeFromStorybook = (pathArray: string[], version: string) => {
 
   const result = prettier.format(finalCode, {
     semi: false,
-    parser: "babel",
+    parser: 'babel',
   });
 
-  return "```jsx isLive=true \n" + result + "\n```";
+  return '```jsx isLive=true \n' + result + '\n```';
 };
 
 export const getDocBySlug = async (filename: string, version: string) => {
   const ext: string = await getFileExtension(filename);
 
   let fileData = fs.readFileSync(
-    baseDirPath + "/docs/" + filename + "." + ext,
-    "utf-8"
+    baseDirPath + '/docs/' + filename + '.' + ext,
+    'utf-8'
   );
 
   fileData = parseCodeBlock(fileData, version);
   fileData = parsePropTable(fileData, version);
   fileData = parseAdmonitions(fileData, version);
   fileData = parseHeadings(fileData, version);
-  // console.log(fileData);
-
   return fileData;
 };
 
