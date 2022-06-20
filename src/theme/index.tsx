@@ -1,15 +1,16 @@
-import { extendTheme } from "native-base";
-import colors from "native-base/src/theme/base/colors";
+import { extendTheme } from 'native-base';
+import colors from 'native-base/src/theme/base/colors';
 export const theme = extendTheme({
   colors: {
+    primary: colors.emerald,
     backgroundLight: colors.coolGray[100],
     backgroundDark: colors.blueGray[900],
 
-    primaryTextDark: colors.cyan[200],
-    primaryTextLight: colors.cyan[700],
+    primaryTextDark: colors.emerald[200],
+    primaryTextLight: colors.emerald[700],
 
     borderColorDark: colors.coolGray[800],
-    borderColorLight: "#dfe3e6",
+    borderColorLight: '#dfe3e6',
 
     // -------------------------------------------------- TOC -------------------------------------------
 
@@ -35,52 +36,52 @@ export const theme = extendTheme({
     sidebarItemHeadingTextDark: colors.coolGray[50],
     sidebarItemHeadingTextLight: colors.blueGray[900],
     sidebarItemTextDark: colors.coolGray[200],
-    sidebarItemTextLight: "#11181c",
+    sidebarItemTextLight: '#11181c',
 
-    activeSidebarItemBackgroundLight: colors.cyan[200],
-    activeSidebarItemBackgroundDark: colors.cyan[700],
-    activeSidebarItemHoverBackgroundLight: colors.cyan[200],
-    activeSidebarItemHoverBackgroundDark: colors.cyan[600],
+    activeSidebarItemBackgroundLight: colors.emerald[200],
+    activeSidebarItemBackgroundDark: colors.emerald[700],
+    activeSidebarItemHoverBackgroundLight: colors.emerald[200],
+    activeSidebarItemHoverBackgroundDark: colors.emerald[600],
 
     inactiveSidebarItemHoverBackgroundLight: colors.blueGray[200],
     inactiveSidebarItemHoverBackgroundDark: colors.blueGray[800],
 
     // -------------------------------------------------- Link -------------------------------------------
 
-    inactiveLinkTextColorLight: "#687076",
-    inactiveLinkTextColorDark: "#9ba1a6",
-    inactiveHoverBorderBottomLinkColorDark: "#26292b",
-    inactiveHoverBorderBottomLinkColorLight: "#eceef0",
+    inactiveLinkTextColorLight: '#687076',
+    inactiveLinkTextColorDark: '#9ba1a6',
+    inactiveHoverBorderBottomLinkColorDark: '#26292b',
+    inactiveHoverBorderBottomLinkColorLight: '#eceef0',
 
-    activeLinkTextColorLight: "#11181c",
-    activeLinkTextColorDark: "#ecedee",
-    activeBorderBottomLinkColorLight: "#eceef0",
-    activeBorderBottomLinkColorDark: "#eceef0",
-    activeHoverBorderBottomLinkColorDark: "#26292b",
-    activeHoverBorderBottomLinkColorLight: "#eceef0",
+    activeLinkTextColorLight: '#11181c',
+    activeLinkTextColorDark: '#ecedee',
+    activeBorderBottomLinkColorLight: '#eceef0',
+    activeBorderBottomLinkColorDark: '#eceef0',
+    activeHoverBorderBottomLinkColorDark: '#26292b',
+    activeHoverBorderBottomLinkColorLight: '#eceef0',
 
     // -------------------------------------------------- Page Navs -------------------------------------------
 
-    pageNavigationHeadingLight: "#687076",
-    pageNavigationHeadingDark: "#9ba1a6",
-    pageNavigationMainTitleLight: "#006adc",
-    pageNavigationMainTitleDark: "#52a9ff",
+    pageNavigationHeadingLight: '#687076',
+    pageNavigationHeadingDark: '#9ba1a6',
+    pageNavigationMainTitleLight: '#006adc',
+    pageNavigationMainTitleDark: '#52a9ff',
 
     // -------------------------------------------------- Tabs -------------------------------------------
 
-    SelectedTabTextColor: "#52a9ff",
-    SelectedTabBorderColor: "#52a9ff",
+    SelectedTabTextColor: '#52a9ff',
+    SelectedTabBorderColor: '#52a9ff',
 
     // -------------------------------------------------- CodeBlock -------------------------------------------
 
-    codeBlockBackgroundColor: "#171E2E",
+    codeBlockBackgroundColor: '#171E2E',
 
     // -------------------------------------------------- Admonitions -------------------------------------------
     tipBackgroundColorDark: colors.coolGray[300],
     tipBackgroundColorLight: colors.coolGray[900],
   },
   config: {
-    // Changing initialColorMode to 'dark'
-    initialColorMode: "dark",
+    // Changing initialColorMode to 'light'
+    initialColorMode: 'light',
   },
 });

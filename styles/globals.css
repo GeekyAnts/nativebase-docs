@@ -9,20 +9,20 @@ body {
 }
 #nativebase-body-light ::-moz-selection {
   /* Code for Firefox */
-  background: #cffafe;
+  background: #d1fae5;
 }
 
 #nativebase-body-light ::selection {
-  background: #cffafe;
+  background: #d1fae5;
 }
 
 #nativebase-body-dark ::-moz-selection {
   /* Code for Firefox */
-  background: #155e75;
+  background: #065f46;
 }
 
 #nativebase-body-dark ::selection {
-  background: #155e75;
+  background: #065f46;
 }
 
 a {
@@ -61,7 +61,7 @@ a {
   display: none !important;
 }
 
-html[data-theme="dark"] {
+html[data-theme='dark'] {
   --docsearch-primary-color: #0e7490;
   --docsearch-text-color: rgb(245, 246, 247);
   --docsearch-container-background: rgba(9, 10, 17, 0.8);
@@ -88,7 +88,7 @@ html[data-theme="dark"] {
   --docsearch-footer-background: #1f2937 !important;
 }
 
-html[data-theme="light"] {
+html[data-theme='light'] {
   --docsearch-primary-color: #0e7490;
   --docsearch-text-color: rgb(28, 30, 33);
   --docsearch-spacing: 12px;

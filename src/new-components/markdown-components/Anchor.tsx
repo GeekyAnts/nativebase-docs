@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, Pressable } from "native-base";
+import React from 'react';
+import { Link, Pressable } from 'native-base';
 export const Anchor = (props: any) => {
   return (
     <Pressable>
@@ -8,12 +8,12 @@ export const Anchor = (props: any) => {
           <Link
             _text={{
               _light: {
-                color: "cyan.600",
+                color: 'primary.600',
               },
               _dark: {
-                color: "cyan.500",
+                color: 'primary.500',
               },
-              textDecorationLine: isHovered ? "underline" : "none",
+              textDecorationLine: isHovered ? 'underline' : 'none',
             }}
             href={props.href}
             {...props}

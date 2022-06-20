@@ -1,0 +1,267 @@
+{
+  "sidebar": [
+    {
+      "type": "heading",
+      "title": "About",
+      "pages": [
+        {
+          "id": "about/breakpoints",
+          "title": "Breakpoints"
+        },
+        {
+          "id": "about/building-app-bar",
+          "title": "Building app bar"
+        },
+        {
+          "id": "about/building-app-drawer",
+          "title": "Building app drawer"
+        }
+      ]
+    },
+    {
+      "id": "landing-page",
+      "title": "Landing Page",
+      "showToc": false,
+      "notVisibleInSidebar": true,
+      "landingPage": true
+    },
+    {
+      "type": "heading",
+      "title": "Assets",
+      "pages": [
+        {
+          "id": "assets/avatar",
+          "title": "Avatar"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Components",
+      "pages": [
+        {
+          "id": "components/alert-dialog",
+          "title": "Alert Dialog"
+        },
+        {
+          "id": "components/alert",
+          "title": "Alert"
+        },
+        {
+          "id": "components/avatar",
+          "title": "Avatar"
+        },
+        {
+          "id": "components/badge",
+          "title": "Badge"
+        },
+        {
+          "id": "components/box",
+          "title": "Box"
+        },
+        {
+          "id": "components/button",
+          "title": "Button"
+        },
+        {
+          "id": "components/center",
+          "title": "Center"
+        },
+        {
+          "id": "components/checkbox",
+          "title": "Checkbox"
+        },
+        {
+          "id": "components/container",
+          "title": "Container"
+        },
+        {
+          "id": "components/form",
+          "title": "Form"
+        },
+        {
+          "id": "components/heading",
+          "title": "Heading"
+        },
+        {
+          "id": "components/hstack",
+          "title": "HStack"
+        },
+        {
+          "id": "components/icon-button",
+          "title": "IconButton"
+        },
+        {
+          "id": "components/icon",
+          "title": "Icon"
+        },
+        {
+          "id": "components/image",
+          "title": "Image"
+        },
+        {
+          "id": "components/input",
+          "title": "Input"
+        },
+        {
+          "id": "components/menu",
+          "title": "Menu"
+        },
+        {
+          "id": "components/modal",
+          "title": "Avatar"
+        },
+        {
+          "id": "components/popover",
+          "title": "Badge"
+        },
+        {
+          "id": "components/pressable",
+          "title": "Pressable"
+        },
+        {
+          "id": "components/progress",
+          "title": "Alert"
+        },
+        {
+          "id": "components/scrollview",
+          "title": "Avatar"
+        },
+        {
+          "id": "components/select",
+          "title": "Badge"
+        },
+        {
+          "id": "components/slide",
+          "title": "Box"
+        },
+        {
+          "id": "components/slider",
+          "title": "Button"
+        },
+        {
+          "id": "components/spinner",
+          "title": "Center"
+        },
+        {
+          "id": "components/stack",
+          "title": "Checkbox"
+        },
+        {
+          "id": "components/stagger",
+          "title": "Container"
+        },
+        {
+          "id": "components/switch",
+          "title": "Form"
+        },
+        {
+          "id": "components/text",
+          "title": "Heading"
+        },
+        {
+          "id": "components/textarea",
+          "title": "HStack"
+        },
+        {
+          "id": "components/toast",
+          "title": "IconButton"
+        },
+        {
+          "id": "components/view",
+          "title": "Icon"
+        },
+        {
+          "id": "components/vstack",
+          "title": "Image"
+        },
+        {
+          "id": "components/zstack",
+          "title": "Input"
+        },
+        {
+          "id": "components/menu",
+          "title": "Menu"
+        },
+        {
+          "id": "components/modal",
+          "title": "Avatar"
+        },
+        {
+          "id": "components/popover",
+          "title": "Badge"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Design Principles",
+      "pages": [
+        {
+          "id": "design-principles/building-card",
+          "title": "Building Card"
+        },
+        {
+          "id": "design-principles/building-drawer-navigation",
+          "title": "Building Drawer Navigation"
+        },
+        {
+          "id": "design-principles/building-footer-tabs",
+          "title": "Building Footer Tabs"
+        },
+        {
+          "id": "design-principles/building-search-bar",
+          "title": "Building Search Bar"
+        },
+        {
+          "id": "design-principles/building-swipe-list",
+          "title": "Building Swipe List"
+        },
+        {
+          "id": "design-principles/building-tab-view",
+          "title": "Building Tab View"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Design Tokens",
+      "pages": [
+        {
+          "id": "design-tokens/accessibility",
+          "title": "Building Card"
+        },
+        {
+          "id": "design-tokens/action-sheet",
+          "title": "Building Drawer Navigation"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "How to use",
+      "pages": [
+        {
+          "type": "heading",
+          "title": "Designers",
+          "pages": [
+            {
+              "id": "how-to-use/designers/designpage",
+              "title": "Designers Page"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "title": "Developers",
+          "pages": [
+            {
+              "id": "how-to-use/developers/developmentpage",
+              "title": "Developers Page"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

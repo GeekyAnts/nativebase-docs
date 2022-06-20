@@ -114,7 +114,6 @@ export async function getStaticProps({ params }: any) {
 
   const mdxSource = await serialize(content);
   const toc = getTOCArray(markdownWithMeta);
-
   return {
     props: {
       frontMatter,
@@ -133,14 +132,14 @@ export async function getStaticPaths() {
 
   const baseDirPath = process.cwd();
   const tree = DirectoryTree(baseDirPath + '/' + config.docsEntryPoint);
-  // console.log("tree", tree);
   const filePaths = getFilePaths(tree);
+  // console.log('tree', tree);
   // add versiond index page slug paths
   versions.map((version) => {
     filePaths?.push(version);
   });
   filePaths?.push('next');
-  // console.log("filepaths", ...filePaths);
+  // console.log('filepaths', ...filePaths);
   let paths: any = [];
   filePaths?.map((filename) => {
     let slug = filename.split('.md')[0].split('/');

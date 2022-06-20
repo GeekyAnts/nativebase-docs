@@ -1,24 +1,15 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Box, HStack, Menu, Pressable, ScrollView, Text } from "native-base";
-import React from "react";
+import { HStack, useColorModeValue } from 'native-base';
+import React from 'react';
 
-export default function NativebaseLogo(props: any) {
-  const { sidebar } = props;
-
+export default function NativebaseLogo() {
+  const isLightMode = useColorModeValue(true, false);
   return (
     <HStack alignItems="center">
-      <Image
-        alt="Nativebase logo"
-        src="https://docs.nativebase.io/img/nativebaselogo.svg"
-        layout="fixed"
-        width="38"
-        height="42"
-        quality={100}
-      />
-      <Text fontWeight="bold" fontSize="20" pl="2">
-        NativeBase
-      </Text>
+      {isLightMode ? (
+        <img alt="topgeek logo" src="/img/topgeek-logo-dark.svg" width="120" />
+      ) : (
+        <img alt="topgeek logo" src="/img/topgeek-logo-white.svg" width="120" />
+      )}
     </HStack>
   );
 }
