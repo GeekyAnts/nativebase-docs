@@ -14153,5 +14153,35 @@
     "source": "/transition",
     "destination": "/presence-transition",
     "permanent": true
+  },
+  {
+    "source": "/migration/contribution",
+    "destination": "/contribution",
+    "permanent": true
+  },
+  {
+    "source": "/migration/internal-pseudo-props",
+    "destination": "/internal-pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/migration/migration/v33xtov34x",
+    "destination": "/migration/v33xtov34x",
+    "permanent": true
+  },
+  {
+    "source": "/migration/solito",
+    "destination": "/solito",
+    "permanent": true
+  },
+  {
+    "source": "/migration/nb-icons",
+    "destination": "/nb-icons",
+    "permanent": true
+  },
+  {
+    "source": "/license",
+    "destination": "/usage-license",
+    "permanent": true
   }
 ]
