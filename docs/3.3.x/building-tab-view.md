@@ -10,7 +10,7 @@ A cross-platform Tab View component for React Native
 Here is an example to show how easily and quickly we can use [react-native-tab-view](https://www.npmjs.com/package/react-native-tab-view) in NB.
 
 ```jsx isLive=true
-import * as React from "react";
+import * as React from 'react';
 import {
   View,
   StyleSheet,
@@ -19,10 +19,10 @@ import {
   TouchableOpacity,
   Animated,
   Pressable,
-} from "react-native";
-import { TabView, SceneMap } from "react-native-tab-view";
-import { NativeBaseProvider, Box, Text, Center } from "native-base";
-import Constants from "expo-constants";
+} from 'react-native';
+import { TabView, SceneMap } from 'react-native-tab-view';
+import { NativeBaseProvider, Box, Text, Center } from 'native-base';
+import Constants from 'expo-constants';
 
 const FirstRoute = () => (
   <Center flex={1} my="4">
@@ -44,11 +44,11 @@ const ThirdRoute = () => (
 
 const FourthRoute = () => (
   <Center flex={1} my="4">
-    This is Tab 4{" "}
+    This is Tab 4{' '}
   </Center>
 );
 
-const initialLayout = { width: Dimensions.get("window").width };
+const initialLayout = { width: Dimensions.get('window').width };
 
 const renderScene = SceneMap({
   first: FirstRoute,
@@ -60,10 +60,10 @@ const renderScene = SceneMap({
 export function Example() {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: "first", title: "Tab 1" },
-    { key: "second", title: "Tab 2" },
-    { key: "third", title: "Tab 3" },
-    { key: "fourth", title: "Tab 4" },
+    { key: 'first', title: 'Tab 1' },
+    { key: 'second', title: 'Tab 2' },
+    { key: 'third', title: 'Tab 3' },
+    { key: 'fourth', title: 'Tab 4' },
   ]);
 
   const renderTabBar = (props) => {
@@ -79,12 +79,12 @@ export function Example() {
           });
           const color =
             index === i
-              ? useColorModeValue("#000", "#e5e5e5")
-              : useColorModeValue("#1f2937", "#a1a1aa");
+              ? useColorModeValue('#000', '#e5e5e5')
+              : useColorModeValue('#1f2937', '#a1a1aa');
           const borderColor =
             index === i
-              ? "cyan.500"
-              : useColorModeValue("coolGray.200", "gray.400");
+              ? 'cyan.500'
+              : useColorModeValue('coolGray.200', 'gray.400');
 
           return (
             <Box

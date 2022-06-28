@@ -8,7 +8,7 @@ title: useBreakpointValue
 ## Import
 
 ```jsx
-import { useBreakpointValue } from "native-base";
+import { useBreakpointValue } from 'native-base';
 ```
 
 ## Return value

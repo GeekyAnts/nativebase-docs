@@ -6,8 +6,8 @@ title: HStack / Row
 `HStack` aligns items horizontally. `Row` is also an alias for `HStack`.
 
 ```jsx isShowcase
-import React from "react";
-import { HStack, Stack, Center, Heading } from "native-base";
+import React from 'react';
+import { HStack, Stack, Center, Heading } from 'native-base';
 
 export function Example() {
   return (
@@ -18,8 +18,8 @@ export function Example() {
         <Center
           h="40"
           w="20"
-          _dark={{ bg: "primary.500" }}
-          _light={{ bg: "primary.400" }}
+          _dark={{ bg: 'primary.500' }}
+          _light={{ bg: 'primary.400' }}
           rounded="md"
           shadow={3}
         />
@@ -32,7 +32,7 @@ export function Example() {
 ## Import
 
 ```jsx
-import { HStack } from "native-base";
+import { HStack } from 'native-base';
 ```
 
 ## Examples

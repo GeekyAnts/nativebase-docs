@@ -14,8 +14,8 @@ Component to control the app status bar.
 :::
 
 ```jsx isSnackPlayer name=StatusBar
-import React from "react";
-import { StatusBar, Center, NativeBaseProvider } from "native-base";
+import React from 'react';
+import { StatusBar, Center, NativeBaseProvider } from 'native-base';
 
 const Example = () => {
   return <StatusBar />;

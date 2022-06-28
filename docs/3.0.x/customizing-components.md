@@ -86,7 +86,7 @@ export function Example() {
     components: {
       Text: {
         baseStyle: {
-          color: 'emerald.400'
+          color: 'emerald.400',
         },
         defaultProps: { size: 'lg' },
         sizes: {
@@ -106,7 +106,6 @@ export function Example() {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 ## Adding Variants
@@ -152,7 +151,6 @@ export function Example() {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 <br />

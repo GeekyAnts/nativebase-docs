@@ -16,11 +16,9 @@ import React from 'react';
 import { Factory, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
 
-function FactoryViewExample () {
+function FactoryViewExample() {
   const FactoryView = Factory(View);
-  return (
-      <FactoryView bg="emerald.400" borderRadius={4} size={16} />
-  );
+  return <FactoryView bg="emerald.400" borderRadius={4} size={16} />;
 }
 
 // Example template which wraps component with NativeBaseProvider
@@ -42,7 +40,7 @@ import React from 'react';
 import { Factory, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
 
-function FactoryViewExample () {
+function FactoryViewExample() {
   const FactoryView = Factory(View, {
     baseStyle: {
       bg: 'cyan.300',
@@ -71,7 +69,7 @@ import React from 'react';
 import { Factory, themeTools, NativeBaseProvider, Center } from 'native-base';
 import { View } from 'react-native';
 
-function FactoryViewModeExample () {
+function FactoryViewModeExample() {
   const FactoryView = Factory(View, {
     baseStyle: (props) => {
       return {
@@ -80,7 +78,7 @@ function FactoryViewModeExample () {
       };
     },
   });
-  return <FactoryView size={16}/>;
+  return <FactoryView size={16} />;
 }
 
 // Example template which wraps component with NativeBaseProvider
@@ -99,23 +97,30 @@ export function Example() {
 
 ```jsx isLive=true
 import React from 'react';
-import { Factory, Button, Stack, NativeBaseProvider,Center } from 'native-base';
+import {
+  Factory,
+  Button,
+  Stack,
+  NativeBaseProvider,
+  Center,
+} from 'native-base';
 import { TextInput } from 'react-native';
 
-function FactoryViewRefExample () {
+function FactoryViewRefExample() {
   const NBInput = Factory(TextInput);
   const inputRef = React.useRef(null);
   return (
     <Stack space={4}>
       <NBInput
-        placeholder='Click on the button'
+        placeholder="Click on the button"
         ref={inputRef}
         p={2}
         border={1}
-        borderColor='cyan.400'
-        borderRadius='md'/>
+        borderColor="cyan.400"
+        borderRadius="md"
+      />
       <Button
-        colorScheme='emerald'
+        colorScheme="emerald"
         onPress={() => {
           inputRef?.current?.focus();
         }}

@@ -7,7 +7,7 @@ title: Stack
 
 ```jsx isShowcase
 //@ts-nocheck
-import React from "react";
+import React from 'react';
 import {
   Box,
   Stack,
@@ -16,17 +16,17 @@ import {
   ScrollView,
   VStack,
   Divider,
-} from "native-base";
+} from 'native-base';
 
 export function Example() {
   return (
     <Box flex="1">
       <ScrollView
         _contentContainerStyle={{
-          h: "40",
-          px: "20px",
-          mb: "4",
-          minW: "72",
+          h: '40',
+          px: '20px',
+          mb: '4',
+          minW: '72',
         }}
       >
         <VStack space="2.5" mt="4" px="8">
@@ -37,10 +37,10 @@ export function Example() {
               bg="primary.400"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 1
             </Center>
@@ -49,10 +49,10 @@ export function Example() {
               size="16"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 2
             </Center>
@@ -61,10 +61,10 @@ export function Example() {
               bg="primary.700"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 3
             </Center>
@@ -77,10 +77,10 @@ export function Example() {
               bg="primary.400"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 1
             </Center>
@@ -89,10 +89,10 @@ export function Example() {
               size="16"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 2
             </Center>
@@ -101,10 +101,10 @@ export function Example() {
               bg="primary.700"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 3
             </Center>
@@ -117,10 +117,10 @@ export function Example() {
               bg="primary.400"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 1
             </Center>
@@ -129,10 +129,10 @@ export function Example() {
               size="16"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 2
             </Center>
@@ -141,10 +141,10 @@ export function Example() {
               bg="primary.700"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 3
             </Center>
@@ -157,10 +157,10 @@ export function Example() {
               bg="primary.400"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 1
             </Center>
@@ -169,10 +169,10 @@ export function Example() {
               size="16"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 2
             </Center>
@@ -181,10 +181,10 @@ export function Example() {
               bg="primary.700"
               rounded="sm"
               _text={{
-                color: "warmGray.50",
-                fontWeight: "medium",
+                color: 'warmGray.50',
+                fontWeight: 'medium',
               }}
-              shadow={"3"}
+              shadow={'3'}
             >
               Box 3
             </Center>

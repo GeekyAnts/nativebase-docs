@@ -8,7 +8,7 @@ title: useColorMode
 ## Import
 
 ```jsx
-import { useColorMode } from "native-base";
+import { useColorMode } from 'native-base';
 ```
 
 ## Example

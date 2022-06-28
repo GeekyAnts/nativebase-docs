@@ -11,22 +11,24 @@ Here is an example to show how easily and quickly we can use [react-native-tab-v
 
 ```jsx isLive=true
 import * as React from 'react';
-import { View, StyleSheet, Dimensions, StatusBar,TouchableOpacity,Animated, Pressable} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Dimensions,
+  StatusBar,
+  TouchableOpacity,
+  Animated,
+  Pressable,
+} from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
-import {NativeBaseProvider,Box, Text} from 'native-base';
+import { NativeBaseProvider, Box, Text } from 'native-base';
 import Constants from 'expo-constants';
 
-const FirstRoute = () => (
-  <Box flex={1} bg="pink.400" />
-);
+const FirstRoute = () => <Box flex={1} bg="pink.400" />;
 
-const SecondRoute = () => (
-  <Box flex={1} bg="violet.400"  />
-);
+const SecondRoute = () => <Box flex={1} bg="violet.400" />;
 
-const ThirdRoute = () => (
-  <Box flex={1} bg="red.400"  />
-);
+const ThirdRoute = () => <Box flex={1} bg="red.400" />;
 
 const initialLayout = { width: Dimensions.get('window').width };
 
@@ -57,21 +59,16 @@ export function Example() {
           });
 
           return (
-            <Box
-             flex = {1}
-              alignItems= 'center'
-              p= {2}
-              cursor="pointer"
-             >
-            <Pressable
-
-              onPress={() => {
-                console.log(i);
-                setIndex(i);}}>
-               <Animated.Text style={{ opacity }}>{route.title}</Animated.Text>
-            </Pressable>
+            <Box flex={1} alignItems="center" p={2} cursor="pointer">
+              <Pressable
+                onPress={() => {
+                  console.log(i);
+                  setIndex(i);
+                }}
+              >
+                <Animated.Text style={{ opacity }}>{route.title}</Animated.Text>
+              </Pressable>
             </Box>
-
           );
         })}
       </Box>
@@ -80,17 +77,15 @@ export function Example() {
 
   return (
     <NativeBaseProvider>
-    <TabView
-      navigationState={{ index, routes }}
-      renderScene={renderScene}
-      renderTabBar={renderTabBar}
-      onIndexChange={setIndex}
-      initialLayout={initialLayout}
-      style={{marginTop: StatusBar.currentHeight}}
-    />
+      <TabView
+        navigationState={{ index, routes }}
+        renderScene={renderScene}
+        renderTabBar={renderTabBar}
+        onIndexChange={setIndex}
+        initialLayout={initialLayout}
+        style={{ marginTop: StatusBar.currentHeight }}
+      />
     </NativeBaseProvider>
   );
 }
-
-
 ```

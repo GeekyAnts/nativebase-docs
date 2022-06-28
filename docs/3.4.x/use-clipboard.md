@@ -16,7 +16,7 @@ The `useClipboard` hook returns an object with the following fields:
 ## Import
 
 ```jsx
-import { useClipboard } from "native-base";
+import { useClipboard } from 'native-base';
 ```
 
 ## Usage

@@ -12,8 +12,8 @@ Let's customise a Button component to include rounded borders and red colorSchem
 ## Basic
 
 ```tsx
-import React from "react";
-import { NativeBaseProvider, extendTheme } from "native-base";
+import React from 'react';
+import { NativeBaseProvider, extendTheme } from 'native-base';
 
 export default function () {
   const theme = extendTheme({
@@ -21,18 +21,18 @@ export default function () {
       Button: {
         // Can simply pass default props to change default behaviour of components.
         baseStyle: {
-          rounded: "md",
+          rounded: 'md',
         },
         defaultProps: {
-          colorScheme: "red",
+          colorScheme: 'red',
         },
       },
       Heading: {
         // Can pass also function, giving you access theming tools
         baseStyle: ({ colorMode }) => {
           return {
-            color: colorMode === "dark" ? "red.300" : "blue.300",
-            fontWeight: "normal",
+            color: colorMode === 'dark' ? 'red.300' : 'blue.300',
+            fontWeight: 'normal',
           };
         },
       },
@@ -78,22 +78,22 @@ When variant in defaultProps is `solid` the above button will use solid variant.
 You can specify the base style of the component and use it across project.
 
 ```jsx isLive=true
-import React from "react";
-import { Text, NativeBaseProvider, Center, extendTheme } from "native-base";
+import React from 'react';
+import { Text, NativeBaseProvider, Center, extendTheme } from 'native-base';
 
 export function Example() {
   const theme = extendTheme({
     components: {
       Text: {
         baseStyle: {
-          color: "emerald.400",
+          color: 'emerald.400',
         },
-        defaultProps: { size: "lg" },
+        defaultProps: { size: 'lg' },
         sizes: {
-          xl: { fontSize: "64px" },
-          lg: { fontSize: "32px" },
-          md: { fontSize: "16px" },
-          sm: { fontSize: "12px" },
+          xl: { fontSize: '64px' },
+          lg: { fontSize: '32px' },
+          md: { fontSize: '16px' },
+          sm: { fontSize: '12px' },
         },
       },
     },

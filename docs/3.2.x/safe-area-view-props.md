@@ -26,8 +26,8 @@ SafeAreaView props can only be applied on [Box](box.md) as of now. To make you A
 ### Flexible SafeArea
 
 ```jsx isLive
-import React from "react";
-import { NativeBaseProvider, Box, Text } from "native-base";
+import React from 'react';
+import { NativeBaseProvider, Box, Text } from 'native-base';
 function MyComponent() {
   return (
     // This would look different on devices with different insets
@@ -50,8 +50,8 @@ export function Example() {
 ### Fixed SafeArea
 
 ```jsx isLive
-import React from "react";
-import { NativeBaseProvider, Box, Text } from "native-base";
+import React from 'react';
+import { NativeBaseProvider, Box, Text } from 'native-base';
 function MyComponent() {
   return (
     // This would look same on all devices
@@ -76,8 +76,8 @@ export function Example() {
 If you want to add the SafeAreaView props to other components, you can use the hook. Since, `SafeAreaView` props add relevant padding to the components, you will need to pass the padding manually that you are applying to the component for it to return the SafeArea adjusted padding.
 
 ```jsx isLive
-import React from "react";
-import { NativeBaseProvider, Box, Text, useSafeArea } from "native-base";
+import React from 'react';
+import { NativeBaseProvider, Box, Text, useSafeArea } from 'native-base';
 function MyComponent() {
   const safeAreaProps = useSafeArea({ safeAreaTop: true, pt: 2 });
   return (

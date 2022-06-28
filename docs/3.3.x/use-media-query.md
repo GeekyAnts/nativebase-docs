@@ -8,7 +8,7 @@ title: useMediaQuery
 ## Import
 
 ```jsx
-import { useMediaQuery } from "native-base";
+import { useMediaQuery } from 'native-base';
 ```
 
 ## Example

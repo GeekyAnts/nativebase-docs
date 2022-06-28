@@ -16,6 +16,7 @@ Component to control the app status bar.
 <!-- ```ComponentSnackPlayer path=components,basic,StatusBar,Basic.tsx
 
 ``` -->
+
 ```jsx isSnackPlayer name=StatusBar
 import React from 'react';
 import { StatusBar, Center, NativeBaseProvider } from 'native-base';
@@ -33,7 +34,6 @@ export default () => {
     </NativeBaseProvider>
   );
 };
-
 ```
 
 ## Props
