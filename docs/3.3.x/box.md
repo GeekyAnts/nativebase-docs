@@ -6,8 +6,8 @@ title: Box
 This is a generic component for low level layout needs. It is similar to a [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) in HTML.
 
 ```jsx isShowcase
-import React from "react";
-import { Box } from "native-base";
+import React from 'react';
+import { Box } from 'native-base';
 export const Example = () => {
   return (
     <>
@@ -15,10 +15,10 @@ export const Example = () => {
         p="2"
         bg="primary.500"
         _text={{
-          fontSize: "md",
-          fontWeight: "medium",
-          color: "warmGray.50",
-          letterSpacing: "lg",
+          fontSize: 'md',
+          fontWeight: 'medium',
+          color: 'warmGray.50',
+          letterSpacing: 'lg',
         }}
         shadow={2}
       >
@@ -52,15 +52,15 @@ export const Example = () => {
 If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can install [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) and configure it in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
 
 ```jsx isLive=true
-import React from "react";
-import { Box, Center, NativeBaseProvider } from "native-base";
-const LinearGradient = require("expo-linear-gradient").LinearGradient;
+import React from 'react';
+import { Box, Center, NativeBaseProvider } from 'native-base';
+const LinearGradient = require('expo-linear-gradient').LinearGradient;
 export const App = () => {
   return (
     <Box
       bg={{
         linearGradient: {
-          colors: ["lightBlue.300", "violet.800"],
+          colors: ['lightBlue.300', 'violet.800'],
           start: [0, 0],
           end: [1, 0],
         },
@@ -68,10 +68,10 @@ export const App = () => {
       p="12"
       rounded="xl"
       _text={{
-        fontSize: "md",
-        fontWeight: "medium",
-        color: "warmGray.50",
-        textAlign: "center",
+        fontSize: 'md',
+        fontWeight: 'medium',
+        color: 'warmGray.50',
+        textAlign: 'center',
       }}
     >
       This is a Box with Linear Gradient
@@ -81,7 +81,7 @@ export const App = () => {
 
 const config = {
   dependencies: {
-    "linear-gradient": LinearGradient,
+    'linear-gradient': LinearGradient,
   },
 };
 
@@ -101,22 +101,22 @@ export function Example() {
 If you're not using Expo, you can install [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient) and configure in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
 
 ```jsx
-import React from "react";
-import { Box, NativeBaseProvider } from "native-base";
+import React from 'react';
+import { Box, NativeBaseProvider } from 'native-base';
 
 const App = () => {
   return (
     <Box
       bg={{
         linearGradient: {
-          colors: ["lightBlue.300", "violet.800"],
+          colors: ['lightBlue.300', 'violet.800'],
           start: [0, 0],
           end: [1, 0],
         },
       }}
       p="12"
       rounded="lg"
-      _text={{ fontSize: "md", fontWeight: "bold", color: "white" }}
+      _text={{ fontSize: 'md', fontWeight: 'bold', color: 'white' }}
     >
       This is a Box with Linear Gradient
     </Box>
@@ -125,7 +125,7 @@ const App = () => {
 
 const config = {
   dependencies: {
-    "linear-gradient": require("react-native-linear-gradient").default,
+    'linear-gradient': require('react-native-linear-gradient').default,
   },
 };
 

@@ -19,8 +19,13 @@ The `useBreakpointValue` hook returns the value for the current breakpoint.
 
 ```jsx isLive=true
 import React from 'react';
-import { Box, useBreakpointValue, NativeBaseProvider, Center } from 'native-base';
-function UseBreakpointValueExample () {
+import {
+  Box,
+  useBreakpointValue,
+  NativeBaseProvider,
+  Center,
+} from 'native-base';
+function UseBreakpointValueExample() {
   const color = useBreakpointValue({
     base: 'red.200',
     sm: 'blue.200',
@@ -31,7 +36,7 @@ function UseBreakpointValueExample () {
       This is a box
     </Box>
   );
-};
+}
 export function Example() {
   return (
     <NativeBaseProvider>

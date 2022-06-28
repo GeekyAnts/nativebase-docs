@@ -8,7 +8,7 @@ Aspect ratio controls the size of the undefined dimension of a node or child com
 ## Import
 
 ```jsx
-import { AspectRatio } from "native-base";
+import { AspectRatio } from 'native-base';
 ```
 
 ## Example

@@ -8,8 +8,8 @@ import { ComponentTheme } from '../src/components';
 `Divider` can visually separate content in a given list or group.
 
 ```jsx isShowcase
-import React from "react";
-import { Divider, Heading, Box } from "native-base";
+import React from 'react';
+import { Divider, Heading, Box } from 'native-base';
 
 export const Example = () => {
   return (
@@ -29,7 +29,7 @@ export const Example = () => {
 ## Import
 
 ```jsx
-import { Divider } from "native-base";
+import { Divider } from 'native-base';
 ```
 
 ## Examples

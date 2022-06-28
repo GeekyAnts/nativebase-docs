@@ -10,7 +10,7 @@ Hidden is used to toggle the visibility value of child components responsively, 
 ## Import
 
 ```jsx
-import { Hidden } from "native-base";
+import { Hidden } from 'native-base';
 ```
 
 ## Example
@@ -34,7 +34,7 @@ import { Hidden } from "native-base";
       <Text>This text will be hidden from sm to lg screens.</Text>
     </Box>
   </Hidden>
-  <Hidden only={["sm", "lg"]}>
+  <Hidden only={['sm', 'lg']}>
     <Box bg="red.400" p="2">
       <Text>This text will be hidden on sm and lg screens only.</Text>
     </Box>
@@ -57,7 +57,7 @@ Here, the Image will mount and unmount on the basis of colormode.
 ## Hidden according to platform
 
 ```jsx
-<Hidden platform={["android", "web"]}>
+<Hidden platform={['android', 'web']}>
   <Box bg="red.400" p="2">
     <Text>This text will be hidden on android and web.</Text>
   </Box>

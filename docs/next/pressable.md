@@ -6,8 +6,8 @@ title: Pressable
 Pressable is a lower level primitive if you need more flexibility than a button and access to hover, pressed and focus events.
 
 ```jsx isShowcase
-import React from "react";
-import { Pressable, Text, Box, HStack, Spacer, Flex } from "native-base";
+import React from 'react';
+import { Pressable, Text, Box, HStack, Spacer, Flex } from 'native-base';
 
 export function Example() {
   return (
@@ -21,10 +21,10 @@ export function Example() {
             shadow="3"
             bg={
               isPressed
-                ? "coolGray.200"
+                ? 'coolGray.200'
                 : isHovered
-                ? "coolGray.200"
-                : "coolGray.100"
+                ? 'coolGray.200'
+                : 'coolGray.100'
             }
             p="5"
             rounded="8"
@@ -39,7 +39,7 @@ export function Example() {
             <HStack alignItems="center">
               <Badge
                 colorScheme="darkBlue"
-                _text={{ color: "white" }}
+                _text={{ color: 'white' }}
                 variant="solid"
                 rounded="4"
               >

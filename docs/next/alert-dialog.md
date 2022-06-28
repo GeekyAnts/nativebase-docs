@@ -7,10 +7,9 @@ import { ComponentTheme } from '../src/components';
 
 `AlertDialog` is used when a user needs to be interrupted with a mandatory confirmation or call-to-action. AlertDialog composes [`Modal`](/modal) so you can use all its props.
 
-
 ```jsx isShowcase
-import React from "react";
-import { AlertDialog, Button, Center } from "native-base";
+import React from 'react';
+import { AlertDialog, Button, Center } from 'native-base';
 
 export const Example = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -20,7 +19,7 @@ export const Example = () => {
     <Center>
       <Button
         shadow={2}
-        colorScheme='danger'
+        colorScheme="danger"
         onPress={() => setIsOpen(!isOpen)}
       >
         Delete Customer
@@ -40,14 +39,14 @@ export const Example = () => {
           <AlertDialog.Footer>
             <Button.Group space={2}>
               <Button
-                variant='unstyled'
-                colorScheme='coolGray'
+                variant="unstyled"
+                colorScheme="coolGray"
                 onPress={onClose}
                 ref={cancelRef}
               >
                 Cancel
               </Button>
-              <Button colorScheme='danger' onPress={onClose}>
+              <Button colorScheme="danger" onPress={onClose}>
                 Delete
               </Button>
             </Button.Group>
@@ -69,7 +68,7 @@ export const Example = () => {
 - `AlertDialog.CloseButton`: The button that closes the dialog.
 
 ```jsx
-import { AlertDialog } from "native-base";
+import { AlertDialog } from 'native-base';
 ```
 
 ## Examples

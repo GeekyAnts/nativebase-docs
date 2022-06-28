@@ -18,33 +18,33 @@ We extend the theme object and override `fontConfig` and `fonts` properties whic
 This mapping is needed to make sure fontWeight, fontStyle properties work in all platforms.
 
 ```jsx
-import { NativeBaseProvider, extendTheme } from "native-base";
+import { NativeBaseProvider, extendTheme } from 'native-base';
 
 const theme = extendTheme({
   fontConfig: {
     Roboto: {
       100: {
-        normal: "Roboto-Light",
-        italic: "Roboto-LightItalic",
+        normal: 'Roboto-Light',
+        italic: 'Roboto-LightItalic',
       },
       200: {
-        normal: "Roboto-Light",
-        italic: "Roboto-LightItalic",
+        normal: 'Roboto-Light',
+        italic: 'Roboto-LightItalic',
       },
       300: {
-        normal: "Roboto-Light",
-        italic: "Roboto-LightItalic",
+        normal: 'Roboto-Light',
+        italic: 'Roboto-LightItalic',
       },
       400: {
-        normal: "Roboto-Regular",
-        italic: "Roboto-Italic",
+        normal: 'Roboto-Regular',
+        italic: 'Roboto-Italic',
       },
       500: {
-        normal: "Roboto-Medium",
+        normal: 'Roboto-Medium',
       },
       600: {
-        normal: "Roboto-Medium",
-        italic: "Roboto-MediumItalic",
+        normal: 'Roboto-Medium',
+        italic: 'Roboto-MediumItalic',
       },
       // Add more variants
       //   700: {
@@ -63,9 +63,9 @@ const theme = extendTheme({
 
   // Make sure values below matches any of the keys in `fontConfig`
   fonts: {
-    heading: "Roboto",
-    body: "Roboto",
-    mono: "Roboto",
+    heading: 'Roboto',
+    body: 'Roboto',
+    mono: 'Roboto',
   },
 });
 

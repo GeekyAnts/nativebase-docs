@@ -17,18 +17,23 @@ To include content, wrap it in the Container component.
 
 ```jsx isLive=true
 import React from 'react';
-import { Container, Text, Heading, NativeBaseProvider, Center } from 'native-base';
+import {
+  Container,
+  Text,
+  Heading,
+  NativeBaseProvider,
+  Center,
+} from 'native-base';
 function ContainerComponent() {
   return (
     <Container>
       <Heading>
         A component library for the
-        <Heading color="emerald.400">
-          React Ecosystem
-        </Heading>
+        <Heading color="emerald.400">React Ecosystem</Heading>
       </Heading>
       <Heading pt={4} fontWeight="md" size="sm">
-        NativeBase is a simple, modular and accessible component library that gives you building blocks to build you React applications.
+        NativeBase is a simple, modular and accessible component library that
+        gives you building blocks to build you React applications.
       </Heading>
     </Container>
   );

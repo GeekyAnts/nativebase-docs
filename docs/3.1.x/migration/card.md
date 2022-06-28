@@ -3,9 +3,6 @@ id: card
 title: Card
 ---
 
-
-
-
 With NativeBase v3 we have removed Card components because as it's very simple to create various card layout using primitive components.
 
 ## Code Comparison
@@ -68,7 +65,7 @@ import { VStack, Box, Divider } from 'native-base';
 
 export default function () {
   return (
-    <Box border={1} borderRadius='md'>
+    <Box border={1} borderRadius="md">
       <VStack space={4} divider={<Divider />}>
         <Box px={4} pt={4}>
           NativeBase

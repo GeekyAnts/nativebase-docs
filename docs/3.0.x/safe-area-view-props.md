@@ -31,7 +31,7 @@ import { NativeBaseProvider, Box, Text } from 'native-base';
 function MyComponent() {
   return (
     // This would look different on devices with different insets
-    <Box bg='teal.400' rounded='xl' size={24} safeArea>
+    <Box bg="teal.400" rounded="xl" size={24} safeArea>
       <Text>NativeBase</Text>
     </Box>
   );
@@ -55,7 +55,7 @@ import { NativeBaseProvider, Box, Text } from 'native-base';
 function MyComponent() {
   return (
     // This would look same on all devices
-    <Box bg='teal.400' rounded='xl' size={24} safeAreaTop={8}>
+    <Box bg="teal.400" rounded="xl" size={24} safeAreaTop={8}>
       <Text>NativeBase</Text>
     </Box>
   );
@@ -69,7 +69,6 @@ export function Example() {
     </NativeBaseProvider>
   );
 }
-
 ```
 
 ### Using Hook
@@ -83,7 +82,7 @@ function MyComponent() {
   const safeAreaProps = useSafeArea({ safeAreaTop: true, pt: 2 });
   return (
     // This would look same on all devices
-    <Box bg='teal.400' rounded='xl' size={24} {...safeAreaProps}>
+    <Box bg="teal.400" rounded="xl" size={24} {...safeAreaProps}>
       <Text>NativeBase</Text>
     </Box>
   );
@@ -97,5 +96,4 @@ export function Example() {
     </NativeBaseProvider>
   );
 }
-
 ```

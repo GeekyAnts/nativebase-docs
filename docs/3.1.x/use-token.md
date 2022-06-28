@@ -14,16 +14,15 @@ import { useToken } from 'native-base';
 ## Example
 
 ```jsx isLive=true
-
-import React from "react";
-import { Box, Text, useToken, NativeBaseProvider, Center } from "native-base";
+import React from 'react';
+import { Box, Text, useToken, NativeBaseProvider, Center } from 'native-base';
 
 function UseTokenHookExample() {
   const [warning1, red2] = useToken(
     // the key within the theme, in this case `theme.colors`
-    "colors",
+    'colors',
     // the subkey(s), resolving to `theme.colors.warning.1`
-    ["emerald.200", "red.400"]
+    ['emerald.200', 'red.400']
     // a single fallback or fallback array matching the length of the previous arg
   );
 
@@ -35,9 +34,9 @@ function UseTokenHookExample() {
 }
 export function Example() {
   return (
-      <Center flex={1}>
-        <UseTokenHookExample />
-      </Center>
+    <Center flex={1}>
+      <UseTokenHookExample />
+    </Center>
   );
 }
 ```
