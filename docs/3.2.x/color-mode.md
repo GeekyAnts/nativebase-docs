@@ -21,7 +21,7 @@ Calling toggleColorMode anywhere in your app tree toggles the color mode.
 
 ```
 
-## \_light and \_dark Pseudo props
+## _light and _dark Pseudo props
 
 All components accepts \_light and \_dark props which applies the passed props on dark and light mode.
 
