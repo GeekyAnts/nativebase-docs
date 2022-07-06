@@ -43,7 +43,7 @@ export default function () {
         800: '#005885',
         900: '#003F5E',
       },
-      // Redefinig only one shade, rest of the color will remain same.
+      // Redefining only one shade, rest of the color will remain same.
       amber: {
         400: '#d97706',
       },
@@ -88,7 +88,7 @@ function Example() {
         800: '#005885',
         900: '#003F5E',
       },
-      // Redefinig only one shade, rest of the color will remain same.
+      // Redefining only one shade, rest of the color will remain same.
       amber: {
         400: '#d97706',
       },
