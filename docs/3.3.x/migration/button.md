@@ -216,7 +216,7 @@ height={100}
 />
 
 ```tsx
-<Button borderRadius="pill" colorScheme="success">
+<Button borderRadius="full" colorScheme="success">
   Success
 </Button>
 ```
@@ -266,7 +266,7 @@ height={100}
 
 ```tsx
 <Button
-  leftIcon={<Icon name="cog-outline" type="Ionicons" color="white" />}
+  leftIcon={<Icon name="cog-outline" as="Ionicons" color="white" />}
   colorScheme="dark"
 >
   Settings

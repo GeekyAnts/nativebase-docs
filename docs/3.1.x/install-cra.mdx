@@ -3,7 +3,7 @@ id: install-cra
 title: Install in Create React App project
 ---
 
-import { TileLink } from "../../src/components";
+import { TileLink, RNWebNote, TabItem } from "../src/components";
 
   <DocTabs
   defaultValue='template'
@@ -19,7 +19,7 @@ The easiest way to get started with NativeBase in create react app is using Nati
 ### JavaScript
 
 ```bash
-npx create-react-app my-app --template nativebase
+npx create-react-app my-app --template @native-base
 cd my-app/
 yarn start
 ```
@@ -27,7 +27,7 @@ yarn start
 ### TypeScript
 
 ```bash
-npx create-react-app my-app --template nativebase-typescript
+npx create-react-app my-app --template @native-base/typescript
 cd my-app/
 yarn start
 ```
@@ -55,11 +55,10 @@ cd my-app
   ]}>
 
   <DocTabItem value="yarn">
-
 <Box maxWidth="750px">
 
 ```bash
-yarn add react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
+yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </Box>
@@ -69,11 +68,10 @@ yarn add react-native-web native-base react-native-svg styled-components styled-
 <Box maxWidth="750px">
 
 ```bash
-npm install react-native-web native-base react-native-svg styled-components styled-system react-native-safe-area-context
+npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </Box>
-
   </DocTabItem>
 
   </DocTabs>
@@ -86,7 +84,7 @@ Put the below code in your App.js
 import React from "react";
 import { NativeBaseProvider, Box } from "native-base";
 
-function App() {
+export default function App() {
   return (
     <NativeBaseProvider>
       <Box>Hello world</Box>
@@ -131,3 +129,5 @@ function App() {
     </Box>
   </Box>
 </Box>
+
+<RNWebNote />

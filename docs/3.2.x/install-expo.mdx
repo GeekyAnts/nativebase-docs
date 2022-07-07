@@ -3,7 +3,7 @@ id: install-expo
 title: Install in Expo project
 ---
 
-import { TileLink } from "../../src/components";
+import { TileLink } from "../src/components";
 
 Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
 
@@ -21,7 +21,7 @@ Expo helps you to create universal (iOS, Android and Web) React Native apps with
 <Box maxWidth="750px">
 
 ```bash
-expo init my-app --template expo-template-native-base
+expo init my-app --template @native-base/expo-template
 ```
 
 </Box>
@@ -30,7 +30,7 @@ expo init my-app --template expo-template-native-base
 <Box maxWidth="750px">
 
 ```bash
-expo init my-app --template expo-template-native-base-typescript
+expo init my-app --template @native-base/expo-template-typescript
 ```
 
 </Box>
@@ -53,14 +53,14 @@ cd my-project/
 
 ### Install dependencies
 
-<DocTabs
+  <DocTabs
   defaultValue='yarn'
   values={[
   { label: 'yarn', value: 'yarn' },
   { label: 'npm', value: 'npm' }
   ]}>
 
-  <DocTabItem value="yarn">
+<DocTabItem value="yarn">
 
 ```bash
 yarn add native-base
@@ -74,16 +74,16 @@ yarn add native-base
 npm install native-base
 ```
 
-</DocTabItem>
+  </DocTabItem>
 
   </DocTabs>
 
 ```bash
-expo install react-native-svg
+expo install react-native-svg@12.1.1
 ```
 
 ```bash
-expo install react-native-safe-area-context
+expo install react-native-safe-area-context@3.3.2
 ```
 
 ### Run the Hello world example
@@ -128,7 +128,7 @@ export default function App() {
         className="bg-blueGray-600  mt-2"
       />
     </HStack>
-    <Box mt="2" pl="0" ml="0">
+    <Box mt="4" pl="0" ml="0">
       <TileLink
         title="Utility props"
         url="utility-props"

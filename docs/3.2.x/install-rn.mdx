@@ -3,7 +3,7 @@ id: install-rn
 title: Install in React Native project
 ---
 
-import { TileLink } from "../../src/components";
+import { TileLink } from "../src/components";
 
 <DocTabs
   defaultValue='new'
@@ -16,13 +16,13 @@ import { TileLink } from "../../src/components";
 
 ### Create a new project using ReactNative CLI with NativeBase template
 
-[Refer this link](https://github.com/react-native-community/cli#about) to get infomation about the React Native CLI.
+[Refer this link](https://github.com@3.3.2/react-native-community/cli#about) to get infomation about the React Native CLI.
 
 <h4 style={{marginTop:"40px"}} className="mt-8 font-mono">Plain Javascript</h4>
 <Box maxWidth="750px">
 
 ```bash
-npx react-native init MyApp --template react-native-template-native-base
+npx react-native init MyApp --template @native-base/react-native-template
 ```
 
 </Box>
@@ -31,7 +31,7 @@ npx react-native init MyApp --template react-native-template-native-base
 <Box maxWidth="750px">
 
 ```bash
-npx react-native init MyApp --template react-native-template-native-base-typescript
+npx react-native init MyApp --template @native-base/react-native-template-typescript
 ```
 
 </Box>
@@ -61,7 +61,7 @@ values={[
 <DocTabItem value="yarn">
 
 ```bash
-yarn add native-base react-native-svg react-native-safe-area-context
+yarn add native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </DocTabItem>
@@ -69,7 +69,7 @@ yarn add native-base react-native-svg react-native-safe-area-context
 <DocTabItem value="npm">
 
 ```bash
-npm install native-base react-native-svg react-native-safe-area-context
+npm install native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </DocTabItem>
@@ -105,7 +105,7 @@ export default function App() {
 </DocTabs>
 
 <Center>
-  <AspectRatio ratio={2.21} w="100%" maxW="500">
+  <AspectRatio ratio={2.21} w="100%" maxW="500" my="2">
     <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
   </AspectRatio>
 </Center>

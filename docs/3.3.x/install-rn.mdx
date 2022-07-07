@@ -16,7 +16,7 @@ import { TileLink } from "../src/components";
 
 ### Create a new project using ReactNative CLI with NativeBase template
 
-[Refer this link](https://github.com/react-native-community/cli#about) to get infomation about the React Native CLI.
+[Refer this link](https://github.com@3.3.2/react-native-community/cli#about) to get infomation about the React Native CLI.
 
 <h4 style={{marginTop:"40px"}} className="mt-8 font-mono">Plain Javascript</h4>
 <Box maxWidth="750px">
@@ -61,7 +61,7 @@ values={[
 <DocTabItem value="yarn">
 
 ```bash
-yarn add native-base react-native-svg react-native-safe-area-context
+yarn add native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </DocTabItem>
@@ -69,7 +69,7 @@ yarn add native-base react-native-svg react-native-safe-area-context
 <DocTabItem value="npm">
 
 ```bash
-npm install native-base react-native-svg react-native-safe-area-context
+npm install native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </DocTabItem>
@@ -105,7 +105,7 @@ export default function App() {
 </DocTabs>
 
 <Center>
-  <AspectRatio ratio={2.21} w="100%" maxW="500">
+  <AspectRatio ratio={2.21} w="100%" maxW="500" my="2">
     <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
   </AspectRatio>
 </Center>
@@ -126,7 +126,7 @@ export default function App() {
         className="bg-blueGray-600  mt-2"
       />
     </HStack>
-    <Box mt="2" pl="0" ml="0">
+    <Box mt="4" pl="0" ml="0">
       <TileLink
         title="Utility props"
         url="utility-props"
