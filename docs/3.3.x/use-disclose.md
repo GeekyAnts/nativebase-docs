@@ -8,7 +8,7 @@ title: useDisclose
 ## Import
 
 ```jsx
-import { useDisclose } from "native-base";
+import { useDisclose } from 'native-base';
 ```
 
 ## Example

@@ -8,7 +8,7 @@ title: useTheme
 ## Import
 
 ```jsx
-import { useTheme } from "native-base";
+import { useTheme } from 'native-base';
 ```
 
 ## Example

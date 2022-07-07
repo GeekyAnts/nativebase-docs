@@ -10,13 +10,13 @@ Common pattern in navigation is to use drawer from left (sometimes right) side f
 Here is an example to show how easily and quickly we can use React Native's [DrawerNavigation](https://reactnavigation.org/docs/drawer-based-navigation/) in NB.
 
 ```jsx isSnackPlayer name=BuildingDrawerNavigation
-import * as React from "react";
-import { NavigationContainer } from "@react-navigation/native";
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
-} from "@react-navigation/drawer";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+} from '@react-navigation/drawer';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {
   NativeBaseProvider,
   Button,
@@ -30,7 +30,7 @@ import {
   HStack,
   Divider,
   Icon,
-} from "native-base";
+} from 'native-base';
 const Drawer = createDrawerNavigator();
 function Component(props) {
   return (
@@ -44,18 +44,18 @@ function Component(props) {
 
 const getIcon = (screenName) => {
   switch (screenName) {
-    case "Inbox":
-      return "email";
-    case "Outbox":
-      return "send";
-    case "Favorites":
-      return "heart";
-    case "Archive":
-      return "archive";
-    case "Trash":
-      return "trash-can";
-    case "Spam":
-      return "alert-circle";
+    case 'Inbox':
+      return 'email';
+    case 'Outbox':
+      return 'send';
+    case 'Favorites':
+      return 'heart';
+    case 'Archive':
+      return 'archive';
+    case 'Trash':
+      return 'trash-can';
+    case 'Spam':
+      return 'alert-circle';
     default:
       return undefined;
   }
@@ -82,8 +82,8 @@ function CustomDrawerContent(props) {
                 rounded="md"
                 bg={
                   index === props.state.index
-                    ? "rgba(6, 182, 212, 0.1)"
-                    : "transparent"
+                    ? 'rgba(6, 182, 212, 0.1)'
+                    : 'transparent'
                 }
                 onPress={(event) => {
                   props.navigation.navigate(name);
@@ -92,7 +92,7 @@ function CustomDrawerContent(props) {
                 <HStack space="7" alignItems="center">
                   <Icon
                     color={
-                      index === props.state.index ? "primary.500" : "gray.500"
+                      index === props.state.index ? 'primary.500' : 'gray.500'
                     }
                     size="5"
                     as={<MaterialCommunityIcons name={getIcon(name)} />}
@@ -100,7 +100,7 @@ function CustomDrawerContent(props) {
                   <Text
                     fontWeight="500"
                     color={
-                      index === props.state.index ? "primary.500" : "gray.700"
+                      index === props.state.index ? 'primary.500' : 'gray.700'
                     }
                   >
                     {name}

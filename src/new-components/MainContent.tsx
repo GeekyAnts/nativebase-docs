@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from 'react';
 import {
   Box,
   Heading,
@@ -7,11 +7,11 @@ import {
   VStack,
   Pressable,
   Badge,
-} from "native-base";
-import Link from "next/link";
-import * as NBComponents from "native-base";
-import { MDXRemote } from "next-mdx-remote";
-import Toc from "./Toc";
+} from 'native-base';
+import Link from 'next/link';
+import * as NBComponents from 'native-base';
+import { MDXRemote } from 'next-mdx-remote';
+import Toc from './Toc';
 import {
   Span,
   PText,
@@ -36,16 +36,16 @@ import {
   BlockQuote,
   InlineCode,
   Admonition,
-} from "./markdown-components";
-import { AppContext } from "../AppContext";
-import * as docComponents from "../components";
-import { isLatestVersionSlug } from "../utils";
-import { ScrollContext } from "./ScrollContext";
-import { SnackPlayer } from "./markdown-components/CodeBlock/SnackPlayer";
+} from './markdown-components';
+import { AppContext } from '../AppContext';
+import * as docComponents from '../components';
+import { isLatestVersionSlug } from '../utils';
+import { ScrollContext } from './ScrollContext';
+import { SnackPlayer } from './markdown-components/CodeBlock/SnackPlayer';
 
 export default function MainContent(props: any) {
   const { tocArray } = props;
-  const [timestamp, setTimestamp] = useState("");
+  const [timestamp, setTimestamp] = useState('');
   return (
     <>
       <ScrollContext.Provider value={{ timestamp, setTimestamp }}>
@@ -54,7 +54,7 @@ export default function MainContent(props: any) {
         </Box>
         {props.showToc && (
           <Box
-            display={{ base: "none", xl: "flex" }}
+            display={{ base: 'none', xl: 'flex' }}
             position="sticky"
             top="16"
             h="100vh"
@@ -74,7 +74,7 @@ const SubMainContent = ({ props }: any) => {
   }
   useEffect(() => {
     // @ts-ignore
-    document.getElementById("scrollview-id").onscroll = (e) => {
+    document.getElementById('scrollview-id').onscroll = (e) => {
       handleScroll(e);
     };
   }, []);
@@ -119,12 +119,23 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     ListItem: Li,
   };
   return (
-    <Box px={{ base: "6", xl: "16" }} py="10">
-      <Box alignSelf="center" maxW={props.showToc ? "800" : "1056"} w="100%">
+    <Box px={{ base: '6', xl: '16' }} py="10">
+      <Box alignSelf="center" maxW={props.showToc ? '800' : '1056'} w="100%">
         {/*  */}
         <VStack>
-          {!isLatestVersionSlug(activeVersion) && <Badge rounded="4" flexDir="row" alignSelf='flex-start'>version: {activeVersion}</Badge>}
-          <Heading nativeID="page-title" mb="6" size="xl" _dark={{ color: "coolGray.50" }}>
+          {!isLatestVersionSlug(activeVersion) && (
+            <Badge
+              rounded="4"
+              flexDir="row"
+              alignSelf="flex-start"
+            >{`version: ${activeVersion}`}</Badge>
+          )}
+          <Heading
+            nativeID="page-title"
+            mb="6"
+            size="xl"
+            _dark={{ color: 'coolGray.50' }}
+          >
             {frontMatter && frontMatter.title
               ? frontMatter.title
               : pages.currentPage.title}
@@ -136,11 +147,11 @@ const SubMainContent2 = React.memo(({ props }: any) => {
         <HStack justifyContent="space-between" my="12">
           {pages.previousPage && (
             <Pressable
-              w={["40", "40", "80"]}
+              w={['40', '40', '80']}
               rounded="7"
               borderWidth={1}
-              _light={{ borderColor: "coolGray.200" }}
-              _dark={{ borderColor: "coolGray.700" }}
+              _light={{ borderColor: 'coolGray.200' }}
+              _dark={{ borderColor: 'coolGray.700' }}
               px="6"
               py="2"
               maxW="64"
@@ -152,21 +163,21 @@ const SubMainContent2 = React.memo(({ props }: any) => {
                   passHref
                   href={`${
                     isLatestVersionSlug(activeVersion)
-                      ? ""
-                      : activeVersion + "/"
+                      ? ''
+                      : activeVersion + '/'
                   }${pages.previousPage.id}`}
                 >
                   <VStack>
                     <Text
-                      _light={{ color: "pageNavigationHeadingLight" }}
-                      _dark={{ color: "pageNavigationHeadingDark" }}
+                      _light={{ color: 'pageNavigationHeadingLight' }}
+                      _dark={{ color: 'pageNavigationHeadingDark' }}
                     >
                       Previous
                     </Text>
                     <Text
                       fontSize="lg"
-                      _light={{ color: "pageNavigationMainTitleLight" }}
-                      _dark={{ color: "pageNavigationMainTitleDark" }}
+                      _light={{ color: 'pageNavigationMainTitleLight' }}
+                      _dark={{ color: 'pageNavigationMainTitleDark' }}
                     >
                       {pages.previousPage.title}
                     </Text>
@@ -177,11 +188,11 @@ const SubMainContent2 = React.memo(({ props }: any) => {
           )}
           {pages.nextPage && (
             <Pressable
-              w={["40", "40", "80"]}
+              w={['40', '40', '80']}
               rounded="7"
               borderWidth={1}
-              _light={{ borderColor: "coolGray.200" }}
-              _dark={{ borderColor: "coolGray.700" }}
+              _light={{ borderColor: 'coolGray.200' }}
+              _dark={{ borderColor: 'coolGray.700' }}
               px="6"
               py="2"
               maxW="64"
@@ -193,23 +204,23 @@ const SubMainContent2 = React.memo(({ props }: any) => {
                   passHref
                   href={`${
                     isLatestVersionSlug(activeVersion)
-                      ? ""
-                      : activeVersion + "/"
+                      ? ''
+                      : activeVersion + '/'
                   }${pages.nextPage.id}`}
                 >
                   <VStack>
                     <Text
-                      _light={{ color: "pageNavigationHeadingLight" }}
-                      _dark={{ color: "pageNavigationHeadingDark" }}
-                      textAlign='right'
+                      _light={{ color: 'pageNavigationHeadingLight' }}
+                      _dark={{ color: 'pageNavigationHeadingDark' }}
+                      textAlign="right"
                     >
                       Next
                     </Text>
                     <Text
                       fontSize="lg"
-                      _light={{ color: "pageNavigationMainTitleLight" }}
-                      _dark={{ color: "pageNavigationMainTitleDark" }}
-                      textAlign='right'
+                      _light={{ color: 'pageNavigationMainTitleLight' }}
+                      _dark={{ color: 'pageNavigationMainTitleDark' }}
+                      textAlign="right"
                     >
                       {pages.nextPage.title}
                     </Text>

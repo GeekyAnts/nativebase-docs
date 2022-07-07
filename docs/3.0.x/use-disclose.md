@@ -14,7 +14,7 @@ import { useDisclose } from 'native-base';
 ## Example
 
 ```jsx isLive=true
-import React from "react";
+import React from 'react';
 import {
   Modal,
   Button,
@@ -22,7 +22,7 @@ import {
   Input,
   useDisclose,
   NativeBaseProvider,
-} from "native-base";
+} from 'native-base';
 
 function UseDiscloseExample() {
   const { isOpen, onOpen, onClose } = useDisclose();

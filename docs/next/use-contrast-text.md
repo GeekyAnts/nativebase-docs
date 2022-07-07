@@ -8,7 +8,7 @@ title: useContrastText
 ## Import
 
 ```jsx
-import { useContrastText } from "native-base";
+import { useContrastText } from 'native-base';
 ```
 
 ## Examples

@@ -41,7 +41,7 @@ function AlertDialogComponent() {
         motionPreset={'fade'}
       >
         <AlertDialog.Content>
-          <AlertDialog.Header fontSize='lg' fontWeight='bold'>
+          <AlertDialog.Header fontSize="lg" fontWeight="bold">
             Delete Customer
           </AlertDialog.Header>
           <AlertDialog.Body>
@@ -51,13 +51,13 @@ function AlertDialogComponent() {
             <Button ref={cancelRef} onPress={onClose}>
               Cancel
             </Button>
-            <Button colorScheme='red' onPress={onClose} ml={3}>
+            <Button colorScheme="red" onPress={onClose} ml={3}>
               Delete
             </Button>
           </AlertDialog.Footer>
         </AlertDialog.Content>
       </AlertDialog>
-      <Button colorScheme='danger' onPress={() => setIsOpen(!isOpen)}>
+      <Button colorScheme="danger" onPress={() => setIsOpen(!isOpen)}>
         Delete Customer
       </Button>
     </Center>
@@ -85,7 +85,7 @@ function AlertDialogComponent() {
   return (
     <Center>
       <AlertDialog
-        motionPreset='fade'
+        motionPreset="fade"
         leastDestructiveRef={cancelRef}
         onClose={onClose}
         isOpen={isOpen}
@@ -102,7 +102,7 @@ function AlertDialogComponent() {
             <Button ref={cancelRef} onPress={onClose}>
               No
             </Button>
-            <Button colorScheme='red' ml={3}>
+            <Button colorScheme="red" ml={3}>
               Yes
             </Button>
           </AlertDialog.Footer>

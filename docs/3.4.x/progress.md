@@ -8,8 +8,8 @@ import { ComponentTheme } from '../src/components';
 `Progress` helps show the progress status for a time-consuming task that consists of several steps.
 
 ```jsx isShowcase
-import React from "react";
-import { Box, Progress, Heading, Center } from "native-base";
+import React from 'react';
+import { Box, Progress, Heading, Center } from 'native-base';
 
 export const Example = () => {
   return (
@@ -23,7 +23,7 @@ export const Example = () => {
 ## Import
 
 ```jsx
-import { Progress } from "native-base";
+import { Progress } from 'native-base';
 ```
 
 ## Examples

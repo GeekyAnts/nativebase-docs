@@ -6,19 +6,19 @@ title: PresenceTransition
 PresenceTransition provides a declarative API to add entry and exit transitions.
 
 ```jsx isShowcase
-import React from "react";
+import React from 'react';
 import {
   Button,
   Center,
   PresenceTransition,
   NativeBaseProvider,
-} from "native-base";
+} from 'native-base';
 export const Example = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <Center>
       <Button shadow={2} onPress={() => setIsOpen(!isOpen)}>
-        {isOpen ? "Hide" : "Show"}
+        {isOpen ? 'Hide' : 'Show'}
       </Button>
       <PresenceTransition
         visible={isOpen}
@@ -39,7 +39,7 @@ export const Example = () => {
           w="200"
           h="100"
           _text={{
-            color: "white",
+            color: 'white',
           }}
           shadow={2}
         >
@@ -88,7 +88,7 @@ interface ISupportedTransitions {
 ```js
 interface ITransitionStyleProps extends ISupportedTransitions {
   transition?: {
-    type?: "timing" | "spring",
+    type?: 'timing' | 'spring',
     easing?: (value: number) => number,
     overshootClamping?: boolean,
     restDisplacementThreshold?: number,

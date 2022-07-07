@@ -6,7 +6,7 @@ title: Slide
 Slide component provides a declarative API to add sliding transitions.
 
 ```jsx isShowcase
-import React from "react";
+import React from 'react';
 import {
   Slide,
   Button,
@@ -16,10 +16,10 @@ import {
   Divider,
   Center,
   NativeBaseProvider,
-} from "native-base";
+} from 'native-base';
 export const Example = () => {
   const [isOpenTop, setIsOpenTop] = React.useState(false);
-  const str = `${isOpenTop ? "Hide" : "Check Internet Connection"}`;
+  const str = `${isOpenTop ? 'Hide' : 'Check Internet Connection'}`;
   return (
     <Box h="32" w="300">
       <Slide in={isOpenTop} placement="top">

@@ -8,10 +8,10 @@ import { ComponentTheme } from '../src/components';
 `Badges` allows the highlight of an item’s status. This provides quick recognition.
 
 ```jsx isShowcase
-import React from "react"
-import { Badge, Center, NativeBaseProvider } from "native-base"
+import React from 'react';
+import { Badge, Center, NativeBaseProvider } from 'native-base';
 export function Example() {
-  return <Badge shadow={2}>NEW FEATURE</Badge>
+  return <Badge shadow={2}>NEW FEATURE</Badge>;
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 id: pseudo-props-101
-title: "Pseudo props: Do’s & Dont’s"
+title: 'Pseudo props: Do’s & Dont’s'
 ---
 
 Before getting into details of all the common Pseudo Props NativeBase has to offer let's check some key points that these pseudo props follow.
@@ -16,7 +16,7 @@ Example: Let us assume you want to change the text color of a button on its hove
 ```jsx
 <Button
   _hover={{
-    _text: { color: "secondary.400" },
+    _text: { color: 'secondary.400' },
   }}
 >
   Change My Color
@@ -28,7 +28,7 @@ Example: Let us assume you want to change the text color of a button on its hove
 ```jsx
 <Button
   _text={{
-    _hover: { color: "secondary.400" },
+    _hover: { color: 'secondary.400' },
   }}
 >
   Change My Color
@@ -59,13 +59,13 @@ Now all the pseudo props follow a specific order that defines which pseudo prop 
 | \_dark         | 10               |
 
 ```jsx isLive
-import React from "react";
-import { Button, NativeBaseProvider, Center } from "native-base";
+import React from 'react';
+import { Button, NativeBaseProvider, Center } from 'native-base';
 
 function Component() {
   return (
     // Here you can see _hover will be overrided by _pressed
-    <Button _hover={{ bg: "red.500" }} _pressed={{ bg: "green.500" }}>
+    <Button _hover={{ bg: 'red.500' }} _pressed={{ bg: 'green.500' }}>
       Press and Hover here
     </Button>
   );

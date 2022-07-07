@@ -3,9 +3,6 @@ id: card
 title: Card
 ---
 
-
-
-
 With NativeBase v3 we have removed Card components because as it's very simple to create various card layout using primitive components.
 
 ## Code Comparison

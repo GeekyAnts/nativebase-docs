@@ -8,8 +8,8 @@ import { ComponentTheme } from '../src/components';
 The `Checkbox` component allows a user to select multiple values from various options in a form.
 
 ```jsx isShowcase
-import React from "react";
-import { HStack, Checkbox } from "native-base";
+import React from 'react';
+import { HStack, Checkbox } from 'native-base';
 
 export const Example = () => {
   return (

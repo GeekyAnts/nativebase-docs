@@ -8,7 +8,7 @@ title: useAccessibleColors
 ## Import
 
 ```jsx
-import { useAccessibleColors } from "native-base";
+import { useAccessibleColors } from 'native-base';
 ```
 
 ## Example
