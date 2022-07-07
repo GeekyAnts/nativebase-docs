@@ -1,3 +1,8 @@
+---
+id: action-sheet
+title: ActionSheet
+---
+
 We have sliced [`Actionsheet`](/action-sheet) into multiple smaller component which not only provides more control over the the code but also makes it more readable.
 
 ## Overview
@@ -80,15 +85,11 @@ export default function () {
 
       <Actionsheet isOpen={isOpen} onClose={onClose}>
         <Actionsheet.Content>
-          <Actionsheet.Header>Header</Actionsheet.Header>
           <Actionsheet.Item>Option 1</Actionsheet.Item>
           <Actionsheet.Item>Option 2</Actionsheet.Item>
           <Actionsheet.Item>Option 3</Actionsheet.Item>
           <Actionsheet.Item color="red.500">Delete</Actionsheet.Item>
         </Actionsheet.Content>
-        <Actionsheet.Footer>
-          <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>
-        </Actionsheet.Footer>
       </Actionsheet>
     </>
   );
