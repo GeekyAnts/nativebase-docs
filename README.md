@@ -10,7 +10,7 @@ To get started with contributing to NativeBase Docs, please follow the below ste
 - Run `npm run dev` or `yarn dev` to start the development server.
 - Go to the `docs` directory.
 - Make your changes in the next folder.
-- Commit your changes.
+- Commit all your changes.
 - Just to be sure test your changes by running `yarn build` and then `yarn start`.
 - When you are done, push your changes to the `main` branch.
 - Create a pull request.
