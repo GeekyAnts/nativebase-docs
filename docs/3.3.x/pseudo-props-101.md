@@ -80,3 +80,89 @@ export function Example() {
   );
 }
 ```
+
+## Understanding _icon:
+
+There are different ways in which you can add start and end icon in button.
+
+### Do's
+
+- In below approach icon is passed as startIcon prop and it’s styling is added into `_icon` pseudo prop.
+
+```jsx isLive=true
+import React from 'react';
+import { Button, NativeBaseProvider, Center, Icon } from 'native-base';
+import { Ionicons } from '@expo/vector-icons';
+
+function Component() {
+  return (
+    <Button
+      startIcon={<Icon as={Ionicons} name="cloud-upload-outline" size="sm" />}
+      _icon={{ color: 'coolGray.300' }}
+      _text={{ color: 'coolGray.300' }}
+      _hover={{
+        _icon: { color: 'coolGray.50' },
+        _text: {
+          color: 'coolGray.50',
+        },
+      }}
+    >
+      Upload
+    </Button>
+  );
+}
+export function Example() {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <Component />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
+
+### Don'ts
+
+- The below approach is similar to the above one, but this time we have passed inline color in Icon. So, if you pass styling in Icon itself and then also pass it in `_icon` then styling passed in `_icon` will not be applied because the props passed in Icon should have higher specificity than `_icon` and that will prevent Icon to override props from `_icon`.
+- In below case color from `_icon` will not be applied to Icon and you will not be able to change the color of Icon on state changes like hover, pressed and focus.
+
+```jsx isLive=true
+import React from 'react';
+import { Button, NativeBaseProvider, Center, Icon } from 'native-base';
+import { Ionicons } from '@expo/vector-icons';
+
+function Component() {
+  return (
+    <Button
+      startIcon={
+        <Icon
+          as={Ionicons}
+          name="cloud-upload-outline"
+          size="sm"
+          color="amber.500"
+        />
+      }
+      _icon={{ color: 'coolGray.300' }}
+      _text={{ color: 'coolGray.300' }}
+      _hover={{
+        _icon: { color: 'coolGray.50' },
+        _text: {
+          color: 'coolGray.50',
+        },
+      }}
+    >
+      Upload
+    </Button>
+  );
+}
+export function Example() {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <Component />
+      </Center>
+    </NativeBaseProvider>
+  );
+}
+```
