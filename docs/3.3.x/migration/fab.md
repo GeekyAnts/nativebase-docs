@@ -47,10 +47,10 @@ import { Fab, Icon } from 'native-base';
 export default function () {
   return (
     <Fab
-      placement="bottomRight"
+      placement="bottom-right"
       colorScheme="blue"
       size="lg"
-      icon={<Icon name="share" type="Entypo" />}
+      icon={<Icon name="share" as="Entypo" />}
     />
   );
 }
