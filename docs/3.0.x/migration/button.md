@@ -1,10 +1,15 @@
+---
+id: button
+title: Button
+---
+
 Migrating [`Button`](/button) to v3 will provide a lot more **design**, **size**, **color** and **customisation** options.
 
 ## Overview
 
 Migrating Button components can broadly described in these points:
 
-- No need to wrap you text inside `Text` component anymore.
+- No need to wrap your text inside `Text` component anymore.
 - `isDisabled` prop can be used to disable the button.
 - Icons in Button:
   `leftIcon` and `rightIcon` are the new alternative to iconLeft and iconRight respectively and they accept **tsx.Element**.
@@ -211,7 +216,7 @@ height={100}
 />
 
 ```tsx
-<Button borderRadius="pill" colorScheme="success">
+<Button borderRadius="full" colorScheme="success">
   Success
 </Button>
 ```
@@ -261,7 +266,7 @@ height={100}
 
 ```tsx
 <Button
-  leftIcon={<Icon name="cog-outline" type="Ionicons" color="white" />}
+  leftIcon={<Icon name="cog-outline" as="Ionicons" color="white" />}
   colorScheme="dark"
 >
   Settings
