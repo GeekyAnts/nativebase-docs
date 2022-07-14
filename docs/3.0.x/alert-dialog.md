@@ -135,7 +135,7 @@ AlertDialog and its components compose the **[Modal](/modal)** component, so all
 
 ## Accessibility
 
-Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#alertdialog)
+Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/)
 
 ### Keyboard Interactions
 

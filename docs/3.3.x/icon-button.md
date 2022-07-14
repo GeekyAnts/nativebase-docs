@@ -78,4 +78,4 @@ export const Example = () => {
 ## Accessibility
 
 - Use accessibilityLabel for labelling icon buttons to make sure it's announced by screen reader devices.
-- IconButton has a `role` set to [button](https://www.w3.org/TR/wai-aria-practices-1.2/#button).
+- IconButton has a `role` set to [button](https://www.w3.org/WAI/ARIA/apg/).
