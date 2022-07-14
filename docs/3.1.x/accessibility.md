@@ -15,7 +15,7 @@ When a view is marked as accessible, it is a good practice to set an `accessibil
 
 ## Keyboard Navigation
 
-Many complex components, like Tabs and Dialog, come with expectations from users on how to interact with their content using a keyboard or other non-mouse input modalities. NativeBase Primitives provide basic keyboard support in accordance with the [WAI-ARIA authoring practices](https://www.w3.org/TR/wai-aria-practices-1.2/).
+Many complex components, like Tabs and Dialog, come with expectations from users on how to interact with their content using a keyboard or other non-mouse input modalities. NativeBase Primitives provide basic keyboard support in accordance with the [WAI-ARIA authoring practices](https://www.w3.org/WAI/ARIA/apg/).
 
 ## Focus Management
 

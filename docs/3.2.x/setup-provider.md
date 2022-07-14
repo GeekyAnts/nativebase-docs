@@ -93,7 +93,7 @@ export default ({ children, theme }: any) => {
 
 ## Add external dependencies (Optional)
 
-If you want to use [Gradient feature in Box](box#with-linear-gradient), you need to pass linear gradient dependency as a config object in NativeBaseProvider. This dependency can be either from [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) or [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
+If you want to use [Gradient feature in Box](box#with-linear-gradient), you need to pass linear gradient dependency as a config object in NativeBaseProvider. This dependency can be either from [expo-linear-gradient](https://docs.expo.dev/versions/latest/sdk/linear-gradient/) or [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
 
 ```jsx
 import React from 'react';

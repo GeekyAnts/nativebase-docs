@@ -97,7 +97,7 @@ import { Slider } from 'native-base';
 
 ## Accessibility
 
-Adheres to the [Slider WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#slidertwothumb)
+Adheres to the [Slider WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/)
 
 ### Keyboard Interactions
 
