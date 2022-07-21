@@ -14178,10 +14178,5 @@
     "source": "/migration/nb-icons",
     "destination": "/nb-icons",
     "permanent": true
-  },
-  {
-    "source": "/license",
-    "destination": "/usage-license",
-    "permanent": true
   }
 ]
