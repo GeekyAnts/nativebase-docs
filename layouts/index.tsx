@@ -104,7 +104,7 @@ function Layout({
   }`;
 
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
-  console.log(pages, "pages");
+
   return (
     <>
       <Head>
