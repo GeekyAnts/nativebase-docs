@@ -1,5 +1,5 @@
-import Head from "next/head";
-import React, { useEffect, useContext } from "react";
+import Head from 'next/head';
+import React, { useEffect, useContext } from 'react';
 import {
   Box,
   HStack,
@@ -9,20 +9,20 @@ import {
   useBreakpointValue,
   useColorModeValue,
   useToken,
-} from "native-base";
-import path from "path";
-import Sidebar from "../src/new-components/Sidebar";
-import Navbar from "../src/new-components/Navbar";
-import MobileNavbar from "../src/new-components/MobileNavbar";
+} from 'native-base';
+import path from 'path';
+import Sidebar from '../src/new-components/Sidebar';
+import Navbar from '../src/new-components/Navbar';
+import MobileNavbar from '../src/new-components/MobileNavbar';
 
-import { AppContext } from "../src/AppContext";
-import MainContent from "../src/new-components/MainContent";
+import { AppContext } from '../src/AppContext';
+import MainContent from '../src/new-components/MainContent';
 
-import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSidebarVersionDropdown";
-import { SocialMediaStagger } from "../src/new-components/SocialMediaStagger";
-import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
-import Script from "next/script";
-import { isLatestVersionSlug } from "../src/utils";
+import { MobileSidebarVersionDropdown } from '../src/new-components/MobileSidebarVersionDropdown';
+import { SocialMediaStagger } from '../src/new-components/SocialMediaStagger';
+import NativebaseIconLogo from '../src/new-components/NativebaseIconLogo';
+import Script from 'next/script';
+import { isLatestVersionSlug } from '../src/utils';
 
 function Layout({
   children: content,
@@ -44,12 +44,12 @@ function Layout({
   } = useContext(AppContext);
 
   const bgColor = useColorModeValue(
-    useToken("colors", "backgroundLight"),
-    useToken("colors", "backgroundDark")
+    useToken('colors', 'backgroundLight'),
+    useToken('colors', 'backgroundDark')
   );
   const [isOpenSidebar, setIsOpenSidebar] = React.useState(false);
   useEffect(() => {
-    const currentPathArray = window?.location.href.split("/");
+    const currentPathArray = window?.location.href.split('/');
 
     let pathArray: string[] = [];
     currentPathArray.map((val, ind) => {
@@ -57,25 +57,25 @@ function Layout({
     });
 
     let actVersion = currentVersion;
-    if ([...versionList, "next"].includes(pathArray[0])) {
+    if ([...versionList, 'next'].includes(pathArray[0])) {
       actVersion = pathArray[0];
     } else {
-      actVersion = "";
+      actVersion = '';
     }
     setActiveVersion(actVersion);
 
     if (pathArray[0] === actVersion) {
       pathArray.splice(0, 1);
-      setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
+      setActiveSidebarItem(path.join(...pathArray).split('#')[0]);
     } else {
-      setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
+      setActiveSidebarItem(path.join(...pathArray).split('#')[0]);
     }
     // @ts-ignore
-    document.getElementById("scrollview-id").scrollTop = 0;
+    document.getElementById('scrollview-id').scrollTop = 0;
   }, [content]);
 
   useEffect(() => {
-    document.getElementsByTagName("body")[0].style.backgroundColor = bgColor;
+    document.getElementsByTagName('body')[0].style.backgroundColor = bgColor;
   }, [bgColor]);
 
   const isLargeScreen = useBreakpointValue({
@@ -90,20 +90,21 @@ function Layout({
   const title = `${
     frontMatter && frontMatter.title
       ? frontMatter.title +
-        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
-        " | NativeBase | Universal Components for React and React Native"
+        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : '') +
+        ' | NativeBase | Universal Components for React and React Native'
       : pages?.currentPage?.title +
-        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
-        " | NativeBase | Universal Components for React and React Native"
+        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : '') +
+        ' | NativeBase | Universal Components for React and React Native'
   }`;
 
   const pageTitle = `${
     frontMatter && frontMatter.title
-      ? frontMatter.title + " | NativeBase "
-      : pages?.currentPage?.title + " | NativeBase "
+      ? frontMatter.title + ' | NativeBase '
+      : pages?.currentPage?.title + ' | NativeBase '
   }`;
 
-  let href = "https://docs.nativebase.io/" + pages.currentPage.id;
+  let href = 'https://docs.nativebase.io/' + pages.currentPage.id;
+  console.log(pages, 'pages');
   return (
     <>
       <Head>
@@ -137,6 +138,10 @@ function Layout({
           content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <link rel="icon" href="/img/nativebaselogo.svg" />
+        <link
+          rel="canonical"
+          href={'https://docs.nativebase.io/' + pages.currentPage.id}
+        />
       </Head>
       <Script async src="https://snack.expo.dev/embed.js"></Script>
       <Script src="/js/gtag.js"></Script>
@@ -154,40 +159,40 @@ function Layout({
         `}
       </Script>
       {/* will replace it when nativebase has semantic tagging */}
-      <h1 style={{ display: "none" }}>{title}</h1>
+      <h1 style={{ display: 'none' }}>{title}</h1>
       <Box
         w="100%"
-        h={{ base: "100%", md: "100vh" }}
-        _light={{ bg: "backgroundLight" }}
-        _dark={{ bg: "backgroundDark" }}
+        h={{ base: '100%', md: '100vh' }}
+        _light={{ bg: 'backgroundLight' }}
+        _dark={{ bg: 'backgroundDark' }}
         alignItems="center"
         nativeID={useColorModeValue(
-          "nativebase-body-light",
-          "nativebase-body-dark"
+          'nativebase-body-light',
+          'nativebase-body-dark'
         )}
       >
         <ScrollView w="100%" nativeID="scrollview-id">
           <Box h="100%" w="100%">
             <Box
-              display={{ base: "none", lg: "flex" }}
+              display={{ base: 'none', lg: 'flex' }}
               w="100%"
               position="sticky"
               top="0"
               zIndex={99}
-              _light={{ bg: "backgroundLight" }}
-              _dark={{ bg: "backgroundDark:alpha.50" }}
+              _light={{ bg: 'backgroundLight' }}
+              _dark={{ bg: 'backgroundDark:alpha.50' }}
               // @ts-ignore
-              style={{ backdropFilter: "blur(10px)" }}
+              style={{ backdropFilter: 'blur(10px)' }}
             >
               <Navbar />
             </Box>
             <Box
-              display={{ base: "flex", lg: "none" }}
+              display={{ base: 'flex', lg: 'none' }}
               position="sticky"
               top="0"
               zIndex={99}
-              _light={{ bg: "backgroundLight" }}
-              _dark={{ bg: "backgroundDark" }}
+              _light={{ bg: 'backgroundLight' }}
+              _dark={{ bg: 'backgroundDark' }}
               w="100%"
             >
               <MobileNavbar
@@ -201,7 +206,7 @@ function Layout({
                   position="sticky"
                   top="16"
                   h="calc(100vh - 64px)"
-                  display={{ base: "none", lg: "flex" }}
+                  display={{ base: 'none', lg: 'flex' }}
                 >
                   <Sidebar sidebar={sidebar} />
                 </Box>
@@ -215,7 +220,7 @@ function Layout({
               </HStack>
             ) : (
               <>
-                <Box h="100%" w="100%" display={{ base: "flex", lg: "none" }}>
+                <Box h="100%" w="100%" display={{ base: 'flex', lg: 'none' }}>
                   <MobileSidebarVersionDropdown
                     setIsOpenSidebar={setIsOpenSidebar}
                   />
@@ -235,11 +240,11 @@ function Layout({
           isExternal
           position="fixed"
           bottom="8"
-          right={{ base: "auto", lg: "30px" }}
-          left={{ base: "30px", lg: "auto" }}
+          right={{ base: 'auto', lg: '30px' }}
+          left={{ base: '30px', lg: 'auto' }}
           mr="auto"
-          _light={{ bg: "coolGray.50" }}
-          _dark={{ bg: "coolGray.800" }}
+          _light={{ bg: 'coolGray.50' }}
+          _dark={{ bg: 'coolGray.800' }}
           h="36px"
           w="185"
           rounded="4"
@@ -251,8 +256,8 @@ function Layout({
 
           <Text
             pl="6"
-            _light={{ color: "black" }}
-            _dark={{ color: "coolGray.50" }}
+            _light={{ color: 'black' }}
+            _dark={{ color: 'coolGray.50' }}
             m="auto"
             fontSize="sm"
           >
