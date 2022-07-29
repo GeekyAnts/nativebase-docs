@@ -104,6 +104,7 @@ function Layout({
   }`;
 
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
+
   return (
     <>
       <Head>
@@ -137,6 +138,10 @@ function Layout({
           content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <link rel="icon" href="/img/nativebaselogo.svg" />
+        <link
+          rel="canonical"
+          href={"https://docs.nativebase.io/" + pages.currentPage.id}
+        />
       </Head>
       <Script async src="https://snack.expo.dev/embed.js"></Script>
       <Script src="/js/gtag.js"></Script>
