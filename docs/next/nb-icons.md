@@ -53,7 +53,7 @@ title: NativeBase Icons
 2. To add particular fonts: (For example, if you need to add AntDesignFonts and MaterialIconsFonts, write this piece of code in `_document.js`)
    <br/>
 
-````jsx
+```jsx
    import { default as NativebaseDocument } from "@native-base/next-adapter/document";
    import AntDesignFontFaceCSS from "@native-base/icons/FontsCSS/AntDesignFontFaceCSS";
    import MaterialIconsFontFaceCSS from "@native-base/icons/FontsCSS/MaterialIconsFontFaceCSS";
@@ -128,7 +128,6 @@ title: NativeBase Icons
    style.appendChild(document.createTextNode(fontsCSS));
    document.head.appendChild(style);
    ```
-    <br/>
 
 2. To add a particular font
  <br/>
