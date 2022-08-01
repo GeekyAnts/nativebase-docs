@@ -14178,5 +14178,25 @@
     "source": "/migration/nb-icons",
     "destination": "/icon",
     "permanent": true
+  },
+  {
+    "source": "/nb-icons",
+    "destination": "/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/nb-icons",
+    "destination": "/3.4.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/nb-icons",
+    "destination": "/3.3.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/next/nb-icons",
+    "destination": "/next/icon",
+    "permanent": true
   }
 ]
