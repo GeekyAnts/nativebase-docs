@@ -52,10 +52,6 @@
         {
           "id": "setup-provider",
           "title": "Setup NativeBase Provider"
-        },
-        {
-          "id": "nb-icons",
-          "title": "Nativebase Icons"
         }
       ]
     },
