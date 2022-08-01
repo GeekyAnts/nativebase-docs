@@ -14176,7 +14176,7 @@
   },
   {
     "source": "/migration/nb-icons",
-    "destination": "/nb-icons",
+    "destination": "/icon",
     "permanent": true
   }
 ]
