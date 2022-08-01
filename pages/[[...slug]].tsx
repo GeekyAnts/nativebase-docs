@@ -1,18 +1,18 @@
-import Layout from '../layouts';
-import path from 'path';
-import matter from 'gray-matter';
-import { serialize } from 'next-mdx-remote/serialize';
+import Layout from "../layouts";
+import path from "path";
+import matter from "gray-matter";
+import { serialize } from "next-mdx-remote/serialize";
 import {
   getDocBySlug,
   getFilePaths,
   getSidebarJson,
   getTOCArray,
   getPages,
-} from '../lib/docs';
-import DirectoryTree from 'directory-tree';
-import versions from '../versions.json';
-import config from '../docs.config';
-import React from 'react';
+} from "../lib/docs";
+import DirectoryTree from "directory-tree";
+import versions from "../versions.json";
+import config from "../docs.config";
+import React from "react";
 
 export default function Doc({
   meta,
@@ -43,14 +43,14 @@ function isNextVersion(slug: string) {
 }
 function isLatestVersion(slug: string) {
   // if slug has no version or next version in params. eg: localhost/box or localhost/migration/button
-  if (!versions.includes(slug) && slug !== 'next') {
+  if (!versions.includes(slug) && slug !== "next") {
     return true;
   }
   return false;
 }
 function isValidVersion(version: string) {
   // if slug has no version or next version in params. eg: localhost/box or localhost/migration/button
-  if (versions.includes(version) || version === 'next') {
+  if (versions.includes(version) || version === "next") {
     return true;
   }
   return false;
@@ -63,7 +63,7 @@ export async function getStaticProps({ params }: any) {
 
   //check if route is for index slug.
   let isIndexSlug = false;
-  let indexSlugVersion = '';
+  let indexSlugVersion = "";
   // if route is versioned index slug like: docs.nativebase.io/3.2.1 or docs.nativebase.io/next
 
   if (
@@ -88,9 +88,11 @@ export async function getStaticProps({ params }: any) {
     : path.join(...params.slug);
   // console.log('filename', filename);
 
-  if (filename.includes('.md')) {
-    filename = filename.split('.md')[0];
+  if (filename.includes(".md")) {
+    filename = filename.split(".md")[0];
   }
+  let componentName = filename.split("/").pop();
+  let youtubeEmbedd = config.componentOfTheWeek[componentName ?? ""] ?? "";
 
   const currentVersion = isIndexSlug
     ? indexSlugVersion
@@ -104,7 +106,7 @@ export async function getStaticProps({ params }: any) {
 
   const { data: frontMatter, content } = matter(markdownWithMeta);
   // console.log("frontmatter", frontMatter);
-  const filenameWithOutVersionArray = filename.split('/');
+  const filenameWithOutVersionArray = filename.split("/");
   filenameWithOutVersionArray.splice(0, 1); // removed the version
 
   const { showToc, ...pages } = getPages(
@@ -124,6 +126,7 @@ export async function getStaticProps({ params }: any) {
       tocArray: toc,
       pages,
       showToc,
+      youtubeEmbedd,
     },
   };
 }
@@ -132,18 +135,18 @@ export async function getStaticPaths() {
   // create paths using id present in version json
 
   const baseDirPath = process.cwd();
-  const tree = DirectoryTree(baseDirPath + '/' + config.docsEntryPoint);
+  const tree = DirectoryTree(baseDirPath + "/" + config.docsEntryPoint);
   // console.log("tree", tree);
   const filePaths = getFilePaths(tree);
   // add versiond index page slug paths
   versions.map((version) => {
     filePaths?.push(version);
   });
-  filePaths?.push('next');
+  filePaths?.push("next");
   // console.log("filepaths", ...filePaths);
   let paths: any = [];
   filePaths?.map((filename) => {
-    let slug = filename.split('.md')[0].split('/');
+    let slug = filename.split(".md")[0].split("/");
     // console.log(slug.split("/"));
     // console.log(slugWithFileExt);
 

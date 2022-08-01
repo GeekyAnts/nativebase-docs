@@ -33,6 +33,7 @@ function Layout({
   frontMatter,
   pages,
   showToc,
+  youtubeEmbedd,
 }: any) {
   // console.log("Sidebar", sidebar);
   const {
@@ -216,6 +217,7 @@ function Layout({
                   content={content}
                   tocArray={tocArray}
                   showToc={showToc}
+                  youtubeEmbedd={youtubeEmbedd}
                 />
               </HStack>
             ) : (
