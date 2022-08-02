@@ -14178,5 +14178,26 @@
     "source": "/migration/nb-icons",
     "destination": "/nb-icons",
     "permanent": true
-  }
+  },
+  {
+    "source": "/3.4.x/flex",
+    "destination": "/3.4.x/box",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/utility-first",
+    "destination": "/3.4.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/v3xtov32",
+    "destination": "/3.4.x/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/use-accessible-colors",
+    "destination": "/3.4.x/setup-provider",
+    "permanent": true
+  },
+  {}
 ]
