@@ -12,6 +12,12 @@ module.exports = {
     "3.3.x": "3.3.10",
     "3.4.x": "3.4.0-rc.1",
   },
+  componentOfTheWeek: {
+    switch: "https://www.youtube.com/embed/VGUhi8IQHDw",
+    checkbox: "https://www.youtube.com/embed/NxqKOiLbpZo",
+    input: "https://www.youtube.com/embed/oJWnEb0K0Aw",
+    button: "https://www.youtube.com/embed/BMAF6GLBvYU",
+  },
   footer: [
     {
       type: "heading",
@@ -92,4 +98,4 @@ module.exports = {
       ],
     },
   ],
-}
+};

@@ -67,7 +67,6 @@ export default function () {
         toast.show({
           title: 'Wrong password',
           placement: 'bottom',
-          status: 'warning',
         });
       }}
     >

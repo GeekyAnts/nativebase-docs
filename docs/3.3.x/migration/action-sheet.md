@@ -85,15 +85,11 @@ export default function () {
 
       <Actionsheet isOpen={isOpen} onClose={onClose}>
         <Actionsheet.Content>
-          <Actionsheet.Header>Header</Actionsheet.Header>
           <Actionsheet.Item>Option 1</Actionsheet.Item>
           <Actionsheet.Item>Option 2</Actionsheet.Item>
           <Actionsheet.Item>Option 3</Actionsheet.Item>
           <Actionsheet.Item color="red.500">Delete</Actionsheet.Item>
         </Actionsheet.Content>
-        <Actionsheet.Footer>
-          <Actionsheet.Item onPress={onClose}>Cancel</Actionsheet.Item>
-        </Actionsheet.Footer>
       </Actionsheet>
     </>
   );

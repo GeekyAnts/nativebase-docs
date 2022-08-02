@@ -1,3 +1,8 @@
+---
+id: toast
+title: Toast
+---
+
 In v3, [`Toast`](/toast) can be created using **useToast** hook
 
 ## Overview
@@ -62,7 +67,6 @@ export default function () {
         toast.show({
           title: 'Wrong password',
           placement: 'bottom',
-          status: 'warning',
         });
       }}
     >
