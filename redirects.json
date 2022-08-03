@@ -14415,7 +14415,7 @@
     "permanent": true
   },
   {
-    "source": "/fix/redirect",
+    "source": "/3.4.x/migration/kitchen-sink",
     "destination": "/3.4.x/kitchen-sink",
     "permanent": true
   },
