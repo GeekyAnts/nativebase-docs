@@ -14245,18 +14245,18 @@
     "permanent": true
   },
   {
-    "source": "3.4.x/migration/building-drawer-navigation",
-    "destination": "3.4.x/building-drawer-navigation",
+    "source": "/3.4.x/migration/building-drawer-navigation",
+    "destination": "/3.4.x/building-drawer-navigation",
     "permanent": true
   },
   {
-    "source": "3.1.x/migration/contribution",
-    "destination": "3.1.x/contribution",
+    "source": "/3.1.x/migration/contribution",
+    "destination": "/3.1.x/contribution",
     "permanent": true
   },
   {
-    "source": "3.2.x/migration/contribution",
-    "destination": "3.2.x/contribution",
+    "source": "/3.2.x/migration/contribution",
+    "destination": "/3.2.x/contribution",
     "permanent": true
   },
   {
@@ -14450,8 +14450,8 @@
     "permanent": true
   },
   {
-    "source": "3.4.x/migration/menu",
-    "destination": "3.4.x/menu",
+    "source": "/3.4.x/migration/menu",
+    "destination": "/3.4.x/menu",
     "permanent": true
   },
   {
@@ -14535,8 +14535,8 @@
     "permanent": true
   },
   {
-    "source": "3.4.x/migration/migration/search-bar",
-    "destination": "3.4.x/migration/search-bar",
+    "source": "/3.4.x/migration/migration/search-bar",
+    "destination": "/3.4.x/migration/search-bar",
     "permanent": true
   },
   {
@@ -14630,8 +14630,8 @@
     "permanent": true
   },
   {
-    "source": "3.4.x/migration/pseudo-props-101",
-    "destination": "3.4.x/pseudo-props-101",
+    "source": "/3.4.x/migration/pseudo-props-101",
+    "destination": "/3.4.x/pseudo-props-101",
     "permanent": true
   },
   {
