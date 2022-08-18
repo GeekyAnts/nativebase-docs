@@ -16,7 +16,7 @@ Migrating Button components can broadly described in these points:
 - Colors of the Buttons:
   In v3 the color is controlled by `colorScheme` prop. So all the color providing props [ **light**, **info**, **success**, **warning**, **danger** and **dark** ] can be passed as value (and more) to `colorScheme` props.
 - Design of the Button:
-  With v3 we're providing some mostly frequently used designs as `variants` [ **solid**, **outline**, **ghost**, **link** and **unstyled** ] and lot more customisation.
+  With v3 we're providing some most frequently used designs as `variants` [ **solid**, **outline**, **ghost**, **link** and **unstyled** ] and lot more customisation.
 - Sizes of the Button:
   In v3 the size is controlled by `size` prop. And it accepts pre-defined sizes [ like xs, sm md, lg ] and also custom values.
 
