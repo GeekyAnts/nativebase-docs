@@ -8,7 +8,7 @@ import { ComponentTheme } from '../src/components';
 `Alerts` convey a state that can influence a system, feature, or page.
 
 ```jsx isShowcase
-import React from 'react';
+import React from "react";
 import {
   Alert,
   VStack,
@@ -17,7 +17,7 @@ import {
   CloseIcon,
   Box,
   Heading,
-} from 'native-base';
+} from "native-base";
 
 export const Example = () => {
   return (
@@ -40,7 +40,7 @@ export const Example = () => {
             icon={<CloseIcon size="3" color="coolGray.600" />}
           />
         </HStack>
-        <Box pl="6" _text={{ color: 'coolGray.600' }}>
+        <Box pl="6" _text={{ color: "coolGray.600" }}>
           We are happy to announce that we are going live on July 28th. Get
           ready!
         </Box>
@@ -52,15 +52,13 @@ export const Example = () => {
 
 ## Import
 
-NativeBase exports 5 Alert related components:
+NativeBase exports 2 Alert related components:
 
 - `Alert`: The wrapper for alert components.
 - `Alert.Icon`: The visual icon for the alert that changes based on the `status` prop.
-  <!-- - `Alert.Title`: The title of the alert to be announced by screen readers. -->
-  <!-- - `Alert.Description`: The description of the alert to be announced by screen readers. -->
 
 ```jsx
-import { Alert } from 'native-base';
+import { Alert } from "native-base";
 ```
 
 ## Examples
@@ -106,18 +104,6 @@ import { Alert } from 'native-base';
 ### Alert.Icon
 
 ```ComponentPropTable path=composites,Alert,AlertIcon.tsx
-
-```
-
-### Alert.Title
-
-```ComponentPropTable path=composites,Alert,AlertTitle.tsx
-
-```
-
-### Alert.Description
-
-```ComponentPropTable path=composites,Alert,AlertDescription.tsx
 
 ```
 

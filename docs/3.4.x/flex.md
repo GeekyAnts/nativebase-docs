@@ -6,7 +6,7 @@ title: Flex
 `Flex` provides helpful style shorthand and is a [`Box`](box.md) with `display: flex`.
 
 ```jsx isShowcase
-import React from 'react';
+import React from "react";
 import {
   Flex,
   Center,
@@ -15,17 +15,22 @@ import {
   VStack,
   Divider,
   Box,
-} from 'native-base';
+  useColorModeValue,
+} from "native-base";
 
 export function Example() {
+  const bgShade100 = useColorModeValue("primary.100", "primary.400");
+  const bgShade200 = useColorModeValue("primary.200", "primary.500");
+  const bgShade300 = useColorModeValue("primary.300", "primary.600");
+  const bgShade400 = useColorModeValue("primary.400", "primary.700");
   return (
     <Box flex="1" safeAreaTop>
       <ScrollView
         _contentContainerStyle={{
-          h: '40',
-          px: '20px',
-          mb: '4',
-          minW: '72',
+          h: "40",
+          px: "20px",
+          mb: "4",
+          minW: "72",
         }}
       >
         <VStack space={2.5} w="100%" px="3">
@@ -36,19 +41,19 @@ export function Example() {
             mb="2.5"
             mt="1.5"
             _text={{
-              color: 'coolGray.800',
+              color: "coolGray.800",
             }}
           >
-            <Center size="16" bg="primary.100">
+            <Center size="16" bg={bgShade100}>
               100
             </Center>
-            <Center size="16" bg="primary.200">
+            <Center size="16" bg={bgShade200}>
               200
             </Center>
-            <Center bg="primary.300" size="16">
+            <Center size="16" bg={bgShade300}>
               300
             </Center>
-            <Center size="16" bg="primary.400">
+            <Center size="16" bg={bgShade400}>
               400
             </Center>
           </Flex>
@@ -61,19 +66,19 @@ export function Example() {
             mb="2.5"
             mt="1.5"
             _text={{
-              color: 'coolGray.800',
+              color: "coolGray.800",
             }}
           >
-            <Center size="16" bg="primary.100">
+            <Center size="16" bg={bgShade100}>
               100
             </Center>
-            <Center size="16" bg="primary.200">
+            <Center size="16" bg={bgShade200}>
               200
             </Center>
-            <Center bg="primary.300" size="16">
+            <Center size="16" bg={bgShade300}>
               300
             </Center>
-            <Center size="16" bg="primary.400">
+            <Center size="16" bg={bgShade400}>
               400
             </Center>
           </Flex>
@@ -85,19 +90,19 @@ export function Example() {
             mb="2.5"
             mt="1.5"
             _text={{
-              color: 'coolGray.800',
+              color: "coolGray.800",
             }}
           >
-            <Center size="16" bg="primary.100">
+            <Center size="16" bg={bgShade100}>
               100
             </Center>
-            <Center size="16" bg="primary.200">
+            <Center size="16" bg={bgShade200}>
               200
             </Center>
-            <Center bg="primary.300" size="16">
+            <Center size="16" bg={bgShade300}>
               300
             </Center>
-            <Center size="16" bg="primary.400">
+            <Center size="16" bg={bgShade400}>
               400
             </Center>
           </Flex>
@@ -109,19 +114,19 @@ export function Example() {
             mb="2.5"
             mt="1.5"
             _text={{
-              color: 'coolGray.800',
+              color: "coolGray.800",
             }}
           >
-            <Center size="16" bg="primary.100">
+            <Center size="16" bg={bgShade100}>
               100
             </Center>
-            <Center size="16" bg="primary.200">
+            <Center size="16" bg={bgShade200}>
               200
             </Center>
-            <Center bg="primary.300" size="16">
+            <Center size="16" bg={bgShade300}>
               300
             </Center>
-            <Center size="16" bg="primary.400">
+            <Center size="16" bg={bgShade400}>
               400
             </Center>
           </Flex>
@@ -136,7 +141,7 @@ export function Example() {
 ## Import
 
 ```jsx
-import { Flex, Spacer } from 'native-base';
+import { Flex, Spacer } from "native-base";
 ```
 
 - `Flex`: a **[Box](box.md)** with `display: flex`
