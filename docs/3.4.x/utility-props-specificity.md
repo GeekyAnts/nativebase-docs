@@ -13,6 +13,9 @@ title: Utility Props Specificity
 
 - If we have a similar prop which is also defined in the baseStyle of that component, the value of the prop will override the value of the prop defined in the baseStyle.
 
+  <br/>
+  <br/>
+
   Let's take an example of `Input` to understand better.
 
   ```jsx

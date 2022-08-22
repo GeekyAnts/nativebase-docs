@@ -17,7 +17,7 @@ import { ComponentTheme } from '../../src/components';
 - `AlertDialog.CloseButton`: The button that closes the dialog.
 
 ```jsx
-import { AlertDialog } from 'native-base';
+import { AlertDialog } from "native-base";
 ```
 
 ## Examples
@@ -34,7 +34,7 @@ import { AlertDialog } from 'native-base';
 
 ## Props
 
-AlertDialog and its components compose the **[Modal](/modal)** component, so all the [`Modal props`](/modal#props) can be passed to it. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of `Modal`.
+AlertDialog and its components compose the **[Modal](/modal)** component, so all the [`Modal props`](/modal#h2-props) can be passed to it. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of `Modal`.
 
 | Name                | Type      | Description                                                    | Default |
 | ------------------- | --------- | -------------------------------------------------------------- | ------- |

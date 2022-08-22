@@ -17,7 +17,7 @@ import { ComponentTheme } from '../../src/components';
 - `AlertDialog.CloseButton`: The button that closes the dialog.
 
 ```jsx
-import { AlertDialog } from 'native-base';
+import { AlertDialog } from "native-base";
 ```
 
 ## Examples
@@ -25,8 +25,8 @@ import { AlertDialog } from 'native-base';
 ### Basic
 
 ```jsx isLive=true
-import React from 'react';
-import { AlertDialog, Button, Center, NativeBaseProvider } from 'native-base';
+import React from "react";
+import { AlertDialog, Button, Center, NativeBaseProvider } from "native-base";
 
 function AlertDialogComponent() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -38,7 +38,7 @@ function AlertDialogComponent() {
         leastDestructiveRef={cancelRef}
         isOpen={isOpen}
         onClose={onClose}
-        motionPreset={'fade'}
+        motionPreset={"fade"}
       >
         <AlertDialog.Content>
           <AlertDialog.Header fontSize="lg" fontWeight="bold">
@@ -75,8 +75,8 @@ export function Example() {
 ### Transition
 
 ```jsx isLive=true
-import React from 'react';
-import { AlertDialog, Button, Center, NativeBaseProvider } from 'native-base';
+import React from "react";
+import { AlertDialog, Button, Center, NativeBaseProvider } from "native-base";
 
 function AlertDialogComponent() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -127,7 +127,7 @@ export function Example() {
 
 ## Props
 
-AlertDialog and its components compose the **[Modal](/modal)** component, so all the [`Modal props`](/modal#props) can be passed to it. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of `Modal`.
+AlertDialog and its components compose the **[Modal](/modal)** component, so all the [`Modal props`](/modal#h2-props) can be passed to it. The only exception is that it requires `leastDestructiveRef` which is similar to `initialFocusRef` of `Modal`.
 
 | Name                | Type      | Description                                                    | Default |
 | ------------------- | --------- | -------------------------------------------------------------- | ------- |

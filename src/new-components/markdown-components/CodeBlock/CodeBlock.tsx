@@ -30,7 +30,7 @@ export const CodeBlock = ({ children, props }: any) => {
       setCopied(false);
     }, 2000);
   }
-  
+
   const bgColor = useColorModeValue("#f9fafb", "#171E2E");
   const borderColor = useColorModeValue("#e5e7eb", "#1e293b");
   return (
@@ -57,6 +57,7 @@ export const CodeBlock = ({ children, props }: any) => {
             p="1"
             _text={{
               fontSize: "sm",
+              lineHeight: "1.5em",
               // hack for now
               fontFamily:
                 "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
@@ -85,6 +86,8 @@ export const CodeBlock = ({ children, props }: any) => {
               backgroundColor: bgColor,
               borderWidth: "1",
               borderColor: borderColor,
+              fontSize: "13px",
+              lineHeight: "normal",
             }}
           >
             {tokens.map((line, i) => (

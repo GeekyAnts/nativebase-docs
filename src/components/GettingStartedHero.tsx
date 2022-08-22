@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  Link,
-  Text,
-  VStack,
-  Stack,
-  useColorModeValue,
-} from "native-base";
+import { Box, Text, VStack, Stack, useColorModeValue } from "native-base";
 import {
   CodePlaygroundIcon,
   BookMarkIcon,
@@ -54,7 +46,7 @@ export function GettingStartedHero() {
               />
               <TileLink
                 title="Playground"
-                url="https://snack.expo.io/@nishanbende/example"
+                url="https://snack.expo.dev/@native-base/nativebase-playground"
                 description="Try NativeBase on Snack by Expo"
                 _description={{
                   _dark: { color: "coolGray.400" },

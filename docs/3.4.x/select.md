@@ -10,11 +10,11 @@ import { AndroidBadge } from "../src/components/index";
 Select creates a dropdown list of items with the selected item in closed view.
 
 ```jsx isShowcase
-import React from 'react';
-import { Select, VStack, CheckIcon } from 'native-base';
+import React from "react";
+import { Select, VStack, CheckIcon } from "native-base";
 
 export const Example = () => {
-  let [service, setService] = React.useState('');
+  let [service, setService] = React.useState("");
 
   return (
     <VStack alignItems="center" space={4}>
@@ -25,11 +25,19 @@ export const Example = () => {
         accessibilityLabel="Choose Service"
         placeholder="Choose Service"
         _selectedItem={{
-          bg: 'teal.600',
+          bg: "teal.600",
           endIcon: <CheckIcon size="5" />,
         }}
-        _light={{ bg: 'coolGray.100' }}
-        _dark={{ bg: 'coolGray.800' }}
+        _light={{
+          bg: "coolGray.100",
+          _hover: { bg: "coolGray.200" },
+          _focus: { bg: "coolGray.200:alpha.70" },
+        }}
+        _dark={{
+          bg: "coolGray.800",
+          _hover: { bg: "coolGray.900" },
+          _focus: { bg: "coolGray.900:alpha.70" },
+        }}
         onValueChange={(itemValue) => setService(itemValue)}
       >
         <Select.Item shadow={2} label="UX Research" value="ux" />
@@ -50,7 +58,7 @@ export const Example = () => {
 ## Import
 
 ```jsx
-import { Select } from 'native-base';
+import { Select } from "native-base";
 ```
 
 ## Examples

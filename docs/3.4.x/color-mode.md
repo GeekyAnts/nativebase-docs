@@ -42,18 +42,25 @@ import {
 function PseudoPropsUsage() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Center
-      flex={1}
-      _dark={{ bg: 'coolGray.800' }}
-      _light={{ bg: 'warmGray.50' }}
-    >
-      <Text fontSize="lg" display="flex" mb="20">
-        The active color mode is{' '}
-        <Text bold fontSize="lg">
-          {colorMode}
+    <Center flex={1}>
+      <Box
+        p={4}
+        maxW="300"
+        _dark={{
+          bg: "coolGray.800",
+        }}
+        _light={{
+          bg: "warmGray.50",
+        }}
+      >
+        <Text fontSize="lg" display="flex" mb="20">
+          The active color mode is{' '}
+          <Text bold fontSize="lg">
+            {colorMode}
+          </Text>
         </Text>
-      </Text>
-      <Button onPress={toggleColorMode}>Toggle</Button>
+        <Button onPress={toggleColorMode}>Toggle</Button>
+      </Box>
     </Center>
   );
 }

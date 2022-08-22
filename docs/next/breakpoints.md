@@ -5,7 +5,7 @@ title: Breakpoints
 
 Breakpoints are the building blocks of responsive design. Use them to control when your layout can be adapted at a particular viewport or device size.
 
-NativeBase provides these default breakpoints and you can update with using extendTheme.
+NativeBase provides these default breakpoints and you can update them by using extendTheme.
 
 ```tsx
 breakpoints = {

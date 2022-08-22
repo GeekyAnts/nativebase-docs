@@ -11,9 +11,9 @@ title: Utility Props Specificity
 
   In the above example, we have two similar props for the Input component, but as you might have noticed `px="2"` is more specific than `p="0"` in terms of providing padding to the Input. This follows React Native's specificity precedence while applying utility style props to a component, order does not matter. So, `px="2"` will be applied when the Input component is rendered.
 
-- If we have a similar prop which is also defined in the baseStyle of that component, the value of the prop will override the value of the prop defined in the baseStyle.
+- If we have a similar prop which is also defined in the baseStyle of that component, the value of the prop will override the value of the prop defined in the baseStyle
 
-  Let's take an example of `Input` to understand better.
+  . Let's take an example of `Input` to understand better.
 
   ```jsx
   <Input p="0" />

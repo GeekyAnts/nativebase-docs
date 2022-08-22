@@ -12,8 +12,8 @@ The following table shows a list of every style prop and the properties within e
 ### Margin and padding
 
 ```jsx isLive=true
-import React from 'react';
-import { Box, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
 const NBBox = (props) => {
   return <Box borderRadius="md" bg="primary.200" {...props} />;
@@ -64,8 +64,8 @@ export function Example() {
 ### Color and background color
 
 ```jsx isLive=true
-import React from 'react';
-import { Box, NativeBaseProvider, Center, Text } from 'native-base';
+import React from "react";
+import { Box, NativeBaseProvider, Center, Text } from "native-base";
 
 const NBBox = (props) => {
   return <Box p={5} m={2} borderRadius="md" bg="primary.200" {...props} />;
@@ -81,7 +81,7 @@ function Component() {
       <NBBox bgColor="lightBlue.200" py={3}>
         {/* using theme colors to set text color */}
         <Text color="red.500" fontWeight="bold">
-          {' '}
+          {" "}
           I ❤️ NativeBase
         </Text>
       </NBBox>
@@ -113,8 +113,8 @@ export function Example() {
 ### Typography
 
 ```jsx isLive=true
-import React from 'react';
-import { Text, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Text, NativeBaseProvider, Center } from "native-base";
 
 const NBText = (props) => {
   return <Text m={2} {...props} />;
@@ -127,15 +127,15 @@ function Component() {
       <NBText fontSize="md">Sample Text </NBText>
       {/* font-size `32px` */}
       <NBText fontSize={32} textDecoration="underline">
-        Sample Text{' '}
+        Sample Text{" "}
       </NBText>
       {/* font-size `'2em'` */}
       {/* font-size of `theme.fontWeights.bold` */}
       <NBText fontSize="2em" fontWeight="bold">
-        Sample Text{' '}
+        Sample Text{" "}
       </NBText>
       {/* text-align `left` on all viewports and `center` from the first breakpoint and up */}
-      <NBText textAlign={['left', 'center']}>Sample Text </NBText>
+      <NBText textAlign={["left", "center"]}>Sample Text </NBText>
     </>
   );
 }
@@ -165,8 +165,8 @@ export function Example() {
 ### Layout, width and height
 
 ```jsx isLive=true
-import React from 'react';
-import { Box, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
 const NBBox = (props) => {
   return <Box m={2} borderRadius="md" bg="primary.200" {...props} />;
@@ -221,8 +221,8 @@ export function Example() {
 ### Flexbox
 
 ```jsx isLive=true
-import React from 'react';
-import { Box, Flex, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Box, Flex, NativeBaseProvider, Center } from "native-base";
 
 const NBBox = (props) => {
   return <Box p={5} m={2} borderRadius="md" bg="primary.200" {...props} />;
@@ -277,8 +277,8 @@ export function Example() {
 ### Borders
 
 ```jsx isLive=true
-import React from 'react';
-import { Box, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
 const NBBox = (props) => {
   return <Box p={5} m={2} borderRadius="md" bg="primary.200" {...props} />;
@@ -332,8 +332,8 @@ export function Example() {
 ### Borders Radius
 
 ```jsx isLive=true
-import React from 'react';
-import { Box, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
 const NBBox = (props) => {
   return <Box p={5} m={2} bg="primary.200" {...props} />;
@@ -381,8 +381,8 @@ export function Example() {
 ### Position
 
 ```jsx isLive=true
-import React from 'react';
-import { Box, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
 const NBBox = (props) => {
   return <Box p={5} m={2} borderRadius="md" bg="primary.200" {...props} />;
@@ -427,8 +427,8 @@ export function Example() {
 ### Shadow
 
 ```jsx isLive=true
-import React from 'react';
-import { Box, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Box, NativeBaseProvider, Center } from "native-base";
 
 const NBBox = (props) => {
   return <Box p={5} m={2} borderRadius="md" bg="primary.200" {...props} />;
@@ -470,17 +470,17 @@ export function Example() {
 Provides a way to pass props to child components inside Composite componets.
 
 ```jsx isLive=true
-import React from 'react';
-import { Button, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Button, NativeBaseProvider, Center } from "native-base";
 
 function App() {
   return (
     <Button
       _text={{
         // below props will will let you style the text of the button
-        color: 'secondary.400',
-        fontSize: 'xs',
-        fontWeight: 'bolder',
+        color: "secondary.400",
+        fontSize: "xs",
+        fontWeight: "bolder",
       }}
     >
       Sample Text
@@ -501,27 +501,27 @@ export function Example() {
 
 <br />
 
-| Prop    | Type                       | Description                                              |
-| ------- | -------------------------- | -------------------------------------------------------- |
-| \_stack | [IStackProps](stack#props) | Passed props will be provided to [`Stack`](stack) child. |
-| \_text  | [ITextProps](text#props)   | Passed props will be provided to [`Text`](text) child.   |
+| Prop    | Type                          | Description                                              |
+| ------- | ----------------------------- | -------------------------------------------------------- |
+| \_stack | [IStackProps](stack#h2-props) | Passed props will be provided to [`Stack`](stack) child. |
+| \_text  | [ITextProps](text#h2-props)   | Passed props will be provided to [`Text`](text) child.   |
 
 ### Interaction Props
 
 Provides a way to pass props on certain interaction.
 
 ```jsx isLive=true
-import React from 'react';
-import { Button, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Button, NativeBaseProvider, Center } from "native-base";
 
 function App() {
   return (
     <Button
       _pressed={{
         // below props will only be applied on button is pressed
-        bg: 'primary.300',
+        bg: "primary.300",
         _text: {
-          color: 'secondary.400',
+          color: "secondary.400",
         },
       }}
     >
@@ -556,18 +556,18 @@ export function Example() {
 Provides a way to pass props bassed on Platform (_android, ios or web_).
 
 ```jsx isLive=true
-import React from 'react';
-import { Button, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Button, NativeBaseProvider, Center } from "native-base";
 
 function App() {
   return (
     <Button
       _web={{
         // below props will only be applied on 'web' platform
-        bg: 'primary.300',
+        bg: "primary.300",
         _text: {
-          color: 'secondary.400',
-          fontWeight: 'bold',
+          color: "secondary.400",
+          fontWeight: "bold",
         },
       }}
     >
