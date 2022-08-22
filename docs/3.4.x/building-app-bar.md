@@ -10,7 +10,7 @@ The top app bar provides content and actions related to the current screen. Itâ€
 We can easily create it using basic layout components from NativeBase.
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   VStack,
   HStack,
@@ -22,16 +22,16 @@ import {
   Center,
   Box,
   StatusBar,
-} from 'native-base';
-import { MaterialIcons } from '@expo/vector-icons';
+} from "native-base";
+import { MaterialIcons } from "@expo/vector-icons";
 
 function AppBar() {
   return (
     <>
       <StatusBar bg="#3700B3" barStyle="light-content" />
-      <Box safeAreaTop bg="#6200ee" />
+      <Box safeAreaTop bg="violet.600" />
       <HStack
-        bg="#6200ee"
+        bg="violet.800"
         px="1"
         py="3"
         justifyContent="space-between"

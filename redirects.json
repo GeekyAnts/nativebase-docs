@@ -14198,5 +14198,640 @@
     "source": "/next/nb-icons",
     "destination": "/next/icon",
     "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/alert",
+    "destination": "/3.4.x/alert",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/alert-dialog",
+    "destination": "/3.4.x/alert-dialog",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/aspect-ratio",
+    "destination": "/3.4.x/aspect-ratio",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/avatar",
+    "destination": "/3.4.x/avatar",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/box",
+    "destination": "/3.4.x/box",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/breakpoints",
+    "destination": "/3.4.x/breakpoints",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/building-app-bar",
+    "destination": "/3.4.x/building-app-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/building-app-drawer",
+    "destination": "/3.4.x/building-app-drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/building-card",
+    "destination": "/3.4.x/building-card",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/building-drawer-navigation",
+    "destination": "/3.4.x/building-drawer-navigation",
+    "permanent": true
+  },
+  {
+    "source": "/3.1.x/migration/contribution",
+    "destination": "/3.1.x/contribution",
+    "permanent": true
+  },
+  {
+    "source": "/3.2.x/migration/contribution",
+    "destination": "/3.2.x/contribution",
+    "permanent": true
+  },
+  {
+    "source": "/3.3.x/migration/contribution",
+    "destination": "/3.3.x/contribution",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/accessibility",
+    "destination": "/3.4.x/accessibility",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/building-footer-tabs",
+    "destination": "/3.4.x/building-footer-tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/building-search-bar",
+    "destination": "/3.4.x/building-search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/building-swipe-list",
+    "destination": "/3.4.x/building-swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/building-tab-view",
+    "destination": "/3.4.x/building-tab-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/center",
+    "destination": "/3.4.x/center",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/changelog",
+    "destination": "/3.4.x/changelog",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/color-mode",
+    "destination": "/3.4.x/color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/container",
+    "destination": "/3.4.x/container",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/contribution",
+    "destination": "/3.4.x/contribution",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/customizing-components",
+    "destination": "/3.4.x/customizing-components",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/customizing-fonts",
+    "destination": "/3.4.x/customizing-fonts",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/customizing-theme",
+    "destination": "/3.4.x/customizing-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/dark-mode",
+    "destination": "/3.4.x/dark-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/default-theme",
+    "destination": "/3.4.x/default-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/design-tokens",
+    "destination": "/3.4.x/design-tokens",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/divider",
+    "destination": "/3.4.x/divider",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/faq",
+    "destination": "/3.4.x/faq",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/flat-list",
+    "destination": "/3.4.x/flat-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/flex",
+    "destination": "/3.4.x/flex",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/form-control",
+    "destination": "/3.4.x/form-control",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/getting-started",
+    "destination": "/3.4.x/getting-started",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/heading",
+    "destination": "/3.4.x/heading",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/hidden",
+    "destination": "/3.4.x/hidden",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/hstack",
+    "destination": "/3.4.x/hstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/icon-button",
+    "destination": "/3.4.x/icon-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/zstack",
+    "destination": "/3.4.x/zstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/vstack",
+    "destination": "/3.4.x/vstack",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/view",
+    "destination": "/3.4.x/view",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/image",
+    "destination": "/3.4.x/image",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/input",
+    "destination": "/3.4.x/input",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/installation",
+    "destination": "/3.4.x/installation",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/internal-pseudo-props",
+    "destination": "/3.4.x/internal-pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/keyboard-avoiding-view",
+    "destination": "/3.4.x/keyboard-avoiding-view",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/kitchen-sink",
+    "destination": "/3.4.x/kitchen-sink",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/link",
+    "destination": "/3.4.x/link",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/login-signup-forms",
+    "destination": "/3.4.x/login-signup-forms",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/menu",
+    "destination": "/3.4.x/menu",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/action-sheet",
+    "destination": "/3.4.x/migration/action-sheet",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/badge",
+    "destination": "/3.4.x/migration/badge",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/button",
+    "destination": "/3.4.x/migration/button",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/card",
+    "destination": "/3.4.x/migration/card",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/checkbox",
+    "destination": "/3.4.x/migration/checkbox",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/date-picker",
+    "destination": "/3.4.x/migration/date-picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/deck-swiper",
+    "destination": "/3.4.x/migration/deck-swiper",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/drawer",
+    "destination": "/3.4.x/migration/drawer",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/fab",
+    "destination": "/3.4.x/migration/fab",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/footer-tab",
+    "destination": "/3.4.x/migration/footer-tab",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/form",
+    "destination": "/3.4.x/migration/form",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/header",
+    "destination": "/3.4.x/migration/header",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/icon",
+    "destination": "/3.4.x/migration/icon",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/layout",
+    "destination": "/3.4.x/migration/layout",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/picker",
+    "destination": "/3.4.x/migration/picker",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/radio-button",
+    "destination": "/3.4.x/migration/radio-button",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/search-bar",
+    "destination": "/3.4.x/migration/search-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/segment",
+    "destination": "/3.4.x/migration/segment",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/spinner",
+    "destination": "/3.4.x/migration/spinner",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/swipe-list",
+    "destination": "/3.4.x/migration/swipe-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/tabs",
+    "destination": "/3.4.x/migration/tabs",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/thumbnail",
+    "destination": "/3.4.x/migration/thumbnail",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/toast",
+    "destination": "/3.4.x/migration/toast",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/typography",
+    "destination": "/3.4.x/migration/typography",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/v3",
+    "destination": "/3.4.x/migration/v3",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/v33xtov34x",
+    "destination": "/3.4.x/migration/v33xtov34x",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/migration/v3xtov32",
+    "destination": "/3.4.x/migration/v3xtov32",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/modal",
+    "destination": "/3.4.x/modal",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/more-props",
+    "destination": "/3.4.x/more-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/nativebase-factory",
+    "destination": "/3.4.x/nativebase-factory",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/popover",
+    "destination": "/3.4.x/popover",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/presence-transition",
+    "destination": "/3.4.x/presence-transition",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/pressable",
+    "destination": "/3.4.x/pressable",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/progress",
+    "destination": "/3.4.x/progress",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/pseudo-props",
+    "destination": "/3.4.x/pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/pseudo-props-101",
+    "destination": "/3.4.x/pseudo-props-101",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/radio",
+    "destination": "/3.4.x/radio",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/responsive",
+    "destination": "/3.4.x/responsive",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/safe-area-view-props",
+    "destination": "/3.4.x/safe-area-view-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/scrollview",
+    "destination": "/3.4.x/scrollview",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/section-list",
+    "destination": "/3.4.x/section-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/select",
+    "destination": "/3.4.x/select",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/setup-provider",
+    "destination": "/3.4.x/setup-provider",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/skeleton",
+    "destination": "/3.4.x/skeleton",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/slide",
+    "destination": "/3.4.x/slide",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/slider",
+    "destination": "/3.4.x/slider",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/solito",
+    "destination": "/3.4.x/solito",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/stack",
+    "destination": "/3.4.x/stack",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/stagger",
+    "destination": "/3.4.x/stagger",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/status-bar",
+    "destination": "/3.4.x/status-bar",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/strict-mode",
+    "destination": "/3.4.x/strict-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/switch",
+    "destination": "/3.4.x/switch",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/testing",
+    "destination": "/3.4.x/testing",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/text",
+    "destination": "/3.4.x/text",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/textarea",
+    "destination": "/3.4.x/textarea",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/theme",
+    "destination": "/3.4.x/theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/todo-list",
+    "destination": "/3.4.x/todo-list",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/tooltip",
+    "destination": "/3.4.x/tooltip",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/typescript",
+    "destination": "/3.4.x/typescript",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-accessible-colors",
+    "destination": "/3.4.x/use-accessible-colors",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-breakpoint-value",
+    "destination": "/3.4.x/use-breakpoint-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-clipboard",
+    "destination": "/3.4.x/use-clipboard",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-color-mode",
+    "destination": "/3.4.x/use-color-mode",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-color-mode-value",
+    "destination": "/3.4.x/use-color-mode-value",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-contrast-text",
+    "destination": "/3.4.x/use-contrast-text",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-disclose",
+    "destination": "/3.4.x/use-disclose",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-media-query",
+    "destination": "/3.4.x/use-media-query",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-theme",
+    "destination": "/3.4.x/use-theme",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/use-token",
+    "destination": "/3.4.x/use-token",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/utility-first",
+    "destination": "/3.4.x/utility-first",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/utility-props",
+    "destination": "/3.4.x/utility-props",
+    "permanent": true
+  },
+  {
+    "source": "/3.4.x/migration/utility-props-specificity",
+    "destination": "/3.4.x/utility-props-specificity",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/contribution",
+    "destination": "/next/contribution",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/internal-pseudo-props",
+    "destination": "/next/internal-pseudo-props",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/migration/v33xtov34x",
+    "destination": "/next/migration/v33xtov34x",
+    "permanent": true
+  },
+  {
+    "source": "/next/migration/solito",
+    "destination": "/next/solito",
+    "permanent": true
   }
 ]

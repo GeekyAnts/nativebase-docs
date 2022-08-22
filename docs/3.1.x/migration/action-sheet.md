@@ -10,7 +10,7 @@ We have sliced [`Actionsheet`](/action-sheet) into multiple smaller component wh
 Migrating Checkbox components can broadly described in these points:
 
 - **options** (prop) → `Actionsheet.Item` (component).
-- Props like **cancelButtonIndex**, **cancelButtonIndex** are _no longer required_ as components like `Actionsheet.Item` can be customised as per need.
+- Props like **cancelButtonIndex** are _no longer required_ as components like `Actionsheet.Item` can be customised as per need.
 - **title** (prop) → NativeBase components such as `Heading` and `Text` can be used inside `ActionSheet.Content` to show the title.
 - Declarative approach to show and hide using `isOpen` prop, instead of `show()` and `hide()`.
 
@@ -25,7 +25,7 @@ values={[
 <DocTabItem value="v2">
 
 ```tsx
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   Container,
   Header,
@@ -33,8 +33,8 @@ import {
   Content,
   ActionSheet,
   Text,
-} from 'native-base';
-var BUTTONS = ['Option 1', 'Option 2', 'Option 3', 'Delete', 'Cancel'];
+} from "native-base";
+var BUTTONS = ["Option 1", "Option 2", "Option 3", "Delete", "Cancel"];
 var DESTRUCTIVE_INDEX = 3;
 var CANCEL_INDEX = 4;
 export default class ActionSheetExample extends Component {
@@ -53,7 +53,7 @@ export default class ActionSheetExample extends Component {
                   options: BUTTONS,
                   cancelButtonIndex: CANCEL_INDEX,
                   destructiveButtonIndex: DESTRUCTIVE_INDEX,
-                  title: 'Header',
+                  title: "Header",
                 },
                 (buttonIndex) => {
                   this.setState({ clicked: BUTTONS[buttonIndex] });
@@ -74,8 +74,8 @@ export default class ActionSheetExample extends Component {
 <DocTabItem value="v3">
 
 ```tsx
-import React from 'react';
-import { Button, Actionsheet, useDisclose } from 'native-base';
+import React from "react";
+import { Button, Actionsheet, useDisclose } from "native-base";
 
 export default function () {
   const { isOpen, onOpen, onClose } = useDisclose();

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Pressable, Text } from "native-base";
+import { Box, Pressable, Text, useColorModeValue } from "native-base";
 import { DocTabContext } from "./TabContext";
 
 export const DocTabs = ({ children, values, defaultValue }: any) => {
@@ -10,6 +10,7 @@ export const DocTabs = ({ children, values, defaultValue }: any) => {
   React.useEffect(() => {
     setSelected(defaultValue);
   }, []);
+  const textColor = useColorModeValue("black", "white");
   return (
     // @ts-ignore
     <DocTabContext.Provider value={{ selected, setSelected }}>
@@ -18,7 +19,10 @@ export const DocTabs = ({ children, values, defaultValue }: any) => {
           return (
             <Pressable
               key={"Tab-" + index}
-              _hover={{ bg: "coolGray.700:alpha.40" }}
+              _hover={{
+                _light: { bg: "coolGray.400:alpha.40" },
+                _dark: { bg: "coolGray.700:alpha.40" },
+              }}
               onPress={() => onPressHandler(index)}
               justifyContent={"center"}
               alignItems="center"
@@ -35,7 +39,7 @@ export const DocTabs = ({ children, values, defaultValue }: any) => {
               <Text
                 color={
                   selected !== values[index].value
-                    ? "white"
+                    ? textColor
                     : "SelectedTabTextColor"
                 }
               >

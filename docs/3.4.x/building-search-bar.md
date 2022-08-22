@@ -13,7 +13,7 @@ Here are some examples to show how easily and quickly we can create so many type
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4c4662d-8a9c-48a2-817d-000ff8f5f6b6/Screenshot_2021-01-18_at_7.51.08_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4c4662d-8a9c-48a2-817d-000ff8f5f6b6/Screenshot_2021-01-18_at_7.51.08_PM.png) -->
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   VStack,
   Input,
@@ -26,9 +26,9 @@ import {
   Box,
   Divider,
   Heading,
-} from 'native-base';
-import { Ionicons, MaterialIcons } from '@expo/vector-icons';
-import { FontAwesome5 } from '@expo/vector-icons';
+} from "native-base";
+import { Ionicons, MaterialIcons } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 
 function SearchBar() {
   return (
@@ -52,7 +52,6 @@ function SearchBar() {
           borderRadius="10"
           py="1"
           px="2"
-          borderWidth="0"
           InputLeftElement={
             <Icon
               ml="2"
