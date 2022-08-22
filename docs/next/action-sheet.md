@@ -102,7 +102,7 @@ import { Actionsheet } from "native-base";
 
 ### Actionsheet.Item
 
-Actionsheet.Item implements [Button](button#props)
+Actionsheet.Item implements [Button](button#h2-props)
 
 ## Styling
 
