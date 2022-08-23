@@ -86,7 +86,7 @@ export const CodeBlock = ({ children, props }: any) => {
               backgroundColor: bgColor,
               borderWidth: "1",
               borderColor: borderColor,
-              fontSize: "13px",
+              fontSize: "14px",
               lineHeight: "normal",
             }}
           >

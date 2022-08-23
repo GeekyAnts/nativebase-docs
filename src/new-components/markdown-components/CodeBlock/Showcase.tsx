@@ -402,6 +402,7 @@ export const Showcase = (
               <ScrollView showsVerticalScrollIndicator={false} maxH="300px">
                 <LiveEditor
                   style={{
+                    fontSize: "14px",
                     backgroundColor: "transparent",
                     boxShadow: "none",
                     borderWidth: "0",

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { useContext } from 'react';
-import { AppContext } from '../AppContext';
+import React, { useState } from "react";
+import Link from "next/link";
+import { useContext } from "react";
+import { AppContext } from "../AppContext";
 import {
   Box,
   HStack,
@@ -11,10 +11,10 @@ import {
   Collapse,
   ChevronUpIcon,
   Link as NBLink,
-} from 'native-base';
-import { useRouter } from 'next/router';
-import versions from '../../versions.json';
-import { isLatestVersion, isLatestVersionSlug } from '../utils';
+} from "native-base";
+import { useRouter } from "next/router";
+import versions from "../../versions.json";
+import { isLatestVersion, isLatestVersionSlug } from "../utils";
 
 export const MobileSidebarVersionDropdown = (props: any) => {
   const { setIsOpenSidebar } = props;
@@ -22,21 +22,21 @@ export const MobileSidebarVersionDropdown = (props: any) => {
   const { activeVersion, setActiveVersion } = useContext(AppContext);
   const router = useRouter();
   const updateActiveVersion = (version: string, versions: string[]) => {
-    const currentPathArray = window?.location.href.split('/');
+    const currentPathArray = window?.location.href.split("/");
     let pathArray: string[] = [];
     currentPathArray.map((val, ind) => {
       ind < 3 ? null : pathArray.push(val);
     });
-    let path = '';
+    let path = "";
 
-    if ([...versions, 'next'].includes(pathArray[0])) {
+    if ([...versions, "next"].includes(pathArray[0])) {
       pathArray[0] = version;
     } else {
       pathArray = [version, ...pathArray];
     }
 
     pathArray.map((val) => {
-      path += '/' + val;
+      path += "/" + val;
     });
     router.push(path);
   };
@@ -69,15 +69,22 @@ export const MobileSidebarVersionDropdown = (props: any) => {
         <Pressable
           py="2"
           onPress={() => {
-            setActiveVersion('next');
-            updateActiveVersion('next', versions);
+            setActiveVersion("next");
+            updateActiveVersion("next", versions);
             setIsOpenSidebar(false);
           }}
         >
           <Text
             pl="8"
             pr="4"
-            color={'next' === activeVersion ? 'cyan.500' : 'warmGray.50'}
+            _light={{
+              color:
+                activeVersion === "next" ? "cyan.600" : "sidebarItemTextLight",
+            }}
+            _dark={{
+              color:
+                activeVersion === "next" ? "cyan.500" : "sidebarItemTextDark",
+            }}
           >
             next
           </Text>
@@ -88,9 +95,9 @@ export const MobileSidebarVersionDropdown = (props: any) => {
               py="2"
               key={index}
               onPress={() => {
-                setActiveVersion(isLatestVersion(version) ? '' : version);
+                setActiveVersion(isLatestVersion(version) ? "" : version);
                 updateActiveVersion(
-                  isLatestVersion(version) ? '' : version,
+                  isLatestVersion(version) ? "" : version,
                   versions
                 );
                 setIsOpenSidebar(false);
@@ -99,14 +106,24 @@ export const MobileSidebarVersionDropdown = (props: any) => {
               <Text
                 pl="8"
                 pr="4"
-                color={
-                  version ===
-                  (isLatestVersionSlug(activeVersion)
-                    ? versions[0]
-                    : activeVersion)
-                    ? 'cyan.500'
-                    : 'warmGray.50'
-                }
+                _light={{
+                  color:
+                    version ===
+                    (isLatestVersionSlug(activeVersion)
+                      ? versions[0]
+                      : activeVersion)
+                      ? "cyan.500"
+                      : "sidebarItemTextLight",
+                }}
+                _dark={{
+                  color:
+                    version ===
+                    (isLatestVersionSlug(activeVersion)
+                      ? versions[0]
+                      : activeVersion)
+                      ? "cyan.500"
+                      : "sidebarItemTextDark",
+                }}
               >
                 {version}
               </Text>
