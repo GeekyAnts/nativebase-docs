@@ -77,7 +77,7 @@ Using `_focus` pseudo prop, we can customize the style of Pressable component on
 
 ```jsx title="Focus example" isLive=true
 import React from "react";
-import { Box, Pressable, Text } from "native-base";
+import { Box, Pressable, Text, useDisclose } from "native-base";
 export function Example() {
   const { isOpen, onOpen, onClose } = useDisclose();
   return (
@@ -162,4 +162,3 @@ export function Example() {
   );
 }
 ```
-
