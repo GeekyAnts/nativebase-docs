@@ -10,7 +10,7 @@ A tooltip is a brief, informative message that appears when a user interacts wit
 ## Import
 
 ```jsx
-import { Tooltip } from 'native-base';
+import { Tooltip } from "native-base";
 ```
 
 ## Examples
@@ -29,7 +29,7 @@ import { Tooltip } from 'native-base';
 
 ### Customizing tooltip
 
-Tooltip is a wrapper around [Box](box.md). So, it also accepts all the [Box](box.md#props) props.
+Tooltip is a wrapper around [Box](box.md). So, it also accepts all the [Box](box.md#h2-props) props.
 
 ```ComponentSnackPlayer path=composites,Tooltip,CustomTooltip.tsx
 

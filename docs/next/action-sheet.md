@@ -5,10 +5,10 @@ title: ActionSheet
 
 import { ComponentTheme } from '../src/components';
 
-An Action Sheet is a dialog that displays a set of options. It appears on top of the app's content.
+An Actionsheet is a dialog that displays a set of options. It appears on top of the app's content.
 
 ```jsx isShowcase
-import React from 'react';
+import React from "react";
 import {
   Button,
   Actionsheet,
@@ -17,7 +17,7 @@ import {
   Box,
   Center,
   NativeBaseProvider,
-} from 'native-base';
+} from "native-base";
 export function Example() {
   const { isOpen, onOpen, onClose } = useDisclose();
   return (
@@ -32,7 +32,7 @@ export function Example() {
               fontSize="16"
               color="gray.500"
               _dark={{
-                color: 'gray.300',
+                color: "gray.300",
               }}
             >
               Albums
@@ -52,14 +52,12 @@ export function Example() {
 
 ## Import
 
-NativeBase exports 3 modal-related components:
-
 - **Actionsheet**: Provides the context and state for all components.
 - **Actionsheet.Content**: Component to wrap the list of **Actionsheet.Item** components.
 - **Actionsheet.Item**: A button to wrap the options of the Actionsheet.
 
 ```jsx
-import { Actionsheet } from 'native-base';
+import { Actionsheet } from "native-base";
 ```
 
 ## Examples
@@ -104,7 +102,7 @@ import { Actionsheet } from 'native-base';
 
 ### Actionsheet.Item
 
-ActionsheetItem implements [Button](button#props)
+Actionsheet.Item implements [Button](button#h2-props)
 
 ## Styling
 

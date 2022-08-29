@@ -8,9 +8,9 @@ NativeBaseProvider is a component that makes the theme available throughout your
 **App.js**
 
 ```jsx
-import React from 'react';
+import React from "react";
 // 1. import `NativeBaseProvider` component
-import { NativeBaseProvider, Text, Box } from 'native-base';
+import { NativeBaseProvider, Text, Box } from "native-base";
 
 export default function App() {
   // 2. Use at the root of your app
@@ -32,13 +32,13 @@ NativeBase 3.0 provides an `extendTheme` function that deep merges the default
 
 ```jsx
 // 1. Import the extendTheme function
-import { extendTheme, NativeBaseProvider } from 'native-base';
+import { extendTheme, NativeBaseProvider } from "native-base";
 // 2. Extend the theme to include custom colors, fonts, etc
 const newColorTheme = {
   brand: {
-    900: '#8287af',
-    800: '#7c83db',
-    700: '#b3bef6',
+    900: "#8287af",
+    800: "#7c83db",
+    700: "#b3bef6",
   },
 };
 const theme = extendTheme({ colors: newColorTheme });
@@ -59,25 +59,25 @@ If you want to do something with the color modes in your app, you can use colorM
 In the below example we will show how to store the active ColorMode in an async storage, so it can be consistent all around your app.
 
 ```tsx
-import React from 'react';
-import { NativeBaseProvider, ColorMode } from 'native-base';
-import type { StorageManager } from 'native-base';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React from "react";
+import { NativeBaseProvider, ColorMode } from "native-base";
+import type { StorageManager } from "native-base";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default ({ children, theme }: any) => {
   const colorModeManager: StorageManager = {
     get: async () => {
       try {
-        let val = await AsyncStorage.getItem('@my-app-color-mode');
-        return val === 'dark' ? 'dark' : 'light';
+        let val = await AsyncStorage.getItem("@my-app-color-mode");
+        return val === "dark" ? "dark" : "light";
       } catch (e) {
         console.log(e);
-        return 'light';
+        return "light";
       }
     },
     set: async (value: ColorMode) => {
       try {
-        await AsyncStorage.setItem('@my-app-color-mode', value);
+        await AsyncStorage.setItem("@my-app-color-mode", value);
       } catch (e) {
         console.log(e);
       }
@@ -96,13 +96,13 @@ export default ({ children, theme }: any) => {
 If you want to use [Gradient feature in Box](box#with-linear-gradient), you need to pass linear gradient dependency as a config object in NativeBaseProvider. This dependency can be either from [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) or [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider } from 'native-base';
+import React from "react";
+import { NativeBaseProvider } from "native-base";
 
 const config = {
   dependencies: {
     // For Expo projects (Bare or managed workflow)
-    'linear-gradient': require('expo-linear-gradient').LinearGradient,
+    "linear-gradient": require("expo-linear-gradient").LinearGradient,
     // For non expo projects
     // 'linear-gradient': require('react-native-linear-gradient').default,
   },
@@ -121,11 +121,11 @@ export default () => {
 
 ## Add isSSR (Optional)
 
-If you are using NativeBase for a server side rendering app, you can use isSSR prop to determine whether to render the theme or not.
+If you are using NativeBase for a server side rendering app like Next.js, you have to pass isSSR prop. This will resolve the responsive props to media queries on the server side and fix an issue with jumping UI on hydration.
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider } from 'native-base';
+import React from "react";
+import { NativeBaseProvider } from "native-base";
 
 export default () => {
   return (

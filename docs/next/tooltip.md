@@ -8,8 +8,8 @@ import { ComponentTheme } from '../src/components';
 A tooltip provides a brief, informative message when a user interacts with an element. Methods of tooltip initiation include: through a mouse-hover gesture or a keyboard-hover gesture.
 
 ```jsx isShowcase
-import React from 'react';
-import { Tooltip, Button } from 'native-base';
+import React from "react";
+import { Tooltip, Button } from "native-base";
 
 export function Example() {
   return (
@@ -23,7 +23,7 @@ export function Example() {
 ## Import
 
 ```jsx
-import { Tooltip } from 'native-base';
+import { Tooltip } from "native-base";
 ```
 
 ## Examples
@@ -42,7 +42,7 @@ import { Tooltip } from 'native-base';
 
 ### Customizing tooltip
 
-Tooltip is a wrapper around [Box](box.md). So, it also accepts all the [Box](box.md#props) props.
+Tooltip is a wrapper around [Box](box.md). So, it also accepts all the [Box](box.md#h2-props) props.
 
 ```ComponentSnackPlayer path=components,composites,Tooltip,CustomTooltip.tsx
 

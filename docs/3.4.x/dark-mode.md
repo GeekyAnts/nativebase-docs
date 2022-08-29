@@ -5,18 +5,18 @@ title: Making components dark mode compatible
 
 By default, most of NativeBase's components are dark mode compatible. In some scenario, you might need to make your component respond to color mode. There are 2 way to achieve this:
 
-1. By updating component's theme
-2. By using useColorModeValue
+- By updating component's theme
+- By using useColorModeValue
 
 ## 1. By updating component's theme
 
-In this approach we use NativeBase's `extendTheme` function to customise the components and then use themeTools to make the component dark mode compatible.
+In this approach we use NativeBase's `extendTheme` function to customise the components and then use _light and _dark props to make the component dark mode compatible.
 
 Note: Changes on the theme will be reflected on the entire application.
 
 ```tsx
 import React from 'react';
-import { NativeBaseProvider, themeTools } from 'native-base';
+import { NativeBaseProvider } from 'native-base';
 import { extendTheme } from 'native-base';
 import { Content } from './Content';
 
@@ -26,7 +26,8 @@ export default function () {
       Heading: {
         baseStyle: (props: any) => {
           return {
-            color: themeTools.mode('red.300', 'blue.300')(props),
+            _light: { color: 'red.300' },
+            _dark: { color: 'blue.300' },
           };
         },
       },
@@ -44,7 +45,7 @@ In the above example, the Heading component's color property will now respond to
 
 ## 2. By using useColorModeValue
 
-In this approach we use NativeBase's `useColorModeValue` function and update specific props instead of updating the entire theme.
+In this approach we use NativeBase's `useColorModeValue` hook and update specific props instead of updating the entire theme.
 
 Note: Changes on the theme will be reflected on the entire application.
 

@@ -150,7 +150,7 @@
         },
         {
           "id": "typescript",
-          "title": "Typescript",
+          "title": "TypeScript",
           "showToc": false
         }
       ]
@@ -544,7 +544,7 @@
             },
             {
               "id": "aspect-ratio",
-              "title": "Aspect Ratio"
+              "title": "AspectRatio"
             }
           ]
         }
