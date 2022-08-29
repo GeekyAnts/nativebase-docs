@@ -26,6 +26,7 @@ const config = {
   dependencies: {
     "linear-gradient": require("expo-linear-gradient").LinearGradient,
   },
+  enableRem: true,
 };
 function MyApp({ Component, pageProps }: AppProps) {
   const [activeVersion, setActiveVersion] = useState("/");
@@ -49,7 +50,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       }}
     >
       {/* @ts-ignore */}
-      <NativeBaseProvider isSSR theme={theme} config={config} colorModeManager={colorModeManager}>
+      <NativeBaseProvider
+        isSSR
+        theme={theme}
+        config={config}
+        colorModeManager={colorModeManager}
+      >
         <Component {...pageProps} />
       </NativeBaseProvider>
     </AppContext.Provider>

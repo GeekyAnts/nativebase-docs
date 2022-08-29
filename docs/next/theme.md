@@ -51,14 +51,14 @@ import React from "react";
 import { useToken, NativeBaseProvider, Center, Text } from "native-base";
 
 function Tokens() {
-  const [contrastThreshold, lightText] = useToken("colors", [
+  const [contrastThreshold, darkText] = useToken("colors", [
     "contrastThreshold",
-    "lightText",
+    "darkText",
   ]);
   return (
     <Center bg="primary.600" flexDirection="row" p="4" rounded="4">
       Contrast threshold is:{" "}
-      <Text color={lightText} fontWeight="bold">
+      <Text color={darkText} fontWeight="bold">
         {contrastThreshold}
       </Text>
     </Center>

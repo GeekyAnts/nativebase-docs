@@ -7,7 +7,7 @@ import { ColorsBlock, FontBlocks, SpaceBlocks } from "../src/components/index";
 
 The theme object is where you define your application's color palette, type scale, font stacks, breakpoints, border radius values, and more.
 
-Theming in NativeBase is based on the **[Styled System Theme Specification](https://system-ui.com/theme/)**
+Theming in NativeBase is based on the **[Styled System Theme Specification](https://github.com/system-ui/theme-specification)**
 
 ## Colors
 

@@ -98,6 +98,274 @@ interface IShowcaseProps {
   youtubeEmbedd?: string;
 }
 
+const ShowcaseInternal = ({
+  lightModeGradientArray,
+  darkModeGradientArray,
+  setDarkModeGradientArray,
+  setLightModeGradientArray,
+  youtubeEmbedd,
+  expoCode,
+  activeVersion,
+  copied,
+  handleCopy,
+  setParsedCode,
+  children,
+}: any) => {
+  const [showMagicWand, setShowMagicWand] = useState(false);
+
+  const [showCode, setShowCode] = useState(false);
+  return (
+    <>
+      <Center
+        onMouseEnter={() => {
+          setShowMagicWand(true);
+        }}
+        onMouseLeave={() => {
+          setShowMagicWand(false);
+        }}
+        minH="48"
+        px="4"
+        py="10"
+        mb="4"
+        // borderWidth="0"
+        rounded="lg"
+        // _dark={{ borderColor: "blueGray.800" }}
+        // _light={{ borderColor: "blueGray.300" }}
+        _light={{
+          bg: {
+            linearGradient: {
+              colors: lightModeGradientArray,
+              start: [0, 0],
+              end: [1, 0],
+            },
+          },
+        }}
+        _dark={{
+          bg: {
+            linearGradient: {
+              colors: darkModeGradientArray,
+              start: [0, 0],
+              end: [1, 0],
+            },
+          },
+        }}
+        // _light={{
+        //   style: {
+        //     // @ts-ignore
+        //     backgroundImage:
+        //       "linear-gradient(135deg," + lightModeGradientArray + ")",
+        //   },
+        // }}
+        // _dark={{
+        //   style: {
+        //     // @ts-ignore
+        //     backgroundImage:
+        //       "linear-gradient(135deg," + darkModeGradientArray + ")",
+        //   },
+        // }}
+        style={{
+          // @ts-ignore
+          transition: "background-image 1s",
+        }}
+      >
+        {showMagicWand && (
+          <IconButton
+            p="2"
+            variant="unstyled"
+            _dark={{
+              onPress: () => {
+                setDarkModeGradientArray(pickDarkModeGradient());
+              },
+            }}
+            _light={{
+              onPress: () => {
+                setLightModeGradientArray(pickLightModeGradient());
+              },
+            }}
+            _hover={{ _icon: { opacity: "100" } }}
+            _icon={{ opacity: "60", color: "white" }}
+            icon={<GradientChangeIcon size="xs" />}
+            position="absolute"
+            top="2"
+            right="2"
+          />
+        )}
+
+        <Button
+          p="1.5"
+          opacity="60"
+          _hover={{
+            opacity: "100",
+            bg: "warmGray.800:alpha.30",
+          }}
+          _dark={{ _text: { color: "coolGray.100" } }}
+          _light={{ _text: { color: "coolGray.800" } }}
+          size="sm"
+          variant="unstyled"
+          onPress={() => {
+            setShowCode(!showCode);
+          }}
+          leftIcon={
+            <Icon
+              as={expoVectorIcons.MaterialCommunityIcons}
+              name={showCode ? "eye-off" : "eye"}
+              size="xs"
+              opacity="60"
+            />
+          }
+          position="absolute"
+          bottom="2"
+          right="2"
+        >
+          {showCode ? "Hide Code" : "Show Code"}
+        </Button>
+
+        <Box w="100%" overflow="auto">
+          <LiveError style={{ color: useColorModeValue("black", "white") }} />
+        </Box>
+        {children}
+      </Center>
+      <Collapse isOpen={showCode}>
+        <Box
+          mb={youtubeEmbedd && "4"}
+          // px="4"
+          overflow="hidden"
+          // pb="4"
+          // mb="4"
+          borderWidth="1"
+          rounded="lg"
+          _dark={{ borderColor: "blueGray.800" }}
+          _light={{ borderColor: "coolGray.200" }}
+        >
+          <HStack
+            _light={{ bg: "coolGray.200", borderColor: "coolGray.200" }}
+            _dark={{
+              bg: "blueGray.800:alpha.40",
+              borderColor: "coolGray.800",
+            }}
+            w="100%"
+            alignItems="center"
+            pl="5"
+            pr="5"
+            borderBottomWidth="1"
+          >
+            <CodePlaygroundIcon size="6" mr="2" />
+            <Text>Playground</Text>
+            <Spacer />
+            <HStack
+              flexDir="row"
+              justifyContent="flex-end"
+              alignItems="center"
+              divider={
+                <Divider
+                  _dark={{ bg: "trueGray.300:alpha.10" }}
+                  _light={{ bg: "coolGray.700:alpha.10" }}
+                  thickness="2"
+                />
+              }
+              h="9"
+              py="1.5"
+              space="1.5"
+            >
+              <Tooltip
+                bg="coolGray.800"
+                _text={{ color: "coolGray.400" }}
+                hasArrow
+                label="Open Expo Snack"
+              >
+                <Link
+                  isExternal
+                  href={getExpoSnackURL(expoCode, activeVersion)}
+                >
+                  <IconButton
+                    _hover={{
+                      _light: { bg: "coolGray.100" },
+                      _dark: { bg: "coolGray.800" },
+                    }}
+                    p="1"
+                    icon={<ExpoIcon size="xs" opacity="70" />}
+                  />
+                </Link>
+              </Tooltip>
+              {/* <Tooltip
+                bg="coolGray.800"
+                _text={{ color: "coolGray.400" }}
+                hasArrow
+                label="Open code in CodeSandBox"
+              >
+                <Link
+                  isExternal
+                  href={getCodeSandBoxURL(codeSandboxCode, activeVersion)}
+                >
+                  <IconButton
+                    _hover={{
+                      _light: { bg: "coolGray.100" },
+                      _dark: { bg: "coolGray.800" },
+                    }}
+                    p="1"
+                    icon={
+                      <Icon
+                        _light={{ color: "muted.800:alpha.70" }}
+                        _dark={{ color: "muted.50:alpha.70" }}
+                        as={expoVectorIcons?.AntDesign}
+                        name="CodeSandbox"
+                        size="xs"
+                      />
+                    }
+                  />
+                </Link>
+              </Tooltip> */}
+              <Tooltip
+                bg="coolGray.800"
+                _text={{ color: "coolGray.400" }}
+                hasArrow
+                label={copied ? "copied" : "copy"}
+              >
+                <IconButton
+                  _hover={{
+                    _light: { bg: "coolGray.100" },
+                    _dark: { bg: "coolGray.800" },
+                  }}
+                  p="1"
+                  onPress={handleCopy}
+                  icon={
+                    <Icon
+                      _light={{ color: "muted.800:alpha.70" }}
+                      _dark={{ color: "muted.50:alpha.70" }}
+                      as={expoVectorIcons?.Ionicons}
+                      name={copied ? "copy" : "copy-outline"}
+                      size="xs"
+                    />
+                  }
+                />
+              </Tooltip>
+            </HStack>
+          </HStack>
+          <Box
+            p="4"
+            pt="0"
+            _light={{ bg: "coolGray.50" }}
+            _dark={{ bg: "codeBlockBackgroundColor" }}
+          >
+            <ScrollView showsVerticalScrollIndicator={false} maxH="300px">
+              <LiveEditor
+                style={{
+                  fontSize: "14px",
+                  backgroundColor: "transparent",
+                  boxShadow: "none",
+                  borderWidth: "0",
+                  opacity: useColorModeValue("0.8", "1"),
+                }}
+                onChange={(code) => setParsedCode(code)}
+              />
+            </ScrollView>
+          </Box>
+        </Box>
+      </Collapse>
+    </>
+  );
+};
+
 export const Showcase = (
   { children, gradient, youtubeEmbedd }: IShowcaseProps,
   props: any
@@ -138,14 +406,23 @@ export const Showcase = (
     setLightModeGradientArray(pickLightModeGradient(gradient));
   }, []);
 
-  const [showCode, setShowCode] = useState(false);
-  const [showMagicWand, setShowMagicWand] = useState(false);
   const [gradientIndex, setGradientIndex] = useState("random");
   React.useEffect(() => {
     setDarkModeGradientArray(pickDarkModeGradient(gradientIndex));
     setLightModeGradientArray(pickLightModeGradient(gradientIndex));
   }, [gradientIndex]);
-
+  const internalProps = {
+    lightModeGradientArray,
+    darkModeGradientArray,
+    setDarkModeGradientArray,
+    setLightModeGradientArray,
+    youtubeEmbedd,
+    expoCode,
+    activeVersion,
+    copied,
+    handleCopy,
+    setParsedCode,
+  };
   return (
     <Box>
       <LiveProvider
@@ -161,115 +438,9 @@ export const Showcase = (
         }}
         theme={useColorModeValue(github, paleNight)}
       >
-        <Center
-          onMouseEnter={() => {
-            setShowMagicWand(true);
-          }}
-          onMouseLeave={() => {
-            setShowMagicWand(false);
-          }}
-          minH="48"
-          px="4"
-          py="10"
-          mb="4"
-          // borderWidth="0"
-          rounded="lg"
-          // _dark={{ borderColor: "blueGray.800" }}
-          // _light={{ borderColor: "blueGray.300" }}
-          _light={{
-            bg: {
-              linearGradient: {
-                colors: lightModeGradientArray,
-                start: [0, 0],
-                end: [1, 0],
-              },
-            },
-          }}
-          _dark={{
-            bg: {
-              linearGradient: {
-                colors: darkModeGradientArray,
-                start: [0, 0],
-                end: [1, 0],
-              },
-            },
-          }}
-          // _light={{
-          //   style: {
-          //     // @ts-ignore
-          //     backgroundImage:
-          //       "linear-gradient(135deg," + lightModeGradientArray + ")",
-          //   },
-          // }}
-          // _dark={{
-          //   style: {
-          //     // @ts-ignore
-          //     backgroundImage:
-          //       "linear-gradient(135deg," + darkModeGradientArray + ")",
-          //   },
-          // }}
-          style={{
-            // @ts-ignore
-            transition: "background-image 1s",
-          }}
-        >
-          {showMagicWand && (
-            <IconButton
-              p="2"
-              variant="unstyled"
-              _dark={{
-                onPress: () => {
-                  setDarkModeGradientArray(pickDarkModeGradient());
-                },
-              }}
-              _light={{
-                onPress: () => {
-                  setLightModeGradientArray(pickLightModeGradient());
-                },
-              }}
-              _hover={{ _icon: { opacity: "100" } }}
-              _icon={{ opacity: "60", color: "white" }}
-              icon={<GradientChangeIcon size="xs" />}
-              position="absolute"
-              top="2"
-              right="2"
-            />
-          )}
-
-          <Button
-            p="1.5"
-            opacity="60"
-            _hover={{
-              opacity: "100",
-              bg: "warmGray.800:alpha.30",
-            }}
-            _dark={{ _text: { color: "coolGray.100" } }}
-            _light={{ _text: { color: "coolGray.800" } }}
-            size="sm"
-            variant="unstyled"
-            onPress={() => {
-              setShowCode(!showCode);
-            }}
-            leftIcon={
-              <Icon
-                as={expoVectorIcons.MaterialCommunityIcons}
-                name={showCode ? "eye-off" : "eye"}
-                size="xs"
-                opacity="60"
-              />
-            }
-            position="absolute"
-            bottom="2"
-            right="2"
-          >
-            {showCode ? "Hide Code" : "Show Code"}
-          </Button>
-
-          <Box w="100%" overflow="auto">
-            <LiveError style={{ color: useColorModeValue("black", "white") }} />
-          </Box>
+        <ShowcaseInternal {...internalProps}>
           <LivePreview />
-        </Center>
+        </ShowcaseInternal>
         {/* <Input
         value={gradientIndex}
         onChange={(e: any) => {
@@ -277,143 +448,6 @@ export const Showcase = (
         }}
       /> */}
         {/* </Pressable> */}
-        <Collapse isOpen={showCode}>
-          <Box
-            mb={youtubeEmbedd && "4"}
-            // px="4"
-            overflow="hidden"
-            // pb="4"
-            // mb="4"
-            borderWidth="1"
-            rounded="lg"
-            _dark={{ borderColor: "blueGray.800" }}
-            _light={{ borderColor: "coolGray.200" }}
-          >
-            <HStack
-              _light={{ bg: "coolGray.200", borderColor: "coolGray.200" }}
-              _dark={{
-                bg: "blueGray.800:alpha.40",
-                borderColor: "coolGray.800",
-              }}
-              w="100%"
-              alignItems="center"
-              pl="5"
-              pr="5"
-              borderBottomWidth="1"
-            >
-              <CodePlaygroundIcon size="6" mr="2" />
-              <Text>Playground</Text>
-              <Spacer />
-              <HStack
-                flexDir="row"
-                justifyContent="flex-end"
-                alignItems="center"
-                divider={
-                  <Divider
-                    _dark={{ bg: "trueGray.300:alpha.10" }}
-                    _light={{ bg: "coolGray.700:alpha.10" }}
-                    thickness="2"
-                  />
-                }
-                h="9"
-                py="1.5"
-                space="1.5"
-              >
-                <Tooltip
-                  bg="coolGray.800"
-                  _text={{ color: "coolGray.400" }}
-                  hasArrow
-                  label="Open Expo Snack"
-                >
-                  <Link
-                    isExternal
-                    href={getExpoSnackURL(expoCode, activeVersion)}
-                  >
-                    <IconButton
-                      _hover={{
-                        _light: { bg: "coolGray.100" },
-                        _dark: { bg: "coolGray.800" },
-                      }}
-                      p="1"
-                      icon={<ExpoIcon size="xs" opacity="70" />}
-                    />
-                  </Link>
-                </Tooltip>
-                {/* <Tooltip
-                bg="coolGray.800"
-                _text={{ color: "coolGray.400" }}
-                hasArrow
-                label="Open code in CodeSandBox"
-              >
-                <Link
-                  isExternal
-                  href={getCodeSandBoxURL(codeSandboxCode, activeVersion)}
-                >
-                  <IconButton
-                    _hover={{
-                      _light: { bg: "coolGray.100" },
-                      _dark: { bg: "coolGray.800" },
-                    }}
-                    p="1"
-                    icon={
-                      <Icon
-                        _light={{ color: "muted.800:alpha.70" }}
-                        _dark={{ color: "muted.50:alpha.70" }}
-                        as={expoVectorIcons?.AntDesign}
-                        name="CodeSandbox"
-                        size="xs"
-                      />
-                    }
-                  />
-                </Link>
-              </Tooltip> */}
-                <Tooltip
-                  bg="coolGray.800"
-                  _text={{ color: "coolGray.400" }}
-                  hasArrow
-                  label={copied ? "copied" : "copy"}
-                >
-                  <IconButton
-                    _hover={{
-                      _light: { bg: "coolGray.100" },
-                      _dark: { bg: "coolGray.800" },
-                    }}
-                    p="1"
-                    onPress={handleCopy}
-                    icon={
-                      <Icon
-                        _light={{ color: "muted.800:alpha.70" }}
-                        _dark={{ color: "muted.50:alpha.70" }}
-                        as={expoVectorIcons?.Ionicons}
-                        name={copied ? "copy" : "copy-outline"}
-                        size="xs"
-                      />
-                    }
-                  />
-                </Tooltip>
-              </HStack>
-            </HStack>
-            <Box
-              p="4"
-              pt="0"
-              _light={{ bg: "coolGray.50" }}
-              _dark={{ bg: "codeBlockBackgroundColor" }}
-            >
-              <ScrollView showsVerticalScrollIndicator={false} maxH="300px">
-                <LiveEditor
-                  style={{
-                    fontSize: "14px",
-                    backgroundColor: "transparent",
-                    boxShadow: "none",
-                    borderWidth: "0",
-                    opacity: useColorModeValue("0.8", "1"),
-                  }}
-                  onChange={(code) => setParsedCode(code)}
-                />
-              </ScrollView>
-            </Box>
-          </Box>
-        </Collapse>
       </LiveProvider>
       <ComponentOfTheWeek youtubeEmbedd={youtubeEmbedd} />
     </Box>
