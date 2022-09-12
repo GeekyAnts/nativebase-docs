@@ -25,7 +25,7 @@ This is a generic component for low level layout needs. It is similar to a [`div
 
 ### With Linear gradient
 
-If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can install [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) and configure it in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
+If you're using [Expo](https://docs.expo.dev/index.html) managed or bare workflow, you can install [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) and configure it in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
 
 ```jsx isLive
 import React from 'react';
