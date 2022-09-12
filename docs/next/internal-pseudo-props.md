@@ -3,7 +3,7 @@ id: internal-pseudo-props
 title: 'Internal Pseudo Props'
 ---
 
-NativeBase uses some internal pseudo props to get more customizable components.
+NativeBase uses internal pseudo props to get more customizable components.
 
 ## Use of internal pseudo props
 
@@ -167,7 +167,7 @@ NativeBase uses following pseudo props in different components.
 | \_alt                        | Used to style alt text in Image.                     |
 | \_input                      | Used to style Input.                                 |
 | \_radio                      | Used to style radio in RadioGroup.                   |
-| \_item                       | Used to style SelectItem in select.                  |
+| \_item                       | Used to style SelectItem in Select.                  |
 | \_selectedItem               | Used to style selected item in Select.               |
 | \_actionSheetContent         | Used to style actionsheet content in Select.         |
 | \_actionsheetBody            | Used to style actionsheet content in Select.         |
