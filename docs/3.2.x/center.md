@@ -35,7 +35,7 @@ Center can be used to nicely position icons in the center and add frames around 
 
 ### Square and Circle
 
-Square and Circle automatically centers their children.
+Square and Circle automatically center their children.
 
 ```ComponentSnackPlayer path=components,composites,Center,SquareCircle.tsx
 
