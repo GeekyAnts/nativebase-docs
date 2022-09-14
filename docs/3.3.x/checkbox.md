@@ -115,7 +115,7 @@ export const Example = () => {
 
 ## Accessibility
 
-Uses React Native ARIA [@react-native-aria/checkbox](https://react-native-aria.geekyants.com/docs/useCheckbox) which follows the [Checkbox WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#checkbox).
+Uses React Native ARIA [@react-native-aria/checkbox](https://react-native-aria.geekyants.com/docs/useCheckbox) which follows the [Checkbox WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/#checkbox).
 
 ### Keyboard Interactions
 
