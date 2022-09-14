@@ -66,7 +66,7 @@ If you want a specifically aligned Modal, pass `justifyContent` and `alignItems`
 
 ## Accessibility
 
-Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geekyants.com/docs/FocusScope) which follows the [Dialog Modal WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal).
+Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geekyants.com/docs/FocusScope) which follows the [Dialog Modal WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/#dialog_modal).
 
 ### Keyboard Interactions
 
