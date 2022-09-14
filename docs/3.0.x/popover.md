@@ -83,7 +83,7 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 
 ## Accessibility
 
-Adheres to the [Dialog WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal)
+Adheres to the [Dialog WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/#dialog_modal)
 
 ### Keyboard Interactions
 
