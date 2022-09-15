@@ -38,7 +38,7 @@ export function Example() {
         maxW="300px"
         alignSelf="center"
       >
-        <Center flex={1}></Center>
+       
         <HStack bg="indigo.600" alignItems="center" safeAreaBottom shadow={6}>
           <Pressable
             cursor="pointer"
