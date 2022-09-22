@@ -21,6 +21,6 @@ import { useColorMode } from 'native-base';
 
 | Name            | Type            | Description                                | Default |
 | --------------- | --------------- | ------------------------------------------ | ------- |
-| colorMode       | `light`, `dark` | The active color mode                      | `light` |
+| colorMode       | `light`, `dark` | The active color mode.                      | `light` |
 | setColorMode    | function        | Use to set color mode.                     | -       |
 | toggleColorMode | function        | Use to toggle between light and dark mode. | -       |
