@@ -9,7 +9,7 @@ A Modal is a window overlaid on either the primary window or another dialog wind
 
 ## Import
 
-NativeBase exports Modal Compound component:
+NativeBase exports a Modal Compound component:
 
 - `Modal`: The wrapper that provides context for its children.
 - `Modal.Content`: The container for the modal dialog's content.
