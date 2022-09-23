@@ -69,7 +69,7 @@ export function Example() {
 
 ### With Next's require statement
 
-When using require statement from next for image keep this in mind.
+When using require statement from next for image, keep this in mind.
 
 ```jsx
 
