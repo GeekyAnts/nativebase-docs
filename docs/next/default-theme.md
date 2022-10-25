@@ -11,11 +11,11 @@ Theming in NativeBase is based on the **[Styled System Theme Specification](htt
 
 ## Colors
 
-You can add a `theme.colors` object to provide colors for your project. By default these colors can be referenced by the `color`, `borderColor`, `backgroundColor`, etc.. props.
+You can add a `theme.colors` object to provide colors for your project. By default, these colors can be referenced by the  `color`, `borderColor`, `backgroundColor`, etc. props. 
 You can also add `.alpha:{number}` to add levels of opacity to a colour. The number can also be added in the theme file.
 Ex: `red.300:alpha.30`, You can read more about this in [`opacity section`](default-theme#opacity)
 
-We recommend adding a palette that ranges from `50` to `900`. Tools like [JSON Color Palette Generator](https://json-color-palette-generator.vercel.app), [Smart Swatch](https://smart-swatch.netlify.app/) or [Palx](https://palx.jxnblk.com/) are available to generate these palettes.
+We recommend adding a palette that ranges from `50` to `900`. Tools like [JSON Color Palette Generator](https://json-color-palette-generator.vercel.app), [Smart Swatch](https://smart-swatch.netlify.app/), or [Palx](https://palx.jxnblk.com/) are available to generate these palettes.
 
 <ColorsBlock/>
 
@@ -91,13 +91,13 @@ const typography = {
 
 ## Size
 
-The `size` key allows you to customize the global spacing and sizing scale for your project. By default these spacing value can be referenced by the `padding`, `margin`, and `top`, `left`, `right`, `bottom` props.
+The `size` key allows you to customize the global spacing and sizing scale for your project. By default these spacing values can be referenced by the `padding`, `margin`, and `top`, `left`, `right`, `bottom` props.
 
 <SpaceBlocks/>
 
 ## Opacity
 
-The `opacity` key is used in opacity style object and to define colors opacity using the red-green-blue-alpha (RGBA) model, RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
+The `opacity` key is used in opacity style object and to define color opacity, using the red-green-blue-alpha (RGBA) model. RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
 
 <OpacityBlock />
 

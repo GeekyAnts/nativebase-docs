@@ -144,7 +144,7 @@ import { Flex, Spacer } from 'native-base';
 
 ## Usage
 
-Flex components comes with some helpful shorthand props:
+Flex components come with some helpful shorthand props:
 
 - `flexDirection` is `direction`
 - `flexWrap` is `wrap`
