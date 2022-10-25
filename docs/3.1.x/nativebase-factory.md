@@ -147,5 +147,5 @@ export function Example() {
 
 | Name           | Type            | Description                                                                   | Default |
 | -------------- | --------------- | ----------------------------------------------------------------------------- | ------- |
-| component      | React component | Original component to be passed on which nativebase props have to be applied. | -       |
+| component      | React component | Original component to be passed on which NativeBase props have to be applied. | -       |
 | componentTheme | Object          | This object can include `baseStyle`, `sizes`, `variants`, `defaultProps`      | -       |
