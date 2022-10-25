@@ -11,6 +11,9 @@ import { ScrollContext } from "./ScrollContext";
 import React, { useEffect, useState, useContext } from "react";
 export default function Toc(props: any) {
   const { tocArray } = props;
+
+  if (tocArray.length <= 1) return null;
+
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <Box py="16" px="4">

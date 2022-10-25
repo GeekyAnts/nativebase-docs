@@ -22,7 +22,7 @@ export function ComponentTheme({ name, fileName }: any) {
           fontSize="md"
         >
           NativeBase ships with a default theme for each component. Check out the
-          default theme of {name}
+          default theme of the {name}
           <Anchor
             href={url + "/" + "src/theme/components/" + fileName + ".ts"}
             isExternal

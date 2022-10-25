@@ -3,7 +3,7 @@ id: theme
 title: Using Theme
 ---
 
-NativeBase provides multiple tools to use the central theme defined in the app. First tool is [`useTheme`](/use-theme), which you can use to access the values from the current theme.
+NativeBase provides multiple tools to use the central theme defined in the app. The first tool is [`useTheme`](/use-theme), which you can use to access the values from the current theme.
 
 ## useTheme
 
@@ -77,7 +77,7 @@ export function Example() {
 
 ## useContrastText
 
-If you are defining the background yourself and pass a contrasting color to the text then you can use [`useContrastText`](use-contrast-text).
+If you are defining the background yourself and pass a contrasting color to the text, then you can use [`useContrastText`](use-contrast-text).
 
 ```jsx isLive=true
 import React from 'react';
@@ -120,7 +120,7 @@ export function Example() {
 
 ## useColorMode
 
-If you want to define some conditionals based on current color mode or change the color mode then you can try [useColorMode](useColorMode.md).
+If you want to define some conditionals based on current color mode or change the color mode, then you can try [useColorMode](useColorMode.md).
 
 ```jsx isLive=true
 import React from 'react';

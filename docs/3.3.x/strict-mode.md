@@ -3,7 +3,7 @@ id: strict-mode
 title: Strict Mode
 ---
 
-NativeBase comes with its very own Strict Mode that lets you control the level of strictness for your App and Dev environment. A really handy tool to maintain best practices through out your codebase.
+NativeBase comes with its very own Strict Mode that lets you control the level of strictness for your App and Dev environment. A really handy tool to maintain best practices throughout your codebase.
 
 ## What it does?
 
@@ -11,7 +11,7 @@ Strict Mode is a config that you pass into NativeBase config. It takes 3 values 
 
 ## Levels of Strictness
 
-- **error** - Choosing this mode will throw an error indicating the cause of the error.
+- **error** - Choosing this mode will show an error indicating the cause of the error.
 - **warn** - Choosing this mode will show a warning indicating the issue.
 - **off** - Choosing this mode simply means you want to go rogue and not follow the design system and best practices.
 
