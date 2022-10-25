@@ -15,7 +15,7 @@ All work on NativeBase happens directly on [GitHub](https://github.com/GeekyAnt
 
 ### Branch Organization
 
-According to our [release schedule](https://github.com/GeekyAnts/NativeBase/releases), we maintain a `canary` branches which are like development branches with the latest changes. If you send a pull request, please do it against the `master` branch. Once you create your PR we will update the base branch to a more specific canary branch if required. Once a release candidate is ready, `canary-patch` or `canary-minor` branch will be released as a rc release package and once a stable release test is done it will be released to `native-base` package and merged into the `master`.
+According to our [release schedule](https://github.com/GeekyAnts/NativeBase/releases), we maintain `canary` branches which are like development branches with the latest changes. If you send a pull request, please do it against the `master` branch. Once you create your PR we will update the base branch to a more specific canary branch if required. Once a release candidate is ready, `canary-patch` or `canary-minor` branch will be released as a rc release package and once a stable release test is done it will be released to `native-base` package and merged into the `master`.
 
 ![Screenshot 2022-08-16 at 6 51 33 PM](https://user-images.githubusercontent.com/36300815/184890022-171cf7d9-2c37-4dfa-a302-e41e879a22d7.png)
 
