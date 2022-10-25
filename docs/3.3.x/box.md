@@ -49,7 +49,7 @@ export const Example = () => {
 
 ### With Linear gradient
 
-If you're using [Expo](https://docs.expo.io/) managed or bare workflow, you can install [expo-linear-gradient](https://docs.expo.dev/versions/latest/sdk/linear-gradient/) and configure it in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
+If you're using [Expo](https://docs.expo.dev/index.html) managed or bare workflow, you can install [expo-linear-gradient](https://docs.expo.dev/versions/latest/sdk/linear-gradient/) and configure it in the [NativeBaseProvider](setup-provider#add-external-dependencies-optional) as shown below.
 
 ```jsx isLive=true
 import React from 'react';
