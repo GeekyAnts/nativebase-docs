@@ -3,7 +3,7 @@ id: pseudo-props-101
 title: 'Pseudo props: Do’s & Dont’s'
 ---
 
-Before getting into details of all the common Pseudo Props NativeBase has to offer let's check some key points that these pseudo props follow.
+Before getting into details of all the common Pseudo Props NativeBase has to offer, let's check some key points that these pseudo props follow.
 
 ## Nesting pseudo props:
 
@@ -124,7 +124,7 @@ export function Example() {
 
 ### Don'ts
 
-- The below approach is similar to the above one, but this time we have passed inline color in Icon. So, if you pass styling in Icon itself and then also pass it in `_icon` then styling passed in `_icon` will not be applied because the props passed in Icon should have higher specificity than `_icon` and that will prevent Icon to override props from `_icon`.
+- The below approach is similar to the above one, but this time we have passed inline color in Icon. So, if you pass styling in Icon itself and then also pass it in `_icon`, then styling passed in `_icon` will not be applied because the props passed in Icon should have higher specificity than `_icon` and that will prevent Icon to override props from `_icon`.
 - In below case color from `_icon` will not be applied to Icon and you will not be able to change the color of Icon on state changes like hover, pressed and focus.
 
 ```jsx isLive=true

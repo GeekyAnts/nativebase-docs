@@ -23,7 +23,7 @@ To make styles responsive, you can use either the array or object syntax.
 
 All style props that arrays as values for responsive styles.
 
-For Example to make a `Box` width or w responsive using the array syntax, here's what you need to do:
+For example, to make a `Box` width or w responsive using the array syntax, here's what you need to do:
 
 ```jsx isLive=true
 import React from 'react';
@@ -58,7 +58,7 @@ export function Example() {
 
 You can also define responsive values with breakpoint aliases in an object. Any undefined alias key will define the base, non-responsive value.
 
-For Example to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
+For example, to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
 
 ```jsx isLive=true
 import React from 'react';

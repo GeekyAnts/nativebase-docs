@@ -11,7 +11,7 @@ Theming in NativeBase is based on the **[Styled System Theme Specification](htt
 
 ## Colors
 
-You can add a `theme.colors` object to provide colors for your project. By default these colors can be referenced by the `color`, `borderColor`, `backgroundColor`, etc.. props.
+You can add a `theme.colors` object to provide colors for your project. By default, these colors can be referenced by the  `color`, `borderColor`, `backgroundColor`, etc. props.
 
 We recommend adding a palette that ranges from `50` to `900`. Tools like **[Smart Swatch](https://smart-swatch.netlify.app/)**, **[Palx](https://palx.jxnblk.com/)** are available to generate these palettes.
 

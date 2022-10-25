@@ -29,7 +29,7 @@ export function GettingStartedHero() {
             >
               NativeBase is a component library that enables devs to build
               universal design systems. It is built on top of React Native,
-              allowing you to develop apps for Android, iOS and the Web.
+              allowing you to develop apps for Android, iOS, and the Web.
             </Text>
             <Stack direction={{ lg: "row" }} space="4">
               <TileLink
