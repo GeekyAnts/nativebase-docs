@@ -37,7 +37,7 @@ NativeBase exports 4 slider-related components:
 - `Slider`: The wrapper that provides context and functionality for all children.
 - `Slider.Track`: The empty part of the slider that shows the track.
 - `Slider.FilledTrack`: The filled part of the slider.
-- `Slider.Thumb`: The handle that's used to change the slider value.
+- `Slider.Thumb`: The handle that is used to change the slider value.
 
 ```jsx
 import { Slider } from 'native-base';
