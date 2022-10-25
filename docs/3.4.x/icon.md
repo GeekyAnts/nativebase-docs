@@ -3,10 +3,10 @@ id: icon
 title: Icon
 ---
 
-NativeBase allows you to use icons in multiples ways. They are listed below:
+NativeBase allows you to use icons in multiples ways:
 
-- Create icon by creating an SVG Icon
-- Create icon using createIcon function and use it as a component
+- Create icon by creating an SVG Icon.
+- Create icon using createIcon function and use it as a component.
 - Use a third-party icon library ( such as [@expo/vector-icons](https://github.com/expo/vector-icons) ), with `as` prop.
 
 ```jsx isShowcase
@@ -37,7 +37,7 @@ Apart from the icons provided by [@expo/vector-icon](https://github.com/expo/vec
 
 ### NativeBase Icons
 
-We provides a set of commonly used interface icons. So you can directly use them in your project. All our icons are create using [`createIcon`](icon#createicon) function from NativeBase.
+We provide a set of commonly used interface icons which you can directly use in your project. All our icons are create using [`createIcon`](icon#createicon) function from NativeBase.
 
 ```ComponentSnackPlayer path=components,primitives,Icon,AllIcons.tsx
 
