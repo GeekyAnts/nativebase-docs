@@ -33,7 +33,7 @@ title: Changelog
 
 - Fixed Radio Size issue on happening on iOS and Android. [#3913](https://github.com/GeekyAnts/NativeBase/pull/3913)
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.7).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.7).
 
 ## V3.0.6
 
@@ -41,7 +41,7 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Spinner visibility issue fixed
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.6).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.6).
 
 ## V3.0.5
 
@@ -49,7 +49,7 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Fixed bold and italics issue in typography
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.5).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.5).
 
 ## V3.0.4
 
@@ -75,7 +75,7 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Fix custom fonts not working on android for some cases [#3821](https://github.com/GeekyAnts/NativeBase/pull/3821)
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.4).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.4).
 
 ## V3.0.3
 
@@ -105,7 +105,7 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Button type fixes
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.3).
+For more details, visit[releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.3).
 
 ## V3.0.2
 
@@ -113,7 +113,7 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Version bumped from v3.0.1 to v3.0.2
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.2).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.2).
 
 ## V3.0.1
 
@@ -121,7 +121,7 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Images are working in NPM
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.1).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.1).
 
 ## V3.0.0
 
@@ -137,4 +137,4 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Fixed Text component to accept strikeThrough and underline
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.0).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.0.0).
