@@ -3,7 +3,7 @@ id: use-disclosure
 title: useDisclose
 ---
 
-`useDisclose` handles common open, close, or toggle scenarios and can control feedback component such as **Modal**, **AlertDialog**, **Drawer**, etc.
+`useDisclose` handles common open, close, or toggle scenarios and can control feedback components such as **Modal**, **AlertDialog**, **Drawer**, etc.
 
 ## Import
 
