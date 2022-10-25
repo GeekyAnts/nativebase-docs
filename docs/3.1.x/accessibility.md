@@ -7,7 +7,7 @@ NativeBase comes with the latest accessibility standards out of the box includin
 
 ## Accessible Roles
 
-NativeBase uses [React Native ARIA](https://react-native-aria.geekyants.com/) to implements [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.2/) standards to its components. This is designed to provide meaning for controls that aren't built using components provided by the platform.
+NativeBase uses [React Native ARIA](https://react-native-aria.geekyants.com/) to implement [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.2/) standards to its components. This is designed to provide meaning for controls that aren't built using components provided by the platform.
 
 ## Accessible Labels
 
@@ -21,4 +21,4 @@ Many complex components, like Tabs and Dialog, come with expectations from users
 
 Proper keyboard navigation and good labelling often go hand-in-hand with managing focus. When a user interacts with a component and something changes as a result, it's often helpful to move focus with the interaction. And for screen reader users, moving focus often results in an announcement to convey the new context, which relies on proper labelling.
 
-In many NativeBase Components, we move focus based on the interactions a user normally takes in a given component. For example, in `Modal`, when the modal is opened, the focus is programmatically moved to the `first focusable element` and trapped inside the modal to anticipate a response to the prompt.
+In many NativeBase Components, we move focus based on the interactions a user normally makes in a given component. For example, in `Modal`, when the modal is opened, the focus is programmatically moved to the `first focusable element` and trapped inside the modal to anticipate a response to the prompt.
