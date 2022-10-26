@@ -3,17 +3,17 @@ id: button
 title: Button
 ---
 
-import { ComponentTheme } from "../src/components";
+import { ComponentTheme } from '../src/components';
 
 The `Button` component triggers an event or an action. Examples can be submitting forms and deleting a data point.
 
 ```jsx isShowcase gradient=0
-import React from "react";
-import { Button } from "native-base";
+import React from 'react';
+import { Button } from 'native-base';
 
 export const Example = () => {
   return (
-    <Button shadow={2} onPress={() => console.log("hello world")}>
+    <Button shadow={2} onPress={() => console.log('hello world')}>
       Click me
     </Button>
   );
@@ -23,7 +23,7 @@ export const Example = () => {
 ## Import
 
 ```jsx
-import { Button } from "native-base";
+import { Button } from 'native-base';
 ```
 
 - **Button** : The button component with support for custom icons, spinners, etc.
@@ -99,5 +99,5 @@ When you use the ButtonGroup component, it allows you to:
 
 ## Accessibility
 
-- Button has `role` set to [button](https://www.w3.org/TR/wai-aria-practices-1.2/#button).
+- Button has `role` set to [button](https://www.w3.org/WAI/ARIA/apg/).
 - When Button has focus, Space or Enter activates it.

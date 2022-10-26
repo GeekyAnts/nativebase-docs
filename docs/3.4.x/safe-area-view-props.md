@@ -13,7 +13,7 @@ To make your components respect the [SafeAreaView](https://reactnative.dev/docs/
 - `safeAreaLeft`: Apply safe padding to left.
 - `safeAreaRight`: Apply safe padding to right.
 
-Internally, NativeBase uses [useSafeAreaInsets](https://docs.expo.io/versions/latest/sdk/safe-area-context/#hooks) hook of [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context).
+Internally, NativeBase uses [useSafeAreaInsets](https://docs.expo.dev/versions/latest/sdk/safe-area-context/) hook of [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context).
 
 :::info
 
