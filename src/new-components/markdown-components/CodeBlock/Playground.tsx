@@ -42,7 +42,7 @@ import {
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { AppContext } from "../../../AppContext";
 
-export const Playground = ({ children, ...props }: any) => {
+export const Playground = ({ children, centerAlignedExpo, ...props }: any) => {
   const { activeVersion } = React.useContext(AppContext);
 
   const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
@@ -63,7 +63,10 @@ export const Playground = ({ children, ...props }: any) => {
 
   const expoCode = addExportsToCode(
     children,
-    endingExpoTemplate(props?.isNativebaseExample)
+    endingExpoTemplate(
+      props?.isNativebaseExample,
+      centerAlignedExpo === "false" ? false : true
+    )
   );
   const codeSandboxCode = addExportsToCode(
     children,

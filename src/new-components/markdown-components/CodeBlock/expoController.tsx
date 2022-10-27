@@ -1,7 +1,10 @@
 import versions from "../../../../versions.json";
 import config from "../../../../docs.config";
 
-export const endingExpoTemplate = (isNativebaseExample?: string) => {
+export const endingExpoTemplate = (
+  isNativebaseExample?: string,
+  centerAligned?: boolean
+) => {
   return isNativebaseExample && isNativebaseExample === "false"
     ? `
   export default () => {
@@ -10,7 +13,8 @@ export const endingExpoTemplate = (isNativebaseExample?: string) => {
       );
   };
   `
-    : `
+    : centerAligned
+    ? `
     export default () => {
         return (
           <NativeBaseProvider>
@@ -20,7 +24,15 @@ export const endingExpoTemplate = (isNativebaseExample?: string) => {
           </NativeBaseProvider>
         );
     };
-    `;
+    `
+    : `
+    export default () => {
+      return (
+        <NativeBaseProvider>
+            <Example />
+        </NativeBaseProvider>
+      );
+  };`;
 };
 export function getExpoSnackURL(code: string, version: string) {
   const files = {
