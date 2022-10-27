@@ -9,10 +9,10 @@ import { ComponentTheme } from '../../src/components';
 
 ## Import
 
-- `AlertDialog`: provides context and state for the dialog.
-- `AlertDialog.Header`: contains the title announced by screen readers.
-- `AlertDialog.Body`: contains the description announced by screen readers.
-- `AlertDialog.Footer`: contains the actions of the dialog.
+- `AlertDialog`: Provides context and state for the dialog.
+- `AlertDialog.Header`: Contains the title announced by screen readers.
+- `AlertDialog.Body`: Contains the description announced by screen readers.
+- `AlertDialog.Footer`: Contains the actions of the dialog.
 - `AlertDialog.Content`: The wrapper for the alert dialog's content.
 - `AlertDialog.CloseButton`: The button that closes the dialog.
 
@@ -139,7 +139,7 @@ AlertDialog and its components compose the **[Modal](/modal)** component, so all
 
 ## Accessibility
 
-Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#alertdialog)
+Adheres to the [Alert and Message Dialogs WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/#alertdialog)
 
 ### Keyboard Interactions
 

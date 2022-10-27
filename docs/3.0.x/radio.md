@@ -79,7 +79,7 @@ import { ComponentTheme } from '../../src/components';
 
 ## Accessibility
 
-Uses React Native ARIA [@react-native-aria/radio](https://react-native-aria.geekyants.com/docs/useRadioGroup) which follows the [Radio Group WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#radiobutton).
+Uses React Native ARIA [@react-native-aria/radio](https://react-native-aria.geekyants.com/docs/useRadioGroup) which follows the [Radio Group WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/#radiobutton).
 
 ### Keyboard Interactions
 

@@ -11,6 +11,7 @@ import GitHub from "../icons/GithubIcon";
 import Discord from "../icons/DiscordIcon";
 import { AntDesign, MaterialIcons } from "@expo/vector-icons";
 import FigmaIcon from "../icons/FigmaIcon";
+import TwitterIcon from "../icons/TwitterIcon";
 
 export const SocialMediaStagger = (props: any) => {
   const { isOpen, onClose, onToggle } = useDisclose();
@@ -92,9 +93,8 @@ export const SocialMediaStagger = (props: any) => {
             variant="unstyled"
             bg="coolGray.800"
             borderRadius="full"
-            _icon={{ color: "#1DA1F2" }}
             onPress={onClose}
-            icon={<Icon as={AntDesign} size="6" name="twitter" />}
+            icon={<TwitterIcon fill="#1DA1F2" size="6" />}
           />
         </NBLink>
 

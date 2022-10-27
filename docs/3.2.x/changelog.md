@@ -33,7 +33,7 @@ title: Changelog
 
 - Added tintColor prop for Image [#4204](https://github.com/GeekyAnts/NativeBase/pull/4204)
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.2.2).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.2.2).
 
 ## V3.2.1
 
@@ -63,7 +63,7 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Select items appear behind keyboard [#4163](https://github.com/GeekyAnts/NativeBase/pull/4163)
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.2.1).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.2.1).
 
 ## V3.2.0
 
@@ -87,4 +87,4 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Improved typing
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.2.0).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.2.0).

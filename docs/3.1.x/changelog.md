@@ -19,4 +19,4 @@ title: Changelog
 
 - Standalone toast API [#3931](https://github.com/GeekyAnts/NativeBase/pull/3931)
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.1.0).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.1.0).

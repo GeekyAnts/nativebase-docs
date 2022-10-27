@@ -46,7 +46,7 @@ export default function () {
 
 As shown above, we can customize components by passing the **components** object with the **key** being the **name** of the **component**. Whereas you set `defaultProps` or `baseStyle` to customize the components.
 
-### Difference between baseStyle and defaultProps?
+### Difference between baseStyle and defaultProps
 
 #### Base Style
 
@@ -58,7 +58,7 @@ Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3
 #### Default Props
 
 - Default props can be used to initialize props of a component.
-- For e.g. You have a Button component and it has 2 variants. i.e. outline, solid. You can use it like.
+- For e.g. You have a Button component and it has 2 variants. i.e. outline, solid. 
 
 Take a look at an [example here](https://github.com/GeekyAnts/NativeBase/blob/v3-pre-beta/src/theme/components/button.ts#L201)
 

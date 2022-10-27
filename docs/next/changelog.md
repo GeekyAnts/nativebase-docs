@@ -15,7 +15,7 @@ TypeScript enhancement for custom theme tokens and variants [#4173](https://gith
 
 - Select component key prop warning fixes [a9eb939](https://github.com/GeekyAnts/NativeBase/commit/a9eb939cae207e30fae9eec802c9d9bcf3b99d88)
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.3.1).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.3.1).
 
 ## V3.3.0
 
@@ -83,4 +83,4 @@ For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/relea
 
 - Added support for debug prop in usePropResolution [6c3ee26](https://github.com/GeekyAnts/NativeBase/commit/6c3ee262334847561b8c86f90e0e4f36697d7ffc)
 
-For more details. Visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.3.0).
+For more details, visit [releases](https://github.com/GeekyAnts/NativeBase/releases/tag/v3.3.0).
