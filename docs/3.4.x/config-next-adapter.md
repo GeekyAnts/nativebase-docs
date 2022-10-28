@@ -8,13 +8,13 @@ title: Configuration of NativeBase next-adapter
 - ** `Dependencies` ** : List of dependencies which are transpiled using [next-transpile-modules](https://github.com/martpie/next-transpile-modules) .
 
 ```jsx
-const { withNativebase } = require('@native-base/next-adapter');
+const { withNativebase } = require("@native-base/next-adapter");
 
 module.exports = withNativebase({
   dependencies: [
-    '@expo/next-adapter',
-    'react-native-vector-icons',
-    'react-native-vector-icons-for-web',
+    "@expo/next-adapter",
+    "react-native-vector-icons",
+    "react-native-vector-icons-for-web",
   ],
 });
 ```
@@ -22,8 +22,8 @@ module.exports = withNativebase({
 - ** `Plugins` **: It is an array containing all plugins and their configuration.
 
 ```jsx
-const { withNativebase } = require('@native-base/next-adapter');
-const sass = require('@zeit/next-sass');
+const { withNativebase } = require("@native-base/next-adapter");
+const sass = require("@zeit/next-sass");
 
 module.exports = withNativebase({
   plugins: [[sass]],
@@ -33,7 +33,7 @@ module.exports = withNativebase({
 - ** `nextConfig` **: Configuration for the plugin. You can also overwrite specific configuration keys for a phase:
 
 ```jsx
-const { withNativebase } = require('@native-base/next-adapter');
+const { withNativebase } = require("@native-base/next-adapter");
 
 module.exports = withNativebase({
   nextConfig: {
@@ -41,13 +41,13 @@ module.exports = withNativebase({
     webpack: (config, options) => {
       config.resolve.alias = {
         ...(config.resolve.alias || {}),
-        'react-native$': 'react-native-web',
-        '@expo/vector-icons': 'react-native-vector-icons',
+        "react-native$": "react-native-web",
+        "@expo/vector-icons": "react-native-vector-icons",
       };
       config.resolve.extensions = [
-        '.web.js',
-        '.web.ts',
-        '.web.tsx',
+        ".web.js",
+        ".web.ts",
+        ".web.tsx",
         ...config.resolve.extensions,
       ];
       return config;
@@ -58,15 +58,15 @@ module.exports = withNativebase({
 
 ## Phase
 
-If the plugin should only be applied in specific phases, you can specify them here. You can use all phases [next.js provides](https://github.com/zeit/next.js/blob/canary/packages/next/next-server/lib/constants.ts#L1-L4).
+If the plugin should only be applied in specific phases, you can specify them here. You can use all phases [next.js provides](https://github.com/vercel/next.js/blob/canary/packages/next/shared/lib/constants.ts#L20-L22).
 
 ```jsx
-const { withNativebase } = require('@native-base/next-adapter');
+const { withNativebase } = require("@native-base/next-adapter");
 const {
   PHASE_DEVELOPMENT_SERVER,
   PHASE_PRODUCTION_BUILD,
-} = require('next/constants');
-const sass = require('@zeit/next-sass');
+} = require("next/constants");
+const sass = require("@zeit/next-sass");
 
 module.exports = withNativebase([
   [
@@ -74,7 +74,7 @@ module.exports = withNativebase([
     {
       cssModules: true,
       cssLoaderOptions: {
-        localIdentName: '[path]___[local]___[hash:base64:5]',
+        localIdentName: "[path]___[local]___[hash:base64:5]",
       },
     },
     [PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_BUILD],
