@@ -5,55 +5,652 @@
       "title": "Introduction",
       "pages": [
         {
+          "notVisibleInSidebar": false,
           "id": "getting-started",
           "title": "Getting Started",
           "showToc": false
         },
         {
+          "notVisibleInSidebar": false,
           "id": "installation",
           "title": "Installation",
           "showToc": false
         },
         {
+          "notVisibleInSidebar": false,
           "id": "install-rn",
-          "title": "Install RN",
-          "notVisibleInSidebar": true
+          "title": "Install RN"
         },
         {
+          "notVisibleInSidebar": false,
           "id": "install-cra",
-          "title": "Install CRA",
-          "notVisibleInSidebar": true
+          "title": "Install CRA"
         },
         {
+          "notVisibleInSidebar": false,
           "id": "install-expo",
-          "title": "Installation",
-          "notVisibleInSidebar": true
+          "title": "Installation"
         },
         {
+          "notVisibleInSidebar": false,
           "id": "install-next",
-          "title": "Installation",
-          "notVisibleInSidebar": true
+          "title": "Installation"
         },
         {
+          "notVisibleInSidebar": false,
           "id": "next-adapter",
-          "title": "Next Adapter for native-base",
-          "notVisibleInSidebar": true
+          "title": "Next Adapter for native-base"
         },
         {
+          "notVisibleInSidebar": false,
           "id": "config-next-adapter",
-          "title": "Config NativeBase next-adapter",
-          "notVisibleInSidebar": true
+          "title": "Config NativeBase next-adapter"
         },
         {
+          "notVisibleInSidebar": false,
           "id": "next-adapter-icons",
-          "title": "NativeBase next-adapter integration with Icons",
-          "notVisibleInSidebar": true
+          "title": "NativeBase next-adapter integration with Icons"
         },
         {
+          "notVisibleInSidebar": false,
           "id": "setup-provider",
           "title": "Setup NativeBase Provider"
         }
       ]
+    },
+    {
+      "type": "heading",
+      "title": "Resources",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "contribution",
+          "title": "Contribution"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "solito",
+          "title": "Creating a Universal App with NativeBase and Solito",
+          "status": "new"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Core Concepts",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "utility-first",
+          "title": "Utility First"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "utility-props-specificity",
+          "title": "Utility Props Specificity"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "design-tokens",
+          "title": "Design Tokens"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "pseudo-props",
+          "title": "Pseudo Props: Overview"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "pseudo-props-101",
+          "title": "Pseudo Props: Dos & Don'ts"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "internal-pseudo-props",
+          "title": "Internal Pseudo Props",
+          "status": "new"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "responsive",
+          "title": "Responsive"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Features",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "utility-props",
+          "title": "Utility Props"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "color-mode",
+          "title": "Color mode (Dark Mode)"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "nativebase-factory",
+          "title": "NativeBase Factory"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "safe-area-view-props",
+          "title": "SafeAreaView Props"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "strict-mode",
+          "title": "Strict Mode"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "accessibility",
+          "title": "Accessibility"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Theme",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "default-theme",
+          "title": "Default Theme"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "customizing-theme",
+          "title": "Customizing Theme",
+          "showToc": false
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "customizing-fonts",
+          "title": "Customizing Fonts"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "customizing-components",
+          "title": "Customizing Components"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "dark-mode",
+          "title": "Making components dark mode compatible"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "breakpoints",
+          "title": "Breakpoints"
+        },
+        { "notVisibleInSidebar": true, "id": "theme", "title": "Using Theme" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "typescript",
+          "title": "TypeScript",
+          "showToc": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Layout",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "aspect-ratio",
+          "title": "AspectRatio"
+        },
+        { "notVisibleInSidebar": true, "id": "box", "title": "Box" },
+        { "notVisibleInSidebar": true, "id": "center", "title": "Center" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "container",
+          "title": "Container"
+        },
+        { "notVisibleInSidebar": true, "id": "flex", "title": "Flex" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "hstack",
+          "title": "HStack / Row"
+        },
+        { "notVisibleInSidebar": true, "id": "stack", "title": "Stack" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "vstack",
+          "title": "VStack / Column"
+        },
+        { "notVisibleInSidebar": true, "id": "zstack", "title": "ZStack" }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Forms",
+      "pages": [
+        { "notVisibleInSidebar": true, "id": "button", "title": "Button" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "pressable",
+          "title": "Pressable"
+        },
+        { "notVisibleInSidebar": true, "id": "checkbox", "title": "Checkbox" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "form-control",
+          "title": "FormControl"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "icon-button",
+          "title": "IconButton"
+        },
+        { "notVisibleInSidebar": true, "id": "input", "title": "Input" },
+        { "notVisibleInSidebar": true, "id": "link", "title": "Link" },
+        { "notVisibleInSidebar": true, "id": "radio", "title": "Radio" },
+        { "notVisibleInSidebar": true, "id": "select", "title": "Select" },
+        { "notVisibleInSidebar": true, "id": "slider", "title": "Slider" },
+        { "notVisibleInSidebar": true, "id": "switch", "title": "Switch" },
+        { "notVisibleInSidebar": true, "id": "textarea", "title": "TextArea" }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Data Display",
+      "pages": [
+        { "notVisibleInSidebar": true, "id": "badge", "title": "Badge" },
+        { "notVisibleInSidebar": true, "id": "divider", "title": "Divider" }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Feedback",
+      "pages": [
+        { "notVisibleInSidebar": true, "id": "alert", "title": "Alert" },
+        { "notVisibleInSidebar": true, "id": "progress", "title": "Progress" },
+        { "notVisibleInSidebar": true, "id": "skeleton", "title": "Skeleton" },
+        { "notVisibleInSidebar": true, "id": "spinner", "title": "Spinner" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "toast",
+          "title": "Toast",
+          "status": "update"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Typography",
+      "pages": [
+        { "notVisibleInSidebar": true, "id": "text", "title": "Text" },
+        { "notVisibleInSidebar": true, "id": "heading", "title": "Heading" }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Overlay",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "alert-dialog",
+          "title": "AlertDialog"
+        },
+        { "notVisibleInSidebar": true, "id": "menu", "title": "Menu" },
+        { "notVisibleInSidebar": true, "id": "modal", "title": "Modal" },
+        { "notVisibleInSidebar": true, "id": "popover", "title": "Popover" },
+        { "notVisibleInSidebar": true, "id": "tooltip", "title": "Tooltip" }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Disclosure",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "action-sheet",
+          "title": "ActionSheet"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Media and Icons",
+      "pages": [
+        { "notVisibleInSidebar": true, "id": "avatar", "title": "Avatar" },
+        { "notVisibleInSidebar": true, "id": "icon", "title": "Icon" },
+        { "notVisibleInSidebar": true, "id": "image", "title": "Image" }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Transition",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "presence-transition",
+          "title": "PresenceTransition"
+        },
+        { "notVisibleInSidebar": true, "id": "slide", "title": "Slide" },
+        { "notVisibleInSidebar": true, "id": "stagger", "title": "Stagger" }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Others",
+      "pages": [
+        { "notVisibleInSidebar": true, "id": "fab", "title": "Fab" },
+        { "notVisibleInSidebar": true, "id": "hidden", "title": "Hidden" }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "ReactNative Components",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "scrollview",
+          "title": "ScrollView"
+        },
+        { "notVisibleInSidebar": true, "id": "view", "title": "View" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "keyboard-avoiding-view",
+          "title": "KeyboardAvoidingView"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "status-bar",
+          "title": "StatusBar"
+        },
+        { "notVisibleInSidebar": true, "id": "flat-list", "title": "FlatList" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "section-list",
+          "title": "SectionList"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Hooks",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "use-disclose",
+          "title": "useDisclose"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "use-breakpoint-value",
+          "title": "useBreakpointValue"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "use-clipboard",
+          "title": "useClipboard"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "use-media-query",
+          "title": "useMediaQuery"
+        },
+        { "notVisibleInSidebar": true, "id": "use-theme", "title": "useTheme" },
+        { "notVisibleInSidebar": true, "id": "use-token", "title": "useToken" },
+        {
+          "notVisibleInSidebar": true,
+          "id": "use-color-mode",
+          "title": "useColorMode"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "use-color-mode-value",
+          "title": "useColorModeValue"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "use-contrast-text",
+          "title": "useContrastText"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "use-accessible-colors",
+          "title": "useAccessibleColors"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Examples",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "todo-list",
+          "title": "Todo-List"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "kitchen-sink",
+          "title": "Kitchen Sink"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Recipes",
+      "pages": [
+        {
+          "type": "heading",
+          "title": "Designs",
+          "isCollapsed": true,
+          "pages": [
+            {
+              "id": "building-app-bar",
+              "title": "AppBar"
+            },
+            {
+              "id": "building-card",
+              "title": "Card"
+            },
+            {
+              "id": "building-drawer-navigation",
+              "title": "Drawer Navigation"
+            },
+            {
+              "id": "building-tab-view",
+              "title": "Tab View"
+            },
+            {
+              "id": "building-swipe-list",
+              "title": "Swipe List"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "title": "Forms",
+          "isCollapsed": true,
+          "pages": [
+            {
+              "id": "form",
+              "title": "Form with Validation"
+            },
+            {
+              "id": "login-signup-forms",
+              "title": "Login/Signup Forms"
+            },
+            {
+              "id": "building-search-bar",
+              "title": "SearchBar"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "title": "Layout",
+          "isCollapsed": true,
+          "pages": [
+            {
+              "id": "building-app-drawer",
+              "title": "App Drawer"
+            },
+            {
+              "id": "building-footer-tabs",
+              "title": "Footer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Migration",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "migration/v3",
+          "title": "Upgrading to v3"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "migration/v3xtov32",
+          "title": "Upgrading to 3.2.0 from 3.x"
+        },
+        {
+          "notVisibleInSidebar": true,
+          "id": "migration/v33xtov34x",
+          "title": "Upgrading to 3.4.0 from 3.3.x"
+        },
+        {
+          "type": "heading",
+          "title": "Components Migration",
+          "isCollapsed": true,
+          "pages": [
+            {
+              "id": "migration/action-sheet",
+              "title": "ActionSheet"
+            },
+            {
+              "id": "migration/badge",
+              "title": "Badge"
+            },
+            {
+              "id": "migration/button",
+              "title": "Button"
+            },
+            {
+              "id": "migration/card",
+              "title": "Card"
+            },
+            {
+              "id": "migration/checkbox",
+              "title": "Checkbox"
+            },
+            {
+              "id": "migration/date-picker",
+              "title": "DatePicker"
+            },
+            {
+              "id": "migration/deck-swiper",
+              "title": "DeckSwiper"
+            },
+            {
+              "id": "migration/drawer",
+              "title": "Drawer"
+            },
+            {
+              "id": "migration/fab",
+              "title": "FABs"
+            },
+            {
+              "id": "migration/footer-tab",
+              "title": "FooterTab"
+            },
+            {
+              "id": "migration/form",
+              "title": "Form"
+            },
+            {
+              "id": "migration/header",
+              "title": "Header"
+            },
+            {
+              "id": "migration/icon",
+              "title": "Icon"
+            },
+            {
+              "id": "migration/layout",
+              "title": "Layout"
+            },
+            {
+              "id": "migration/picker",
+              "title": "Picker"
+            },
+            {
+              "id": "migration/radio-button",
+              "title": "Radio Button"
+            },
+            {
+              "id": "migration/search-bar",
+              "title": "Searchbar"
+            },
+            {
+              "id": "migration/segment",
+              "title": "Segment"
+            },
+            {
+              "id": "migration/spinner",
+              "title": "Spinner"
+            },
+            {
+              "id": "migration/swipe-list",
+              "title": "SwipeList"
+            },
+            {
+              "id": "migration/tabs",
+              "title": "Tabs"
+            },
+            {
+              "id": "migration/thumbnail",
+              "title": "Thumbnail"
+            },
+            {
+              "id": "migration/toast",
+              "title": "Toast"
+            },
+            {
+              "id": "migration/typography",
+              "title": "Typography"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "More",
+      "pages": [
+        {
+          "notVisibleInSidebar": true,
+          "id": "changelog",
+          "title": "Changelog"
+        },
+        { "id": "testing", "title": "Testing" },
+        { "notVisibleInSidebar": true, "id": "faq", "title": "FAQ's" },
+        {
+          "id": "state-of-components",
+          "title": "State of the Components",
+          "showToc": false,
+          "notVisibleInSidebar": true
+        }
+      ]
+    },
+    {
+      "id": "more-props",
+      "title": "More Props"
     }
   ]
 }
