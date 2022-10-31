@@ -1,0 +1,719 @@
+{
+  "sidebar": [
+    {
+      "type": "heading",
+      "title": "Introduction",
+      "pages": [
+        {
+          "id": "getting-started",
+          "title": "Getting Started",
+          "showToc": false
+        },
+        {
+          "id": "installation",
+          "title": "Installation",
+          "showToc": false
+        },
+        {
+          "id": "install-rn",
+          "title": "Install RN",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "install-cra",
+          "title": "Install CRA",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "install-expo",
+          "title": "Installation",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "install-next",
+          "title": "Installation",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "next-adapter",
+          "title": "Next Adapter for native-base",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "config-next-adapter",
+          "title": "Config NativeBase next-adapter",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "next-adapter-icons",
+          "title": "NativeBase next-adapter integration with Icons",
+          "notVisibleInSidebar": true
+        },
+        {
+          "id": "setup-provider",
+          "title": "Setup NativeBase Provider"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Resources",
+      "pages": [
+        {
+          "id": "contribution",
+          "title": "Contribution"
+        },
+        {
+          "id": "solito",
+          "title": "Creating a Universal App with NativeBase and Solito",
+          "status": "new"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Core Concepts",
+      "pages": [
+        {
+          "id": "utility-first",
+          "title": "Utility First"
+        },
+        {
+          "id": "utility-props-specificity",
+          "title": "Utility Props Specificity"
+        },
+        {
+          "id": "design-tokens",
+          "title": "Design Tokens"
+        },
+        {
+          "id": "pseudo-props",
+          "title": "Pseudo Props: Overview"
+        },
+        {
+          "id": "pseudo-props-101",
+          "title": "Pseudo Props: Dos & Don'ts"
+        },
+        {
+          "id": "internal-pseudo-props",
+          "title": "Internal Pseudo Props",
+          "status": "new"
+        },
+        {
+          "id": "responsive",
+          "title": "Responsive"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Features",
+      "pages": [
+        {
+          "id": "utility-props",
+          "title": "Utility Props"
+        },
+        {
+          "id": "color-mode",
+          "title": "Color mode (Dark Mode)"
+        },
+        {
+          "id": "nativebase-factory",
+          "title": "NativeBase Factory"
+        },
+        {
+          "id": "safe-area-view-props",
+          "title": "SafeAreaView Props"
+        },
+        {
+          "id": "strict-mode",
+          "title": "Strict Mode"
+        },
+        {
+          "id": "accessibility",
+          "title": "Accessibility"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Theme",
+      "pages": [
+        {
+          "id": "default-theme",
+          "title": "Default Theme"
+        },
+        {
+          "id": "customizing-theme",
+          "title": "Customizing Theme",
+          "showToc": false
+        },
+        {
+          "id": "customizing-fonts",
+          "title": "Customizing Fonts"
+        },
+        {
+          "id": "customizing-components",
+          "title": "Customizing Components"
+        },
+        {
+          "id": "dark-mode",
+          "title": "Making components dark mode compatible"
+        },
+        {
+          "id": "breakpoints",
+          "title": "Breakpoints"
+        },
+        {
+          "id": "theme",
+          "title": "Using Theme"
+        },
+        {
+          "id": "typescript",
+          "title": "TypeScript",
+          "showToc": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Layout",
+      "pages": [
+        {
+          "id": "aspect-ratio",
+          "title": "AspectRatio"
+        },
+        {
+          "id": "box",
+          "title": "Box"
+        },
+        {
+          "id": "center",
+          "title": "Center"
+        },
+        {
+          "id": "container",
+          "title": "Container"
+        },
+        {
+          "id": "flex",
+          "title": "Flex"
+        },
+        {
+          "id": "hstack",
+          "title": "HStack / Row"
+        },
+        {
+          "id": "stack",
+          "title": "Stack"
+        },
+        {
+          "id": "vstack",
+          "title": "VStack / Column"
+        },
+        {
+          "id": "zstack",
+          "title": "ZStack"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Forms",
+      "pages": [
+        {
+          "id": "button",
+          "title": "Button"
+        },
+        {
+          "id": "pressable",
+          "title": "Pressable"
+        },
+        {
+          "id": "checkbox",
+          "title": "Checkbox"
+        },
+        {
+          "id": "form-control",
+          "title": "FormControl"
+        },
+        {
+          "id": "icon-button",
+          "title": "IconButton"
+        },
+        {
+          "id": "input",
+          "title": "Input"
+        },
+        {
+          "id": "link",
+          "title": "Link"
+        },
+        {
+          "id": "radio",
+          "title": "Radio"
+        },
+        {
+          "id": "select",
+          "title": "Select"
+        },
+        {
+          "id": "slider",
+          "title": "Slider"
+        },
+        {
+          "id": "switch",
+          "title": "Switch"
+        },
+        {
+          "id": "textarea",
+          "title": "TextArea"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Data Display",
+      "pages": [
+        {
+          "id": "badge",
+          "title": "Badge"
+        },
+        {
+          "id": "divider",
+          "title": "Divider"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Feedback",
+      "pages": [
+        {
+          "id": "alert",
+          "title": "Alert"
+        },
+        {
+          "id": "progress",
+          "title": "Progress"
+        },
+        {
+          "id": "skeleton",
+          "title": "Skeleton"
+        },
+        {
+          "id": "spinner",
+          "title": "Spinner"
+        },
+        {
+          "id": "toast",
+          "title": "Toast",
+          "status": "update"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Typography",
+      "pages": [
+        {
+          "id": "text",
+          "title": "Text"
+        },
+        {
+          "id": "heading",
+          "title": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Overlay",
+      "pages": [
+        {
+          "id": "alert-dialog",
+          "title": "AlertDialog"
+        },
+        {
+          "id": "menu",
+          "title": "Menu"
+        },
+        {
+          "id": "modal",
+          "title": "Modal"
+        },
+        {
+          "id": "popover",
+          "title": "Popover"
+        },
+        {
+          "id": "tooltip",
+          "title": "Tooltip"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Disclosure",
+      "pages": [
+        {
+          "id": "action-sheet",
+          "title": "ActionSheet"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Media and Icons",
+      "pages": [
+        {
+          "id": "avatar",
+          "title": "Avatar"
+        },
+        {
+          "id": "icon",
+          "title": "Icon"
+        },
+        {
+          "id": "image",
+          "title": "Image"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Transition",
+      "pages": [
+        {
+          "id": "presence-transition",
+          "title": "PresenceTransition"
+        },
+        {
+          "id": "slide",
+          "title": "Slide"
+        },
+        {
+          "id": "stagger",
+          "title": "Stagger"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Others",
+      "pages": [
+        {
+          "id": "fab",
+          "title": "Fab"
+        },
+        {
+          "id": "hidden",
+          "title": "Hidden"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "ReactNative Components",
+      "pages": [
+        {
+          "id": "scrollview",
+          "title": "ScrollView"
+        },
+        {
+          "id": "view",
+          "title": "View"
+        },
+        {
+          "id": "keyboard-avoiding-view",
+          "title": "KeyboardAvoidingView"
+        },
+        {
+          "id": "status-bar",
+          "title": "StatusBar"
+        },
+        {
+          "id": "flat-list",
+          "title": "FlatList"
+        },
+        {
+          "id": "section-list",
+          "title": "SectionList"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Hooks",
+      "pages": [
+        {
+          "id": "use-disclose",
+          "title": "useDisclose"
+        },
+        {
+          "id": "use-breakpoint-value",
+          "title": "useBreakpointValue"
+        },
+        {
+          "id": "use-clipboard",
+          "title": "useClipboard"
+        },
+        {
+          "id": "use-media-query",
+          "title": "useMediaQuery"
+        },
+        {
+          "id": "use-theme",
+          "title": "useTheme"
+        },
+        {
+          "id": "use-token",
+          "title": "useToken"
+        },
+        {
+          "id": "use-color-mode",
+          "title": "useColorMode"
+        },
+        {
+          "id": "use-color-mode-value",
+          "title": "useColorModeValue"
+        },
+        {
+          "id": "use-contrast-text",
+          "title": "useContrastText"
+        },
+        {
+          "id": "use-accessible-colors",
+          "title": "useAccessibleColors"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Examples",
+      "pages": [
+        {
+          "id": "todo-list",
+          "title": "Todo-List"
+        },
+        {
+          "id": "kitchen-sink",
+          "title": "Kitchen Sink"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Recipes",
+      "pages": [
+        {
+          "type": "heading",
+          "title": "Designs",
+          "isCollapsed": true,
+          "pages": [
+            {
+              "id": "building-app-bar",
+              "title": "AppBar"
+            },
+            {
+              "id": "building-card",
+              "title": "Card"
+            },
+            {
+              "id": "building-drawer-navigation",
+              "title": "Drawer Navigation"
+            },
+            {
+              "id": "building-tab-view",
+              "title": "Tab View"
+            },
+            {
+              "id": "building-swipe-list",
+              "title": "Swipe List"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "title": "Forms",
+          "isCollapsed": true,
+          "pages": [
+            {
+              "id": "form",
+              "title": "Form with Validation"
+            },
+            {
+              "id": "login-signup-forms",
+              "title": "Login/Signup Forms"
+            },
+            {
+              "id": "building-search-bar",
+              "title": "SearchBar"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "title": "Layout",
+          "isCollapsed": true,
+          "pages": [
+            {
+              "id": "building-app-drawer",
+              "title": "App Drawer"
+            },
+            {
+              "id": "building-footer-tabs",
+              "title": "Footer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Migration",
+      "pages": [
+        {
+          "id": "migration/v3",
+          "title": "Upgrading to v3"
+        },
+        {
+          "id": "migration/v3xtov32",
+          "title": "Upgrading to 3.2.0 from 3.x"
+        },
+        {
+          "id": "migration/v33xtov34x",
+          "title": "Upgrading to 3.4.0 from 3.3.x"
+        },
+        {
+          "type": "heading",
+          "title": "Components Migration",
+          "isCollapsed": true,
+          "pages": [
+            {
+              "id": "migration/action-sheet",
+              "title": "ActionSheet"
+            },
+            {
+              "id": "migration/badge",
+              "title": "Badge"
+            },
+            {
+              "id": "migration/button",
+              "title": "Button"
+            },
+            {
+              "id": "migration/card",
+              "title": "Card"
+            },
+            {
+              "id": "migration/checkbox",
+              "title": "Checkbox"
+            },
+            {
+              "id": "migration/date-picker",
+              "title": "DatePicker"
+            },
+            {
+              "id": "migration/deck-swiper",
+              "title": "DeckSwiper"
+            },
+            {
+              "id": "migration/drawer",
+              "title": "Drawer"
+            },
+            {
+              "id": "migration/fab",
+              "title": "FABs"
+            },
+            {
+              "id": "migration/footer-tab",
+              "title": "FooterTab"
+            },
+            {
+              "id": "migration/form",
+              "title": "Form"
+            },
+            {
+              "id": "migration/header",
+              "title": "Header"
+            },
+            {
+              "id": "migration/icon",
+              "title": "Icon"
+            },
+            {
+              "id": "migration/layout",
+              "title": "Layout"
+            },
+            {
+              "id": "migration/picker",
+              "title": "Picker"
+            },
+            {
+              "id": "migration/radio-button",
+              "title": "Radio Button"
+            },
+            {
+              "id": "migration/search-bar",
+              "title": "Searchbar"
+            },
+            {
+              "id": "migration/segment",
+              "title": "Segment"
+            },
+            {
+              "id": "migration/spinner",
+              "title": "Spinner"
+            },
+            {
+              "id": "migration/swipe-list",
+              "title": "SwipeList"
+            },
+            {
+              "id": "migration/tabs",
+              "title": "Tabs"
+            },
+            {
+              "id": "migration/thumbnail",
+              "title": "Thumbnail"
+            },
+            {
+              "id": "migration/toast",
+              "title": "Toast"
+            },
+            {
+              "id": "migration/typography",
+              "title": "Typography"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "More",
+      "pages": [
+        {
+          "id": "changelog",
+          "title": "Changelog"
+        },
+        { "id": "testing", "title": "Testing" },
+        {
+          "id": "faq",
+          "title": "FAQ's"
+        },
+        {
+          "id": "state-of-components",
+          "title": "State of the Components",
+          "showToc": false,
+          "notVisibleInSidebar": true
+        }
+      ]
+    },
+    {
+      "id": "more-props",
+      "title": "More Props"
+    }
+  ]
+}
