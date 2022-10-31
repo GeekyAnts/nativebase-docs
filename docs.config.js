@@ -6,10 +6,6 @@ module.exports = {
   REPO_BRANCH: "master",
   REPO_LINK: "https://github.com/GeekyAnts/NativeBase",
   versionMap: {
-    "3.0.x": "3.0.7",
-    "3.1.x": "3.1.0",
-    "3.2.x": "3.2.2",
-    "3.3.x": "3.3.10",
     "3.4.x": "3.4.20",
   },
   componentOfTheWeek: {
