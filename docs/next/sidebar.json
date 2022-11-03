@@ -63,12 +63,12 @@
       "title": "Resources",
       "pages": [
         {
-          "notVisibleInSidebar": true,
+          "notVisibleInSidebar": false,
           "id": "contribution",
           "title": "Contribution"
         },
         {
-          "notVisibleInSidebar": true,
+          "notVisibleInSidebar": false,
           "id": "solito",
           "title": "Creating a Universal App with NativeBase and Solito",
           "status": "new"
@@ -80,38 +80,38 @@
       "title": "Core Concepts",
       "pages": [
         {
-          "notVisibleInSidebar": true,
+          "notVisibleInSidebar": false,
           "id": "utility-first",
           "title": "Utility First"
         },
         {
-          "notVisibleInSidebar": true,
+          "notVisibleInSidebar": false,
           "id": "utility-props-specificity",
           "title": "Utility Props Specificity"
         },
         {
-          "notVisibleInSidebar": true,
+          "notVisibleInSidebar": false,
           "id": "design-tokens",
           "title": "Design Tokens"
         },
         {
-          "notVisibleInSidebar": true,
+          "notVisibleInSidebar": false,
           "id": "pseudo-props",
           "title": "Pseudo Props: Overview"
         },
         {
-          "notVisibleInSidebar": true,
+          "notVisibleInSidebar": false,
           "id": "pseudo-props-101",
           "title": "Pseudo Props: Dos & Don'ts"
         },
         {
-          "notVisibleInSidebar": true,
+          "notVisibleInSidebar": false,
           "id": "internal-pseudo-props",
           "title": "Internal Pseudo Props",
           "status": "new"
         },
         {
-          "notVisibleInSidebar": true,
+          "notVisibleInSidebar": false,
           "id": "responsive",
           "title": "Responsive"
         }
