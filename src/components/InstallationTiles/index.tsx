@@ -4,7 +4,20 @@ import { Box, Heading, Stack, Text, useColorModeValue } from "native-base";
 
 export default function InstallationTiles() {
   const isDarkTheme = false;
-  const bgColor = isDarkTheme ? "bg-blueGray-700" : "bg-gray-600";
+  const tileLinkbgColor = {
+    _dark: {
+      bg: "blueGray.700",
+      _hover: {
+        bg: "blueGray.600",
+      },
+    },
+    _light: {
+      bg: "coolGray.200",
+      _hover: {
+        bg: "coolGray.300",
+      },
+    },
+  };
 
   return (
     <Box>
@@ -13,8 +26,7 @@ export default function InstallationTiles() {
           title="Install in Expo project"
           url="install-expo"
           description="Follow this guide to install NativeBase in your existing or new Expo project"
-          _dark={{ bg: "blueGray.700" }}
-          _light={{ bg: "coolGray.200" }}
+          {...tileLinkbgColor}
           imgSrc="/img/expo.svg"
           _Image={{
             position: "absolute",
@@ -30,8 +42,7 @@ export default function InstallationTiles() {
           url="install-rn"
           description="Follow this guide to install NativeBase in your existing or new React Native project"
           imgSrc="/img/react-native.svg"
-          _dark={{ bg: "blueGray.700" }}
-          _light={{ bg: "coolGray.200" }}
+          {...tileLinkbgColor}
           _Image={{
             position: "absolute",
             bottom: -35,
@@ -48,8 +59,7 @@ export default function InstallationTiles() {
           url="install-next"
           description="Follow this guide to install NativeBase in your existing or new Next.js project"
           imgSrc="/img/next.svg"
-          _dark={{ bg: "blueGray.700" }}
-          _light={{ bg: "coolGray.200" }}
+          {...tileLinkbgColor}
           _Image={{
             position: "absolute",
             bottom: -65,
@@ -64,8 +74,7 @@ export default function InstallationTiles() {
           url="install-cra"
           description="Follow this guide to install NativeBase in your existing or new React project"
           imgSrc="/img/cra.svg"
-          _dark={{ bg: "blueGray.700" }}
-          _light={{ bg: "coolGray.200" }}
+          {...tileLinkbgColor}
           _Image={{
             position: "absolute",
             bottom: -62,
