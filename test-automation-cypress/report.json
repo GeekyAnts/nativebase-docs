@@ -1,0 +1,60 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-10T11:45:11.582Z",
+    "end": "2022-11-10T11:45:25.524Z",
+    "duration": 13942
+  },
+  "tests": [
+    {
+      "title": ".type() Valid email - type into a DOM element",
+      "fullTitle": "Actions .type() Valid email - type into a DOM element",
+      "duration": 4559,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": ".type() Valid email - type into a DOM element",
+      "fullTitle": "Actions .type() Valid email - type into a DOM element",
+      "duration": 4103,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": ".focus() - focus on a DOM element",
+      "fullTitle": "Actions .focus() - focus on a DOM element",
+      "duration": 275,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": ".type() Valid email - type into a DOM element",
+      "fullTitle": "Actions .type() Valid email - type into a DOM element",
+      "duration": 4559,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": ".type() Valid email - type into a DOM element",
+      "fullTitle": "Actions .type() Valid email - type into a DOM element",
+      "duration": 4103,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": ".focus() - focus on a DOM element",
+      "fullTitle": "Actions .focus() - focus on a DOM element",
+      "duration": 275,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
