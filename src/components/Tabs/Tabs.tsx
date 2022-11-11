@@ -33,14 +33,14 @@ export const DocTabs = ({ children, values, defaultValue }: any) => {
               borderColor={
                 selected !== values[index].value
                   ? "transparent"
-                  : "activeSidebarItemBackgroundDark"
+                  : "primary.500"
               }
             >
               <Text
                 color={
                   selected !== values[index].value
                     ? textColor
-                    : "activeSidebarItemBackgroundDark"
+                    : "primary.500"
                 }
               >
                 {value.label}
