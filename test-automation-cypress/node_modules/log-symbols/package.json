@@ -1,16 +1,16 @@
 {
 	"name": "log-symbols",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "Colored symbols for various log levels. Example: `✔︎ Success`",
 	"license": "MIT",
 	"repository": "sindresorhus/log-symbols",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": ">=10"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
@@ -38,13 +38,13 @@
 		"stdout"
 	],
 	"dependencies": {
-		"chalk": "^2.4.2"
+		"chalk": "^4.0.0"
 	},
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"strip-ansi": "^5.2.0",
-		"tsd": "^0.7.2",
-		"xo": "^0.24.0"
+		"ava": "^3.7.1",
+		"strip-ansi": "^6.0.0",
+		"tsd": "^0.11.0",
+		"xo": "^0.30.0"
 	},
 	"browser": "browser.js"
 }

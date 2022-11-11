@@ -93,7 +93,7 @@ var ActionsPage = {
     
         //    cy.get('button')
         cy.exec("ActionsPage.paste")
-        }
+        },
 }
 
 export default ActionsPage;

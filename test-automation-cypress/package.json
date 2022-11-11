@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
     "cypress": "^11.0.1"
   },
   "name": "pageobjectmodel-cypress",
@@ -12,6 +13,7 @@
     "allure-commandline": "^2.9.0",
     "cypress-downloadfile": "^1.2.0",
     "cypress-multi-reporters": "^1.4.0",
+    "cypress-xpath": "^2.0.1",
     "minimist": "1.2.5",
     "mocha": "^8.0.1",
     "mochawesome": "^6.1.1",

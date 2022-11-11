@@ -1,3 +1,12 @@
+/*
+Cypress supports various locators such as 
+tags, id, class, attributes, text, etc. 
+Cypress also supports XPath Selectors; 
+however, it needs installation of the third-party plugin cypress-xpath. 
+Xpath has not been supported out of the box in the Cypress framework.
+*/
+
+
 var ActionsLocator = {
 
     email: function() {
