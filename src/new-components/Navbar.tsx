@@ -198,10 +198,7 @@ export default function Navbar(props: any) {
           </NBLink>
           <IconButton
             p="0"
-            onPress={() => {
-              toggleColorMode();
-             
-            }}
+            onPress={toggleColorMode}
             variant="unstyled"
             _icon={{
               size: '6',
@@ -270,12 +267,7 @@ export default function Navbar(props: any) {
           </NBLink>
         </HStack>
       </HStack>
-      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-        <Modal.Content maxWidth="400px">
-          <Modal.CloseButton />
-         
-        </Modal.Content>
-      </Modal>
+     
     </>
   );
 }
