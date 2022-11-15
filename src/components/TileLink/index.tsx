@@ -29,7 +29,6 @@ export default function TileLink({
         overflow="hidden"
         py="6"
         px="4"
-        shadow="2"
         rounded="md"
         _dark={{ bg: "blueGray.800" }}
         _light={{ bg: "coolGray.200" }}
