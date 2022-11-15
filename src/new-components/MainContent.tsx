@@ -111,7 +111,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
             {children}
           </Showcase>
         );
-      else return <CodeBlock>{children}</CodeBlock>;
+      else return <CodeBlock isBash={props?.className === 'language-bash'}>{children}</CodeBlock>;
     },
     table: TableBox,
     thead: TableHead,
