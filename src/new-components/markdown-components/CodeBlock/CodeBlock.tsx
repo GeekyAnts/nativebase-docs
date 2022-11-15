@@ -29,7 +29,7 @@ const useIsOverflow = (ref: any) => {
   return isOverflow;
 };
 
-export const CodeBlock = ({ children, props }: any) => {
+export const CodeBlock = ({ children, isBash, ...props }: any) => {
   // const [parsedCode, setParsedCode] = React.useState(children);
   const [copied, setCopied] = React.useState(false);
   const [overflow, setOverflow] = React.useState<any>("hidden");
@@ -47,7 +47,15 @@ export const CodeBlock = ({ children, props }: any) => {
     }, 2000);
   }
 
-  const bgColor = useColorModeValue("#f9fafb", "#171E2E");
+  let bgDarkColor = '#171E2E'
+  let bgLightColor = '#f9fafb'
+
+  if(isBash) {
+    bgDarkColor = 'blueGray.800';
+    bgLightColor = 'coolGray.200'
+  }
+
+  const bgColor = useColorModeValue(bgLightColor, bgDarkColor);
   const borderColor = useColorModeValue("#e5e7eb", "#1e293b");
 
   const handleMouseOver = () => {
@@ -59,7 +67,7 @@ export const CodeBlock = ({ children, props }: any) => {
   };
 
   return (
-    <HStack bg={bgColor} rounded="lg">
+    <HStack bg={bgColor} rounded="lg" {...props}>
       <Highlight
         {...defaultProps}
         code={children.trim("\n")}
@@ -96,18 +104,18 @@ export const CodeBlock = ({ children, props }: any) => {
                 </div>
               ))}
             </pre>
-            <Box justifyContent="center" mx="3">
+            <Box justifyContent="flex-start" mt="2.5" mx="3">
               <Button
                 variant="unstyled"
                 _light={{
-                  bg: "coolGray.300",
+                  bg: "coolGray.50",
                   _hover: {
                     bg: "coolGray.400",
                     _text: { color: "coolGray.50" },
                     _icon: { color: "coolGray.50" },
                   },
                   _pressed: {
-                    bg: "coolGray.500",
+                    bg: "coolGray.400",
                     _text: { color: "coolGray.50" },
                     _icon: { color: "coolGray.50" },
                   },
@@ -115,9 +123,9 @@ export const CodeBlock = ({ children, props }: any) => {
                   _icon: { color: "muted.500" },
                 }}
                 _dark={{
-                  bg: "blueGray.800",
-                  _hover: { bg: "blueGray.700" },
-                  _pressed: { bg: "blueGray.600" },
+                  bg: "blueGray.700",
+                  _hover: { bg: "blueGray.600" },
+                  _pressed: { bg: "blueGray.500" },
                   _text: { color: "muted.400" },
                   _icon: { color: "muted.400" },
                 }}
