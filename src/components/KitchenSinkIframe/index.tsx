@@ -4,8 +4,8 @@ import { Box } from "native-base";
 export default function KitchenSinkIframe() {
   return (
     <Box
-      w="360px"
-      h="680px"
+      w="330px"
+      h="600px"
       borderWidth="10px"
       rounded="54px"
       alignItems="center"
