@@ -11,12 +11,39 @@ import { TileLink } from "../../src/components";
   { label: 'New Project', value: 'template' },
   { label: 'Existing Project', value: 'cli' }
   ]}>
-
+  <br/>
   <DocTabItem value="template">
 
-The easiest way to get started with NativeBase in create react app is using NativeBase template.
+#### The easiest way to get started with NativeBase in create react app is using NativeBase template.
 
-### JavaScript
+<Box>
+<Box 
+_dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md">
+Using npx
+</Text>
+<Text
+ _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+</Text>
+<br/>
+<Text
+ _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+>
+ Plain Javascript
+</Text>
 
 ```bash
 npx create-react-app my-app --template nativebase
@@ -24,7 +51,18 @@ cd my-app/
 yarn start
 ```
 
-### TypeScript
+<Text fontSize="sm" lineHeight="sm">
+  Yey! you are all set, start editing src/pages/index.js now.
+</Text>
+<br />
+<Text
+  mt="0.5"
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+>
+  With Typescript
+</Text>
 
 ```bash
 npx create-react-app my-app --template nativebase-typescript
@@ -32,11 +70,17 @@ cd my-app/
 yarn start
 ```
 
+<Text fontSize="sm" lineHeight="sm">
+Yey! you are all set, start editing src/pages/index.tsx now.
+</Text>
+</Box>
+</Box>
+
   </DocTabItem>
 
   <DocTabItem value="cli">
 
-Create a new CRA project If not exist
+#### Create a new CRA project If not exist
 
 ```bash
 npx create-react-app my-app
@@ -45,41 +89,72 @@ cd my-app
 
 [Refer this guide](https://necolas.github.io/react-native-web/docs/installation/) if you need additional configurations.
 
-### Install dependencies
+#### Install dependencies
 
-  <DocTabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
-
-  <DocTabItem value="yarn">
-
-<Box maxWidth="750px">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+</Text>
+<br />
 
 ```bash
 yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 styled-components styled-system react-native-safe-area-context@3.3.2
 ```
 
 </Box>
-  </DocTabItem>
 
-  <DocTabItem value="npm">
-<Box maxWidth="750px">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using npm
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+</Text>
+<br />
 
 ```bash
+
 npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 styled-components styled-system react-native-safe-area-context@3.3.2
 ```
 
 </Box>
-  </DocTabItem>
 
-  </DocTabs>
+#### Run the Hello world example
 
-### Run the Hello world example
-
-Put the below code in your App.js
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  Put the below code in your App.js
+</Text>
 
 ```jsx
 import React from "react";
@@ -97,12 +172,6 @@ function App() {
   </DocTabItem>
 
   </DocTabs>
-  
-<Center>
-<AspectRatio ratio={2.21} w="100%" maxW="500">
-  <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
-  </AspectRatio>
-</Center>
 
 <Box>
   <Box mt="4" mb="8">
