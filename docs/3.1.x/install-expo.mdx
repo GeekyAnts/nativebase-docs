@@ -7,7 +7,7 @@ import { TileLink } from "../../src/components";
 
 Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
 
-### Create a new expo project
+#### Create a new expo project
 
 ```bash
 npm install --global expo-cli
@@ -17,30 +17,60 @@ cd my-project/
 
 [Refer this link](https://docs.expo.io/) for additional information on Expo and setting up an Expo starter app.
 
-### Install dependencies
+#### Install dependencies
 
-<DocTabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
-
-  <DocTabItem value="yarn">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+</Text>
+<br />
 
 ```bash
 yarn add native-base styled-components styled-system
 ```
 
-  </DocTabItem>
-  <DocTabItem value="npm">
+</Box>
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using npm
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+</Text>
+<br />
 
 ```bash
 npm install native-base styled-components styled-system
 ```
 
-</DocTabItem>
-  </DocTabs>
+</Box>
 
 ```bash
 expo install react-native-svg@12.1.1
@@ -50,9 +80,15 @@ expo install react-native-svg@12.1.1
 expo install react-native-safe-area-context@3.3.2
 ```
 
-### Run the Hello world example
+#### Run the Hello world example
 
-Put the below code in your App.js
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  and put this in your pages/index.js
+</Text>
 
 ```jsx
 import React from "react";
@@ -66,12 +102,6 @@ function App() {
   );
 }
 ```
-
-<Center>
-  <AspectRatio ratio={2.21} w="100%" maxW="500">
-    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
-  </AspectRatio>
-</Center>
 
 <Box>
   <Box mt="4" mb="8">
