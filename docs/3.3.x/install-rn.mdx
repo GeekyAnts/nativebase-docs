@@ -14,69 +14,116 @@ import { TileLink } from "../src/components";
 
 <DocTabItem value="new">
 
-### Create a new project using ReactNative CLI with NativeBase template
+#### Create a new project using ReactNative CLI with NativeBase template
 
 [Refer this link](https://github.com/react-native-community/cli#about) to get infomation about the React Native CLI.
 
-<h4 style={{marginTop:"40px"}} className="mt-8 font-mono">Plain Javascript</h4>
-<Box maxWidth="750px">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+
+####  Plain Javascript
+
 
 ```bash
-npx react-native init MyApp --template @native-base/react-native-template
+  npx react-native init MyApp --template @native-base/react-native-template
 ```
 
-</Box>
+<Text fontSize="sm" lineHeight="sm">
+  Yey! you are all set, start editing App.js/App.tsx now.
+</Text>
+<br />
 
-<h4 className="mt-8 font-mono">With Typescript</h4>
-<Box maxWidth="750px">
+####  With Typescript
+
 
 ```bash
-npx react-native init MyApp --template @native-base/react-native-template-typescript
+ npx react-native init MyApp --template @native-base/react-native-template-typescript
 ```
 
+<Text fontSize="sm" lineHeight="sm">
+  Yey! you are all set, start editing App.js/App.tsx now.
+</Text>
 </Box>
-
-Yey! you are all set, start editing App.js/App.tsx now.
 
 </DocTabItem>
 
 <DocTabItem value="existing">
 
-### Create a new project if not exist
+#### Create a new project if not exist
 
 ```bash
 npx react-native init AwesomeNativeBase
 cd AwesomeNativeBase
 ```
 
-### Install dependencies
+#### Install dependencies
 
-<DocTabs
-defaultValue='yarn'
-values={[
-{ label: 'yarn', value: 'yarn' },
-{ label: 'npm', value: 'npm' }
-]}>
 
-<DocTabItem value="yarn">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+</Text>
+<br />
 
 ```bash
-yarn add native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
+  yarn add native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
-</DocTabItem>
+</Box>
 
-<DocTabItem value="npm">
+<Box
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using npm
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+</Text>
+<br />
 
 ```bash
 npm install native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
-</DocTabItem>
+</Box>
 
-</DocTabs>
 
-### Run pod install
+
+#### Run pod install
 
 ```bash
 cd ios/
@@ -104,11 +151,7 @@ export default function App() {
 
 </DocTabs>
 
-<Center>
-  <AspectRatio ratio={2.21} w="100%" maxW="500">
-    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
-  </AspectRatio>
-</Center>
+
 
 <Box>
   <Box mt="4" mb="8">
