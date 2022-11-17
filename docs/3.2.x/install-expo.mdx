@@ -5,8 +5,6 @@ title: Install in Expo project
 
 import { TileLink } from "../src/components";
 
-Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
-
 <DocTabs
   defaultValue='new'
   values={[
@@ -19,7 +17,14 @@ Expo helps you to create universal (iOS, Android and Web) React Native apps with
 
 #### Create a new project using Expo CLI with NativeBase template
 
-<br />
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
+</Text>
+<br/>
 <Box>
 <Box 
 _dark={{ bg: "#171E2E" }}
@@ -37,7 +42,6 @@ Using npx
 <Text
  _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
-  fontWeight="medium"
 > 
 Choose your preferred template and start your development swiftly. 
 Open a Terminal in your project's folder and run the following one of these command:
@@ -46,7 +50,7 @@ Open a Terminal in your project's folder and run the following one of these comm
 <Text
  _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
-  fontWeight="bold"
+   fontWeight="bold"
 >
  Plain Javascript
 </Text>
@@ -83,7 +87,16 @@ Yey! you are all set, start editing src/pages/index.tsx now.
 <DocTabItem value="existing">
 
 <Box mt="3" />
-<h4> Create a new expo project if not exist </h4>
+
+#### Create a new expo project if not exist
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  To create a new expo project run the following command:
+</Text>
 
 ```bash isBashStyled=false
 npx create-expo-app my-project
