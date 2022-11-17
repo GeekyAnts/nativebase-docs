@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 import HorizontalNavLocator from '../locators/horizontalNav.locator'
+
 export default class horizoltalNavigationTabs {
 
     visit() {

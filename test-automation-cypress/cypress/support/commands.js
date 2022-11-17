@@ -335,3 +335,29 @@ Cypress.Commands.add('closeTab', (index_or_name) => {
     // myTabs and myTabNames
     //cy.switchToTab(active_tab_index)
 })
+
+//Cypress.Keyboard.defaults(options)
+//Slow down typing by increasing the keystroke delay
+Cypress.Keyboard.defaults({
+    keystrokeDelay: 20,
+  })
+  //Remove the keystroke delay
+  Cypress.Keyboard.defaults({
+    keystrokeDelay: 0,
+  })
+  //example
+  /*
+  it('removes keystroke delay for all typing in this test', { keystrokeDelay: 0 }, () => {
+  cy.get('input').eq(0).type('fast typing')
+  cy.get('input').eq(1).type('more fast typing')
+})
+
+describe('removes keystroke delay in all tests in this suite', { keystrokeDelay: 0 }, () => {
+  it('types fast in the first input', () => {
+    cy.get('input').eq(0).type('fast typing')
+  })
+
+  it('types fast in the second input', () => {
+    cy.get('input').eq(1).type('more fast typing')
+  })
+}))*/

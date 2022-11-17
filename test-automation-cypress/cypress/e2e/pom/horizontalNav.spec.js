@@ -2,7 +2,7 @@
 
     beforeEach(() => {
         cy.viewport(1920,1080)
-    cy.visit('https://docs.nativebase.io')
+        cy.visit('https://docs.nativebase.io')
     })
 
     const menuItem = [
@@ -15,68 +15,65 @@
 
     ]
 
-    it('Check Horizontal Nav Header', () => {
+    it("Validates all the above mentionedd menu items are present in the drop down", () =>{ 
+      cy.get('#react-aria-3').click()
+         cy.get("[role='menuitem']").as("MenuItem")
+         cy.get('@MenuItem').each((item,index,list) => {
+             cy.wrap(item).should('contain.text',menuItem[index])
+         })
+ 
+         })
+ 
+    it.only('Check Horizontal Nav Header', () => {
 
     //VALIDATE NATIVEBASE LOGO IS VISIBLE OR NOT
-    cy.xpath("(//a)[1]").should('include.text', 'NativeBase');
+    //cy.xpath("(//img[@alt='Nativebase logo'])[1]")
+    // //VALIDATE NATIVEBASE VERSION IS VISIBLE OR NOT
+    // cy.get('#react-aria-3').should('include.text', '3.4.x')
 
-    //VALIDATE NATIVEBASE VERSION IS VISIBLE OR NOT
-    cy.get('#react-aria-3').should('include.text', '3.4.x')
-
-    //VALIDATE DROPDOWN NEXT TO VERSION IS VISIBLE OR NOT
+    // //VALIDATE DROPDOWN NEXT TO VERSION IS VISIBLE OR NOT
     cy.xpath("//*[name()='svg'][@class='r-1b5dq1b r-19uokag r-104ivgm']")
 
-    //VALIDATE ANNOUNCEMENT IS VISIBLE OR NOT
+    // //VALIDATE ANNOUNCEMENT IS VISIBLE OR NOT
     cy.get('a>.r-cygvgh').should('include.text', 'Announcing NativeBase Startup+ bundle 🎉')
     .click()
     cy.go('back')
 
 
-    //VALIDATE SEARCH BOX IS VISIBLE OR NOT
+    // //VALIDATE SEARCH BOX IS VISIBLE OR NOT
     cy.xpath('(//*[contains(text(),"Search")])[2]').should('include.text', 'Search')
     .click()
     cy.reload();
 
 
-     //VALIDATE FIGMA IS VISIBLE OR NOT
+    //  //VALIDATE FIGMA IS VISIBLE OR NOT
     cy.xpath("(//a[@role='link'])[2]").should('include.text', '')
-    .click()
-    cy.closeTab();
+    // .click()
+    // cy.closeTab();
 
-    //VALIDATE GITHUB IS VISIBLE OR NOT
+    // //VALIDATE GITHUB IS VISIBLE OR NOT
     cy.xpath("(//a[@role='link'])[3]").should('include.text', '')
-    .click()
-    cy.closeTab();
+    // .click()
+    // cy.closeTab();
 
 
-    //VALIDATE DISCORD IS VISIBLE OR NOT
+    // //VALIDATE DISCORD IS VISIBLE OR NOT
     cy.xpath("(//a[@role='link'])[4]").should('include.text', '')
-    .click()
-    cy.closeTab()
+    // .click()
+    // cy.closeTab()
 
-    //VALIDATE DARK/LIGHT MODE BUTTON IS VISIBLE OR NOT
+    // //VALIDATE DARK/LIGHT MODE BUTTON IS VISIBLE OR NOT
     cy.xpath("(//a[@role='link'])[5]").should('include.text', '')
     .click()
-    .click();
+    .click()
 
-    //VALIDATE HIREUS IS VISIBLE OR NOT
+    // //VALIDATE HIREUS IS VISIBLE OR NOT
     cy.xpath("(//a[@role='link'])[6]").should('include.text', 'Hire us')
     .click()
-    cy.closeTab();
+    cy.go('back')
+     })
     })
 
-
-    it("checks all the Menu Items", () =>{ 
-        cy.get()
-        cy.get("[role='menuitem']").as("MenuItem")
-        cy.get('@MenuItem').each((item,index,list) => {
-            cy.wrap(item).should('contain.text',menuItem[index])
-        })
-
-        })
-
-
-})
 
 
 

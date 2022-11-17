@@ -2,6 +2,8 @@
 
 import ActionsLocator from '../locators/actions.locator';
 
+const writefile = '/Users/gaurabhchakraborty/Documents/Native_Base/nativebase-docs/test-automation-cypress/cypress/pages/expo.sh'
+
 var ActionsPage = {
     enter_email: function(email) {
         cy.get(ActionsLocator.email())
@@ -22,8 +24,14 @@ var ActionsPage = {
     },
 
     paste: function() {
-        cy.get('.r-1t49g83 > .css-1dbjc4n').click()
-        .type("{cmd+v}")
+        // cy.xpath("(//div[@role='button'])[5]").click()
+        cy.writeFile(writefile, cy.type('{cmd+v}'))
+        // cy.command()
+        // .type("{cmd+v}")
+    },
+
+    copy: function() {
+        cy.xpath("(//div[@role='button'])[5]").click()
     },
 
     enter_email_slow_type: function(email) {
@@ -79,20 +87,25 @@ var ActionsPage = {
     },
 
     select_Install_in_Expo_project_existing: function() {
-        cy.contains('Existing')
-        cy.get('.css-901oao r-1mtiv16 r-cygvgh r-13uqrnb r-19uokag r-f0eezp r-104ivgm')
-        cy.get('.css-901oao r-1njgeiw r-168ni3w r-1o4mh9l r-13uqrnb r-16dba41 r-oxtfae r-dhbnww')
-        cy.get('.css-901oao r-1njgeiw r-168ni3w r-1o4mh9l r-13uqrnb r-16dba41 r-oxtfae r-dhbnww')
-        cy.get('.r-1t49g83').click();
+        cy.contains('Existing').click()
+        cy.get('#h3-create-a-new-expo-project-if-not-exist').should('have.text','Create a new expo project if not exist')
+        //copies the npm command into the clipboard
+        cy.xpath("(//div[@role='button'])[5]").click()
+        cy.exec('expo.sh')
+        // cy.get(ActionsPage.paste())
+        // cy.get('.css-901oao r-1mtiv16 r-cygvgh r-13uqrnb r-19uokag r-f0eezp r-104ivgm')
+        // cy.get('.css-901oao r-1njgeiw r-168ni3w r-1o4mh9l r-13uqrnb r-16dba41 r-oxtfae r-dhbnww')
+        // cy.get('.css-901oao r-1njgeiw r-168ni3w r-1o4mh9l r-13uqrnb r-16dba41 r-oxtfae r-dhbnww')
+        // cy.get('.r-1t49g83').click();
 
         // Click on <div> "npm install native-base"
-        cy.get('pre:nth-child(1) .token-line').click();
+        // cy.get('pre:nth-child(1) .token-line').click();
       
         // Click     on <div> "npm install native-base"
-        cy.get('pre:nth-child(1) .token-line').click();
+        // cy.get('pre:nth-child(1) .token-line').click();
     
         //    cy.get('button')
-        cy.exec("ActionsPage.paste")
+        // cy.exec("ActionsPage.paste")
         },
 }
 

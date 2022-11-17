@@ -11,6 +11,7 @@
     "@mochajs/json-file-reporter": "^1.2.1",
     "@shelex/cypress-allure-plugin": "^1.6.2",
     "allure-commandline": "^2.9.0",
+    "clipboardy": "^3.0.0",
     "cypress-downloadfile": "^1.2.0",
     "cypress-multi-reporters": "^1.4.0",
     "cypress-xpath": "^2.0.1",
