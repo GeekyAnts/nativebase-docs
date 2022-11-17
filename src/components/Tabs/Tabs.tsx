@@ -27,9 +27,9 @@ export const DocTabs = ({ children, values, defaultValue }: any) => {
               justifyContent={"center"}
               alignItems="center"
               py="4"
-              px="5"
+              px="6"
               roundedTop="8"
-              borderBottomWidth={4}
+              borderBottomWidth={2}
               borderColor={
                 selected !== values[index].value
                   ? "transparent"
