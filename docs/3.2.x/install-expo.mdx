@@ -13,11 +13,13 @@ Expo helps you to create universal (iOS, Android and Web) React Native apps with
   { label: 'New Project', value: 'new' },
   { label: 'Existing Project', value: 'existing' }
   ]}>
-<br/>
  <DocTabItem value="new">
+
+<Box mt="3" />
 
 #### Create a new project using Expo CLI with NativeBase template
 
+<br />
 <Box>
 <Box 
 _dark={{ bg: "#171E2E" }}
@@ -80,11 +82,11 @@ Yey! you are all set, start editing src/pages/index.tsx now.
 
 <DocTabItem value="existing">
 
-#### Create a new expo project if not exist
+<Box mt="3" />
+<h4> Create a new expo project if not exist </h4>
 
-```bash
-npm install --global expo-cli
-expo init my-project
+```bash isBashStyled=false
+npx create-expo-app my-project
 cd my-project/
 ```
 
@@ -150,13 +152,17 @@ npm install native-base
 
 </Box>
 
-```bash
+- To install peer dependencies run following commands in your expo project:
+
+```bash isBashStyled=false
 expo install react-native-svg@12.1.1
 ```
 
-```bash
+```bash isBashStyled=false
 expo install react-native-safe-area-context@3.3.2
 ```
+
+<Box mt="3" />
 
 #### Run the Hello world example
 
