@@ -11,11 +11,20 @@ import { TileLink, RNWebNote, TabItem } from "../src/components";
   { label: 'New Project', value: 'template' },
   { label: 'Existing Project', value: 'cli' }
   ]}>
-  <br/>
   <DocTabItem value="template">
+
+<Box mt="3" />
 
 #### The easiest way to get started with NativeBase in create react app is using NativeBase template.
 
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  NativeBase can be used in your web project just like mobile. This is possible using react-native-web. You can follow the below steps to install NativeBase template using create-react-app.
+</Text>
+<br/>
 <Box>
 <Box 
 _dark={{ bg: "#171E2E" }}
@@ -80,7 +89,17 @@ Yey! you are all set, start editing src/pages/index.tsx now.
 
   <DocTabItem value="cli">
 
+<Box mt="3" />
+
 #### Create a new CRA project If not exist
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  To create a new react project run the following command:
+</Text>
 
 ```bash
 npx create-react-app my-app
@@ -122,6 +141,8 @@ yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-nativ
 ```
 
 </Box>
+
+<Box mt="3" />
 
 <Box 
  _dark={{ bg: "#171E2E" }}
