@@ -106,7 +106,30 @@ expo init my-project
 cd my-project/
 ```
 
-[Refer this link](https://docs.expo.io/) for additional information on Expo and setting up an Expo starter app.
+<HStack mb='4'>
+<Pressable>
+  {({ isHovered }) => {
+    return (
+      <Link
+        _text={{
+          _light: {
+            color: "cyan.600",
+          },
+          _dark: {
+            color: "cyan.500",
+          },
+          textDecorationLine: isHovered ? "underline" : "none",
+          fontWeight: 'medium'
+        }}
+        href={"https://docs.expo.io/"}
+      >
+        Refer this link {" "}
+      </Link>
+    );
+  }}
+</Pressable>
+<Text _dark={{ color: "coolGray.300" }}  _light={{ color: "coolGray.800" }}>for additional information on Expo and setting up an Expo starter app. </Text>
+</HStack>
 
 #### Install dependencies
 
