@@ -17,16 +17,37 @@ import { TileLink } from "../src/components";
 
 #### Create a new project using ReactNative CLI with NativeBase template
 
-[Refer this link](https://github.com/react-native-community/cli#about) to get infomation about the React Native CLI.
-
-<Text
+<HStack mb='4'>
+<Pressable>
+  {({ isHovered }) => {
+    return (
+      <Link
+        _text={{
+          _light: {
+            color: "cyan.600",
+          },
+          _dark: {
+            color: "cyan.500",
+          },
+          textDecorationLine: isHovered ? "underline" : "none",
+          fontWeight: 'medium'
+        }}
+        href={"https://github.com/react-native-community/cli#about"}
+      >
+        Refer this link {" "}
+      </Link>
+    );
+  }}
+</Pressable>
+<Text 
   _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
   fontWeight="medium"
 >
-You can use React Native today in your existing Android and iOS projects or you can create a whole new app from scratch.
- </Text>
-<br/>
+  to get infomation about the React Native CLI.
+</Text>
+</HStack>
+
 <Box 
  _dark={{ bg: "#171E2E" }}
 _light={{ bg: "coolGray.50" }}
