@@ -13,88 +13,150 @@ import { TileLink, RNWebNote } from "../src/components";
   ]}>
 
   <DocTabItem value="new">
+  <Box mt='3' />
 
-### Create a new project using Next.js CLI with NativeBase template
+#### Create a new project using Next.js CLI with NativeBase template
 
-<Box >
-<DocTabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npx', value: 'npx' },
-  ]}>
-
-  <DocTabItem value="yarn">
-
-<h4>Choose your preferred setting and start your development swiftly 🚀</h4>
-
-<h4 className="mt-8 font-mono">Plain Javascript</h4>
-<Box maxWidth="750px">
-
-```bash
-  yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
-```
-
-</Box>
-Yey! you are all set, start editing src/pages/index.js now.
-
-<h4 className="mt-8 font-mono">With Typescript</h4>
-<Box maxWidth="750px">
-
-```bash
-  yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
-```
-
-</Box>
-Yey! you are all set, start editing src/pages/index.tsx now.
-
-  </DocTabItem>
-
-<DocTabItem value="npx">
-
-<h4>Choose your preferred setting and start your development swiftly 🚀</h4>
-
-<h4 className="mt-8 font-mono">Plain Javascript</h4>
-<Box maxWidth="750px">
+<br/>
+<Box>
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+   Choose your preferred template and start your development swiftly. Open a Terminal in your project's folder and run the following one of these command :
+</Text>
+<br />
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+>
+  Plain Javascript
+</Text>
 
 ```bash
-  npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
+   yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
 ```
 
+<Text fontSize="sm" lineHeight="sm">
+  Yey! you are all set, start editing src/pages/index.js now.
+</Text>
+<br />
+<Text
+  mt="0.5"
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+>
+  With Typescript
+</Text>
+
+```bash
+    yarn create next-app -e https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
+```
+
+<Text fontSize="sm" lineHeight="sm">
+  Yey! you are all set, start editing src/pages/index.tsx now.
+</Text>
 </Box>
+<br />
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+rounded="md"
+mb='8'
+> 
+<Text bold mb="2" fontSize="md" >
+  Using npx
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800"}}
+>
+  Choose your preferred template and start your development swiftly. Open a Terminal in your project's folder and run the following one of these command :
+</Text>
+<br />
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+  fontSize='sm'
+>
+  Plain Javascript
+</Text>
 
-Yey! you are all set, start editing src/pages/index.js now.
+```bash
+    npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base
+```
 
-<h4 className="mt-8 font-mono">With Typescript</h4>
-<Box maxWidth="750px">
+<Text fontSize="sm" lineHeight="sm">
+  Yey! you are all set, start editing src/pages/index.js now.
+</Text>
+<br />
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+  mt="0.5"
+>
+  With Typescript
+</Text>
 
 ```bash
   npx create-next-app -example https://github.com/GeekyAnts/nativebase-templates/tree/master/nextjs-with-native-base-typescript
 ```
 
+<Text fontSize="sm" lineHeight="sm">
+  Yey! you are all set, start editing src/pages/index.tsx now.
+</Text>
+</Box>
 </Box>
 
-Yey! you are all set, start editing src/pages/index.tsx now.
-
-  </DocTabItem>
-  </DocTabs>
-</Box>
 
   </DocTabItem>
 <DocTabItem value="existing">
 
-### Install dependencies
+<Box mt='3' />
 
-  <DocTabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
+#### In your Next.js project, install NativeBase by running either of the following:
 
-  <DocTabItem value="yarn">
-
-<Box maxWidth="750px">
+<br/>
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+ Open a Terminal in your project's folder and run :
+</Text>
 
 ```bash
 yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
@@ -102,11 +164,25 @@ yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-nativ
 
 </Box>
 
-  </DocTabItem>
-
-  <DocTabItem value="npm">
-
-<Box maxWidth="750px">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using npm
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+ Open a Terminal in your project's folder and run :
+</Text>
 
 ```bash
 npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
@@ -114,41 +190,88 @@ npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-na
 
 </Box>
 
-  </DocTabItem>
+<Text
+  bold mb="2" fontSize="md"
+ >
+  We'll need 2 more additional steps.
+</Text>
 
-  </DocTabs>
+- <Text 
+_dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+  fontSize='sm'
+>Install dev dependencies.</Text>
 
-We'll need 2 more additional steps.
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  mb='4'
+>
+  Inside your Next.js project, run:
+</Text>
 
-1. Install dev dependencies.
-
-<DocTabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
-
-  <DocTabItem value="yarn">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+ Open a Terminal in your project's folder and run :
+</Text>
 
 ```bash
-  yarn add next-compose-plugins next-transpile-modules @expo/next-adapter next-fonts -D
+    yarn add next-compose-plugins next-transpile-modules @expo/next-adapter next-fonts -D
 ```
 
-  </DocTabItem>
+</Box>
 
-  <DocTabItem value="npm">
+<Box
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using npm
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Open a Terminal in your project's folder and run :
+</Text>
 
 ```bash
-  npm i next-compose-plugins next-transpile-modules --save-dev
+   npm i next-compose-plugins next-transpile-modules --save-dev
 ```
 
-  </DocTabItem>
+</Box>
 
-  </DocTabs>
+- <Text 
+_dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+  fontSize='sm'
+>Update your next.config.js with the below content.</Text>
 
-2. Update your next.config.js with the below content.
 
+  
 ```js
 const { withExpo } = require("@expo/next-adapter");
 const withFonts = require("next-fonts");
@@ -172,10 +295,17 @@ module.exports = withPlugins(
   nextConfig
 );
 ```
+<Box mt='3' />
 
-### Run the Hello world example
+#### Run the Hello world example
 
-Replace the below code in your pages/\_app.js
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+Replace the below code in your pages/_app.js
+</Text>
 
 ```jsx
 import "../styles/globals.css";
@@ -183,7 +313,7 @@ import { NativeBaseProvider } from "native-base";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider isSSR>
       <Component {...pageProps} />
     </NativeBaseProvider>
   );
@@ -192,7 +322,13 @@ function MyApp({ Component, pageProps }) {
 export default MyApp;
 ```
 
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
 and put this in your pages/index.js
+</Text>
 
 ```jsx
 import React from "react";
@@ -205,12 +341,6 @@ export default function App() {
 
   </DocTabItem>
   </DocTabs>
-
-<Center>
-  <AspectRatio ratio={2.21} w="100%" maxW="500">
-    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
-  </AspectRatio>
-</Center>
 
 <Box>
   <Box mt="4" mb="8">
