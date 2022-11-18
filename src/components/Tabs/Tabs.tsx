@@ -30,17 +30,25 @@ export const DocTabs = ({ children, values, defaultValue }: any) => {
               px="6"
               roundedTop="8"
               borderBottomWidth={2}
+              _light={{
+                borderColor:
+                  selected !== values[index].value
+                    ? "transparent"
+                    : "primary.600",
+              }}
               borderColor={
-                selected !== values[index].value
-                  ? "transparent"
-                  : "primary.500"
+                selected !== values[index].value ? "transparent" : "primary.500"
               }
             >
               <Text
+                _light={{
+                  color:
+                    selected !== values[index].value
+                      ? textColor
+                      : "primary.600",
+                }}
                 color={
-                  selected !== values[index].value
-                    ? textColor
-                    : "primary.500"
+                  selected !== values[index].value ? textColor : "primary.500"
                 }
               >
                 {value.label}
