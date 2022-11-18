@@ -30,7 +30,7 @@ export default function App() {
 
 If you need to customize the default theme to match your design requirements, you can extend the `theme` from `native-base`.
 
-NativeBase provides an `extendTheme` function that deep merges the default theme with your customizations.
+NativeBase 3.0 provides an `extendTheme` function that deep merges the default theme with your customizations.
 
 ```jsx
 
@@ -151,4 +151,4 @@ export default () => {
 | initialWindowMetrics | Object                              | Mock data for frame and insets. [Refer this](https://github.com/th3rdwave/react-native-safe-area-context#testing) for further information. | -                        |
 | colorModeManager     | { get : Function , set : Function } | Manages Color mode in your app                                                                                                              | -                        |
 | theme                | Object                              | Provides a custom theme for your app.                                                                                                               | NativeBase Default Theme |
-| config               | {dependencies: {}}                  | To include external dependencies. For example - [Linear gradient](box#with-linear-gradient)                                                | -                        |
+| config               | {dependencies: {}}                  | To include external dependencies. For example - [Linear gradient](box#h3-with-linear-gradient)                                                | -                        |
