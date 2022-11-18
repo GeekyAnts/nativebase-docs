@@ -106,7 +106,30 @@ npx create-react-app my-app
 cd my-app
 ```
 
-[Refer this guide](https://necolas.github.io/react-native-web/docs/installation/) if you need additional configurations.
+<HStack mb='4'>
+<Pressable>
+  {({ isHovered }) => {
+    return (
+      <Link
+        _text={{
+          _light: {
+            color: "cyan.600",
+          },
+          _dark: {
+            color: "cyan.500",
+          },
+          textDecorationLine: isHovered ? "underline" : "none",
+          fontWeight: 'medium'
+        }}
+        href={"https://necolas.github.io/react-native-web/docs/installation/"}
+      >
+        Refer this link {" "}
+      </Link>
+    );
+  }}
+</Pressable>
+<Text _dark={{ color: "coolGray.300" }}  _light={{ color: "coolGray.800" }}>if you need additional configurations.</Text>
+</HStack>
 
 #### Install dependencies
 
