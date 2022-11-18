@@ -322,10 +322,18 @@ module.exports = withPlugins(
   }
 );
 ```
+<Box mt='3' />
 
 #### Run the Hello world example
 
-Replace the below code in your pages/\_app.js
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+ Replace the below code in your pages/\_app.js
+</Text>
+
+
 
 ```jsx
 import "../styles/globals.css";
@@ -341,8 +349,13 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp;
 ```
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+ and put this in your pages/index.js
+</Text>
 
-and put this in your pages/index.js
 
 ```jsx
 import React from "react";
