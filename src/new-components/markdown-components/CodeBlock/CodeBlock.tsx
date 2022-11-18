@@ -47,12 +47,12 @@ export const CodeBlock = ({ children, isBash, ...props }: any) => {
     }, 2000);
   }
 
-  let bgDarkColor = '#171E2E'
-  let bgLightColor = '#f9fafb'
+  let bgDarkColor = "#171E2E";
+  let bgLightColor = "#f9fafb";
 
-  if(isBash) {
-    bgDarkColor = 'blueGray.800';
-    bgLightColor = 'coolGray.200'
+  if (isBash) {
+    bgDarkColor = "blueGray.800";
+    bgLightColor = "coolGray.200";
   }
 
   const bgColor = useColorModeValue(bgLightColor, bgDarkColor);
@@ -92,7 +92,7 @@ export const CodeBlock = ({ children, isBash, ...props }: any) => {
                 borderWidth: "1",
                 borderColor: borderColor,
                 fontSize: "14px",
-                lineHeight: "normal",
+                lineHeight: "21px",
                 overflowX: overflow,
               }}
             >

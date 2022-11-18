@@ -5,54 +5,134 @@ title: Install in Expo project
 
 import { TileLink } from "../../src/components";
 
-Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
+#### Create a new expo project if not exist
 
-### Create a new expo project
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  To create a new expo project run the following command:
+</Text>
 
-```bash
+```bash isBashStyled=false
 npm install --global expo-cli
 expo init my-project
 cd my-project/
 ```
 
-[Refer this link](https://docs.expo.io/) for additional information on Expo and setting up an Expo starter app.
+<HStack mb='4'>
+<Pressable>
+  {({ isHovered }) => {
+    return (
+      <Link
+        _text={{
+          _light: {
+            color: "cyan.600",
+          },
+          _dark: {
+            color: "cyan.500",
+          },
+          textDecorationLine: isHovered ? "underline" : "none",
+          fontWeight: 'medium'
+        }}
+        href={"https://docs.expo.io/"}
+      >
+        Refer this link {" "}
+      </Link>
+    );
+  }}
+</Pressable>
+<Text _dark={{ color: "coolGray.300" }}  _light={{ color: "coolGray.800" }}>for additional information on Expo and setting up an Expo starter app. </Text>
+</HStack>
 
-### Install dependencies
+#### Install dependencies
 
-<DocTabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
+<Text _dark={{ color: "coolGray.300" }} _light={{ color: "coolGray.800" }}>
+  You can install the package and its peer dependencies using the package
+  manager of your choice.
+</Text>
+<br />
 
-  <DocTabItem value="yarn">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+ Open a Terminal in your project's folder and run:
+</Text>
 
 ```bash
 yarn add native-base styled-components styled-system
 ```
 
-  </DocTabItem>
-  <DocTabItem value="npm">
+</Box>
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using npm
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Open a Terminal in your project's folder and run:
+</Text>
 
 ```bash
 npm install native-base styled-components styled-system
 ```
 
-</DocTabItem>
-  </DocTabs>
+</Box>
 
-```bash
+- <Text
+    _dark={{ color: "coolGray.300" }}
+    _light={{ color: "coolGray.800" }}
+    fontWeight="medium"
+    fontSize="sm"
+  >
+    To install peer dependencies run following commands in your expo project:
+  </Text>
+
+```bash isBashStyled=false
 expo install react-native-svg@12.1.1
 ```
 
-```bash
+```bash isBashStyled=false
 expo install react-native-safe-area-context@3.3.2
 ```
 
-### Run the Hello world example
+<Box mt="3" />
 
-Put the below code in your App.js
+#### Run the Hello world example
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  and put this in your pages/index.js
+</Text>
 
 ```jsx
 import React from "react";
@@ -66,12 +146,6 @@ function App() {
   );
 }
 ```
-
-<Center>
-  <AspectRatio ratio={2.21} w="100%" maxW="500">
-    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
-  </AspectRatio>
-</Center>
 
 <Box>
   <Box mt="4" mb="8">

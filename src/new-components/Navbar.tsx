@@ -198,17 +198,7 @@ export default function Navbar(props: any) {
           </NBLink>
           <IconButton
             p="0"
-            onPress={() => {
-              toggleColorMode();
-              const date = new Date();
-              if (
-                colorMode === 'dark' &&
-                date.getMonth() === 8 &&
-                date.getDate() === 13
-              ) {
-                setShowModal(true);
-              }
-            }}
+            onPress={toggleColorMode}
             variant="unstyled"
             _icon={{
               size: '6',
@@ -277,44 +267,7 @@ export default function Navbar(props: any) {
           </NBLink>
         </HStack>
       </HStack>
-      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-        <Modal.Content maxWidth="400px">
-          <Modal.CloseButton />
-          <Modal.Header>Light mode active 🚨</Modal.Header>
-          <Modal.Body>
-            <Text>
-              Do you really want to stay here? Really? Really? Pakka? Sure?{' '}
-              <Text bold>Are you a true developer?</Text>
-            </Text>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button.Group space={2}>
-              <Button
-                variant="ghost"
-                colorScheme="blueGray"
-                onPress={() => {
-                  setShowModal(false);
-                }}
-              >
-                No
-              </Button>
-              <Button
-                _text={{ color: 'coolGray.50' }}
-                bg="gray.900"
-                _hover={{ bg: 'gray.800' }}
-                _focus={{ bg: 'gray.800' }}
-                _pressed={{ bg: 'gray.800' }}
-                onPress={() => {
-                  setShowModal(false);
-                  toggleColorMode();
-                }}
-              >
-                Back to DarkMode
-              </Button>
-            </Button.Group>
-          </Modal.Footer>
-        </Modal.Content>
-      </Modal>
+     
     </>
   );
 }

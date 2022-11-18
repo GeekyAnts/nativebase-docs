@@ -14,16 +14,9 @@ values={[
 
 <DocTabItem value="new" mb='4'>
 <Box mt='3' />
-<h4 style={{marginTop:"40px"}}>
-  Create a new project using Next.js CLI with NativeBase template
-</h4>
-<Text
-  _dark={{ color: "coolGray.300" }}
-  _light={{ color: "coolGray.800" }}
-  fontWeight="medium"
->
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
-</Text>
+
+  #### Create a new project using Next.js CLI with NativeBase template
+
 <br/>
 <Box>
 <Box 
@@ -43,7 +36,7 @@ mb='8'
   _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
 >
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+  Choose your preferred template and start your development swiftly. Open a Terminal in your project's folder and run the following one of these command :
 </Text>
 <br />
 <Text
@@ -97,7 +90,7 @@ mb='8'
   _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800"}}
 >
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+  Choose your preferred template and start your development swiftly. Open a Terminal in your project's folder and run the following one of these command :
 </Text>
 <br />
 <Text
@@ -139,15 +132,11 @@ mb='8'
 
   </DocTabItem>
 <DocTabItem value="existing">
+
 <Box mt='3' />
-<h4>Create a new project using Next.js CLI with NativeBase template</h4>
-<Text
-  _dark={{ color: "coolGray.300" }}
-  _light={{ color: "coolGray.800" }}
-  fontWeight="medium"
->
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
-</Text>
+
+#### In your Next.js project, install NativeBase by running either of the following:
+
 <br/>
 <Box 
  _dark={{ bg: "#171E2E" }}
@@ -166,9 +155,8 @@ mb='8'
   _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
 >
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+  Open a Terminal in your project's folder and run :
 </Text>
-<br />
 
 ```bash
 yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
@@ -193,9 +181,8 @@ mb='8'
   _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
 >
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+ Open a Terminal in your project's folder and run :
 </Text>
-<br />
 
 ```bash
 npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
@@ -241,9 +228,8 @@ mb='8'
   _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
 >
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+  Open a Terminal in your project's folder and run :
 </Text>
-<br />
 
 ```bash
   yarn add next-compose-plugins next-transpile-modules @expo/next-adapter next-fonts -D
@@ -268,9 +254,8 @@ mb='8'
   _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
 >
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolore rem iure corrupti vel ab, repellendus temporibus cumque similique ducimus eaque dolor, sequi itaque vitae sed aliquam vero mollitia optio!
+ Open a Terminal in your project's folder and run :
 </Text>
-<br />
 
 ```bash
   npm i next-compose-plugins next-transpile-modules --save-dev
@@ -308,15 +293,16 @@ module.exports = withPlugins(
   nextConfig
 );
 ```
-<h4 style={{marginTop:"40px"}}>
- Run the Hello world example
-</h4>
+<Box mt='3' />
+
+ #### Run the Hello world example
+
 <Text
   _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
   fontWeight="medium"
 >
-Replace the below code in your pages/\_app.js
+Replace the below code in your pages/_app.js
 </Text>
 
 ```jsx
@@ -325,7 +311,7 @@ import { NativeBaseProvider } from "native-base";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider isSSR>
       <Component {...pageProps} />
     </NativeBaseProvider>
   );
