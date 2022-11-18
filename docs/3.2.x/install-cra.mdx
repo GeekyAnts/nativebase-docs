@@ -3,7 +3,7 @@ id: install-cra
 title: Install in Create React App project
 ---
 
-import { TileLink, RNWebNote } from "../../src/components";
+import { TileLink } from "../../src/components";
 
   <DocTabs
   defaultValue='template'
@@ -11,12 +11,49 @@ import { TileLink, RNWebNote } from "../../src/components";
   { label: 'New Project', value: 'template' },
   { label: 'Existing Project', value: 'cli' }
   ]}>
-
   <DocTabItem value="template">
 
-The easiest way to get started with NativeBase in create react app is using NativeBase template.
+<Box mt="3" />
 
-### JavaScript
+#### The easiest way to get started with NativeBase in create react app is using NativeBase template.
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  NativeBase can be used in your web project just like mobile. This is possible using react-native-web. You can follow the below steps to install NativeBase template using create-react-app.
+</Text>
+<br/>
+<Box>
+<Box 
+_dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md">
+Using npx
+</Text>
+<Text
+ _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+Choose your preferred template and start your development swiftly.
+Open a Terminal in your project's folder and run the following one of these command:
+</Text>
+<br/>
+<Text
+ _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+>
+ Plain Javascript
+</Text>
 
 ```bash
 npx create-react-app my-app --template nativebase
@@ -24,7 +61,18 @@ cd my-app/
 yarn start
 ```
 
-### TypeScript
+<Text fontSize="sm" lineHeight="sm">
+  Yey! you are all set, start editing src/pages/index.js now.
+</Text>
+<br />
+<Text
+  mt="0.5"
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+>
+  With Typescript
+</Text>
 
 ```bash
 npx create-react-app my-app --template nativebase-typescript
@@ -32,61 +80,135 @@ cd my-app/
 yarn start
 ```
 
+<Text fontSize="sm" lineHeight="sm">
+Yey! you are all set, start editing src/pages/index.tsx now.
+</Text>
+</Box>
+</Box>
+
   </DocTabItem>
 
   <DocTabItem value="cli">
 
-Create a new CRA project If not exist
+<Box mt="3" />
 
-```bash
+#### Create a new CRA project If not exist
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  To create a new react project run the following command:
+</Text>
+
+```bash isBashStyled=false
 npx create-react-app my-app
 cd my-app
 ```
 
-[Refer this guide](https://necolas.github.io/react-native-web/docs/installation/) if you need additional configurations.
+<HStack mb='4'>
+<Pressable>
+  {({ isHovered }) => {
+    return (
+      <Link
+        _text={{
+          _light: {
+            color: "cyan.600",
+          },
+          _dark: {
+            color: "cyan.500",
+          },
+          textDecorationLine: isHovered ? "underline" : "none",
+          fontWeight: 'medium'
+        }}
+        href={"https://necolas.github.io/react-native-web/docs/installation/"}
+      >
+        Refer this link {" "}
+      </Link>
+    );
+  }}
+</Pressable>
+<Text _dark={{ color: "coolGray.300" }}  _light={{ color: "coolGray.800" }}>if you need additional configurations.</Text>
+</HStack>
 
-### Install dependencies
+#### Install dependencies
 
-  <DocTabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
+<Text _dark={{ color: "coolGray.300" }} _light={{ color: "coolGray.800" }}>
+  You can install the package and its peer dependencies using the package
+  manager of your choice.
+</Text>
+<br />
 
-  <DocTabItem value="yarn">
-
-<Box maxWidth="750px">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Open a Terminal in your project's folder and run:
+</Text>
 
 ```bash
 yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </Box>
- </DocTabItem>
 
-  <DocTabItem value="npm">
-
-<Box maxWidth="750px">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using npm
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Open a Terminal in your project's folder and run:
+</Text>
 
 ```bash
 npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </Box>
-  </DocTabItem>
 
-  </DocTabs>
+<Box mt="3" />
 
-### Run the Hello world example
+#### Run the Hello world example
 
-Put the below code in your App.js
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  Put the below code in your App.js
+</Text>
 
 ```jsx
 import React from "react";
 import { NativeBaseProvider, Box } from "native-base";
 
-export default function App() {
+function App() {
   return (
     <NativeBaseProvider>
       <Box>Hello world</Box>
@@ -98,12 +220,6 @@ export default function App() {
   </DocTabItem>
 
   </DocTabs>
-
-<Center>
-  <AspectRatio ratio={2.21} w="100%" maxW="500">
-    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
-  </AspectRatio>
-</Center>
 
 <Box>
   <Box mt="4" mb="8">
@@ -131,5 +247,4 @@ export default function App() {
     </Box>
   </Box>
 </Box>
-
 <RNWebNote />
