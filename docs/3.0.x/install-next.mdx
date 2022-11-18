@@ -330,7 +330,7 @@ module.exports = withPlugins(
   _dark={{ color: "coolGray.300" }}
   _light={{ color: "coolGray.800" }}
 >
- Replace the below code in your pages/\_app.js
+ Replace the below code in your pages/_app.js
 </Text>
 
 
@@ -341,7 +341,7 @@ import { NativeBaseProvider } from "native-base";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider isSSR>
       <Component {...pageProps} />
     </NativeBaseProvider>
   );
