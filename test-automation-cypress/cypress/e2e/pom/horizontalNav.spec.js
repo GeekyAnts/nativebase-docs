@@ -2,7 +2,7 @@
 
     beforeEach(() => {
         cy.viewport(1920,1080)
-        cy.visit('https://docs.nativebase.io')
+        cy.visit('http://localhost:3000/')
     })
 
     const menuItem = [
@@ -32,47 +32,93 @@
     // cy.get('#react-aria-3').should('include.text', '3.4.x')
 
     // //VALIDATE DROPDOWN NEXT TO VERSION IS VISIBLE OR NOT
-    cy.xpath("//*[name()='svg'][@class='r-1b5dq1b r-19uokag r-104ivgm']")
+    // cy.xpath("//*[name()='svg'][@class='r-1b5dq1b r-19uokag r-104ivgm']")
 
-    // //VALIDATE ANNOUNCEMENT IS VISIBLE OR NOT
-    cy.get('a>.r-cygvgh').should('include.text', 'Announcing NativeBase Startup+ bundle 🎉')
-    .click()
-    cy.go('back')
+    // // //VALIDATE ANNOUNCEMENT IS VISIBLE OR NOT
+    // cy.get('a>.r-cygvgh').should('include.text', 'Announcing NativeBase Startup+ bundle 🎉')
+    // .click()
+    // cy.go('back')
 
 
-    // //VALIDATE SEARCH BOX IS VISIBLE OR NOT
-    cy.xpath('(//*[contains(text(),"Search")])[2]').should('include.text', 'Search')
-    .click()
-    cy.reload();
+    // // //VALIDATE SEARCH BOX IS VISIBLE OR NOT
+    // cy.xpath('(//*[contains(text(),"Search")])[2]').should('include.text', 'Search')
+    // .click()
+    // cy.reload();
 
 
     //  //VALIDATE FIGMA IS VISIBLE OR NOT
-    cy.xpath("(//a[@role='link'])[2]").should('include.text', '')
+    // cy.get('.css-4rbku5:nth-child(2) > .r-vaa0vc > a').
+    // cy.xpath("(//a[@role='link'])[2]").should('include.text', '')
     // .click()
     // cy.closeTab();
 
+    cy.get('#figma').should('be.visible')
+      cy.get('#github').should('include.text', '')
+      cy.get('#discord').should('include.text', '')
+      cy.get('#toggleColorMode').should('include.text', '')
+      
+      cy.get('#figma').invoke('removeAttr', 'target').click()
+      cy.url()
+      .should('include', '/@nativebase')
+    })
+  })
+/// <reference types="cypress" />
+
+// beforeEach(() => {
+//   cy.viewport(1920,1080)
+// })
+
+// it('loads the about page', () => {
+//     cy.get('.r-qklmqi > .r-1u22gn2 > a').children
+//     .click()
+  // .as('figma')
+  // cy.get('@figma').should($figma => {
+  //   expect($figma.attr('href'), 'href').to.equal('https://www.figma.com/@nativebase?utm_source=HomePage&utm_medium=header&utm_campaign=NativeBase_figma')
+  // }).click()
+  // cy.location('pathname').should('equal', 'https://www.figma.com/@nativebase?utm_source=HomePage&utm_medium=header&utm_campaign=NativeBase_figma')
+
+  // it('Written with DeploySentinel Recorder', () => {
+  //     cy.visit('http://localhost:3000/').reload()
+  //     cy.get('#figma').should('be.visible')
+  //     cy.get('#github').should('include.text', '')
+  //     cy.get('#discord').should('include.text', '')
+  //     cy.get('#toggleColorMode').should('include.text', '')
+      
+  //     cy.get('#figma').invoke('removeAttr', 'target').click()
+  //     cy.url()
+  //     .should('include', '/@nativebase')
+
+      // cy.get('#github').click()
+
+
+      // cy.get('#discord').click()
+
+      // cy.get('#toggleColorMode').click()
+
+
+
+
+
     // //VALIDATE GITHUB IS VISIBLE OR NOT
-    cy.xpath("(//a[@role='link'])[3]").should('include.text', '')
+    // cy.xpath("(//a[@role='link'])[3]").should('include.text', '')
     // .click()
     // cy.closeTab();
 
 
     // //VALIDATE DISCORD IS VISIBLE OR NOT
-    cy.xpath("(//a[@role='link'])[4]").should('include.text', '')
+    // cy.xpath("(//a[@role='link'])[4]").should('include.text', '')
+    // // .click()
+    // // cy.closeTab()
+
+    // // //VALIDATE DARK/LIGHT MODE BUTTON IS VISIBLE OR NOT
+    // cy.xpath("(//a[@role='link'])[5]").should('include.text', '')
     // .click()
-    // cy.closeTab()
+    // .click()
 
-    // //VALIDATE DARK/LIGHT MODE BUTTON IS VISIBLE OR NOT
-    cy.xpath("(//a[@role='link'])[5]").should('include.text', '')
-    .click()
-    .click()
-
-    // //VALIDATE HIREUS IS VISIBLE OR NOT
-    cy.xpath("(//a[@role='link'])[6]").should('include.text', 'Hire us')
-    .click()
-    cy.go('back')
-     })
-    })
+    // // //VALIDATE HIREUS IS VISIBLE OR NOT
+    // cy.xpath("(//a[@role='link'])[6]").should('include.text', 'Hire us')
+    // .click()
+    // cy.go('back')
 
 
 
