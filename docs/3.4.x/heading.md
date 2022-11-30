@@ -1,6 +1,8 @@
 ---
 id: heading
 title: Heading
+metaTitle: Heading | NativeBase
+metaDescription: Heading in NativeBase composes Text so one can use all the style props to render headlines. Learn more here about basic heading, sizes, composition, and more.
 ---
 
 import { ComponentTheme } from '../src/components';
@@ -8,8 +10,8 @@ import { ComponentTheme } from '../src/components';
 `Heading` composes [`Text`](/text) so one can use all the style props to render headlines.
 
 ```jsx isShowcase
-import React from 'react';
-import { Heading } from 'native-base';
+import React from "react";
+import { Heading } from "native-base";
 
 export function Example() {
   return <Heading>I'm a Heading</Heading>;
@@ -19,7 +21,7 @@ export function Example() {
 ## Import
 
 ```jsx
-import { Heading } from 'native-base';
+import { Heading } from "native-base";
 ```
 
 ## Example
