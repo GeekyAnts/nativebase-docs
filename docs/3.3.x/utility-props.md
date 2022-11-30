@@ -1,6 +1,8 @@
 ---
 id: utility-props
 title: Utility Props
+metaTitle: Utility Props | NativeBase
+metaDescription: Explore the properties of style props in NativeBase like margin and padding. Discover how they are used to style components by passing props to them.
 ---
 
 Style props are a way to alter the style of a component by simply passing props to it. It helps to save time by providing helpful shorthand ways to style components.
