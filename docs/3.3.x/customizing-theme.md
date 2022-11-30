@@ -1,6 +1,8 @@
 ---
 id: customizing-theme
 title: Customizing Theme
+metaTitle: Customizing Theme | NativeBase
+metaDescription: The theme is one of the core elements of NativeBase. Learn more about the theme of NativeBase, what it looks like, and how to customize it to your liking.
 ---
 
 import { NativeBaseProvider, Box } from 'native-base';
