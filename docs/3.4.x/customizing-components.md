@@ -1,6 +1,8 @@
 ---
 id: customizing-components
 title: Customizing Components
+metaTitle: Customizing Components | NativeBase
+metaDescription: Theme customization is at the heart of NativeBase. Learn how to customize components easily with examples and the difference between baseStyle and defaultProps.
 ---
 
 Theme customisation is at the heart of NativeBase. Using NativeBase's `extendTheme` function, we can customise components.
