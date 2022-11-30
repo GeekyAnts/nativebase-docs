@@ -103,7 +103,8 @@ function Layout({
       ? frontMatter.title + " | NativeBase "
       : pages?.currentPage?.title + " | NativeBase "
   }`;
-
+  const { metaTitle, metaDescription } = frontMatter;
+  console.log(metaTitle, metaDescription);
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
 
   return (
@@ -115,11 +116,8 @@ function Layout({
           content="Universal Components for React and React Native"
         />
         {/* og meta links */}
-        <meta property="og:title" content={title} />
-        <meta
-          property="og:description"
-          content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
-        />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:url" content="https://docs.nativebase.io" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="NativeBase" />

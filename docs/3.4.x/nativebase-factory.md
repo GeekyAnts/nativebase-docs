@@ -1,6 +1,8 @@
 ---
 id: nativebase-factory
 title: NativeBase Factory
+metaTitle: NativeBase Factory | NativeBase
+metaDescription: NativeBase factory is a function that converts Non-NativeBase components to NativeBase-enabled components so you can pass style props to them.
 ---
 
 NativeBase factory is a function that converts Non-NativeBase components to NativeBase enabled components so you can pass style props to them.
