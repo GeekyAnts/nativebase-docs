@@ -1,6 +1,8 @@
 ---
 id: default-theme
 title: Default Theme
+metaTitle: Default Theme | NativeBase
+metaDescription: Theming in NativeBase is based on the Styled System Specification. Learn more here about default theme and how to use theme object in NativeBase.
 ---
 
 import { ColorsBlock, FontBlocks, SpaceBlocks } from "../src/components/index";
@@ -11,7 +13,7 @@ Theming in NativeBase is based on the **[Styled System Theme Specification](htt
 
 ## Colors
 
-You can add a `theme.colors` object to provide colors for your project. By default, these colors can be referenced by the  `color`, `borderColor`, `backgroundColor`, etc. props.
+You can add a `theme.colors` object to provide colors for your project. By default, these colors can be referenced by the `color`, `borderColor`, `backgroundColor`, etc. props.
 You can also add `.alpha:{number}` to add levels of opacity to a colour. The number can also be added in the theme file.
 Ex: `red.300:alpha.30`, You can read more about this in [`opacity section`](default-theme#opacity)
 

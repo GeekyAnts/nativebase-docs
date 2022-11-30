@@ -1,6 +1,8 @@
 ---
 id: default-theme
 title: Default Theme
+metaTitle: Default Theme | NativeBase
+metaDescription: Theming in NativeBase is based on the Styled System Specification. Learn more here about default theme and how to use theme object in NativeBase.
 ---
 
 import { ColorsBlock, FontBlocks, SpaceBlocks } from "../../src/components/index";
