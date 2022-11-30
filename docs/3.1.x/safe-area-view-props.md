@@ -1,6 +1,8 @@
 ---
 id: safe-area-view-props
 title: SafeAreaView Props
+metaTitle: SafeAreaView Props | NativeBase
+metaDescription: In NativeBase, make components respect the SafeAreaView of the device, with props you can use with Box component, which apply a safe padding to your component.
 ---
 
 To make your components respect the [SafeAreaView](https://reactnative.dev/docs/safeareaview) of the device, we have provided some props that you can use with Box component. They apply a safe padding to your component in the parts decided by the passed props. These props accept either a boolean or a number. If a Boolean is passed, then the component takes a flexible inset and adjusts its children according to the device. If a number is passed, then it provides a fixed inset in the chosen direction.
@@ -26,8 +28,8 @@ SafeAreaView props can only be applied on [Box](box.md) as of now. To make your 
 ### Flexible SafeArea
 
 ```jsx isLive=true
-import React from 'react';
-import { NativeBaseProvider, Box, Text } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Box, Text } from "native-base";
 function MyComponent() {
   return (
     // This would look different on devices with different insets
@@ -50,8 +52,8 @@ export function Example() {
 ### Fixed SafeArea
 
 ```jsx isLive=true
-import React from 'react';
-import { NativeBaseProvider, Box, Text } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Box, Text } from "native-base";
 function MyComponent() {
   return (
     // This would look same on all devices
@@ -76,8 +78,8 @@ export function Example() {
 If you want to add the SafeAreaView props to other components, you can use the hook. Since `SafeAreaView` props add relevant padding to the components, you will need to pass the padding manually that you are applying to the component for it to return the SafeArea adjusted padding.
 
 ```jsx isLive=true
-import React from 'react';
-import { NativeBaseProvider, Box, Text, useSafeArea } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Box, Text, useSafeArea } from "native-base";
 function MyComponent() {
   const safeAreaProps = useSafeArea({ safeAreaTop: true, pt: 2 });
   return (
