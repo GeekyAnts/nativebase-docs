@@ -1,6 +1,8 @@
 ---
 id: slide
 title: Slide
+metaTitle: Slider | NativeBase
+metaDescription: The slider component in NativeBase allows users to select options from a given range of values. Explore slider colors, values, size, and more with examples here.
 ---
 
 Slide component provides a declarative API to add sliding transitions.
