@@ -1,3 +1,10 @@
+---
+id: card
+title: Card
+metaTitle: Card | NativeBase
+metaDescription: In NativeBase v3 card components have been removed as card layouts are very easy to create using primitive components. Read on for details and code comparison.
+---
+
 With NativeBase v3 we have removed Card components because as it's very simple to create various card layout using primitive components.
 
 ## Code Comparison
@@ -11,7 +18,7 @@ values={[
 <DocTabItem value="v2">
 
 ```tsx
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   Container,
   Header,
@@ -20,7 +27,7 @@ import {
   CardItem,
   Text,
   Body,
-} from 'native-base';
+} from "native-base";
 export default class CardItemBordered extends Component {
   render() {
     return (
@@ -55,8 +62,8 @@ export default class CardItemBordered extends Component {
 <DocTabItem value="v3">
 
 ```tsx
-import React from 'react';
-import { VStack, Box, Divider } from 'native-base';
+import React from "react";
+import { VStack, Box, Divider } from "native-base";
 
 export default function () {
   return (
