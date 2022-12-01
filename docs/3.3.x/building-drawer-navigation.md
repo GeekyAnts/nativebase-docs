@@ -1,6 +1,8 @@
 ---
 id: building-drawer-navigation
 title: Drawer Navigation
+metaTitle: Drawer Navigation | NativeBase
+metaDescription: In NativeBase, a common pattern in Drawer Navigation is to use drawer from the left or right side for navigating between screens. Read this to know more.
 ---
 
 Common pattern in navigation is to use drawer from left (sometimes right) side for navigating between screens.
