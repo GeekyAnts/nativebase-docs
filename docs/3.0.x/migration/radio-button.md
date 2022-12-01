@@ -1,3 +1,10 @@
+---
+id: radio-button
+title: Radio Button
+metaTitle: Radio Button | NativeBase
+metaDescription: Migrating Radio to NativeBase v3 will provide a lot more design, size, color, and customization options. Read on for more, an overview and the code comparison.
+---
+
 Migrating [`Radio`](/radio) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
 
 ## Overview
@@ -21,13 +28,13 @@ values={[
 <DocTabItem value="v2">
 
 ```tsx
-import React, { Component } from 'react';
-import { ListItem, Container, Content, Header, Text, Radio } from 'native-base';
+import React, { Component } from "react";
+import { ListItem, Container, Content, Header, Text, Radio } from "native-base";
 export default class RadioButtonExample extends Component {
   constructor() {
     super();
     this.state = {
-      itemSelected: '',
+      itemSelected: "",
     };
   }
   render() {
@@ -37,15 +44,15 @@ export default class RadioButtonExample extends Component {
         <Content>
           <ListItem>
             <Radio
-              onPress={() => this.setState({ itemSelected: 'one' })}
-              selected={this.state.itemSelected == 'one'}
+              onPress={() => this.setState({ itemSelected: "one" })}
+              selected={this.state.itemSelected == "one"}
             />
             <Text>One</Text>
           </ListItem>
           <ListItem>
             <Radio
-              onPress={() => this.setState({ itemSelected: 'two' })}
-              selected={this.state.itemSelected == 'two'}
+              onPress={() => this.setState({ itemSelected: "two" })}
+              selected={this.state.itemSelected == "two"}
             />
             <Text>Two</Text>
           </ListItem>
@@ -60,10 +67,10 @@ export default class RadioButtonExample extends Component {
 <DocTabItem value="v3">
 
 ```tsx
-import React from 'react';
-import { Radio } from 'native-base';
+import React from "react";
+import { Radio } from "native-base";
 export default function () {
-  const [value, setValue] = React.useState('one');
+  const [value, setValue] = React.useState("one");
   return (
     <Radio.Group
       name="myRadioGroup"
