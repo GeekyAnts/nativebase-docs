@@ -1,6 +1,8 @@
 ---
 id: presence-transition
 title: PresenceTransition
+metaTitle: PresenceTransition | NativeBase
+metaDescription: PresenceTransition component in NativeBase provides a declarative API to add entry and exit transitions. Read this document to know more about the component.
 ---
 
 PresenceTransition provides a declarative API to add entry and exit transitions.
