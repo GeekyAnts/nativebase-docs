@@ -1,6 +1,8 @@
 ---
 id: app-drawer
 title: App drawer
+metaTitle: App drawer | NativeBase
+metaDescription: Creating an app drawer-like layout in NativeBase is very simple using FlatList. Read this document to learn more about how to create an app drawer with example.
 ---
 
 Creating an app drawer like layout is very common and with NativeBase's SimpleGrid make this extremely simple while still keeping it extremely customisable. Here is an example to illustrate it.
