@@ -1,6 +1,8 @@
 ---
 id: keyboardAvoidingView
 title: KeyboardAvoidingView
+metaTitle: KeyboardAvoidingView | NativeBase
+metaDescription:  In NativeBase KeyboardAvoidingView provides a view that moves out of the way of virtual keyboard automatically. More information on KeyboardAvoidingView here.
 ---
 
 Provides a view that moves out of the way of virtual keyboard automatically. It is a component to solve the common problem of views that need to move out of the way of the virtual keyboard. It can automatically adjust either its height, position, or bottom padding based on the keyboard height.
