@@ -14,5 +14,9 @@ describe('ContributionPage', () => {
         ContributionNativeBase.pageTitle();
         ContributionNativeBase.codeofConduct();
         ContributionNativeBase.gitHub();
-    })
+        ContributionNativeBase.releaseSchedule();
+        ContributionNativeBase.gitHubIssues();
+        ContributionNativeBase.issueHelper();
+        
+        })
 })

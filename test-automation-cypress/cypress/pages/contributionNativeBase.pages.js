@@ -34,7 +34,40 @@ var ContributionNativeBase = {
         .scrollIntoView().should('be.visible').click()
         cy.go('back');
         return this;
+    },
+    templates: function(){
+        cy.xpath('//span[normalize-space()="template."]',{timeout: 10000})
+        .scrollIntoView({easing:'linear'}).should('be.visible').click();
+        cy.go('back');
+        return this;
+    },
+    faq: function(){
+        cy.xpath('//span[normalize-space()="FAQ."]',{timeout: 10000})
+        .scrollIntoView({easing: 'linear'}).should('be.visible').click();
+        cy.go('back');
+        return this;
+    },
+    contributetoopensourceproject:  function(){
+        cy.xpath('//span[contains(text(),"How to Contribute to an Open Source Project on Git")]',{timeout: 10000})
+        .scrollIntoView({easing: 'linear'}).should('be.visible').click();
+        cy.go('back');
+        return this;
+    },
+    previouspage: function(){
+        cy.xpath('(//div[@class="css-901oao r-1yvu97 r-pv2lrm r-13uqrnb r-16dba41 r-oxtfae r-dhbnww"])[1]',{timeout: 10000})
+        .scrollIntoView({easing:'linear'}).should('be.visible').click();
+        cy.go('back');
+        return this;
+    },
+    nextpage : function(){
+        cy.xpath('(//div[@class="css-901oao r-1yvu97 r-pv2lrm r-13uqrnb r-16dba41 r-oxtfae r-dhbnww r-1ff274t"])[1]',{timeout: 1000})
+        .scrollIntoView({easing: 'linear'}).should('be.visible').click();
+        cy.go('back');
+        return this;
     }
+
+
+
     
 
 }
