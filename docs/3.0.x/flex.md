@@ -1,6 +1,8 @@
 ---
 id: flex
 title: Flex
+metaTitle: Flex | NativeBase
+metaDescription: Flex in NativeBase provides helpful style shorthand and is a Box with display:flex. Learn about the usage of flex components with examples in this document.
 ---
 
 `Flex` provides helpful style shorthand and is a [`Box`](box.md) with `display: flex`.
@@ -8,7 +10,7 @@ title: Flex
 ## Import
 
 ```jsx
-import { Flex, Spacer } from 'native-base';
+import { Flex, Spacer } from "native-base";
 ```
 
 - `Flex`: a **[Box](box.md)** with `display: flex`
