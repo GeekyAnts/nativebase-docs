@@ -1,7 +1,7 @@
 import CreatingUniversalAppWithNB from "../../pages/creatingUniversalApp.pages";
 describe('creating Universal App',()=>{
     beforeEach(() => {
-        cy.viewport(1920,1080)
+        cy.viewport(1920,1900)
 
         cy.visit('https://docs.nativebase.io/solito')
         Cypress.on("uncaught:exception", (err, runnable) => {
@@ -13,7 +13,13 @@ describe('creating Universal App',()=>{
     it('Checking every element', ()=>{
        
         CreatingUniversalAppWithNB.pageTitle()
-        CreatingUniversalAppWithNB.githubRepo();
+        CreatingUniversalAppWithNB.githubWithoutTypecript();
+        CreatingUniversalAppWithNB.githubWithTypecript();
+        CreatingUniversalAppWithNB.previousButton();
+
+CreatingUniversalAppWithNB.NextButton();
+
+
 
     })
 })
