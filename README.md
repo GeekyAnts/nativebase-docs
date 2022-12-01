@@ -6,7 +6,7 @@ To get started with contributing to NativeBase Docs, please follow the below ste
 
 - Fork the repository.
 - Clone your forked repository.
-- Run `npm install` or `yarn`.
+- Run `npm install` or `yarn`
 - Run `npm run dev` or `yarn dev` to start the development server.
 - Go to the `docs` directory.
 - Make your changes in the next folder.
