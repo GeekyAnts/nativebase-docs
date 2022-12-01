@@ -24,6 +24,5 @@ describe('ContributionPage', () => {
         ContributionNativeBase.previouspage();
         ContributionNativeBase.nextpage();
         ContributionNativeBase.themechange();
-
         })
 })
