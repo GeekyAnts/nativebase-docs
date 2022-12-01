@@ -1,6 +1,8 @@
 ---
 id: stagger
 title: Stagger
+metaTitle: Stagger | NativeBase
+metaDescription: "The stagger component in NativeBase provides a declarative API to add staggered transitions. Read this documentation to explore more about it with examples."
 ---
 
 `Stagger` component provides a declarative API to add staggered transitions.
