@@ -1,6 +1,9 @@
 ---
 id: building-app-bar
 title: AppBar
+metaTitle: AppBar | NativeBase
+metaDescription: The App Bar in NativeBase provides content and actions related to the current screen. This document shows how you can create it using layout components.
+
 ---
 
 The top app bar provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.
