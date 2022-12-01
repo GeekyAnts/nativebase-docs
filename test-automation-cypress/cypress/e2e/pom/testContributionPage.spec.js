@@ -17,6 +17,12 @@ describe('ContributionPage', () => {
         ContributionNativeBase.releaseSchedule();
         ContributionNativeBase.gitHubIssues();
         ContributionNativeBase.issueHelper();
-        
+        ContributionNativeBase.templates();
+        ContributionNativeBase.faq();
+        ContributionNativeBase.contributetoopensourceproject();
+        ContributionNativeBase.quicknav();
+        ContributionNativeBase.previouspage();
+        ContributionNativeBase.nextpage();
+
         })
 })
