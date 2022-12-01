@@ -1,6 +1,8 @@
 ---
 id: avatar
 title: Avatar
+metaTitle: Avatar | NativeBase
+metaDescription: "The Avatar component in NativeBase can display profile pictures, or a fallback image as a representation of the user. More on avatar icon types with examples."
 ---
 
 import { ComponentTheme } from '../../src/components';
