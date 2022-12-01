@@ -23,6 +23,7 @@ describe('ContributionPage', () => {
         ContributionNativeBase.quicknav();
         ContributionNativeBase.previouspage();
         ContributionNativeBase.nextpage();
+        ContributionNativeBase.themechange();
 
         })
 })
