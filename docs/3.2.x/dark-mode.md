@@ -1,6 +1,8 @@
 ---
 id: dark-mode
 title: Making Components Dark Mode Compatible
+metaTitle: Making components dark mode compatible | NativeBase
+metaDescription: Most of the components in NativeBase are dark mode compatible. In case you might need to make your component respond to color mode, follow this guideline.
 ---
 
 By default, most of NativeBase's components are dark mode compatible. In some scenario, you might need to make your component respond to color mode. There are 2 ways to achieve this:
