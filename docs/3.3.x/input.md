@@ -7,6 +7,8 @@ metaDescription: The Input component in NativeBase allows a user to provide inpu
 
 import { ComponentTheme } from '../src/components';
 
+The `Input` component allows a user to provide input in a text field.
+
 ```jsx isShowcase
 import React from "react";
 import { Input } from "native-base";
@@ -15,15 +17,21 @@ export const Example = () => {
   return (
     <Input
       shadow={2}
-      _light={{ bg: "coolGray.100" }}
-      _dark={{ bg: "coolGray.800" }}
+      _light={{
+        bg: "coolGray.100",
+        _hover: { bg: "coolGray.200" },
+        _focus: { bg: "coolGray.200:alpha.70" },
+      }}
+      _dark={{
+        bg: "coolGray.800",
+        _hover: { bg: "coolGray.900" },
+        _focus: { bg: "coolGray.900:alpha.70" },
+      }}
       placeholder="Enter your name"
     />
   );
 };
 ```
-
-The `Input` component allows a user to provide input in a text field.
 
 ## Examples
 
