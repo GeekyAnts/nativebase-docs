@@ -160,7 +160,7 @@ function Layout({
         `}
       </Script>
       {/* will replace it when nativebase has semantic tagging */}
-      <h1 style={{ display: "none" }}>{title}</h1>
+     
       <Box
         w="100%"
         h={{ base: "100%", md: "100vh" }}
