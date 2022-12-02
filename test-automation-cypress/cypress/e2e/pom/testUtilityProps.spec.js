@@ -4,6 +4,9 @@ describe('Utility Props Page',()=>{
     beforeEach('URL',()=>{
         cy.viewport(1920,1080)
         cy.visit('https://docs.nativebase.io/utility-props-specificity');
+        Cypress.on('uncaught:exception', (err, runnable) => {
+            return false
+            })
 
         
     })
