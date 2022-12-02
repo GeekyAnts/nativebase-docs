@@ -1,0 +1,1 @@
+  cy.writeFile("/Users/achantaprakash/Projects/Native Base/nativebase-docs/test-automation-cypress/cypress/pages/files/utilityprops-1.txt", 'Hello World')
