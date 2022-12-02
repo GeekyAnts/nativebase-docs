@@ -12,12 +12,13 @@ var UtilityProps = {
 
     //Clicking and Copying the basic prop
     similarProps: function(){
-        cy.xpath('(//*[contains(text(), "Copy")])[1]').click()
-        cy.window().its('navigator.clipboard').invoke('readText').then(cy.log)
-        // .then((copy)=>{
-        //     cy.log(copy)
-        //     console.log(copy);
-        // })
+        cy.xpath('(//div[@role="button"])[5]').click();
+      //  cy.assertValueCopiedToClipboard('<Input px="2" p="0" />')
+        cy.window().its('navigator.clipboard').invoke('readText')
+        .then((copy)=>{
+            cy.log(copy)
+            cy.writeFile("/Users/achantaprakash/Projects/Native Base/nativebase-docs/test-automation-cypress/cypress/pages/files/utilityprops-1.txt",copy);
+        })
         return this;
     },
 
