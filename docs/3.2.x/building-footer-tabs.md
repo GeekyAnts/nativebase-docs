@@ -1,6 +1,8 @@
 ---
 id: building-footer-tabs
 title: Footer
+metaTitle: Footer | NativeBase
+metaDescription: Making Footer in our apps is very simple in NativeBase V3. Read this document where we explain how to make Footer using HStack component with useful examples.
 ---
 
 With NativeBase v3 we have removed FooterTab components because as it's very simple to create it using HStack component. Here is an example of how we can make Footer in our Apps.

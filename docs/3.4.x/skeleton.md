@@ -1,6 +1,8 @@
 ---
 id: skeleton
 title: Skeleton
+metaTitle: Skeleton | NativeBase
+metaDescription: Skeleton in NativeBase showcases the loading state of a component. Learn more about usage, color, composition, and IsLoaded in skeleton from this document.
 ---
 
 import { ComponentTheme } from '../src/components';

@@ -1,6 +1,8 @@
 ---
 id: statusBar
 title: StatusBar
+metaTitle: StatusBar | NativeBase
+metaDescription: "In NativeBase, the StatusBar component controls the app's status bar. Read this document for more information and examples on the use of StatusBar."
 ---
 
 Component to control the app status bar.

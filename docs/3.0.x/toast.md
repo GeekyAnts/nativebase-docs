@@ -1,6 +1,8 @@
 ---
 id: toast
 title: Toast
+metaTitle: Toast | NativeBase
+metaDescription: The Toast component in NativeBase displays alerts on top of an overlay. Read more on toast usage, toast message in react and react native and how to configure them.
 ---
 
 import { ComponentTheme } from '../../src/components';
@@ -12,7 +14,7 @@ Toasts can be configured to appear at either the top or the bottom of an applica
 ## Import
 
 ```jsx
-import { useToast } from 'native-base';
+import { useToast } from "native-base";
 ```
 
 ## Examples

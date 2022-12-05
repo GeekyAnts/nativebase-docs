@@ -1,6 +1,8 @@
 ---
 id: customizingFonts
 title: Customising Fonts
+metaTitle: Customizing Fonts | NativeBase
+metaDescription: Adding a custom font family can be done in React Native by following three simple steps. Read on to know the steps to follow and how to use fonts in NativeBase.
 ---
 
 Follow 3 simple steps to add a custom font family.

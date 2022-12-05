@@ -1,6 +1,8 @@
 ---
 id: center
 title: Center
+metaTitle: Center | NativeBase
+metaDescription: In NativeBase, center aligns its contents to the center within itself. More on center types and examples such as basic, icon frames, and square and circle.
 ---
 
 `Center` aligns its contents to the center within itself. It is a layout component.

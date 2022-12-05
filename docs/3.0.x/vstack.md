@@ -1,6 +1,8 @@
 ---
 id: VStack
 title: VStack / Column
+metaTitle: VStack / Column | NativeBase
+metaDescription: Vstack in NativeBase aligns items vertically. Column is an alias for Vstack. You can learn more about the usage of Vstack/Column component in this document.
 ---
 
 `VStack` aligns items vertically. `Column` is also an alias for `VStack`.
@@ -8,7 +10,7 @@ title: VStack / Column
 ## Import
 
 ```jsx
-import { VStack } from 'native-base';
+import { VStack } from "native-base";
 ```
 
 ## Usage

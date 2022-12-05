@@ -1,6 +1,8 @@
 ---
 id: box
 title: Box
+metaTitle: Box | NativeBase
+metaDescription: Box in NativeBase is a generic component for low-level layout needs. More on box component types- basic, composition, with linear gradient, and box (with ref).
 ---
 
 This is a generic component for low level layout needs. It is similar to a [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) in HTML.

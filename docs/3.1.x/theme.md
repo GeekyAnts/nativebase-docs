@@ -1,6 +1,8 @@
 ---
 id: theme
 title: Using Theme
+metaTitle: useTheme | NativeBase
+metaDescription: In NativeBase useTheme is a custom hook to call theme object from the context. Read this document to know more about useTheme hook and its uses with examples.
 ---
 
 NativeBase provides multiple tools to use the central theme defined in the app. The first tool is [`useTheme`](/use-theme), which you can use to access the values from the current theme.

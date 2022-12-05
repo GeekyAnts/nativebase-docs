@@ -1,6 +1,8 @@
 ---
 id: skeleton
 title: Skeleton
+metaTitle: Skeleton | NativeBase
+metaDescription: Skeleton in NativeBase showcases the loading state of a component. Learn more about usage, color, composition, and IsLoaded in skeleton from this document.
 ---
 
 import { ComponentTheme } from '../src/components';
@@ -8,8 +10,8 @@ import { ComponentTheme } from '../src/components';
 `Skeleton` showcases the loading state of a component.
 
 ```jsx isShowcase
-import React from 'react';
-import { Skeleton, VStack } from 'native-base';
+import React from "react";
+import { Skeleton, VStack } from "native-base";
 export const Example = () => {
   return (
     <Center w="350">
@@ -21,10 +23,10 @@ export const Example = () => {
         overflow="hidden"
         rounded="md"
         _dark={{
-          borderColor: 'coolGray.500',
+          borderColor: "coolGray.500",
         }}
         _light={{
-          borderColor: 'coolGray.200',
+          borderColor: "coolGray.200",
         }}
       >
         <Skeleton h="40" />

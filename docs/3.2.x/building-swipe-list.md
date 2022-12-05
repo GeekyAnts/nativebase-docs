@@ -1,6 +1,8 @@
 ---
 id: building-swipe-list
 title: Swipe List
+metaTitle: Swipe List | NativeBase
+metaDescription: SwipeList View in NativeBase is a vertical ListView with rows that swipe open and close. Read to learn how we can use React Native Swipe List in NativeBase.
 ---
 
 SwipeListView is a vertical ListView with rows that swipe open and closed. Handles default native behavior such as closing rows when ListView is scrolled or when other rows are opened.

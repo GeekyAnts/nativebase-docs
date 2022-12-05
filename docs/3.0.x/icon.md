@@ -1,6 +1,8 @@
 ---
 id: icon
 title: Icon
+metaTitle: Icon | NativeBase
+metaDescription: Learn all the different ways in which NativeBase allows you to use icons. Get to know more about creating custom icons and more icon functions in this document.
 ---
 
 You can use icons in multiple ways in NativeBase:

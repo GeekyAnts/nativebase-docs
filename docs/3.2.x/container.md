@@ -1,6 +1,8 @@
 ---
 id: container
 title: Container
+metaTitle: Container | NativeBase
+metaDescription: The Container in NativeBase restricts a content width according to the current breakpoint while keeping the size fluid. More on Container usage with examples.
 ---
 
 The `Container` restricts a content's width according to current breakpoint, while keeping the size fluid.

@@ -1,6 +1,8 @@
 ---
 id: divider
 title: Divider
+metaTitle: Divider | NativeBase
+metaDescription: "In NativeBase, Divider can visually separate content in a given list or group. Learn more here about basic, divider orientation, and composition with examples."
 ---
 
 import { ComponentTheme } from '../../src/components';
@@ -10,7 +12,7 @@ import { ComponentTheme } from '../../src/components';
 ## Import
 
 ```jsx
-import { Divider } from 'native-base';
+import { Divider } from "native-base";
 ```
 
 ## Examples

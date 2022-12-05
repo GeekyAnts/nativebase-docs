@@ -1,6 +1,8 @@
 ---
 id: z-stack
 title: ZStack
+metaTitle: ZStack | NativeBase
+metaDescription: In NativeBase ZStack aligns items to the z-axis. Learn more about the types of ZStack component such as basic and items centered with examples in this document.
 ---
 
 `ZStack` aligns items to the z-axis.

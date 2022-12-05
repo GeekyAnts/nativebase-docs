@@ -1,6 +1,8 @@
 ---
 id: image
 title: Image
+metaTitle: Image | NativeBase
+metaDescription: "The image component in NativeBase allows the display of images. An analysis of image sizes, border radius, fallback and other examples of this component here."
 ---
 
 The `Image` component allows one to display images.

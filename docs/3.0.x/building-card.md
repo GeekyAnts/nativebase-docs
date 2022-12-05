@@ -1,6 +1,8 @@
 ---
 id: buildingCard
 title: Card
+metaTitle: Card | NativeBase
+metaDescription: In NativeBase, a card is a flexible and extensible content container. Read this document to learn more about cards, how to create them, and the most common designs.
 ---
 
 A card is a flexible and extensible content container. It comes in caries shapes and sizes and here we'll make few of them.

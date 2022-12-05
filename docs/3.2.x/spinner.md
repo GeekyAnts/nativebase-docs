@@ -1,6 +1,8 @@
 ---
 id: spinner
 title: Spinner
+metaTitle: Spinner | NativeBase
+metaDescription: " Spinner component in NativeBase gives visual cues to actions that are processing or awaiting changes. Learn more about basic spinners, colors and sizes here."
 ---
 
 ## Examples

@@ -1,6 +1,8 @@
 ---
 id: breakpoint
 title: Breakpoints
+metaTitle: Breakpoints | NativeBase
+metaDescription: Breakpoints are the building blocks of responsive design. NativeBase provides some default breakpoints which you can check out and update using extendTheme.
 ---
 
 Breakpoints are the building blocks of responsive design. Use them to control when your layout can be adapted at a particular viewport or device size.

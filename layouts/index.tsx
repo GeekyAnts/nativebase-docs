@@ -97,7 +97,7 @@ function Layout({
         (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
         " | NativeBase | Universal Components for React and React Native"
   }`;
-  console.log(title);
+
   const pageTitle = `${
     frontMatter && frontMatter.title
       ? frontMatter.title + " | NativeBase "
@@ -106,7 +106,7 @@ function Layout({
 
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
   const {metaTitle,metaDescription}=frontMatter;
-  // console.log( metaDescription)
+  
   return (
     <>
       <Head>
@@ -119,8 +119,7 @@ function Layout({
         <meta property="og:title" content={metaTitle} />
         <meta
           property="og:description"
-          content={metaDescription}
-          />
+          content={metaDescription}  />
         <meta property="og:url" content="https://docs.nativebase.io" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="NativeBase" />

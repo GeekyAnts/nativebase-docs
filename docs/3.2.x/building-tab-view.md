@@ -1,6 +1,8 @@
 ---
 id: building-tab-view
 title: Tab View
+metaTitle: Tab View | NativeBase
+metaDescription: This is a cross-platform Tab View component for React Native that can be used in NativeBase. Read this document to learn more about the component with examples.
 ---
 
 A cross-platform Tab View component for React Native

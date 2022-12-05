@@ -1,6 +1,8 @@
 ---
 id: default-theme
 title: Default Theme
+metaTitle: Default Theme | NativeBase
+metaDescription: Theming in NativeBase is based on the Styled System Specification. Learn more here about default theme and how to use theme object in NativeBase.
 ---
 
 import { ColorsBlock, FontBlocks, SpaceBlocks } from "../../src/components/index";
@@ -11,7 +13,7 @@ Theming in NativeBase is based on the **[Styled System Theme Specification](htt
 
 ## Colors
 
-You can add a `theme.colors` object to provide colors for your project. By default, these colors can be referenced by the  `color`, `borderColor`, `backgroundColor`, etc. props.
+You can add a `theme.colors` object to provide colors for your project. By default, these colors can be referenced by the `color`, `borderColor`, `backgroundColor`, etc. props.
 
 We recommend adding a palette that ranges from `50` to `900`. Tools like **[Smart Swatch](https://smart-swatch.netlify.app/)**, **[Palx](https://palx.jxnblk.com/)** are available to generate these palettes.
 
@@ -30,28 +32,28 @@ To manage Typography options, the theme object supports the following keys:
 ```jsx
 const typography = {
   letterSpacings: {
-    '2xs': -1.5,
-    'xs': -0.5,
-    'sm': 0,
-    'md': 0.1,
-    'lg': 0.15,
-    'xl': 0.25,
-    '2xl': 0.4,
-    '3xl': 0.5,
-    '4xl': 1.25,
-    '5xl': 1.5,
+    "2xs": -1.5,
+    "xs": -0.5,
+    "sm": 0,
+    "md": 0.1,
+    "lg": 0.15,
+    "xl": 0.25,
+    "2xl": 0.4,
+    "3xl": 0.5,
+    "4xl": 1.25,
+    "5xl": 1.5,
   },
   lineHeights: {
-    '2xs': 16,
-    'xs': 18,
-    'sm': 20,
-    'md': 22,
-    'lg': 24,
-    'xl': 28,
-    '2xl': 32,
-    '3xl': 40,
-    '4xl': 48,
-    '5xl': 64,
+    "2xs": 16,
+    "xs": 18,
+    "sm": 20,
+    "md": 22,
+    "lg": 24,
+    "xl": 28,
+    "2xl": 32,
+    "3xl": 40,
+    "4xl": 48,
+    "5xl": 64,
   },
   fontWeights: {
     hairline: 100,
@@ -71,20 +73,20 @@ const typography = {
     mono: undefined,
   },
   fontSizes: {
-    '2xs': 10,
-    'xs': 12,
-    'sm': 14,
-    'md': 16,
-    'lg': 18,
-    'xl': 20,
-    '2xl': 24,
-    '3xl': 30,
-    '4xl': 36,
-    '5xl': 48,
-    '6xl': 60,
-    '7xl': 72,
-    '8xl': 96,
-    '9xl': 128,
+    "2xs": 10,
+    "xs": 12,
+    "sm": 14,
+    "md": 16,
+    "lg": 18,
+    "xl": 20,
+    "2xl": 24,
+    "3xl": 30,
+    "4xl": 36,
+    "5xl": 48,
+    "6xl": 60,
+    "7xl": 72,
+    "8xl": 96,
+    "9xl": 128,
   },
 };
 ```
@@ -128,7 +130,7 @@ The `shadow` key allows you to customize the global box shadow for your project.
 ```jsx
 export default {
   0: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 1,
@@ -138,7 +140,7 @@ export default {
     elevation: 1,
   },
   1: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 1,
@@ -148,7 +150,7 @@ export default {
     elevation: 2,
   },
   2: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 1,
@@ -158,7 +160,7 @@ export default {
     elevation: 3,
   },
   3: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 2,
@@ -168,7 +170,7 @@ export default {
     elevation: 4,
   },
   4: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 2,
@@ -178,7 +180,7 @@ export default {
     elevation: 5,
   },
   5: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 3,
@@ -188,7 +190,7 @@ export default {
     elevation: 6,
   },
   6: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 3,
@@ -198,7 +200,7 @@ export default {
     elevation: 7,
   },
   7: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 4,
@@ -208,7 +210,7 @@ export default {
     elevation: 8,
   },
   8: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 4,
@@ -218,7 +220,7 @@ export default {
     elevation: 9,
   },
   9: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 5,

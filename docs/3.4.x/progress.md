@@ -1,6 +1,8 @@
 ---
 id: progress
 title: Progress
+metaTitle: Progress | NativeBase
+metaDescription: "The Progress component in NativeBase helps show the progress status for a time-consuming task that consists of several steps. Read this document to learn more."
 ---
 
 import { ComponentTheme } from '../src/components';

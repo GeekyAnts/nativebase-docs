@@ -1,6 +1,8 @@
 ---
 id: alert
 title: Alert
+metaTitle: Alert | NativeBase
+metaDescription: The Alert component in NativeBase is used to convey warnings and important messages to the user. Explore alert component types with examples in this document.
 ---
 
 import { ComponentTheme } from '../../src/components';
