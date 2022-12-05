@@ -1,6 +1,8 @@
 ---
 id: tooltip
 title: Tooltip
+metaTitle: Tooltip | NativeBase
+metaDescription: The react native Tooltip component in NativeBase provides a brief, informative message when a user interacts with an element. Learn more on customizing Tooltip here.
 ---
 
 import { ComponentTheme } from '../../src/components';

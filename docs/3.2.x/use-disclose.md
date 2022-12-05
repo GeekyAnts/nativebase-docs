@@ -1,6 +1,8 @@
 ---
 id: use-disclosure
 title: useDisclose
+metaTitle: useDisclose | NativeBase
+metaDescription: useDisclose in NativeBase handles common open, close, or toggle scenarios. It can be used to control feedback components. Know more here about useDisclose.
 ---
 
 `useDisclose` is a custom hook used to help handle common `open`, `close`, or `toggle` scenarios. It can be used to control feedback component such as **Modal**, **AlertDialog**, **Drawer**, etc.
@@ -8,7 +10,7 @@ title: useDisclose
 ## Import
 
 ```jsx
-import { useDisclose } from 'native-base';
+import { useDisclose } from "native-base";
 ```
 
 ## Example

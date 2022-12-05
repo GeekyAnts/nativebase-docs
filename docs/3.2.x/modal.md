@@ -1,6 +1,8 @@
 ---
 id: modal
 title: Modal
+metaTitle: Modal | NativeBase
+metaDescription: The react native modal component in NativeBase is an overlay on the primary window or another dialog window. Read more on modal sizes, placement and multiple modals.
 ---
 
 import { ComponentTheme } from '../../src/components';
@@ -19,7 +21,7 @@ NativeBase exports a Modal Compound component:
 - `Modal.CloseButton`: The button that closes the modal.
 
 ```jsx
-import { Modal } from 'native-base';
+import { Modal } from "native-base";
 ```
 
 ## Examples
@@ -78,7 +80,7 @@ If you want a specifically aligned Modal, pass `justifyContent` and `alignItems`
 
 ## Accessibility
 
-Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geekyants.com/) which follows the [Dialog Modal WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/#dialog_modal).
+Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geekyants.com/docs/FocusScope) which follows the [Dialog Modal WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/#dialog_modal).
 
 ### Keyboard Interactions
 

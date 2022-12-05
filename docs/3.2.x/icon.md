@@ -17,7 +17,7 @@ You can use icons in multiple ways in NativeBase:
 
 ```
 
-Apart from the icons provided by [@expo/vector-icon](https://github.com/expo/vector-icons), you can also create custom icons using SVG. You can use all the components from [react-native-svg](https://github.com/software-mansion/react-native-svg).
+Apart from the icons provided by [@expo/vector-icon](https://github.com/expo/vector-icons), you can also create custom icons using SVG. You can use all the components from [react-native-svg](https://github.com/react-native-svg/react-native-svg).
 
 ### NativeBase Icons
 

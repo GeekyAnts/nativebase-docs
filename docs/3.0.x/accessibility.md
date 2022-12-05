@@ -1,6 +1,8 @@
 ---
 id: accessibility
 title: Accessibility
+metaTitle: Accessibility | NativeBase
+metaDescription: NativeBase offers the latest accessibility standards including React Native ARIA and role attributes, focus management, and keyboard navigation.
 ---
 
 NativeBase comes with the latest accessibility standards out of the box including aria and role attributes, focus management, and keyboard navigation.

@@ -1,6 +1,8 @@
 ---
 id: use-theme
 title: useTheme
+metaTitle: useTheme | NativeBase
+metaDescription: In NativeBase useTheme is a custom hook to call theme object from the context. Read this document to know more about useTheme hook and its uses with examples.
 ---
 
 `useTheme` is a custom hook to call theme object from the context.
@@ -8,7 +10,7 @@ title: useTheme
 ## Import
 
 ```jsx
-import { useTheme } from 'native-base';
+import { useTheme } from "native-base";
 ```
 
 ## Example

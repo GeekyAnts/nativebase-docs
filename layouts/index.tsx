@@ -97,7 +97,7 @@ function Layout({
         (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
         " | NativeBase | Universal Components for React and React Native"
   }`;
-  console.log(title);
+
   const pageTitle = `${
     frontMatter && frontMatter.title
       ? frontMatter.title + " | NativeBase "
@@ -105,8 +105,8 @@ function Layout({
   }`;
 
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
-  const {metaTitle,metaDescription}=frontMatter;
-  // console.log( metaDescription)
+  const { metaTitle, metaDescription } = frontMatter;
+  console.log(metaTitle, metaDescription);
   return (
     <>
       <Head>
@@ -117,10 +117,7 @@ function Layout({
         />
         {/* og meta links */}
         <meta property="og:title" content={metaTitle} />
-        <meta
-          property="og:description"
-          content={metaDescription}
-          />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:url" content="https://docs.nativebase.io" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="NativeBase" />
@@ -161,7 +158,7 @@ function Layout({
         `}
       </Script>
       {/* will replace it when nativebase has semantic tagging */}
-     
+      <h1 style={{ display: "none" }}>{title}</h1>
       <Box
         w="100%"
         h={{ base: "100%", md: "100vh" }}

@@ -1,6 +1,8 @@
 ---
 id: pseudo-props-101
 title: 'Pseudo props: Do’s & Dont’s'
+metaTitle: "Pseudo props: Do’s & Dont’s | NativeBase"
+metaDescription: Some key points that NativeBase pseudo props follow. Learn about nesting pseudo props, precedence order for pseudo props, and the _icon pseudo prop.
 ---
 
 Before getting into details of all the common Pseudo Props NativeBase has to offer, let's check some key points that these pseudo props follow.

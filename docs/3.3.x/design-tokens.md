@@ -1,6 +1,8 @@
 ---
 id: design-tokens
 title: Design tokens
+metaTitle: Design tokens | NativeBase
+metaDescription: NativeBase design tokens help construct your own design system. Follow styled-system’s specification to achieve consistent user interfaces across all platforms.
 ---
 
 Design tokens are the values or constants needed to construct a design system. These values can represent spacing, color, typography etc. Design tokens help to achieve consistency in building user interfaces across all platforms.
@@ -10,16 +12,16 @@ Let's take an example by defining a space and color design token.
 ```jsx title="colors"
 const colors = {
   primary: {
-    50: '#ecfeff',
-    100: '#cffafe',
-    200: '#a5f3fc',
-    300: '#67e8f9',
-    400: '#22d3ee',
-    500: '#06b6d4',
-    600: '#0891b2',
-    700: '#0e7490',
-    800: '#155e75',
-    900: '#164e63',
+    50: "#ecfeff",
+    100: "#cffafe",
+    200: "#a5f3fc",
+    300: "#67e8f9",
+    400: "#22d3ee",
+    500: "#06b6d4",
+    600: "#0891b2",
+    700: "#0e7490",
+    800: "#155e75",
+    900: "#164e63",
   },
 };
 ```
@@ -61,7 +63,7 @@ We can use the above tokens in our code instead of using absolute values.
 The above Box will be translated to
 
 ```jsx title="actual applied styles"
-<View style={{ marginTop: 16, backgroundColor: 'cyan.500' }} />
+<View style={{ marginTop: 16, backgroundColor: "cyan.500" }} />
 ```
 
 With NativeBase, you can create your own design system. NativeBase follows the [styled-system's specification](https://styled-system.com/theme-specification/) to construct design systems.
