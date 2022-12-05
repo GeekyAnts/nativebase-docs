@@ -1,6 +1,8 @@
 ---
 id: tabs
 title: Tabs
+metaTitle: Tabs | NativeBase
+metaDescription: API for Tabs in NativeBase is currently in progress. You can check out the recipe for building tabs in this document in the meantime. 
 ---
 
 API for Tabs is in progress, in the meantine you can check this [recipe](/building-tab-view) for building Tabs.

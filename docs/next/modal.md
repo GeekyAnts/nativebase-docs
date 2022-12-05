@@ -1,6 +1,8 @@
 ---
 id: modal
 title: Modal
+metaTitle: Modal | NativeBase
+metaDescription: The react native modal component in NativeBase is an overlay on the primary window or another dialog window. Read more on modal sizes, placement and multiple modals.
 ---
 
 import { ComponentTheme } from '../src/components';

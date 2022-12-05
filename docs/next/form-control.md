@@ -1,6 +1,8 @@
 ---
 id: form-control
 title: FormControl
+metaTitle: FormControl | NativeBase
+metaDescription: NativeBase FormControl is used to form elements by providing context such as isInvalid, isDisabled, and isRequired. Read examples of the FormControl component.
 ---
 
 import { ComponentTheme } from '../src/components';

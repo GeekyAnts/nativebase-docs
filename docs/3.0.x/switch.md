@@ -1,6 +1,8 @@
 ---
 id: switch
 title: Switch
+metaTitle: Switch | NativeBase
+metaDescription: The Switch component in NativeBase provides an alternative to the Checkbox component. More on sizes, track and thumb color of Switch component with examples.
 ---
 
 The `Switch` component is an alternative to the Checkbox component. You can switch between enabled or disabled states.

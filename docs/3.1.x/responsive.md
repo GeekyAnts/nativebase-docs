@@ -1,6 +1,8 @@
 ---
 id: responsive-style
 title: Responsive
+metaTitle: Responsive | NativeBase
+metaDescription: NativeBase v3 supports responsive styles out of the box, allowing you to provide object and array values to add responsive styles.
 ---
 
 NativeBase V3 supports responsive styles out of the box. Instead of manually adding responsiveness to your apps, NativeBase V3 allows you provide object and array values to add responsive styles.
@@ -26,13 +28,13 @@ All style props that arrays as values for responsive styles.
 For example, to make a `Box` width or w responsive using the array syntax, here's what you need to do:
 
 ```jsx isLive=true
-import React from 'react';
-import { NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { NativeBaseProvider, Center } from "native-base";
 function BreakpointExample() {
   return (
     <Center
       bg="emerald.400"
-      _text={{ color: 'white' }}
+      _text={{ color: "white" }}
       rounded="xl"
       w={[24, 48, 72]}
       h={24}
@@ -61,11 +63,11 @@ You can also define responsive values with breakpoint aliases in an object. Any 
 For example, to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
 
 ```jsx isLive=true
-import React from 'react';
-import { Text, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Text, NativeBaseProvider, Center } from "native-base";
 function BreakpointExample() {
   return (
-    <Text fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}>
+    <Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
       This is responsive text
     </Text>
   );
@@ -86,7 +88,7 @@ export function Example() {
 Here's a simple example of a component that uses a stacked layout on small screens, and a side-by-side layout on larger screens.
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   NativeBaseProvider,
   Center,
@@ -95,19 +97,19 @@ import {
   Image,
   Heading,
   Stack,
-} from 'native-base';
+} from "native-base";
 function BreakpointExample() {
   return (
     <Box
-      flexDirection={{ base: 'column', md: 'row' }}
+      flexDirection={{ base: "column", md: "row" }}
       shadow={4}
       rounded="xl"
       overflow="hidden"
     >
-      <Box width={{ md: 24 }} height={{ base: 32, md: '100%' }}>
+      <Box width={{ md: 24 }} height={{ base: 32, md: "100%" }}>
         <Image
           source={{
-            uri: 'https://static.nike.com/a/images/f_auto/dpr_2.0/w_1328,c_limit/b56d1e9b-3861-4c89-995d-b8fb6240a762/nike-just-do-it.jpg',
+            uri: "https://static.nike.com/a/images/f_auto/dpr_2.0/w_1328,c_limit/b56d1e9b-3861-4c89-995d-b8fb6240a762/nike-just-do-it.jpg",
           }}
           alt="Shoes"
         />

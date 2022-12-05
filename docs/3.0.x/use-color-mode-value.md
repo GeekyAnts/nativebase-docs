@@ -1,6 +1,8 @@
 ---
 id: use-color-mode-value
 title: useColorModeValue
+metaTitle: useColorModeValue | NativeBase
+metaDescription: In NativeBase useColorModeValue is a custom hook that can retrieve a value from parameters passed based on active color mode value. Read this document for more.
 ---
 
 `useColorModeValue` is a custom hook used to get a value from either of the parameters passed based on active color mode value.
@@ -8,13 +10,13 @@ title: useColorModeValue
 ## Import
 
 ```jsx
-import { useColorModeValue } from 'native-base';
+import { useColorModeValue } from "native-base";
 ```
 
 ## Example
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   NativeBaseProvider,
   useColorMode,
@@ -22,15 +24,15 @@ import {
   Button,
   Center,
   useColorModeValue,
-} from 'native-base';
+} from "native-base";
 
 function UseColorMode() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Center flex={1} bg={useColorModeValue('white', 'black')}>
+    <Center flex={1} bg={useColorModeValue("white", "black")}>
       <Text fontSize="lg" display="flex">
         The active color mode is
-        <Text bold>{useColorModeValue('Light', 'Dark')}</Text>
+        <Text bold>{useColorModeValue("Light", "Dark")}</Text>
       </Text>
       <Button m={2} onPress={toggleColorMode}>
         Toggle

@@ -1,6 +1,8 @@
 ---
 id: action-sheet
 title: ActionSheet
+metaTitle: ActionSheet | NativeBase
+metaDescription: We have sliced ActionSheet in NativeBase into multiple smaller components to provide more control over the code and to make it more readable. Know more here.
 ---
 
 We have sliced [`Actionsheet`](/action-sheet) into multiple smaller component which not only provides more control over the the code but also makes it more readable.

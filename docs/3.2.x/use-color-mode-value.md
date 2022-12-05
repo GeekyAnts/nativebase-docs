@@ -1,6 +1,8 @@
 ---
 id: use-color-mode-value
 title: useColorModeValue
+metaTitle: useColorModeValue | NativeBase
+metaDescription: In NativeBase useColorModeValue is a custom hook that can retrieve a value from parameters passed based on active color mode value. Read this document for more.
 ---
 
 `useColorModeValue` is a custom hook used to get a value from either of the parameters passed based on active color mode value.
@@ -8,7 +10,7 @@ title: useColorModeValue
 ## Import
 
 ```jsx
-import { useColorModeValue } from 'native-base';
+import { useColorModeValue } from "native-base";
 ```
 
 ## Example

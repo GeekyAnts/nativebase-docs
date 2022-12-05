@@ -1,6 +1,8 @@
 ---
 id: link
 title: Link
+metaTitle: Link | NativeBase
+metaDescription: Links in NativeBase are accessible elements used primarily for navigation. Read on for basic, external link, link with underline and more types with examples.
 ---
 
 import { ComponentTheme } from '../../src/components';
@@ -10,7 +12,7 @@ import { ComponentTheme } from '../../src/components';
 ## Import
 
 ```jsx
-import { Link } from 'native-base';
+import { Link } from "native-base";
 ```
 
 ## Examples
