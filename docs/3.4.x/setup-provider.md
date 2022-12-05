@@ -1,6 +1,8 @@
 ---
 id: setup-provider
 title: Setup NativeBase Provider
+metaTitle: Setup NativeBase Provider | NativeBase
+metaDescription: Learn how to set up Nativebase Provider- the component that makes the theme available throughout your app, customize the default theme, and manage color modes.
 ---
 
 NativeBaseProvider is a component that makes the theme available throughout your app. It uses React's Context API. Add NativeBaseProvider to the root of your app and update App.js as follows:
@@ -142,8 +144,8 @@ export default () => {
 
 | Name                 | Type                                | Description                                                                                                                                | Default                  |
 | -------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
-| isSSR                | Boolean                             | Tells the provider if your app is rendered on the server side or not.                                                                            | -                        |
+| isSSR                | Boolean                             | Tells the provider if your app is rendered on the server side or not.                                                                      | -                        |
 | initialWindowMetrics | Object                              | Mock data for frame and insets. [Refer this](https://github.com/th3rdwave/react-native-safe-area-context#testing) for further information. | -                        |
-| colorModeManager     | { get : Function , set : Function } | Manages Color mode in your app                                                                                                              | -                        |
-| theme                | Object                              | Provides a custom theme for your app.                                                                                                               | NativeBase Default Theme |
+| colorModeManager     | { get : Function , set : Function } | Manages Color mode in your app                                                                                                             | -                        |
+| theme                | Object                              | Provides a custom theme for your app.                                                                                                      | NativeBase Default Theme |
 | config               | {dependencies: {}}                  | To include external dependencies. For example - [Linear gradient](box#with-linear-gradient)                                                | -                        |

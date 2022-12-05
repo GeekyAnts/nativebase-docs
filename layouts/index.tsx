@@ -105,8 +105,8 @@ function Layout({
   }`;
 
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
-  const { metaTitle, metaDescription } = frontMatter;
-  console.log(metaTitle, metaDescription);
+  const {metaTitle, metaDescription}= frontMatter;
+  
   return (
     <>
       <Head>
@@ -117,7 +117,9 @@ function Layout({
         />
         {/* og meta links */}
         <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDescription} />
+        <meta
+          property="og:description"
+          content={metaDescription} />
         <meta property="og:url" content="https://docs.nativebase.io" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="NativeBase" />
