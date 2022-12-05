@@ -1,6 +1,8 @@
 ---
 id: color-mode
 title: Color mode (Dark Mode)
+metaTitle: Color mode (Dark Mode) | NativeBase
+metaDescription: The NativeBaseProvider at the root of your app to automatically uses color mode. useColorMode or useColorModeValue hooks handle color mode manually.
 ---
 
 When you use the `NativebaseProvider` at the root of your app, you can automatically use color mode in your apps.
@@ -21,12 +23,12 @@ Calling toggleColorMode anywhere in your app tree toggles the color mode.
 
 ```
 
-## _light and _dark Pseudo props
+## \_light and \_dark Pseudo props
 
 All components accepts \_light and \_dark props which applies the passed props on dark and light mode.
 
 ```jsx isLive
-import React from 'react';
+import React from "react";
 import {
   Heading,
   useColorMode,
@@ -37,18 +39,18 @@ import {
   useColorModeValue,
   Text,
   NativeBaseProvider,
-} from 'native-base';
+} from "native-base";
 
 function PseudoPropsUsage() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Center
       flex={1}
-      _dark={{ bg: 'coolGray.800' }}
-      _light={{ bg: 'warmGray.50' }}
+      _dark={{ bg: "coolGray.800" }}
+      _light={{ bg: "warmGray.50" }}
     >
       <Text fontSize="lg" display="flex" mb="20">
-        The active color mode is{' '}
+        The active color mode is{" "}
         <Text bold fontSize="lg">
           {colorMode}
         </Text>
@@ -72,12 +74,12 @@ export function Example() {
 You can set default color mode. By default, the color mode will be `light`. To support this, extend the default theme with a `config`
 
 ```jsx
-import { NativeBaseProvider, extendTheme, Text } from 'native-base';
+import { NativeBaseProvider, extendTheme, Text } from "native-base";
 
 // Define the config
 const config = {
   useSystemColorMode: false,
-  initialColorMode: 'dark',
+  initialColorMode: "dark",
 };
 
 // extend the theme
@@ -99,24 +101,24 @@ You can persist the color mode in you app by defining you color mode manager of 
 - For Native
 
 ```jsx
-import React from 'react';
-import { NativeBaseProvider, StorageManager, ColorMode } from 'native-base';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React from "react";
+import { NativeBaseProvider, StorageManager, ColorMode } from "native-base";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // Define the colorModeManager,
 // here we are using react-native-async-storage (https://react-native-async-storage.github.io/async-storage/)
 const colorModeManager: StorageManager = {
   get: async () => {
     try {
-      let val = await AsyncStorage.getItem('@color-mode');
-      return val === 'dark' ? 'dark' : 'light';
+      let val = await AsyncStorage.getItem("@color-mode");
+      return val === "dark" ? "dark" : "light";
     } catch (e) {
-      return 'light';
+      return "light";
     }
   },
   set: async (value: ColorMode) => {
     try {
-      await AsyncStorage.setItem('@color-mode', value);
+      await AsyncStorage.setItem("@color-mode", value);
     } catch (e) {
       console.log(e);
     }
@@ -135,16 +137,16 @@ export default function () {
 - For web
 
 ```jsx
-import React from 'react';
-import { ColorMode, NativeBaseProvider, StorageManager } from 'native-base';
+import React from "react";
+import { ColorMode, NativeBaseProvider, StorageManager } from "native-base";
 const colorModeManager: StorageManager = {
   get: async () => {
-    let val = localStorage.getItem('@color-mode');
-    return val === 'dark' ? 'dark' : 'light';
+    let val = localStorage.getItem("@color-mode");
+    return val === "dark" ? "dark" : "light";
   },
   set: async (value: ColorMode) => {
-    let strValue = value ? value.toString() : '';
-    localStorage.setItem('@color-mode', strValue);
+    let strValue = value ? value.toString() : "";
+    localStorage.setItem("@color-mode", strValue);
   },
 };
 

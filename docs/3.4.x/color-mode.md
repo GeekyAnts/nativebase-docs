@@ -1,6 +1,8 @@
 ---
 id: color-mode
 title: Color mode (Dark Mode)
+metaTitle: Color mode (Dark Mode) | NativeBase
+metaDescription: The NativeBaseProvider at the root of your app to automatically uses color mode. useColorMode or useColorModeValue hooks handle color mode manually.
 ---
 
 When you use the `NativebaseProvider` at the root of your app, you can automatically use color mode in your apps.
