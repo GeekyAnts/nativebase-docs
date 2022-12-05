@@ -1,6 +1,8 @@
 ---
 id: icon
 title: Icon
+metaTitle: Icon | NativeBase
+metaDescription:  Migrating Icon to NativeBase v3 will provide a lot more customization options. You can also create custom icons using SVG. Overview and code comparison here.
 ---
 
 Migrating [`Icon`](/icon) to v3 will provide a lot more **customisation** option. You can also create custom icons using SVG.

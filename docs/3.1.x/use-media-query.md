@@ -1,6 +1,8 @@
 ---
 id: use-media-query
 title: useMediaQuery
+metaTitle: useMediaQuery | NativeBase
+metaDescription: In NativeBase, useMediaQuery is a custom hook that helps detect matches between single or multiple media queries. Read on to know more about this custom hook.
 ---
 
 `useMediaQuery` is a custom hook used to help detect whether a single media query or multiple media queries individually match. React Native does not natively support media queries, so `useMediaQuery` is still limited.
@@ -8,7 +10,7 @@ title: useMediaQuery
 ## Import
 
 ```jsx
-import { useMediaQuery } from 'native-base';
+import { useMediaQuery } from "native-base";
 ```
 
 ## Example
@@ -16,14 +18,14 @@ import { useMediaQuery } from 'native-base';
 ### max-height
 
 ```jsx isLive=true
-import React from 'react';
-import { Text, useMediaQuery, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
 function UseMediaQueryExample() {
   const [isSmaller] = useMediaQuery({ maxHeight: 512 });
   return (
     <Text>
-      {isSmaller ? 'Height smaller than 512' : 'Height larger than 512'}
+      {isSmaller ? "Height smaller than 512" : "Height larger than 512"}
     </Text>
   );
 }
@@ -41,14 +43,14 @@ export function Example() {
 ### min-width
 
 ```jsx isLive=true
-import React from 'react';
-import { Text, useMediaQuery, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
 function UseMediaQueryExample() {
   const [isLargerThan512] = useMediaQuery({ minWidth: 512 });
   return (
     <Text>
-      {isLargerThan512 ? 'Width larger than 512' : 'Width smaller than 512'}
+      {isLargerThan512 ? "Width larger than 512" : "Width smaller than 512"}
     </Text>
   );
 }
@@ -66,13 +68,13 @@ export function Example() {
 ### orientation
 
 ```jsx isLive=true
-import React from 'react';
-import { Text, useMediaQuery, NativeBaseProvider, Center } from 'native-base';
+import React from "react";
+import { Text, useMediaQuery, NativeBaseProvider, Center } from "native-base";
 
 function UseMediaQueryExample() {
   const [isLandScape, isPortrait] = useMediaQuery([
-    { orientation: 'landscape' },
-    { orientation: 'portrait' },
+    { orientation: "landscape" },
+    { orientation: "portrait" },
   ]);
   return (
     <>

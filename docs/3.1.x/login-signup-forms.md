@@ -1,6 +1,8 @@
 ---
 id: login-signup-forms
 title: Login/Signup Forms
+metaTitle: Login/Signup Forms | NativeBase
+metaDescription: You can read this document to learn and know more about how to create Login Form and Signup Form in NativeBase along with some useful examples.
 ---
 
 ## Example
@@ -8,8 +10,8 @@ title: Login/Signup Forms
 ### Login Form
 
 ```jsx isLive=true
-import * as React from 'react';
-import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
+import * as React from "react";
+import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
 import {
   NativeBaseProvider,
   Box,
@@ -24,7 +26,7 @@ import {
   IconButton,
   HStack,
   Divider,
-} from 'native-base';
+} from "native-base";
 
 export function Example() {
   return (
@@ -40,7 +42,7 @@ export function Example() {
         <VStack space={2} mt={5}>
           <FormControl>
             <FormControl.Label
-              _text={{ color: 'muted.700', fontSize: 'sm', fontWeight: 600 }}
+              _text={{ color: "muted.700", fontSize: "sm", fontWeight: 600 }}
             >
               Email ID
             </FormControl.Label>
@@ -48,13 +50,13 @@ export function Example() {
           </FormControl>
           <FormControl mb={5}>
             <FormControl.Label
-              _text={{ color: 'muted.700', fontSize: 'sm', fontWeight: 600 }}
+              _text={{ color: "muted.700", fontSize: "sm", fontWeight: 600 }}
             >
               Password
             </FormControl.Label>
             <Input type="password" />
             <Link
-              _text={{ fontSize: 'xs', fontWeight: '700', color: 'cyan.500' }}
+              _text={{ fontSize: "xs", fontWeight: "700", color: "cyan.500" }}
               alignSelf="flex-end"
               mt={1}
             >
@@ -62,7 +64,7 @@ export function Example() {
             </Link>
           </FormControl>
           <VStack space={2}>
-            <Button colorScheme="cyan" _text={{ color: 'white' }}>
+            <Button colorScheme="cyan" _text={{ color: "white" }}>
               Login
             </Button>
 
@@ -101,10 +103,10 @@ export function Example() {
           </VStack>
           <HStack justifyContent="center">
             <Text fontSize="sm" color="muted.700" fontWeight={400}>
-              I'm a new user.{' '}
+              I'm a new user.{" "}
             </Text>
             <Link
-              _text={{ color: 'cyan.500', bold: true, fontSize: 'sm' }}
+              _text={{ color: "cyan.500", bold: true, fontSize: "sm" }}
               href="#"
             >
               Sign Up
@@ -120,8 +122,8 @@ export function Example() {
 ### Signup Form
 
 ```jsx isLive=true
-import * as React from 'react';
-import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
+import * as React from "react";
+import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
 import {
   NativeBaseProvider,
   Box,
@@ -136,7 +138,7 @@ import {
   IconButton,
   HStack,
   Divider,
-} from 'native-base';
+} from "native-base";
 
 export function Example() {
   return (
@@ -152,7 +154,7 @@ export function Example() {
         <VStack space={2} mt={5}>
           <FormControl>
             <FormControl.Label
-              _text={{ color: 'muted.700', fontSize: 'sm', fontWeight: 600 }}
+              _text={{ color: "muted.700", fontSize: "sm", fontWeight: 600 }}
             >
               Email
             </FormControl.Label>
@@ -160,7 +162,7 @@ export function Example() {
           </FormControl>
           <FormControl>
             <FormControl.Label
-              _text={{ color: 'muted.700', fontSize: 'sm', fontWeight: 600 }}
+              _text={{ color: "muted.700", fontSize: "sm", fontWeight: 600 }}
             >
               Password
             </FormControl.Label>
@@ -168,14 +170,14 @@ export function Example() {
           </FormControl>
           <FormControl>
             <FormControl.Label
-              _text={{ color: 'muted.700', fontSize: 'sm', fontWeight: 600 }}
+              _text={{ color: "muted.700", fontSize: "sm", fontWeight: 600 }}
             >
               Confirm Password
             </FormControl.Label>
             <Input type="password" />
           </FormControl>
           <VStack space={2} mt={5}>
-            <Button colorScheme="cyan" _text={{ color: 'white' }}>
+            <Button colorScheme="cyan" _text={{ color: "white" }}>
               SignUp
             </Button>
 

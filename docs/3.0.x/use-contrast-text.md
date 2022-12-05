@@ -1,6 +1,8 @@
 ---
 id: use-contrast-text
 title: useContrastText
+metaTitle: useContrastText | NativeBase
+metaDescription: useContrastText in NativeBase is a custom hook that provides color and text contrast against the background color passed asa  parameter. Read on to know more.
 ---
 
 `useContrastText` is a custom hook used to get a contrasting color (either `lightText` or `darkText`) to the color passed as a parameter.
@@ -8,7 +10,7 @@ title: useContrastText
 ## Import
 
 ```jsx
-import { useContrastText } from 'native-base';
+import { useContrastText } from "native-base";
 ```
 
 ## Examples
@@ -16,16 +18,16 @@ import { useContrastText } from 'native-base';
 ### Basic
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   Button,
   useContrastText,
   NativeBaseProvider,
   Center,
-} from 'native-base';
+} from "native-base";
 function UseContrastingTextHook() {
-  const bgDark = 'gray.900';
-  const bgLight = 'gray.50';
+  const bgDark = "gray.900";
+  const bgLight = "gray.50";
   const colorContrastDark = useContrastText(bgDark);
   const colorContrastLight = useContrastText(bgLight);
 
@@ -57,7 +59,7 @@ export function Example() {
 By default, NativeBase provides contrasting colors based on its theme. You can also choose to get colors with better [color and contrast accessibility](https://web.dev/color-and-contrast-accessibility/) with the help of [`useAccessibleColors`](use-accessible-colors) hook.
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   Button,
   useContrastText,
@@ -65,7 +67,7 @@ import {
   NativeBaseProvider,
   Center,
   useAccessibleColors,
-} from 'native-base';
+} from "native-base";
 function UseContrastingTextHook() {
   let [, , toggleAccessibleColors] = useAccessibleColors();
   const { colors } = useTheme();
@@ -84,7 +86,7 @@ function UseContrastingTextHook() {
           </Button>
         );
       })}
-      <Button mt={2} onPress={toggleAccessibleColors} bg={'indigo.600'}>
+      <Button mt={2} onPress={toggleAccessibleColors} bg={"indigo.600"}>
         Toggle Accessible Colors
       </Button>
     </>
