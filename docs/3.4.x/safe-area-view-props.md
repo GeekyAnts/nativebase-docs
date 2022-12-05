@@ -1,6 +1,8 @@
 ---
 id: safe-area-view-props
 title: SafeAreaView Props
+metaTitle: SafeAreaView Props | NativeBase
+metaDescription: In NativeBase, make components respect the SafeAreaView of the device, with props you can use with Box component, which apply a safe padding to your component.
 ---
 
 To make your components respect the [SafeAreaView](https://reactnative.dev/docs/safeareaview) of the device, we have provided some props that you can use with Box component. They apply a safe padding to your component in the parts decided by the passed props. These props accept either a boolean or a number. If a Boolean is passed, then the component takes a flexible inset and adjusts its children according to the device. If a number is passed, then it provides a fixed inset in the chosen direction.
