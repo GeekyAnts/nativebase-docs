@@ -1,6 +1,8 @@
 ---
 id: menu
 title: Menu
+metaTitle: Menu | NativeBase
+metaDescription: Menu in NativeBase is used to generate a dropdown menu along with the menu button design pattern. More on MenuOptionGroups, menu placement, basic, and group.
 ---
 
 import { ComponentTheme } from '../src/components';
@@ -8,8 +10,8 @@ import { ComponentTheme } from '../src/components';
 `Menu` generates a dropdown menu along with the menu button design pattern.
 
 ```jsx isShowcase
-import React from 'react';
-import { Menu, HamburgerIcon, Box, Pressable } from 'native-base';
+import React from "react";
+import { Menu, HamburgerIcon, Box, Pressable } from "native-base";
 
 export function Example() {
   return (
@@ -50,7 +52,7 @@ NativeBase uses 5 components for rendering menus:
 - `Menu.ItemOption`: The checkable menu item, to be used with `MenuOptionGroup`.
 
 ```jsx
-import { Menu } from 'native-base';
+import { Menu } from "native-base";
 ```
 
 ## Examples

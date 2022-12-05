@@ -1,6 +1,8 @@
 ---
 id: toast
 title: Toast
+metaTitle: Toast | NativeBase
+metaDescription: In NativeBase v3, Toast can be created using useToast hook. Read this document to know more about migrating toast components and also about code comparison.
 ---
 
 In v3, [`Toast`](/toast) can be created using **useToast** hook

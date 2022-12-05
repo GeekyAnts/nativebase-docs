@@ -1,6 +1,8 @@
 ---
 id: modal
 title: Modal
+metaTitle: Modal | NativeBase
+metaDescription: The react native modal component in NativeBase is an overlay on the primary window or another dialog window. Read more on modal sizes, placement and multiple modals.
 ---
 
 import { ComponentTheme } from '../src/components';
@@ -8,9 +10,9 @@ import { ComponentTheme } from '../src/components';
 A `Modal` is an overlay on the primary window or another dialog window. Content behind the modal dialog remains **inert** and users cannot interact with it.
 
 ```jsx isShowcase
-import React from 'react';
-import { Button, Modal, FormControl, Input } from 'native-base';
-import { useState } from 'react';
+import React from "react";
+import { Button, Modal, FormControl, Input } from "native-base";
+import { useState } from "react";
 
 export const Example = () => {
   const [showModal, setShowModal] = useState(false);
@@ -73,7 +75,7 @@ NativeBase exports a Modal Compound component:
 - `Modal.CloseButton`: The button that closes the modal.
 
 ```jsx
-import { Modal } from 'native-base';
+import { Modal } from "native-base";
 ```
 
 ## Examples

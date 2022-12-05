@@ -1,13 +1,15 @@
 ---
 id: switch
 title: Switch
+metaTitle: Switch | NativeBase
+metaDescription: The Switch component in NativeBase provides an alternative to the Checkbox component. More on sizes, track and thumb color of Switch component with examples.
 ---
 
 The `Switch` provides an alternative to the Checkbox component. It also allows a user to switch between enabled or disabled states.
 
 ```jsx isShowcase
-import React from 'react';
-import { Switch, HStack, Text } from 'native-base';
+import React from "react";
+import { Switch, HStack, Text } from "native-base";
 
 export const Example = () => {
   return <Switch size="lg" />;

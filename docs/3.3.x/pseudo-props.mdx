@@ -1,6 +1,8 @@
 ---
 id: pseudo-props
-title: 'Pseudo props: Overview'
+title: "Pseudo props: Overview"
+metaTitle: "Pseudo props: Overview | NativeBase"
+metaDescription: NativeBase pseudo props can be used to customize the style or behaviour of Nativebase components across platforms.
 ---
 
 import {
@@ -11,7 +13,7 @@ import {
   Text,
   Pressable,
   Image,
-} from 'native-base';
+} from "native-base";
 
 NativeBase provides a declarative way to add interaction or platform specific props.
 
@@ -22,7 +24,7 @@ Using `_hover` pseudo prop, we can customize the style of Pressable component on
 <NativeBaseProvider>
   <Box flex={1} mb="16">
     <Pressable
-      _hover={{ bg: 'primary.700' }}
+      _hover={{ bg: "primary.700" }}
       bg="primary.600"
       py="2"
       px="3"
@@ -38,7 +40,7 @@ Using `_hover` pseudo prop, we can customize the style of Pressable component on
 
 ```jsx title="Hover example"
 <Pressable
-  _hover={{ bg: 'primary.700' }}
+  _hover={{ bg: "primary.700" }}
   bg="primary.600"
   py="2"
   px="3"
@@ -58,7 +60,7 @@ Using `_pressed` pseudo prop, we can customize the style of Pressable component 
 <NativeBaseProvider>
   <Box flex={1} mb="16">
     <Pressable
-      _pressed={{ bg: 'primary.800' }}
+      _pressed={{ bg: "primary.800" }}
       bg="primary.600"
       py="2"
       px="3"
@@ -74,7 +76,7 @@ Using `_pressed` pseudo prop, we can customize the style of Pressable component 
 
 ```jsx title="Pressed example"
 <Pressable
-  _pressed={{ bg: 'primary.800' }}
+  _pressed={{ bg: "primary.800" }}
   bg="primary.600"
   py="2"
   rounded="sm"
@@ -95,9 +97,9 @@ Using `_focus` pseudo prop, we can customize the style of Pressable component on
   <Box flex={1} mb="16">
     <Pressable
       _focus={{
-        bg: 'primary.700',
-        borderColor: 'primary.400',
-        borderWidth: '2px',
+        bg: "primary.700",
+        borderColor: "primary.400",
+        borderWidth: "2px",
       }}
       bg="primary.600"
       rounded="sm"
@@ -114,7 +116,7 @@ Using `_focus` pseudo prop, we can customize the style of Pressable component on
 
 ```jsx title="Focus example"
 <Pressable
-  _focus={{ bg: 'primary.700', borderColor: 'primary.400', borderWidth: '2px' }}
+  _focus={{ bg: "primary.700", borderColor: "primary.400", borderWidth: "2px" }}
   bg="primary.600"
   rounded="sm"
   py="2"
@@ -135,7 +137,7 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
   <HStack space="4" justifyContent="center" alignItems="center" mb="8">
     <VStack alignItems="center" space="2">
       <Box
-        _web={{ bg: 'cyan.600' }}
+        _web={{ bg: "cyan.600" }}
         bg="cyan.600"
         rounded="sm"
         py="2"
@@ -150,7 +152,7 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
     </VStack>
     <VStack alignItems="center" space="2">
       <Box
-        _android={{ bg: 'yellow.400' }}
+        _android={{ bg: "yellow.400" }}
         bg="yellow.400"
         rounded="sm"
         py="2"
@@ -165,7 +167,7 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
     </VStack>
     <VStack alignItems="center" space="2">
       <Box
-        _ios={{ bg: 'violet.500' }}
+        _ios={{ bg: "violet.500" }}
         bg="violet.500"
         rounded="sm"
         py="2"
@@ -185,7 +187,7 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
 <HStack space={4} justifyContent="center" alignItems="center">
   <VStack alignItems="center" space="2">
     <Box
-      _web={{ bg: 'cyan.600' }}
+      _web={{ bg: "cyan.600" }}
       rounded="sm"
       py="2"
       px="3"
@@ -199,7 +201,7 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
   </VStack>
   <VStack alignItems="center" space="2">
     <Box
-      _android={{ bg: 'yellow.400' }}
+      _android={{ bg: "yellow.400" }}
       rounded="sm"
       py="2"
       px="3"
@@ -213,7 +215,7 @@ Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or beh
   </VStack>
   <VStack alignItems="center" space="2">
     <Box
-      _ios={{ bg: 'violet.500' }}
+      _ios={{ bg: "violet.500" }}
       rounded="sm"
       py="2"
       px="3"

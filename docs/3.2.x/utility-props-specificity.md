@@ -1,6 +1,8 @@
 ---
 id: utility-props-specificity
 title: Utility Props Specificity
+metaTitle: Utility Props Specificity | NativeBase
+metaDescription: A look into how for two similar props for a component in NativeBase, the more specific prop will be applied while rendering.
 ---
 
 - If we have two similar props for a particular component, the more specific prop will be applied when the component is rendered.

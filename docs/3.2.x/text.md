@@ -1,6 +1,8 @@
 ---
 id: text
 title: Text
+metaTitle: Text | NativeBase
+metaDescription: The Text component in NativeBase allows the rendering of text and paragraphs within an interface. More on ChangingFontSize, Truncated, and Overridden text here.
 ---
 
 import { ComponentTheme } from '../../src/components';

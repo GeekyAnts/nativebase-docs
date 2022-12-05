@@ -1,6 +1,8 @@
 ---
 id: strict-mode
 title: Strict Mode
+metaTitle: Strict Mode | NativeBase
+metaDescription: NativeBase has a Strict Mode to control the level of strictness for your App and Dev environment. Learn more about Strictness Levels and how to change the mode.
 ---
 
 NativeBase comes with its very own Strict Mode that lets you control the level of strictness for your App and Dev environment. A really handy tool to maintain best practices throughout your codebase.
@@ -20,13 +22,13 @@ Strict Mode is a config that you pass into NativeBase config. It takes 3 values 
 To change the `strictMode` create a `config object` like below and choose you `strictMode` value from `error`, `warn` and `off` which ever suits your use-case :
 
 ```jsx
-import { INativebaseConfig, NativeBaseProvider } from 'native-base';
+import { INativebaseConfig, NativeBaseProvider } from "native-base";
 
 // ignore the INativebaseConfig if you are not using typescript
 
 const config: INativebaseConfig = {
   // rest of the config keys like dependencies can go here
-  strictMode: 'warn',
+  strictMode: "warn",
 };
 ```
 

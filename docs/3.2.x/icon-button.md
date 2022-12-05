@@ -1,6 +1,8 @@
 ---
 id: icon-button
 title: IconButton
+metaTitle: IconButton | NativeBase
+metaDescription: IconButton in NativeBase consists of the Button component and is used to make an icon pressable. Read on for examples and types of the IconButton component.
 ---
 
 import { ComponentTheme } from '../../src/components';
