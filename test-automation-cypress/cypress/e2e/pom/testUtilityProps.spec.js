@@ -1,4 +1,4 @@
-import UtilityProps from "../../pages/utilitypropsNativeBase.pages";
+import UtilityPropsSpecificity from "../../pages/utilitypropsSpecificityNativeBase.pages";
 
 describe('Utility Props Page',()=>{
     beforeEach('URL',()=>{
@@ -12,12 +12,12 @@ describe('Utility Props Page',()=>{
     })
 
     it('Checking Elements In Page',()=>{
-        UtilityProps.pageTitle();
-        UtilityProps.similarProps();
-        UtilityProps.similarprops2();
-        UtilityProps.similarprops3();
-        UtilityProps.previouspage();
-        UtilityProps.nextPage();
+        UtilityPropsSpecificity.pageTitle();
+        UtilityPropsSpecificity.similarProps();
+        UtilityPropsSpecificity.similarprops2();
+        UtilityPropsSpecificity.similarprops3();
+        UtilityPropsSpecificity.previouspage();
+        UtilityPropsSpecificity.nextPage();
         
         //UtilityProps.paste();
     })
