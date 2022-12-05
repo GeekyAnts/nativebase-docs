@@ -1,6 +1,8 @@
 ---
 id: contribution
 title: Contributing to NativeBase
+metaTitle: Contributing to NativeBase | NativeBase
+metaDescription: A set of guidelines for individuals interested in contributing to NativeBase. Please read carefully before creating an issue or pull request.
 ---
 
 Thanks for showing an interest in contributing to NativeBase. We are excited about our collaboration. The following is a set of guidelines that will make the journey memorable. Please spend several minutes reading these guidelines before you create an issue or pull request.
