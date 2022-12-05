@@ -1,6 +1,8 @@
 ---
 id: radio
 title: Radio
+metaTitle: Radio | NativeBase
+metaDescription: Radio component in NativeBase limits the selection from a series of options to only one. Read on for more on the Radio component and its types with examples.
 ---
 
 import { ComponentTheme } from '../src/components';
@@ -8,10 +10,10 @@ import { ComponentTheme } from '../src/components';
 `Radio` limits the selection from a series of options to only one.
 
 ```jsx isShowcase
-import React from 'react';
-import { Radio, Center, NativeBaseProvider } from 'native-base';
+import React from "react";
+import { Radio, Center, NativeBaseProvider } from "native-base";
 export const Example = () => {
-  const [value, setValue] = React.useState('one');
+  const [value, setValue] = React.useState("one");
   return (
     <Radio.Group
       name="myRadioGroup"

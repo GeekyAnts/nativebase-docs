@@ -1,6 +1,8 @@
 ---
 id: FAB
 title: FAB
+metaTitle: FAB | NativeBase
+metaDescription: In NativeBase, FAB or Floating Action Button is a circular icon button that hovers over the content to execute a primary action in the application. Know more here.
 ---
 
 import { ComponentTheme } from '../src/components';
@@ -8,9 +10,9 @@ import { ComponentTheme } from '../src/components';
 A floating action button (FAB) is a circular icon button that hovers over content to execute a primary action in the application.
 
 ```jsx isShowcase
-import { Fab, Icon, Box, Center, NativeBaseProvider } from 'native-base';
-import React from 'react';
-import { AntDesign } from '@expo/vector-icons';
+import { Fab, Icon, Box, Center, NativeBaseProvider } from "native-base";
+import React from "react";
+import { AntDesign } from "@expo/vector-icons";
 export const Example = () => {
   return (
     <Box height="200" w="400" shadow="2" rounded="lg" bg="white:alpha.20">
@@ -28,7 +30,7 @@ export const Example = () => {
 ## Import
 
 ```jsx
-import { Fab } from 'native-base';
+import { Fab } from "native-base";
 ```
 
 ## Example

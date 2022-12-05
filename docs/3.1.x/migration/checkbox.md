@@ -1,6 +1,8 @@
 ---
 id: checkbox
 title: Checkbox
+metaTitle: Checkbox | NativeBase
+metaDescription: Migrating Checkbox to NativeBase v3 will provide you with more design, size, color, and customization options. Read here for the overview and code comparison.
 ---
 
 Migrating [`Checkbox`](/checkbox) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.

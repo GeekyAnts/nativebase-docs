@@ -1,6 +1,8 @@
 ---
 id: changelog
 title: Changelog
+metaTitle: Changelog | NativeBase
+metaDescription: NativeBase Changelog features include TypeScript enhancement for custom theme tokens and variants. Read this document to know more about the changes and fixes.
 ---
 
 ## V3.2.2

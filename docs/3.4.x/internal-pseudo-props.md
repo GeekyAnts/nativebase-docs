@@ -1,6 +1,8 @@
 ---
 id: internal-pseudo-props
-title: 'Internal Pseudo Props'
+title: "Internal Pseudo Props"
+metaTitle: Internal Pseudo Props | NativeBase
+metaDescription: NativeBase uses some internal pseudo props to get more customizable components. Learn more about these internal pseudo props and their use.
 ---
 
 NativeBase uses internal pseudo props to get more customizable components.
@@ -24,7 +26,7 @@ alt="actionsheet pseudo props"
 - \_dragIndicator - Using `_dragIndicator` internal pseudo prop, we can customize the style of Actionsheet indicator.
 
 ```jsx title="_dragIndicator example isLive=true
-import React from 'react';
+import React from "react";
 import {
   Button,
   Actionsheet,
@@ -32,7 +34,7 @@ import {
   Text,
   Box,
   Center,
-} from 'native-base';
+} from "native-base";
 
 export function Example() {
   const { isOpen, onOpen, onClose } = useDisclose();
@@ -40,9 +42,9 @@ export function Example() {
     <Center>
       <Button onPress={onOpen}>Actionsheet</Button>
       <Actionsheet isOpen={isOpen} onClose={onClose}>
-        <Actionsheet.Content _dragIndicator={{ bg: 'blue.500' }}>
+        <Actionsheet.Content _dragIndicator={{ bg: "blue.500" }}>
           <Box w="100%" h={60} px={4} justifyContent="center">
-            <Text fontSize="16" color="gray.500" _dark={{ color: 'gray.300' }}>
+            <Text fontSize="16" color="gray.500" _dark={{ color: "gray.300" }}>
               Albums
             </Text>
           </Box>
@@ -61,7 +63,7 @@ export function Example() {
 - \_dragIndicatorWrapper - Using `_dragIndicatorWrapper` internal pseudo props, we can customize the style of wrapper around drag indicator.
 
 ```jsx title="_dragIndicatorWrapper example" isLive=true
-import React from 'react';
+import React from "react";
 import {
   Button,
   Actionsheet,
@@ -69,7 +71,7 @@ import {
   Text,
   Box,
   Center,
-} from 'native-base';
+} from "native-base";
 
 export function Example() {
   const { isOpen, onOpen, onClose } = useDisclose();
@@ -78,10 +80,10 @@ export function Example() {
       <Button onPress={onOpen}>Actionsheet</Button>
       <Actionsheet isOpen={isOpen} onClose={onClose}>
         <Actionsheet.Content
-          _dragIndicatorWrapper={{ bg: 'blue.500', py: '4' }}
+          _dragIndicatorWrapper={{ bg: "blue.500", py: "4" }}
         >
           <Box w="100%" h={60} px={4} justifyContent="center">
-            <Text fontSize="16" color="gray.500" _dark={{ color: 'gray.300' }}>
+            <Text fontSize="16" color="gray.500" _dark={{ color: "gray.300" }}>
               Albums
             </Text>
           </Box>
@@ -100,7 +102,7 @@ export function Example() {
 - \_dragIndicatorWrapperOffset - Using `_dragIndicatorWrapperOffset` internal pseudo prop, we can customize styling of scrollable area above `Actionsheet.Content`.
 
 ```jsx title="_dragIndicatorWrapperOffset example" isLive=true
-import React from 'react';
+import React from "react";
 import {
   Button,
   Actionsheet,
@@ -108,7 +110,7 @@ import {
   Text,
   Box,
   Center,
-} from 'native-base';
+} from "native-base";
 
 export function Example() {
   const { isOpen, onOpen, onClose } = useDisclose();
@@ -116,9 +118,9 @@ export function Example() {
     <Center>
       <Button onPress={onOpen}>Actionsheet</Button>
       <Actionsheet isOpen={isOpen} onClose={onClose}>
-        <Actionsheet.Content _dragIndicatorWrapperOffSet={{ py: '10' }}>
+        <Actionsheet.Content _dragIndicatorWrapperOffSet={{ py: "10" }}>
           <Box w="100%" h={60} px={4} justifyContent="center">
-            <Text fontSize="16" color="gray.500" _dark={{ color: 'gray.300' }}>
+            <Text fontSize="16" color="gray.500" _dark={{ color: "gray.300" }}>
               Albums
             </Text>
           </Box>
