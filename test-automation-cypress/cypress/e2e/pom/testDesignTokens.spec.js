@@ -11,8 +11,12 @@ beforeEach(() => {
       });
 });
 it('Checking every element', ()=>{
-    
+
     DesignTokens.pageTitle()
     DesignTokens.styledSystemLink();
+    DesignTokens.defaultNBThemeLink();
+    DesignTokens.hereLink();
+    DesignTokens.PreviousPage();
+    DesignTokens.NextPage();
 });
 })
