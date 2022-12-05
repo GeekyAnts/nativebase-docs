@@ -1,6 +1,8 @@
 ---
 id: form
 title: Form with Validation
+metaTitle: Form with Validation | NativeBase
+metaDescription: It is crucial to verify the information users enter into a text field. Learn how to add validation to a form in NativeBase with an example here.
 ---
 
 Apps often require users to enter information into a text field. For example, you might require users to log in with an email address and password combination.
@@ -20,14 +22,14 @@ In this example, learn how to add validation to a form that has a single text fi
 Create an Input wrapped in FormControl.
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   VStack,
   FormControl,
   Input,
   NativeBaseProvider,
   Center,
-} from 'native-base';
+} from "native-base";
 
 function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
@@ -40,10 +42,10 @@ function BuildingAFormExample() {
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormControl.HelperText _text={{ fontSize: 'xs' }}>
+        <FormControl.HelperText _text={{ fontSize: "xs" }}>
           Name should contain atleast 3 character.
         </FormControl.HelperText>
-        <FormControl.ErrorMessage _text={{ fontSize: 'xs' }}>
+        <FormControl.ErrorMessage _text={{ fontSize: "xs" }}>
           Error Name
         </FormControl.ErrorMessage>
       </FormControl>
@@ -66,14 +68,14 @@ export function Example() {
 Add validation logic.
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   VStack,
   FormControl,
   Input,
   NativeBaseProvider,
   Center,
-} from 'native-base';
+} from "native-base";
 
 function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
@@ -82,13 +84,13 @@ function BuildingAFormExample() {
     if (formData.name === undefined) {
       setErrors({
         ...errors,
-        name: 'Name is required',
+        name: "Name is required",
       });
       return false;
     } else if (formData.name.length < 3) {
       setErrors({
         ...errors,
-        name: 'Name is too short',
+        name: "Name is too short",
       });
       return false;
     }
@@ -103,10 +105,10 @@ function BuildingAFormExample() {
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        <FormControl.HelperText _text={{ fontSize: 'xs' }}>
+        <FormControl.HelperText _text={{ fontSize: "xs" }}>
           Name should contain atleast 3 character.
         </FormControl.HelperText>
-        <FormControl.ErrorMessage _text={{ fontSize: 'xs' }}>
+        <FormControl.ErrorMessage _text={{ fontSize: "xs" }}>
           Error Name
         </FormControl.ErrorMessage>
       </FormControl>
@@ -129,7 +131,7 @@ export function Example() {
 Create a button to validate and submit the form.
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   VStack,
   Button,
@@ -137,7 +139,7 @@ import {
   Input,
   NativeBaseProvider,
   Center,
-} from 'native-base';
+} from "native-base";
 
 function BuildingAFormExample() {
   const [formData, setData] = React.useState({});
@@ -146,13 +148,13 @@ function BuildingAFormExample() {
     if (formData.name === undefined) {
       setErrors({
         ...errors,
-        name: 'Name is required',
+        name: "Name is required",
       });
       return false;
     } else if (formData.name.length < 3) {
       setErrors({
         ...errors,
-        name: 'Name is too short',
+        name: "Name is too short",
       });
       return false;
     }
@@ -160,25 +162,25 @@ function BuildingAFormExample() {
   };
 
   const onSubmit = () => {
-    validate() ? console.log('Submitted') : console.log('Validation Failed');
+    validate() ? console.log("Submitted") : console.log("Validation Failed");
   };
 
   return (
     <VStack width="90%" mx={3}>
-      <FormControl isRequired isInvalid={'name' in errors}>
+      <FormControl isRequired isInvalid={"name" in errors}>
         <FormControl.Label _text={{ bold: true }}>Name</FormControl.Label>
         <Input
           placeholder="John"
           onChangeText={(value) => setData({ ...formData, name: value })}
         />
-        {'name' in errors ? (
+        {"name" in errors ? (
           <FormControl.ErrorMessage
-            _text={{ fontSize: 'xs', color: 'error.500', fontWeight: 500 }}
+            _text={{ fontSize: "xs", color: "error.500", fontWeight: 500 }}
           >
             Error
           </FormControl.ErrorMessage>
         ) : (
-          <FormControl.HelperText _text={{ fontSize: 'xs' }}>
+          <FormControl.HelperText _text={{ fontSize: "xs" }}>
             Name should contain atleast 3 character.
           </FormControl.HelperText>
         )}

@@ -1,6 +1,8 @@
 ---
 id: use-color-mode
 title: useColorMode
+metaTitle: useColorMode | NativeBase
+metaDescription: useColorMode in NativeBase is a custom hook that can set the color mode or retrieve it. Read this document to know more about useColorMode hook with examples.
 ---
 
 `useColorMode` is a custom hook used to get and set the color mode.

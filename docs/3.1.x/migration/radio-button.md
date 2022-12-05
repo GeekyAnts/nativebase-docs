@@ -1,6 +1,8 @@
 ---
 id: radio-button
 title: Radio Button
+metaTitle: Radio Button | NativeBase
+metaDescription: Migrating Radio to NativeBase v3 will provide a lot more design, size, color, and customization options. Read on for more, an overview and the code comparison.
 ---
 
 Migrating [`Radio`](/radio) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.

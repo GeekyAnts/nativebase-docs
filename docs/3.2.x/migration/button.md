@@ -1,6 +1,8 @@
 ---
 id: button
 title: Button
+metaTitle: Button | NativeBase
+metaDescription: Migrating Button to NativeBase v3 will provide more design, color, and customization options. More on overview, code comparison, and colors to the button here.
 ---
 
 Migrating [`Button`](/button) to v3 will provide a lot more **design**, **size**, **color** and **customisation** options.

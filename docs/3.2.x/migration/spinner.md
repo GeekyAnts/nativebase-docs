@@ -1,6 +1,8 @@
 ---
 id: spinner
 title: Spinner
+metaTitle: Spinner | NativeBase
+metaDescription: Migrating Spinner to NativeBase v3 will provide a lot more size, color, and customization options. Here is an overview of migrating Spinner and code comparison.
 ---
 
 Migrating [`Spinner`](/spinner) to v3 will provide a lot more **size**, **color** and **customisation** option.
