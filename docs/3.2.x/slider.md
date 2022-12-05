@@ -1,6 +1,8 @@
 ---
 id: slider
 title: Slider
+metaTitle: Slider | NativeBase
+metaDescription: The slider component in NativeBase allows users to select options from a given range of values. Explore slider colors, values, size, and more with examples here.
 ---
 
 import { ComponentTheme } from '../../src/components';
@@ -17,7 +19,7 @@ NativeBase exports 4 slider-related components:
 - `Slider.Thumb`: The handle that is used to change the slider value.
 
 ```jsx
-import { Slider } from 'native-base';
+import { Slider } from "native-base";
 ```
 
 ## Examples

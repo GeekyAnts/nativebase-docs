@@ -1,6 +1,8 @@
 ---
 id: alert-dialog
 title: AlertDialog
+metaTitle: AlertDialog | NativeBase
+metaDescription: AlertDialog in NativeBase is used if the user needs to be interrupted with a mandatory confirmation or call-to-action. For more about AlertDialog, read here.
 ---
 
 import { ComponentTheme } from '../src/components';

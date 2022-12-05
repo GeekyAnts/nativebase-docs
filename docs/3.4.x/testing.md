@@ -1,6 +1,8 @@
 ---
 id: testing
 title: Testing
+metaTitle: Testing | NativeBase
+metaDescription: NativeBase works with React Native’s Jest Preset or Expo’s Jest-Expo preset. Read this document and more about the conditions necessary to make this work.
 ---
 
 NativeBase works with react-native's jest preset or expo's jest-expo preset. However, there's one thing you'll need to do for it to work as expected.

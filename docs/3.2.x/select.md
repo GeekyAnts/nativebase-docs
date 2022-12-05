@@ -1,6 +1,8 @@
 ---
 id: select
 title: Select
+metaTitle: Select | NativeBase
+metaDescription: Select in NativeBase creates a dropdown list of items with the selected item in closed view. Read on for more on types of Select component along with examples.
 ---
 
 import { ComponentTheme } from '../../src/components';
@@ -12,7 +14,7 @@ Select creates a dropdown list of items with the selected item in closed view.
 ## Import
 
 ```jsx
-import { Select } from 'native-base';
+import { Select } from "native-base";
 ```
 
 ## Examples

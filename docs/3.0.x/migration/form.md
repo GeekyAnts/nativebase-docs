@@ -1,3 +1,10 @@
+---
+id: form
+title: Form
+metaTitle: Form | NativeBase
+metaDescription: In NativeBase v3, we have replaced form with FormControl. Know more about how we sliced FormControl in this document, along with examples and code comparison.
+---
+
 With NativeBase v3 we have replaced Form with [`FormControl`](/form-control) and sliced into [`FormControl.Label`](/form-control#formcontrollabel), [`FormControl.HelperText`](/form-control#formcontrolhelpertext) and [`FormControl.ErrorMessage`](/form-control#formcontrolerrormessage).
 
 Here an example to show the code comparison.
@@ -13,8 +20,8 @@ values={[
 <DocTabItem value="v2">
 
 ```tsx
-import React, { Component } from 'react';
-import { Form, Item, Input } from 'native-base';
+import React, { Component } from "react";
+import { Form, Item, Input } from "native-base";
 export default class FormExample extends Component {
   render() {
     return (
@@ -38,8 +45,8 @@ export default class FormExample extends Component {
 <DocTabItem value="v3">
 
 ```tsx
-import React from 'react';
-import { Input, Stack, FormControl } from 'native-base';
+import React from "react";
+import { Input, Stack, FormControl } from "native-base";
 export const FormExample = () => {
   return (
     <FormControl>
