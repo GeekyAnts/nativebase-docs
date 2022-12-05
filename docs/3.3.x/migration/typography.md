@@ -1,6 +1,8 @@
 ---
 id: typography
 title: Typography
+metaTitle: Typography | NativeBase
+metaDescription: In NativeBase, H1, H2, and H3 have all been replaced with the Heading component. Read this document to know more and check out the code comparison as well. 
 ---
 
 **H1**, **H2** and **H3** all have been replaced with [`Heading`](/heading) component.

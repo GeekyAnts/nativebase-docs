@@ -1,6 +1,8 @@
 ---
 id: more-props
 title: More props
+metaTitle: More props | NativeBase
+metaDescription: More Props in NativeBase explores LinearGradientProps. Read this document for more information on the name, type, and description. 
 ---
 
 ### ILinearGradientProps

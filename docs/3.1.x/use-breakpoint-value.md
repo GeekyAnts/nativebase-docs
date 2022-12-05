@@ -1,6 +1,8 @@
 ---
 id: use-breakPoint-value
 title: useBreakpointValue
+metaTitle: useBreakpointValue | NativeBase
+metaDescription: The useBreakPointValue in NativeBase returns the value for the current breakpoint. Read this document on the uses and applications of this hook to know more.
 ---
 
 `useBreakpointValue` is a custom hook which returns the value for the current breakpoint from the provided responsive values object. This hook also responds to the window resizing and returning the appropriate value for the new window size.
@@ -8,7 +10,7 @@ title: useBreakpointValue
 ## Import
 
 ```jsx
-import { useBreakpointValue } from 'native-base';
+import { useBreakpointValue } from "native-base";
 ```
 
 ## Return value
@@ -18,21 +20,21 @@ The `useBreakpointValue` hook returns the value for the current breakpoint.
 ## Usage
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   Box,
   useBreakpointValue,
   NativeBaseProvider,
   Center,
-} from 'native-base';
+} from "native-base";
 function UseBreakpointValueExample() {
   const color = useBreakpointValue({
-    base: 'red.200',
-    sm: 'blue.200',
-    md: 'blue.200',
+    base: "red.200",
+    sm: "blue.200",
+    md: "blue.200",
   });
   return (
-    <Box bg={color} w={'100px'}>
+    <Box bg={color} w={"100px"}>
       This is a box
     </Box>
   );

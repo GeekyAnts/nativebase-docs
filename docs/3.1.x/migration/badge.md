@@ -1,6 +1,8 @@
 ---
 id: badge
 title: Badge
+metaTitle: Badge | NativeBase
+metaDescription: Migrating Badge to NativeBase v3 will provide a lot more design, size, variant, and customization, options. More on migrating Badge components in this document.
 ---
 
 Migrating [`Badge`](/badge) to v3 will provide a lot more **design**, **size, variant**, **color** and **customisation** options.

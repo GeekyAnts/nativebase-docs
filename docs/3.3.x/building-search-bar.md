@@ -1,6 +1,8 @@
 ---
 id: building-search-bar
 title: SearchBar
+metaTitle: SearchBar | NativeBase
+metaDescription: The search bar is one of the most commonly seen variations of input. Read the document to find out how to create different types of search bars in NativeBase easily.
 ---
 
 Search-bar are one of the most commonly seen variation of input. Here are design to make life easier.
