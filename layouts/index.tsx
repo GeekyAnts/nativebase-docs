@@ -106,7 +106,7 @@ function Layout({
 
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
   const {metaTitle,metaDescription}=frontMatter;
-  console.log(metaDescription);
+  
   return (
     <>
       <Head>
@@ -160,7 +160,7 @@ function Layout({
         `}
       </Script>
       {/* will replace it when nativebase has semantic tagging */}
-      <h1 style={{ display: "none" }}>{title}</h1>
+     
       <Box
         w="100%"
         h={{ base: "100%", md: "100vh" }}

@@ -9,7 +9,7 @@ Follow 3 simple steps to add a custom font family.
 
 ### Loading fonts in Expo or React Native init project.
 
-[Refer this guide if you're using Expo](https://docs.expo.io/guides/using-custom-fonts/)
+[Refer this guide if you're using Expo](https://docs.expo.dev/guides/using-custom-fonts/)
 
 [Refer this guide if you're using React Native init](https://aravindmnair.medium.com/add-custom-fonts-to-react-native-0-60-easily-in-3-steps-fcd71459f4c9)
 

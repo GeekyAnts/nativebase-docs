@@ -58,7 +58,7 @@ module.exports = withNativebase({
 
 ## Phase
 
-If the plugin should only be applied in specific phases, you can specify them here. You can use all phases [next.js provides](https://github.com/vercel/next.js/blob/canary/packages/next/shared/lib/constants.ts#L20-L22).
+If the plugin should only be applied in specific phases, you can specify them here. You can use all phases [next.js provides](https://nextjs.org/docs/basic-features/pages).
 
 ```jsx
 const { withNativebase } = require("@native-base/next-adapter");
