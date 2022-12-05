@@ -103,11 +103,8 @@ function Layout({
       ? frontMatter.title + " | NativeBase "
       : pages?.currentPage?.title + " | NativeBase "
   }`;
-  const { metaTitle, metaDescription } = frontMatter;
-  console.log(metaTitle, metaDescription);
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
   const { metaTitle, metaDescription } = frontMatter;
-  console.log(metaTitle, metaDescription);
   return (
     <>
       <Head>
