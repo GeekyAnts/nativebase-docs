@@ -1,6 +1,8 @@
 ---
 id: popOver
 title: Popover
+metaTitle: Popover | NativeBase
+metaDescription: Popover in NativeBase is a non-modal dialog that provides contextual information to a user. Learn more in this document about Popover component with examples.
 ---
 
 import { ComponentTheme } from '../../src/components';
@@ -18,7 +20,7 @@ import { ComponentTheme } from '../../src/components';
 - `Popover.Trigger`: Used to wrap the reference (or trigger) element.
 
 ```jsx
-import { Popover } from 'native-base';
+import { Popover } from "native-base";
 ```
 
 ## Examples

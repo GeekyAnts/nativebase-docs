@@ -1,6 +1,8 @@
 ---
 id: textarea
 title: TextArea
+metaTitle: TextArea | NativeBase
+metaDescription: The TextArea component in NativeBase helps create multi-line text inputs. Learn more about usage, value controlled TextArea, invalid and disabled TextArea.
 ---
 
 import { ComponentTheme } from '../src/components';

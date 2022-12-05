@@ -1,6 +1,8 @@
 ---
 id: use-contrast-text
 title: useContrastText
+metaTitle: useContrastText | NativeBase
+metaDescription: useContrastText in NativeBase is a custom hook that provides color and text contrast against the background color passed asa  parameter. Read on to know more.
 ---
 
 `useContrastText` is a custom hook that provides color contrast text color (either `lightText` or `darkText`) against the background color that is passed as a parameter.

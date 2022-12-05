@@ -1,6 +1,8 @@
 ---
 id: checkbox
 title: CheckBox
+metaTitle: CheckBox | NativeBase
+metaDescription: The Checkbox component in NativeBase allows a user to select multiple values from various options in a form. Read on for examples and types of this component.
 ---
 
 import { ComponentTheme } from '../../src/components';

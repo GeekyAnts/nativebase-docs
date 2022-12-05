@@ -1,3 +1,8 @@
+---
+metaTitle: FABs | NativeBase
+metaDescription: Migrating FAB to NativeBase v3 will provide a lot more design, size, color, and customization options. Read this document for an overview and code comparison.
+---
+
 Migrating [`FAB`](/fab) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
 
 ## Overview

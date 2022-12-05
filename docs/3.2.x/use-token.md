@@ -1,6 +1,8 @@
 ---
 id: use-token
 title: useToken
+metaTitle: useToken | NativeBase
+metaDescription: The useToken hook in NativeBase resolves design tokens from the theme. Read the document to know more about the useToken hook and its uses along with examples.
 ---
 
 `useToken` is a custom hook used to resolve design tokens from the theme.
@@ -8,13 +10,13 @@ title: useToken
 ## Import
 
 ```jsx
-import { useToken } from 'native-base';
+import { useToken } from "native-base";
 ```
 
 ## Example
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   Box,
   Text,
@@ -23,14 +25,14 @@ import {
   Center,
   HStack,
   VStack,
-} from 'native-base';
+} from "native-base";
 
 function UseTokenHookExample() {
   const [colorPick1, colorPick2] = useToken(
     // the key within the theme, in this case `theme.colors`
-    'colors',
+    "colors",
     // the subkey(s), resolving to `theme.colors.warning.1`
-    ['yellow.500', 'cyan.500']
+    ["yellow.500", "cyan.500"]
     // a single fallback or fallback array matching the length of the previous arg
   );
 

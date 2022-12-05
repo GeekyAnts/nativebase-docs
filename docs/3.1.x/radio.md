@@ -1,6 +1,8 @@
 ---
 id: radio
 title: Radio
+metaTitle: Radio | NativeBase
+metaDescription: Radio component in NativeBase limits the selection from a series of options to only one. Read on for more on the Radio component and its types with examples.
 ---
 
 import { ComponentTheme } from '../../src/components';

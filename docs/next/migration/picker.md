@@ -1,6 +1,8 @@
 ---
 id: picker
 title: Picker
+metaTitle: Picker | NativeBase
+metaDescription: With NativeBase v3, we have replaced the Picker component with Select. Read this document for more information and for the code comparison between two versions.
 ---
 
 With v3 we have replaced the **Picker** with [`Select`](/select).

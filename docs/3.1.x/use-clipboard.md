@@ -1,6 +1,8 @@
 ---
 id: use-clipboard
 title: useClipboard
+metaTitle: useClipboard | NativeBase
+metaDescription: The useClipboard hook in NativeBase controls and regulates the copying of content to the clipboard. Read the document to explore and know further on this hook.
 ---
 
 `useClipboard` is a custom hook that handles copying content to clipboard.
@@ -16,13 +18,13 @@ The `useClipboard` hook returns an object with the following fields:
 ## Import
 
 ```jsx
-import { useClipboard } from 'native-base';
+import { useClipboard } from "native-base";
 ```
 
 ## Usage
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   Button,
   HStack,
@@ -32,11 +34,11 @@ import {
   useClipboard,
   NativeBaseProvider,
   Center,
-} from 'native-base';
+} from "native-base";
 
 function UseClipboardExample() {
-  const [copyText, setCopyText] = React.useState('Copy Me');
-  const [pasteText, setPasteText] = React.useState('');
+  const [copyText, setCopyText] = React.useState("Copy Me");
+  const [pasteText, setPasteText] = React.useState("");
   const { value, onCopy, hasCopied } = useClipboard();
   return (
     <VStack space={2} mx={2}>
@@ -50,7 +52,7 @@ function UseClipboardExample() {
         <Button onPress={() => onCopy(copyText)}>Copy</Button>
       </HStack>
       <HStack space={3}>
-        <Text>{hasCopied ? 'Copied' : 'Press here'}</Text>
+        <Text>{hasCopied ? "Copied" : "Press here"}</Text>
         <Input
           w="60%"
           placeholder="Paste To"

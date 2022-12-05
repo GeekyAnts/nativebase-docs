@@ -1,6 +1,8 @@
 ---
 id: thumbnail
 title: Thumbnail
+metaTitle: Thumbnail | NativeBase
+metaDescription: In NativeBase v3, we have replaced the Thumbnail component with Image. We provide Avatar in NativeBase as well. Read this document to know the code comparison.
 ---
 
 With v3 we have replaced the **Thumbnail** with [`Image`](/image). And we also provide [`Avatar`](/avatar) as well.

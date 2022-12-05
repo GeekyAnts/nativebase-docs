@@ -1,6 +1,8 @@
 ---
 id: layout
 title: Layout
+metaTitle: Layout | NativeBase
+metaDescription: You can easily create design layouts in NativeBase using the Row or Column components. Read on to know more about list layout along with the code comparison. 
 ---
 
 ## Grid
