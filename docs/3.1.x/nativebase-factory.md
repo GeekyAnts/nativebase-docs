@@ -1,20 +1,22 @@
 ---
 id: nativebase-factory
 title: NativeBase Factory
+metaTitle: NativeBase Factory | NativeBase
+metaDescription: NativeBase factory is a function that converts Non-NativeBase components to NativeBase-enabled components so you can pass style props to them.
 ---
 
 NativeBase factory is a function that converts non-nativebase components to nativebase enabled components so you can pass style props to them.
 
 ```jsx
-import { Factory } from 'native-base';
+import { Factory } from "native-base";
 ```
 
 ## Usage
 
 ```jsx isLive=true
-import React from 'react';
-import { Factory, NativeBaseProvider, Center } from 'native-base';
-import { View } from 'react-native';
+import React from "react";
+import { Factory, NativeBaseProvider, Center } from "native-base";
+import { View } from "react-native";
 
 function FactoryViewExample() {
   const FactoryView = Factory(View);
@@ -36,15 +38,15 @@ export function Example() {
 ## Defining component theme
 
 ```jsx isLive=true
-import React from 'react';
-import { Factory, NativeBaseProvider, Center } from 'native-base';
-import { View } from 'react-native';
+import React from "react";
+import { Factory, NativeBaseProvider, Center } from "native-base";
+import { View } from "react-native";
 
 function FactoryViewExample() {
   const FactoryView = Factory(View, {
     baseStyle: {
-      bg: 'cyan.300',
-      borderRadius: 'md',
+      bg: "cyan.300",
+      borderRadius: "md",
     },
   });
   return <FactoryView size={16} />;
@@ -65,16 +67,16 @@ export function Example() {
 ## Using mode in component theme
 
 ```jsx isLive=true
-import React from 'react';
-import { Factory, themeTools, NativeBaseProvider, Center } from 'native-base';
-import { View } from 'react-native';
+import React from "react";
+import { Factory, themeTools, NativeBaseProvider, Center } from "native-base";
+import { View } from "react-native";
 
 function FactoryViewModeExample() {
   const FactoryView = Factory(View, {
     baseStyle: (props) => {
       return {
-        bg: themeTools.mode('rose.500', 'cyan.300')(props),
-        borderRadius: 'md',
+        bg: themeTools.mode("rose.500", "cyan.300")(props),
+        borderRadius: "md",
       };
     },
   });
@@ -96,15 +98,15 @@ export function Example() {
 ## Using ref
 
 ```jsx isLive=true
-import React from 'react';
+import React from "react";
 import {
   Factory,
   Button,
   Stack,
   NativeBaseProvider,
   Center,
-} from 'native-base';
-import { TextInput } from 'react-native';
+} from "native-base";
+import { TextInput } from "react-native";
 
 function FactoryViewRefExample() {
   const NBInput = Factory(TextInput);
