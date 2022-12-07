@@ -22,5 +22,6 @@ jobs:
       - name: Cypress tests
         uses: ./
         with:
+          node-version: 16
           working-directory: /test-automation-cypress/cypress/e2e/pom
           build: npx cypress info
