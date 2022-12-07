@@ -1,27 +1,15 @@
-name: End-to-end tests
-on:
-  push:
-    branches:
-      - 'cypress_automation'
-  pull_request:
+name: Cypress tests
+on: [push]
 jobs:
- basic-ubuntu-20-v10:
+  cypress-run:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-       # Install NPM dependencies, cache them correctly
-       # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v4.1.0 # use the explicit version number
-        with:
-          working-directory: /test-automation-cypress
-          build: npm run build
-          start: npm start
-       #test   
-      - name: Cypress tests
-        uses: ./
+        uses: cypress-io/github-action@v4
         with:
           node-version: 16
-          working-directory: /test-automation-cypress
-          build: npx cypress info
+          start: npm start
+          config-file: test-automation-cypress/cypress.config.js
+          spec: test-automation-cypress/cypress/e2e/pom/checkAllVerticalNavigations.spec.js
