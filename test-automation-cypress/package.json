@@ -1,0 +1,53 @@
+{
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^11.2.0"
+  },
+  "name": "pageobjectmodel-cypress",
+  "version": "1.0.0",
+  "description": "Cypress test automation in page object model",
+  "main": "cypress/support/index.js",
+  "dependencies": {
+    "@mochajs/json-file-reporter": "^1.2.1",
+    "@shelex/cypress-allure-plugin": "^1.6.2",
+    "allure-commandline": "^2.9.0",
+    "clipboardy": "^3.0.0",
+    "cypress-downloadfile": "^1.2.0",
+    "cypress-multi-reporters": "^1.4.0",
+    "cypress-xpath": "^2.0.1",
+    "minimist": "^1.2.7",
+    "mocha": "^8.0.1",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0"
+  },
+  "scripts": {
+    "cypress": "cypress open",
+    "test": "./node_modules/.bin/cypress run --config video=false --record --key fe7b75fb-2e95-4b11-8924-02cf35bfeb06",
+    "test:video": "./node_modules/.bin/cypress run --config video=true --record --key fe7b75fb-2e95-4b11-8924-02cf35bfeb06",
+    "debug": "DEBUG=cypress:* ./node_modules/.bin/cypress run",
+    "cache:list": "./node_modules/.bin/cypress cache list",
+    "cache:clear": "./node_modules/.bin/cypress cache clear",
+    "generate-allure": "./node_modules/.bin/allure generate allure-results --clean -o allure-reports",
+    "open-allure": "./node_modules/.bin/allure open allure-reports",
+    "serve-allure": "./node_modules/.bin/allure serve allure-results",
+    "clean-allure": "rm -r allure-results/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nareshnavinash/Cypress-PageObjectModel.git"
+  },
+  "keywords": [
+    "cypress",
+    "pom",
+    "ui-automation",
+    "test-automation",
+    "framework"
+  ],
+  "author": "Naresh Sekar",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nareshnavinash/Cypress-PageObjectModel/issues"
+  },
+  "homepage": "https://github.com/nareshnavinash/Cypress-PageObjectModel#readme"
+}

@@ -1,0 +1,1 @@
+expo init my-app --template @native-base/expo-template
