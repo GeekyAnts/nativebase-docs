@@ -15,7 +15,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4.1.0 # use the explicit version number
         with:
-          working-directory: /test-automation-cypress/cypress/e2e/pom
+          working-directory: /test-automation-cypress
           build: npm run build
           start: npm start
        #test   
@@ -23,5 +23,5 @@ jobs:
         uses: ./
         with:
           node-version: 16
-          working-directory: /test-automation-cypress/cypress/e2e/pom
+          working-directory: /test-automation-cypress
           build: npx cypress info
