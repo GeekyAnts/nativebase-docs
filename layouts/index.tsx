@@ -179,7 +179,7 @@ function Layout({
                 >
                   <Sidebar sidebar={sidebar} />
                 </Box>
-                <Box>
+                <Box flex={1}>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -206,7 +206,7 @@ function Layout({
                       }}
                       width="100%"
                     >
-                      <Text flex={1}>
+                      <Text>
                         The alpha version of gluestack-ui is now available!
                         Start building today!
                       </Text>
@@ -229,6 +229,7 @@ function Layout({
                           borderColor: "muted.50",
                           color: "muted.50",
                         }}
+                        display={{ base: "none", md: "flex" }}
                       >
                         Explore gluestack-ui
                       </Text>
@@ -241,6 +242,8 @@ function Layout({
                         _dark={{
                           color: "muted.50",
                         }}
+                        display={{ base: "none", lg: "flex" }}
+                        underline
                       >
                         <a href="https://nativebase.io/blogs/the-future-of-nativebase">
                           Read more
