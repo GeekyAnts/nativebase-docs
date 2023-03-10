@@ -239,14 +239,28 @@ function Layout({
                       width="100%"
                     >
                       <Text
+                        display={{ base: "none", lg: "flex" }}
                         _light={{ color: "#404040" }}
                         _dark={{ color: "#E5E5E5" }}
+                        fontSize="sm"
+                        fontWeight="medium"
                       >
                         The alpha version of gluestack-ui is now available!
                         Start building today!
                       </Text>
 
                       <Text
+                        display={{ base: "flex", lg: "none" }}
+                        _light={{ color: "#404040" }}
+                        _dark={{ color: "#E5E5E5" }}
+                        fontSize="sm"
+                        fontWeight="medium"
+                      >
+                        The alpha version of gluestack-ui is now available!
+                      </Text>
+
+                      <Text
+                        display={{ base: "none", lg: "flex" }}
                         borderWidth={1}
                         rounded="sm"
                         px="3"
@@ -265,7 +279,30 @@ function Layout({
                       >
                         Explore gluestack-ui
                       </Text>
+
                       <Text
+                        display={{ base: "flex", lg: "none" }}
+                        borderWidth={1}
+                        rounded="sm"
+                        px="3"
+                        py="2"
+                        fontSize="sm"
+                        fontWeight="medium"
+                        mx="4"
+                        _light={{
+                          borderColor: "muted.900",
+                          color: "muted.900",
+                        }}
+                        _dark={{
+                          borderColor: "muted.50",
+                          color: "muted.50",
+                        }}
+                      >
+                        Explore
+                      </Text>
+
+                      <Text
+                        display={{ base: "none", lg: "flex" }}
                         fontSize="sm"
                         fontWeight="medium"
                         _light={{
@@ -275,7 +312,10 @@ function Layout({
                           color: "muted.50",
                         }}
                       >
-                        <a href="https://nativebase.io/blogs/the-future-of-nativebase/?utm_source=nativebase-docs&utm_medium=banner&utm_campaign=redirect">
+                        <a
+                          style={{ textDecoration: "underline" }}
+                          href="https://nativebase.io/blogs/the-future-of-nativebase/?utm_source=nativebase-docs&utm_medium=banner&utm_campaign=redirect"
+                        >
                           Read more
                         </a>
                       </Text>
