@@ -3,6 +3,7 @@ import React, { useEffect, useContext } from "react";
 import {
   Box,
   HStack,
+  VStack,
   Link,
   ScrollView,
   Text,
@@ -211,14 +212,82 @@ function Layout({
                 >
                   <Sidebar sidebar={sidebar} />
                 </Box>
-                <MainContent
-                  pages={pages}
-                  frontMatter={frontMatter}
-                  content={content}
-                  tocArray={tocArray}
-                  showToc={showToc}
-                  youtubeEmbedd={youtubeEmbedd}
-                />
+                <VStack flex={1}>
+                  <HStack
+                    // position="sticky"
+                    // top="64px"
+                    // zIndex={50}
+                    alignItems="center"
+                    justifyContent="center"
+                    overflow="hidden"
+                    px="4"
+                    py="5"
+                    fontSize="sm"
+                    fontWeight="medium"
+                    borderBottomWidth={1}
+                    _light={{
+                      bg: "#F1F1F1",
+                      color: "muted.700",
+                      borderColor: "#E5E5E5",
+                    }}
+                    _dark={{
+                      color: "muted.200",
+                      bg: "#171E2E",
+                      borderColor: "muted.800",
+                    }}
+                    width="100%"
+                  >
+                    <Text
+                      _light={{ color: "#404040" }}
+                      _dark={{ color: "#E5E5E5" }}
+                    >
+                      The alpha version of gluestack-ui is now available! Start
+                      building today!
+                    </Text>
+
+                    <Text
+                      borderWidth={1}
+                      rounded="sm"
+                      px="3"
+                      py="2"
+                      fontSize="sm"
+                      fontWeight="medium"
+                      mx="4"
+                      _light={{
+                        borderColor: "muted.900",
+                        color: "muted.900",
+                      }}
+                      _dark={{
+                        borderColor: "muted.50",
+                        color: "muted.50",
+                      }}
+                    >
+                      Explore gluestack-ui
+                    </Text>
+                    <Text
+                      fontSize="sm"
+                      fontWeight="medium"
+                      _light={{
+                        color: "muted.900",
+                      }}
+                      _dark={{
+                        color: "muted.50",
+                      }}
+                    >
+                      <a href="https://nativebase.io/blogs/the-future-of-nativebase">
+                        Read more
+                      </a>
+                    </Text>
+                  </HStack>
+                  <MainContent
+                    pages={pages}
+                    frontMatter={frontMatter}
+                    content={content}
+                    tocArray={tocArray}
+                    showToc={showToc}
+                    youtubeEmbedd={youtubeEmbedd}
+                  />
+                </VStack>
               </HStack>
             ) : (
               <>
