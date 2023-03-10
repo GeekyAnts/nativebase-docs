@@ -179,13 +179,83 @@ function Layout({
                 >
                   <Sidebar sidebar={sidebar} />
                 </Box>
-                <MainContent
-                  pages={pages}
-                  frontMatter={frontMatter}
-                  content={content}
-                  tocArray={tocArray}
-                  showToc={showToc}
-                />
+                <Box>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={`https://ui.gluestack.io//?utm_source=nativebase-docs&utm_medium=banner+&utm_campaign=nativebase-banner-cta&utm_id=nativebase-campaign-banner`}
+                  >
+                    <HStack
+                      alignItems="center"
+                      justifyContent="center"
+                      overflow="hidden"
+                      px="4"
+                      py="5"
+                      fontSize="sm"
+                      fontWeight="medium"
+                      borderWidth={1}
+                      _light={{
+                        bg: "#F1F1F1",
+                        color: "muted.700",
+                        borderColor: "muted.100",
+                      }}
+                      _dark={{
+                        color: "muted.200",
+                        bg: "#171E2E",
+                        borderColor: "muted.800",
+                      }}
+                      width="100%"
+                    >
+                      <Text flex={1}>
+                        The alpha version of gluestack-ui is now available!
+                        Start building today!
+                      </Text>
+                      {/* <span className="border border-[#171717] dark:border-[#fafafa] rounded px-3 py-2 text-sm font-medium mx-4">
+                        Explore gluestack-ui
+                      </span> */}
+                      <Text
+                        borderWidth={1}
+                        rounded="sm"
+                        px="3"
+                        py="2"
+                        fontSize="sm"
+                        fontWeight="medium"
+                        mx="4"
+                        _light={{
+                          borderColor: "muted.900",
+                          color: "muted.900",
+                        }}
+                        _dark={{
+                          borderColor: "muted.50",
+                          color: "muted.50",
+                        }}
+                      >
+                        Explore gluestack-ui
+                      </Text>
+                      <Text
+                        fontSize="sm"
+                        fontWeight="medium"
+                        _light={{
+                          color: "muted.900",
+                        }}
+                        _dark={{
+                          color: "muted.50",
+                        }}
+                      >
+                        <a href="https://nativebase.io/blogs/the-future-of-nativebase">
+                          Read more
+                        </a>
+                      </Text>
+                    </HStack>
+                  </a>
+                  <MainContent
+                    pages={pages}
+                    frontMatter={frontMatter}
+                    content={content}
+                    tocArray={tocArray}
+                    showToc={showToc}
+                  />
+                </Box>
               </HStack>
             ) : (
               <>
