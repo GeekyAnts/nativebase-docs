@@ -3,7 +3,9 @@ import React, { useEffect, useContext } from "react";
 import {
   Box,
   HStack,
+  Pressable,
   ScrollView,
+  Stack,
   Text,
   useBreakpointValue,
   useColorModeValue,
@@ -185,9 +187,9 @@ function Layout({
                     rel="noopener noreferrer"
                     href={`https://ui.gluestack.io//?utm_source=nativebase-docs&utm_medium=banner+&utm_campaign=nativebase-banner-cta&utm_id=nativebase-campaign-banner`}
                   >
-                    <HStack
-                      alignItems="center"
-                      justifyContent="center"
+                    <Stack
+                      alignItems={{ md: "center" }}
+                      justifyContent={{ md: "center" }}
                       overflow="hidden"
                       px="4"
                       py="5"
@@ -205,6 +207,7 @@ function Layout({
                         borderColor: "muted.800",
                       }}
                       width="100%"
+                      direction={{ md: "row" }}
                     >
                       <Text>
                         The alpha version of gluestack-ui is now available!
@@ -213,43 +216,72 @@ function Layout({
                       {/* <span className="border border-[#171717] dark:border-[#fafafa] rounded px-3 py-2 text-sm font-medium mx-4">
                         Explore gluestack-ui
                       </span> */}
-                      <Text
-                        borderWidth={1}
-                        rounded="sm"
-                        px="3"
-                        py="2"
-                        fontSize="sm"
-                        fontWeight="medium"
-                        mx="4"
-                        _light={{
-                          borderColor: "muted.900",
-                          color: "muted.900",
-                        }}
-                        _dark={{
-                          borderColor: "muted.50",
-                          color: "muted.50",
-                        }}
-                        display={{ base: "none", md: "flex" }}
+                      <HStack
+                        alignItems="center"
+                        mt={{ base: "4", md: 0 }}
+                        ml={{ md: "4" }}
                       >
-                        Explore gluestack-ui
-                      </Text>
-                      <Text
-                        fontSize="sm"
-                        fontWeight="medium"
-                        _light={{
-                          color: "muted.900",
-                        }}
-                        _dark={{
-                          color: "muted.50",
-                        }}
-                        display={{ base: "none", lg: "flex" }}
-                        underline
-                      >
-                        <a href="https://nativebase.io/blogs/the-future-of-nativebase">
-                          Read more
-                        </a>
-                      </Text>
-                    </HStack>
+                        <Pressable
+                          borderWidth={1}
+                          rounded="sm"
+                          px="3"
+                          py="2"
+                          mr="4"
+                          _light={{
+                            borderColor: "muted.900",
+                          }}
+                          _dark={{
+                            borderColor: "muted.50",
+                          }}
+                          _hover={{
+                            bg: "primary.200",
+                            borderColor: "primary.200",
+
+                            _dark: {
+                              bg: "primary.700",
+                              borderColor: "primary.700",
+                            },
+                          }}
+                          _focus={{
+                            bg: "primary.300",
+                            borderColor: "primary.300",
+
+                            _dark: {
+                              bg: "primary.800",
+                              borderColor: "primary.800",
+                            },
+                          }}
+                        >
+                          <Text
+                            fontSize="sm"
+                            fontWeight="medium"
+                            _light={{
+                              color: "muted.900",
+                            }}
+                            _dark={{
+                              color: "muted.50",
+                            }}
+                          >
+                            Explore gluestack-ui
+                          </Text>
+                        </Pressable>
+                        <Text
+                          fontSize="sm"
+                          fontWeight="medium"
+                          _light={{
+                            color: "muted.900",
+                          }}
+                          _dark={{
+                            color: "muted.50",
+                          }}
+                          underline
+                        >
+                          <a href="https://nativebase.io/blogs/the-future-of-nativebase">
+                            Read more
+                          </a>
+                        </Text>
+                      </HStack>
+                    </Stack>
                   </a>
                   <MainContent
                     pages={pages}
