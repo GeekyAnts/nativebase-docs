@@ -5,8 +5,6 @@ title: Install in Expo project
 
 import { TileLink } from "../src/components";
 
-Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
-
 <DocTabs
   defaultValue='new'
   values={[
@@ -15,80 +13,208 @@ Expo helps you to create universal (iOS, Android and Web) React Native apps with
   ]}>
  <DocTabItem value="new">
 
-### Create a new project using Expo CLI with NativeBase template
+<Box mt="3" />
 
-<h4 style={{marginTop:"40px"}} className="mt-10 font-mono">Plain Javascript</h4>
-<Box maxWidth="750px">
+#### Create a new project using Expo CLI with NativeBase template
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
+</Text>
+<br/>
+<Box>
+<Box 
+_dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md">
+Using npx
+</Text>
+<Text
+ _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+> 
+Choose your preferred template and start your development swiftly. 
+Open a Terminal in your project's folder and run the following one of these command :
+</Text>
+<br/>
+<Text
+ _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+>
+ Plain Javascript
+</Text>
 
 ```bash
-expo init my-app --template @native-base/expo-template
+npx create-expo-app my-app --template @native-base/expo-template
 ```
 
-</Box>
-
-<h4 className="mt-8 font-mono">With Typescript</h4>
-<Box maxWidth="750px">
+<Text fontSize="sm" lineHeight="sm">
+  Yey! you are all set, start editing src/pages/index.js now.
+</Text>
+<br />
+<Text
+  mt="0.5"
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="bold"
+>
+  With Typescript
+</Text>
 
 ```bash
-expo init my-app --template @native-base/expo-template-typescript
+npx create-expo-app my-app --template @native-base/expo-template-typescript
 ```
 
+<Text fontSize="sm" lineHeight="sm">
+Yey! you are all set, start editing src/pages/index.tsx now.
+</Text>
 </Box>
-
-Yey! you are all set, start editing App.js/App.tsx now.
+</Box>
 
 </DocTabItem>
 
 <DocTabItem value="existing">
 
-### Create a new expo project if not exist
+<Box mt="3" />
 
-```bash
+#### Create a new expo project if not exist
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  To create a new expo project run the following command:
+</Text>
+
+```bash isBashStyled=false
 npm install --global expo-cli
 expo init my-project
 cd my-project/
 ```
+<HStack mb='4'>
+<Pressable>
+  {({ isHovered }) => {
+    return (
+      <Link
+        _text={{
+          _light: {
+            color: "cyan.600",
+          },
+          _dark: {
+            color: "cyan.500",
+          },
+          textDecorationLine: isHovered ? "underline" : "none",
+          fontWeight: 'medium'
+        }}
+        href={"https://docs.expo.io/"}
+      >
+        Refer this link {" "}
+      </Link>
+    );
+  }}
+</Pressable>
+<Text _dark={{ color: "coolGray.300" }}  _light={{ color: "coolGray.800" }}>for additional information on Expo and setting up an Expo starter app. </Text>
+</HStack>
 
-[Refer this link](https://docs.expo.io/) for additional information on Expo and setting up an Expo starter app.
+#### Install dependencies
 
-### Install dependencies
-
-  <DocTabs
-  defaultValue='yarn'
-  values={[
-  { label: 'yarn', value: 'yarn' },
-  { label: 'npm', value: 'npm' }
-  ]}>
-
-<DocTabItem value="yarn">
+<Text _dark={{ color: "coolGray.300" }} _light={{ color: "coolGray.800" }}>
+  You can install the package and its peer dependencies using the package
+  manager of your choice.
+</Text>
+<br />
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+ Open a Terminal in your project's folder and run:
+</Text>
 
 ```bash
 yarn add native-base
 ```
 
-  </DocTabItem>
+</Box>
 
-  <DocTabItem value="npm">
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using npm
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+ Open a Terminal in your project's folder and run:
+</Text>
 
 ```bash
 npm install native-base
 ```
 
-  </DocTabItem>
+</Box>
 
-  </DocTabs>
+- <Text
+    _dark={{ color: "coolGray.300" }}
+    _light={{ color: "coolGray.800" }}
+    fontWeight="medium"
+    fontSize="sm"
+  >
+    To install peer dependencies run following commands in your expo project:
+  </Text>
 
-```bash
+```bash isBashStyled=false
 expo install react-native-svg@12.1.1
 ```
 
-```bash
+```bash isBashStyled=false
 expo install react-native-safe-area-context@3.3.2
 ```
 
-### Run the Hello world example
+<Box mt="3" />
 
-Put the below code in your App.js
+#### Run the Hello world example
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  and put this in your pages/index.js
+</Text>
 
 ```jsx
 import React from "react";
@@ -105,13 +231,6 @@ export default function App() {
 
 </DocTabItem>
 </DocTabs>
-
-<Center>
-  <AspectRatio ratio={2.21} w="100%" maxW="500">
-    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
-  </AspectRatio>
-</Center>
-
 <Box>
   <Box mt="4" mb="8">
     <HStack pl="0" ml="0" space="4">

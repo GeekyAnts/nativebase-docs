@@ -20,27 +20,35 @@ export const DocTabs = ({ children, values, defaultValue }: any) => {
             <Pressable
               key={"Tab-" + index}
               _hover={{
-                _light: { bg: "coolGray.400:alpha.40" },
-                _dark: { bg: "coolGray.700:alpha.40" },
+                _light: { bg: "inactiveSidebarItemHoverBackgroundLight" },
+                _dark: { bg: "inactiveSidebarItemHoverBackgroundDark" },
               }}
               onPress={() => onPressHandler(index)}
               justifyContent={"center"}
               alignItems="center"
               py="4"
-              px="5"
-              roundedTop="6"
+              px="6"
+              roundedTop="8"
               borderBottomWidth={2}
+              _light={{
+                borderColor:
+                  selected !== values[index].value
+                    ? "transparent"
+                    : "primary.600",
+              }}
               borderColor={
-                selected !== values[index].value
-                  ? "transparent"
-                  : "SelectedTabBorderColor"
+                selected !== values[index].value ? "transparent" : "primary.500"
               }
             >
               <Text
+                _light={{
+                  color:
+                    selected !== values[index].value
+                      ? textColor
+                      : "primary.600",
+                }}
                 color={
-                  selected !== values[index].value
-                    ? textColor
-                    : "SelectedTabTextColor"
+                  selected !== values[index].value ? textColor : "primary.500"
                 }
               >
                 {value.label}

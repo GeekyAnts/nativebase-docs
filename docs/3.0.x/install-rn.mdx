@@ -5,48 +5,101 @@ title: Install in React Native project
 
 import { TileLink } from "../../src/components";
 
-### Create a new project
+#### Create a new React Native CLI project
 
-```bash
-npx react-native init AwesomeNativeBase
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+  fontWeight="medium"
+>
+  To create a new react project run the following command:
+</Text>
+
+```bash isBashStyled=false
+  npx react-native init AwesomeNativeBase
 cd AwesomeNativeBase
 ```
 
-### Install dependencies
 
-<DocTabs
-defaultValue='yarn'
-values={[
-{ label: 'yarn', value: 'yarn' },
-{ label: 'npm', value: 'npm' }
-]}>
+<Box mt='3' />
 
-<DocTabItem value="yarn">
+#### Install dependencies
+
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  You can install the package and its peer dependencies using the package manager of your choice.
+</Text>
+<Box mt='3' />
+<Box 
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using yarn
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+ Open a Terminal in your project's folder and run :
+</Text>
 
 ```bash
-yarn add native-base react-native-svg@12.1.1 styled-components styled-system react-native-safe-area-context@3.3.2
+  yarn add native-base react-native-svg@12.1.1 styled-components styled-system react-native-safe-area-context@3.3.2
 ```
 
-</DocTabItem>
-<DocTabItem value="npm">
+</Box>
+
+<Box
+ _dark={{ bg: "#171E2E" }}
+_light={{ bg: "coolGray.50" }}
+rounded='lg' 
+py="3"
+px="4"
+pb='4'
+rounded="md"
+mb='8'
+>
+<Text bold mb="2" fontSize="md" >
+  Using npm
+</Text>
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Open a Terminal in your project's folder and run :
+</Text>
 
 ```bash
-npm install native-base react-native-svg@12.1.1 styled-components styled-system react-native-safe-area-context@3.3.2
+   npm install native-base react-native-svg@12.1.1 styled-components styled-system react-native-safe-area-context@3.3.2
 ```
 
-</DocTabItem>
-</DocTabs>
+</Box>
 
-### Run pod install
+#### Run pod install
 
-```bash
-cd ios/
+```bash isBashStyled=false
+  cd ios/
 pod install
 ```
+<Box mt='3' />
 
-### Run the Hello world example
+#### Run the Hello world example
 
-Put the below code in your App.js
+<Text
+  _dark={{ color: "coolGray.300" }}
+  _light={{ color: "coolGray.800" }}
+>
+  Put the below code in your App.js
+</Text>
 
 ```jsx
 import React from "react";
@@ -61,11 +114,7 @@ function App() {
 }
 ```
 
-<Center>
-  <AspectRatio ratio={2.21} w="100%" maxW="500">
-    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
-  </AspectRatio>
-</Center>
+
 
 <Box>
   <Box mt="4" mb="8">

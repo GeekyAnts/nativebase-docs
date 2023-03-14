@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import NextImage from "next/image";
-import { Box, Text, Factory, HStack } from "native-base";
+import { Box, Text, Factory, HStack, Pressable } from "native-base";
 
 export default function TileLink({
   title,
@@ -23,7 +23,7 @@ export default function TileLink({
   const Image = Factory(NextImage);
   return (
     <Link passHref href={url}>
-      <Box
+      <Pressable
         flex="1"
         position="relative"
         overflow="hidden"
@@ -31,8 +31,18 @@ export default function TileLink({
         px="4"
         shadow="2"
         rounded="md"
-        _dark={{ bg: "blueGray.800" }}
-        _light={{ bg: "coolGray.200" }}
+        _dark={{
+          bg: "blueGray.800",
+          _hover: {
+            bg: "blueGray.700",
+          },
+        }}
+        _light={{
+          bg: "coolGray.200",
+          _hover: {
+            bg: "coolGray.300",
+          },
+        }}
         {...props}
       >
         <HStack space={TitleIcon ? "1" : "0"}>
@@ -55,7 +65,7 @@ export default function TileLink({
             />
           </Box>
         )}
-      </Box>
+      </Pressable>
     </Link>
   );
 }

@@ -5,15 +5,17 @@ title: Setup NativeBase Provider
 
 NativeBaseProvider is a component that makes the theme available throughout your app. It uses React's Context API. Add NativeBaseProvider to the root of your app and update App.js as follows:
 
-**App.js**
+## App.js
 
 ```jsx
 import React from 'react';
-// 1. import `NativeBaseProvider` component
+
+// 1. Import `NativeBaseProvider` component
 import { NativeBaseProvider, Text, Box } from 'native-base';
 
 export default function App() {
-  // 2. Use at the root of your app
+
+  // 2. Wrap `NativeBaseProvider` at the root of your app
   return (
     <NativeBaseProvider>
       <Box flex={1} bg="#fff" alignItems="center" justifyContent="center">
@@ -31,8 +33,10 @@ If you need to customize the default theme to match your design requirements, yo
 NativeBase 3.0 provides an `extendTheme` function that deep merges the default theme with your customizations.
 
 ```jsx
+
 // 1. Import the extendTheme function
 import { extendTheme, NativeBaseProvider } from 'native-base';
+
 // 2. Extend the theme to include custom colors, fonts, etc
 const newColorTheme = {
   brand: {
@@ -42,6 +46,7 @@ const newColorTheme = {
   },
 };
 const theme = extendTheme({ colors: newColorTheme });
+
 // 3. Pass the `theme` prop to the `NativeBaseProvider`
 function App() {
   return (
@@ -126,4 +131,4 @@ export default () => {
 | initialWindowMetrics | Object                              | Mock data for frame and insets. [Refer this](https://github.com/th3rdwave/react-native-safe-area-context#testing) for further information. | -                        |
 | colorModeManager     | { get : Function , set : Function } | Manages Color mode in your app                                                                                                              | -                        |
 | theme                | Object                              | Provides a custom theme for your app.                                                                                                              | NativeBase Default Theme |
-| config               | {dependencies: {}}                  | To include external dependencies. For example - [Linear gradient](box#with-linear-gradient)                                                | -                        |
+| config               | {dependencies: {}}                  | To include external dependencies. For example - [Linear gradient](box#h3-with-linear-gradient)                                                | -                        |

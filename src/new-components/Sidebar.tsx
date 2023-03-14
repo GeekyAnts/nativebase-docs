@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AppContext } from "../AppContext";
 import { Box, HStack, Pressable, ScrollView, Text } from "native-base";
 import React from "react";
@@ -6,6 +6,20 @@ import { isLatestVersionSlug } from "../utils";
 import { SidebarBadge } from "./SidebarBadge";
 import { CollapsibleSidebarItem } from "./CollapsibleSidebarItem";
 import Link from "next/link";
+
+const Hoverable = ({ children }: any) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const child = typeof children === "function" ? children(isHovered) : children;
+
+  const hoverIn = () => setIsHovered(true);
+  const hoverOut = () => setIsHovered(false);
+
+  return React.cloneElement(React.Children.only(child), {
+    onMouseEnter: hoverIn,
+    onMouseLeave: hoverOut,
+  });
+};
 
 export default function Sidebar(props: any) {
   const { sidebar, isMobile, setIsOpenSidebar } = props;
@@ -44,66 +58,80 @@ const SidebarItem = (props: any) => {
     return (
       <Box key={index} w="100%">
         {item.pages === undefined ? (
-          <Pressable
-            onPress={() => {
-              setActiveSidebarItem(item.id);
-              if (isMobile) {
-                setIsOpenSidebar(false);
-              }
-            }}
-            _hover={{
-              _dark: {
-                bg:
-                  item.id === activeSidebarItem
-                    ? "activeSidebarItemHoverBackgroundDark"
-                    : "inactiveSidebarItemHoverBackgroundDark",
-              },
-              _light: {
-                bg:
-                  item.id === activeSidebarItem
-                    ? "activeSidebarItemHoverBackgroundLight:alpha.80"
-                    : "inactiveSidebarItemHoverBackgroundLight",
-              },
-            }}
-            _light={{
-              bg:
-                item.id === activeSidebarItem
-                  ? "activeSidebarItemBackgroundLight:alpha.60"
-                  : "transparent",
-            }}
-            _dark={{
-              bg:
-                item.id === activeSidebarItem
-                  ? "activeSidebarItemBackgroundDark"
-                  : "transparent",
-            }}
-            bg={item.id === activeSidebarItem ? "cyan.100" : undefined}
-          >
-            <Link
-              passHref
-              href={`${
-                isLatestVersionSlug(activeVersion) ? "" : activeVersion + "/"
-              }${item.id}`}
-            >
-              <Box pl="8" px="4" py="2">
-                <HStack
-                  space="3"
-                  alignItems="center"
-                  pl={level > 1 ? level + 14 + "px" : "0px"}
+          <Hoverable>
+            {(isHovered: any) => {
+              return (
+                <Box
+                  // //@ts-ignore
+                  // onPress={() => {
+                  //   setActiveSidebarItem(item.id);
+                  //   if (isMobile) {
+                  //     setIsOpenSidebar(false);
+                  //   }
+                  // }}
+                  _light={{
+                    bg:
+                      item.id === activeSidebarItem
+                        ? isHovered
+                          ? "activeSidebarItemHoverBackgroundLight:alpha.80"
+                          : "activeSidebarItemBackgroundLight:alpha.60"
+                        : isHovered
+                        ? "inactiveSidebarItemHoverBackgroundLight"
+                        : "transparent",
+                  }}
+                  _dark={{
+                    bg:
+                      item.id === activeSidebarItem
+                        ? isHovered
+                          ? "activeSidebarItemHoverBackgroundDark"
+                          : "activeSidebarItemBackgroundDark"
+                        : isHovered
+                        ? "inactiveSidebarItemHoverBackgroundDark"
+                        : "transparent",
+                  }}
+                  bg={item.id === activeSidebarItem ? "cyan.100" : undefined}
                 >
-                  <Text
-                    fontWeight="300"
-                    fontSize="sm"
-                    _dark={{ color: "sidebarItemTextDark" }}
-                    _light={{ color: "sidebarItemTextLight" }}
+                  <Link
+                    passHref
+                    href={`${
+                      isLatestVersionSlug(activeVersion)
+                        ? ""
+                        : activeVersion + "/"
+                    }${item.id}`}
                   >
-                    {item.title}
-                  </Text>
-                  {item?.status && <SidebarBadge status={item.status} />}
-                </HStack>
-              </Box>
-            </Link>
-          </Pressable>
+                    <a
+                      onClick={() => {
+                        setActiveSidebarItem(item.id);
+                        if (isMobile) {
+                          setIsOpenSidebar(false);
+                        }
+                      }}
+                    >
+                      <Box pl="8" px="4" py="2">
+                        <HStack
+                          space="3"
+                          alignItems="center"
+                          pl={level > 1 ? level + 14 + "px" : "0px"}
+                        >
+                          <Text
+                            fontWeight="300"
+                            fontSize="sm"
+                            _dark={{ color: "sidebarItemTextDark" }}
+                            _light={{ color: "sidebarItemTextLight" }}
+                          >
+                            {item.title}
+                          </Text>
+                          {item?.status && (
+                            <SidebarBadge status={item.status} />
+                          )}
+                        </HStack>
+                      </Box>
+                    </a>
+                  </Link>
+                </Box>
+              );
+            }}
+          </Hoverable>
         ) : (
           <CollapsibleSidebarItem
             isMobile={isMobile}

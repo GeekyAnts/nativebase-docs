@@ -102,6 +102,14 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     img: Img,
     a: Anchor,
     code: ({ children, ...props }: any) => {
+      const isBash =
+        props?.isBashStyled === "false"
+          ? false
+          : props?.className === "language-bash"
+          ? true
+          : false;
+      console.log(isBash, props, "isBash###");
+
       if (props?.isLive) return <Playground {...props}>{children}</Playground>;
       else if (props?.isSnackPlayer)
         return <SnackPlayer {...props}>{children}</SnackPlayer>;
@@ -111,7 +119,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
             {children}
           </Showcase>
         );
-      else return <CodeBlock>{children}</CodeBlock>;
+      else return <CodeBlock isBash={isBash}>{children}</CodeBlock>;
     },
     table: TableBox,
     thead: TableHead,
