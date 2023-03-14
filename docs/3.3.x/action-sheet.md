@@ -8,7 +8,7 @@ import { ComponentTheme } from '../src/components';
 An Action Sheet is a dialog that displays a set of options. It appears on top of the app's content.
 
 ```jsx isShowcase
-import React from "react"
+import React from "react";
 import {
   Button,
   Actionsheet,
@@ -17,12 +17,14 @@ import {
   Box,
   Center,
   NativeBaseProvider,
-} from "native-base"
+} from "native-base";
 export function Example() {
-  const { isOpen, onOpen, onClose } = useDisclose()
+  const { isOpen, onOpen, onClose } = useDisclose();
   return (
     <>
-      <Button onPress={onOpen} shadow={2}>Actionsheet</Button>
+      <Button onPress={onOpen} shadow={2}>
+        Actionsheet
+      </Button>
       <Actionsheet isOpen={isOpen} onClose={onClose}>
         <Actionsheet.Content>
           <Box w="100%" h={60} px={4} justifyContent="center">
@@ -44,7 +46,7 @@ export function Example() {
         </Actionsheet.Content>
       </Actionsheet>
     </>
-  )
+  );
 }
 ```
 
@@ -57,7 +59,7 @@ NativeBase exports 3 modal-related components:
 - **Actionsheet.Item**: A button to wrap the options of the Actionsheet.
 
 ```jsx
-import { Actionsheet } from 'native-base';
+import { Actionsheet } from "native-base";
 ```
 
 ## Examples
@@ -102,7 +104,7 @@ import { Actionsheet } from 'native-base';
 
 ### Actionsheet.Item
 
-ActionsheetItem implements [Button](button.md#props)
+ActionsheetItem implements [Button](button#h2-props)
 
 ## Styling
 

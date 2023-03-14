@@ -3,10 +3,10 @@ id: flex
 title: Flex
 ---
 
-`Flex` is a [`Box`](box.md) with `display: flex` and comes with helpful style shorthand.
+`Flex` provides helpful style shorthand and is a [`Box`](box.md) with `display: flex`.
 
 ```jsx isShowcase
-import React from "react";
+import React from 'react';
 import {
   Flex,
   Center,
@@ -15,17 +15,17 @@ import {
   VStack,
   Divider,
   Box,
-} from "native-base";
+} from 'native-base';
 
 export function Example() {
   return (
     <Box flex="1" safeAreaTop>
       <ScrollView
         _contentContainerStyle={{
-          h: "40",
-          px: "20px",
-          mb: "4",
-          minW: "72",
+          h: '40',
+          px: '20px',
+          mb: '4',
+          minW: '72',
         }}
       >
         <VStack space={2.5} w="100%" px="3">
@@ -36,7 +36,7 @@ export function Example() {
             mb="2.5"
             mt="1.5"
             _text={{
-              color: "coolGray.800",
+              color: 'coolGray.800',
             }}
           >
             <Center size="16" bg="primary.100">
@@ -61,7 +61,7 @@ export function Example() {
             mb="2.5"
             mt="1.5"
             _text={{
-              color: "coolGray.800",
+              color: 'coolGray.800',
             }}
           >
             <Center size="16" bg="primary.100">
@@ -85,7 +85,7 @@ export function Example() {
             mb="2.5"
             mt="1.5"
             _text={{
-              color: "coolGray.800",
+              color: 'coolGray.800',
             }}
           >
             <Center size="16" bg="primary.100">
@@ -109,7 +109,7 @@ export function Example() {
             mb="2.5"
             mt="1.5"
             _text={{
-              color: "coolGray.800",
+              color: 'coolGray.800',
             }}
           >
             <Center size="16" bg="primary.100">
@@ -136,7 +136,7 @@ export function Example() {
 ## Import
 
 ```jsx
-import { Flex, Spacer } from "native-base";
+import { Flex, Spacer } from 'native-base';
 ```
 
 - `Flex`: a **[Box](box.md)** with `display: flex`
@@ -144,7 +144,7 @@ import { Flex, Spacer } from "native-base";
 
 ## Usage
 
-Flex components comes with some helpful shorthand props:
+Flex components come with some helpful shorthand props:
 
 - `flexDirection` is `direction`
 - `flexWrap` is `wrap`

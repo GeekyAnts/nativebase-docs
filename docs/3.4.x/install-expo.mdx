@@ -1,0 +1,140 @@
+---
+id: install-expo
+title: Install in Expo project
+---
+
+import { TileLink } from "../src/components";
+
+Expo helps you to create universal (iOS, Android and Web) React Native apps with no build configuration.
+
+<DocTabs
+  defaultValue='new'
+  values={[
+  { label: 'New Project', value: 'new' },
+  { label: 'Existing Project', value: 'existing' }
+  ]}>
+ <DocTabItem value="new">
+
+### Create a new project using Expo CLI with NativeBase template
+
+<h4 style={{marginTop:"40px"}} className="mt-10 font-mono">Plain Javascript</h4>
+<Box maxWidth="750px">
+
+```bash
+expo init my-app --template @native-base/expo-template
+```
+
+</Box>
+
+<h4 className="mt-8 font-mono">With Typescript</h4>
+<Box maxWidth="750px">
+
+```bash
+expo init my-app --template @native-base/expo-template-typescript
+```
+
+</Box>
+
+Yey! you are all set, start editing App.js/App.tsx now.
+
+</DocTabItem>
+
+<DocTabItem value="existing">
+
+### Create a new expo project if not exist
+
+```bash
+npm install --global expo-cli
+expo init my-project
+cd my-project/
+```
+
+[Refer this link](https://docs.expo.io/) for additional information on Expo and setting up an Expo starter app.
+
+### Install dependencies
+
+  <DocTabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+<DocTabItem value="yarn">
+
+```bash
+yarn add native-base
+```
+
+  </DocTabItem>
+
+  <DocTabItem value="npm">
+
+```bash
+npm install native-base
+```
+
+  </DocTabItem>
+
+  </DocTabs>
+
+```bash
+expo install react-native-svg@12.1.1
+```
+
+```bash
+expo install react-native-safe-area-context@3.3.2
+```
+
+### Run the Hello world example
+
+Put the below code in your App.js
+
+```jsx
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
+
+export default function App() {
+  return (
+    <NativeBaseProvider>
+      <Box>Hello world</Box>
+    </NativeBaseProvider>
+  );
+}
+```
+
+</DocTabItem>
+</DocTabs>
+
+<Center>
+  <AspectRatio ratio={2.21} w="100%" maxW="500">
+    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
+  </AspectRatio>
+</Center>
+
+<Box>
+  <Box mt="4" mb="8">
+    <HStack pl="0" ml="0" space="4">
+      <TileLink
+        title="Customize NativeBaseProvider"
+        url="setup-provider"
+        description="NativeBaseProvider provides theme throughout your application"
+        className="bg-blueGray-600 mt-2"
+      />
+      <TileLink
+        title="Theme"
+        url="default-theme"
+        description="Read more about the default NativeBase theme and how to override it"
+        className="bg-blueGray-600  mt-2"
+      />
+    </HStack>
+    <Box mt="4" pl="0" ml="0">
+      <TileLink
+        title="Utility props"
+        url="utility-props"
+        description="Shorthands of commonly used styling props which maps with the provided theme"
+        className="bg-blueGray-600"
+      />
+    </Box>
+  </Box>
+</Box>

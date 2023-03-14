@@ -88,13 +88,13 @@ export default function NBHistory() {
                 _dark={{ color: "coolGray.50" }}
                 _light={{ color: "coolGray.800", fontWeight: "medium" }}
               >
-                (2020)
+                (2021)
               </Text>
             </Stack>
           </Stack>
         </>
       </Hidden>
-      <VStack mt={["0","0","10"]} space="6">
+      <VStack mt={["0", "0", "10"]} space="6">
         <Li>
           <Text
             _dark={{ color: "coolGray.400" }}
@@ -144,7 +144,7 @@ export default function NBHistory() {
               NativeBase v3.x :{" "}
             </Text>
             We wanted to make NativeBase the go-to component library for anyone
-            building with React Native and Web (in alpha). This version is
+            building with React Native and Web. This version is
             accessible, highly customizable and consistent across android, iOS &
             web. That&apos;s not all though, read on for the full benefits of
             using v3.

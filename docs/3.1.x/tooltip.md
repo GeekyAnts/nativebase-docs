@@ -10,7 +10,7 @@ A tooltip is a brief, informative message that appears when a user interacts wit
 ## Import
 
 ```jsx
-import { Tooltip } from 'native-base';
+import { Tooltip } from "native-base";
 ```
 
 ## Examples
@@ -29,7 +29,7 @@ import { Tooltip } from 'native-base';
 
 ### Customizing tooltip
 
-Tooltip is a wrapper around [Box](box.md). So, it also accepts all the [Box](box.md#props) props.
+Tooltip is a wrapper around [Box](box.md). So, it also accepts all the [Box](box.md#h2-props) props.
 
 ```ComponentSnackPlayer path=composites,Tooltip,CustomTooltip.tsx
 
@@ -54,11 +54,12 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 ## Accessibility
 
 Adheres to the [Tooltip WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-1.1/#tooltip)
+
 ### Keyboard Interactions
 
-| Name                | Description |
-| --------------------|-------------|
-| Space   | If open, closes the tooltip without delay. |
-| Enter   | If open, closes the tooltip without delay. |
-| Tab     | Moves focus to the next focusable element. |
-| Esc     | If open, closes the tooltip without delay. | 
+| Name  | Description                                |
+| ----- | ------------------------------------------ |
+| Space | If open, closes the tooltip without delay. |
+| Enter | If open, closes the tooltip without delay. |
+| Tab   | Moves focus to the next focusable element. |
+| Esc   | If open, closes the tooltip without delay. |

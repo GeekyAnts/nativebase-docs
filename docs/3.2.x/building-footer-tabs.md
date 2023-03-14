@@ -8,7 +8,7 @@ With NativeBase v3 we have removed FooterTab components because as it's very sim
 ## Example
 
 ```jsx isLive
-import React from "react";
+import React from 'react';
 import {
   NativeBaseProvider,
   Box,
@@ -23,15 +23,15 @@ import {
   HStack,
   Center,
   Pressable,
-} from "native-base";
-import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
+} from 'native-base';
+import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 
 export function Example() {
   const [selected, setSelected] = React.useState(1);
   return (
     <NativeBaseProvider>
       <Box flex={1} bg="white" safeAreaTop>
-        <Center flex={1}></Center>
+        
         <HStack bg="indigo.600" alignItems="center" safeAreaBottom shadow={6}>
           <Pressable
             cursor="pointer"
@@ -45,7 +45,7 @@ export function Example() {
                 mb="1"
                 as={
                   <MaterialCommunityIcons
-                    name={selected === 0 ? "home" : "home-outline"}
+                    name={selected === 0 ? 'home' : 'home-outline'}
                   />
                 }
                 color="white"
@@ -87,7 +87,7 @@ export function Example() {
                 mb="1"
                 as={
                   <MaterialCommunityIcons
-                    name={selected === 2 ? "cart" : "cart-outline"}
+                    name={selected === 2 ? 'cart' : 'cart-outline'}
                   />
                 }
                 color="white"
@@ -110,7 +110,7 @@ export function Example() {
                 mb="1"
                 as={
                   <MaterialCommunityIcons
-                    name={selected === 3 ? "account" : "account-outline"}
+                    name={selected === 3 ? 'account' : 'account-outline'}
                   />
                 }
                 color="white"

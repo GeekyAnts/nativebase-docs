@@ -1,0 +1,241 @@
+---
+id: migration-guide-three-point-two
+title: Upgrading to 3.2.0 from 3.x
+---
+
+As we continued to improve NativeBase v3, we got a lot of feature requests and we also revamped our theme to make it more consistent, easy to understand, and optimized to promote good practices while writing code.
+
+In order to do this, we had to make some changes to our theme in `v3.2.0`. These are breaking changes if you are using some of the tokens in your project. To make it easy for you to upgrade, we are providing three options:
+
+##   Extend Previous Version's Theme for Backward Compatibility
+
+You need to add `v3CompatibleTheme` to your `NativeBaseProvider` which preserves all the old tokens that were changed or removed in v3.2.0.
+
+```jsx
+import {
+  NativeBaseProvider,
+  extendTheme,
+  v3CompatibleTheme,
+} from 'native-base';
+
+// ...
+const yourCustomTheme = {
+  // ...
+};
+
+<NativeBaseProvider
+  theme={extendTheme(v3CompatibleTheme, yourCustomTheme)}
+></NativeBaseProvider>;
+```
+
+## Migrating in a NextJS Project
+
+If you are updating from 3.1.x to 3.2.x in a Next.js project, you might need to make some changes in configs.
+
+### Updating next.config.js/ts
+
+- Now need to include only react-native-web and native-base in transplie-modules.
+- No need of webpack config just add withFonts(from next-fonts) and withExpo(from @expo/next-adapter).
+
+```jsx {5-22,27-40}
+const withFonts = require('next-fonts');
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')([
+  'native-base',
+  'react-native-svg',
+  'styled-components',
+  'react-native-safe-area-context',
+  '@react-aria/visually-hidden',
+  '@react-native-aria/button',
+  '@react-native-aria/checkbox',
+  '@react-native-aria/combobox',
+  '@react-native-aria/focus',
+  '@react-native-aria/interactions',
+  '@react-native-aria/listbox',
+  '@react-native-aria/overlays',
+  '@react-native-aria/radio',
+  '@react-native-aria/slider',
+  '@react-native-aria/tabs',
+  '@react-native-aria/utils',
+  '@react-stately/combobox',
+  '@react-stately/radio',
+  'react-native-vector-icons',
+]);
+module.exports = withPlugins(
+  [withTM, [withFonts, { projectRoot: __dirname }]],
+  {
+    webpack: (config) => {
+      config.resolve.alias = {
+        ...(config.resolve.alias || {}),
+        // Transform all direct `react-native` imports to `react-native-web`
+        'react-native$': 'react-native-web',
+      };
+      config.resolve.extensions = [
+        '.web.js',
+        '.web.ts',
+        '.web.tsx',
+        ...config.resolve.extensions,
+      ];
+      return config;
+    },
+  }
+);
+```
+
+```jsx {1,5,9,15,17}
+const { withExpo } = require('@expo/next-adapter');
+const withFonts = require('next-fonts');
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')([
+  'react-native-web',
+  'native-base',
+]);
+
+const nextConfig = {};
+
+module.exports = withPlugins(
+  [
+    withTM,
+    [withFonts, { projectRoot: __dirname }],
+    [withExpo, { projectRoot: __dirname }],
+  ],
+  nextConfig
+);
+```
+
+### Updating babel.config.js/ts
+
+- Add `presets: ["@expo/next-adapter/babel"]` and `plugins: [["@babel/plugin-proposal-class-properties"]]`
+
+```jsx {3,2}
+module.exports = {
+  presets: ['next/babel'],
+  plugins: [['react-native-web', { commonjs: true }]],
+};
+```
+
+```jsx {2,3}
+module.exports = {
+  presets: ['@expo/next-adapter/babel'],
+  plugins: [['@babel/plugin-proposal-class-properties']],
+};
+```
+
+### Updating _document.js/ts
+
+- No need to import .ttf font files of Icons and add them into document style.
+
+```jsx {2-20,30}
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Ionicons from 'react-native-vector-icons/Fonts/Ionicons.ttf';
+import MaterialIcons from 'react-native-vector-icons/Fonts/MaterialIcons.ttf';
+import AntDesign from 'react-native-vector-icons/Fonts/AntDesign.ttf';
+import MaterialCommunityIcons from 'react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf';
+// Generate required css
+const iconFontStyles = `@font-face {
+  src: url(${Ionicons});
+  font-family: Ionicons;
+}
+@font-face {
+  src: url(${MaterialIcons});
+  font-family: MaterialIcons;
+}@font-face {
+  src: url(${AntDesign});
+  font-family: AntDesign;
+}@font-face {
+  src: url(${MaterialCommunityIcons});
+  font-family: MaterialCommunityIcons;
+}`;
+class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
+  }
+  render() {
+    return (
+      <Html>
+        <Head>
+          <style>{iconFontStyles}</style>
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
+export default MyDocument;
+```
+
+```jsx
+import React from 'react';
+import { getInitialProps } from '@expo/next-adapter/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+
+class CustomDocument extends Document {
+  render() {
+    return (
+      <Html style={{ height: '100%' }}>
+        <Head>
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        </Head>
+        <body style={{ height: '100%', overflow: 'hidden' }}>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
+
+// Import the getInitialProps method and assign it to your component to ensure the react-native-web styles are used.
+CustomDocument.getInitialProps = getInitialProps;
+
+export default CustomDocument;
+```
+
+## Handling breaking changes
+
+Below is a rough account of the breaking API changes as well as the minimal change to migrate
+
+### Alert:
+
+- Removed `Alert.Title`. Use `Text` component instead.
+- Removed `Alert.Description`. Use `Text` component instead.
+
+### Divider:
+
+- Removed `size`. Use `thickness` prop instead.
+
+## Strict Mode:
+
+We have introduced [strict mode](../strict-mode) in `v3.2.0` which is `off` by default. If you don't want to have strict mode, step 1 is enough. If you want to comply with the strict mode, you also need to do these:
+
+1.  All utility props which take theme tokens as values, now take only string values as a valid type.
+
+This means that if you pass a number value that is supposed to be a theme token into a utility prop, then it will be treated as invalid and based on your strict mode config will show you an error or a warning.
+
+```js
+// Incorrect Way to pass theme tokens to utility props
+<Box p={4} mx={8} /> ❌
+
+```
+
+```js
+// Correct Way to pass theme tokens to utility props
+<Box p="4" mx="8" /> ✅
+```
+
+2.  Remove all non token values given to utility props which accept theme tokens. For example, `p="11"` is not supported with the [default theme](../default-theme). Pick up another value from default theme tokens or [define a new one yourself](../customizing-theme).
+3.  If you are using [Icon](../icon.md) with `as` prop, verify this
+
+```jsx
+  /* correct */
+  <Icon as={Ionicons} name="md-checkmark-circle" />
+  /* incorrect */
+  <Icon as={<Ionicons name="md-checkmark-circle" />} />
+  /* incorrect */
+  <Icon as={<Ionicons />} name="md-checkmark-circle" />
+
+```

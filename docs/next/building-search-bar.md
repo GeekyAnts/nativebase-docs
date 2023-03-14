@@ -52,7 +52,6 @@ function SearchBar() {
           borderRadius="10"
           py="1"
           px="2"
-          borderWidth="0"
           InputLeftElement={
             <Icon
               ml="2"

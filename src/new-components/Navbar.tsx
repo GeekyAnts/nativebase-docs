@@ -34,6 +34,7 @@ import GitHub from "../icons/GithubIcon";
 import FigmaIcon from "../icons/FigmaIcon";
 import GeekyantsLogo from "./GeekyantsLogo";
 import AlgoliaSearchButton from "./AlgoliaSearchButton";
+import { parentUrl } from "../../docs.config";
 
 export default function Navbar(props: any) {
   const { activeVersion, setActiveVersion } = useContext(AppContext);
@@ -84,13 +85,15 @@ export default function Navbar(props: any) {
         justifyContent="space-between"
       >
         <HStack space="4" alignItems="center">
-          <NativebaseLogo />
+          <a href={parentUrl}>
+            <NativebaseLogo />
+          </a>
           <Menu
             //@ts-ignore
             _dark={{ bg: "blueGray.900" }}
             //@ts-ignore
             _light={{ bg: "blueGray.100" }}
-            offset={-15}
+            offset={-12}
             w="32"
             trigger={(triggerProps) => {
               return (
@@ -99,7 +102,7 @@ export default function Navbar(props: any) {
                   accessibilityLabel="More options menu"
                   {...triggerProps}
                 >
-                  <HStack alignItems="center">
+                  <HStack alignItems="center" space="1">
                     <Text color="cyan.500">
                       {isLatestVersionSlug(activeVersion)
                         ? versions[0]
@@ -145,7 +148,7 @@ export default function Navbar(props: any) {
                   _dark={{
                     bg:
                       version === activeVersion
-                        ? "coolGray.800"
+                        ? "coolGray.700"
                         : "coolGray.800",
                   }}
                 >
@@ -159,11 +162,11 @@ export default function Navbar(props: any) {
             href="https://startup.nativebase.io/?utm_source=DocsHeader&utm_medium=ad-banner&utm_campaign=NativeBase_3_Docs"
             isExternal
             _text={{
-              textDecorationLine: "none",
-              color: "primary.500",
-              fontSize: "md",
+              textDecorationLine: 'none',
+              color: 'primary.500',
+              fontSize: 'md',
             }}
-            _hover={{ _text: { textDecorationLine: "underline" } }}
+            _hover={{ _text: { textDecorationLine: 'underline' } }}
           >
             Announcing NativeBase Startup+ bundle 🎉
           </NBLink> */}

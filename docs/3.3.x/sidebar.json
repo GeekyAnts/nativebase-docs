@@ -34,10 +34,24 @@
           "title": "Installation",
           "notVisibleInSidebar": true
         },
-
+        {
+          "id": "next-adapter",
+          "title": "Next Adapter for nativebase",
+          "notVisibleInSidebar": true
+        },
         {
           "id": "setup-provider",
           "title": "Setup NativeBase Provider"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Resources",
+      "pages": [
+        {
+          "id": "contribution",
+          "title": "Contribution"
         }
       ]
     },
@@ -136,7 +150,7 @@
         },
         {
           "id": "typescript",
-          "title": "Typescript",
+          "title": "TypeScript",
           "showToc": false
         }
       ]
@@ -530,7 +544,7 @@
             },
             {
               "id": "aspect-ratio",
-              "title": "Aspect Ratio"
+              "title": "AspectRatio"
             }
           ]
         }

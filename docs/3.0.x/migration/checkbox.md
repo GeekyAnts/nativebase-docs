@@ -1,7 +1,4 @@
-
-
-
-Migrating [`Checkbox`](checkBox.md) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
+Migrating [`Checkbox`](/checkbox) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
 
 ## Overview
 
@@ -23,12 +20,12 @@ values={[
 <DocTabItem value="v2">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Checkbox/Screenshot_2021-01-22_at_3.09.29_PM.png',
   }}
-  width={500}
-  height={100}
+width={500}
+height={100}
 />
 
 ```tsx
@@ -42,12 +39,12 @@ values={[
 <DocTabItem value="v3">
 
 <Image
-  source={{
+source={{
     uri:
       '/img/Checkbox/Screenshot_2021-01-22_at_4.34.08_PM.png',
   }}
-  width={500}
-  height={100}
+width={500}
+height={100}
 />
 
 ```tsx

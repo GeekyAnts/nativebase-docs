@@ -27,10 +27,10 @@ import {
   Avatar,
   Center,
   useColorModeValue,
-  NativeBaseProvider
+  NativeBaseProvider,
 } from 'native-base';
 
-function ColorModeExample () {
+function ColorModeExample() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
@@ -48,30 +48,25 @@ function ColorModeExample () {
           name="Ankur"
           borderWidth={2}
           source={{
-            uri:
-              'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
+            uri: 'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
           }}
         />
         <Avatar
           name="Rohit"
           borderWidth={2}
           source={{
-            uri:
-              'https://pbs.twimg.com/profile_images/1352844693151731713/HKO7cnlW_400x400.jpg',
+            uri: 'https://pbs.twimg.com/profile_images/1352844693151731713/HKO7cnlW_400x400.jpg',
           }}
         />
       </HStack>
-      </>
+    </>
   );
 }
 
 const LocalWrapper = ({ children }) => {
-  const bg = useColorModeValue('gray.200', 'gray.800')
+  const bg = useColorModeValue('gray.200', 'gray.800');
   return (
-    <Center
-      flex={1}
-      bg={bg}
-    >
+    <Center flex={1} bg={bg}>
       {children}
     </Center>
   );
@@ -117,6 +112,8 @@ function App() {
 
 You can persist the color mode in you app by defining you color mode manager of type `StorageManager` and passing it to the NativeBaseProvider. This will retain the color mode even when the app is refreshed.
 
+- For Native
+
 ```jsx
 import React from 'react';
 import { NativeBaseProvider, StorageManager, ColorMode } from 'native-base';
@@ -141,6 +138,32 @@ const colorModeManager: StorageManager = {
     }
   },
 };
+export default function () {
+  return (
+    // pass it to NativeBaseProvider
+    <NativeBaseProvider colorModeManager={colorModeManager}>
+      // Your components
+    </NativeBaseProvider>
+  );
+}
+```
+
+- For web
+
+```jsx
+import React from 'react';
+import { ColorMode, NativeBaseProvider, StorageManager } from 'native-base';
+const colorModeManager: StorageManager = {
+  get: async () => {
+    let val = localStorage.getItem('@color-mode');
+    return val === 'dark' ? 'dark' : 'light';
+  },
+  set: async (value: ColorMode) => {
+    let strValue = value ? value.toString() : '';
+    localStorage.setItem('@color-mode', strValue);
+  },
+};
+
 export default function () {
   return (
     // pass it to NativeBaseProvider

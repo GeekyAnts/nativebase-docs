@@ -5,9 +5,9 @@ title: Toast
 
 import { ComponentTheme } from '../src/components';
 
-`Toast` is used to show alerts on top of an overlay. `Toast` will close itself when the close button is clicked, or after a timeout — the default is 5 seconds. The toast component is used to give feeback to users after an action has taken place.
+`Toast` displays alerts on top of an overlay. The `Toast` terminates itself when the close button is clicked on or after a preset timeout — the default is 5 seconds. The component also allows users to give feedback when an action is completed.
 
-Toasts can be configured to appear at either the top or the bottom of an application window, and it is possible to have more than one toast onscreen at a time.
+Toasts can also be configured to pop up at different areas of the application window—top or bottom. More than one instance of toast can be present onscreen at one time.
 
 ```jsx isShowcase
 import React from 'react';
@@ -61,24 +61,23 @@ Display a custom component instead of the default Toast UI.
 
 ### Closing Toasts
 
-Toasts can be closed imperatively, individually (via the close instance method) or all together (via the closeAll instance method).
+Toasts can be closed imperatively, individually (via the close instance method), or all together (via the closeAll instance method).
 
 ```ComponentSnackPlayer path=components,composites,Toast,CloseToast.tsx
 
 ```
 
-### Status
+### Status & Variant Recipes
 
-You can use status to change the color of your toasts.
-`Toast` uses the same variants as the [Alert](alert.md) component.
+You can create custom Toasts that respond to different statuses and variants, similar to the Alert component. Below is a recipe that you can try out.
 
-```ComponentSnackPlayer path=components,composites,Toast,ToastStatus.tsx
+```ComponentSnackPlayer path=components,composites,Toast,VariantRecipies.tsx
 
 ```
 
 ### Preventing Duplicate Toast
 
-In some cases you might need to prevent duplicate of specific toasts. To achieve you need to pass an id and use the toast.isActive method to determine when to call toast.show(...).
+In some cases, you might need to prevent duplicates of specific toasts. To achieve this, you need to pass an id and use the toast.isActive method to determine when to call toast.show(...).
 
 ```ComponentSnackPlayer path=components,composites,Toast,PreventDuplicate.tsx
 
@@ -86,7 +85,7 @@ In some cases you might need to prevent duplicate of specific toasts. To achieve
 
 ### Standalone Toast
 
-You can use standalone toast where you don't have access to `useToast` hook. e.g. in a different file, out of a React component.
+You can use standalone toast where you don't have access to `useToast` hook, for example, in a different file, out of a React component.
 
 ```ComponentSnackPlayer path=components,composites,Toast,StandaloneToast.tsx
 

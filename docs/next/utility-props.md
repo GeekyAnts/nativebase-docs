@@ -265,20 +265,20 @@ export function Example() {
 
 <br />
 
-| Prop            | CSS Equivalent  | Theme Key |
-| --------------- | --------------- | --------- |
-| w, width        | width           | sizes     |
-| h, height       | height          | sizes     |
-| minW, minWidth  | min-width       | sizes     |
-| maxW, maxWidth  | max-width       | sizes     |
-| minH, minHeight | min-height      | sizes     |
-| maxH, maxHeight | max-height      | sizes     |
-| d, display      | display         | -         |
-| boxSize         | width, height   | sizes     |
-| verticalAlign   | vertical-align  | -         |
-| overflow        | overflow        | -         |
-| overflowX       | overflowX       | -         |
-| overflowY       | overflowY       | -         |
+| Prop            | CSS Equivalent | Theme Key |
+| --------------- | -------------- | --------- |
+| w, width        | width          | sizes     |
+| h, height       | height         | sizes     |
+| minW, minWidth  | min-width      | sizes     |
+| maxW, maxWidth  | max-width      | sizes     |
+| minH, minHeight | min-height     | sizes     |
+| maxH, maxHeight | max-height     | sizes     |
+| d, display      | display        | -         |
+| boxSize         | width, height  | sizes     |
+| verticalAlign   | vertical-align | -         |
+| overflow        | overflow       | -         |
+| overflowX       | overflowX      | -         |
+| overflowY       | overflowY      | -         |
 
 ### Flexbox
 
@@ -558,10 +558,10 @@ export function Example() {
 
 <br />
 
-| Prop    | Type                       | Description                                              |
-| ------- | -------------------------- | -------------------------------------------------------- |
-| \_stack | [IStackProps](stack#props) | Passed props will be provided to [`Stack`](stack) child. |
-| \_text  | [ITextProps](text#props)   | Passed props will be provided to [`Text`](text) child.   |
+| Prop    | Type                          | Description                                              |
+| ------- | ----------------------------- | -------------------------------------------------------- |
+| \_stack | [IStackProps](stack#h2-props) | Passed props will be provided to [`Stack`](stack) child. |
+| \_text  | [ITextProps](text#h2-props)   | Passed props will be provided to [`Text`](text) child.   |
 
 ### Interaction Props
 

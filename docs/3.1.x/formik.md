@@ -3,9 +3,9 @@ id: nativebase-formik-ui
 title: Formik
 ---
 
-NativeBase provides [Form components](button.md) which can be easily integrated with Formik.
+NativeBase provides [Form components](button) which can be easily integrated with Formik.
 
-Let's take an example using [FormControl](formControl.md) and [Input](input.md) components
+Let's take an example using [FormControl](form-control) and [Input](input) components
 
 ```jsx isLive=true
 import {
@@ -19,14 +19,14 @@ import React from 'react';
 import { Formik } from 'formik';
 
 const validate = (values) => {
-   const errors = {};
+  const errors = {};
 
-   if (!values.firstName) {
-     errors.firstName = 'Required';
-   }
+  if (!values.firstName) {
+    errors.firstName = 'Required';
+  }
 
-   return errors;
- };
+  return errors;
+};
 
 function FormikExample() {
   const onSubmit = (data) => {
@@ -34,12 +34,16 @@ function FormikExample() {
   };
 
   return (
- <Formik initialValues={{ firstName: '', lastName: '' }} onSubmit={onSubmit} validate={validate}>
+    <Formik
+      initialValues={{ firstName: '', lastName: '' }}
+      onSubmit={onSubmit}
+      validate={validate}
+    >
       {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
         <VStack width="80%" space={4}>
           <FormControl isRequired isInvalid={'firstName' in errors}>
             <FormControl.Label>First Name</FormControl.Label>
-            {console.log("errors" , errors)}
+            {console.log('errors', errors)}
             <Input
               onBlur={handleBlur('firstName')}
               placeholder="John"

@@ -16,7 +16,7 @@ NativeBase exports 3 modal-related components:
 - **Actionsheet.Item**: A button to wrap the options of the Actionsheet.
 
 ```jsx
-import { Actionsheet } from 'native-base';
+import { Actionsheet } from "native-base";
 ```
 
 ## Examples
@@ -61,7 +61,7 @@ import { Actionsheet } from 'native-base';
 
 ### Actionsheet.Item
 
-ActionsheetItem implements [Button](button.md#props)
+ActionsheetItem implements [Button](button#h2-props)
 
 ## Styling
 

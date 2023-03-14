@@ -53,7 +53,6 @@ function SearchBar() {
           px="2"
           placeholderTextColor="gray.500"
           _hover={{ bg: "gray.200", borderWidth: 0 }}
-          borderWidth="0"
           _web={{
             _focus: { style: { boxShadow: "none" } },
           }}

@@ -5,7 +5,7 @@ title: Popover
 
 import { ComponentTheme } from '../src/components';
 
-`Popover` is a non-modal dialog that floats around a trigger. It's used to display contextual information to the user, and should be paired with a pressable trigger element.
+`Popover` floats around a trigger. It is a non-modal dialog used to provide contextual information to the user. It should be paired with a pressable trigger element.
 
 ```jsx isShowcase
 import React from 'react';
@@ -96,27 +96,27 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 
 ### Popover.Arrow
 
-`Popover.Arrow` composes the [`Box`](box.md) component.
+`Popover.Arrow` composes the [`Box`](box) component.
 
 ### Popover.Content
 
-`Popover.Content` composes the [`Box`](box.md) component.
+`Popover.Content` composes the [`Box`](box) component.
 
 ### Popover.Header
 
-`Popover.Header` composes the [`Box`](box.md) component.
+`Popover.Header` composes the [`Box`](box) component.
 
 ### Popover.Footer
 
-`Popover.Footer` composes the [`Box`](box.md) component.
+`Popover.Footer` composes the [`Box`](box) component.
 
 ### Popover.Body
 
-`Popover.Body` composes the [`Box`](box.md) component.
+`Popover.Body` composes the [`Box`](box) component.
 
 ### Popover.CloseButton 
 
-`Popover.CloseButton` composes the [`Button`](button.md) component.
+`Popover.CloseButton` composes the [`Button`](button) component.
 
 ## Styling
 
@@ -124,7 +124,7 @@ You can pass custom backgroundColor using `bg` or `backgroundColor`, `borderColo
 
 ## Accessibility
 
-Adheres to the [Dialog WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal)
+Adheres to the [Dialog WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/#dialog_modal)
 
 ### Keyboard Interactions
 

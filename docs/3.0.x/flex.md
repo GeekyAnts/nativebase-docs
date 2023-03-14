@@ -3,7 +3,7 @@ id: flex
 title: Flex
 ---
 
-`Flex` is a [`Box`](box.md) with `display: flex` and comes with helpful style shorthand.
+`Flex` provides helpful style shorthand and is a [`Box`](box.md) with `display: flex`.
 
 ## Import
 
@@ -16,7 +16,7 @@ import { Flex, Spacer } from 'native-base';
 
 ## Usage
 
-Flex components comes with some helpful shorthand props:
+Flex components come with some helpful shorthand props:
 
 - `flexDirection` is `direction`
 - `flexWrap` is `wrap`

@@ -11,7 +11,7 @@ Theming in NativeBase is based on the **[Styled System Theme Specification](htt
 
 ## Colors
 
-You can add a `theme.colors` object to provide colors for your project. By default these colors can be referenced by the `color`, `borderColor`, `backgroundColor`, etc.. props.
+You can add a `theme.colors` object to provide colors for your project. By default, these colors can be referenced by the  `color`, `borderColor`, `backgroundColor`, etc. props.
 
 We recommend adding a palette that ranges from `50` to `900`. Tools like **[Smart Swatch](https://smart-swatch.netlify.app/)**, **[Palx](https://palx.jxnblk.com/)** are available to generate these palettes.
 
@@ -30,12 +30,12 @@ To manage Typography options, the theme object supports the following keys:
 ```jsx
 const typography = {
   letterSpacings: {
-    xxs: -1.5,
-    xs: -0.5,
-    sm: 0,
-    md: 0.1,
-    lg: 0.15,
-    xl: 0.25,
+    'xxs': -1.5,
+    'xs': -0.5,
+    'sm': 0,
+    'md': 0.1,
+    'lg': 0.15,
+    'xl': 0.25,
     '2xl': 0.4,
     '3xl': 0.5,
     '4xl': 1.25,
@@ -74,12 +74,12 @@ const typography = {
     mono: '',
   },
   fontSizes: {
-    xxs: 10,
-    xs: 12,
-    sm: 14,
-    md: 16,
-    lg: 18,
-    xl: 20,
+    'xxs': 10,
+    'xs': 12,
+    'sm': 14,
+    'md': 16,
+    'lg': 18,
+    'xl': 20,
     '2xl': 24,
     '3xl': 30,
     '4xl': 36,

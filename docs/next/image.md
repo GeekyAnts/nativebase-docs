@@ -3,7 +3,7 @@ id: image
 title: Image
 ---
 
-Generic Image components from [React Native](https://reactnative.dev).
+The `Image` component allows one to display images.
 
 ```jsx isShowcase
 import React from 'react';
@@ -69,7 +69,7 @@ export function Example() {
 
 ### With Next's require statement
 
-When using require statement from next for image keep this in mind.
+When using require statement from next for image, keep this in mind.
 
 ```jsx
 

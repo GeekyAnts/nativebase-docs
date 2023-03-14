@@ -16,10 +16,14 @@ import { useContrastText } from 'native-base';
 ### Basic
 
 ```jsx isLive=true
-
 import React from 'react';
-import { Button, useContrastText, NativeBaseProvider, Center } from 'native-base';
-function UseContrastingTextHook () {
+import {
+  Button,
+  useContrastText,
+  NativeBaseProvider,
+  Center,
+} from 'native-base';
+function UseContrastingTextHook() {
   const bgDark = 'gray.900';
   const bgLight = 'gray.50';
   const colorContrastDark = useContrastText(bgDark);
@@ -50,13 +54,19 @@ export function Example() {
 
 ### Using Accessible Colors
 
-By default, NativeBase provides contrasting color based on its theme. You can also choose to get color with better [color and contrast accessibility](https://web.dev/color-and-contrast-accessibility/) with the help of [`useAccessibleColors`](useAccessibleColors.md) hook.
+By default, NativeBase provides contrasting colors based on its theme. You can also choose to get colors with better [color and contrast accessibility](https://web.dev/color-and-contrast-accessibility/) with the help of [`useAccessibleColors`](use-accessible-colors) hook.
 
 ```jsx isLive=true
-
 import React from 'react';
-import { Button, useContrastText, useTheme, NativeBaseProvider, Center, useAccessibleColors } from 'native-base';
-function UseContrastingTextHook () {
+import {
+  Button,
+  useContrastText,
+  useTheme,
+  NativeBaseProvider,
+  Center,
+  useAccessibleColors,
+} from 'native-base';
+function UseContrastingTextHook() {
   let [, , toggleAccessibleColors] = useAccessibleColors();
   const { colors } = useTheme();
   return (

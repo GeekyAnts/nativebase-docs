@@ -1,5 +1,6 @@
 module.exports = {
-  DOCS_URL: "https://beta-docs.nativebase.io",
+  DOCS_URL: "https://docs.nativebase.io",
+  parentUrl: "https://nativebase.io/",
   indexSlugFileName: "getting-started",
   docsEntryPoint: "docs",
   REPO_BRANCH: "master",
@@ -8,7 +9,14 @@ module.exports = {
     "3.0.x": "3.0.7",
     "3.1.x": "3.1.0",
     "3.2.x": "3.2.2",
-    "3.3.x": "3.3.4-rc.0",
+    "3.3.x": "3.3.10",
+    "3.4.x": "3.4.19",
+  },
+  componentOfTheWeek: {
+    switch: "https://www.youtube.com/embed/VGUhi8IQHDw",
+    checkbox: "https://www.youtube.com/embed/NxqKOiLbpZo",
+    input: "https://www.youtube.com/embed/oJWnEb0K0Aw",
+    button: "https://www.youtube.com/embed/BMAF6GLBvYU",
   },
   footer: [
     {
@@ -90,4 +98,4 @@ module.exports = {
       ],
     },
   ],
-}
+};

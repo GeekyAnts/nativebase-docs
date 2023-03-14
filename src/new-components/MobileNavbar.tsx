@@ -11,6 +11,7 @@ import {
 import NativebaseLogo from "./NativebaseLogo";
 import "@docsearch/css";
 import AlgoliaSearchButtonMobile from "./AlgoliaSearchButtonMobile";
+import { parentUrl } from "../../docs.config";
 
 export default function MobileNavbar(props: any) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -41,7 +42,9 @@ export default function MobileNavbar(props: any) {
             setIsOpenSidebar(!isOpenSidebar);
           }}
         />
-        <NativebaseLogo />
+        <a href={parentUrl}>
+          <NativebaseLogo />
+        </a>
       </HStack>
       <HStack alignItems="center" space="4">
         <AlgoliaSearchButtonMobile />

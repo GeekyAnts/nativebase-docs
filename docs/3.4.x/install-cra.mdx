@@ -1,0 +1,133 @@
+---
+id: install-cra
+title: Install in Create React App project
+---
+
+import { TileLink, RNWebNote, TabItem } from "../src/components";
+
+  <DocTabs
+  defaultValue='template'
+  values={[
+  { label: 'New Project', value: 'template' },
+  { label: 'Existing Project', value: 'cli' }
+  ]}>
+
+  <DocTabItem value="template">
+
+The easiest way to get started with NativeBase in create react app is using NativeBase template.
+
+### JavaScript
+
+```bash
+npx create-react-app my-app --template @native-base
+cd my-app/
+yarn start
+```
+
+### TypeScript
+
+```bash
+npx create-react-app my-app --template @native-base/typescript
+cd my-app/
+yarn start
+```
+
+  </DocTabItem>
+
+  <DocTabItem value="cli">
+
+Create a new CRA project If not exist
+
+```bash
+npx create-react-app my-app
+cd my-app
+```
+
+[Refer this guide](https://necolas.github.io/react-native-web/docs/installation/) if you need additional configurations.
+
+### Install dependencies
+
+  <DocTabs
+  defaultValue='yarn'
+  values={[
+  { label: 'yarn', value: 'yarn' },
+  { label: 'npm', value: 'npm' }
+  ]}>
+
+  <DocTabItem value="yarn">
+<Box maxWidth="750px">
+
+```bash
+yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
+```
+
+</Box>
+  </DocTabItem>
+
+  <DocTabItem value="npm">
+<Box maxWidth="750px">
+
+```bash
+npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
+```
+
+</Box>
+  </DocTabItem>
+
+  </DocTabs>
+
+### Run the Hello world example
+
+Put the below code in your App.js
+
+```jsx
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
+
+export default function App() {
+  return (
+    <NativeBaseProvider>
+      <Box>Hello world</Box>
+    </NativeBaseProvider>
+  );
+}
+```
+
+  </DocTabItem>
+
+  </DocTabs>
+
+<Center>
+  <AspectRatio ratio={2.21} w="100%" maxW="500">
+    <Image source={{ uri: "/img/minion.gif" }} alt="minions clapping" />
+  </AspectRatio>
+</Center>
+
+<Box>
+  <Box mt="4" mb="8">
+    <HStack pl="0" ml="0" space="4">
+      <TileLink
+        title="Customize NativeBaseProvider"
+        url="setup-provider"
+        description="NativeBaseProvider provides theme throughout your application"
+        className="bg-blueGray-600 mt-2"
+      />
+      <TileLink
+        title="Theme"
+        url="default-theme"
+        description="Read more about the default NativeBase theme and how to override it"
+        className="bg-blueGray-600  mt-2"
+      />
+    </HStack>
+    <Box mt="4" pl="0" ml="0">
+      <TileLink
+        title="Utility props"
+        url="utility-props"
+        description="Shorthands of commonly used styling props which maps with the provided theme"
+        className="bg-blueGray-600"
+      />
+    </Box>
+  </Box>
+</Box>
+
+<RNWebNote />

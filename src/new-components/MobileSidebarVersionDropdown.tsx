@@ -77,7 +77,14 @@ export const MobileSidebarVersionDropdown = (props: any) => {
           <Text
             pl="8"
             pr="4"
-            color={"next" === activeVersion ? "cyan.500" : "warmGray.50"}
+            _light={{
+              color:
+                activeVersion === "next" ? "cyan.600" : "sidebarItemTextLight",
+            }}
+            _dark={{
+              color:
+                activeVersion === "next" ? "cyan.500" : "sidebarItemTextDark",
+            }}
           >
             next
           </Text>
@@ -99,14 +106,24 @@ export const MobileSidebarVersionDropdown = (props: any) => {
               <Text
                 pl="8"
                 pr="4"
-                color={
-                  version ===
-                  (isLatestVersionSlug(activeVersion)
-                    ? versions[0]
-                    : activeVersion)
-                    ? "cyan.500"
-                    : "warmGray.50"
-                }
+                _light={{
+                  color:
+                    version ===
+                    (isLatestVersionSlug(activeVersion)
+                      ? versions[0]
+                      : activeVersion)
+                      ? "cyan.500"
+                      : "sidebarItemTextLight",
+                }}
+                _dark={{
+                  color:
+                    version ===
+                    (isLatestVersionSlug(activeVersion)
+                      ? versions[0]
+                      : activeVersion)
+                      ? "cyan.500"
+                      : "sidebarItemTextDark",
+                }}
               >
                 {version}
               </Text>
@@ -116,7 +133,7 @@ export const MobileSidebarVersionDropdown = (props: any) => {
       </Collapse>
       <Pressable pl="8" pr="4" py="2">
         <NBLink
-          href="https://startup.nativebase.io/?utm_source=DocsHeader&utm_medium=ad-banner&utm_campaign=NativeBase_3_Docs"
+          href="https://startup.nativebase.io?utm_source=direct&utm_medium=banner&utm_campaign=nb_docs"
           isExternal
         >
           <Text fontWeight="medium" fontSize="md">

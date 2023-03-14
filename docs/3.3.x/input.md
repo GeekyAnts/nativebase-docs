@@ -6,22 +6,22 @@ title: Input
 import { ComponentTheme } from '../src/components';
 
 ```jsx isShowcase
-import React from "react";
-import { Input } from "native-base";
+import React from 'react';
+import { Input } from 'native-base';
 
 export const Example = () => {
   return (
     <Input
       shadow={2}
-      _light={{ bg: "coolGray.100" }}
-      _dark={{ bg: "coolGray.800" }}
+      _light={{ bg: 'coolGray.100' }}
+      _dark={{ bg: 'coolGray.800' }}
       placeholder="Enter your name"
     />
   );
 };
 ```
 
-The `Input` component is a component that is used to get user input in a text field.
+The `Input` component allows a user to provide input in a text field.
 
 ## Examples
 

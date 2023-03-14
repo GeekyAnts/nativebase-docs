@@ -1,0 +1,164 @@
+---
+id: pseudo-props
+title: "Pseudo props: Overview"
+---
+
+import {
+  Box,
+  NativeBaseProvider,
+  HStack,
+  VStack,
+  Text,
+  Pressable,
+  Image,
+} from "native-base";
+
+NativeBase provides a declarative way to add interaction or platform specific props.
+
+## Hover
+
+Using `_hover` pseudo prop, we can customize the style of Pressable component on hover.
+
+```jsx isLive=true
+import React from "react";
+import { Box, Pressable, Text } from "native-base";
+export function Example() {
+  const { isOpen, onOpen, onClose } = useDisclose();
+  return (
+    <Box flex={1} my="4">
+      <Pressable
+        _hover={{ bg: "primary.700" }}
+        bg="primary.600"
+        py="2"
+        px="3"
+        rounded="sm"
+        alignSelf="center"
+      >
+        <Text textTransform="uppercase" fontWeight="bold" color="white">
+          Hover
+        </Text>
+      </Pressable>
+    </Box>
+  );
+}
+```
+
+## Pressed
+
+Using `_pressed` pseudo prop, we can customize the style of Pressable component on pressed.
+
+```jsx title="Pressed example" isLive=true
+import React from "react";
+import { Box, Pressable, Text } from "native-base";
+export function Example() {
+  const { isOpen, onOpen, onClose } = useDisclose();
+  return (
+    <Center my="4">
+      <Pressable
+        _pressed={{ bg: "primary.800" }}
+        bg="primary.600"
+        py="2"
+        rounded="sm"
+        px="3"
+        alignSelf="center"
+      >
+        <Text textTransform="uppercase" fontWeight="bold" color="white">
+          Pressed
+        </Text>
+      </Pressable>
+    </Center>
+  );
+}
+```
+
+## Focus
+
+Using `_focus` pseudo prop, we can customize the style of Pressable component on focus.
+
+```jsx title="Focus example" isLive=true
+import React from "react";
+import { Box, Pressable, Text, useDisclose } from "native-base";
+export function Example() {
+  const { isOpen, onOpen, onClose } = useDisclose();
+  return (
+    <Center my="4">
+      <Pressable
+        _focus={{
+          bg: "primary.700",
+          borderColor: "primary.400",
+          borderWidth: "2px",
+        }}
+        bg="primary.600"
+        rounded="sm"
+        py="2"
+        px="3"
+        alignSelf="center"
+      >
+        <Text textTransform="uppercase" fontWeight="bold" color="white">
+          Focus
+        </Text>
+      </Pressable>
+    </Center>
+  );
+}
+```
+
+## Platform specific styling
+
+Using `_web`, `_iOS`, `_android` pseudo props, we can customize the style or behaviour of NativeBase components across platforms.
+
+```jsx title="Platform specific example" isLive=true
+import React from "react";
+import { Box, HStack, Pressable, Text, VStack } from "native-base";
+export function Example() {
+  const { isOpen, onOpen, onClose } = useDisclose();
+  return (
+    <Center my="4">
+      <HStack space={4} justifyContent="center" alignItems="center">
+        <VStack alignItems="center" space="2">
+          <Box
+            _web={{ bg: "cyan.600" }}
+            rounded="sm"
+            py="2"
+            px="3"
+            alignSelf="center"
+          >
+            <Text textTransform="uppercase" fontWeight="bold" color="white">
+              Save
+            </Text>
+          </Box>
+          <Text color="white">Web</Text>
+        </VStack>
+        <VStack alignItems="center" space="2">
+          <Box
+            _android={{ bg: "yellow.400" }}
+            rounded="sm"
+            py="2"
+            px="3"
+            alignSelf="center"
+          >
+            <Text textTransform="uppercase" fontWeight="bold">
+              Save
+            </Text>
+          </Box>
+          <Text color="white">Android</Text>
+        </VStack>
+        <VStack alignItems="center" space="2">
+          <Box
+            _ios={{ bg: "violet.500" }}
+            rounded="sm"
+            py="2"
+            px="3"
+            alignSelf="center"
+          >
+            <Text textTransform="uppercase" fontWeight="bold" color="white">
+              Save
+            </Text>
+          </Box>
+          <Text color="white">iOS</Text>
+        </VStack>
+      </HStack>
+    </Center>
+  );
+}
+```

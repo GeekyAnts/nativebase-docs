@@ -8,8 +8,8 @@ import { ComponentTheme } from '../src/components';
 `Links` are accessible elements used primarily for navigation. This component is styled to resemble a hyperlink.
 
 ```jsx isShowcase
-import React from "react";
-import { Link } from "native-base";
+import React from 'react';
+import { Link } from 'native-base';
 
 export const Example = () => {
   return (
@@ -23,7 +23,7 @@ export const Example = () => {
 ## Import
 
 ```jsx
-import { Link } from "native-base";
+import { Link } from 'native-base';
 ```
 
 ## Examples
@@ -70,4 +70,4 @@ import { Link } from "native-base";
 
 ## Accessibility
 
-Adheres to the [Link WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#link)
+Adheres to the [Link WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/#link)

@@ -27,7 +27,7 @@ The Divider displays a thin horizontal or vertical line.
 
 Pass the `orientation` prop and set it to either `horizontal` or `vertical`.
 
-> **Note:** If the horizontal orientation is used, make sure that the parent element is assigned a width and If the vertical orientation is used, make sure that the parent element is assigned a height.
+> **Note:** If the horizontal orientation is used, make sure that the parent element is assigned a width. If the vertical orientation is used, make sure that the parent element is assigned a height.
 
 ```ComponentSnackPlayer path=composites,Divider,Orientation.tsx
 

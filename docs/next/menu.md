@@ -5,7 +5,7 @@ title: Menu
 
 import { ComponentTheme } from '../src/components';
 
-A dropdown menu for the common dropdown menu button design pattern.
+`Menu` generates a dropdown menu along with the menu button design pattern.
 
 ```jsx isShowcase
 import React from 'react';
@@ -123,4 +123,4 @@ Extends `MenuItem`.
 
 ## Accessibility
 
-Adheres to the [Menu WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#menu)
+Adheres to the [Menu WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/#menu)

@@ -7,15 +7,15 @@ import { ColorsBlock, FontBlocks, SpaceBlocks } from "../src/components/index";
 
 The theme object is where you define your application's color palette, type scale, font stacks, breakpoints, border radius values, and more.
 
-Theming in NativeBase is based on the **[Styled System Theme Specification](https://system-ui.com/theme/)**
+Theming in NativeBase is based on the **[Styled System Theme Specification](https://github.com/system-ui/theme-specification)**
 
 ## Colors
 
-You can add a `theme.colors` object to provide colors for your project. By default these colors can be referenced by the `color`, `borderColor`, `backgroundColor`, etc.. props.
+You can add a `theme.colors` object to provide colors for your project. By default, these colors can be referenced by the  `color`, `borderColor`, `backgroundColor`, etc. props. 
 You can also add `.alpha:{number}` to add levels of opacity to a colour. The number can also be added in the theme file.
 Ex: `red.300:alpha.30`, You can read more about this in [`opacity section`](default-theme#opacity)
 
-We recommend adding a palette that ranges from `50` to `900`. Tools like [Smart Swatch](https://smart-swatch.netlify.app/), [Palx](https://palx.jxnblk.com/) are available to generate these palettes.
+We recommend adding a palette that ranges from `50` to `900`. Tools like [JSON Color Palette Generator](https://json-color-palette-generator.vercel.app), [Smart Swatch](https://smart-swatch.netlify.app/), or [Palx](https://palx.jxnblk.com/) are available to generate these palettes.
 
 <ColorsBlock/>
 
@@ -32,20 +32,20 @@ To manage Typography options, the theme object supports the following keys:
 ```jsx
 const typography = {
   letterSpacings: {
-    xs: "-0.05em",
-    sm: "-0.025em",
-    md: 0,
-    lg: "0.025em",
-    xl: "0.05em",
+    "xs": "-0.05em",
+    "sm": "-0.025em",
+    "md": 0,
+    "lg": "0.025em",
+    "xl": "0.05em",
     "2xl": "0.1em",
   },
   lineHeights: {
     "2xs": "1em",
-    xs: "1.125em",
-    sm: "1.25em",
-    md: "1.375em",
-    lg: "1.5em",
-    xl: "1.75em",
+    "xs": "1.125em",
+    "sm": "1.25em",
+    "md": "1.375em",
+    "lg": "1.5em",
+    "xl": "1.75em",
     "2xl": "2em",
     "3xl": "2.5em",
     "4xl": "3em",
@@ -61,7 +61,7 @@ const typography = {
     bold: 700,
     extrabold: 800,
     black: 900,
-    extrablack: 950,
+    extraBlack: 950,
   },
   fonts: {
     heading: undefined,
@@ -70,11 +70,11 @@ const typography = {
   },
   fontSizes: {
     "2xs": 10,
-    xs: 12,
-    sm: 14,
-    md: 16,
-    lg: 18,
-    xl: 20,
+    "xs": 12,
+    "sm": 14,
+    "md": 16,
+    "lg": 18,
+    "xl": 20,
     "2xl": 24,
     "3xl": 30,
     "4xl": 36,
@@ -91,13 +91,13 @@ const typography = {
 
 ## Size
 
-The `size` key allows you to customize the global spacing and sizing scale for your project. By default these spacing value can be referenced by the `padding`, `margin`, and `top`, `left`, `right`, `bottom` props.
+The `size` key allows you to customize the global spacing and sizing scale for your project. By default these spacing values can be referenced by the `padding`, `margin`, and `top`, `left`, `right`, `bottom` props.
 
 <SpaceBlocks/>
 
 ## Opacity
 
-The `opacity` key is used in opacity style object and to define colors opacity using the red-green-blue-alpha (RGBA) model, RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
+The `opacity` key is used in opacity style object and to define color opacity, using the red-green-blue-alpha (RGBA) model. RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
 
 <OpacityBlock />
 

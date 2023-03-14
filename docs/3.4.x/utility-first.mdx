@@ -1,0 +1,214 @@
+---
+id: utility-first
+title: Utility First
+---
+
+import { UtilityFirstExample } from '../src/components';
+import { KitchenSinkIframe, TileLink, NBHistory } from '../src/components';
+
+React Native has a great StyleSheet API which is optimal for component-based systems. NativeBase leverages it and adds a layer of utility props and constraint based designed tokens on top of it.
+
+To understand utility props, let's take an example.
+
+<br />
+
+## With React Native
+
+Let's try the traditional way of building the following card in React Native.
+
+<Box maxWidth="100%" width="800px">
+
+```jsx isLive isNativebaseExample=false
+import * as React from 'react';
+import { Text, View, StyleSheet, Image, Pressable } from 'react-native';
+
+function Example() {
+  return (
+    <View style={styles.container}>
+      <View style={styles.topContainer}>
+        <View style={styles.metaContainer}>
+          <View>
+            <Text style={styles.timings}>Today @ 9PM</Text>
+            <Text style={styles.description}>Let's talk about avatar!</Text>
+          </View>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}>Remind me</Text>
+          </Pressable>
+        </View>
+        <Image
+          source={{
+            uri: 'https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg',
+          }}
+          style={styles.avatar}
+        />
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#0891b2',
+    paddingVertical: 16,
+    paddingHorizontal: 12,
+    borderRadius: 5,
+    alignSelf: 'center',
+    width: 375,
+    maxWidth: '100%',
+  },
+  timings: {
+    color: '#fff',
+    fontSize: '14px',
+  },
+  metaContainer: {
+    justifyContent: 'space-between',
+  },
+  topContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  avatar: {
+    height: 100,
+    width: 100,
+    borderRadius: 100,
+  },
+  description: {
+    color: 'white',
+    marginTop: 5,
+    fontSize: 20,
+  },
+  button: {
+    backgroundColor: '#22d3ee',
+    alignSelf: 'flex-start',
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 2,
+  },
+  buttonText: {
+    fontWeight: 'bold',
+    color: 'white',
+    textTransform: 'uppercase',
+    fontSize: 14,
+  },
+});
+```
+
+</Box>
+
+<br />
+
+## With NativeBase
+
+Now let's try to build the same card using NativeBase.
+With NativeBase, you can apply styles directly in the layout using shorthands.
+
+<Box maxWidth="100%" width="800px">
+
+```jsx isLive
+import * as React from 'react';
+import {
+  NativeBaseProvider,
+  Box,
+  HStack,
+  VStack,
+  Text,
+  Pressable,
+  Image,
+} from 'native-base';
+
+export function Example() {
+  return (
+    <NativeBaseProvider>
+      <Box
+        bg="primary.600"
+        py="4"
+        px="3"
+        borderRadius="5"
+        rounded="md"
+        width={375}
+        maxWidth="100%"
+      >
+        <HStack justifyContent="space-between">
+          <Box justifyContent="space-between">
+            <VStack space="2">
+              <Text fontSize="sm" color="white">
+                Today @ 9PM
+              </Text>
+              <Text color="white" fontSize="xl">
+                Let's talk about avatar!
+              </Text>
+            </VStack>
+            <Pressable
+              rounded="xs"
+              bg="primary.400"
+              alignSelf="flex-start"
+              py="1"
+              px="3"
+            >
+              <Text
+                textTransform="uppercase"
+                fontSize="sm"
+                fontWeight="bold"
+                color="white"
+              >
+                Remind me
+              </Text>
+            </Pressable>
+          </Box>
+          <Image
+            source={{
+              uri: 'https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg',
+            }}
+            alt="Aang flying and surrounded by clouds"
+            height="100"
+            rounded="full"
+            width="100"
+          />
+        </HStack>
+      </Box>
+    </NativeBaseProvider>
+  );
+}
+```
+
+</Box>
+
+The above example demonstrates the usage of [utility props](utility-props) alongwith [VStack](vstack), [HStack](h-stack) components. This approach allows us to style components without using StyleSheet API.
+
+Apart from productivity boosts and saving time, there are other benefits to styling components using utility props.
+No need to name styles anymore, no need to define an object and think about naming it.
+
+Using utility-first props, you can focus on creating reusable components instead of reusable stylesheets.
+
+Once you start writing styles this way, any other way will feel cumbersome.
+
+> Put simply, utility first approach opens up the Avatar state within developers.
+
+<Center>
+  <Image
+    source={{ uri: '/img/aang-avatar-state.gif' }}
+    alt="aang transitioning to avatar state"
+    width={500}
+    height={100}
+  />
+</Center>
+
+<br />
+
+Once you had a cup of tea, let's proceed to the next section!
+
+<Box>
+  <Box mb="8" ml="-2">
+    <TileLink
+      title="Design tokens"
+      url="design-tokens"
+      description="Refer design token guide to understand how utility props map to your theme values"
+    />
+  </Box>
+  <Image
+    w="280"
+    h="392"
+    source={{ uri: '/img/iroh-tea.webp' }}
+    alt="uncle iroh holding cup of tea"
+  />
+</Box>

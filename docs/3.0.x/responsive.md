@@ -23,16 +23,16 @@ To make styles responsive, you can use either the array or object syntax.
 
 All style props that arrays as values for responsive styles.
 
-For Example to make a `Box` width or w responsive using the array syntax, here's what you need to do:
+For example, to make a `Box` width or w responsive using the array syntax, here's what you need to do:
 
 ```jsx isLive=true
-import React from "react";
-import { Center } from "native-base";
+import React from 'react';
+import { Center } from 'native-base';
 function BreakpointExample() {
   return (
     <Center
       bg="emerald.400"
-      _text={{ color: "white" }}
+      _text={{ color: 'white' }}
       rounded="xl"
       w={[24, 48, 72]}
       h={24}
@@ -56,14 +56,14 @@ export function Example() {
 
 You can also define responsive values with breakpoint aliases in an object. Any undefined alias key will define the base, non-responsive value.
 
-For Example to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
+For example, to make a `Text` fontSize responsive using the object syntax, here's what you need to do:
 
 ```jsx isLive=true
-import React from "react";
-import { Text, NativeBaseProvider, Center } from "native-base";
+import React from 'react';
+import { Text, NativeBaseProvider, Center } from 'native-base';
 function BreakpointExample() {
   return (
-    <Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
+    <Text fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}>
       This is responsive text
     </Text>
   );
@@ -85,8 +85,16 @@ Here's a simple example of a component that uses a stacked layout on small scree
 
 ```jsx isLive=true
 import React from 'react';
-import { NativeBaseProvider, Center, Box, Text, Image, Heading, Stack } from 'native-base';
-function BreakpointExample () {
+import {
+  NativeBaseProvider,
+  Center,
+  Box,
+  Text,
+  Image,
+  Heading,
+  Stack,
+} from 'native-base';
+function BreakpointExample() {
   return (
     <Box
       flexDirection={{ base: 'column', md: 'row' }}
@@ -97,8 +105,7 @@ function BreakpointExample () {
       <Box width={{ md: 24 }} height={{ base: 32, md: '100%' }}>
         <Image
           source={{
-            uri:
-              'https://static.nike.com/a/images/f_auto/dpr_2.0/w_1328,c_limit/b56d1e9b-3861-4c89-995d-b8fb6240a762/nike-just-do-it.jpg',
+            uri: 'https://static.nike.com/a/images/f_auto/dpr_2.0/w_1328,c_limit/b56d1e9b-3861-4c89-995d-b8fb6240a762/nike-just-do-it.jpg',
           }}
           alt="Shoes"
         />
@@ -109,27 +116,27 @@ function BreakpointExample () {
         </Text>
         <Stack space={1}>
           <Heading size="sm">Jordan MA2</Heading>
-          <Text fontWeight='medium' color='blueGray.600'>
+          <Text fontWeight="medium" color="blueGray.600">
             Older Kids' Shoe
           </Text>
-          <Text fontWeight='medium' color='blueGray.600'>
+          <Text fontWeight="medium" color="blueGray.600">
             2 colors
           </Text>
         </Stack>
-        <Text fontSize='md' fontWeight='semibold' color='blueGray.600'>
+        <Text fontSize="md" fontWeight="semibold" color="blueGray.600">
           $ 150
         </Text>
       </Stack>
     </Box>
   );
-};
+}
 
 // Example template which wraps component with NativeBaseProvider
 export function Example() {
   return (
-      <Center flex={1}>
-        <BreakpointExample />
-      </Center>
+    <Center flex={1}>
+      <BreakpointExample />
+    </Center>
   );
 }
 ```

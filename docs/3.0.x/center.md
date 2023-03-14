@@ -3,7 +3,7 @@ id: center
 title: Center
 ---
 
-`Center` is a layout component that centers its child within itself.
+`Center` aligns its contents to the center within itself. It is a layout component.
 
 ## Import
 
@@ -35,7 +35,7 @@ Center can be used to nicely position icons in the center and add frames around 
 
 ### Square and Circle
 
-Square and Circle automatically centers their children.
+Square and Circle automatically center their children.
 
 ```ComponentSnackPlayer path=composites,Center,SquareCircle.tsx
 

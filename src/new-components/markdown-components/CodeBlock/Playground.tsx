@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import LiveCodeEditorScope from "./LiveCodeEditorScope";
 import { getParsedCode, addExportsToCode } from "./utils";
 import {
@@ -48,6 +48,7 @@ export const Playground = ({ children, ...props }: any) => {
   const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
   // const [parsedCode, setParsedCode] = React.useState(children);
   const [copied, setCopied] = React.useState(false);
+  const formRef = useRef(null);
 
   const { onCopy } = useClipboard();
 
@@ -71,7 +72,7 @@ export const Playground = ({ children, ...props }: any) => {
 
   function submitExpoForm() {
     // @ts-ignore
-    document.getElementById("expo-form")?.submit();
+    formRef.current?.submit();
   }
   return (
     <LiveProvider
@@ -108,7 +109,7 @@ export const Playground = ({ children, ...props }: any) => {
         bg="blueGray.800:alpha.40"
       >
         <Box w="100%" overflow="auto">
-          <LiveError />
+          <LiveError style={{ color: useColorModeValue("black", "white") }} />
         </Box>
         <LivePreview />
       </Box>
@@ -153,7 +154,7 @@ export const Playground = ({ children, ...props }: any) => {
               action={SNACK_URL}
               method="POST"
               target="_blank"
-              id="expo-form"
+              ref={formRef}
             >
               <input
                 type="hidden"
@@ -250,6 +251,7 @@ export const Playground = ({ children, ...props }: any) => {
           <ScrollView showsVerticalScrollIndicator={false} maxH="300px">
             <LiveEditor
               style={{
+                fontSize: "14px",
                 backgroundColor: "transparent",
                 boxShadow: "none",
                 borderWidth: "0",

@@ -19,7 +19,7 @@ The easiest way to get started with NativeBase in create react app is using Nati
 ### JavaScript
 
 ```bash
-npx create-react-app my-app --template nativebase
+npx create-react-app my-app --template @native-base
 cd my-app/
 yarn start
 ```
@@ -27,7 +27,7 @@ yarn start
 ### TypeScript
 
 ```bash
-npx create-react-app my-app --template nativebase-typescript
+npx create-react-app my-app --template @native-base/typescript
 cd my-app/
 yarn start
 ```
@@ -58,7 +58,7 @@ cd my-app
 <Box maxWidth="750px">
 
 ```bash
-yarn add react-native-web native-base react-native-svg react-native-safe-area-context
+yarn add react-native-web@0.17.1 native-base react-native-@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </Box>
@@ -68,7 +68,7 @@ yarn add react-native-web native-base react-native-svg react-native-safe-area-co
 <Box maxWidth="750px">
 
 ```bash
-npm install react-native-web native-base react-native-svg react-native-safe-area-context
+npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </Box>
@@ -105,7 +105,7 @@ export default function App() {
 
 <Box>
   <Box mt="4" mb="8">
-    <HStack pl="0" ml="0">
+    <HStack pl="0" ml="0" space="4">
       <TileLink
         title="Customize NativeBaseProvider"
         url="setup-provider"

@@ -5,10 +5,10 @@ title: FormControl
 
 import { ComponentTheme } from '../src/components';
 
-`FormControl` provides context such as `isInvalid`, `isDisabled`, and `isRequired` to form elements.
+`FormControl` is used to form elements by providing context such as `isInvalid`, `isDisabled`, and `isRequired`.
 
 ```jsx isShowcase gradient="3"
-import React from "react";
+import React from 'react';
 import {
   FormControl,
   Input,
@@ -17,7 +17,7 @@ import {
   Box,
   Center,
   NativeBaseProvider,
-} from "native-base";
+} from 'native-base';
 
 const Example = () => {
   return (
@@ -26,9 +26,9 @@ const Example = () => {
         <Stack mx="4">
           <FormControl.Label>Password</FormControl.Label>
           <Input
-            _light={{ bg: "coolGray.100" }}
-            _dark={{ bg: "coolGray.800" }}
-            _hover={{ bg: "coolGray.200" }}
+            _light={{ bg: 'coolGray.100' }}
+            _dark={{ bg: 'coolGray.800' }}
+            _hover={{ bg: 'coolGray.200' }}
             shadow={2}
             type="password"
             defaultValue="12345"

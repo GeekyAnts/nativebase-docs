@@ -5,13 +5,13 @@ title: Radio
 
 import { ComponentTheme } from '../src/components';
 
-`Radio` is used when only one choice may be selected in a series of options.
+`Radio` limits the selection from a series of options to only one.
 
 ```jsx isShowcase
-import React from "react";
-import { Radio, Center, NativeBaseProvider } from "native-base";
+import React from 'react';
+import { Radio, Center, NativeBaseProvider } from 'native-base';
 export const Example = () => {
-  const [value, setValue] = React.useState("one");
+  const [value, setValue] = React.useState('one');
   return (
     <Radio.Group
       name="myRadioGroup"
@@ -104,7 +104,7 @@ export const Example = () => {
 
 ## Accessibility
 
-Uses React Native ARIA [@react-native-aria/radio](https://react-native-aria.geekyants.com/docs/useRadioGroup) which follows the [Radio Group WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#radiobutton).
+Uses React Native ARIA [@react-native-aria/radio](https://react-native-aria.geekyants.com/docs/useRadioGroup) which follows the [Radio Group WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/#radiobutton).
 
 ### Keyboard Interactions
 

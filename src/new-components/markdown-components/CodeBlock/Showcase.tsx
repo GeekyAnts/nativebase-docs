@@ -3,6 +3,7 @@ import LiveCodeEditorScope from "./LiveCodeEditorScope";
 import { getParsedCode, addExportsToCode } from "./utils";
 import { endingExpoTemplate, getExpoSnackURL } from "./expoController";
 import { ExpoIcon, CodePlaygroundIcon } from "../../../icons";
+import { ComponentOfTheWeek } from "../ComponentOfWeek";
 import {
   endingCodeSandboxTemplate,
   getCodeSandBoxURL,
@@ -94,70 +95,27 @@ import { GradientChangeIcon } from "../../../icons/GradientChangeIcon";
 interface IShowcaseProps {
   children: string;
   gradient?: string;
+  youtubeEmbedd?: string;
 }
 
-export const Showcase = (
-  { children, gradient }: IShowcaseProps,
-  props: any
-) => {
-  const { activeVersion } = React.useContext(AppContext);
-
-  const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
-  // const [parsedCode, setParsedCode] = React.useState(children);
-  const [copied, setCopied] = React.useState(false);
-
-  const { onCopy } = useClipboard();
-
-  function handleCopy() {
-    onCopy(parsedCode);
-    setCopied(true);
-    // set copied to false after 2 second
-    setTimeout(() => {
-      setCopied(false);
-    }, 2000);
-  }
-
-  const expoCode = addExportsToCode(
-    children,
-    endingExpoTemplate(props?.isNativebaseExample)
-  );
-  const codeSandboxCode = addExportsToCode(
-    children,
-    endingCodeSandboxTemplate(props?.isNativebaseExample)
-  );
-  const [darkModeGradientArray, setDarkModeGradientArray] = React.useState([
-    "",
-  ]);
-  const [lightModeGradientArray, setLightModeGradientArray] = React.useState([
-    "",
-  ]);
-  React.useEffect(() => {
-    setDarkModeGradientArray(pickDarkModeGradient(gradient));
-    setLightModeGradientArray(pickLightModeGradient(gradient));
-  }, []);
+const ShowcaseInternal = ({
+  lightModeGradientArray,
+  darkModeGradientArray,
+  setDarkModeGradientArray,
+  setLightModeGradientArray,
+  youtubeEmbedd,
+  expoCode,
+  activeVersion,
+  copied,
+  handleCopy,
+  setParsedCode,
+  children,
+}: any) => {
+  const [showMagicWand, setShowMagicWand] = useState(false);
 
   const [showCode, setShowCode] = useState(false);
-  const [showMagicWand, setShowMagicWand] = useState(false);
-  const [gradientIndex, setGradientIndex] = useState("random");
-  React.useEffect(() => {
-    setDarkModeGradientArray(pickDarkModeGradient(gradientIndex));
-    setLightModeGradientArray(pickLightModeGradient(gradientIndex));
-  }, [gradientIndex]);
-
   return (
-    <LiveProvider
-      scope={LiveCodeEditorScope}
-      code={parsedCode}
-      transformCode={(a) => {
-        return `
-          function App() {
-            ${a}
-            return (<Example/>);
-          }
-          `;
-      }}
-      theme={useColorModeValue(github, paleNight)}
-    >
+    <>
       <Center
         onMouseEnter={() => {
           setShowMagicWand(true);
@@ -263,19 +221,13 @@ export const Showcase = (
         </Button>
 
         <Box w="100%" overflow="auto">
-          <LiveError />
+          <LiveError style={{ color: useColorModeValue("black", "white") }} />
         </Box>
-        <LivePreview />
+        {children}
       </Center>
-      {/* <Input
-        value={gradientIndex}
-        onChange={(e: any) => {
-          setGradientIndex(e.target.value);
-        }}
-      /> */}
-      {/* </Pressable> */}
       <Collapse isOpen={showCode}>
         <Box
+          mb={youtubeEmbedd && "4"}
           // px="4"
           overflow="hidden"
           // pb="4"
@@ -287,7 +239,10 @@ export const Showcase = (
         >
           <HStack
             _light={{ bg: "coolGray.200", borderColor: "coolGray.200" }}
-            _dark={{ bg: "blueGray.800:alpha.40", borderColor: "coolGray.800" }}
+            _dark={{
+              bg: "blueGray.800:alpha.40",
+              borderColor: "coolGray.800",
+            }}
             w="100%"
             alignItems="center"
             pl="5"
@@ -395,6 +350,7 @@ export const Showcase = (
             <ScrollView showsVerticalScrollIndicator={false} maxH="300px">
               <LiveEditor
                 style={{
+                  fontSize: "14px",
                   backgroundColor: "transparent",
                   boxShadow: "none",
                   borderWidth: "0",
@@ -406,6 +362,94 @@ export const Showcase = (
           </Box>
         </Box>
       </Collapse>
-    </LiveProvider>
+    </>
+  );
+};
+
+export const Showcase = (
+  { children, gradient, youtubeEmbedd }: IShowcaseProps,
+  props: any
+) => {
+  const { activeVersion } = React.useContext(AppContext);
+
+  const [parsedCode, setParsedCode] = React.useState(getParsedCode(children));
+  // const [parsedCode, setParsedCode] = React.useState(children);
+  const [copied, setCopied] = React.useState(false);
+
+  const { onCopy } = useClipboard();
+
+  function handleCopy() {
+    onCopy(parsedCode);
+    setCopied(true);
+    // set copied to false after 2 second
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  }
+
+  const expoCode = addExportsToCode(
+    children,
+    endingExpoTemplate(props?.isNativebaseExample)
+  );
+  const codeSandboxCode = addExportsToCode(
+    children,
+    endingCodeSandboxTemplate(props?.isNativebaseExample)
+  );
+  const [darkModeGradientArray, setDarkModeGradientArray] = React.useState([
+    "",
+  ]);
+  const [lightModeGradientArray, setLightModeGradientArray] = React.useState([
+    "",
+  ]);
+  React.useEffect(() => {
+    setDarkModeGradientArray(pickDarkModeGradient(gradient));
+    setLightModeGradientArray(pickLightModeGradient(gradient));
+  }, []);
+
+  const [gradientIndex, setGradientIndex] = useState("random");
+  React.useEffect(() => {
+    setDarkModeGradientArray(pickDarkModeGradient(gradientIndex));
+    setLightModeGradientArray(pickLightModeGradient(gradientIndex));
+  }, [gradientIndex]);
+  const internalProps = {
+    lightModeGradientArray,
+    darkModeGradientArray,
+    setDarkModeGradientArray,
+    setLightModeGradientArray,
+    youtubeEmbedd,
+    expoCode,
+    activeVersion,
+    copied,
+    handleCopy,
+    setParsedCode,
+  };
+  return (
+    <Box>
+      <LiveProvider
+        scope={LiveCodeEditorScope}
+        code={parsedCode}
+        transformCode={(a) => {
+          return `
+          function App() {
+            ${a}
+            return (<Example/>);
+          }
+          `;
+        }}
+        theme={useColorModeValue(github, paleNight)}
+      >
+        <ShowcaseInternal {...internalProps}>
+          <LivePreview />
+        </ShowcaseInternal>
+        {/* <Input
+        value={gradientIndex}
+        onChange={(e: any) => {
+          setGradientIndex(e.target.value);
+        }}
+      /> */}
+        {/* </Pressable> */}
+      </LiveProvider>
+      <ComponentOfTheWeek youtubeEmbedd={youtubeEmbedd} />
+    </Box>
   );
 };

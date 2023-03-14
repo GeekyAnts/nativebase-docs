@@ -86,7 +86,14 @@ export async function getStaticProps({ params }: any) {
     : isLatestVersion(params.slug[0])
     ? `${versions[0]}/` + path.join(...params.slug)
     : path.join(...params.slug);
-  // console.log("filename", filename);
+  // console.log('filename', filename);
+
+  if (filename.includes(".md")) {
+    filename = filename.split(".md")[0];
+  }
+  let componentName = filename.split("/").pop();
+  let youtubeEmbedd = config.componentOfTheWeek[componentName ?? ""] ?? "";
+
   const currentVersion = isIndexSlug
     ? indexSlugVersion
     : isLatestVersion(params.slug[0])
@@ -119,6 +126,7 @@ export async function getStaticProps({ params }: any) {
       tocArray: toc,
       pages,
       showToc,
+      youtubeEmbedd,
     },
   };
 }
@@ -136,19 +144,20 @@ export async function getStaticPaths() {
   });
   filePaths?.push("next");
   // console.log("filepaths", ...filePaths);
-
-  const paths = filePaths?.map((filename) => {
+  let paths: any = [];
+  filePaths?.map((filename) => {
     let slug = filename.split(".md")[0].split("/");
     // console.log(slug.split("/"));
+    // console.log(slugWithFileExt);
 
-    return {
+    paths.push({
       params: {
         slug: slug,
       },
-    };
+    });
   });
 
-  // console.log("paths", ...paths);
+  // console.log('paths', ...paths);
 
   return {
     paths,

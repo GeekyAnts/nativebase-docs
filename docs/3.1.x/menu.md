@@ -89,7 +89,6 @@ Extends `MenuItem`.
 
 <ComponentTheme name="menu" />
 
-
 ## Accessibility
 
-Adheres to the [Menu WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#menu)
+Adheres to the [Menu WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/#menu)

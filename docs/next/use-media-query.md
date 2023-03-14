@@ -3,7 +3,7 @@ id: use-media-query
 title: useMediaQuery
 ---
 
-`useMediaQuery` is a custom hook used to help detect whether a single media query or multiple media queries individually match. React Native does not natively support media queries, so `useMediaQuery` is still limited.
+`useMediaQuery` is a custom hook that helps detect matches between a single media query or multiple media queries. React Native does not natively support media queries, so `useMediaQuery` is still limited.
 
 ## Import
 

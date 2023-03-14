@@ -3,15 +3,17 @@ id: spinner
 title: Spinner
 ---
 
+Spinners gives visual cues to actions that are processing or awaiting a course change or results.
+
 ```jsx isShowcase
-import React from "react";
+import React from 'react';
 import {
   Spinner,
   HStack,
   Heading,
   Center,
   NativeBaseProvider,
-} from "native-base";
+} from 'native-base';
 export const Example = () => {
   return (
     <HStack space={2} alignItems="center">

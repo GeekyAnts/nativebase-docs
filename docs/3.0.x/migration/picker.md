@@ -1,7 +1,4 @@
-
-
-
-With v3 we have replaced the **Picker** with [`Select`](select.md).
+With v3 we have replaced the **Picker** with [`Select`](/select).
 
 ## Code Comparison
 

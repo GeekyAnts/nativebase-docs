@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  Link,
-  Text,
-  VStack,
-  Stack,
-  useColorModeValue,
-} from "native-base";
+import { Box, Text, VStack, Stack, useColorModeValue } from "native-base";
 import {
   CodePlaygroundIcon,
   BookMarkIcon,
@@ -37,7 +29,7 @@ export function GettingStartedHero() {
             >
               NativeBase is a component library that enables devs to build
               universal design systems. It is built on top of React Native,
-              allowing you to develop apps for Android, iOS and the Web.
+              allowing you to develop apps for Android, iOS, and the Web.
             </Text>
             <Stack direction={{ lg: "row" }} space="4">
               <TileLink
@@ -54,7 +46,7 @@ export function GettingStartedHero() {
               />
               <TileLink
                 title="Playground"
-                url="https://snack.expo.io/@nishanbende/example"
+                url="https://snack.expo.dev/@native-base/nativebase-playground"
                 description="Try NativeBase on Snack by Expo"
                 _description={{
                   _dark: { color: "coolGray.400" },

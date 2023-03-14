@@ -5,11 +5,11 @@ title: Slider
 
 import { ComponentTheme } from '../src/components';
 
-The `Slider` is used to allow users to make selections from a range of values.
+The `Slider` allows users to select options from a given range of values.
 
 ```jsx isShowcase
-import React from "react";
-import { Slider, Box, Center, NativeBaseProvider } from "native-base";
+import React from 'react';
+import { Slider, Box, Center, NativeBaseProvider } from 'native-base';
 export const Example = () => {
   return (
     <Box mx="5" width="100">
@@ -37,10 +37,10 @@ NativeBase exports 4 slider-related components:
 - `Slider`: The wrapper that provides context and functionality for all children.
 - `Slider.Track`: The empty part of the slider that shows the track.
 - `Slider.FilledTrack`: The filled part of the slider.
-- `Slider.Thumb`: The handle that's used to change the slider value.
+- `Slider.Thumb`: The handle that is used to change the slider value.
 
 ```jsx
-import { Slider } from "native-base";
+import { Slider } from 'native-base';
 ```
 
 ## Examples
@@ -97,7 +97,7 @@ import { Slider } from "native-base";
 
 ## Accessibility
 
-Adheres to the [Slider WAI-ARIA design pattern.](https://www.w3.org/TR/wai-aria-practices-1.2/#slidertwothumb)
+Adheres to the [Slider WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/#slidertwothumb)
 
 ### Keyboard Interactions
 

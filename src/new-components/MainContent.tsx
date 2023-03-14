@@ -2,11 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import {
   Box,
   Heading,
-  ScrollView,
   HStack,
   Text,
   VStack,
   Pressable,
+  Badge,
 } from "native-base";
 import Link from "next/link";
 import * as NBComponents from "native-base";
@@ -36,6 +36,7 @@ import {
   BlockQuote,
   InlineCode,
   Admonition,
+  ComponentOfTheWeek,
 } from "./markdown-components";
 import { AppContext } from "../AppContext";
 import * as docComponents from "../components";
@@ -84,7 +85,7 @@ const SubMainContent = ({ props }: any) => {
 
 // eslint-disable-next-line react/display-name
 const SubMainContent2 = React.memo(({ props }: any) => {
-  const { content, pages, frontMatter } = props;
+  const { content, pages, frontMatter, youtubeEmbedd } = props;
   const { activeVersion, setActiveSidebarItem } = useContext(AppContext);
   const components = {
     h1: Heading1,
@@ -105,7 +106,11 @@ const SubMainContent2 = React.memo(({ props }: any) => {
       else if (props?.isSnackPlayer)
         return <SnackPlayer {...props}>{children}</SnackPlayer>;
       else if (props?.isShowcase)
-        return <Showcase {...props}>{children}</Showcase>;
+        return (
+          <Showcase {...props} youtubeEmbedd={youtubeEmbedd}>
+            {children}
+          </Showcase>
+        );
       else return <CodeBlock>{children}</CodeBlock>;
     },
     table: TableBox,
@@ -114,6 +119,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
     tr: TableRow,
     td: TableData,
     inlineCode: InlineCode,
+    ComponentOfTheWeek,
     ...docComponents,
     ...NBComponents,
     ListItem: Li,
@@ -121,13 +127,29 @@ const SubMainContent2 = React.memo(({ props }: any) => {
   return (
     <Box px={{ base: "6", xl: "16" }} py="10">
       <Box alignSelf="center" maxW={props.showToc ? "800" : "1056"} w="100%">
-        <Heading mb="6" size="xl" _dark={{ color: "coolGray.50" }}>
-          {frontMatter && frontMatter.title
-            ? frontMatter.title
-            : pages.currentPage.title}
-        </Heading>
+        {/*  */}
+        <VStack>
+          {!isLatestVersionSlug(activeVersion) && (
+            <Badge
+              rounded="4"
+              flexDir="row"
+              alignSelf="flex-start"
+            >{`version: ${activeVersion}`}</Badge>
+          )}
+          <Heading
+            nativeID="page-title"
+            mb="6"
+            size="xl"
+            _dark={{ color: "coolGray.50" }}
+          >
+            {frontMatter && frontMatter.title
+              ? frontMatter.title
+              : pages.currentPage.title}
+          </Heading>
+        </VStack>
 
         <MDXRemote {...content} components={components} />
+
         <Box w="100%" />
         <HStack justifyContent="space-between" my="12">
           {pages.previousPage && (
@@ -197,6 +219,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
                     <Text
                       _light={{ color: "pageNavigationHeadingLight" }}
                       _dark={{ color: "pageNavigationHeadingDark" }}
+                      textAlign="right"
                     >
                       Next
                     </Text>
@@ -204,6 +227,7 @@ const SubMainContent2 = React.memo(({ props }: any) => {
                       fontSize="lg"
                       _light={{ color: "pageNavigationMainTitleLight" }}
                       _dark={{ color: "pageNavigationMainTitleDark" }}
+                      textAlign="right"
                     >
                       {pages.nextPage.title}
                     </Text>

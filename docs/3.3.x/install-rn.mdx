@@ -22,7 +22,7 @@ import { TileLink } from "../src/components";
 <Box maxWidth="750px">
 
 ```bash
-npx react-native init MyApp --template react-native-template-native-base
+npx react-native init MyApp --template @native-base/react-native-template
 ```
 
 </Box>
@@ -31,7 +31,7 @@ npx react-native init MyApp --template react-native-template-native-base
 <Box maxWidth="750px">
 
 ```bash
-npx react-native init MyApp --template react-native-template-native-base-typescript
+npx react-native init MyApp --template @native-base/react-native-template-typescript
 ```
 
 </Box>
@@ -61,7 +61,7 @@ values={[
 <DocTabItem value="yarn">
 
 ```bash
-yarn add native-base react-native-svg react-native-safe-area-context
+yarn add native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </DocTabItem>
@@ -69,7 +69,7 @@ yarn add native-base react-native-svg react-native-safe-area-context
 <DocTabItem value="npm">
 
 ```bash
-npm install native-base react-native-svg react-native-safe-area-context
+npm install native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
 ```
 
 </DocTabItem>
@@ -112,7 +112,7 @@ export default function App() {
 
 <Box>
   <Box mt="4" mb="8">
-    <HStack pl="0" ml="0">
+    <HStack pl="0" ml="0" space="4">
       <TileLink
         title="Customize NativeBaseProvider"
         url="setup-provider"

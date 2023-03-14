@@ -1,11 +1,8 @@
-
-
-
-Migrating [`FAB`](FAB.md) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
+Migrating [`FAB`](/fab) to v3 will provide a lot more **design**, **size**, **color** and **customisation** option.
 
 ## Overview
 
-Migrating Badge components can broadly described in these points:
+Migrating Fab components can broadly described in these points:
 
 - Instead of Passing Icon as child, use `icon` prop.
 
@@ -20,8 +17,8 @@ values={[
 <DocTabItem value="v2">
 
 ```tsx
-import React, { Component } from 'react';
-import { Container, Header, View, Icon, Fab } from 'native-base';
+import React, { Component } from "react";
+import { Container, Header, View, Icon, Fab } from "native-base";
 export default function () {
   return (
     <Container>
@@ -29,7 +26,7 @@ export default function () {
       <View style={{ flex: 1 }}>
         <Fab
           direction="up"
-          style={{ backgroundColor: '#5067FF' }}
+          style={{ backgroundColor: "#5067FF" }}
           position="bottomRight"
         >
           <Icon name="share" />
@@ -44,16 +41,16 @@ export default function () {
 <DocTabItem value="v3">
 
 ```tsx
-import React from 'react';
-import { Fab, Icon } from 'native-base';
+import React from "react";
+import { Fab, Icon } from "native-base";
 
 export default function () {
   return (
     <Fab
-      placement="bottomRight"
+      placement="bottom-right"
       colorScheme="blue"
       size="lg"
-      icon={<Icon name="share" type="Entypo" />}
+      icon={<Icon name="share" as="Entypo" />}
     />
   );
 }

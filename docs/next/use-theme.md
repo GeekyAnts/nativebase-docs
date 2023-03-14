@@ -3,12 +3,12 @@ id: use-theme
 title: useTheme
 ---
 
-`useTheme` is a custom hook used to get the theme object from context.
+`useTheme` is a custom hook to call theme object from the context.
 
 ## Import
 
 ```jsx
-import { useTheme } from "native-base";
+import { useTheme } from 'native-base';
 ```
 
 ## Example

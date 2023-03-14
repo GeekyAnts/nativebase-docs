@@ -5,11 +5,11 @@ title: Divider
 
 import { ComponentTheme } from '../src/components';
 
-`Divider` is used to visually separate content in a list or group.
+`Divider` can visually separate content in a given list or group.
 
 ```jsx isShowcase
-import React from "react";
-import { Divider, Heading, Box } from "native-base";
+import React from 'react';
+import { Divider, Heading, Box } from 'native-base';
 
 export const Example = () => {
   return (
@@ -29,7 +29,7 @@ export const Example = () => {
 ## Import
 
 ```jsx
-import { Divider } from "native-base";
+import { Divider } from 'native-base';
 ```
 
 ## Examples
@@ -46,7 +46,7 @@ The Divider displays a thin horizontal or vertical line.
 
 Pass the `orientation` prop and set it to either `horizontal` or `vertical`.
 
-> **Note:** If the horizontal orientation is used, make sure that the parent element is assigned a width and If the vertical orientation is used, make sure that the parent element is assigned a height.
+> **Note:** If the horizontal orientation is used, make sure that the parent element is assigned a width. If the vertical orientation is used, make sure that the parent element is assigned a height.
 
 ```ComponentSnackPlayer path=components,composites,Divider,Orientation.tsx
 

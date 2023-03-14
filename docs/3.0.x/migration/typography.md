@@ -1,7 +1,4 @@
-
-
-
-**H1**, **H2** and **H3** all have been replaced with [`Heading`](heading.md) component.
+**H1**, **H2** and **H3** all have been replaced with [`Heading`](/heading) component.
 
 ## Code Comparison
 

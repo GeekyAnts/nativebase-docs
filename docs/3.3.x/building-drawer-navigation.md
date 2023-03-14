@@ -31,6 +31,7 @@ import {
   Divider,
   Icon,
 } from "native-base";
+global.__reanimatedWorkletInit = () => {};
 const Drawer = createDrawerNavigator();
 function Component(props) {
   return (

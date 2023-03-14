@@ -3,11 +3,11 @@ id: z-stack
 title: ZStack
 ---
 
-`ZStack` aligns items absolutely in the z-axis.
+`ZStack` aligns items to the z-axis.
 
 ```jsx isShowcase
-import React from "react";
-import { ZStack, Box } from "native-base";
+import React from 'react';
+import { ZStack, Box } from 'native-base';
 
 export const Example = () => {
   return (

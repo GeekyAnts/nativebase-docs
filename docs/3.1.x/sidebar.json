@@ -43,6 +43,16 @@
     },
     {
       "type": "heading",
+      "title": "Resources",
+      "pages": [
+        {
+          "id": "contribution",
+          "title": "Contribution"
+        }
+      ]
+    },
+    {
+      "type": "heading",
       "title": "Core Concepts",
       "pages": [
         {
@@ -524,7 +534,7 @@
       "title": "Migration",
       "pages": [
         {
-          "id": "migration/guide",
+          "id": "migration/v3",
           "title": "Guide to v3"
         },
         {

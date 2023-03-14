@@ -9,7 +9,7 @@ Follow 3 simple steps to add a custom font family.
 
 [Refer this guide if you're using Expo](https://docs.expo.io/guides/using-custom-fonts/)
 
-[Refer this guide if you're using React Native init](https://medium.com/@aravindmnair/add-custom-fonts-to-react-native-0-60-easily-in-3-steps-fcd71459f4c9)
+[Refer this guide if you're using React Native init](https://aravindmnair.medium.com/add-custom-fonts-to-react-native-0-60-easily-in-3-steps-fcd71459f4c9)
 
 ### Extend NativeBase theme object.
 
@@ -18,33 +18,33 @@ We extend the theme object and override `fontConfig` and `fonts` properties whic
 This mapping is needed to make sure fontWeight, fontStyle properties work in all platforms.
 
 ```jsx
-import { NativeBaseProvider, extendTheme } from "native-base";
+import { NativeBaseProvider, extendTheme } from 'native-base';
 
 const theme = extendTheme({
   fontConfig: {
     Roboto: {
       100: {
-        normal: "Roboto-Light",
-        italic: "Roboto-LightItalic",
+        normal: 'Roboto-Light',
+        italic: 'Roboto-LightItalic',
       },
       200: {
-        normal: "Roboto-Light",
-        italic: "Roboto-LightItalic",
+        normal: 'Roboto-Light',
+        italic: 'Roboto-LightItalic',
       },
       300: {
-        normal: "Roboto-Light",
-        italic: "Roboto-LightItalic",
+        normal: 'Roboto-Light',
+        italic: 'Roboto-LightItalic',
       },
       400: {
-        normal: "Roboto-Regular",
-        italic: "Roboto-Italic",
+        normal: 'Roboto-Regular',
+        italic: 'Roboto-Italic',
       },
       500: {
-        normal: "Roboto-Medium",
+        normal: 'Roboto-Medium',
       },
       600: {
-        normal: "Roboto-Medium",
-        italic: "Roboto-MediumItalic",
+        normal: 'Roboto-Medium',
+        italic: 'Roboto-MediumItalic',
       },
       // Add more variants
       //   700: {
@@ -63,9 +63,9 @@ const theme = extendTheme({
 
   // Make sure values below matches any of the keys in `fontConfig`
   fonts: {
-    heading: "Roboto",
-    body: "Roboto",
-    mono: "Roboto",
+    heading: 'Roboto',
+    body: 'Roboto',
+    mono: 'Roboto',
   },
 });
 

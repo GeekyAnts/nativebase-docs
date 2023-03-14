@@ -501,10 +501,10 @@ export function Example() {
 
 <br />
 
-| Prop    | Type                       | Description                                              |
-| ------- | -------------------------- | -------------------------------------------------------- |
-| \_stack | [IStackProps](stack#props) | Passed props will be provided to [`Stack`](stack) child. |
-| \_text  | [ITextProps](text#props)   | Passed props will be provided to [`Text`](text) child.   |
+| Prop    | Type                          | Description                                              |
+| ------- | ----------------------------- | -------------------------------------------------------- |
+| \_stack | [IStackProps](stack#h2-props) | Passed props will be provided to [`Stack`](stack) child. |
+| \_text  | [ITextProps](text#h2-props)   | Passed props will be provided to [`Text`](text) child.   |
 
 ### Interaction Props
 

@@ -29,9 +29,9 @@ function AppBar() {
   return (
     <>
       <StatusBar bg="#3700B3" barStyle="light-content" />
-      <Box safeAreaTop bg="#6200ee" />
+      <Box safeAreaTop bg="violet.600" />
       <HStack
-        bg="#6200ee"
+        bg="violet.600"
         px="1"
         py="3"
         justifyContent="space-between"

@@ -3,7 +3,7 @@ id: setup-provider
 title: Setup NativeBase Provider
 ---
 
-NativeBaseProvider is a component that makes the theme available throughout your app. It uses React's Context API. Add NativeBaseProvider to the root of your app and update App.js as follows:
+`NativeBaseProvider` is a component that makes the theme available throughout your app. It uses React's Context API. Add NativeBaseProvider to the root of your app and update App.js as follows:
 
 **App.js**
 
@@ -54,9 +54,9 @@ function App() {
 
 ## Add colorModeManager (Optional)
 
-If you want to do something with the color modes in your app, you can use colorModeManager Prop of NativeBaseProvider to achieve it.
+If you want to do something with the color modes in your app, you can use `colorModeManager` Prop of `NativeBaseProvider` to achieve it.
 
-In the below example we will show how to store the active ColorMode in a async storage, so it can be consistent all around our app.
+In the example below, we show how to store the active `ColorMode` in an async storage, so it can be consistent all around our app.
 
 ```tsx
 import React from 'react';
@@ -93,8 +93,7 @@ export default ({ children, theme }: any) => {
 
 ## Add external dependencies (Optional)
 
-If you want to use [Gradient feature in Box](box#with-linear-gradient), you need to pass linear gradient dependency as a config object in NativeBaseProvider. This dependency can be either from [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) or [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
-
+If you want to use the [Gradient feature in Box](box#with-linear-gradient),it has to pass linear gradient dependency as a config object in NativeBaseProvider. This dependency can be either from [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/) or [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient).
 ```jsx
 import React from 'react';
 import { NativeBaseProvider } from 'native-base';
@@ -124,6 +123,6 @@ export default () => {
 | Name                 | Type                                | Description                                                                                                                                | Default                  |
 | -------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
 | initialWindowMetrics | Object                              | Mock data for frame and insets. [Refer this](https://github.com/th3rdwave/react-native-safe-area-context#testing) for further information. | -                        |
-| colorModeManager     | { get : Function , set : Function } | Manage Color mode in your app                                                                                                              | -                        |
-| theme                | Object                              | use custom theme in your app                                                                                                               | NativeBase Default Theme |
+| colorModeManager     | { get : Function , set : Function } | Manages Color mode in your app                                                                                                              | -                        |
+| theme                | Object                              | Provides a custom theme for your app.                                                                                                               | NativeBase Default Theme |
 | config               | {dependencies: {}}                  | To include external dependencies. For example - [Linear gradient](box#with-linear-gradient)                                                | -                        |

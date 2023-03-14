@@ -43,6 +43,16 @@
     },
     {
       "type": "heading",
+      "title": "Resources",
+      "pages": [
+        {
+          "id": "contribution",
+          "title": "Contribution"
+        }
+      ]
+    },
+    {
+      "type": "heading",
       "title": "Core Concepts",
       "pages": [
         {
@@ -143,7 +153,7 @@
         },
         {
           "id": "typescript",
-          "title": "Typescript"
+          "title": "TypeScript"
         }
       ]
     },

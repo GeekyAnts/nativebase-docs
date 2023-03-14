@@ -3,6 +3,7 @@ import React, { useEffect, useContext } from "react";
 import {
   Box,
   HStack,
+  Link,
   Pressable,
   ScrollView,
   Stack,
@@ -23,6 +24,7 @@ import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSideba
 import { SocialMediaStagger } from "../src/new-components/SocialMediaStagger";
 import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
 import Script from "next/script";
+import { isLatestVersionSlug } from "../src/utils";
 
 function Layout({
   children: content,
@@ -33,6 +35,7 @@ function Layout({
   frontMatter,
   pages,
   showToc,
+  youtubeEmbedd,
 }: any) {
   // console.log("Sidebar", sidebar);
   const {
@@ -40,6 +43,7 @@ function Layout({
     activeSidebarItem,
     setActiveVersion,
     setActiveSidebarItem,
+    activeVersion,
   } = useContext(AppContext);
 
   const bgColor = useColorModeValue(
@@ -89,14 +93,25 @@ function Layout({
   const title = `${
     frontMatter && frontMatter.title
       ? frontMatter.title +
+        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
         " | NativeBase | Universal Components for React and React Native"
       : pages?.currentPage?.title +
+        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
         " | NativeBase | Universal Components for React and React Native"
   }`;
+
+  const pageTitle = `${
+    frontMatter && frontMatter.title
+      ? frontMatter.title + " | NativeBase "
+      : pages?.currentPage?.title + " | NativeBase "
+  }`;
+
+  let href = "https://docs.nativebase.io/" + pages.currentPage.id;
+
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{pageTitle}</title>
         <meta
           name="keywords"
           content="Universal Components for React and React Native"
@@ -105,32 +120,49 @@ function Layout({
         <meta property="og:title" content={title} />
         <meta
           property="og:description"
-          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+          content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <meta property="og:url" content="https://docs.nativebase.io" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="NativeBase" />
         <meta
           name="twitter:image:alt"
-          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+          content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <meta property="og:image" content="/img/nativebase-og.png" />
-        <meta name="twitter:image" content="/img/nativebase-og.png"></meta>
+        <meta
+          name="twitter:image"
+          content="https://docs.nativebase.io/img/nativebase-og.png"
+        ></meta>
         <meta name="twitter:site" content="@nativebase" />
 
         <meta
           name="description"
-          content="NativeBase 3.0 enables you to build a consistent design system across android, iOS & web. It is powered by React Native ARIA and Styled System. Rich, highly themeable and responsive."
+          content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <link rel="icon" href="/img/nativebaselogo.svg" />
+        <link
+          rel="canonical"
+          href={"https://docs.nativebase.io/" + pages.currentPage.id}
+        />
       </Head>
       <Script async src="https://snack.expo.dev/embed.js"></Script>
       <Script src="/js/gtag.js"></Script>
       {/* <Script src="/js/switchTheme.js"></Script> */}
       <Script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-ZTSFCSJK8X"
+        src="https://www.googletagmanager.com/gtag/js?id=G-DBP9QMTGR1"
       ></Script>
+      <Script id="gTagScript">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-DBP9QMTGR1');
+        `}
+      </Script>
+      {/* will replace it when nativebase has semantic tagging */}
+      <h1 style={{ display: "none" }}>{title}</h1>
       <Box
         w="100%"
         h={{ base: "100%", md: "100vh" }}
@@ -309,7 +341,9 @@ function Layout({
           </Box>
           <SocialMediaStagger />
         </ScrollView>
-        <Box
+        <Link
+          href="https://madewithnativebase.com/"
+          isExternal
           position="fixed"
           bottom="8"
           right={{ base: "auto", lg: "30px" }}
@@ -335,7 +369,7 @@ function Layout({
           >
             MadeWithNativeBase
           </Text>
-        </Box>
+        </Link>
       </Box>
     </>
   );

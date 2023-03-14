@@ -5,7 +5,7 @@ title: Modal
 
 import { ComponentTheme } from '../src/components';
 
-A Modal is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is **inert**, meaning that users cannot interact with it.
+A `Modal` is an overlay on the primary window or another dialog window. Content behind the modal dialog remains **inert** and users cannot interact with it.
 
 ```jsx isShowcase
 import React from 'react';
@@ -17,7 +17,9 @@ export const Example = () => {
 
   return (
     <>
-      <Button shadow={2} onPress={() => setShowModal(true)}>Button</Button>
+      <Button shadow={2} onPress={() => setShowModal(true)}>
+        Button
+      </Button>
       <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
         <Modal.Content maxWidth="400px">
           <Modal.CloseButton />
@@ -61,7 +63,7 @@ export const Example = () => {
 
 ## Import
 
-NativeBase exports Modal Compound component:
+NativeBase exports a Modal Compound component:
 
 - `Modal`: The wrapper that provides context for its children.
 - `Modal.Content`: The container for the modal dialog's content.
@@ -130,7 +132,7 @@ If you want a specifically aligned Modal, pass `justifyContent` and `alignItems`
 
 ## Accessibility
 
-Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geekyants.com/docs/FocusScope) which follows the [Dialog Modal WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal).
+Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geekyants.com/docs/FocusScope) which follows the [Dialog Modal WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/#dialog_modal).
 
 ### Keyboard Interactions
 
@@ -150,8 +152,8 @@ Uses React Native ARIA [@react-native-aria/focus](https://react-native-aria.geek
 
 ### Children components
 
-- `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the [`Box`](box.md) component.
-- `Modal.CloseButton` composes the [`Button`](button.md).
+- `Modal.Header`, `Modal.Footer` and `Modal.Body` composes the [`Box`](box) component.
+- `Modal.CloseButton` composes the [`Button`](button).
 
 ## Styling
 

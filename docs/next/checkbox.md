@@ -5,11 +5,11 @@ title: CheckBox
 
 import { ComponentTheme } from '../src/components';
 
-The `Checkbox` component is used in forms when a user needs to select multiple values from several options.
+The `Checkbox` component allows a user to select multiple values from various options in a form.
 
 ```jsx isShowcase
-import React from "react";
-import { HStack, Checkbox } from "native-base";
+import React from 'react';
+import { HStack, Checkbox } from 'native-base';
 
 export const Example = () => {
   return (
@@ -115,7 +115,7 @@ export const Example = () => {
 
 ## Accessibility
 
-Uses React Native ARIA [@react-native-aria/checkbox](https://react-native-aria.geekyants.com/docs/useCheckbox) which follows the [Checkbox WAI-ARIA design pattern](https://www.w3.org/TR/wai-aria-practices-1.2/#checkbox).
+Uses React Native ARIA [@react-native-aria/checkbox](https://react-native-aria.geekyants.com/docs/useCheckbox) which follows the [Checkbox WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/#checkbox).
 
 ### Keyboard Interactions
 

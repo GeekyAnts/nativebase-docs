@@ -3,8 +3,8 @@ id: utility-first
 title: Utility First
 ---
 
-import { UtilityFirstExample } from "../src/components";
-import { KitchenSinkIframe, TileLink, NBHistory } from "../src/components";
+import { UtilityFirstExample } from '../src/components';
+import { KitchenSinkIframe, TileLink, NBHistory } from '../src/components';
 
 React Native has a great StyleSheet API which is optimal for component-based systems. NativeBase leverages it and adds a layer of utility props and constraint based designed tokens on top of it.
 
@@ -14,13 +14,13 @@ To understand utility props, let's take an example.
 
 ## With React Native
 
-Let's try the traditional way of building the above card in React Native.
+Let's try the traditional way of building the following card in React Native.
 
 <Box maxWidth="100%" width="800px">
 
 ```jsx isLive isNativebaseExample=false
-import * as React from "react";
-import { Text, View, StyleSheet, Image, Pressable } from "react-native";
+import * as React from 'react';
+import { Text, View, StyleSheet, Image, Pressable } from 'react-native';
 
 function Example() {
   return (
@@ -37,7 +37,7 @@ function Example() {
         </View>
         <Image
           source={{
-            uri: "https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg",
+            uri: 'https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg',
           }}
           style={styles.avatar}
         />
@@ -48,24 +48,24 @@ function Example() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#0891b2",
+    backgroundColor: '#0891b2',
     paddingVertical: 16,
     paddingHorizontal: 12,
     borderRadius: 5,
-    alignSelf: "center",
+    alignSelf: 'center',
     width: 375,
-    maxWidth: "100%",
+    maxWidth: '100%',
   },
   timings: {
-    color: "#fff",
-    fontSize: "14px",
+    color: '#fff',
+    fontSize: '14px',
   },
   metaContainer: {
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
   },
   topContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   avatar: {
     height: 100,
@@ -73,21 +73,21 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   },
   description: {
-    color: "white",
+    color: 'white',
     marginTop: 5,
     fontSize: 20,
   },
   button: {
-    backgroundColor: "#22d3ee",
-    alignSelf: "flex-start",
+    backgroundColor: '#22d3ee',
+    alignSelf: 'flex-start',
     paddingHorizontal: 12,
     paddingVertical: 4,
     borderRadius: 2,
   },
   buttonText: {
-    fontWeight: "bold",
-    color: "white",
-    textTransform: "uppercase",
+    fontWeight: 'bold',
+    color: 'white',
+    textTransform: 'uppercase',
     fontSize: 14,
   },
 });
@@ -105,7 +105,7 @@ With NativeBase, you can apply styles directly in the layout using shorthands.
 <Box maxWidth="100%" width="800px">
 
 ```jsx isLive
-import * as React from "react";
+import * as React from 'react';
 import {
   NativeBaseProvider,
   Box,
@@ -114,7 +114,7 @@ import {
   Text,
   Pressable,
   Image,
-} from "native-base";
+} from 'native-base';
 
 export function Example() {
   return (
@@ -156,7 +156,7 @@ export function Example() {
           </Box>
           <Image
             source={{
-              uri: "https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg",
+              uri: 'https://media.vanityfair.com/photos/5ba12e6d42b9d16f4545aa19/3:2/w_1998,h_1332,c_limit/t-Avatar-The-Last-Airbender-Live-Action.jpg',
             }}
             alt="Aang flying and surrounded by clouds"
             height="100"
@@ -172,10 +172,10 @@ export function Example() {
 
 </Box>
 
-The above example demonstrates the usage of [utility props](utility-props) alongwith [VStack](v-stack), [HStack](h-stack) components. This approach allows us to style components without using StyleSheet API.
+The above example demonstrates the usage of [utility props](utility-props) alongwith [VStack](vstack), [HStack](h-stack) components. This approach allows us to style components without using StyleSheet API.
 
-Apart from productivity boost and saving time there are other benefits by styling components using utility props.
-No need to name styles anymore, no need to define an object and think about naming them.
+Apartfrom productivity boosts and saving time, there are other benefits to styling components using utility props.
+No need to name styles anymore, no need to define an object and think about naming it.
 
 Using utility-first props, you can focus on creating reusable components instead of reusable stylesheets.
 
@@ -185,7 +185,9 @@ Once you start writing styles this way, any other way will feel cumbersome.
 
 <Center>
   <Image
-    source={{ uri: "/img/aang-avatar-state.gif" }}
+    w="500"
+    h="250"
+    source={{ uri: '/img/aang-avatar-state.gif' }}
     alt="aang transitioning to avatar state"
   />
 </Center>
@@ -203,7 +205,9 @@ Once you had a cup of tea, let's proceed to the next section!
     />
   </Box>
   <Image
-    source={{ uri: "/img/iroh-tea.webp"}}
+    w="280"
+    h="392"
+    source={{ uri: "/img/iroh-tea.webp" }}
     alt="uncle iroh holding cup of tea"
   />
 
