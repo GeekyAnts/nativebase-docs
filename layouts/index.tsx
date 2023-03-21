@@ -245,9 +245,6 @@ function Layout({
                         The alpha version of gluestack-ui is now available!
                         Start building today!
                       </Text>
-                      {/* <span className="border border-[#171717] dark:border-[#fafafa] rounded px-3 py-2 text-sm font-medium mx-4">
-                        Explore gluestack-ui
-                      </span> */}
                       <HStack
                         alignItems="center"
                         mt={{ base: "4", md: 0 }}
@@ -315,13 +312,15 @@ function Layout({
                       </HStack>
                     </Stack>
                   </a>
-                  <MainContent
-                    pages={pages}
-                    frontMatter={frontMatter}
-                    content={content}
-                    tocArray={tocArray}
-                    showToc={showToc}
-                  />
+                  <Box flexDirection="row" flex={1}>
+                    <MainContent
+                      pages={pages}
+                      frontMatter={frontMatter}
+                      content={content}
+                      tocArray={tocArray}
+                      showToc={showToc}
+                    />
+                  </Box>
                 </Box>
               </HStack>
             ) : (
