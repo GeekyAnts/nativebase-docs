@@ -485,6 +485,10 @@
         {
           "id": "use-accessible-colors",
           "title": "useAccessibleColors"
+        },
+        {
+          "id": "use-sx",
+          "title": "useSx"
         }
       ]
     },
