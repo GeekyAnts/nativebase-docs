@@ -75,20 +75,47 @@ export default function NBHistory() {
               space={2}
               direction={{ base: "row", md: "column" }}
               alignItems={"center"}
+            >
+              <Box
+                h="5"
+                w="1"
+                _dark={{ bg: "coolGray.700" }}
+                _light={{ bg: "coolGray.300" }}
+                mt="-2.5"
+                mb="2"
+              />
+              <Text
+                _dark={{ color: "coolGray.300" }}
+                _light={{ color: "coolGray.600" }}
+              >
+                NativeBase v3.x
+              </Text>
+              <Text
+                _dark={{ color: "coolGray.300" }}
+                _light={{ color: "coolGray.600" }}
+              >
+                (2021)
+              </Text>
+            </Stack>
+            <Stack
+              space={2}
+              direction={{ base: "row", md: "column" }}
+              alignItems={"center"}
               pt="2px"
             >
               <PinDropIcon size="6" mt="-6" mb="5" />
               <Text
                 _dark={{ color: "coolGray.50" }}
                 _light={{ color: "coolGray.800", fontWeight: "medium" }}
+                mt="-1"
               >
-                NativeBase v3.x
+                gluestack-ui
               </Text>
               <Text
                 _dark={{ color: "coolGray.50" }}
                 _light={{ color: "coolGray.800", fontWeight: "medium" }}
               >
-                (2021)
+                (2023)
               </Text>
             </Stack>
           </Stack>
@@ -144,10 +171,29 @@ export default function NBHistory() {
               NativeBase v3.x :{" "}
             </Text>
             We wanted to make NativeBase the go-to component library for anyone
-            building with React Native and Web. This version is
-            accessible, highly customizable and consistent across android, iOS &
-            web. That&apos;s not all though, read on for the full benefits of
-            using v3.
+            building with React Native and Web. This version is accessible,
+            highly customizable and consistent across android, iOS & web.
+            That&apos;s not all though, read on for the full benefits of using
+            v3.
+          </Text>
+        </Li>
+        <Li>
+          <Text
+            _dark={{ color: "coolGray.400" }}
+            _light={{ color: "coolGray.600" }}
+            lineHeight="xl"
+          >
+            <Text
+              _dark={{ color: "coolGray.300" }}
+              _light={{ color: "coolGray.800", fontWeight: "medium" }}
+            >
+              gluestack-ui :{" "}
+            </Text>
+            With the introduction of gluestack-ui, we aim to address the
+            performance and maintainability issues of NativeBase v3. By
+            splitting the library into three parts and focusing on a universal,
+            headless, and independent set of components, gluestack-ui now offers
+            better performance and easier maintenance. v3.
           </Text>
         </Li>
       </VStack>
