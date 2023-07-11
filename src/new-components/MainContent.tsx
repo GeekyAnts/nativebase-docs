@@ -38,6 +38,7 @@ import {
   Admonition,
 } from "./markdown-components";
 import { AppContext } from "../AppContext";
+import { BannerGluestack } from "./BannerGluestack";
 import * as docComponents from "../components";
 import { isLatestVersionSlug } from "../utils";
 import { ScrollContext } from "./ScrollContext";
@@ -50,6 +51,7 @@ export default function MainContent(props: any) {
     <>
       <ScrollContext.Provider value={{ timestamp, setTimestamp }}>
         <Box h="calc(100% - 64px)" flex="1">
+          <BannerGluestack />
           <SubMainContent props={props} />
         </Box>
         {props.showToc && (
