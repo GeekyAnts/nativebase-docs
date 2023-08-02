@@ -9,8 +9,8 @@ const FontSizeComponent = ({ name, value }: any) => {
       </Text>
       <Text
         fontSize={value}
-        textOverflow="ellipsis"
-        whiteSpace="nowrap"
+        // textOverflow="ellipsis"
+        // whiteSpace="nowrap"
         overflow="hidden"
         ml="5"
       >
