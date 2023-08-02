@@ -242,20 +242,21 @@ function Layout({
                       direction={{ md: "row" }}
                     >
                       <Text>
-                        The alpha version of gluestack-ui is now available!
-                        Start building today!
+                        IMPORTANT INFO: NativeBase will no longer be maintained.
+                        We recommend using{" "}
+                        <a href="https://ui.gluestack.io/">gluestack-ui</a>{" "}
+                        instead.{" "}
                       </Text>
                       <HStack
                         alignItems="center"
                         mt={{ base: "4", md: 0 }}
-                        ml={{ md: "4" }}
+                        ml={{ md: "2" }}
                       >
                         <Pressable
                           borderWidth={1}
                           rounded="sm"
                           px="3"
                           py="2"
-                          mr="4"
                           _light={{
                             borderColor: "muted.900",
                           }}
@@ -304,8 +305,9 @@ function Layout({
                             color: "muted.50",
                           }}
                           underline
+                          ml="4"
                         >
-                          <a href="https://nativebase.io/blogs/the-future-of-nativebase">
+                          <a href="https://nativebase.io/blogs/road-ahead-with-gluestack-ui">
                             Read more
                           </a>
                         </Text>

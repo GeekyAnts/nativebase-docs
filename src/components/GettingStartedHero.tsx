@@ -29,7 +29,11 @@ export function GettingStartedHero() {
             >
               NativeBase is a component library that enables devs to build
               universal design systems. It is built on top of React Native,
-              allowing you to develop apps for Android, iOS, and the Web.
+              allowing you to develop apps for Android, iOS and the Web.
+              IMPORTANT INFO: NativeBase will no longer be maintained. We
+              recommend using [gluestack-ui](https://ui.gluestack.io/) instead.
+              [Know
+              more](https://nativebase.io/blogs/road-ahead-with-gluestack-ui).
             </Text>
             <Stack direction={{ lg: "row" }} space="4">
               <TileLink
