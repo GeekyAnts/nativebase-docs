@@ -1,9 +1,10 @@
 import Head from "next/head";
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import {
   Box,
   HStack,
   Link,
+  Modal,
   Pressable,
   ScrollView,
   Stack,
@@ -25,6 +26,7 @@ import { SocialMediaStagger } from "../src/new-components/SocialMediaStagger";
 import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
 import Script from "next/script";
 import { isLatestVersionSlug } from "../src/utils";
+import { AlertIcon, RightArrow } from "./icons";
 
 function Layout({
   children: content,
@@ -107,6 +109,7 @@ function Layout({
   }`;
 
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
+  const [showModal, setShowModal] = useState(true);
 
   return (
     <>
@@ -163,6 +166,103 @@ function Layout({
       </Script>
       {/* will replace it when nativebase has semantic tagging */}
       <h1 style={{ display: "none" }}>{title}</h1>
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+        <Modal.Content
+          maxWidth="460"
+          alignItems="center"
+          _dark={{
+            bg: "#20293A",
+          }}
+        >
+          <Modal.CloseButton />
+          <Modal.Body p="9">
+            <HStack mb="4" alignItems="center" justifyContent="center">
+              <Text fontSize="md" fontWeight="bold" textAlign="center" mr="1">
+                IMPORTANT INFO
+              </Text>
+              <AlertIcon />
+            </HStack>
+            <Text
+              fontSize="lg"
+              lineHeight={27}
+              textAlign="center"
+              color="muted.800"
+              _dark={{
+                color: "muted.200",
+              }}
+            >
+              NativeBase will no longer be maintained. We recommend using{" "}
+              <Text fontWeight="bold">gluestack-ui</Text> instead.
+            </Text>
+
+            <HStack justifyContent="center">
+              <a href="https://ui.gluestack.io/">
+                <Pressable
+                  my="6"
+                  borderWidth={1}
+                  rounded="sm"
+                  px="3"
+                  py="2"
+                  _light={{
+                    borderColor: "muted.900",
+                  }}
+                  _dark={{
+                    borderColor: "muted.50",
+                  }}
+                  _hover={{
+                    bg: "primary.200",
+                    borderColor: "primary.200",
+                    _dark: {
+                      bg: "primary.700",
+                      borderColor: "primary.700",
+                    },
+                  }}
+                  _focus={{
+                    bg: "primary.300",
+                    borderColor: "primary.300",
+                    _dark: {
+                      bg: "primary.800",
+                      borderColor: "primary.800",
+                    },
+                  }}
+                >
+                  <Text
+                    fontSize="md"
+                    fontWeight="medium"
+                    _light={{
+                      color: "muted.900",
+                    }}
+                    _dark={{
+                      color: "muted.50",
+                    }}
+                  >
+                    Explore gluestack-ui
+                  </Text>
+                </Pressable>
+              </a>
+            </HStack>
+
+            <HStack justifyContent="center">
+              <Link
+                href="https://nativebase.io/blogs/road-ahead-with-gluestack-ui"
+                flexDir="row"
+                alignItems="center"
+                isUnderlined
+                _text={{
+                  color: "#52B3D0",
+                  fontSize: "md",
+                  fontWeight: "bold",
+                }}
+              >
+                Read Updated Blog
+                <Box ml="1">
+                  <RightArrow />
+                </Box>
+              </Link>
+            </HStack>
+          </Modal.Body>
+        </Modal.Content>
+      </Modal>
       <Box
         w="100%"
         h={{ base: "100%", md: "100vh" }}
