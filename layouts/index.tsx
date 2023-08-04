@@ -341,7 +341,8 @@ function Layout({
                     width="100%"
                     direction={{ md: "row" }}
                   >
-                    <Text>
+                    <AlertIcon />
+                    <Text ml="1">
                       IMPORTANT MESSAGE — If you are starting a new project with
                       NativeBase, we recommend using{" "}
                       <a href="https://ui.gluestack.io/">gluestack-ui</a>{" "}
