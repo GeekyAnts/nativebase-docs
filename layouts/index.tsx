@@ -178,7 +178,7 @@ function Layout({
           <Modal.Body p="9">
             <HStack mb="4" alignItems="center" justifyContent="center">
               <Text fontSize="md" fontWeight="bold" textAlign="center" mr="1">
-                IMPORTANT INFO
+                IMPORTANT MESSAGE
               </Text>
               <AlertIcon />
             </HStack>
@@ -191,8 +191,8 @@ function Layout({
                 color: "muted.200",
               }}
             >
-              NativeBase will no longer be maintained. We recommend using{" "}
-              <Text fontWeight="bold">gluestack-ui</Text> instead.
+              If you are starting a new project with NativeBase, we recommend
+              using <Text fontWeight="bold">gluestack-ui</Text> instead.
             </Text>
 
             <HStack justifyContent="center">
@@ -314,87 +314,74 @@ function Layout({
                   <Sidebar sidebar={sidebar} />
                 </Box>
                 <Box flex={1}>
-                  <a
+                  {/* <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href={`https://ui.gluestack.io//?utm_source=nativebase-docs&utm_medium=banner+&utm_campaign=nativebase-banner-cta&utm_id=nativebase-campaign-banner`}
+                  > */}
+                  <Stack
+                    alignItems={{ md: "center" }}
+                    justifyContent={{ md: "center" }}
+                    overflow="hidden"
+                    px="4"
+                    py="5"
+                    fontSize="sm"
+                    fontWeight="medium"
+                    borderWidth={1}
+                    _light={{
+                      bg: "#F1F1F1",
+                      color: "muted.700",
+                      borderColor: "muted.100",
+                    }}
+                    _dark={{
+                      color: "muted.200",
+                      bg: "#171E2E",
+                      borderColor: "muted.800",
+                    }}
+                    width="100%"
+                    direction={{ md: "row" }}
                   >
-                    <Stack
-                      alignItems={{ md: "center" }}
-                      justifyContent={{ md: "center" }}
-                      overflow="hidden"
-                      px="4"
-                      py="5"
-                      fontSize="sm"
-                      fontWeight="medium"
-                      borderWidth={1}
-                      _light={{
-                        bg: "#F1F1F1",
-                        color: "muted.700",
-                        borderColor: "muted.100",
-                      }}
-                      _dark={{
-                        color: "muted.200",
-                        bg: "#171E2E",
-                        borderColor: "muted.800",
-                      }}
-                      width="100%"
-                      direction={{ md: "row" }}
+                    <Text>
+                      IMPORTANT MESSAGE — If you are starting a new project with
+                      NativeBase, we recommend using{" "}
+                      <a href="https://ui.gluestack.io/">gluestack-ui</a>{" "}
+                      instead.{" "}
+                    </Text>
+                    <HStack
+                      alignItems="center"
+                      mt={{ base: "4", md: 0 }}
+                      ml={{ md: "2" }}
                     >
-                      <Text>
-                        IMPORTANT INFO: NativeBase will no longer be maintained.
-                        We recommend using{" "}
-                        <a href="https://ui.gluestack.io/">gluestack-ui</a>{" "}
-                        instead.{" "}
-                      </Text>
-                      <HStack
-                        alignItems="center"
-                        mt={{ base: "4", md: 0 }}
-                        ml={{ md: "2" }}
+                      <Pressable
+                        borderWidth={1}
+                        rounded="sm"
+                        px="3"
+                        py="2"
+                        _light={{
+                          borderColor: "muted.900",
+                        }}
+                        _dark={{
+                          borderColor: "muted.50",
+                        }}
+                        _hover={{
+                          bg: "primary.200",
+                          borderColor: "primary.200",
+
+                          _dark: {
+                            bg: "primary.700",
+                            borderColor: "primary.700",
+                          },
+                        }}
+                        _focus={{
+                          bg: "primary.300",
+                          borderColor: "primary.300",
+
+                          _dark: {
+                            bg: "primary.800",
+                            borderColor: "primary.800",
+                          },
+                        }}
                       >
-                        <Pressable
-                          borderWidth={1}
-                          rounded="sm"
-                          px="3"
-                          py="2"
-                          _light={{
-                            borderColor: "muted.900",
-                          }}
-                          _dark={{
-                            borderColor: "muted.50",
-                          }}
-                          _hover={{
-                            bg: "primary.200",
-                            borderColor: "primary.200",
-
-                            _dark: {
-                              bg: "primary.700",
-                              borderColor: "primary.700",
-                            },
-                          }}
-                          _focus={{
-                            bg: "primary.300",
-                            borderColor: "primary.300",
-
-                            _dark: {
-                              bg: "primary.800",
-                              borderColor: "primary.800",
-                            },
-                          }}
-                        >
-                          <Text
-                            fontSize="sm"
-                            fontWeight="medium"
-                            _light={{
-                              color: "muted.900",
-                            }}
-                            _dark={{
-                              color: "muted.50",
-                            }}
-                          >
-                            Explore gluestack-ui
-                          </Text>
-                        </Pressable>
                         <Text
                           fontSize="sm"
                           fontWeight="medium"
@@ -404,16 +391,29 @@ function Layout({
                           _dark={{
                             color: "muted.50",
                           }}
-                          underline
-                          ml="4"
                         >
-                          <a href="https://nativebase.io/blogs/road-ahead-with-gluestack-ui">
-                            Read more
-                          </a>
+                          Explore gluestack-ui
                         </Text>
-                      </HStack>
-                    </Stack>
-                  </a>
+                      </Pressable>
+                      <Text
+                        fontSize="sm"
+                        fontWeight="medium"
+                        _light={{
+                          color: "muted.900",
+                        }}
+                        _dark={{
+                          color: "muted.50",
+                        }}
+                        underline
+                        ml="4"
+                      >
+                        <a href="https://nativebase.io/blogs/road-ahead-with-gluestack-ui">
+                          Know More
+                        </a>
+                      </Text>
+                    </HStack>
+                  </Stack>
+                  {/* </a> */}
                   <Box flexDirection="row" flex={1}>
                     <MainContent
                       pages={pages}
