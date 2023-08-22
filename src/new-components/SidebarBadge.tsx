@@ -33,6 +33,12 @@ export const SidebarBadge = (props: any) => {
       badgeStyle.content = "Update";
       badgeStyle.props = { ...badgeStyle.props, py: "0.5" };
       break;
+    case "experimental":
+      badgeStyle.variant = "outline";
+      badgeStyle.colorScheme = "cyan";
+      badgeStyle.content = "experimental";
+      badgeStyle.props = { ...badgeStyle.props, py: "0.5" };
+      break;
   }
 
   return (
