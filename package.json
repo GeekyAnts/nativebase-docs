@@ -4,7 +4,7 @@
   "scripts": {
     "create-version": "node ./lib/scripts/build-version.js",
     "dev": "node ./build-init.js && next dev",
-    "build": "node ./build-init.js && next build",
+    "build": "node ./build-init.js && NODE_OPTIONS=--openssl-legacy-provider next build ",
     "start": "next start",
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true next build",
