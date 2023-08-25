@@ -687,6 +687,11 @@
               "title": "Typography"
             }
           ]
+        },
+        {
+          "id": "migration-guide-gluestack-ui",
+          "title": "Migrating to gluestack-ui",
+          "status": "experimental"
         }
       ]
     },
