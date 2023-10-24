@@ -192,7 +192,7 @@ function Layout({
               }}
             >
               If you are starting a new project with NativeBase, we recommend
-              using <Text fontWeight="bold">gluestack-ui</Text> instead.
+              using <Text fontWeight="bold">gluestack</Text> instead.
             </Text>
 
             <HStack justifyContent="center">
@@ -236,7 +236,7 @@ function Layout({
                       color: "muted.50",
                     }}
                   >
-                    Explore gluestack-ui
+                    Explore gluestack
                   </Text>
                 </Pressable>
               </a>
@@ -345,57 +345,58 @@ function Layout({
                     <Text ml="1">
                       IMPORTANT MESSAGE — If you are starting a new project with
                       NativeBase, we recommend using{" "}
-                      <a href="https://ui.gluestack.io/">gluestack-ui</a>{" "}
-                      instead.{" "}
+                      <a href="https://gluestack.io/">gluestack</a> instead.{" "}
                     </Text>
                     <HStack
                       alignItems="center"
                       mt={{ base: "4", md: 0 }}
                       ml={{ md: "2" }}
                     >
-                      <Pressable
-                        borderWidth={1}
-                        rounded="sm"
-                        px="3"
-                        py="2"
-                        _light={{
-                          borderColor: "muted.900",
-                        }}
-                        _dark={{
-                          borderColor: "muted.50",
-                        }}
-                        _hover={{
-                          bg: "primary.200",
-                          borderColor: "primary.200",
-
-                          _dark: {
-                            bg: "primary.700",
-                            borderColor: "primary.700",
-                          },
-                        }}
-                        _focus={{
-                          bg: "primary.300",
-                          borderColor: "primary.300",
-
-                          _dark: {
-                            bg: "primary.800",
-                            borderColor: "primary.800",
-                          },
-                        }}
-                      >
-                        <Text
-                          fontSize="sm"
-                          fontWeight="medium"
+                      <a href="https://gluestack.io/">
+                        <Pressable
+                          borderWidth={1}
+                          rounded="sm"
+                          px="3"
+                          py="2"
                           _light={{
-                            color: "muted.900",
+                            borderColor: "muted.900",
                           }}
                           _dark={{
-                            color: "muted.50",
+                            borderColor: "muted.50",
+                          }}
+                          _hover={{
+                            bg: "primary.200",
+                            borderColor: "primary.200",
+
+                            _dark: {
+                              bg: "primary.700",
+                              borderColor: "primary.700",
+                            },
+                          }}
+                          _focus={{
+                            bg: "primary.300",
+                            borderColor: "primary.300",
+
+                            _dark: {
+                              bg: "primary.800",
+                              borderColor: "primary.800",
+                            },
                           }}
                         >
-                          Explore gluestack-ui
-                        </Text>
-                      </Pressable>
+                          <Text
+                            fontSize="sm"
+                            fontWeight="medium"
+                            _light={{
+                              color: "muted.900",
+                            }}
+                            _dark={{
+                              color: "muted.50",
+                            }}
+                          >
+                            Explore gluestack
+                          </Text>
+                        </Pressable>
+                      </a>
                       <Text
                         fontSize="sm"
                         fontWeight="medium"
