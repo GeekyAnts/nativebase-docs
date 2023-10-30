@@ -111,6 +111,20 @@ function Layout({
   let href = "https://docs.nativebase.io/" + pages.currentPage.id;
   const [showModal, setShowModal] = useState(true);
 
+  useEffect(() => {
+    const check = localStorage.getItem("EU_COOKIE_LAW_CONSENT_GLUESTACK_MODAL");
+    if (check) {
+      setShowModal(false);
+    } else {
+      setShowModal(true);
+    }
+  }, []);
+
+  const handleModalChange = () => {
+    localStorage.setItem("EU_COOKIE_LAW_CONSENT_GLUESTACK_MODAL", "true");
+    setShowModal(false);
+  };
+
   return (
     <>
       <Head>
@@ -166,7 +180,7 @@ function Layout({
       </Script>
       {/* will replace it when nativebase has semantic tagging */}
       <h1 style={{ display: "none" }}>{title}</h1>
-      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+      <Modal isOpen={showModal} onClose={() => handleModalChange()}>
         <Modal.Content
           maxWidth="460"
           alignItems="center"
@@ -196,7 +210,7 @@ function Layout({
             </Text>
 
             <HStack justifyContent="center">
-              <a href="https://ui.gluestack.io/">
+              <a href="https://gluestack.io/">
                 <Pressable
                   my="6"
                   borderWidth={1}
@@ -382,6 +396,25 @@ function Layout({
                               borderColor: "primary.800",
                             },
                           }}
+                          _hover={{
+                            bg: "primary.200",
+                            borderColor: "primary.200",
+
+                            _dark: {
+                              bg: "primary.700",
+                              borderColor: "primary.700",
+                            },
+                          }}
+                          _focus={{
+                            bg: "primary.300",
+                            borderColor: "primary.300",
+
+                            _dark: {
+                              bg: "primary.800",
+                              borderColor: "primary.800",
+                            },
+                          }}
+                          pointerEvents="none"
                         >
                           <Text
                             fontSize="sm"
