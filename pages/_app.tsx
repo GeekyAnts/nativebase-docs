@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import colors from "native-base/src/theme/base/colors";
 import { ColorMode, NativeBaseProvider, StorageManager } from "native-base";
 import { AppContext } from "../src/AppContext";
 import { useEffect, useState } from "react";

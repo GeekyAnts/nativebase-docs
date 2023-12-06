@@ -20,7 +20,7 @@ export default function TileLink({
   _title,
   ...props
 }: any) {
-  const Image = Factory(NextImage);
+  const Image = Factory(NextImage, { baseStyle: {} });
   return (
     <Link passHref href={url}>
       <Box

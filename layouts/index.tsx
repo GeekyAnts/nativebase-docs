@@ -328,11 +328,6 @@ function Layout({
                   <Sidebar sidebar={sidebar} />
                 </Box>
                 <Box flex={1}>
-                  {/* <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={`https://ui.gluestack.io//?utm_source=nativebase-docs&utm_medium=banner+&utm_campaign=nativebase-banner-cta&utm_id=nativebase-campaign-banner`}
-                  > */}
                   <Stack
                     alignItems={{ md: "center" }}
                     justifyContent={{ md: "center" }}
@@ -448,7 +443,6 @@ function Layout({
                       </Text>
                     </HStack>
                   </Stack>
-                  {/* </a> */}
                   <Box flexDirection="row" flex={1}>
                     <MainContent
                       pages={pages}
