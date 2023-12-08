@@ -41,7 +41,6 @@ const SidebarItem = (props: any) => {
 
   return sidebarItems.map((item: any, index: any) => {
     if (item?.notVisibleInSidebar === true) return null;
-
     return (
       <Box key={index} w="100%">
         {item.pages === undefined ? (
@@ -113,10 +112,9 @@ const SidebarItem = (props: any) => {
             collapsed={item.isCollapsed || false}
             setIsOpenSidebar={setIsOpenSidebar}
           >
-            {console.log(item.pages, ">>>>>>")}
             <SidebarItem
-              sidebarItems={[]}
-              level={level + 1}
+              sidebarItems={item.pages}
+              level={level ?? 0 + 1}
               setIsOpenSidebar={setIsOpenSidebar}
               isMobile={isMobile}
             />

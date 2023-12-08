@@ -16,6 +16,7 @@ export default function NBHistory() {
             rounded="1"
           />
           <Stack
+            // direction={"row"}
             direction={{ base: "column", md: "row" }}
             justifyContent={"space-around"}
           >
