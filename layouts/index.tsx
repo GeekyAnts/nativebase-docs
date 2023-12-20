@@ -75,8 +75,12 @@ function Layout({
     } else {
       setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
     }
-    // @ts-ignore
-    document.getElementById("scrollview-id").scrollTop = 0;
+    try {
+      // @ts-ignore
+      document.getElementById("scrollview-id").scrollTop = 0;
+    } catch (Error) {
+      //
+    }
   }, [content]);
 
   useEffect(() => {
