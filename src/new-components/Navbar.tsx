@@ -22,6 +22,7 @@ import {
   Modal,
   Heading,
 } from "native-base";
+
 import NativebaseLogo from "./NativebaseLogo";
 import { isLatestVersion, isLatestVersionSlug } from "../utils";
 import { useContext } from "react";
@@ -72,6 +73,13 @@ export default function Navbar(props: any) {
     router.push(path);
   };
   const [showModal, setShowModal] = React.useState(false);
+
+  const [isSSR, setIsSSR] = React.useState(true);
+
+  useEffect(() => {
+    setIsSSR(false);
+  }, []);
+
   return (
     <>
       <HStack
@@ -171,11 +179,13 @@ export default function Navbar(props: any) {
             Announcing NativeBase Startup+ bundle 🎉
           </NBLink> */}
         </HStack>
-        <DocSearch
-          appId="QT6M4WLEXP"
-          indexName="nativebase-v3"
-          apiKey="3030e522f40cbea2b0386cdca3d88503"
-        />
+        {!isSSR && (
+          <DocSearch
+            appId="QT6M4WLEXP"
+            indexName="nativebase-v3"
+            apiKey="3030e522f40cbea2b0386cdca3d88503"
+          />
+        )}
         <HStack space="6" alignItems="center">
           <AlgoliaSearchButton />
           <NBLink
