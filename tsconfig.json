@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "paths": {
+      "native-base": ["./node_modules/@gluestack-ui/themed-native-base"],
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

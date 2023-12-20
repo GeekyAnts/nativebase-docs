@@ -46,6 +46,10 @@ export const SidebarBadge = (props: any) => {
       variant={badgeStyle.variant}
       colorScheme={badgeStyle.colorScheme}
       {...badgeStyle.props}
+      _text={{
+        lineHeight: '1.5em',
+        fontSize: '2xs'
+      }}
     >
       {badgeStyle.content}
     </Badge>

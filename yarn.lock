@@ -2491,10 +2491,10 @@
   resolved "https://registry.yarnpkg.com/@gluestack-style/legend-motion-animation-driver/-/legend-motion-animation-driver-1.0.2.tgz#051c26b0d501e03b12e4dbfe01b292eee5c29c8f"
   integrity sha512-rB5HIhVzpgPQ9C1JJvY30a1bP0sQRWWFgUHVaiefH8dA/XRAQpmAIMF48JDctrvoBi/tKp5xN10mLE5CtnDRHg==
 
-"@gluestack-style/react@^1.0.26":
-  version "1.0.26"
-  resolved "https://registry.yarnpkg.com/@gluestack-style/react/-/react-1.0.26.tgz#97437088060505a0c80c4d636cddcb94a31bd1ef"
-  integrity sha512-mw7R6edM1HGQewUxFGUzZOtUvv4worzdiAaNLv1IRFjoirFRcZ+SIumPWG3exEb+WBkHFwH7ZjpQWqY9oHsOcQ==
+"@gluestack-style/react@^1.0.29":
+  version "1.0.29"
+  resolved "https://registry.yarnpkg.com/@gluestack-style/react/-/react-1.0.29.tgz#253f92dbb78d4a49ef9c53b8c9c02872ff11dd31"
+  integrity sha512-NoI5kcVQsrhYYDld410YhuP7DVuB+k99b5ycOcarM1T55ZhZrmgwPBfG83/lVWT1w0wHcumHn6+pUSNBYQyr9g==
   dependencies:
     inline-style-prefixer "^6.0.1"
     normalize-css-color "^1.0.2"
@@ -2782,10 +2782,10 @@
     "@gluestack-ui/utils" "^0.1.12"
     "@react-native-aria/focus" "^0.2.9"
 
-"@gluestack-ui/themed-native-base@^0.1.47":
-  version "0.1.47"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed-native-base/-/themed-native-base-0.1.47.tgz#baff409737404a8204361b416c9186a7d4e5edb5"
-  integrity sha512-lS5ZMjTjkj5wUFlj7Bkyn0Qf0iTr8NXJ+tx3kgoMmzOgxNlUfz9NeTvCpYp4kO+H4DP0sObzbHHcZm2hAmFN1w==
+"@gluestack-ui/themed-native-base@^0.1.67":
+  version "0.1.67"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed-native-base/-/themed-native-base-0.1.67.tgz#8f7c92ab86517ef411240b265364d4911e926b30"
+  integrity sha512-1zpIjClTTgLZpdbIUX0J4sAK9qrZaZcWJJahzxpGkI8Mko+hDRNVWGvsHVkE3+IbTGibkJhbon96c1JfALnZ+g==
   dependencies:
     "@babel/preset-env" "^7.22.9"
     "@babel/preset-react" "^7.22.5"
@@ -2794,7 +2794,7 @@
     "@gluestack-style/animation-plugin" "^0.1.12"
     "@gluestack-style/animation-resolver" "^1.0.2"
     "@gluestack-style/legend-motion-animation-driver" "^1.0.2"
-    "@gluestack-style/react" "^1.0.26"
+    "@gluestack-style/react" "^1.0.29"
     "@gluestack-ui/actionsheet" "^0.2.31"
     "@gluestack-ui/alert" "^0.1.12"
     "@gluestack-ui/alert-dialog" "^0.1.23"

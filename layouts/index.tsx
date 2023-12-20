@@ -497,7 +497,7 @@ function Layout({
             m="auto"
             fontSize="sm"
           >
-            MadeWithNativeBase
+            MadeWithGluestackUI
           </Text>
         </Link>
       </Box>
