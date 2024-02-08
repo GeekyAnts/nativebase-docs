@@ -2,7 +2,10 @@ import Head from "next/head";
 import React, { useEffect, useContext, useState } from "react";
 import {
   Box,
+  Divider,
   HStack,
+  Heading,
+  Icon,
   Link,
   Modal,
   Pressable,
@@ -27,6 +30,7 @@ import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
 import Script from "next/script";
 import { isLatestVersionSlug } from "../src/utils";
 import { AlertIcon, RightArrow } from "./icons";
+import Svg, { Path } from "react-native-svg";
 
 function Layout({
   children: content,
@@ -169,7 +173,8 @@ function Layout({
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-DBP9QMTGR1"
-      ></Script>
+      >
+      </Script>
       <Script id="gTagScript">
         {`
           window.dataLayer = window.dataLayer || [];
@@ -190,90 +195,65 @@ function Layout({
         >
           <Modal.CloseButton />
           <Modal.Body p="9">
-            <HStack mb="4" alignItems="center" justifyContent="center">
-              <Text fontSize="md" fontWeight="bold" textAlign="center" mr="1">
+            <HStack mb="6" alignItems="center" justifyContent="flex">
+              <AlertIcon/>
+              <Heading fontSize='xl' textAlign="left" ml="1.5">
                 IMPORTANT MESSAGE
-              </Text>
-              <AlertIcon />
+              </Heading>
             </HStack>
-            <Text
-              fontSize="lg"
-              lineHeight={27}
-              textAlign="center"
-              color="muted.800"
-              _dark={{
-                color: "muted.200",
-              }}
-            >
-              If you are starting a new project with NativeBase, we recommend
-              using <Text fontWeight="bold">gluestack</Text> instead.
-            </Text>
-
-            <HStack justifyContent="center">
-              <a href="https://gluestack.io/">
-                <Pressable
-                  my="6"
-                  borderWidth={1}
-                  rounded="sm"
-                  px="3"
-                  py="2"
-                  _light={{
-                    borderColor: "muted.900",
-                  }}
-                  _dark={{
-                    borderColor: "muted.50",
-                  }}
-                  _hover={{
-                    bg: "primary.200",
-                    borderColor: "primary.200",
-                    _dark: {
-                      bg: "primary.700",
-                      borderColor: "primary.700",
-                    },
-                  }}
-                  _focus={{
-                    bg: "primary.300",
-                    borderColor: "primary.300",
-                    _dark: {
-                      bg: "primary.800",
-                      borderColor: "primary.800",
-                    },
-                  }}
-                >
+            {/* @ts-ignore*/}
+            <Box gap={5}>
+              <Box flexDirection='row'>
+                <Icon size={18} color='black'>
+                  <Svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <Path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/>
+                    <Path d="m21 3-9 9"/>
+                    <Path d="M15 3h6v6"/>
+                  </Svg>
+                </Icon>
+                <Box w='92%' maxW='100%' ml="2">
+                  <Heading fontSize='md'>Upgrade to gluestack-ui</Heading>
                   <Text
-                    fontSize="md"
-                    fontWeight="medium"
-                    _light={{
-                      color: "muted.900",
-                    }}
+                    fontSize="sm"
+                    textAlign="left"
+                    color="muted.800"
                     _dark={{
-                      color: "muted.50",
+                      color: "muted.200",
                     }}
                   >
-                    Explore gluestack
+                    If you are starting a new project with NativeBase, we recommend
+                    using <Link href="https://gluestack.io/" fontWeight="bold">gluestack-ui</Link>
                   </Text>
-                </Pressable>
-              </a>
-            </HStack>
-
-            <HStack justifyContent="center">
-              <Link
-                href="https://nativebase.io/blogs/road-ahead-with-gluestack-ui"
-                flexDir="row"
-                alignItems="center"
-                isUnderlined
-                _text={{
-                  color: "#52B3D0",
-                  fontSize: "md",
-                  fontWeight: "bold",
-                }}
-              >
-                Read Updated Blog
-                <Box ml="1">
-                  <RightArrow />
                 </Box>
-              </Link>
-            </HStack>
+              </Box>
+
+              <Divider thickness={1}/>
+
+              <Box flexDirection='row'>
+                <Icon size={18} color='black'>
+                  <Svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <Path d="m21 16-4 4-4-4"/>
+                    <Path d="M17 20V4"/>
+                    <Path d="m3 8 4-4 4 4"/>
+                    <Path d="M7 4v16"/>
+                  </Svg>
+                </Icon>
+                <Box w='93%' maxW='100%' ml="2">
+                  <Heading fontSize='md'>Migrate to gluestack-ui</Heading>
+                  <Text
+                    fontSize="sm"
+                    textAlign="left"
+                    color="muted.800"
+                    _dark={{
+                      color: "muted.200",
+                    }}
+                    >
+                    If you are working on a project with NativeBase, we recommend
+                    using <Link href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui" fontWeight="bold">@gluestack-ui/themed-native-base</Link>
+                  </Text>
+                </Box>
+              </Box>
+            </Box>
           </Modal.Body>
         </Modal.Content>
       </Modal>
@@ -339,8 +319,6 @@ function Layout({
                     overflow="hidden"
                     px="4"
                     py="5"
-                    fontSize="sm"
-                    fontWeight="medium"
                     borderWidth={1}
                     _light={{
                       bg: "#F1F1F1",
@@ -352,101 +330,36 @@ function Layout({
                       bg: "#171E2E",
                       borderColor: "muted.800",
                     }}
-                    width="100%"
-                    direction={{ md: "row" }}
                   >
-                    <AlertIcon />
-                    <Text ml="1">
-                      IMPORTANT MESSAGE — If you are starting a new project with
-                      NativeBase, we recommend using{" "}
-                      <a href="https://gluestack.io/">gluestack</a> instead.{" "}
-                    </Text>
-                    <HStack
-                      alignItems="center"
-                      mt={{ base: "4", md: 0 }}
-                      ml={{ md: "2" }}
+                    <Box
+                      // maxW='1056'
+                      fontSize="sm"
+                      fontWeight="medium"
+                      alignSelf='flex'
+                      flexDirection='row'
+                      alignItems={{ md: "center" }}
+                      justifyContent={{ md: "center" }}
+                      width="100%"
                     >
-                      <a href="https://gluestack.io/">
-                        <Pressable
-                          borderWidth={1}
-                          rounded="sm"
-                          px="3"
-                          py="2"
-                          _light={{
-                            borderColor: "muted.900",
-                          }}
-                          _dark={{
-                            borderColor: "muted.50",
-                          }}
-                          _hover={{
-                            bg: "primary.200",
-                            borderColor: "primary.200",
-
-                            _dark: {
-                              bg: "primary.700",
-                              borderColor: "primary.700",
-                            },
-                          }}
-                          _focus={{
-                            bg: "primary.300",
-                            borderColor: "primary.300",
-
-                            _dark: {
-                              bg: "primary.800",
-                              borderColor: "primary.800",
-                            },
-                          }}
-                          _hover={{
-                            bg: "primary.200",
-                            borderColor: "primary.200",
-
-                            _dark: {
-                              bg: "primary.700",
-                              borderColor: "primary.700",
-                            },
-                          }}
-                          _focus={{
-                            bg: "primary.300",
-                            borderColor: "primary.300",
-
-                            _dark: {
-                              bg: "primary.800",
-                              borderColor: "primary.800",
-                            },
-                          }}
-                          pointerEvents="none"
-                        >
-                          <Text
-                            fontSize="sm"
-                            fontWeight="medium"
-                            _light={{
-                              color: "muted.900",
-                            }}
-                            _dark={{
-                              color: "muted.50",
-                            }}
-                          >
-                            Explore gluestack
-                          </Text>
-                        </Pressable>
+                      <AlertIcon height={18} width={18}/>
+                      <Text ml="1">
+                      If you are starting a new project, we recommend using {" "}
+                      <a href="https://ui.gluestack.io/" target="_blank">
+                        <Text fontWeight="semibold" textDecorationLine="underline">
+                        gluestack-ui
+                        </Text>
                       </a>
-                      <Text
-                        fontSize="sm"
-                        fontWeight="medium"
-                        _light={{
-                          color: "muted.900",
-                        }}
-                        _dark={{
-                          color: "muted.50",
-                        }}
-                        underline
-                        ml="4"
-                      >
-                        <a href="https://nativebase.io/blogs/road-ahead-with-gluestack-ui">
-                          Know More
-                        </a>
+                      {". "}
+                      For your existing projects, you can utilize{" "}
+                      <a href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui" target="_blank">
+                        <Text fontWeight="semibold" textDecorationLine="underline">
+                          @gluestack-ui/themed-native-base
+                        </Text>
+                      </a>
+                      {" "}
+                      (beta).
                       </Text>
-                    </HStack>
+                    </Box>
                   </Stack>
                   {/* </a> */}
                   <Box flexDirection="row" flex={1}>
