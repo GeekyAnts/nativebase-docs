@@ -30,14 +30,26 @@ export function GettingStartedHero() {
               NativeBase is a component library that enables devs to build
               universal design systems. It is built on top of React Native,
               allowing you to develop apps for Android, iOS and the Web.
+              <br/>
+              <br/>
               IMPORTANT MESSAGE — If you are starting a new project with
               NativeBase, we recommend using{" "}
               <a href="https://ui.gluestack.io/" target="_blank">
                 <Text fontWeight="semibold" textDecorationLine="underline">
                   gluestack-ui
                 </Text>
-              </a>{" "}
-              instead.{" "}
+              </a>
+              {" "}
+              instead. However, if you are already working on a NativeBase project, we recommend using{" "}
+              <a href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui" target="_blank">
+                <Text fontWeight="semibold" textDecorationLine="underline">
+                  @gluestack-ui/themed-native-base
+                </Text>
+              </a>
+              {" "}
+              instead.
+              {" "}
+
               <a
                 href="https://nativebase.io/blogs/road-ahead-with-gluestack-ui"
                 target="_blank"

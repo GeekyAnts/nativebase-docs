@@ -193,7 +193,7 @@ export default function NBHistory() {
             performance and maintainability issues of NativeBase v3. By
             splitting the library into three parts and focusing on a universal,
             headless, and independent set of components, gluestack-ui now offers
-            better performance and easier maintenance. v3.
+            better performance and easier maintenance.
           </Text>
         </Li>
       </VStack>
