@@ -173,8 +173,7 @@ function Layout({
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-DBP9QMTGR1"
-      >
-      </Script>
+      ></Script>
       <Script id="gTagScript">
         {`
           window.dataLayer = window.dataLayer || [];
@@ -196,23 +195,31 @@ function Layout({
           <Modal.CloseButton />
           <Modal.Body p="9">
             <HStack mb="6" alignItems="center" justifyContent="flex">
-              <AlertIcon/>
-              <Heading fontSize='xl' textAlign="left" ml="1.5">
+              <AlertIcon />
+              <Heading fontSize="xl" textAlign="left" ml="1.5">
                 IMPORTANT MESSAGE
               </Heading>
             </HStack>
             {/* @ts-ignore*/}
             <Box gap={5}>
-              <Box flexDirection='row'>
-                <Icon size={18} color='black'>
-                  <Svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <Path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/>
-                    <Path d="m21 3-9 9"/>
-                    <Path d="M15 3h6v6"/>
+              <Box flexDirection="row">
+                <Icon size={18} color="black">
+                  <Svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <Path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                    <Path d="m21 3-9 9" />
+                    <Path d="M15 3h6v6" />
                   </Svg>
                 </Icon>
-                <Box w='92%' maxW='100%' ml="2">
-                  <Heading fontSize='md'>Upgrade to gluestack-ui</Heading>
+                <Box w="92%" maxW="100%" ml="2">
+                  <Heading fontSize="md">Upgrade to gluestack-ui</Heading>
+
                   <Text
                     fontSize="sm"
                     textAlign="left"
@@ -221,25 +228,12 @@ function Layout({
                       color: "muted.200",
                     }}
                   >
-                    If you are starting a new project with NativeBase, we recommend
-                    using <Link href="https://gluestack.io/" fontWeight="bold">gluestack-ui</Link>
+                    If you are starting a new project with NativeBase, we
+                    recommend using{" "}
+                    <Link href="https://gluestack.io/" fontWeight="bold">
+                      gluestack-ui
+                    </Link>
                   </Text>
-                </Box>
-              </Box>
-
-              <Divider thickness={1}/>
-
-              <Box flexDirection='row'>
-                <Icon size={18} color='black'>
-                  <Svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <Path d="m21 16-4 4-4-4"/>
-                    <Path d="M17 20V4"/>
-                    <Path d="m3 8 4-4 4 4"/>
-                    <Path d="M7 4v16"/>
-                  </Svg>
-                </Icon>
-                <Box w='93%' maxW='100%' ml="2">
-                  <Heading fontSize='md'>Migrate to gluestack-ui</Heading>
                   <Text
                     fontSize="sm"
                     textAlign="left"
@@ -247,9 +241,49 @@ function Layout({
                     _dark={{
                       color: "muted.200",
                     }}
+                  >
+                    Please opt in to our enterprise plan (coming soon) for
+                    priority support with NativeBase.
+                  </Text>
+                </Box>
+              </Box>
+
+              <Divider thickness={1} />
+
+              <Box flexDirection="row">
+                <Icon size={18} color="black">
+                  <Svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <Path d="m21 16-4 4-4-4" />
+                    <Path d="M17 20V4" />
+                    <Path d="m3 8 4-4 4 4" />
+                    <Path d="M7 4v16" />
+                  </Svg>
+                </Icon>
+                <Box w="93%" maxW="100%" ml="2">
+                  <Heading fontSize="md">Migrate to gluestack-ui</Heading>
+                  <Text
+                    fontSize="sm"
+                    textAlign="left"
+                    color="muted.800"
+                    _dark={{
+                      color: "muted.200",
+                    }}
+                  >
+                    If you are working on a project with NativeBase, we
+                    recommend using{" "}
+                    <Link
+                      href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui"
+                      fontWeight="bold"
                     >
-                    If you are working on a project with NativeBase, we recommend
-                    using <Link href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui" fontWeight="bold">@gluestack-ui/themed-native-base</Link>
+                      @gluestack-ui/themed-native-base
+                    </Link>
                   </Text>
                 </Box>
               </Box>
@@ -335,29 +369,39 @@ function Layout({
                       // maxW='1056'
                       fontSize="sm"
                       fontWeight="medium"
-                      alignSelf='flex'
-                      flexDirection='row'
+                      alignSelf="flex"
+                      flexDirection="row"
                       alignItems={{ md: "center" }}
                       justifyContent={{ md: "center" }}
                       width="100%"
                     >
-                      <AlertIcon height={18} width={18}/>
+                      <AlertIcon height={18} width={18} />
                       <Text ml="1">
-                      If you are starting a new project, we recommend using {" "}
-                      <a href="https://ui.gluestack.io/" target="_blank">
-                        <Text fontWeight="semibold" textDecorationLine="underline">
-                        gluestack-ui
-                        </Text>
-                      </a>
-                      {". "}
-                      For your existing projects, you can utilize{" "}
-                      <a href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui" target="_blank">
-                        <Text fontWeight="semibold" textDecorationLine="underline">
-                          @gluestack-ui/themed-native-base
-                        </Text>
-                      </a>
-                      {" "}
-                      (beta).
+                        Please opt in to our enterprise plan (coming soon) for
+                        priority support with NativeBase. If you are starting a
+                        new project, we recommend using{" "}
+                        <a href="https://ui.gluestack.io/" target="_blank">
+                          <Text
+                            fontWeight="semibold"
+                            textDecorationLine="underline"
+                          >
+                            gluestack-ui
+                          </Text>
+                        </a>
+                        {". "}
+                        For your existing projects, you can utilize{" "}
+                        <a
+                          href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui"
+                          target="_blank"
+                        >
+                          <Text
+                            fontWeight="semibold"
+                            textDecorationLine="underline"
+                          >
+                            @gluestack-ui/themed-native-base
+                          </Text>
+                        </a>{" "}
+                        (beta).
                       </Text>
                     </Box>
                   </Stack>
