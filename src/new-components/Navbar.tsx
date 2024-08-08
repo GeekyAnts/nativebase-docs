@@ -115,6 +115,18 @@ export default function Navbar(props: any) {
             }}
           >
             <Menu.Item
+              _light={{
+                bg: "gluestack-ui" === activeVersion ? "coolGray.200" : "coolGray.50",
+              }}
+              _dark={{
+                bg: "gluestack-ui" === activeVersion ? "coolGray.800" : "coolGray.800",
+              }}
+            >
+              <NBLink href="https://gluestack.io" isExternal isUnderlined={false}>
+              gluestack-ui
+              </NBLink>
+            </Menu.Item>
+            <Menu.Item
               onPress={() => {
                 setActiveVersion("next");
                 updateActiveVersion("next", versions);
