@@ -282,7 +282,7 @@ function Layout({
                       href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui"
                       fontWeight="bold"
                     >
-                      @gluestack-ui/themed-native-base
+                      @gluestack-ui/themed
                     </Link>
                   </Text>
                 </Box>
@@ -398,10 +398,9 @@ function Layout({
                             fontWeight="semibold"
                             textDecorationLine="underline"
                           >
-                            @gluestack-ui/themed-native-base
+                            @gluestack-ui/themed
                           </Text>
-                        </a>{" "}
-                        (beta).
+                        </a>
                       </Text>
                     </Box>
                   </Stack>

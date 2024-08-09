@@ -49,7 +49,7 @@ export function GettingStartedHero() {
                 target="_blank"
               >
                 <Text fontWeight="semibold" textDecorationLine="underline">
-                  @gluestack-ui/themed-native-base
+                  @gluestack-ui/themed
                 </Text>
               </a>{" "}
               instead.{" "}
