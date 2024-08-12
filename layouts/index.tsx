@@ -347,7 +347,7 @@ function Layout({
                     rel="noopener noreferrer"
                     href={`https://ui.gluestack.io//?utm_source=nativebase-docs&utm_medium=banner+&utm_campaign=nativebase-banner-cta&utm_id=nativebase-campaign-banner`}
                   > */}
-                  <Stack
+                  {/* <Stack
                     alignItems={{ md: "center" }}
                     justifyContent={{ md: "center" }}
                     overflow="hidden"
@@ -403,7 +403,7 @@ function Layout({
                         </a>
                       </Text>
                     </Box>
-                  </Stack>
+                  </Stack> */}
                   {/* </a> */}
                   <Box flexDirection="row" flex={1}>
                     <MainContent

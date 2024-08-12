@@ -126,7 +126,7 @@ export default function Navbar(props: any) {
               gluestack-ui
               </NBLink>
             </Menu.Item>
-            <Menu.Item
+            {/* <Menu.Item
               onPress={() => {
                 setActiveVersion("next");
                 updateActiveVersion("next", versions);
@@ -139,7 +139,7 @@ export default function Navbar(props: any) {
               }}
             >
               next
-            </Menu.Item>
+            </Menu.Item> */}
             {versions.map((version: string, index: any) => {
               return (
                 <Menu.Item
