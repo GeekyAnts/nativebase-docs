@@ -116,14 +116,24 @@ export default function Navbar(props: any) {
           >
             <Menu.Item
               _light={{
-                bg: "gluestack-ui" === activeVersion ? "coolGray.200" : "coolGray.50",
+                bg:
+                  "gluestack-ui" === activeVersion
+                    ? "coolGray.200"
+                    : "coolGray.50",
               }}
               _dark={{
-                bg: "gluestack-ui" === activeVersion ? "coolGray.800" : "coolGray.800",
+                bg:
+                  "gluestack-ui" === activeVersion
+                    ? "coolGray.800"
+                    : "coolGray.800",
               }}
             >
-              <NBLink href="https://gluestack.io" isExternal isUnderlined={false}>
-              gluestack-ui
+              <NBLink
+                href="https://www.gluestack.io/?utm_source=nativebase+website&utm_medium=Header&utm_campaign=nbpage"
+                isExternal
+                isUnderlined={false}
+              >
+                gluestack-ui
               </NBLink>
             </Menu.Item>
             {/* <Menu.Item
