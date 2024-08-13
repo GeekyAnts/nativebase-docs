@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, VStack, Stack, useColorModeValue } from "native-base";
+import { Box, Text, VStack, Stack, useColorModeValue, Link } from "native-base";
 import {
   CodePlaygroundIcon,
   BookMarkIcon,
@@ -32,47 +32,46 @@ export function GettingStartedHero() {
               allowing you to develop apps for Android, iOS and the Web.
               <br />
               <br />
-              Please opt in to our enterprise plan (coming soon) for priority
-              support with NativeBase.
-              <br />
-              IMPORTANT MESSAGE — If you are starting a new project with
-              NativeBase, we recommend using{" "}
-              <a href="https://ui.gluestack.io/" target="_blank">
-                <Text fontWeight="semibold" textDecorationLine="underline">
-                  gluestack-ui
-                </Text>
-              </a>{" "}
-              instead. However, if you are already working on a NativeBase
-              project, we recommend using{" "}
-              <a
-                href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui"
-                target="_blank"
+              <Box
+                mb="8"
+                px="8"
+                rounded="8"
+                py="6"
+                borderWidth="1"
+                borderLeftWidth="12"
+                _light={{
+                  bg: "info.50",
+                  borderColor: "info.600",
+                  borderLeftColor: "info.600",
+                }}
+                _dark={{
+                  bg: "black:alpha.10",
+                  borderColor: "info.700:alpha.30",
+                  borderLeftColor: "info.700",
+                }}
               >
-                <Text fontWeight="semibold" textDecorationLine="underline">
-                  @gluestack-ui/themed
+                <Text
+                  fontSize="lg"
+                  mb={"0"}
+                  _light={{ color: "tipBackgroundColorLight" }}
+                  _dark={{ color: "coolGray.50" }}
+                  fontWeight="medium"
+                >
+                  Info:{" "}
+                  <Text
+                    fontSize="md"
+                    fontWeight="light"
+                    _light={{ color: "tipBackgroundColorLight" }}
+                    _dark={{ color: "tipBackgroundColorDark" }}
+                  >
+                    If you are starting a new project, please try{" "}
+                    <Link href="https://gluestack.io/ui/docs/home/getting-started/installation/?utm_source=nativebase+website&utm_medium=Docs&utm_campaign=nbpage">
+                      gluestack-ui
+                    </Link>{" "}
+                    for better performance and new design.
+                  </Text>
                 </Text>
-              </a>{" "}
-              instead.{" "}
-              <a
-                href="https://nativebase.io/blogs/road-ahead-with-gluestack-ui"
-                target="_blank"
-              >
-                <Text fontWeight="semibold" textDecorationLine="underline">
-                  Know More
-                </Text>
-              </a>
-              .
-            </Text>
-            <Text
-              fontSize="sm"
-              textAlign="left"
-              color="muted.800"
-              _dark={{
-                color: "muted.200",
-              }}
-            >
-              Please opt in to our enterprise plan (coming soon) for priority
-              support with NativeBase.
+              </Box>
             </Text>
             <Stack direction={{ lg: "row" }} space="4">
               <TileLink

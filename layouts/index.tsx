@@ -377,30 +377,12 @@ function Layout({
                     >
                       <AlertIcon height={18} width={18} />
                       <Text ml="1">
-                        Please opt in to our enterprise plan (coming soon) for
-                        priority support with NativeBase. If you are starting a
-                        new project, we recommend using{" "}
-                        <a href="https://ui.gluestack.io/" target="_blank">
-                          <Text
-                            fontWeight="semibold"
-                            textDecorationLine="underline"
-                          >
-                            gluestack-ui
-                          </Text>
-                        </a>
-                        {". "}
-                        For your existing projects, you can utilize{" "}
-                        <a
-                          href="https://gluestack.io/ui/docs/migration/native-base-to-gluestack-ui"
-                          target="_blank"
-                        >
-                          <Text
-                            fontWeight="semibold"
-                            textDecorationLine="underline"
-                          >
-                            @gluestack-ui/themed
-                          </Text>
-                        </a>
+                        {" "}
+                        If you are starting a new project, please try{" "}
+                        <Link href="https://gluestack.io/ui/docs/home/getting-started/installation">
+                          gluestack-ui
+                        </Link>{" "}
+                        for better performance and new design.
                       </Text>
                     </Box>
                   </Stack>
