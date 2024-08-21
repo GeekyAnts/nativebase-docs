@@ -129,7 +129,7 @@ export default function Navbar(props: any) {
               }}
             >
               <NBLink
-                href="https://www.gluestack.io/?utm_source=nativebase+website&utm_medium=Header&utm_campaign=nbpage"
+                href="https://gluestack.io/?utm_source=nativebase&utm_medium=docs+header&utm_campaign=docs+homepage"
                 isExternal
                 isUnderlined={false}
               >
