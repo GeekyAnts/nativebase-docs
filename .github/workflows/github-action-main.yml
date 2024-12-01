@@ -1,0 +1,18 @@
+name: End-to-end tests
+on:
+  push:
+    branches:
+      - 'cypress_automation'
+  pull_request:
+jobs:
+ basic-ubuntu-20-v10:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Cypress tests
+        uses: ./
+        with:
+          working-directory: /test-automation-cypress/cypress/e2e/pom
+          build: npx cypress info
