@@ -63,7 +63,7 @@ export default class PickerExample extends Component {
 
 ```tsx
 import React from 'react';
-import { Icon, Select } from 'native-base';
+import { Select } from 'native-base';
 
 export default function () {
   let [language, setLanguage] = React.useState<string>('key0');
