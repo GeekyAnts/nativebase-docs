@@ -16,7 +16,7 @@ values={[
 <DocTabItem value="v2">
 
 ```tsx
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   Container,
   Header,
@@ -25,7 +25,7 @@ import {
   CardItem,
   Text,
   Body,
-} from 'native-base';
+} from "native-base";
 export default class CardItemBordered extends Component {
   render() {
     return (
@@ -60,12 +60,12 @@ export default class CardItemBordered extends Component {
 <DocTabItem value="v3">
 
 ```tsx
-import React from 'react';
-import { VStack, Box, Divider } from 'native-base';
+import React from "react";
+import { VStack, Box, Divider } from "native-base";
 
 export default function () {
   return (
-    <Box border={1} borderRadius="md">
+    <Box borderWidth={1} borderRadius="md">
       <VStack space={4} divider={<Divider />}>
         <Box px={4} pt={4}>
           NativeBase
