@@ -27,6 +27,7 @@ import MainContent from "../src/new-components/MainContent";
 import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSidebarVersionDropdown";
 import { SocialMediaStagger } from "../src/new-components/SocialMediaStagger";
 import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
+import GluestackIconLogo from "../src/new-components/GluestackIconLogo";
 import Script from "next/script";
 import { isLatestVersionSlug } from "../src/utils";
 import { AlertIcon, RightArrow } from "./icons";
@@ -442,6 +443,39 @@ function Layout({
             fontSize="sm"
           >
             MadeWithNativeBase
+          </Text>
+        </Link>
+
+        <Link
+          href="https://gluestack.io/"
+          isExternal
+          position="fixed"
+          bottom="76px"
+          right={{ base: "auto", lg: "30px" }}
+          left={{ base: "30px", lg: "auto" }}
+          mr="auto"
+          _light={{ bg: "coolGray.50" }}
+          _dark={{ bg: "coolGray.800" }}
+          h="36px"
+          w="185"
+          rounded="4"
+          overflow="hidden"
+          alignItems={"center"}
+          padding={"2"}
+        >
+          <Box>
+            <GluestackIconLogo width="24" height="24" />
+          </Box>
+
+          <Text
+            pl="6"
+            _light={{ color: "black" }}
+            _dark={{ color: "coolGray.50" }}
+            m="auto"
+            fontSize="sm"
+            marginLeft={"-4"}
+          >
+            gluestack-ui
           </Text>
         </Link>
       </Box>
