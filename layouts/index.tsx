@@ -447,7 +447,7 @@ function Layout({
         </Link>
 
         <Link
-          href="https://gluestack.io/"
+          href="https://gluestack.io/?utm_source=nativebase-docs&utm_medium=cta-button&utm_campaign=docs-footer"
           isExternal
           position="fixed"
           bottom="76px"
