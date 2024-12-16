@@ -97,7 +97,7 @@ Yey! you are all set, start editing src/pages/index.tsx now.
 <Box maxWidth="750px">
 
 ```bash
-yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
+yarn add react-native-web@0.18.12 native-base react-native-svg@13.4.0 react-native-safe-area-context@4.5.0 expo
 ```
 
 </Box>
@@ -109,7 +109,7 @@ yarn add react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-nativ
 <Box maxWidth="750px">
 
 ```bash
-npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-native-safe-area-context@3.3.2
+npm install react-native-web@0.18.12 native-base react-native-svg@13.4.0 react-native-safe-area-context@4.5.0 expo
 ```
 
 </Box>
@@ -118,7 +118,7 @@ npm install react-native-web@0.17.1 native-base react-native-svg@12.1.1 react-na
 
   </DocTabs>
 
-We'll need 2 more additional steps.
+We'll need 3 more additional steps.
 
 1. Install dev dependencies.
 
@@ -132,7 +132,7 @@ We'll need 2 more additional steps.
   <DocTabItem value="yarn">
 
 ```bash
-  yarn add next-compose-plugins next-transpile-modules @expo/next-adapter next-fonts -D
+  yarn add @expo/next-adapter -D
 ```
 
   </DocTabItem>
@@ -140,37 +140,43 @@ We'll need 2 more additional steps.
   <DocTabItem value="npm">
 
 ```bash
-  npm i next-compose-plugins next-transpile-modules --save-dev
+  npm i @expo/next-adapter --save-dev
 ```
 
   </DocTabItem>
 
   </DocTabs>
 
-2. Update your next.config.js with the below content.
+2. Next.js 13.1 introduced a built-in module transpilation, so update your next.config.js with the below content.
 
 ```js
 const { withExpo } = require("@expo/next-adapter");
-const withFonts = require("next-fonts");
-const withPlugins = require("next-compose-plugins");
-const withTM = require("next-transpile-modules")([
-  "react-native-web",
-  "react-native-svg",
-  "native-base",
-  "react-native-svg",
-]);
 
-const nextConfig = {};
-
-module.exports = withPlugins(
-  [
-    withTM,
-    [withFonts, { projectRoot: __dirname }],
-    [withExpo, { projectRoot: __dirname }],
-    // your plugins go here.
+module.exports = withExpo({
+  transpilePackages: [
+    "react-native",
+    "expo",
+    "@react-native-aria",
+    "react-native-safe-area-context",
+    "react-native-web",
+    "react-native-svg",
+    "native-base",
   ],
-  nextConfig
-);
+  experimental: {
+    forceSwcTransforms: true,
+  },
+});
+```
+
+3. Add the following babel.config.js file to the root of your project.
+
+```js
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ["babel-preset-expo"],
+  };
+};
 ```
 
 ### Run the Hello world example
@@ -229,19 +235,19 @@ export default function App() {
       />
     </HStack>
     <Box mt="4" pl="0" ml="0">
-    <HStack pl="0" ml="0" space="4">
-      <TileLink
-        title="Utility props"
-        url="utility-props"
-        description="Shorthands of commonly used styling props which maps with the provided theme"
-        className="bg-blueGray-600"
-      />
-      <TileLink
-        title="NativeBase next adapter"
-        url="next-adapter"
-        description="To use Next.js with native-base for web we recommend that you use a library called @native-base/next-adapter to handle the configuration and integration of the tools."
-        className="bg-blueGray-600"
-      />
+      <HStack pl="0" ml="0" space="4">
+        <TileLink
+          title="Utility props"
+          url="utility-props"
+          description="Shorthands of commonly used styling props which maps with the provided theme"
+          className="bg-blueGray-600"
+        />
+        <TileLink
+          title="NativeBase next adapter"
+          url="next-adapter"
+          description="To use Next.js with native-base for web we recommend that you use a library called @native-base/next-adapter to handle the configuration and integration of the tools."
+          className="bg-blueGray-600"
+        />
       </HStack>
     </Box>
   </Box>
