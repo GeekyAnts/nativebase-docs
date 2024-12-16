@@ -61,7 +61,7 @@ We can use the above tokens in our code instead of using absolute values.
 The above Box will be translated to
 
 ```jsx title="actual applied styles"
-<View style={{ marginTop: 16, backgroundColor: 'cyan.500' }} />
+<View style={{ marginTop: 16, backgroundColor: '#06b6d4' }} />
 ```
 
 With NativeBase, you can create your own design system. NativeBase follows the [styled-system's specification](https://styled-system.com/theme-specification/) to construct design systems.
