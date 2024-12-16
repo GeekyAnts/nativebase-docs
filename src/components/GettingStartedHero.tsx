@@ -65,7 +65,7 @@ export function GettingStartedHero() {
                     _dark={{ color: "tipBackgroundColorDark" }}
                   >
                     If you are starting a new project, please try{" "}
-                    <Link href="https://gluestack.io/ui/docs/home/getting-started/installation/?utm_source=nativebase&utm_medium=docs&utm_campaign=docs+homepage">
+                    <Link href="https://gluestack.io/?utm_source=nativebase-docs&utm_medium=referral&utm_campaign=docs-banner">
                       gluestack-ui
                     </Link>{" "}
                     for better performance and new design.

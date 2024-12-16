@@ -57,6 +57,127 @@
     },
     {
       "type": "heading",
+      "title": "Migration",
+      "pages": [
+        {
+          "id": "migration/v3",
+          "title": "Upgrading to v3"
+        },
+        {
+          "id": "migration/v3xtov32",
+          "title": "Upgrading to 3.2.0 from 3.x"
+        },
+        {
+          "id": "migration/v33xtov34x",
+          "title": "Upgrading to 3.4.0 from 3.3.x"
+        },
+        {
+          "type": "heading",
+          "title": "Components Migration",
+          "isCollapsed": true,
+          "pages": [
+            {
+              "id": "migration/action-sheet",
+              "title": "ActionSheet"
+            },
+            {
+              "id": "migration/badge",
+              "title": "Badge"
+            },
+            {
+              "id": "migration/button",
+              "title": "Button"
+            },
+            {
+              "id": "migration/card",
+              "title": "Card"
+            },
+            {
+              "id": "migration/checkbox",
+              "title": "Checkbox"
+            },
+            {
+              "id": "migration/date-picker",
+              "title": "DatePicker"
+            },
+            {
+              "id": "migration/deck-swiper",
+              "title": "DeckSwiper"
+            },
+            {
+              "id": "migration/drawer",
+              "title": "Drawer"
+            },
+            {
+              "id": "migration/fab",
+              "title": "FABs"
+            },
+            {
+              "id": "migration/footer-tab",
+              "title": "FooterTab"
+            },
+            {
+              "id": "migration/form",
+              "title": "Form"
+            },
+            {
+              "id": "migration/header",
+              "title": "Header"
+            },
+            {
+              "id": "migration/icon",
+              "title": "Icon"
+            },
+            {
+              "id": "migration/layout",
+              "title": "Layout"
+            },
+            {
+              "id": "migration/picker",
+              "title": "Picker"
+            },
+            {
+              "id": "migration/radio-button",
+              "title": "Radio Button"
+            },
+            {
+              "id": "migration/search-bar",
+              "title": "Searchbar"
+            },
+            {
+              "id": "migration/segment",
+              "title": "Segment"
+            },
+            {
+              "id": "migration/spinner",
+              "title": "Spinner"
+            },
+            {
+              "id": "migration/swipe-list",
+              "title": "SwipeList"
+            },
+            {
+              "id": "migration/tabs",
+              "title": "Tabs"
+            },
+            {
+              "id": "migration/thumbnail",
+              "title": "Thumbnail"
+            },
+            {
+              "id": "migration/toast",
+              "title": "Toast"
+            },
+            {
+              "id": "migration/typography",
+              "title": "Typography"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
       "title": "Resources",
       "pages": [
         {
@@ -65,8 +186,7 @@
         },
         {
           "id": "solito",
-          "title": "Creating a Universal App with NativeBase and Solito",
-          "status": "new"
+          "title": "Creating a Universal App with NativeBase and Solito"
         }
       ]
     },
@@ -96,8 +216,7 @@
         },
         {
           "id": "internal-pseudo-props",
-          "title": "Internal Pseudo Props",
-          "status": "new"
+          "title": "Internal Pseudo Props"
         },
         {
           "id": "responsive",
@@ -307,8 +426,7 @@
         },
         {
           "id": "toast",
-          "title": "Toast",
-          "status": "update"
+          "title": "Toast"
         }
       ]
     },
@@ -566,132 +684,6 @@
               "title": "Footer"
             }
           ]
-        }
-      ]
-    },
-    {
-      "type": "heading",
-      "title": "Migration",
-      "pages": [
-        {
-          "id": "migration/v3",
-          "title": "Upgrading to v3"
-        },
-        {
-          "id": "migration/v3xtov32",
-          "title": "Upgrading to 3.2.0 from 3.x"
-        },
-        {
-          "id": "migration/v33xtov34x",
-          "title": "Upgrading to 3.4.0 from 3.3.x"
-        },
-        {
-          "type": "heading",
-          "title": "Components Migration",
-          "isCollapsed": true,
-          "pages": [
-            {
-              "id": "migration/action-sheet",
-              "title": "ActionSheet"
-            },
-            {
-              "id": "migration/badge",
-              "title": "Badge"
-            },
-            {
-              "id": "migration/button",
-              "title": "Button"
-            },
-            {
-              "id": "migration/card",
-              "title": "Card"
-            },
-            {
-              "id": "migration/checkbox",
-              "title": "Checkbox"
-            },
-            {
-              "id": "migration/date-picker",
-              "title": "DatePicker"
-            },
-            {
-              "id": "migration/deck-swiper",
-              "title": "DeckSwiper"
-            },
-            {
-              "id": "migration/drawer",
-              "title": "Drawer"
-            },
-            {
-              "id": "migration/fab",
-              "title": "FABs"
-            },
-            {
-              "id": "migration/footer-tab",
-              "title": "FooterTab"
-            },
-            {
-              "id": "migration/form",
-              "title": "Form"
-            },
-            {
-              "id": "migration/header",
-              "title": "Header"
-            },
-            {
-              "id": "migration/icon",
-              "title": "Icon"
-            },
-            {
-              "id": "migration/layout",
-              "title": "Layout"
-            },
-            {
-              "id": "migration/picker",
-              "title": "Picker"
-            },
-            {
-              "id": "migration/radio-button",
-              "title": "Radio Button"
-            },
-            {
-              "id": "migration/search-bar",
-              "title": "Searchbar"
-            },
-            {
-              "id": "migration/segment",
-              "title": "Segment"
-            },
-            {
-              "id": "migration/spinner",
-              "title": "Spinner"
-            },
-            {
-              "id": "migration/swipe-list",
-              "title": "SwipeList"
-            },
-            {
-              "id": "migration/tabs",
-              "title": "Tabs"
-            },
-            {
-              "id": "migration/thumbnail",
-              "title": "Thumbnail"
-            },
-            {
-              "id": "migration/toast",
-              "title": "Toast"
-            },
-            {
-              "id": "migration/typography",
-              "title": "Typography"
-            }
-          ]
-        },
-        {
-          "id": "migration-guide-gluestack-ui",
-          "title": "Migrating to gluestack-ui",
-          "status": "experimental"
         }
       ]
     },
