@@ -380,7 +380,7 @@ function Layout({
                       <Text ml="1">
                         {" "}
                         If you are starting a new project, please try{" "}
-                        <Link href="https://gluestack.io/ui/docs/home/getting-started/installation">
+                        <Link href="https://gluestack.io/?utm_source=nativebase-docs&utm_medium=referral&utm_campaign=docs-header">
                           gluestack-ui
                         </Link>{" "}
                         for better performance and new design.
