@@ -6,7 +6,7 @@ const RapidnativePill = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handlePress = () => {
-    Linking.openURL('https://rapidnative.com');
+    Linking.openURL('https://rapidnative.com/?utm_source=nativebase-docs-banner&utm_medium=referral&utm_campaign=landing-banner');
   };
 
   return (
