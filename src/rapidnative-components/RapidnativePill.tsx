@@ -43,7 +43,7 @@ const RapidnativePill = () => {
           marginRight: 4,
         }}
       >
-        Prompt to React Native UI
+        🎉 Prompt to React Native UI
       </Text>
       <Text
         style={{
