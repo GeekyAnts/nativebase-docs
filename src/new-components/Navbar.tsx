@@ -35,6 +35,7 @@ import FigmaIcon from "../icons/FigmaIcon";
 import GeekyantsLogo from "./GeekyantsLogo";
 import AlgoliaSearchButton from "./AlgoliaSearchButton";
 import { parentUrl } from "../../docs.config";
+import RapidNativePill from "../rapidnative-components/RapidnativePill";
 
 export default function Navbar(props: any) {
   const { activeVersion, setActiveVersion } = useContext(AppContext);
@@ -179,6 +180,7 @@ export default function Navbar(props: any) {
               );
             })}
           </Menu>
+          <RapidNativePill/>
           {/* <NBLink
             display={{ base: "none", xl: "flex" }}
             href="https://startup.nativebase.io/?utm_source=DocsHeader&utm_medium=ad-banner&utm_campaign=NativeBase_3_Docs"
