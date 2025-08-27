@@ -15,3 +15,5 @@ To get started with contributing to NativeBase Docs, please follow the below ste
 - When you are done, push your changes to the `main` branch.
 - Create a pull request.
 - The NativeBase team will review your pull request and if it is accepted, it will be published to the docs website.
+
+  
