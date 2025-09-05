@@ -29,7 +29,7 @@ function FormHookExample() {
         <FormControl.Label>First Name</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, onBlur, value }) => (
+          render={({ field: { onChange, onBlur, value }}) => (
             <Input
               onBlur={onBlur}
               placeholder="John"
@@ -49,7 +49,7 @@ function FormHookExample() {
         <FormControl.Label>Last Name</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, onBlur, value }) => (
+          render={({ field: { onChange, onBlur, value }}) => (
             <Input
               onBlur={onBlur}
               placeholder="Doe"
@@ -68,7 +68,7 @@ function FormHookExample() {
         <FormControl.Label>Age</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, onBlur, value }) => (
+          render={({ field: { onChange, onBlur, value }}) => (
             <Input
               onBlur={onBlur}
               placeholder="24"
@@ -128,7 +128,7 @@ function FormHookCheckboxExample() {
         <FormControl.Label>Hobbies</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange }) => (
+          render={({ field: { onChange }}) => (
             <Checkbox.Group
               onChange={(values) => {
                 onChange(values);
@@ -179,7 +179,7 @@ function FormHookCheckboxExample() {
         <FormControl.Label>Gender</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange }) => (
+          render={({ field: { onChange }}) => (
             <Radio.Group
               name="gender"
               flexDirection="row"
@@ -240,7 +240,7 @@ function FormHookSelectExample() {
         <FormControl.Label>Fav language:</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <Select
               placeholder="Pick language"
               selectedValue={value}
@@ -308,7 +308,7 @@ function FormHookSliderExample() {
         <FormControl.Label>Amount you like NativeBase</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <Slider onChange={(val) => onChange(val)} defaultValue={value}>
               <Slider.Track>
                 <Slider.FilledTrack />
@@ -363,7 +363,7 @@ function FormHookTextareaExample() {
         <FormControl.Label>What do you think?</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <TextArea
               placeholder="TextArea"
               onChangeText={(val) => onChange(val)}
@@ -417,7 +417,7 @@ function FormHookSwitchExample() {
         <FormControl.Label>Remenber me:</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <Switch
               onToggle={(val: boolean) => onChange(val)}
               isChecked={value}
@@ -474,7 +474,7 @@ function FormHookNumberInputExample() {
         <FormControl.Label>Current Native Base Version:</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <NumberInput
               onChange={(val: any) => onChange(val)}
               defaultValue={value}
@@ -534,7 +534,7 @@ function FormHookPinInputExample() {
         <FormControl.Label>OTP:</FormControl.Label>
         <Controller
           control={control}
-          render={({ onChange, value }) => (
+          render={({ field: { onChange, value }}) => (
             <PinInput onChange={(val: any) => onChange(val)} value={value}>
               <PinInputField />
               <PinInputField />
